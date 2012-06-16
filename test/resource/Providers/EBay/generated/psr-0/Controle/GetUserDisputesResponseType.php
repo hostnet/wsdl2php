@@ -1,0 +1,53 @@
+<?php
+
+namespace Controle;
+/**
+ * GetUserDisputesResponseType
+ * Returns a list of disputes that involve the calling user as buyer or seller, in response
+ * to a GetUserDisputesRequest.
+ */
+class GetUserDisputesResponseType extends \Controle\AbstractResponseType {
+	/**
+	 * @var \Controle\DisputeIDType | The index of the first dispute in the current result set, relative to the total number
+	 * of disputes available. Primarily useful for interpreting paginated results. For example,
+	 * if 228 disputes are available and 200 results are returned per page: The first page returns a
+	 * StartingDisputeID value of 1 and the second page returns a StartingDisputeID value of 201.
+	 */
+	public $StartingDisputeID;
+	/**
+	 * @var \Controle\DisputeIDType | The index of the last dispute in the current result set, relative to the total number of
+	 * disputes available. Primarily useful for interpreting paginated results. For example, if
+	 * 228 disputes are available and 200 results are returned per page: The first page returns an
+	 * EndingDisputeID value of 200 and the second page returns an EndingDisputeID value of 228.
+	 */
+	public $EndingDisputeID;
+	/**
+	 * @var \Controle\DisputeArrayType | The array of disputes returned.
+	 */
+	public $DisputeArray;
+	/**
+	 * @var int | Indicates the maximum number of Want It Now posts that can be returned in a WantItNowPostArray
+	 * for a request. This value can be specified in the request by  EntriesPerPage in Pagination
+	 * in the request.
+	 */
+	public $ItemsPerPage;
+	/**
+	 * @var int | Specifies the number of the page of data to return in the current call. Default is 1 for
+	 * most calls. For some calls, the default is 0. Specify a positive value equal to or lower
+	 * than the number of pages available (which you determine by examining the results of your
+	 * initial request). See the documentation for other individual calls to determine the correct default
+	 * value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable to Half.com).
+	 */
+	public $PageNumber;
+	/**
+	 * @var \Controle\DisputeFilterCountType | The number of disputes that involve the requester as buyer or seller and match a given
+	 * filter type.
+	 */
+	public $DisputeFilterCount;
+	/**
+	 * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
+	 * of entries.
+	 */
+	public $PaginationResult;
+}
+

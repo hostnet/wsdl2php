@@ -1,0 +1,18 @@
+<?php
+
+namespace Controle\sub1\sub2;
+/**
+ * ProximitySearchDetailsType
+ * Contains information for use in proximity search.
+ */
+class ProximitySearchDetailsType {
+	/**
+	 * @var string | The postal code to use as the basis for the proximity search.
+	 */
+	public $PostalCode;
+	/**
+	 * @var \Controle\sub1\sub2\<anyXML>
+	 */
+	public $any;
+}
+
