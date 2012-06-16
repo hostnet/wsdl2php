@@ -23,7 +23,7 @@
 // | see http://wsdl2php.sf.net                                             |
 // +------------------------------------------------------------------------+
 
-$options = getOptions('i:n:o:pg:sdvt');
+$options = getOptions('i:n:o:pg:sdvtj');
 /**
  * -i <path_to_wsdl>  | path to the wsdl file (can also be an accessible URL)
  * -o <output_dir>    | directory used for output
@@ -34,6 +34,7 @@ $options = getOptions('i:n:o:pg:sdvt');
  * -d                 | turn off documentation generation
  * -v                 | generate all code (docs and unused)
  * -t                 | turn off tab generated code, use '4 spaces' (PSR-2) instead
+ * -j              | test jelle
  */
 
 if(!isset($options['i']))
@@ -53,7 +54,7 @@ if(isset($options['g']))
 	$sub_namespace = $namespace.($pear_style? ('_'.$options['g']): ('\\'.$options['g']));
 
 $ident_char = "\t";
-if(isset($options['t'])){
+if(isset($options['t']) || isset($options['j'])){
   $ident_char = "    ";
 }
 
@@ -124,9 +125,16 @@ $nodes = $dom->getElementsByTagName('definitions');
 $uri = $nodes->length? $nodes->item(0)->getAttribute('targetNamespace'): '';
 print(".");
 
+//If the $wsdl is a local file, remove the full path
+//If it's a URL keep the URL.
+$wsdl_location = $wsdl;
+if(is_file($wsdl_location)){
+    $wsdl_location = (new SplFileInfo($wsdl))->getBasename();
+}
+
 $service = array(
 	'class'=>$dom->getElementsByTagNameNS('*', 'service')->item(0)->getAttribute('name'),
-	'wsdl'=>$wsdl,
+	'wsdl'=>$wsdl_location,
 	'doc'=>$doc['service'],
 	'functions'=>array()
 );
@@ -454,12 +462,29 @@ foreach($types as $index=>$type){
 			if(isset($member['multiple']))
 				$code .= ' or '.$member['type'].'[]';
 
-			if(isset($doc['members'][$member['member']]))
-				$code .= " | ".$doc['members'][$member['member']];
-			$code .= "\n" . $ident_char . " */";
+			if(isset($doc['members'][$member['member']])){
+				$code .= " | ".  substr(parseDoc($ident_char . " * ", $doc['members'][$member['member']]), strlen($ident_char . " * "));
+				$code .= $ident_char . " */";
+			}else{
+			     $code .= "\n" . $ident_char . " */";
+			}
 		}
 		$code .= "\n" . $ident_char . "public \$".$member['member'].";";
 	}
+
+	// add access method
+	foreach($type['members'] as $member) {
+        $code .= sprintf("\n" .
+        $ident_char . "/**\n".
+        $ident_char . " * @param %s \$val\n" .
+        $ident_char . " * @throws Exception\n" .
+        $ident_char . " */\n" .
+        $ident_char ."public function set%s(\$val) {\n" .
+        $ident_char . $ident_char . "%s\n" .
+        $ident_char . $ident_char . "\$this->%s = (int)\$val;\n" .
+        $ident_char ."}\n", $member['type'], ucwords($member['member']), accessMethodCaster($member['type'], $member['member']), $member['member']);
+	}
+
 	$code .= "\n}\n";
 
 	if(isset($file)){
@@ -604,155 +629,165 @@ print("[OK]\n");
  * Functions
  */
 function suppressKeywords($txt, $keywords){
-	foreach($keywords as $keyword){
-		if(preg_match('~(^|\\\\)'.$keyword.'($|\\\\)~i', $txt))
-			$txt = str_ireplace($keyword, '_'.$keyword, $txt);
-	}
-	return $txt;
+    foreach($keywords as $keyword){
+        if(preg_match('~(^|\\\\)'.$keyword.'($|\\\\)~i', $txt))
+            $txt = str_ireplace($keyword, '_'.$keyword, $txt);
+    }
+    return $txt;
 }
 
 function parseDoc($prefix, $doc) {
-	$code = "";
-	$words = explode(' ', $doc);
-	$line = $prefix;
+    $code = "";
+    $words = explode(' ', $doc);
+    $line = $prefix;
 
-	foreach($words as $word){
-		$line .= $word.' ';
-		if(strlen($line) > 90){
-			$code .= rtrim($line)."\n";
-			$line = $prefix;
-		}
-	}
-	if($line != $prefix)
-		$code .= rtrim($line)."\n";
+    foreach($words as $word){
+        $word = implode('', array_filter(explode("\t", implode(' ', explode("\n", $word))), function ($el){ if (trim($el) != ''){ return true;}return  false;}));
+        $line .=  trim($word) . ' ';
+        if(strlen($line) > 90){
+            $code .= rtrim($line)."\n";
+            $line = $prefix;
+        }
+    }
+    if($line != $prefix)
+        $code .= rtrim($line)."\n";
 
-	return $code;
+        return $code;
 }
 
 function checkForEnum(&$dom, $class){
-	$values = array();
+    $values = array();
 
-	$node = findType($dom, $class);
-	if(!$node)
-		return $values;
+    $node = findType($dom, $class);
+    if(!$node)
+        return $values;
 
-	$value_list = $node->getElementsByTagName('enumeration');
-	if($value_list->length == 0)
-		return $values;
+        $value_list = $node->getElementsByTagName('enumeration');
+        if($value_list->length == 0)
+            return $values;
 
-	for($i=0, $l=$value_list->length; $i<$l; $i++)
-		$values[] = $value_list->item($i)->attributes->getNamedItem('value')->nodeValue;
+            for($i=0, $l=$value_list->length; $i<$l; $i++)
+                $values[] = $value_list->item($i)->attributes->getNamedItem('value')->nodeValue;
 
-	return $values;
+                return $values;
 }
 
 function findType(&$dom, $class){
-	$types_node = $dom->getElementsByTagName('types')->item(0);
-	$schema_list = $types_node->getElementsByTagName('schema');
+    $types_node = $dom->getElementsByTagName('types')->item(0);
+    $schema_list = $types_node->getElementsByTagName('schema');
 
-	for($i=0, $l=$schema_list->length; $i<$l; $i++){
-		$children = $schema_list->item($i)->childNodes;
-		for($j=0, $l2=$children->length; $j<$l2; $j++){
-			$node = $children->item($j);
-			if($node instanceof DOMElement &&
-				$node->hasAttributes() &&
-				$node->attributes->getNamedItem('name') &&
-				$node->attributes->getNamedItem('name')->nodeValue == $class)
-					return $node;
-		}
-	}
+    for($i=0, $l=$schema_list->length; $i<$l; $i++){
+        $children = $schema_list->item($i)->childNodes;
+        for($j=0, $l2=$children->length; $j<$l2; $j++){
+            $node = $children->item($j);
+            if($node instanceof DOMElement &&
+                $node->hasAttributes() &&
+                $node->attributes->getNamedItem('name') &&
+                $node->attributes->getNamedItem('name')->nodeValue == $class)
+                return $node;
+        }
+    }
 
-	return null;
+    return null;
 }
 
 function generatePHPSymbol($s){
-	global $keywords;
+    global $keywords;
 
-	if(!preg_match('/^[A-Za-z_]/', $s))
-		$s = 'value_'.$s;
+    if(!preg_match('/^[A-Za-z_]/', $s))
+        $s = 'value_'.$s;
 
-	if(in_array(strtolower($s), $keywords))
-		$s = '_'.$s;
+        if(in_array(strtolower($s), $keywords))
+            $s = '_'.$s;
 
-	return preg_replace('/[-.\s]/', '_', $s);
+            return preg_replace('/[-.\s]/', '_', $s);
 }
 
 function isHint($hint, array $primitive_types) {
-	return !in_array($hint, $primitive_types) && !(substr($hint, 0, 7) == 'ArrayOf');
+    return !in_array($hint, $primitive_types) && !(substr($hint, 0, 7) == 'ArrayOf');
 }
 
 function loadWSDL($path){
-	$dom = new DOMDocument();
-	$dom->load($path);
+    $dom = new DOMDocument();
+    $dom->load($path);
 
-	$nodes = toArray($dom->getElementsByTagName('import'));
-	foreach($nodes as $node){
-		$location = $node->getAttribute('schemaLocation');
+    $nodes = toArray($dom->getElementsByTagName('import'));
+    foreach($nodes as $node){
+        $location = $node->getAttribute('schemaLocation');
 
-		if($location){
-			$dirname = dirname($path);
+        if($location){
+            $dirname = dirname($path);
 
-			$newdom = loadWSDL($dirname.DIRECTORY_SEPARATOR.$location);
-			foreach($newdom->childNodes as $n){
-				$import = $dom->importNode($n, true);
-				$node->parentNode->appendChild($import);
-			}
-		}
-	}
+            $newdom = loadWSDL($dirname.DIRECTORY_SEPARATOR.$location);
+            foreach($newdom->childNodes as $n){
+                $import = $dom->importNode($n, true);
+                $node->parentNode->appendChild($import);
+            }
+        }
+    }
 
-	print(".");
-	return $dom;
+    print(".");
+    return $dom;
 }
 
 function toArray($nodes){
-	$array = array();
-	foreach($nodes as $node){
-		$array[] = $node;
-	}
+    $array = array();
+    foreach($nodes as $node){
+        $array[] = $node;
+    }
 
-	return $array;
+    return $array;
 }
 
 function getOptions($string){
-	if(function_exists('getopt'))
-		return getopt($string);
+    if(function_exists('getopt'))
+        return getopt($string);
 
-	global $argv;
+        global $argv;
 
-	$options = array();
-	$l = strlen($string);
+        $options = array();
+        $l = strlen($string);
 
-	if(!$l)
-		return $options;
+        if(!$l)
+            return $options;
 
-	for($i=0; $i<$l; $i++){
-		$char = $string[$i];
-		$next = $i+1<$l? $string[$i+1]: '';
+            for($i=0; $i<$l; $i++){
+                $char = $string[$i];
+                $next = $i+1<$l? $string[$i+1]: '';
 
-		$index = array_search('-'.$char, $argv);
-		if($index)
-			$options[$char] = $next != ':'? true: $argv[$index+1];
-	}
+                $index = array_search('-'.$char, $argv);
+                if($index)
+                    $options[$char] = $next != ':'? true: $argv[$index+1];
+            }
 
-	return $options;
+            return $options;
 }
 
 function sortTypes($types, &$sorted){
-	global $service, $extensions;
+    global $service, $extensions;
 
-	foreach($types as $class=>$type){
-		if(isset($extensions[$class])){
-			$parent_class = $extensions[$class];
-			if($parent_class && !isset($sorted[$parent_class]) && isset($service['types'][$parent_class])){
-				sortTypes(array($parent_class=>$service['types'][$parent_class]), $sorted);
-			}
+    foreach($types as $class=>$type){
+        if(isset($extensions[$class])){
+            $parent_class = $extensions[$class];
+            if($parent_class && !isset($sorted[$parent_class]) && isset($service['types'][$parent_class])){
+                sortTypes(array($parent_class=>$service['types'][$parent_class]), $sorted);
+            }
 
-			$sorted[$class] = $type;
-			continue;
-		}
+            $sorted[$class] = $type;
+            continue;
+        }
 
-		$sorted[$class] = $type;
-	}
+        $sorted[$class] = $type;
+    }
 
-	return $sorted;
+    return $sorted;
+}
+
+function accessMethodCaster($type, $fieldname) {
+    switch($type) {
+        case 'string':
+            return 'if(!is_string($val)) throw new Exception(\'POJO Proxy need a string for '.$fieldname.'\');';
+        case 'int':
+            return 'if(!is_int($val)) throw new Exception(\'POJO Proxy need a integer\');';
+    }
 }

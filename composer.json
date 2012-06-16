@@ -9,6 +9,13 @@
     "autoload": {
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit":    "^5.0.0",
+        "symfony/filesystem": "^3.1.0",
+        "symfony/process":    "^3.1.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wsdl2php\\": "test/"
+        }
     }
 }

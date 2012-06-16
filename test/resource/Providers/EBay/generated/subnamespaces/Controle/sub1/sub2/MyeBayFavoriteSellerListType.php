@@ -1,0 +1,49 @@
+<?php
+
+namespace Controle\sub1\sub2;
+/**
+ * MyeBayFavoriteSellerListType
+ * A list of favorite sellers the user has saved on the My eBay page.
+ */
+class MyeBayFavoriteSellerListType {
+	/**
+	 * @var int | The total number of My eBay Second Chance Offers available.
+	 */
+	public $TotalAvailable;
+	/**
+	 * @var \Controle\sub1\sub2\MyeBayFavoriteSellerType | A favorite seller the user has saved, with a user ID and store name.
+	 */
+	public $FavoriteSeller;
+	/**
+	 * @var \Controle\sub1\sub2\<anyXML>
+	 */
+	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalAvailable($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalAvailable = (int)$val;
+	}
+
+	/**
+	 * @param MyeBayFavoriteSellerType $val
+	 * @throws Exception
+	 */
+	public function setFavoriteSeller($val) {
+		
+		$this->FavoriteSeller = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
+}
+
