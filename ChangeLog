@@ -1,5 +1,39 @@
+ChangeLog wsdl2php
+------------------
+	
+	-- 0.3 --
+	
+2014-07-16 AustP <https://github.com/AustP>
 
-	ChangeLog wsdl2php
+	* src/bin/wsdl2php.php:
+	- Added server side generation
+	- Added ability to turn off documentation
+	- Added verbosity
+	- Improved documentation
+		+ Added documentation for types
+		+ Added documentation for members
+		+ Only print out documentation if it exists
+	- Improved extensions
+		+ Made sure if a class is extending another class, that it is generated beneath its parent class
+		+ Made sure we aren't overwriting parent variables unnecessarily 
+	- Determines if some types are unused, and excludes them by default
+	- <import> lines in WSDLs are now supported
+	- Type's substitutionGroup attribute are now supported
+	- Made generated code more uniform
+	- Cleaned/Optimized the code
+	
+	* README
+	- Updated assuming more people will use wsdl2php as: php wsdl2php.php -i <path_to_WDSL>
+	
+	* TODO
+	- Removed things that I have done
+	
+	* tests/
+	- Moved all of the files/folders here into a subdirectory PHPUnit/
+	- Added IP2Geo/
+		+ Added getLocationForIP.php
+	- Added Weather/
+		+ Added getWeatherForZIP.php
 
 	-- 0.2.1 --
 	

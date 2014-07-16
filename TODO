@@ -5,40 +5,18 @@
    that Amazon has a class List which conflicts with PHP 's T_LIST /
    list() (aslo seen break);
 
-* Handle . and - in class names
-
-* Support for various code layouts
-  1. Minimal: All client code (SoapClient and complexTypes) in one file
-  2. Standard: One file pr class
-  3. Enterprise: One file pr class, complexTypes in own directory
-
-* Change service class to extend SoapClient instead
-
-* Flag generation of PHPDoc on/off
-
 * Update PHPDoc generation to be valid!
-
-* Extract documentation from WSDL (Partly implemented)
-
-* Add linebreak on reasonable length of wsdl:documentation (FIXED through parse_doc)
-
-* Remove @param if no parameter for service function
 
 * Handle the "dot net" jargon (namespaces) to find service name, documentation and other usefull information
 * Handle "axis" jargon (seems to be some issues around arra usage and namespace conventions)
 
-* Transform return type from ArrayOf* to *[] (documentation visual)
-
 * Detect changes in generated files and notify user before overwrite (as default)
 
 * Add command line options
-- verbose
 - help
 - force
 - specify seperation of complexType from service class into seperate files (default should be all in one file)
 - ask before overwrite
-
-* Handle dateTime!!!
 
 Quality Assurance:
 

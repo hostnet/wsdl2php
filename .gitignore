@@ -1,5 +1,5 @@
 build/
 .buildpath
 .project
-tests/work
+tests/PHPUnit/work
 vendor/

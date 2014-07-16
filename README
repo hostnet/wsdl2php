@@ -1,44 +1,39 @@
-
-	wsdl2php - PHP 5 Web Service Proxy Generator
-	--------------------------------------------
-
-wsdl2php is a tool for generating PHP 5 proxy classes that can be used to access 
-web services. It make use of both the SOAP and DOM extension.
-
-Requirements
-------------
-In order to use wsdl2php you must fullfill the following requirements:
-
-    o PHP 5 >= 5.0.1 with SOAP and DOM enabled
-    o PEAR installer >= 1.4
-    o Phing
-        $ pear channel-discover pear.phing.info
-        $ pear install phing/phing
-    o XML_Serializer >= 0.20.2
-        $ pear install pear/XML_Serializer-beta
-    o PEAR_PackageFileManager >= 1.7.0
-        $ pear install PEAR_PackageFileManager
+wsdl2php
+--------
+wsdl2php is a tool for generating SoapServer/SoapClient classes from a WSDL file.
 
 Installation
 ------------
-1) Clone the latest release from git://github.com/jbarciauskas/wsdl2php.git
-2) Build the package
+1. Copy src\bin\wsdl2php.php to a folder.
+2. Open a command prompt in that folder location.
+3. Use wsdl2php as described below.
 
-    $ phing
-
-3) Install the package with the PEAR installer:
-
-    $ sudo pear install build/wsdl2php-x.y.z-pear.tgz
+For Linux users, src\bin\wsdl2php is a wrapper for easier usage, copy that as well
 
 Usage
 -----
+	php wsdl2php.php -i C:\path\to\WSDL
 
-    $ wsdl2php http://someservice.com/api/Soap.wsdl Soap_Data_Namespace_
+For Linux users, you can just do
+
+	wsdl2php -i /path/to/WSDL
+Note: the WSDL path can also be an accessible URL.
+
+Options
+-------
++ -o <output_dir>    | directory used for output
++ -n <namespace>     | namespace to use
++ -g <sub_namespace> | sub-namespace to use
++ -p                 | use pear style Namespace - defaults to PSR-0
++ -s                 | generate code for server side
++ -d                 | turn off documentation generation
++ -v                 | generate all code (docs and unused)
 
 Credits
 -------
-Knut Urdalen - author
-John Lindal - contributor
++ Knut Urdalen - author
++ AustP - contributor
++ Joel Barciauskas - contributor
++ John Lindal - contributor
 
 Originally cloned from http://www.urdalen.no/wsdl2php/
-Customized by Joel Barciauskas
