@@ -1,6 +1,16 @@
 ChangeLog wsdl2php
 ------------------
 	
+	-- 0.3.1 --
+	
+2014-07-18 AustP <https://github.com/AustP>
+
+	* src/bin/wsdl2php.php
+	- Improved documentation
+		+ Added maxOccurence support
+		+ Class documentation now uses parseDoc
+		+ No documentation flag doesn't generate member types now
+	
 	-- 0.3 --
 	
 2014-07-16 AustP <https://github.com/AustP>

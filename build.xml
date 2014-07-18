@@ -5,7 +5,7 @@
 -->
 <project name="wsdl2php" basedir="." default="main">
 
-  <property name="version" value="0.3" />
+  <property name="version" value="0.3.1" />
   <property name="build.base.dir" value="build"/>
   <property name="pkgname" value="wsdl2php-${version}"/>
   <property name="build.src.dir" value="${build.base.dir}/${pkgname}"/>

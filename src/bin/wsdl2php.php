@@ -67,7 +67,7 @@ $keywords = array(
 );
 $primitive_types = array(
 	'ArrayOfFloat', 'ArrayOfInt', 'ArrayOfString', 'base64Binary', 'boolean', 'date', 'dateTime',
-	'decimal', 'double', 'float', 'hexBinary', 'int', 'long', 'short', 'string', 'UNKOWN'
+	'decimal', 'double', 'float', 'hexBinary', 'int', 'long', 'short', 'string', 'UNKOWN', 'void'
 );
 
 
@@ -226,19 +226,30 @@ foreach($nodes as $node){
 }
 print("[OK]\n");
 
-print("Getting Substitutions.");
+print("Getting Substitutions & Occurrences.");
+$max_occurs = array();
 $substitutions = array();
 $nodes = $dom->getElementsByTagName('element');
 foreach($nodes as $node){
 	$type = $node->getAttribute('type');
-	$sub = $node->getAttribute('substitutionGroup');
-	if($type && $sub){
-		if(strpos($type, ':'))
-			list($tmp, $type) = explode(':', $type);
-		if(strpos($sub, ':'))
-			list($tmp, $sub) = explode(':', $sub);
+	if(strpos($type, ':'))
+		list($tmp, $type) = explode(':', $type);
 		
+	$sub = $node->getAttribute('substitutionGroup');
+	if(strpos($sub, ':'))
+		list($tmp, $sub) = explode(':', $sub);
+		
+	if($type && $sub){
 		$substitutions[$sub] = $type;
+		print(".");
+	}
+		
+	$ref = $node->getAttribute('ref');
+	if(strpos($ref, ':'))
+		list($tmp, $ref) = explode(':', $ref);
+	
+	if($node->hasAttribute('maxOccurs') && $node->getAttribute('maxOccurs') != 1){
+		$max_occurs[$ref] = $ref;
 		print(".");
 	}
 }
@@ -276,7 +287,15 @@ foreach($types as $type){
 			if($m['member'] == $member)
 				continue 2;
 		}
-		$members[] = array('member'=>$member, 'type'=>$type);
+		$array = array(
+			'member'=>$member,
+			'type'=>$type
+		);
+		
+		if(isset($max_occurs[$member]))
+			$array['multiple'] = true;
+		
+		$members[] = $array;
 		
 		if(substr($type, -2, 2) == '[]')
 			$type = substr($type, 0, -2);
@@ -339,7 +358,7 @@ if(count($diff)){
 	$diff = array_unique($diff);
 	print("\nWARNING:\n");
 	foreach($diff as $d){
-		print("\tA class member was hinted as an instance of '".$d."' but no class was found with that name.\n");
+		print("\tA variable was hinted as an instance of '".$d."' but no class was found with that name.\n");
 	}
 }
 
@@ -394,8 +413,8 @@ foreach($types as $index=>$type){
 	if($documentation && isset($doc['types'][$class])){
 		$code .= "\n/**";
 		$code .= "\n * ".$class;
-		$code .= "\n * ".$doc['types'][$class];
-		$code .= "\n */";
+		$code .= "\n".parseDoc(" * ", $doc['types'][$class]);
+		$code .= " */";
 	}
 	
 	$code .= "\nclass ".$class.(!empty($parent_type)? " extends ".$parent_type['full_class']: "")." {";
@@ -410,24 +429,30 @@ foreach($types as $index=>$type){
 	}
 
 	foreach($type['members'] as $member){
-		$code .= "\n\tpublic \$".$member['member']."; //";
-		if(!in_array($member['type'], $primitive_types) && $namespace){
-			$hint = $pear_style?
-				$sub_namespace.$member['type']:
-				'\\'.$sub_namespace.'\\'.str_replace('_', '\\', $member['type']);
+		$code .= "\n\tpublic \$".$member['member'].";";
+
+		if($documentation){
+			$code .= " //";
+			if(!in_array($member['type'], $primitive_types) && $namespace){
+				$hint = $pear_style?
+					$sub_namespace.$member['type']:
+					'\\'.$sub_namespace.'\\'.str_replace('_', '\\', $member['type']);
+				
+				if(strpos($hint, 'ArrayOf') !== false)
+					$hint = 'array '.str_replace('ArrayOf', '', $hint);
+				
+				$code .= '@var '.$hint;
+			}else{
+				$code .= '@var '.(strpos($member['type'], 'ArrayOf') === 0?
+					str_replace('ArrayOf', '', $member['type']).'[]':
+					$member['type']);
+			}
 			
-			if(strpos($hint, 'ArrayOf') !== false)
-				$hint = 'array '.str_replace('ArrayOf', '', $hint);
+			if(isset($member['multiple']))
+				$code .= ' or '.$member['type'].'[]';
 			
-			$code .= '@var '.$hint;
-		}else{
-			$code .= '@var '.(strpos($member['type'], 'ArrayOf') === 0?
-				str_replace('ArrayOf', '', $member['type']).'[]':
-				$member['type']);
-		}
-		
-		if($documentation && isset($doc['members'][$member['member']])){
-			$code .= " | ".$doc['members'][$member['member']];
+			if(isset($doc['members'][$member['member']]))
+				$code .= " | ".$doc['members'][$member['member']];
 		}
 	}
 	$code .= "\n}\n";
@@ -590,7 +615,8 @@ function parseDoc($prefix, $doc) {
 			$line = $prefix;
 		}
 	}
-	$code .= $line."\n";
+	if($line != $prefix)
+		$code .= $line."\n";
 	
 	return $code;
 }
