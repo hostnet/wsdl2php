@@ -406,8 +406,7 @@ foreach($types as $index=>$type){
 		$ns = str_replace('/', '\\', dirname(str_replace('\\', '/', $type['full_class'])));
 		if($ns[0] == '\\')
 			$ns = substr($ns, 1);
-
-		$code .= "namespace ".$ns.";\n\n";
+		$code = "\nnamespace ".$ns.";";
 		$class = $type['php_class'];
 	}
 
