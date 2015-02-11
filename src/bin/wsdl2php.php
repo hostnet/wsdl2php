@@ -97,10 +97,10 @@ if($documentation){
 		$parent = $node->parentNode;
 		if($parent->localName == 'annotation')
 			$parent = $parent->parentNode;
-			
+
 		$name = $parent->getAttribute('name');
 		$value = $node->nodeValue;
-		
+
 		if($parent->localName == 'service'){
 			$doc['service'] = trim($node->nodeValue);
 		}elseif($parent->localName == 'operation'){
@@ -131,7 +131,7 @@ $service['class'] = str_replace(array(' ','.','-'), '_', $service['class']);
 
 if(in_array(strtolower($service['class']), $keywords))
 	$service['class'] .= 'Service';
-	
+
 $service['class'] .= $server? 'Server': 'Client';
 
 print("Getting Functions.");
@@ -157,11 +157,11 @@ foreach($operations as $operation){
 	$args = explode(', ', $args);
 	foreach($args as $arg){
 		$param = explode(' ', $arg);
-		
+
 		$hint = '';
 		if(count($param) == 2){
 			$hint = $param[0];
-			
+
 			if(isHint($hint, $primitive_types)){
 				if($namespace){
 					$hint = $pear_style?
@@ -171,19 +171,19 @@ foreach($operations as $operation){
 			}else{
 				$hint = '';
 			}
-			
+
 			$name = $param[1];
 		}else{
 			$hint = '';
 			$name = $param[0];
 		}
-		
+
 		if($hint)
 			$parameters[] = $hint;
-		
+
 		$params[] = $hint.($hint? ' ': '').$name;
 	}
-	
+
 	$function = array(
 		'name'=>$method,
 		'method'=>$method,
@@ -191,7 +191,7 @@ foreach($operations as $operation){
 		'doc'=>isset($doc['operations'][$method])? $doc['operations'][$method]: '',
 		'params'=>$params
 	);
-	
+
 	if(!in_array($return, $keywords) && !in_array($return, $primitive_types))
 		$type_references[] = $return;
 
@@ -213,12 +213,12 @@ foreach($nodes as $node){
 	$parent = $node->parentNode;
 	while(!empty($parent) && $parent->localName !== 'complexType')
 		$parent = $parent->parentNode;
-		
+
 	if(!empty($parent)){
 		$name = $parent->attributes->getNamedItem('name')->nodeValue;
 		$base = explode(':', $node->attributes->getNamedItem('base')->nodeValue);
 		$base = end($base);
-		
+
 		if(!in_array($base, $primitive_types) && !in_array($name, $primitive_types))
 			$extensions[$name] = $base;
 	}
@@ -234,20 +234,20 @@ foreach($nodes as $node){
 	$type = $node->getAttribute('type');
 	if(strpos($type, ':'))
 		list($tmp, $type) = explode(':', $type);
-		
+
 	$sub = $node->getAttribute('substitutionGroup');
 	if(strpos($sub, ':'))
 		list($tmp, $sub) = explode(':', $sub);
-		
+
 	if($type && $sub){
 		$substitutions[$sub] = $type;
 		print(".");
 	}
-		
+
 	$ref = $node->getAttribute('ref');
 	if(strpos($ref, ':'))
 		list($tmp, $ref) = explode(':', $ref);
-	
+
 	if($node->hasAttribute('maxOccurs') && $node->getAttribute('maxOccurs') != 1){
 		$max_occurs[$ref] = $ref;
 		print(".");
@@ -270,7 +270,7 @@ foreach($types as $type){
 	for($i=1, $l=count($parts)-1; $i<$l; $i++){
 		$parts[$i] = trim($parts[$i]);
 		list($type, $member) = explode(" ", substr($parts[$i], 0, strlen($parts[$i])-1));
-		
+
 		if($type == 'anyType' && isset($substitutions[$member]))
 			$type = $substitutions[$member];
 
@@ -291,17 +291,17 @@ foreach($types as $type){
 			'member'=>$member,
 			'type'=>$type
 		);
-		
+
 		if(isset($max_occurs[$member]))
 			$array['multiple'] = true;
-		
+
 		$members[] = $array;
-		
+
 		if(substr($type, -2, 2) == '[]')
 			$type = substr($type, 0, -2);
 		if(substr($type, 0, 7) == 'ArrayOf')
 			$type = substr($type, 7);
-		
+
 		if(!in_array($type, $keywords) && !in_array($type, $primitive_types) && !in_array($type, array('anyType', 'ID', 'IDREF', 'IDREFS')))
 			$type_references[] = $type;
 	}
@@ -334,16 +334,16 @@ foreach($service['types'] as $class=>$type){
 	if(isset($extensions[$class])){
 		$parent_members = array();
 		$_members = $service['types'][$extensions[$class]]['members'];
-		
+
 		foreach($_members as $member){
 			$parent_members[] = $member['member'];
 		}
-		
+
 		foreach($type['members'] as $i=>$member){
 			if(in_array($member['member'], $parent_members))
 				unset($type['members'][$i]);
 		}
-		
+
 		$service['types'][$class] = $type;
 	}
 }
@@ -368,7 +368,7 @@ foreach($types as $index=>$type){
 	if($namespace){
 		$dirname = $sub_namespace;
 		$filename = '';
-		
+
 		if($pear_style){
 			$dirname = str_replace('_', '/', $dirname);
 			$filename = $type['full_class'] . '.php';
@@ -376,13 +376,13 @@ foreach($types as $index=>$type){
 			$dirname = dirname(str_replace('\\', '/', $type['full_class']));
 			if($dirname[0] == '/')
 				$dirname = substr($dirname, 1);
-			
+
 			$filename = $type['php_class'] . '.php';
 		}
-		
+
 		if(!is_dir($dirname))
 			mkdir($dirname, 0777, true);
-		
+
 		$file = fopen($dirname . '/' . $filename, 'w');
 	}
 
@@ -607,7 +607,7 @@ function parseDoc($prefix, $doc) {
 	$code = "";
 	$words = explode(' ', $doc);
 	$line = $prefix;
-	
+
 	foreach($words as $word){
 		$line .= $word.' ';
 		if(strlen($line) > 90){
@@ -617,7 +617,7 @@ function parseDoc($prefix, $doc) {
 	}
 	if($line != $prefix)
 		$code .= $line."\n";
-	
+
 	return $code;
 }
 
@@ -634,7 +634,7 @@ function checkForEnum(&$dom, $class){
 
 	for($i=0, $l=$value_list->length; $i<$l; $i++)
 		$values[] = $value_list->item($i)->attributes->getNamedItem('value')->nodeValue;
-	
+
 	return $values;
 }
 
@@ -653,7 +653,7 @@ function findType(&$dom, $class){
 					return $node;
 		}
 	}
-	
+
 	return null;
 }
 
@@ -662,10 +662,10 @@ function generatePHPSymbol($s){
 
 	if(!preg_match('/^[A-Za-z_]/', $s))
 		$s = 'value_'.$s;
-	
+
 	if(in_array(strtolower($s), $keywords))
 		$s = '_'.$s;
-	
+
 	return preg_replace('/[-.\s]/', '_', $s);
 }
 
@@ -676,14 +676,14 @@ function isHint($hint, array $primitive_types) {
 function loadWSDL($path){
 	$dom = new DOMDocument();
 	$dom->load($path);
-	
+
 	$nodes = toArray($dom->getElementsByTagName('import'));
 	foreach($nodes as $node){
 		$location = $node->getAttribute('schemaLocation');
-		
+
 		if($location){
 			$dirname = dirname($path);
-			
+
 			$newdom = loadWSDL($dirname.DIRECTORY_SEPARATOR.$location);
 			foreach($newdom->childNodes as $n){
 				$import = $dom->importNode($n, true);
@@ -691,7 +691,7 @@ function loadWSDL($path){
 			}
 		}
 	}
-	
+
 	print(".");
 	return $dom;
 }
@@ -701,50 +701,50 @@ function toArray($nodes){
 	foreach($nodes as $node){
 		$array[] = $node;
 	}
-	
+
 	return $array;
 }
 
 function getOptions($string){
 	if(function_exists('getopt'))
 		return getopt($string);
-		
+
 	global $argv;
-	
+
 	$options = array();
 	$l = strlen($string);
-	
+
 	if(!$l)
 		return $options;
-	
+
 	for($i=0; $i<$l; $i++){
 		$char = $string[$i];
 		$next = $i+1<$l? $string[$i+1]: '';
-		
+
 		$index = array_search('-'.$char, $argv);
 		if($index)
 			$options[$char] = $next != ':'? true: $argv[$index+1];
 	}
-	
+
 	return $options;
 }
 
 function sortTypes($types, &$sorted){
 	global $service, $extensions;
-	
+
 	foreach($types as $class=>$type){
 		if(isset($extensions[$class])){
 			$parent_class = $extensions[$class];
 			if($parent_class && !isset($sorted[$parent_class]) && isset($service['types'][$parent_class])){
 				sortTypes(array($parent_class=>$service['types'][$parent_class]), $sorted);
 			}
-			
+
 			$sorted[$class] = $type;
 			continue;
 		}
-		
+
 		$sorted[$class] = $type;
 	}
-	
+
 	return $sorted;
 }
