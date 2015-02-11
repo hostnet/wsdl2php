@@ -400,11 +400,11 @@ foreach($types as $index=>$type){
 		$ns = str_replace('/', '\\', dirname(str_replace('\\', '/', $type['full_class'])));
 		if($ns[0] == '\\')
 			$ns = substr($ns, 1);
-		
+
 		$code .= "namespace ".$ns.";\n\n";
 		$class = $type['php_class'];
 	}
-	
+
 	if(!$verbose && !in_array($class, $extensions) && !in_array($class, $parameters) && !in_array($class, $type_references)){
 		unset($service['types'][$index]);
 		continue;
@@ -416,9 +416,9 @@ foreach($types as $index=>$type){
 		$code .= "\n".parseDoc(" * ", $doc['types'][$class]);
 		$code .= " */";
 	}
-	
+
 	$code .= "\nclass ".$class.(!empty($parent_type)? " extends ".$parent_type['full_class']: "")." {";
-	
+
 	if(!count($type['values']) && !count($type['members'])){
 		$code .= "}\n";
 		continue;
@@ -437,26 +437,26 @@ foreach($types as $index=>$type){
 				$hint = $pear_style?
 					$sub_namespace.$member['type']:
 					'\\'.$sub_namespace.'\\'.str_replace('_', '\\', $member['type']);
-				
+
 				if(strpos($hint, 'ArrayOf') !== false)
 					$hint = 'array '.str_replace('ArrayOf', '', $hint);
-				
+
 				$code .= '@var '.$hint;
 			}else{
 				$code .= '@var '.(strpos($member['type'], 'ArrayOf') === 0?
 					str_replace('ArrayOf', '', $member['type']).'[]':
 					$member['type']);
 			}
-			
+
 			if(isset($member['multiple']))
 				$code .= ' or '.$member['type'].'[]';
-			
+
 			if(isset($doc['members'][$member['member']]))
 				$code .= " | ".$doc['members'][$member['member']];
 		}
 	}
 	$code .= "\n}\n";
-	
+
 	if(isset($file)){
 		print("Writing ".$class.".php.");
 		fwrite($file, "<?php\n".$code."?>");
@@ -527,51 +527,51 @@ foreach($service['functions'] as $function){
 			$signature[] = $param;
 		}
 	}
-	
+
 	$hint = $function['return'];
 	if(isHint($hint, $primitive_types))
 		if($namespace)
 			$hint = $pear_style?
 				$sub_namespace.$hint:
 				suppressKeywords('\\'.$sub_namespace.'\\'.str_replace('_', '\\', $hint), $keywords);
-	
+
 	$doc_code .= "\t * @return ".$hint."\n";
 	$doc_code .= "\t */\n";
-	
+
 	if($documentation)
 		$code .= $doc_code;
-	
+
 	$code .= "\tpublic function ".$function['name']."(".implode(', ', $signature)."){\n";
-	
+
 	if($server){
 		$code .= "\t\t//Your code that handles ".$function['name']." goes here.\n";
 	}else{
 		$code .= "\t\treturn \$this->__soapCall(\n";
 		$code .= "\t\t\t'".$function['method']."',\n";
 		$code .= "\t\t\tarray(";
-		
+
 		$params = array();
 		if(count($signature) > 1){
 			$code .= "\n\t\t\t\t";
 			foreach($signature as $param){
 				if(strpos($param, ' '))
 					list($tmp, $param) = explode(' ', $param);
-					
+
 				$params[] = $param;
 			}
 			$code .= implode(",\n\t\t\t\t", $params)."\n\t\t\t";
 		}elseif(count($signature) == 1){
 			if(strpos($signature[0], ' '))
 				list($tmp, $signature[0]) = explode(' ', $signature[0]);
-				
+
 			$code .= $signature[0];
 		}
-		
+
 		$code .= "),\n";
 		$code .= "\t\t\tarray('uri'=>'".$uri."')\n";
 		$code .= "\t\t);\n";
 	}
-	
+
 	$code .= "\t}\n";
 }
 
@@ -583,7 +583,7 @@ if($namespace && !$pear_style){
 	$dirname = str_replace('\\', '/', $namespace);
 	if(!is_dir($dirname))
 		mkdir($dirname, 0777, true);
-	
+
 	$filename = $dirname . '/' . $filename;
 }
 
