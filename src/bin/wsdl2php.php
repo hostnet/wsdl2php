@@ -619,12 +619,12 @@ function parseDoc($prefix, $doc) {
 	foreach($words as $word){
 		$line .= $word.' ';
 		if(strlen($line) > 90){
-			$code .= $line."\n";
+			$code .= rtrim($line)."\n";
 			$line = $prefix;
 		}
 	}
 	if($line != $prefix)
-		$code .= $line."\n";
+		$code .= rtrim($line)."\n";
 
 	return $code;
 }
