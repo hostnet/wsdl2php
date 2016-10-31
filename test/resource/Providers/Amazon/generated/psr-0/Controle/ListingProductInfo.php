@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class ListingProductInfo {
+
+class ListingProductInfo
+{
 	/**
 	 * @var \Controle\ListingProductDetailsArray
 	 */
-	public $ListingProductDetails;
+	public $listingproductdetails;
 	/**
 	 * @param ListingProductDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setListingProductDetails($val) {
-		
-		$this->ListingProductDetails = (int)$val;
+	public function setListingProductDetails($val)
+	{
+        $this->listingproductdetails = (int)$val;
 	}
-
 }
-

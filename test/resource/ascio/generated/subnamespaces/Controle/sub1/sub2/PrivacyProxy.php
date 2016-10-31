@@ -1,71 +1,71 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class PrivacyProxy {
+
+class PrivacyProxy
+{
 	/**
 	 * @var \Controle\sub1\sub2\PrivacyProxyType
 	 */
-	public $Type;
+	public $type;
 	/**
 	 * @var boolean
 	 */
-	public $PrivacyAdmin;
+	public $privacyadmin;
 	/**
 	 * @var boolean
 	 */
-	public $PrivacyTech;
+	public $privacytech;
 	/**
 	 * @var boolean
 	 */
-	public $PrivacyBilling;
+	public $privacybilling;
 	/**
 	 * @var \Controle\sub1\sub2\Extensions
 	 */
-	public $Extensions;
+	public $extensions;
 	/**
 	 * @param PrivacyProxyType $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		
-		$this->Type = (int)$val;
+	public function setType($val)
+	{
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setPrivacyAdmin($val) {
-		
-		$this->PrivacyAdmin = (int)$val;
+	public function setPrivacyAdmin($val)
+	{
+        $this->privacyadmin = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setPrivacyTech($val) {
-		
-		$this->PrivacyTech = (int)$val;
+	public function setPrivacyTech($val)
+	{
+        $this->privacytech = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setPrivacyBilling($val) {
-		
-		$this->PrivacyBilling = (int)$val;
+	public function setPrivacyBilling($val)
+	{
+        $this->privacybilling = (int)$val;
 	}
 
 	/**
 	 * @param Extensions $val
 	 * @throws Exception
 	 */
-	public function setExtensions($val) {
-		
-		$this->Extensions = (int)$val;
+	public function setExtensions($val)
+	{
+        $this->extensions = (int)$val;
 	}
-
 }
-

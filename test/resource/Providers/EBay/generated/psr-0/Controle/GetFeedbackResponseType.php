@@ -1,28 +1,31 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetFeedbackResponseType
  * The GetFeedback response contains the specified user's total feedback score, feedback summary
  * data, and (if the applicable detail level is specified) an array of individual feedbacks.
  */
-class GetFeedbackResponseType extends \Controle\AbstractResponseType {
+class GetFeedbackResponseType extends
+ \Controle\AbstractResponseType
+{
 	/**
 	 * @var \Controle\FeedbackDetailArrayType | Contains the individual feedbacks for the user, one FeedbackDetailType object for each
 	 * feedback. Only populated with data when a detail level of ReturnAll is specified in the
 	 * request. Not returned if you specify FeedbackID in the request.
 	 */
-	public $FeedbackDetailArray;
+	public $feedbackdetailarray;
 	/**
 	 * @var int | Indicates the number of FeedbackDetailType objects returned in the FeedbackDetailArray
 	 * property. Only applicable if feedback details are returned.
 	 */
-	public $FeedbackDetailItemTotal;
+	public $feedbackdetailitemtotal;
 	/**
 	 * @var \Controle\FeedbackSummaryType | Summary feedback data for the user. Contains counts of positive, neutral, and negative
 	 * feedback for predefined time periods. Only applicable if feedback details are returned.
 	 */
-	public $FeedbackSummary;
+	public $feedbacksummary;
 	/**
 	 * @var int | The aggregate feedback score for a user. A user's feedback score is the net positive feedback
 	 * minus the net negative feedback left for the user. Feedback scores are a quantitative expression
@@ -42,42 +45,46 @@ class GetFeedbackResponseType extends \Controle\AbstractResponseType {
 	 * for that bidder, and the seller of an item that the user is bidding on. For all other users,
 	 * the value -99 is returned.
 	 */
-	public $FeedbackScore;
+	public $feedbackscore;
 	/**
 	 * @param FeedbackDetailArrayType $val
 	 * @throws Exception
 	 */
-	public function setFeedbackDetailArray($val) {
-		
-		$this->FeedbackDetailArray = (int)$val;
+	public function setFeedbackDetailArray($val)
+	{
+        $this->feedbackdetailarray = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setFeedbackDetailItemTotal($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->FeedbackDetailItemTotal = (int)$val;
+	public function setFeedbackDetailItemTotal($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->feedbackdetailitemtotal = (int)$val;
 	}
 
 	/**
 	 * @param FeedbackSummaryType $val
 	 * @throws Exception
 	 */
-	public function setFeedbackSummary($val) {
-		
-		$this->FeedbackSummary = (int)$val;
+	public function setFeedbackSummary($val)
+	{
+        $this->feedbacksummary = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setFeedbackScore($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->FeedbackScore = (int)$val;
+	public function setFeedbackScore($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->feedbackscore = (int)$val;
 	}
-
 }
-

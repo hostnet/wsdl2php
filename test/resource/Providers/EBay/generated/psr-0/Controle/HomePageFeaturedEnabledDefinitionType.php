@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * HomePageFeaturedEnabledDefinitionType
  * Defines whether Home Page Featured is available on the site.
  */
-class HomePageFeaturedEnabledDefinitionType {
+class HomePageFeaturedEnabledDefinitionType
+{
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -14,10 +16,8 @@ class HomePageFeaturedEnabledDefinitionType {
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

@@ -1,46 +1,47 @@
 <?php
 
 namespace Controle;
-class SummaryFrequencyCodeType {
-    const EverySunday = 'EverySunday';
-    const EveryMonday = 'EveryMonday';
-    const EveryTuesday = 'EveryTuesday';
-    const EveryWednesday = 'EveryWednesday';
-    const EveryThursday = 'EveryThursday';
-    const EveryFriday = 'EveryFriday';
-    const EverySaturday = 'EverySaturday';
-    const MonthlyOn1st = 'MonthlyOn1st';
-    const MonthlyOn2nd = 'MonthlyOn2nd';
-    const MonthlyOn3rd = 'MonthlyOn3rd';
-    const MonthlyOn4th = 'MonthlyOn4th';
-    const MonthlyOn5th = 'MonthlyOn5th';
-    const MonthlyOn6th = 'MonthlyOn6th';
-    const MonthlyOn7th = 'MonthlyOn7th';
-    const MonthlyOn8th = 'MonthlyOn8th';
-    const MonthlyOn9th = 'MonthlyOn9th';
-    const MonthlyOn10th = 'MonthlyOn10th';
-    const MonthlyOn11th = 'MonthlyOn11th';
-    const MonthlyOn12th = 'MonthlyOn12th';
-    const MonthlyOn13th = 'MonthlyOn13th';
-    const MonthlyOn14th = 'MonthlyOn14th';
-    const MonthlyOn15th = 'MonthlyOn15th';
-    const MonthlyOn16th = 'MonthlyOn16th';
-    const MonthlyOn17th = 'MonthlyOn17th';
-    const MonthlyOn18th = 'MonthlyOn18th';
-    const MonthlyOn19th = 'MonthlyOn19th';
-    const MonthlyOn20th = 'MonthlyOn20th';
-    const MonthlyOn21st = 'MonthlyOn21st';
-    const MonthlyOn22nd = 'MonthlyOn22nd';
-    const MonthlyOn23rd = 'MonthlyOn23rd';
-    const MonthlyOn24th = 'MonthlyOn24th';
-    const MonthlyOn25th = 'MonthlyOn25th';
-    const MonthlyOn26th = 'MonthlyOn26th';
-    const MonthlyOn27th = 'MonthlyOn27th';
-    const MonthlyOn28th = 'MonthlyOn28th';
-    const MonthlyOn29th = 'MonthlyOn29th';
-    const MonthlyOn30th = 'MonthlyOn30th';
-    const MonthlyOn31st = 'MonthlyOn31st';
-    const Every31Days = 'Every31Days';
-    const Every60Days = 'Every60Days';
-}
 
+class SummaryFrequencyCodeType
+{
+    const EVERYSUNDAY    = 'EverySunday';
+    const EVERYMONDAY    = 'EveryMonday';
+    const EVERYTUESDAY   = 'EveryTuesday';
+    const EVERYWEDNESDAY = 'EveryWednesday';
+    const EVERYTHURSDAY  = 'EveryThursday';
+    const EVERYFRIDAY    = 'EveryFriday';
+    const EVERYSATURDAY  = 'EverySaturday';
+    const MONTHLYON1ST   = 'MonthlyOn1st';
+    const MONTHLYON2ND   = 'MonthlyOn2nd';
+    const MONTHLYON3RD   = 'MonthlyOn3rd';
+    const MONTHLYON4TH   = 'MonthlyOn4th';
+    const MONTHLYON5TH   = 'MonthlyOn5th';
+    const MONTHLYON6TH   = 'MonthlyOn6th';
+    const MONTHLYON7TH   = 'MonthlyOn7th';
+    const MONTHLYON8TH   = 'MonthlyOn8th';
+    const MONTHLYON9TH   = 'MonthlyOn9th';
+    const MONTHLYON10TH  = 'MonthlyOn10th';
+    const MONTHLYON11TH  = 'MonthlyOn11th';
+    const MONTHLYON12TH  = 'MonthlyOn12th';
+    const MONTHLYON13TH  = 'MonthlyOn13th';
+    const MONTHLYON14TH  = 'MonthlyOn14th';
+    const MONTHLYON15TH  = 'MonthlyOn15th';
+    const MONTHLYON16TH  = 'MonthlyOn16th';
+    const MONTHLYON17TH  = 'MonthlyOn17th';
+    const MONTHLYON18TH  = 'MonthlyOn18th';
+    const MONTHLYON19TH  = 'MonthlyOn19th';
+    const MONTHLYON20TH  = 'MonthlyOn20th';
+    const MONTHLYON21ST  = 'MonthlyOn21st';
+    const MONTHLYON22ND  = 'MonthlyOn22nd';
+    const MONTHLYON23RD  = 'MonthlyOn23rd';
+    const MONTHLYON24TH  = 'MonthlyOn24th';
+    const MONTHLYON25TH  = 'MonthlyOn25th';
+    const MONTHLYON26TH  = 'MonthlyOn26th';
+    const MONTHLYON27TH  = 'MonthlyOn27th';
+    const MONTHLYON28TH  = 'MonthlyOn28th';
+    const MONTHLYON29TH  = 'MonthlyOn29th';
+    const MONTHLYON30TH  = 'MonthlyOn30th';
+    const MONTHLYON31ST  = 'MonthlyOn31st';
+    const EVERY31DAYS    = 'Every31Days';
+    const EVERY60DAYS    = 'Every60Days';
+}

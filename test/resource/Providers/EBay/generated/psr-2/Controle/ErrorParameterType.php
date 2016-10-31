@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * ErrorParameterType
  * A variable that contains specific information about the context of this error. For example,
@@ -9,11 +10,12 @@ namespace Controle;
  * users need to correct. Also use error parameters to distinguish between errors when multiple errors
  * are returned.
  */
-class ErrorParameterType {
+class ErrorParameterType
+{
     /**
      * @var string | Specifies the value for the property.
      */
-    public $Value;
+    public $value;
     /**
      * @var \Controle\<anyXML>
      */
@@ -21,22 +23,25 @@ class ErrorParameterType {
     /**
      * @var string
      */
-    public $ParamID;
+    public $paramid;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setValue($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
-        $this->Value = (int)$val;
+    public function setValue($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Value');
+        }
+        $this->value = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
 
@@ -44,10 +49,11 @@ class ErrorParameterType {
      * @param string $val
      * @throws Exception
      */
-    public function setParamID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ParamID');
-        $this->ParamID = (int)$val;
+    public function setParamID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ParamID');
+        }
+        $this->paramid = (int)$val;
     }
-
 }
-

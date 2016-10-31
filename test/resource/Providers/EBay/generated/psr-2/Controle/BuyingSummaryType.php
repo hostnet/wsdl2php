@@ -1,97 +1,112 @@
 <?php
 
 namespace Controle;
-class BuyingSummaryType {
+
+class BuyingSummaryType
+{
     /**
      * @var int | The number of items the user has bid on.
      */
-    public $BiddingCount;
+    public $biddingcount;
     /**
      * @var int | The number of items the user has bid on and is winning, but that have not yet ended.
      */
-    public $WinningCount;
+    public $winningcount;
     /**
      * @var \Controle\AmountType | The total cost of items the user is presently winning.
      */
-    public $TotalWinningCost;
+    public $totalwinningcost;
     /**
      * @var int | The number of items the user has bid on and won.
      */
-    public $WonCount;
+    public $woncount;
     /**
      * @var \Controle\AmountType | The total cost of items the user has bid on and won.
      */
-    public $TotalWonCost;
+    public $totalwoncost;
     /**
      * @var int | The time period for which won items are displayed. Default is 31 days.
      */
-    public $WonDurationInDays;
+    public $wondurationindays;
     /**
      * @var int | The number of items the user has made best offers on.
      */
-    public $BestOfferCount;
+    public $bestoffercount;
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setBiddingCount($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->BiddingCount = (int)$val;
+    public function setBiddingCount($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->biddingcount = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setWinningCount($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->WinningCount = (int)$val;
+    public function setWinningCount($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->winningcount = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setTotalWinningCost($val) {
-        
-        $this->TotalWinningCost = (int)$val;
+    public function setTotalWinningCost($val)
+    {
+        $this->totalwinningcost = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setWonCount($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->WonCount = (int)$val;
+    public function setWonCount($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->woncount = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setTotalWonCost($val) {
-        
-        $this->TotalWonCost = (int)$val;
+    public function setTotalWonCost($val)
+    {
+        $this->totalwoncost = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setWonDurationInDays($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->WonDurationInDays = (int)$val;
+    public function setWonDurationInDays($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->wondurationindays = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setBestOfferCount($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->BestOfferCount = (int)$val;
+    public function setBestOfferCount($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->bestoffercount = (int)$val;
     }
-
 }
-

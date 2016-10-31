@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class AckMessageResponse {
+
+class AckMessageResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $AckMessageResult;
+	public $ackmessageresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setAckMessageResult($val) {
-		
-		$this->AckMessageResult = (int)$val;
+	public function setAckMessageResult($val)
+	{
+        $this->ackmessageresult = (int)$val;
 	}
-
 }
-

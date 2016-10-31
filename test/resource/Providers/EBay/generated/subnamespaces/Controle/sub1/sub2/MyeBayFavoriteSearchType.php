@@ -1,19 +1,21 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * MyeBayFavoriteSearchType
  * Characteristics of a saved My eBay Favorite Search.
  */
-class MyeBayFavoriteSearchType {
+class MyeBayFavoriteSearchType
+{
 	/**
 	 * @var string | The name of the My eBay Favorite Search.
 	 */
-	public $SearchName;
+	public $searchname;
 	/**
 	 * @var string | The query string of a My eBay Favorite Search.
 	 */
-	public $SearchQuery;
+	public $searchquery;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -22,28 +24,32 @@ class MyeBayFavoriteSearchType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSearchName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SearchName');
-		$this->SearchName = (int)$val;
+	public function setSearchName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SearchName');
+        }
+        $this->searchname = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSearchQuery($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SearchQuery');
-		$this->SearchQuery = (int)$val;
+	public function setSearchQuery($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SearchQuery');
+        }
+        $this->searchquery = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

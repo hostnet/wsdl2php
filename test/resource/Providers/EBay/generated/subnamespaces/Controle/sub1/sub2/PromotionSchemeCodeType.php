@@ -1,16 +1,17 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class PromotionSchemeCodeType {
-	const ItemToItem = 'ItemToItem';
-	const ItemToStoreCat = 'ItemToStoreCat';
-	const StoreToStoreCat = 'StoreToStoreCat';
-	const ItemToDefaultRule = 'ItemToDefaultRule';
-	const DefaultRule = 'DefaultRule';
-	const CategoryProximity = 'CategoryProximity';
-	const RelatedCategoryRule = 'RelatedCategoryRule';
-	const DefaultUpSellLogic = 'DefaultUpSellLogic';
-	const DefaultCrossSellLogic = 'DefaultCrossSellLogic';
-	const CustomCode = 'CustomCode';
-}
 
+class PromotionSchemeCodeType
+{
+	const ITEMTOITEM            = 'ItemToItem';
+	const ITEMTOSTORECAT        = 'ItemToStoreCat';
+	const STORETOSTORECAT       = 'StoreToStoreCat';
+	const ITEMTODEFAULTRULE     = 'ItemToDefaultRule';
+	const DEFAULTRULE           = 'DefaultRule';
+	const CATEGORYPROXIMITY     = 'CategoryProximity';
+	const RELATEDCATEGORYRULE   = 'RelatedCategoryRule';
+	const DEFAULTUPSELLLOGIC    = 'DefaultUpSellLogic';
+	const DEFAULTCROSSSELLLOGIC = 'DefaultCrossSellLogic';
+	const CUSTOMCODE            = 'CustomCode';
+}

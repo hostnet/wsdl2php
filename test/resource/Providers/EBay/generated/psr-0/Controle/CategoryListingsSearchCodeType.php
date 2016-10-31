@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class CategoryListingsSearchCodeType {
-	const Featured = 'Featured';
-	const SuperFeatured = 'SuperFeatured';
-	const CustomCode = 'CustomCode';
-}
 
+class CategoryListingsSearchCodeType
+{
+	const FEATURED      = 'Featured';
+	const SUPERFEATURED = 'SuperFeatured';
+	const CUSTOMCODE    = 'CustomCode';
+}

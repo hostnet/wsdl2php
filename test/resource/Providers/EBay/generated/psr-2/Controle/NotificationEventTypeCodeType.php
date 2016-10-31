@@ -1,48 +1,49 @@
 <?php
 
 namespace Controle;
-class NotificationEventTypeCodeType {
-    const None = 'None';
-    const OutBid = 'OutBid';
-    const EndOfAuction = 'EndOfAuction';
-    const AuctionCheckoutComplete = 'AuctionCheckoutComplete';
-    const FixedPriceEndOfTransaction = 'FixedPriceEndOfTransaction';
-    const CheckoutBuyerRequestsTotal = 'CheckoutBuyerRequestsTotal';
-    const Feedback = 'Feedback';
-    const FeedbackForSeller = 'FeedbackForSeller';
-    const FixedPriceTransaction = 'FixedPriceTransaction';
-    const SecondChanceOffer = 'SecondChanceOffer';
-    const AskSellerQuestion = 'AskSellerQuestion';
-    const ItemListed = 'ItemListed';
-    const ItemRevised = 'ItemRevised';
-    const BuyerResponseDispute = 'BuyerResponseDispute';
-    const SellerOpenedDispute = 'SellerOpenedDispute';
-    const SellerRespondedToDispute = 'SellerRespondedToDispute';
-    const SellerClosedDispute = 'SellerClosedDispute';
-    const BestOffer = 'BestOffer';
-    const MyMessagesAlertHeader = 'MyMessagesAlertHeader';
-    const MyMessagesAlert = 'MyMessagesAlert';
-    const MyMessageseBayMessageHeader = 'MyMessageseBayMessageHeader';
-    const MyMessageseBayMessage = 'MyMessageseBayMessage';
-    const MyMessagesM2MMessageHeader = 'MyMessagesM2MMessageHeader';
-    const MyMessagesM2MMessage = 'MyMessagesM2MMessage';
-    const INRBuyerOpenedDispute = 'INRBuyerOpenedDispute';
-    const INRBuyerRespondedToDispute = 'INRBuyerRespondedToDispute';
-    const INRBuyerClosedDispute = 'INRBuyerClosedDispute';
-    const INRSellerRespondedToDispute = 'INRSellerRespondedToDispute';
-    const Checkout = 'Checkout';
-    const WatchedItemEndingSoon = 'WatchedItemEndingSoon';
-    const ItemClosed = 'ItemClosed';
-    const ItemSuspended = 'ItemSuspended';
-    const ItemSold = 'ItemSold';
-    const ItemExtended = 'ItemExtended';
-    const UserIDChanged = 'UserIDChanged';
-    const EmailAddressChanged = 'EmailAddressChanged';
-    const PasswordChanged = 'PasswordChanged';
-    const PasswordHintChanged = 'PasswordHintChanged';
-    const PaymentDetailChanged = 'PaymentDetailChanged';
-    const AccountSuspended = 'AccountSuspended';
-    const AccountSummary = 'AccountSummary';
-    const CustomCode = 'CustomCode';
-}
 
+class NotificationEventTypeCodeType
+{
+    const NONE                        = 'None';
+    const OUTBID                      = 'OutBid';
+    const ENDOFAUCTION                = 'EndOfAuction';
+    const AUCTIONCHECKOUTCOMPLETE     = 'AuctionCheckoutComplete';
+    const FIXEDPRICEENDOFTRANSACTION  = 'FixedPriceEndOfTransaction';
+    const CHECKOUTBUYERREQUESTSTOTAL  = 'CheckoutBuyerRequestsTotal';
+    const FEEDBACK                    = 'Feedback';
+    const FEEDBACKFORSELLER           = 'FeedbackForSeller';
+    const FIXEDPRICETRANSACTION       = 'FixedPriceTransaction';
+    const SECONDCHANCEOFFER           = 'SecondChanceOffer';
+    const ASKSELLERQUESTION           = 'AskSellerQuestion';
+    const ITEMLISTED                  = 'ItemListed';
+    const ITEMREVISED                 = 'ItemRevised';
+    const BUYERRESPONSEDISPUTE        = 'BuyerResponseDispute';
+    const SELLEROPENEDDISPUTE         = 'SellerOpenedDispute';
+    const SELLERRESPONDEDTODISPUTE    = 'SellerRespondedToDispute';
+    const SELLERCLOSEDDISPUTE         = 'SellerClosedDispute';
+    const BESTOFFER                   = 'BestOffer';
+    const MYMESSAGESALERTHEADER       = 'MyMessagesAlertHeader';
+    const MYMESSAGESALERT             = 'MyMessagesAlert';
+    const MYMESSAGESEBAYMESSAGEHEADER = 'MyMessageseBayMessageHeader';
+    const MYMESSAGESEBAYMESSAGE       = 'MyMessageseBayMessage';
+    const MYMESSAGESM2MMESSAGEHEADER  = 'MyMessagesM2MMessageHeader';
+    const MYMESSAGESM2MMESSAGE        = 'MyMessagesM2MMessage';
+    const INRBUYEROPENEDDISPUTE       = 'INRBuyerOpenedDispute';
+    const INRBUYERRESPONDEDTODISPUTE  = 'INRBuyerRespondedToDispute';
+    const INRBUYERCLOSEDDISPUTE       = 'INRBuyerClosedDispute';
+    const INRSELLERRESPONDEDTODISPUTE = 'INRSellerRespondedToDispute';
+    const CHECKOUT                    = 'Checkout';
+    const WATCHEDITEMENDINGSOON       = 'WatchedItemEndingSoon';
+    const ITEMCLOSED                  = 'ItemClosed';
+    const ITEMSUSPENDED               = 'ItemSuspended';
+    const ITEMSOLD                    = 'ItemSold';
+    const ITEMEXTENDED                = 'ItemExtended';
+    const USERIDCHANGED               = 'UserIDChanged';
+    const EMAILADDRESSCHANGED         = 'EmailAddressChanged';
+    const PASSWORDCHANGED             = 'PasswordChanged';
+    const PASSWORDHINTCHANGED         = 'PasswordHintChanged';
+    const PAYMENTDETAILCHANGED        = 'PaymentDetailChanged';
+    const ACCOUNTSUSPENDED            = 'AccountSuspended';
+    const ACCOUNTSUMMARY              = 'AccountSummary';
+    const CUSTOMCODE                  = 'CustomCode';
+}

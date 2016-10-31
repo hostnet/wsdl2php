@@ -1,149 +1,182 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class DnsSecKey {
+
+class DnsSecKey
+{
 	/**
 	 * @var string
 	 */
-	public $Handle;
+	public $handle;
 	/**
 	 * @var string
 	 */
-	public $Status;
+	public $status;
 	/**
 	 * @var string
 	 */
-	public $DigestAlgorithm;
+	public $digestalgorithm;
 	/**
 	 * @var string
 	 */
-	public $DigestType;
+	public $digesttype;
 	/**
 	 * @var string
 	 */
-	public $Digest;
+	public $digest;
 	/**
 	 * @var string
 	 */
-	public $Protocol;
+	public $protocol;
 	/**
 	 * @var string
 	 */
-	public $KeyType;
+	public $keytype;
 	/**
 	 * @var string
 	 */
-	public $KeyAlgorithm;
+	public $keyalgorithm;
 	/**
 	 * @var string
 	 */
-	public $KeyTag;
+	public $keytag;
 	/**
 	 * @var string
 	 */
-	public $PublicKey;
+	public $publickey;
 	/**
 	 * @var string
 	 */
-	public $CreDate;
+	public $credate;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHandle($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Handle');
-		$this->Handle = (int)$val;
+	public function setHandle($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Handle');
+        }
+        $this->handle = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setStatus($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Status');
-		$this->Status = (int)$val;
+	public function setStatus($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Status');
+        }
+        $this->status = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDigestAlgorithm($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DigestAlgorithm');
-		$this->DigestAlgorithm = (int)$val;
+	public function setDigestAlgorithm($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DigestAlgorithm');
+        }
+        $this->digestalgorithm = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDigestType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DigestType');
-		$this->DigestType = (int)$val;
+	public function setDigestType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DigestType');
+        }
+        $this->digesttype = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDigest($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Digest');
-		$this->Digest = (int)$val;
+	public function setDigest($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Digest');
+        }
+        $this->digest = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setProtocol($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Protocol');
-		$this->Protocol = (int)$val;
+	public function setProtocol($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Protocol');
+        }
+        $this->protocol = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for KeyType');
-		$this->KeyType = (int)$val;
+	public function setKeyType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for KeyType');
+        }
+        $this->keytype = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyAlgorithm($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for KeyAlgorithm');
-		$this->KeyAlgorithm = (int)$val;
+	public function setKeyAlgorithm($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for KeyAlgorithm');
+        }
+        $this->keyalgorithm = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for KeyTag');
-		$this->KeyTag = (int)$val;
+	public function setKeyTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for KeyTag');
+        }
+        $this->keytag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPublicKey($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PublicKey');
-		$this->PublicKey = (int)$val;
+	public function setPublicKey($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PublicKey');
+        }
+        $this->publickey = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCreDate($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CreDate');
-		$this->CreDate = (int)$val;
+	public function setCreDate($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CreDate');
+        }
+        $this->credate = (int)$val;
 	}
-
 }
-

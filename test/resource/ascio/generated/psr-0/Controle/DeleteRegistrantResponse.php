@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class DeleteRegistrantResponse {
+
+class DeleteRegistrantResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $DeleteRegistrantResult;
+	public $deleteregistrantresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setDeleteRegistrantResult($val) {
-		
-		$this->DeleteRegistrantResult = (int)$val;
+	public function setDeleteRegistrantResult($val)
+	{
+        $this->deleteregistrantresult = (int)$val;
 	}
-
 }
-

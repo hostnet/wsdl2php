@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class ApplicationDeviceTypeCodeType {
-    const Browser = 'Browser';
-    const Wireless = 'Wireless';
-    const Desktop = 'Desktop';
-    const SetTopTVBox = 'SetTopTVBox';
-    const CustomCode = 'CustomCode';
-}
 
+class ApplicationDeviceTypeCodeType
+{
+    const BROWSER     = 'Browser';
+    const WIRELESS    = 'Wireless';
+    const DESKTOP     = 'Desktop';
+    const SETTOPTVBOX = 'SetTopTVBox';
+    const CUSTOMCODE  = 'CustomCode';
+}

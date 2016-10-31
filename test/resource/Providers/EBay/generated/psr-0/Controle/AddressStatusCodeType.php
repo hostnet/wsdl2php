@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class AddressStatusCodeType {
-	const None = 'None';
-	const Confirmed = 'Confirmed';
-	const Unconfirmed = 'Unconfirmed';
-	const CustomCode = 'CustomCode';
-}
 
+class AddressStatusCodeType
+{
+	const NONE        = 'None';
+	const CONFIRMED   = 'Confirmed';
+	const UNCONFIRMED = 'Unconfirmed';
+	const CUSTOMCODE  = 'CustomCode';
+}

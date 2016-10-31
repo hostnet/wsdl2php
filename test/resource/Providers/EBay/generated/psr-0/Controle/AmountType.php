@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * AmountType
  * Basic type for specifying monetary amounts. A double value (e.g., 1.00 or 1.0) is meaningful
@@ -9,7 +10,8 @@ namespace Controle;
  * double) and the currency. Details such as prices, fees, costs, and payments are specified
  * as amount types.
  */
-class AmountType {
+class AmountType
+{
 	/**
 	 * @var double
 	 */
@@ -17,24 +19,22 @@ class AmountType {
 	/**
 	 * @var \Controle\CurrencyCodeType
 	 */
-	public $currencyID;
+	public $currencyid;
 	/**
 	 * @param double $val
 	 * @throws Exception
 	 */
-	public function set_($val) {
-		
-		$this->_ = (int)$val;
+	public function set($val)
+	{
+        $this->_ = (int)$val;
 	}
 
 	/**
 	 * @param CurrencyCodeType $val
 	 * @throws Exception
 	 */
-	public function setCurrencyID($val) {
-		
-		$this->currencyID = (int)$val;
+	public function setCurrencyID($val)
+	{
+        $this->currencyid = (int)$val;
 	}
-
 }
-

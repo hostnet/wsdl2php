@@ -1,149 +1,167 @@
 <?php
 
 namespace Controle;
-class GoogleSearchResult {
+
+class GoogleSearchResult
+{
     /**
      * @var boolean
      */
-    public $documentFiltering;
+    public $documentfiltering;
     /**
      * @var string
      */
-    public $searchComments;
+    public $searchcomments;
     /**
      * @var int
      */
-    public $estimatedTotalResultsCount;
+    public $estimatedtotalresultscount;
     /**
      * @var boolean
      */
-    public $estimateIsExact;
+    public $estimateisexact;
     /**
      * @var \Controle\ResultElementArray
      */
-    public $resultElements;
+    public $resultelements;
     /**
      * @var string
      */
-    public $searchQuery;
+    public $searchquery;
     /**
      * @var int
      */
-    public $startIndex;
+    public $startindex;
     /**
      * @var int
      */
-    public $endIndex;
+    public $endindex;
     /**
      * @var string
      */
-    public $searchTips;
+    public $searchtips;
     /**
      * @var \Controle\DirectoryCategoryArray
      */
-    public $directoryCategories;
+    public $directorycategories;
     /**
      * @var double
      */
-    public $searchTime;
+    public $searchtime;
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setDocumentFiltering($val) {
-        
-        $this->documentFiltering = (int)$val;
+    public function setDocumentFiltering($val)
+    {
+        $this->documentfiltering = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setSearchComments($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for searchComments');
-        $this->searchComments = (int)$val;
+    public function setSearchComments($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for searchComments');
+        }
+        $this->searchcomments = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setEstimatedTotalResultsCount($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->estimatedTotalResultsCount = (int)$val;
+    public function setEstimatedTotalResultsCount($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->estimatedtotalresultscount = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setEstimateIsExact($val) {
-        
-        $this->estimateIsExact = (int)$val;
+    public function setEstimateIsExact($val)
+    {
+        $this->estimateisexact = (int)$val;
     }
 
     /**
      * @param ResultElementArray $val
      * @throws Exception
      */
-    public function setResultElements($val) {
-        
-        $this->resultElements = (int)$val;
+    public function setResultElements($val)
+    {
+        $this->resultelements = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setSearchQuery($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for searchQuery');
-        $this->searchQuery = (int)$val;
+    public function setSearchQuery($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for searchQuery');
+        }
+        $this->searchquery = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setStartIndex($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->startIndex = (int)$val;
+    public function setStartIndex($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->startindex = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setEndIndex($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->endIndex = (int)$val;
+    public function setEndIndex($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->endindex = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setSearchTips($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for searchTips');
-        $this->searchTips = (int)$val;
+    public function setSearchTips($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for searchTips');
+        }
+        $this->searchtips = (int)$val;
     }
 
     /**
      * @param DirectoryCategoryArray $val
      * @throws Exception
      */
-    public function setDirectoryCategories($val) {
-        
-        $this->directoryCategories = (int)$val;
+    public function setDirectoryCategories($val)
+    {
+        $this->directorycategories = (int)$val;
     }
 
     /**
      * @param double $val
      * @throws Exception
      */
-    public function setSearchTime($val) {
-        
-        $this->searchTime = (int)$val;
+    public function setSearchTime($val)
+    {
+        $this->searchtime = (int)$val;
     }
-
 }
-

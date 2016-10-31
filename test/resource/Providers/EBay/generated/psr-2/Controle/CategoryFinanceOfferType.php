@@ -1,19 +1,21 @@
 <?php
 
 namespace Controle;
+
 /**
  * CategoryFinanceOfferType
  * A financing offer valid within a particular category.
  */
-class CategoryFinanceOfferType {
+class CategoryFinanceOfferType
+{
     /**
      * @var string | Specifies a promotional offer that allow the buyer to purchase items on credit.
      */
-    public $FinanceOfferID;
+    public $financeofferid;
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $CategoryID;
+    public $categoryid;
     /**
      * @var \Controle\<anyXML>
      */
@@ -22,28 +24,32 @@ class CategoryFinanceOfferType {
      * @param string $val
      * @throws Exception
      */
-    public function setFinanceOfferID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for FinanceOfferID');
-        $this->FinanceOfferID = (int)$val;
+    public function setFinanceOfferID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+        }
+        $this->financeofferid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setCategoryID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
-        $this->CategoryID = (int)$val;
+    public function setCategoryID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CategoryID');
+        }
+        $this->categoryid = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

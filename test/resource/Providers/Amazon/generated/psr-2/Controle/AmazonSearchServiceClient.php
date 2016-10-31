@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * AmazonSearchServiceClient
  */
@@ -8,16 +9,26 @@ class AmazonSearchServiceClient extends \SoapClient {
 
     const WSDL_FILE = "AmazonWebServicesTest.wsdl";
     private $classmap = array(
-        'ProductInfo' => '\Controle\ProductInfo',
-        'Reviews' => '\Controle\Reviews',
-        'MarketplaceSearch' => '\Controle\MarketplaceSearch',
-        'SellerProfile' => '\Controle\SellerProfile',
-        'SellerSearch' => '\Controle\SellerSearch',
-        'ListingProductInfo' => '\Controle\ListingProductInfo',
-        'ListingProductDetails' => '\Controle\ListingProductDetails',
-        'SellerFeedback' => '\Controle\SellerFeedback',
-        'ThirdPartyProductInfo' => '\Controle\ThirdPartyProductInfo',
-        'ShoppingCart' => '\Controle\ShoppingCart',
+        'ProductInfo\,' =>
+            '\Controle\ProductInfo',
+        'Reviews\,' =>
+            '\Controle\Reviews',
+        'MarketplaceSearch\,' =>
+            '\Controle\MarketplaceSearch',
+        'SellerProfile\,' =>
+            '\Controle\SellerProfile',
+        'SellerSearch\,' =>
+            '\Controle\SellerSearch',
+        'ListingProductInfo\,' =>
+            '\Controle\ListingProductInfo',
+        'ListingProductDetails\,' =>
+            '\Controle\ListingProductDetails',
+        'SellerFeedback\,' =>
+            '\Controle\SellerFeedback',
+        'ThirdPartyProductInfo\,' =>
+            '\Controle\ThirdPartyProductInfo',
+        'ShoppingCart\,' =>
+            '\Controle\ShoppingCart',
     );
 
     public function __construct($wsdl = null, $options = array()) {
@@ -353,5 +364,4 @@ class AmazonSearchServiceClient extends \SoapClient {
             array('uri'=>'http://soap.amazon.com')
         );
     }
-
 }

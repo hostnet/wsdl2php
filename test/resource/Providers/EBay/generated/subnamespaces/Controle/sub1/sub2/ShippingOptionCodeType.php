@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class ShippingOptionCodeType {
-	const SiteOnly = 'SiteOnly';
-	const WorldWide = 'WorldWide';
-	const SitePlusRegions = 'SitePlusRegions';
-	const WillNotShip = 'WillNotShip';
-	const CustomCode = 'CustomCode';
-}
 
+class ShippingOptionCodeType
+{
+	const SITEONLY        = 'SiteOnly';
+	const WORLDWIDE       = 'WorldWide';
+	const SITEPLUSREGIONS = 'SitePlusRegions';
+	const WILLNOTSHIP     = 'WillNotShip';
+	const CUSTOMCODE      = 'CustomCode';
+}

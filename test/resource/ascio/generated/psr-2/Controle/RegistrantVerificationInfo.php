@@ -1,45 +1,48 @@
 <?php
 
 namespace Controle;
-class RegistrantVerificationInfo {
+
+class RegistrantVerificationInfo
+{
     /**
      * @var string
      */
-    public $EmailAddress;
+    public $emailaddress;
     /**
      * @var \Controle\RegistrantVerificationStatus
      */
-    public $VerificationStatus;
+    public $verificationstatus;
     /**
      * @var \Controle\RegistrantVerificationDetails
      */
-    public $VerificationDetails;
+    public $verificationdetails;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setEmailAddress($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for EmailAddress');
-        $this->EmailAddress = (int)$val;
+    public function setEmailAddress($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for EmailAddress');
+        }
+        $this->emailaddress = (int)$val;
     }
 
     /**
      * @param RegistrantVerificationStatus $val
      * @throws Exception
      */
-    public function setVerificationStatus($val) {
-        
-        $this->VerificationStatus = (int)$val;
+    public function setVerificationStatus($val)
+    {
+        $this->verificationstatus = (int)$val;
     }
 
     /**
      * @param RegistrantVerificationDetails $val
      * @throws Exception
      */
-    public function setVerificationDetails($val) {
-        
-        $this->VerificationDetails = (int)$val;
+    public function setVerificationDetails($val)
+    {
+        $this->verificationdetails = (int)$val;
     }
-
 }
-

@@ -1,14 +1,15 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class AccountEntrySortTypeCodeType {
-	const None = 'None';
-	const AccountEntryCreatedTimeAscending = 'AccountEntryCreatedTimeAscending';
-	const AccountEntryCreatedTimeDescending = 'AccountEntryCreatedTimeDescending';
-	const AccountEntryItemNumberAscending = 'AccountEntryItemNumberAscending';
-	const AccountEntryItemNumberDescending = 'AccountEntryItemNumberDescending';
-	const AccountEntryFeeTypeAscending = 'AccountEntryFeeTypeAscending';
-	const AccountEntryFeeTypeDescending = 'AccountEntryFeeTypeDescending';
-	const CustomCode = 'CustomCode';
-}
 
+class AccountEntrySortTypeCodeType
+{
+	const NONE                              = 'None';
+	const ACCOUNTENTRYCREATEDTIMEASCENDING  = 'AccountEntryCreatedTimeAscending';
+	const ACCOUNTENTRYCREATEDTIMEDESCENDING = 'AccountEntryCreatedTimeDescending';
+	const ACCOUNTENTRYITEMNUMBERASCENDING   = 'AccountEntryItemNumberAscending';
+	const ACCOUNTENTRYITEMNUMBERDESCENDING  = 'AccountEntryItemNumberDescending';
+	const ACCOUNTENTRYFEETYPEASCENDING      = 'AccountEntryFeeTypeAscending';
+	const ACCOUNTENTRYFEETYPEDESCENDING     = 'AccountEntryFeeTypeDescending';
+	const CUSTOMCODE                        = 'CustomCode';
+}

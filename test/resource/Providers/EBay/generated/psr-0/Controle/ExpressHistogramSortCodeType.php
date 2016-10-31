@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class ExpressHistogramSortCodeType {
-	const ItemCount = 'ItemCount';
-	const ProductCount = 'ProductCount';
-	const Alphabetical = 'Alphabetical';
-	const CustomCode = 'CustomCode';
-}
 
+class ExpressHistogramSortCodeType
+{
+	const ITEMCOUNT    = 'ItemCount';
+	const PRODUCTCOUNT = 'ProductCount';
+	const ALPHABETICAL = 'Alphabetical';
+	const CUSTOMCODE   = 'CustomCode';
+}

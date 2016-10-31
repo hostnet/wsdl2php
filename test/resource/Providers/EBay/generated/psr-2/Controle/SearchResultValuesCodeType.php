@@ -1,12 +1,13 @@
 <?php
 
 namespace Controle;
-class SearchResultValuesCodeType {
-    const Escrow = 'Escrow';
-    const _New = 'New';
-    const CharityListing = 'CharityListing';
-    const Picture = 'Picture';
-    const Gift = 'Gift';
-    const CustomCode = 'CustomCode';
-}
 
+class SearchResultValuesCodeType
+{
+    const ESCROW         = 'Escrow';
+    const _NEW           = '_New';
+    const CHARITYLISTING = 'CharityListing';
+    const PICTURE        = 'Picture';
+    const GIFT           = 'Gift';
+    const CUSTOMCODE     = 'CustomCode';
+}

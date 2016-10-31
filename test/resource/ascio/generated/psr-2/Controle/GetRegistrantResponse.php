@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
-class GetRegistrantResponse {
+
+class GetRegistrantResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $GetRegistrantResult;
+    public $getregistrantresult;
     /**
      * @var \Controle\Registrant
      */
@@ -14,19 +16,17 @@ class GetRegistrantResponse {
      * @param Response $val
      * @throws Exception
      */
-    public function setGetRegistrantResult($val) {
-        
-        $this->GetRegistrantResult = (int)$val;
+    public function setGetRegistrantResult($val)
+    {
+        $this->getregistrantresult = (int)$val;
     }
 
     /**
      * @param Registrant $val
      * @throws Exception
      */
-    public function setRegistrant($val) {
-        
+    public function setRegistrant($val)
+    {
         $this->registrant = (int)$val;
     }
-
 }
-

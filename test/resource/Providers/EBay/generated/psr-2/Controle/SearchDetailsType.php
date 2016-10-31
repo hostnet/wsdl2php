@@ -1,19 +1,21 @@
 <?php
 
 namespace Controle;
-class SearchDetailsType {
+
+class SearchDetailsType
+{
     /**
      * @var boolean | Indicates whether a listing uses the Buy It Now feature.
      */
-    public $BuyItNowEnabled;
+    public $buyitnowenabled;
     /**
      * @var boolean | Indicates whether a listing has an image associated with it.
      */
-    public $Picture;
+    public $picture;
     /**
      * @var boolean | Indicates whether a listing is no more than one day old.
      */
-    public $RecentListing;
+    public $recentlisting;
     /**
      * @var \Controle\<anyXML>
      */
@@ -22,37 +24,35 @@ class SearchDetailsType {
      * @param boolean $val
      * @throws Exception
      */
-    public function setBuyItNowEnabled($val) {
-        
-        $this->BuyItNowEnabled = (int)$val;
+    public function setBuyItNowEnabled($val)
+    {
+        $this->buyitnowenabled = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setPicture($val) {
-        
-        $this->Picture = (int)$val;
+    public function setPicture($val)
+    {
+        $this->picture = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setRecentListing($val) {
-        
-        $this->RecentListing = (int)$val;
+    public function setRecentListing($val)
+    {
+        $this->recentlisting = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

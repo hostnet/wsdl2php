@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class DisplayPayNowButtonCodeType {
-    const ShowPayNowButtonForAllPaymentMethods = 'ShowPayNowButtonForAllPaymentMethods';
-    const ShowPayNowButtonForPayPalOnly = 'ShowPayNowButtonForPayPalOnly';
-    const CustomCode = 'CustomCode';
-}
 
+class DisplayPayNowButtonCodeType
+{
+    const SHOWPAYNOWBUTTONFORALLPAYMENTMETHODS = 'ShowPayNowButtonForAllPaymentMethods';
+    const SHOWPAYNOWBUTTONFORPAYPALONLY        = 'ShowPayNowButtonForPayPalOnly';
+    const CUSTOMCODE                           = 'CustomCode';
+}

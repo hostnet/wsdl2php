@@ -1,22 +1,24 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * SuggestedCategoryType
  * Defines a suggested category, returned      in response to a search for categories that
  * contain      listings with certain keywords in their titles and descriptions.
  */
-class SuggestedCategoryType {
+class SuggestedCategoryType
+{
 	/**
 	 * @var \Controle\sub1\sub2\CategoryType | Describes a category that contains items that match the query.
 	 */
-	public $Category;
+	public $category;
 	/**
 	 * @var int | Percentage of the matching items that were found in this category, relative to other categories
 	 * in which matching items were also found. Indicates the distribution of matching items across
 	 * the suggested categories.
 	 */
-	public $PercentItemFound;
+	public $percentitemfound;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -25,28 +27,29 @@ class SuggestedCategoryType {
 	 * @param CategoryType $val
 	 * @throws Exception
 	 */
-	public function setCategory($val) {
-		
-		$this->Category = (int)$val;
+	public function setCategory($val)
+	{
+        $this->category = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setPercentItemFound($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->PercentItemFound = (int)$val;
+	public function setPercentItemFound($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->percentitemfound = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

@@ -1,475 +1,554 @@
 <?php
 
-class ProductInfo {
+class ProductInfo
+{
 	/**
 	 * @var string
 	 */
-	public $TotalResults;
+	public $totalresults;
 	/**
 	 * @var string
 	 */
-	public $TotalPages;
+	public $totalpages;
 	/**
 	 * @var string
 	 */
-	public $ListName;
+	public $listname;
 	/**
 	 * @var DetailsArray
 	 */
-	public $Details;
+	public $details;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTotalResults($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalResults');
-		$this->TotalResults = (int)$val;
+	public function setTotalResults($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TotalResults');
+        }
+        $this->totalresults = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTotalPages($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalPages');
-		$this->TotalPages = (int)$val;
+	public function setTotalPages($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TotalPages');
+        }
+        $this->totalpages = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setListName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListName');
-		$this->ListName = (int)$val;
+	public function setListName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ListName');
+        }
+        $this->listname = (int)$val;
 	}
 
 	/**
 	 * @param DetailsArray $val
 	 * @throws Exception
 	 */
-	public function setDetails($val) {
-		
-		$this->Details = (int)$val;
+	public function setDetails($val)
+	{
+        $this->details = (int)$val;
 	}
-
 }
 
-class Reviews {
+class Reviews
+{
 	/**
 	 * @var string
 	 */
-	public $AvgCustomerRating;
+	public $avgcustomerrating;
 	/**
 	 * @var string
 	 */
-	public $TotalCustomerReviews;
+	public $totalcustomerreviews;
 	/**
 	 * @var CustomerReviewArray
 	 */
-	public $CustomerReviews;
+	public $customerreviews;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAvgCustomerRating($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AvgCustomerRating');
-		$this->AvgCustomerRating = (int)$val;
+	public function setAvgCustomerRating($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for AvgCustomerRating');
+        }
+        $this->avgcustomerrating = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTotalCustomerReviews($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
-		$this->TotalCustomerReviews = (int)$val;
+	public function setTotalCustomerReviews($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
+        }
+        $this->totalcustomerreviews = (int)$val;
 	}
 
 	/**
 	 * @param CustomerReviewArray $val
 	 * @throws Exception
 	 */
-	public function setCustomerReviews($val) {
-		
-		$this->CustomerReviews = (int)$val;
+	public function setCustomerReviews($val)
+	{
+        $this->customerreviews = (int)$val;
 	}
-
 }
 
-class MarketplaceSearch {
+class MarketplaceSearch
+{
 	/**
 	 * @var MarketplaceSearchDetailsArray
 	 */
-	public $MarketplaceSearchDetails;
+	public $marketplacesearchdetails;
 	/**
 	 * @param MarketplaceSearchDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setMarketplaceSearchDetails($val) {
-		
-		$this->MarketplaceSearchDetails = (int)$val;
+	public function setMarketplaceSearchDetails($val)
+	{
+        $this->marketplacesearchdetails = (int)$val;
 	}
-
 }
 
-class SellerProfile {
+class SellerProfile
+{
 	/**
 	 * @var SellerProfileDetailsArray
 	 */
-	public $SellerProfileDetails;
+	public $sellerprofiledetails;
 	/**
 	 * @param SellerProfileDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setSellerProfileDetails($val) {
-		
-		$this->SellerProfileDetails = (int)$val;
+	public function setSellerProfileDetails($val)
+	{
+        $this->sellerprofiledetails = (int)$val;
 	}
-
 }
 
-class SellerSearch {
+class SellerSearch
+{
 	/**
 	 * @var SellerSearchDetailsArray
 	 */
-	public $SellerSearchDetails;
+	public $sellersearchdetails;
 	/**
 	 * @param SellerSearchDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setSellerSearchDetails($val) {
-		
-		$this->SellerSearchDetails = (int)$val;
+	public function setSellerSearchDetails($val)
+	{
+        $this->sellersearchdetails = (int)$val;
 	}
-
 }
 
-class ListingProductInfo {
+class ListingProductInfo
+{
 	/**
 	 * @var ListingProductDetailsArray
 	 */
-	public $ListingProductDetails;
+	public $listingproductdetails;
 	/**
 	 * @param ListingProductDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setListingProductDetails($val) {
-		
-		$this->ListingProductDetails = (int)$val;
+	public function setListingProductDetails($val)
+	{
+        $this->listingproductdetails = (int)$val;
 	}
-
 }
 
-class ListingProductDetails {
+class ListingProductDetails
+{
 	/**
 	 * @var string
 	 */
-	public $ExchangeId;
+	public $exchangeid;
 	/**
 	 * @var string
 	 */
-	public $ListingId;
+	public $listingid;
 	/**
 	 * @var string
 	 */
-	public $ExchangeTitle;
+	public $exchangetitle;
 	/**
 	 * @var string
 	 */
-	public $ExchangePrice;
+	public $exchangeprice;
 	/**
 	 * @var string
 	 */
-	public $ExchangeAsin;
+	public $exchangeasin;
 	/**
 	 * @var string
 	 */
-	public $ExchangeEndDate;
+	public $exchangeenddate;
 	/**
 	 * @var string
 	 */
-	public $ExchangeTinyImage;
+	public $exchangetinyimage;
 	/**
 	 * @var string
 	 */
-	public $ExchangeSellerId;
+	public $exchangesellerid;
 	/**
 	 * @var string
 	 */
-	public $ExchangeSellerNickname;
+	public $exchangesellernickname;
 	/**
 	 * @var string
 	 */
-	public $ExchangeStartDate;
+	public $exchangestartdate;
 	/**
 	 * @var string
 	 */
-	public $ExchangeStatus;
+	public $exchangestatus;
 	/**
 	 * @var string
 	 */
-	public $ExchangeQuantity;
+	public $exchangequantity;
 	/**
 	 * @var string
 	 */
-	public $ExchangeQuantityAllocated;
+	public $exchangequantityallocated;
 	/**
 	 * @var string
 	 */
-	public $ExchangeFeaturedCategory;
+	public $exchangefeaturedcategory;
 	/**
 	 * @var string
 	 */
-	public $ExchangeCondition;
+	public $exchangecondition;
 	/**
 	 * @var string
 	 */
-	public $ExchangeConditionType;
+	public $exchangeconditiontype;
 	/**
 	 * @var string
 	 */
-	public $ExchangeAvailability;
+	public $exchangeavailability;
 	/**
 	 * @var string
 	 */
-	public $ExchangeOfferingType;
+	public $exchangeofferingtype;
 	/**
 	 * @var string
 	 */
-	public $ExchangeSellerState;
+	public $exchangesellerstate;
 	/**
 	 * @var string
 	 */
-	public $ExchangeSellerCountry;
+	public $exchangesellercountry;
 	/**
 	 * @var string
 	 */
-	public $ExchangeSellerRating;
+	public $exchangesellerrating;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeId');
-		$this->ExchangeId = (int)$val;
+	public function setExchangeId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeId');
+        }
+        $this->exchangeid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setListingId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListingId');
-		$this->ListingId = (int)$val;
+	public function setListingId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ListingId');
+        }
+        $this->listingid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeTitle($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeTitle');
-		$this->ExchangeTitle = (int)$val;
+	public function setExchangeTitle($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeTitle');
+        }
+        $this->exchangetitle = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangePrice($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangePrice');
-		$this->ExchangePrice = (int)$val;
+	public function setExchangePrice($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangePrice');
+        }
+        $this->exchangeprice = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeAsin($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeAsin');
-		$this->ExchangeAsin = (int)$val;
+	public function setExchangeAsin($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeAsin');
+        }
+        $this->exchangeasin = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeEndDate($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeEndDate');
-		$this->ExchangeEndDate = (int)$val;
+	public function setExchangeEndDate($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeEndDate');
+        }
+        $this->exchangeenddate = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeTinyImage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
-		$this->ExchangeTinyImage = (int)$val;
+	public function setExchangeTinyImage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
+        }
+        $this->exchangetinyimage = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeSellerId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerId');
-		$this->ExchangeSellerId = (int)$val;
+	public function setExchangeSellerId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerId');
+        }
+        $this->exchangesellerid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeSellerNickname($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
-		$this->ExchangeSellerNickname = (int)$val;
+	public function setExchangeSellerNickname($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
+        }
+        $this->exchangesellernickname = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeStartDate($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeStartDate');
-		$this->ExchangeStartDate = (int)$val;
+	public function setExchangeStartDate($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeStartDate');
+        }
+        $this->exchangestartdate = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeStatus($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeStatus');
-		$this->ExchangeStatus = (int)$val;
+	public function setExchangeStatus($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeStatus');
+        }
+        $this->exchangestatus = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeQuantity($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeQuantity');
-		$this->ExchangeQuantity = (int)$val;
+	public function setExchangeQuantity($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeQuantity');
+        }
+        $this->exchangequantity = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeQuantityAllocated($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
-		$this->ExchangeQuantityAllocated = (int)$val;
+	public function setExchangeQuantityAllocated($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
+        }
+        $this->exchangequantityallocated = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeFeaturedCategory($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
-		$this->ExchangeFeaturedCategory = (int)$val;
+	public function setExchangeFeaturedCategory($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
+        }
+        $this->exchangefeaturedcategory = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeCondition($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeCondition');
-		$this->ExchangeCondition = (int)$val;
+	public function setExchangeCondition($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeCondition');
+        }
+        $this->exchangecondition = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeConditionType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeConditionType');
-		$this->ExchangeConditionType = (int)$val;
+	public function setExchangeConditionType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeConditionType');
+        }
+        $this->exchangeconditiontype = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeAvailability($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeAvailability');
-		$this->ExchangeAvailability = (int)$val;
+	public function setExchangeAvailability($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeAvailability');
+        }
+        $this->exchangeavailability = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeOfferingType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
-		$this->ExchangeOfferingType = (int)$val;
+	public function setExchangeOfferingType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
+        }
+        $this->exchangeofferingtype = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeSellerState($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerState');
-		$this->ExchangeSellerState = (int)$val;
+	public function setExchangeSellerState($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerState');
+        }
+        $this->exchangesellerstate = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeSellerCountry($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
-		$this->ExchangeSellerCountry = (int)$val;
+	public function setExchangeSellerCountry($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
+        }
+        $this->exchangesellercountry = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchangeSellerRating($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
-		$this->ExchangeSellerRating = (int)$val;
+	public function setExchangeSellerRating($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
+        }
+        $this->exchangesellerrating = (int)$val;
 	}
-
 }
 
-class SellerFeedback {
+class SellerFeedback
+{
 	/**
 	 * @var FeedbackArray
 	 */
-	public $Feedback;
+	public $feedback;
 	/**
 	 * @param FeedbackArray $val
 	 * @throws Exception
 	 */
-	public function setFeedback($val) {
-		
-		$this->Feedback = (int)$val;
+	public function setFeedback($val)
+	{
+        $this->feedback = (int)$val;
 	}
-
 }
 
-class ThirdPartyProductInfo {
+class ThirdPartyProductInfo
+{
 	/**
 	 * @var ThirdPartyProductDetailsArray
 	 */
-	public $ThirdPartyProductDetails;
+	public $thirdpartyproductdetails;
 	/**
 	 * @param ThirdPartyProductDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setThirdPartyProductDetails($val) {
-		
-		$this->ThirdPartyProductDetails = (int)$val;
+	public function setThirdPartyProductDetails($val)
+	{
+        $this->thirdpartyproductdetails = (int)$val;
 	}
-
 }
 
-class KeywordRequest {
+class KeywordRequest
+{
 	/**
 	 * @var string
 	 */
@@ -510,86 +589,113 @@ class KeywordRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyword($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for keyword');
-		$this->keyword = (int)$val;
+	public function setKeyword($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for keyword');
+        }
+        $this->keyword = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class PowerRequest {
+class PowerRequest
+{
 	/**
 	 * @var string
 	 */
@@ -630,86 +736,113 @@ class PowerRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPower($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for power');
-		$this->power = (int)$val;
+	public function setPower($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for power');
+        }
+        $this->power = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class BrowseNodeRequest {
+class BrowseNodeRequest
+{
 	/**
 	 * @var string
 	 */
@@ -746,77 +879,101 @@ class BrowseNodeRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setBrowse_node($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for browse_node');
-		$this->browse_node = (int)$val;
+	public function setBrowsenode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for browse_node');
+        }
+        $this->browse_node = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class AsinRequest {
+class AsinRequest
+{
 	/**
 	 * @var string
 	 */
@@ -849,68 +1006,89 @@ class AsinRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAsin($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for asin');
-		$this->asin = (int)$val;
+	public function setAsin($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for asin');
+        }
+        $this->asin = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setOffer($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for offer');
-		$this->offer = (int)$val;
+	public function setOffer($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for offer');
+        }
+        $this->offer = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setOfferpage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for offerpage');
-		$this->offerpage = (int)$val;
+	public function setOfferpage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for offerpage');
+        }
+        $this->offerpage = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class BlendedRequest {
+class BlendedRequest
+{
 	/**
 	 * @var string
 	 */
@@ -935,50 +1113,65 @@ class BlendedRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setBlended($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for blended');
-		$this->blended = (int)$val;
+	public function setBlended($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for blended');
+        }
+        $this->blended = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class UpcRequest {
+class UpcRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1015,77 +1208,101 @@ class UpcRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setUpc($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for upc');
-		$this->upc = (int)$val;
+	public function setUpc($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for upc');
+        }
+        $this->upc = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ArtistRequest {
+class ArtistRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1126,86 +1343,113 @@ class ArtistRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setArtist($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for artist');
-		$this->artist = (int)$val;
+	public function setArtist($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for artist');
+        }
+        $this->artist = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class AuthorRequest {
+class AuthorRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1246,86 +1490,113 @@ class AuthorRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAuthor($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for author');
-		$this->author = (int)$val;
+	public function setAuthor($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for author');
+        }
+        $this->author = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ActorRequest {
+class ActorRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1366,86 +1637,113 @@ class ActorRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setActor($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for actor');
-		$this->actor = (int)$val;
+	public function setActor($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for actor');
+        }
+        $this->actor = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class DirectorRequest {
+class DirectorRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1486,86 +1784,113 @@ class DirectorRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDirector($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for director');
-		$this->director = (int)$val;
+	public function setDirector($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for director');
+        }
+        $this->director = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ExchangeRequest {
+class ExchangeRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1590,50 +1915,65 @@ class ExchangeRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExchange_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for exchange_id');
-		$this->exchange_id = (int)$val;
+	public function setExchangeid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for exchange_id');
+        }
+        $this->exchange_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ManufacturerRequest {
+class ManufacturerRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1674,86 +2014,113 @@ class ManufacturerRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setManufacturer($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for manufacturer');
-		$this->manufacturer = (int)$val;
+	public function setManufacturer($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for manufacturer');
+        }
+        $this->manufacturer = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for mode');
-		$this->mode = (int)$val;
+	public function setMode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for mode');
+        }
+        $this->mode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVariations($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for variations');
-		$this->variations = (int)$val;
+	public function setVariations($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for variations');
+        }
+        $this->variations = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ListManiaRequest {
+class ListManiaRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1782,59 +2149,77 @@ class ListManiaRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLm_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for lm_id');
-		$this->lm_id = (int)$val;
+	public function setLmid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for lm_id');
+        }
+        $this->lm_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class WishlistRequest {
+class WishlistRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1863,59 +2248,77 @@ class WishlistRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setWishlist_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for wishlist_id');
-		$this->wishlist_id = (int)$val;
+	public function setWishlistid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for wishlist_id');
+        }
+        $this->wishlist_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class MarketplaceRequest {
+class MarketplaceRequest
+{
 	/**
 	 * @var string
 	 */
@@ -1980,140 +2383,185 @@ class MarketplaceRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setMarketplace_search($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for marketplace_search');
-		$this->marketplace_search = (int)$val;
+	public function setMarketplacesearch($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for marketplace_search');
+        }
+        $this->marketplace_search = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyword($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for keyword');
-		$this->keyword = (int)$val;
+	public function setKeyword($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for keyword');
+        }
+        $this->keyword = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyword_search($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for keyword_search');
-		$this->keyword_search = (int)$val;
+	public function setKeywordsearch($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for keyword_search');
+        }
+        $this->keyword_search = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setBrowse_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for browse_id');
-		$this->browse_id = (int)$val;
+	public function setBrowseid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for browse_id');
+        }
+        $this->browse_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setZipcode($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for zipcode');
-		$this->zipcode = (int)$val;
+	public function setZipcode($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for zipcode');
+        }
+        $this->zipcode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setArea_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for area_id');
-		$this->area_id = (int)$val;
+	public function setAreaid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for area_id');
+        }
+        $this->area_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setGeo($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for geo');
-		$this->geo = (int)$val;
+	public function setGeo($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for geo');
+        }
+        $this->geo = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSort($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sort');
-		$this->sort = (int)$val;
+	public function setSort($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sort');
+        }
+        $this->sort = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setListing_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for listing_id');
-		$this->listing_id = (int)$val;
+	public function setListingid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for listing_id');
+        }
+        $this->listing_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setIndex($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for index');
-		$this->index = (int)$val;
+	public function setIndex($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for index');
+        }
+        $this->index = (int)$val;
 	}
-
 }
 
-class SellerProfileRequest {
+class SellerProfileRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2142,59 +2590,77 @@ class SellerProfileRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSeller_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for seller_id');
-		$this->seller_id = (int)$val;
+	public function setSellerid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for seller_id');
+        }
+        $this->seller_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class SellerRequest {
+class SellerRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2239,95 +2705,125 @@ class SellerRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSeller_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for seller_id');
-		$this->seller_id = (int)$val;
+	public function setSellerid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for seller_id');
+        }
+        $this->seller_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setOfferstatus($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for offerstatus');
-		$this->offerstatus = (int)$val;
+	public function setOfferstatus($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for offerstatus');
+        }
+        $this->offerstatus = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for page');
-		$this->page = (int)$val;
+	public function setPage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for page');
+        }
+        $this->page = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSeller_browse_id($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for seller_browse_id');
-		$this->seller_browse_id = (int)$val;
+	public function setSellerbrowseid($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for seller_browse_id');
+        }
+        $this->seller_browse_id = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyword($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for keyword');
-		$this->keyword = (int)$val;
+	public function setKeyword($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for keyword');
+        }
+        $this->keyword = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setIndex($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for index');
-		$this->index = (int)$val;
+	public function setIndex($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for index');
+        }
+        $this->index = (int)$val;
 	}
-
 }
 
-class SimilarityRequest {
+class SimilarityRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2352,105 +2848,129 @@ class SimilarityRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAsin($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for asin');
-		$this->asin = (int)$val;
+	public function setAsin($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for asin');
+        }
+        $this->asin = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for type');
-		$this->type = (int)$val;
+	public function setType($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for type');
+        }
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ShoppingCart {
+class ShoppingCart
+{
 	/**
 	 * @var string
 	 */
-	public $CartId;
+	public $cartid;
 	/**
 	 * @var string
 	 */
-	public $HMAC;
+	public $hmac;
 	/**
 	 * @var string
 	 */
-	public $PurchaseUrl;
+	public $purchaseurl;
 	/**
 	 * @var ItemArray
 	 */
-	public $Items;
+	public $items;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCartId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-		$this->CartId = (int)$val;
+	public function setCartId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHMAC($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-		$this->HMAC = (int)$val;
+	public function setHMAC($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPurchaseUrl($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PurchaseUrl');
-		$this->PurchaseUrl = (int)$val;
+	public function setPurchaseUrl($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PurchaseUrl');
+        }
+        $this->purchaseurl = (int)$val;
 	}
 
 	/**
 	 * @param ItemArray $val
 	 * @throws Exception
 	 */
-	public function setItems($val) {
-		
-		$this->Items = (int)$val;
+	public function setItems($val)
+	{
+        $this->items = (int)$val;
 	}
-
 }
 
-class GetShoppingCartRequest {
+class GetShoppingCartRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2462,11 +2982,11 @@ class GetShoppingCartRequest {
 	/**
 	 * @var string
 	 */
-	public $CartId;
+	public $cartid;
 	/**
 	 * @var string
 	 */
-	public $HMAC;
+	public $hmac;
 	/**
 	 * @var string
 	 */
@@ -2475,50 +2995,65 @@ class GetShoppingCartRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCartId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-		$this->CartId = (int)$val;
+	public function setCartId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHMAC($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-		$this->HMAC = (int)$val;
+	public function setHMAC($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ClearShoppingCartRequest {
+class ClearShoppingCartRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2530,11 +3065,11 @@ class ClearShoppingCartRequest {
 	/**
 	 * @var string
 	 */
-	public $CartId;
+	public $cartid;
 	/**
 	 * @var string
 	 */
-	public $HMAC;
+	public $hmac;
 	/**
 	 * @var string
 	 */
@@ -2543,50 +3078,65 @@ class ClearShoppingCartRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCartId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-		$this->CartId = (int)$val;
+	public function setCartId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHMAC($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-		$this->HMAC = (int)$val;
+	public function setHMAC($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class AddShoppingCartItemsRequest {
+class AddShoppingCartItemsRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2598,15 +3148,15 @@ class AddShoppingCartItemsRequest {
 	/**
 	 * @var string
 	 */
-	public $CartId;
+	public $cartid;
 	/**
 	 * @var string
 	 */
-	public $HMAC;
+	public $hmac;
 	/**
 	 * @var AddItemArray
 	 */
-	public $Items;
+	public $items;
 	/**
 	 * @var string
 	 */
@@ -2615,59 +3165,74 @@ class AddShoppingCartItemsRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCartId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-		$this->CartId = (int)$val;
+	public function setCartId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHMAC($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-		$this->HMAC = (int)$val;
+	public function setHMAC($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
 	}
 
 	/**
 	 * @param AddItemArray $val
 	 * @throws Exception
 	 */
-	public function setItems($val) {
-		
-		$this->Items = (int)$val;
+	public function setItems($val)
+	{
+        $this->items = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class RemoveShoppingCartItemsRequest {
+class RemoveShoppingCartItemsRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2679,15 +3244,15 @@ class RemoveShoppingCartItemsRequest {
 	/**
 	 * @var string
 	 */
-	public $CartId;
+	public $cartid;
 	/**
 	 * @var string
 	 */
-	public $HMAC;
+	public $hmac;
 	/**
 	 * @var ItemIdArray
 	 */
-	public $Items;
+	public $items;
 	/**
 	 * @var string
 	 */
@@ -2696,59 +3261,74 @@ class RemoveShoppingCartItemsRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCartId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-		$this->CartId = (int)$val;
+	public function setCartId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHMAC($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-		$this->HMAC = (int)$val;
+	public function setHMAC($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
 	}
 
 	/**
 	 * @param ItemIdArray $val
 	 * @throws Exception
 	 */
-	public function setItems($val) {
-		
-		$this->Items = (int)$val;
+	public function setItems($val)
+	{
+        $this->items = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
-class ModifyShoppingCartItemsRequest {
+class ModifyShoppingCartItemsRequest
+{
 	/**
 	 * @var string
 	 */
@@ -2760,15 +3340,15 @@ class ModifyShoppingCartItemsRequest {
 	/**
 	 * @var string
 	 */
-	public $CartId;
+	public $cartid;
 	/**
 	 * @var string
 	 */
-	public $HMAC;
+	public $hmac;
 	/**
 	 * @var ItemQuantityArray
 	 */
-	public $Items;
+	public $items;
 	/**
 	 * @var string
 	 */
@@ -2777,56 +3357,70 @@ class ModifyShoppingCartItemsRequest {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for tag');
-		$this->tag = (int)$val;
+	public function setTag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for tag');
+        }
+        $this->tag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDevtag($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for devtag');
-		$this->devtag = (int)$val;
+	public function setDevtag($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for devtag');
+        }
+        $this->devtag = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCartId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-		$this->CartId = (int)$val;
+	public function setCartId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHMAC($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-		$this->HMAC = (int)$val;
+	public function setHMAC($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
 	}
 
 	/**
 	 * @param ItemQuantityArray $val
 	 * @throws Exception
 	 */
-	public function setItems($val) {
-		
-		$this->Items = (int)$val;
+	public function setItems($val)
+	{
+        $this->items = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocale($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
-		$this->locale = (int)$val;
+	public function setLocale($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for locale');
+        }
+        $this->locale = (int)$val;
 	}
-
 }
 
 /**
@@ -2836,51 +3430,84 @@ class AmazonSearchServiceClient extends SoapClient {
 
 	const WSDL_FILE = "AmazonWebServicesTest.wsdl";
 	private $classmap = array(
-		'ProductInfo' => 'ProductInfo',
-		'Reviews' => 'Reviews',
-		'MarketplaceSearch' => 'MarketplaceSearch',
-		'SellerProfile' => 'SellerProfile',
-		'SellerSearch' => 'SellerSearch',
-		'ListingProductInfo' => 'ListingProductInfo',
-		'ListingProductDetails' => 'ListingProductDetails',
-		'SellerFeedback' => 'SellerFeedback',
-		'ThirdPartyProductInfo' => 'ThirdPartyProductInfo',
-		'KeywordRequest' => 'KeywordRequest',
-		'PowerRequest' => 'PowerRequest',
-		'BrowseNodeRequest' => 'BrowseNodeRequest',
-		'AsinRequest' => 'AsinRequest',
-		'BlendedRequest' => 'BlendedRequest',
-		'UpcRequest' => 'UpcRequest',
-		'ArtistRequest' => 'ArtistRequest',
-		'AuthorRequest' => 'AuthorRequest',
-		'ActorRequest' => 'ActorRequest',
-		'DirectorRequest' => 'DirectorRequest',
-		'ExchangeRequest' => 'ExchangeRequest',
-		'ManufacturerRequest' => 'ManufacturerRequest',
-		'ListManiaRequest' => 'ListManiaRequest',
-		'WishlistRequest' => 'WishlistRequest',
-		'MarketplaceRequest' => 'MarketplaceRequest',
-		'SellerProfileRequest' => 'SellerProfileRequest',
-		'SellerRequest' => 'SellerRequest',
-		'SimilarityRequest' => 'SimilarityRequest',
-		'ShoppingCart' => 'ShoppingCart',
-		'GetShoppingCartRequest' => 'GetShoppingCartRequest',
-		'ClearShoppingCartRequest' => 'ClearShoppingCartRequest',
-		'AddShoppingCartItemsRequest' => 'AddShoppingCartItemsRequest',
-		'RemoveShoppingCartItemsRequest' => 'RemoveShoppingCartItemsRequest',
-		'ModifyShoppingCartItemsRequest' => 'ModifyShoppingCartItemsRequest',
+        'ProductInfo\,' =>
+            'ProductInfo',
+        'Reviews\,' =>
+            'Reviews',
+        'MarketplaceSearch\,' =>
+            'MarketplaceSearch',
+        'SellerProfile\,' =>
+            'SellerProfile',
+        'SellerSearch\,' =>
+            'SellerSearch',
+        'ListingProductInfo\,' =>
+            'ListingProductInfo',
+        'ListingProductDetails\,' =>
+            'ListingProductDetails',
+        'SellerFeedback\,' =>
+            'SellerFeedback',
+        'ThirdPartyProductInfo\,' =>
+            'ThirdPartyProductInfo',
+        'KeywordRequest\,' =>
+            'KeywordRequest',
+        'PowerRequest\,' =>
+            'PowerRequest',
+        'BrowseNodeRequest\,' =>
+            'BrowseNodeRequest',
+        'AsinRequest\,' =>
+            'AsinRequest',
+        'BlendedRequest\,' =>
+            'BlendedRequest',
+        'UpcRequest\,' =>
+            'UpcRequest',
+        'ArtistRequest\,' =>
+            'ArtistRequest',
+        'AuthorRequest\,' =>
+            'AuthorRequest',
+        'ActorRequest\,' =>
+            'ActorRequest',
+        'DirectorRequest\,' =>
+            'DirectorRequest',
+        'ExchangeRequest\,' =>
+            'ExchangeRequest',
+        'ManufacturerRequest\,' =>
+            'ManufacturerRequest',
+        'ListManiaRequest\,' =>
+            'ListManiaRequest',
+        'WishlistRequest\,' =>
+            'WishlistRequest',
+        'MarketplaceRequest\,' =>
+            'MarketplaceRequest',
+        'SellerProfileRequest\,' =>
+            'SellerProfileRequest',
+        'SellerRequest\,' =>
+            'SellerRequest',
+        'SimilarityRequest\,' =>
+            'SimilarityRequest',
+        'ShoppingCart\,' =>
+            'ShoppingCart',
+        'GetShoppingCartRequest\,' =>
+            'GetShoppingCartRequest',
+        'ClearShoppingCartRequest\,' =>
+            'ClearShoppingCartRequest',
+        'AddShoppingCartItemsRequest\,' =>
+            'AddShoppingCartItemsRequest',
+        'RemoveShoppingCartItemsRequest\,' =>
+            'RemoveShoppingCartItemsRequest',
+        'ModifyShoppingCartItemsRequest\,' =>
+            'ModifyShoppingCartItemsRequest',
 	);
 
 	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+            	$options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -2890,11 +3517,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function KeywordSearchRequest(KeywordRequest $KeywordSearchRequest) {
-		return $this->__soapCall(
-			'KeywordSearchRequest',
-			array($KeywordSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'KeywordSearchRequest',
+            array($KeywordSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2904,11 +3531,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function PowerSearchRequest(PowerRequest $PowerSearchRequest) {
-		return $this->__soapCall(
-			'PowerSearchRequest',
-			array($PowerSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'PowerSearchRequest',
+            array($PowerSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2918,11 +3545,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function BrowseNodeSearchRequest(BrowseNodeRequest $BrowseNodeSearchRequest) {
-		return $this->__soapCall(
-			'BrowseNodeSearchRequest',
-			array($BrowseNodeSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'BrowseNodeSearchRequest',
+            array($BrowseNodeSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2932,11 +3559,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function AsinSearchRequest(AsinRequest $AsinSearchRequest) {
-		return $this->__soapCall(
-			'AsinSearchRequest',
-			array($AsinSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'AsinSearchRequest',
+            array($AsinSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2946,11 +3573,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductLineArray
 	 */
 	public function BlendedSearchRequest(BlendedRequest $BlendedSearchRequest) {
-		return $this->__soapCall(
-			'BlendedSearchRequest',
-			array($BlendedSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'BlendedSearchRequest',
+            array($BlendedSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2960,11 +3587,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function UpcSearchRequest(UpcRequest $UpcSearchRequest) {
-		return $this->__soapCall(
-			'UpcSearchRequest',
-			array($UpcSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'UpcSearchRequest',
+            array($UpcSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2974,11 +3601,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function AuthorSearchRequest(AuthorRequest $AuthorSearchRequest) {
-		return $this->__soapCall(
-			'AuthorSearchRequest',
-			array($AuthorSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'AuthorSearchRequest',
+            array($AuthorSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -2988,11 +3615,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function ArtistSearchRequest(ArtistRequest $ArtistSearchRequest) {
-		return $this->__soapCall(
-			'ArtistSearchRequest',
-			array($ArtistSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ArtistSearchRequest',
+            array($ArtistSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3002,11 +3629,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function ActorSearchRequest(ActorRequest $ActorSearchRequest) {
-		return $this->__soapCall(
-			'ActorSearchRequest',
-			array($ActorSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ActorSearchRequest',
+            array($ActorSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3016,11 +3643,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function ManufacturerSearchRequest(ManufacturerRequest $ManufacturerSearchRequest) {
-		return $this->__soapCall(
-			'ManufacturerSearchRequest',
-			array($ManufacturerSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ManufacturerSearchRequest',
+            array($ManufacturerSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3030,11 +3657,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function DirectorSearchRequest(DirectorRequest $DirectorSearchRequest) {
-		return $this->__soapCall(
-			'DirectorSearchRequest',
-			array($DirectorSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'DirectorSearchRequest',
+            array($DirectorSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3044,11 +3671,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ListingProductDetails
 	 */
 	public function ExchangeSearchRequest(ExchangeRequest $ExchangeSearchRequest) {
-		return $this->__soapCall(
-			'ExchangeSearchRequest',
-			array($ExchangeSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ExchangeSearchRequest',
+            array($ExchangeSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3058,11 +3685,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function ListManiaSearchRequest(ListManiaRequest $ListManiaSearchRequest) {
-		return $this->__soapCall(
-			'ListManiaSearchRequest',
-			array($ListManiaSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ListManiaSearchRequest',
+            array($ListManiaSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3072,11 +3699,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function WishlistSearchRequest(WishlistRequest $WishlistSearchRequest) {
-		return $this->__soapCall(
-			'WishlistSearchRequest',
-			array($WishlistSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'WishlistSearchRequest',
+            array($WishlistSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3086,11 +3713,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return SellerProfile
 	 */
 	public function SellerProfileSearchRequest(SellerProfileRequest $SellerProfileSearchRequest) {
-		return $this->__soapCall(
-			'SellerProfileSearchRequest',
-			array($SellerProfileSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'SellerProfileSearchRequest',
+            array($SellerProfileSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3100,11 +3727,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return SellerSearch
 	 */
 	public function SellerSearchRequest(SellerRequest $SellerSearchRequest) {
-		return $this->__soapCall(
-			'SellerSearchRequest',
-			array($SellerSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'SellerSearchRequest',
+            array($SellerSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3114,11 +3741,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return MarketplaceSearch
 	 */
 	public function MarketplaceSearchRequest(MarketplaceRequest $MarketplaceSearchRequest) {
-		return $this->__soapCall(
-			'MarketplaceSearchRequest',
-			array($MarketplaceSearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'MarketplaceSearchRequest',
+            array($MarketplaceSearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3128,11 +3755,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ProductInfo
 	 */
 	public function SimilaritySearchRequest(SimilarityRequest $SimilaritySearchRequest) {
-		return $this->__soapCall(
-			'SimilaritySearchRequest',
-			array($SimilaritySearchRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'SimilaritySearchRequest',
+            array($SimilaritySearchRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3142,11 +3769,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ShoppingCart
 	 */
 	public function GetShoppingCartRequest(GetShoppingCartRequest $GetShoppingCartRequest) {
-		return $this->__soapCall(
-			'GetShoppingCartRequest',
-			array($GetShoppingCartRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'GetShoppingCartRequest',
+            array($GetShoppingCartRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3156,11 +3783,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ShoppingCart
 	 */
 	public function ClearShoppingCartRequest(ClearShoppingCartRequest $ClearShoppingCartRequest) {
-		return $this->__soapCall(
-			'ClearShoppingCartRequest',
-			array($ClearShoppingCartRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ClearShoppingCartRequest',
+            array($ClearShoppingCartRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3170,11 +3797,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ShoppingCart
 	 */
 	public function AddShoppingCartItemsRequest(AddShoppingCartItemsRequest $AddShoppingCartItemsRequest) {
-		return $this->__soapCall(
-			'AddShoppingCartItemsRequest',
-			array($AddShoppingCartItemsRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'AddShoppingCartItemsRequest',
+            array($AddShoppingCartItemsRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3184,11 +3811,11 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ShoppingCart
 	 */
 	public function RemoveShoppingCartItemsRequest(RemoveShoppingCartItemsRequest $RemoveShoppingCartItemsRequest) {
-		return $this->__soapCall(
-			'RemoveShoppingCartItemsRequest',
-			array($RemoveShoppingCartItemsRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'RemoveShoppingCartItemsRequest',
+            array($RemoveShoppingCartItemsRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
 
 	/**
@@ -3198,11 +3825,10 @@ class AmazonSearchServiceClient extends SoapClient {
 	 * @return ShoppingCart
 	 */
 	public function ModifyShoppingCartItemsRequest(ModifyShoppingCartItemsRequest $ModifyShoppingCartItemsRequest) {
-		return $this->__soapCall(
-			'ModifyShoppingCartItemsRequest',
-			array($ModifyShoppingCartItemsRequest),
-			array('uri'=>'http://soap.amazon.com')
-		);
+        return $this->__soapCall(
+            'ModifyShoppingCartItemsRequest',
+            array($ModifyShoppingCartItemsRequest),
+            array('uri'=>'http://soap.amazon.com')
+        );
 	}
-
 }

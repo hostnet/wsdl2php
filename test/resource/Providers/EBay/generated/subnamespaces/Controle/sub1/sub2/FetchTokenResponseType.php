@@ -1,11 +1,14 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * FetchTokenResponseType
  * Includes the authentication token for the user and the date it expires.
  */
-class FetchTokenResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class FetchTokenResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var string | Authentication token representing the user who is making the request. The user's token
 	 * must be retrieved from eBay. To determine a user's authentication token, see the Authentication
@@ -15,29 +18,30 @@ class FetchTokenResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * to the user whose data is being requested. The documentation for each call includes information
 	 * about such restrictions.
 	 */
-	public $eBayAuthToken;
+	public $ebayauthtoken;
 	/**
 	 * @var dateTime | Date and time at which the token returned in eBayAuthToken expires and can no longer be
 	 * used to authenticate the user for that application.
 	 */
-	public $HardExpirationTime;
+	public $hardexpirationtime;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setEBayAuthToken($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for eBayAuthToken');
-		$this->eBayAuthToken = (int)$val;
+	public function setEBayAuthToken($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for eBayAuthToken');
+        }
+        $this->ebayauthtoken = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setHardExpirationTime($val) {
-		
-		$this->HardExpirationTime = (int)$val;
+	public function setHardExpirationTime($val)
+	{
+        $this->hardexpirationtime = (int)$val;
 	}
-
 }
-

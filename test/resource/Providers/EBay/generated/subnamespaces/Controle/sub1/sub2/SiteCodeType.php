@@ -1,32 +1,33 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class SiteCodeType {
-	const US = 'US';
-	const Canada = 'Canada';
-	const UK = 'UK';
-	const Australia = 'Australia';
-	const Austria = 'Austria';
-	const Belgium_French = 'Belgium_French';
-	const France = 'France';
-	const Germany = 'Germany';
-	const Italy = 'Italy';
-	const Belgium_Dutch = 'Belgium_Dutch';
-	const Netherlands = 'Netherlands';
-	const Spain = 'Spain';
-	const Switzerland = 'Switzerland';
-	const Taiwan = 'Taiwan';
-	const eBayMotors = 'eBayMotors';
-	const HongKong = 'HongKong';
-	const Singapore = 'Singapore';
-	const India = 'India';
-	const China = 'China';
-	const Ireland = 'Ireland';
-	const Malaysia = 'Malaysia';
-	const Philippines = 'Philippines';
-	const Poland = 'Poland';
-	const Sweden = 'Sweden';
-	const CustomCode = 'CustomCode';
-	const CanadaFrench = 'CanadaFrench';
-}
 
+class SiteCodeType
+{
+	const US             = 'US';
+	const CANADA         = 'Canada';
+	const UK             = 'UK';
+	const AUSTRALIA      = 'Australia';
+	const AUSTRIA        = 'Austria';
+	const BELGIUM_FRENCH = 'Belgium_French';
+	const FRANCE         = 'France';
+	const GERMANY        = 'Germany';
+	const ITALY          = 'Italy';
+	const BELGIUM_DUTCH  = 'Belgium_Dutch';
+	const NETHERLANDS    = 'Netherlands';
+	const SPAIN          = 'Spain';
+	const SWITZERLAND    = 'Switzerland';
+	const TAIWAN         = 'Taiwan';
+	const EBAYMOTORS     = 'eBayMotors';
+	const HONGKONG       = 'HongKong';
+	const SINGAPORE      = 'Singapore';
+	const INDIA          = 'India';
+	const CHINA          = 'China';
+	const IRELAND        = 'Ireland';
+	const MALAYSIA       = 'Malaysia';
+	const PHILIPPINES    = 'Philippines';
+	const POLAND         = 'Poland';
+	const SWEDEN         = 'Sweden';
+	const CUSTOMCODE     = 'CustomCode';
+	const CANADAFRENCH   = 'CanadaFrench';
+}

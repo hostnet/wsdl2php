@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class PictureManagerDetailLevelCodeType {
-	const ReturnAll = 'ReturnAll';
-	const ReturnSubscription = 'ReturnSubscription';
-	const ReturnPicture = 'ReturnPicture';
-	const CustomCode = 'CustomCode';
-}
 
+class PictureManagerDetailLevelCodeType
+{
+	const RETURNALL          = 'ReturnAll';
+	const RETURNSUBSCRIPTION = 'ReturnSubscription';
+	const RETURNPICTURE      = 'ReturnPicture';
+	const CUSTOMCODE         = 'CustomCode';
+}

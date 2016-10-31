@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * AttributeSetType
  * (in/out) A set of salient aspects or features that describe an item in a standardized way.
@@ -9,7 +10,8 @@ namespace Controle;
  *     See the Developer's Guide for information about      characteristics meta-data and how
  * to determine when attributes are required.
  */
-class AttributeSetType {
+class AttributeSetType
+{
 	/**
 	 * @var \Controle\AttributeType | A salient aspect or feature of an item in a given category.            Attributes are known
 	 * as "Item Specifics" in the eBay Web site.            Use attributes to describe an item
@@ -33,7 +35,7 @@ class AttributeSetType {
 	 * (and it is            only returned if IncludeCondition = true in the request).
 	 *     Not applicable to Half.com.
 	 */
-	public $Attribute;
+	public $attribute;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -41,46 +43,50 @@ class AttributeSetType {
 	/**
 	 * @var int
 	 */
-	public $attributeSetID;
+	public $attributesetid;
 	/**
 	 * @var string
 	 */
-	public $attributeSetVersion;
+	public $attributesetversion;
 	/**
 	 * @param AttributeType $val
 	 * @throws Exception
 	 */
-	public function setAttribute($val) {
-		
-		$this->Attribute = (int)$val;
+	public function setAttribute($val)
+	{
+        $this->attribute = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setAttributeSetID($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->attributeSetID = (int)$val;
+	public function setAttributeSetID($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->attributesetid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAttributeSetVersion($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for attributeSetVersion');
-		$this->attributeSetVersion = (int)$val;
+	public function setAttributeSetVersion($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for attributeSetVersion');
+        }
+        $this->attributesetversion = (int)$val;
 	}
-
 }
-

@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class PromotionItemPriceTypeCodeType {
-	const AuctionPrice = 'AuctionPrice';
-	const BuyItNowPrice = 'BuyItNowPrice';
-	const BestOfferOnlyPrice = 'BestOfferOnlyPrice';
-	const ClassifiedAdPrice = 'ClassifiedAdPrice';
-	const CustomCode = 'CustomCode';
-}
 
+class PromotionItemPriceTypeCodeType
+{
+	const AUCTIONPRICE       = 'AuctionPrice';
+	const BUYITNOWPRICE      = 'BuyItNowPrice';
+	const BESTOFFERONLYPRICE = 'BestOfferOnlyPrice';
+	const CLASSIFIEDADPRICE  = 'ClassifiedAdPrice';
+	const CUSTOMCODE         = 'CustomCode';
+}

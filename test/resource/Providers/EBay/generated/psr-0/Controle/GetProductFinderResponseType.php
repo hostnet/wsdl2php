@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetProductFinderResponseType
  * For a category that supports product finders, GetProductFinder returns an XML string
@@ -12,14 +13,16 @@ namespace Controle;
  * Guide for an overview of Pre-filled Item Information and details about      searching for
  * catalog products and for information about searching for listed items.
  */
-class GetProductFinderResponseType extends \Controle\AbstractResponseType {
+class GetProductFinderResponseType extends
+ \Controle\AbstractResponseType
+{
 	/**
 	 * @var string | Current version of the product search page data for the site. This value changes each time
 	 * changes are made to the search page data. The current version value is not necessarily
 	 * greater than the previous value. Therefore, when comparing versions, only compare whether
 	 * the value has changed.
 	 */
-	public $AttributeSystemVersion;
+	public $attributesystemversion;
 	/**
 	 * @var string | A string containing a list of search attributes that can be used in a "Product Finder"
 	 * style query, along with related meta-data. The meta-data specifies possible values of each
@@ -33,24 +36,28 @@ class GetProductFinderResponseType extends \Controle\AbstractResponseType {
 	 * (e.g., &amp;lt;eBay&amp;gt;&amp;lt;ProductFinders&amp;gt;...). See the appendices in the
 	 * eBay Web Services guide for general information about string data types.
 	 */
-	public $ProductFinderData;
+	public $productfinderdata;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAttributeSystemVersion($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
-		$this->AttributeSystemVersion = (int)$val;
+	public function setAttributeSystemVersion($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+        }
+        $this->attributesystemversion = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setProductFinderData($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductFinderData');
-		$this->ProductFinderData = (int)$val;
+	public function setProductFinderData($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ProductFinderData');
+        }
+        $this->productfinderdata = (int)$val;
 	}
-
 }
-

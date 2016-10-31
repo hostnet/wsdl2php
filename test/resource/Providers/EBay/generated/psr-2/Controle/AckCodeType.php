@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class AckCodeType {
-    const Success = 'Success';
-    const Failure = 'Failure';
-    const Warning = 'Warning';
-    const PartialFailure = 'PartialFailure';
-    const CustomCode = 'CustomCode';
-}
 
+class AckCodeType
+{
+    const SUCCESS        = 'Success';
+    const FAILURE        = 'Failure';
+    const WARNING        = 'Warning';
+    const PARTIALFAILURE = 'PartialFailure';
+    const CUSTOMCODE     = 'CustomCode';
+}

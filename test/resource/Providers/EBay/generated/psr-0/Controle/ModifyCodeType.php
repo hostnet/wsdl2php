@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class ModifyCodeType {
-	const Dropped = 'Dropped';
-	const Modify = 'Modify';
-	const CustomCode = 'CustomCode';
-}
 
+class ModifyCodeType
+{
+	const DROPPED    = 'Dropped';
+	const MODIFY     = 'Modify';
+	const CUSTOMCODE = 'CustomCode';
+}

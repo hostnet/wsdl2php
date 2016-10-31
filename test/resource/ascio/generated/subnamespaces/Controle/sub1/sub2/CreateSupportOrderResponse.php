@@ -1,32 +1,35 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class CreateSupportOrderResponse {
+
+class CreateSupportOrderResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $CreateSupportOrderResult;
+	public $createsupportorderresult;
 	/**
 	 * @var string
 	 */
-	public $orderId;
+	public $orderid;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setCreateSupportOrderResult($val) {
-		
-		$this->CreateSupportOrderResult = (int)$val;
+	public function setCreateSupportOrderResult($val)
+	{
+        $this->createsupportorderresult = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setOrderId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for orderId');
-		$this->orderId = (int)$val;
+	public function setOrderId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for orderId');
+        }
+        $this->orderid = (int)$val;
 	}
-
 }
-

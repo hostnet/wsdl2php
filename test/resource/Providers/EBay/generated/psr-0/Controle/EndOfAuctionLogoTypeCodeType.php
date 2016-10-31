@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class EndOfAuctionLogoTypeCodeType {
-	const WinningBidderNotice = 'WinningBidderNotice';
-	const Store = 'Store';
-	const Customized = 'Customized';
-	const CustomCode = 'CustomCode';
-	const None = 'None';
-}
 
+class EndOfAuctionLogoTypeCodeType
+{
+	const WINNINGBIDDERNOTICE = 'WinningBidderNotice';
+	const STORE               = 'Store';
+	const CUSTOMIZED          = 'Customized';
+	const CUSTOMCODE          = 'CustomCode';
+	const NONE                = 'None';
+}

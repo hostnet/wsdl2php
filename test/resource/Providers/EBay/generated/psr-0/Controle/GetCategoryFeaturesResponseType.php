@@ -1,7 +1,10 @@
 <?php
 
 namespace Controle;
-class GetCategoryFeaturesResponseType extends \Controle\AbstractResponseType {
+
+class GetCategoryFeaturesResponseType extends
+ \Controle\AbstractResponseType
+{
 	/**
 	 * @var string | Version value assigned to the current category mapping data for the site.
 	 *     Compare this value to the version value the application stored with the mappings
@@ -9,70 +12,71 @@ class GetCategoryFeaturesResponseType extends \Controle\AbstractResponseType {
 	 * same,                  the data has not changed since the last time the data was retrieved
 	 * and stored.
 	 */
-	public $CategoryVersion;
+	public $categoryversion;
 	/**
 	 * @var dateTime | Gives the time in GMT that the feature flags for the category hierarchy were last updated.
 	 */
-	public $UpdateTime;
+	public $updatetime;
 	/**
 	 * @var \Controle\CategoryFeatureType | Describes a category that contains items that match the query.
 	 */
-	public $Category;
+	public $category;
 	/**
 	 * @var \Controle\SiteDefaultsType | Returns the feature settings defined for the entire site. All categories share these settings.
 	 * However, some categories can override some settings, as indicated in the Category nodes (if
 	 * any).
 	 */
-	public $SiteDefaults;
+	public $sitedefaults;
 	/**
 	 * @var \Controle\FeatureDefinitionsType | Returns definitions of the various features on the site, or the features you requested
 	 * in FeatureID (if any). Each feature has a node within FeatureDefinitions.
 	 */
-	public $FeatureDefinitions;
+	public $featuredefinitions;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCategoryVersion($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryVersion');
-		$this->CategoryVersion = (int)$val;
+	public function setCategoryVersion($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CategoryVersion');
+        }
+        $this->categoryversion = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setUpdateTime($val) {
-		
-		$this->UpdateTime = (int)$val;
+	public function setUpdateTime($val)
+	{
+        $this->updatetime = (int)$val;
 	}
 
 	/**
 	 * @param CategoryFeatureType $val
 	 * @throws Exception
 	 */
-	public function setCategory($val) {
-		
-		$this->Category = (int)$val;
+	public function setCategory($val)
+	{
+        $this->category = (int)$val;
 	}
 
 	/**
 	 * @param SiteDefaultsType $val
 	 * @throws Exception
 	 */
-	public function setSiteDefaults($val) {
-		
-		$this->SiteDefaults = (int)$val;
+	public function setSiteDefaults($val)
+	{
+        $this->sitedefaults = (int)$val;
 	}
 
 	/**
 	 * @param FeatureDefinitionsType $val
 	 * @throws Exception
 	 */
-	public function setFeatureDefinitions($val) {
-		
-		$this->FeatureDefinitions = (int)$val;
+	public function setFeatureDefinitions($val)
+	{
+        $this->featuredefinitions = (int)$val;
 	}
-
 }
-

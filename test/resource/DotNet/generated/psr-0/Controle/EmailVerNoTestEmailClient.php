@@ -11,23 +11,26 @@ class EmailVerNoTestEmailClient extends \SoapClient {
 
 	const WSDL_FILE = "EmailVerifyTest.wsdl";
 	private $classmap = array(
-		'VerifyMXRecordResponse' => '\Controle\VerifyMXRecordResponse',
-		'AdvancedVerifyEmailResponse' => '\Controle\AdvancedVerifyEmailResponse',
-		'ReturnIndicator' => '\Controle\ReturnIndicator',
-		'VerifyEmailResponse' => '\Controle\VerifyEmailResponse',
-		'ReturnCodesResponse' => '\Controle\ReturnCodesResponse',
+        'AdvancedVerifyEmailResponse\,' =>
+            '\Controle\AdvancedVerifyEmailResponse',
+        'ReturnIndicator\,' =>
+            '\Controle\ReturnIndicator',
+        'VerifyEmailResponse\,' =>
+            '\Controle\VerifyEmailResponse',
+        'ReturnCodesResponse\,' =>
+            '\Controle\ReturnCodesResponse',
 	);
 
 	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+            	$options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -43,11 +46,11 @@ class EmailVerNoTestEmailClient extends \SoapClient {
 	 * @return \Controle\VerifyMXRecordResponse
 	 */
 	public function VerifyMXRecord(\Controle\VerifyMXRecord $parameters) {
-		return $this->__soapCall(
-			'VerifyMXRecord',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'VerifyMXRecord',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
 
 	/**
@@ -62,11 +65,11 @@ class EmailVerNoTestEmailClient extends \SoapClient {
 	 * @return \Controle\AdvancedVerifyEmailResponse
 	 */
 	public function AdvancedVerifyEmail(\Controle\AdvancedVerifyEmail $parameters) {
-		return $this->__soapCall(
-			'AdvancedVerifyEmail',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'AdvancedVerifyEmail',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
 
 	/**
@@ -79,11 +82,11 @@ class EmailVerNoTestEmailClient extends \SoapClient {
 	 * @return \Controle\VerifyEmailResponse
 	 */
 	public function VerifyEmail(\Controle\VerifyEmail $parameters) {
-		return $this->__soapCall(
-			'VerifyEmail',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'VerifyEmail',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
 
 	/**
@@ -94,11 +97,10 @@ class EmailVerNoTestEmailClient extends \SoapClient {
 	 * @return \Controle\ReturnCodesResponse
 	 */
 	public function ReturnCodes(\Controle\ReturnCodes $parameters) {
-		return $this->__soapCall(
-			'ReturnCodes',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'ReturnCodes',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
-
 }

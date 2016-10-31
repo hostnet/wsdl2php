@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
-class GetMessageQueueResponse {
+
+class GetMessageQueueResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $GetMessageQueueResult;
+	public $getmessagequeueresult;
 	/**
 	 * @var \Controle\QueueItem
 	 */
@@ -14,19 +16,17 @@ class GetMessageQueueResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setGetMessageQueueResult($val) {
-		
-		$this->GetMessageQueueResult = (int)$val;
+	public function setGetMessageQueueResult($val)
+	{
+        $this->getmessagequeueresult = (int)$val;
 	}
 
 	/**
 	 * @param QueueItem $val
 	 * @throws Exception
 	 */
-	public function setItem($val) {
-		
-		$this->item = (int)$val;
+	public function setItem($val)
+	{
+        $this->item = (int)$val;
 	}
-
 }
-

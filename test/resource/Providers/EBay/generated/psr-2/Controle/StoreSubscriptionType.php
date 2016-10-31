@@ -1,15 +1,17 @@
 <?php
 
 namespace Controle;
-class StoreSubscriptionType {
+
+class StoreSubscriptionType
+{
     /**
      * @var \Controle\StoreSubscriptionLevelCodeType | Store subscription level.
      */
-    public $Level;
+    public $level;
     /**
      * @var \Controle\AmountType | Monthly fee for the Store subscription level.
      */
-    public $Fee;
+    public $fee;
     /**
      * @var \Controle\<anyXML>
      */
@@ -18,28 +20,26 @@ class StoreSubscriptionType {
      * @param StoreSubscriptionLevelCodeType $val
      * @throws Exception
      */
-    public function setLevel($val) {
-        
-        $this->Level = (int)$val;
+    public function setLevel($val)
+    {
+        $this->level = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setFee($val) {
-        
-        $this->Fee = (int)$val;
+    public function setFee($val)
+    {
+        $this->fee = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * RequestCategoriesType
  * A set of parameters that control the retrieval of categories (not items) that match a search
@@ -8,7 +9,8 @@ namespace Controle;
  * matching categories. If empty or not present, no matching category information is returned.
  * .
  */
-class RequestCategoriesType {
+class RequestCategoriesType
+{
     /**
      * @var boolean | Filter to retrieve matching categories but not matching items or buying guides. If true,
      * only matching categories are returned (with no item or buying guide details). If false
@@ -19,58 +21,65 @@ class RequestCategoriesType {
      * matching categories but no item data or buying guides. If TotalOnly is false and Categories.CategoriesOnly
      * is true, the results include matching categories, item data, and buying guides.
      */
-    public $CategoriesOnly;
+    public $categoriesonly;
     /**
      * @var int | Maximum quantity of matching categories to return at the first level of the
      *     category hierarchy (CategoryLevel 1).
      */
-    public $MaxCategories;
+    public $maxcategories;
     /**
      * @var int | Maximum quantity of matching subcategories to return at each lower level
      *  of the hierarchy.
      */
-    public $MaxSubcategories;
+    public $maxsubcategories;
     /**
      * @var int | Filter to control the deepest matching category level to return.             If you
      * specify 0, no category data is returned. If you specify a negative number,
      *    the results are unpredictable.
      */
-    public $Levels;
+    public $levels;
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setCategoriesOnly($val) {
-        
-        $this->CategoriesOnly = (int)$val;
+    public function setCategoriesOnly($val)
+    {
+        $this->categoriesonly = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setMaxCategories($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->MaxCategories = (int)$val;
+    public function setMaxCategories($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->maxcategories = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setMaxSubcategories($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->MaxSubcategories = (int)$val;
+    public function setMaxSubcategories($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->maxsubcategories = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setLevels($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->Levels = (int)$val;
+    public function setLevels($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->levels = (int)$val;
     }
-
 }
-

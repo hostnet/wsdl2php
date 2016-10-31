@@ -1,8 +1,9 @@
 <?php
 
 namespace Controle;
-class NotificationPayloadTypeCodeType {
-    const eBLSchemaSOAP = 'eBLSchemaSOAP';
-    const CustomCode = 'CustomCode';
-}
 
+class NotificationPayloadTypeCodeType
+{
+    const EBLSCHEMASOAP = 'eBLSchemaSOAP';
+    const CUSTOMCODE    = 'CustomCode';
+}

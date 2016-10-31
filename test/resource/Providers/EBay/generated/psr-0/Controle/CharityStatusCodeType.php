@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class CharityStatusCodeType {
-	const Valid = 'Valid';
-	const NoLongerValid = 'NoLongerValid';
-	const CustomCode = 'CustomCode';
-}
 
+class CharityStatusCodeType
+{
+	const VALID         = 'Valid';
+	const NOLONGERVALID = 'NoLongerValid';
+	const CUSTOMCODE    = 'CustomCode';
+}

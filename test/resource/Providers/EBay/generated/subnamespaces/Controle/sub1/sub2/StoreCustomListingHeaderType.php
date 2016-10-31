@@ -1,39 +1,41 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * StoreCustomListingHeaderType
  * Configuration of a Store custom listing header.
  */
-class StoreCustomListingHeaderType {
+class StoreCustomListingHeaderType
+{
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomListingHeaderDisplayCodeType | Display type for the custom listing header.
 	 */
-	public $DisplayType;
+	public $displaytype;
 	/**
 	 * @var boolean | Store logo.
 	 */
-	public $Logo;
+	public $logo;
 	/**
 	 * @var boolean | Specifies whether the custom header has a search box.
 	 */
-	public $SearchBox;
+	public $searchbox;
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomListingHeaderLinkType | Link to include in the custom header.
 	 */
-	public $LinkToInclude;
+	public $linktoinclude;
 	/**
 	 * @var boolean | Specifies whether the custom header has a link to Add to Favorite Stores.
 	 */
-	public $AddToFavoriteStores;
+	public $addtofavoritestores;
 	/**
 	 * @var boolean | Specifies whether the custom header has a link to Sign up for Store Newsletter.
 	 */
-	public $SignUpForStoreNewsletter;
+	public $signupforstorenewsletter;
 	/**
 	 * @var boolean | Specifies whether the bread crumb needs to be displayed above the listing header.
 	 */
-	public $BreadCrumb;
+	public $breadcrumb;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -42,73 +44,71 @@ class StoreCustomListingHeaderType {
 	 * @param StoreCustomListingHeaderDisplayCodeType $val
 	 * @throws Exception
 	 */
-	public function setDisplayType($val) {
-		
-		$this->DisplayType = (int)$val;
+	public function setDisplayType($val)
+	{
+        $this->displaytype = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setLogo($val) {
-		
-		$this->Logo = (int)$val;
+	public function setLogo($val)
+	{
+        $this->logo = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setSearchBox($val) {
-		
-		$this->SearchBox = (int)$val;
+	public function setSearchBox($val)
+	{
+        $this->searchbox = (int)$val;
 	}
 
 	/**
 	 * @param StoreCustomListingHeaderLinkType $val
 	 * @throws Exception
 	 */
-	public function setLinkToInclude($val) {
-		
-		$this->LinkToInclude = (int)$val;
+	public function setLinkToInclude($val)
+	{
+        $this->linktoinclude = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setAddToFavoriteStores($val) {
-		
-		$this->AddToFavoriteStores = (int)$val;
+	public function setAddToFavoriteStores($val)
+	{
+        $this->addtofavoritestores = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setSignUpForStoreNewsletter($val) {
-		
-		$this->SignUpForStoreNewsletter = (int)$val;
+	public function setSignUpForStoreNewsletter($val)
+	{
+        $this->signupforstorenewsletter = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setBreadCrumb($val) {
-		
-		$this->BreadCrumb = (int)$val;
+	public function setBreadCrumb($val)
+	{
+        $this->breadcrumb = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

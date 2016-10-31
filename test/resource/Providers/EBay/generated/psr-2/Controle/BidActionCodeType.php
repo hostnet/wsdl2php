@@ -1,17 +1,18 @@
 <?php
 
 namespace Controle;
-class BidActionCodeType {
-    const Unknown = 'Unknown';
-    const Bid = 'Bid';
-    const NotUsed = 'NotUsed';
-    const Retraction = 'Retraction';
-    const AutoRetraction = 'AutoRetraction';
-    const Cancelled = 'Cancelled';
-    const AutoCancel = 'AutoCancel';
-    const Absentee = 'Absentee';
-    const BuyItNow = 'BuyItNow';
-    const Purchase = 'Purchase';
-    const CustomCode = 'CustomCode';
-}
 
+class BidActionCodeType
+{
+    const UNKNOWN        = 'Unknown';
+    const BID            = 'Bid';
+    const NOTUSED        = 'NotUsed';
+    const RETRACTION     = 'Retraction';
+    const AUTORETRACTION = 'AutoRetraction';
+    const CANCELLED      = 'Cancelled';
+    const AUTOCANCEL     = 'AutoCancel';
+    const ABSENTEE       = 'Absentee';
+    const BUYITNOW       = 'BuyItNow';
+    const PURCHASE       = 'Purchase';
+    const CUSTOMCODE     = 'CustomCode';
+}

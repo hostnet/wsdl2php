@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class ItemFormatSortFilterCodeType {
-	const ShowAnyItems = 'ShowAnyItems';
-	const ShowItemsWithBINFirst = 'ShowItemsWithBINFirst';
-	const ShowOnlyItemsWithBIN = 'ShowOnlyItemsWithBIN';
-	const ShowOnlyStoreItems = 'ShowOnlyStoreItems';
-	const CustomCode = 'CustomCode';
-}
 
+class ItemFormatSortFilterCodeType
+{
+	const SHOWANYITEMS          = 'ShowAnyItems';
+	const SHOWITEMSWITHBINFIRST = 'ShowItemsWithBINFirst';
+	const SHOWONLYITEMSWITHBIN  = 'ShowOnlyItemsWithBIN';
+	const SHOWONLYSTOREITEMS    = 'ShowOnlyStoreItems';
+	const CUSTOMCODE            = 'CustomCode';
+}

@@ -1,31 +1,33 @@
 <?php
 
 namespace Controle;
+
 /**
  * SearchLocationFilterType
  * One of the data filters used when searching for items using        GetSearchResults. Allows
  * filtering based on an item's location (where        the seller would be shipping the item
  * from) or an item's availability        (which eBay sites the item can be purchased from).
  */
-class SearchLocationFilterType {
+class SearchLocationFilterType
+{
 	/**
 	 * @var \Controle\CountryCodeType | Country the item is either located in or available to (depending on the value
 	 *   specified in ItemLocation).
 	 */
-	public $CountryCode;
+	public $countrycode;
 	/**
 	 * @var \Controle\ItemLocationCodeType | Specifies whether the filter should be for items located in the country            specified
 	 * in Country or available to that country.
 	 */
-	public $ItemLocation;
+	public $itemlocation;
 	/**
 	 * @var \Controle\SearchLocationType | Specifies filtering based on site ID.
 	 */
-	public $SearchLocation;
+	public $searchlocation;
 	/**
 	 * @var \Controle\CurrencyCodeType | Limits the result set to just those items with a specified currency.
 	 */
-	public $Currency;
+	public $currency;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -34,46 +36,44 @@ class SearchLocationFilterType {
 	 * @param CountryCodeType $val
 	 * @throws Exception
 	 */
-	public function setCountryCode($val) {
-		
-		$this->CountryCode = (int)$val;
+	public function setCountryCode($val)
+	{
+        $this->countrycode = (int)$val;
 	}
 
 	/**
 	 * @param ItemLocationCodeType $val
 	 * @throws Exception
 	 */
-	public function setItemLocation($val) {
-		
-		$this->ItemLocation = (int)$val;
+	public function setItemLocation($val)
+	{
+        $this->itemlocation = (int)$val;
 	}
 
 	/**
 	 * @param SearchLocationType $val
 	 * @throws Exception
 	 */
-	public function setSearchLocation($val) {
-		
-		$this->SearchLocation = (int)$val;
+	public function setSearchLocation($val)
+	{
+        $this->searchlocation = (int)$val;
 	}
 
 	/**
 	 * @param CurrencyCodeType $val
 	 * @throws Exception
 	 */
-	public function setCurrency($val) {
-		
-		$this->Currency = (int)$val;
+	public function setCurrency($val)
+	{
+        $this->currency = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

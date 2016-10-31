@@ -1,16 +1,17 @@
 <?php
 
 namespace Controle;
-class ListingEnhancementsCodeType {
-    const Border = 'Border';
-    const BoldTitle = 'BoldTitle';
-    const Featured = 'Featured';
-    const Highlight = 'Highlight';
-    const HomePageFeatured = 'HomePageFeatured';
-    const ProPackBundle = 'ProPackBundle';
-    const BasicUpgradePackBundle = 'BasicUpgradePackBundle';
-    const ValuePackBundle = 'ValuePackBundle';
-    const ProPackPlusBundle = 'ProPackPlusBundle';
-    const CustomCode = 'CustomCode';
-}
 
+class ListingEnhancementsCodeType
+{
+    const BORDER                 = 'Border';
+    const BOLDTITLE              = 'BoldTitle';
+    const FEATURED               = 'Featured';
+    const HIGHLIGHT              = 'Highlight';
+    const HOMEPAGEFEATURED       = 'HomePageFeatured';
+    const PROPACKBUNDLE          = 'ProPackBundle';
+    const BASICUPGRADEPACKBUNDLE = 'BasicUpgradePackBundle';
+    const VALUEPACKBUNDLE        = 'ValuePackBundle';
+    const PROPACKPLUSBUNDLE      = 'ProPackPlusBundle';
+    const CUSTOMCODE             = 'CustomCode';
+}

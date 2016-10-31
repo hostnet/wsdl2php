@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class ErrorClassificationCodeType {
-	const RequestError = 'RequestError';
-	const SystemError = 'SystemError';
-	const CustomCode = 'CustomCode';
-}
 
+class ErrorClassificationCodeType
+{
+	const REQUESTERROR = 'RequestError';
+	const SYSTEMERROR  = 'SystemError';
+	const CUSTOMCODE   = 'CustomCode';
+}

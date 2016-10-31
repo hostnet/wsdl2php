@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class BestOfferTypeCodeType {
-    const BuyerBestOffer = 'BuyerBestOffer';
-    const BuyerCounterOffer = 'BuyerCounterOffer';
-    const SellerCounterOffer = 'SellerCounterOffer';
-    const CustomCode = 'CustomCode';
-}
 
+class BestOfferTypeCodeType
+{
+    const BUYERBESTOFFER     = 'BuyerBestOffer';
+    const BUYERCOUNTEROFFER  = 'BuyerCounterOffer';
+    const SELLERCOUNTEROFFER = 'SellerCounterOffer';
+    const CUSTOMCODE         = 'CustomCode';
+}

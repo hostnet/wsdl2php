@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * ListingDesignerType
  * Contains the IDs for the Listing Designer theme and template (if either are used) associated
@@ -9,7 +10,8 @@ namespace Controle;
  * PictureDetails.PhotoDisplay. With lower compatibility levels, specified in SiteHostedPictureType.PhotoDisplay
  *        or VendorHostedPictureType.PhotoDisplay.
  */
-class ListingDesignerType {
+class ListingDesignerType
+{
     /**
      * @var int | Identifies the Layout template to use when displaying the            item's description.
      * Call GetDescriptionTemplates for valid IDs.            Set to false in GetDescriptionTemplates
@@ -19,17 +21,17 @@ class ListingDesignerType {
      * from the listing if you specify             ListingDesignerType without LayoutID. Alternatively,
      * to remove this value             when revising or relisting an item, use DeletedField.
      */
-    public $LayoutID;
+    public $layoutid;
     /**
      * @var boolean | If true, indicates that the item's picture will be enlarged to fit description
      *       of the item.
      */
-    public $OptimalPictureSize;
+    public $optimalpicturesize;
     /**
      * @var int | Unique identifier for each theme in this group. There is at least one theme in a theme
      * group.
      */
-    public $ThemeID;
+    public $themeid;
     /**
      * @var \Controle\<anyXML>
      */
@@ -38,37 +40,41 @@ class ListingDesignerType {
      * @param int $val
      * @throws Exception
      */
-    public function setLayoutID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->LayoutID = (int)$val;
+    public function setLayoutID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->layoutid = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setOptimalPictureSize($val) {
-        
-        $this->OptimalPictureSize = (int)$val;
+    public function setOptimalPictureSize($val)
+    {
+        $this->optimalpicturesize = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setThemeID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->ThemeID = (int)$val;
+    public function setThemeID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->themeid = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

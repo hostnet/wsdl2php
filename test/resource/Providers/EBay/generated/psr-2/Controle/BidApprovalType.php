@@ -1,12 +1,14 @@
 <?php
 
 namespace Controle;
+
 /**
  * BidApprovalType
  * Information that a Live Auction seller selects when approving or denying a user who wants
  * to bid on items in the seller's Live Auctions catalog.
  */
-class BidApprovalType {
+class BidApprovalType
+{
     /**
      * @var \Controle\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -20,21 +22,21 @@ class BidApprovalType {
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $UserID;
+    public $userid;
     /**
      * @var \Controle\AmountType | Amount that has been approved by the seller. If the seller has not yet approved, return
      * value "Pending"
      */
-    public $ApprovedBiddingLimit;
+    public $approvedbiddinglimit;
     /**
      * @var string | Comments entered by the seller when it declined an approval request, if any.
      */
-    public $DeclinedComment;
+    public $declinedcomment;
     /**
      * @var \Controle\BidderStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $Status;
+    public $status;
     /**
      * @var \Controle\<anyXML>
      */
@@ -43,46 +45,47 @@ class BidApprovalType {
      * @param UserIDType $val
      * @throws Exception
      */
-    public function setUserID($val) {
-        
-        $this->UserID = (int)$val;
+    public function setUserID($val)
+    {
+        $this->userid = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setApprovedBiddingLimit($val) {
-        
-        $this->ApprovedBiddingLimit = (int)$val;
+    public function setApprovedBiddingLimit($val)
+    {
+        $this->approvedbiddinglimit = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setDeclinedComment($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DeclinedComment');
-        $this->DeclinedComment = (int)$val;
+    public function setDeclinedComment($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DeclinedComment');
+        }
+        $this->declinedcomment = (int)$val;
     }
 
     /**
      * @param BidderStatusCodeType $val
      * @throws Exception
      */
-    public function setStatus($val) {
-        
-        $this->Status = (int)$val;
+    public function setStatus($val)
+    {
+        $this->status = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

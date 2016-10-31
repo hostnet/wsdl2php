@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class AdFormatEnabledCodeType {
-    const Disabled = 'Disabled';
-    const Enabled = 'Enabled';
-    const Only = 'Only';
-    const ClassifiedAdEnabled = 'ClassifiedAdEnabled';
-    const ClassifiedAdOnly = 'ClassifiedAdOnly';
-}
 
+class AdFormatEnabledCodeType
+{
+    const DISABLED            = 'Disabled';
+    const ENABLED             = 'Enabled';
+    const ONLY                = 'Only';
+    const CLASSIFIEDADENABLED = 'ClassifiedAdEnabled';
+    const CLASSIFIEDADONLY    = 'ClassifiedAdOnly';
+}

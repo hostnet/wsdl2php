@@ -1,32 +1,32 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class SearchDnsSecKeyResponse {
+
+class SearchDnsSecKeyResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $SearchDnsSecKeyResult;
+	public $searchdnsseckeyresult;
 	/**
 	 * @var array \Controle\sub1\sub2\DnsSecKey
 	 */
-	public $dnsSecKeys;
+	public $dnsseckeys;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setSearchDnsSecKeyResult($val) {
-		
-		$this->SearchDnsSecKeyResult = (int)$val;
+	public function setSearchDnsSecKeyResult($val)
+	{
+        $this->searchdnsseckeyresult = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfDnsSecKey $val
 	 * @throws Exception
 	 */
-	public function setDnsSecKeys($val) {
-		
-		$this->dnsSecKeys = (int)$val;
+	public function setDnsSecKeys($val)
+	{
+        $this->dnsseckeys = (int)$val;
 	}
-
 }
-

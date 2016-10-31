@@ -1,24 +1,26 @@
 <?php
 
 namespace Controle;
+
 /**
  * ErrorType
  * These are request errors (as opposed to system errors) that occur due to problems with business-level
  * data (e.g., an invalid combination of arguments) that the application passed in.
  */
-class ErrorType {
+class ErrorType
+{
 	/**
 	 * @var string | Brief version of the tip message.
 	 */
-	public $ShortMessage;
+	public $shortmessage;
 	/**
 	 * @var string | Detailed version of the tip message.
 	 */
-	public $LongMessage;
+	public $longmessage;
 	/**
 	 * @var \Controle\token | Reason for SMS subscription error (postback from thired-party integrator).
 	 */
-	public $ErrorCode;
+	public $errorcode;
 	/**
 	 * @var boolean | Indicates whether the error message text is intended to be displayed to an end user or
 	 * intended only to be parsed by the application. If true or not present (the default), the
@@ -26,22 +28,22 @@ class ErrorType {
 	 * application, and the application should translate the error into a more appropriate message. Only
 	 * applicable to Item Specifics errors and warnings returned from listing requests.
 	 */
-	public $UserDisplayHint;
+	public $userdisplayhint;
 	/**
 	 * @var \Controle\SeverityCodeType | Indicates whether the error is a severe error (causing the request to fail) or an informational
 	 * error (a warning) that should be communicated to the user.
 	 */
-	public $SeverityCode;
+	public $severitycode;
 	/**
 	 * @var \Controle\ErrorParameterType | This optional element carries a list of context-specific error variables that indicate
 	 * details about the error condition. These are useful when multiple instances of ErrorType
 	 * are returned.
 	 */
-	public $ErrorParameters;
+	public $errorparameters;
 	/**
 	 * @var \Controle\ErrorClassificationCodeType | API errors are divided between two classes: system errors and request errors.
 	 */
-	public $ErrorClassification;
+	public $errorclassification;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -50,73 +52,77 @@ class ErrorType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setShortMessage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ShortMessage');
-		$this->ShortMessage = (int)$val;
+	public function setShortMessage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ShortMessage');
+        }
+        $this->shortmessage = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLongMessage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LongMessage');
-		$this->LongMessage = (int)$val;
+	public function setLongMessage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LongMessage');
+        }
+        $this->longmessage = (int)$val;
 	}
 
 	/**
 	 * @param token $val
 	 * @throws Exception
 	 */
-	public function setErrorCode($val) {
-		
-		$this->ErrorCode = (int)$val;
+	public function setErrorCode($val)
+	{
+        $this->errorcode = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setUserDisplayHint($val) {
-		
-		$this->UserDisplayHint = (int)$val;
+	public function setUserDisplayHint($val)
+	{
+        $this->userdisplayhint = (int)$val;
 	}
 
 	/**
 	 * @param SeverityCodeType $val
 	 * @throws Exception
 	 */
-	public function setSeverityCode($val) {
-		
-		$this->SeverityCode = (int)$val;
+	public function setSeverityCode($val)
+	{
+        $this->severitycode = (int)$val;
 	}
 
 	/**
 	 * @param ErrorParameterType $val
 	 * @throws Exception
 	 */
-	public function setErrorParameters($val) {
-		
-		$this->ErrorParameters = (int)$val;
+	public function setErrorParameters($val)
+	{
+        $this->errorparameters = (int)$val;
 	}
 
 	/**
 	 * @param ErrorClassificationCodeType $val
 	 * @throws Exception
 	 */
-	public function setErrorClassification($val) {
-		
-		$this->ErrorClassification = (int)$val;
+	public function setErrorClassification($val)
+	{
+        $this->errorclassification = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

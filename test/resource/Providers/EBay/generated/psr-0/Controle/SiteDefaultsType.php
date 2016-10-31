@@ -1,74 +1,76 @@
 <?php
 
 namespace Controle;
+
 /**
  * SiteDefaultsType
  * A container node for feature definitions that apply to the entire site.
  */
-class SiteDefaultsType {
+class SiteDefaultsType
+{
 	/**
 	 * @var \Controle\ListingDurationReferenceType | Specifies the ID of a set of default durations for a certain type of listing. The actual
 	 * duration values are returned within the FeatureDefinitions node. The type of listing is
 	 * named in the type attribute.
 	 */
-	public $ListingDuration;
+	public $listingduration;
 	/**
 	 * @var boolean | Specifies the default site setting for whether sellers are required to specify a shipping
 	 * service and its associated cost when listing items. True means the shipping terms are required unless
 	 * a specific category overrides this setting.
 	 */
-	public $ShippingTermsRequired;
+	public $shippingtermsrequired;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow best offers. True means
 	 * best offers are allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $BestOfferEnabled;
+	public $bestofferenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow DutchBIN. True means best
 	 * offers are allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $DutchBINEnabled;
+	public $dutchbinenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether a bidder must consent to the bid by confirming
 	 * that he or she read and agrees to the terms in eBay's privacy policy.
 	 */
-	public $UserConsentRequired;
+	public $userconsentrequired;
 	/**
 	 * @var boolean | Indicates whether or not it is possible to enhance a listing by putting it into a rotation
 	 * for display on a special area of the eBay home page. Support for this feature varies by
 	 * site. Item or feedback restrictions may apply.
 	 */
-	public $HomePageFeaturedEnabled;
+	public $homepagefeaturedenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the ProPack feature (a
 	 * feature pack). True means ProPack is allowed site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $ProPackEnabled;
+	public $propackenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the BasicUpgradePack feature
 	 * (a feature pack). True means it is allowed site-wide, unless a specific category overrides
 	 * the setting. Australia site (site ID 15, abbreviation AU) only. Effective beginning February
 	 * 22, 2006.
 	 */
-	public $BasicUpgradePackEnabled;
+	public $basicupgradepackenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the ValuePack feature (a
 	 * feature pack). True means it is allowed site-wide, unless a specific category overrides
 	 * the setting. Effective beginning February 22, 2006.
 	 */
-	public $ValuePackEnabled;
+	public $valuepackenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the ProPackPlus feature
 	 * (a feature pack). True means it is allowed site-wide, unless a specific category overrides
 	 * the setting. Effective beginning February 22, 2006.
 	 */
-	public $ProPackPlusEnabled;
+	public $propackplusenabled;
 	/**
 	 * @var \Controle\AdFormatEnabledCodeType | Specifies the default site setting for whether categories allow the Ad Format feature.
 	 * True means the feature is allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $AdFormatEnabled;
+	public $adformatenabled;
 	/**
 	 * @var \Controle\DigitalDeliveryEnabledCodeType | eBay enables you to list and sell digital files (such as Adobe PDF files) or information
 	 * that buyers can access online or have delivered electronically. This flag specifies whether
@@ -83,39 +85,39 @@ class SiteDefaultsType {
 	 * if both categories support digital listings. Digital listings are not eligible for eBay
 	 * Express.
 	 */
-	public $DigitalDeliveryEnabled;
+	public $digitaldeliveryenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow counter offers for best
 	 * offers. True means counter offers are allowed site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $BestOfferCounterEnabled;
+	public $bestoffercounterenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow auto decline for best offers.
 	 * True means auto decline is allowed site-wide, unless a specific category overrides the
 	 * setting.
 	 */
-	public $BestOfferAutoDeclineEnabled;
+	public $bestofferautodeclineenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for  whether LocalMarketSpecialitySubscription feature
 	 * is supported for this category.
 	 */
-	public $LocalMarketSpecialitySubscription;
+	public $localmarketspecialitysubscription;
 	/**
 	 * @var boolean | Specifies the default site setting for whether LocalMarketRegularSubscription feature is
 	 * supported for this category.
 	 */
-	public $LocalMarketRegularSubscription;
+	public $localmarketregularsubscription;
 	/**
 	 * @var boolean | Specifies the default site setting for whether LocalMarketPremiumSubscription feature is
 	 * supported for this category.
 	 */
-	public $LocalMarketPremiumSubscription;
+	public $localmarketpremiumsubscription;
 	/**
 	 * @var boolean | Specifies the default site setting for whether LocalMarketNonSubscription feature is supported
 	 * for this category.
 	 */
-	public $LocalMarketNonSubscription;
+	public $localmarketnonsubscription;
 	/**
 	 * @var boolean | Specifies whether most categories on the site are eligible for eBay Express. eBay Express
 	 * is a specialty site where customers can buy new, fixed-price goods in a more conventional
@@ -129,7 +131,7 @@ class SiteDefaultsType {
 	 * all other Express eligibility requirements are met. See "eBay Express" in the eBay Web
 	 * Services guide for information about other eligibility requirements.
 	 */
-	public $ExpressEnabled;
+	public $expressenabled;
 	/**
 	 * @var boolean | Specifies whether most categories on the site require a listing to include a picture in
 	 * order to qualify for eBay Express.<br><br> If true, items on the site require a picture
@@ -139,7 +141,7 @@ class SiteDefaultsType {
 	 * for tickets.<br> If false, items on the site do not require a picture, but some categories
 	 * may override the setting.<br><br> Only meaningful if ExpressEnabled is true for the category.
 	 */
-	public $ExpressPicturesRequired;
+	public $expresspicturesrequired;
 	/**
 	 * @var boolean | Specifies whether most categories on the site require a listing to include the Item Condition
 	 * attribute in order to qualify for eBay Express. <br><br> If true, items on the site require
@@ -151,53 +153,53 @@ class SiteDefaultsType {
 	 * false, items on the site do not require the Item Condition, but some categories may override
 	 * the setting.<br><br> Only meaningful if ExpressEnabled is true for the category.
 	 */
-	public $ExpressConditionRequired;
+	public $expressconditionrequired;
 	/**
 	 * @var double | Specifies the default site setting for whether the Minimum Reserve Price feature is supported
 	 * for this category.
 	 */
-	public $MinimumReservePrice;
+	public $minimumreserveprice;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow seller-level contact information
 	 * for Classified Ad format listings. A value of true means seller-level contact information
 	 * is available for Classified Ad format listings site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $SellerContactDetailsEnabled;
+	public $sellercontactdetailsenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether the Transaction Confirmation Request feature
 	 * is supported for this category.
 	 */
-	public $TransactionConfirmationRequestEnabled;
+	public $transactionconfirmationrequestenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the Store Inventory Format
 	 * feature. True means the feature is allowed site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $StoreInventoryEnabled;
+	public $storeinventoryenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the addition of Skype buttons
 	 * to listings for transactional formats (e.g., the Chinese auction format).
 	 */
-	public $SkypeMeTransactionalEnabled;
+	public $skypemetransactionalenabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the addition of Skype buttons
 	 * to listings for nontransactional formats (e.g., the advertisement format).
 	 */
-	public $SkypeMeNonTransactionalEnabled;
+	public $skypemenontransactionalenabled;
 	/**
 	 * @var string | Specifies the supported local listing distances of regular vehicles.
 	 */
-	public $LocalListingDistancesRegular;
+	public $locallistingdistancesregular;
 	/**
 	 * @var string | Specifies the supported local listing distances of specialty vehicles.
 	 */
-	public $LocalListingDistancesSpecialty;
+	public $locallistingdistancesspecialty;
 	/**
 	 * @var string | Specifies the supported local listing distances for users who have not subscribed to either
 	 * Regular or Specialty vehicles.
 	 */
-	public $LocalListingDistancesNonSubscription;
+	public $locallistingdistancesnonsubscription;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -206,280 +208,287 @@ class SiteDefaultsType {
 	 * @param ListingDurationReferenceType $val
 	 * @throws Exception
 	 */
-	public function setListingDuration($val) {
-		
-		$this->ListingDuration = (int)$val;
+	public function setListingDuration($val)
+	{
+        $this->listingduration = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setShippingTermsRequired($val) {
-		
-		$this->ShippingTermsRequired = (int)$val;
+	public function setShippingTermsRequired($val)
+	{
+        $this->shippingtermsrequired = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setBestOfferEnabled($val) {
-		
-		$this->BestOfferEnabled = (int)$val;
+	public function setBestOfferEnabled($val)
+	{
+        $this->bestofferenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setDutchBINEnabled($val) {
-		
-		$this->DutchBINEnabled = (int)$val;
+	public function setDutchBINEnabled($val)
+	{
+        $this->dutchbinenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setUserConsentRequired($val) {
-		
-		$this->UserConsentRequired = (int)$val;
+	public function setUserConsentRequired($val)
+	{
+        $this->userconsentrequired = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setHomePageFeaturedEnabled($val) {
-		
-		$this->HomePageFeaturedEnabled = (int)$val;
+	public function setHomePageFeaturedEnabled($val)
+	{
+        $this->homepagefeaturedenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setProPackEnabled($val) {
-		
-		$this->ProPackEnabled = (int)$val;
+	public function setProPackEnabled($val)
+	{
+        $this->propackenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setBasicUpgradePackEnabled($val) {
-		
-		$this->BasicUpgradePackEnabled = (int)$val;
+	public function setBasicUpgradePackEnabled($val)
+	{
+        $this->basicupgradepackenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setValuePackEnabled($val) {
-		
-		$this->ValuePackEnabled = (int)$val;
+	public function setValuePackEnabled($val)
+	{
+        $this->valuepackenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setProPackPlusEnabled($val) {
-		
-		$this->ProPackPlusEnabled = (int)$val;
+	public function setProPackPlusEnabled($val)
+	{
+        $this->propackplusenabled = (int)$val;
 	}
 
 	/**
 	 * @param AdFormatEnabledCodeType $val
 	 * @throws Exception
 	 */
-	public function setAdFormatEnabled($val) {
-		
-		$this->AdFormatEnabled = (int)$val;
+	public function setAdFormatEnabled($val)
+	{
+        $this->adformatenabled = (int)$val;
 	}
 
 	/**
 	 * @param DigitalDeliveryEnabledCodeType $val
 	 * @throws Exception
 	 */
-	public function setDigitalDeliveryEnabled($val) {
-		
-		$this->DigitalDeliveryEnabled = (int)$val;
+	public function setDigitalDeliveryEnabled($val)
+	{
+        $this->digitaldeliveryenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setBestOfferCounterEnabled($val) {
-		
-		$this->BestOfferCounterEnabled = (int)$val;
+	public function setBestOfferCounterEnabled($val)
+	{
+        $this->bestoffercounterenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setBestOfferAutoDeclineEnabled($val) {
-		
-		$this->BestOfferAutoDeclineEnabled = (int)$val;
+	public function setBestOfferAutoDeclineEnabled($val)
+	{
+        $this->bestofferautodeclineenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setLocalMarketSpecialitySubscription($val) {
-		
-		$this->LocalMarketSpecialitySubscription = (int)$val;
+	public function setLocalMarketSpecialitySubscription($val)
+	{
+        $this->localmarketspecialitysubscription = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setLocalMarketRegularSubscription($val) {
-		
-		$this->LocalMarketRegularSubscription = (int)$val;
+	public function setLocalMarketRegularSubscription($val)
+	{
+        $this->localmarketregularsubscription = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setLocalMarketPremiumSubscription($val) {
-		
-		$this->LocalMarketPremiumSubscription = (int)$val;
+	public function setLocalMarketPremiumSubscription($val)
+	{
+        $this->localmarketpremiumsubscription = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setLocalMarketNonSubscription($val) {
-		
-		$this->LocalMarketNonSubscription = (int)$val;
+	public function setLocalMarketNonSubscription($val)
+	{
+        $this->localmarketnonsubscription = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setExpressEnabled($val) {
-		
-		$this->ExpressEnabled = (int)$val;
+	public function setExpressEnabled($val)
+	{
+        $this->expressenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setExpressPicturesRequired($val) {
-		
-		$this->ExpressPicturesRequired = (int)$val;
+	public function setExpressPicturesRequired($val)
+	{
+        $this->expresspicturesrequired = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setExpressConditionRequired($val) {
-		
-		$this->ExpressConditionRequired = (int)$val;
+	public function setExpressConditionRequired($val)
+	{
+        $this->expressconditionrequired = (int)$val;
 	}
 
 	/**
 	 * @param double $val
 	 * @throws Exception
 	 */
-	public function setMinimumReservePrice($val) {
-		
-		$this->MinimumReservePrice = (int)$val;
+	public function setMinimumReservePrice($val)
+	{
+        $this->minimumreserveprice = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setSellerContactDetailsEnabled($val) {
-		
-		$this->SellerContactDetailsEnabled = (int)$val;
+	public function setSellerContactDetailsEnabled($val)
+	{
+        $this->sellercontactdetailsenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setTransactionConfirmationRequestEnabled($val) {
-		
-		$this->TransactionConfirmationRequestEnabled = (int)$val;
+	public function setTransactionConfirmationRequestEnabled($val)
+	{
+        $this->transactionconfirmationrequestenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setStoreInventoryEnabled($val) {
-		
-		$this->StoreInventoryEnabled = (int)$val;
+	public function setStoreInventoryEnabled($val)
+	{
+        $this->storeinventoryenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setSkypeMeTransactionalEnabled($val) {
-		
-		$this->SkypeMeTransactionalEnabled = (int)$val;
+	public function setSkypeMeTransactionalEnabled($val)
+	{
+        $this->skypemetransactionalenabled = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setSkypeMeNonTransactionalEnabled($val) {
-		
-		$this->SkypeMeNonTransactionalEnabled = (int)$val;
+	public function setSkypeMeNonTransactionalEnabled($val)
+	{
+        $this->skypemenontransactionalenabled = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocalListingDistancesRegular($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
-		$this->LocalListingDistancesRegular = (int)$val;
+	public function setLocalListingDistancesRegular($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
+        }
+        $this->locallistingdistancesregular = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocalListingDistancesSpecialty($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
-		$this->LocalListingDistancesSpecialty = (int)$val;
+	public function setLocalListingDistancesSpecialty($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
+        }
+        $this->locallistingdistancesspecialty = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocalListingDistancesNonSubscription($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
-		$this->LocalListingDistancesNonSubscription = (int)$val;
+	public function setLocalListingDistancesNonSubscription($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
+        }
+        $this->locallistingdistancesnonsubscription = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

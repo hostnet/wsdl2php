@@ -1,23 +1,26 @@
 <?php
 
 namespace Controle;
+
 /**
  * RelatedSearchKeywordArrayType
  * Container for a list of related keywords.
  */
-class RelatedSearchKeywordArrayType {
+class RelatedSearchKeywordArrayType
+{
 	/**
 	 * @var string | Related keyword.
 	 */
-	public $Keyword;
+	public $keyword;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setKeyword($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Keyword');
-		$this->Keyword = (int)$val;
+	public function setKeyword($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Keyword');
+        }
+        $this->keyword = (int)$val;
 	}
-
 }
-

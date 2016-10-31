@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * GetStoreResponseType
  * Returns the data describing a seller's eBay store, including name, description, URL, and
@@ -9,19 +10,19 @@ namespace Controle\sub1\sub2;
  * response contains either the complete store configuration or information about the category
  * hierarchy for the store only.
  */
-class GetStoreResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class GetStoreResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var \Controle\sub1\sub2\StoreType | Specifies the Store configuration that is being set for the user.
 	 */
-	public $Store;
+	public $store;
 	/**
 	 * @param StoreType $val
 	 * @throws Exception
 	 */
-	public function setStore($val) {
-		
-		$this->Store = (int)$val;
+	public function setStore($val)
+	{
+        $this->store = (int)$val;
 	}
-
 }
-

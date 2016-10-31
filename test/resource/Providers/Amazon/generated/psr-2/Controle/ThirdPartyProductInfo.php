@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class ThirdPartyProductInfo {
+
+class ThirdPartyProductInfo
+{
     /**
      * @var \Controle\ThirdPartyProductDetailsArray
      */
-    public $ThirdPartyProductDetails;
+    public $thirdpartyproductdetails;
     /**
      * @param ThirdPartyProductDetailsArray $val
      * @throws Exception
      */
-    public function setThirdPartyProductDetails($val) {
-        
-        $this->ThirdPartyProductDetails = (int)$val;
+    public function setThirdPartyProductDetails($val)
+    {
+        $this->thirdpartyproductdetails = (int)$val;
     }
-
 }
-

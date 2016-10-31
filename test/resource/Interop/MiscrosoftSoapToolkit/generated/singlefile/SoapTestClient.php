@@ -1,155 +1,173 @@
 <?php
 
-class SOAPStruct {
+class SoApStruct
+{
 	/**
 	 * @var string
 	 */
-	public $varString;
+	public $varstring;
 	/**
 	 * @var int
 	 */
-	public $varInt;
+	public $varint;
 	/**
 	 * @var float
 	 */
-	public $varFloat;
+	public $varfloat;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVarString($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for varString');
-		$this->varString = (int)$val;
+	public function setVarString($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for varString');
+        }
+        $this->varstring = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setVarInt($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->varInt = (int)$val;
+	public function setVarInt($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->varint = (int)$val;
 	}
 
 	/**
 	 * @param float $val
 	 * @throws Exception
 	 */
-	public function setVarFloat($val) {
-		
-		$this->varFloat = (int)$val;
+	public function setVarFloat($val)
+	{
+        $this->varfloat = (int)$val;
 	}
-
 }
 
-class SOAPStructStruct {
+class SoApStructStruct
+{
 	/**
 	 * @var string
 	 */
-	public $varString;
+	public $varstring;
 	/**
 	 * @var int
 	 */
-	public $varInt;
+	public $varint;
 	/**
 	 * @var float
 	 */
-	public $varFloat;
+	public $varfloat;
 	/**
 	 * @var SOAPStruct
 	 */
-	public $varStruct;
+	public $varstruct;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVarString($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for varString');
-		$this->varString = (int)$val;
+	public function setVarString($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for varString');
+        }
+        $this->varstring = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setVarInt($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->varInt = (int)$val;
+	public function setVarInt($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->varint = (int)$val;
 	}
 
 	/**
 	 * @param float $val
 	 * @throws Exception
 	 */
-	public function setVarFloat($val) {
-		
-		$this->varFloat = (int)$val;
+	public function setVarFloat($val)
+	{
+        $this->varfloat = (int)$val;
 	}
 
 	/**
 	 * @param SOAPStruct $val
 	 * @throws Exception
 	 */
-	public function setVarStruct($val) {
-		
-		$this->varStruct = (int)$val;
+	public function setVarStruct($val)
+	{
+        $this->varstruct = (int)$val;
 	}
-
 }
 
-class SOAPArrayStruct {
+class SoApArrayStruct
+{
 	/**
 	 * @var string
 	 */
-	public $varString;
+	public $varstring;
 	/**
 	 * @var int
 	 */
-	public $varInt;
+	public $varint;
 	/**
 	 * @var float
 	 */
-	public $varFloat;
+	public $varfloat;
 	/**
 	 * @var string[]
 	 */
-	public $varArray;
+	public $vararray;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVarString($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for varString');
-		$this->varString = (int)$val;
+	public function setVarString($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for varString');
+        }
+        $this->varstring = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setVarInt($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->varInt = (int)$val;
+	public function setVarInt($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->varint = (int)$val;
 	}
 
 	/**
 	 * @param float $val
 	 * @throws Exception
 	 */
-	public function setVarFloat($val) {
-		
-		$this->varFloat = (int)$val;
+	public function setVarFloat($val)
+	{
+        $this->varfloat = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfstring $val
 	 * @throws Exception
 	 */
-	public function setVarArray($val) {
-		
-		$this->varArray = (int)$val;
+	public function setVarArray($val)
+	{
+        $this->vararray = (int)$val;
 	}
-
 }
 
 /**
@@ -159,21 +177,24 @@ class SoapTestClient extends SoapClient {
 
 	const WSDL_FILE = "MicrosoftSoapToolkitV3RoundBTypedTest.wsdl";
 	private $classmap = array(
-		'SOAPStruct' => 'SOAPStruct',
-		'SOAPStructStruct' => 'SOAPStructStruct',
-		'SOAPArrayStruct' => 'SOAPArrayStruct',
+        'SOAPStruct\,' =>
+            'SOAPStruct',
+        'SOAPStructStruct\,' =>
+            'SOAPStructStruct',
+        'SOAPArrayStruct\,' =>
+            'SOAPArrayStruct',
 	);
 
 	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+            	$options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -183,11 +204,11 @@ class SoapTestClient extends SoapClient {
 	 * @return list(string $outputString, int $outputInteger, float $outputFloat)
 	 */
 	public function echoStructAsSimpleTypes(SOAPStruct $inputStruct) {
-		return $this->__soapCall(
-			'echoStructAsSimpleTypes',
-			array($inputStruct),
-			array('uri'=>'http://soapinterop.org/')
-		);
+        return $this->__soapCall(
+            'echoStructAsSimpleTypes',
+            array($inputStruct),
+            array('uri'=>'http://soapinterop.org/')
+        );
 	}
 
 	/**
@@ -199,15 +220,15 @@ class SoapTestClient extends SoapClient {
 	 * @return SOAPStruct
 	 */
 	public function echoSimpleTypesAsStruct($inputString, $inputInteger, $inputFloat) {
-		return $this->__soapCall(
-			'echoSimpleTypesAsStruct',
-			array(
-				$inputString,
-				$inputInteger,
-				$inputFloat
-				),
-			array('uri'=>'http://soapinterop.org/')
-		);
+        return $this->__soapCall(
+            'echoSimpleTypesAsStruct',
+            array(
+            $inputString,
+            $inputInteger,
+            $inputFloat
+	            ),
+            array('uri'=>'http://soapinterop.org/')
+        );
 	}
 
 	/**
@@ -217,11 +238,11 @@ class SoapTestClient extends SoapClient {
 	 * @return ArrayOfString2D
 	 */
 	public function echo2DStringArray($input2DStringArray) {
-		return $this->__soapCall(
-			'echo2DStringArray',
-			array($input2DStringArray),
-			array('uri'=>'http://soapinterop.org/')
-		);
+        return $this->__soapCall(
+            'echo2DStringArray',
+            array($input2DStringArray),
+            array('uri'=>'http://soapinterop.org/')
+        );
 	}
 
 	/**
@@ -231,11 +252,11 @@ class SoapTestClient extends SoapClient {
 	 * @return SOAPStructStruct
 	 */
 	public function echoNestedStruct(SOAPStructStruct $inputStruct) {
-		return $this->__soapCall(
-			'echoNestedStruct',
-			array($inputStruct),
-			array('uri'=>'http://soapinterop.org/')
-		);
+        return $this->__soapCall(
+            'echoNestedStruct',
+            array($inputStruct),
+            array('uri'=>'http://soapinterop.org/')
+        );
 	}
 
 	/**
@@ -245,11 +266,10 @@ class SoapTestClient extends SoapClient {
 	 * @return SOAPArrayStruct
 	 */
 	public function echoNestedArray(SOAPArrayStruct $inputStruct) {
-		return $this->__soapCall(
-			'echoNestedArray',
-			array($inputStruct),
-			array('uri'=>'http://soapinterop.org/')
-		);
+        return $this->__soapCall(
+            'echoNestedArray',
+            array($inputStruct),
+            array('uri'=>'http://soapinterop.org/')
+        );
 	}
-
 }

@@ -1,14 +1,15 @@
 <?php
 
 namespace Controle;
-class HitCounterCodeType {
-	const NoHitCounter = 'NoHitCounter';
-	const HonestyStyle = 'HonestyStyle';
-	const GreenLED = 'GreenLED';
-	const Hidden = 'Hidden';
-	const BasicStyle = 'BasicStyle';
-	const RetroStyle = 'RetroStyle';
-	const HiddenStyle = 'HiddenStyle';
-	const CustomCode = 'CustomCode';
-}
 
+class HitCounterCodeType
+{
+	const NOHITCOUNTER = 'NoHitCounter';
+	const HONESTYSTYLE = 'HonestyStyle';
+	const GREENLED     = 'GreenLED';
+	const HIDDEN       = 'Hidden';
+	const BASICSTYLE   = 'BasicStyle';
+	const RETROSTYLE   = 'RetroStyle';
+	const HIDDENSTYLE  = 'HiddenStyle';
+	const CUSTOMCODE   = 'CustomCode';
+}

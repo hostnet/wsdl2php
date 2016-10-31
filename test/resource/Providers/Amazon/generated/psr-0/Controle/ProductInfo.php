@@ -1,58 +1,67 @@
 <?php
 
 namespace Controle;
-class ProductInfo {
+
+class ProductInfo
+{
 	/**
 	 * @var string
 	 */
-	public $TotalResults;
+	public $totalresults;
 	/**
 	 * @var string
 	 */
-	public $TotalPages;
+	public $totalpages;
 	/**
 	 * @var string
 	 */
-	public $ListName;
+	public $listname;
 	/**
 	 * @var \Controle\DetailsArray
 	 */
-	public $Details;
+	public $details;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTotalResults($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalResults');
-		$this->TotalResults = (int)$val;
+	public function setTotalResults($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TotalResults');
+        }
+        $this->totalresults = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTotalPages($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalPages');
-		$this->TotalPages = (int)$val;
+	public function setTotalPages($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TotalPages');
+        }
+        $this->totalpages = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setListName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListName');
-		$this->ListName = (int)$val;
+	public function setListName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ListName');
+        }
+        $this->listname = (int)$val;
 	}
 
 	/**
 	 * @param DetailsArray $val
 	 * @throws Exception
 	 */
-	public function setDetails($val) {
-		
-		$this->Details = (int)$val;
+	public function setDetails($val)
+	{
+        $this->details = (int)$val;
 	}
-
 }
-

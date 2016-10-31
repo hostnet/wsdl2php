@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * GetNotificationsUsageResponseType
  * Returns an array of notifications sent to a given application identified by the appID (comes
@@ -14,77 +15,77 @@ namespace Controle\sub1\sub2;
  * request. If there is no ItemID, then only Statistics and MarkDownMarkUpHistory information
  * is included.
  */
-class GetNotificationsUsageResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class GetNotificationsUsageResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
 	 */
-	public $StartTime;
+	public $starttime;
 	/**
 	 * @var dateTime | Time stamp (in GMT) when the listing is scheduled to end (calculated based on the values
 	 * of StartTime and ListingDuration) or the actual end time if the item has ended.
 	 */
-	public $EndTime;
+	public $endtime;
 	/**
 	 * @var \Controle\sub1\sub2\NotificationDetailsArrayType | List of notification objects representing the notifications sent to an application for
 	 * the given time period. It will only be returned if ItemID was specified in the input request.
 	 */
-	public $NotificationDetailsArray;
+	public $notificationdetailsarray;
 	/**
 	 * @var \Controle\sub1\sub2\MarkUpMarkDownHistoryType | List of objects representing MarkUp or MarkDown history for a given appID and for given
 	 * StartTime and EndTime. This node will always be returned.
 	 */
-	public $MarkUpMarkDownHistory;
+	public $markupmarkdownhistory;
 	/**
 	 * @var \Controle\sub1\sub2\NotificationStatisticsType | Summary information about number of notifications that were successfully delivered, queued,
 	 * failed, connection attempts made, connection timeouts, http errors for the given appID
 	 * and given time period. By default, statistics for only one day (Now-1day) is included.
 	 * Maximum time duration allowed is 3 days (Now-3days).
 	 */
-	public $NotificationStatistics;
+	public $notificationstatistics;
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setStartTime($val) {
-		
-		$this->StartTime = (int)$val;
+	public function setStartTime($val)
+	{
+        $this->starttime = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setEndTime($val) {
-		
-		$this->EndTime = (int)$val;
+	public function setEndTime($val)
+	{
+        $this->endtime = (int)$val;
 	}
 
 	/**
 	 * @param NotificationDetailsArrayType $val
 	 * @throws Exception
 	 */
-	public function setNotificationDetailsArray($val) {
-		
-		$this->NotificationDetailsArray = (int)$val;
+	public function setNotificationDetailsArray($val)
+	{
+        $this->notificationdetailsarray = (int)$val;
 	}
 
 	/**
 	 * @param MarkUpMarkDownHistoryType $val
 	 * @throws Exception
 	 */
-	public function setMarkUpMarkDownHistory($val) {
-		
-		$this->MarkUpMarkDownHistory = (int)$val;
+	public function setMarkUpMarkDownHistory($val)
+	{
+        $this->markupmarkdownhistory = (int)$val;
 	}
 
 	/**
 	 * @param NotificationStatisticsType $val
 	 * @throws Exception
 	 */
-	public function setNotificationStatistics($val) {
-		
-		$this->NotificationStatistics = (int)$val;
+	public function setNotificationStatistics($val)
+	{
+        $this->notificationstatistics = (int)$val;
 	}
-
 }
-

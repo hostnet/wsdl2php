@@ -1,32 +1,32 @@
 <?php
 
 namespace Controle;
-class SearchNameServerResponse {
+
+class SearchNameServerResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $SearchNameServerResult;
+    public $searchnameserverresult;
     /**
      * @var array \Controle\NameServer
      */
-    public $nameServers;
+    public $nameservers;
     /**
      * @param Response $val
      * @throws Exception
      */
-    public function setSearchNameServerResult($val) {
-        
-        $this->SearchNameServerResult = (int)$val;
+    public function setSearchNameServerResult($val)
+    {
+        $this->searchnameserverresult = (int)$val;
     }
 
     /**
      * @param ArrayOfNameServer $val
      * @throws Exception
      */
-    public function setNameServers($val) {
-        
-        $this->nameServers = (int)$val;
+    public function setNameServers($val)
+    {
+        $this->nameservers = (int)$val;
     }
-
 }
-

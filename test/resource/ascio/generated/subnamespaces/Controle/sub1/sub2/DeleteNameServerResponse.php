@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class DeleteNameServerResponse {
+
+class DeleteNameServerResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $DeleteNameServerResult;
+	public $deletenameserverresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setDeleteNameServerResult($val) {
-		
-		$this->DeleteNameServerResult = (int)$val;
+	public function setDeleteNameServerResult($val)
+	{
+        $this->deletenameserverresult = (int)$val;
 	}
-
 }
-

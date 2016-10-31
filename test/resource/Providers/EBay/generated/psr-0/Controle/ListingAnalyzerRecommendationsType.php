@@ -1,15 +1,17 @@
 <?php
 
 namespace Controle;
+
 /**
  * ListingAnalyzerRecommendationsType
  * Contains results returned from the Listing Analyzer recommendation engine.
  */
-class ListingAnalyzerRecommendationsType {
+class ListingAnalyzerRecommendationsType
+{
 	/**
 	 * @var \Controle\ListingTipArrayType | A collection of tips returned from the Listing Analyzer recommendation engine.
 	 */
-	public $ListingTipArray;
+	public $listingtiparray;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -18,19 +20,17 @@ class ListingAnalyzerRecommendationsType {
 	 * @param ListingTipArrayType $val
 	 * @throws Exception
 	 */
-	public function setListingTipArray($val) {
-		
-		$this->ListingTipArray = (int)$val;
+	public function setListingTipArray($val)
+	{
+        $this->listingtiparray = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

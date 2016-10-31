@@ -1,19 +1,21 @@
 <?php
 
 namespace Controle;
+
 /**
  * MyeBaySecondChanceOfferListType
  * A list of possible My eBay Second Chance Offers.
  */
-class MyeBaySecondChanceOfferListType {
+class MyeBaySecondChanceOfferListType
+{
     /**
      * @var int | The total number of My eBay Second Chance Offers available.
      */
-    public $TotalAvailable;
+    public $totalavailable;
     /**
      * @var \Controle\ItemType | A Second Chance Offer item.
      */
-    public $SecondChanceOffer;
+    public $secondchanceoffer;
     /**
      * @var \Controle\<anyXML>
      */
@@ -22,28 +24,29 @@ class MyeBaySecondChanceOfferListType {
      * @param int $val
      * @throws Exception
      */
-    public function setTotalAvailable($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->TotalAvailable = (int)$val;
+    public function setTotalAvailable($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->totalavailable = (int)$val;
     }
 
     /**
      * @param ItemType $val
      * @throws Exception
      */
-    public function setSecondChanceOffer($val) {
-        
-        $this->SecondChanceOffer = (int)$val;
+    public function setSecondChanceOffer($val)
+    {
+        $this->secondchanceoffer = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

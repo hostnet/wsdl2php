@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class DigitalDeliveryMethodCodeType {
-	const None = 'None';
-	const DownloadURL = 'DownloadURL';
-	const AlternateDeliveryInstructions = 'AlternateDeliveryInstructions';
-	const CustomCode = 'CustomCode';
-}
 
+class DigitalDeliveryMethodCodeType
+{
+	const NONE                          = 'None';
+	const DOWNLOADURL                   = 'DownloadURL';
+	const ALTERNATEDELIVERYINSTRUCTIONS = 'AlternateDeliveryInstructions';
+	const CUSTOMCODE                    = 'CustomCode';
+}

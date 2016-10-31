@@ -1,30 +1,31 @@
 <?php
 
 namespace Controle;
-class BuyerPaymentMethodCodeType {
-	const None = 'None';
-	const MOCC = 'MOCC';
-	const AmEx = 'AmEx';
-	const PaymentSeeDescription = 'PaymentSeeDescription';
-	const CCAccepted = 'CCAccepted';
-	const PersonalCheck = 'PersonalCheck';
-	const COD = 'COD';
-	const VisaMC = 'VisaMC';
-	const PaisaPayAccepted = 'PaisaPayAccepted';
-	const Other = 'Other';
-	const PayPal = 'PayPal';
-	const Discover = 'Discover';
-	const CashOnPickup = 'CashOnPickup';
-	const MoneyXferAccepted = 'MoneyXferAccepted';
-	const MoneyXferAcceptedInCheckout = 'MoneyXferAcceptedInCheckout';
-	const OtherOnlinePayments = 'OtherOnlinePayments';
-	const Escrow = 'Escrow';
-	const PrePayDelivery = 'PrePayDelivery';
-	const CODPrePayDelivery = 'CODPrePayDelivery';
-	const PostalTransfer = 'PostalTransfer';
-	const CustomCode = 'CustomCode';
-	const LoanCheck = 'LoanCheck';
-	const CashInPerson = 'CashInPerson';
-	const ELV = 'ELV';
-}
 
+class BuyerPaymentMethodCodeType
+{
+	const NONE                        = 'None';
+	const MOCC                        = 'MOCC';
+	const AMEX                        = 'AmEx';
+	const PAYMENTSEEDESCRIPTION       = 'PaymentSeeDescription';
+	const CCACCEPTED                  = 'CCAccepted';
+	const PERSONALCHECK               = 'PersonalCheck';
+	const COD                         = 'COD';
+	const VISAMC                      = 'VisaMC';
+	const PAISAPAYACCEPTED            = 'PaisaPayAccepted';
+	const OTHER                       = 'Other';
+	const PAYPAL                      = 'PayPal';
+	const DISCOVER                    = 'Discover';
+	const CASHONPICKUP                = 'CashOnPickup';
+	const MONEYXFERACCEPTED           = 'MoneyXferAccepted';
+	const MONEYXFERACCEPTEDINCHECKOUT = 'MoneyXferAcceptedInCheckout';
+	const OTHERONLINEPAYMENTS         = 'OtherOnlinePayments';
+	const ESCROW                      = 'Escrow';
+	const PREPAYDELIVERY              = 'PrePayDelivery';
+	const CODPREPAYDELIVERY           = 'CODPrePayDelivery';
+	const POSTALTRANSFER              = 'PostalTransfer';
+	const CUSTOMCODE                  = 'CustomCode';
+	const LOANCHECK                   = 'LoanCheck';
+	const CASHINPERSON                = 'CashInPerson';
+	const ELV                         = 'ELV';
+}

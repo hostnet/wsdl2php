@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class ReturnCodesResponse {
+
+class ReturnCodesResponse
+{
 	/**
 	 * @var array \Controle\AnyType
 	 */
-	public $ReturnCodesResult;
+	public $returncodesresult;
 	/**
 	 * @param ArrayOfAnyType $val
 	 * @throws Exception
 	 */
-	public function setReturnCodesResult($val) {
-		
-		$this->ReturnCodesResult = (int)$val;
+	public function setReturnCodesResult($val)
+	{
+        $this->returncodesresult = (int)$val;
 	}
-
 }
-

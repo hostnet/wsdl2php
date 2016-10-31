@@ -1,23 +1,23 @@
 <?php
 
 namespace Controle;
+
 /**
  * ListingTipArrayType
  * (out) Contains a list of tips on improving a listing's details, if any.
  */
-class ListingTipArrayType {
+class ListingTipArrayType
+{
 	/**
 	 * @var \Controle\ListingTipType | An individual tip on improving a listing's details.
 	 */
-	public $ListingTip;
+	public $listingtip;
 	/**
 	 * @param ListingTipType $val
 	 * @throws Exception
 	 */
-	public function setListingTip($val) {
-		
-		$this->ListingTip = (int)$val;
+	public function setListingTip($val)
+	{
+        $this->listingtip = (int)$val;
 	}
-
 }
-

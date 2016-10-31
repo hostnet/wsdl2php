@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class Extensions {
+
+class Extensions
+{
     /**
      * @var \Controle\Extension
      */
-    public $Extension;
+    public $extension;
     /**
      * @param Extension $val
      * @throws Exception
      */
-    public function setExtension($val) {
-        
-        $this->Extension = (int)$val;
+    public function setExtension($val)
+    {
+        $this->extension = (int)$val;
     }
-
 }
-

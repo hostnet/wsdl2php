@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
-class GetContactResponse {
+
+class GetContactResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $GetContactResult;
+	public $getcontactresult;
 	/**
 	 * @var \Controle\Contact
 	 */
@@ -14,19 +16,17 @@ class GetContactResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setGetContactResult($val) {
-		
-		$this->GetContactResult = (int)$val;
+	public function setGetContactResult($val)
+	{
+        $this->getcontactresult = (int)$val;
 	}
 
 	/**
 	 * @param Contact $val
 	 * @throws Exception
 	 */
-	public function setContact($val) {
-		
-		$this->contact = (int)$val;
+	public function setContact($val)
+	{
+        $this->contact = (int)$val;
 	}
-
 }
-

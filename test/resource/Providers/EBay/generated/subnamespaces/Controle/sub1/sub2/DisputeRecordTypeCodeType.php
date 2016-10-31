@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class DisputeRecordTypeCodeType {
-	const UnpaidItem = 'UnpaidItem';
-	const ItemNotReceived = 'ItemNotReceived';
-	const CustomCode = 'CustomCode';
-}
 
+class DisputeRecordTypeCodeType
+{
+	const UNPAIDITEM      = 'UnpaidItem';
+	const ITEMNOTRECEIVED = 'ItemNotReceived';
+	const CUSTOMCODE      = 'CustomCode';
+}

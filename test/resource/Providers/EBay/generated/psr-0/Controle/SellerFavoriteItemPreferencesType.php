@@ -1,16 +1,18 @@
 <?php
 
 namespace Controle;
+
 /**
  * SellerFavoriteItemPreferencesType
  * Contains the data for the seller favorite item preferences, i.e.  the manual or automatic
  * selection criteria to display items for buyer's favourite seller opt in email marketing.
  */
-class SellerFavoriteItemPreferencesType {
+class SellerFavoriteItemPreferencesType
+{
 	/**
 	 * @var string | The keywords in the item title for the automatic item search criteria.
 	 */
-	public $SearchKeywords;
+	public $searchkeywords;
 	/**
 	 * @var int | Numeric ID for a custom category that the seller created in their eBay Store, if any. eBay
 	 * Stores sellers can create up to three levels of custom categories for their stores. Items
@@ -19,27 +21,27 @@ class SellerFavoriteItemPreferencesType {
 	 * a warning, and the item is listed in the Other store category. In GetSearchResults, this
 	 * field currently returns 0. As a workaround, use GetItem or related calls to get the ID.
 	 */
-	public $StoreCategoryID;
+	public $storecategoryid;
 	/**
 	 * @var \Controle\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
 	 */
-	public $ListingType;
+	public $listingtype;
 	/**
 	 * @var \Controle\StoreItemListSortOrderCodeType | The sort order chosen from the standard ebay sorts for the automatic search criteria.
 	 */
-	public $SearchSortOrder;
+	public $searchsortorder;
 	/**
 	 * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
 	 */
-	public $MinPrice;
+	public $minprice;
 	/**
 	 * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
 	 */
-	public $MaxPrice;
+	public $maxprice;
 	/**
 	 * @var \Controle\ItemIDType | Specifies the list of favorite items.
 	 */
-	public $FavoriteItemID;
+	public $favoriteitemid;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -48,73 +50,77 @@ class SellerFavoriteItemPreferencesType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSearchKeywords($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SearchKeywords');
-		$this->SearchKeywords = (int)$val;
+	public function setSearchKeywords($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SearchKeywords');
+        }
+        $this->searchkeywords = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setStoreCategoryID($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->StoreCategoryID = (int)$val;
+	public function setStoreCategoryID($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->storecategoryid = (int)$val;
 	}
 
 	/**
 	 * @param ListingTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setListingType($val) {
-		
-		$this->ListingType = (int)$val;
+	public function setListingType($val)
+	{
+        $this->listingtype = (int)$val;
 	}
 
 	/**
 	 * @param StoreItemListSortOrderCodeType $val
 	 * @throws Exception
 	 */
-	public function setSearchSortOrder($val) {
-		
-		$this->SearchSortOrder = (int)$val;
+	public function setSearchSortOrder($val)
+	{
+        $this->searchsortorder = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setMinPrice($val) {
-		
-		$this->MinPrice = (int)$val;
+	public function setMinPrice($val)
+	{
+        $this->minprice = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setMaxPrice($val) {
-		
-		$this->MaxPrice = (int)$val;
+	public function setMaxPrice($val)
+	{
+        $this->maxprice = (int)$val;
 	}
 
 	/**
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
-	public function setFavoriteItemID($val) {
-		
-		$this->FavoriteItemID = (int)$val;
+	public function setFavoriteItemID($val)
+	{
+        $this->favoriteitemid = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

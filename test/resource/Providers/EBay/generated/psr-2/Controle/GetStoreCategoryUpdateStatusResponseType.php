@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetStoreCategoryUpdateStatusResponseType
  * Returns the store category structure update status, when a prior SetStoreCategories call
@@ -9,20 +10,20 @@ namespace Controle;
  * affected by category structure changes, the status is returned in the SetStoreCategories
  * response.
  */
-class GetStoreCategoryUpdateStatusResponseType extends \Controle\AbstractResponseType {
+class GetStoreCategoryUpdateStatusResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\TaskStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $Status;
+    public $status;
     /**
      * @param TaskStatusCodeType $val
      * @throws Exception
      */
-    public function setStatus($val) {
-        
-        $this->Status = (int)$val;
+    public function setStatus($val)
+    {
+        $this->status = (int)$val;
     }
-
 }
-

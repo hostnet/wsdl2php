@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * AttributeArrayType
  * Reserved for future use.
  */
-class AttributeArrayType {
+class AttributeArrayType
+{
     /**
      * @var \Controle\AttributeType | A salient aspect or feature of an item in a given category.            Attributes are
      * known as "Item Specifics" in the eBay Web site.            Use attributes to describe
@@ -29,15 +31,13 @@ class AttributeArrayType {
      * this returns the item condition only (and it is            only returned if IncludeCondition
      * = true in the request).            Not applicable to Half.com.
      */
-    public $Attribute;
+    public $attribute;
     /**
      * @param AttributeType $val
      * @throws Exception
      */
-    public function setAttribute($val) {
-        
-        $this->Attribute = (int)$val;
+    public function setAttribute($val)
+    {
+        $this->attribute = (int)$val;
     }
-
 }
-

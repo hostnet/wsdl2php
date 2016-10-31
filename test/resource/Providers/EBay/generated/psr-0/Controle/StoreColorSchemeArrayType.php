@@ -1,23 +1,23 @@
 <?php
 
 namespace Controle;
+
 /**
  * StoreColorSchemeArrayType
  * Set of eBay Store color schemes.
  */
-class StoreColorSchemeArrayType {
+class StoreColorSchemeArrayType
+{
 	/**
 	 * @var \Controle\StoreColorSchemeType | Theme color scheme.
 	 */
-	public $ColorScheme;
+	public $colorscheme;
 	/**
 	 * @param StoreColorSchemeType $val
 	 * @throws Exception
 	 */
-	public function setColorScheme($val) {
-		
-		$this->ColorScheme = (int)$val;
+	public function setColorScheme($val)
+	{
+        $this->colorscheme = (int)$val;
 	}
-
 }
-

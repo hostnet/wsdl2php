@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class BidderStatusCodeType {
-    const Approved = 'Approved';
-    const Denied = 'Denied';
-    const Pending = 'Pending';
-    const CustomCode = 'CustomCode';
-}
 
+class BidderStatusCodeType
+{
+    const APPROVED   = 'Approved';
+    const DENIED     = 'Denied';
+    const PENDING    = 'Pending';
+    const CUSTOMCODE = 'CustomCode';
+}

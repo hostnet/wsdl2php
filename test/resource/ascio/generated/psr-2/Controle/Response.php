@@ -1,45 +1,48 @@
 <?php
 
 namespace Controle;
-class Response {
+
+class Response
+{
     /**
      * @var string
      */
-    public $Message;
+    public $message;
     /**
      * @var short
      */
-    public $ResultCode;
+    public $resultcode;
     /**
      * @var array \Controle\string
      */
-    public $Values;
+    public $values;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setMessage($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Message');
-        $this->Message = (int)$val;
+    public function setMessage($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Message');
+        }
+        $this->message = (int)$val;
     }
 
     /**
      * @param short $val
      * @throws Exception
      */
-    public function setResultCode($val) {
-        
-        $this->ResultCode = (int)$val;
+    public function setResultCode($val)
+    {
+        $this->resultcode = (int)$val;
     }
 
     /**
      * @param ArrayOfstring $val
      * @throws Exception
      */
-    public function setValues($val) {
-        
-        $this->Values = (int)$val;
+    public function setValues($val)
+    {
+        $this->values = (int)$val;
     }
-
 }
-

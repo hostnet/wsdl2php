@@ -1,24 +1,26 @@
 <?php
 
 namespace Controle;
+
 /**
  * ProStoresDetailsType
  * Details about the store.
  */
-class ProStoresDetailsType {
+class ProStoresDetailsType
+{
     /**
      * @var string | The username associated with the store.  Returned only if the parent container is returned.
      */
-    public $SellerThirdPartyUsername;
+    public $sellerthirdpartyusername;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $StoreName;
+    public $storename;
     /**
      * @var \Controle\EnableCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $Status;
+    public $status;
     /**
      * @var \Controle\<anyXML>
      */
@@ -27,37 +29,41 @@ class ProStoresDetailsType {
      * @param string $val
      * @throws Exception
      */
-    public function setSellerThirdPartyUsername($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
-        $this->SellerThirdPartyUsername = (int)$val;
+    public function setSellerThirdPartyUsername($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
+        }
+        $this->sellerthirdpartyusername = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setStoreName($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
-        $this->StoreName = (int)$val;
+    public function setStoreName($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for StoreName');
+        }
+        $this->storename = (int)$val;
     }
 
     /**
      * @param EnableCodeType $val
      * @throws Exception
      */
-    public function setStatus($val) {
-        
-        $this->Status = (int)$val;
+    public function setStatus($val)
+    {
+        $this->status = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

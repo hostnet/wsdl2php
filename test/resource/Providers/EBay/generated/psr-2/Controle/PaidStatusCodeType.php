@@ -1,18 +1,19 @@
 <?php
 
 namespace Controle;
-class PaidStatusCodeType {
-    const NotPaid = 'NotPaid';
-    const BuyerHasNotCompletedCheckout = 'BuyerHasNotCompletedCheckout';
-    const PaymentPendingWithPayPal = 'PaymentPendingWithPayPal';
-    const PaidWithPayPal = 'PaidWithPayPal';
-    const MarkedAsPaid = 'MarkedAsPaid';
-    const PaymentPendingWithEscrow = 'PaymentPendingWithEscrow';
-    const PaidWithEscrow = 'PaidWithEscrow';
-    const EscrowPaymentCancelled = 'EscrowPaymentCancelled';
-    const PaymentPendingWithPaisaPay = 'PaymentPendingWithPaisaPay';
-    const PaidWithPaisaPay = 'PaidWithPaisaPay';
-    const PaymentPending = 'PaymentPending';
-    const CustomCode = 'CustomCode';
-}
 
+class PaidStatusCodeType
+{
+    const NOTPAID                      = 'NotPaid';
+    const BUYERHASNOTCOMPLETEDCHECKOUT = 'BuyerHasNotCompletedCheckout';
+    const PAYMENTPENDINGWITHPAYPAL     = 'PaymentPendingWithPayPal';
+    const PAIDWITHPAYPAL               = 'PaidWithPayPal';
+    const MARKEDASPAID                 = 'MarkedAsPaid';
+    const PAYMENTPENDINGWITHESCROW     = 'PaymentPendingWithEscrow';
+    const PAIDWITHESCROW               = 'PaidWithEscrow';
+    const ESCROWPAYMENTCANCELLED       = 'EscrowPaymentCancelled';
+    const PAYMENTPENDINGWITHPAISAPAY   = 'PaymentPendingWithPaisaPay';
+    const PAIDWITHPAISAPAY             = 'PaidWithPaisaPay';
+    const PAYMENTPENDING               = 'PaymentPending';
+    const CUSTOMCODE                   = 'CustomCode';
+}

@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class DigitalDeliveryEnabledCodeType {
-	const Disabled = 'Disabled';
-	const Enabled = 'Enabled';
-	const Promoted = 'Promoted';
-	const CustomCode = 'CustomCode';
-}
 
+class DigitalDeliveryEnabledCodeType
+{
+	const DISABLED   = 'Disabled';
+	const ENABLED    = 'Enabled';
+	const PROMOTED   = 'Promoted';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class ExpressItemSortCodeType {
-	const LowestTotalCost = 'LowestTotalCost';
-	const HighestTotalCost = 'HighestTotalCost';
-	const Relevance = 'Relevance';
-	const CustomCode = 'CustomCode';
-}
 
+class ExpressItemSortCodeType
+{
+	const LOWESTTOTALCOST  = 'LowestTotalCost';
+	const HIGHESTTOTALCOST = 'HighestTotalCost';
+	const RELEVANCE        = 'Relevance';
+	const CUSTOMCODE       = 'CustomCode';
+}

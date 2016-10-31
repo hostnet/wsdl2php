@@ -1,18 +1,19 @@
 <?php
 
 namespace Controle;
-class FeedbackRatingStarCodeType {
-	const None = 'None';
-	const Yellow = 'Yellow';
-	const Blue = 'Blue';
-	const Turquoise = 'Turquoise';
-	const Purple = 'Purple';
-	const Red = 'Red';
-	const Green = 'Green';
-	const YellowShooting = 'YellowShooting';
-	const TurquoiseShooting = 'TurquoiseShooting';
-	const PurpleShooting = 'PurpleShooting';
-	const RedShooting = 'RedShooting';
-	const CustomCode = 'CustomCode';
-}
 
+class FeedbackRatingStarCodeType
+{
+	const NONE              = 'None';
+	const YELLOW            = 'Yellow';
+	const BLUE              = 'Blue';
+	const TURQUOISE         = 'Turquoise';
+	const PURPLE            = 'Purple';
+	const RED               = 'Red';
+	const GREEN             = 'Green';
+	const YELLOWSHOOTING    = 'YellowShooting';
+	const TURQUOISESHOOTING = 'TurquoiseShooting';
+	const PURPLESHOOTING    = 'PurpleShooting';
+	const REDSHOOTING       = 'RedShooting';
+	const CUSTOMCODE        = 'CustomCode';
+}

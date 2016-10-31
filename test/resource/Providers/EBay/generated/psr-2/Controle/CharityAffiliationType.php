@@ -1,12 +1,14 @@
 <?php
 
 namespace Controle;
+
 /**
  * CharityAffiliationType
  * Defines the affiliation status for a nonprofit charity organization registered with the
  * dedicated eBay Giving Works provider.
  */
-class CharityAffiliationType {
+class CharityAffiliationType
+{
     /**
      * @var \Controle\<anyXML>
      */
@@ -23,8 +25,8 @@ class CharityAffiliationType {
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
 
@@ -32,8 +34,11 @@ class CharityAffiliationType {
      * @param string $val
      * @throws Exception
      */
-    public function setId($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for id');
+    public function setId($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for id');
+        }
         $this->id = (int)$val;
     }
 
@@ -41,10 +46,8 @@ class CharityAffiliationType {
      * @param CharityAffiliationTypeCodeType $val
      * @throws Exception
      */
-    public function setType($val) {
-        
+    public function setType($val)
+    {
         $this->type = (int)$val;
     }
-
 }
-

@@ -1,17 +1,19 @@
 <?php
 
 namespace Controle;
+
 /**
  * AttributeType
  * A salient aspect or feature of an item. On eBay.com, this information is used in the Item
  * Specifics section of a listing to describe an item in a standard way so that buyers can
  * find it more easily.
  */
-class AttributeType {
+class AttributeType
+{
 	/**
 	 * @var \Controle\ValType | Specifies the value for the property.
 	 */
-	public $Value;
+	public $value;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -19,46 +21,50 @@ class AttributeType {
 	/**
 	 * @var int
 	 */
-	public $attributeID;
+	public $attributeid;
 	/**
 	 * @var string
 	 */
-	public $attributeLabel;
+	public $attributelabel;
 	/**
 	 * @param ValType $val
 	 * @throws Exception
 	 */
-	public function setValue($val) {
-		
-		$this->Value = (int)$val;
+	public function setValue($val)
+	{
+        $this->value = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setAttributeID($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->attributeID = (int)$val;
+	public function setAttributeID($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->attributeid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAttributeLabel($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for attributeLabel');
-		$this->attributeLabel = (int)$val;
+	public function setAttributeLabel($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for attributeLabel');
+        }
+        $this->attributelabel = (int)$val;
 	}
-
 }
-

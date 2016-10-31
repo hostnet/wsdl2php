@@ -1,13 +1,14 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class PaymentStatusCodeType {
-	const NoPaymentFailure = 'NoPaymentFailure';
-	const BuyerECheckBounced = 'BuyerECheckBounced';
-	const BuyerCreditCardFailed = 'BuyerCreditCardFailed';
-	const BuyerFailedPaymentReportedBySeller = 'BuyerFailedPaymentReportedBySeller';
-	const PayPalPaymentInProcess = 'PayPalPaymentInProcess';
-	const PaymentInProcess = 'PaymentInProcess';
-	const CustomCode = 'CustomCode';
-}
 
+class PaymentStatusCodeType
+{
+	const NOPAYMENTFAILURE                   = 'NoPaymentFailure';
+	const BUYERECHECKBOUNCED                 = 'BuyerECheckBounced';
+	const BUYERCREDITCARDFAILED              = 'BuyerCreditCardFailed';
+	const BUYERFAILEDPAYMENTREPORTEDBYSELLER = 'BuyerFailedPaymentReportedBySeller';
+	const PAYPALPAYMENTINPROCESS             = 'PayPalPaymentInProcess';
+	const PAYMENTINPROCESS                   = 'PaymentInProcess';
+	const CUSTOMCODE                         = 'CustomCode';
+}

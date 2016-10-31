@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * BuyingGuideType
  * Information that identifies a buying guide. A buying guide provides content about particular product
@@ -9,22 +10,23 @@ namespace Controle\sub1\sub2;
  * product in mind. For example, a digital camera buying guide could help a buyer determine
  * what kind of digital camera is right for them.
  */
-class BuyingGuideType {
+class BuyingGuideType
+{
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $Name;
+	public $name;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item URL) to
 	 * launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be used in certain
 	 * types of applications. See your API license agreement. Also see this page for logo usage
 	 * rules:<br> http://developer.ebay.com/join/licenses/apilogousage
 	 */
-	public $URL;
+	public $url;
 	/**
 	 * @var string | ID of the category in which the Want It Now post is listed.
 	 */
-	public $CategoryID;
+	public $categoryid;
 	/**
 	 * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
 	 *        search for Item Specifics in listings (e.g., how to search against a particular
@@ -36,7 +38,7 @@ class BuyingGuideType {
 	 * this data, you must specify the product finder ID, and also specify a detail level of ItemReturnAttributes
 	 * or ReturnAll. Use GetProductFinder to determine valid product finder IDs.
 	 */
-	public $ProductFinderID;
+	public $productfinderid;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -45,46 +47,53 @@ class BuyingGuideType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
-		$this->Name = (int)$val;
+	public function setName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Name');
+        }
+        $this->name = (int)$val;
 	}
 
 	/**
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
-	public function setURL($val) {
-		
-		$this->URL = (int)$val;
+	public function setURL($val)
+	{
+        $this->url = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setCategoryID($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
-		$this->CategoryID = (int)$val;
+	public function setCategoryID($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CategoryID');
+        }
+        $this->categoryid = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setProductFinderID($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->ProductFinderID = (int)$val;
+	public function setProductFinderID($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->productfinderid = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

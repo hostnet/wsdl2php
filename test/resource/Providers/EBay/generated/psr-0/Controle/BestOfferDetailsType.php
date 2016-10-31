@@ -1,35 +1,37 @@
 <?php
 
 namespace Controle;
+
 /**
  * BestOfferDetailsType
  * Container for BestOffer properties associated with the item.
  */
-class BestOfferDetailsType {
+class BestOfferDetailsType
+{
 	/**
 	 * @var int | The number of items the user has made best offers on.
 	 */
-	public $BestOfferCount;
+	public $bestoffercount;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow best offers. True means
 	 * best offers are allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $BestOfferEnabled;
+	public $bestofferenabled;
 	/**
 	 * @var \Controle\AmountType | (GetMyeBayBuying only) Indicates the latest BestOffer the user has provided for the item
 	 * .
 	 */
-	public $BestOffer;
+	public $bestoffer;
 	/**
 	 * @var \Controle\BestOfferStatusCodeType | (GetMyeBayBuying only) Indicates the status of the latest BestOffer the user has provided
 	 * for the item .
 	 */
-	public $BestOfferStatus;
+	public $bestofferstatus;
 	/**
 	 * @var \Controle\BestOfferTypeCodeType | Indicates the best offer type of the latest BestOffer the user has provided for the item
 	 * .
 	 */
-	public $BestOfferType;
+	public $bestoffertype;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -38,55 +40,56 @@ class BestOfferDetailsType {
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setBestOfferCount($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->BestOfferCount = (int)$val;
+	public function setBestOfferCount($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->bestoffercount = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setBestOfferEnabled($val) {
-		
-		$this->BestOfferEnabled = (int)$val;
+	public function setBestOfferEnabled($val)
+	{
+        $this->bestofferenabled = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setBestOffer($val) {
-		
-		$this->BestOffer = (int)$val;
+	public function setBestOffer($val)
+	{
+        $this->bestoffer = (int)$val;
 	}
 
 	/**
 	 * @param BestOfferStatusCodeType $val
 	 * @throws Exception
 	 */
-	public function setBestOfferStatus($val) {
-		
-		$this->BestOfferStatus = (int)$val;
+	public function setBestOfferStatus($val)
+	{
+        $this->bestofferstatus = (int)$val;
 	}
 
 	/**
 	 * @param BestOfferTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setBestOfferType($val) {
-		
-		$this->BestOfferType = (int)$val;
+	public function setBestOfferType($val)
+	{
+        $this->bestoffertype = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * LiveAuctionApprovalStatusType
  * The approval status of a user who wants to bid on a live auction.
  */
-class LiveAuctionApprovalStatusType {
+class LiveAuctionApprovalStatusType
+{
 	/**
 	 * @var \Controle\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned when
 	 * ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
@@ -19,29 +21,30 @@ class LiveAuctionApprovalStatusType {
 	 * on a different auction, the bidder will be listed for that auction as "Bidder 1", not "Bidder
 	 * 3".
 	 */
-	public $UserID;
+	public $userid;
 	/**
 	 * @var string | Indicates the user's registration/user status. To be eligible to list on Express, a seller's
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
-	public $Status;
+	public $status;
 	/**
 	 * @param UserIDType $val
 	 * @throws Exception
 	 */
-	public function setUserID($val) {
-		
-		$this->UserID = (int)$val;
+	public function setUserID($val)
+	{
+        $this->userid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setStatus($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Status');
-		$this->Status = (int)$val;
+	public function setStatus($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Status');
+        }
+        $this->status = (int)$val;
 	}
-
 }
-

@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class SearchRegistrantResponse {
+
+class SearchRegistrantResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $SearchRegistrantResult;
+	public $searchregistrantresult;
 	/**
 	 * @var array \Controle\sub1\sub2\Registrant
 	 */
@@ -14,19 +16,17 @@ class SearchRegistrantResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setSearchRegistrantResult($val) {
-		
-		$this->SearchRegistrantResult = (int)$val;
+	public function setSearchRegistrantResult($val)
+	{
+        $this->searchregistrantresult = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfRegistrant $val
 	 * @throws Exception
 	 */
-	public function setRegistrants($val) {
-		
-		$this->registrants = (int)$val;
+	public function setRegistrants($val)
+	{
+        $this->registrants = (int)$val;
 	}
-
 }
-

@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class RecipientRelationCodeType {
-	const value_1 = '1';
-	const value_2 = '2';
-	const value_3 = '3';
-	const value_4 = '4';
-	const CustomCode = 'CustomCode';
-}
 
+class RecipientRelationCodeType
+{
+	const VALUE_1    = 'value_1';
+	const VALUE_2    = 'value_2';
+	const VALUE_3    = 'value_3';
+	const VALUE_4    = 'value_4';
+	const CUSTOMCODE = 'CustomCode';
+}

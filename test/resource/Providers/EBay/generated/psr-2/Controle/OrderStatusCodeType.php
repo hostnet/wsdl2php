@@ -1,12 +1,13 @@
 <?php
 
 namespace Controle;
-class OrderStatusCodeType {
-    const Active = 'Active';
-    const Inactive = 'Inactive';
-    const Completed = 'Completed';
-    const Cancelled = 'Cancelled';
-    const Shipped = 'Shipped';
-    const CustomCode = 'CustomCode';
-}
 
+class OrderStatusCodeType
+{
+    const ACTIVE     = 'Active';
+    const INACTIVE   = 'Inactive';
+    const COMPLETED  = 'Completed';
+    const CANCELLED  = 'Cancelled';
+    const SHIPPED    = 'Shipped';
+    const CUSTOMCODE = 'CustomCode';
+}

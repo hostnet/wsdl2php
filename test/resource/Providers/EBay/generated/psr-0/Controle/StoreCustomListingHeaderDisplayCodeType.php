@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class StoreCustomListingHeaderDisplayCodeType {
-	const None = 'None';
-	const Full = 'Full';
-	const FullAndLeftNavigationBar = 'FullAndLeftNavigationBar';
-	const CustomCode = 'CustomCode';
-}
 
+class StoreCustomListingHeaderDisplayCodeType
+{
+	const NONE                     = 'None';
+	const FULL                     = 'Full';
+	const FULLANDLEFTNAVIGATIONBAR = 'FullAndLeftNavigationBar';
+	const CUSTOMCODE               = 'CustomCode';
+}

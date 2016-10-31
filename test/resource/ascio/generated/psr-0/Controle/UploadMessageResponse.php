@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class UploadMessageResponse {
+
+class UploadMessageResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $UploadMessageResult;
+	public $uploadmessageresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setUploadMessageResult($val) {
-		
-		$this->UploadMessageResult = (int)$val;
+	public function setUploadMessageResult($val)
+	{
+        $this->uploadmessageresult = (int)$val;
 	}
-
 }
-

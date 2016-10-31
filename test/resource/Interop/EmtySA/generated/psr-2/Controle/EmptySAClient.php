@@ -10,7 +10,7 @@ class EmptySAClient extends \SoapClient {
     const WSDL_FILE = "EmptySATest.wsdl";
 
     public function __construct($wsdl = null, $options = array()) {
-        if(isset($options['headers'])) {
+        (isset($options['headers'])) {
             $this->__setSoapHeaders($options['headers']);
         }
         parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
@@ -29,5 +29,4 @@ class EmptySAClient extends \SoapClient {
             array('uri'=>'http://soapinterop/')
         );
     }
-
 }

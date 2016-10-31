@@ -1,16 +1,17 @@
 <?php
 
 namespace Controle;
-class BestOfferStatusCodeType {
-    const Pending = 'Pending';
-    const Accepted = 'Accepted';
-    const Declined = 'Declined';
-    const Expired = 'Expired';
-    const Retracted = 'Retracted';
-    const AdminEnded = 'AdminEnded';
-    const Active = 'Active';
-    const Countered = 'Countered';
-    const All = 'All';
-    const CustomCode = 'CustomCode';
-}
 
+class BestOfferStatusCodeType
+{
+    const PENDING    = 'Pending';
+    const ACCEPTED   = 'Accepted';
+    const DECLINED   = 'Declined';
+    const EXPIRED    = 'Expired';
+    const RETRACTED  = 'Retracted';
+    const ADMINENDED = 'AdminEnded';
+    const ACTIVE     = 'Active';
+    const COUNTERED  = 'Countered';
+    const ALL        = 'All';
+    const CUSTOMCODE = 'CustomCode';
+}

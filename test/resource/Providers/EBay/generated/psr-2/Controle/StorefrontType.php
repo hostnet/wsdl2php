@@ -1,13 +1,15 @@
 <?php
 
 namespace Controle;
+
 /**
  * StorefrontType
  * Contains information related to the item in the context of a seller's eBay Store. Applicable
  * for auction format, Basic Fixed Price, and Store Inventory format items listed by eBay Stores
  * sellers.
  */
-class StorefrontType {
+class StorefrontType
+{
     /**
      * @var int | Numeric ID for a custom category that the seller created in their eBay Store, if any. eBay
      * Stores sellers can create up to three levels of custom categories for their stores. Items
@@ -17,7 +19,7 @@ class StorefrontType {
      * this field currently returns 0. As a workaround, use GetItem or related calls to get
      * the ID.
      */
-    public $StoreCategoryID;
+    public $storecategoryid;
     /**
      * @var int | Applicable for eBay Store sellers only. Numeric ID for a second custom category that
      * the seller created in their eBay Store. eBay Stores sellers can create up to 300 custom
@@ -30,15 +32,15 @@ class StorefrontType {
      * to a value other than 0. In GetSearchResults, this field currently returns 0. As a workaround, use
      * GetItem or related calls to get the ID.
      */
-    public $StoreCategory2ID;
+    public $storecategory2id;
     /**
      * @var \Controle\anyURI | The URL of the seller's eBay Store page. Output only.
      */
-    public $StoreURL;
+    public $storeurl;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $StoreName;
+    public $storename;
     /**
      * @var \Controle\<anyXML>
      */
@@ -47,46 +49,53 @@ class StorefrontType {
      * @param int $val
      * @throws Exception
      */
-    public function setStoreCategoryID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->StoreCategoryID = (int)$val;
+    public function setStoreCategoryID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->storecategoryid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setStoreCategory2ID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->StoreCategory2ID = (int)$val;
+    public function setStoreCategory2ID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->storecategory2id = (int)$val;
     }
 
     /**
      * @param anyURI $val
      * @throws Exception
      */
-    public function setStoreURL($val) {
-        
-        $this->StoreURL = (int)$val;
+    public function setStoreURL($val)
+    {
+        $this->storeurl = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setStoreName($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
-        $this->StoreName = (int)$val;
+    public function setStoreName($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for StoreName');
+        }
+        $this->storename = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

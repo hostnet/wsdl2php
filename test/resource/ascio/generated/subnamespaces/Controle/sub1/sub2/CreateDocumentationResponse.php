@@ -1,32 +1,35 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class CreateDocumentationResponse {
+
+class CreateDocumentationResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $CreateDocumentationResult;
+	public $createdocumentationresult;
 	/**
 	 * @var int
 	 */
-	public $documentationId;
+	public $documentationid;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setCreateDocumentationResult($val) {
-		
-		$this->CreateDocumentationResult = (int)$val;
+	public function setCreateDocumentationResult($val)
+	{
+        $this->createdocumentationresult = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setDocumentationId($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->documentationId = (int)$val;
+	public function setDocumentationId($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->documentationid = (int)$val;
 	}
-
 }
-

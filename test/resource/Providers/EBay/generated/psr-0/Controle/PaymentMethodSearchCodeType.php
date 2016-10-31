@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class PaymentMethodSearchCodeType {
-	const PayPal = 'PayPal';
-	const PaisaPay = 'PaisaPay';
-	const PayPalOrPaisaPay = 'PayPalOrPaisaPay';
-}
 
+class PaymentMethodSearchCodeType
+{
+	const PAYPAL           = 'PayPal';
+	const PAISAPAY         = 'PaisaPay';
+	const PAYPALORPAISAPAY = 'PayPalOrPaisaPay';
+}

@@ -1,17 +1,18 @@
 <?php
 
 namespace Controle;
-class DetailNameCodeType {
-	const CountryDetails = 'CountryDetails';
-	const CurrencyDetails = 'CurrencyDetails';
-	const PaymentOptionDetails = 'PaymentOptionDetails';
-	const RegionDetails = 'RegionDetails';
-	const ShippingLocationDetails = 'ShippingLocationDetails';
-	const ShippingServiceDetails = 'ShippingServiceDetails';
-	const SiteDetails = 'SiteDetails';
-	const TaxJurisdiction = 'TaxJurisdiction';
-	const URLDetails = 'URLDetails';
-	const CustomCode = 'CustomCode';
-	const DispatchTimeMaxDetails = 'DispatchTimeMaxDetails';
-}
 
+class DetailNameCodeType
+{
+	const COUNTRYDETAILS          = 'CountryDetails';
+	const CURRENCYDETAILS         = 'CurrencyDetails';
+	const PAYMENTOPTIONDETAILS    = 'PaymentOptionDetails';
+	const REGIONDETAILS           = 'RegionDetails';
+	const SHIPPINGLOCATIONDETAILS = 'ShippingLocationDetails';
+	const SHIPPINGSERVICEDETAILS  = 'ShippingServiceDetails';
+	const SITEDETAILS             = 'SiteDetails';
+	const TAXJURISDICTION         = 'TaxJurisdiction';
+	const URLDETAILS              = 'URLDetails';
+	const CUSTOMCODE              = 'CustomCode';
+	const DISPATCHTIMEMAXDETAILS  = 'DispatchTimeMaxDetails';
+}

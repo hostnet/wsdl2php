@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * PaymentDetailsType
  * Data associated with payment (payment durations).
  */
-class PaymentDetailsType {
+class PaymentDetailsType
+{
     /**
      * @var int | Applies to US eBay Motors site (except Parts and Accessories category). Number of hours
      * after a listing closes that the buyer can put down a deposit on an item (if the seller
@@ -14,7 +16,7 @@ class PaymentDetailsType {
      * and the default is 48. Deposits can only be paid using PayPal, so the listing must offer PayPal
      * as a payment method (in addition to the payment methods offered for the full payment).
      */
-    public $HoursToDeposit;
+    public $hourstodeposit;
     /**
      * @var int | Applies to vehicle categories on the US and Canada eBay Motors sites (not Parts and
      * Accessories categories). Number of days after a listing closes that the buyer can take
@@ -23,7 +25,7 @@ class PaymentDetailsType {
      * listing must offer MOCC (cashier's check), PersonalCheck, LoanCheck, CashInPerson, and/or
      * PaymentSeeDescription as payment methods.
      */
-    public $DaysToFullPayment;
+    public $daystofullpayment;
     /**
      * @var \Controle\<anyXML>
      */
@@ -32,28 +34,32 @@ class PaymentDetailsType {
      * @param int $val
      * @throws Exception
      */
-    public function setHoursToDeposit($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->HoursToDeposit = (int)$val;
+    public function setHoursToDeposit($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->hourstodeposit = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setDaysToFullPayment($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->DaysToFullPayment = (int)$val;
+    public function setDaysToFullPayment($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->daystofullpayment = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class GranularityLevelCodeType {
-	const Coarse = 'Coarse';
-	const Fine = 'Fine';
-	const Medium = 'Medium';
-}
 
+class GranularityLevelCodeType
+{
+	const COARSE = 'Coarse';
+	const FINE   = 'Fine';
+	const MEDIUM = 'Medium';
+}

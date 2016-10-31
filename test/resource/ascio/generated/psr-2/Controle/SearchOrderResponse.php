@@ -1,15 +1,17 @@
 <?php
 
 namespace Controle;
-class SearchOrderResponse {
+
+class SearchOrderResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $SearchOrderResult;
+    public $searchorderresult;
     /**
      * @var int
      */
-    public $totalOrders;
+    public $totalorders;
     /**
      * @var array \Controle\Order
      */
@@ -18,28 +20,29 @@ class SearchOrderResponse {
      * @param Response $val
      * @throws Exception
      */
-    public function setSearchOrderResult($val) {
-        
-        $this->SearchOrderResult = (int)$val;
+    public function setSearchOrderResult($val)
+    {
+        $this->searchorderresult = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setTotalOrders($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->totalOrders = (int)$val;
+    public function setTotalOrders($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->totalorders = (int)$val;
     }
 
     /**
      * @param ArrayOfOrder $val
      * @throws Exception
      */
-    public function setOrders($val) {
-        
+    public function setOrders($val)
+    {
         $this->orders = (int)$val;
     }
-
 }
-

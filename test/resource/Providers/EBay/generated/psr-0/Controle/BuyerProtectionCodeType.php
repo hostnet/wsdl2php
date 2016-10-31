@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class BuyerProtectionCodeType {
-	const ItemIneligible = 'ItemIneligible';
-	const ItemEligible = 'ItemEligible';
-	const ItemMarkedIneligible = 'ItemMarkedIneligible';
-	const ItemMarkedEligible = 'ItemMarkedEligible';
-	const CustomCode = 'CustomCode';
-}
 
+class BuyerProtectionCodeType
+{
+	const ITEMINELIGIBLE       = 'ItemIneligible';
+	const ITEMELIGIBLE         = 'ItemEligible';
+	const ITEMMARKEDINELIGIBLE = 'ItemMarkedIneligible';
+	const ITEMMARKEDELIGIBLE   = 'ItemMarkedEligible';
+	const CUSTOMCODE           = 'CustomCode';
+}

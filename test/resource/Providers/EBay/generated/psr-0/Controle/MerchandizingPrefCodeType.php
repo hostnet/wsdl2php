@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class MerchandizingPrefCodeType {
-	const OptIn = 'OptIn';
-	const OptOut = 'OptOut';
-	const CustomCode = 'CustomCode';
-}
 
+class MerchandizingPrefCodeType
+{
+	const OPTIN      = 'OptIn';
+	const OPTOUT     = 'OptOut';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,25 +1,26 @@
 <?php
 
 namespace Controle;
-class ShippingPackageCodeType {
-	const None = 'None';
-	const Letter = 'Letter';
-	const LargeEnvelope = 'LargeEnvelope';
-	const USPSLargePack = 'USPSLargePack';
-	const VeryLargePack = 'VeryLargePack';
-	const ExtraLargePack = 'ExtraLargePack';
-	const UPSLetter = 'UPSLetter';
-	const USPSFlatRateEnvelope = 'USPSFlatRateEnvelope';
-	const PackageThickEnvelope = 'PackageThickEnvelope';
-	const Roll = 'Roll';
-	const Europallet = 'Europallet';
-	const OneWayPallet = 'OneWayPallet';
-	const BulkyGoods = 'BulkyGoods';
-	const Furniture = 'Furniture';
-	const Cars = 'Cars';
-	const Motorbikes = 'Motorbikes';
-	const Caravan = 'Caravan';
-	const IndustryVehicles = 'IndustryVehicles';
-	const CustomCode = 'CustomCode';
-}
 
+class ShippingPackageCodeType
+{
+	const NONE                 = 'None';
+	const LETTER               = 'Letter';
+	const LARGEENVELOPE        = 'LargeEnvelope';
+	const USPSLARGEPACK        = 'USPSLargePack';
+	const VERYLARGEPACK        = 'VeryLargePack';
+	const EXTRALARGEPACK       = 'ExtraLargePack';
+	const UPSLETTER            = 'UPSLetter';
+	const USPSFLATRATEENVELOPE = 'USPSFlatRateEnvelope';
+	const PACKAGETHICKENVELOPE = 'PackageThickEnvelope';
+	const ROLL                 = 'Roll';
+	const EUROPALLET           = 'Europallet';
+	const ONEWAYPALLET         = 'OneWayPallet';
+	const BULKYGOODS           = 'BulkyGoods';
+	const FURNITURE            = 'Furniture';
+	const CARS                 = 'Cars';
+	const MOTORBIKES           = 'Motorbikes';
+	const CARAVAN              = 'Caravan';
+	const INDUSTRYVEHICLES     = 'IndustryVehicles';
+	const CUSTOMCODE           = 'CustomCode';
+}

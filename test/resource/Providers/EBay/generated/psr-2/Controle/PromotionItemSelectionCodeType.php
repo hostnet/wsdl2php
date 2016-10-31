@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class PromotionItemSelectionCodeType {
-    const Manual = 'Manual';
-    const Automatic = 'Automatic';
-    const CustomCode = 'CustomCode';
-}
 
+class PromotionItemSelectionCodeType
+{
+    const MANUAL     = 'Manual';
+    const AUTOMATIC  = 'Automatic';
+    const CUSTOMCODE = 'CustomCode';
+}

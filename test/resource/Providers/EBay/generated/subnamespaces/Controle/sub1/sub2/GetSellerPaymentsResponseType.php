@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * GetSellerPaymentsResponseType
  * Returns a summary of pending or paid payments that Half.com created for the seller identified
@@ -16,19 +17,21 @@ namespace Controle\sub1\sub2;
  * to the seller's financial institution a certain number of days after the current pay period
  * ends (see the Half.com online help for details).
  */
-class GetSellerPaymentsResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class GetSellerPaymentsResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var \Controle\sub1\sub2\PaginationResultType | Provides information about the list of transactions, including number of pages and number
 	 * of entries.
 	 */
-	public $PaginationResult;
+	public $paginationresult;
 	/**
 	 * @var boolean | If true, there are more payments yet to be retrieved. Additional GetSellerPayments calls
 	 * with higher page numbers or more entries per page must be made to retrieve these payments.
 	 * If false, no more payments are available or no payments match the request (based on the
 	 * payment status and time filter).
 	 */
-	public $HasMorePayments;
+	public $hasmorepayments;
 	/**
 	 * @var \Controle\sub1\sub2\SellerPaymentType | Information about a single payment that matches the criteria in the request. A payment
 	 * is between Half.com and a seller. Each payment is for one transaction for one item in one
@@ -40,14 +43,14 @@ class GetSellerPaymentsResponseType extends \Controle\sub1\sub2\AbstractResponse
 	 * be returned per page of results. Typically, they are returned in reverse chronological
 	 * order (most recent PaidTime first). Only returned if payments exist that match the request.
 	 */
-	public $SellerPayment;
+	public $sellerpayment;
 	/**
 	 * @var int | Indicates the number of payments that can be returned per page of data (i.e., per call).
 	 * This is the same as the value specified in the Pagination.EntriesPerPage input (or the
 	 * default value, if EntriesPerPage was not specified). This is not necessarily the actual
 	 * number of payments returned per page (see ReturnedPaymentCountActual).
 	 */
-	public $PaymentsPerPage;
+	public $paymentsperpage;
 	/**
 	 * @var int | Specifies the number of the page of data to return in the current call. Default is 1 for
 	 * most calls. For some calls, the default is 0. Specify a positive value equal to or lower
@@ -55,65 +58,72 @@ class GetSellerPaymentsResponseType extends \Controle\sub1\sub2\AbstractResponse
 	 * initial request). See the documentation for other individual calls to determine the correct default
 	 * value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable to Half.com).
 	 */
-	public $PageNumber;
+	public $pagenumber;
 	/**
 	 * @var int | Indicates the total number of payments returned (i.e., the number of SellerPayment entries
 	 * returned.
 	 */
-	public $ReturnedPaymentCountActual;
+	public $returnedpaymentcountactual;
 	/**
 	 * @param PaginationResultType $val
 	 * @throws Exception
 	 */
-	public function setPaginationResult($val) {
-		
-		$this->PaginationResult = (int)$val;
+	public function setPaginationResult($val)
+	{
+        $this->paginationresult = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setHasMorePayments($val) {
-		
-		$this->HasMorePayments = (int)$val;
+	public function setHasMorePayments($val)
+	{
+        $this->hasmorepayments = (int)$val;
 	}
 
 	/**
 	 * @param SellerPaymentType $val
 	 * @throws Exception
 	 */
-	public function setSellerPayment($val) {
-		
-		$this->SellerPayment = (int)$val;
+	public function setSellerPayment($val)
+	{
+        $this->sellerpayment = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setPaymentsPerPage($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->PaymentsPerPage = (int)$val;
+	public function setPaymentsPerPage($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->paymentsperpage = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setPageNumber($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->PageNumber = (int)$val;
+	public function setPageNumber($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->pagenumber = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setReturnedPaymentCountActual($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->ReturnedPaymentCountActual = (int)$val;
+	public function setReturnedPaymentCountActual($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->returnedpaymentcountactual = (int)$val;
 	}
-
 }
-

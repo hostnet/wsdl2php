@@ -1,7 +1,8 @@
 <?php
 
 namespace Controle;
-class ListingSubtypeEnum {
-	const ClassifiedAd = 'ClassifiedAd';
-}
 
+class ListingSubtypeEnum
+{
+	const CLASSIFIEDAD = 'ClassifiedAd';
+}

@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://api.nmbrs.nl/soap/v2.1/DebtorService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://api.nmbrs.nl/soap/v2.1/DebtorService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://api.nmbrs.nl/soap/v2.1/DebtorService">
+      <s:element name="AbsenceXML_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="from" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="to" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AbsenceXML_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AbsenceXML_GetResult" type="tns:ArrayOfAbsenceVerzuim" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAbsenceVerzuim">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AbsenceVerzuim" nillable="true" type="tns:AbsenceVerzuim" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AbsenceVerzuim">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DebtorID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ComapnyID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EmployeeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="XML" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="Address_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Address_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Address_GetResult" type="tns:Address" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Address">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Default" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Street" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseNumberAddition" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryISOCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BankAccount_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BankAccount_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BankAccount_GetResult" type="tns:BankAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BankAccount">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IBAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:BankAccountType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="BankAccountType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Bankrekening1" />
+          <s:enumeration value="Spaarloon" />
+          <s:enumeration value="Bankrekening2" />
+          <s:enumeration value="Bankrekening3" />
+          <s:enumeration value="Bankrekening4" />
+          <s:enumeration value="Bankrekening5" />
+          <s:enumeration value="Standaard" />
+          <s:enumeration value="Levensloop" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="Department_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Department_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Department_GetListResult" type="tns:ArrayOfDepartment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDepartment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Department" nillable="true" type="tns:Department" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Department">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Department_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="department" type="tns:Department" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Department_InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Department_InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Department_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="department" type="tns:Department" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Department_UpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Department_Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Department_DeleteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Function_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Function_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Function_GetListResult" type="tns:ArrayOfFunction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFunction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Function" nillable="true" type="tns:Function" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Function">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Function_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="function" type="tns:Function" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Function_InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Function_InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Function_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="function" type="tns:Function" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Function_UpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Function_Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Function_DeleteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Tags_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tags_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tags_GetResult" type="tns:ArrayOfDebtorTag" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDebtorTag">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DebtorTag" nillable="true" type="tns:DebtorTag" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DebtorTag">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Number" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HexColor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tag" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ContactPerson_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContactPerson_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ContactPerson_GetResult" type="tns:DebtorContactPerson" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DebtorContactPerson">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AccountantContact_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccountantContact_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountantContact_GetListResult" type="tns:ArrayOfDebtorContactPerson" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDebtorContactPerson">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DebtorContactPerson" nillable="true" type="tns:DebtorContactPerson" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ServiceLevel_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceLevel_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceLevel_GetResult" type="tns:DebtorServicelevel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DebtorServicelevel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartPeriod" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartYear" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceLevel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartContract" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Debtor_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Debtor_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Debtor_GetResult" type="tns:Debtor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Debtor">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Debtor_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Debtor" type="tns:Debtor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Debtor_InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Debtor_InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Debtor_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Debtor" type="tns:Debtor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Debtor_UpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="List_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="List_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_GetAllResult" type="tns:ArrayOfDebtor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDebtor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Debtor" nillable="true" type="tns:Debtor" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="List_GetByNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Number" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_GetByNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_GetByNumberResult" type="tns:ArrayOfDebtor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Title_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Title_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Title_GetListResult" type="tns:ArrayOfTitle" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTitle">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Title" nillable="true" type="tns:Title" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Title">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TitleName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Title_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="tns:Title" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Title_InsertResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AbsenceXML_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:AbsenceXML_Get" />
+  </wsdl:message>
+  <wsdl:message name="AbsenceXML_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:AbsenceXML_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="AbsenceXML_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Address_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:Address_Get" />
+  </wsdl:message>
+  <wsdl:message name="Address_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:Address_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Address_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:BankAccount_Get" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:BankAccount_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Department_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:Department_GetList" />
+  </wsdl:message>
+  <wsdl:message name="Department_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:Department_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Department_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Department_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Department_Insert" />
+  </wsdl:message>
+  <wsdl:message name="Department_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:Department_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Department_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Department_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Department_Update" />
+  </wsdl:message>
+  <wsdl:message name="Department_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Department_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Department_UpdateAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Department_DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Department_Delete" />
+  </wsdl:message>
+  <wsdl:message name="Department_DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:Department_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Department_DeleteAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Function_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:Function_GetList" />
+  </wsdl:message>
+  <wsdl:message name="Function_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:Function_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Function_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Function_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Function_Insert" />
+  </wsdl:message>
+  <wsdl:message name="Function_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:Function_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Function_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Function_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Function_Update" />
+  </wsdl:message>
+  <wsdl:message name="Function_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Function_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Function_UpdateAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Function_DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Function_Delete" />
+  </wsdl:message>
+  <wsdl:message name="Function_DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:Function_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Function_DeleteAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Tags_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:Tags_Get" />
+  </wsdl:message>
+  <wsdl:message name="Tags_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:Tags_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Tags_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="ContactPerson_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:ContactPerson_Get" />
+  </wsdl:message>
+  <wsdl:message name="ContactPerson_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:ContactPerson_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactPerson_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AccountantContact_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:AccountantContact_GetList" />
+  </wsdl:message>
+  <wsdl:message name="AccountantContact_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:AccountantContact_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AccountantContact_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLevel_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:ServiceLevel_Get" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLevel_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:ServiceLevel_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLevel_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:Debtor_Get" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:Debtor_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Debtor_Insert" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:Debtor_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Debtor_Update" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Debtor_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Debtor_UpdateAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="List_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:List_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="List_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:List_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_GetAllAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="List_GetByNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:List_GetByNumber" />
+  </wsdl:message>
+  <wsdl:message name="List_GetByNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:List_GetByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_GetByNumberAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Title_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:Title_GetList" />
+  </wsdl:message>
+  <wsdl:message name="Title_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:Title_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Title_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Title_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Title_Insert" />
+  </wsdl:message>
+  <wsdl:message name="Title_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:Title_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Title_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="DebtorServiceSoap">
+    <wsdl:operation name="AbsenceXML_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get verzuim XML abcense list</wsdl:documentation>
+      <wsdl:input message="tns:AbsenceXML_GetSoapIn" />
+      <wsdl:output message="tns:AbsenceXML_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Address_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get address by DebtorID</wsdl:documentation>
+      <wsdl:input message="tns:Address_GetSoapIn" />
+      <wsdl:output message="tns:Address_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get bankaccount by DebtorID</wsdl:documentation>
+      <wsdl:input message="tns:BankAccount_GetSoapIn" />
+      <wsdl:output message="tns:BankAccount_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Department_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns departments that belong to a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Department_GetListSoapIn" />
+      <wsdl:output message="tns:Department_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Department_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insert a department into a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Department_InsertSoapIn" />
+      <wsdl:output message="tns:Department_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Department_Update">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a department into a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Department_UpdateSoapIn" />
+      <wsdl:output message="tns:Department_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Department_Delete">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a department from a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Department_DeleteSoapIn" />
+      <wsdl:output message="tns:Department_DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Function_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns functions that belong to a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Function_GetListSoapIn" />
+      <wsdl:output message="tns:Function_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Function_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update or insert a function into a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Function_InsertSoapIn" />
+      <wsdl:output message="tns:Function_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Function_Update">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a function into a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Function_UpdateSoapIn" />
+      <wsdl:output message="tns:Function_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Function_Delete">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a function from a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Function_DeleteSoapIn" />
+      <wsdl:output message="tns:Function_DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tags_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get tags by DebtorId</wsdl:documentation>
+      <wsdl:input message="tns:Tags_GetSoapIn" />
+      <wsdl:output message="tns:Tags_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactPerson_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contactperson by DebtorID</wsdl:documentation>
+      <wsdl:input message="tns:ContactPerson_GetSoapIn" />
+      <wsdl:output message="tns:ContactPerson_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AccountantContact_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get accountant contacts by debtorId</wsdl:documentation>
+      <wsdl:input message="tns:AccountantContact_GetListSoapIn" />
+      <wsdl:output message="tns:AccountantContact_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceLevel_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get servicelevel by DebtorId</wsdl:documentation>
+      <wsdl:input message="tns:ServiceLevel_GetSoapIn" />
+      <wsdl:output message="tns:ServiceLevel_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get debtor by ID</wsdl:documentation>
+      <wsdl:input message="tns:Debtor_GetSoapIn" />
+      <wsdl:output message="tns:Debtor_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insert debtor</wsdl:documentation>
+      <wsdl:input message="tns:Debtor_InsertSoapIn" />
+      <wsdl:output message="tns:Debtor_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Update">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update an existing debtor</wsdl:documentation>
+      <wsdl:input message="tns:Debtor_UpdateSoapIn" />
+      <wsdl:output message="tns:Debtor_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_GetAll">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all debtors</wsdl:documentation>
+      <wsdl:input message="tns:List_GetAllSoapIn" />
+      <wsdl:output message="tns:List_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_GetByNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get debtors by Number</wsdl:documentation>
+      <wsdl:input message="tns:List_GetByNumberSoapIn" />
+      <wsdl:output message="tns:List_GetByNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Title_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns titles that belong to a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Title_GetListSoapIn" />
+      <wsdl:output message="tns:Title_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Title_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insert a title into a debtor.</wsdl:documentation>
+      <wsdl:input message="tns:Title_InsertSoapIn" />
+      <wsdl:output message="tns:Title_InsertSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DebtorServiceSoap" type="tns:DebtorServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AbsenceXML_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/AbsenceXML_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AbsenceXML_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Address_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Address_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/BankAccount_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BankAccount_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Department_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Department_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_Update">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Department_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_Delete">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Department_DeleteAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Function_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Function_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_Update">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Function_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_Delete">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Function_DeleteAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tags_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Tags_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Tags_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactPerson_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/ContactPerson_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ContactPerson_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountantContact_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/AccountantContact_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AccountantContact_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceLevel_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/ServiceLevel_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ServiceLevel_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Debtor_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Debtor_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Debtor_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Debtor_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Update">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Debtor_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Debtor_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetAll">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/List_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:List_GetAllAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetByNumber">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/List_GetByNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:List_GetByNumberAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Title_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Title_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Title_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Title_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Title_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Title_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DebtorServiceSoap12" type="tns:DebtorServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AbsenceXML_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/AbsenceXML_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AbsenceXML_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Address_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Address_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/BankAccount_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BankAccount_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Department_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Department_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_Update">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Department_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department_Delete">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Department_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Department_DeleteAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Function_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Function_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_Update">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Function_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Function_Delete">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Function_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Function_DeleteAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tags_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Tags_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Tags_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactPerson_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/ContactPerson_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ContactPerson_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountantContact_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/AccountantContact_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AccountantContact_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceLevel_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/ServiceLevel_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ServiceLevel_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Debtor_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Debtor_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Debtor_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Debtor_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debtor_Update">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Debtor_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Debtor_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetAll">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/List_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:List_GetAllAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetByNumber">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/List_GetByNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:List_GetByNumberAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Title_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Title_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Title_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Title_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/DebtorService/Title_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Title_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DebtorService">
+    <wsdl:port name="DebtorServiceSoap" binding="tns:DebtorServiceSoap">
+      <soap:address location="http://api.nmbrs.nl/soap/v2.1/DebtorService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DebtorServiceSoap12" binding="tns:DebtorServiceSoap12">
+      <soap12:address location="http://api.nmbrs.nl/soap/v2.1/DebtorService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

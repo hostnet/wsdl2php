@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * SiteHostedPictureType
  * Data for images hosted by eBay Picture Services (EPS).With compatibility level 439 and higher,
@@ -9,7 +10,8 @@ namespace Controle\sub1\sub2;
  * that the Gallery Plus image enhancement does not support SiteHostedPicture. Use Item.PictureDetails
  * with that feature.
  */
-class SiteHostedPictureType {
+class SiteHostedPictureType
+{
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
 	 * on a location of the seller's choice (other than eBay) and associated with an item. If
@@ -26,14 +28,14 @@ class SiteHostedPictureType {
 	 * the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
 	 * with that feature.
 	 */
-	public $PictureURL;
+	public $pictureurl;
 	/**
 	 * @var \Controle\sub1\sub2\PhotoDisplayCodeType | Specifies the type of image display used in a listing. Some options are only available
 	 * if images are hosted through eBay Picture Services (EPS). eBay determines this by parsing
 	 * the associated PictureURL. Cannot be used in combination with Listing Designer layouts. Specify
 	 * None or do not add PhotoDisplay when ListingDesigner.LayoutID is a value other than 0.
 	 */
-	public $PhotoDisplay;
+	public $photodisplay;
 	/**
 	 * @var \Controle\sub1\sub2\GalleryTypeCodeType | Indicates whether a picture for the item is included in the Gallery and, if so whether
 	 * the item is also featured or Plus in the Gallery. If the value is Gallery or Plus or Featured,
@@ -49,7 +51,7 @@ class SiteHostedPictureType {
 	 *            about working with pictures and related validation rules.            You cannot
 	 * remove Gallery or Plus or Featured when you revise a listing.
 	 */
-	public $GalleryType;
+	public $gallerytype;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | URL for a picture to be used as the Gallery thumbnail. Ignored if GalleryType is None or
 	 * unspecified. If the value of GalleryType is Gallery or Featured, you can either specify
@@ -66,13 +68,13 @@ class SiteHostedPictureType {
 	 * image enhancement does not support VendorHostedPicture. Use Item.PictureDetails with that
 	 * feature.
 	 */
-	public $GalleryURL;
+	public $galleryurl;
 	/**
 	 * @var \Controle\sub1\sub2\PictureSourceCodeType | The service hosting the images in PictureURL, if any. This information is primarily useful
 	 * for Picture Manager subscribers, who pay a flat subscription fee instead of individual
 	 * picture fees per listing. Only returned when PictureURL is returned.
 	 */
-	public $PictureSource;
+	public $picturesource;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -81,55 +83,53 @@ class SiteHostedPictureType {
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
-	public function setPictureURL($val) {
-		
-		$this->PictureURL = (int)$val;
+	public function setPictureURL($val)
+	{
+        $this->pictureurl = (int)$val;
 	}
 
 	/**
 	 * @param PhotoDisplayCodeType $val
 	 * @throws Exception
 	 */
-	public function setPhotoDisplay($val) {
-		
-		$this->PhotoDisplay = (int)$val;
+	public function setPhotoDisplay($val)
+	{
+        $this->photodisplay = (int)$val;
 	}
 
 	/**
 	 * @param GalleryTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setGalleryType($val) {
-		
-		$this->GalleryType = (int)$val;
+	public function setGalleryType($val)
+	{
+        $this->gallerytype = (int)$val;
 	}
 
 	/**
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
-	public function setGalleryURL($val) {
-		
-		$this->GalleryURL = (int)$val;
+	public function setGalleryURL($val)
+	{
+        $this->galleryurl = (int)$val;
 	}
 
 	/**
 	 * @param PictureSourceCodeType $val
 	 * @throws Exception
 	 */
-	public function setPictureSource($val) {
-		
-		$this->PictureSource = (int)$val;
+	public function setPictureSource($val)
+	{
+        $this->picturesource = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

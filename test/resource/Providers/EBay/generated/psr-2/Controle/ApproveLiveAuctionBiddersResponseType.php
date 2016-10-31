@@ -1,25 +1,26 @@
 <?php
 
 namespace Controle;
+
 /**
  * ApproveLiveAuctionBiddersResponseType
  * Provides the Live Auction sellers with the ability to approve, decline, and set the bidding
  * limit of the bidders that have signed up for a catalog.
  */
-class ApproveLiveAuctionBiddersResponseType extends \Controle\AbstractResponseType {
+class ApproveLiveAuctionBiddersResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\LiveAuctionApprovalStatusArrayType | Contains the results of the request for each item. Mulitple bidders can be approved
      * with one call.
      */
-    public $BidderUpdateStatus;
+    public $bidderupdatestatus;
     /**
      * @param LiveAuctionApprovalStatusArrayType $val
      * @throws Exception
      */
-    public function setBidderUpdateStatus($val) {
-        
-        $this->BidderUpdateStatus = (int)$val;
+    public function setBidderUpdateStatus($val)
+    {
+        $this->bidderupdatestatus = (int)$val;
     }
-
 }
-

@@ -10,10 +10,10 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	const WSDL_FILE = "TemperatureConvertTest.wsdl";
 
 	public function __construct($wsdl = null, $options = array()) {
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        (isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -23,11 +23,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function CelsiusTOFahrenheit($temp) {
-		return $this->__soapCall(
-			'CelsiusTOFahrenheit',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'CelsiusTOFahrenheit',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -37,11 +37,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function CelsiusTOKelvin($temp) {
-		return $this->__soapCall(
-			'CelsiusTOKelvin',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'CelsiusTOKelvin',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -51,11 +51,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function CelsiusTOReaumur($temp) {
-		return $this->__soapCall(
-			'CelsiusTOReaumur',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'CelsiusTOReaumur',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -65,11 +65,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function CelsiusTORankine($temp) {
-		return $this->__soapCall(
-			'CelsiusTORankine',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'CelsiusTORankine',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -79,11 +79,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function FahrenheitTOCelsius($temp) {
-		return $this->__soapCall(
-			'FahrenheitTOCelsius',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'FahrenheitTOCelsius',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -93,11 +93,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function FahrenheitTOKelvin($temp) {
-		return $this->__soapCall(
-			'FahrenheitTOKelvin',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'FahrenheitTOKelvin',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -107,11 +107,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function FahrenheitTOReaumur($temp) {
-		return $this->__soapCall(
-			'FahrenheitTOReaumur',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'FahrenheitTOReaumur',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -121,11 +121,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function FahrenheitTORankine($temp) {
-		return $this->__soapCall(
-			'FahrenheitTORankine',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'FahrenheitTORankine',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -135,11 +135,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function KelvinTOCelsius($temp) {
-		return $this->__soapCall(
-			'KelvinTOCelsius',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'KelvinTOCelsius',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -149,11 +149,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function KelvinTOFahrenheit($temp) {
-		return $this->__soapCall(
-			'KelvinTOFahrenheit',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'KelvinTOFahrenheit',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -163,11 +163,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function KelvinTOReaumur($temp) {
-		return $this->__soapCall(
-			'KelvinTOReaumur',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'KelvinTOReaumur',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -177,11 +177,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function KelvinTORankine($temp) {
-		return $this->__soapCall(
-			'KelvinTORankine',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'KelvinTORankine',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -191,11 +191,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function ReaumurTOCelsius($temp) {
-		return $this->__soapCall(
-			'ReaumurTOCelsius',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'ReaumurTOCelsius',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -205,11 +205,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function ReaumurTOFahrenheit($temp) {
-		return $this->__soapCall(
-			'ReaumurTOFahrenheit',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'ReaumurTOFahrenheit',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -219,11 +219,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function ReaumurTOKelvin($temp) {
-		return $this->__soapCall(
-			'ReaumurTOKelvin',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'ReaumurTOKelvin',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -233,11 +233,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function ReaumurTORankine($temp) {
-		return $this->__soapCall(
-			'ReaumurTORankine',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'ReaumurTORankine',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -247,11 +247,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function RankineTOCelsius($temp) {
-		return $this->__soapCall(
-			'RankineTOCelsius',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'RankineTOCelsius',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -261,11 +261,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function RankineTOFahrenheit($temp) {
-		return $this->__soapCall(
-			'RankineTOFahrenheit',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'RankineTOFahrenheit',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -275,11 +275,11 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function RankineTOKelvin($temp) {
-		return $this->__soapCall(
-			'RankineTOKelvin',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'RankineTOKelvin',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
 
 	/**
@@ -289,11 +289,10 @@ class TemperatureConvertServiceClient extends \SoapClient {
 	 * @return float
 	 */
 	public function RankineTOReaumur($temp) {
-		return $this->__soapCall(
-			'RankineTOReaumur',
-			array($temp),
-			array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
-		);
+        return $this->__soapCall(
+            'RankineTOReaumur',
+            array($temp),
+            array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
+        );
 	}
-
 }

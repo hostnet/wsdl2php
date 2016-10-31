@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class DeleteContactResponse {
+
+class DeleteContactResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $DeleteContactResult;
+	public $deletecontactresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setDeleteContactResult($val) {
-		
-		$this->DeleteContactResult = (int)$val;
+	public function setDeleteContactResult($val)
+	{
+        $this->deletecontactresult = (int)$val;
 	}
-
 }
-

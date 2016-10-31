@@ -1,12 +1,14 @@
 <?php
 
 namespace Controle;
+
 /**
  * ProductSearchResultType
  * Container for the results of a product query. Supports Pre-filled Product Information functionality. See
  * the Developer's Guide for more information about working with this data.
  */
-class ProductSearchResultType {
+class ProductSearchResultType
+{
     /**
      * @var int | The approximate quantity of pages of results that match the product search query
      *            (TotalProducts divided by the median number of products per page examined
@@ -16,12 +18,12 @@ class ProductSearchResultType {
      * and higher.               With lower compatibility levels, ProductSearchResult.ApproximatePages
      * is returned instead.
      */
-    public $ApproximatePages;
+    public $approximatepages;
     /**
      * @var int | Numeric identifier for a characteristic set that defines the attributes            (unique
      * across all eBay sites).
      */
-    public $AttributeSetID;
+    public $attributesetid;
     /**
      * @var boolean | If true, the query results contain additional pages (higher than the current page number). You
      * can retrieve more results by incrementing the PageNumber value that was passed in the
@@ -30,7 +32,7 @@ class ProductSearchResultType {
      * compatibility level 415 and higher.               With lower compatibility levels, ProductSearchResult.HasMore
      * is returned instead.
      */
-    public $HasMore;
+    public $hasmore;
     /**
      * @var \Controle\ProductFamilyType | ProductFamilies represents one product family. Multiple ProductFamilies
      *   properties can be returned. A product family identifies a group of related products.
@@ -45,7 +47,7 @@ class ProductSearchResultType {
      * higher.               With lower compatibility levels, ProductSearchResult.ProductFamilies
      * is returned instead.
      */
-    public $ProductFamilies;
+    public $productfamilies;
     /**
      * @var \Controle\ProductFinderConstraintType | A list of attributes (constraints) that were specified in the search request.
      *         This information is useful when multiple queries were specified in a
@@ -56,7 +58,7 @@ class ProductSearchResultType {
      * levels, ProductSearchResult.ProductFinderConstraints is returned instead.
      *     Not applicable to GetProductFamilyMembers.
      */
-    public $ProductFinderConstraints;
+    public $productfinderconstraints;
     /**
      * @var boolean | If too many search results match the query, the TooManyMatchesFound tag is returned
      *            with a value of true, and a warning is returned.            If this occurs,
@@ -66,7 +68,7 @@ class ProductSearchResultType {
      * levels, ProductSearchResult.TooManyMatchesFound is returned instead. Returns false for
      * GetProductFamilyMembers.
      */
-    public $TooManyMatchesFound;
+    public $toomanymatchesfound;
     /**
      * @var int | The total quantity of products that match the query (within               the characteristic
      * set). This can exceed the actual number               of products returned in the current
@@ -75,20 +77,20 @@ class ProductSearchResultType {
      * only returned with compatibility level 415 and higher.               With lower compatibility
      * levels, ProductSearchResult.TotalProducts is returned instead.
      */
-    public $TotalProducts;
+    public $totalproducts;
     /**
      * @var string | Key you specified in ProductSearchID in the search request to distinguish between query
      * results. Primarily useful when conducting multiple searches in the same call. If no
      * ProductSearchID value was specified in the request, returns the array index of the search
      * result (beginning with 0). Not applicable to GetProductFamilyMembers.
      */
-    public $ID;
+    public $id;
     /**
      * @var string | Total quantity of products that match the search request (across all characteristic
      * sets). This value can exceed the actual quantity of products returned in the current
      * virtual page. Not applicable to GetProductFamilyMembers.
      */
-    public $NumProducts;
+    public $numproducts;
     /**
      * @var \Controle\ResponseAttributeSetType | A result containing a set of one or more product families. For GetProductSearchResults,
      * if QueryKeywords and multiple characteristic set IDs were specified in the request,
@@ -98,7 +100,7 @@ class ProductSearchResultType {
      * 387 and higher. For GetProductFamilyMembers, only returned with request version 415
      * and higher.
      */
-    public $AttributeSet;
+    public $attributeset;
     /**
      * @var boolean | If true, your application should attempt to display stock photos that are returned.
      * If false, your application should not attempt to display any stock photos that are returned.
@@ -106,7 +108,7 @@ class ProductSearchResultType {
      * stock photos are not applicable. An application with a graphical user interface can
      * use this flag to determine when to hide stock photo widgets for a set of search results.
      */
-    public $DisplayStockPhotos;
+    public $displaystockphotos;
     /**
      * @var \Controle\<anyXML>
      */
@@ -115,109 +117,122 @@ class ProductSearchResultType {
      * @param int $val
      * @throws Exception
      */
-    public function setApproximatePages($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->ApproximatePages = (int)$val;
+    public function setApproximatePages($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->approximatepages = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setAttributeSetID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->AttributeSetID = (int)$val;
+    public function setAttributeSetID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->attributesetid = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setHasMore($val) {
-        
-        $this->HasMore = (int)$val;
+    public function setHasMore($val)
+    {
+        $this->hasmore = (int)$val;
     }
 
     /**
      * @param ProductFamilyType $val
      * @throws Exception
      */
-    public function setProductFamilies($val) {
-        
-        $this->ProductFamilies = (int)$val;
+    public function setProductFamilies($val)
+    {
+        $this->productfamilies = (int)$val;
     }
 
     /**
      * @param ProductFinderConstraintType $val
      * @throws Exception
      */
-    public function setProductFinderConstraints($val) {
-        
-        $this->ProductFinderConstraints = (int)$val;
+    public function setProductFinderConstraints($val)
+    {
+        $this->productfinderconstraints = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setTooManyMatchesFound($val) {
-        
-        $this->TooManyMatchesFound = (int)$val;
+    public function setTooManyMatchesFound($val)
+    {
+        $this->toomanymatchesfound = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setTotalProducts($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->TotalProducts = (int)$val;
+    public function setTotalProducts($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->totalproducts = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ID');
-        $this->ID = (int)$val;
+    public function setID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ID');
+        }
+        $this->id = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setNumProducts($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for NumProducts');
-        $this->NumProducts = (int)$val;
+    public function setNumProducts($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for NumProducts');
+        }
+        $this->numproducts = (int)$val;
     }
 
     /**
      * @param ResponseAttributeSetType $val
      * @throws Exception
      */
-    public function setAttributeSet($val) {
-        
-        $this->AttributeSet = (int)$val;
+    public function setAttributeSet($val)
+    {
+        $this->attributeset = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setDisplayStockPhotos($val) {
-        
-        $this->DisplayStockPhotos = (int)$val;
+    public function setDisplayStockPhotos($val)
+    {
+        $this->displaystockphotos = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

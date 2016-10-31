@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * SellerPaymentType
  * A payment between Half.com and a seller. The financial value of a payment is typically based
@@ -8,53 +9,54 @@ namespace Controle\sub1\sub2;
  * buyer paid for the item, minus Half.com's commission. Each payment is for one transaction
  * for one item in one order.
  */
-class SellerPaymentType {
+class SellerPaymentType
+{
 	/**
 	 * @var \Controle\sub1\sub2\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $ItemID;
+	public $itemid;
 	/**
 	 * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
 	 * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
 	 * spawned it, so a transaction is only uniquely identified on a global basis by a combination
 	 * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
 	 */
-	public $TransactionID;
+	public $transactionid;
 	/**
 	 * @var \Controle\sub1\sub2\OrderIDType | ID of the Half.com order associated with the payment. Returns 0 for single-transaction
 	 * orders.
 	 */
-	public $OrderID;
+	public $orderid;
 	/**
 	 * @var string | An ID that the seller specified when they listed the Half.com item, if any. It can be used
 	 * for the seller's SKU. Note that SellerInventoryID is not returned if no ID was specified.
 	 * (Note: The SKU field used for eBay.com listings is not applicable to Half.com listings.)
 	 */
-	public $SellerInventoryID;
+	public $sellerinventoryid;
 	/**
 	 * @var string | A text note that the seller specified for the Half.com item, if any. Only visible to the
 	 * seller. Not returned if the seller specified no notes.
 	 */
-	public $PrivateNotes;
+	public $privatenotes;
 	/**
 	 * @var \Controle\sub1\sub2\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
 	 * item. All Half.com items are listed with Pre-filled Item Information.
 	 */
-	public $ExternalProductID;
+	public $externalproductid;
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $Title;
+	public $title;
 	/**
 	 * @var \Controle\sub1\sub2\PaymentTypeCodeType | Indicates whether the payment is for a Half.com sale or a refund.
 	 */
-	public $PaymentType;
+	public $paymenttype;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Price of the transaction (before shipping and sales tax) that the buyer needs to pay to
 	 * complete the purchase. For eBay Motors, TransactionPrice is the deposit amount. Also applicable
 	 * to Half.com (for GetOrders).
 	 */
-	public $TransactionPrice;
+	public $transactionprice;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | The adjusted shipping cost that Half.com pays the seller. If multiple items from the same
 	 * seller are in the same order, this amount may be less than the rate for shipping the item
@@ -62,11 +64,11 @@ class SellerPaymentType {
 	 * the way shipping costs are calculated, this value may be different for identical items
 	 * in different orders.)
 	 */
-	public $ShippingReimbursement;
+	public $shippingreimbursement;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount of commission charged by Half.com.
 	 */
-	public $Commission;
+	public $commission;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | The amount the buyer paid for the item(s) in the transaction. If the seller allowed the
 	 * buyer to change the item total, the buyer is able to change the total until the time that
@@ -77,7 +79,7 @@ class SellerPaymentType {
 	 * Motors items, AmountPaid is the amount paid by the buyer for the deposit. Not applicable
 	 * to Half.com.
 	 */
-	public $AmountPaid;
+	public $amountpaid;
 	/**
 	 * @var dateTime | Indicates the time when the transaction was marked paid, if known. The value is set by
 	 * eBay when payment is made via PayPal or a third-party checkout flow. This value is also
@@ -87,7 +89,7 @@ class SellerPaymentType {
 	 * transaction. If the item is marked as paid but the seller is not a Selling Manager Pro
 	 * user, PaidTime returns the transaction creation time instead. Not applicable to Half.com.
 	 */
-	public $PaidTime;
+	public $paidtime;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -96,127 +98,137 @@ class SellerPaymentType {
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
-	public function setItemID($val) {
-		
-		$this->ItemID = (int)$val;
+	public function setItemID($val)
+	{
+        $this->itemid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTransactionID($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
-		$this->TransactionID = (int)$val;
+	public function setTransactionID($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TransactionID');
+        }
+        $this->transactionid = (int)$val;
 	}
 
 	/**
 	 * @param OrderIDType $val
 	 * @throws Exception
 	 */
-	public function setOrderID($val) {
-		
-		$this->OrderID = (int)$val;
+	public function setOrderID($val)
+	{
+        $this->orderid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSellerInventoryID($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerInventoryID');
-		$this->SellerInventoryID = (int)$val;
+	public function setSellerInventoryID($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SellerInventoryID');
+        }
+        $this->sellerinventoryid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPrivateNotes($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PrivateNotes');
-		$this->PrivateNotes = (int)$val;
+	public function setPrivateNotes($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PrivateNotes');
+        }
+        $this->privatenotes = (int)$val;
 	}
 
 	/**
 	 * @param ExternalProductIDType $val
 	 * @throws Exception
 	 */
-	public function setExternalProductID($val) {
-		
-		$this->ExternalProductID = (int)$val;
+	public function setExternalProductID($val)
+	{
+        $this->externalproductid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTitle($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
-		$this->Title = (int)$val;
+	public function setTitle($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Title');
+        }
+        $this->title = (int)$val;
 	}
 
 	/**
 	 * @param PaymentTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setPaymentType($val) {
-		
-		$this->PaymentType = (int)$val;
+	public function setPaymentType($val)
+	{
+        $this->paymenttype = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setTransactionPrice($val) {
-		
-		$this->TransactionPrice = (int)$val;
+	public function setTransactionPrice($val)
+	{
+        $this->transactionprice = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setShippingReimbursement($val) {
-		
-		$this->ShippingReimbursement = (int)$val;
+	public function setShippingReimbursement($val)
+	{
+        $this->shippingreimbursement = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setCommission($val) {
-		
-		$this->Commission = (int)$val;
+	public function setCommission($val)
+	{
+        $this->commission = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setAmountPaid($val) {
-		
-		$this->AmountPaid = (int)$val;
+	public function setAmountPaid($val)
+	{
+        $this->amountpaid = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setPaidTime($val) {
-		
-		$this->PaidTime = (int)$val;
+	public function setPaidTime($val)
+	{
+        $this->paidtime = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

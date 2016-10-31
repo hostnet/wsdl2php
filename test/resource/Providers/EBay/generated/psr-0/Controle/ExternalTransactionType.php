@@ -1,27 +1,29 @@
 <?php
 
 namespace Controle;
+
 /**
  * ExternalTransactionType
  * Container for external transaction information.
  */
-class ExternalTransactionType {
+class ExternalTransactionType
+{
 	/**
 	 * @var string | Unique payment transaction ID.
 	 */
-	public $ExternalTransactionID;
+	public $externaltransactionid;
 	/**
 	 * @var dateTime | Date on which transaction occurs in PayPal.
 	 */
-	public $ExternalTransactionTime;
+	public $externaltransactiontime;
 	/**
 	 * @var \Controle\AmountType | 	 */
-	public $FeeOrCreditAmount;
+	public $feeorcreditamount;
 	/**
 	 * @var \Controle\AmountType | If positive, the amount the buyer pays the seller through PayPal on the purchase of items.
 	 * If negative, the amount refunded the buyer. Default = 0.
 	 */
-	public $PaymentOrRefundAmount;
+	public $paymentorrefundamount;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -30,46 +32,47 @@ class ExternalTransactionType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setExternalTransactionID($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExternalTransactionID');
-		$this->ExternalTransactionID = (int)$val;
+	public function setExternalTransactionID($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExternalTransactionID');
+        }
+        $this->externaltransactionid = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setExternalTransactionTime($val) {
-		
-		$this->ExternalTransactionTime = (int)$val;
+	public function setExternalTransactionTime($val)
+	{
+        $this->externaltransactiontime = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setFeeOrCreditAmount($val) {
-		
-		$this->FeeOrCreditAmount = (int)$val;
+	public function setFeeOrCreditAmount($val)
+	{
+        $this->feeorcreditamount = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setPaymentOrRefundAmount($val) {
-		
-		$this->PaymentOrRefundAmount = (int)$val;
+	public function setPaymentOrRefundAmount($val)
+	{
+        $this->paymentorrefundamount = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

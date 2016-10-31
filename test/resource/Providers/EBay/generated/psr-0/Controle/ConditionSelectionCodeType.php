@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class ConditionSelectionCodeType {
-	const All = 'All';
-	const _New = 'New';
-	const CustomCode = 'CustomCode';
-}
 
+class ConditionSelectionCodeType
+{
+	const ALL        = 'All';
+	const _NEW       = '_New';
+	const CUSTOMCODE = 'CustomCode';
+}

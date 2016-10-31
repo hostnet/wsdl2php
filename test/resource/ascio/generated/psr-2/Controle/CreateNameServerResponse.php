@@ -1,32 +1,32 @@
 <?php
 
 namespace Controle;
-class CreateNameServerResponse {
+
+class CreateNameServerResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $CreateNameServerResult;
+    public $createnameserverresult;
     /**
      * @var \Controle\NameServer
      */
-    public $nameServer;
+    public $nameserver;
     /**
      * @param Response $val
      * @throws Exception
      */
-    public function setCreateNameServerResult($val) {
-        
-        $this->CreateNameServerResult = (int)$val;
+    public function setCreateNameServerResult($val)
+    {
+        $this->createnameserverresult = (int)$val;
     }
 
     /**
      * @param NameServer $val
      * @throws Exception
      */
-    public function setNameServer($val) {
-        
-        $this->nameServer = (int)$val;
+    public function setNameServer($val)
+    {
+        $this->nameserver = (int)$val;
     }
-
 }
-

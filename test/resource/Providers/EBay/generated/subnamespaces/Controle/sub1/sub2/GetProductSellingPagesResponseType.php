@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * GetProductSellingPagesResponseType
  * Retrieves an XML string that describes how to present catalog product information to a seller.
@@ -11,7 +12,9 @@ namespace Controle\sub1\sub2;
  *     in a graphical user interface.      See the Developer's Guide for an overview of Pre-filled
  * Item Information and details about      searching for catalog products.
  */
-class GetProductSellingPagesResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class GetProductSellingPagesResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var string | A string containing a list of all the attributes that are applicable to the products specified
 	 * in the request, along with related meta-data. The meta-data specifies the pre-filled values
@@ -30,15 +33,16 @@ class GetProductSellingPagesResponseType extends \Controle\sub1\sub2\AbstractRes
 	 * the appendices in the eBay Web Services guide for general information about string data
 	 * types.
 	 */
-	public $ProductSellingPagesData;
+	public $productsellingpagesdata;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setProductSellingPagesData($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
-		$this->ProductSellingPagesData = (int)$val;
+	public function setProductSellingPagesData($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
+        }
+        $this->productsellingpagesdata = (int)$val;
 	}
-
 }
-

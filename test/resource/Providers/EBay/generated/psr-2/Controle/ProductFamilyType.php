@@ -1,13 +1,15 @@
 <?php
 
 namespace Controle;
+
 /**
  * ProductFamilyType
  * A set of results returned from a catalog product search. Use GetProductSearchResults or
  * GetProductFamilyMembers to perform the search.      See the guide for information about
  * Pre-filled Item Information (Catalogs) functionality.
  */
-class ProductFamilyType {
+class ProductFamilyType
+{
     /**
      * @var \Controle\ProductType | A transient header that describes the current search results. Contains a
      *  an ID, a subset of attributes, and a typical stock photo             to help a user
@@ -15,11 +17,11 @@ class ProductFamilyType {
      * other result sets returned in the same response.             One ParentProduct is returned
      * per ProductFamily.
      */
-    public $ParentProduct;
+    public $parentproduct;
     /**
      * @var \Controle\ProductType | A set of products (within the same product family) that match the search query.
      */
-    public $FamilyMembers;
+    public $familymembers;
     /**
      * @var \Controle\<anyXML>
      */
@@ -27,31 +29,31 @@ class ProductFamilyType {
     /**
      * @var boolean
      */
-    public $hasMoreChildren;
+    public $hasmorechildren;
     /**
      * @param ProductType $val
      * @throws Exception
      */
-    public function setParentProduct($val) {
-        
-        $this->ParentProduct = (int)$val;
+    public function setParentProduct($val)
+    {
+        $this->parentproduct = (int)$val;
     }
 
     /**
      * @param ProductType $val
      * @throws Exception
      */
-    public function setFamilyMembers($val) {
-        
-        $this->FamilyMembers = (int)$val;
+    public function setFamilyMembers($val)
+    {
+        $this->familymembers = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
 
@@ -59,10 +61,8 @@ class ProductFamilyType {
      * @param boolean $val
      * @throws Exception
      */
-    public function setHasMoreChildren($val) {
-        
-        $this->hasMoreChildren = (int)$val;
+    public function setHasMoreChildren($val)
+    {
+        $this->hasmorechildren = (int)$val;
     }
-
 }
-

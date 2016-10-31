@@ -1,91 +1,98 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetStoreOptionsResponseType
  * Contains the current list of options for Store configurations.
  */
-class GetStoreOptionsResponseType extends \Controle\AbstractResponseType {
+class GetStoreOptionsResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\StoreThemeArrayType | The current set of basic themes. Each basic theme definition specifies a valid color
      * scheme for the theme.
      */
-    public $BasicThemeArray;
+    public $basicthemearray;
     /**
      * @var \Controle\StoreThemeArrayType | The current set of advances themes. Unlike basic themes, you can use any colorscheme
      * with an advanced theme. These themes are suitable for more advanced customization.
      */
-    public $AdvancedThemeArray;
+    public $advancedthemearray;
     /**
      * @var \Controle\StoreLogoArrayType | The current set of Store logos. These logos are used in the Store header.
      */
-    public $LogoArray;
+    public $logoarray;
     /**
      * @var \Controle\StoreSubscriptionArrayType | The current set of eBay Store subscription tiers and corresponding subscription prices.
      */
-    public $SubscriptionArray;
+    public $subscriptionarray;
     /**
      * @var int | Maximum quantity of matching categories to return at the first level of the
      *     category hierarchy (CategoryLevel 1).
      */
-    public $MaxCategories;
+    public $maxcategories;
     /**
      * @var int | The maximum number of category levels in this store.
      */
-    public $MaxCategoryLevels;
+    public $maxcategorylevels;
     /**
      * @param StoreThemeArrayType $val
      * @throws Exception
      */
-    public function setBasicThemeArray($val) {
-        
-        $this->BasicThemeArray = (int)$val;
+    public function setBasicThemeArray($val)
+    {
+        $this->basicthemearray = (int)$val;
     }
 
     /**
      * @param StoreThemeArrayType $val
      * @throws Exception
      */
-    public function setAdvancedThemeArray($val) {
-        
-        $this->AdvancedThemeArray = (int)$val;
+    public function setAdvancedThemeArray($val)
+    {
+        $this->advancedthemearray = (int)$val;
     }
 
     /**
      * @param StoreLogoArrayType $val
      * @throws Exception
      */
-    public function setLogoArray($val) {
-        
-        $this->LogoArray = (int)$val;
+    public function setLogoArray($val)
+    {
+        $this->logoarray = (int)$val;
     }
 
     /**
      * @param StoreSubscriptionArrayType $val
      * @throws Exception
      */
-    public function setSubscriptionArray($val) {
-        
-        $this->SubscriptionArray = (int)$val;
+    public function setSubscriptionArray($val)
+    {
+        $this->subscriptionarray = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setMaxCategories($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->MaxCategories = (int)$val;
+    public function setMaxCategories($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->maxcategories = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setMaxCategoryLevels($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->MaxCategoryLevels = (int)$val;
+    public function setMaxCategoryLevels($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->maxcategorylevels = (int)$val;
     }
-
 }
-
