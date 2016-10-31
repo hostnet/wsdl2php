@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class RangeCodeType {
-	const High = 'High';
-	const Low = 'Low';
-	const CustomCode = 'CustomCode';
-}
 
+class RangeCodeType
+{
+	const HIGH       = 'High';
+	const LOW        = 'Low';
+	const CUSTOMCODE = 'CustomCode';
+}

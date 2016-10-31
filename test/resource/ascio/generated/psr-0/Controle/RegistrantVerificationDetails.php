@@ -1,45 +1,48 @@
 <?php
 
 namespace Controle;
-class RegistrantVerificationDetails {
+
+class RegistrantVerificationDetails
+{
 	/**
 	 * @var string
 	 */
-	public $VerifiedBy;
+	public $verifiedby;
 	/**
 	 * @var dateTime
 	 */
-	public $VerificationDate;
+	public $verificationdate;
 	/**
 	 * @var array \Controle\Message
 	 */
-	public $Messages;
+	public $messages;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setVerifiedBy($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for VerifiedBy');
-		$this->VerifiedBy = (int)$val;
+	public function setVerifiedBy($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for VerifiedBy');
+        }
+        $this->verifiedby = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setVerificationDate($val) {
-		
-		$this->VerificationDate = (int)$val;
+	public function setVerificationDate($val)
+	{
+        $this->verificationdate = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfMessage $val
 	 * @throws Exception
 	 */
-	public function setMessages($val) {
-		
-		$this->Messages = (int)$val;
+	public function setMessages($val)
+	{
+        $this->messages = (int)$val;
 	}
-
 }
-

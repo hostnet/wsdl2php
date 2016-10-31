@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class CompleteStatusCodeType {
-	const Incomplete = 'Incomplete';
-	const Complete = 'Complete';
-	const Pending = 'Pending';
-	const CustomCode = 'CustomCode';
-}
 
+class CompleteStatusCodeType
+{
+	const INCOMPLETE = 'Incomplete';
+	const COMPLETE   = 'Complete';
+	const PENDING    = 'Pending';
+	const CUSTOMCODE = 'CustomCode';
+}

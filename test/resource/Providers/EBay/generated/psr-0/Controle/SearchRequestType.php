@@ -1,17 +1,19 @@
 <?php
 
 namespace Controle;
+
 /**
  * SearchRequestType
  * Specifies a query consisting of attributes. Only attributes that are returned       from
  * GetProductFinder can be used. See the Developer's Guide for more information.
  */
-class SearchRequestType {
+class SearchRequestType
+{
 	/**
 	 * @var int | Numeric identifier for a characteristic set that defines the attributes            (unique
 	 * across all eBay sites).
 	 */
-	public $AttributeSetID;
+	public $attributesetid;
 	/**
 	 * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
 	 *        search for Item Specifics in listings (e.g., how to search against a particular
@@ -23,7 +25,7 @@ class SearchRequestType {
 	 * this data, you must specify the product finder ID, and also specify a detail level of ItemReturnAttributes
 	 * or ReturnAll. Use GetProductFinder to determine valid product finder IDs.
 	 */
-	public $ProductFinderID;
+	public $productfinderid;
 	/**
 	 * @var \Controle\SearchAttributesType | A query consisting of a set of attributes (search criteria). If the query             includes
 	 * multiple attributes, the search engine will apply "AND" logic to the             query.
@@ -31,7 +33,7 @@ class SearchRequestType {
 	 * are permitted for the specified characteristic set.            If specified, ProductFinderID
 	 * must also be specified.
 	 */
-	public $SearchAttributes;
+	public $searchattributes;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -40,37 +42,41 @@ class SearchRequestType {
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setAttributeSetID($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->AttributeSetID = (int)$val;
+	public function setAttributeSetID($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->attributesetid = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setProductFinderID($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->ProductFinderID = (int)$val;
+	public function setProductFinderID($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->productfinderid = (int)$val;
 	}
 
 	/**
 	 * @param SearchAttributesType $val
 	 * @throws Exception
 	 */
-	public function setSearchAttributes($val) {
-		
-		$this->SearchAttributes = (int)$val;
+	public function setSearchAttributes($val)
+	{
+        $this->searchattributes = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

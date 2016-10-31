@@ -10,7 +10,7 @@ class TemperatureConvertServiceClient extends \SoapClient {
     const WSDL_FILE = "TemperatureConvertTest.wsdl";
 
     public function __construct($wsdl = null, $options = array()) {
-        if(isset($options['headers'])) {
+        (isset($options['headers'])) {
             $this->__setSoapHeaders($options['headers']);
         }
         parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
@@ -295,5 +295,4 @@ class TemperatureConvertServiceClient extends \SoapClient {
             array('uri'=>'http://java.hpcc.nectec.or.th:1978/axis/TemperatureConvert.jws')
         );
     }
-
 }

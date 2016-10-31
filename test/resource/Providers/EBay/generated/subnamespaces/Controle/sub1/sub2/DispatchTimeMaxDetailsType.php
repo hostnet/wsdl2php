@@ -1,12 +1,14 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * DispatchTimeMaxDetailsType
  * Details about a specific maximum dispatch time, the maximum number of business days required
  * to ship an item to domestic buyers after receiving a cleared payment.
  */
-class DispatchTimeMaxDetailsType {
+class DispatchTimeMaxDetailsType
+{
 	/**
 	 * @var int | Specifies the maximum number of business days the seller commits to for shipping an item
 	 * to domestic buyers after receiving a cleared payment. The seller sets this to an integer
@@ -15,11 +17,11 @@ class DispatchTimeMaxDetailsType {
 	 * to 1 and the seller must specify at least one qualifying expedited shipping service. GetItem
 	 * returns DispatchTimeMax only when shipping service options are specified for the item.
 	 */
-	public $DispatchTimeMax;
+	public $dispatchtimemax;
 	/**
 	 * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
 	 */
-	public $Description;
+	public $description;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -28,28 +30,32 @@ class DispatchTimeMaxDetailsType {
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setDispatchTimeMax($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->DispatchTimeMax = (int)$val;
+	public function setDispatchTimeMax($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->dispatchtimemax = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDescription($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
-		$this->Description = (int)$val;
+	public function setDescription($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Description');
+        }
+        $this->description = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

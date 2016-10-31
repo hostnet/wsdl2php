@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * DataElementSetType
  * Container for a set of data elements (see below) that are applicable for a set of products
@@ -9,7 +10,8 @@ namespace Controle;
  * optional and may require developers to inspect the information to determine how it can be
  * applied in an application. Output only.
  */
-class DataElementSetType {
+class DataElementSetType
+{
     /**
      * @var string | An HTML snippet that specifies hints for the user, help links, help graphics, and other
      * supplemental information that varies per characteristic set. In GetProductSearchPage,
@@ -23,13 +25,13 @@ class DataElementSetType {
      * the appendices in the eBay Web Services guide for general information about string data
      * types.
      */
-    public $DataElement;
+    public $dataelement;
     /**
      * @var int | Identifier for a data element. This is primarily for internal use by eBay. Developers
      * can choose to inspect this information and determine how it can be applied in their
      * applications.
      */
-    public $DataElementID;
+    public $dataelementid;
     /**
      * @var \Controle\<anyXML>
      */
@@ -37,31 +39,37 @@ class DataElementSetType {
     /**
      * @var int
      */
-    public $attributeSetID;
+    public $attributesetid;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setDataElement($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DataElement');
-        $this->DataElement = (int)$val;
+    public function setDataElement($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DataElement');
+        }
+        $this->dataelement = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setDataElementID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->DataElementID = (int)$val;
+    public function setDataElementID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->dataelementid = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
 
@@ -69,10 +77,11 @@ class DataElementSetType {
      * @param int $val
      * @throws Exception
      */
-    public function setAttributeSetID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->attributeSetID = (int)$val;
+    public function setAttributeSetID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->attributesetid = (int)$val;
     }
-
 }
-

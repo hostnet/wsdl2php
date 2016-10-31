@@ -1,136 +1,145 @@
 <?php
 
 namespace Controle;
-class SearchOrderRequest {
+
+class SearchOrderRequest
+{
 	/**
 	 * @var array \Controle\OrderType
 	 */
-	public $OrderTypes;
+	public $ordertypes;
 	/**
 	 * @var array \Controle\OrderStatusType
 	 */
-	public $OrderStatusTypes;
+	public $orderstatustypes;
 	/**
 	 * @var dateTime
 	 */
-	public $FromDate;
+	public $fromdate;
 	/**
 	 * @var dateTime
 	 */
-	public $ToDate;
+	public $todate;
 	/**
 	 * @var string
 	 */
-	public $DomainName;
+	public $domainname;
 	/**
 	 * @var string
 	 */
-	public $TransactionComment;
+	public $transactioncomment;
 	/**
 	 * @var string
 	 */
-	public $Comments;
+	public $comments;
 	/**
 	 * @var boolean
 	 */
-	public $IncludeDomainDetails;
+	public $includedomaindetails;
 	/**
 	 * @var \Controle\PagingInfo
 	 */
-	public $PageInfo;
+	public $pageinfo;
 	/**
 	 * @var \Controle\SearchOrderSortType
 	 */
-	public $OrderSort;
+	public $ordersort;
 	/**
 	 * @param ArrayOfOrderType $val
 	 * @throws Exception
 	 */
-	public function setOrderTypes($val) {
-		
-		$this->OrderTypes = (int)$val;
+	public function setOrderTypes($val)
+	{
+        $this->ordertypes = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfOrderStatusType $val
 	 * @throws Exception
 	 */
-	public function setOrderStatusTypes($val) {
-		
-		$this->OrderStatusTypes = (int)$val;
+	public function setOrderStatusTypes($val)
+	{
+        $this->orderstatustypes = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setFromDate($val) {
-		
-		$this->FromDate = (int)$val;
+	public function setFromDate($val)
+	{
+        $this->fromdate = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setToDate($val) {
-		
-		$this->ToDate = (int)$val;
+	public function setToDate($val)
+	{
+        $this->todate = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDomainName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DomainName');
-		$this->DomainName = (int)$val;
+	public function setDomainName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DomainName');
+        }
+        $this->domainname = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTransactionComment($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionComment');
-		$this->TransactionComment = (int)$val;
+	public function setTransactionComment($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TransactionComment');
+        }
+        $this->transactioncomment = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setComments($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Comments');
-		$this->Comments = (int)$val;
+	public function setComments($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Comments');
+        }
+        $this->comments = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setIncludeDomainDetails($val) {
-		
-		$this->IncludeDomainDetails = (int)$val;
+	public function setIncludeDomainDetails($val)
+	{
+        $this->includedomaindetails = (int)$val;
 	}
 
 	/**
 	 * @param PagingInfo $val
 	 * @throws Exception
 	 */
-	public function setPageInfo($val) {
-		
-		$this->PageInfo = (int)$val;
+	public function setPageInfo($val)
+	{
+        $this->pageinfo = (int)$val;
 	}
 
 	/**
 	 * @param SearchOrderSortType $val
 	 * @throws Exception
 	 */
-	public function setOrderSort($val) {
-		
-		$this->OrderSort = (int)$val;
+	public function setOrderSort($val)
+	{
+        $this->ordersort = (int)$val;
 	}
-
 }
-

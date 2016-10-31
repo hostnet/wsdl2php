@@ -1,25 +1,25 @@
 <?php
 
 namespace Controle;
+
 /**
  * AuthenticationEntryArrayType
  * Container for a list of AuthenticationEntries. Can contain zero, one, or multiple AuthenticationEntryType
  * objects.
  */
-class AuthenticationEntryArrayType {
+class AuthenticationEntryArrayType
+{
     /**
      * @var \Controle\AuthenticationEntryType | Contains the data properties that define one authentication entry.            Multiple
      * AuthenticationEntry fields can be returned.
      */
-    public $AuthenticationEntry;
+    public $authenticationentry;
     /**
      * @param AuthenticationEntryType $val
      * @throws Exception
      */
-    public function setAuthenticationEntry($val) {
-        
-        $this->AuthenticationEntry = (int)$val;
+    public function setAuthenticationEntry($val)
+    {
+        $this->authenticationentry = (int)$val;
     }
-
 }
-

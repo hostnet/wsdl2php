@@ -1,12 +1,15 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * GetUserContactDetailsResponseType
  * Returns contact information to a seller for both bidders and users who have made offers
  * (via Best Offer) during an active listing.
  */
-class GetUserContactDetailsResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class GetUserContactDetailsResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var string | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned when
 	 * ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
@@ -20,43 +23,44 @@ class GetUserContactDetailsResponseType extends \Controle\sub1\sub2\AbstractResp
 	 * on a different auction, the bidder will be listed for that auction as "Bidder 1", not "Bidder
 	 * 3".
 	 */
-	public $UserID;
+	public $userid;
 	/**
 	 * @var \Controle\sub1\sub2\AddressType | Contact information for the requested contact. Note that the email address is NOT returned.
 	 */
-	public $ContactAddress;
+	public $contactaddress;
 	/**
 	 * @var dateTime | Indicates the date the specified user originally registered with eBay. <br><br> Starting
 	 * Jan 2007, when a bidder's user info is made anonymous, this tag will be returned only for
 	 * that bidder, and the seller of an item that the user is bidding on.
 	 */
-	public $RegistrationDate;
+	public $registrationdate;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setUserID($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for UserID');
-		$this->UserID = (int)$val;
+	public function setUserID($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for UserID');
+        }
+        $this->userid = (int)$val;
 	}
 
 	/**
 	 * @param AddressType $val
 	 * @throws Exception
 	 */
-	public function setContactAddress($val) {
-		
-		$this->ContactAddress = (int)$val;
+	public function setContactAddress($val)
+	{
+        $this->contactaddress = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setRegistrationDate($val) {
-		
-		$this->RegistrationDate = (int)$val;
+	public function setRegistrationDate($val)
+	{
+        $this->registrationdate = (int)$val;
 	}
-
 }
-

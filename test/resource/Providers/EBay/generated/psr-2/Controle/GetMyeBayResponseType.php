@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetMyeBayResponseType
  * Contains the lists of items from the requesting user's My eBay page. This includes a list
@@ -8,103 +9,103 @@ namespace Controle;
  * of items returned in any list can be controlled using the MaxItemsPerList property of the
  * request object.
  */
-class GetMyeBayResponseType extends \Controle\AbstractResponseType {
+class GetMyeBayResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user has bid on. BiddingItemArray is
      *             an array of ItemType objects, each of which represents one item.
      */
-    public $BiddingItemArray;
+    public $biddingitemarray;
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user has bid on but not has won. LostItemArray
      * is an array of ItemType objects, each of which represents one item.
      */
-    public $LostItemArray;
+    public $lostitemarray;
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user is watching. WatchItemArray is an array
      * of ItemType objects, each of which represents one item.
      */
-    public $WatchItemArray;
+    public $watchitemarray;
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user has won. WonItemArray is an array of
      * ItemType objects, each of which represents one item.
      */
-    public $WonItemArray;
+    public $wonitemarray;
     /**
      * @var \Controle\MyeBayFavoriteSearchListType | Contains a list of the user's favorite searches. Only returned if items exist that meet
      * the request criteria.
      */
-    public $FavoriteSearches;
+    public $favoritesearches;
     /**
      * @var \Controle\MyeBayFavoriteSellerListType | Contains a list of the user's favorite sellers. Only returned if items exist that meet
      * the request criteria.
      */
-    public $FavoriteSellers;
+    public $favoritesellers;
     /**
      * @var \Controle\MyeBaySecondChanceOfferListType | Contains a list of the user's My eBay Second Chance Offers.
      */
-    public $SecondChanceOffers;
+    public $secondchanceoffers;
     /**
      * @param ItemArrayType $val
      * @throws Exception
      */
-    public function setBiddingItemArray($val) {
-        
-        $this->BiddingItemArray = (int)$val;
+    public function setBiddingItemArray($val)
+    {
+        $this->biddingitemarray = (int)$val;
     }
 
     /**
      * @param ItemArrayType $val
      * @throws Exception
      */
-    public function setLostItemArray($val) {
-        
-        $this->LostItemArray = (int)$val;
+    public function setLostItemArray($val)
+    {
+        $this->lostitemarray = (int)$val;
     }
 
     /**
      * @param ItemArrayType $val
      * @throws Exception
      */
-    public function setWatchItemArray($val) {
-        
-        $this->WatchItemArray = (int)$val;
+    public function setWatchItemArray($val)
+    {
+        $this->watchitemarray = (int)$val;
     }
 
     /**
      * @param ItemArrayType $val
      * @throws Exception
      */
-    public function setWonItemArray($val) {
-        
-        $this->WonItemArray = (int)$val;
+    public function setWonItemArray($val)
+    {
+        $this->wonitemarray = (int)$val;
     }
 
     /**
      * @param MyeBayFavoriteSearchListType $val
      * @throws Exception
      */
-    public function setFavoriteSearches($val) {
-        
-        $this->FavoriteSearches = (int)$val;
+    public function setFavoriteSearches($val)
+    {
+        $this->favoritesearches = (int)$val;
     }
 
     /**
      * @param MyeBayFavoriteSellerListType $val
      * @throws Exception
      */
-    public function setFavoriteSellers($val) {
-        
-        $this->FavoriteSellers = (int)$val;
+    public function setFavoriteSellers($val)
+    {
+        $this->favoritesellers = (int)$val;
     }
 
     /**
      * @param MyeBaySecondChanceOfferListType $val
      * @throws Exception
      */
-    public function setSecondChanceOffers($val) {
-        
-        $this->SecondChanceOffers = (int)$val;
+    public function setSecondChanceOffers($val)
+    {
+        $this->secondchanceoffers = (int)$val;
     }
-
 }
-

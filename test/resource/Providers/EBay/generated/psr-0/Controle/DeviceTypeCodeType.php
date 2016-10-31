@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class DeviceTypeCodeType {
-	const Platform = 'Platform';
-	const SMS = 'SMS';
-	const CustomCode = 'CustomCode';
-}
 
+class DeviceTypeCodeType
+{
+	const PLATFORM   = 'Platform';
+	const SMS        = 'SMS';
+	const CUSTOMCODE = 'CustomCode';
+}

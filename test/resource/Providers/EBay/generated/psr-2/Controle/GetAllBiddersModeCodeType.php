@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class GetAllBiddersModeCodeType {
-    const ViewAll = 'ViewAll';
-    const EndedListing = 'EndedListing';
-    const SecondChanceEligibleEndedListing = 'SecondChanceEligibleEndedListing';
-    const CustomCode = 'CustomCode';
-}
 
+class GetAllBiddersModeCodeType
+{
+    const VIEWALL                          = 'ViewAll';
+    const ENDEDLISTING                     = 'EndedListing';
+    const SECONDCHANCEELIGIBLEENDEDLISTING = 'SecondChanceEligibleEndedListing';
+    const CUSTOMCODE                       = 'CustomCode';
+}

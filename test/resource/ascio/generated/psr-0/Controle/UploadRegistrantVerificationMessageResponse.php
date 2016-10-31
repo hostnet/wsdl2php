@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class UploadRegistrantVerificationMessageResponse {
+
+class UploadRegistrantVerificationMessageResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $UploadRegistrantVerificationMessageResult;
+	public $uploadregistrantverificationmessageresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setUploadRegistrantVerificationMessageResult($val) {
-		
-		$this->UploadRegistrantVerificationMessageResult = (int)$val;
+	public function setUploadRegistrantVerificationMessageResult($val)
+	{
+        $this->uploadregistrantverificationmessageresult = (int)$val;
 	}
-
 }
-

@@ -1,279 +1,342 @@
 <?php
 
 namespace Controle;
-class ListingProductDetails {
+
+class ListingProductDetails
+{
     /**
      * @var string
      */
-    public $ExchangeId;
+    public $exchangeid;
     /**
      * @var string
      */
-    public $ListingId;
+    public $listingid;
     /**
      * @var string
      */
-    public $ExchangeTitle;
+    public $exchangetitle;
     /**
      * @var string
      */
-    public $ExchangePrice;
+    public $exchangeprice;
     /**
      * @var string
      */
-    public $ExchangeAsin;
+    public $exchangeasin;
     /**
      * @var string
      */
-    public $ExchangeEndDate;
+    public $exchangeenddate;
     /**
      * @var string
      */
-    public $ExchangeTinyImage;
+    public $exchangetinyimage;
     /**
      * @var string
      */
-    public $ExchangeSellerId;
+    public $exchangesellerid;
     /**
      * @var string
      */
-    public $ExchangeSellerNickname;
+    public $exchangesellernickname;
     /**
      * @var string
      */
-    public $ExchangeStartDate;
+    public $exchangestartdate;
     /**
      * @var string
      */
-    public $ExchangeStatus;
+    public $exchangestatus;
     /**
      * @var string
      */
-    public $ExchangeQuantity;
+    public $exchangequantity;
     /**
      * @var string
      */
-    public $ExchangeQuantityAllocated;
+    public $exchangequantityallocated;
     /**
      * @var string
      */
-    public $ExchangeFeaturedCategory;
+    public $exchangefeaturedcategory;
     /**
      * @var string
      */
-    public $ExchangeCondition;
+    public $exchangecondition;
     /**
      * @var string
      */
-    public $ExchangeConditionType;
+    public $exchangeconditiontype;
     /**
      * @var string
      */
-    public $ExchangeAvailability;
+    public $exchangeavailability;
     /**
      * @var string
      */
-    public $ExchangeOfferingType;
+    public $exchangeofferingtype;
     /**
      * @var string
      */
-    public $ExchangeSellerState;
+    public $exchangesellerstate;
     /**
      * @var string
      */
-    public $ExchangeSellerCountry;
+    public $exchangesellercountry;
     /**
      * @var string
      */
-    public $ExchangeSellerRating;
+    public $exchangesellerrating;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeId($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeId');
-        $this->ExchangeId = (int)$val;
+    public function setExchangeId($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeId');
+        }
+        $this->exchangeid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setListingId($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListingId');
-        $this->ListingId = (int)$val;
+    public function setListingId($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ListingId');
+        }
+        $this->listingid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeTitle($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeTitle');
-        $this->ExchangeTitle = (int)$val;
+    public function setExchangeTitle($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeTitle');
+        }
+        $this->exchangetitle = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangePrice($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangePrice');
-        $this->ExchangePrice = (int)$val;
+    public function setExchangePrice($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangePrice');
+        }
+        $this->exchangeprice = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeAsin($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeAsin');
-        $this->ExchangeAsin = (int)$val;
+    public function setExchangeAsin($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeAsin');
+        }
+        $this->exchangeasin = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeEndDate($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeEndDate');
-        $this->ExchangeEndDate = (int)$val;
+    public function setExchangeEndDate($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeEndDate');
+        }
+        $this->exchangeenddate = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeTinyImage($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
-        $this->ExchangeTinyImage = (int)$val;
+    public function setExchangeTinyImage($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
+        }
+        $this->exchangetinyimage = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeSellerId($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerId');
-        $this->ExchangeSellerId = (int)$val;
+    public function setExchangeSellerId($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerId');
+        }
+        $this->exchangesellerid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeSellerNickname($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
-        $this->ExchangeSellerNickname = (int)$val;
+    public function setExchangeSellerNickname($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
+        }
+        $this->exchangesellernickname = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeStartDate($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeStartDate');
-        $this->ExchangeStartDate = (int)$val;
+    public function setExchangeStartDate($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeStartDate');
+        }
+        $this->exchangestartdate = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeStatus($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeStatus');
-        $this->ExchangeStatus = (int)$val;
+    public function setExchangeStatus($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeStatus');
+        }
+        $this->exchangestatus = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeQuantity($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeQuantity');
-        $this->ExchangeQuantity = (int)$val;
+    public function setExchangeQuantity($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeQuantity');
+        }
+        $this->exchangequantity = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeQuantityAllocated($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
-        $this->ExchangeQuantityAllocated = (int)$val;
+    public function setExchangeQuantityAllocated($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
+        }
+        $this->exchangequantityallocated = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeFeaturedCategory($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
-        $this->ExchangeFeaturedCategory = (int)$val;
+    public function setExchangeFeaturedCategory($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
+        }
+        $this->exchangefeaturedcategory = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeCondition($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeCondition');
-        $this->ExchangeCondition = (int)$val;
+    public function setExchangeCondition($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeCondition');
+        }
+        $this->exchangecondition = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeConditionType($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeConditionType');
-        $this->ExchangeConditionType = (int)$val;
+    public function setExchangeConditionType($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeConditionType');
+        }
+        $this->exchangeconditiontype = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeAvailability($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeAvailability');
-        $this->ExchangeAvailability = (int)$val;
+    public function setExchangeAvailability($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeAvailability');
+        }
+        $this->exchangeavailability = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeOfferingType($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
-        $this->ExchangeOfferingType = (int)$val;
+    public function setExchangeOfferingType($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
+        }
+        $this->exchangeofferingtype = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeSellerState($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerState');
-        $this->ExchangeSellerState = (int)$val;
+    public function setExchangeSellerState($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerState');
+        }
+        $this->exchangesellerstate = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeSellerCountry($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
-        $this->ExchangeSellerCountry = (int)$val;
+    public function setExchangeSellerCountry($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
+        }
+        $this->exchangesellercountry = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setExchangeSellerRating($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
-        $this->ExchangeSellerRating = (int)$val;
+    public function setExchangeSellerRating($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
+        }
+        $this->exchangesellerrating = (int)$val;
     }
-
 }
-

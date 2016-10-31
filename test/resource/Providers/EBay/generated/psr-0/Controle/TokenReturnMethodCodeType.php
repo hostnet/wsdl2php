@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class TokenReturnMethodCodeType {
-	const Redirect = 'Redirect';
-	const FetchToken = 'FetchToken';
-	const CustomCode = 'CustomCode';
-}
 
+class TokenReturnMethodCodeType
+{
+	const REDIRECT   = 'Redirect';
+	const FETCHTOKEN = 'FetchToken';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,18 +1,20 @@
 <?php
 
 namespace Controle;
+
 /**
  * SearchResultItemType
  * Contains the data for one item listing found by a search (such as by        GetSearchResults).
  */
-class SearchResultItemType {
+class SearchResultItemType
+{
 	/**
 	 * @var \Controle\ItemType | Information about the item that spawned the transaction. It is a purchase from this item's
 	 * listing that the transaction represents. To remove a property from an item, specify it
 	 * in ModifyType as a changed property, but do not give it a value in Item. Also applicable
 	 * to Half.com (for GetOrders).
 	 */
-	public $Item;
+	public $item;
 	/**
 	 * @var \Controle\NameValueListArrayType | A list of attribute and value pairs. GetSearchResults can return this            when the
 	 * request either specifies IncludeCondition as true or specifies a product finder
@@ -23,7 +25,7 @@ class SearchResultItemType {
 	 *    no summary attributes are returned in search results (even when the item
 	 * is listed with Item Specifics.)
 	 */
-	public $ItemSpecific;
+	public $itemspecific;
 	/**
 	 * @var \Controle\SearchResultValuesCodeType | Contains additional information about the item listing returned in Item. This
 	 *   information includes whether the item has an image associated with it,            and
@@ -32,7 +34,7 @@ class SearchResultItemType {
 	 * analogous to the icons that appear in an            item listing's line in a Search page.
 	 *            Output only.
 	 */
-	public $SearchResultValues;
+	public $searchresultvalues;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -41,37 +43,35 @@ class SearchResultItemType {
 	 * @param ItemType $val
 	 * @throws Exception
 	 */
-	public function setItem($val) {
-		
-		$this->Item = (int)$val;
+	public function setItem($val)
+	{
+        $this->item = (int)$val;
 	}
 
 	/**
 	 * @param NameValueListArrayType $val
 	 * @throws Exception
 	 */
-	public function setItemSpecific($val) {
-		
-		$this->ItemSpecific = (int)$val;
+	public function setItemSpecific($val)
+	{
+        $this->itemspecific = (int)$val;
 	}
 
 	/**
 	 * @param SearchResultValuesCodeType $val
 	 * @throws Exception
 	 */
-	public function setSearchResultValues($val) {
-		
-		$this->SearchResultValues = (int)$val;
+	public function setSearchResultValues($val)
+	{
+        $this->searchresultvalues = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

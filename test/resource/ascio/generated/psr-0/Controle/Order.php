@@ -1,162 +1,186 @@
 <?php
 
 namespace Controle;
-class Order {
+
+class Order
+{
 	/**
 	 * @var string
 	 */
-	public $OrderId;
+	public $orderid;
 	/**
 	 * @var \Controle\OrderType
 	 */
-	public $Type;
+	public $type;
 	/**
 	 * @var string
 	 */
-	public $AccountReference;
+	public $accountreference;
 	/**
 	 * @var \Controle\OrderStatusType
 	 */
-	public $Status;
+	public $status;
 	/**
 	 * @var string
 	 */
-	public $TransactionComment;
+	public $transactioncomment;
 	/**
 	 * @var string
 	 */
-	public $Comments;
+	public $comments;
 	/**
 	 * @var string
 	 */
-	public $Options;
+	public $options;
 	/**
 	 * @var string
 	 */
-	public $LocalPresence;
+	public $localpresence;
 	/**
 	 * @var string
 	 */
-	public $Batch;
+	public $batch;
 	/**
 	 * @var string
 	 */
-	public $Documentation;
+	public $documentation;
 	/**
 	 * @var \Controle\Domain
 	 */
-	public $Domain;
+	public $domain;
 	/**
 	 * @var dateTime
 	 */
-	public $CreDate;
+	public $credate;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setOrderId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for OrderId');
-		$this->OrderId = (int)$val;
+	public function setOrderId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for OrderId');
+        }
+        $this->orderid = (int)$val;
 	}
 
 	/**
 	 * @param OrderType $val
 	 * @throws Exception
 	 */
-	public function setType($val) {
-		
-		$this->Type = (int)$val;
+	public function setType($val)
+	{
+        $this->type = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAccountReference($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AccountReference');
-		$this->AccountReference = (int)$val;
+	public function setAccountReference($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for AccountReference');
+        }
+        $this->accountreference = (int)$val;
 	}
 
 	/**
 	 * @param OrderStatusType $val
 	 * @throws Exception
 	 */
-	public function setStatus($val) {
-		
-		$this->Status = (int)$val;
+	public function setStatus($val)
+	{
+        $this->status = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTransactionComment($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionComment');
-		$this->TransactionComment = (int)$val;
+	public function setTransactionComment($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for TransactionComment');
+        }
+        $this->transactioncomment = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setComments($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Comments');
-		$this->Comments = (int)$val;
+	public function setComments($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Comments');
+        }
+        $this->comments = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setOptions($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Options');
-		$this->Options = (int)$val;
+	public function setOptions($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Options');
+        }
+        $this->options = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLocalPresence($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalPresence');
-		$this->LocalPresence = (int)$val;
+	public function setLocalPresence($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LocalPresence');
+        }
+        $this->localpresence = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setBatch($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Batch');
-		$this->Batch = (int)$val;
+	public function setBatch($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Batch');
+        }
+        $this->batch = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDocumentation($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Documentation');
-		$this->Documentation = (int)$val;
+	public function setDocumentation($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Documentation');
+        }
+        $this->documentation = (int)$val;
 	}
 
 	/**
 	 * @param Domain $val
 	 * @throws Exception
 	 */
-	public function setDomain($val) {
-		
-		$this->Domain = (int)$val;
+	public function setDomain($val)
+	{
+        $this->domain = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setCreDate($val) {
-		
-		$this->CreDate = (int)$val;
+	public function setCreDate($val)
+	{
+        $this->credate = (int)$val;
 	}
-
 }
-

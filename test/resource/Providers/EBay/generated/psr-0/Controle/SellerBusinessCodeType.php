@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class SellerBusinessCodeType {
-	const Undefined = 'Undefined';
-	const _Private = 'Private';
-	const Commercial = 'Commercial';
-}
 
+class SellerBusinessCodeType
+{
+	const UNDEFINED  = 'Undefined';
+	const _PRIVATE   = '_Private';
+	const COMMERCIAL = 'Commercial';
+}

@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class SellerSearch {
+
+class SellerSearch
+{
 	/**
 	 * @var \Controle\SellerSearchDetailsArray
 	 */
-	public $SellerSearchDetails;
+	public $sellersearchdetails;
 	/**
 	 * @param SellerSearchDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setSellerSearchDetails($val) {
-		
-		$this->SellerSearchDetails = (int)$val;
+	public function setSellerSearchDetails($val)
+	{
+        $this->sellersearchdetails = (int)$val;
 	}
-
 }
-

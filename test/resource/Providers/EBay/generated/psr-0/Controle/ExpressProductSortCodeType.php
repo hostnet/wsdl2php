@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class ExpressProductSortCodeType {
-	const LowestPrice = 'LowestPrice';
-	const HighestPrice = 'HighestPrice';
-	const SalesRank = 'SalesRank';
-	const CustomCode = 'CustomCode';
-}
 
+class ExpressProductSortCodeType
+{
+	const LOWESTPRICE  = 'LowestPrice';
+	const HIGHESTPRICE = 'HighestPrice';
+	const SALESRANK    = 'SalesRank';
+	const CUSTOMCODE   = 'CustomCode';
+}

@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class ModifyActionCodeType {
-	const Add = 'Add';
-	const Delete = 'Delete';
-	const Update = 'Update';
-	const CustomCode = 'CustomCode';
-}
 
+class ModifyActionCodeType
+{
+	const ADD        = 'Add';
+	const DELETE     = 'Delete';
+	const UPDATE     = 'Update';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class SearchFlagsCodeType {
-	const Charity = 'Charity';
-	const SearchInDescription = 'SearchInDescription';
-	const PayPalBuyerPaymentOption = 'PayPalBuyerPaymentOption';
-	const NowAndNew = 'NowAndNew';
-	const CustomCode = 'CustomCode';
-}
 
+class SearchFlagsCodeType
+{
+	const CHARITY                  = 'Charity';
+	const SEARCHINDESCRIPTION      = 'SearchInDescription';
+	const PAYPALBUYERPAYMENTOPTION = 'PayPalBuyerPaymentOption';
+	const NOWANDNEW                = 'NowAndNew';
+	const CUSTOMCODE               = 'CustomCode';
+}

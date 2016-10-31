@@ -1,8 +1,9 @@
 <?php
 
 namespace Controle;
-class NotificationEventPropertyNameCodeType {
-    const TimeLeft = 'TimeLeft';
-    const CustomCode = 'CustomCode';
-}
 
+class NotificationEventPropertyNameCodeType
+{
+    const TIMELEFT   = 'TimeLeft';
+    const CUSTOMCODE = 'CustomCode';
+}

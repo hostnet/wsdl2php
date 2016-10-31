@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * BidderDetailType
  * Contains the data for a user who is interested in bidding on items in a Live Auctions catalog.
  */
-class BidderDetailType {
+class BidderDetailType
+{
 	/**
 	 * @var \Controle\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned when
 	 * ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
@@ -19,7 +21,7 @@ class BidderDetailType {
 	 * on a different auction, the bidder will be listed for that auction as "Bidder 1", not "Bidder
 	 * 3".
 	 */
-	public $UserID;
+	public $userid;
 	/**
 	 * @var string | Email address for the user. You cannot retrieve an email address for any user with whom
 	 * you do not have a transactional relationship, regardless of site. Email is only returned
@@ -30,7 +32,7 @@ class BidderDetailType {
 	 * info is made anonymous, this tag will be returned only for that bidder, and the seller
 	 * of an item that the user is bidding on.
 	 */
-	public $Email;
+	public $email;
 	/**
 	 * @var int | The aggregate feedback score for a user. A user's feedback score is the net positive feedback
 	 * minus the net negative feedback left for the user. Feedback scores are a quantitative expression
@@ -50,11 +52,11 @@ class BidderDetailType {
 	 * for that bidder, and the seller of an item that the user is bidding on. For all other users,
 	 * the value -99 is returned.
 	 */
-	public $FeedbackScore;
+	public $feedbackscore;
 	/**
 	 * @var int | Total count of negative feedback entries from unique (distinct) users.
 	 */
-	public $UniqueNegativeFeedbackCount;
+	public $uniquenegativefeedbackcount;
 	/**
 	 * @var int | Total count of positive feedback entries from unique (distinct) users. Contains the aggregate
 	 * feedback score for a user. A member's feedback score is the net positive feedback minus
@@ -66,12 +68,12 @@ class BidderDetailType {
 	 * user represent that user's overall feedback score (referred to as a "feedback rating" on
 	 * the eBay site). This rating is commonly expressed as the eBay Feedback score for the user.
 	 */
-	public $UniquePositiveFeedbackCount;
+	public $uniquepositivefeedbackcount;
 	/**
 	 * @var \Controle\LiveAuctionBidType | Contains the bidder details that match the bidder query passed in the request. Always returned
 	 * when bidder search results are found.
 	 */
-	public $LiveAuctionBidResult;
+	public $liveauctionbidresult;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -80,64 +82,74 @@ class BidderDetailType {
 	 * @param UserIDType $val
 	 * @throws Exception
 	 */
-	public function setUserID($val) {
-		
-		$this->UserID = (int)$val;
+	public function setUserID($val)
+	{
+        $this->userid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setEmail($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Email');
-		$this->Email = (int)$val;
+	public function setEmail($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Email');
+        }
+        $this->email = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setFeedbackScore($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->FeedbackScore = (int)$val;
+	public function setFeedbackScore($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->feedbackscore = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setUniqueNegativeFeedbackCount($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->UniqueNegativeFeedbackCount = (int)$val;
+	public function setUniqueNegativeFeedbackCount($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->uniquenegativefeedbackcount = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setUniquePositiveFeedbackCount($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->UniquePositiveFeedbackCount = (int)$val;
+	public function setUniquePositiveFeedbackCount($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->uniquepositivefeedbackcount = (int)$val;
 	}
 
 	/**
 	 * @param LiveAuctionBidType $val
 	 * @throws Exception
 	 */
-	public function setLiveAuctionBidResult($val) {
-		
-		$this->LiveAuctionBidResult = (int)$val;
+	public function setLiveAuctionBidResult($val)
+	{
+        $this->liveauctionbidresult = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

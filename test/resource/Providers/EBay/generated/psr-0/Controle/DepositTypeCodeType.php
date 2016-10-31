@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class DepositTypeCodeType {
-	const None = 'None';
-	const OtherMethod = 'OtherMethod';
-	const FastDeposit = 'FastDeposit';
-	const CustomCode = 'CustomCode';
-}
 
+class DepositTypeCodeType
+{
+	const NONE        = 'None';
+	const OTHERMETHOD = 'OtherMethod';
+	const FASTDEPOSIT = 'FastDeposit';
+	const CUSTOMCODE  = 'CustomCode';
+}

@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
-class AvailabilityCheckResponse {
+
+class AvailabilityCheckResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $AvailabilityCheckResult;
+    public $availabilitycheckresult;
     /**
      * @var array \Controle\AvailabilityCheckResult
      */
@@ -14,19 +16,17 @@ class AvailabilityCheckResponse {
      * @param Response $val
      * @throws Exception
      */
-    public function setAvailabilityCheckResult($val) {
-        
-        $this->AvailabilityCheckResult = (int)$val;
+    public function setAvailabilityCheckResult($val)
+    {
+        $this->availabilitycheckresult = (int)$val;
     }
 
     /**
      * @param ArrayOfAvailabilityCheckResult $val
      * @throws Exception
      */
-    public function setResults($val) {
-        
+    public function setResults($val)
+    {
         $this->results = (int)$val;
     }
-
 }
-

@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class PromotionMethodCodeType {
-    const CrossSell = 'CrossSell';
-    const UpSell = 'UpSell';
-    const CustomCode = 'CustomCode';
-}
 
+class PromotionMethodCodeType
+{
+    const CROSSSELL  = 'CrossSell';
+    const UPSELL     = 'UpSell';
+    const CUSTOMCODE = 'CustomCode';
+}

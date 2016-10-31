@@ -1,15 +1,16 @@
 <?php
 
 namespace Controle;
-class PayPalAccountStatusCodeType {
-    const Active = 'Active';
-    const Closed = 'Closed';
-    const HighRestricted = 'HighRestricted';
-    const LowRestricted = 'LowRestricted';
-    const Locked = 'Locked';
-    const CustomCode = 'CustomCode';
-    const WireOff = 'WireOff';
-    const Unknown = 'Unknown';
-    const Invalid = 'Invalid';
-}
 
+class PayPalAccountStatusCodeType
+{
+    const ACTIVE         = 'Active';
+    const CLOSED         = 'Closed';
+    const HIGHRESTRICTED = 'HighRestricted';
+    const LOWRESTRICTED  = 'LowRestricted';
+    const LOCKED         = 'Locked';
+    const CUSTOMCODE     = 'CustomCode';
+    const WIREOFF        = 'WireOff';
+    const UNKNOWN        = 'Unknown';
+    const INVALID        = 'Invalid';
+}

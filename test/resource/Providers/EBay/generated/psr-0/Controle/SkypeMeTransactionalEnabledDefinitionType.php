@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * SkypeMeTransactionalEnabledDefinitionType
  * Defines the feature of adding Skype buttons to listings for transactional formats  (e.g.,
@@ -8,7 +9,8 @@ namespace Controle;
  * to the category. The field is returned as an empty element (i.e., a boolean value is not
  * returned).
  */
-class SkypeMeTransactionalEnabledDefinitionType {
+class SkypeMeTransactionalEnabledDefinitionType
+{
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -17,10 +19,8 @@ class SkypeMeTransactionalEnabledDefinitionType {
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * PriceRangeFilterType
  * One of the data filters used when searching for items using        GetSearchResults. Allows
@@ -8,15 +9,16 @@ namespace Controle;
  * within prices must fall to be        returned in the result set, a minimum price for items
  * returned, or a        maximum price for items returned.
  */
-class PriceRangeFilterType {
+class PriceRangeFilterType
+{
     /**
      * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
      */
-    public $MaxPrice;
+    public $maxprice;
     /**
      * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
      */
-    public $MinPrice;
+    public $minprice;
     /**
      * @var \Controle\<anyXML>
      */
@@ -25,28 +27,26 @@ class PriceRangeFilterType {
      * @param AmountType $val
      * @throws Exception
      */
-    public function setMaxPrice($val) {
-        
-        $this->MaxPrice = (int)$val;
+    public function setMaxPrice($val)
+    {
+        $this->maxprice = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setMinPrice($val) {
-        
-        $this->MinPrice = (int)$val;
+    public function setMinPrice($val)
+    {
+        $this->minprice = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

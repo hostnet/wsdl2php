@@ -1,12 +1,13 @@
 <?php
 
 namespace Controle;
-class SellerPaymentMethodCodeType {
-    const NothingOnFile = 'NothingOnFile';
-    const CreditCard = 'CreditCard';
-    const DirectDebit = 'DirectDebit';
-    const DirectDebitPendingSignatureMandate = 'DirectDebitPendingSignatureMandate';
-    const eBayDirectPay = 'eBayDirectPay';
-    const CustomCode = 'CustomCode';
-}
 
+class SellerPaymentMethodCodeType
+{
+    const NOTHINGONFILE                      = 'NothingOnFile';
+    const CREDITCARD                         = 'CreditCard';
+    const DIRECTDEBIT                        = 'DirectDebit';
+    const DIRECTDEBITPENDINGSIGNATUREMANDATE = 'DirectDebitPendingSignatureMandate';
+    const EBAYDIRECTPAY                      = 'eBayDirectPay';
+    const CUSTOMCODE                         = 'CustomCode';
+}

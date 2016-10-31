@@ -1,7 +1,9 @@
 <?php
 
 namespace Controle;
-class FeedbackRequirementsType {
+
+class FeedbackRequirementsType
+{
     /**
      * @var boolean
      */
@@ -14,8 +16,8 @@ class FeedbackRequirementsType {
      * @param boolean $val
      * @throws Exception
      */
-    public function set_($val) {
-        
+    public function set($val)
+    {
         $this->_ = (int)$val;
     }
 
@@ -23,10 +25,11 @@ class FeedbackRequirementsType {
      * @param string $val
      * @throws Exception
      */
-    public function setMinimum($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for minimum');
+    public function setMinimum($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for minimum');
+        }
         $this->minimum = (int)$val;
     }
-
 }
-

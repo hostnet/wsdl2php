@@ -1,175 +1,175 @@
 <?php
 
 namespace Controle;
-class NameServers {
+
+class NameServers
+{
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer1;
+	public $nameserver1;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer2;
+	public $nameserver2;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer3;
+	public $nameserver3;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer4;
+	public $nameserver4;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer5;
+	public $nameserver5;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer6;
+	public $nameserver6;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer7;
+	public $nameserver7;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer8;
+	public $nameserver8;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer9;
+	public $nameserver9;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer10;
+	public $nameserver10;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer11;
+	public $nameserver11;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer12;
+	public $nameserver12;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $NameServer13;
+	public $nameserver13;
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer1($val) {
-		
-		$this->NameServer1 = (int)$val;
+	public function setNameServer1($val)
+	{
+        $this->nameserver1 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer2($val) {
-		
-		$this->NameServer2 = (int)$val;
+	public function setNameServer2($val)
+	{
+        $this->nameserver2 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer3($val) {
-		
-		$this->NameServer3 = (int)$val;
+	public function setNameServer3($val)
+	{
+        $this->nameserver3 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer4($val) {
-		
-		$this->NameServer4 = (int)$val;
+	public function setNameServer4($val)
+	{
+        $this->nameserver4 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer5($val) {
-		
-		$this->NameServer5 = (int)$val;
+	public function setNameServer5($val)
+	{
+        $this->nameserver5 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer6($val) {
-		
-		$this->NameServer6 = (int)$val;
+	public function setNameServer6($val)
+	{
+        $this->nameserver6 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer7($val) {
-		
-		$this->NameServer7 = (int)$val;
+	public function setNameServer7($val)
+	{
+        $this->nameserver7 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer8($val) {
-		
-		$this->NameServer8 = (int)$val;
+	public function setNameServer8($val)
+	{
+        $this->nameserver8 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer9($val) {
-		
-		$this->NameServer9 = (int)$val;
+	public function setNameServer9($val)
+	{
+        $this->nameserver9 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer10($val) {
-		
-		$this->NameServer10 = (int)$val;
+	public function setNameServer10($val)
+	{
+        $this->nameserver10 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer11($val) {
-		
-		$this->NameServer11 = (int)$val;
+	public function setNameServer11($val)
+	{
+        $this->nameserver11 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer12($val) {
-		
-		$this->NameServer12 = (int)$val;
+	public function setNameServer12($val)
+	{
+        $this->nameserver12 = (int)$val;
 	}
 
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
-	public function setNameServer13($val) {
-		
-		$this->NameServer13 = (int)$val;
+	public function setNameServer13($val)
+	{
+        $this->nameserver13 = (int)$val;
 	}
-
 }
-

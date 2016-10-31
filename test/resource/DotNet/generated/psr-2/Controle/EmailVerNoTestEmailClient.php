@@ -11,11 +11,14 @@ class EmailVerNoTestEmailClient extends \SoapClient {
 
     const WSDL_FILE = "EmailVerifyTest.wsdl";
     private $classmap = array(
-        'VerifyMXRecordResponse' => '\Controle\VerifyMXRecordResponse',
-        'AdvancedVerifyEmailResponse' => '\Controle\AdvancedVerifyEmailResponse',
-        'ReturnIndicator' => '\Controle\ReturnIndicator',
-        'VerifyEmailResponse' => '\Controle\VerifyEmailResponse',
-        'ReturnCodesResponse' => '\Controle\ReturnCodesResponse',
+        'AdvancedVerifyEmailResponse\,' =>
+            '\Controle\AdvancedVerifyEmailResponse',
+        'ReturnIndicator\,' =>
+            '\Controle\ReturnIndicator',
+        'VerifyEmailResponse\,' =>
+            '\Controle\VerifyEmailResponse',
+        'ReturnCodesResponse\,' =>
+            '\Controle\ReturnCodesResponse',
     );
 
     public function __construct($wsdl = null, $options = array()) {
@@ -100,5 +103,4 @@ class EmailVerNoTestEmailClient extends \SoapClient {
             array('uri'=>'http://ws.cdyne.com/')
         );
     }
-
 }

@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * MarkUpMarkDownHistoryType
  * List of objects representing markup or markdown events for a given application and time
@@ -9,19 +10,18 @@ namespace Controle;
  * maximum time period is allowed is 3 days (72 hours before the call is made to the time the
  * call is made).
  */
-class MarkUpMarkDownHistoryType {
+class MarkUpMarkDownHistoryType
+{
     /**
      * @var \Controle\MarkUpMarkDownEventType | Details for a MarkDown or MarkUp event.
      */
-    public $MarkUpMarkDownEvent;
+    public $markupmarkdownevent;
     /**
      * @param MarkUpMarkDownEventType $val
      * @throws Exception
      */
-    public function setMarkUpMarkDownEvent($val) {
-        
-        $this->MarkUpMarkDownEvent = (int)$val;
+    public function setMarkUpMarkDownEvent($val)
+    {
+        $this->markupmarkdownevent = (int)$val;
     }
-
 }
-

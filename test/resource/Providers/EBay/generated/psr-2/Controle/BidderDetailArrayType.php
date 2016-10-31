@@ -1,24 +1,24 @@
 <?php
 
 namespace Controle;
+
 /**
  * BidderDetailArrayType
  * A collection of Bidder Detail.
  */
-class BidderDetailArrayType {
+class BidderDetailArrayType
+{
     /**
      * @var \Controle\BidderDetailType | Details about a Live Auctions bidder. Returned if at least one bidder has requested
      * approval.
      */
-    public $BidderDetail;
+    public $bidderdetail;
     /**
      * @param BidderDetailType $val
      * @throws Exception
      */
-    public function setBidderDetail($val) {
-        
-        $this->BidderDetail = (int)$val;
+    public function setBidderDetail($val)
+    {
+        $this->bidderdetail = (int)$val;
     }
-
 }
-

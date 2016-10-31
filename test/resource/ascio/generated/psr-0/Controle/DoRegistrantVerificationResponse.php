@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class DoRegistrantVerificationResponse {
+
+class DoRegistrantVerificationResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $DoRegistrantVerificationResult;
+	public $doregistrantverificationresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setDoRegistrantVerificationResult($val) {
-		
-		$this->DoRegistrantVerificationResult = (int)$val;
+	public function setDoRegistrantVerificationResult($val)
+	{
+        $this->doregistrantverificationresult = (int)$val;
 	}
-
 }
-

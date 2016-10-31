@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class CheckoutStatusCodeType {
-	const CheckoutComplete = 'CheckoutComplete';
-	const CheckoutIncomplete = 'CheckoutIncomplete';
-	const BuyerRequestsTotal = 'BuyerRequestsTotal';
-	const SellerResponded = 'SellerResponded';
-	const CustomCode = 'CustomCode';
-}
 
+class CheckoutStatusCodeType
+{
+	const CHECKOUTCOMPLETE   = 'CheckoutComplete';
+	const CHECKOUTINCOMPLETE = 'CheckoutIncomplete';
+	const BUYERREQUESTSTOTAL = 'BuyerRequestsTotal';
+	const SELLERRESPONDED    = 'SellerResponded';
+	const CUSTOMCODE         = 'CustomCode';
+}

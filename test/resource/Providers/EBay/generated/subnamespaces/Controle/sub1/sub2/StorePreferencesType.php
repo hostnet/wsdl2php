@@ -1,23 +1,23 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * StorePreferencesType
  * Store Preferences type.
  */
-class StorePreferencesType {
+class StorePreferencesType
+{
 	/**
 	 * @var \Controle\sub1\sub2\StoreVacationPreferencesType | Store vacation hold preferences.
 	 */
-	public $VacationPreferences;
+	public $vacationpreferences;
 	/**
 	 * @param StoreVacationPreferencesType $val
 	 * @throws Exception
 	 */
-	public function setVacationPreferences($val) {
-		
-		$this->VacationPreferences = (int)$val;
+	public function setVacationPreferences($val)
+	{
+        $this->vacationpreferences = (int)$val;
 	}
-
 }
-

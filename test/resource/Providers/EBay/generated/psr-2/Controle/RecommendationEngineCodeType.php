@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class RecommendationEngineCodeType {
-    const ListingAnalyzer = 'ListingAnalyzer';
-    const SIFFTAS = 'SIFFTAS';
-    const ProductPricing = 'ProductPricing';
-    const CustomCode = 'CustomCode';
-    const SuggestedAttributes = 'SuggestedAttributes';
-}
 
+class RecommendationEngineCodeType
+{
+    const LISTINGANALYZER     = 'ListingAnalyzer';
+    const SIFFTAS             = 'SIFFTAS';
+    const PRODUCTPRICING      = 'ProductPricing';
+    const CUSTOMCODE          = 'CustomCode';
+    const SUGGESTEDATTRIBUTES = 'SuggestedAttributes';
+}

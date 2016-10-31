@@ -1,18 +1,20 @@
 <?php
 
 namespace Controle;
+
 /**
  * ExpressPreferencesType
  * Contains a seller's preferences related to listing items on Express.
  */
-class ExpressPreferencesType {
+class ExpressPreferencesType
+{
     /**
      * @var \Controle\ExpressSellingPreferenceCodeType | If true, the seller's preferences in My eBay are set to include listings on eBay Express. If
      * false, the seller prefers not to include listings on Express, so the seller is therefore
      * ineligible for Express (and no other seller requirement settings are returned in this
      * case).
      */
-    public $ExpressSellingPreference;
+    public $expresssellingpreference;
     /**
      * @var string | For eBay Germany users only. The PayPal account (email address) to use for eBay Express
      * payments during checkout. If the first item in an order doesn't specify a PayPal account, Express
@@ -39,7 +41,7 @@ class ExpressPreferencesType {
      * Services guide.)<br> <br> In GetUserPreferences, this preference is only returned if
      * a default PayPal account has been specified.
      */
-    public $DefaultPayPalAccount;
+    public $defaultpaypalaccount;
     /**
      * @var \Controle\<anyXML>
      */
@@ -48,28 +50,29 @@ class ExpressPreferencesType {
      * @param ExpressSellingPreferenceCodeType $val
      * @throws Exception
      */
-    public function setExpressSellingPreference($val) {
-        
-        $this->ExpressSellingPreference = (int)$val;
+    public function setExpressSellingPreference($val)
+    {
+        $this->expresssellingpreference = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setDefaultPayPalAccount($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
-        $this->DefaultPayPalAccount = (int)$val;
+    public function setDefaultPayPalAccount($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
+        }
+        $this->defaultpaypalaccount = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

@@ -1,97 +1,115 @@
 <?php
 
 namespace Controle;
-class NameServer {
+
+class NameServer
+{
 	/**
 	 * @var dateTime
 	 */
-	public $CreDate;
+	public $credate;
 	/**
 	 * @var string
 	 */
-	public $Handle;
+	public $handle;
 	/**
 	 * @var string
 	 */
-	public $HostName;
+	public $hostname;
 	/**
 	 * @var string
 	 */
-	public $IpAddress;
+	public $ipaddress;
 	/**
 	 * @var string
 	 */
-	public $Status;
+	public $status;
 	/**
 	 * @var string
 	 */
-	public $IpV6Address;
+	public $ipv6address;
 	/**
 	 * @var string
 	 */
-	public $Details;
+	public $details;
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setCreDate($val) {
-		
-		$this->CreDate = (int)$val;
+	public function setCreDate($val)
+	{
+        $this->credate = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHandle($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Handle');
-		$this->Handle = (int)$val;
+	public function setHandle($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Handle');
+        }
+        $this->handle = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setHostName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HostName');
-		$this->HostName = (int)$val;
+	public function setHostName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HostName');
+        }
+        $this->hostname = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setIpAddress($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for IpAddress');
-		$this->IpAddress = (int)$val;
+	public function setIpAddress($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for IpAddress');
+        }
+        $this->ipaddress = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setStatus($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Status');
-		$this->Status = (int)$val;
+	public function setStatus($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Status');
+        }
+        $this->status = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setIpV6Address($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for IpV6Address');
-		$this->IpV6Address = (int)$val;
+	public function setIpV6Address($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for IpV6Address');
+        }
+        $this->ipv6address = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDetails($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Details');
-		$this->Details = (int)$val;
+	public function setDetails($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Details');
+        }
+        $this->details = (int)$val;
 	}
-
 }
-

@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class SellerGuaranteeLevelCodeType {
-	const NotEligible = 'NotEligible';
-	const Regular = 'Regular';
-	const Premium = 'Premium';
-	const Ultra = 'Ultra';
-	const CustomCode = 'CustomCode';
-}
 
+class SellerGuaranteeLevelCodeType
+{
+	const NOTELIGIBLE = 'NotEligible';
+	const REGULAR     = 'Regular';
+	const PREMIUM     = 'Premium';
+	const ULTRA       = 'Ultra';
+	const CUSTOMCODE  = 'CustomCode';
+}

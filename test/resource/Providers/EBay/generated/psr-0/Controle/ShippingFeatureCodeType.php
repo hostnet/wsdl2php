@@ -1,13 +1,14 @@
 <?php
 
 namespace Controle;
-class ShippingFeatureCodeType {
-	const DeliveryConfirmation = 'DeliveryConfirmation';
-	const SignatureConfirmation = 'SignatureConfirmation';
-	const StealthPostage = 'StealthPostage';
-	const SaturdayDelivery = 'SaturdayDelivery';
-	const Other = 'Other';
-	const NotDefined = 'NotDefined';
-	const CustomCode = 'CustomCode';
-}
 
+class ShippingFeatureCodeType
+{
+	const DELIVERYCONFIRMATION  = 'DeliveryConfirmation';
+	const SIGNATURECONFIRMATION = 'SignatureConfirmation';
+	const STEALTHPOSTAGE        = 'StealthPostage';
+	const SATURDAYDELIVERY      = 'SaturdayDelivery';
+	const OTHER                 = 'Other';
+	const NOTDEFINED            = 'NotDefined';
+	const CUSTOMCODE            = 'CustomCode';
+}

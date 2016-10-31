@@ -1,64 +1,66 @@
 <?php
 
 namespace Controle;
+
 /**
  * PromotionRuleType
  * Defines a rule that promotes items or a store category when  a buyer views a specific item
  * or store category.
  */
-class PromotionRuleType {
+class PromotionRuleType
+{
     /**
      * @var \Controle\PromotedItemType | The unique item ID of the cross-promoted item. Use for an ItemToItem rule.
      */
-    public $PromotedItem;
+    public $promoteditem;
     /**
      * @var \Controle\SiteCodeType |      */
-    public $SiteID;
+    public $siteid;
     /**
      * @var int | The ID of the Store category being promoted. Use with a promotion scheme of ItemToStoreCat,
      * StoreToStoreCat, ItemToDefaultRule, or DefaultRule. Only for Store owners.
      */
-    public $PromotedStoreCategoryID;
+    public $promotedstorecategoryid;
     /**
      * @var string | The ID of the eBay category being promoted. Use with a promotion scheme of ItemToDefaultRule
      * or DefaultRule.
      */
-    public $PromotedeBayCategoryID;
+    public $promotedebaycategoryid;
     /**
      * @var string | The keywords that identify promoted items. Use with a promotion scheme of ItemToDefaultRule
      * or DefaultRule. Only for Store owners.
      */
-    public $PromotedKeywords;
+    public $promotedkeywords;
     /**
      * @var \Controle\ItemIDType | The unique ID of the item the buyer is viewing or purchasing. Use with a promotion scheme
      * of ItemToItem or ItemToStoreCat. Always use ReferringItemID or ReferringStoreCategoryID,
      * but not both.
      */
-    public $ReferringItemID;
+    public $referringitemid;
     /**
      * @var int | The ID of the store category the user is browsing. Use with a promotion scheme of StoreToStoreCat,
      * ItemToDefaultRule or DefaultRule. Always use ReferringStoreCategoryID or ReferringItemID,
      * but not both.
      */
-    public $ReferringStoreCategoryID;
+    public $referringstorecategoryid;
     /**
      * @var string | The ID of the eBay category being referred. Use with a promotion scheme or ItemToDefaultRule
      * or DefaultRule.
      */
-    public $ReferringeBayCategoryID;
+    public $referringebaycategoryid;
     /**
      * @var string | The keywords that identify referring items. Use with a promotion scheme of ItemToDefaultRule
      * or DefaultRule. Only for Store owners.
      */
-    public $ReferringKeywords;
+    public $referringkeywords;
     /**
      * @var \Controle\PromotionSchemeCodeType | The type of cross-promotion scheme you are defining.
      */
-    public $PromotionScheme;
+    public $promotionscheme;
     /**
      * @var \Controle\PromotionMethodCodeType | The type of cross promotion, CrossSell or UpSell.
      */
-    public $PromotionMethod;
+    public $promotionmethod;
     /**
      * @var \Controle\<anyXML>
      */
@@ -67,109 +69,125 @@ class PromotionRuleType {
      * @param PromotedItemType $val
      * @throws Exception
      */
-    public function setPromotedItem($val) {
-        
-        $this->PromotedItem = (int)$val;
+    public function setPromotedItem($val)
+    {
+        $this->promoteditem = (int)$val;
     }
 
     /**
      * @param SiteCodeType $val
      * @throws Exception
      */
-    public function setSiteID($val) {
-        
-        $this->SiteID = (int)$val;
+    public function setSiteID($val)
+    {
+        $this->siteid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setPromotedStoreCategoryID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->PromotedStoreCategoryID = (int)$val;
+    public function setPromotedStoreCategoryID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->promotedstorecategoryid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setPromotedeBayCategoryID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PromotedeBayCategoryID');
-        $this->PromotedeBayCategoryID = (int)$val;
+    public function setPromotedeBayCategoryID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PromotedeBayCategoryID');
+        }
+        $this->promotedebaycategoryid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setPromotedKeywords($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PromotedKeywords');
-        $this->PromotedKeywords = (int)$val;
+    public function setPromotedKeywords($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PromotedKeywords');
+        }
+        $this->promotedkeywords = (int)$val;
     }
 
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
-    public function setReferringItemID($val) {
-        
-        $this->ReferringItemID = (int)$val;
+    public function setReferringItemID($val)
+    {
+        $this->referringitemid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setReferringStoreCategoryID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->ReferringStoreCategoryID = (int)$val;
+    public function setReferringStoreCategoryID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->referringstorecategoryid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setReferringeBayCategoryID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ReferringeBayCategoryID');
-        $this->ReferringeBayCategoryID = (int)$val;
+    public function setReferringeBayCategoryID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ReferringeBayCategoryID');
+        }
+        $this->referringebaycategoryid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setReferringKeywords($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ReferringKeywords');
-        $this->ReferringKeywords = (int)$val;
+    public function setReferringKeywords($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ReferringKeywords');
+        }
+        $this->referringkeywords = (int)$val;
     }
 
     /**
      * @param PromotionSchemeCodeType $val
      * @throws Exception
      */
-    public function setPromotionScheme($val) {
-        
-        $this->PromotionScheme = (int)$val;
+    public function setPromotionScheme($val)
+    {
+        $this->promotionscheme = (int)$val;
     }
 
     /**
      * @param PromotionMethodCodeType $val
      * @throws Exception
      */
-    public function setPromotionMethod($val) {
-        
-        $this->PromotionMethod = (int)$val;
+    public function setPromotionMethod($val)
+    {
+        $this->promotionmethod = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class UploadDocumentationResponse {
+
+class UploadDocumentationResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $UploadDocumentationResult;
+	public $uploaddocumentationresult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setUploadDocumentationResult($val) {
-		
-		$this->UploadDocumentationResult = (int)$val;
+	public function setUploadDocumentationResult($val)
+	{
+        $this->uploaddocumentationresult = (int)$val;
 	}
-
 }
-

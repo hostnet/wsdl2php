@@ -1,58 +1,58 @@
 <?php
 
 namespace Controle;
-class SearchCriteria {
+
+class SearchCriteria
+{
     /**
      * @var array \Controle\Clause
      */
-    public $Clauses;
+    public $clauses;
     /**
      * @var \Controle\SearchModeType
      */
-    public $Mode;
+    public $mode;
     /**
      * @var array \Controle\string
      */
-    public $Withoutstates;
+    public $withoutstates;
     /**
      * @var array \Controle\string
      */
-    public $Withstates;
+    public $withstates;
     /**
      * @param ArrayOfClause $val
      * @throws Exception
      */
-    public function setClauses($val) {
-        
-        $this->Clauses = (int)$val;
+    public function setClauses($val)
+    {
+        $this->clauses = (int)$val;
     }
 
     /**
      * @param SearchModeType $val
      * @throws Exception
      */
-    public function setMode($val) {
-        
-        $this->Mode = (int)$val;
+    public function setMode($val)
+    {
+        $this->mode = (int)$val;
     }
 
     /**
      * @param ArrayOfstring $val
      * @throws Exception
      */
-    public function setWithoutstates($val) {
-        
-        $this->Withoutstates = (int)$val;
+    public function setWithoutstates($val)
+    {
+        $this->withoutstates = (int)$val;
     }
 
     /**
      * @param ArrayOfstring $val
      * @throws Exception
      */
-    public function setWithstates($val) {
-        
-        $this->Withstates = (int)$val;
+    public function setWithstates($val)
+    {
+        $this->withstates = (int)$val;
     }
-
 }
-

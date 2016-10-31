@@ -1,178 +1,202 @@
 <?php
 
-class GoogleSearchResult {
+class GoogleSearchResult
+{
 	/**
 	 * @var boolean
 	 */
-	public $documentFiltering;
+	public $documentfiltering;
 	/**
 	 * @var string
 	 */
-	public $searchComments;
+	public $searchcomments;
 	/**
 	 * @var int
 	 */
-	public $estimatedTotalResultsCount;
+	public $estimatedtotalresultscount;
 	/**
 	 * @var boolean
 	 */
-	public $estimateIsExact;
+	public $estimateisexact;
 	/**
 	 * @var ResultElementArray
 	 */
-	public $resultElements;
+	public $resultelements;
 	/**
 	 * @var string
 	 */
-	public $searchQuery;
+	public $searchquery;
 	/**
 	 * @var int
 	 */
-	public $startIndex;
+	public $startindex;
 	/**
 	 * @var int
 	 */
-	public $endIndex;
+	public $endindex;
 	/**
 	 * @var string
 	 */
-	public $searchTips;
+	public $searchtips;
 	/**
 	 * @var DirectoryCategoryArray
 	 */
-	public $directoryCategories;
+	public $directorycategories;
 	/**
 	 * @var double
 	 */
-	public $searchTime;
+	public $searchtime;
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setDocumentFiltering($val) {
-		
-		$this->documentFiltering = (int)$val;
+	public function setDocumentFiltering($val)
+	{
+        $this->documentfiltering = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSearchComments($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for searchComments');
-		$this->searchComments = (int)$val;
+	public function setSearchComments($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for searchComments');
+        }
+        $this->searchcomments = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setEstimatedTotalResultsCount($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->estimatedTotalResultsCount = (int)$val;
+	public function setEstimatedTotalResultsCount($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->estimatedtotalresultscount = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setEstimateIsExact($val) {
-		
-		$this->estimateIsExact = (int)$val;
+	public function setEstimateIsExact($val)
+	{
+        $this->estimateisexact = (int)$val;
 	}
 
 	/**
 	 * @param ResultElementArray $val
 	 * @throws Exception
 	 */
-	public function setResultElements($val) {
-		
-		$this->resultElements = (int)$val;
+	public function setResultElements($val)
+	{
+        $this->resultelements = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSearchQuery($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for searchQuery');
-		$this->searchQuery = (int)$val;
+	public function setSearchQuery($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for searchQuery');
+        }
+        $this->searchquery = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setStartIndex($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->startIndex = (int)$val;
+	public function setStartIndex($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->startindex = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setEndIndex($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->endIndex = (int)$val;
+	public function setEndIndex($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->endindex = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSearchTips($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for searchTips');
-		$this->searchTips = (int)$val;
+	public function setSearchTips($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for searchTips');
+        }
+        $this->searchtips = (int)$val;
 	}
 
 	/**
 	 * @param DirectoryCategoryArray $val
 	 * @throws Exception
 	 */
-	public function setDirectoryCategories($val) {
-		
-		$this->directoryCategories = (int)$val;
+	public function setDirectoryCategories($val)
+	{
+        $this->directorycategories = (int)$val;
 	}
 
 	/**
 	 * @param double $val
 	 * @throws Exception
 	 */
-	public function setSearchTime($val) {
-		
-		$this->searchTime = (int)$val;
+	public function setSearchTime($val)
+	{
+        $this->searchtime = (int)$val;
 	}
-
 }
 
-class DirectoryCategory {
+class DirectoryCategory
+{
 	/**
 	 * @var string
 	 */
-	public $fullViewableName;
+	public $fullviewablename;
 	/**
 	 * @var string
 	 */
-	public $specialEncoding;
+	public $specialencoding;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setFullViewableName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for fullViewableName');
-		$this->fullViewableName = (int)$val;
+	public function setFullViewableName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for fullViewableName');
+        }
+        $this->fullviewablename = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSpecialEncoding($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for specialEncoding');
-		$this->specialEncoding = (int)$val;
+	public function setSpecialEncoding($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for specialEncoding');
+        }
+        $this->specialencoding = (int)$val;
 	}
-
 }
 
 /**
@@ -182,20 +206,22 @@ class GoogleSearchServiceClient extends SoapClient {
 
 	const WSDL_FILE = "GoogleSearchTest.wsdl";
 	private $classmap = array(
-		'GoogleSearchResult' => 'GoogleSearchResult',
-		'DirectoryCategory' => 'DirectoryCategory',
+        'GoogleSearchResult\,' =>
+            'GoogleSearchResult',
+        'DirectoryCategory\,' =>
+            'DirectoryCategory',
 	);
 
 	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+            	$options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -206,14 +232,14 @@ class GoogleSearchServiceClient extends SoapClient {
 	 * @return base64Binary
 	 */
 	public function doGetCachedPage($key, $url) {
-		return $this->__soapCall(
-			'doGetCachedPage',
-			array(
-				$key,
-				$url
-				),
-			array('uri'=>'urn:GoogleSearch')
-		);
+        return $this->__soapCall(
+            'doGetCachedPage',
+            array(
+            $key,
+            $url
+	            ),
+            array('uri'=>'urn:GoogleSearch')
+        );
 	}
 
 	/**
@@ -224,14 +250,14 @@ class GoogleSearchServiceClient extends SoapClient {
 	 * @return string
 	 */
 	public function doSpellingSuggestion($key, $phrase) {
-		return $this->__soapCall(
-			'doSpellingSuggestion',
-			array(
-				$key,
-				$phrase
-				),
-			array('uri'=>'urn:GoogleSearch')
-		);
+        return $this->__soapCall(
+            'doSpellingSuggestion',
+            array(
+            $key,
+            $phrase
+	            ),
+            array('uri'=>'urn:GoogleSearch')
+        );
 	}
 
 	/**
@@ -250,22 +276,21 @@ class GoogleSearchServiceClient extends SoapClient {
 	 * @return GoogleSearchResult
 	 */
 	public function doGoogleSearch($key, $q, $start, $maxResults, $filter, $restrict, $safeSearch, $lr, $ie, $oe) {
-		return $this->__soapCall(
-			'doGoogleSearch',
-			array(
-				$key,
-				$q,
-				$start,
-				$maxResults,
-				$filter,
-				$restrict,
-				$safeSearch,
-				$lr,
-				$ie,
-				$oe
-				),
-			array('uri'=>'urn:GoogleSearch')
-		);
+        return $this->__soapCall(
+            'doGoogleSearch',
+            array(
+            $key,
+            $q,
+            $start,
+            $maxResults,
+            $filter,
+            $restrict,
+            $safeSearch,
+            $lr,
+            $ie,
+            $oe
+	            ),
+            array('uri'=>'urn:GoogleSearch')
+        );
 	}
-
 }

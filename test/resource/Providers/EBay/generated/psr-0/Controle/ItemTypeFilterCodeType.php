@@ -1,16 +1,17 @@
 <?php
 
 namespace Controle;
-class ItemTypeFilterCodeType {
-	const AuctionItemsOnly = 'AuctionItemsOnly';
-	const FixedPricedItem = 'FixedPricedItem';
-	const AllItems = 'AllItems';
-	const StoreInventoryOnly = 'StoreInventoryOnly';
-	const FixedPriceExcludeStoreInventory = 'FixedPriceExcludeStoreInventory';
-	const ExcludeStoreInventory = 'ExcludeStoreInventory';
-	const AllItemTypes = 'AllItemTypes';
-	const AllFixedPriceItemTypes = 'AllFixedPriceItemTypes';
-	const CustomCode = 'CustomCode';
-	const ClassifiedItemsOnly = 'ClassifiedItemsOnly';
-}
 
+class ItemTypeFilterCodeType
+{
+	const AUCTIONITEMSONLY                = 'AuctionItemsOnly';
+	const FIXEDPRICEDITEM                 = 'FixedPricedItem';
+	const ALLITEMS                        = 'AllItems';
+	const STOREINVENTORYONLY              = 'StoreInventoryOnly';
+	const FIXEDPRICEEXCLUDESTOREINVENTORY = 'FixedPriceExcludeStoreInventory';
+	const EXCLUDESTOREINVENTORY           = 'ExcludeStoreInventory';
+	const ALLITEMTYPES                    = 'AllItemTypes';
+	const ALLFIXEDPRICEITEMTYPES          = 'AllFixedPriceItemTypes';
+	const CUSTOMCODE                      = 'CustomCode';
+	const CLASSIFIEDITEMSONLY             = 'ClassifiedItemsOnly';
+}

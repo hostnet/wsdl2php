@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class CharacteristicsSearchCodeType {
-	const Single = 'Single';
-	const Multi = 'Multi';
-	const CustomCode = 'CustomCode';
-}
 
+class CharacteristicsSearchCodeType
+{
+	const SINGLE     = 'Single';
+	const MULTI      = 'Multi';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class CheckoutMethodCodeType {
-	const Other = 'Other';
-	const ThirdPartyCheckout = 'ThirdPartyCheckout';
-	const CustomCode = 'CustomCode';
-}
 
+class CheckoutMethodCodeType
+{
+	const OTHER              = 'Other';
+	const THIRDPARTYCHECKOUT = 'ThirdPartyCheckout';
+	const CUSTOMCODE         = 'CustomCode';
+}

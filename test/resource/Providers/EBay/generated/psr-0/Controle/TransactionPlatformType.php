@@ -1,8 +1,9 @@
 <?php
 
 namespace Controle;
-class TransactionPlatformType {
-	const eBay = 'eBay';
-	const Express = 'Express';
-}
 
+class TransactionPlatformType
+{
+	const EBAY    = 'eBay';
+	const EXPRESS = 'Express';
+}

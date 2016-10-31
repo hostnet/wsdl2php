@@ -1,15 +1,17 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * PromotedItemType
  * Contains the data describing one cross-promoted item.
  */
-class PromotedItemType {
+class PromotedItemType
+{
 	/**
 	 * @var \Controle\sub1\sub2\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $ItemID;
+	public $itemid;
 	/**
 	 * @var string | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
 	 * on a location of the seller's choice (other than eBay) and associated with an item. If
@@ -26,7 +28,7 @@ class PromotedItemType {
 	 * the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
 	 * with that feature.
 	 */
-	public $PictureURL;
+	public $pictureurl;
 	/**
 	 * @var string | URL for multiple, self-hosted pictures (if any) that are stored/hosted at a non-eBay site
 	 * and used for the item. If specified, do not pass an empty/null value. On the main eBay
@@ -40,48 +42,48 @@ class PromotedItemType {
 	 * between 383 and 439, SelfHostedURL is returned.<br> With compatibility 439 and higher,
 	 *  Item.PictureDetails.PictureURL is returned.
 	 */
-	public $SelfHostedURL;
+	public $selfhostedurl;
 	/**
 	 * @var int | The ordinal position of the cross-promoted item in the display. If the display is from
 	 * top to bottom, 1 is at top. If the display is from left to right, 1 is at left. Output
 	 * only.
 	 */
-	public $Position;
+	public $position;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | The price of the cross-promoted item in the currency of the site upon which the item is
 	 * listed. Output only. If the item is listed on a site different from the site specified
 	 * in the request, then ConvertedPromotionPrice is also returned.
 	 */
-	public $PromotionPrice;
+	public $promotionprice;
 	/**
 	 * @var \Controle\sub1\sub2\PromotionItemPriceTypeCodeType | The listing type for the promoted item and how the item price is used.
 	 */
-	public $PromotionPriceType;
+	public $promotionpricetype;
 	/**
 	 * @var \Controle\sub1\sub2\PromotionItemSelectionCodeType | The manner in which the cross-promoted item was chosen to be associated with the referring
 	 * item. Output only.
 	 */
-	public $SelectionType;
+	public $selectiontype;
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $Title;
+	public $title;
 	/**
 	 * @var \Controle\sub1\sub2\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
 	 */
-	public $ListingType;
+	public $listingtype;
 	/**
 	 * @var \Controle\sub1\sub2\PromotionDetailsType | Contains the details about the promoted item for a given PromotionPriceType. Output only.
 	 * Returned with request versions 485 or higher.
 	 */
-	public $PromotionDetails;
+	public $promotiondetails;
 	/**
 	 * @var \Controle\sub1\sub2\duration | Time left before the listing for the cross-promoted item ends. Output only. The duration
 	 * is represented in the ISO 8601 duration format (PnYnMnDTnHnMnS). See Data Types in the
 	 * eBay Web Services guide for information about this format. For ended listings, the time
 	 * left is PT0S (zero seconds).
 	 */
-	public $TimeLeft;
+	public $timeleft;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -90,109 +92,119 @@ class PromotedItemType {
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
-	public function setItemID($val) {
-		
-		$this->ItemID = (int)$val;
+	public function setItemID($val)
+	{
+        $this->itemid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setPictureURL($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PictureURL');
-		$this->PictureURL = (int)$val;
+	public function setPictureURL($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PictureURL');
+        }
+        $this->pictureurl = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSelfHostedURL($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SelfHostedURL');
-		$this->SelfHostedURL = (int)$val;
+	public function setSelfHostedURL($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SelfHostedURL');
+        }
+        $this->selfhostedurl = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setPosition($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->Position = (int)$val;
+	public function setPosition($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->position = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setPromotionPrice($val) {
-		
-		$this->PromotionPrice = (int)$val;
+	public function setPromotionPrice($val)
+	{
+        $this->promotionprice = (int)$val;
 	}
 
 	/**
 	 * @param PromotionItemPriceTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setPromotionPriceType($val) {
-		
-		$this->PromotionPriceType = (int)$val;
+	public function setPromotionPriceType($val)
+	{
+        $this->promotionpricetype = (int)$val;
 	}
 
 	/**
 	 * @param PromotionItemSelectionCodeType $val
 	 * @throws Exception
 	 */
-	public function setSelectionType($val) {
-		
-		$this->SelectionType = (int)$val;
+	public function setSelectionType($val)
+	{
+        $this->selectiontype = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTitle($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
-		$this->Title = (int)$val;
+	public function setTitle($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Title');
+        }
+        $this->title = (int)$val;
 	}
 
 	/**
 	 * @param ListingTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setListingType($val) {
-		
-		$this->ListingType = (int)$val;
+	public function setListingType($val)
+	{
+        $this->listingtype = (int)$val;
 	}
 
 	/**
 	 * @param PromotionDetailsType $val
 	 * @throws Exception
 	 */
-	public function setPromotionDetails($val) {
-		
-		$this->PromotionDetails = (int)$val;
+	public function setPromotionDetails($val)
+	{
+        $this->promotiondetails = (int)$val;
 	}
 
 	/**
 	 * @param duration $val
 	 * @throws Exception
 	 */
-	public function setTimeLeft($val) {
-		
-		$this->TimeLeft = (int)$val;
+	public function setTimeLeft($val)
+	{
+        $this->timeleft = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

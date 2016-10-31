@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class AddressOwnerCodeType {
-	const PayPal = 'PayPal';
-	const eBay = 'eBay';
-	const CustomCode = 'CustomCode';
-}
 
+class AddressOwnerCodeType
+{
+	const PAYPAL     = 'PayPal';
+	const EBAY       = 'eBay';
+	const CUSTOMCODE = 'CustomCode';
+}

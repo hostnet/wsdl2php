@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class SearchContactResponse {
+
+class SearchContactResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $SearchContactResult;
+	public $searchcontactresult;
 	/**
 	 * @var array \Controle\sub1\sub2\Contact
 	 */
@@ -14,19 +16,17 @@ class SearchContactResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setSearchContactResult($val) {
-		
-		$this->SearchContactResult = (int)$val;
+	public function setSearchContactResult($val)
+	{
+        $this->searchcontactresult = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfContact $val
 	 * @throws Exception
 	 */
-	public function setContacts($val) {
-		
-		$this->contacts = (int)$val;
+	public function setContacts($val)
+	{
+        $this->contacts = (int)$val;
 	}
-
 }
-

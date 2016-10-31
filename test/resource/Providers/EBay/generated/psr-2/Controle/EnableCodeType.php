@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class EnableCodeType {
-    const Enable = 'Enable';
-    const Disable = 'Disable';
-    const CustomCode = 'CustomCode';
-}
 
+class EnableCodeType
+{
+    const ENABLE     = 'Enable';
+    const DISABLE    = 'Disable';
+    const CUSTOMCODE = 'CustomCode';
+}

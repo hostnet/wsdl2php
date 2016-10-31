@@ -1,15 +1,17 @@
 <?php
 
 namespace Controle;
+
 /**
  * BuyerType
  * Contains information about a user as a buyer.
  */
-class BuyerType {
+class BuyerType
+{
 	/**
 	 * @var \Controle\AddressType | The address to which the item is to be shipped.
 	 */
-	public $ShippingAddress;
+	public $shippingaddress;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -18,19 +20,17 @@ class BuyerType {
 	 * @param AddressType $val
 	 * @throws Exception
 	 */
-	public function setShippingAddress($val) {
-		
-		$this->ShippingAddress = (int)$val;
+	public function setShippingAddress($val)
+	{
+        $this->shippingaddress = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

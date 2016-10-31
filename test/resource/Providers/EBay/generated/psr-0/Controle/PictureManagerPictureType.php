@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * PictureManagerPictureType
  * A picture in a Picture Manager album.
  */
-class PictureManagerPictureType {
+class PictureManagerPictureType
+{
 	/**
 	 * @var \Controle\anyURI | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
 	 * on a location of the seller's choice (other than eBay) and associated with an item. If
@@ -22,19 +24,19 @@ class PictureManagerPictureType {
 	 * the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
 	 * with that feature.
 	 */
-	public $PictureURL;
+	public $pictureurl;
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $Name;
+	public $name;
 	/**
 	 * @var dateTime | The date the picture was uploaded to the Picture Manager account.
 	 */
-	public $Date;
+	public $date;
 	/**
 	 * @var \Controle\PictureManagerPictureDisplayType | The type of picture display in Picture Manager.
 	 */
-	public $DisplayFormat;
+	public $displayformat;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -43,46 +45,47 @@ class PictureManagerPictureType {
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
-	public function setPictureURL($val) {
-		
-		$this->PictureURL = (int)$val;
+	public function setPictureURL($val)
+	{
+        $this->pictureurl = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
-		$this->Name = (int)$val;
+	public function setName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Name');
+        }
+        $this->name = (int)$val;
 	}
 
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setDate($val) {
-		
-		$this->Date = (int)$val;
+	public function setDate($val)
+	{
+        $this->date = (int)$val;
 	}
 
 	/**
 	 * @param PictureManagerPictureDisplayType $val
 	 * @throws Exception
 	 */
-	public function setDisplayFormat($val) {
-		
-		$this->DisplayFormat = (int)$val;
+	public function setDisplayFormat($val)
+	{
+        $this->displayformat = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class ShippingRateTypeCodeType {
-	const OnDemand = 'OnDemand';
-	const DailyPickup = 'DailyPickup';
-	const CustomCode = 'CustomCode';
-}
 
+class ShippingRateTypeCodeType
+{
+	const ONDEMAND    = 'OnDemand';
+	const DAILYPICKUP = 'DailyPickup';
+	const CUSTOMCODE  = 'CustomCode';
+}

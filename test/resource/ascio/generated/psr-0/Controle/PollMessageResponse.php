@@ -1,15 +1,17 @@
 <?php
 
 namespace Controle;
-class PollMessageResponse {
+
+class PollMessageResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $PollMessageResult;
+	public $pollmessageresult;
 	/**
 	 * @var int
 	 */
-	public $msgCount;
+	public $msgcount;
 	/**
 	 * @var \Controle\QueueItem
 	 */
@@ -18,28 +20,29 @@ class PollMessageResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setPollMessageResult($val) {
-		
-		$this->PollMessageResult = (int)$val;
+	public function setPollMessageResult($val)
+	{
+        $this->pollmessageresult = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setMsgCount($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->msgCount = (int)$val;
+	public function setMsgCount($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->msgcount = (int)$val;
 	}
 
 	/**
 	 * @param QueueItem $val
 	 * @throws Exception
 	 */
-	public function setItem($val) {
-		
-		$this->item = (int)$val;
+	public function setItem($val)
+	{
+        $this->item = (int)$val;
 	}
-
 }
-

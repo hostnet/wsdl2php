@@ -1,12 +1,14 @@
 <?php
 
 namespace Controle;
+
 /**
  * AuthenticationEntryType
  * A set of application-level authentication preferences and related data that you configure
  * to support the user authentication and authorization process.
  */
-class AuthenticationEntryType {
+class AuthenticationEntryType
+{
     /**
      * @var \Controle\anyURI | A URL that you set up in order to determine when a            user's authentication
      * and authorization process succeeded.            After a user signs into eBay and authorizes
@@ -15,11 +17,11 @@ class AuthenticationEntryType {
      *   to Redirect, appends the user's authentication token plus            other data that
      * you specified to identify the user.
      */
-    public $AcceptURL;
+    public $accepturl;
     /**
      * @var \Controle\anyURI | Your privacy policy URL, which is shown to end users on the eBay sign-in page.
      */
-    public $PrivacyPolicyURL;
+    public $privacypolicyurl;
     /**
      * @var \Controle\anyURI | A URL that you set up in order to determine when a            user's authentication
      * and authorization process did not succeed.            After a user signs into eBay but
@@ -28,19 +30,19 @@ class AuthenticationEntryType {
      * you specified            to identify the user (but does not return an authentication
      * token).
      */
-    public $RejectURL;
+    public $rejecturl;
     /**
      * @var string | A unique identifier associated with application and the combination            of URLs
      * within this authentication entry.            Unique across all applications that execute
      * eBay Web Services calls.            For convenience, you can call GetRuName to generate
      * a unique value.
      */
-    public $RuName;
+    public $runame;
     /**
      * @var \Controle\TokenReturnMethodCodeType | Specifies whether to return the token in the HTTP response stream            sent to
      * the accept URL, or to make it available for retrieval via FetchToken.
      */
-    public $TokenReturnMethod;
+    public $tokenreturnmethod;
     /**
      * @var \Controle\<anyXML>
      */
@@ -49,55 +51,56 @@ class AuthenticationEntryType {
      * @param anyURI $val
      * @throws Exception
      */
-    public function setAcceptURL($val) {
-        
-        $this->AcceptURL = (int)$val;
+    public function setAcceptURL($val)
+    {
+        $this->accepturl = (int)$val;
     }
 
     /**
      * @param anyURI $val
      * @throws Exception
      */
-    public function setPrivacyPolicyURL($val) {
-        
-        $this->PrivacyPolicyURL = (int)$val;
+    public function setPrivacyPolicyURL($val)
+    {
+        $this->privacypolicyurl = (int)$val;
     }
 
     /**
      * @param anyURI $val
      * @throws Exception
      */
-    public function setRejectURL($val) {
-        
-        $this->RejectURL = (int)$val;
+    public function setRejectURL($val)
+    {
+        $this->rejecturl = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setRuName($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for RuName');
-        $this->RuName = (int)$val;
+    public function setRuName($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for RuName');
+        }
+        $this->runame = (int)$val;
     }
 
     /**
      * @param TokenReturnMethodCodeType $val
      * @throws Exception
      */
-    public function setTokenReturnMethod($val) {
-        
-        $this->TokenReturnMethod = (int)$val;
+    public function setTokenReturnMethod($val)
+    {
+        $this->tokenreturnmethod = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

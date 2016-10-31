@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetSellerEventsResponseType
  * Contains the items returned by the call. Items for which a seller event has          occurred
@@ -8,7 +9,9 @@ namespace Controle;
  * object, within which are zero, one, or multiple ItemType objects.          Each ItemType
  * object contains the detail data for one item listing.
  */
-class GetSellerEventsResponseType extends \Controle\AbstractResponseType {
+class GetSellerEventsResponseType extends
+ \Controle\AbstractResponseType
+{
 	/**
 	 * @var dateTime | Limits returned items to only those that were submited on or before the date-time specified.
 	 * If specified, TimeFrom must also be specified. Express date-time in the format YYYY-MM-DD
@@ -18,28 +21,26 @@ class GetSellerEventsResponseType extends \Controle\AbstractResponseType {
 	 * after the date of submission. This field is ignored if VeROReportPacketID or ItemID is
 	 * specified.
 	 */
-	public $TimeTo;
+	public $timeto;
 	/**
 	 * @var \Controle\ItemArrayType | Contains a list of Item types.
 	 */
-	public $ItemArray;
+	public $itemarray;
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
-	public function setTimeTo($val) {
-		
-		$this->TimeTo = (int)$val;
+	public function setTimeTo($val)
+	{
+        $this->timeto = (int)$val;
 	}
 
 	/**
 	 * @param ItemArrayType $val
 	 * @throws Exception
 	 */
-	public function setItemArray($val) {
-		
-		$this->ItemArray = (int)$val;
+	public function setItemArray($val)
+	{
+        $this->itemarray = (int)$val;
 	}
-
 }
-

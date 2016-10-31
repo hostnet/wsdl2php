@@ -1,28 +1,30 @@
 <?php
 
 namespace Controle;
+
 /**
  * StoreColorSchemeType
  * Store color scheme.
  */
-class StoreColorSchemeType {
+class StoreColorSchemeType
+{
     /**
      * @var int | Store color scheme ID. (use GetStoreOptions to get the list of valid theme color scheme
      * IDs).
      */
-    public $ColorSchemeID;
+    public $colorschemeid;
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $Name;
+    public $name;
     /**
      * @var \Controle\StoreColorType | Store color set.
      */
-    public $Color;
+    public $color;
     /**
      * @var \Controle\StoreFontType | Store font set.
      */
-    public $Font;
+    public $font;
     /**
      * @var \Controle\<anyXML>
      */
@@ -31,46 +33,50 @@ class StoreColorSchemeType {
      * @param int $val
      * @throws Exception
      */
-    public function setColorSchemeID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->ColorSchemeID = (int)$val;
+    public function setColorSchemeID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->colorschemeid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setName($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
-        $this->Name = (int)$val;
+    public function setName($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Name');
+        }
+        $this->name = (int)$val;
     }
 
     /**
      * @param StoreColorType $val
      * @throws Exception
      */
-    public function setColor($val) {
-        
-        $this->Color = (int)$val;
+    public function setColor($val)
+    {
+        $this->color = (int)$val;
     }
 
     /**
      * @param StoreFontType $val
      * @throws Exception
      */
-    public function setFont($val) {
-        
-        $this->Font = (int)$val;
+    public function setFont($val)
+    {
+        $this->font = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

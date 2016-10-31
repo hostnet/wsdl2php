@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
-class GetMessagesResponse {
+
+class GetMessagesResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $GetMessagesResult;
+	public $getmessagesresult;
 	/**
 	 * @var array \Controle\Message
 	 */
@@ -14,19 +16,17 @@ class GetMessagesResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setGetMessagesResult($val) {
-		
-		$this->GetMessagesResult = (int)$val;
+	public function setGetMessagesResult($val)
+	{
+        $this->getmessagesresult = (int)$val;
 	}
 
 	/**
 	 * @param ArrayOfMessage $val
 	 * @throws Exception
 	 */
-	public function setMessages($val) {
-		
-		$this->messages = (int)$val;
+	public function setMessages($val)
+	{
+        $this->messages = (int)$val;
 	}
-
 }
-

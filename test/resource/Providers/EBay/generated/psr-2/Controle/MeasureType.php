@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * MeasureType
  * Basic type for specifying measures and the system of measurement. A decimal value (e.g.,
@@ -9,7 +10,8 @@ namespace Controle;
  * expresses both the value (a decimal) and, optionally, the unit and the system of measurement. Details
  * such as shipping weights are specified as measure types.
  */
-class MeasureType {
+class MeasureType
+{
     /**
      * @var decimal
      */
@@ -21,13 +23,13 @@ class MeasureType {
     /**
      * @var \Controle\MeasurementSystemCodeType
      */
-    public $measurementSystem;
+    public $measurementsystem;
     /**
      * @param decimal $val
      * @throws Exception
      */
-    public function set_($val) {
-        
+    public function set($val)
+    {
         $this->_ = (int)$val;
     }
 
@@ -35,8 +37,8 @@ class MeasureType {
      * @param token $val
      * @throws Exception
      */
-    public function setUnit($val) {
-        
+    public function setUnit($val)
+    {
         $this->unit = (int)$val;
     }
 
@@ -44,10 +46,8 @@ class MeasureType {
      * @param MeasurementSystemCodeType $val
      * @throws Exception
      */
-    public function setMeasurementSystem($val) {
-        
-        $this->measurementSystem = (int)$val;
+    public function setMeasurementSystem($val)
+    {
+        $this->measurementsystem = (int)$val;
     }
-
 }
-

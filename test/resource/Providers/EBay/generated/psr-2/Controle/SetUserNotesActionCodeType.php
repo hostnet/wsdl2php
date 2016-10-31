@@ -1,8 +1,9 @@
 <?php
 
 namespace Controle;
-class SetUserNotesActionCodeType {
-    const AddOrUpdate = 'AddOrUpdate';
-    const Delete = 'Delete';
-}
 
+class SetUserNotesActionCodeType
+{
+    const ADDORUPDATE = 'AddOrUpdate';
+    const DELETE      = 'Delete';
+}

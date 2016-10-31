@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * AccountEntriesType
  * Collection of zero, one, or multiple individual detail account entries. Contains
@@ -11,12 +12,13 @@ namespace Controle;
  * as a unique key: AccountEntry.Date, AccountEntry.AccountDetailsEntryType,        AccountEntry.ItemID,
  * and AccountEntry.RefNumber.
  */
-class AccountEntriesType {
+class AccountEntriesType
+{
     /**
      * @var \Controle\AccountEntryType | Contains the data for one account entry. (See the schema                documentation
      * for AccountEntryType for details on its properties.)
      */
-    public $AccountEntry;
+    public $accountentry;
     /**
      * @var \Controle\<anyXML>
      */
@@ -25,19 +27,17 @@ class AccountEntriesType {
      * @param AccountEntryType $val
      * @throws Exception
      */
-    public function setAccountEntry($val) {
-        
-        $this->AccountEntry = (int)$val;
+    public function setAccountEntry($val)
+    {
+        $this->accountentry = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

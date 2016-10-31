@@ -1,16 +1,18 @@
 <?php
 
 namespace Controle;
+
 /**
  * ProductType
  * A prototype description of a well-known type of item, such as a popular book.      Applicable
  * when working with eBay's Pre-filled Item Information feature.
  */
-class ProductType {
+class ProductType
+{
     /**
      * @var \Controle\CharacteristicsSetType | Container for site-wide characteristics set information.
      */
-    public $CharacteristicsSet;
+    public $characteristicsset;
     /**
      * @var \Controle\anyURI | Fully qualified URL for optional information about the product,            such as a
      * movie's description or film credits. This information            is hosted through the
@@ -18,20 +20,20 @@ class ProductType {
      * in product search results            so that end users can view additional descriptive
      * details about the product.
      */
-    public $DetailsURL;
+    public $detailsurl;
     /**
      * @var int | Total number of active listings on the specified eBay site            that were pre-filled
      * based on this product.
      */
-    public $NumItems;
+    public $numitems;
     /**
      * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
      */
-    public $MinPrice;
+    public $minprice;
     /**
      * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
      */
-    public $MaxPrice;
+    public $maxprice;
     /**
      * @var \Controle\<anyXML>
      */
@@ -39,11 +41,11 @@ class ProductType {
     /**
      * @var string
      */
-    public $productID;
+    public $productid;
     /**
      * @var \Controle\anyURI
      */
-    public $stockPhotoURL;
+    public $stockphotourl;
     /**
      * @var string
      */
@@ -52,53 +54,56 @@ class ProductType {
      * @param CharacteristicsSetType $val
      * @throws Exception
      */
-    public function setCharacteristicsSet($val) {
-        
-        $this->CharacteristicsSet = (int)$val;
+    public function setCharacteristicsSet($val)
+    {
+        $this->characteristicsset = (int)$val;
     }
 
     /**
      * @param anyURI $val
      * @throws Exception
      */
-    public function setDetailsURL($val) {
-        
-        $this->DetailsURL = (int)$val;
+    public function setDetailsURL($val)
+    {
+        $this->detailsurl = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setNumItems($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->NumItems = (int)$val;
+    public function setNumItems($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->numitems = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setMinPrice($val) {
-        
-        $this->MinPrice = (int)$val;
+    public function setMinPrice($val)
+    {
+        $this->minprice = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setMaxPrice($val) {
-        
-        $this->MaxPrice = (int)$val;
+    public function setMaxPrice($val)
+    {
+        $this->maxprice = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
 
@@ -106,28 +111,32 @@ class ProductType {
      * @param string $val
      * @throws Exception
      */
-    public function setProductID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for productID');
-        $this->productID = (int)$val;
+    public function setProductID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for productID');
+        }
+        $this->productid = (int)$val;
     }
 
     /**
      * @param anyURI $val
      * @throws Exception
      */
-    public function setStockPhotoURL($val) {
-        
-        $this->stockPhotoURL = (int)$val;
+    public function setStockPhotoURL($val)
+    {
+        $this->stockphotourl = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setTitle($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for title');
+    public function setTitle($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for title');
+        }
         $this->title = (int)$val;
     }
-
 }
-

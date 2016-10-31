@@ -1,8 +1,9 @@
 <?php
 
 namespace Controle;
-class FeedbackResponseCodeType {
-    const Reply = 'Reply';
-    const FollowUp = 'FollowUp';
-}
 
+class FeedbackResponseCodeType
+{
+    const REPLY    = 'Reply';
+    const FOLLOWUP = 'FollowUp';
+}

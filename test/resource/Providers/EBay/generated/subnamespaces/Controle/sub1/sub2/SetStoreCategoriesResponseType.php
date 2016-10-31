@@ -1,12 +1,15 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * SetStoreCategoriesResponseType
  * Returns the status of the processing progress for changes to the category structure for
  * a store.
  */
-class SetStoreCategoriesResponseType extends \Controle\sub1\sub2\AbstractResponseType {
+class SetStoreCategoriesResponseType extends
+ \Controle\sub1\sub2\AbstractResponseType
+{
 	/**
 	 * @var long | The task ID associated with the category structure change request. If the SetStoreCategories
 	 * call is process synchronously, the task ID is 0. If the category structure changes affect
@@ -14,29 +17,27 @@ class SetStoreCategoriesResponseType extends \Controle\sub1\sub2\AbstractRespons
 	 * number. Use the task ID with GetStoreCategoryUpdateStatus to monitor the status of asynchronously
 	 * processed changes.
 	 */
-	public $TaskID;
+	public $taskid;
 	/**
 	 * @var \Controle\sub1\sub2\TaskStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a seller's
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
-	public $Status;
+	public $status;
 	/**
 	 * @param long $val
 	 * @throws Exception
 	 */
-	public function setTaskID($val) {
-		
-		$this->TaskID = (int)$val;
+	public function setTaskID($val)
+	{
+        $this->taskid = (int)$val;
 	}
 
 	/**
 	 * @param TaskStatusCodeType $val
 	 * @throws Exception
 	 */
-	public function setStatus($val) {
-		
-		$this->Status = (int)$val;
+	public function setStatus($val)
+	{
+        $this->status = (int)$val;
 	}
-
 }
-

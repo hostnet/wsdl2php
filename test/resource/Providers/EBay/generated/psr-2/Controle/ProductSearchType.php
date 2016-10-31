@@ -1,13 +1,15 @@
 <?php
 
 namespace Controle;
+
 /**
  * ProductSearchType
  * Container for a product query and pagination instructions.      This data is applicable
  * when searching eBay catalogs for stock product      information (to use in listings with
  * Pre-filled Item Information.)      Input only.
  */
-class ProductSearchType {
+class ProductSearchType
+{
     /**
      * @var string | Unique alphanumeric key help you distinguish between query results in the response.
      *            You define the key. Each search request ID must be unique within the same
@@ -15,12 +17,12 @@ class ProductSearchType {
      *            If not specified, the ProductSearchResult.ID values in the response are
      *           indexed starting from 0 (zero).
      */
-    public $ProductSearchID;
+    public $productsearchid;
     /**
      * @var int | Numeric identifier for a characteristic set that defines the attributes            (unique
      * across all eBay sites).
      */
-    public $AttributeSetID;
+    public $attributesetid;
     /**
      * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
      *           search for Item Specifics in listings (e.g., how to search against a particular
@@ -33,19 +35,19 @@ class ProductSearchType {
      * level of ItemReturnAttributes or ReturnAll. Use GetProductFinder to determine valid
      * product finder IDs.
      */
-    public $ProductFinderID;
+    public $productfinderid;
     /**
      * @var string | Identifier for a representative stock product in a product family.            Used as
      * input in GetProductFamilyMembers requests to identify a product family.            Use
      * GetProductSearchResults to determine the available IDs.
      */
-    public $ProductID;
+    public $productid;
     /**
      * @var int | Unique identifier for a sortable attribute. Use GetProductSearchPage or GetProductFinder
      * to determine the valid sort attribute IDs for the specified characteristic set (including
      * the default sort attribute that will be used if you do not specify this field).
      */
-    public $SortAttributeID;
+    public $sortattributeid;
     /**
      * @var int | Pagination instruction that specifies the maximum quantity of products to return for
      * each            product family within the search response whose ID matches the current
@@ -56,7 +58,7 @@ class ProductSearchType {
      * in the eBay Web Services Guide.            The value should not include punctuation
      * (i.e., a thousands separator is not valid).
      */
-    public $MaxChildrenPerFamily;
+    public $maxchildrenperfamily;
     /**
      * @var \Controle\SearchAttributesType | A query consisting of a set of attributes (search criteria). If the query
      *   includes multiple attributes, the search engine will apply "AND" logic to the
@@ -64,14 +66,14 @@ class ProductSearchType {
      *       and how many are permitted for the specified characteristic set.            If
      * specified, ProductFinderID must also be specified.
      */
-    public $SearchAttributes;
+    public $searchattributes;
     /**
      * @var \Controle\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $Pagination;
+    public $pagination;
     /**
      * @var boolean | Filter to only retrieve products that match active eBay listings. This may be used as
      * an indicator to determine which products other sellers recently used to pre-fill similar
@@ -79,7 +81,7 @@ class ProductSearchType {
      * on the            specified eBay site. If false, retrieve all products that match the
      * query.
      */
-    public $AvailableItemsOnly;
+    public $availableitemsonly;
     /**
      * @var string | One or more keywords to search for in the characteristic set specified in
      *  CharacteristicSetIDs. Both the product title and Item Specifics are searched. For each
@@ -90,14 +92,14 @@ class ProductSearchType {
      * search string modifiers. Wildcards (+, -, or *) are also supported. Be careful when
      * using spaces before or after modifiers and wildcards.
      */
-    public $QueryKeywords;
+    public $querykeywords;
     /**
      * @var \Controle\CharacteristicSetIDsType | List of one or more characteristic set IDs that indicate which characteristic sets
      *            to search in. If not specified, the search is conducted across all characteristic
      * sets. Only applicable when QueryKeywords is specified. Ignored when SearchAttributes
      * is specified.
      */
-    public $CharacteristicSetIDs;
+    public $characteristicsetids;
     /**
      * @var \Controle\<anyXML>
      */
@@ -106,109 +108,128 @@ class ProductSearchType {
      * @param string $val
      * @throws Exception
      */
-    public function setProductSearchID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductSearchID');
-        $this->ProductSearchID = (int)$val;
+    public function setProductSearchID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ProductSearchID');
+        }
+        $this->productsearchid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setAttributeSetID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->AttributeSetID = (int)$val;
+    public function setAttributeSetID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->attributesetid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setProductFinderID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->ProductFinderID = (int)$val;
+    public function setProductFinderID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->productfinderid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setProductID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductID');
-        $this->ProductID = (int)$val;
+    public function setProductID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ProductID');
+        }
+        $this->productid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setSortAttributeID($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->SortAttributeID = (int)$val;
+    public function setSortAttributeID($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->sortattributeid = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setMaxChildrenPerFamily($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->MaxChildrenPerFamily = (int)$val;
+    public function setMaxChildrenPerFamily($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->maxchildrenperfamily = (int)$val;
     }
 
     /**
      * @param SearchAttributesType $val
      * @throws Exception
      */
-    public function setSearchAttributes($val) {
-        
-        $this->SearchAttributes = (int)$val;
+    public function setSearchAttributes($val)
+    {
+        $this->searchattributes = (int)$val;
     }
 
     /**
      * @param PaginationType $val
      * @throws Exception
      */
-    public function setPagination($val) {
-        
-        $this->Pagination = (int)$val;
+    public function setPagination($val)
+    {
+        $this->pagination = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setAvailableItemsOnly($val) {
-        
-        $this->AvailableItemsOnly = (int)$val;
+    public function setAvailableItemsOnly($val)
+    {
+        $this->availableitemsonly = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setQueryKeywords($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for QueryKeywords');
-        $this->QueryKeywords = (int)$val;
+    public function setQueryKeywords($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for QueryKeywords');
+        }
+        $this->querykeywords = (int)$val;
     }
 
     /**
      * @param CharacteristicSetIDsType $val
      * @throws Exception
      */
-    public function setCharacteristicSetIDs($val) {
-        
-        $this->CharacteristicSetIDs = (int)$val;
+    public function setCharacteristicSetIDs($val)
+    {
+        $this->characteristicsetids = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

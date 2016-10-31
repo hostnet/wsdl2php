@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class DescriptionReviseModeCodeType {
-    const Replace = 'Replace';
-    const Prepend = 'Prepend';
-    const Append = 'Append';
-    const CustomCode = 'CustomCode';
-}
 
+class DescriptionReviseModeCodeType
+{
+    const REPLACE    = 'Replace';
+    const PREPEND    = 'Prepend';
+    const APPEND     = 'Append';
+    const CUSTOMCODE = 'CustomCode';
+}

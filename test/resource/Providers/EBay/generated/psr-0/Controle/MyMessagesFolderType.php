@@ -1,19 +1,21 @@
 <?php
 
 namespace Controle;
+
 /**
  * MyMessagesFolderType
  * Details relating to a My Messages folder.
  */
-class MyMessagesFolderType {
+class MyMessagesFolderType
+{
 	/**
 	 * @var long | The ID of the folder.
 	 */
-	public $FolderID;
+	public $folderid;
 	/**
 	 * @var string | The name of a specified My Messages folder.
 	 */
-	public $FolderName;
+	public $foldername;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -22,28 +24,29 @@ class MyMessagesFolderType {
 	 * @param long $val
 	 * @throws Exception
 	 */
-	public function setFolderID($val) {
-		
-		$this->FolderID = (int)$val;
+	public function setFolderID($val)
+	{
+        $this->folderid = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setFolderName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FolderName');
-		$this->FolderName = (int)$val;
+	public function setFolderName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for FolderName');
+        }
+        $this->foldername = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

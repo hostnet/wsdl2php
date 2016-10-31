@@ -1,12 +1,14 @@
 <?php
 
 namespace Controle;
-class ExpressItemRequirementsType {
+
+class ExpressItemRequirementsType
+{
     /**
      * @var boolean | If false, indicates that an item is not Express-eligible because the seller is not Express-eligible.
      * Only returned if false, and no other settings are returned in this case.
      */
-    public $SellerExpressEligible;
+    public $sellerexpresseligible;
     /**
      * @var boolean | Preference to opt out an individual fixed price, auction with Buy It Now, or Store Inventory
      * item from eBay Express. Specify as input when listing an item to indicate that the item should
@@ -21,7 +23,7 @@ class ExpressItemRequirementsType {
      * determine whether an item sold on Express, use a transaction call like GetItemTransactions
      * (or the Checkout notification), and check the value of TransactionPlatform.
      */
-    public $ExpressOptOut;
+    public $expressoptout;
     /**
      * @var boolean | If true, indicates eBay has marked the seller as eligible for eBay Express based on
      * direct evaluation. Only returned if true, and no other seller requirement settings are
@@ -29,93 +31,93 @@ class ExpressItemRequirementsType {
      * application to become eligible to list on Express Germany. If they are approved, eBay
      * sets ExpressApproved to true and no other seller requirement settings are relevant.
      */
-    public $ExpressApproved;
+    public $expressapproved;
     /**
      * @var boolean | If true, indicates the item listing format is eligible for Express. If false, the listing
      * format is ineligible (and the item is therefore ineligible).
      */
-    public $ExpressEligibleListingType;
+    public $expresseligiblelistingtype;
     /**
      * @var boolean | If true, the item's primary category is enabled for Express. If false, the primary category
      * is not enabled for Express (and the item is therefore ineligible).
      */
-    public $ExpressEnabledCategory;
+    public $expressenabledcategory;
     /**
      * @var boolean | If true, the seller has an eligible PayPal account for Express. Only returned if the
      * site assesses this requirement at the seller level.
      */
-    public $EligiblePayPalAccount;
+    public $eligiblepaypalaccount;
     /**
      * @var boolean | If true, domestic shipping costs are specified for the item. If false, they aren't specified
      * (and the item is therefore ineligible).
      */
-    public $DomesticShippingCost;
+    public $domesticshippingcost;
     /**
      * @var boolean | If true, the item is covered by a return policy that meets the site's requirements for
      * Express. Only returned for Express Germany. (A return policy is optional for Express
      * US.)
      */
-    public $EligibleReturnPolicy;
+    public $eligiblereturnpolicy;
     /**
      * @var boolean | Indicates whether a listing has an image associated with it.
      */
-    public $Picture;
+    public $picture;
     /**
      * @var boolean | If true, the item specifies an eligible item condition. If false, the item doesn't specify
      * an eligible item condition. Only returned if the category requires an item condition
      * for Express. Some categories waive the item condition requirement.
      */
-    public $EligibleItemCondition;
+    public $eligibleitemcondition;
     /**
      * @var boolean | If true, the price of the item is above the minimum price allowed on Express. That is,
      * the StartPrice, BuyItNowPrice, or CurrentPrice is above the minimum.)
      */
-    public $PriceAboveMinimum;
+    public $priceaboveminimum;
     /**
      * @var boolean | If true, the price of the item is below the maximum price allowed on Express. (That
      * is, the StartPrice, BuyItNowPrice, or CurrentPrice is below the maximum.)
      */
-    public $PriceBelowMaximum;
+    public $pricebelowmaximum;
     /**
      * @var boolean | If true, indicates the item meets the site's eBay Express requirements for checkout.
      * (A common case when this could be false would be when ThirdPartyCheckout is true but ThirdPartyCheckoutIntegration
      * is false.)
      */
-    public $EligibleCheckout;
+    public $eligiblecheckout;
     /**
      * @var boolean | If true, the item has no pre-approved bidder list.
      */
-    public $NoPreapprovedBidderList;
+    public $nopreapprovedbidderlist;
     /**
      * @var boolean | If true, the item is not an eBay Giving Works item. Only returned if the site does not
      * allow charity listings on Express. (In other words, if the site excludes charity listings
      * from Express, then NoCharity=true means the item meets the eligibility requirement.)
      */
-    public $NoCharity;
+    public $nocharity;
     /**
      * @var boolean | If true, the item is not a digital listing. That is, the seller did not specify DigitalDeliveryDetails. Only
      * returned if the site does not allow digital listings on Express. (In other words, if
      * the site excludes digital listings from Express, then NoDigitalDelivery=true means the
      * item meets the eligibility requirement.)
      */
-    public $NoDigitalDelivery;
+    public $nodigitaldelivery;
     /**
      * @var boolean | If true, the item offers a combined shipping discount. Only returned if the Express
      * site has an item-level combined shipping discount requirement. (Some Express sites only
      * require you to accept combined payments at the seller level, in your My eBay preferences.)
      */
-    public $CombinedShippingDiscount;
+    public $combinedshippingdiscount;
     /**
      * @var boolean | If true, the country you specified for the item meets the specified site's shipping
      * origin requirements for Express.
      */
-    public $ShipFromEligibleCountry;
+    public $shipfromeligiblecountry;
     /**
      * @var boolean | If true, the seller has a PayPal account that accepts a payment from a buyer with an
      * unconfirmed address. Only returned if the site assesses this requirement at the seller
      * level.
      */
-    public $PayPalAccountAcceptsUnconfirmedAddress;
+    public $paypalaccountacceptsunconfirmedaddress;
     /**
      * @var \Controle\<anyXML>
      */
@@ -124,181 +126,179 @@ class ExpressItemRequirementsType {
      * @param boolean $val
      * @throws Exception
      */
-    public function setSellerExpressEligible($val) {
-        
-        $this->SellerExpressEligible = (int)$val;
+    public function setSellerExpressEligible($val)
+    {
+        $this->sellerexpresseligible = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setExpressOptOut($val) {
-        
-        $this->ExpressOptOut = (int)$val;
+    public function setExpressOptOut($val)
+    {
+        $this->expressoptout = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setExpressApproved($val) {
-        
-        $this->ExpressApproved = (int)$val;
+    public function setExpressApproved($val)
+    {
+        $this->expressapproved = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setExpressEligibleListingType($val) {
-        
-        $this->ExpressEligibleListingType = (int)$val;
+    public function setExpressEligibleListingType($val)
+    {
+        $this->expresseligiblelistingtype = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setExpressEnabledCategory($val) {
-        
-        $this->ExpressEnabledCategory = (int)$val;
+    public function setExpressEnabledCategory($val)
+    {
+        $this->expressenabledcategory = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setEligiblePayPalAccount($val) {
-        
-        $this->EligiblePayPalAccount = (int)$val;
+    public function setEligiblePayPalAccount($val)
+    {
+        $this->eligiblepaypalaccount = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setDomesticShippingCost($val) {
-        
-        $this->DomesticShippingCost = (int)$val;
+    public function setDomesticShippingCost($val)
+    {
+        $this->domesticshippingcost = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setEligibleReturnPolicy($val) {
-        
-        $this->EligibleReturnPolicy = (int)$val;
+    public function setEligibleReturnPolicy($val)
+    {
+        $this->eligiblereturnpolicy = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setPicture($val) {
-        
-        $this->Picture = (int)$val;
+    public function setPicture($val)
+    {
+        $this->picture = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setEligibleItemCondition($val) {
-        
-        $this->EligibleItemCondition = (int)$val;
+    public function setEligibleItemCondition($val)
+    {
+        $this->eligibleitemcondition = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setPriceAboveMinimum($val) {
-        
-        $this->PriceAboveMinimum = (int)$val;
+    public function setPriceAboveMinimum($val)
+    {
+        $this->priceaboveminimum = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setPriceBelowMaximum($val) {
-        
-        $this->PriceBelowMaximum = (int)$val;
+    public function setPriceBelowMaximum($val)
+    {
+        $this->pricebelowmaximum = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setEligibleCheckout($val) {
-        
-        $this->EligibleCheckout = (int)$val;
+    public function setEligibleCheckout($val)
+    {
+        $this->eligiblecheckout = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setNoPreapprovedBidderList($val) {
-        
-        $this->NoPreapprovedBidderList = (int)$val;
+    public function setNoPreapprovedBidderList($val)
+    {
+        $this->nopreapprovedbidderlist = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setNoCharity($val) {
-        
-        $this->NoCharity = (int)$val;
+    public function setNoCharity($val)
+    {
+        $this->nocharity = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setNoDigitalDelivery($val) {
-        
-        $this->NoDigitalDelivery = (int)$val;
+    public function setNoDigitalDelivery($val)
+    {
+        $this->nodigitaldelivery = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setCombinedShippingDiscount($val) {
-        
-        $this->CombinedShippingDiscount = (int)$val;
+    public function setCombinedShippingDiscount($val)
+    {
+        $this->combinedshippingdiscount = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setShipFromEligibleCountry($val) {
-        
-        $this->ShipFromEligibleCountry = (int)$val;
+    public function setShipFromEligibleCountry($val)
+    {
+        $this->shipfromeligiblecountry = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setPayPalAccountAcceptsUnconfirmedAddress($val) {
-        
-        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+    public function setPayPalAccountAcceptsUnconfirmedAddress($val)
+    {
+        $this->paypalaccountacceptsunconfirmedaddress = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

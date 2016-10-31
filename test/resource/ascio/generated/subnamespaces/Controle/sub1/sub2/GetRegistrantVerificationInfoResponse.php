@@ -1,32 +1,32 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class GetRegistrantVerificationInfoResponse {
+
+class GetRegistrantVerificationInfoResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $GetRegistrantVerificationInfoResult;
+	public $getregistrantverificationinforesult;
 	/**
 	 * @var \Controle\sub1\sub2\RegistrantVerificationInfo
 	 */
-	public $verificationInfo;
+	public $verificationinfo;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setGetRegistrantVerificationInfoResult($val) {
-		
-		$this->GetRegistrantVerificationInfoResult = (int)$val;
+	public function setGetRegistrantVerificationInfoResult($val)
+	{
+        $this->getregistrantverificationinforesult = (int)$val;
 	}
 
 	/**
 	 * @param RegistrantVerificationInfo $val
 	 * @throws Exception
 	 */
-	public function setVerificationInfo($val) {
-		
-		$this->verificationInfo = (int)$val;
+	public function setVerificationInfo($val)
+	{
+        $this->verificationinfo = (int)$val;
 	}
-
 }
-

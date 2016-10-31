@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * MyeBayFavoriteSellerType
  * Characteristics of the My eBay Favorite Seller.
  */
-class MyeBayFavoriteSellerType {
+class MyeBayFavoriteSellerType
+{
     /**
      * @var string | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -19,11 +21,11 @@ class MyeBayFavoriteSellerType {
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $UserID;
+    public $userid;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $StoreName;
+    public $storename;
     /**
      * @var \Controle\<anyXML>
      */
@@ -32,28 +34,32 @@ class MyeBayFavoriteSellerType {
      * @param string $val
      * @throws Exception
      */
-    public function setUserID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for UserID');
-        $this->UserID = (int)$val;
+    public function setUserID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for UserID');
+        }
+        $this->userid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setStoreName($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
-        $this->StoreName = (int)$val;
+    public function setStoreName($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for StoreName');
+        }
+        $this->storename = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

@@ -1,58 +1,67 @@
 <?php
 
 namespace Controle;
-class ReturnIndicator {
+
+class ReturnIndicator
+{
 	/**
 	 * @var string
 	 */
-	public $ResponseText;
+	public $responsetext;
 	/**
 	 * @var int
 	 */
-	public $ResponseCode;
+	public $responsecode;
 	/**
 	 * @var string
 	 */
-	public $LastMailServer;
+	public $lastmailserver;
 	/**
 	 * @var boolean
 	 */
-	public $GoodEmail;
+	public $goodemail;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setResponseText($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ResponseText');
-		$this->ResponseText = (int)$val;
+	public function setResponseText($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ResponseText');
+        }
+        $this->responsetext = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setResponseCode($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->ResponseCode = (int)$val;
+	public function setResponseCode($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->responsecode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLastMailServer($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LastMailServer');
-		$this->LastMailServer = (int)$val;
+	public function setLastMailServer($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LastMailServer');
+        }
+        $this->lastmailserver = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setGoodEmail($val) {
-		
-		$this->GoodEmail = (int)$val;
+	public function setGoodEmail($val)
+	{
+        $this->goodemail = (int)$val;
 	}
-
 }
-

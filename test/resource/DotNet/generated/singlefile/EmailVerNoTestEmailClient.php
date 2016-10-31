@@ -1,6 +1,7 @@
 <?php
 
-class VerifyMXRecord {
+class VerifyMxRecord
+{
 	/**
 	 * @var string
 	 */
@@ -8,44 +9,53 @@ class VerifyMXRecord {
 	/**
 	 * @var string
 	 */
-	public $LicenseKey;
+	public $licensekey;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setEmail($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for email');
-		$this->email = (int)$val;
+	public function setEmail($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for email');
+        }
+        $this->email = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLicenseKey($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LicenseKey');
-		$this->LicenseKey = (int)$val;
+	public function setLicenseKey($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LicenseKey');
+        }
+        $this->licensekey = (int)$val;
 	}
-
 }
 
-class VerifyMXRecordResponse {
+class VerifyMxRecordResponse
+{
 	/**
 	 * @var int
 	 */
-	public $VerifyMXRecordResult;
+	public $verifymxrecordresult;
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setVerifyMXRecordResult($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->VerifyMXRecordResult = (int)$val;
+	public function setVerifyMXRecordResult($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->verifymxrecordresult = (int)$val;
 	}
-
 }
 
-class AdvancedVerifyEmail {
+class AdvancedVerifyEmail
+{
 	/**
 	 * @var string
 	 */
@@ -57,108 +67,126 @@ class AdvancedVerifyEmail {
 	/**
 	 * @var string
 	 */
-	public $LicenseKey;
+	public $licensekey;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setEmail($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for email');
-		$this->email = (int)$val;
+	public function setEmail($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for email');
+        }
+        $this->email = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setTimeout($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->timeout = (int)$val;
+	public function setTimeout($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->timeout = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLicenseKey($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LicenseKey');
-		$this->LicenseKey = (int)$val;
+	public function setLicenseKey($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LicenseKey');
+        }
+        $this->licensekey = (int)$val;
 	}
-
 }
 
-class AdvancedVerifyEmailResponse {
+class AdvancedVerifyEmailResponse
+{
 	/**
 	 * @var ReturnIndicator
 	 */
-	public $AdvancedVerifyEmailResult;
+	public $advancedverifyemailresult;
 	/**
 	 * @param ReturnIndicator $val
 	 * @throws Exception
 	 */
-	public function setAdvancedVerifyEmailResult($val) {
-		
-		$this->AdvancedVerifyEmailResult = (int)$val;
+	public function setAdvancedVerifyEmailResult($val)
+	{
+        $this->advancedverifyemailresult = (int)$val;
 	}
-
 }
 
-class ReturnIndicator {
+class ReturnIndicator
+{
 	/**
 	 * @var string
 	 */
-	public $ResponseText;
+	public $responsetext;
 	/**
 	 * @var int
 	 */
-	public $ResponseCode;
+	public $responsecode;
 	/**
 	 * @var string
 	 */
-	public $LastMailServer;
+	public $lastmailserver;
 	/**
 	 * @var boolean
 	 */
-	public $GoodEmail;
+	public $goodemail;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setResponseText($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ResponseText');
-		$this->ResponseText = (int)$val;
+	public function setResponseText($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for ResponseText');
+        }
+        $this->responsetext = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setResponseCode($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->ResponseCode = (int)$val;
+	public function setResponseCode($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->responsecode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLastMailServer($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LastMailServer');
-		$this->LastMailServer = (int)$val;
+	public function setLastMailServer($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LastMailServer');
+        }
+        $this->lastmailserver = (int)$val;
 	}
 
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
-	public function setGoodEmail($val) {
-		
-		$this->GoodEmail = (int)$val;
+	public function setGoodEmail($val)
+	{
+        $this->goodemail = (int)$val;
 	}
-
 }
 
-class VerifyEmail {
+class VerifyEmail
+{
 	/**
 	 * @var string
 	 */
@@ -166,59 +194,65 @@ class VerifyEmail {
 	/**
 	 * @var string
 	 */
-	public $LicenseKey;
+	public $licensekey;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setEmail($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for email');
-		$this->email = (int)$val;
+	public function setEmail($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for email');
+        }
+        $this->email = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setLicenseKey($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LicenseKey');
-		$this->LicenseKey = (int)$val;
+	public function setLicenseKey($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for LicenseKey');
+        }
+        $this->licensekey = (int)$val;
 	}
-
 }
 
-class VerifyEmailResponse {
+class VerifyEmailResponse
+{
 	/**
 	 * @var ReturnIndicator
 	 */
-	public $VerifyEmailResult;
+	public $verifyemailresult;
 	/**
 	 * @param ReturnIndicator $val
 	 * @throws Exception
 	 */
-	public function setVerifyEmailResult($val) {
-		
-		$this->VerifyEmailResult = (int)$val;
+	public function setVerifyEmailResult($val)
+	{
+        $this->verifyemailresult = (int)$val;
 	}
-
 }
 
-class ReturnCodes {}
+class ReturnCodes
+{}
 
-class ReturnCodesResponse {
+class ReturnCodesResponse
+{
 	/**
 	 * @var AnyType[]
 	 */
-	public $ReturnCodesResult;
+	public $returncodesresult;
 	/**
 	 * @param ArrayOfAnyType $val
 	 * @throws Exception
 	 */
-	public function setReturnCodesResult($val) {
-		
-		$this->ReturnCodesResult = (int)$val;
+	public function setReturnCodesResult($val)
+	{
+        $this->returncodesresult = (int)$val;
 	}
-
 }
 
 /**
@@ -230,27 +264,36 @@ class EmailVerNoTestEmailClient extends SoapClient {
 
 	const WSDL_FILE = "EmailVerifyTest.wsdl";
 	private $classmap = array(
-		'VerifyMXRecord' => 'VerifyMXRecord',
-		'VerifyMXRecordResponse' => 'VerifyMXRecordResponse',
-		'AdvancedVerifyEmail' => 'AdvancedVerifyEmail',
-		'AdvancedVerifyEmailResponse' => 'AdvancedVerifyEmailResponse',
-		'ReturnIndicator' => 'ReturnIndicator',
-		'VerifyEmail' => 'VerifyEmail',
-		'VerifyEmailResponse' => 'VerifyEmailResponse',
-		'ReturnCodes' => 'ReturnCodes',
-		'ReturnCodesResponse' => 'ReturnCodesResponse',
+        'VerifyMXRecord\,' =>
+            'VerifyMXRecord',
+        'VerifyMXRecordResponse\,' =>
+            'VerifyMXRecordResponse',
+        'AdvancedVerifyEmail\,' =>
+            'AdvancedVerifyEmail',
+        'AdvancedVerifyEmailResponse\,' =>
+            'AdvancedVerifyEmailResponse',
+        'ReturnIndicator\,' =>
+            'ReturnIndicator',
+        'VerifyEmail\,' =>
+            'VerifyEmail',
+        'VerifyEmailResponse\,' =>
+            'VerifyEmailResponse',
+        'ReturnCodes\,' =>
+            'ReturnCodes',
+        'ReturnCodesResponse\,' =>
+            'ReturnCodesResponse',
 	);
 
 	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+            	$options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -266,11 +309,11 @@ class EmailVerNoTestEmailClient extends SoapClient {
 	 * @return VerifyMXRecordResponse
 	 */
 	public function VerifyMXRecord(VerifyMXRecord $parameters) {
-		return $this->__soapCall(
-			'VerifyMXRecord',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'VerifyMXRecord',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
 
 	/**
@@ -285,11 +328,11 @@ class EmailVerNoTestEmailClient extends SoapClient {
 	 * @return AdvancedVerifyEmailResponse
 	 */
 	public function AdvancedVerifyEmail(AdvancedVerifyEmail $parameters) {
-		return $this->__soapCall(
-			'AdvancedVerifyEmail',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'AdvancedVerifyEmail',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
 
 	/**
@@ -302,11 +345,11 @@ class EmailVerNoTestEmailClient extends SoapClient {
 	 * @return VerifyEmailResponse
 	 */
 	public function VerifyEmail(VerifyEmail $parameters) {
-		return $this->__soapCall(
-			'VerifyEmail',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'VerifyEmail',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
 
 	/**
@@ -317,11 +360,10 @@ class EmailVerNoTestEmailClient extends SoapClient {
 	 * @return ReturnCodesResponse
 	 */
 	public function ReturnCodes(ReturnCodes $parameters) {
-		return $this->__soapCall(
-			'ReturnCodes',
-			array($parameters),
-			array('uri'=>'http://ws.cdyne.com/')
-		);
+        return $this->__soapCall(
+            'ReturnCodes',
+            array($parameters),
+            array('uri'=>'http://ws.cdyne.com/')
+        );
 	}
-
 }

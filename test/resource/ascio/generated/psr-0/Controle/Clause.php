@@ -1,45 +1,51 @@
 <?php
 
 namespace Controle;
-class Clause {
+
+class Clause
+{
 	/**
 	 * @var string
 	 */
-	public $Attribute;
+	public $attribute;
 	/**
 	 * @var \Controle\SearchOperatorType
 	 */
-	public $Operator;
+	public $operator;
 	/**
 	 * @var string
 	 */
-	public $Value;
+	public $value;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setAttribute($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Attribute');
-		$this->Attribute = (int)$val;
+	public function setAttribute($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Attribute');
+        }
+        $this->attribute = (int)$val;
 	}
 
 	/**
 	 * @param SearchOperatorType $val
 	 * @throws Exception
 	 */
-	public function setOperator($val) {
-		
-		$this->Operator = (int)$val;
+	public function setOperator($val)
+	{
+        $this->operator = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setValue($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
-		$this->Value = (int)$val;
+	public function setValue($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Value');
+        }
+        $this->value = (int)$val;
 	}
-
 }
-

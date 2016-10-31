@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle;
-class TaskStatusCodeType {
-	const Pending = 'Pending';
-	const InProgress = 'InProgress';
-	const Complete = 'Complete';
-	const Failed = 'Failed';
-	const CustomCode = 'CustomCode';
-}
 
+class TaskStatusCodeType
+{
+	const PENDING    = 'Pending';
+	const INPROGRESS = 'InProgress';
+	const COMPLETE   = 'Complete';
+	const FAILED     = 'Failed';
+	const CUSTOMCODE = 'CustomCode';
+}

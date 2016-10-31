@@ -1,24 +1,26 @@
 <?php
 
 namespace Controle;
+
 /**
  * CrossPromotionsType
  * Contains one or more items cross-promoted with the display or purchase of a referring item.
  */
-class CrossPromotionsType {
+class CrossPromotionsType
+{
     /**
      * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $ItemID;
+    public $itemid;
     /**
      * @var \Controle\PromotionSchemeCodeType | The primary cross-promotion rule scheme that was applied to return the cross-promoted
      * item.
      */
-    public $PrimaryScheme;
+    public $primaryscheme;
     /**
      * @var \Controle\PromotionMethodCodeType | The type of cross promotion, CrossSell or UpSell.
      */
-    public $PromotionMethod;
+    public $promotionmethod;
     /**
      * @var string | The eBay ID of the seller who listed the item. <br><br> Starting Jan 2007, when a bidder's
      * user info is made anonymous, this tag will be returned with the anonymous value "Seller
@@ -26,24 +28,24 @@ class CrossPromotionsType {
      * has purchased items from. For example, if the seller is the third seller that the user
      * has purchased items from, the value "Seller 3" is returned.
      */
-    public $SellerID;
+    public $sellerid;
     /**
      * @var boolean | Whether a shipping discount is offered by the seller when the cross-promoted item is
      * purchased.
      */
-    public $ShippingDiscount;
+    public $shippingdiscount;
     /**
      * @var string | The key of the seller who is promoting the item.
      */
-    public $SellerKey;
+    public $sellerkey;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $StoreName;
+    public $storename;
     /**
      * @var \Controle\PromotedItemType | The unique item ID of the cross-promoted item. Use for an ItemToItem rule.
      */
-    public $PromotedItem;
+    public $promoteditem;
     /**
      * @var \Controle\<anyXML>
      */
@@ -52,82 +54,89 @@ class CrossPromotionsType {
      * @param ItemIDType $val
      * @throws Exception
      */
-    public function setItemID($val) {
-        
-        $this->ItemID = (int)$val;
+    public function setItemID($val)
+    {
+        $this->itemid = (int)$val;
     }
 
     /**
      * @param PromotionSchemeCodeType $val
      * @throws Exception
      */
-    public function setPrimaryScheme($val) {
-        
-        $this->PrimaryScheme = (int)$val;
+    public function setPrimaryScheme($val)
+    {
+        $this->primaryscheme = (int)$val;
     }
 
     /**
      * @param PromotionMethodCodeType $val
      * @throws Exception
      */
-    public function setPromotionMethod($val) {
-        
-        $this->PromotionMethod = (int)$val;
+    public function setPromotionMethod($val)
+    {
+        $this->promotionmethod = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setSellerID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerID');
-        $this->SellerID = (int)$val;
+    public function setSellerID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SellerID');
+        }
+        $this->sellerid = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setShippingDiscount($val) {
-        
-        $this->ShippingDiscount = (int)$val;
+    public function setShippingDiscount($val)
+    {
+        $this->shippingdiscount = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setSellerKey($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerKey');
-        $this->SellerKey = (int)$val;
+    public function setSellerKey($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for SellerKey');
+        }
+        $this->sellerkey = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setStoreName($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
-        $this->StoreName = (int)$val;
+    public function setStoreName($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for StoreName');
+        }
+        $this->storename = (int)$val;
     }
 
     /**
      * @param PromotedItemType $val
      * @throws Exception
      */
-    public function setPromotedItem($val) {
-        
-        $this->PromotedItem = (int)$val;
+    public function setPromotedItem($val)
+    {
+        $this->promoteditem = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

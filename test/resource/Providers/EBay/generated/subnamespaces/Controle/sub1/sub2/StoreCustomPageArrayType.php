@@ -1,23 +1,23 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * StoreCustomPageArrayType
  * Set of Store custom pages.
  */
-class StoreCustomPageArrayType {
+class StoreCustomPageArrayType
+{
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomPageType | A Store custom page.
 	 */
-	public $CustomPage;
+	public $custompage;
 	/**
 	 * @param StoreCustomPageType $val
 	 * @throws Exception
 	 */
-	public function setCustomPage($val) {
-		
-		$this->CustomPage = (int)$val;
+	public function setCustomPage($val)
+	{
+        $this->custompage = (int)$val;
 	}
-
 }
-

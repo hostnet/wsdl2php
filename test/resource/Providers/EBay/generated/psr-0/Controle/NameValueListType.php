@@ -1,19 +1,21 @@
 <?php
 
 namespace Controle;
+
 /**
  * NameValueListType
  * A name and corresponding value (a name/value pair).
  */
-class NameValueListType {
+class NameValueListType
+{
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $Name;
+	public $name;
 	/**
 	 * @var string | Specifies the value for the property.
 	 */
-	public $Value;
+	public $value;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -22,28 +24,32 @@ class NameValueListType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
-		$this->Name = (int)$val;
+	public function setName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Name');
+        }
+        $this->name = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setValue($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
-		$this->Value = (int)$val;
+	public function setValue($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Value');
+        }
+        $this->value = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

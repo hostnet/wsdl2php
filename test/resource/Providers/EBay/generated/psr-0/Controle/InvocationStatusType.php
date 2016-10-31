@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class InvocationStatusType {
-	const InProgress = 'InProgress';
-	const Success = 'Success';
-	const Failure = 'Failure';
-	const CustomCode = 'CustomCode';
-}
 
+class InvocationStatusType
+{
+	const INPROGRESS = 'InProgress';
+	const SUCCESS    = 'Success';
+	const FAILURE    = 'Failure';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,23 +1,23 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * StoreLogoArrayType
  * Set of Store logos.
  */
-class StoreLogoArrayType {
+class StoreLogoArrayType
+{
 	/**
 	 * @var \Controle\sub1\sub2\StoreLogoType | Store logo.
 	 */
-	public $Logo;
+	public $logo;
 	/**
 	 * @param StoreLogoType $val
 	 * @throws Exception
 	 */
-	public function setLogo($val) {
-		
-		$this->Logo = (int)$val;
+	public function setLogo($val)
+	{
+        $this->logo = (int)$val;
 	}
-
 }
-

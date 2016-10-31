@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetSellerTransactionsResponseType
  * Returns an array of transaction data for the seller specified in the request. The results
@@ -13,23 +14,25 @@ namespace Controle;
  * specified in the request, returns meta-data describing the effects of those filters on the
  * current response and the estimated effects if the same filters are used in subsequent calls.
  */
-class GetSellerTransactionsResponseType extends \Controle\AbstractResponseType {
+class GetSellerTransactionsResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $PaginationResult;
+    public $paginationresult;
     /**
      * @var boolean | Indicates whether there are additional transactions to retrieve. That is, indicates
      * whether more pages of data are available to be returned, given the filters that were
      * specified in the request. Returns false for the last page of data.
      */
-    public $HasMoreTransactions;
+    public $hasmoretransactions;
     /**
      * @var int | Number of transactions returned per page (per call). May be a higher value than ReturnedTransactionCountActual
      * if the page returned is the last page and more than one page of data exists.
      */
-    public $TransactionsPerPage;
+    public $transactionsperpage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -38,98 +41,105 @@ class GetSellerTransactionsResponseType extends \Controle\AbstractResponseType {
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $PageNumber;
+    public $pagenumber;
     /**
      * @var int | Number of transactions retrieved in the current page of results just returned. May be
      * a lower value than TransactionsPerPage if the page returned is the last page and more
      * than one page of data exists.
      */
-    public $ReturnedTransactionCountActual;
+    public $returnedtransactioncountactual;
     /**
      * @var \Controle\UserType | Container for information about this listing's seller. Not applicable to Half.com. <br> <br> In
      * GetSearchResultsExpress, only returned when ItemDetails is set to Fine.
      */
-    public $Seller;
+    public $seller;
     /**
      * @var \Controle\TransactionArrayType | Contains a list of transactions. Returned as an empty tag if no applicable transactions
      * exist.
      */
-    public $TransactionArray;
+    public $transactionarray;
     /**
      * @var boolean | Specifies whether a seller wants to let buyers know that PayPal payments are preferred.
      */
-    public $PayPalPreferred;
+    public $paypalpreferred;
     /**
      * @param PaginationResultType $val
      * @throws Exception
      */
-    public function setPaginationResult($val) {
-        
-        $this->PaginationResult = (int)$val;
+    public function setPaginationResult($val)
+    {
+        $this->paginationresult = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setHasMoreTransactions($val) {
-        
-        $this->HasMoreTransactions = (int)$val;
+    public function setHasMoreTransactions($val)
+    {
+        $this->hasmoretransactions = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setTransactionsPerPage($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->TransactionsPerPage = (int)$val;
+    public function setTransactionsPerPage($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->transactionsperpage = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setPageNumber($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->PageNumber = (int)$val;
+    public function setPageNumber($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->pagenumber = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setReturnedTransactionCountActual($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->ReturnedTransactionCountActual = (int)$val;
+    public function setReturnedTransactionCountActual($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->returnedtransactioncountactual = (int)$val;
     }
 
     /**
      * @param UserType $val
      * @throws Exception
      */
-    public function setSeller($val) {
-        
-        $this->Seller = (int)$val;
+    public function setSeller($val)
+    {
+        $this->seller = (int)$val;
     }
 
     /**
      * @param TransactionArrayType $val
      * @throws Exception
      */
-    public function setTransactionArray($val) {
-        
-        $this->TransactionArray = (int)$val;
+    public function setTransactionArray($val)
+    {
+        $this->transactionarray = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setPayPalPreferred($val) {
-        
-        $this->PayPalPreferred = (int)$val;
+    public function setPayPalPreferred($val)
+    {
+        $this->paypalpreferred = (int)$val;
     }
-
 }
-

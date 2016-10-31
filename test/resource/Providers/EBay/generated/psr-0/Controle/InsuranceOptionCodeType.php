@@ -1,12 +1,13 @@
 <?php
 
 namespace Controle;
-class InsuranceOptionCodeType {
-	const Optional = 'Optional';
-	const Required = 'Required';
-	const NotOffered = 'NotOffered';
-	const IncludedInShippingHandling = 'IncludedInShippingHandling';
-	const NotOfferedOnSite = 'NotOfferedOnSite';
-	const CustomCode = 'CustomCode';
-}
 
+class InsuranceOptionCodeType
+{
+	const OPTIONAL                   = 'Optional';
+	const REQUIRED                   = 'Required';
+	const NOTOFFERED                 = 'NotOffered';
+	const INCLUDEDINSHIPPINGHANDLING = 'IncludedInShippingHandling';
+	const NOTOFFEREDONSITE           = 'NotOfferedOnSite';
+	const CUSTOMCODE                 = 'CustomCode';
+}

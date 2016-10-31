@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetNotificationPreferencesResponseType
  * Contains the requesting application's notification preferences. GetNotificationPreferences
@@ -9,60 +10,60 @@ namespace Controle;
  * Disabled. But if you have never set a preference for the EndOfAuction event, no EndOfAuction
  * preference is returned at all.
  */
-class GetNotificationPreferencesResponseType extends \Controle\AbstractResponseType {
+class GetNotificationPreferencesResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\ApplicationDeliveryPreferencesType | Specifies application-based event preferences that have been enabled.
      */
-    public $ApplicationDeliveryPreferences;
+    public $applicationdeliverypreferences;
     /**
      * @var \Controle\NotificationEnableArrayType | Array of NotificationEventEnableTypes. Each NotificationEventEnableType contains an
      * EventSetting and an EventType.
      */
-    public $UserDeliveryPreferenceArray;
+    public $userdeliverypreferencearray;
     /**
      * @var \Controle\NotificationUserDataType | Specifies user data for notification settings such as mobile phone number.
      */
-    public $UserData;
+    public $userdata;
     /**
      * @var \Controle\NotificationEventPropertyType | Characteristics or details of an event such as type, name and value. Currently can only
      * be set for wireless applications.
      */
-    public $EventProperty;
+    public $eventproperty;
     /**
      * @param ApplicationDeliveryPreferencesType $val
      * @throws Exception
      */
-    public function setApplicationDeliveryPreferences($val) {
-        
-        $this->ApplicationDeliveryPreferences = (int)$val;
+    public function setApplicationDeliveryPreferences($val)
+    {
+        $this->applicationdeliverypreferences = (int)$val;
     }
 
     /**
      * @param NotificationEnableArrayType $val
      * @throws Exception
      */
-    public function setUserDeliveryPreferenceArray($val) {
-        
-        $this->UserDeliveryPreferenceArray = (int)$val;
+    public function setUserDeliveryPreferenceArray($val)
+    {
+        $this->userdeliverypreferencearray = (int)$val;
     }
 
     /**
      * @param NotificationUserDataType $val
      * @throws Exception
      */
-    public function setUserData($val) {
-        
-        $this->UserData = (int)$val;
+    public function setUserData($val)
+    {
+        $this->userdata = (int)$val;
     }
 
     /**
      * @param NotificationEventPropertyType $val
      * @throws Exception
      */
-    public function setEventProperty($val) {
-        
-        $this->EventProperty = (int)$val;
+    public function setEventProperty($val)
+    {
+        $this->eventproperty = (int)$val;
     }
-
 }
-

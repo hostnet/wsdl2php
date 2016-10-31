@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class StringMatchCodeType {
-    const CustomCode = 'CustomCode';
-    const StartsWith = 'StartsWith';
-    const Contains = 'Contains';
-}
 
+class StringMatchCodeType
+{
+    const CUSTOMCODE = 'CustomCode';
+    const STARTSWITH = 'StartsWith';
+    const CONTAINS   = 'Contains';
+}

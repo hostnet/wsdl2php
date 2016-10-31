@@ -1,12 +1,15 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetCharitiesResponseType
  * Contains information about charity nonprofit organizations that meet the criteria specified
  * in the request.
  */
-class GetCharitiesResponseType extends \Controle\AbstractResponseType {
+class GetCharitiesResponseType extends
+ \Controle\AbstractResponseType
+{
 	/**
 	 * @var \Controle\CharityInfoType | Identifies a Giving Works listing and the benefiting nonprofit charity organization selected
 	 * by the charity seller, if any. If specified, the seller must also accept PayPal as a payment
@@ -17,15 +20,13 @@ class GetCharitiesResponseType extends \Controle\AbstractResponseType {
 	 * it. When you relist an item, use DeletedField to remove a charity information. <br><br> Not
 	 * applicable to Half.com.
 	 */
-	public $Charity;
+	public $charity;
 	/**
 	 * @param CharityInfoType $val
 	 * @throws Exception
 	 */
-	public function setCharity($val) {
-		
-		$this->Charity = (int)$val;
+	public function setCharity($val)
+	{
+        $this->charity = (int)$val;
 	}
-
 }
-

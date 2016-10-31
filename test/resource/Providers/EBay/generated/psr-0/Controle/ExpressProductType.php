@@ -1,40 +1,42 @@
 <?php
 
 namespace Controle;
+
 /**
  * ExpressProductType
  * Information that eBay Express collects about an eBay catalog product.
  */
-class ExpressProductType {
+class ExpressProductType
+{
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $Title;
+	public $title;
 	/**
 	 * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
 	 */
-	public $MinPrice;
+	public $minprice;
 	/**
 	 * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
 	 */
-	public $MaxPrice;
+	public $maxprice;
 	/**
 	 * @var \Controle\anyURI | Fully qualified URL for a standard image (if any) that is associated with the product. A
 	 * seller includes the stock photo in the listing by setting IncludeStockPhotoURL.
 	 */
-	public $StockPhotoURL;
+	public $stockphotourl;
 	/**
 	 * @var int | Total number of active listings (on the specified Express site) that were pre-filled based
 	 * on this eBay catalog product. Only returned when ProductDetails is set to Fine. This does
 	 * not necessarily match the number of items returned in ItemArray (if any), because the call
 	 * returns deduped items in ItemArray.
 	 */
-	public $ItemCount;
+	public $itemcount;
 	/**
 	 * @var \Controle\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
 	 * item. All Half.com items are listed with Pre-filled Item Information.
 	 */
-	public $ExternalProductID;
+	public $externalproductid;
 	/**
 	 * @var long | The global reference ID for the eBay catalog product. Only returned when ProductDetails
 	 * is set to Fine.<br> <br> <span class="tablenote"><b>Note:</b> This value is not the same
@@ -44,7 +46,7 @@ class ExpressProductType {
 	 * product, which is useful for buy-side searching. One ProductReferenceID can be associated
 	 * with multiple ProductIDs.</span>
 	 */
-	public $ProductReferenceID;
+	public $productreferenceid;
 	/**
 	 * @var \Controle\NameValueListArrayType | A list of attribute and value pairs that are included in the product's pre-filled Item
 	 * Specifics and that are applicable in Express search results. This does not necessarily
@@ -52,7 +54,7 @@ class ExpressProductType {
 	 * it returns only the top attributes (as determined by Express). See ExternalProductID for
 	 * the ISBN or UPC, if applicable. Only returned when ProductDetails is set to Fine.
 	 */
-	public $ItemSpecifics;
+	public $itemspecifics;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -61,82 +63,86 @@ class ExpressProductType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setTitle($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
-		$this->Title = (int)$val;
+	public function setTitle($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Title');
+        }
+        $this->title = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setMinPrice($val) {
-		
-		$this->MinPrice = (int)$val;
+	public function setMinPrice($val)
+	{
+        $this->minprice = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setMaxPrice($val) {
-		
-		$this->MaxPrice = (int)$val;
+	public function setMaxPrice($val)
+	{
+        $this->maxprice = (int)$val;
 	}
 
 	/**
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
-	public function setStockPhotoURL($val) {
-		
-		$this->StockPhotoURL = (int)$val;
+	public function setStockPhotoURL($val)
+	{
+        $this->stockphotourl = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setItemCount($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->ItemCount = (int)$val;
+	public function setItemCount($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->itemcount = (int)$val;
 	}
 
 	/**
 	 * @param ExternalProductIDType $val
 	 * @throws Exception
 	 */
-	public function setExternalProductID($val) {
-		
-		$this->ExternalProductID = (int)$val;
+	public function setExternalProductID($val)
+	{
+        $this->externalproductid = (int)$val;
 	}
 
 	/**
 	 * @param long $val
 	 * @throws Exception
 	 */
-	public function setProductReferenceID($val) {
-		
-		$this->ProductReferenceID = (int)$val;
+	public function setProductReferenceID($val)
+	{
+        $this->productreferenceid = (int)$val;
 	}
 
 	/**
 	 * @param NameValueListArrayType $val
 	 * @throws Exception
 	 */
-	public function setItemSpecifics($val) {
-		
-		$this->ItemSpecifics = (int)$val;
+	public function setItemSpecifics($val)
+	{
+        $this->itemspecifics = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

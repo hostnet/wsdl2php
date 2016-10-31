@@ -9,8 +9,10 @@ class GoogleSearchServiceClient extends \SoapClient {
 
     const WSDL_FILE = "GoogleSearchTest.wsdl";
     private $classmap = array(
-        'GoogleSearchResult' => '\Controle\GoogleSearchResult',
-        'DirectoryCategory' => '\Controle\DirectoryCategory',
+        'GoogleSearchResult\,' =>
+            '\Controle\GoogleSearchResult',
+        'DirectoryCategory\,' =>
+            '\Controle\DirectoryCategory',
     );
 
     public function __construct($wsdl = null, $options = array()) {
@@ -36,8 +38,8 @@ class GoogleSearchServiceClient extends \SoapClient {
         return $this->__soapCall(
             'doGetCachedPage',
             array(
-                $key,
-                $url
+            $key,
+            $url
                 ),
             array('uri'=>'urn:GoogleSearch')
         );
@@ -54,8 +56,8 @@ class GoogleSearchServiceClient extends \SoapClient {
         return $this->__soapCall(
             'doSpellingSuggestion',
             array(
-                $key,
-                $phrase
+            $key,
+            $phrase
                 ),
             array('uri'=>'urn:GoogleSearch')
         );
@@ -80,19 +82,18 @@ class GoogleSearchServiceClient extends \SoapClient {
         return $this->__soapCall(
             'doGoogleSearch',
             array(
-                $key,
-                $q,
-                $start,
-                $maxResults,
-                $filter,
-                $restrict,
-                $safeSearch,
-                $lr,
-                $ie,
-                $oe
+            $key,
+            $q,
+            $start,
+            $maxResults,
+            $filter,
+            $restrict,
+            $safeSearch,
+            $lr,
+            $ie,
+            $oe
                 ),
             array('uri'=>'urn:GoogleSearch')
         );
     }
-
 }

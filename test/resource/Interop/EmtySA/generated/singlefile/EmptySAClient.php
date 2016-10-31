@@ -8,10 +8,10 @@ class EmptySAClient extends SoapClient {
 	const WSDL_FILE = "EmptySATest.wsdl";
 
 	public function __construct($wsdl = null, $options = array()) {
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        (isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
+        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 
 	/**
@@ -21,11 +21,10 @@ class EmptySAClient extends SoapClient {
 	 * @return string
 	 */
 	public function echoString($a) {
-		return $this->__soapCall(
-			'echoString',
-			array($a),
-			array('uri'=>'http://soapinterop/')
-		);
+        return $this->__soapCall(
+            'echoString',
+            array($a),
+            array('uri'=>'http://soapinterop/')
+        );
 	}
-
 }

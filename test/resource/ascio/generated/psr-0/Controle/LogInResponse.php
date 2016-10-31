@@ -1,32 +1,35 @@
 <?php
 
 namespace Controle;
-class LogInResponse {
+
+class LogInResponse
+{
 	/**
 	 * @var \Controle\Response
 	 */
-	public $LogInResult;
+	public $loginresult;
 	/**
 	 * @var string
 	 */
-	public $sessionId;
+	public $sessionid;
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setLogInResult($val) {
-		
-		$this->LogInResult = (int)$val;
+	public function setLogInResult($val)
+	{
+        $this->loginresult = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setSessionId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
-		$this->sessionId = (int)$val;
+	public function setSessionId($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for sessionId');
+        }
+        $this->sessionid = (int)$val;
 	}
-
 }
-

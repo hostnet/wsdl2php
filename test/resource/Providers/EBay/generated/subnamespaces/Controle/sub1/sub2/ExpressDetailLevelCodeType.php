@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class ExpressDetailLevelCodeType {
-	const Coarse = 'Coarse';
-	const Fine = 'Fine';
-	const None = 'None';
-	const CustomCode = 'CustomCode';
-}
 
+class ExpressDetailLevelCodeType
+{
+	const COARSE     = 'Coarse';
+	const FINE       = 'Fine';
+	const NONE       = 'None';
+	const CUSTOMCODE = 'CustomCode';
+}

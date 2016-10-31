@@ -1,58 +1,67 @@
 <?php
 
 namespace Controle;
-class ShoppingCart {
+
+class ShoppingCart
+{
     /**
      * @var string
      */
-    public $CartId;
+    public $cartid;
     /**
      * @var string
      */
-    public $HMAC;
+    public $hmac;
     /**
      * @var string
      */
-    public $PurchaseUrl;
+    public $purchaseurl;
     /**
      * @var \Controle\ItemArray
      */
-    public $Items;
+    public $items;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setCartId($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CartId');
-        $this->CartId = (int)$val;
+    public function setCartId($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CartId');
+        }
+        $this->cartid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setHMAC($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for HMAC');
-        $this->HMAC = (int)$val;
+    public function setHMAC($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for HMAC');
+        }
+        $this->hmac = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setPurchaseUrl($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PurchaseUrl');
-        $this->PurchaseUrl = (int)$val;
+    public function setPurchaseUrl($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for PurchaseUrl');
+        }
+        $this->purchaseurl = (int)$val;
     }
 
     /**
      * @param ItemArray $val
      * @throws Exception
      */
-    public function setItems($val) {
-        
-        $this->Items = (int)$val;
+    public function setItems($val)
+    {
+        $this->items = (int)$val;
     }
-
 }
-

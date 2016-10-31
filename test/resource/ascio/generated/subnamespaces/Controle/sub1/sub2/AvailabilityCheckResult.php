@@ -1,58 +1,67 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class AvailabilityCheckResult {
+
+class AvailabilityCheckResult
+{
 	/**
 	 * @var string
 	 */
-	public $DomainName;
+	public $domainname;
 	/**
 	 * @var \Controle\sub1\sub2\QualityType
 	 */
-	public $Quality;
+	public $quality;
 	/**
 	 * @var int
 	 */
-	public $StatusCode;
+	public $statuscode;
 	/**
 	 * @var string
 	 */
-	public $StatusMessage;
+	public $statusmessage;
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDomainName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DomainName');
-		$this->DomainName = (int)$val;
+	public function setDomainName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DomainName');
+        }
+        $this->domainname = (int)$val;
 	}
 
 	/**
 	 * @param QualityType $val
 	 * @throws Exception
 	 */
-	public function setQuality($val) {
-		
-		$this->Quality = (int)$val;
+	public function setQuality($val)
+	{
+        $this->quality = (int)$val;
 	}
 
 	/**
 	 * @param int $val
 	 * @throws Exception
 	 */
-	public function setStatusCode($val) {
-		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-		$this->StatusCode = (int)$val;
+	public function setStatusCode($val)
+	{
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->statuscode = (int)$val;
 	}
 
 	/**
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setStatusMessage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for StatusMessage');
-		$this->StatusMessage = (int)$val;
+	public function setStatusMessage($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for StatusMessage');
+        }
+        $this->statusmessage = (int)$val;
 	}
-
 }
-

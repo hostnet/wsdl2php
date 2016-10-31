@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class SellerFeedback {
+
+class SellerFeedback
+{
 	/**
 	 * @var \Controle\FeedbackArray
 	 */
-	public $Feedback;
+	public $feedback;
 	/**
 	 * @param FeedbackArray $val
 	 * @throws Exception
 	 */
-	public function setFeedback($val) {
-		
-		$this->Feedback = (int)$val;
+	public function setFeedback($val)
+	{
+        $this->feedback = (int)$val;
 	}
-
 }
-

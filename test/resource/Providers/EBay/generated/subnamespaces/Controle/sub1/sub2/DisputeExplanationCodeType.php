@@ -1,20 +1,21 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class DisputeExplanationCodeType {
-	const BuyerHasNotResponded = 'BuyerHasNotResponded';
-	const BuyerRefusedToPay = 'BuyerRefusedToPay';
-	const BuyerNotClearedToPay = 'BuyerNotClearedToPay';
-	const BuyerReturnedItemForRefund = 'BuyerReturnedItemForRefund';
-	const UnableToResolveTerms = 'UnableToResolveTerms';
-	const BuyerNoLongerWantsItem = 'BuyerNoLongerWantsItem';
-	const BuyerPurchasingMistake = 'BuyerPurchasingMistake';
-	const ShipCountryNotSupported = 'ShipCountryNotSupported';
-	const ShippingAddressNotConfirmed = 'ShippingAddressNotConfirmed';
-	const PaymentMethodNotSupported = 'PaymentMethodNotSupported';
-	const BuyerNoLongerRegistered = 'BuyerNoLongerRegistered';
-	const OtherExplanation = 'OtherExplanation';
-	const Unspecified = 'Unspecified';
-	const CustomCode = 'CustomCode';
-}
 
+class DisputeExplanationCodeType
+{
+	const BUYERHASNOTRESPONDED        = 'BuyerHasNotResponded';
+	const BUYERREFUSEDTOPAY           = 'BuyerRefusedToPay';
+	const BUYERNOTCLEAREDTOPAY        = 'BuyerNotClearedToPay';
+	const BUYERRETURNEDITEMFORREFUND  = 'BuyerReturnedItemForRefund';
+	const UNABLETORESOLVETERMS        = 'UnableToResolveTerms';
+	const BUYERNOLONGERWANTSITEM      = 'BuyerNoLongerWantsItem';
+	const BUYERPURCHASINGMISTAKE      = 'BuyerPurchasingMistake';
+	const SHIPCOUNTRYNOTSUPPORTED     = 'ShipCountryNotSupported';
+	const SHIPPINGADDRESSNOTCONFIRMED = 'ShippingAddressNotConfirmed';
+	const PAYMENTMETHODNOTSUPPORTED   = 'PaymentMethodNotSupported';
+	const BUYERNOLONGERREGISTERED     = 'BuyerNoLongerRegistered';
+	const OTHEREXPLANATION            = 'OtherExplanation';
+	const UNSPECIFIED                 = 'Unspecified';
+	const CUSTOMCODE                  = 'CustomCode';
+}

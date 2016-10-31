@@ -1,22 +1,24 @@
 <?php
 
 namespace Controle;
+
 /**
  * SummaryEventScheduleType
  * Details about a summary event schedule.
  */
-class SummaryEventScheduleType {
+class SummaryEventScheduleType
+{
 	/**
 	 * @var \Controle\NotificationEventTypeCodeType | 	 */
-	public $EventType;
+	public $eventtype;
 	/**
 	 * @var \Controle\SummaryWindowPeriodCodeType | The period of time for which to create a summary.
 	 */
-	public $SummaryPeriod;
+	public $summaryperiod;
 	/**
 	 * @var \Controle\SummaryFrequencyCodeType | How often the summary is to be delivered.
 	 */
-	public $Frequency;
+	public $frequency;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -25,37 +27,35 @@ class SummaryEventScheduleType {
 	 * @param NotificationEventTypeCodeType $val
 	 * @throws Exception
 	 */
-	public function setEventType($val) {
-		
-		$this->EventType = (int)$val;
+	public function setEventType($val)
+	{
+        $this->eventtype = (int)$val;
 	}
 
 	/**
 	 * @param SummaryWindowPeriodCodeType $val
 	 * @throws Exception
 	 */
-	public function setSummaryPeriod($val) {
-		
-		$this->SummaryPeriod = (int)$val;
+	public function setSummaryPeriod($val)
+	{
+        $this->summaryperiod = (int)$val;
 	}
 
 	/**
 	 * @param SummaryFrequencyCodeType $val
 	 * @throws Exception
 	 */
-	public function setFrequency($val) {
-		
-		$this->Frequency = (int)$val;
+	public function setFrequency($val)
+	{
+        $this->frequency = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

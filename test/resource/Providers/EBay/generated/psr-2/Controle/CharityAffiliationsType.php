@@ -1,16 +1,18 @@
 <?php
 
 namespace Controle;
+
 /**
  * CharityAffiliationsType
  * Lists the nonprofit charity organization affiliations for a specified user.
  */
-class CharityAffiliationsType {
+class CharityAffiliationsType
+{
     /**
      * @var \Controle\CharityIDType | A unique identification number assigned by eBay to registered nonprofit charity organizations.
      * Required input when listing Giving Works items.
      */
-    public $CharityID;
+    public $charityid;
     /**
      * @var \Controle\<anyXML>
      */
@@ -19,19 +21,17 @@ class CharityAffiliationsType {
      * @param CharityIDType $val
      * @throws Exception
      */
-    public function setCharityID($val) {
-        
-        $this->CharityID = (int)$val;
+    public function setCharityID($val)
+    {
+        $this->charityid = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

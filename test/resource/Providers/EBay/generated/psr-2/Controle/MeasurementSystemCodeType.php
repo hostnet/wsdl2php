@@ -1,8 +1,9 @@
 <?php
 
 namespace Controle;
-class MeasurementSystemCodeType {
-    const English = 'English';
-    const Metric = 'Metric';
-}
 
+class MeasurementSystemCodeType
+{
+    const ENGLISH = 'English';
+    const METRIC  = 'Metric';
+}

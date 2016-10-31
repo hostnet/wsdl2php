@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetProductSearchPageResponseType
  * For a category that is catalog-enabled, GetProductSearchPage retrieves the attributes
@@ -8,36 +9,39 @@ namespace Controle;
  *  See the Developer's Guide for an overview of Pre-filled Item Information and details about
  *      searching for catalog products.
  */
-class GetProductSearchPageResponseType extends \Controle\AbstractResponseType {
+class GetProductSearchPageResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $AttributeSystemVersion;
+    public $attributesystemversion;
     /**
      * @var \Controle\ProductSearchPageType | A list of catalog search criteria and sort keys associated with a catalog-enabled category, plus
      * supplemental information to help the seller understand how to make selections.
      */
-    public $ProductSearchPage;
+    public $productsearchpage;
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setAttributeSystemVersion($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
-        $this->AttributeSystemVersion = (int)$val;
+    public function setAttributeSystemVersion($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+        }
+        $this->attributesystemversion = (int)$val;
     }
 
     /**
      * @param ProductSearchPageType $val
      * @throws Exception
      */
-    public function setProductSearchPage($val) {
-        
-        $this->ProductSearchPage = (int)$val;
+    public function setProductSearchPage($val)
+    {
+        $this->productsearchpage = (int)$val;
     }
-
 }
-

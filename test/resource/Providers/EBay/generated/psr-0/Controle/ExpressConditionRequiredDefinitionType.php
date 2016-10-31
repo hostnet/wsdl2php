@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * ExpressConditionRequiredDefinitionType
  * For the US and Germany sites, an eBay item must meet a number of eligibility requirements
@@ -8,7 +9,8 @@ namespace Controle;
  * the Item Condition attribute (using Item Specifics). Some categories may waive this requirement. Currently,
  * this type defines no special meta-data. (An empty element is returned.)
  */
-class ExpressConditionRequiredDefinitionType {
+class ExpressConditionRequiredDefinitionType
+{
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -17,10 +19,8 @@ class ExpressConditionRequiredDefinitionType {
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

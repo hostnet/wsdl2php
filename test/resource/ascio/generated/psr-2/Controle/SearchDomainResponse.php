@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
-class SearchDomainResponse {
+
+class SearchDomainResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $SearchDomainResult;
+    public $searchdomainresult;
     /**
      * @var array \Controle\Domain
      */
@@ -14,19 +16,17 @@ class SearchDomainResponse {
      * @param Response $val
      * @throws Exception
      */
-    public function setSearchDomainResult($val) {
-        
-        $this->SearchDomainResult = (int)$val;
+    public function setSearchDomainResult($val)
+    {
+        $this->searchdomainresult = (int)$val;
     }
 
     /**
      * @param ArrayOfDomain $val
      * @throws Exception
      */
-    public function setDomains($val) {
-        
+    public function setDomains($val)
+    {
         $this->domains = (int)$val;
     }
-
 }
-

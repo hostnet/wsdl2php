@@ -1,29 +1,31 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * ProductSearchPageType
  *
  */
-class ProductSearchPageType {
+class ProductSearchPageType
+{
 	/**
 	 * @var string | Applications should remove dependencies on this element.
 	 */
-	public $DataElements;
+	public $dataelements;
 	/**
 	 * @var \Controle\sub1\sub2\CharacteristicsSetType | A list of attributes that describe the choice of search criteria          for the specified
 	 * characteristic set. The order in which the criteria are returned          is not significant
 	 * and may vary for different requests. See the eBay Web Services guide          for details
 	 * about how to use this data as input to GetProductSearchResults.
 	 */
-	public $SearchCharacteristicsSet;
+	public $searchcharacteristicsset;
 	/**
 	 * @var \Controle\sub1\sub2\CharacteristicsSearchCodeType | Indicates whether one attribute or multiple attributes can be used as the search keyword
 	 *          when calling GetProductSearchResults. Applications can ignore this data because
 	 *          GetProductSearchPage only supports single-attribute searches.          Use GetProductFinder
 	 * to determine valid multi-attribute searches.
 	 */
-	public $SearchType;
+	public $searchtype;
 	/**
 	 * @var \Controle\sub1\sub2\CharacteristicType | A product aspect or feature that can be used as a key for sorting catalog search results.
 	 *          This does not necessarily match a searchable attribute. For example, you might
@@ -36,11 +38,11 @@ class ProductSearchPageType {
 	 * for          different requests.          See the eBay Web Services guide for details about
 	 * how to use this data as input to          GetProductSearchResults.
 	 */
-	public $SortCharacteristics;
+	public $sortcharacteristics;
 	/**
 	 * @var \Controle\sub1\sub2\DataElementSetType | Contains helpful hints for the user. Usage of this information is optional.
 	 */
-	public $DataElementSet;
+	public $dataelementset;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -49,55 +51,56 @@ class ProductSearchPageType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setDataElements($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DataElements');
-		$this->DataElements = (int)$val;
+	public function setDataElements($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for DataElements');
+        }
+        $this->dataelements = (int)$val;
 	}
 
 	/**
 	 * @param CharacteristicsSetType $val
 	 * @throws Exception
 	 */
-	public function setSearchCharacteristicsSet($val) {
-		
-		$this->SearchCharacteristicsSet = (int)$val;
+	public function setSearchCharacteristicsSet($val)
+	{
+        $this->searchcharacteristicsset = (int)$val;
 	}
 
 	/**
 	 * @param CharacteristicsSearchCodeType $val
 	 * @throws Exception
 	 */
-	public function setSearchType($val) {
-		
-		$this->SearchType = (int)$val;
+	public function setSearchType($val)
+	{
+        $this->searchtype = (int)$val;
 	}
 
 	/**
 	 * @param CharacteristicType $val
 	 * @throws Exception
 	 */
-	public function setSortCharacteristics($val) {
-		
-		$this->SortCharacteristics = (int)$val;
+	public function setSortCharacteristics($val)
+	{
+        $this->sortcharacteristics = (int)$val;
 	}
 
 	/**
 	 * @param DataElementSetType $val
 	 * @throws Exception
 	 */
-	public function setDataElementSet($val) {
-		
-		$this->DataElementSet = (int)$val;
+	public function setDataElementSet($val)
+	{
+        $this->dataelementset = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

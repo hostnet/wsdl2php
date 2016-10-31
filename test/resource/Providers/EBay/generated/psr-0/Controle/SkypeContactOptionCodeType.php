@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class SkypeContactOptionCodeType {
-	const Chat = 'Chat';
-	const Voice = 'Voice';
-	const CustomCode = 'CustomCode';
-}
 
+class SkypeContactOptionCodeType
+{
+	const CHAT       = 'Chat';
+	const VOICE      = 'Voice';
+	const CUSTOMCODE = 'CustomCode';
+}

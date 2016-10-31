@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle;
+
 /**
  * ExpansionArrayType
  * Container for items returned with an expanded search.
  */
-class ExpansionArrayType {
+class ExpansionArrayType
+{
     /**
      * @var \Controle\SearchResultItemType | Item that is the result of an expanded search. If, in a GetSearchResults request, you
      * specify true for ExpandSearch, the search is expanded when a small result set is returned.
@@ -18,28 +20,29 @@ class ExpansionArrayType {
      * items available if category filters are removed). The maximum number of items returned
      * in each container is 6 to 10.
      */
-    public $ExpansionItem;
+    public $expansionitem;
     /**
      * @var int | The total number of My eBay Second Chance Offers available.
      */
-    public $TotalAvailable;
+    public $totalavailable;
     /**
      * @param SearchResultItemType $val
      * @throws Exception
      */
-    public function setExpansionItem($val) {
-        
-        $this->ExpansionItem = (int)$val;
+    public function setExpansionItem($val)
+    {
+        $this->expansionitem = (int)$val;
     }
 
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setTotalAvailable($val) {
-        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
-        $this->TotalAvailable = (int)$val;
+    public function setTotalAvailable($val)
+    {
+        if (!is_int($val)) {
+            throw new Exception('POJO Proxy need a integer');
+        }
+        $this->totalavailable = (int)$val;
     }
-
 }
-

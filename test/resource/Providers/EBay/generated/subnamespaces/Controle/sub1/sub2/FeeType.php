@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle\sub1\sub2;
+
 /**
  * FeeType
  * Identifies the name and monetary amount of a fee that a member pays to eBay (or an eBay
@@ -8,15 +9,16 @@ namespace Controle\sub1\sub2;
  * for a listing. Use GetAccount for an accurate final fee breakdown. Returned in AddItemResponseType
  * and related response types.
  */
-class FeeType {
+class FeeType
+{
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $Name;
+	public $name;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Monthly fee for the Store subscription level.
 	 */
-	public $Fee;
+	public $fee;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -25,28 +27,29 @@ class FeeType {
 	 * @param string $val
 	 * @throws Exception
 	 */
-	public function setName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
-		$this->Name = (int)$val;
+	public function setName($val)
+	{
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Name');
+        }
+        $this->name = (int)$val;
 	}
 
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
-	public function setFee($val) {
-		
-		$this->Fee = (int)$val;
+	public function setFee($val)
+	{
+        $this->fee = (int)$val;
 	}
 
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
 	 */
-	public function setAny($val) {
-		
-		$this->any = (int)$val;
+	public function setAny($val)
+	{
+        $this->any = (int)$val;
 	}
-
 }
-

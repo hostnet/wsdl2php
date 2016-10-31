@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class CalculatedShippingChargeOptionCodeType {
-    const ChargeEachItem = 'ChargeEachItem';
-    const ChargeEntireOrder = 'ChargeEntireOrder';
-    const CustomCode = 'CustomCode';
-}
 
+class CalculatedShippingChargeOptionCodeType
+{
+    const CHARGEEACHITEM    = 'ChargeEachItem';
+    const CHARGEENTIREORDER = 'ChargeEntireOrder';
+    const CUSTOMCODE        = 'CustomCode';
+}

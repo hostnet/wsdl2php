@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * AttributeSetArrayType
  * Applicable for listings that include eBay's Item Specifics or Pre-filled Item Information
@@ -11,7 +12,8 @@ namespace Controle;
  * set meta-data.      See the Developer's Guide for information about characteristics meta-data
  * and how to      determine when attributes are required.
  */
-class AttributeSetArrayType {
+class AttributeSetArrayType
+{
     /**
      * @var \Controle\AttributeSetType | A result containing a set of one or more product families. For GetProductSearchResults,
      * if QueryKeywords and multiple characteristic set IDs were specified in the request,
@@ -21,15 +23,13 @@ class AttributeSetArrayType {
      * 387 and higher. For GetProductFamilyMembers, only returned with request version 415
      * and higher.
      */
-    public $AttributeSet;
+    public $attributeset;
     /**
      * @param AttributeSetType $val
      * @throws Exception
      */
-    public function setAttributeSet($val) {
-        
-        $this->AttributeSet = (int)$val;
+    public function setAttributeSet($val)
+    {
+        $this->attributeset = (int)$val;
     }
-
 }
-

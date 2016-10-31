@@ -1,19 +1,20 @@
 <?php
 
 namespace Controle;
-class ListingTypeCodeType {
-	const Unknown = 'Unknown';
-	const Chinese = 'Chinese';
-	const Dutch = 'Dutch';
-	const Live = 'Live';
-	const Auction = 'Auction';
-	const AdType = 'AdType';
-	const StoresFixedPrice = 'StoresFixedPrice';
-	const PersonalOffer = 'PersonalOffer';
-	const FixedPriceItem = 'FixedPriceItem';
-	const Half = 'Half';
-	const LeadGeneration = 'LeadGeneration';
-	const Express = 'Express';
-	const CustomCode = 'CustomCode';
-}
 
+class ListingTypeCodeType
+{
+	const UNKNOWN          = 'Unknown';
+	const CHINESE          = 'Chinese';
+	const DUTCH            = 'Dutch';
+	const LIVE             = 'Live';
+	const AUCTION          = 'Auction';
+	const ADTYPE           = 'AdType';
+	const STORESFIXEDPRICE = 'StoresFixedPrice';
+	const PERSONALOFFER    = 'PersonalOffer';
+	const FIXEDPRICEITEM   = 'FixedPriceItem';
+	const HALF             = 'Half';
+	const LEADGENERATION   = 'LeadGeneration';
+	const EXPRESS          = 'Express';
+	const CUSTOMCODE       = 'CustomCode';
+}

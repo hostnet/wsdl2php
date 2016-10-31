@@ -1,11 +1,12 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class StoreFontFaceCodeType {
-	const Arial = 'Arial';
-	const Courier = 'Courier';
-	const Times = 'Times';
-	const Verdana = 'Verdana';
-	const CustomCode = 'CustomCode';
-}
 
+class StoreFontFaceCodeType
+{
+	const ARIAL      = 'Arial';
+	const COURIER    = 'Courier';
+	const TIMES      = 'Times';
+	const VERDANA    = 'Verdana';
+	const CUSTOMCODE = 'CustomCode';
+}

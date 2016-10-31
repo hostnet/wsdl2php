@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class CreateOrderResponse {
+
+class CreateOrderResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $CreateOrderResult;
+	public $createorderresult;
 	/**
 	 * @var \Controle\sub1\sub2\Order
 	 */
@@ -14,19 +16,17 @@ class CreateOrderResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setCreateOrderResult($val) {
-		
-		$this->CreateOrderResult = (int)$val;
+	public function setCreateOrderResult($val)
+	{
+        $this->createorderresult = (int)$val;
 	}
 
 	/**
 	 * @param Order $val
 	 * @throws Exception
 	 */
-	public function setOrder($val) {
-		
-		$this->order = (int)$val;
+	public function setOrder($val)
+	{
+        $this->order = (int)$val;
 	}
-
 }
-

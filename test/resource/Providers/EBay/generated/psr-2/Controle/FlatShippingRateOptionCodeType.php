@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class FlatShippingRateOptionCodeType {
-    const ChargeAmountForEachAdditionalItem = 'ChargeAmountForEachAdditionalItem';
-    const DeductAmountFromEachAdditionalItem = 'DeductAmountFromEachAdditionalItem';
-    const ShipAdditionalItemsFree = 'ShipAdditionalItemsFree';
-    const CustomCode = 'CustomCode';
-}
 
+class FlatShippingRateOptionCodeType
+{
+    const CHARGEAMOUNTFOREACHADDITIONALITEM  = 'ChargeAmountForEachAdditionalItem';
+    const DEDUCTAMOUNTFROMEACHADDITIONALITEM = 'DeductAmountFromEachAdditionalItem';
+    const SHIPADDITIONALITEMSFREE            = 'ShipAdditionalItemsFree';
+    const CUSTOMCODE                         = 'CustomCode';
+}

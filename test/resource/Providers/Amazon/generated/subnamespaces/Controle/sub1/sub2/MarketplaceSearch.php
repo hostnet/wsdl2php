@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class MarketplaceSearch {
+
+class MarketplaceSearch
+{
 	/**
 	 * @var \Controle\sub1\sub2\MarketplaceSearchDetailsArray
 	 */
-	public $MarketplaceSearchDetails;
+	public $marketplacesearchdetails;
 	/**
 	 * @param MarketplaceSearchDetailsArray $val
 	 * @throws Exception
 	 */
-	public function setMarketplaceSearchDetails($val) {
-		
-		$this->MarketplaceSearchDetails = (int)$val;
+	public function setMarketplaceSearchDetails($val)
+	{
+        $this->marketplacesearchdetails = (int)$val;
 	}
-
 }
-

@@ -1,19 +1,19 @@
 <?php
 
 namespace Controle;
-class UpdateContactResponse {
+
+class UpdateContactResponse
+{
     /**
      * @var \Controle\Response
      */
-    public $UpdateContactResult;
+    public $updatecontactresult;
     /**
      * @param Response $val
      * @throws Exception
      */
-    public function setUpdateContactResult($val) {
-        
-        $this->UpdateContactResult = (int)$val;
+    public function setUpdateContactResult($val)
+    {
+        $this->updatecontactresult = (int)$val;
     }
-
 }
-

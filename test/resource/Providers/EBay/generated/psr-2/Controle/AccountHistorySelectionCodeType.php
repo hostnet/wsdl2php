@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class AccountHistorySelectionCodeType {
-    const LastInvoice = 'LastInvoice';
-    const SpecifiedInvoice = 'SpecifiedInvoice';
-    const BetweenSpecifiedDates = 'BetweenSpecifiedDates';
-    const CustomCode = 'CustomCode';
-}
 
+class AccountHistorySelectionCodeType
+{
+    const LASTINVOICE           = 'LastInvoice';
+    const SPECIFIEDINVOICE      = 'SpecifiedInvoice';
+    const BETWEENSPECIFIEDDATES = 'BetweenSpecifiedDates';
+    const CUSTOMCODE            = 'CustomCode';
+}

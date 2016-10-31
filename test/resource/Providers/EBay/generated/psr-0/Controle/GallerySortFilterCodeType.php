@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class GallerySortFilterCodeType {
-	const ShowAnyItems = 'ShowAnyItems';
-	const ShowItemsWithGalleryImagesFirst = 'ShowItemsWithGalleryImagesFirst';
-	const ShowOnlyItemsWithGalleryImages = 'ShowOnlyItemsWithGalleryImages';
-	const CustomCode = 'CustomCode';
-}
 
+class GallerySortFilterCodeType
+{
+	const SHOWANYITEMS                    = 'ShowAnyItems';
+	const SHOWITEMSWITHGALLERYIMAGESFIRST = 'ShowItemsWithGalleryImagesFirst';
+	const SHOWONLYITEMSWITHGALLERYIMAGES  = 'ShowOnlyItemsWithGalleryImages';
+	const CUSTOMCODE                      = 'CustomCode';
+}

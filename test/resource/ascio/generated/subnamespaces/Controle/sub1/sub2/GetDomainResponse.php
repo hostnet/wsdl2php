@@ -1,11 +1,13 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class GetDomainResponse {
+
+class GetDomainResponse
+{
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $GetDomainResult;
+	public $getdomainresult;
 	/**
 	 * @var \Controle\sub1\sub2\Domain
 	 */
@@ -14,19 +16,17 @@ class GetDomainResponse {
 	 * @param Response $val
 	 * @throws Exception
 	 */
-	public function setGetDomainResult($val) {
-		
-		$this->GetDomainResult = (int)$val;
+	public function setGetDomainResult($val)
+	{
+        $this->getdomainresult = (int)$val;
 	}
 
 	/**
 	 * @param Domain $val
 	 * @throws Exception
 	 */
-	public function setDomain($val) {
-		
-		$this->domain = (int)$val;
+	public function setDomain($val)
+	{
+        $this->domain = (int)$val;
 	}
-
 }
-

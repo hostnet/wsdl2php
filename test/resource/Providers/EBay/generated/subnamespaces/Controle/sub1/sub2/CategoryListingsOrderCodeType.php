@@ -1,15 +1,16 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class CategoryListingsOrderCodeType {
-	const NoFilter = 'NoFilter';
-	const ItemsBy24Hr = 'ItemsBy24Hr';
-	const ItemsEndToday = 'ItemsEndToday';
-	const ItemsEndIn5Hr = 'ItemsEndIn5Hr';
-	const SortByPriceAsc = 'SortByPriceAsc';
-	const SortByPriceDesc = 'SortByPriceDesc';
-	const BestMatchSort = 'BestMatchSort';
-	const DistanceSort = 'DistanceSort';
-	const CustomCode = 'CustomCode';
-}
 
+class CategoryListingsOrderCodeType
+{
+	const NOFILTER        = 'NoFilter';
+	const ITEMSBY24HR     = 'ItemsBy24Hr';
+	const ITEMSENDTODAY   = 'ItemsEndToday';
+	const ITEMSENDIN5HR   = 'ItemsEndIn5Hr';
+	const SORTBYPRICEASC  = 'SortByPriceAsc';
+	const SORTBYPRICEDESC = 'SortByPriceDesc';
+	const BESTMATCHSORT   = 'BestMatchSort';
+	const DISTANCESORT    = 'DistanceSort';
+	const CUSTOMCODE      = 'CustomCode';
+}

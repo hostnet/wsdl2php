@@ -1,6 +1,7 @@
 <?php
 
 namespace Controle;
+
 /**
  * RefundType
  * Contains information about a single refund. A refund contains information about the amount
@@ -8,21 +9,22 @@ namespace Controle;
  * amount refunded from seller, refunded time and total amount refunded to buyer (amount from
  * seller + half)
  */
-class RefundType {
+class RefundType
+{
     /**
      * @var \Controle\AmountType | Total amount refunded by the seller for this transaction. Applicable to Half.com (for
      * GetOrders).
      */
-    public $RefundFromSeller;
+    public $refundfromseller;
     /**
      * @var \Controle\AmountType | Total amount refunded to the buyer for this transaction. Applicable to Half.com (for
      * GetOrders).
      */
-    public $TotalRefundToBuyer;
+    public $totalrefundtobuyer;
     /**
      * @var dateTime | The date and time at which the refund was issued. Applicable to Half.com (for GetOrders).
      */
-    public $RefundTime;
+    public $refundtime;
     /**
      * @var \Controle\<anyXML>
      */
@@ -31,37 +33,35 @@ class RefundType {
      * @param AmountType $val
      * @throws Exception
      */
-    public function setRefundFromSeller($val) {
-        
-        $this->RefundFromSeller = (int)$val;
+    public function setRefundFromSeller($val)
+    {
+        $this->refundfromseller = (int)$val;
     }
 
     /**
      * @param AmountType $val
      * @throws Exception
      */
-    public function setTotalRefundToBuyer($val) {
-        
-        $this->TotalRefundToBuyer = (int)$val;
+    public function setTotalRefundToBuyer($val)
+    {
+        $this->totalrefundtobuyer = (int)$val;
     }
 
     /**
      * @param dateTime $val
      * @throws Exception
      */
-    public function setRefundTime($val) {
-        
-        $this->RefundTime = (int)$val;
+    public function setRefundTime($val)
+    {
+        $this->refundtime = (int)$val;
     }
 
     /**
      * @param <anyXML> $val
      * @throws Exception
      */
-    public function setAny($val) {
-        
+    public function setAny($val)
+    {
         $this->any = (int)$val;
     }
-
 }
-

@@ -1,26 +1,27 @@
 <?php
 
 namespace Controle;
+
 /**
  * GetDisputeResponseType
  * Returned after calling GetDisputeRequest. Returns the record of      a dispute, including
  * the dispute state and other information.
  */
-class GetDisputeResponseType extends \Controle\AbstractResponseType {
+class GetDisputeResponseType extends
+ \Controle\AbstractResponseType
+{
 	/**
 	 * @var \Controle\DisputeType | The information that describes a dispute, including the buyer's name, the transaction ID,
 	 * the dispute state and status, whether the dispute is resolved, and any messages posted
 	 * to the dispute.
 	 */
-	public $Dispute;
+	public $dispute;
 	/**
 	 * @param DisputeType $val
 	 * @throws Exception
 	 */
-	public function setDispute($val) {
-		
-		$this->Dispute = (int)$val;
+	public function setDispute($val)
+	{
+        $this->dispute = (int)$val;
 	}
-
 }
-

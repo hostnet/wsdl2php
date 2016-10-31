@@ -1,10 +1,11 @@
 <?php
 
 namespace Controle;
-class AccountStateCodeType {
-	const Active = 'Active';
-	const Pending = 'Pending';
-	const Inactive = 'Inactive';
-	const CustomCode = 'CustomCode';
-}
 
+class AccountStateCodeType
+{
+	const ACTIVE     = 'Active';
+	const PENDING    = 'Pending';
+	const INACTIVE   = 'Inactive';
+	const CUSTOMCODE = 'CustomCode';
+}

@@ -1,20 +1,23 @@
 <?php
 
 namespace Controle;
+
 /**
  * VerifyAddItemResponseType
  * Returns the estimated fees that would be applicable for a new listing (were the item actually
  * listed to eBay with AddItem).
  */
-class VerifyAddItemResponseType extends \Controle\AbstractResponseType {
+class VerifyAddItemResponseType extends
+ \Controle\AbstractResponseType
+{
     /**
      * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $ItemID;
+    public $itemid;
     /**
      * @var \Controle\FeesType | (Not used.)
      */
-    public $Fees;
+    public $fees;
     /**
      * @var boolean | If true, the item is qualified for the eBay Express site associated with the item's
      * listing site (US or Germany).<br> <br> For fixed-price, Store Inventory, and Express
@@ -24,7 +27,7 @@ class VerifyAddItemResponseType extends \Controle\AbstractResponseType {
      * auction with Buy It Now has bids or not, and see EndTime or Item.TimeLeft to to determine
      * how soon the listing ends.
      */
-    public $ExpressListing;
+    public $expresslisting;
     /**
      * @var \Controle\ExpressItemRequirementsType | Contains details about why an item does or doesn't qualify as an Express listing. Only
      * returned when IncludeExpressRequirements is true the request. Whether a child field
@@ -34,71 +37,75 @@ class VerifyAddItemResponseType extends \Controle\AbstractResponseType {
      * are assessed in this order:<br> - SellerExpressEligible<br> - ExpressOptOut<br> - ExpressApproved<br> -
      * All other settings
      */
-    public $ExpressItemRequirements;
+    public $expressitemrequirements;
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $CategoryID;
+    public $categoryid;
     /**
      * @var string | ID of the secondary category in which the item would be listed. Only returned if you
      * set Item.CategoryMappingAllowed to true in the request and the ID you passed in SecondaryCategory
      * was mapped to a new ID by eBay. If the secondary category has not changed or it has
      * expired with no replacement, Category2ID does not return a value.
      */
-    public $Category2ID;
+    public $category2id;
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
-    public function setItemID($val) {
-        
-        $this->ItemID = (int)$val;
+    public function setItemID($val)
+    {
+        $this->itemid = (int)$val;
     }
 
     /**
      * @param FeesType $val
      * @throws Exception
      */
-    public function setFees($val) {
-        
-        $this->Fees = (int)$val;
+    public function setFees($val)
+    {
+        $this->fees = (int)$val;
     }
 
     /**
      * @param boolean $val
      * @throws Exception
      */
-    public function setExpressListing($val) {
-        
-        $this->ExpressListing = (int)$val;
+    public function setExpressListing($val)
+    {
+        $this->expresslisting = (int)$val;
     }
 
     /**
      * @param ExpressItemRequirementsType $val
      * @throws Exception
      */
-    public function setExpressItemRequirements($val) {
-        
-        $this->ExpressItemRequirements = (int)$val;
+    public function setExpressItemRequirements($val)
+    {
+        $this->expressitemrequirements = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setCategoryID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
-        $this->CategoryID = (int)$val;
+    public function setCategoryID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for CategoryID');
+        }
+        $this->categoryid = (int)$val;
     }
 
     /**
      * @param string $val
      * @throws Exception
      */
-    public function setCategory2ID($val) {
-        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Category2ID');
-        $this->Category2ID = (int)$val;
+    public function setCategory2ID($val)
+    {
+        if (!is_string($val)) {
+            throw new Exception('POJO Proxy need a string for Category2ID');
+        }
+        $this->category2id = (int)$val;
     }
-
 }
-

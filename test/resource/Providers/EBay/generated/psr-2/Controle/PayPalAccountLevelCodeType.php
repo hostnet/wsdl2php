@@ -1,14 +1,15 @@
 <?php
 
 namespace Controle;
-class PayPalAccountLevelCodeType {
-    const Unverified = 'Unverified';
-    const InternationalUnverified = 'InternationalUnverified';
-    const Verified = 'Verified';
-    const InternationalVerified = 'InternationalVerified';
-    const Trusted = 'Trusted';
-    const Unknown = 'Unknown';
-    const Invalid = 'Invalid';
-    const CustomCode = 'CustomCode';
-}
 
+class PayPalAccountLevelCodeType
+{
+    const UNVERIFIED              = 'Unverified';
+    const INTERNATIONALUNVERIFIED = 'InternationalUnverified';
+    const VERIFIED                = 'Verified';
+    const INTERNATIONALVERIFIED   = 'InternationalVerified';
+    const TRUSTED                 = 'Trusted';
+    const UNKNOWN                 = 'Unknown';
+    const INVALID                 = 'Invalid';
+    const CUSTOMCODE              = 'CustomCode';
+}

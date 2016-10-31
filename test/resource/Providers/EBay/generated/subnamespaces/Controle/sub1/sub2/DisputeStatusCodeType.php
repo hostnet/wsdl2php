@@ -1,26 +1,27 @@
 <?php
 
 namespace Controle\sub1\sub2;
-class DisputeStatusCodeType {
-	const Closed = 'Closed';
-	const WaitingForSellerResponse = 'WaitingForSellerResponse';
-	const WaitingForBuyerResponse = 'WaitingForBuyerResponse';
-	const ClosedFVFCreditStrike = 'ClosedFVFCreditStrike';
-	const ClosedNoFVFCreditStrike = 'ClosedNoFVFCreditStrike';
-	const ClosedFVFCreditNoStrike = 'ClosedFVFCreditNoStrike';
-	const ClosedNoFVFCreditNoStrike = 'ClosedNoFVFCreditNoStrike';
-	const StrikeAppealedAfterClosing = 'StrikeAppealedAfterClosing';
-	const FVFCreditReversedAfterClosing = 'FVFCreditReversedAfterClosing';
-	const StrikeAppealedAndFVFCreditReversed = 'StrikeAppealedAndFVFCreditReversed';
-	const ClaimOpened = 'ClaimOpened';
-	const NoDocumentation = 'NoDocumentation';
-	const ClaimClosed = 'ClaimClosed';
-	const ClaimDenied = 'ClaimDenied';
-	const ClaimInProcess = 'ClaimInProcess';
-	const ClaimApproved = 'ClaimApproved';
-	const ClaimPaid = 'ClaimPaid';
-	const ClaimResolved = 'ClaimResolved';
-	const ClaimSubmitted = 'ClaimSubmitted';
-	const CustomCode = 'CustomCode';
-}
 
+class DisputeStatusCodeType
+{
+	const CLOSED                             = 'Closed';
+	const WAITINGFORSELLERRESPONSE           = 'WaitingForSellerResponse';
+	const WAITINGFORBUYERRESPONSE            = 'WaitingForBuyerResponse';
+	const CLOSEDFVFCREDITSTRIKE              = 'ClosedFVFCreditStrike';
+	const CLOSEDNOFVFCREDITSTRIKE            = 'ClosedNoFVFCreditStrike';
+	const CLOSEDFVFCREDITNOSTRIKE            = 'ClosedFVFCreditNoStrike';
+	const CLOSEDNOFVFCREDITNOSTRIKE          = 'ClosedNoFVFCreditNoStrike';
+	const STRIKEAPPEALEDAFTERCLOSING         = 'StrikeAppealedAfterClosing';
+	const FVFCREDITREVERSEDAFTERCLOSING      = 'FVFCreditReversedAfterClosing';
+	const STRIKEAPPEALEDANDFVFCREDITREVERSED = 'StrikeAppealedAndFVFCreditReversed';
+	const CLAIMOPENED                        = 'ClaimOpened';
+	const NODOCUMENTATION                    = 'NoDocumentation';
+	const CLAIMCLOSED                        = 'ClaimClosed';
+	const CLAIMDENIED                        = 'ClaimDenied';
+	const CLAIMINPROCESS                     = 'ClaimInProcess';
+	const CLAIMAPPROVED                      = 'ClaimApproved';
+	const CLAIMPAID                          = 'ClaimPaid';
+	const CLAIMRESOLVED                      = 'ClaimResolved';
+	const CLAIMSUBMITTED                     = 'ClaimSubmitted';
+	const CUSTOMCODE                         = 'CustomCode';
+}

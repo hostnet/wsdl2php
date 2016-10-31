@@ -1,9 +1,10 @@
 <?php
 
 namespace Controle;
-class SearchTypeCodeType {
-	const All = 'All';
-	const Gallery = 'Gallery';
-	const CustomCode = 'CustomCode';
-}
 
+class SearchTypeCodeType
+{
+	const ALL        = 'All';
+	const GALLERY    = 'Gallery';
+	const CUSTOMCODE = 'CustomCode';
+}
