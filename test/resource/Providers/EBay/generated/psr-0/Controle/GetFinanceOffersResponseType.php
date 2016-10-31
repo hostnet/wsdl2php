@@ -17,5 +17,23 @@ class GetFinanceOffersResponseType extends \Controle\AbstractResponseType {
 	 * offers meeting the request criteria exist.
 	 */
 	public $FinanceOfferArray;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Count = (int)$val;
+	}
+
+	/**
+	 * @param FinanceOfferArrayType $val
+	 * @throws Exception
+	 */
+	public function setFinanceOfferArray($val) {
+		
+		$this->FinanceOfferArray = (int)$val;
+	}
+
 }
 

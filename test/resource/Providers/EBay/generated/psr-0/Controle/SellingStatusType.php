@@ -103,5 +103,131 @@ class SellingStatusType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBidCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BidCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setBidIncrement($val) {
+		
+		$this->BidIncrement = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedCurrentPrice($val) {
+		
+		$this->ConvertedCurrentPrice = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setCurrentPrice($val) {
+		
+		$this->CurrentPrice = (int)$val;
+	}
+
+	/**
+	 * @param UserType $val
+	 * @throws Exception
+	 */
+	public function setHighBidder($val) {
+		
+		$this->HighBidder = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setLeadCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->LeadCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMinimumToBid($val) {
+		
+		$this->MinimumToBid = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQuantitySold($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->QuantitySold = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setReserveMet($val) {
+		
+		$this->ReserveMet = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSecondChanceEligible($val) {
+		
+		$this->SecondChanceEligible = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setBidderCount($val) {
+		
+		$this->BidderCount = (int)$val;
+	}
+
+	/**
+	 * @param ListingStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setListingStatus($val) {
+		
+		$this->ListingStatus = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setFinalValueFee($val) {
+		
+		$this->FinalValueFee = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

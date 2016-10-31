@@ -46,5 +46,77 @@ class ErrorType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setShortMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ShortMessage');
+		$this->ShortMessage = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLongMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LongMessage');
+		$this->LongMessage = (int)$val;
+	}
+
+	/**
+	 * @param token $val
+	 * @throws Exception
+	 */
+	public function setErrorCode($val) {
+		
+		$this->ErrorCode = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setUserDisplayHint($val) {
+		
+		$this->UserDisplayHint = (int)$val;
+	}
+
+	/**
+	 * @param SeverityCodeType $val
+	 * @throws Exception
+	 */
+	public function setSeverityCode($val) {
+		
+		$this->SeverityCode = (int)$val;
+	}
+
+	/**
+	 * @param ErrorParameterType $val
+	 * @throws Exception
+	 */
+	public function setErrorParameters($val) {
+		
+		$this->ErrorParameters = (int)$val;
+	}
+
+	/**
+	 * @param ErrorClassificationCodeType $val
+	 * @throws Exception
+	 */
+	public function setErrorClassification($val) {
+		
+		$this->ErrorClassification = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

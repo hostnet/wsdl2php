@@ -25,5 +25,41 @@ class MyMessagesResponseDetailsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setResponseEnabled($val) {
+        
+        $this->ResponseEnabled = (int)$val;
+    }
+
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setResponseURL($val) {
+        
+        $this->ResponseURL = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setUserResponseDate($val) {
+        
+        $this->UserResponseDate = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

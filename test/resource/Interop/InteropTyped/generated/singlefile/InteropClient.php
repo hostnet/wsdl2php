@@ -13,41 +13,6 @@ class SOAPStruct {
 	 * @var float
 	 */
 	public $varFloat;
-}
-
-/**
- * InteropClient
- */
-class InteropClient extends SoapClient {
-
-	const WSDL_FILE = "InteropTyped.wsdl";
-	private $classmap = array(
-		'SOAPStruct' => 'SOAPStruct',
-	);
-
-	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-class SOAPStruct {
-    /**
-     * @var string
-     */
-    public $varString;
-    /**
-     * @var int
-     */
-    public $varInt;
-    /**
-     * @var float
-     */
-    public $varFloat;
-
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -74,8 +39,28 @@ class SOAPStruct {
 		
 		$this->varFloat = (int)$val;
 	}
+
 }
 
+/**
+ * InteropClient
+ */
+class InteropClient extends SoapClient {
+
+	const WSDL_FILE = "InteropTyped.wsdl";
+	private $classmap = array(
+		'SOAPStruct' => 'SOAPStruct',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

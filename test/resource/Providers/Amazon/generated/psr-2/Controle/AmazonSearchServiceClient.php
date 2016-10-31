@@ -1,4 +1,34 @@
 <?php
+
+namespace Controle;
+/**
+ * AmazonSearchServiceClient
+ */
+class AmazonSearchServiceClient extends \SoapClient {
+
+    const WSDL_FILE = "AmazonWebServicesTest.wsdl";
+    private $classmap = array(
+        'ProductInfo' => '\Controle\ProductInfo',
+        'Reviews' => '\Controle\Reviews',
+        'MarketplaceSearch' => '\Controle\MarketplaceSearch',
+        'SellerProfile' => '\Controle\SellerProfile',
+        'SellerSearch' => '\Controle\SellerSearch',
+        'ListingProductInfo' => '\Controle\ListingProductInfo',
+        'ListingProductDetails' => '\Controle\ListingProductDetails',
+        'SellerFeedback' => '\Controle\SellerFeedback',
+        'ThirdPartyProductInfo' => '\Controle\ThirdPartyProductInfo',
+        'ShoppingCart' => '\Controle\ShoppingCart',
+    );
+
+    public function __construct($wsdl = null, $options = array()) {
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+                $options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
         parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
     }
 

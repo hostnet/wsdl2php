@@ -17,6 +17,42 @@ class ProductInfo {
 	 * @var DetailsArray
 	 */
 	public $Details;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTotalResults($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalResults');
+		$this->TotalResults = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTotalPages($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalPages');
+		$this->TotalPages = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setListName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListName');
+		$this->ListName = (int)$val;
+	}
+
+	/**
+	 * @param DetailsArray $val
+	 * @throws Exception
+	 */
+	public function setDetails($val) {
+		
+		$this->Details = (int)$val;
+	}
+
 }
 
 class Reviews {
@@ -32,6 +68,33 @@ class Reviews {
 	 * @var CustomerReviewArray
 	 */
 	public $CustomerReviews;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAvgCustomerRating($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AvgCustomerRating');
+		$this->AvgCustomerRating = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTotalCustomerReviews($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
+		$this->TotalCustomerReviews = (int)$val;
+	}
+
+	/**
+	 * @param CustomerReviewArray $val
+	 * @throws Exception
+	 */
+	public function setCustomerReviews($val) {
+		
+		$this->CustomerReviews = (int)$val;
+	}
+
 }
 
 class MarketplaceSearch {
@@ -39,6 +102,15 @@ class MarketplaceSearch {
 	 * @var MarketplaceSearchDetailsArray
 	 */
 	public $MarketplaceSearchDetails;
+	/**
+	 * @param MarketplaceSearchDetailsArray $val
+	 * @throws Exception
+	 */
+	public function setMarketplaceSearchDetails($val) {
+		
+		$this->MarketplaceSearchDetails = (int)$val;
+	}
+
 }
 
 class SellerProfile {
@@ -46,6 +118,15 @@ class SellerProfile {
 	 * @var SellerProfileDetailsArray
 	 */
 	public $SellerProfileDetails;
+	/**
+	 * @param SellerProfileDetailsArray $val
+	 * @throws Exception
+	 */
+	public function setSellerProfileDetails($val) {
+		
+		$this->SellerProfileDetails = (int)$val;
+	}
+
 }
 
 class SellerSearch {
@@ -53,6 +134,15 @@ class SellerSearch {
 	 * @var SellerSearchDetailsArray
 	 */
 	public $SellerSearchDetails;
+	/**
+	 * @param SellerSearchDetailsArray $val
+	 * @throws Exception
+	 */
+	public function setSellerSearchDetails($val) {
+		
+		$this->SellerSearchDetails = (int)$val;
+	}
+
 }
 
 class ListingProductInfo {
@@ -60,6 +150,15 @@ class ListingProductInfo {
 	 * @var ListingProductDetailsArray
 	 */
 	public $ListingProductDetails;
+	/**
+	 * @param ListingProductDetailsArray $val
+	 * @throws Exception
+	 */
+	public function setListingProductDetails($val) {
+		
+		$this->ListingProductDetails = (int)$val;
+	}
+
 }
 
 class ListingProductDetails {
@@ -147,1096 +246,6 @@ class ListingProductDetails {
 	 * @var string
 	 */
 	public $ExchangeSellerRating;
-}
-
-class SellerFeedback {
-	/**
-	 * @var FeedbackArray
-	 */
-	public $Feedback;
-}
-
-class ThirdPartyProductInfo {
-	/**
-	 * @var ThirdPartyProductDetailsArray
-	 */
-	public $ThirdPartyProductDetails;
-}
-
-class KeywordRequest {
-	/**
-	 * @var string
-	 */
-	public $keyword;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class PowerRequest {
-	/**
-	 * @var string
-	 */
-	public $power;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class BrowseNodeRequest {
-	/**
-	 * @var string
-	 */
-	public $browse_node;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class AsinRequest {
-	/**
-	 * @var string
-	 */
-	public $asin;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $offer;
-	/**
-	 * @var string
-	 */
-	public $offerpage;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class BlendedRequest {
-	/**
-	 * @var string
-	 */
-	public $blended;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class UpcRequest {
-	/**
-	 * @var string
-	 */
-	public $upc;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ArtistRequest {
-	/**
-	 * @var string
-	 */
-	public $artist;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class AuthorRequest {
-	/**
-	 * @var string
-	 */
-	public $author;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ActorRequest {
-	/**
-	 * @var string
-	 */
-	public $actor;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class DirectorRequest {
-	/**
-	 * @var string
-	 */
-	public $director;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ExchangeRequest {
-	/**
-	 * @var string
-	 */
-	public $exchange_id;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ManufacturerRequest {
-	/**
-	 * @var string
-	 */
-	public $manufacturer;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $mode;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $variations;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ListManiaRequest {
-	/**
-	 * @var string
-	 */
-	public $lm_id;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class WishlistRequest {
-	/**
-	 * @var string
-	 */
-	public $wishlist_id;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class MarketplaceRequest {
-	/**
-	 * @var string
-	 */
-	public $marketplace_search;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $keyword;
-	/**
-	 * @var string
-	 */
-	public $keyword_search;
-	/**
-	 * @var string
-	 */
-	public $browse_id;
-	/**
-	 * @var string
-	 */
-	public $zipcode;
-	/**
-	 * @var string
-	 */
-	public $area_id;
-	/**
-	 * @var string
-	 */
-	public $geo;
-	/**
-	 * @var string
-	 */
-	public $sort;
-	/**
-	 * @var string
-	 */
-	public $listing_id;
-	/**
-	 * @var string
-	 */
-	public $locale;
-	/**
-	 * @var string
-	 */
-	public $index;
-}
-
-class SellerProfileRequest {
-	/**
-	 * @var string
-	 */
-	public $seller_id;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class SellerRequest {
-	/**
-	 * @var string
-	 */
-	public $seller_id;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $offerstatus;
-	/**
-	 * @var string
-	 */
-	public $page;
-	/**
-	 * @var string
-	 */
-	public $seller_browse_id;
-	/**
-	 * @var string
-	 */
-	public $keyword;
-	/**
-	 * @var string
-	 */
-	public $locale;
-	/**
-	 * @var string
-	 */
-	public $index;
-}
-
-class SimilarityRequest {
-	/**
-	 * @var string
-	 */
-	public $asin;
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $type;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ShoppingCart {
-	/**
-	 * @var string
-	 */
-	public $CartId;
-	/**
-	 * @var string
-	 */
-	public $HMAC;
-	/**
-	 * @var string
-	 */
-	public $PurchaseUrl;
-	/**
-	 * @var ItemArray
-	 */
-	public $Items;
-}
-
-class GetShoppingCartRequest {
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $CartId;
-	/**
-	 * @var string
-	 */
-	public $HMAC;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ClearShoppingCartRequest {
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $CartId;
-	/**
-	 * @var string
-	 */
-	public $HMAC;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class AddShoppingCartItemsRequest {
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $CartId;
-	/**
-	 * @var string
-	 */
-	public $HMAC;
-	/**
-	 * @var AddItemArray
-	 */
-	public $Items;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class RemoveShoppingCartItemsRequest {
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $CartId;
-	/**
-	 * @var string
-	 */
-	public $HMAC;
-	/**
-	 * @var ItemIdArray
-	 */
-	public $Items;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-class ModifyShoppingCartItemsRequest {
-	/**
-	 * @var string
-	 */
-	public $tag;
-	/**
-	 * @var string
-	 */
-	public $devtag;
-	/**
-	 * @var string
-	 */
-	public $CartId;
-	/**
-	 * @var string
-	 */
-	public $HMAC;
-	/**
-	 * @var ItemQuantityArray
-	 */
-	public $Items;
-	/**
-	 * @var string
-	 */
-	public $locale;
-}
-
-/**
- * AmazonSearchServiceClient
- */
-class AmazonSearchServiceClient extends SoapClient {
-
-	const WSDL_FILE = "AmazonWebServicesTest.wsdl";
-	private $classmap = array(
-		'ProductInfo' => 'ProductInfo',
-		'Reviews' => 'Reviews',
-		'MarketplaceSearch' => 'MarketplaceSearch',
-		'SellerProfile' => 'SellerProfile',
-		'SellerSearch' => 'SellerSearch',
-		'ListingProductInfo' => 'ListingProductInfo',
-		'ListingProductDetails' => 'ListingProductDetails',
-		'SellerFeedback' => 'SellerFeedback',
-		'ThirdPartyProductInfo' => 'ThirdPartyProductInfo',
-		'KeywordRequest' => 'KeywordRequest',
-		'PowerRequest' => 'PowerRequest',
-		'BrowseNodeRequest' => 'BrowseNodeRequest',
-		'AsinRequest' => 'AsinRequest',
-		'BlendedRequest' => 'BlendedRequest',
-		'UpcRequest' => 'UpcRequest',
-		'ArtistRequest' => 'ArtistRequest',
-		'AuthorRequest' => 'AuthorRequest',
-		'ActorRequest' => 'ActorRequest',
-		'DirectorRequest' => 'DirectorRequest',
-		'ExchangeRequest' => 'ExchangeRequest',
-		'ManufacturerRequest' => 'ManufacturerRequest',
-		'ListManiaRequest' => 'ListManiaRequest',
-		'WishlistRequest' => 'WishlistRequest',
-		'MarketplaceRequest' => 'MarketplaceRequest',
-		'SellerProfileRequest' => 'SellerProfileRequest',
-		'SellerRequest' => 'SellerRequest',
-		'SimilarityRequest' => 'SimilarityRequest',
-		'ShoppingCart' => 'ShoppingCart',
-		'GetShoppingCartRequest' => 'GetShoppingCartRequest',
-		'ClearShoppingCartRequest' => 'ClearShoppingCartRequest',
-		'AddShoppingCartItemsRequest' => 'AddShoppingCartItemsRequest',
-		'RemoveShoppingCartItemsRequest' => 'RemoveShoppingCartItemsRequest',
-		'ModifyShoppingCartItemsRequest' => 'ModifyShoppingCartItemsRequest',
-	);
-
-	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-class ProductInfo {
-    /**
-     * @var string
-     */
-    public $TotalResults;
-    /**
-     * @var string
-     */
-    public $TotalPages;
-    /**
-     * @var string
-     */
-    public $ListName;
-    /**
-     * @var DetailsArray
-     */
-    public $Details;
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setTotalResults($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalResults');
-		$this->TotalResults = (int)$val;
-	}
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setTotalPages($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalPages');
-		$this->TotalPages = (int)$val;
-	}
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setListName($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListName');
-		$this->ListName = (int)$val;
-	}
-
-	/**
-	 * @param DetailsArray $val
-	 * @throws Exception
-	 */
-	public function setDetails($val) {
-		
-		$this->Details = (int)$val;
-	}
-}
-
-class Reviews {
-    /**
-     * @var string
-     */
-    public $AvgCustomerRating;
-    /**
-     * @var string
-     */
-    public $TotalCustomerReviews;
-    /**
-     * @var CustomerReviewArray
-     */
-    public $CustomerReviews;
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setAvgCustomerRating($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AvgCustomerRating');
-		$this->AvgCustomerRating = (int)$val;
-	}
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setTotalCustomerReviews($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
-		$this->TotalCustomerReviews = (int)$val;
-	}
-
-	/**
-	 * @param CustomerReviewArray $val
-	 * @throws Exception
-	 */
-	public function setCustomerReviews($val) {
-		
-		$this->CustomerReviews = (int)$val;
-	}
-}
-
-class MarketplaceSearch {
-    /**
-     * @var MarketplaceSearchDetailsArray
-     */
-    public $MarketplaceSearchDetails;
-
-	/**
-	 * @param MarketplaceSearchDetailsArray $val
-	 * @throws Exception
-	 */
-	public function setMarketplaceSearchDetails($val) {
-		
-		$this->MarketplaceSearchDetails = (int)$val;
-	}
-}
-
-class SellerProfile {
-    /**
-     * @var SellerProfileDetailsArray
-     */
-    public $SellerProfileDetails;
-
-	/**
-	 * @param SellerProfileDetailsArray $val
-	 * @throws Exception
-	 */
-	public function setSellerProfileDetails($val) {
-		
-		$this->SellerProfileDetails = (int)$val;
-	}
-}
-
-class SellerSearch {
-    /**
-     * @var SellerSearchDetailsArray
-     */
-    public $SellerSearchDetails;
-
-	/**
-	 * @param SellerSearchDetailsArray $val
-	 * @throws Exception
-	 */
-	public function setSellerSearchDetails($val) {
-		
-		$this->SellerSearchDetails = (int)$val;
-	}
-}
-
-class ListingProductInfo {
-    /**
-     * @var ListingProductDetailsArray
-     */
-    public $ListingProductDetails;
-
-	/**
-	 * @param ListingProductDetailsArray $val
-	 * @throws Exception
-	 */
-	public function setListingProductDetails($val) {
-		
-		$this->ListingProductDetails = (int)$val;
-	}
-}
-
-class ListingProductDetails {
-    /**
-     * @var string
-     */
-    public $ExchangeId;
-    /**
-     * @var string
-     */
-    public $ListingId;
-    /**
-     * @var string
-     */
-    public $ExchangeTitle;
-    /**
-     * @var string
-     */
-    public $ExchangePrice;
-    /**
-     * @var string
-     */
-    public $ExchangeAsin;
-    /**
-     * @var string
-     */
-    public $ExchangeEndDate;
-    /**
-     * @var string
-     */
-    public $ExchangeTinyImage;
-    /**
-     * @var string
-     */
-    public $ExchangeSellerId;
-    /**
-     * @var string
-     */
-    public $ExchangeSellerNickname;
-    /**
-     * @var string
-     */
-    public $ExchangeStartDate;
-    /**
-     * @var string
-     */
-    public $ExchangeStatus;
-    /**
-     * @var string
-     */
-    public $ExchangeQuantity;
-    /**
-     * @var string
-     */
-    public $ExchangeQuantityAllocated;
-    /**
-     * @var string
-     */
-    public $ExchangeFeaturedCategory;
-    /**
-     * @var string
-     */
-    public $ExchangeCondition;
-    /**
-     * @var string
-     */
-    public $ExchangeConditionType;
-    /**
-     * @var string
-     */
-    public $ExchangeAvailability;
-    /**
-     * @var string
-     */
-    public $ExchangeOfferingType;
-    /**
-     * @var string
-     */
-    public $ExchangeSellerState;
-    /**
-     * @var string
-     */
-    public $ExchangeSellerCountry;
-    /**
-     * @var string
-     */
-    public $ExchangeSellerRating;
-
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1425,14 +434,14 @@ class ListingProductDetails {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
 		$this->ExchangeSellerRating = (int)$val;
 	}
+
 }
 
 class SellerFeedback {
-    /**
-     * @var FeedbackArray
-     */
-    public $Feedback;
-
+	/**
+	 * @var FeedbackArray
+	 */
+	public $Feedback;
 	/**
 	 * @param FeedbackArray $val
 	 * @throws Exception
@@ -1441,14 +450,14 @@ class SellerFeedback {
 		
 		$this->Feedback = (int)$val;
 	}
+
 }
 
 class ThirdPartyProductInfo {
-    /**
-     * @var ThirdPartyProductDetailsArray
-     */
-    public $ThirdPartyProductDetails;
-
+	/**
+	 * @var ThirdPartyProductDetailsArray
+	 */
+	public $ThirdPartyProductDetails;
 	/**
 	 * @param ThirdPartyProductDetailsArray $val
 	 * @throws Exception
@@ -1457,46 +466,46 @@ class ThirdPartyProductInfo {
 		
 		$this->ThirdPartyProductDetails = (int)$val;
 	}
+
 }
 
 class KeywordRequest {
-    /**
-     * @var string
-     */
-    public $keyword;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $keyword;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1577,46 +586,46 @@ class KeywordRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class PowerRequest {
-    /**
-     * @var string
-     */
-    public $power;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $power;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1697,42 +706,42 @@ class PowerRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class BrowseNodeRequest {
-    /**
-     * @var string
-     */
-    public $browse_node;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $browse_node;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1804,38 +813,38 @@ class BrowseNodeRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class AsinRequest {
-    /**
-     * @var string
-     */
-    public $asin;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $offer;
-    /**
-     * @var string
-     */
-    public $offerpage;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $asin;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $offer;
+	/**
+	 * @var string
+	 */
+	public $offerpage;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1898,30 +907,30 @@ class AsinRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class BlendedRequest {
-    /**
-     * @var string
-     */
-    public $blended;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $blended;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1966,42 +975,42 @@ class BlendedRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class UpcRequest {
-    /**
-     * @var string
-     */
-    public $upc;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $upc;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2073,46 +1082,46 @@ class UpcRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ArtistRequest {
-    /**
-     * @var string
-     */
-    public $artist;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $artist;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2193,46 +1202,46 @@ class ArtistRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class AuthorRequest {
-    /**
-     * @var string
-     */
-    public $author;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $author;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2313,46 +1322,46 @@ class AuthorRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ActorRequest {
-    /**
-     * @var string
-     */
-    public $actor;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $actor;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2433,46 +1442,46 @@ class ActorRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class DirectorRequest {
-    /**
-     * @var string
-     */
-    public $director;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $director;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2553,30 +1562,30 @@ class DirectorRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ExchangeRequest {
-    /**
-     * @var string
-     */
-    public $exchange_id;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $exchange_id;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2621,46 +1630,46 @@ class ExchangeRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ManufacturerRequest {
-    /**
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $variations;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $manufacturer;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $mode;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $variations;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2741,34 +1750,34 @@ class ManufacturerRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ListManiaRequest {
-    /**
-     * @var string
-     */
-    public $lm_id;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $lm_id;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2822,34 +1831,34 @@ class ListManiaRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class WishlistRequest {
-    /**
-     * @var string
-     */
-    public $wishlist_id;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $wishlist_id;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2903,70 +1912,70 @@ class WishlistRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class MarketplaceRequest {
-    /**
-     * @var string
-     */
-    public $marketplace_search;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $keyword;
-    /**
-     * @var string
-     */
-    public $keyword_search;
-    /**
-     * @var string
-     */
-    public $browse_id;
-    /**
-     * @var string
-     */
-    public $zipcode;
-    /**
-     * @var string
-     */
-    public $area_id;
-    /**
-     * @var string
-     */
-    public $geo;
-    /**
-     * @var string
-     */
-    public $sort;
-    /**
-     * @var string
-     */
-    public $listing_id;
-    /**
-     * @var string
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $index;
-
+	/**
+	 * @var string
+	 */
+	public $marketplace_search;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $keyword;
+	/**
+	 * @var string
+	 */
+	public $keyword_search;
+	/**
+	 * @var string
+	 */
+	public $browse_id;
+	/**
+	 * @var string
+	 */
+	public $zipcode;
+	/**
+	 * @var string
+	 */
+	public $area_id;
+	/**
+	 * @var string
+	 */
+	public $geo;
+	/**
+	 * @var string
+	 */
+	public $sort;
+	/**
+	 * @var string
+	 */
+	public $listing_id;
+	/**
+	 * @var string
+	 */
+	public $locale;
+	/**
+	 * @var string
+	 */
+	public $index;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3101,34 +2110,34 @@ class MarketplaceRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for index');
 		$this->index = (int)$val;
 	}
+
 }
 
 class SellerProfileRequest {
-    /**
-     * @var string
-     */
-    public $seller_id;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $seller_id;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3182,50 +2191,50 @@ class SellerProfileRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class SellerRequest {
-    /**
-     * @var string
-     */
-    public $seller_id;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $offerstatus;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @var string
-     */
-    public $seller_browse_id;
-    /**
-     * @var string
-     */
-    public $keyword;
-    /**
-     * @var string
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $index;
-
+	/**
+	 * @var string
+	 */
+	public $seller_id;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $offerstatus;
+	/**
+	 * @var string
+	 */
+	public $page;
+	/**
+	 * @var string
+	 */
+	public $seller_browse_id;
+	/**
+	 * @var string
+	 */
+	public $keyword;
+	/**
+	 * @var string
+	 */
+	public $locale;
+	/**
+	 * @var string
+	 */
+	public $index;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3315,30 +2324,30 @@ class SellerRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for index');
 		$this->index = (int)$val;
 	}
+
 }
 
 class SimilarityRequest {
-    /**
-     * @var string
-     */
-    public $asin;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $asin;
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3383,26 +2392,26 @@ class SimilarityRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ShoppingCart {
-    /**
-     * @var string
-     */
-    public $CartId;
-    /**
-     * @var string
-     */
-    public $HMAC;
-    /**
-     * @var string
-     */
-    public $PurchaseUrl;
-    /**
-     * @var ItemArray
-     */
-    public $Items;
-
+	/**
+	 * @var string
+	 */
+	public $CartId;
+	/**
+	 * @var string
+	 */
+	public $HMAC;
+	/**
+	 * @var string
+	 */
+	public $PurchaseUrl;
+	/**
+	 * @var ItemArray
+	 */
+	public $Items;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3438,30 +2447,30 @@ class ShoppingCart {
 		
 		$this->Items = (int)$val;
 	}
+
 }
 
 class GetShoppingCartRequest {
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $CartId;
-    /**
-     * @var string
-     */
-    public $HMAC;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $CartId;
+	/**
+	 * @var string
+	 */
+	public $HMAC;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3506,30 +2515,30 @@ class GetShoppingCartRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ClearShoppingCartRequest {
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $CartId;
-    /**
-     * @var string
-     */
-    public $HMAC;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $CartId;
+	/**
+	 * @var string
+	 */
+	public $HMAC;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3574,34 +2583,34 @@ class ClearShoppingCartRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class AddShoppingCartItemsRequest {
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $CartId;
-    /**
-     * @var string
-     */
-    public $HMAC;
-    /**
-     * @var AddItemArray
-     */
-    public $Items;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $CartId;
+	/**
+	 * @var string
+	 */
+	public $HMAC;
+	/**
+	 * @var AddItemArray
+	 */
+	public $Items;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3655,34 +2664,34 @@ class AddShoppingCartItemsRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class RemoveShoppingCartItemsRequest {
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $CartId;
-    /**
-     * @var string
-     */
-    public $HMAC;
-    /**
-     * @var ItemIdArray
-     */
-    public $Items;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $CartId;
+	/**
+	 * @var string
+	 */
+	public $HMAC;
+	/**
+	 * @var ItemIdArray
+	 */
+	public $Items;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3736,34 +2745,34 @@ class RemoveShoppingCartItemsRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
 class ModifyShoppingCartItemsRequest {
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $devtag;
-    /**
-     * @var string
-     */
-    public $CartId;
-    /**
-     * @var string
-     */
-    public $HMAC;
-    /**
-     * @var ItemQuantityArray
-     */
-    public $Items;
-    /**
-     * @var string
-     */
-    public $locale;
-
+	/**
+	 * @var string
+	 */
+	public $tag;
+	/**
+	 * @var string
+	 */
+	public $devtag;
+	/**
+	 * @var string
+	 */
+	public $CartId;
+	/**
+	 * @var string
+	 */
+	public $HMAC;
+	/**
+	 * @var ItemQuantityArray
+	 */
+	public $Items;
+	/**
+	 * @var string
+	 */
+	public $locale;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3817,8 +2826,60 @@ class ModifyShoppingCartItemsRequest {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for locale');
 		$this->locale = (int)$val;
 	}
+
 }
 
+/**
+ * AmazonSearchServiceClient
+ */
+class AmazonSearchServiceClient extends SoapClient {
+
+	const WSDL_FILE = "AmazonWebServicesTest.wsdl";
+	private $classmap = array(
+		'ProductInfo' => 'ProductInfo',
+		'Reviews' => 'Reviews',
+		'MarketplaceSearch' => 'MarketplaceSearch',
+		'SellerProfile' => 'SellerProfile',
+		'SellerSearch' => 'SellerSearch',
+		'ListingProductInfo' => 'ListingProductInfo',
+		'ListingProductDetails' => 'ListingProductDetails',
+		'SellerFeedback' => 'SellerFeedback',
+		'ThirdPartyProductInfo' => 'ThirdPartyProductInfo',
+		'KeywordRequest' => 'KeywordRequest',
+		'PowerRequest' => 'PowerRequest',
+		'BrowseNodeRequest' => 'BrowseNodeRequest',
+		'AsinRequest' => 'AsinRequest',
+		'BlendedRequest' => 'BlendedRequest',
+		'UpcRequest' => 'UpcRequest',
+		'ArtistRequest' => 'ArtistRequest',
+		'AuthorRequest' => 'AuthorRequest',
+		'ActorRequest' => 'ActorRequest',
+		'DirectorRequest' => 'DirectorRequest',
+		'ExchangeRequest' => 'ExchangeRequest',
+		'ManufacturerRequest' => 'ManufacturerRequest',
+		'ListManiaRequest' => 'ListManiaRequest',
+		'WishlistRequest' => 'WishlistRequest',
+		'MarketplaceRequest' => 'MarketplaceRequest',
+		'SellerProfileRequest' => 'SellerProfileRequest',
+		'SellerRequest' => 'SellerRequest',
+		'SimilarityRequest' => 'SimilarityRequest',
+		'ShoppingCart' => 'ShoppingCart',
+		'GetShoppingCartRequest' => 'GetShoppingCartRequest',
+		'ClearShoppingCartRequest' => 'ClearShoppingCartRequest',
+		'AddShoppingCartItemsRequest' => 'AddShoppingCartItemsRequest',
+		'RemoveShoppingCartItemsRequest' => 'RemoveShoppingCartItemsRequest',
+		'ModifyShoppingCartItemsRequest' => 'ModifyShoppingCartItemsRequest',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

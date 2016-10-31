@@ -56,5 +56,95 @@ class CharityInfoType {
      * @var string
      */
     public $id;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+        $this->Name = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setMission($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Mission');
+        $this->Mission = (int)$val;
+    }
+
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setLogoURL($val) {
+        
+        $this->LogoURL = (int)$val;
+    }
+
+    /**
+     * @param CharityStatusCodeType $val
+     * @throws Exception
+     */
+    public function setStatus($val) {
+        
+        $this->Status = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSearchableString($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SearchableString');
+        $this->SearchableString = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCharityRegion($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->CharityRegion = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCharityDomain($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->CharityDomain = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCharityID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CharityID');
+        $this->CharityID = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setId($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for id');
+        $this->id = (int)$val;
+    }
+
 }
 

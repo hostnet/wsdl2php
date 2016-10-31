@@ -23,5 +23,23 @@ class ExpansionArrayType {
      * @var int | The total number of My eBay Second Chance Offers available.
      */
     public $TotalAvailable;
+    /**
+     * @param SearchResultItemType $val
+     * @throws Exception
+     */
+    public function setExpansionItem($val) {
+        
+        $this->ExpansionItem = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setTotalAvailable($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->TotalAvailable = (int)$val;
+    }
+
 }
 

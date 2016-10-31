@@ -11,5 +11,14 @@ class BidderDetailArrayType {
      * approval.
      */
     public $BidderDetail;
+    /**
+     * @param BidderDetailType $val
+     * @throws Exception
+     */
+    public function setBidderDetail($val) {
+        
+        $this->BidderDetail = (int)$val;
+    }
+
 }
 

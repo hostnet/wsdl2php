@@ -20,5 +20,32 @@ class CancelOfferType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param OfferType $val
+	 * @throws Exception
+	 */
+	public function setOffer($val) {
+		
+		$this->Offer = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setExplanation($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Explanation');
+		$this->Explanation = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

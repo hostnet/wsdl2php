@@ -11,5 +11,14 @@ class MemberMessageExchangeArrayType {
 	 * @var \Controle\sub1\sub2\MemberMessageExchangeType | Information about individual messages. Returned if the parent container is returned.
 	 */
 	public $MemberMessageExchange;
+	/**
+	 * @param MemberMessageExchangeType $val
+	 * @throws Exception
+	 */
+	public function setMemberMessageExchange($val) {
+		
+		$this->MemberMessageExchange = (int)$val;
+	}
+
 }
 

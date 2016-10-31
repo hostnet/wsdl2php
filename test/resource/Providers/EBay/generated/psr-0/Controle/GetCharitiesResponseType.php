@@ -18,5 +18,14 @@ class GetCharitiesResponseType extends \Controle\AbstractResponseType {
 	 * applicable to Half.com.
 	 */
 	public $Charity;
+	/**
+	 * @param CharityInfoType $val
+	 * @throws Exception
+	 */
+	public function setCharity($val) {
+		
+		$this->Charity = (int)$val;
+	}
+
 }
 

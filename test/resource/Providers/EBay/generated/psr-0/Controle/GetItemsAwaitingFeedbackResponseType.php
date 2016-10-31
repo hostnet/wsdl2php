@@ -11,5 +11,14 @@ class GetItemsAwaitingFeedbackResponseType extends \Controle\AbstractResponseTyp
 	 * feedback.
 	 */
 	public $ItemsAwaitingFeedback;
+	/**
+	 * @param PaginatedTransactionArrayType $val
+	 * @throws Exception
+	 */
+	public function setItemsAwaitingFeedback($val) {
+		
+		$this->ItemsAwaitingFeedback = (int)$val;
+	}
+
 }
 

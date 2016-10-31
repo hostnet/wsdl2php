@@ -48,5 +48,86 @@ class ProductType {
 	 * @var string
 	 */
 	public $title;
+	/**
+	 * @param CharacteristicsSetType $val
+	 * @throws Exception
+	 */
+	public function setCharacteristicsSet($val) {
+		
+		$this->CharacteristicsSet = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setDetailsURL($val) {
+		
+		$this->DetailsURL = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setNumItems($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->NumItems = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMinPrice($val) {
+		
+		$this->MinPrice = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMaxPrice($val) {
+		
+		$this->MaxPrice = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setProductID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for productID');
+		$this->productID = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setStockPhotoURL($val) {
+		
+		$this->stockPhotoURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTitle($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for title');
+		$this->title = (int)$val;
+	}
+
 }
 

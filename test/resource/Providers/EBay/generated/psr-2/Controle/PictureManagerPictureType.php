@@ -39,5 +39,50 @@ class PictureManagerPictureType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setPictureURL($val) {
+        
+        $this->PictureURL = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+        $this->Name = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setDate($val) {
+        
+        $this->Date = (int)$val;
+    }
+
+    /**
+     * @param PictureManagerPictureDisplayType $val
+     * @throws Exception
+     */
+    public function setDisplayFormat($val) {
+        
+        $this->DisplayFormat = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

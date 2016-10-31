@@ -25,5 +25,23 @@ class GetProductSearchResultsResponseType extends \Controle\sub1\sub2\AbstractRe
 	 * found.
 	 */
 	public $ProductSearchResult;
+	/**
+	 * @param DataElementSetType $val
+	 * @throws Exception
+	 */
+	public function setDataElementSets($val) {
+		
+		$this->DataElementSets = (int)$val;
+	}
+
+	/**
+	 * @param ProductSearchResultType $val
+	 * @throws Exception
+	 */
+	public function setProductSearchResult($val) {
+		
+		$this->ProductSearchResult = (int)$val;
+	}
+
 }
 

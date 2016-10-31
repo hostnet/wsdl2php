@@ -11,5 +11,14 @@ class EndItemResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * of StartTime and ListingDuration) or the actual end time if the item has ended.
 	 */
 	public $EndTime;
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setEndTime($val) {
+		
+		$this->EndTime = (int)$val;
+	}
+
 }
 

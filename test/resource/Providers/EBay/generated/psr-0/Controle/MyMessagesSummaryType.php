@@ -35,5 +35,68 @@ class MyMessagesSummaryType {
 	 * @var int | The total number of messages for a given user. Always returned for detail level ReturnSummary.
 	 */
 	public $TotalMessageCount;
+	/**
+	 * @param MyMessagesFolderSummaryType $val
+	 * @throws Exception
+	 */
+	public function setFolderSummary($val) {
+		
+		$this->FolderSummary = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setNewAlertCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->NewAlertCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setNewMessageCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->NewMessageCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUnresolvedAlertCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UnresolvedAlertCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setFlaggedMessageCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->FlaggedMessageCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalAlertCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalAlertCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalMessageCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalMessageCount = (int)$val;
+	}
+
 }
 

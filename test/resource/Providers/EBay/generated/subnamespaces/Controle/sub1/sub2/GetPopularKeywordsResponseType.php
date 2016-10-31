@@ -29,5 +29,32 @@ class GetPopularKeywordsResponseType extends \Controle\sub1\sub2\AbstractRespons
 	 * is returned instead.
 	 */
 	public $HasMore;
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param CategoryArrayType $val
+	 * @throws Exception
+	 */
+	public function setCategoryArray($val) {
+		
+		$this->CategoryArray = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMore($val) {
+		
+		$this->HasMore = (int)$val;
+	}
+
 }
 

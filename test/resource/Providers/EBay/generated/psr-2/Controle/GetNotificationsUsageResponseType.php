@@ -42,5 +42,50 @@ class GetNotificationsUsageResponseType extends \Controle\AbstractResponseType {
      * Maximum time duration allowed is 3 days (Now-3days).
      */
     public $NotificationStatistics;
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setStartTime($val) {
+        
+        $this->StartTime = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setEndTime($val) {
+        
+        $this->EndTime = (int)$val;
+    }
+
+    /**
+     * @param NotificationDetailsArrayType $val
+     * @throws Exception
+     */
+    public function setNotificationDetailsArray($val) {
+        
+        $this->NotificationDetailsArray = (int)$val;
+    }
+
+    /**
+     * @param MarkUpMarkDownHistoryType $val
+     * @throws Exception
+     */
+    public function setMarkUpMarkDownHistory($val) {
+        
+        $this->MarkUpMarkDownHistory = (int)$val;
+    }
+
+    /**
+     * @param NotificationStatisticsType $val
+     * @throws Exception
+     */
+    public function setNotificationStatistics($val) {
+        
+        $this->NotificationStatistics = (int)$val;
+    }
+
 }
 

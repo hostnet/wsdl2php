@@ -61,5 +61,86 @@ class GetUserPreferencesResponseType extends \Controle\AbstractResponseType {
      * if set.
      */
     public $ProStoresPreference;
+    /**
+     * @param BidderNoticePreferencesType $val
+     * @throws Exception
+     */
+    public function setBidderNoticePreferences($val) {
+        
+        $this->BidderNoticePreferences = (int)$val;
+    }
+
+    /**
+     * @param CombinedPaymentPreferencesType $val
+     * @throws Exception
+     */
+    public function setCombinedPaymentPreferences($val) {
+        
+        $this->CombinedPaymentPreferences = (int)$val;
+    }
+
+    /**
+     * @param CrossPromotionPreferencesType $val
+     * @throws Exception
+     */
+    public function setCrossPromotionPreferences($val) {
+        
+        $this->CrossPromotionPreferences = (int)$val;
+    }
+
+    /**
+     * @param SellerPaymentPreferencesType $val
+     * @throws Exception
+     */
+    public function setSellerPaymentPreferences($val) {
+        
+        $this->SellerPaymentPreferences = (int)$val;
+    }
+
+    /**
+     * @param SellerFavoriteItemPreferencesType $val
+     * @throws Exception
+     */
+    public function setSellerFavoriteItemPreferences($val) {
+        
+        $this->SellerFavoriteItemPreferences = (int)$val;
+    }
+
+    /**
+     * @param EndOfAuctionEmailPreferencesType $val
+     * @throws Exception
+     */
+    public function setEndOfAuctionEmailPreferences($val) {
+        
+        $this->EndOfAuctionEmailPreferences = (int)$val;
+    }
+
+    /**
+     * @param eBxOptInPreferenceType $val
+     * @throws Exception
+     */
+    public function setEBxOptInPreference($val) {
+        
+        $this->eBxOptInPreference = (int)$val;
+    }
+
+    /**
+     * @param ExpressPreferencesType $val
+     * @throws Exception
+     */
+    public function setExpressPreferences($val) {
+        
+        $this->ExpressPreferences = (int)$val;
+    }
+
+    /**
+     * @param ProStoresCheckoutPreferenceType $val
+     * @throws Exception
+     */
+    public function setProStoresPreference($val) {
+        
+        $this->ProStoresPreference = (int)$val;
+    }
+
 }
 

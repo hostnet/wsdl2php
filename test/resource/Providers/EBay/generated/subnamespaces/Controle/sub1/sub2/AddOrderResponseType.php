@@ -16,5 +16,23 @@ class AddOrderResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * @var dateTime | Date and time the order was created. Also applicable to Half.com (for GetOrders).
 	 */
 	public $CreatedTime;
+	/**
+	 * @param OrderIDType $val
+	 * @throws Exception
+	 */
+	public function setOrderID($val) {
+		
+		$this->OrderID = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setCreatedTime($val) {
+		
+		$this->CreatedTime = (int)$val;
+	}
+
 }
 

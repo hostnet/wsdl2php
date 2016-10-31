@@ -18,5 +18,32 @@ class MyMessagesFolderType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setFolderID($val) {
+		
+		$this->FolderID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setFolderName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FolderName');
+		$this->FolderName = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

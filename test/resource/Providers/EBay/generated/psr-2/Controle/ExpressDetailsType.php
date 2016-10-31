@@ -40,5 +40,41 @@ class ExpressDetailsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setExpressLargeImage($val) {
+        
+        $this->ExpressLargeImage = (int)$val;
+    }
+
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setExpressSmallImage($val) {
+        
+        $this->ExpressSmallImage = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCondition($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Condition');
+        $this->Condition = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

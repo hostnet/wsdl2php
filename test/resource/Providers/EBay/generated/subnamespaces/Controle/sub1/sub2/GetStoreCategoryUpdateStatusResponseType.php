@@ -15,5 +15,14 @@ class GetStoreCategoryUpdateStatusResponseType extends \Controle\sub1\sub2\Abstr
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
 	public $Status;
+	/**
+	 * @param TaskStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
 }
 

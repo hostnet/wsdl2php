@@ -10,5 +10,14 @@ class GetContextualKeywordsResponseType extends \Controle\sub1\sub2\AbstractResp
 	 * @var \Controle\sub1\sub2\ContextSearchAssetType | An array of either keyword/category pairs or categories, with ranking and score.
 	 */
 	public $ContextSearchAsset;
+	/**
+	 * @param ContextSearchAssetType $val
+	 * @throws Exception
+	 */
+	public function setContextSearchAsset($val) {
+		
+		$this->ContextSearchAsset = (int)$val;
+	}
+
 }
 

@@ -20,5 +20,23 @@ class SetStoreCategoriesResponseType extends \Controle\AbstractResponseType {
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
 	public $Status;
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setTaskID($val) {
+		
+		$this->TaskID = (int)$val;
+	}
+
+	/**
+	 * @param TaskStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
 }
 

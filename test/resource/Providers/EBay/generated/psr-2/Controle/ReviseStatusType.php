@@ -37,5 +37,59 @@ class ReviseStatusType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setItemRevised($val) {
+        
+        $this->ItemRevised = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setBuyItNowAdded($val) {
+        
+        $this->BuyItNowAdded = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setBuyItNowLowered($val) {
+        
+        $this->BuyItNowLowered = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReserveLowered($val) {
+        
+        $this->ReserveLowered = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReserveRemoved($val) {
+        
+        $this->ReserveRemoved = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

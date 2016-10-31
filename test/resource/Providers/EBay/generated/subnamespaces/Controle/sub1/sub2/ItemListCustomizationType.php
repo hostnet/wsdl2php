@@ -39,5 +39,68 @@ class ItemListCustomizationType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setInclude($val) {
+		
+		$this->Include = (int)$val;
+	}
+
+	/**
+	 * @param ListingTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setListingType($val) {
+		
+		$this->ListingType = (int)$val;
+	}
+
+	/**
+	 * @param ItemSortTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setSort($val) {
+		
+		$this->Sort = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setDurationInDays($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->DurationInDays = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setIncludeNotes($val) {
+		
+		$this->IncludeNotes = (int)$val;
+	}
+
+	/**
+	 * @param PaginationType $val
+	 * @throws Exception
+	 */
+	public function setPagination($val) {
+		
+		$this->Pagination = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

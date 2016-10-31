@@ -10,5 +10,14 @@ class ListingTipArrayType {
 	 * @var \Controle\ListingTipType | An individual tip on improving a listing's details.
 	 */
 	public $ListingTip;
+	/**
+	 * @param ListingTipType $val
+	 * @throws Exception
+	 */
+	public function setListingTip($val) {
+		
+		$this->ListingTip = (int)$val;
+	}
+
 }
 

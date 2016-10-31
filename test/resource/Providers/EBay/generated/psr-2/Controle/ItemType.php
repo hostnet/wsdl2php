@@ -957,5 +957,986 @@ class ItemType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setApplicationData($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ApplicationData');
+        $this->ApplicationData = (int)$val;
+    }
+
+    /**
+     * @param AttributeSetArrayType $val
+     * @throws Exception
+     */
+    public function setAttributeSetArray($val) {
+        
+        $this->AttributeSetArray = (int)$val;
+    }
+
+    /**
+     * @param AttributeArrayType $val
+     * @throws Exception
+     */
+    public function setAttributeArray($val) {
+        
+        $this->AttributeArray = (int)$val;
+    }
+
+    /**
+     * @param LookupAttributeArrayType $val
+     * @throws Exception
+     */
+    public function setLookupAttributeArray($val) {
+        
+        $this->LookupAttributeArray = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setApplyShippingDiscount($val) {
+        
+        $this->ApplyShippingDiscount = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setAutoPay($val) {
+        
+        $this->AutoPay = (int)$val;
+    }
+
+    /**
+     * @param PaymentDetailsType $val
+     * @throws Exception
+     */
+    public function setPaymentDetails($val) {
+        
+        $this->PaymentDetails = (int)$val;
+    }
+
+    /**
+     * @param BiddingDetailsType $val
+     * @throws Exception
+     */
+    public function setBiddingDetails($val) {
+        
+        $this->BiddingDetails = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setMotorsGermanySearchable($val) {
+        
+        $this->MotorsGermanySearchable = (int)$val;
+    }
+
+    /**
+     * @param BuyerProtectionCodeType $val
+     * @throws Exception
+     */
+    public function setBuyerProtection($val) {
+        
+        $this->BuyerProtection = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setBuyItNowPrice($val) {
+        
+        $this->BuyItNowPrice = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCategoryMappingAllowed($val) {
+        
+        $this->CategoryMappingAllowed = (int)$val;
+    }
+
+    /**
+     * @param CharityType $val
+     * @throws Exception
+     */
+    public function setCharity($val) {
+        
+        $this->Charity = (int)$val;
+    }
+
+    /**
+     * @param CountryCodeType $val
+     * @throws Exception
+     */
+    public function setCountry($val) {
+        
+        $this->Country = (int)$val;
+    }
+
+    /**
+     * @param CrossPromotionsType $val
+     * @throws Exception
+     */
+    public function setCrossPromotion($val) {
+        
+        $this->CrossPromotion = (int)$val;
+    }
+
+    /**
+     * @param CurrencyCodeType $val
+     * @throws Exception
+     */
+    public function setCurrency($val) {
+        
+        $this->Currency = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDescription($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+        $this->Description = (int)$val;
+    }
+
+    /**
+     * @param DescriptionReviseModeCodeType $val
+     * @throws Exception
+     */
+    public function setDescriptionReviseMode($val) {
+        
+        $this->DescriptionReviseMode = (int)$val;
+    }
+
+    /**
+     * @param DistanceType $val
+     * @throws Exception
+     */
+    public function setDistance($val) {
+        
+        $this->Distance = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setFinanceOfferID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for FinanceOfferID');
+        $this->FinanceOfferID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setGiftIcon($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->GiftIcon = (int)$val;
+    }
+
+    /**
+     * @param GiftServicesCodeType $val
+     * @throws Exception
+     */
+    public function setGiftServices($val) {
+        
+        $this->GiftServices = (int)$val;
+    }
+
+    /**
+     * @param HitCounterCodeType $val
+     * @throws Exception
+     */
+    public function setHitCounter($val) {
+        
+        $this->HitCounter = (int)$val;
+    }
+
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param ListingDetailsType $val
+     * @throws Exception
+     */
+    public function setListingDetails($val) {
+        
+        $this->ListingDetails = (int)$val;
+    }
+
+    /**
+     * @param ListingDesignerType $val
+     * @throws Exception
+     */
+    public function setListingDesigner($val) {
+        
+        $this->ListingDesigner = (int)$val;
+    }
+
+    /**
+     * @param token $val
+     * @throws Exception
+     */
+    public function setListingDuration($val) {
+        
+        $this->ListingDuration = (int)$val;
+    }
+
+    /**
+     * @param ListingEnhancementsCodeType $val
+     * @throws Exception
+     */
+    public function setListingEnhancement($val) {
+        
+        $this->ListingEnhancement = (int)$val;
+    }
+
+    /**
+     * @param ListingTypeCodeType $val
+     * @throws Exception
+     */
+    public function setListingType($val) {
+        
+        $this->ListingType = (int)$val;
+    }
+
+    /**
+     * @param ListingSubtypeEnum $val
+     * @throws Exception
+     */
+    public function setListingSubtype($val) {
+        
+        $this->ListingSubtype = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setLocation($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Location');
+        $this->Location = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setLotSize($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->LotSize = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setNowAndNew($val) {
+        
+        $this->NowAndNew = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPartnerCode($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PartnerCode');
+        $this->PartnerCode = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPartnerName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PartnerName');
+        $this->PartnerName = (int)$val;
+    }
+
+    /**
+     * @param BuyerPaymentMethodCodeType $val
+     * @throws Exception
+     */
+    public function setPaymentMethods($val) {
+        
+        $this->PaymentMethods = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPayPalEmailAddress($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
+        $this->PayPalEmailAddress = (int)$val;
+    }
+
+    /**
+     * @param CategoryType $val
+     * @throws Exception
+     */
+    public function setPrimaryCategory($val) {
+        
+        $this->PrimaryCategory = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setPrivateListing($val) {
+        
+        $this->PrivateListing = (int)$val;
+    }
+
+    /**
+     * @param ProductListingDetailsType $val
+     * @throws Exception
+     */
+    public function setProductListingDetails($val) {
+        
+        $this->ProductListingDetails = (int)$val;
+    }
+
+    /**
+     * @param ProximitySearchDetailsType $val
+     * @throws Exception
+     */
+    public function setProximitySearchDetails($val) {
+        
+        $this->ProximitySearchDetails = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setQuantity($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->Quantity = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPrivateNotes($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PrivateNotes');
+        $this->PrivateNotes = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setRegionID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for RegionID');
+        $this->RegionID = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setRelistLink($val) {
+        
+        $this->RelistLink = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setReservePrice($val) {
+        
+        $this->ReservePrice = (int)$val;
+    }
+
+    /**
+     * @param ReviseStatusType $val
+     * @throws Exception
+     */
+    public function setReviseStatus($val) {
+        
+        $this->ReviseStatus = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setScheduleTime($val) {
+        
+        $this->ScheduleTime = (int)$val;
+    }
+
+    /**
+     * @param CategoryType $val
+     * @throws Exception
+     */
+    public function setSecondaryCategory($val) {
+        
+        $this->SecondaryCategory = (int)$val;
+    }
+
+    /**
+     * @param CategoryType $val
+     * @throws Exception
+     */
+    public function setFreeAddedCategory($val) {
+        
+        $this->FreeAddedCategory = (int)$val;
+    }
+
+    /**
+     * @param SiteHostedPictureType $val
+     * @throws Exception
+     */
+    public function setSiteHostedPicture($val) {
+        
+        $this->SiteHostedPicture = (int)$val;
+    }
+
+    /**
+     * @param UserType $val
+     * @throws Exception
+     */
+    public function setSeller($val) {
+        
+        $this->Seller = (int)$val;
+    }
+
+    /**
+     * @param SellingStatusType $val
+     * @throws Exception
+     */
+    public function setSellingStatus($val) {
+        
+        $this->SellingStatus = (int)$val;
+    }
+
+    /**
+     * @param ShippingOptionCodeType $val
+     * @throws Exception
+     */
+    public function setShippingOption($val) {
+        
+        $this->ShippingOption = (int)$val;
+    }
+
+    /**
+     * @param ShippingDetailsType $val
+     * @throws Exception
+     */
+    public function setShippingDetails($val) {
+        
+        $this->ShippingDetails = (int)$val;
+    }
+
+    /**
+     * @param ShippingRegionCodeType $val
+     * @throws Exception
+     */
+    public function setShippingRegions($val) {
+        
+        $this->ShippingRegions = (int)$val;
+    }
+
+    /**
+     * @param ShippingTermsCodeType $val
+     * @throws Exception
+     */
+    public function setShippingTerms($val) {
+        
+        $this->ShippingTerms = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setShipToLocations($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ShipToLocations');
+        $this->ShipToLocations = (int)$val;
+    }
+
+    /**
+     * @param SiteCodeType $val
+     * @throws Exception
+     */
+    public function setSite($val) {
+        
+        $this->Site = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setStartPrice($val) {
+        
+        $this->StartPrice = (int)$val;
+    }
+
+    /**
+     * @param StorefrontType $val
+     * @throws Exception
+     */
+    public function setStorefront($val) {
+        
+        $this->Storefront = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSubTitle($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SubTitle');
+        $this->SubTitle = (int)$val;
+    }
+
+    /**
+     * @param duration $val
+     * @throws Exception
+     */
+    public function setTimeLeft($val) {
+        
+        $this->TimeLeft = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTitle($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+        $this->Title = (int)$val;
+    }
+
+    /**
+     * @param UUIDType $val
+     * @throws Exception
+     */
+    public function setUUID($val) {
+        
+        $this->UUID = (int)$val;
+    }
+
+    /**
+     * @param VATDetailsType $val
+     * @throws Exception
+     */
+    public function setVATDetails($val) {
+        
+        $this->VATDetails = (int)$val;
+    }
+
+    /**
+     * @param VendorHostedPictureType $val
+     * @throws Exception
+     */
+    public function setVendorHostedPicture($val) {
+        
+        $this->VendorHostedPicture = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSellerVacationNote($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerVacationNote');
+        $this->SellerVacationNote = (int)$val;
+    }
+
+    /**
+     * @param long $val
+     * @throws Exception
+     */
+    public function setWatchCount($val) {
+        
+        $this->WatchCount = (int)$val;
+    }
+
+    /**
+     * @param long $val
+     * @throws Exception
+     */
+    public function setHitCount($val) {
+        
+        $this->HitCount = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setDisableBuyerRequirements($val) {
+        
+        $this->DisableBuyerRequirements = (int)$val;
+    }
+
+    /**
+     * @param BuyerRequirementsType $val
+     * @throws Exception
+     */
+    public function setBuyerRequirements($val) {
+        
+        $this->BuyerRequirements = (int)$val;
+    }
+
+    /**
+     * @param BestOfferDetailsType $val
+     * @throws Exception
+     */
+    public function setBestOfferDetails($val) {
+        
+        $this->BestOfferDetails = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setAnythingPoints($val) {
+        
+        $this->AnythingPoints = (int)$val;
+    }
+
+    /**
+     * @param LiveAuctionDetailsType $val
+     * @throws Exception
+     */
+    public function setLiveAuctionDetails($val) {
+        
+        $this->LiveAuctionDetails = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setLocationDefaulted($val) {
+        
+        $this->LocationDefaulted = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setThirdPartyCheckout($val) {
+        
+        $this->ThirdPartyCheckout = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setUseTaxTable($val) {
+        
+        $this->UseTaxTable = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setGetItFast($val) {
+        
+        $this->GetItFast = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setBuyerResponsibleForShipping($val) {
+        
+        $this->BuyerResponsibleForShipping = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setLimitedWarrantyEligible($val) {
+        
+        $this->LimitedWarrantyEligible = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setEBayNotes($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for eBayNotes');
+        $this->eBayNotes = (int)$val;
+    }
+
+    /**
+     * @param long $val
+     * @throws Exception
+     */
+    public function setQuestionCount($val) {
+        
+        $this->QuestionCount = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setRelisted($val) {
+        
+        $this->Relisted = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setQuantityAvailable($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->QuantityAvailable = (int)$val;
+    }
+
+    /**
+     * @param SKUType $val
+     * @throws Exception
+     */
+    public function setSKU($val) {
+        
+        $this->SKU = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCategoryBasedAttributesPrefill($val) {
+        
+        $this->CategoryBasedAttributesPrefill = (int)$val;
+    }
+
+    /**
+     * @param SearchDetailsType $val
+     * @throws Exception
+     */
+    public function setSearchDetails($val) {
+        
+        $this->SearchDetails = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPostalCode($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PostalCode');
+        $this->PostalCode = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setShippingTermsInDescription($val) {
+        
+        $this->ShippingTermsInDescription = (int)$val;
+    }
+
+    /**
+     * @param ExternalProductIDType $val
+     * @throws Exception
+     */
+    public function setExternalProductID($val) {
+        
+        $this->ExternalProductID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSellerInventoryID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerInventoryID');
+        $this->SellerInventoryID = (int)$val;
+    }
+
+    /**
+     * @param PictureDetailsType $val
+     * @throws Exception
+     */
+    public function setPictureDetails($val) {
+        
+        $this->PictureDetails = (int)$val;
+    }
+
+    /**
+     * @param DigitalDeliveryDetailsType $val
+     * @throws Exception
+     */
+    public function setDigitalDeliveryDetails($val) {
+        
+        $this->DigitalDeliveryDetails = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setDispatchTimeMax($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->DispatchTimeMax = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setSkypeEnabled($val) {
+        
+        $this->SkypeEnabled = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSkypeID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SkypeID');
+        $this->SkypeID = (int)$val;
+    }
+
+    /**
+     * @param SkypeOptionCodeType $val
+     * @throws Exception
+     */
+    public function setSkypeOption($val) {
+        
+        $this->SkypeOption = (int)$val;
+    }
+
+    /**
+     * @param SkypeContactOptionCodeType $val
+     * @throws Exception
+     */
+    public function setSkypeContactOption($val) {
+        
+        $this->SkypeContactOption = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setBestOfferEnabled($val) {
+        
+        $this->BestOfferEnabled = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setLocalListing($val) {
+        
+        $this->LocalListing = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setThirdPartyCheckoutIntegration($val) {
+        
+        $this->ThirdPartyCheckoutIntegration = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setExpressOptOut($val) {
+        
+        $this->ExpressOptOut = (int)$val;
+    }
+
+    /**
+     * @param ListingCheckoutRedirectPreferenceType $val
+     * @throws Exception
+     */
+    public function setListingCheckoutRedirectPreference($val) {
+        
+        $this->ListingCheckoutRedirectPreference = (int)$val;
+    }
+
+    /**
+     * @param ExpressDetailsType $val
+     * @throws Exception
+     */
+    public function setExpressDetails($val) {
+        
+        $this->ExpressDetails = (int)$val;
+    }
+
+    /**
+     * @param AddressType $val
+     * @throws Exception
+     */
+    public function setSellerContactDetails($val) {
+        
+        $this->SellerContactDetails = (int)$val;
+    }
+
+    /**
+     * @param long $val
+     * @throws Exception
+     */
+    public function setTotalQuestionCount($val) {
+        
+        $this->TotalQuestionCount = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setProxyItem($val) {
+        
+        $this->ProxyItem = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

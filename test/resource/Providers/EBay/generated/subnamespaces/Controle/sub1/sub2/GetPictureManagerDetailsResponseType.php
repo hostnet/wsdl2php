@@ -12,5 +12,14 @@ class GetPictureManagerDetailsResponseType extends \Controle\sub1\sub2\AbstractR
 	 * site.
 	 */
 	public $PictureManagerDetails;
+	/**
+	 * @param PictureManagerDetailsType $val
+	 * @throws Exception
+	 */
+	public function setPictureManagerDetails($val) {
+		
+		$this->PictureManagerDetails = (int)$val;
+	}
+
 }
 

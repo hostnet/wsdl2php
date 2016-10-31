@@ -33,5 +33,50 @@ class ListingTipFieldType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setListingTipFieldID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListingTipFieldID');
+		$this->ListingTipFieldID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setFieldTip($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FieldTip');
+		$this->FieldTip = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCurrentFieldText($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CurrentFieldText');
+		$this->CurrentFieldText = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCurrentFieldValue($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CurrentFieldValue');
+		$this->CurrentFieldValue = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

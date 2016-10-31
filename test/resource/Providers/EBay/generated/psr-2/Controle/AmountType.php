@@ -18,5 +18,23 @@ class AmountType {
      * @var \Controle\CurrencyCodeType
      */
     public $currencyID;
+    /**
+     * @param double $val
+     * @throws Exception
+     */
+    public function set_($val) {
+        
+        $this->_ = (int)$val;
+    }
+
+    /**
+     * @param CurrencyCodeType $val
+     * @throws Exception
+     */
+    public function setCurrencyID($val) {
+        
+        $this->currencyID = (int)$val;
+    }
+
 }
 

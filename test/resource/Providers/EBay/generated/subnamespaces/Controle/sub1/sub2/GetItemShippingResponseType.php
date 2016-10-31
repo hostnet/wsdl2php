@@ -13,5 +13,14 @@ class GetItemShippingResponseType extends \Controle\sub1\sub2\AbstractResponseTy
 	 * For GetOrders, minimal ShippingDetails information is returned under the Transaction container.
 	 */
 	public $ShippingDetails;
+	/**
+	 * @param ShippingDetailsType $val
+	 * @throws Exception
+	 */
+	public function setShippingDetails($val) {
+		
+		$this->ShippingDetails = (int)$val;
+	}
+
 }
 

@@ -23,5 +23,41 @@ class AddSecondChanceItemResponseType extends \Controle\AbstractResponseType {
 	 * of StartTime and ListingDuration) or the actual end time if the item has ended.
 	 */
 	public $EndTime;
+	/**
+	 * @param FeesType $val
+	 * @throws Exception
+	 */
+	public function setFees($val) {
+		
+		$this->Fees = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setStartTime($val) {
+		
+		$this->StartTime = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setEndTime($val) {
+		
+		$this->EndTime = (int)$val;
+	}
+
 }
 

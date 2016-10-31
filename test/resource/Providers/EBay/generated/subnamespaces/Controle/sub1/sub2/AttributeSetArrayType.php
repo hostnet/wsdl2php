@@ -22,5 +22,14 @@ class AttributeSetArrayType {
 	 * higher.
 	 */
 	public $AttributeSet;
+	/**
+	 * @param AttributeSetType $val
+	 * @throws Exception
+	 */
+	public function setAttributeSet($val) {
+		
+		$this->AttributeSet = (int)$val;
+	}
+
 }
 

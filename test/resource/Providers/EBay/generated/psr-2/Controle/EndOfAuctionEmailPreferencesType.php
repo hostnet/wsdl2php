@@ -40,5 +40,77 @@ class EndOfAuctionEmailPreferencesType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTemplateText($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for TemplateText');
+        $this->TemplateText = (int)$val;
+    }
+
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setLogoURL($val) {
+        
+        $this->LogoURL = (int)$val;
+    }
+
+    /**
+     * @param EndOfAuctionLogoTypeCodeType $val
+     * @throws Exception
+     */
+    public function setLogoType($val) {
+        
+        $this->LogoType = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setEmailCustomized($val) {
+        
+        $this->EmailCustomized = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setTextCustomized($val) {
+        
+        $this->TextCustomized = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setLogoCustomized($val) {
+        
+        $this->LogoCustomized = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCopyEmail($val) {
+        
+        $this->CopyEmail = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

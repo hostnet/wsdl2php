@@ -18,5 +18,23 @@ class eBxOptInPreferenceType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEBxOptInPreference($val) {
+		
+		$this->eBxOptInPreference = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

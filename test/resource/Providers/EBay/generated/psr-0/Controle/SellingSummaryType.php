@@ -37,5 +37,68 @@ class SellingSummaryType {
 	 * @var int | The average duration, in days, of all items sold.
 	 */
 	public $SoldDurationInDays;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setActiveAuctionCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ActiveAuctionCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setAuctionSellingCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->AuctionSellingCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setAuctionBidCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->AuctionBidCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalAuctionSellingValue($val) {
+		
+		$this->TotalAuctionSellingValue = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalSoldCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalSoldCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalSoldValue($val) {
+		
+		$this->TotalSoldValue = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setSoldDurationInDays($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->SoldDurationInDays = (int)$val;
+	}
+
 }
 

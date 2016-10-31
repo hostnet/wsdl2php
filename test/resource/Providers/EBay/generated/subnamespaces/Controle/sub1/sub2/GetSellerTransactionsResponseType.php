@@ -58,5 +58,77 @@ class GetSellerTransactionsResponseType extends \Controle\sub1\sub2\AbstractResp
 	 * @var boolean | Specifies whether a seller wants to let buyers know that PayPal payments are preferred.
 	 */
 	public $PayPalPreferred;
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMoreTransactions($val) {
+		
+		$this->HasMoreTransactions = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTransactionsPerPage($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TransactionsPerPage = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageNumber = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setReturnedTransactionCountActual($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ReturnedTransactionCountActual = (int)$val;
+	}
+
+	/**
+	 * @param UserType $val
+	 * @throws Exception
+	 */
+	public function setSeller($val) {
+		
+		$this->Seller = (int)$val;
+	}
+
+	/**
+	 * @param TransactionArrayType $val
+	 * @throws Exception
+	 */
+	public function setTransactionArray($val) {
+		
+		$this->TransactionArray = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPayPalPreferred($val) {
+		
+		$this->PayPalPreferred = (int)$val;
+	}
+
 }
 

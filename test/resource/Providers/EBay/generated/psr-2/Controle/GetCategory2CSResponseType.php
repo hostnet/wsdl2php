@@ -42,5 +42,41 @@ class GetCategory2CSResponseType extends \Controle\AbstractResponseType {
      * functionality.
      */
     public $SiteWideCharacteristicSets;
+    /**
+     * @param CategoryArrayType $val
+     * @throws Exception
+     */
+    public function setMappedCategoryArray($val) {
+        
+        $this->MappedCategoryArray = (int)$val;
+    }
+
+    /**
+     * @param CategoryArrayType $val
+     * @throws Exception
+     */
+    public function setUnmappedCategoryArray($val) {
+        
+        $this->UnmappedCategoryArray = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setAttributeSystemVersion($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+        $this->AttributeSystemVersion = (int)$val;
+    }
+
+    /**
+     * @param SiteWideCharacteristicsType $val
+     * @throws Exception
+     */
+    public function setSiteWideCharacteristicSets($val) {
+        
+        $this->SiteWideCharacteristicSets = (int)$val;
+    }
+
 }
 

@@ -24,5 +24,50 @@ class CheckoutStatusType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param PaymentStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setEBayPaymentStatus($val) {
+		
+		$this->eBayPaymentStatus = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setLastModifiedTime($val) {
+		
+		$this->LastModifiedTime = (int)$val;
+	}
+
+	/**
+	 * @param BuyerPaymentMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPaymentMethod($val) {
+		
+		$this->PaymentMethod = (int)$val;
+	}
+
+	/**
+	 * @param CompleteStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -39,5 +39,50 @@ class BidApprovalType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param UserIDType $val
+     * @throws Exception
+     */
+    public function setUserID($val) {
+        
+        $this->UserID = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setApprovedBiddingLimit($val) {
+        
+        $this->ApprovedBiddingLimit = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDeclinedComment($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DeclinedComment');
+        $this->DeclinedComment = (int)$val;
+    }
+
+    /**
+     * @param BidderStatusCodeType $val
+     * @throws Exception
+     */
+    public function setStatus($val) {
+        
+        $this->Status = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

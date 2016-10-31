@@ -1,4 +1,32 @@
 <?php
+
+namespace Controle;
+
+/**
+ * EmailVerNoTestEmailClient
+ * These functions deal with Email Address Verification.  <b>CDYNE advertises a 100% SLA.
+ * Try to find that kind of SLA from other web service vendors!</b>
+ */
+class EmailVerNoTestEmailClient extends \SoapClient {
+
+	const WSDL_FILE = "EmailVerifyTest.wsdl";
+	private $classmap = array(
+		'VerifyMXRecordResponse' => '\Controle\sub1\sub2\VerifyMXRecordResponse',
+		'AdvancedVerifyEmailResponse' => '\Controle\sub1\sub2\AdvancedVerifyEmailResponse',
+		'ReturnIndicator' => '\Controle\sub1\sub2\ReturnIndicator',
+		'VerifyEmailResponse' => '\Controle\sub1\sub2\VerifyEmailResponse',
+		'ReturnCodesResponse' => '\Controle\sub1\sub2\ReturnCodesResponse',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

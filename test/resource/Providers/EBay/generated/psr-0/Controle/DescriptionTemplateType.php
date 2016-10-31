@@ -42,5 +42,68 @@ class DescriptionTemplateType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setGroupID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->GroupID = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ID = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setImageURL($val) {
+		
+		$this->ImageURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTemplateXML($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TemplateXML');
+		$this->TemplateXML = (int)$val;
+	}
+
+	/**
+	 * @param DescriptionTemplateCodeType $val
+	 * @throws Exception
+	 */
+	public function setType($val) {
+		
+		$this->Type = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

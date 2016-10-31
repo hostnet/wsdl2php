@@ -89,5 +89,131 @@ class AbstractResponseType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setTimestamp($val) {
+		
+		$this->Timestamp = (int)$val;
+	}
+
+	/**
+	 * @param AckCodeType $val
+	 * @throws Exception
+	 */
+	public function setAck($val) {
+		
+		$this->Ack = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCorrelationID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CorrelationID');
+		$this->CorrelationID = (int)$val;
+	}
+
+	/**
+	 * @param ErrorType $val
+	 * @throws Exception
+	 */
+	public function setErrors($val) {
+		
+		$this->Errors = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Message');
+		$this->Message = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Version');
+		$this->Version = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setBuild($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Build');
+		$this->Build = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setNotificationEventName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for NotificationEventName');
+		$this->NotificationEventName = (int)$val;
+	}
+
+	/**
+	 * @param DuplicateInvocationDetailsType $val
+	 * @throws Exception
+	 */
+	public function setDuplicateInvocationDetails($val) {
+		
+		$this->DuplicateInvocationDetails = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRecipientUserID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RecipientUserID');
+		$this->RecipientUserID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setEIASToken($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for EIASToken');
+		$this->EIASToken = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setNotificationSignature($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for NotificationSignature');
+		$this->NotificationSignature = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setHardExpirationWarning($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for HardExpirationWarning');
+		$this->HardExpirationWarning = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

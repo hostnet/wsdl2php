@@ -66,5 +66,95 @@ class GeteBayDetailsResponseType extends \Controle\sub1\sub2\AbstractResponseTyp
 	 * to the site to which you sent the request.
 	 */
 	public $URLDetails;
+	/**
+	 * @param CountryDetailsType $val
+	 * @throws Exception
+	 */
+	public function setCountryDetails($val) {
+		
+		$this->CountryDetails = (int)$val;
+	}
+
+	/**
+	 * @param CurrencyDetailsType $val
+	 * @throws Exception
+	 */
+	public function setCurrencyDetails($val) {
+		
+		$this->CurrencyDetails = (int)$val;
+	}
+
+	/**
+	 * @param DispatchTimeMaxDetailsType $val
+	 * @throws Exception
+	 */
+	public function setDispatchTimeMaxDetails($val) {
+		
+		$this->DispatchTimeMaxDetails = (int)$val;
+	}
+
+	/**
+	 * @param PaymentOptionDetailsType $val
+	 * @throws Exception
+	 */
+	public function setPaymentOptionDetails($val) {
+		
+		$this->PaymentOptionDetails = (int)$val;
+	}
+
+	/**
+	 * @param RegionDetailsType $val
+	 * @throws Exception
+	 */
+	public function setRegionDetails($val) {
+		
+		$this->RegionDetails = (int)$val;
+	}
+
+	/**
+	 * @param ShippingLocationDetailsType $val
+	 * @throws Exception
+	 */
+	public function setShippingLocationDetails($val) {
+		
+		$this->ShippingLocationDetails = (int)$val;
+	}
+
+	/**
+	 * @param ShippingServiceDetailsType $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceDetails($val) {
+		
+		$this->ShippingServiceDetails = (int)$val;
+	}
+
+	/**
+	 * @param SiteDetailsType $val
+	 * @throws Exception
+	 */
+	public function setSiteDetails($val) {
+		
+		$this->SiteDetails = (int)$val;
+	}
+
+	/**
+	 * @param TaxJurisdictionType $val
+	 * @throws Exception
+	 */
+	public function setTaxJurisdiction($val) {
+		
+		$this->TaxJurisdiction = (int)$val;
+	}
+
+	/**
+	 * @param URLDetailsType $val
+	 * @throws Exception
+	 */
+	public function setURLDetails($val) {
+		
+		$this->URLDetails = (int)$val;
+	}
+
 }
 

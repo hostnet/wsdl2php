@@ -12,5 +12,14 @@ class SearchResultItemArrayType {
 	 * @var \Controle\sub1\sub2\SearchResultItemType | Contains data for an item listing found by a search.            Output only.
 	 */
 	public $SearchResultItem;
+	/**
+	 * @param SearchResultItemType $val
+	 * @throws Exception
+	 */
+	public function setSearchResultItem($val) {
+		
+		$this->SearchResultItem = (int)$val;
+	}
+
 }
 

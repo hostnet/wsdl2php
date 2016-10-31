@@ -63,5 +63,59 @@ class GetSellerPaymentsResponseType extends \Controle\AbstractResponseType {
      * returned.
      */
     public $ReturnedPaymentCountActual;
+    /**
+     * @param PaginationResultType $val
+     * @throws Exception
+     */
+    public function setPaginationResult($val) {
+        
+        $this->PaginationResult = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setHasMorePayments($val) {
+        
+        $this->HasMorePayments = (int)$val;
+    }
+
+    /**
+     * @param SellerPaymentType $val
+     * @throws Exception
+     */
+    public function setSellerPayment($val) {
+        
+        $this->SellerPayment = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPaymentsPerPage($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->PaymentsPerPage = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPageNumber($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->PageNumber = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setReturnedPaymentCountActual($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ReturnedPaymentCountActual = (int)$val;
+    }
+
 }
 

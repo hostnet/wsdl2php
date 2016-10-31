@@ -11,5 +11,23 @@ class GetCategory2FinanceOfferResponseType extends \Controle\AbstractResponseTyp
      * @var \Controle\CategoryFinanceOfferArrayType | Set of finance offers that apply to the specified category.
      */
     public $CategoryFinanceOfferArray;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCount($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->Count = (int)$val;
+    }
+
+    /**
+     * @param CategoryFinanceOfferArrayType $val
+     * @throws Exception
+     */
+    public function setCategoryFinanceOfferArray($val) {
+        
+        $this->CategoryFinanceOfferArray = (int)$val;
+    }
+
 }
 

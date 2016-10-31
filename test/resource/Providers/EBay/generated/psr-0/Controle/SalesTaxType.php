@@ -30,5 +30,50 @@ class SalesTaxType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param float $val
+	 * @throws Exception
+	 */
+	public function setSalesTaxPercent($val) {
+		
+		$this->SalesTaxPercent = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSalesTaxState($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SalesTaxState');
+		$this->SalesTaxState = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setShippingIncludedInTax($val) {
+		
+		$this->ShippingIncludedInTax = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setSalesTaxAmount($val) {
+		
+		$this->SalesTaxAmount = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

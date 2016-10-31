@@ -49,5 +49,86 @@ class GetMyeBayBuyingResponseType extends \Controle\sub1\sub2\AbstractResponseTy
 	 * @var \Controle\sub1\sub2\ItemType | A Second Chance Offer item.
 	 */
 	public $SecondChanceOffer;
+	/**
+	 * @param BuyingSummaryType $val
+	 * @throws Exception
+	 */
+	public function setBuyingSummary($val) {
+		
+		$this->BuyingSummary = (int)$val;
+	}
+
+	/**
+	 * @param PaginatedItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setWatchList($val) {
+		
+		$this->WatchList = (int)$val;
+	}
+
+	/**
+	 * @param PaginatedItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setBidList($val) {
+		
+		$this->BidList = (int)$val;
+	}
+
+	/**
+	 * @param PaginatedItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferList($val) {
+		
+		$this->BestOfferList = (int)$val;
+	}
+
+	/**
+	 * @param PaginatedOrderTransactionArrayType $val
+	 * @throws Exception
+	 */
+	public function setWonList($val) {
+		
+		$this->WonList = (int)$val;
+	}
+
+	/**
+	 * @param PaginatedItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setLostList($val) {
+		
+		$this->LostList = (int)$val;
+	}
+
+	/**
+	 * @param MyeBayFavoriteSearchListType $val
+	 * @throws Exception
+	 */
+	public function setFavoriteSearches($val) {
+		
+		$this->FavoriteSearches = (int)$val;
+	}
+
+	/**
+	 * @param MyeBayFavoriteSellerListType $val
+	 * @throws Exception
+	 */
+	public function setFavoriteSellers($val) {
+		
+		$this->FavoriteSellers = (int)$val;
+	}
+
+	/**
+	 * @param ItemType $val
+	 * @throws Exception
+	 */
+	public function setSecondChanceOffer($val) {
+		
+		$this->SecondChanceOffer = (int)$val;
+	}
+
 }
 

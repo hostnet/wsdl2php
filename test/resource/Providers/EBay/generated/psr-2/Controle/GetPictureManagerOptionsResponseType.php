@@ -14,5 +14,23 @@ class GetPictureManagerOptionsResponseType extends \Controle\AbstractResponseTyp
      * @var \Controle\PictureManagerPictureDisplayType | A global definition for displaying pictures, with a maximum size.
      */
     public $PictureType;
+    /**
+     * @param PictureManagerSubscriptionType $val
+     * @throws Exception
+     */
+    public function setSubscription($val) {
+        
+        $this->Subscription = (int)$val;
+    }
+
+    /**
+     * @param PictureManagerPictureDisplayType $val
+     * @throws Exception
+     */
+    public function setPictureType($val) {
+        
+        $this->PictureType = (int)$val;
+    }
+
 }
 

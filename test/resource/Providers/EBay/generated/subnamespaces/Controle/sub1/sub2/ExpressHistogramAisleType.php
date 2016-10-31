@@ -24,5 +24,32 @@ class ExpressHistogramAisleType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ExpressHistogramDomainDetailsType $val
+	 * @throws Exception
+	 */
+	public function setDomainDetails($val) {
+		
+		$this->DomainDetails = (int)$val;
+	}
+
+	/**
+	 * @param ExpressHistogramProductType $val
+	 * @throws Exception
+	 */
+	public function setProductType($val) {
+		
+		$this->ProductType = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

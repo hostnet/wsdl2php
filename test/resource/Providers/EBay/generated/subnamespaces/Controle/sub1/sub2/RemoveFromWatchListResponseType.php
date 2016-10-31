@@ -16,5 +16,23 @@ class RemoveFromWatchListResponseType extends \Controle\sub1\sub2\AbstractRespon
 	 * all sites and all users.
 	 */
 	public $WatchListMaximum;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setWatchListCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->WatchListCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setWatchListMaximum($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->WatchListMaximum = (int)$val;
+	}
+
 }
 

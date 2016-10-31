@@ -28,5 +28,50 @@ class GetMyeBaySellingResponseType extends \Controle\AbstractResponseType {
      * @var \Controle\PaginatedItemArrayType | Contains the items whose listings have ended but that have not sold.
      */
     public $UnsoldList;
+    /**
+     * @param SellingSummaryType $val
+     * @throws Exception
+     */
+    public function setSellingSummary($val) {
+        
+        $this->SellingSummary = (int)$val;
+    }
+
+    /**
+     * @param PaginatedItemArrayType $val
+     * @throws Exception
+     */
+    public function setScheduledList($val) {
+        
+        $this->ScheduledList = (int)$val;
+    }
+
+    /**
+     * @param PaginatedItemArrayType $val
+     * @throws Exception
+     */
+    public function setActiveList($val) {
+        
+        $this->ActiveList = (int)$val;
+    }
+
+    /**
+     * @param PaginatedOrderTransactionArrayType $val
+     * @throws Exception
+     */
+    public function setSoldList($val) {
+        
+        $this->SoldList = (int)$val;
+    }
+
+    /**
+     * @param PaginatedItemArrayType $val
+     * @throws Exception
+     */
+    public function setUnsoldList($val) {
+        
+        $this->UnsoldList = (int)$val;
+    }
+
 }
 

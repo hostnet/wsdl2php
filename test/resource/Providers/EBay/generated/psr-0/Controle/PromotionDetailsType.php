@@ -31,5 +31,50 @@ class PromotionDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setPromotionPrice($val) {
+		
+		$this->PromotionPrice = (int)$val;
+	}
+
+	/**
+	 * @param PromotionItemPriceTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setPromotionPriceType($val) {
+		
+		$this->PromotionPriceType = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBidCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BidCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedPromotionPrice($val) {
+		
+		$this->ConvertedPromotionPrice = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -108,5 +108,194 @@ class DisputeType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param DisputeIDType $val
+	 * @throws Exception
+	 */
+	public function setDisputeID($val) {
+		
+		$this->DisputeID = (int)$val;
+	}
+
+	/**
+	 * @param DisputeRecordTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisputeRecordType($val) {
+		
+		$this->DisputeRecordType = (int)$val;
+	}
+
+	/**
+	 * @param DisputeStateCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisputeState($val) {
+		
+		$this->DisputeState = (int)$val;
+	}
+
+	/**
+	 * @param DisputeStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisputeStatus($val) {
+		
+		$this->DisputeStatus = (int)$val;
+	}
+
+	/**
+	 * @param TradingRoleCodeType $val
+	 * @throws Exception
+	 */
+	public function setOtherPartyRole($val) {
+		
+		$this->OtherPartyRole = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setOtherPartyName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for OtherPartyName');
+		$this->OtherPartyName = (int)$val;
+	}
+
+	/**
+	 * @param TradingRoleCodeType $val
+	 * @throws Exception
+	 */
+	public function setUserRole($val) {
+		
+		$this->UserRole = (int)$val;
+	}
+
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setBuyerUserID($val) {
+		
+		$this->BuyerUserID = (int)$val;
+	}
+
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setSellerUserID($val) {
+		
+		$this->SellerUserID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTransactionID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
+		$this->TransactionID = (int)$val;
+	}
+
+	/**
+	 * @param ItemType $val
+	 * @throws Exception
+	 */
+	public function setItem($val) {
+		
+		$this->Item = (int)$val;
+	}
+
+	/**
+	 * @param DisputeReasonCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisputeReason($val) {
+		
+		$this->DisputeReason = (int)$val;
+	}
+
+	/**
+	 * @param DisputeExplanationCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisputeExplanation($val) {
+		
+		$this->DisputeExplanation = (int)$val;
+	}
+
+	/**
+	 * @param DisputeCreditEligibilityCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisputeCreditEligibility($val) {
+		
+		$this->DisputeCreditEligibility = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setDisputeCreatedTime($val) {
+		
+		$this->DisputeCreatedTime = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setDisputeModifiedTime($val) {
+		
+		$this->DisputeModifiedTime = (int)$val;
+	}
+
+	/**
+	 * @param DisputeResolutionType $val
+	 * @throws Exception
+	 */
+	public function setDisputeResolution($val) {
+		
+		$this->DisputeResolution = (int)$val;
+	}
+
+	/**
+	 * @param DisputeMessageType $val
+	 * @throws Exception
+	 */
+	public function setDisputeMessage($val) {
+		
+		$this->DisputeMessage = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEscalation($val) {
+		
+		$this->Escalation = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPurchaseProtection($val) {
+		
+		$this->PurchaseProtection = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

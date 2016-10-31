@@ -12,5 +12,14 @@ class LeaveFeedbackResponseType extends \Controle\AbstractResponseType {
 	 * the parent is returned).
 	 */
 	public $FeedbackID;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setFeedbackID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FeedbackID');
+		$this->FeedbackID = (int)$val;
+	}
+
 }
 

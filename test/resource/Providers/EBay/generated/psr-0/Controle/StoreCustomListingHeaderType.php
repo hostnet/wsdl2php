@@ -38,5 +38,77 @@ class StoreCustomListingHeaderType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param StoreCustomListingHeaderDisplayCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisplayType($val) {
+		
+		$this->DisplayType = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLogo($val) {
+		
+		$this->Logo = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSearchBox($val) {
+		
+		$this->SearchBox = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomListingHeaderLinkType $val
+	 * @throws Exception
+	 */
+	public function setLinkToInclude($val) {
+		
+		$this->LinkToInclude = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setAddToFavoriteStores($val) {
+		
+		$this->AddToFavoriteStores = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSignUpForStoreNewsletter($val) {
+		
+		$this->SignUpForStoreNewsletter = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBreadCrumb($val) {
+		
+		$this->BreadCrumb = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

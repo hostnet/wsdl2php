@@ -102,5 +102,122 @@ class ExpressSellerRequirementsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setExpressSellingPreference($val) {
+        
+        $this->ExpressSellingPreference = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setExpressApproved($val) {
+        
+        $this->ExpressApproved = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setGoodStanding($val) {
+        
+        $this->GoodStanding = (int)$val;
+    }
+
+    /**
+     * @param FeedbackRequirementsType $val
+     * @throws Exception
+     */
+    public function setFeedbackScore($val) {
+        
+        $this->FeedbackScore = (int)$val;
+    }
+
+    /**
+     * @param FeedbackRequirementsType $val
+     * @throws Exception
+     */
+    public function setPositiveFeedbackPercent($val) {
+        
+        $this->PositiveFeedbackPercent = (int)$val;
+    }
+
+    /**
+     * @param FeedbackRequirementsType $val
+     * @throws Exception
+     */
+    public function setFeedbackAsSellerScore($val) {
+        
+        $this->FeedbackAsSellerScore = (int)$val;
+    }
+
+    /**
+     * @param FeedbackRequirementsType $val
+     * @throws Exception
+     */
+    public function setPositiveFeedbackAsSellerPercent($val) {
+        
+        $this->PositiveFeedbackAsSellerPercent = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setBusinessSeller($val) {
+        
+        $this->BusinessSeller = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setEligiblePayPalAccount($val) {
+        
+        $this->EligiblePayPalAccount = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setPayPalAccountAcceptsUnconfirmedAddress($val) {
+        
+        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCombinedPaymentsAccepted($val) {
+        
+        $this->CombinedPaymentsAccepted = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setFeedbackPublic($val) {
+        
+        $this->FeedbackPublic = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

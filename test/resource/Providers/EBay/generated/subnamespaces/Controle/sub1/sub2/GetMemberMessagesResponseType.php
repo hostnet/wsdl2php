@@ -15,5 +15,32 @@ class GetMemberMessagesResponseType extends \Controle\sub1\sub2\AbstractResponse
 	 * @var boolean | Indicates whether there are additional Want It Now posts that meet the search criteria.
 	 */
 	public $HasMoreItems;
+	/**
+	 * @param MemberMessageExchangeArrayType $val
+	 * @throws Exception
+	 */
+	public function setMemberMessage($val) {
+		
+		$this->MemberMessage = (int)$val;
+	}
+
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMoreItems($val) {
+		
+		$this->HasMoreItems = (int)$val;
+	}
+
 }
 

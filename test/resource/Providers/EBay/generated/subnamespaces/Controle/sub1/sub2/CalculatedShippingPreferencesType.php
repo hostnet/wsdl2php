@@ -30,5 +30,50 @@ class CalculatedShippingPreferencesType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setCalculatedShippingAmountForEntireOrder($val) {
+		
+		$this->CalculatedShippingAmountForEntireOrder = (int)$val;
+	}
+
+	/**
+	 * @param CalculatedShippingChargeOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setCalculatedShippingChargeOption($val) {
+		
+		$this->CalculatedShippingChargeOption = (int)$val;
+	}
+
+	/**
+	 * @param CalculatedShippingRateOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setCalculatedShippingRateOption($val) {
+		
+		$this->CalculatedShippingRateOption = (int)$val;
+	}
+
+	/**
+	 * @param InsuranceOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setInsuranceOption($val) {
+		
+		$this->InsuranceOption = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -28,5 +28,23 @@ class GetAttributesCSResponseType extends \Controle\AbstractResponseType {
 	 * types.
 	 */
 	public $AttributeData;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAttributeSystemVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+		$this->AttributeSystemVersion = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAttributeData($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeData');
+		$this->AttributeData = (int)$val;
+	}
+
 }
 

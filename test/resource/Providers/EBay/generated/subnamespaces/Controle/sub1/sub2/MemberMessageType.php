@@ -66,5 +66,122 @@ class MemberMessageType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param MessageTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setMessageType($val) {
+		
+		$this->MessageType = (int)$val;
+	}
+
+	/**
+	 * @param QuestionTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setQuestionType($val) {
+		
+		$this->QuestionType = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEmailCopyToSender($val) {
+		
+		$this->EmailCopyToSender = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHideSendersEmailAddress($val) {
+		
+		$this->HideSendersEmailAddress = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setDisplayToPublic($val) {
+		
+		$this->DisplayToPublic = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSenderID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SenderID');
+		$this->SenderID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSenderEmail($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SenderEmail');
+		$this->SenderEmail = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRecipientID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RecipientID');
+		$this->RecipientID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSubject($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Subject');
+		$this->Subject = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setBody($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Body');
+		$this->Body = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setMessageID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for MessageID');
+		$this->MessageID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setParentMessageID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ParentMessageID');
+		$this->ParentMessageID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

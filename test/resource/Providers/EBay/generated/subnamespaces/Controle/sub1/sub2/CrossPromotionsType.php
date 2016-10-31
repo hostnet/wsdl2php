@@ -46,5 +46,86 @@ class CrossPromotionsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param PromotionSchemeCodeType $val
+	 * @throws Exception
+	 */
+	public function setPrimaryScheme($val) {
+		
+		$this->PrimaryScheme = (int)$val;
+	}
+
+	/**
+	 * @param PromotionMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPromotionMethod($val) {
+		
+		$this->PromotionMethod = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSellerID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerID');
+		$this->SellerID = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setShippingDiscount($val) {
+		
+		$this->ShippingDiscount = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSellerKey($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerKey');
+		$this->SellerKey = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStoreName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
+		$this->StoreName = (int)$val;
+	}
+
+	/**
+	 * @param PromotedItemType $val
+	 * @throws Exception
+	 */
+	public function setPromotedItem($val) {
+		
+		$this->PromotedItem = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

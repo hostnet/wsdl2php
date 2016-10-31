@@ -10,5 +10,14 @@ class AddMemberMessagesAAQToBidderResponseType extends \Controle\AbstractRespons
 	 * @var \Controle\AddMemberMessagesAAQToBidderResponseContainerType | Contains the response information.
 	 */
 	public $AddMemberMessagesAAQToBidderResponseContainer;
+	/**
+	 * @param AddMemberMessagesAAQToBidderResponseContainerType $val
+	 * @throws Exception
+	 */
+	public function setAddMemberMessagesAAQToBidderResponseContainer($val) {
+		
+		$this->AddMemberMessagesAAQToBidderResponseContainer = (int)$val;
+	}
+
 }
 

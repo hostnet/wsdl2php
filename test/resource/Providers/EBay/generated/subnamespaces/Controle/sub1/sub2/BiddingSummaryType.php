@@ -40,5 +40,77 @@ class BiddingSummaryType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setSummaryDays($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->SummaryDays = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalBids($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalBids = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBidActivityWithSeller($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BidActivityWithSeller = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBidsToUniqueSellers($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BidsToUniqueSellers = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBidsToUniqueCategories($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BidsToUniqueCategories = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBidRetractions($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BidRetractions = (int)$val;
+	}
+
+	/**
+	 * @param ItemBidDetailsType $val
+	 * @throws Exception
+	 */
+	public function setItemBidDetails($val) {
+		
+		$this->ItemBidDetails = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

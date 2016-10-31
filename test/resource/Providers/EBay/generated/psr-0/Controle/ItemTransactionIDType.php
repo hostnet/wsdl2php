@@ -21,5 +21,32 @@ class ItemTransactionIDType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTransactionID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
+		$this->TransactionID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

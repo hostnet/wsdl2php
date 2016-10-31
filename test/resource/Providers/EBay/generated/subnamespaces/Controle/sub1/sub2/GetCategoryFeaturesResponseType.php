@@ -29,5 +29,50 @@ class GetCategoryFeaturesResponseType extends \Controle\sub1\sub2\AbstractRespon
 	 * in FeatureID (if any). Each feature has a node within FeatureDefinitions.
 	 */
 	public $FeatureDefinitions;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCategoryVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryVersion');
+		$this->CategoryVersion = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setUpdateTime($val) {
+		
+		$this->UpdateTime = (int)$val;
+	}
+
+	/**
+	 * @param CategoryFeatureType $val
+	 * @throws Exception
+	 */
+	public function setCategory($val) {
+		
+		$this->Category = (int)$val;
+	}
+
+	/**
+	 * @param SiteDefaultsType $val
+	 * @throws Exception
+	 */
+	public function setSiteDefaults($val) {
+		
+		$this->SiteDefaults = (int)$val;
+	}
+
+	/**
+	 * @param FeatureDefinitionsType $val
+	 * @throws Exception
+	 */
+	public function setFeatureDefinitions($val) {
+		
+		$this->FeatureDefinitions = (int)$val;
+	}
+
 }
 

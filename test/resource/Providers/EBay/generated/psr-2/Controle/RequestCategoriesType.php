@@ -36,5 +36,41 @@ class RequestCategoriesType {
      *    the results are unpredictable.
      */
     public $Levels;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCategoriesOnly($val) {
+        
+        $this->CategoriesOnly = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setMaxCategories($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->MaxCategories = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setMaxSubcategories($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->MaxSubcategories = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setLevels($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->Levels = (int)$val;
+    }
+
 }
 

@@ -52,5 +52,68 @@ class GetUserDisputesResponseType extends \Controle\AbstractResponseType {
      * of entries.
      */
     public $PaginationResult;
+    /**
+     * @param DisputeIDType $val
+     * @throws Exception
+     */
+    public function setStartingDisputeID($val) {
+        
+        $this->StartingDisputeID = (int)$val;
+    }
+
+    /**
+     * @param DisputeIDType $val
+     * @throws Exception
+     */
+    public function setEndingDisputeID($val) {
+        
+        $this->EndingDisputeID = (int)$val;
+    }
+
+    /**
+     * @param DisputeArrayType $val
+     * @throws Exception
+     */
+    public function setDisputeArray($val) {
+        
+        $this->DisputeArray = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setItemsPerPage($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ItemsPerPage = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPageNumber($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->PageNumber = (int)$val;
+    }
+
+    /**
+     * @param DisputeFilterCountType $val
+     * @throws Exception
+     */
+    public function setDisputeFilterCount($val) {
+        
+        $this->DisputeFilterCount = (int)$val;
+    }
+
+    /**
+     * @param PaginationResultType $val
+     * @throws Exception
+     */
+    public function setPaginationResult($val) {
+        
+        $this->PaginationResult = (int)$val;
+    }
+
 }
 

@@ -25,5 +25,41 @@ class RefundType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setRefundFromSeller($val) {
+		
+		$this->RefundFromSeller = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalRefundToBuyer($val) {
+		
+		$this->TotalRefundToBuyer = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setRefundTime($val) {
+		
+		$this->RefundTime = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

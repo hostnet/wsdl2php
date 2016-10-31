@@ -13,5 +13,14 @@ class GetDisputeResponseType extends \Controle\AbstractResponseType {
 	 * to the dispute.
 	 */
 	public $Dispute;
+	/**
+	 * @param DisputeType $val
+	 * @throws Exception
+	 */
+	public function setDispute($val) {
+		
+		$this->Dispute = (int)$val;
+	}
+
 }
 

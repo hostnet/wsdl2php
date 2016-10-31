@@ -15,5 +15,23 @@ class CharityAffiliationsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param CharityIDType $val
+     * @throws Exception
+     */
+    public function setCharityID($val) {
+        
+        $this->CharityID = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -106,5 +106,167 @@ class FeedbackDetailType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param UserIDType $val
+     * @throws Exception
+     */
+    public function setCommentingUser($val) {
+        
+        $this->CommentingUser = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCommentingUserScore($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->CommentingUserScore = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCommentText($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CommentText');
+        $this->CommentText = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setCommentTime($val) {
+        
+        $this->CommentTime = (int)$val;
+    }
+
+    /**
+     * @param CommentTypeCodeType $val
+     * @throws Exception
+     */
+    public function setCommentType($val) {
+        
+        $this->CommentType = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setFeedbackResponse($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for FeedbackResponse');
+        $this->FeedbackResponse = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setFollowup($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Followup');
+        $this->Followup = (int)$val;
+    }
+
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param TradingRoleCodeType $val
+     * @throws Exception
+     */
+    public function setRole($val) {
+        
+        $this->Role = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setItemTitle($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ItemTitle');
+        $this->ItemTitle = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setItemPrice($val) {
+        
+        $this->ItemPrice = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setFeedbackID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for FeedbackID');
+        $this->FeedbackID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTransactionID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
+        $this->TransactionID = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCommentReplaced($val) {
+        
+        $this->CommentReplaced = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setResponseReplaced($val) {
+        
+        $this->ResponseReplaced = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setFollowUpReplaced($val) {
+        
+        $this->FollowUpReplaced = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCountable($val) {
+        
+        $this->Countable = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

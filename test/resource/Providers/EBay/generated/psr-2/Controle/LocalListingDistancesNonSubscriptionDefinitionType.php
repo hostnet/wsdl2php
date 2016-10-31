@@ -12,5 +12,14 @@ class LocalListingDistancesNonSubscriptionDefinitionType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

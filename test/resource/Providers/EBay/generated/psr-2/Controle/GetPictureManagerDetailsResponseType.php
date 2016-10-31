@@ -12,5 +12,14 @@ class GetPictureManagerDetailsResponseType extends \Controle\AbstractResponseTyp
      * eBay site.
      */
     public $PictureManagerDetails;
+    /**
+     * @param PictureManagerDetailsType $val
+     * @throws Exception
+     */
+    public function setPictureManagerDetails($val) {
+        
+        $this->PictureManagerDetails = (int)$val;
+    }
+
 }
 

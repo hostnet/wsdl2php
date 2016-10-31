@@ -56,5 +56,95 @@ class StoreCustomPageType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setURLPath($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for URLPath');
+		$this->URLPath = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setURL($val) {
+		
+		$this->URL = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomPageStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setContent($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Content');
+		$this->Content = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLeftNav($val) {
+		
+		$this->LeftNav = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPreviewEnabled($val) {
+		
+		$this->PreviewEnabled = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setOrder($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Order = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

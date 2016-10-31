@@ -116,5 +116,194 @@ class OrderType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param OrderIDType $val
+	 * @throws Exception
+	 */
+	public function setOrderID($val) {
+		
+		$this->OrderID = (int)$val;
+	}
+
+	/**
+	 * @param OrderStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setOrderStatus($val) {
+		
+		$this->OrderStatus = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAdjustmentAmount($val) {
+		
+		$this->AdjustmentAmount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAmountPaid($val) {
+		
+		$this->AmountPaid = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAmountSaved($val) {
+		
+		$this->AmountSaved = (int)$val;
+	}
+
+	/**
+	 * @param CheckoutStatusType $val
+	 * @throws Exception
+	 */
+	public function setCheckoutStatus($val) {
+		
+		$this->CheckoutStatus = (int)$val;
+	}
+
+	/**
+	 * @param ShippingDetailsType $val
+	 * @throws Exception
+	 */
+	public function setShippingDetails($val) {
+		
+		$this->ShippingDetails = (int)$val;
+	}
+
+	/**
+	 * @param TradingRoleCodeType $val
+	 * @throws Exception
+	 */
+	public function setCreatingUserRole($val) {
+		
+		$this->CreatingUserRole = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setCreatedTime($val) {
+		
+		$this->CreatedTime = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setFinanceOfferID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FinanceOfferID');
+		$this->FinanceOfferID = (int)$val;
+	}
+
+	/**
+	 * @param BuyerPaymentMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPaymentMethods($val) {
+		
+		$this->PaymentMethods = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSellerEmail($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerEmail');
+		$this->SellerEmail = (int)$val;
+	}
+
+	/**
+	 * @param AddressType $val
+	 * @throws Exception
+	 */
+	public function setShippingAddress($val) {
+		
+		$this->ShippingAddress = (int)$val;
+	}
+
+	/**
+	 * @param ShippingServiceOptionsType $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceSelected($val) {
+		
+		$this->ShippingServiceSelected = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setSubtotal($val) {
+		
+		$this->Subtotal = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotal($val) {
+		
+		$this->Total = (int)$val;
+	}
+
+	/**
+	 * @param ExternalTransactionType $val
+	 * @throws Exception
+	 */
+	public function setExternalTransaction($val) {
+		
+		$this->ExternalTransaction = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setDigitalDelivery($val) {
+		
+		$this->DigitalDelivery = (int)$val;
+	}
+
+	/**
+	 * @param TransactionArrayType $val
+	 * @throws Exception
+	 */
+	public function setTransactionArray($val) {
+		
+		$this->TransactionArray = (int)$val;
+	}
+
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setBuyerUserID($val) {
+		
+		$this->BuyerUserID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

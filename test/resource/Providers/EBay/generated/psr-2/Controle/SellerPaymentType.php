@@ -94,5 +94,131 @@ class SellerPaymentType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTransactionID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
+        $this->TransactionID = (int)$val;
+    }
+
+    /**
+     * @param OrderIDType $val
+     * @throws Exception
+     */
+    public function setOrderID($val) {
+        
+        $this->OrderID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSellerInventoryID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerInventoryID');
+        $this->SellerInventoryID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPrivateNotes($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for PrivateNotes');
+        $this->PrivateNotes = (int)$val;
+    }
+
+    /**
+     * @param ExternalProductIDType $val
+     * @throws Exception
+     */
+    public function setExternalProductID($val) {
+        
+        $this->ExternalProductID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTitle($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+        $this->Title = (int)$val;
+    }
+
+    /**
+     * @param PaymentTypeCodeType $val
+     * @throws Exception
+     */
+    public function setPaymentType($val) {
+        
+        $this->PaymentType = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setTransactionPrice($val) {
+        
+        $this->TransactionPrice = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setShippingReimbursement($val) {
+        
+        $this->ShippingReimbursement = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setCommission($val) {
+        
+        $this->Commission = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setAmountPaid($val) {
+        
+        $this->AmountPaid = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setPaidTime($val) {
+        
+        $this->PaidTime = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

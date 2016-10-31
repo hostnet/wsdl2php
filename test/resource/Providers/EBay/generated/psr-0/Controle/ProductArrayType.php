@@ -13,5 +13,14 @@ class ProductArrayType {
 	 *         See the Developer's Guide for additional details.
 	 */
 	public $Product;
+	/**
+	 * @param ExpressProductType $val
+	 * @throws Exception
+	 */
+	public function setProduct($val) {
+		
+		$this->Product = (int)$val;
+	}
+
 }
 

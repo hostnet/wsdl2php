@@ -10,5 +10,23 @@ class SearchContactResponse {
 	 * @var array \Controle\sub1\sub2\Contact
 	 */
 	public $contacts;
+	/**
+	 * @param Response $val
+	 * @throws Exception
+	 */
+	public function setSearchContactResult($val) {
+		
+		$this->SearchContactResult = (int)$val;
+	}
+
+	/**
+	 * @param ArrayOfContact $val
+	 * @throws Exception
+	 */
+	public function setContacts($val) {
+		
+		$this->contacts = (int)$val;
+	}
+
 }
 

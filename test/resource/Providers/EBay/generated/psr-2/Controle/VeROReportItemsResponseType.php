@@ -14,5 +14,23 @@ class VeROReportItemsResponseType extends \Controle\AbstractResponseType {
      * @var \Controle\VeROReportPacketStatusCodeType | The processing status of the packet.
      */
     public $VeROReportPacketStatus;
+    /**
+     * @param long $val
+     * @throws Exception
+     */
+    public function setVeROReportPacketID($val) {
+        
+        $this->VeROReportPacketID = (int)$val;
+    }
+
+    /**
+     * @param VeROReportPacketStatusCodeType $val
+     * @throws Exception
+     */
+    public function setVeROReportPacketStatus($val) {
+        
+        $this->VeROReportPacketStatus = (int)$val;
+    }
+
 }
 

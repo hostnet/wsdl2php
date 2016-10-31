@@ -39,5 +39,77 @@ class SellerPaymentPreferencesType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setAlwaysUseThisPaymentAddress($val) {
+        
+        $this->AlwaysUseThisPaymentAddress = (int)$val;
+    }
+
+    /**
+     * @param DisplayPayNowButtonCodeType $val
+     * @throws Exception
+     */
+    public function setDisplayPayNowButton($val) {
+        
+        $this->DisplayPayNowButton = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setPayPalPreferred($val) {
+        
+        $this->PayPalPreferred = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDefaultPayPalEmailAddress($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
+        $this->DefaultPayPalEmailAddress = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setPayPalAlwaysOn($val) {
+        
+        $this->PayPalAlwaysOn = (int)$val;
+    }
+
+    /**
+     * @param AddressType $val
+     * @throws Exception
+     */
+    public function setSellerPaymentAddress($val) {
+        
+        $this->SellerPaymentAddress = (int)$val;
+    }
+
+    /**
+     * @param UPSRateOptionCodeType $val
+     * @throws Exception
+     */
+    public function setUPSRateOption($val) {
+        
+        $this->UPSRateOption = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

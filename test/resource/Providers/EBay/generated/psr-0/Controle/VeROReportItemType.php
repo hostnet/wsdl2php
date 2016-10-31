@@ -28,5 +28,50 @@ class VeROReportItemType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setVeROReasonCodeID($val) {
+		
+		$this->VeROReasonCodeID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setMessageToSeller($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for MessageToSeller');
+		$this->MessageToSeller = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCopyEmailToRightsOwner($val) {
+		
+		$this->CopyEmailToRightsOwner = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

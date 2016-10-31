@@ -12,5 +12,14 @@ class AuthenticationEntryArrayType {
 	 * AuthenticationEntry fields can be returned.
 	 */
 	public $AuthenticationEntry;
+	/**
+	 * @param AuthenticationEntryType $val
+	 * @throws Exception
+	 */
+	public function setAuthenticationEntry($val) {
+		
+		$this->AuthenticationEntry = (int)$val;
+	}
+
 }
 

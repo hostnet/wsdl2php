@@ -86,5 +86,113 @@ class PromotedItemType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPictureURL($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PictureURL');
+		$this->PictureURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSelfHostedURL($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SelfHostedURL');
+		$this->SelfHostedURL = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPosition($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Position = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setPromotionPrice($val) {
+		
+		$this->PromotionPrice = (int)$val;
+	}
+
+	/**
+	 * @param PromotionItemPriceTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setPromotionPriceType($val) {
+		
+		$this->PromotionPriceType = (int)$val;
+	}
+
+	/**
+	 * @param PromotionItemSelectionCodeType $val
+	 * @throws Exception
+	 */
+	public function setSelectionType($val) {
+		
+		$this->SelectionType = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTitle($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+		$this->Title = (int)$val;
+	}
+
+	/**
+	 * @param ListingTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setListingType($val) {
+		
+		$this->ListingType = (int)$val;
+	}
+
+	/**
+	 * @param PromotionDetailsType $val
+	 * @throws Exception
+	 */
+	public function setPromotionDetails($val) {
+		
+		$this->PromotionDetails = (int)$val;
+	}
+
+	/**
+	 * @param duration $val
+	 * @throws Exception
+	 */
+	public function setTimeLeft($val) {
+		
+		$this->TimeLeft = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

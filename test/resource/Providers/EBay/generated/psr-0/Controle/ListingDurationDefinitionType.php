@@ -19,5 +19,32 @@ class ListingDurationDefinitionType {
 	 * @var int
 	 */
 	public $durationSetID;
+	/**
+	 * @param token $val
+	 * @throws Exception
+	 */
+	public function setDuration($val) {
+		
+		$this->Duration = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setDurationSetID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->durationSetID = (int)$val;
+	}
+
 }
 

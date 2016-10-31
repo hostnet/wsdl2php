@@ -13,5 +13,14 @@ class GetRuNameResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * a unique value.
 	 */
 	public $RuName;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRuName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RuName');
+		$this->RuName = (int)$val;
+	}
+
 }
 

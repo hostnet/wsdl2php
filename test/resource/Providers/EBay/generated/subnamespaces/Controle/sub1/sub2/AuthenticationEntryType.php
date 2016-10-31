@@ -44,5 +44,59 @@ class AuthenticationEntryType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setAcceptURL($val) {
+		
+		$this->AcceptURL = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setPrivacyPolicyURL($val) {
+		
+		$this->PrivacyPolicyURL = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setRejectURL($val) {
+		
+		$this->RejectURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRuName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RuName');
+		$this->RuName = (int)$val;
+	}
+
+	/**
+	 * @param TokenReturnMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setTokenReturnMethod($val) {
+		
+		$this->TokenReturnMethod = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

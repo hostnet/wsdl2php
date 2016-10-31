@@ -9,122 +9,6 @@ class VerifyMXRecord {
 	 * @var string
 	 */
 	public $LicenseKey;
-}
-
-class VerifyMXRecordResponse {
-	/**
-	 * @var int
-	 */
-	public $VerifyMXRecordResult;
-}
-
-class AdvancedVerifyEmail {
-	/**
-	 * @var string
-	 */
-	public $email;
-	/**
-	 * @var int
-	 */
-	public $timeout;
-	/**
-	 * @var string
-	 */
-	public $LicenseKey;
-}
-
-class AdvancedVerifyEmailResponse {
-	/**
-	 * @var ReturnIndicator
-	 */
-	public $AdvancedVerifyEmailResult;
-}
-
-class ReturnIndicator {
-	/**
-	 * @var string
-	 */
-	public $ResponseText;
-	/**
-	 * @var int
-	 */
-	public $ResponseCode;
-	/**
-	 * @var string
-	 */
-	public $LastMailServer;
-	/**
-	 * @var boolean
-	 */
-	public $GoodEmail;
-}
-
-class VerifyEmail {
-	/**
-	 * @var string
-	 */
-	public $email;
-	/**
-	 * @var string
-	 */
-	public $LicenseKey;
-}
-
-class VerifyEmailResponse {
-	/**
-	 * @var ReturnIndicator
-	 */
-	public $VerifyEmailResult;
-}
-
-class ReturnCodes {}
-
-class ReturnCodesResponse {
-	/**
-	 * @var AnyType[]
-	 */
-	public $ReturnCodesResult;
-}
-
-/**
- * EmailVerNoTestEmailClient
- * These functions deal with Email Address Verification.  <b>CDYNE advertises a 100% SLA.
- * Try to find that kind of SLA from other web service vendors!</b>
- */
-class EmailVerNoTestEmailClient extends SoapClient {
-
-	const WSDL_FILE = "EmailVerifyTest.wsdl";
-	private $classmap = array(
-		'VerifyMXRecord' => 'VerifyMXRecord',
-		'VerifyMXRecordResponse' => 'VerifyMXRecordResponse',
-		'AdvancedVerifyEmail' => 'AdvancedVerifyEmail',
-		'AdvancedVerifyEmailResponse' => 'AdvancedVerifyEmailResponse',
-		'ReturnIndicator' => 'ReturnIndicator',
-		'VerifyEmail' => 'VerifyEmail',
-		'VerifyEmailResponse' => 'VerifyEmailResponse',
-		'ReturnCodes' => 'ReturnCodes',
-		'ReturnCodesResponse' => 'ReturnCodesResponse',
-	);
-
-	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-class VerifyMXRecord {
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $LicenseKey;
-
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -142,14 +26,14 @@ class VerifyMXRecord {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LicenseKey');
 		$this->LicenseKey = (int)$val;
 	}
+
 }
 
 class VerifyMXRecordResponse {
-    /**
-     * @var int
-     */
-    public $VerifyMXRecordResult;
-
+	/**
+	 * @var int
+	 */
+	public $VerifyMXRecordResult;
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -158,22 +42,22 @@ class VerifyMXRecordResponse {
 		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
 		$this->VerifyMXRecordResult = (int)$val;
 	}
+
 }
 
 class AdvancedVerifyEmail {
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var int
-     */
-    public $timeout;
-    /**
-     * @var string
-     */
-    public $LicenseKey;
-
+	/**
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @var int
+	 */
+	public $timeout;
+	/**
+	 * @var string
+	 */
+	public $LicenseKey;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -200,14 +84,14 @@ class AdvancedVerifyEmail {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LicenseKey');
 		$this->LicenseKey = (int)$val;
 	}
+
 }
 
 class AdvancedVerifyEmailResponse {
-    /**
-     * @var ReturnIndicator
-     */
-    public $AdvancedVerifyEmailResult;
-
+	/**
+	 * @var ReturnIndicator
+	 */
+	public $AdvancedVerifyEmailResult;
 	/**
 	 * @param ReturnIndicator $val
 	 * @throws Exception
@@ -216,26 +100,26 @@ class AdvancedVerifyEmailResponse {
 		
 		$this->AdvancedVerifyEmailResult = (int)$val;
 	}
+
 }
 
 class ReturnIndicator {
-    /**
-     * @var string
-     */
-    public $ResponseText;
-    /**
-     * @var int
-     */
-    public $ResponseCode;
-    /**
-     * @var string
-     */
-    public $LastMailServer;
-    /**
-     * @var boolean
-     */
-    public $GoodEmail;
-
+	/**
+	 * @var string
+	 */
+	public $ResponseText;
+	/**
+	 * @var int
+	 */
+	public $ResponseCode;
+	/**
+	 * @var string
+	 */
+	public $LastMailServer;
+	/**
+	 * @var boolean
+	 */
+	public $GoodEmail;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -271,18 +155,18 @@ class ReturnIndicator {
 		
 		$this->GoodEmail = (int)$val;
 	}
+
 }
 
 class VerifyEmail {
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $LicenseKey;
-
+	/**
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @var string
+	 */
+	public $LicenseKey;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -300,14 +184,14 @@ class VerifyEmail {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LicenseKey');
 		$this->LicenseKey = (int)$val;
 	}
+
 }
 
 class VerifyEmailResponse {
-    /**
-     * @var ReturnIndicator
-     */
-    public $VerifyEmailResult;
-
+	/**
+	 * @var ReturnIndicator
+	 */
+	public $VerifyEmailResult;
 	/**
 	 * @param ReturnIndicator $val
 	 * @throws Exception
@@ -316,17 +200,16 @@ class VerifyEmailResponse {
 		
 		$this->VerifyEmailResult = (int)$val;
 	}
+
 }
 
-class ReturnCodes {
-}
+class ReturnCodes {}
 
 class ReturnCodesResponse {
-    /**
-     * @var ArrayOfAnyType
-     */
-    public $ReturnCodesResult;
-
+	/**
+	 * @var AnyType[]
+	 */
+	public $ReturnCodesResult;
 	/**
 	 * @param ArrayOfAnyType $val
 	 * @throws Exception
@@ -335,8 +218,38 @@ class ReturnCodesResponse {
 		
 		$this->ReturnCodesResult = (int)$val;
 	}
+
 }
 
+/**
+ * EmailVerNoTestEmailClient
+ * These functions deal with Email Address Verification.  <b>CDYNE advertises a 100% SLA.
+ * Try to find that kind of SLA from other web service vendors!</b>
+ */
+class EmailVerNoTestEmailClient extends SoapClient {
+
+	const WSDL_FILE = "EmailVerifyTest.wsdl";
+	private $classmap = array(
+		'VerifyMXRecord' => 'VerifyMXRecord',
+		'VerifyMXRecordResponse' => 'VerifyMXRecordResponse',
+		'AdvancedVerifyEmail' => 'AdvancedVerifyEmail',
+		'AdvancedVerifyEmailResponse' => 'AdvancedVerifyEmailResponse',
+		'ReturnIndicator' => 'ReturnIndicator',
+		'VerifyEmail' => 'VerifyEmail',
+		'VerifyEmailResponse' => 'VerifyEmailResponse',
+		'ReturnCodes' => 'ReturnCodes',
+		'ReturnCodesResponse' => 'ReturnCodesResponse',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

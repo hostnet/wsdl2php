@@ -1,4 +1,27 @@
 <?php
+
+namespace Controle;
+
+/**
+ * GoogleSearchServiceClient
+ */
+class GoogleSearchServiceClient extends \SoapClient {
+
+	const WSDL_FILE = "GoogleSearchTest.wsdl";
+	private $classmap = array(
+		'GoogleSearchResult' => '\Controle\GoogleSearchResult',
+		'DirectoryCategory' => '\Controle\DirectoryCategory',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

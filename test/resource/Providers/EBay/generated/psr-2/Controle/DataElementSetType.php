@@ -38,5 +38,41 @@ class DataElementSetType {
      * @var int
      */
     public $attributeSetID;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDataElement($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DataElement');
+        $this->DataElement = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setDataElementID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->DataElementID = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setAttributeSetID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->attributeSetID = (int)$val;
+    }
+
 }
 

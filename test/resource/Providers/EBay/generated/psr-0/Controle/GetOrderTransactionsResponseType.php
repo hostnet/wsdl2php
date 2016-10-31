@@ -11,5 +11,14 @@ class GetOrderTransactionsResponseType extends \Controle\AbstractResponseType {
 	 * to Half.com (only returns orders that have not been marked as shipped).
 	 */
 	public $OrderArray;
+	/**
+	 * @param OrderArrayType $val
+	 * @throws Exception
+	 */
+	public function setOrderArray($val) {
+		
+		$this->OrderArray = (int)$val;
+	}
+
 }
 

@@ -38,5 +38,77 @@ class PictureManagerDetailsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param PictureManagerSubscriptionLevelCodeType $val
+     * @throws Exception
+     */
+    public function setSubscriptionLevel($val) {
+        
+        $this->SubscriptionLevel = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setStorageUsed($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->StorageUsed = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setTotalStorageAvailable($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->TotalStorageAvailable = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setKeepOriginal($val) {
+        
+        $this->KeepOriginal = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setWatermarkEPS($val) {
+        
+        $this->WatermarkEPS = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setWatermarkUserID($val) {
+        
+        $this->WatermarkUserID = (int)$val;
+    }
+
+    /**
+     * @param PictureManagerFolderType $val
+     * @throws Exception
+     */
+    public function setFolder($val) {
+        
+        $this->Folder = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -20,5 +20,32 @@ class OrderTransactionType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param OrderType $val
+	 * @throws Exception
+	 */
+	public function setOrder($val) {
+		
+		$this->Order = (int)$val;
+	}
+
+	/**
+	 * @param TransactionType $val
+	 * @throws Exception
+	 */
+	public function setTransaction($val) {
+		
+		$this->Transaction = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

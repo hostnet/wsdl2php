@@ -19,5 +19,32 @@ class PaymentOptionDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param BuyerPaymentMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPaymentOption($val) {
+		
+		$this->PaymentOption = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDescription($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+		$this->Description = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

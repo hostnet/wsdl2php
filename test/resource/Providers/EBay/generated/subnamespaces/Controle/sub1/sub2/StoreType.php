@@ -93,5 +93,176 @@ class StoreType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setURLPath($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for URLPath');
+		$this->URLPath = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setURL($val) {
+		
+		$this->URL = (int)$val;
+	}
+
+	/**
+	 * @param StoreSubscriptionLevelCodeType $val
+	 * @throws Exception
+	 */
+	public function setSubscriptionLevel($val) {
+		
+		$this->SubscriptionLevel = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDescription($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+		$this->Description = (int)$val;
+	}
+
+	/**
+	 * @param StoreLogoType $val
+	 * @throws Exception
+	 */
+	public function setLogo($val) {
+		
+		$this->Logo = (int)$val;
+	}
+
+	/**
+	 * @param StoreThemeType $val
+	 * @throws Exception
+	 */
+	public function setTheme($val) {
+		
+		$this->Theme = (int)$val;
+	}
+
+	/**
+	 * @param StoreHeaderStyleCodeType $val
+	 * @throws Exception
+	 */
+	public function setHeaderStyle($val) {
+		
+		$this->HeaderStyle = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setHomePage($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->HomePage = (int)$val;
+	}
+
+	/**
+	 * @param StoreItemListLayoutCodeType $val
+	 * @throws Exception
+	 */
+	public function setItemListLayout($val) {
+		
+		$this->ItemListLayout = (int)$val;
+	}
+
+	/**
+	 * @param StoreItemListSortOrderCodeType $val
+	 * @throws Exception
+	 */
+	public function setItemListSortOrder($val) {
+		
+		$this->ItemListSortOrder = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomHeaderLayoutCodeType $val
+	 * @throws Exception
+	 */
+	public function setCustomHeaderLayout($val) {
+		
+		$this->CustomHeaderLayout = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCustomHeader($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CustomHeader');
+		$this->CustomHeader = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExportListings($val) {
+		
+		$this->ExportListings = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomCategoryArrayType $val
+	 * @throws Exception
+	 */
+	public function setCustomCategories($val) {
+		
+		$this->CustomCategories = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomListingHeaderType $val
+	 * @throws Exception
+	 */
+	public function setCustomListingHeader($val) {
+		
+		$this->CustomListingHeader = (int)$val;
+	}
+
+	/**
+	 * @param MerchDisplayCodeType $val
+	 * @throws Exception
+	 */
+	public function setMerchDisplay($val) {
+		
+		$this->MerchDisplay = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setLastOpenedTime($val) {
+		
+		$this->LastOpenedTime = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

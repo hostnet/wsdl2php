@@ -10,5 +10,14 @@ class LiveAuctionApprovalStatusArrayType {
      * @var \Controle\LiveAuctionApprovalStatusType | Indicates the current approval status of a bidder.
      */
     public $LiveAuctionStatus;
+    /**
+     * @param LiveAuctionApprovalStatusType $val
+     * @throws Exception
+     */
+    public function setLiveAuctionStatus($val) {
+        
+        $this->LiveAuctionStatus = (int)$val;
+    }
+
 }
 

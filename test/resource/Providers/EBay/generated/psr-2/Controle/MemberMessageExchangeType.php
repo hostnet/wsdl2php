@@ -38,5 +38,68 @@ class MemberMessageExchangeType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param ItemType $val
+     * @throws Exception
+     */
+    public function setItem($val) {
+        
+        $this->Item = (int)$val;
+    }
+
+    /**
+     * @param MemberMessageType $val
+     * @throws Exception
+     */
+    public function setQuestion($val) {
+        
+        $this->Question = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setResponse($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Response');
+        $this->Response = (int)$val;
+    }
+
+    /**
+     * @param MessageStatusTypeCodeType $val
+     * @throws Exception
+     */
+    public function setMessageStatus($val) {
+        
+        $this->MessageStatus = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setCreationDate($val) {
+        
+        $this->CreationDate = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setLastModifiedDate($val) {
+        
+        $this->LastModifiedDate = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

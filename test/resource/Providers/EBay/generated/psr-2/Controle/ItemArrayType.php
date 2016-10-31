@@ -14,5 +14,14 @@ class ItemArrayType {
      * to Half.com (for GetOrders).
      */
     public $Item;
+    /**
+     * @param ItemType $val
+     * @throws Exception
+     */
+    public function setItem($val) {
+        
+        $this->Item = (int)$val;
+    }
+
 }
 

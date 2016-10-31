@@ -22,5 +22,32 @@ class ErrorParameterType {
      * @var string
      */
     public $ParamID;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setValue($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
+        $this->Value = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setParamID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ParamID');
+        $this->ParamID = (int)$val;
+    }
+
 }
 

@@ -19,5 +19,32 @@ class GetChallengeTokenResponseType extends \Controle\AbstractResponseType {
      * audio clip corresponds to the image.
      */
     public $AudioChallengeURL;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setChallengeToken($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ChallengeToken');
+        $this->ChallengeToken = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setImageChallengeURL($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ImageChallengeURL');
+        $this->ImageChallengeURL = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setAudioChallengeURL($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for AudioChallengeURL');
+        $this->AudioChallengeURL = (int)$val;
+    }
+
 }
 

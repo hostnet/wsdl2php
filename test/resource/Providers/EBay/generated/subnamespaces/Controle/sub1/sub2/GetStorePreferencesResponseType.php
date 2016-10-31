@@ -10,5 +10,14 @@ class GetStorePreferencesResponseType extends \Controle\sub1\sub2\AbstractRespon
 	 * @var \Controle\sub1\sub2\StorePreferencesType | Specifies the store preferences.
 	 */
 	public $StorePreferences;
+	/**
+	 * @param StorePreferencesType $val
+	 * @throws Exception
+	 */
+	public function setStorePreferences($val) {
+		
+		$this->StorePreferences = (int)$val;
+	}
+
 }
 

@@ -30,5 +30,14 @@ class AttributeArrayType {
 	 *     Not applicable to Half.com.
 	 */
 	public $Attribute;
+	/**
+	 * @param AttributeType $val
+	 * @throws Exception
+	 */
+	public function setAttribute($val) {
+		
+		$this->Attribute = (int)$val;
+	}
+
 }
 

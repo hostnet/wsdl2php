@@ -23,5 +23,32 @@ class FeedbackPeriodType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPeriodInDays($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->PeriodInDays = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCount($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->Count = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

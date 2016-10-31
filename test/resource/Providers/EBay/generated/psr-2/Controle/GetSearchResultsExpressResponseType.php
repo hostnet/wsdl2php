@@ -57,5 +57,59 @@ class GetSearchResultsExpressResponseType extends \Controle\AbstractResponseType
      * the page number or specify a higher value for EntriesPerPage in the request.
      */
     public $HasMoreEntries;
+    /**
+     * @param DomainHistogramType $val
+     * @throws Exception
+     */
+    public function setHistogram($val) {
+        
+        $this->Histogram = (int)$val;
+    }
+
+    /**
+     * @param ItemArrayType $val
+     * @throws Exception
+     */
+    public function setItemArray($val) {
+        
+        $this->ItemArray = (int)$val;
+    }
+
+    /**
+     * @param ProductArrayType $val
+     * @throws Exception
+     */
+    public function setProductArray($val) {
+        
+        $this->ProductArray = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setEntriesPerPage($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->EntriesPerPage = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPageNumber($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->PageNumber = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setHasMoreEntries($val) {
+        
+        $this->HasMoreEntries = (int)$val;
+    }
+
 }
 

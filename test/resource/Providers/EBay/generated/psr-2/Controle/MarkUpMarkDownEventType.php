@@ -31,5 +31,41 @@ class MarkUpMarkDownEventType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param MarkUpMarkDownEventTypeCodeType $val
+     * @throws Exception
+     */
+    public function setType($val) {
+        
+        $this->Type = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setTime($val) {
+        
+        $this->Time = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setReason($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Reason');
+        $this->Reason = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

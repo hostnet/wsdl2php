@@ -22,5 +22,23 @@ class ExtendedProductFinderIDType {
      * Information) that a seller might want to include in a listing.
      */
     public $ProductFinderBuySide;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setProductFinderID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ProductFinderID = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setProductFinderBuySide($val) {
+        
+        $this->ProductFinderBuySide = (int)$val;
+    }
+
 }
 

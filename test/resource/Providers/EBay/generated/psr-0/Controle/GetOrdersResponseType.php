@@ -42,5 +42,59 @@ class GetOrdersResponseType extends \Controle\AbstractResponseType {
 	 * @var int | Applies only to Half.com. Indicates the total number of orders returned.
 	 */
 	public $ReturnedOrderCountActual;
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMoreOrders($val) {
+		
+		$this->HasMoreOrders = (int)$val;
+	}
+
+	/**
+	 * @param OrderArrayType $val
+	 * @throws Exception
+	 */
+	public function setOrderArray($val) {
+		
+		$this->OrderArray = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setOrdersPerPage($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->OrdersPerPage = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageNumber = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setReturnedOrderCountActual($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ReturnedOrderCountActual = (int)$val;
+	}
+
 }
 

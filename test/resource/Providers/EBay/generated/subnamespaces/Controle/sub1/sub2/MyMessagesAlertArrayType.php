@@ -11,5 +11,14 @@ class MyMessagesAlertArrayType {
 	 * returned as an empty node if user has no alerts.
 	 */
 	public $Alert;
+	/**
+	 * @param MyMessagesAlertType $val
+	 * @throws Exception
+	 */
+	public function setAlert($val) {
+		
+		$this->Alert = (int)$val;
+	}
+
 }
 

@@ -14,5 +14,14 @@ class GetItemShippingResponseType extends \Controle\AbstractResponseType {
      * container.
      */
     public $ShippingDetails;
+    /**
+     * @param ShippingDetailsType $val
+     * @throws Exception
+     */
+    public function setShippingDetails($val) {
+        
+        $this->ShippingDetails = (int)$val;
+    }
+
 }
 

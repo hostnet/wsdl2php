@@ -25,5 +25,41 @@ class MyeBaySelectionType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setInclude($val) {
+		
+		$this->Include = (int)$val;
+	}
+
+	/**
+	 * @param SortOrderCodeType $val
+	 * @throws Exception
+	 */
+	public function setSort($val) {
+		
+		$this->Sort = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setMaxResults($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->MaxResults = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

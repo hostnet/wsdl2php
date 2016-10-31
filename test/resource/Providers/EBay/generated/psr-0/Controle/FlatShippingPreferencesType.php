@@ -36,5 +36,59 @@ class FlatShippingPreferencesType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAmountPerAdditionalItem($val) {
+		
+		$this->AmountPerAdditionalItem = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setDeductionAmountPerAdditionalItem($val) {
+		
+		$this->DeductionAmountPerAdditionalItem = (int)$val;
+	}
+
+	/**
+	 * @param FlatRateInsuranceRangeCostType $val
+	 * @throws Exception
+	 */
+	public function setFlatRateInsuranceRangeCost($val) {
+		
+		$this->FlatRateInsuranceRangeCost = (int)$val;
+	}
+
+	/**
+	 * @param FlatShippingRateOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setFlatShippingRateOption($val) {
+		
+		$this->FlatShippingRateOption = (int)$val;
+	}
+
+	/**
+	 * @param InsuranceOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setInsuranceOption($val) {
+		
+		$this->InsuranceOption = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -14,5 +14,23 @@ class GetBidderListResponseType extends \Controle\AbstractResponseType {
      * @var \Controle\ItemArrayType | Array of items the bidder has bid on, has won or has lost.
      */
     public $BidItemArray;
+    /**
+     * @param UserType $val
+     * @throws Exception
+     */
+    public function setBidder($val) {
+        
+        $this->Bidder = (int)$val;
+    }
+
+    /**
+     * @param ItemArrayType $val
+     * @throws Exception
+     */
+    public function setBidItemArray($val) {
+        
+        $this->BidItemArray = (int)$val;
+    }
+
 }
 

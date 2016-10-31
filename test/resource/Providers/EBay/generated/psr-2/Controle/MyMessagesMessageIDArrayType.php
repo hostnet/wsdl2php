@@ -12,5 +12,14 @@ class MyMessagesMessageIDArrayType {
      * value for used as the GetMyMessages ExternalID instead.
      */
     public $MessageID;
+    /**
+     * @param MyMessagesMessageIDType $val
+     * @throws Exception
+     */
+    public function setMessageID($val) {
+        
+        $this->MessageID = (int)$val;
+    }
+
 }
 

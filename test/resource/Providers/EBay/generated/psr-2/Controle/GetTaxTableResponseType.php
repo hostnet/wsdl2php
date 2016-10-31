@@ -18,5 +18,23 @@ class GetTaxTableResponseType extends \Controle\AbstractResponseType {
      * if no tax table was used. Not applicable to Half.com.
      */
     public $TaxTable;
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setLastUpdateTime($val) {
+        
+        $this->LastUpdateTime = (int)$val;
+    }
+
+    /**
+     * @param TaxTableType $val
+     * @throws Exception
+     */
+    public function setTaxTable($val) {
+        
+        $this->TaxTable = (int)$val;
+    }
+
 }
 

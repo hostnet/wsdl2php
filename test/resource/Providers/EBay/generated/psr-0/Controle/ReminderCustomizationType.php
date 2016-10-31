@@ -16,5 +16,23 @@ class ReminderCustomizationType {
 	 * the container is returned with default input parameters.
 	 */
 	public $Include;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setDurationInDays($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->DurationInDays = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setInclude($val) {
+		
+		$this->Include = (int)$val;
+	}
+
 }
 

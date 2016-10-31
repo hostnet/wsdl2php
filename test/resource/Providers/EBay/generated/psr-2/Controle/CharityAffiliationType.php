@@ -19,5 +19,32 @@ class CharityAffiliationType {
      * @var \Controle\CharityAffiliationTypeCodeType
      */
     public $type;
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setId($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for id');
+        $this->id = (int)$val;
+    }
+
+    /**
+     * @param CharityAffiliationTypeCodeType $val
+     * @throws Exception
+     */
+    public function setType($val) {
+        
+        $this->type = (int)$val;
+    }
+
 }
 

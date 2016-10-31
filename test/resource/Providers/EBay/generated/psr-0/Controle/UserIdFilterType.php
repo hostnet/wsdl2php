@@ -25,5 +25,32 @@ class UserIdFilterType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setExcludeSellers($val) {
+		
+		$this->ExcludeSellers = (int)$val;
+	}
+
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setIncludeSellers($val) {
+		
+		$this->IncludeSellers = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -18,5 +18,23 @@ class VerifiedUserRequirementsType {
      * score is less than or equal to the value of this field.
      */
     public $MinimumFeedbackScore;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setVerifiedUser($val) {
+        
+        $this->VerifiedUser = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setMinimumFeedbackScore($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->MinimumFeedbackScore = (int)$val;
+    }
+
 }
 

@@ -22,5 +22,23 @@ class GetCategoryMappingsResponseType extends \Controle\AbstractResponseType {
 	 * and stored.
 	 */
 	public $CategoryVersion;
+	/**
+	 * @param CategoryMappingType $val
+	 * @throws Exception
+	 */
+	public function setCategoryMapping($val) {
+		
+		$this->CategoryMapping = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCategoryVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryVersion');
+		$this->CategoryVersion = (int)$val;
+	}
+
 }
 

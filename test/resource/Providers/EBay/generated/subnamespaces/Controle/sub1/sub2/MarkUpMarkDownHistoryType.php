@@ -14,5 +14,14 @@ class MarkUpMarkDownHistoryType {
 	 * @var \Controle\sub1\sub2\MarkUpMarkDownEventType | Details for a MarkDown or MarkUp event.
 	 */
 	public $MarkUpMarkDownEvent;
+	/**
+	 * @param MarkUpMarkDownEventType $val
+	 * @throws Exception
+	 */
+	public function setMarkUpMarkDownEvent($val) {
+		
+		$this->MarkUpMarkDownEvent = (int)$val;
+	}
+
 }
 

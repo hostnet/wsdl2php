@@ -33,5 +33,59 @@ class GetStoreOptionsResponseType extends \Controle\sub1\sub2\AbstractResponseTy
 	 * @var int | The maximum number of category levels in this store.
 	 */
 	public $MaxCategoryLevels;
+	/**
+	 * @param StoreThemeArrayType $val
+	 * @throws Exception
+	 */
+	public function setBasicThemeArray($val) {
+		
+		$this->BasicThemeArray = (int)$val;
+	}
+
+	/**
+	 * @param StoreThemeArrayType $val
+	 * @throws Exception
+	 */
+	public function setAdvancedThemeArray($val) {
+		
+		$this->AdvancedThemeArray = (int)$val;
+	}
+
+	/**
+	 * @param StoreLogoArrayType $val
+	 * @throws Exception
+	 */
+	public function setLogoArray($val) {
+		
+		$this->LogoArray = (int)$val;
+	}
+
+	/**
+	 * @param StoreSubscriptionArrayType $val
+	 * @throws Exception
+	 */
+	public function setSubscriptionArray($val) {
+		
+		$this->SubscriptionArray = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setMaxCategories($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->MaxCategories = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setMaxCategoryLevels($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->MaxCategoryLevels = (int)$val;
+	}
+
 }
 

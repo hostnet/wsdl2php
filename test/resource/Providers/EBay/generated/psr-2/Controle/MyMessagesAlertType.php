@@ -103,5 +103,203 @@ class MyMessagesAlertType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSender($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Sender');
+        $this->Sender = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setRecipientUserID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for RecipientUserID');
+        $this->RecipientUserID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSubject($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Subject');
+        $this->Subject = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPriority($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Priority');
+        $this->Priority = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesAlertIDType $val
+     * @throws Exception
+     */
+    public function setAlertID($val) {
+        
+        $this->AlertID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setExternalAlertID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExternalAlertID');
+        $this->ExternalAlertID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setContentType($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ContentType');
+        $this->ContentType = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setText($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Text');
+        $this->Text = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesAlertResolutionStatusCode $val
+     * @throws Exception
+     */
+    public function setResolutionStatus($val) {
+        
+        $this->ResolutionStatus = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setRead($val) {
+        
+        $this->Read = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setCreationDate($val) {
+        
+        $this->CreationDate = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setReceiveDate($val) {
+        
+        $this->ReceiveDate = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setExpirationDate($val) {
+        
+        $this->ExpirationDate = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setResolutionDate($val) {
+        
+        $this->ResolutionDate = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setLastReadDate($val) {
+        
+        $this->LastReadDate = (int)$val;
+    }
+
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setIsTimedResolution($val) {
+        
+        $this->IsTimedResolution = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setActionURL($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ActionURL');
+        $this->ActionURL = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesResponseDetailsType $val
+     * @throws Exception
+     */
+    public function setResponseDetails($val) {
+        
+        $this->ResponseDetails = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesForwardDetailsType $val
+     * @throws Exception
+     */
+    public function setForwardDetails($val) {
+        
+        $this->ForwardDetails = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesFolderType $val
+     * @throws Exception
+     */
+    public function setFolder($val) {
+        
+        $this->Folder = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

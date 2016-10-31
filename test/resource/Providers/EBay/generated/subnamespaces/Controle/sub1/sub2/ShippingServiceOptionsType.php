@@ -67,5 +67,95 @@ class ShippingServiceOptionsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setShippingInsuranceCost($val) {
+		
+		$this->ShippingInsuranceCost = (int)$val;
+	}
+
+	/**
+	 * @param token $val
+	 * @throws Exception
+	 */
+	public function setShippingService($val) {
+		
+		$this->ShippingService = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceCost($val) {
+		
+		$this->ShippingServiceCost = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceAdditionalCost($val) {
+		
+		$this->ShippingServiceAdditionalCost = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setShippingServicePriority($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ShippingServicePriority = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpeditedService($val) {
+		
+		$this->ExpeditedService = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setShippingTimeMin($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ShippingTimeMin = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setShippingTimeMax($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ShippingTimeMax = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setShippingSurcharge($val) {
+		
+		$this->ShippingSurcharge = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

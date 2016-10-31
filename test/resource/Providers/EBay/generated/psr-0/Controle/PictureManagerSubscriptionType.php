@@ -22,5 +22,41 @@ class PictureManagerSubscriptionType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param PictureManagerSubscriptionLevelCodeType $val
+	 * @throws Exception
+	 */
+	public function setSubscriptionLevel($val) {
+		
+		$this->SubscriptionLevel = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setFee($val) {
+		
+		$this->Fee = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setStorageSize($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->StorageSize = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

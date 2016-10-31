@@ -19,5 +19,32 @@ class ProStoresCheckoutPreferenceType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCheckoutRedirectProStores($val) {
+        
+        $this->CheckoutRedirectProStores = (int)$val;
+    }
+
+    /**
+     * @param ProStoresDetailsType $val
+     * @throws Exception
+     */
+    public function setProStoresDetails($val) {
+        
+        $this->ProStoresDetails = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

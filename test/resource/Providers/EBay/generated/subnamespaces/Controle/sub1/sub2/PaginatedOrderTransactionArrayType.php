@@ -15,5 +15,23 @@ class PaginatedOrderTransactionArrayType {
 	 * of entries.
 	 */
 	public $PaginationResult;
+	/**
+	 * @param OrderTransactionArrayType $val
+	 * @throws Exception
+	 */
+	public function setOrderTransactionArray($val) {
+		
+		$this->OrderTransactionArray = (int)$val;
+	}
+
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
 }
 

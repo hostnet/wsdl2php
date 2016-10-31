@@ -35,5 +35,59 @@ class PictureManagerPictureDisplayType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param PictureManagerPictureDisplayTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setDisplayType($val) {
+		
+		$this->DisplayType = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setURL($val) {
+		
+		$this->URL = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setSize($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Size = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setHeight($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Height = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setWidth($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Width = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

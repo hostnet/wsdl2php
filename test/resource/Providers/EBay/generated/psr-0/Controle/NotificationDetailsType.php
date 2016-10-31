@@ -53,5 +53,95 @@ class NotificationDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setDeliveryURL($val) {
+		
+		$this->DeliveryURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setReferenceID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ReferenceID');
+		$this->ReferenceID = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setExpirationTime($val) {
+		
+		$this->ExpirationTime = (int)$val;
+	}
+
+	/**
+	 * @param NotificationEventTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setType($val) {
+		
+		$this->Type = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setRetries($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Retries = (int)$val;
+	}
+
+	/**
+	 * @param NotificationEventStateCodeType $val
+	 * @throws Exception
+	 */
+	public function setDeliveryStatus($val) {
+		
+		$this->DeliveryStatus = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setNextRetryTime($val) {
+		
+		$this->NextRetryTime = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setDeliveryTime($val) {
+		
+		$this->DeliveryTime = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setErrorMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ErrorMessage');
+		$this->ErrorMessage = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

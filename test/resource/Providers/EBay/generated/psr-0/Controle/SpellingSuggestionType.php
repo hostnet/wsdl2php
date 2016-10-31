@@ -24,5 +24,32 @@ class SpellingSuggestionType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setMatchingItemCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->MatchingItemCount = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setText($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Text');
+		$this->Text = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

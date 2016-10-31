@@ -24,5 +24,41 @@ class DuplicateInvocationDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param UUIDType $val
+	 * @throws Exception
+	 */
+	public function setDuplicateInvocationID($val) {
+		
+		$this->DuplicateInvocationID = (int)$val;
+	}
+
+	/**
+	 * @param InvocationStatusType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setInvocationTrackingID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for InvocationTrackingID');
+		$this->InvocationTrackingID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -19,5 +19,32 @@ class StoreThemeArrayType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param StoreThemeType $val
+	 * @throws Exception
+	 */
+	public function setTheme($val) {
+		
+		$this->Theme = (int)$val;
+	}
+
+	/**
+	 * @param StoreColorSchemeArrayType $val
+	 * @throws Exception
+	 */
+	public function setGenericColorSchemeArray($val) {
+		
+		$this->GenericColorSchemeArray = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

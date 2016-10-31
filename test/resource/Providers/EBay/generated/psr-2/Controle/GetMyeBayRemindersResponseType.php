@@ -15,5 +15,23 @@ class GetMyeBayRemindersResponseType extends \Controle\AbstractResponseType {
      * criteria.
      */
     public $SellingReminders;
+    /**
+     * @param RemindersType $val
+     * @throws Exception
+     */
+    public function setBuyingReminders($val) {
+        
+        $this->BuyingReminders = (int)$val;
+    }
+
+    /**
+     * @param RemindersType $val
+     * @throws Exception
+     */
+    public function setSellingReminders($val) {
+        
+        $this->SellingReminders = (int)$val;
+    }
+
 }
 

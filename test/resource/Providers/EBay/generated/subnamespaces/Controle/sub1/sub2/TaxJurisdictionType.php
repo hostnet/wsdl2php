@@ -30,5 +30,50 @@ class TaxJurisdictionType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setJurisdictionID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for JurisdictionID');
+		$this->JurisdictionID = (int)$val;
+	}
+
+	/**
+	 * @param float $val
+	 * @throws Exception
+	 */
+	public function setSalesTaxPercent($val) {
+		
+		$this->SalesTaxPercent = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setShippingIncludedInTax($val) {
+		
+		$this->ShippingIncludedInTax = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setJurisdictionName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for JurisdictionName');
+		$this->JurisdictionName = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

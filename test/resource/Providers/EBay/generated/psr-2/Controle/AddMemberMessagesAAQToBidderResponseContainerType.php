@@ -15,5 +15,23 @@ class AddMemberMessagesAAQToBidderResponseContainerType {
      * @var \Controle\AckCodeType | Indicates the response status (e.g., success).
      */
     public $Ack;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCorrelationID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CorrelationID');
+        $this->CorrelationID = (int)$val;
+    }
+
+    /**
+     * @param AckCodeType $val
+     * @throws Exception
+     */
+    public function setAck($val) {
+        
+        $this->Ack = (int)$val;
+    }
+
 }
 

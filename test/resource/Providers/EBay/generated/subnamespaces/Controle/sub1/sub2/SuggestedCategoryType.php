@@ -21,5 +21,32 @@ class SuggestedCategoryType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param CategoryType $val
+	 * @throws Exception
+	 */
+	public function setCategory($val) {
+		
+		$this->Category = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPercentItemFound($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PercentItemFound = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

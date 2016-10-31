@@ -12,5 +12,14 @@ class NotificationEnableArrayType {
 	 * set.
 	 */
 	public $NotificationEnable;
+	/**
+	 * @param NotificationEnableType $val
+	 * @throws Exception
+	 */
+	public function setNotificationEnable($val) {
+		
+		$this->NotificationEnable = (int)$val;
+	}
+
 }
 

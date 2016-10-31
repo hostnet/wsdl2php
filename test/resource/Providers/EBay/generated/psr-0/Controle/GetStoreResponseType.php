@@ -14,5 +14,14 @@ class GetStoreResponseType extends \Controle\AbstractResponseType {
 	 * @var \Controle\StoreType | Specifies the Store configuration that is being set for the user.
 	 */
 	public $Store;
+	/**
+	 * @param StoreType $val
+	 * @throws Exception
+	 */
+	public function setStore($val) {
+		
+		$this->Store = (int)$val;
+	}
+
 }
 

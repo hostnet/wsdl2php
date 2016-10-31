@@ -36,5 +36,59 @@ class GetLiveAuctionBiddersResponseType extends \Controle\sub1\sub2\AbstractResp
 	 * of entries.
 	 */
 	public $PaginationResult;
+	/**
+	 * @param BidderDetailArrayType $val
+	 * @throws Exception
+	 */
+	public function setBidderDetails($val) {
+		
+		$this->BidderDetails = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalPending($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalPending = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalApproved($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalApproved = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalDenied($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalDenied = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageNumber = (int)$val;
+	}
+
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
 }
 

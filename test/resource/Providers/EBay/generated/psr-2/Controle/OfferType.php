@@ -87,5 +87,140 @@ class OfferType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param BidActionCodeType $val
+     * @throws Exception
+     */
+    public function setAction($val) {
+        
+        $this->Action = (int)$val;
+    }
+
+    /**
+     * @param CurrencyCodeType $val
+     * @throws Exception
+     */
+    public function setCurrency($val) {
+        
+        $this->Currency = (int)$val;
+    }
+
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setMaxBid($val) {
+        
+        $this->MaxBid = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setQuantity($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->Quantity = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setSecondChanceEnabled($val) {
+        
+        $this->SecondChanceEnabled = (int)$val;
+    }
+
+    /**
+     * @param CurrencyCodeType $val
+     * @throws Exception
+     */
+    public function setSiteCurrency($val) {
+        
+        $this->SiteCurrency = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setTimeBid($val) {
+        
+        $this->TimeBid = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setHighestBid($val) {
+        
+        $this->HighestBid = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setConvertedPrice($val) {
+        
+        $this->ConvertedPrice = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTransactionID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
+        $this->TransactionID = (int)$val;
+    }
+
+    /**
+     * @param UserType $val
+     * @throws Exception
+     */
+    public function setUser($val) {
+        
+        $this->User = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setUserConsent($val) {
+        
+        $this->UserConsent = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setBidCount($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->BidCount = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

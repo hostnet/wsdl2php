@@ -21,5 +21,23 @@ class FetchTokenResponseType extends \Controle\AbstractResponseType {
 	 * used to authenticate the user for that application.
 	 */
 	public $HardExpirationTime;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setEBayAuthToken($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for eBayAuthToken');
+		$this->eBayAuthToken = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setHardExpirationTime($val) {
+		
+		$this->HardExpirationTime = (int)$val;
+	}
+
 }
 

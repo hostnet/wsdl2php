@@ -14,5 +14,14 @@ class SKUArrayType {
      * preserves a SKU, enabling a seller to obtain it before and after a transaction is created.
      */
     public $SKU;
+    /**
+     * @param SKUType $val
+     * @throws Exception
+     */
+    public function setSKU($val) {
+        
+        $this->SKU = (int)$val;
+    }
+
 }
 

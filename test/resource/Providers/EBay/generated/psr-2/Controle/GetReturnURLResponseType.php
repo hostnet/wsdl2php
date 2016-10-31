@@ -16,5 +16,23 @@ class GetReturnURLResponseType extends \Controle\AbstractResponseType {
      * for your application (if any). Call SetReturnURL to configure this data.
      */
     public $AuthenticationEntryArray;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setApplicationDisplayName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
+        $this->ApplicationDisplayName = (int)$val;
+    }
+
+    /**
+     * @param AuthenticationEntryArrayType $val
+     * @throws Exception
+     */
+    public function setAuthenticationEntryArray($val) {
+        
+        $this->AuthenticationEntryArray = (int)$val;
+    }
+
 }
 

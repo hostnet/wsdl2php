@@ -205,5 +205,284 @@ class FeatureDefinitionsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ListingDurationDefinitionsType $val
+	 * @throws Exception
+	 */
+	public function setListingDurations($val) {
+		
+		$this->ListingDurations = (int)$val;
+	}
+
+	/**
+	 * @param ShippingTermRequiredDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setShippingTermsRequired($val) {
+		
+		$this->ShippingTermsRequired = (int)$val;
+	}
+
+	/**
+	 * @param BestOfferEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferEnabled($val) {
+		
+		$this->BestOfferEnabled = (int)$val;
+	}
+
+	/**
+	 * @param DutchBINEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setDutchBINEnabled($val) {
+		
+		$this->DutchBINEnabled = (int)$val;
+	}
+
+	/**
+	 * @param UserConsentRequiredDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setUserConsentRequired($val) {
+		
+		$this->UserConsentRequired = (int)$val;
+	}
+
+	/**
+	 * @param HomePageFeaturedEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setHomePageFeaturedEnabled($val) {
+		
+		$this->HomePageFeaturedEnabled = (int)$val;
+	}
+
+	/**
+	 * @param ProPackEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setProPackEnabled($val) {
+		
+		$this->ProPackEnabled = (int)$val;
+	}
+
+	/**
+	 * @param BasicUpgradePackEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setBasicUpgradePackEnabled($val) {
+		
+		$this->BasicUpgradePackEnabled = (int)$val;
+	}
+
+	/**
+	 * @param ValuePackEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setValuePackEnabled($val) {
+		
+		$this->ValuePackEnabled = (int)$val;
+	}
+
+	/**
+	 * @param ProPackPlusEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setProPackPlusEnabled($val) {
+		
+		$this->ProPackPlusEnabled = (int)$val;
+	}
+
+	/**
+	 * @param AdFormatEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setAdFormatEnabled($val) {
+		
+		$this->AdFormatEnabled = (int)$val;
+	}
+
+	/**
+	 * @param DigitalDeliveryEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setDigitalDeliveryEnabled($val) {
+		
+		$this->DigitalDeliveryEnabled = (int)$val;
+	}
+
+	/**
+	 * @param BestOfferCounterEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferCounterEnabled($val) {
+		
+		$this->BestOfferCounterEnabled = (int)$val;
+	}
+
+	/**
+	 * @param BestOfferAutoDeclineEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferAutoDeclineEnabled($val) {
+		
+		$this->BestOfferAutoDeclineEnabled = (int)$val;
+	}
+
+	/**
+	 * @param LocalMarketSpecialitySubscriptionDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketSpecialitySubscription($val) {
+		
+		$this->LocalMarketSpecialitySubscription = (int)$val;
+	}
+
+	/**
+	 * @param LocalMarketRegularSubscriptionDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketRegularSubscription($val) {
+		
+		$this->LocalMarketRegularSubscription = (int)$val;
+	}
+
+	/**
+	 * @param LocalMarketPremiumSubscriptionDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketPremiumSubscription($val) {
+		
+		$this->LocalMarketPremiumSubscription = (int)$val;
+	}
+
+	/**
+	 * @param LocalMarketNonSubscriptionDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketNonSubscription($val) {
+		
+		$this->LocalMarketNonSubscription = (int)$val;
+	}
+
+	/**
+	 * @param ExpressEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setExpressEnabled($val) {
+		
+		$this->ExpressEnabled = (int)$val;
+	}
+
+	/**
+	 * @param ExpressPicturesRequiredDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setExpressPicturesRequired($val) {
+		
+		$this->ExpressPicturesRequired = (int)$val;
+	}
+
+	/**
+	 * @param ExpressConditionRequiredDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setExpressConditionRequired($val) {
+		
+		$this->ExpressConditionRequired = (int)$val;
+	}
+
+	/**
+	 * @param MinimumReservePriceDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setMinimumReservePrice($val) {
+		
+		$this->MinimumReservePrice = (int)$val;
+	}
+
+	/**
+	 * @param TCREnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setTransactionConfirmationRequestEnabled($val) {
+		
+		$this->TransactionConfirmationRequestEnabled = (int)$val;
+	}
+
+	/**
+	 * @param SellerContactDetailsEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setSellerContactDetailsEnabled($val) {
+		
+		$this->SellerContactDetailsEnabled = (int)$val;
+	}
+
+	/**
+	 * @param StoreInventoryEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setStoreInventoryEnabled($val) {
+		
+		$this->StoreInventoryEnabled = (int)$val;
+	}
+
+	/**
+	 * @param SkypeMeTransactionalEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setSkypeMeTransactionalEnabled($val) {
+		
+		$this->SkypeMeTransactionalEnabled = (int)$val;
+	}
+
+	/**
+	 * @param SkypeMeNonTransactionalEnabledDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setSkypeMeNonTransactionalEnabled($val) {
+		
+		$this->SkypeMeNonTransactionalEnabled = (int)$val;
+	}
+
+	/**
+	 * @param LocalListingDistancesRegularDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistancesRegular($val) {
+		
+		$this->LocalListingDistancesRegular = (int)$val;
+	}
+
+	/**
+	 * @param LocalListingDistancesSpecialtyDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistancesSpecialty($val) {
+		
+		$this->LocalListingDistancesSpecialty = (int)$val;
+	}
+
+	/**
+	 * @param LocalListingDistancesNonSubscriptionDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistancesNonSubscription($val) {
+		
+		$this->LocalListingDistancesNonSubscription = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

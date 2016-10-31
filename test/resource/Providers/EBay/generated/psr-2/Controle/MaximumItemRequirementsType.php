@@ -19,5 +19,23 @@ class MaximumItemRequirementsType {
      * score is less than or equal to the value of this field.
      */
     public $MinimumFeedbackScore;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setMaximumItemCount($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->MaximumItemCount = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setMinimumFeedbackScore($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->MinimumFeedbackScore = (int)$val;
+    }
+
 }
 

@@ -118,5 +118,185 @@ class ExpressItemRequirementsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSellerExpressEligible($val) {
+		
+		$this->SellerExpressEligible = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressOptOut($val) {
+		
+		$this->ExpressOptOut = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressApproved($val) {
+		
+		$this->ExpressApproved = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressEligibleListingType($val) {
+		
+		$this->ExpressEligibleListingType = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressEnabledCategory($val) {
+		
+		$this->ExpressEnabledCategory = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEligiblePayPalAccount($val) {
+		
+		$this->EligiblePayPalAccount = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setDomesticShippingCost($val) {
+		
+		$this->DomesticShippingCost = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEligibleReturnPolicy($val) {
+		
+		$this->EligibleReturnPolicy = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPicture($val) {
+		
+		$this->Picture = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEligibleItemCondition($val) {
+		
+		$this->EligibleItemCondition = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPriceAboveMinimum($val) {
+		
+		$this->PriceAboveMinimum = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPriceBelowMaximum($val) {
+		
+		$this->PriceBelowMaximum = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEligibleCheckout($val) {
+		
+		$this->EligibleCheckout = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setNoPreapprovedBidderList($val) {
+		
+		$this->NoPreapprovedBidderList = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setNoCharity($val) {
+		
+		$this->NoCharity = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setNoDigitalDelivery($val) {
+		
+		$this->NoDigitalDelivery = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCombinedShippingDiscount($val) {
+		
+		$this->CombinedShippingDiscount = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setShipFromEligibleCountry($val) {
+		
+		$this->ShipFromEligibleCountry = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPayPalAccountAcceptsUnconfirmedAddress($val) {
+		
+		$this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

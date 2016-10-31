@@ -18,5 +18,32 @@ class FlatRateInsuranceRangeCostType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param FlatRateInsuranceRangeCodeType $val
+     * @throws Exception
+     */
+    public function setFlatRateInsuranceRange($val) {
+        
+        $this->FlatRateInsuranceRange = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setInsuranceCost($val) {
+        
+        $this->InsuranceCost = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

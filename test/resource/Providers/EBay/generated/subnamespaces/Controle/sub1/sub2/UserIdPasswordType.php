@@ -40,5 +40,59 @@ class UserIdPasswordType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAppId($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AppId');
+		$this->AppId = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDevId($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DevId');
+		$this->DevId = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAuthCert($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AuthCert');
+		$this->AuthCert = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setUsername($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Username');
+		$this->Username = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPassword($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Password');
+		$this->Password = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

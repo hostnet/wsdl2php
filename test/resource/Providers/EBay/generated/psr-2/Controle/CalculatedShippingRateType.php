@@ -69,5 +69,104 @@ class CalculatedShippingRateType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setOriginatingPostalCode($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for OriginatingPostalCode');
+        $this->OriginatingPostalCode = (int)$val;
+    }
+
+    /**
+     * @param MeasureType $val
+     * @throws Exception
+     */
+    public function setPackageDepth($val) {
+        
+        $this->PackageDepth = (int)$val;
+    }
+
+    /**
+     * @param MeasureType $val
+     * @throws Exception
+     */
+    public function setPackageLength($val) {
+        
+        $this->PackageLength = (int)$val;
+    }
+
+    /**
+     * @param MeasureType $val
+     * @throws Exception
+     */
+    public function setPackageWidth($val) {
+        
+        $this->PackageWidth = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setPackagingHandlingCosts($val) {
+        
+        $this->PackagingHandlingCosts = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setShippingIrregular($val) {
+        
+        $this->ShippingIrregular = (int)$val;
+    }
+
+    /**
+     * @param ShippingPackageCodeType $val
+     * @throws Exception
+     */
+    public function setShippingPackage($val) {
+        
+        $this->ShippingPackage = (int)$val;
+    }
+
+    /**
+     * @param MeasureType $val
+     * @throws Exception
+     */
+    public function setWeightMajor($val) {
+        
+        $this->WeightMajor = (int)$val;
+    }
+
+    /**
+     * @param MeasureType $val
+     * @throws Exception
+     */
+    public function setWeightMinor($val) {
+        
+        $this->WeightMinor = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setInternationalPackagingHandlingCosts($val) {
+        
+        $this->InternationalPackagingHandlingCosts = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

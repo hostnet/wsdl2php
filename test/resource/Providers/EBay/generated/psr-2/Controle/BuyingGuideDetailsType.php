@@ -29,5 +29,32 @@ class BuyingGuideDetailsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param BuyingGuideType $val
+     * @throws Exception
+     */
+    public function setBuyingGuide($val) {
+        
+        $this->BuyingGuide = (int)$val;
+    }
+
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setBuyingGuideHub($val) {
+        
+        $this->BuyingGuideHub = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -11,5 +11,14 @@ class OrderIDArrayType {
 	 * orders.
 	 */
 	public $OrderID;
+	/**
+	 * @param OrderIDType $val
+	 * @throws Exception
+	 */
+	public function setOrderID($val) {
+		
+		$this->OrderID = (int)$val;
+	}
+
 }
 

@@ -292,5 +292,356 @@ class UserType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setAboutMePage($val) {
+		
+		$this->AboutMePage = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setEIASToken($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for EIASToken');
+		$this->EIASToken = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRESTToken($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RESTToken');
+		$this->RESTToken = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setEmail($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Email');
+		$this->Email = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setFeedbackScore($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->FeedbackScore = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUniqueNegativeFeedbackCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UniqueNegativeFeedbackCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUniquePositiveFeedbackCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UniquePositiveFeedbackCount = (int)$val;
+	}
+
+	/**
+	 * @param float $val
+	 * @throws Exception
+	 */
+	public function setPositiveFeedbackPercent($val) {
+		
+		$this->PositiveFeedbackPercent = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setFeedbackPrivate($val) {
+		
+		$this->FeedbackPrivate = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackRatingStarCodeType $val
+	 * @throws Exception
+	 */
+	public function setFeedbackRatingStar($val) {
+		
+		$this->FeedbackRatingStar = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setIDVerified($val) {
+		
+		$this->IDVerified = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEBayGoodStanding($val) {
+		
+		$this->eBayGoodStanding = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setNewUser($val) {
+		
+		$this->NewUser = (int)$val;
+	}
+
+	/**
+	 * @param AddressType $val
+	 * @throws Exception
+	 */
+	public function setRegistrationAddress($val) {
+		
+		$this->RegistrationAddress = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setRegistrationDate($val) {
+		
+		$this->RegistrationDate = (int)$val;
+	}
+
+	/**
+	 * @param SiteCodeType $val
+	 * @throws Exception
+	 */
+	public function setSite($val) {
+		
+		$this->Site = (int)$val;
+	}
+
+	/**
+	 * @param UserStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setUserID($val) {
+		
+		$this->UserID = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setUserIDChanged($val) {
+		
+		$this->UserIDChanged = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setUserIDLastChanged($val) {
+		
+		$this->UserIDLastChanged = (int)$val;
+	}
+
+	/**
+	 * @param VATStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setVATStatus($val) {
+		
+		$this->VATStatus = (int)$val;
+	}
+
+	/**
+	 * @param BuyerType $val
+	 * @throws Exception
+	 */
+	public function setBuyerInfo($val) {
+		
+		$this->BuyerInfo = (int)$val;
+	}
+
+	/**
+	 * @param SellerType $val
+	 * @throws Exception
+	 */
+	public function setSellerInfo($val) {
+		
+		$this->SellerInfo = (int)$val;
+	}
+
+	/**
+	 * @param CharityAffiliationsType $val
+	 * @throws Exception
+	 */
+	public function setCharityAffiliations($val) {
+		
+		$this->CharityAffiliations = (int)$val;
+	}
+
+	/**
+	 * @param CharitySellerType $val
+	 * @throws Exception
+	 */
+	public function setCharitySeller($val) {
+		
+		$this->CharitySeller = (int)$val;
+	}
+
+	/**
+	 * @param PayPalAccountLevelCodeType $val
+	 * @throws Exception
+	 */
+	public function setPayPalAccountLevel($val) {
+		
+		$this->PayPalAccountLevel = (int)$val;
+	}
+
+	/**
+	 * @param PayPalAccountTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setPayPalAccountType($val) {
+		
+		$this->PayPalAccountType = (int)$val;
+	}
+
+	/**
+	 * @param PayPalAccountStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setPayPalAccountStatus($val) {
+		
+		$this->PayPalAccountStatus = (int)$val;
+	}
+
+	/**
+	 * @param EBaySubscriptionTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setUserSubscription($val) {
+		
+		$this->UserSubscription = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSiteVerified($val) {
+		
+		$this->SiteVerified = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSkypeID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SkypeID');
+		$this->SkypeID = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setEBayWikiReadOnly($val) {
+		
+		$this->eBayWikiReadOnly = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTUVLevel($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TUVLevel = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setVATID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for VATID');
+		$this->VATID = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setMotorsDealer($val) {
+		
+		$this->MotorsDealer = (int)$val;
+	}
+
+	/**
+	 * @param SellerPaymentMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setSellerPaymentMethod($val) {
+		
+		$this->SellerPaymentMethod = (int)$val;
+	}
+
+	/**
+	 * @param BiddingSummaryType $val
+	 * @throws Exception
+	 */
+	public function setBiddingSummary($val) {
+		
+		$this->BiddingSummary = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setUserAnonymized($val) {
+		
+		$this->UserAnonymized = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

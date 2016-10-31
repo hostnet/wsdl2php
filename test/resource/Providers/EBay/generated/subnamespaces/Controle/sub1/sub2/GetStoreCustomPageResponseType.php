@@ -10,5 +10,14 @@ class GetStoreCustomPageResponseType extends \Controle\sub1\sub2\AbstractRespons
 	 * @var \Controle\sub1\sub2\StoreCustomPageArrayType | The custom page or custom pages.
 	 */
 	public $CustomPageArray;
+	/**
+	 * @param StoreCustomPageArrayType $val
+	 * @throws Exception
+	 */
+	public function setCustomPageArray($val) {
+		
+		$this->CustomPageArray = (int)$val;
+	}
+
 }
 

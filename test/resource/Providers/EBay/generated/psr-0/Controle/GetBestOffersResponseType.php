@@ -21,5 +21,23 @@ class GetBestOffersResponseType extends \Controle\AbstractResponseType {
 	 * to Half.com (for GetOrders).
 	 */
 	public $Item;
+	/**
+	 * @param BestOfferArrayType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferArray($val) {
+		
+		$this->BestOfferArray = (int)$val;
+	}
+
+	/**
+	 * @param ItemType $val
+	 * @throws Exception
+	 */
+	public function setItem($val) {
+		
+		$this->Item = (int)$val;
+	}
+
 }
 

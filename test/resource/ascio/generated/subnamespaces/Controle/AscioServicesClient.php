@@ -1,4 +1,100 @@
 <?php
+
+namespace Controle;
+
+/**
+ * AscioServicesClient
+ */
+class AscioServicesClient extends \SoapClient {
+
+	const WSDL_FILE = "AscioService.wsdl";
+	private $classmap = array(
+		'Session' => '\Controle\sub1\sub2\Session',
+		'LogInResponse' => '\Controle\sub1\sub2\LogInResponse',
+		'Response' => '\Controle\sub1\sub2\Response',
+		'LogOutResponse' => '\Controle\sub1\sub2\LogOutResponse',
+		'GetOrderResponse' => '\Controle\sub1\sub2\GetOrderResponse',
+		'Order' => '\Controle\sub1\sub2\Order',
+		'OrderType' => '\Controle\sub1\sub2\OrderType',
+		'OrderStatusType' => '\Controle\sub1\sub2\OrderStatusType',
+		'Domain' => '\Controle\sub1\sub2\Domain',
+		'Registrant' => '\Controle\sub1\sub2\Registrant',
+		'Contact' => '\Controle\sub1\sub2\Contact',
+		'NameServers' => '\Controle\sub1\sub2\NameServers',
+		'NameServer' => '\Controle\sub1\sub2\NameServer',
+		'TradeMark' => '\Controle\sub1\sub2\TradeMark',
+		'DnsSecKeys' => '\Controle\sub1\sub2\DnsSecKeys',
+		'DnsSecKey' => '\Controle\sub1\sub2\DnsSecKey',
+		'PrivacyProxy' => '\Controle\sub1\sub2\PrivacyProxy',
+		'PrivacyProxyType' => '\Controle\sub1\sub2\PrivacyProxyType',
+		'Extensions' => '\Controle\sub1\sub2\Extensions',
+		'Extension' => '\Controle\sub1\sub2\Extension',
+		'CreateOrderResponse' => '\Controle\sub1\sub2\CreateOrderResponse',
+		'SearchOrderRequest' => '\Controle\sub1\sub2\SearchOrderRequest',
+		'SearchOrderSortType' => '\Controle\sub1\sub2\SearchOrderSortType',
+		'PagingInfo' => '\Controle\sub1\sub2\PagingInfo',
+		'SearchOrderResponse' => '\Controle\sub1\sub2\SearchOrderResponse',
+		'GetMessagesResponse' => '\Controle\sub1\sub2\GetMessagesResponse',
+		'Message' => '\Controle\sub1\sub2\Message',
+		'Attachment' => '\Controle\sub1\sub2\Attachment',
+		'MessageType' => '\Controle\sub1\sub2\MessageType',
+		'ValidateOrderResponse' => '\Controle\sub1\sub2\ValidateOrderResponse',
+		'UploadDocumentationResponse' => '\Controle\sub1\sub2\UploadDocumentationResponse',
+		'CreateSupportOrderResponse' => '\Controle\sub1\sub2\CreateSupportOrderResponse',
+		'UploadMessageResponse' => '\Controle\sub1\sub2\UploadMessageResponse',
+		'GetDomainResponse' => '\Controle\sub1\sub2\GetDomainResponse',
+		'SearchCriteria' => '\Controle\sub1\sub2\SearchCriteria',
+		'Clause' => '\Controle\sub1\sub2\Clause',
+		'SearchOperatorType' => '\Controle\sub1\sub2\SearchOperatorType',
+		'SearchModeType' => '\Controle\sub1\sub2\SearchModeType',
+		'SearchDomainResponse' => '\Controle\sub1\sub2\SearchDomainResponse',
+		'WhoisResponse' => '\Controle\sub1\sub2\WhoisResponse',
+		'QualityType' => '\Controle\sub1\sub2\QualityType',
+		'AvailabilityCheckResponse' => '\Controle\sub1\sub2\AvailabilityCheckResponse',
+		'AvailabilityCheckResult' => '\Controle\sub1\sub2\AvailabilityCheckResult',
+		'GetRegistrantResponse' => '\Controle\sub1\sub2\GetRegistrantResponse',
+		'CreateRegistrantResponse' => '\Controle\sub1\sub2\CreateRegistrantResponse',
+		'DeleteRegistrantResponse' => '\Controle\sub1\sub2\DeleteRegistrantResponse',
+		'SearchRegistrantResponse' => '\Controle\sub1\sub2\SearchRegistrantResponse',
+		'GetRegistrantVerificationInfoResponse' => '\Controle\sub1\sub2\GetRegistrantVerificationInfoResponse',
+		'RegistrantVerificationInfo' => '\Controle\sub1\sub2\RegistrantVerificationInfo',
+		'RegistrantVerificationStatus' => '\Controle\sub1\sub2\RegistrantVerificationStatus',
+		'RegistrantVerificationDetails' => '\Controle\sub1\sub2\RegistrantVerificationDetails',
+		'DoRegistrantVerificationResponse' => '\Controle\sub1\sub2\DoRegistrantVerificationResponse',
+		'GetRegistrantVerificationStatusResponse' => '\Controle\sub1\sub2\GetRegistrantVerificationStatusResponse',
+		'UploadRegistrantVerificationMessageResponse' => '\Controle\sub1\sub2\UploadRegistrantVerificationMessageResponse',
+		'GetContactResponse' => '\Controle\sub1\sub2\GetContactResponse',
+		'CreateContactResponse' => '\Controle\sub1\sub2\CreateContactResponse',
+		'UpdateContactResponse' => '\Controle\sub1\sub2\UpdateContactResponse',
+		'DeleteContactResponse' => '\Controle\sub1\sub2\DeleteContactResponse',
+		'SearchContactResponse' => '\Controle\sub1\sub2\SearchContactResponse',
+		'GetNameServerResponse' => '\Controle\sub1\sub2\GetNameServerResponse',
+		'CreateNameServerResponse' => '\Controle\sub1\sub2\CreateNameServerResponse',
+		'DeleteNameServerResponse' => '\Controle\sub1\sub2\DeleteNameServerResponse',
+		'SearchNameServerResponse' => '\Controle\sub1\sub2\SearchNameServerResponse',
+		'PollMessageResponse' => '\Controle\sub1\sub2\PollMessageResponse',
+		'QueueItem' => '\Controle\sub1\sub2\QueueItem',
+		'CallbackStatus' => '\Controle\sub1\sub2\CallbackStatus',
+		'AckMessageResponse' => '\Controle\sub1\sub2\AckMessageResponse',
+		'GetMessageQueueResponse' => '\Controle\sub1\sub2\GetMessageQueueResponse',
+		'GetDnsSecKeyResponse' => '\Controle\sub1\sub2\GetDnsSecKeyResponse',
+		'CreateDnsSecKeyResponse' => '\Controle\sub1\sub2\CreateDnsSecKeyResponse',
+		'SearchDnsSecKeyResponse' => '\Controle\sub1\sub2\SearchDnsSecKeyResponse',
+		'CreateDocumentationResponse' => '\Controle\sub1\sub2\CreateDocumentationResponse',
+		'ApprovalDocumentationType' => '\Controle\sub1\sub2\ApprovalDocumentationType',
+		'ApprovalDocumentation' => '\Controle\sub1\sub2\ApprovalDocumentation',
+		'CreateApprovalDocumentationResponse' => '\Controle\sub1\sub2\CreateApprovalDocumentationResponse',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

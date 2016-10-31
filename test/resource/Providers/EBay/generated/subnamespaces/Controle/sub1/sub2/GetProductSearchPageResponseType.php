@@ -21,5 +21,23 @@ class GetProductSearchPageResponseType extends \Controle\sub1\sub2\AbstractRespo
 	 * supplemental information to help the seller understand how to make selections.
 	 */
 	public $ProductSearchPage;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAttributeSystemVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+		$this->AttributeSystemVersion = (int)$val;
+	}
+
+	/**
+	 * @param ProductSearchPageType $val
+	 * @throws Exception
+	 */
+	public function setProductSearchPage($val) {
+		
+		$this->ProductSearchPage = (int)$val;
+	}
+
 }
 

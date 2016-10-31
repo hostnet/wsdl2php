@@ -14,5 +14,14 @@ class GetAttributesXSLResponseType extends \Controle\AbstractResponseType {
 	 * objects can be returned.
 	 */
 	public $XSLFile;
+	/**
+	 * @param XSLFileType $val
+	 * @throws Exception
+	 */
+	public function setXSLFile($val) {
+		
+		$this->XSLFile = (int)$val;
+	}
+
 }
 

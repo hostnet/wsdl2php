@@ -40,5 +40,59 @@ class ExpressHistogramDomainDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setBreadCrumb($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for BreadCrumb');
+		$this->BreadCrumb = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setItemCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ItemCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setProductCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ProductCount = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setImageURL($val) {
+		
+		$this->ImageURL = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

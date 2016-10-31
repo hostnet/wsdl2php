@@ -111,5 +111,113 @@ class ProductSearchResultType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setApproximatePages($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ApproximatePages = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setAttributeSetID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->AttributeSetID = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setHasMore($val) {
+        
+        $this->HasMore = (int)$val;
+    }
+
+    /**
+     * @param ProductFamilyType $val
+     * @throws Exception
+     */
+    public function setProductFamilies($val) {
+        
+        $this->ProductFamilies = (int)$val;
+    }
+
+    /**
+     * @param ProductFinderConstraintType $val
+     * @throws Exception
+     */
+    public function setProductFinderConstraints($val) {
+        
+        $this->ProductFinderConstraints = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setTooManyMatchesFound($val) {
+        
+        $this->TooManyMatchesFound = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setTotalProducts($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->TotalProducts = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ID');
+        $this->ID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setNumProducts($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for NumProducts');
+        $this->NumProducts = (int)$val;
+    }
+
+    /**
+     * @param ResponseAttributeSetType $val
+     * @throws Exception
+     */
+    public function setAttributeSet($val) {
+        
+        $this->AttributeSet = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setDisplayStockPhotos($val) {
+        
+        $this->DisplayStockPhotos = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -31,5 +31,32 @@ class GetUserContactDetailsResponseType extends \Controle\AbstractResponseType {
      * for that bidder, and the seller of an item that the user is bidding on.
      */
     public $RegistrationDate;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setUserID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for UserID');
+        $this->UserID = (int)$val;
+    }
+
+    /**
+     * @param AddressType $val
+     * @throws Exception
+     */
+    public function setContactAddress($val) {
+        
+        $this->ContactAddress = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setRegistrationDate($val) {
+        
+        $this->RegistrationDate = (int)$val;
+    }
+
 }
 

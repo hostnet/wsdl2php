@@ -28,5 +28,41 @@ class ProductFamilyType {
      * @var boolean
      */
     public $hasMoreChildren;
+    /**
+     * @param ProductType $val
+     * @throws Exception
+     */
+    public function setParentProduct($val) {
+        
+        $this->ParentProduct = (int)$val;
+    }
+
+    /**
+     * @param ProductType $val
+     * @throws Exception
+     */
+    public function setFamilyMembers($val) {
+        
+        $this->FamilyMembers = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setHasMoreChildren($val) {
+        
+        $this->hasMoreChildren = (int)$val;
+    }
+
 }
 

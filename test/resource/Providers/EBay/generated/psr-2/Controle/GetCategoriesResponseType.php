@@ -79,5 +79,95 @@ class GetCategoriesResponseType extends \Controle\AbstractResponseType {
      * setting and does does not support reducing reserve prices.
      */
     public $ReduceReserveAllowed;
+    /**
+     * @param CategoryArrayType $val
+     * @throws Exception
+     */
+    public function setCategoryArray($val) {
+        
+        $this->CategoryArray = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCategoryCount($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->CategoryCount = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setUpdateTime($val) {
+        
+        $this->UpdateTime = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCategoryVersion($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryVersion');
+        $this->CategoryVersion = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReservePriceInclusive($val) {
+        
+        $this->ReservePriceInclusive = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReservePriceAllowed($val) {
+        
+        $this->ReservePriceAllowed = (int)$val;
+    }
+
+    /**
+     * @param double $val
+     * @throws Exception
+     */
+    public function setMinimumReservePrice($val) {
+        
+        $this->MinimumReservePrice = (int)$val;
+    }
+
+    /**
+     * @param CurrencyCodeType $val
+     * @throws Exception
+     */
+    public function setCurrency($val) {
+        
+        $this->Currency = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReduceReserveInclusive($val) {
+        
+        $this->ReduceReserveInclusive = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReduceReserveAllowed($val) {
+        
+        $this->ReduceReserveAllowed = (int)$val;
+    }
+
 }
 

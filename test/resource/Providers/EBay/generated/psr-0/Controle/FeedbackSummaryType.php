@@ -59,5 +59,86 @@ class FeedbackSummaryType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param FeedbackPeriodArrayType $val
+	 * @throws Exception
+	 */
+	public function setBidRetractionFeedbackPeriodArray($val) {
+		
+		$this->BidRetractionFeedbackPeriodArray = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackPeriodArrayType $val
+	 * @throws Exception
+	 */
+	public function setNegativeFeedbackPeriodArray($val) {
+		
+		$this->NegativeFeedbackPeriodArray = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackPeriodArrayType $val
+	 * @throws Exception
+	 */
+	public function setNeutralFeedbackPeriodArray($val) {
+		
+		$this->NeutralFeedbackPeriodArray = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackPeriodArrayType $val
+	 * @throws Exception
+	 */
+	public function setPositiveFeedbackPeriodArray($val) {
+		
+		$this->PositiveFeedbackPeriodArray = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackPeriodArrayType $val
+	 * @throws Exception
+	 */
+	public function setTotalFeedbackPeriodArray($val) {
+		
+		$this->TotalFeedbackPeriodArray = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setNeutralCommentCountFromSuspendedUsers($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->NeutralCommentCountFromSuspendedUsers = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUniqueNegativeFeedbackCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UniqueNegativeFeedbackCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUniquePositiveFeedbackCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UniquePositiveFeedbackCount = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

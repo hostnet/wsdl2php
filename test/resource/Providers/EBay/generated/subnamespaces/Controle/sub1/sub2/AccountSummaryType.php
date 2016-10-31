@@ -136,5 +136,194 @@ class AccountSummaryType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AccountStateCodeType $val
+	 * @throws Exception
+	 */
+	public function setAccountState($val) {
+		
+		$this->AccountState = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setInvoicePayment($val) {
+		
+		$this->InvoicePayment = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setInvoiceCredit($val) {
+		
+		$this->InvoiceCredit = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setInvoiceNewFee($val) {
+		
+		$this->InvoiceNewFee = (int)$val;
+	}
+
+	/**
+	 * @param AdditionalAccountType $val
+	 * @throws Exception
+	 */
+	public function setAdditionalAccount($val) {
+		
+		$this->AdditionalAccount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAmountPastDue($val) {
+		
+		$this->AmountPastDue = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setBankAccountInfo($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for BankAccountInfo');
+		$this->BankAccountInfo = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setBankModifyDate($val) {
+		
+		$this->BankModifyDate = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBillingCycleDate($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BillingCycleDate = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setCreditCardExpiration($val) {
+		
+		$this->CreditCardExpiration = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCreditCardInfo($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CreditCardInfo');
+		$this->CreditCardInfo = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setCreditCardModifyDate($val) {
+		
+		$this->CreditCardModifyDate = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setCurrentBalance($val) {
+		
+		$this->CurrentBalance = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setEmail($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Email');
+		$this->Email = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setInvoiceBalance($val) {
+		
+		$this->InvoiceBalance = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setInvoiceDate($val) {
+		
+		$this->InvoiceDate = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setLastAmountPaid($val) {
+		
+		$this->LastAmountPaid = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setLastPaymentDate($val) {
+		
+		$this->LastPaymentDate = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPastDue($val) {
+		
+		$this->PastDue = (int)$val;
+	}
+
+	/**
+	 * @param SellerPaymentMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPaymentMethod($val) {
+		
+		$this->PaymentMethod = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

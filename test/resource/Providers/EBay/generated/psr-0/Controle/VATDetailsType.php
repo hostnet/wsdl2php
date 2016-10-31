@@ -48,5 +48,41 @@ class VATDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBusinessSeller($val) {
+		
+		$this->BusinessSeller = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setRestrictedToBusiness($val) {
+		
+		$this->RestrictedToBusiness = (int)$val;
+	}
+
+	/**
+	 * @param float $val
+	 * @throws Exception
+	 */
+	public function setVATPercent($val) {
+		
+		$this->VATPercent = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

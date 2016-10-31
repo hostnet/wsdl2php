@@ -45,5 +45,68 @@ class ApplicationDeliveryPreferencesType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setApplicationURL($val) {
+        
+        $this->ApplicationURL = (int)$val;
+    }
+
+    /**
+     * @param EnableCodeType $val
+     * @throws Exception
+     */
+    public function setApplicationEnable($val) {
+        
+        $this->ApplicationEnable = (int)$val;
+    }
+
+    /**
+     * @param anyURI $val
+     * @throws Exception
+     */
+    public function setAlertEmail($val) {
+        
+        $this->AlertEmail = (int)$val;
+    }
+
+    /**
+     * @param EnableCodeType $val
+     * @throws Exception
+     */
+    public function setAlertEnable($val) {
+        
+        $this->AlertEnable = (int)$val;
+    }
+
+    /**
+     * @param NotificationPayloadTypeCodeType $val
+     * @throws Exception
+     */
+    public function setNotificationPayloadType($val) {
+        
+        $this->NotificationPayloadType = (int)$val;
+    }
+
+    /**
+     * @param DeviceTypeCodeType $val
+     * @throws Exception
+     */
+    public function setDeviceType($val) {
+        
+        $this->DeviceType = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -13,5 +13,14 @@ class GetCrossPromotionsResponseType extends \Controle\sub1\sub2\AbstractRespons
 	 * to Half.com.
 	 */
 	public $CrossPromotion;
+	/**
+	 * @param CrossPromotionsType $val
+	 * @throws Exception
+	 */
+	public function setCrossPromotion($val) {
+		
+		$this->CrossPromotion = (int)$val;
+	}
+
 }
 

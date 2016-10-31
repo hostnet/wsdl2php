@@ -66,5 +66,86 @@ class GetRecommendationsRequestContainerType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ListingFlowCodeType $val
+	 * @throws Exception
+	 */
+	public function setListingFlow($val) {
+		
+		$this->ListingFlow = (int)$val;
+	}
+
+	/**
+	 * @param ItemType $val
+	 * @throws Exception
+	 */
+	public function setItem($val) {
+		
+		$this->Item = (int)$val;
+	}
+
+	/**
+	 * @param ExternalProductIDType $val
+	 * @throws Exception
+	 */
+	public function setExternalProductID($val) {
+		
+		$this->ExternalProductID = (int)$val;
+	}
+
+	/**
+	 * @param ModifiedFieldType $val
+	 * @throws Exception
+	 */
+	public function setModifiedFields($val) {
+		
+		$this->ModifiedFields = (int)$val;
+	}
+
+	/**
+	 * @param RecommendationEngineCodeType $val
+	 * @throws Exception
+	 */
+	public function setRecommendationEngine($val) {
+		
+		$this->RecommendationEngine = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setQuery($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Query');
+		$this->Query = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCorrelationID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CorrelationID');
+		$this->CorrelationID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDeletedField($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DeletedField');
+		$this->DeletedField = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

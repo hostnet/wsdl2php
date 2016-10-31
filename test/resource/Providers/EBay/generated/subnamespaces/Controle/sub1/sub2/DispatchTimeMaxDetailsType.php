@@ -24,5 +24,32 @@ class DispatchTimeMaxDetailsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setDispatchTimeMax($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->DispatchTimeMax = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDescription($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+		$this->Description = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

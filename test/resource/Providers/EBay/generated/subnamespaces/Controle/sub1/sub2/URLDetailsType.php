@@ -21,5 +21,32 @@ class URLDetailsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param URLTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setURLType($val) {
+		
+		$this->URLType = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setURL($val) {
+		
+		$this->URL = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

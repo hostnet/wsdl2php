@@ -12,5 +12,14 @@ class ApproveLiveAuctionBiddersResponseType extends \Controle\AbstractResponseTy
      * with one call.
      */
     public $BidderUpdateStatus;
+    /**
+     * @param LiveAuctionApprovalStatusArrayType $val
+     * @throws Exception
+     */
+    public function setBidderUpdateStatus($val) {
+        
+        $this->BidderUpdateStatus = (int)$val;
+    }
+
 }
 

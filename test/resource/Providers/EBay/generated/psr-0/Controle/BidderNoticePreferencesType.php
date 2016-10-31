@@ -15,5 +15,23 @@ class BidderNoticePreferencesType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setUnsuccessfulBidderNoticeIncludeMyItems($val) {
+		
+		$this->UnsuccessfulBidderNoticeIncludeMyItems = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

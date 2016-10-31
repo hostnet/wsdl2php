@@ -183,5 +183,230 @@ class CategoryType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setBestOfferEnabled($val) {
+        
+        $this->BestOfferEnabled = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setAutoPayEnabled($val) {
+        
+        $this->AutoPayEnabled = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setB2BVATEnabled($val) {
+        
+        $this->B2BVATEnabled = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCatalogEnabled($val) {
+        
+        $this->CatalogEnabled = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCategoryID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
+        $this->CategoryID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setCategoryLevel($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->CategoryLevel = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCategoryName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryName');
+        $this->CategoryName = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCategoryParentID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryParentID');
+        $this->CategoryParentID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCategoryParentName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryParentName');
+        $this->CategoryParentName = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setProductFinderID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ProductFinderID = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setProductSearchPageAvailable($val) {
+        
+        $this->ProductSearchPageAvailable = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setProductFinderAvailable($val) {
+        
+        $this->ProductFinderAvailable = (int)$val;
+    }
+
+    /**
+     * @param ExtendedProductFinderIDType $val
+     * @throws Exception
+     */
+    public function setProductFinderIDs($val) {
+        
+        $this->ProductFinderIDs = (int)$val;
+    }
+
+    /**
+     * @param CharacteristicsSetType $val
+     * @throws Exception
+     */
+    public function setCharacteristicsSets($val) {
+        
+        $this->CharacteristicsSets = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setExpired($val) {
+        
+        $this->Expired = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setIntlAutosFixedCat($val) {
+        
+        $this->IntlAutosFixedCat = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setLeafCategory($val) {
+        
+        $this->LeafCategory = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setVirtual($val) {
+        
+        $this->Virtual = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setNumOfItems($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->NumOfItems = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setSellerGuaranteeEligible($val) {
+        
+        $this->SellerGuaranteeEligible = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setORPA($val) {
+        
+        $this->ORPA = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setORRA($val) {
+        
+        $this->ORRA = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setLSD($val) {
+        
+        $this->LSD = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setKeywords($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Keywords');
+        $this->Keywords = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

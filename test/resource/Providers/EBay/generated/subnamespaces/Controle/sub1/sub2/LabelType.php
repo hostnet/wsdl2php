@@ -20,5 +20,32 @@ class LabelType {
 	 * @var boolean
 	 */
 	public $visible;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setVisible($val) {
+		
+		$this->visible = (int)$val;
+	}
+
 }
 

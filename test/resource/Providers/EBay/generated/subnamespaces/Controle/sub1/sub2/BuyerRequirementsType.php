@@ -45,5 +45,68 @@ class BuyerRequirementsType {
 	 * 451 or older.
 	 */
 	public $VerifiedUserRequirements;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setShipToRegistrationCountry($val) {
+		
+		$this->ShipToRegistrationCountry = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setZeroFeedbackScore($val) {
+		
+		$this->ZeroFeedbackScore = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setMinimumFeedbackScore($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->MinimumFeedbackScore = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setMaximumUnpaidItemStrikes($val) {
+		
+		$this->MaximumUnpaidItemStrikes = (int)$val;
+	}
+
+	/**
+	 * @param MaximumItemRequirementsType $val
+	 * @throws Exception
+	 */
+	public function setMaximumItemRequirements($val) {
+		
+		$this->MaximumItemRequirements = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLinkedPayPalAccount($val) {
+		
+		$this->LinkedPayPalAccount = (int)$val;
+	}
+
+	/**
+	 * @param VerifiedUserRequirementsType $val
+	 * @throws Exception
+	 */
+	public function setVerifiedUserRequirements($val) {
+		
+		$this->VerifiedUserRequirements = (int)$val;
+	}
+
 }
 

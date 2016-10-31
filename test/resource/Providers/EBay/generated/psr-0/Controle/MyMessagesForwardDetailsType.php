@@ -18,5 +18,32 @@ class MyMessagesForwardDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setUserForwardDate($val) {
+		
+		$this->UserForwardDate = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setForwardMessageEncoding($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ForwardMessageEncoding');
+		$this->ForwardMessageEncoding = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

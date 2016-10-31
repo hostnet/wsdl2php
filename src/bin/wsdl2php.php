@@ -471,6 +471,20 @@ foreach($types as $index=>$type){
 		}
 		$code .= "\n" . $ident_char . "public \$".$member['member'].";";
 	}
+
+	// add access method
+	foreach($type['members'] as $member) {
+        $code .= sprintf("\n" .
+        $ident_char . "/**\n".
+        $ident_char . " * @param %s \$val\n" .
+        $ident_char . " * @throws Exception\n" .
+        $ident_char . " */\n" .
+        $ident_char ."public function set%s(\$val) {\n" .
+        $ident_char . $ident_char . "%s\n" .
+        $ident_char . $ident_char . "\$this->%s = (int)\$val;\n" .
+        $ident_char ."}\n", $member['type'], ucwords($member['member']), accessMethodCaster($member['type'], $member['member']), $member['member']);
+	}
+
 	$code .= "\n}\n";
 
 	if(isset($file)){
@@ -523,58 +537,6 @@ if(!$server){
 	$code .= $ident_char . $ident_char . "if(isset(\$options['headers'])) {\n";
 	$code .= $ident_char . $ident_char . $ident_char . "\$this->__setSoapHeaders(\$options['headers']);\n";
 	$code .= $ident_char . $ident_char . "}\n";
-}
-
-// add types
-$file = null;
-foreach($service['types'] as $type) {
-
-    if($namespace) {
-        $dirname = str_replace('_', '/', $namespace);
-        if(!is_dir($dirname))
-            mkdir($dirname, 0777, true);
-        $file = fopen($dirname . $type['baseClass']. '.php', 'w');
-    }
-
-    // add enumeration values
-    $code .= "class ".$type['class']." {\n";
-    foreach($type['values'] as $value) {
-        $code .= "  const ".generatePHPSymbol($value)." = '$value';\n";
-    }
-
-    // add member variables
-    foreach($type['members'] as $member) {
-        $code .= "    /**\n";
-        if(!in_array($member['type'], $primitive_types))
-            $code .= "     * @var " . $namespace . $member['type'] . "\n";
-        else
-            $code .= "     * @var " . $member['type'] . "\n";
-        $code .= "     */\n";
-        $code .= "    public \$".$member['member'] . ";\n";
-    }
-
-	// add access method
-	foreach($type['members'] as $member) {
-        $code .= sprintf("\n" .
-        $ident_char . "/**\n".
-        $ident_char . " * @param %s \$val\n" .
-        $ident_char . " * @throws Exception\n" .
-        $ident_char . " */\n" .
-        $ident_char ."public function set%s(\$val) {\n" .
-        $ident_char . $ident_char . "%s\n" .
-        $ident_char . $ident_char . "\$this->%s = (int)\$val;\n" .
-        $ident_char ."}\n", $member['type'], ucwords($member['member']), accessMethodCaster($member['type'], $member['member']), $member['member']);
-	}
-
-    $code .= "}\n\n";
-    if($file)
-    {
-        print "Writing " . $type['baseClass']. ".php...";
-        fwrite($file, "<?php\n\n".$code."\n");
-        fclose($file);
-        $code = "";
-        print "ok\n";
-    }
 }
 
 $code .= $ident_char . $ident_char . "parent::__construct(\$wsdl ? \$wsdl : self::WSDL_FILE, \$options);\n";

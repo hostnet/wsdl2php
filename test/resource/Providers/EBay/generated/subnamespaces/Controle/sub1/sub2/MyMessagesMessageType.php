@@ -90,5 +90,167 @@ class MyMessagesMessageType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSender($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Sender');
+		$this->Sender = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRecipientUserID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RecipientUserID');
+		$this->RecipientUserID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSendToName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SendToName');
+		$this->SendToName = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSubject($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Subject');
+		$this->Subject = (int)$val;
+	}
+
+	/**
+	 * @param MyMessagesMessageIDType $val
+	 * @throws Exception
+	 */
+	public function setMessageID($val) {
+		
+		$this->MessageID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setExternalMessageID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExternalMessageID');
+		$this->ExternalMessageID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setContentType($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ContentType');
+		$this->ContentType = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setText($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Text');
+		$this->Text = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setFlagged($val) {
+		
+		$this->Flagged = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setRead($val) {
+		
+		$this->Read = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setCreationDate($val) {
+		
+		$this->CreationDate = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setReceiveDate($val) {
+		
+		$this->ReceiveDate = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setExpirationDate($val) {
+		
+		$this->ExpirationDate = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param MyMessagesResponseDetailsType $val
+	 * @throws Exception
+	 */
+	public function setResponseDetails($val) {
+		
+		$this->ResponseDetails = (int)$val;
+	}
+
+	/**
+	 * @param MyMessagesForwardDetailsType $val
+	 * @throws Exception
+	 */
+	public function setForwardDetails($val) {
+		
+		$this->ForwardDetails = (int)$val;
+	}
+
+	/**
+	 * @param MyMessagesFolderType $val
+	 * @throws Exception
+	 */
+	public function setFolder($val) {
+		
+		$this->Folder = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -37,5 +37,41 @@ class SearchResultItemType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ItemType $val
+	 * @throws Exception
+	 */
+	public function setItem($val) {
+		
+		$this->Item = (int)$val;
+	}
+
+	/**
+	 * @param NameValueListArrayType $val
+	 * @throws Exception
+	 */
+	public function setItemSpecific($val) {
+		
+		$this->ItemSpecific = (int)$val;
+	}
+
+	/**
+	 * @param SearchResultValuesCodeType $val
+	 * @throws Exception
+	 */
+	public function setSearchResultValues($val) {
+		
+		$this->SearchResultValues = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

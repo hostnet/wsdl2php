@@ -11,5 +11,14 @@ class VeROReportItemsType {
      * @var \Controle\VeROReportItemType | Contains the data and status of a reported item.
      */
     public $ReportItem;
+    /**
+     * @param VeROReportItemType $val
+     * @throws Exception
+     */
+    public function setReportItem($val) {
+        
+        $this->ReportItem = (int)$val;
+    }
+
 }
 

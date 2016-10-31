@@ -19,5 +19,32 @@ class AddMemberMessagesAAQToBidderRequestContainerType {
 	 * @var \Controle\MemberMessageType | Holds the content of the message.
 	 */
 	public $MemberMessage;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCorrelationID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CorrelationID');
+		$this->CorrelationID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ItemID');
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param MemberMessageType $val
+	 * @throws Exception
+	 */
+	public function setMemberMessage($val) {
+		
+		$this->MemberMessage = (int)$val;
+	}
+
 }
 

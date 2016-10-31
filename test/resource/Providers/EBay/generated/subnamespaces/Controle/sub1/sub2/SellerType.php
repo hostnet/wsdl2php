@@ -142,5 +142,221 @@ class SellerType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPaisaPayStatus($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PaisaPayStatus = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setAllowPaymentEdit($val) {
+		
+		$this->AllowPaymentEdit = (int)$val;
+	}
+
+	/**
+	 * @param CurrencyCodeType $val
+	 * @throws Exception
+	 */
+	public function setBillingCurrency($val) {
+		
+		$this->BillingCurrency = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCheckoutEnabled($val) {
+		
+		$this->CheckoutEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCIPBankAccountStored($val) {
+		
+		$this->CIPBankAccountStored = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setGoodStanding($val) {
+		
+		$this->GoodStanding = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLiveAuctionAuthorized($val) {
+		
+		$this->LiveAuctionAuthorized = (int)$val;
+	}
+
+	/**
+	 * @param MerchandizingPrefCodeType $val
+	 * @throws Exception
+	 */
+	public function setMerchandizingPref($val) {
+		
+		$this->MerchandizingPref = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setQualifiesForB2BVAT($val) {
+		
+		$this->QualifiesForB2BVAT = (int)$val;
+	}
+
+	/**
+	 * @param SellerGuaranteeLevelCodeType $val
+	 * @throws Exception
+	 */
+	public function setSellerGuaranteeLevel($val) {
+		
+		$this->SellerGuaranteeLevel = (int)$val;
+	}
+
+	/**
+	 * @param SellerLevelCodeType $val
+	 * @throws Exception
+	 */
+	public function setSellerLevel($val) {
+		
+		$this->SellerLevel = (int)$val;
+	}
+
+	/**
+	 * @param AddressType $val
+	 * @throws Exception
+	 */
+	public function setSellerPaymentAddress($val) {
+		
+		$this->SellerPaymentAddress = (int)$val;
+	}
+
+	/**
+	 * @param SchedulingInfoType $val
+	 * @throws Exception
+	 */
+	public function setSchedulingInfo($val) {
+		
+		$this->SchedulingInfo = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setStoreOwner($val) {
+		
+		$this->StoreOwner = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setStoreURL($val) {
+		
+		$this->StoreURL = (int)$val;
+	}
+
+	/**
+	 * @param SellerBusinessCodeType $val
+	 * @throws Exception
+	 */
+	public function setSellerBusinessType($val) {
+		
+		$this->SellerBusinessType = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setRegisteredBusinessSeller($val) {
+		
+		$this->RegisteredBusinessSeller = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressEligible($val) {
+		
+		$this->ExpressEligible = (int)$val;
+	}
+
+	/**
+	 * @param SellerPaymentMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPaymentMethod($val) {
+		
+		$this->PaymentMethod = (int)$val;
+	}
+
+	/**
+	 * @param ProStoresCheckoutPreferenceType $val
+	 * @throws Exception
+	 */
+	public function setProStoresPreference($val) {
+		
+		$this->ProStoresPreference = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressWallet($val) {
+		
+		$this->ExpressWallet = (int)$val;
+	}
+
+	/**
+	 * @param ExpressSellerRequirementsType $val
+	 * @throws Exception
+	 */
+	public function setExpressSellerRequirements($val) {
+		
+		$this->ExpressSellerRequirements = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCharityRegistered($val) {
+		
+		$this->CharityRegistered = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -14,5 +14,14 @@ class TaxTableType {
 	 * and SalesTaxPercent are returned but are empty.
 	 */
 	public $TaxJurisdiction;
+	/**
+	 * @param TaxJurisdictionType $val
+	 * @throws Exception
+	 */
+	public function setTaxJurisdiction($val) {
+		
+		$this->TaxJurisdiction = (int)$val;
+	}
+
 }
 

@@ -11,5 +11,14 @@ class GetPromotionRulesResponseType extends \Controle\sub1\sub2\AbstractResponse
 	 * store category and the cross-promoted items or store categories.
 	 */
 	public $PromotionRuleArray;
+	/**
+	 * @param PromotionRuleArrayType $val
+	 * @throws Exception
+	 */
+	public function setPromotionRuleArray($val) {
+		
+		$this->PromotionRuleArray = (int)$val;
+	}
+
 }
 

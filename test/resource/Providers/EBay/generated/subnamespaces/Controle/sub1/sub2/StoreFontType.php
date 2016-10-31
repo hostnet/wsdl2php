@@ -46,5 +46,95 @@ class StoreFontType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param StoreFontFaceCodeType $val
+	 * @throws Exception
+	 */
+	public function setNameFace($val) {
+		
+		$this->NameFace = (int)$val;
+	}
+
+	/**
+	 * @param StoreFontSizeCodeType $val
+	 * @throws Exception
+	 */
+	public function setNameSize($val) {
+		
+		$this->NameSize = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setNameColor($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for NameColor');
+		$this->NameColor = (int)$val;
+	}
+
+	/**
+	 * @param StoreFontFaceCodeType $val
+	 * @throws Exception
+	 */
+	public function setTitleFace($val) {
+		
+		$this->TitleFace = (int)$val;
+	}
+
+	/**
+	 * @param StoreFontSizeCodeType $val
+	 * @throws Exception
+	 */
+	public function setTitleSize($val) {
+		
+		$this->TitleSize = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTitleColor($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TitleColor');
+		$this->TitleColor = (int)$val;
+	}
+
+	/**
+	 * @param StoreFontFaceCodeType $val
+	 * @throws Exception
+	 */
+	public function setDescFace($val) {
+		
+		$this->DescFace = (int)$val;
+	}
+
+	/**
+	 * @param StoreFontSizeCodeType $val
+	 * @throws Exception
+	 */
+	public function setDescSize($val) {
+		
+		$this->DescSize = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDescColor($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DescColor');
+		$this->DescColor = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

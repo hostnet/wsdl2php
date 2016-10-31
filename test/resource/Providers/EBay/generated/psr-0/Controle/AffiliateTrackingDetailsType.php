@@ -35,5 +35,50 @@ class AffiliateTrackingDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTrackingID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TrackingID');
+		$this->TrackingID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTrackingPartnerCode($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TrackingPartnerCode');
+		$this->TrackingPartnerCode = (int)$val;
+	}
+
+	/**
+	 * @param ApplicationDeviceTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setApplicationDeviceType($val) {
+		
+		$this->ApplicationDeviceType = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAffiliateUserID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AffiliateUserID');
+		$this->AffiliateUserID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

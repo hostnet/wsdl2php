@@ -25,5 +25,23 @@ class LiveAuctionApprovalStatusType {
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
     public $Status;
+    /**
+     * @param UserIDType $val
+     * @throws Exception
+     */
+    public function setUserID($val) {
+        
+        $this->UserID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setStatus($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Status');
+        $this->Status = (int)$val;
+    }
+
 }
 

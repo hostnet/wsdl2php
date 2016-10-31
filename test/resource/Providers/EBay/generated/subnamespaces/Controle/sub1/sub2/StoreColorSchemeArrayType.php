@@ -10,5 +10,14 @@ class StoreColorSchemeArrayType {
 	 * @var \Controle\sub1\sub2\StoreColorSchemeType | Theme color scheme.
 	 */
 	public $ColorScheme;
+	/**
+	 * @param StoreColorSchemeType $val
+	 * @throws Exception
+	 */
+	public function setColorScheme($val) {
+		
+		$this->ColorScheme = (int)$val;
+	}
+
 }
 

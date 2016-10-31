@@ -30,5 +30,68 @@ class BuyingSummaryType {
 	 * @var int | The number of items the user has made best offers on.
 	 */
 	public $BestOfferCount;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBiddingCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BiddingCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setWinningCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->WinningCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalWinningCost($val) {
+		
+		$this->TotalWinningCost = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setWonCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->WonCount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalWonCost($val) {
+		
+		$this->TotalWonCost = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setWonDurationInDays($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->WonDurationInDays = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setBestOfferCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->BestOfferCount = (int)$val;
+	}
+
 }
 

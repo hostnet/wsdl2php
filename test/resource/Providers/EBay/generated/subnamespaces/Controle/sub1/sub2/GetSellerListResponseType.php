@@ -44,5 +44,68 @@ class GetSellerListResponseType extends \Controle\sub1\sub2\AbstractResponseType
 	 * GetSearchResultsExpress, only returned when ItemDetails is set to Fine.
 	 */
 	public $Seller;
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMoreItems($val) {
+		
+		$this->HasMoreItems = (int)$val;
+	}
+
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setItemArray($val) {
+		
+		$this->ItemArray = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setItemsPerPage($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ItemsPerPage = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageNumber = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setReturnedItemCountActual($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ReturnedItemCountActual = (int)$val;
+	}
+
+	/**
+	 * @param UserType $val
+	 * @throws Exception
+	 */
+	public function setSeller($val) {
+		
+		$this->Seller = (int)$val;
+	}
+
 }
 

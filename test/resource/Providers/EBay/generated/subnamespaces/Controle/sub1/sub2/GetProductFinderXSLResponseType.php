@@ -14,5 +14,14 @@ class GetProductFinderXSLResponseType extends \Controle\sub1\sub2\AbstractRespon
 	 * objects can be returned.
 	 */
 	public $XSLFile;
+	/**
+	 * @param XSLFileType $val
+	 * @throws Exception
+	 */
+	public function setXSLFile($val) {
+		
+		$this->XSLFile = (int)$val;
+	}
+
 }
 

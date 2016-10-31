@@ -101,5 +101,122 @@ class GetSearchResultsResponseType extends \Controle\AbstractResponseType {
 	 * if the request specified more than zero in the MaxRelatedSearchKeywords field.
 	 */
 	public $RelatedSearchKeywordArray;
+	/**
+	 * @param SearchResultItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setSearchResultItemArray($val) {
+		
+		$this->SearchResultItemArray = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setItemsPerPage($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ItemsPerPage = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageNumber = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMoreItems($val) {
+		
+		$this->HasMoreItems = (int)$val;
+	}
+
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param CategoryArrayType $val
+	 * @throws Exception
+	 */
+	public function setCategoryArray($val) {
+		
+		$this->CategoryArray = (int)$val;
+	}
+
+	/**
+	 * @param BuyingGuideDetailsType $val
+	 * @throws Exception
+	 */
+	public function setBuyingGuideDetails($val) {
+		
+		$this->BuyingGuideDetails = (int)$val;
+	}
+
+	/**
+	 * @param ExpansionArrayType $val
+	 * @throws Exception
+	 */
+	public function setStoreExpansionArray($val) {
+		
+		$this->StoreExpansionArray = (int)$val;
+	}
+
+	/**
+	 * @param ExpansionArrayType $val
+	 * @throws Exception
+	 */
+	public function setInternationalExpansionArray($val) {
+		
+		$this->InternationalExpansionArray = (int)$val;
+	}
+
+	/**
+	 * @param ExpansionArrayType $val
+	 * @throws Exception
+	 */
+	public function setFilterRemovedExpansionArray($val) {
+		
+		$this->FilterRemovedExpansionArray = (int)$val;
+	}
+
+	/**
+	 * @param ExpansionArrayType $val
+	 * @throws Exception
+	 */
+	public function setAllCategoriesExpansionArray($val) {
+		
+		$this->AllCategoriesExpansionArray = (int)$val;
+	}
+
+	/**
+	 * @param SpellingSuggestionType $val
+	 * @throws Exception
+	 */
+	public function setSpellingSuggestion($val) {
+		
+		$this->SpellingSuggestion = (int)$val;
+	}
+
+	/**
+	 * @param RelatedSearchKeywordArrayType $val
+	 * @throws Exception
+	 */
+	public function setRelatedSearchKeywordArray($val) {
+		
+		$this->RelatedSearchKeywordArray = (int)$val;
+	}
+
 }
 

@@ -149,5 +149,266 @@ class AddressType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStreet($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Street');
+		$this->Street = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStreet1($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Street1');
+		$this->Street1 = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStreet2($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Street2');
+		$this->Street2 = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCityName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CityName');
+		$this->CityName = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCounty($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for County');
+		$this->County = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStateOrProvince($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for StateOrProvince');
+		$this->StateOrProvince = (int)$val;
+	}
+
+	/**
+	 * @param CountryCodeType $val
+	 * @throws Exception
+	 */
+	public function setCountry($val) {
+		
+		$this->Country = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCountryName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CountryName');
+		$this->CountryName = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhone($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Phone');
+		$this->Phone = (int)$val;
+	}
+
+	/**
+	 * @param CountryCodeType $val
+	 * @throws Exception
+	 */
+	public function setPhoneCountryCode($val) {
+		
+		$this->PhoneCountryCode = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhoneCountryPrefix($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PhoneCountryPrefix');
+		$this->PhoneCountryPrefix = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhoneAreaOrCityCode($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PhoneAreaOrCityCode');
+		$this->PhoneAreaOrCityCode = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhoneLocalNumber($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PhoneLocalNumber');
+		$this->PhoneLocalNumber = (int)$val;
+	}
+
+	/**
+	 * @param CountryCodeType $val
+	 * @throws Exception
+	 */
+	public function setPhone2CountryCode($val) {
+		
+		$this->Phone2CountryCode = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhone2CountryPrefix($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Phone2CountryPrefix');
+		$this->Phone2CountryPrefix = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhone2AreaOrCityCode($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Phone2AreaOrCityCode');
+		$this->Phone2AreaOrCityCode = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPhone2LocalNumber($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Phone2LocalNumber');
+		$this->Phone2LocalNumber = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPostalCode($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PostalCode');
+		$this->PostalCode = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAddressID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AddressID');
+		$this->AddressID = (int)$val;
+	}
+
+	/**
+	 * @param AddressOwnerCodeType $val
+	 * @throws Exception
+	 */
+	public function setAddressOwner($val) {
+		
+		$this->AddressOwner = (int)$val;
+	}
+
+	/**
+	 * @param AddressStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setAddressStatus($val) {
+		
+		$this->AddressStatus = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setExternalAddressID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExternalAddressID');
+		$this->ExternalAddressID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setInternationalName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for InternationalName');
+		$this->InternationalName = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setInternationalStateAndCity($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for InternationalStateAndCity');
+		$this->InternationalStateAndCity = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setInternationalStreet($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for InternationalStreet');
+		$this->InternationalStreet = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCompanyName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CompanyName');
+		$this->CompanyName = (int)$val;
+	}
+
+	/**
+	 * @param AddressRecordTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setAddressRecordType($val) {
+		
+		$this->AddressRecordType = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

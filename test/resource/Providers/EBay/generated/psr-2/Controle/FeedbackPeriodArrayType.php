@@ -14,5 +14,14 @@ class FeedbackPeriodArrayType {
      * if no detail level is specified.
      */
     public $FeedbackPeriod;
+    /**
+     * @param FeedbackPeriodType $val
+     * @throws Exception
+     */
+    public function setFeedbackPeriod($val) {
+        
+        $this->FeedbackPeriod = (int)$val;
+    }
+
 }
 

@@ -11,5 +11,14 @@ class GetWantItNowPostResponseType extends \Controle\AbstractResponseType {
      * @var \Controle\WantItNowPostType | Contains data for a Want It Now post found by a search.
      */
     public $WantItNowPost;
+    /**
+     * @param WantItNowPostType $val
+     * @throws Exception
+     */
+    public function setWantItNowPost($val) {
+        
+        $this->WantItNowPost = (int)$val;
+    }
+
 }
 

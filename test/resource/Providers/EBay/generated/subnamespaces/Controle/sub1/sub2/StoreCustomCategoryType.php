@@ -32,5 +32,59 @@ class StoreCustomCategoryType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setCategoryID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->CategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setOrder($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Order = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomCategoryType $val
+	 * @throws Exception
+	 */
+	public function setChildrenCategories($val) {
+		
+		$this->ChildrenCategories = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomCategoryType $val
+	 * @throws Exception
+	 */
+	public function setChildCategory($val) {
+		
+		$this->ChildCategory = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -46,5 +46,59 @@ class VerifyAddItemResponseType extends \Controle\sub1\sub2\AbstractResponseType
 	 * with no replacement, Category2ID does not return a value.
 	 */
 	public $Category2ID;
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param FeesType $val
+	 * @throws Exception
+	 */
+	public function setFees($val) {
+		
+		$this->Fees = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressListing($val) {
+		
+		$this->ExpressListing = (int)$val;
+	}
+
+	/**
+	 * @param ExpressItemRequirementsType $val
+	 * @throws Exception
+	 */
+	public function setExpressItemRequirements($val) {
+		
+		$this->ExpressItemRequirements = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCategoryID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
+		$this->CategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCategory2ID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Category2ID');
+		$this->Category2ID = (int)$val;
+	}
+
 }
 

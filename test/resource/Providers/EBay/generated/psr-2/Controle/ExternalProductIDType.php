@@ -39,5 +39,41 @@ class ExternalProductIDType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setValue($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
+        $this->Value = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setReturnSearchResultOnDuplicates($val) {
+        
+        $this->ReturnSearchResultOnDuplicates = (int)$val;
+    }
+
+    /**
+     * @param ExternalProductCodeType $val
+     * @throws Exception
+     */
+    public function setType($val) {
+        
+        $this->Type = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

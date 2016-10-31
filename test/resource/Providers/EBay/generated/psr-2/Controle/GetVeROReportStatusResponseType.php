@@ -43,5 +43,68 @@ class GetVeROReportStatusResponseType extends \Controle\AbstractResponseType {
      * that match the request.
      */
     public $ReportedItemDetails;
+    /**
+     * @param PaginationResultType $val
+     * @throws Exception
+     */
+    public function setPaginationResult($val) {
+        
+        $this->PaginationResult = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setHasMoreItems($val) {
+        
+        $this->HasMoreItems = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setItemsPerPage($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ItemsPerPage = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPageNumber($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->PageNumber = (int)$val;
+    }
+
+    /**
+     * @param long $val
+     * @throws Exception
+     */
+    public function setVeROReportPacketID($val) {
+        
+        $this->VeROReportPacketID = (int)$val;
+    }
+
+    /**
+     * @param VeROReportPacketStatusCodeType $val
+     * @throws Exception
+     */
+    public function setVeROReportPacketStatus($val) {
+        
+        $this->VeROReportPacketStatus = (int)$val;
+    }
+
+    /**
+     * @param VeROReportedItemDetailsType $val
+     * @throws Exception
+     */
+    public function setReportedItemDetails($val) {
+        
+        $this->ReportedItemDetails = (int)$val;
+    }
+
 }
 

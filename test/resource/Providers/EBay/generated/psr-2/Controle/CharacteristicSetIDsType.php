@@ -15,5 +15,14 @@ class CharacteristicSetIDsType {
      * result (beginning with 0). Not applicable to GetProductFamilyMembers.
      */
     public $ID;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ID');
+        $this->ID = (int)$val;
+    }
+
 }
 

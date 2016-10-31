@@ -43,5 +43,50 @@ class DigitalDeliveryDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRequirements($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Requirements');
+		$this->Requirements = (int)$val;
+	}
+
+	/**
+	 * @param DigitalDeliveryMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setMethod($val) {
+		
+		$this->Method = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setURL($val) {
+		
+		$this->URL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setInstructions($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Instructions');
+		$this->Instructions = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

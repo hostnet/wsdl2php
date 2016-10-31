@@ -42,5 +42,32 @@ class ExpressPreferencesType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ExpressSellingPreferenceCodeType $val
+	 * @throws Exception
+	 */
+	public function setExpressSellingPreference($val) {
+		
+		$this->ExpressSellingPreference = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDefaultPayPalAccount($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
+		$this->DefaultPayPalAccount = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

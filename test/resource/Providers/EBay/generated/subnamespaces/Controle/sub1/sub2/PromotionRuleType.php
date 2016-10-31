@@ -63,5 +63,113 @@ class PromotionRuleType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param PromotedItemType $val
+	 * @throws Exception
+	 */
+	public function setPromotedItem($val) {
+		
+		$this->PromotedItem = (int)$val;
+	}
+
+	/**
+	 * @param SiteCodeType $val
+	 * @throws Exception
+	 */
+	public function setSiteID($val) {
+		
+		$this->SiteID = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPromotedStoreCategoryID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PromotedStoreCategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPromotedeBayCategoryID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PromotedeBayCategoryID');
+		$this->PromotedeBayCategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPromotedKeywords($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PromotedKeywords');
+		$this->PromotedKeywords = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setReferringItemID($val) {
+		
+		$this->ReferringItemID = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setReferringStoreCategoryID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ReferringStoreCategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setReferringeBayCategoryID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ReferringeBayCategoryID');
+		$this->ReferringeBayCategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setReferringKeywords($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ReferringKeywords');
+		$this->ReferringKeywords = (int)$val;
+	}
+
+	/**
+	 * @param PromotionSchemeCodeType $val
+	 * @throws Exception
+	 */
+	public function setPromotionScheme($val) {
+		
+		$this->PromotionScheme = (int)$val;
+	}
+
+	/**
+	 * @param PromotionMethodCodeType $val
+	 * @throws Exception
+	 */
+	public function setPromotionMethod($val) {
+		
+		$this->PromotionMethod = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

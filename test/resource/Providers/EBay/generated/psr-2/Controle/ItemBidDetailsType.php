@@ -35,5 +35,59 @@ class ItemBidDetailsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setCategoryID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
+        $this->CategoryID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setBidCount($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->BidCount = (int)$val;
+    }
+
+    /**
+     * @param UserIDType $val
+     * @throws Exception
+     */
+    public function setSellerID($val) {
+        
+        $this->SellerID = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setLastBidTime($val) {
+        
+        $this->LastBidTime = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

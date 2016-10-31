@@ -28,5 +28,32 @@ class GetMyMessagesResponseType extends \Controle\AbstractResponseType {
      * no messages.
      */
     public $Messages;
+    /**
+     * @param MyMessagesSummaryType $val
+     * @throws Exception
+     */
+    public function setSummary($val) {
+        
+        $this->Summary = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesAlertArrayType $val
+     * @throws Exception
+     */
+    public function setAlerts($val) {
+        
+        $this->Alerts = (int)$val;
+    }
+
+    /**
+     * @param MyMessagesMessageArrayType $val
+     * @throws Exception
+     */
+    public function setMessages($val) {
+        
+        $this->Messages = (int)$val;
+    }
+
 }
 

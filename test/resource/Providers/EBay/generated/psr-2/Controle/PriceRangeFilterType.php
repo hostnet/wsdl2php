@@ -21,5 +21,32 @@ class PriceRangeFilterType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setMaxPrice($val) {
+        
+        $this->MaxPrice = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setMinPrice($val) {
+        
+        $this->MinPrice = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

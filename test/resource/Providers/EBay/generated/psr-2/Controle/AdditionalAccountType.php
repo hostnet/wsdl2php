@@ -26,5 +26,41 @@ class AdditionalAccountType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setBalance($val) {
+        
+        $this->Balance = (int)$val;
+    }
+
+    /**
+     * @param CurrencyCodeType $val
+     * @throws Exception
+     */
+    public function setCurrency($val) {
+        
+        $this->Currency = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setAccountCode($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for AccountCode');
+        $this->AccountCode = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

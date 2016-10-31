@@ -17,5 +17,23 @@ class DomainHistogramType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ExpressHistogramDepartmentType $val
+	 * @throws Exception
+	 */
+	public function setDepartment($val) {
+		
+		$this->Department = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

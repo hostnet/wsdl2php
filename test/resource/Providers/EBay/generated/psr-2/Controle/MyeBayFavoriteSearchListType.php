@@ -18,5 +18,32 @@ class MyeBayFavoriteSearchListType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setTotalAvailable($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->TotalAvailable = (int)$val;
+    }
+
+    /**
+     * @param MyeBayFavoriteSearchType $val
+     * @throws Exception
+     */
+    public function setFavoriteSearch($val) {
+        
+        $this->FavoriteSearch = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

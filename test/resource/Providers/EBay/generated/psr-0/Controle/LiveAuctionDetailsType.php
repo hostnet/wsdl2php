@@ -36,5 +36,59 @@ class LiveAuctionDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUserCatalogID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UserCatalogID = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setScheduleID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ScheduleID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLotNumber($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LotNumber');
+		$this->LotNumber = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setHighEstimate($val) {
+		
+		$this->HighEstimate = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setLowEstimate($val) {
+		
+		$this->LowEstimate = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

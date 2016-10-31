@@ -76,5 +76,68 @@ class BidderDetailType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setUserID($val) {
+		
+		$this->UserID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setEmail($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Email');
+		$this->Email = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setFeedbackScore($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->FeedbackScore = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUniqueNegativeFeedbackCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UniqueNegativeFeedbackCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setUniquePositiveFeedbackCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->UniquePositiveFeedbackCount = (int)$val;
+	}
+
+	/**
+	 * @param LiveAuctionBidType $val
+	 * @throws Exception
+	 */
+	public function setLiveAuctionBidResult($val) {
+		
+		$this->LiveAuctionBidResult = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

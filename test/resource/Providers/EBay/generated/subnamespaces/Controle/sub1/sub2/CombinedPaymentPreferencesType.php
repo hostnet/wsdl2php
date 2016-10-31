@@ -29,5 +29,50 @@ class CombinedPaymentPreferencesType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param CalculatedShippingPreferencesType $val
+	 * @throws Exception
+	 */
+	public function setCalculatedShippingPreferences($val) {
+		
+		$this->CalculatedShippingPreferences = (int)$val;
+	}
+
+	/**
+	 * @param CombinedPaymentOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setCombinedPaymentOption($val) {
+		
+		$this->CombinedPaymentOption = (int)$val;
+	}
+
+	/**
+	 * @param CombinedPaymentPeriodCodeType $val
+	 * @throws Exception
+	 */
+	public function setCombinedPaymentPeriod($val) {
+		
+		$this->CombinedPaymentPeriod = (int)$val;
+	}
+
+	/**
+	 * @param FlatShippingPreferencesType $val
+	 * @throws Exception
+	 */
+	public function setFlatShippingPreferences($val) {
+		
+		$this->FlatShippingPreferences = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -12,5 +12,14 @@ class PlaceOfferResponseType extends \Controle\AbstractResponseType {
 	 * this is always returned when ItemArray.Item is returned.
 	 */
 	public $SellingStatus;
+	/**
+	 * @param SellingStatusType $val
+	 * @throws Exception
+	 */
+	public function setSellingStatus($val) {
+		
+		$this->SellingStatus = (int)$val;
+	}
+
 }
 

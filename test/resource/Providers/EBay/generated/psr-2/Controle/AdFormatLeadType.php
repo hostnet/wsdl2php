@@ -52,5 +52,86 @@ class AdFormatLeadType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setAdditionalInformation($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for AdditionalInformation');
+        $this->AdditionalInformation = (int)$val;
+    }
+
+    /**
+     * @param AddressType $val
+     * @throws Exception
+     */
+    public function setAddress($val) {
+        
+        $this->Address = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setBestTimeToCall($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for BestTimeToCall');
+        $this->BestTimeToCall = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setEmail($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Email');
+        $this->Email = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setFirstName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for FirstName');
+        $this->FirstName = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setLastName($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for LastName');
+        $this->LastName = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setPhone($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Phone');
+        $this->Phone = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setSubmittedTime($val) {
+        
+        $this->SubmittedTime = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

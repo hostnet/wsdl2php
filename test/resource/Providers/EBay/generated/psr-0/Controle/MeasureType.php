@@ -22,5 +22,32 @@ class MeasureType {
 	 * @var \Controle\MeasurementSystemCodeType
 	 */
 	public $measurementSystem;
+	/**
+	 * @param decimal $val
+	 * @throws Exception
+	 */
+	public function set_($val) {
+		
+		$this->_ = (int)$val;
+	}
+
+	/**
+	 * @param token $val
+	 * @throws Exception
+	 */
+	public function setUnit($val) {
+		
+		$this->unit = (int)$val;
+	}
+
+	/**
+	 * @param MeasurementSystemCodeType $val
+	 * @throws Exception
+	 */
+	public function setMeasurementSystem($val) {
+		
+		$this->measurementSystem = (int)$val;
+	}
+
 }
 

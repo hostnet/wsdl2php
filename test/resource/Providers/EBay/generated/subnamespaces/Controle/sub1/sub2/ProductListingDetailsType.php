@@ -63,5 +63,68 @@ class ProductListingDetailsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setProductID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductID');
+		$this->ProductID = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setIncludeStockPhotoURL($val) {
+		
+		$this->IncludeStockPhotoURL = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setIncludePrefilledItemInformation($val) {
+		
+		$this->IncludePrefilledItemInformation = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setUseStockPhotoURLAsGallery($val) {
+		
+		$this->UseStockPhotoURLAsGallery = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setStockPhotoURL($val) {
+		
+		$this->StockPhotoURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCopyright($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Copyright');
+		$this->Copyright = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

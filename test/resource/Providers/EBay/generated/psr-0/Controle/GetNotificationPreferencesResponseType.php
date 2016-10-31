@@ -28,5 +28,41 @@ class GetNotificationPreferencesResponseType extends \Controle\AbstractResponseT
 	 * be set for wireless applications.
 	 */
 	public $EventProperty;
+	/**
+	 * @param ApplicationDeliveryPreferencesType $val
+	 * @throws Exception
+	 */
+	public function setApplicationDeliveryPreferences($val) {
+		
+		$this->ApplicationDeliveryPreferences = (int)$val;
+	}
+
+	/**
+	 * @param NotificationEnableArrayType $val
+	 * @throws Exception
+	 */
+	public function setUserDeliveryPreferenceArray($val) {
+		
+		$this->UserDeliveryPreferenceArray = (int)$val;
+	}
+
+	/**
+	 * @param NotificationUserDataType $val
+	 * @throws Exception
+	 */
+	public function setUserData($val) {
+		
+		$this->UserData = (int)$val;
+	}
+
+	/**
+	 * @param NotificationEventPropertyType $val
+	 * @throws Exception
+	 */
+	public function setEventProperty($val) {
+		
+		$this->EventProperty = (int)$val;
+	}
+
 }
 

@@ -53,5 +53,77 @@ class GetAccountResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable to Half.com).
 	 */
 	public $PageNumber;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAccountID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AccountID');
+		$this->AccountID = (int)$val;
+	}
+
+	/**
+	 * @param AccountSummaryType $val
+	 * @throws Exception
+	 */
+	public function setAccountSummary($val) {
+		
+		$this->AccountSummary = (int)$val;
+	}
+
+	/**
+	 * @param CurrencyCodeType $val
+	 * @throws Exception
+	 */
+	public function setCurrency($val) {
+		
+		$this->Currency = (int)$val;
+	}
+
+	/**
+	 * @param AccountEntriesType $val
+	 * @throws Exception
+	 */
+	public function setAccountEntries($val) {
+		
+		$this->AccountEntries = (int)$val;
+	}
+
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasMoreEntries($val) {
+		
+		$this->HasMoreEntries = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setEntriesPerPage($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->EntriesPerPage = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPageNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->PageNumber = (int)$val;
+	}
+
 }
 

@@ -28,5 +28,32 @@ class PaymentDetailsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setHoursToDeposit($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->HoursToDeposit = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setDaysToFullPayment($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->DaysToFullPayment = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

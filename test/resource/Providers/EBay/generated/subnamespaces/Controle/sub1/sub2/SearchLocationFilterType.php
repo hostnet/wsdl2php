@@ -30,5 +30,50 @@ class SearchLocationFilterType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param CountryCodeType $val
+	 * @throws Exception
+	 */
+	public function setCountryCode($val) {
+		
+		$this->CountryCode = (int)$val;
+	}
+
+	/**
+	 * @param ItemLocationCodeType $val
+	 * @throws Exception
+	 */
+	public function setItemLocation($val) {
+		
+		$this->ItemLocation = (int)$val;
+	}
+
+	/**
+	 * @param SearchLocationType $val
+	 * @throws Exception
+	 */
+	public function setSearchLocation($val) {
+		
+		$this->SearchLocation = (int)$val;
+	}
+
+	/**
+	 * @param CurrencyCodeType $val
+	 * @throws Exception
+	 */
+	public function setCurrency($val) {
+		
+		$this->Currency = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

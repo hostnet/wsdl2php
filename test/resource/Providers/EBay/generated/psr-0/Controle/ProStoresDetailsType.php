@@ -23,5 +23,41 @@ class ProStoresDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSellerThirdPartyUsername($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
+		$this->SellerThirdPartyUsername = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStoreName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
+		$this->StoreName = (int)$val;
+	}
+
+	/**
+	 * @param EnableCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

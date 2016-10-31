@@ -20,5 +20,32 @@ class NotificationUserDataType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param SMSSubscriptionType $val
+     * @throws Exception
+     */
+    public function setSMSSubscription($val) {
+        
+        $this->SMSSubscription = (int)$val;
+    }
+
+    /**
+     * @param SummaryEventScheduleType $val
+     * @throws Exception
+     */
+    public function setSummarySchedule($val) {
+        
+        $this->SummarySchedule = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

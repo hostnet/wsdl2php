@@ -57,5 +57,86 @@ class ExpressProductType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTitle($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+		$this->Title = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMinPrice($val) {
+		
+		$this->MinPrice = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMaxPrice($val) {
+		
+		$this->MaxPrice = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setStockPhotoURL($val) {
+		
+		$this->StockPhotoURL = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setItemCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ItemCount = (int)$val;
+	}
+
+	/**
+	 * @param ExternalProductIDType $val
+	 * @throws Exception
+	 */
+	public function setExternalProductID($val) {
+		
+		$this->ExternalProductID = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setProductReferenceID($val) {
+		
+		$this->ProductReferenceID = (int)$val;
+	}
+
+	/**
+	 * @param NameValueListArrayType $val
+	 * @throws Exception
+	 */
+	public function setItemSpecifics($val) {
+		
+		$this->ItemSpecifics = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -43,5 +43,68 @@ class GetMyeBayResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * @var \Controle\sub1\sub2\MyeBaySecondChanceOfferListType | Contains a list of the user's My eBay Second Chance Offers.
 	 */
 	public $SecondChanceOffers;
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setBiddingItemArray($val) {
+		
+		$this->BiddingItemArray = (int)$val;
+	}
+
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setLostItemArray($val) {
+		
+		$this->LostItemArray = (int)$val;
+	}
+
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setWatchItemArray($val) {
+		
+		$this->WatchItemArray = (int)$val;
+	}
+
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setWonItemArray($val) {
+		
+		$this->WonItemArray = (int)$val;
+	}
+
+	/**
+	 * @param MyeBayFavoriteSearchListType $val
+	 * @throws Exception
+	 */
+	public function setFavoriteSearches($val) {
+		
+		$this->FavoriteSearches = (int)$val;
+	}
+
+	/**
+	 * @param MyeBayFavoriteSellerListType $val
+	 * @throws Exception
+	 */
+	public function setFavoriteSellers($val) {
+		
+		$this->FavoriteSellers = (int)$val;
+	}
+
+	/**
+	 * @param MyeBaySecondChanceOfferListType $val
+	 * @throws Exception
+	 */
+	public function setSecondChanceOffers($val) {
+		
+		$this->SecondChanceOffers = (int)$val;
+	}
+
 }
 

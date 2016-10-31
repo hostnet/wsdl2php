@@ -203,5 +203,239 @@ class ShippingDetailsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setAllowPaymentEdit($val) {
+		
+		$this->AllowPaymentEdit = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setApplyShippingDiscount($val) {
+		
+		$this->ApplyShippingDiscount = (int)$val;
+	}
+
+	/**
+	 * @param CalculatedShippingRateType $val
+	 * @throws Exception
+	 */
+	public function setCalculatedShippingRate($val) {
+		
+		$this->CalculatedShippingRate = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setChangePaymentInstructions($val) {
+		
+		$this->ChangePaymentInstructions = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setInsuranceFee($val) {
+		
+		$this->InsuranceFee = (int)$val;
+	}
+
+	/**
+	 * @param InsuranceOptionCodeType $val
+	 * @throws Exception
+	 */
+	public function setInsuranceOption($val) {
+		
+		$this->InsuranceOption = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setInsuranceWanted($val) {
+		
+		$this->InsuranceWanted = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setPaymentEdited($val) {
+		
+		$this->PaymentEdited = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPaymentInstructions($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for PaymentInstructions');
+		$this->PaymentInstructions = (int)$val;
+	}
+
+	/**
+	 * @param SalesTaxType $val
+	 * @throws Exception
+	 */
+	public function setSalesTax($val) {
+		
+		$this->SalesTax = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSellerPostalCode($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerPostalCode');
+		$this->SellerPostalCode = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setShippingRateErrorMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ShippingRateErrorMessage');
+		$this->ShippingRateErrorMessage = (int)$val;
+	}
+
+	/**
+	 * @param ShippingRateTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setShippingRateType($val) {
+		
+		$this->ShippingRateType = (int)$val;
+	}
+
+	/**
+	 * @param ShippingServiceOptionsType $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceOptions($val) {
+		
+		$this->ShippingServiceOptions = (int)$val;
+	}
+
+	/**
+	 * @param InternationalShippingServiceOptionsType $val
+	 * @throws Exception
+	 */
+	public function setInternationalShippingServiceOption($val) {
+		
+		$this->InternationalShippingServiceOption = (int)$val;
+	}
+
+	/**
+	 * @param ShippingTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setShippingType($val) {
+		
+		$this->ShippingType = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setSellingManagerSalesRecordNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->SellingManagerSalesRecordNumber = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setThirdPartyCheckout($val) {
+		
+		$this->ThirdPartyCheckout = (int)$val;
+	}
+
+	/**
+	 * @param TaxTableType $val
+	 * @throws Exception
+	 */
+	public function setTaxTable($val) {
+		
+		$this->TaxTable = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setGetItFast($val) {
+		
+		$this->GetItFast = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setShipmentTrackingNumber($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
+		$this->ShipmentTrackingNumber = (int)$val;
+	}
+
+	/**
+	 * @param token $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceUsed($val) {
+		
+		$this->ShippingServiceUsed = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setDefaultShippingCost($val) {
+		
+		$this->DefaultShippingCost = (int)$val;
+	}
+
+	/**
+	 * @param InsuranceDetailsType $val
+	 * @throws Exception
+	 */
+	public function setInsuranceDetails($val) {
+		
+		$this->InsuranceDetails = (int)$val;
+	}
+
+	/**
+	 * @param InsuranceDetailsType $val
+	 * @throws Exception
+	 */
+	public function setInternationalInsuranceDetails($val) {
+		
+		$this->InternationalInsuranceDetails = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

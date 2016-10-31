@@ -11,5 +11,14 @@ class NotificationDetailsArrayType {
      * @var \Controle\NotificationDetailsType | List of notifications, if there are any, for the given ItemID and given time period.
      */
     public $NotificationDetails;
+    /**
+     * @param NotificationDetailsType $val
+     * @throws Exception
+     */
+    public function setNotificationDetails($val) {
+        
+        $this->NotificationDetails = (int)$val;
+    }
+
 }
 

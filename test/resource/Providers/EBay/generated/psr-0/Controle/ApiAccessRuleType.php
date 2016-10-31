@@ -98,5 +98,158 @@ class ApiAccessRuleType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCallName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CallName');
+		$this->CallName = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCountsTowardAggregate($val) {
+		
+		$this->CountsTowardAggregate = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setDailyHardLimit($val) {
+		
+		$this->DailyHardLimit = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setDailySoftLimit($val) {
+		
+		$this->DailySoftLimit = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setDailyUsage($val) {
+		
+		$this->DailyUsage = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setHourlyHardLimit($val) {
+		
+		$this->HourlyHardLimit = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setHourlySoftLimit($val) {
+		
+		$this->HourlySoftLimit = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setHourlyUsage($val) {
+		
+		$this->HourlyUsage = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setPeriod($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Period = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setPeriodicHardLimit($val) {
+		
+		$this->PeriodicHardLimit = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setPeriodicSoftLimit($val) {
+		
+		$this->PeriodicSoftLimit = (int)$val;
+	}
+
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setPeriodicUsage($val) {
+		
+		$this->PeriodicUsage = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setPeriodicStartDate($val) {
+		
+		$this->PeriodicStartDate = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setModTime($val) {
+		
+		$this->ModTime = (int)$val;
+	}
+
+	/**
+	 * @param AccessRuleCurrentStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setRuleCurrentStatus($val) {
+		
+		$this->RuleCurrentStatus = (int)$val;
+	}
+
+	/**
+	 * @param AccessRuleStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setRuleStatus($val) {
+		
+		$this->RuleStatus = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

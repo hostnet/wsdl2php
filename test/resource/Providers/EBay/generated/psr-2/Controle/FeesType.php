@@ -11,5 +11,14 @@ class FeesType {
      * @var \Controle\FeeType | Monthly fee for the Store subscription level.
      */
     public $Fee;
+    /**
+     * @param FeeType $val
+     * @throws Exception
+     */
+    public function setFee($val) {
+        
+        $this->Fee = (int)$val;
+    }
+
 }
 

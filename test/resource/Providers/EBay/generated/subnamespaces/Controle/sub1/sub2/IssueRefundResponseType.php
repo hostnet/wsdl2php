@@ -16,5 +16,23 @@ class IssueRefundResponseType extends \Controle\sub1\sub2\AbstractResponseType {
 	 * @var \Controle\sub1\sub2\AmountType | Total amount refunded to the buyer for this transaction. Applicable to Half.com (for GetOrders).
 	 */
 	public $TotalRefundToBuyer;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setRefundFromSeller($val) {
+		
+		$this->RefundFromSeller = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalRefundToBuyer($val) {
+		
+		$this->TotalRefundToBuyer = (int)$val;
+	}
+
 }
 

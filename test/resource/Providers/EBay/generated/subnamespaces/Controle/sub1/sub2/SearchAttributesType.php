@@ -37,5 +37,50 @@ class SearchAttributesType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setAttributeID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->AttributeID = (int)$val;
+	}
+
+	/**
+	 * @param DateSpecifierCodeType $val
+	 * @throws Exception
+	 */
+	public function setDateSpecifier($val) {
+		
+		$this->DateSpecifier = (int)$val;
+	}
+
+	/**
+	 * @param RangeCodeType $val
+	 * @throws Exception
+	 */
+	public function setRangeSpecifier($val) {
+		
+		$this->RangeSpecifier = (int)$val;
+	}
+
+	/**
+	 * @param ValType $val
+	 * @throws Exception
+	 */
+	public function setValueList($val) {
+		
+		$this->ValueList = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

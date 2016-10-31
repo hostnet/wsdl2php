@@ -23,5 +23,41 @@ class VeROReportedItemType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setItemID($val) {
+		
+		$this->ItemID = (int)$val;
+	}
+
+	/**
+	 * @param VeROItemStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setItemStatus($val) {
+		
+		$this->ItemStatus = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setItemReasonForFailure($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ItemReasonForFailure');
+		$this->ItemReasonForFailure = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

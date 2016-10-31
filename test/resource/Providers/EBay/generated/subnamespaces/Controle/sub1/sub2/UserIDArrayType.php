@@ -24,5 +24,23 @@ class UserIDArrayType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param UserIDType $val
+	 * @throws Exception
+	 */
+	public function setUserID($val) {
+		
+		$this->UserID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

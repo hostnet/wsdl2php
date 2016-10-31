@@ -46,5 +46,68 @@ class GetRecommendationsResponseContainerType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ListingAnalyzerRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setListingAnalyzerRecommendations($val) {
+		
+		$this->ListingAnalyzerRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param SIFFTASRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setSIFFTASRecommendations($val) {
+		
+		$this->SIFFTASRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param PricingRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setPricingRecommendations($val) {
+		
+		$this->PricingRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param AttributeRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setAttributeRecommendations($val) {
+		
+		$this->AttributeRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param ProductRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setProductRecommendations($val) {
+		
+		$this->ProductRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCorrelationID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CorrelationID');
+		$this->CorrelationID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

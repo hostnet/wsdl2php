@@ -86,5 +86,59 @@ class VendorHostedPictureType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setPictureURL($val) {
+		
+		$this->PictureURL = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setSelfHostedURL($val) {
+		
+		$this->SelfHostedURL = (int)$val;
+	}
+
+	/**
+	 * @param PhotoDisplayCodeType $val
+	 * @throws Exception
+	 */
+	public function setPhotoDisplay($val) {
+		
+		$this->PhotoDisplay = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setGalleryURL($val) {
+		
+		$this->GalleryURL = (int)$val;
+	}
+
+	/**
+	 * @param GalleryTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setGalleryType($val) {
+		
+		$this->GalleryType = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

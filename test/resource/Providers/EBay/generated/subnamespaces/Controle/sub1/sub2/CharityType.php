@@ -54,5 +54,86 @@ class CharityType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCharityName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CharityName');
+		$this->CharityName = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setCharityNumber($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->CharityNumber = (int)$val;
+	}
+
+	/**
+	 * @param float $val
+	 * @throws Exception
+	 */
+	public function setDonationPercent($val) {
+		
+		$this->DonationPercent = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCharityID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CharityID');
+		$this->CharityID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setMission($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Mission');
+		$this->Mission = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLogoURL($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LogoURL');
+		$this->LogoURL = (int)$val;
+	}
+
+	/**
+	 * @param CharityStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCharityListing($val) {
+		
+		$this->CharityListing = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

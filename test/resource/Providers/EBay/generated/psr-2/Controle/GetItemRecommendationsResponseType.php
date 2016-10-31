@@ -16,5 +16,14 @@ class GetItemRecommendationsResponseType extends \Controle\AbstractResponseType 
      * response.
      */
     public $GetRecommendationsResponseContainer;
+    /**
+     * @param GetRecommendationsResponseContainerType $val
+     * @throws Exception
+     */
+    public function setGetRecommendationsResponseContainer($val) {
+        
+        $this->GetRecommendationsResponseContainer = (int)$val;
+    }
+
 }
 

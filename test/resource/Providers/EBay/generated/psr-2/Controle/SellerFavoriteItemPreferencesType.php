@@ -45,5 +45,77 @@ class SellerFavoriteItemPreferencesType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setSearchKeywords($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for SearchKeywords');
+        $this->SearchKeywords = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setStoreCategoryID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->StoreCategoryID = (int)$val;
+    }
+
+    /**
+     * @param ListingTypeCodeType $val
+     * @throws Exception
+     */
+    public function setListingType($val) {
+        
+        $this->ListingType = (int)$val;
+    }
+
+    /**
+     * @param StoreItemListSortOrderCodeType $val
+     * @throws Exception
+     */
+    public function setSearchSortOrder($val) {
+        
+        $this->SearchSortOrder = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setMinPrice($val) {
+        
+        $this->MinPrice = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setMaxPrice($val) {
+        
+        $this->MaxPrice = (int)$val;
+    }
+
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setFavoriteItemID($val) {
+        
+        $this->FavoriteItemID = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -13,5 +13,14 @@ class OfferArrayType {
      *        listing, the type of offer being made, and more.
      */
     public $Offer;
+    /**
+     * @param OfferType $val
+     * @throws Exception
+     */
+    public function setOffer($val) {
+        
+        $this->Offer = (int)$val;
+    }
+
 }
 

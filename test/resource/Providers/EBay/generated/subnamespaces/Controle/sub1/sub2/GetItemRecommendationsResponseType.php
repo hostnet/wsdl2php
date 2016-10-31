@@ -15,5 +15,14 @@ class GetItemRecommendationsResponseType extends \Controle\sub1\sub2\AbstractRes
 	 * ID                   to help you match items in the request to recommendations in the response.
 	 */
 	public $GetRecommendationsResponseContainer;
+	/**
+	 * @param GetRecommendationsResponseContainerType $val
+	 * @throws Exception
+	 */
+	public function setGetRecommendationsResponseContainer($val) {
+		
+		$this->GetRecommendationsResponseContainer = (int)$val;
+	}
+
 }
 

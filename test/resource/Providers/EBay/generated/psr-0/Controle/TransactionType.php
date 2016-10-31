@@ -223,5 +223,311 @@ class TransactionType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAmountPaid($val) {
+		
+		$this->AmountPaid = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setAdjustmentAmount($val) {
+		
+		$this->AdjustmentAmount = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedAdjustmentAmount($val) {
+		
+		$this->ConvertedAdjustmentAmount = (int)$val;
+	}
+
+	/**
+	 * @param UserType $val
+	 * @throws Exception
+	 */
+	public function setBuyer($val) {
+		
+		$this->Buyer = (int)$val;
+	}
+
+	/**
+	 * @param ShippingDetailsType $val
+	 * @throws Exception
+	 */
+	public function setShippingDetails($val) {
+		
+		$this->ShippingDetails = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedAmountPaid($val) {
+		
+		$this->ConvertedAmountPaid = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedTransactionPrice($val) {
+		
+		$this->ConvertedTransactionPrice = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setCreatedDate($val) {
+		
+		$this->CreatedDate = (int)$val;
+	}
+
+	/**
+	 * @param DepositTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setDepositType($val) {
+		
+		$this->DepositType = (int)$val;
+	}
+
+	/**
+	 * @param ItemType $val
+	 * @throws Exception
+	 */
+	public function setItem($val) {
+		
+		$this->Item = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQuantityPurchased($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->QuantityPurchased = (int)$val;
+	}
+
+	/**
+	 * @param TransactionStatusType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTransactionID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for TransactionID');
+		$this->TransactionID = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTransactionPrice($val) {
+		
+		$this->TransactionPrice = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBestOfferSale($val) {
+		
+		$this->BestOfferSale = (int)$val;
+	}
+
+	/**
+	 * @param decimal $val
+	 * @throws Exception
+	 */
+	public function setVATPercent($val) {
+		
+		$this->VATPercent = (int)$val;
+	}
+
+	/**
+	 * @param ExternalTransactionType $val
+	 * @throws Exception
+	 */
+	public function setExternalTransaction($val) {
+		
+		$this->ExternalTransaction = (int)$val;
+	}
+
+	/**
+	 * @param SellingManagerProductDetailsType $val
+	 * @throws Exception
+	 */
+	public function setSellingManagerProductDetails($val) {
+		
+		$this->SellingManagerProductDetails = (int)$val;
+	}
+
+	/**
+	 * @param ShippingServiceOptionsType $val
+	 * @throws Exception
+	 */
+	public function setShippingServiceSelected($val) {
+		
+		$this->ShippingServiceSelected = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setBuyerMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for BuyerMessage');
+		$this->BuyerMessage = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setDutchAuctionBid($val) {
+		
+		$this->DutchAuctionBid = (int)$val;
+	}
+
+	/**
+	 * @param PaidStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setBuyerPaidStatus($val) {
+		
+		$this->BuyerPaidStatus = (int)$val;
+	}
+
+	/**
+	 * @param PaidStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setSellerPaidStatus($val) {
+		
+		$this->SellerPaidStatus = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setPaidTime($val) {
+		
+		$this->PaidTime = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setShippedTime($val) {
+		
+		$this->ShippedTime = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setTotalPrice($val) {
+		
+		$this->TotalPrice = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackInfoType $val
+	 * @throws Exception
+	 */
+	public function setFeedbackLeft($val) {
+		
+		$this->FeedbackLeft = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackInfoType $val
+	 * @throws Exception
+	 */
+	public function setFeedbackReceived($val) {
+		
+		$this->FeedbackReceived = (int)$val;
+	}
+
+	/**
+	 * @param OrderType $val
+	 * @throws Exception
+	 */
+	public function setContainingOrder($val) {
+		
+		$this->ContainingOrder = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setFinalValueFee($val) {
+		
+		$this->FinalValueFee = (int)$val;
+	}
+
+	/**
+	 * @param TransactionPlatformType $val
+	 * @throws Exception
+	 */
+	public function setTransactionPlatform($val) {
+		
+		$this->TransactionPlatform = (int)$val;
+	}
+
+	/**
+	 * @param ListingCheckoutRedirectPreferenceType $val
+	 * @throws Exception
+	 */
+	public function setListingCheckoutRedirectPreference($val) {
+		
+		$this->ListingCheckoutRedirectPreference = (int)$val;
+	}
+
+	/**
+	 * @param RefundArrayType $val
+	 * @throws Exception
+	 */
+	public function setRefundArray($val) {
+		
+		$this->RefundArray = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

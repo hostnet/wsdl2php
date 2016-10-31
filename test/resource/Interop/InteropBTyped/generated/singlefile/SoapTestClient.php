@@ -13,81 +13,6 @@ class SOAPStruct {
 	 * @var anyType
 	 */
 	public $varFloat;
-}
-
-class SOAPStructStruct {
-	/**
-	 * @var anyType
-	 */
-	public $varString;
-	/**
-	 * @var anyType
-	 */
-	public $varInt;
-	/**
-	 * @var anyType
-	 */
-	public $varFloat;
-	/**
-	 * @var SOAPStruct
-	 */
-	public $varStruct;
-}
-
-class SOAPArrayStruct {
-	/**
-	 * @var anyType
-	 */
-	public $varString;
-	/**
-	 * @var anyType
-	 */
-	public $varInt;
-	/**
-	 * @var anyType
-	 */
-	public $varFloat;
-	/**
-	 * @var string[]
-	 */
-	public $varArray;
-}
-
-/**
- * SoapTestClient
- */
-class SoapTestClient extends SoapClient {
-
-	const WSDL_FILE = "InteropBtyped.wsdl";
-	private $classmap = array(
-		'SOAPStruct' => 'SOAPStruct',
-		'SOAPStructStruct' => 'SOAPStructStruct',
-		'SOAPArrayStruct' => 'SOAPArrayStruct',
-	);
-
-	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-class SOAPStruct {
-    /**
-     * @var anyType
-     */
-    public $varString;
-    /**
-     * @var anyType
-     */
-    public $varInt;
-    /**
-     * @var anyType
-     */
-    public $varFloat;
-
 	/**
 	 * @param anyType $val
 	 * @throws Exception
@@ -114,26 +39,26 @@ class SOAPStruct {
 		
 		$this->varFloat = (int)$val;
 	}
+
 }
 
 class SOAPStructStruct {
-    /**
-     * @var anyType
-     */
-    public $varString;
-    /**
-     * @var anyType
-     */
-    public $varInt;
-    /**
-     * @var anyType
-     */
-    public $varFloat;
-    /**
-     * @var SOAPStruct
-     */
-    public $varStruct;
-
+	/**
+	 * @var anyType
+	 */
+	public $varString;
+	/**
+	 * @var anyType
+	 */
+	public $varInt;
+	/**
+	 * @var anyType
+	 */
+	public $varFloat;
+	/**
+	 * @var SOAPStruct
+	 */
+	public $varStruct;
 	/**
 	 * @param anyType $val
 	 * @throws Exception
@@ -169,26 +94,26 @@ class SOAPStructStruct {
 		
 		$this->varStruct = (int)$val;
 	}
+
 }
 
 class SOAPArrayStruct {
-    /**
-     * @var anyType
-     */
-    public $varString;
-    /**
-     * @var anyType
-     */
-    public $varInt;
-    /**
-     * @var anyType
-     */
-    public $varFloat;
-    /**
-     * @var ArrayOfstring
-     */
-    public $varArray;
-
+	/**
+	 * @var anyType
+	 */
+	public $varString;
+	/**
+	 * @var anyType
+	 */
+	public $varInt;
+	/**
+	 * @var anyType
+	 */
+	public $varFloat;
+	/**
+	 * @var string[]
+	 */
+	public $varArray;
 	/**
 	 * @param anyType $val
 	 * @throws Exception
@@ -224,8 +149,30 @@ class SOAPArrayStruct {
 		
 		$this->varArray = (int)$val;
 	}
+
 }
 
+/**
+ * SoapTestClient
+ */
+class SoapTestClient extends SoapClient {
+
+	const WSDL_FILE = "InteropBtyped.wsdl";
+	private $classmap = array(
+		'SOAPStruct' => 'SOAPStruct',
+		'SOAPStructStruct' => 'SOAPStructStruct',
+		'SOAPArrayStruct' => 'SOAPArrayStruct',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

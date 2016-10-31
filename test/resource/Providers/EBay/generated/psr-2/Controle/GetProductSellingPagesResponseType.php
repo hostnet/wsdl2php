@@ -32,5 +32,14 @@ class GetProductSellingPagesResponseType extends \Controle\AbstractResponseType 
      * eBay Web Services guide for general information about string data types.
      */
     public $ProductSellingPagesData;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setProductSellingPagesData($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
+        $this->ProductSellingPagesData = (int)$val;
+    }
+
 }
 

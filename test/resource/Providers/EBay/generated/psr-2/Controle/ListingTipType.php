@@ -30,5 +30,50 @@ class ListingTipType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setListingTipID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListingTipID');
+        $this->ListingTipID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setPriority($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->Priority = (int)$val;
+    }
+
+    /**
+     * @param ListingTipMessageType $val
+     * @throws Exception
+     */
+    public function setMessage($val) {
+        
+        $this->Message = (int)$val;
+    }
+
+    /**
+     * @param ListingTipFieldType $val
+     * @throws Exception
+     */
+    public function setField($val) {
+        
+        $this->Field = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

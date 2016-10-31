@@ -31,5 +31,59 @@ class GetDescriptionTemplatesResponseType extends \Controle\AbstractResponseType
      * @var int | The number of ThemeID elements in this group.
      */
     public $ThemeTotal;
+    /**
+     * @param DescriptionTemplateType $val
+     * @throws Exception
+     */
+    public function setDescriptionTemplate($val) {
+        
+        $this->DescriptionTemplate = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setLayoutTotal($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->LayoutTotal = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setObsoleteLayoutID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ObsoleteLayoutID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setObsoleteThemeID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ObsoleteThemeID = (int)$val;
+    }
+
+    /**
+     * @param ThemeGroupType $val
+     * @throws Exception
+     */
+    public function setThemeGroup($val) {
+        
+        $this->ThemeGroup = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setThemeTotal($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ThemeTotal = (int)$val;
+    }
+
 }
 

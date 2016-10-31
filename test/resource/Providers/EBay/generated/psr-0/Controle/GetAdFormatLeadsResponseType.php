@@ -17,5 +17,23 @@ class GetAdFormatLeadsResponseType extends \Controle\AbstractResponseType {
 	 * @var int | The total number of leads returned. Only returned if you do not specify a detail level.
 	 */
 	public $AdFormatLeadCount;
+	/**
+	 * @param AdFormatLeadType $val
+	 * @throws Exception
+	 */
+	public function setAdFormatLead($val) {
+		
+		$this->AdFormatLead = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setAdFormatLeadCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->AdFormatLeadCount = (int)$val;
+	}
+
 }
 

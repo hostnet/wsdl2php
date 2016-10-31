@@ -102,5 +102,113 @@ class ProductSearchType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setProductSearchID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductSearchID');
+        $this->ProductSearchID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setAttributeSetID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->AttributeSetID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setProductFinderID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->ProductFinderID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setProductID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductID');
+        $this->ProductID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setSortAttributeID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->SortAttributeID = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setMaxChildrenPerFamily($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->MaxChildrenPerFamily = (int)$val;
+    }
+
+    /**
+     * @param SearchAttributesType $val
+     * @throws Exception
+     */
+    public function setSearchAttributes($val) {
+        
+        $this->SearchAttributes = (int)$val;
+    }
+
+    /**
+     * @param PaginationType $val
+     * @throws Exception
+     */
+    public function setPagination($val) {
+        
+        $this->Pagination = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setAvailableItemsOnly($val) {
+        
+        $this->AvailableItemsOnly = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setQueryKeywords($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for QueryKeywords');
+        $this->QueryKeywords = (int)$val;
+    }
+
+    /**
+     * @param CharacteristicSetIDsType $val
+     * @throws Exception
+     */
+    public function setCharacteristicSetIDs($val) {
+        
+        $this->CharacteristicSetIDs = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

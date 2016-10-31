@@ -15,5 +15,14 @@ class GetLiveAuctionCatalogDetailsResponseType extends \Controle\sub1\sub2\Abstr
 	 * all its sales have ended, the catalog details are not returned.
 	 */
 	public $LiveAuctionCatalog;
+	/**
+	 * @param LiveAuctionCatalogType $val
+	 * @throws Exception
+	 */
+	public function setLiveAuctionCatalog($val) {
+		
+		$this->LiveAuctionCatalog = (int)$val;
+	}
+
 }
 

@@ -34,5 +34,68 @@ class MyMessagesFolderSummaryType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param long $val
+	 * @throws Exception
+	 */
+	public function setFolderID($val) {
+		
+		$this->FolderID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setFolderName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FolderName');
+		$this->FolderName = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setNewAlertCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->NewAlertCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setNewMessageCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->NewMessageCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalAlertCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalAlertCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setTotalMessageCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->TotalMessageCount = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

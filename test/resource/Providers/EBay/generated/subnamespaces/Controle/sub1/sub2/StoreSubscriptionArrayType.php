@@ -10,5 +10,14 @@ class StoreSubscriptionArrayType {
 	 * @var \Controle\sub1\sub2\StoreSubscriptionType | A Store subscription level.
 	 */
 	public $Subscription;
+	/**
+	 * @param StoreSubscriptionType $val
+	 * @throws Exception
+	 */
+	public function setSubscription($val) {
+		
+		$this->Subscription = (int)$val;
+	}
+
 }
 

@@ -57,5 +57,104 @@ class BestOfferType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param BestOfferIDType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferID($val) {
+		
+		$this->BestOfferID = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setExpirationTime($val) {
+		
+		$this->ExpirationTime = (int)$val;
+	}
+
+	/**
+	 * @param UserType $val
+	 * @throws Exception
+	 */
+	public function setBuyer($val) {
+		
+		$this->Buyer = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setPrice($val) {
+		
+		$this->Price = (int)$val;
+	}
+
+	/**
+	 * @param BestOfferStatusCodeType $val
+	 * @throws Exception
+	 */
+	public function setStatus($val) {
+		
+		$this->Status = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQuantity($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Quantity = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setBuyerMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for BuyerMessage');
+		$this->BuyerMessage = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSellerMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for SellerMessage');
+		$this->SellerMessage = (int)$val;
+	}
+
+	/**
+	 * @param BestOfferTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setBestOfferCodeType($val) {
+		
+		$this->BestOfferCodeType = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCallStatus($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CallStatus');
+		$this->CallStatus = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

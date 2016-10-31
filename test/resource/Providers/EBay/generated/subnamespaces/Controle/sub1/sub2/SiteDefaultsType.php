@@ -202,5 +202,284 @@ class SiteDefaultsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param ListingDurationReferenceType $val
+	 * @throws Exception
+	 */
+	public function setListingDuration($val) {
+		
+		$this->ListingDuration = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setShippingTermsRequired($val) {
+		
+		$this->ShippingTermsRequired = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBestOfferEnabled($val) {
+		
+		$this->BestOfferEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setDutchBINEnabled($val) {
+		
+		$this->DutchBINEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setUserConsentRequired($val) {
+		
+		$this->UserConsentRequired = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHomePageFeaturedEnabled($val) {
+		
+		$this->HomePageFeaturedEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setProPackEnabled($val) {
+		
+		$this->ProPackEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBasicUpgradePackEnabled($val) {
+		
+		$this->BasicUpgradePackEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setValuePackEnabled($val) {
+		
+		$this->ValuePackEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setProPackPlusEnabled($val) {
+		
+		$this->ProPackPlusEnabled = (int)$val;
+	}
+
+	/**
+	 * @param AdFormatEnabledCodeType $val
+	 * @throws Exception
+	 */
+	public function setAdFormatEnabled($val) {
+		
+		$this->AdFormatEnabled = (int)$val;
+	}
+
+	/**
+	 * @param DigitalDeliveryEnabledCodeType $val
+	 * @throws Exception
+	 */
+	public function setDigitalDeliveryEnabled($val) {
+		
+		$this->DigitalDeliveryEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBestOfferCounterEnabled($val) {
+		
+		$this->BestOfferCounterEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBestOfferAutoDeclineEnabled($val) {
+		
+		$this->BestOfferAutoDeclineEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketSpecialitySubscription($val) {
+		
+		$this->LocalMarketSpecialitySubscription = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketRegularSubscription($val) {
+		
+		$this->LocalMarketRegularSubscription = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketPremiumSubscription($val) {
+		
+		$this->LocalMarketPremiumSubscription = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setLocalMarketNonSubscription($val) {
+		
+		$this->LocalMarketNonSubscription = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressEnabled($val) {
+		
+		$this->ExpressEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressPicturesRequired($val) {
+		
+		$this->ExpressPicturesRequired = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressConditionRequired($val) {
+		
+		$this->ExpressConditionRequired = (int)$val;
+	}
+
+	/**
+	 * @param double $val
+	 * @throws Exception
+	 */
+	public function setMinimumReservePrice($val) {
+		
+		$this->MinimumReservePrice = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSellerContactDetailsEnabled($val) {
+		
+		$this->SellerContactDetailsEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setTransactionConfirmationRequestEnabled($val) {
+		
+		$this->TransactionConfirmationRequestEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setStoreInventoryEnabled($val) {
+		
+		$this->StoreInventoryEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSkypeMeTransactionalEnabled($val) {
+		
+		$this->SkypeMeTransactionalEnabled = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setSkypeMeNonTransactionalEnabled($val) {
+		
+		$this->SkypeMeNonTransactionalEnabled = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistancesRegular($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
+		$this->LocalListingDistancesRegular = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistancesSpecialty($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
+		$this->LocalListingDistancesSpecialty = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistancesNonSubscription($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
+		$this->LocalListingDistancesNonSubscription = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

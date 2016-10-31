@@ -34,5 +34,41 @@ class ListingDesignerType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setLayoutID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->LayoutID = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setOptimalPictureSize($val) {
+		
+		$this->OptimalPictureSize = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setThemeID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ThemeID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

@@ -15,5 +15,23 @@ class PaginatedItemArrayType {
 	 * of entries.
 	 */
 	public $PaginationResult;
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setItemArray($val) {
+		
+		$this->ItemArray = (int)$val;
+	}
+
+	/**
+	 * @param PaginationResultType $val
+	 * @throws Exception
+	 */
+	public function setPaginationResult($val) {
+		
+		$this->PaginationResult = (int)$val;
+	}
+
 }
 

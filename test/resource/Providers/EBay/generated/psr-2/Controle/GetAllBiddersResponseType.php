@@ -37,5 +37,41 @@ class GetAllBiddersResponseType extends \Controle\AbstractResponseType {
      * whether eBay has finished processing the listing.
      */
     public $ListingStatus;
+    /**
+     * @param OfferArrayType $val
+     * @throws Exception
+     */
+    public function setBidArray($val) {
+        
+        $this->BidArray = (int)$val;
+    }
+
+    /**
+     * @param UserIDType $val
+     * @throws Exception
+     */
+    public function setHighBidder($val) {
+        
+        $this->HighBidder = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setHighestBid($val) {
+        
+        $this->HighestBid = (int)$val;
+    }
+
+    /**
+     * @param ListingStatusCodeType $val
+     * @throws Exception
+     */
+    public function setListingStatus($val) {
+        
+        $this->ListingStatus = (int)$val;
+    }
+
 }
 

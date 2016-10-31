@@ -87,5 +87,77 @@ class AbstractRequestType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param DetailLevelCodeType $val
+     * @throws Exception
+     */
+    public function setDetailLevel($val) {
+        
+        $this->DetailLevel = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setErrorLanguage($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ErrorLanguage');
+        $this->ErrorLanguage = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setMessageID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for MessageID');
+        $this->MessageID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setVersion($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Version');
+        $this->Version = (int)$val;
+    }
+
+    /**
+     * @param ErrorHandlingCodeType $val
+     * @throws Exception
+     */
+    public function setErrorHandling($val) {
+        
+        $this->ErrorHandling = (int)$val;
+    }
+
+    /**
+     * @param UUIDType $val
+     * @throws Exception
+     */
+    public function setInvocationID($val) {
+        
+        $this->InvocationID = (int)$val;
+    }
+
+    /**
+     * @param WarningLevelCodeType $val
+     * @throws Exception
+     */
+    public function setWarningLevel($val) {
+        
+        $this->WarningLevel = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

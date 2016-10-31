@@ -1,4 +1,28 @@
 <?php
+
+namespace Controle;
+
+/**
+ * SoapTestClient
+ */
+class SoapTestClient extends \SoapClient {
+
+	const WSDL_FILE = "MicrosoftSoapToolkitV3RoundBTypedTest.wsdl";
+	private $classmap = array(
+		'SOAPStruct' => '\Controle\sub1\sub2\SOAPStruct',
+		'SOAPStructStruct' => '\Controle\sub1\sub2\SOAPStructStruct',
+		'SOAPArrayStruct' => '\Controle\sub1\sub2\SOAPArrayStruct',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

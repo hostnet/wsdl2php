@@ -40,5 +40,68 @@ class StoreVacationPreferencesType {
      * HTML markup.
      */
     public $MessageStoreCustomText;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setOnVacation($val) {
+        
+        $this->OnVacation = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setReturnDate($val) {
+        
+        $this->ReturnDate = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setHideFixedPriceStoreItems($val) {
+        
+        $this->HideFixedPriceStoreItems = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setMessageItem($val) {
+        
+        $this->MessageItem = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setMessageStore($val) {
+        
+        $this->MessageStore = (int)$val;
+    }
+
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setDisplayMessageStoreCustomText($val) {
+        
+        $this->DisplayMessageStoreCustomText = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setMessageStoreCustomText($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for MessageStoreCustomText');
+        $this->MessageStoreCustomText = (int)$val;
+    }
+
 }
 

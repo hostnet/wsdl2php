@@ -11,5 +11,14 @@ class GetUserResponseType extends \Controle\AbstractResponseType {
      * and their meanings.
      */
     public $User;
+    /**
+     * @param UserType $val
+     * @throws Exception
+     */
+    public function setUser($val) {
+        
+        $this->User = (int)$val;
+    }
+
 }
 

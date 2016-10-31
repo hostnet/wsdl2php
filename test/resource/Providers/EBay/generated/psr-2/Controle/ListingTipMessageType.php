@@ -32,5 +32,50 @@ class ListingTipMessageType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setListingTipMessageID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ListingTipMessageID');
+        $this->ListingTipMessageID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setShortMessage($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ShortMessage');
+        $this->ShortMessage = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setLongMessage($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for LongMessage');
+        $this->LongMessage = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setHelpURLPath($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for HelpURLPath');
+        $this->HelpURLPath = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

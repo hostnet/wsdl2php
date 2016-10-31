@@ -46,5 +46,41 @@ class AttributeSetType {
 	 * @var string
 	 */
 	public $attributeSetVersion;
+	/**
+	 * @param AttributeType $val
+	 * @throws Exception
+	 */
+	public function setAttribute($val) {
+		
+		$this->Attribute = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setAttributeSetID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->attributeSetID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAttributeSetVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for attributeSetVersion');
+		$this->attributeSetVersion = (int)$val;
+	}
+
 }
 

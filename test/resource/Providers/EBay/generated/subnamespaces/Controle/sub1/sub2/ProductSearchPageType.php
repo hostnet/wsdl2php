@@ -45,5 +45,59 @@ class ProductSearchPageType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDataElements($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for DataElements');
+		$this->DataElements = (int)$val;
+	}
+
+	/**
+	 * @param CharacteristicsSetType $val
+	 * @throws Exception
+	 */
+	public function setSearchCharacteristicsSet($val) {
+		
+		$this->SearchCharacteristicsSet = (int)$val;
+	}
+
+	/**
+	 * @param CharacteristicsSearchCodeType $val
+	 * @throws Exception
+	 */
+	public function setSearchType($val) {
+		
+		$this->SearchType = (int)$val;
+	}
+
+	/**
+	 * @param CharacteristicType $val
+	 * @throws Exception
+	 */
+	public function setSortCharacteristics($val) {
+		
+		$this->SortCharacteristics = (int)$val;
+	}
+
+	/**
+	 * @param DataElementSetType $val
+	 * @throws Exception
+	 */
+	public function setDataElementSet($val) {
+		
+		$this->DataElementSet = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

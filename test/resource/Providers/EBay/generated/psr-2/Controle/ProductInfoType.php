@@ -20,5 +20,41 @@ class ProductInfoType {
      * @var string
      */
     public $productInfoID;
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setAverageStartPrice($val) {
+        
+        $this->AverageStartPrice = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setAverageSoldPrice($val) {
+        
+        $this->AverageSoldPrice = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTitle($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+        $this->Title = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setProductInfoID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for productInfoID');
+        $this->productInfoID = (int)$val;
+    }
+
 }
 

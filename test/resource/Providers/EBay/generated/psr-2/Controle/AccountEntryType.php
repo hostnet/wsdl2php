@@ -89,5 +89,131 @@ class AccountEntryType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param AccountDetailEntryCodeType $val
+     * @throws Exception
+     */
+    public function setAccountDetailsEntryType($val) {
+        
+        $this->AccountDetailsEntryType = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDescription($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+        $this->Description = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setBalance($val) {
+        
+        $this->Balance = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setCredit($val) {
+        
+        $this->Credit = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setDate($val) {
+        
+        $this->Date = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setDebit($val) {
+        
+        $this->Debit = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setGrossDetailAmount($val) {
+        
+        $this->GrossDetailAmount = (int)$val;
+    }
+
+    /**
+     * @param ItemIDType $val
+     * @throws Exception
+     */
+    public function setItemID($val) {
+        
+        $this->ItemID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setMemo($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Memo');
+        $this->Memo = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setNetDetailAmount($val) {
+        
+        $this->NetDetailAmount = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setRefNumber($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for RefNumber');
+        $this->RefNumber = (int)$val;
+    }
+
+    /**
+     * @param decimal $val
+     * @throws Exception
+     */
+    public function setVATPercent($val) {
+        
+        $this->VATPercent = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setTitle($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+        $this->Title = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -41,5 +41,50 @@ class CharacteristicsSetType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Name');
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setAttributeSetID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->AttributeSetID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAttributeSetVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSetVersion');
+		$this->AttributeSetVersion = (int)$val;
+	}
+
+	/**
+	 * @param CharacteristicType $val
+	 * @throws Exception
+	 */
+	public function setCharacteristics($val) {
+		
+		$this->Characteristics = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

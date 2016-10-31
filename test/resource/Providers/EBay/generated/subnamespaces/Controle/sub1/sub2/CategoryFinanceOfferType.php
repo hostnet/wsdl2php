@@ -18,5 +18,32 @@ class CategoryFinanceOfferType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setFinanceOfferID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FinanceOfferID');
+		$this->FinanceOfferID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCategoryID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
+		$this->CategoryID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

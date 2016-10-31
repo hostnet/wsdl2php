@@ -21,5 +21,32 @@ class CountryDetailsType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param CountryCodeType $val
+     * @throws Exception
+     */
+    public function setCountry($val) {
+        
+        $this->Country = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDescription($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+        $this->Description = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

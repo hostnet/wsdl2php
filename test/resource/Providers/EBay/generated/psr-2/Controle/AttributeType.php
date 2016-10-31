@@ -24,5 +24,41 @@ class AttributeType {
      * @var string
      */
     public $attributeLabel;
+    /**
+     * @param ValType $val
+     * @throws Exception
+     */
+    public function setValue($val) {
+        
+        $this->Value = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setAttributeID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->attributeID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setAttributeLabel($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for attributeLabel');
+        $this->attributeLabel = (int)$val;
+    }
+
 }
 

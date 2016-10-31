@@ -43,5 +43,41 @@ class GetFeedbackResponseType extends \Controle\AbstractResponseType {
 	 * the value -99 is returned.
 	 */
 	public $FeedbackScore;
+	/**
+	 * @param FeedbackDetailArrayType $val
+	 * @throws Exception
+	 */
+	public function setFeedbackDetailArray($val) {
+		
+		$this->FeedbackDetailArray = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setFeedbackDetailItemTotal($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->FeedbackDetailItemTotal = (int)$val;
+	}
+
+	/**
+	 * @param FeedbackSummaryType $val
+	 * @throws Exception
+	 */
+	public function setFeedbackSummary($val) {
+		
+		$this->FeedbackSummary = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setFeedbackScore($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->FeedbackScore = (int)$val;
+	}
+
 }
 

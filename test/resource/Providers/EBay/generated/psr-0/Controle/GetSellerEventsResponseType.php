@@ -23,5 +23,23 @@ class GetSellerEventsResponseType extends \Controle\AbstractResponseType {
 	 * @var \Controle\ItemArrayType | Contains a list of Item types.
 	 */
 	public $ItemArray;
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setTimeTo($val) {
+		
+		$this->TimeTo = (int)$val;
+	}
+
+	/**
+	 * @param ItemArrayType $val
+	 * @throws Exception
+	 */
+	public function setItemArray($val) {
+		
+		$this->ItemArray = (int)$val;
+	}
+
 }
 

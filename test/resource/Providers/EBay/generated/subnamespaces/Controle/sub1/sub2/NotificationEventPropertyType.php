@@ -21,5 +21,41 @@ class NotificationEventPropertyType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param NotificationEventTypeCodeType $val
+	 * @throws Exception
+	 */
+	public function setEventType($val) {
+		
+		$this->EventType = (int)$val;
+	}
+
+	/**
+	 * @param NotificationEventPropertyNameCodeType $val
+	 * @throws Exception
+	 */
+	public function setName($val) {
+		
+		$this->Name = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setValue($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
+		$this->Value = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

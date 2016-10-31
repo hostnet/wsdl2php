@@ -32,5 +32,59 @@ class NotificationStatisticsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setDeliveredCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->DeliveredCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQueuedNewCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->QueuedNewCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQueuedPendingCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->QueuedPendingCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setExpiredCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ExpiredCount = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setErrorCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ErrorCount = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

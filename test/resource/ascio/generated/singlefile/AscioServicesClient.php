@@ -5,6 +5,15 @@ class LogIn {
 	 * @var Session
 	 */
 	public $session;
+	/**
+	 * @param Session $val
+	 * @throws Exception
+	 */
+	public function setSession($val) {
+		
+		$this->session = (int)$val;
+	}
+
 }
 
 class Session {
@@ -16,6 +25,24 @@ class Session {
 	 * @var string
 	 */
 	public $Password;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAccount($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Account');
+		$this->Account = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setPassword($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Password');
+		$this->Password = (int)$val;
+	}
+
 }
 
 class LogInResponse {
@@ -27,6 +54,24 @@ class LogInResponse {
 	 * @var string
 	 */
 	public $sessionId;
+	/**
+	 * @param Response $val
+	 * @throws Exception
+	 */
+	public function setLogInResult($val) {
+		
+		$this->LogInResult = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSessionId($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
+		$this->sessionId = (int)$val;
+	}
+
 }
 
 class Response {
@@ -42,6 +87,33 @@ class Response {
 	 * @var string[]
 	 */
 	public $Values;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Message');
+		$this->Message = (int)$val;
+	}
+
+	/**
+	 * @param short $val
+	 * @throws Exception
+	 */
+	public function setResultCode($val) {
+		
+		$this->ResultCode = (int)$val;
+	}
+
+	/**
+	 * @param ArrayOfstring $val
+	 * @throws Exception
+	 */
+	public function setValues($val) {
+		
+		$this->Values = (int)$val;
+	}
+
 }
 
 class LogOut {
@@ -49,6 +121,15 @@ class LogOut {
 	 * @var string
 	 */
 	public $sessionId;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSessionId($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
+		$this->sessionId = (int)$val;
+	}
+
 }
 
 class LogOutResponse {
@@ -56,6 +137,15 @@ class LogOutResponse {
 	 * @var Response
 	 */
 	public $LogOutResult;
+	/**
+	 * @param Response $val
+	 * @throws Exception
+	 */
+	public function setLogOutResult($val) {
+		
+		$this->LogOutResult = (int)$val;
+	}
+
 }
 
 class GetOrder {
@@ -67,6 +157,24 @@ class GetOrder {
 	 * @var string
 	 */
 	public $orderId;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setSessionId($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
+		$this->sessionId = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setOrderId($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for orderId');
+		$this->orderId = (int)$val;
+	}
+
 }
 
 class GetOrderResponse {
@@ -78,6 +186,24 @@ class GetOrderResponse {
 	 * @var Order
 	 */
 	public $order;
+	/**
+	 * @param Response $val
+	 * @throws Exception
+	 */
+	public function setGetOrderResult($val) {
+		
+		$this->GetOrderResult = (int)$val;
+	}
+
+	/**
+	 * @param Order $val
+	 * @throws Exception
+	 */
+	public function setOrder($val) {
+		
+		$this->order = (int)$val;
+	}
+
 }
 
 class Order {
@@ -129,1961 +255,6 @@ class Order {
 	 * @var dateTime
 	 */
 	public $CreDate;
-}
-
-class OrderType {}
-
-class OrderStatusType {}
-
-class Domain {
-	/**
-	 * @var string
-	 */
-	public $DomainName;
-	/**
-	 * @var string
-	 */
-	public $DomainHandle;
-	/**
-	 * @var int
-	 */
-	public $RegPeriod;
-	/**
-	 * @var int
-	 */
-	public $RenewPeriod;
-	/**
-	 * @var string
-	 */
-	public $Status;
-	/**
-	 * @var string
-	 */
-	public $AuthInfo;
-	/**
-	 * @var dateTime
-	 */
-	public $CreDate;
-	/**
-	 * @var dateTime
-	 */
-	public $ExpDate;
-	/**
-	 * @var string
-	 */
-	public $EncodingType;
-	/**
-	 * @var string
-	 */
-	public $DomainPurpose;
-	/**
-	 * @var string
-	 */
-	public $Comment;
-	/**
-	 * @var string
-	 */
-	public $TransferLock;
-	/**
-	 * @var string
-	 */
-	public $DeleteLock;
-	/**
-	 * @var string
-	 */
-	public $UpdateLock;
-	/**
-	 * @var string
-	 */
-	public $QueueType;
-	/**
-	 * @var Registrant
-	 */
-	public $Registrant;
-	/**
-	 * @var Contact
-	 */
-	public $AdminContact;
-	/**
-	 * @var Contact
-	 */
-	public $TechContact;
-	/**
-	 * @var Contact
-	 */
-	public $BillingContact;
-	/**
-	 * @var Contact
-	 */
-	public $ResellerContact;
-	/**
-	 * @var NameServers
-	 */
-	public $NameServers;
-	/**
-	 * @var TradeMark
-	 */
-	public $Trademark;
-	/**
-	 * @var DnsSecKeys
-	 */
-	public $DnsSecKeys;
-	/**
-	 * @var PrivacyProxy
-	 */
-	public $PrivacyProxy;
-}
-
-class Registrant {
-	/**
-	 * @var dateTime
-	 */
-	public $CreDate;
-	/**
-	 * @var string
-	 */
-	public $Status;
-	/**
-	 * @var string
-	 */
-	public $Handle;
-	/**
-	 * @var string
-	 */
-	public $Name;
-	/**
-	 * @var string
-	 */
-	public $OrgName;
-	/**
-	 * @var string
-	 */
-	public $Address1;
-	/**
-	 * @var string
-	 */
-	public $Address2;
-	/**
-	 * @var string
-	 */
-	public $City;
-	/**
-	 * @var string
-	 */
-	public $State;
-	/**
-	 * @var string
-	 */
-	public $PostalCode;
-	/**
-	 * @var string
-	 */
-	public $CountryCode;
-	/**
-	 * @var string
-	 */
-	public $Email;
-	/**
-	 * @var string
-	 */
-	public $Phone;
-	/**
-	 * @var string
-	 */
-	public $Fax;
-	/**
-	 * @var string
-	 */
-	public $RegistrantType;
-	/**
-	 * @var string
-	 */
-	public $VatNumber;
-	/**
-	 * @var string
-	 */
-	public $RegistrantDate;
-	/**
-	 * @var string
-	 */
-	public $NexusCategory;
-	/**
-	 * @var string
-	 */
-	public $RegistrantNumber;
-	/**
-	 * @var string
-	 */
-	public $Details;
-}
-
-class Contact {
-	/**
-	 * @var dateTime
-	 */
-	public $CreDate;
-	/**
-	 * @var string
-	 */
-	public $Status;
-	/**
-	 * @var string
-	 */
-	public $Handle;
-	/**
-	 * @var string
-	 */
-	public $FirstName;
-	/**
-	 * @var string
-	 */
-	public $LastName;
-	/**
-	 * @var string
-	 */
-	public $OrgName;
-	/**
-	 * @var string
-	 */
-	public $Address1;
-	/**
-	 * @var string
-	 */
-	public $Address2;
-	/**
-	 * @var string
-	 */
-	public $PostalCode;
-	/**
-	 * @var string
-	 */
-	public $City;
-	/**
-	 * @var string
-	 */
-	public $State;
-	/**
-	 * @var string
-	 */
-	public $CountryCode;
-	/**
-	 * @var string
-	 */
-	public $Email;
-	/**
-	 * @var string
-	 */
-	public $Phone;
-	/**
-	 * @var string
-	 */
-	public $Fax;
-	/**
-	 * @var string
-	 */
-	public $Type;
-	/**
-	 * @var string
-	 */
-	public $Details;
-	/**
-	 * @var string
-	 */
-	public $OrganisationNumber;
-}
-
-class NameServers {
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer1;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer2;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer3;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer4;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer5;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer6;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer7;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer8;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer9;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer10;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer11;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer12;
-	/**
-	 * @var NameServer
-	 */
-	public $NameServer13;
-}
-
-class NameServer {
-	/**
-	 * @var dateTime
-	 */
-	public $CreDate;
-	/**
-	 * @var string
-	 */
-	public $Handle;
-	/**
-	 * @var string
-	 */
-	public $HostName;
-	/**
-	 * @var string
-	 */
-	public $IpAddress;
-	/**
-	 * @var string
-	 */
-	public $Status;
-	/**
-	 * @var string
-	 */
-	public $IpV6Address;
-	/**
-	 * @var string
-	 */
-	public $Details;
-}
-
-class TradeMark {
-	/**
-	 * @var string
-	 */
-	public $Name;
-	/**
-	 * @var string
-	 */
-	public $Country;
-	/**
-	 * @var dateTime
-	 */
-	public $Date;
-	/**
-	 * @var string
-	 */
-	public $Number;
-	/**
-	 * @var string
-	 */
-	public $Type;
-	/**
-	 * @var string
-	 */
-	public $Contact;
-	/**
-	 * @var string
-	 */
-	public $ContactLanguage;
-	/**
-	 * @var string
-	 */
-	public $DocumentationLanguage;
-	/**
-	 * @var string
-	 */
-	public $SecondContact;
-	/**
-	 * @var string
-	 */
-	public $ThirdContact;
-	/**
-	 * @var dateTime
-	 */
-	public $RegDate;
-}
-
-class DnsSecKeys {
-	/**
-	 * @var DnsSecKey
-	 */
-	public $DnsSecKey1;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $DnsSecKey2;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $DnsSecKey3;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $DnsSecKey4;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $DnsSecKey5;
-}
-
-class DnsSecKey {
-	/**
-	 * @var string
-	 */
-	public $Handle;
-	/**
-	 * @var string
-	 */
-	public $Status;
-	/**
-	 * @var string
-	 */
-	public $DigestAlgorithm;
-	/**
-	 * @var string
-	 */
-	public $DigestType;
-	/**
-	 * @var string
-	 */
-	public $Digest;
-	/**
-	 * @var string
-	 */
-	public $Protocol;
-	/**
-	 * @var string
-	 */
-	public $KeyType;
-	/**
-	 * @var string
-	 */
-	public $KeyAlgorithm;
-	/**
-	 * @var string
-	 */
-	public $KeyTag;
-	/**
-	 * @var string
-	 */
-	public $PublicKey;
-	/**
-	 * @var string
-	 */
-	public $CreDate;
-}
-
-class PrivacyProxy {
-	/**
-	 * @var PrivacyProxyType
-	 */
-	public $Type;
-	/**
-	 * @var boolean
-	 */
-	public $PrivacyAdmin;
-	/**
-	 * @var boolean
-	 */
-	public $PrivacyTech;
-	/**
-	 * @var boolean
-	 */
-	public $PrivacyBilling;
-	/**
-	 * @var Extensions
-	 */
-	public $Extensions;
-}
-
-class PrivacyProxyType {}
-
-class Extensions {
-	/**
-	 * @var Extension
-	 */
-	public $Extension;
-}
-
-class Extension {
-	/**
-	 * @var string
-	 */
-	public $Key;
-	/**
-	 * @var string
-	 */
-	public $Value;
-}
-
-class CreateOrder {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var Order
-	 */
-	public $order;
-}
-
-class CreateOrderResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateOrderResult;
-	/**
-	 * @var Order
-	 */
-	public $order;
-}
-
-class SearchOrder {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var SearchOrderRequest
-	 */
-	public $orderRequest;
-}
-
-class SearchOrderRequest {
-	/**
-	 * @var OrderType[]
-	 */
-	public $OrderTypes;
-	/**
-	 * @var OrderStatusType[]
-	 */
-	public $OrderStatusTypes;
-	/**
-	 * @var dateTime
-	 */
-	public $FromDate;
-	/**
-	 * @var dateTime
-	 */
-	public $ToDate;
-	/**
-	 * @var string
-	 */
-	public $DomainName;
-	/**
-	 * @var string
-	 */
-	public $TransactionComment;
-	/**
-	 * @var string
-	 */
-	public $Comments;
-	/**
-	 * @var boolean
-	 */
-	public $IncludeDomainDetails;
-	/**
-	 * @var PagingInfo
-	 */
-	public $PageInfo;
-	/**
-	 * @var SearchOrderSortType
-	 */
-	public $OrderSort;
-}
-
-class SearchOrderSortType {}
-
-class PagingInfo {
-	/**
-	 * @var int
-	 */
-	public $PageIndex;
-	/**
-	 * @var int
-	 */
-	public $PageSize;
-}
-
-class SearchOrderResponse {
-	/**
-	 * @var Response
-	 */
-	public $SearchOrderResult;
-	/**
-	 * @var int
-	 */
-	public $totalOrders;
-	/**
-	 * @var Order[]
-	 */
-	public $orders;
-}
-
-class GetMessages {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $orderId;
-}
-
-class GetMessagesResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetMessagesResult;
-	/**
-	 * @var Message[]
-	 */
-	public $messages;
-}
-
-class Message {
-	/**
-	 * @var Attachment[]
-	 */
-	public $Attachments;
-	/**
-	 * @var string
-	 */
-	public $Body;
-	/**
-	 * @var dateTime
-	 */
-	public $Created;
-	/**
-	 * @var string
-	 */
-	public $FromAddress;
-	/**
-	 * @var string
-	 */
-	public $Subject;
-	/**
-	 * @var string
-	 */
-	public $ToAddress;
-	/**
-	 * @var MessageType
-	 */
-	public $Type;
-}
-
-class Attachment {
-	/**
-	 * @var base64Binary
-	 */
-	public $Data;
-	/**
-	 * @var string
-	 */
-	public $FileName;
-}
-
-class MessageType {}
-
-class ValidateOrder {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var Order
-	 */
-	public $order;
-}
-
-class ValidateOrderResponse {
-	/**
-	 * @var Response
-	 */
-	public $ValidateOrderResult;
-}
-
-class UploadDocumentation {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $orderId;
-	/**
-	 * @var string
-	 */
-	public $fileName;
-	/**
-	 * @var base64Binary
-	 */
-	public $content;
-}
-
-class UploadDocumentationResponse {
-	/**
-	 * @var Response
-	 */
-	public $UploadDocumentationResult;
-}
-
-class CreateSupportOrder {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $subject;
-	/**
-	 * @var string
-	 */
-	public $body;
-	/**
-	 * @var Attachment[]
-	 */
-	public $attachments;
-}
-
-class CreateSupportOrderResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateSupportOrderResult;
-	/**
-	 * @var string
-	 */
-	public $orderId;
-}
-
-class UploadMessage {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $orderId;
-	/**
-	 * @var Message
-	 */
-	public $message;
-}
-
-class UploadMessageResponse {
-	/**
-	 * @var Response
-	 */
-	public $UploadMessageResult;
-}
-
-class GetDomain {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $domainHandle;
-}
-
-class GetDomainResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetDomainResult;
-	/**
-	 * @var Domain
-	 */
-	public $domain;
-}
-
-class SearchDomain {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var SearchCriteria
-	 */
-	public $criteria;
-}
-
-class SearchCriteria {
-	/**
-	 * @var Clause[]
-	 */
-	public $Clauses;
-	/**
-	 * @var SearchModeType
-	 */
-	public $Mode;
-	/**
-	 * @var string[]
-	 */
-	public $Withoutstates;
-	/**
-	 * @var string[]
-	 */
-	public $Withstates;
-}
-
-class Clause {
-	/**
-	 * @var string
-	 */
-	public $Attribute;
-	/**
-	 * @var SearchOperatorType
-	 */
-	public $Operator;
-	/**
-	 * @var string
-	 */
-	public $Value;
-}
-
-class SearchOperatorType {}
-
-class SearchModeType {}
-
-class SearchDomainResponse {
-	/**
-	 * @var Response
-	 */
-	public $SearchDomainResult;
-	/**
-	 * @var Domain[]
-	 */
-	public $domains;
-}
-
-class Whois {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $domainName;
-}
-
-class WhoisResponse {
-	/**
-	 * @var Response
-	 */
-	public $WhoisResult;
-	/**
-	 * @var string
-	 */
-	public $whoisData;
-}
-
-class AvailabilityCheck {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var String[]
-	 */
-	public $domains;
-	/**
-	 * @var String[]
-	 */
-	public $tlds;
-	/**
-	 * @var QualityType
-	 */
-	public $quality;
-}
-
-class QualityType {}
-
-class AvailabilityCheckResponse {
-	/**
-	 * @var Response
-	 */
-	public $AvailabilityCheckResult;
-	/**
-	 * @var AvailabilityCheckResult[]
-	 */
-	public $results;
-}
-
-class AvailabilityCheckResult {
-	/**
-	 * @var string
-	 */
-	public $DomainName;
-	/**
-	 * @var QualityType
-	 */
-	public $Quality;
-	/**
-	 * @var int
-	 */
-	public $StatusCode;
-	/**
-	 * @var string
-	 */
-	public $StatusMessage;
-}
-
-class GetRegistrant {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $registrantHandle;
-}
-
-class GetRegistrantResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetRegistrantResult;
-	/**
-	 * @var Registrant
-	 */
-	public $registrant;
-}
-
-class CreateRegistrant {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var Registrant
-	 */
-	public $registrant;
-}
-
-class CreateRegistrantResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateRegistrantResult;
-	/**
-	 * @var Registrant
-	 */
-	public $registrant;
-}
-
-class DeleteRegistrant {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $registrantHandle;
-}
-
-class DeleteRegistrantResponse {
-	/**
-	 * @var Response
-	 */
-	public $DeleteRegistrantResult;
-}
-
-class SearchRegistrant {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var SearchCriteria
-	 */
-	public $criteria;
-}
-
-class SearchRegistrantResponse {
-	/**
-	 * @var Response
-	 */
-	public $SearchRegistrantResult;
-	/**
-	 * @var Registrant[]
-	 */
-	public $registrants;
-}
-
-class GetContact {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $contactHandle;
-}
-
-class GetRegistrantVerificationInfo {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $value;
-}
-
-class GetRegistrantVerificationInfoResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetRegistrantVerificationInfoResult;
-	/**
-	 * @var RegistrantVerificationInfo
-	 */
-	public $verificationInfo;
-}
-
-class RegistrantVerificationInfo {
-	/**
-	 * @var string
-	 */
-	public $EmailAddress;
-	/**
-	 * @var RegistrantVerificationStatus
-	 */
-	public $VerificationStatus;
-	/**
-	 * @var RegistrantVerificationDetails
-	 */
-	public $VerificationDetails;
-}
-
-class RegistrantVerificationStatus {}
-
-class RegistrantVerificationDetails {
-	/**
-	 * @var string
-	 */
-	public $VerifiedBy;
-	/**
-	 * @var dateTime
-	 */
-	public $VerificationDate;
-	/**
-	 * @var Message[]
-	 */
-	public $Messages;
-}
-
-class DoRegistrantVerification {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $value;
-}
-
-class DoRegistrantVerificationResponse {
-	/**
-	 * @var Response
-	 */
-	public $DoRegistrantVerificationResult;
-}
-
-class GetRegistrantVerificationStatus {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $value;
-}
-
-class GetRegistrantVerificationStatusResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetRegistrantVerificationStatusResult;
-	/**
-	 * @var RegistrantVerificationStatus
-	 */
-	public $verificationStatus;
-}
-
-class UploadRegistrantVerificationMessage {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $value;
-	/**
-	 * @var RegistrantVerificationDetails
-	 */
-	public $details;
-}
-
-class UploadRegistrantVerificationMessageResponse {
-	/**
-	 * @var Response
-	 */
-	public $UploadRegistrantVerificationMessageResult;
-}
-
-class GetContactResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetContactResult;
-	/**
-	 * @var Contact
-	 */
-	public $contact;
-}
-
-class CreateContact {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var Contact
-	 */
-	public $contact;
-}
-
-class CreateContactResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateContactResult;
-	/**
-	 * @var Contact
-	 */
-	public $contact;
-}
-
-class UpdateContact {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var Contact
-	 */
-	public $contact;
-}
-
-class UpdateContactResponse {
-	/**
-	 * @var Response
-	 */
-	public $UpdateContactResult;
-}
-
-class DeleteContact {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $contactHandle;
-}
-
-class DeleteContactResponse {
-	/**
-	 * @var Response
-	 */
-	public $DeleteContactResult;
-}
-
-class SearchContact {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var SearchCriteria
-	 */
-	public $criteria;
-}
-
-class SearchContactResponse {
-	/**
-	 * @var Response
-	 */
-	public $SearchContactResult;
-	/**
-	 * @var Contact[]
-	 */
-	public $contacts;
-}
-
-class GetNameServer {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $nameServerHandle;
-}
-
-class GetNameServerResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetNameServerResult;
-	/**
-	 * @var NameServer
-	 */
-	public $nameServer;
-}
-
-class CreateNameServer {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var NameServer
-	 */
-	public $nameServer;
-}
-
-class CreateNameServerResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateNameServerResult;
-	/**
-	 * @var NameServer
-	 */
-	public $nameServer;
-}
-
-class DeleteNameServer {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $nameServerHandle;
-}
-
-class DeleteNameServerResponse {
-	/**
-	 * @var Response
-	 */
-	public $DeleteNameServerResult;
-}
-
-class SearchNameServer {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var SearchCriteria
-	 */
-	public $criteria;
-}
-
-class SearchNameServerResponse {
-	/**
-	 * @var Response
-	 */
-	public $SearchNameServerResult;
-	/**
-	 * @var NameServer[]
-	 */
-	public $nameServers;
-}
-
-class PollMessage {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var MessageType
-	 */
-	public $msgType;
-}
-
-class PollMessageResponse {
-	/**
-	 * @var Response
-	 */
-	public $PollMessageResult;
-	/**
-	 * @var int
-	 */
-	public $msgCount;
-	/**
-	 * @var QueueItem
-	 */
-	public $item;
-}
-
-class QueueItem {
-	/**
-	 * @var Attachment[]
-	 */
-	public $Attachments;
-	/**
-	 * @var string
-	 */
-	public $DomainHandle;
-	/**
-	 * @var string
-	 */
-	public $DomainName;
-	/**
-	 * @var string
-	 */
-	public $Msg;
-	/**
-	 * @var int
-	 */
-	public $MsgId;
-	/**
-	 * @var MessageType
-	 */
-	public $MsgType;
-	/**
-	 * @var string
-	 */
-	public $OrderId;
-	/**
-	 * @var OrderStatusType
-	 */
-	public $OrderStatus;
-	/**
-	 * @var CallbackStatus[]
-	 */
-	public $StatusList;
-}
-
-class CallbackStatus {
-	/**
-	 * @var string
-	 */
-	public $Message;
-	/**
-	 * @var string
-	 */
-	public $Status;
-}
-
-class AckMessage {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var int
-	 */
-	public $msgId;
-}
-
-class AckMessageResponse {
-	/**
-	 * @var Response
-	 */
-	public $AckMessageResult;
-}
-
-class GetMessageQueue {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var int
-	 */
-	public $msgId;
-}
-
-class GetMessageQueueResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetMessageQueueResult;
-	/**
-	 * @var QueueItem
-	 */
-	public $item;
-}
-
-class GetDnsSecKey {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var string
-	 */
-	public $dnsSecKeyHandle;
-}
-
-class GetDnsSecKeyResponse {
-	/**
-	 * @var Response
-	 */
-	public $GetDnsSecKeyResult;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $dnsSecKey;
-}
-
-class CreateDnsSecKey {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $dnsSecKey;
-}
-
-class CreateDnsSecKeyResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateDnsSecKeyResult;
-	/**
-	 * @var DnsSecKey
-	 */
-	public $dnsSecKey;
-}
-
-class SearchDnsSecKey {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var SearchCriteria
-	 */
-	public $criteria;
-}
-
-class SearchDnsSecKeyResponse {
-	/**
-	 * @var Response
-	 */
-	public $SearchDnsSecKeyResult;
-	/**
-	 * @var DnsSecKey[]
-	 */
-	public $dnsSecKeys;
-}
-
-class CreateDocumentation {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var Attachment[]
-	 */
-	public $attachments;
-}
-
-class CreateDocumentationResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateDocumentationResult;
-	/**
-	 * @var int
-	 */
-	public $documentationId;
-}
-
-class CreateApprovalDocumentation {
-	/**
-	 * @var string
-	 */
-	public $sessionId;
-	/**
-	 * @var ApprovalDocumentation
-	 */
-	public $approvalDocumentation;
-}
-
-class ApprovalDocumentationType {}
-
-class ApprovalDocumentation {
-	/**
-	 * @var ApprovalDocumentationType
-	 */
-	public $Type;
-	/**
-	 * @var string[]
-	 */
-	public $ObjectNames;
-	/**
-	 * @var string
-	 */
-	public $OrderId;
-	/**
-	 * @var Attachment[]
-	 */
-	public $Attachments;
-	/**
-	 * @var Extensions
-	 */
-	public $Extensions;
-}
-
-class CreateApprovalDocumentationResponse {
-	/**
-	 * @var Response
-	 */
-	public $CreateApprovalDocumentationResult;
-	/**
-	 * @var string
-	 */
-	public $documentationId;
-}
-
-/**
- * AscioServicesClient
- */
-class AscioServicesClient extends SoapClient {
-
-	const WSDL_FILE = "AscioService.wsdl";
-	private $classmap = array(
-		'LogIn' => 'LogIn',
-		'Session' => 'Session',
-		'LogInResponse' => 'LogInResponse',
-		'Response' => 'Response',
-		'LogOut' => 'LogOut',
-		'LogOutResponse' => 'LogOutResponse',
-		'GetOrder' => 'GetOrder',
-		'GetOrderResponse' => 'GetOrderResponse',
-		'Order' => 'Order',
-		'OrderType' => 'OrderType',
-		'OrderStatusType' => 'OrderStatusType',
-		'Domain' => 'Domain',
-		'Registrant' => 'Registrant',
-		'Contact' => 'Contact',
-		'NameServers' => 'NameServers',
-		'NameServer' => 'NameServer',
-		'TradeMark' => 'TradeMark',
-		'DnsSecKeys' => 'DnsSecKeys',
-		'DnsSecKey' => 'DnsSecKey',
-		'PrivacyProxy' => 'PrivacyProxy',
-		'PrivacyProxyType' => 'PrivacyProxyType',
-		'Extensions' => 'Extensions',
-		'Extension' => 'Extension',
-		'CreateOrder' => 'CreateOrder',
-		'CreateOrderResponse' => 'CreateOrderResponse',
-		'SearchOrder' => 'SearchOrder',
-		'SearchOrderRequest' => 'SearchOrderRequest',
-		'SearchOrderSortType' => 'SearchOrderSortType',
-		'PagingInfo' => 'PagingInfo',
-		'SearchOrderResponse' => 'SearchOrderResponse',
-		'GetMessages' => 'GetMessages',
-		'GetMessagesResponse' => 'GetMessagesResponse',
-		'Message' => 'Message',
-		'Attachment' => 'Attachment',
-		'MessageType' => 'MessageType',
-		'ValidateOrder' => 'ValidateOrder',
-		'ValidateOrderResponse' => 'ValidateOrderResponse',
-		'UploadDocumentation' => 'UploadDocumentation',
-		'UploadDocumentationResponse' => 'UploadDocumentationResponse',
-		'CreateSupportOrder' => 'CreateSupportOrder',
-		'CreateSupportOrderResponse' => 'CreateSupportOrderResponse',
-		'UploadMessage' => 'UploadMessage',
-		'UploadMessageResponse' => 'UploadMessageResponse',
-		'GetDomain' => 'GetDomain',
-		'GetDomainResponse' => 'GetDomainResponse',
-		'SearchDomain' => 'SearchDomain',
-		'SearchCriteria' => 'SearchCriteria',
-		'Clause' => 'Clause',
-		'SearchOperatorType' => 'SearchOperatorType',
-		'SearchModeType' => 'SearchModeType',
-		'SearchDomainResponse' => 'SearchDomainResponse',
-		'Whois' => 'Whois',
-		'WhoisResponse' => 'WhoisResponse',
-		'AvailabilityCheck' => 'AvailabilityCheck',
-		'QualityType' => 'QualityType',
-		'AvailabilityCheckResponse' => 'AvailabilityCheckResponse',
-		'AvailabilityCheckResult' => 'AvailabilityCheckResult',
-		'GetRegistrant' => 'GetRegistrant',
-		'GetRegistrantResponse' => 'GetRegistrantResponse',
-		'CreateRegistrant' => 'CreateRegistrant',
-		'CreateRegistrantResponse' => 'CreateRegistrantResponse',
-		'DeleteRegistrant' => 'DeleteRegistrant',
-		'DeleteRegistrantResponse' => 'DeleteRegistrantResponse',
-		'SearchRegistrant' => 'SearchRegistrant',
-		'SearchRegistrantResponse' => 'SearchRegistrantResponse',
-		'GetContact' => 'GetContact',
-		'GetRegistrantVerificationInfo' => 'GetRegistrantVerificationInfo',
-		'GetRegistrantVerificationInfoResponse' => 'GetRegistrantVerificationInfoResponse',
-		'RegistrantVerificationInfo' => 'RegistrantVerificationInfo',
-		'RegistrantVerificationStatus' => 'RegistrantVerificationStatus',
-		'RegistrantVerificationDetails' => 'RegistrantVerificationDetails',
-		'DoRegistrantVerification' => 'DoRegistrantVerification',
-		'DoRegistrantVerificationResponse' => 'DoRegistrantVerificationResponse',
-		'GetRegistrantVerificationStatus' => 'GetRegistrantVerificationStatus',
-		'GetRegistrantVerificationStatusResponse' => 'GetRegistrantVerificationStatusResponse',
-		'UploadRegistrantVerificationMessage' => 'UploadRegistrantVerificationMessage',
-		'UploadRegistrantVerificationMessageResponse' => 'UploadRegistrantVerificationMessageResponse',
-		'GetContactResponse' => 'GetContactResponse',
-		'CreateContact' => 'CreateContact',
-		'CreateContactResponse' => 'CreateContactResponse',
-		'UpdateContact' => 'UpdateContact',
-		'UpdateContactResponse' => 'UpdateContactResponse',
-		'DeleteContact' => 'DeleteContact',
-		'DeleteContactResponse' => 'DeleteContactResponse',
-		'SearchContact' => 'SearchContact',
-		'SearchContactResponse' => 'SearchContactResponse',
-		'GetNameServer' => 'GetNameServer',
-		'GetNameServerResponse' => 'GetNameServerResponse',
-		'CreateNameServer' => 'CreateNameServer',
-		'CreateNameServerResponse' => 'CreateNameServerResponse',
-		'DeleteNameServer' => 'DeleteNameServer',
-		'DeleteNameServerResponse' => 'DeleteNameServerResponse',
-		'SearchNameServer' => 'SearchNameServer',
-		'SearchNameServerResponse' => 'SearchNameServerResponse',
-		'PollMessage' => 'PollMessage',
-		'PollMessageResponse' => 'PollMessageResponse',
-		'QueueItem' => 'QueueItem',
-		'CallbackStatus' => 'CallbackStatus',
-		'AckMessage' => 'AckMessage',
-		'AckMessageResponse' => 'AckMessageResponse',
-		'GetMessageQueue' => 'GetMessageQueue',
-		'GetMessageQueueResponse' => 'GetMessageQueueResponse',
-		'GetDnsSecKey' => 'GetDnsSecKey',
-		'GetDnsSecKeyResponse' => 'GetDnsSecKeyResponse',
-		'CreateDnsSecKey' => 'CreateDnsSecKey',
-		'CreateDnsSecKeyResponse' => 'CreateDnsSecKeyResponse',
-		'SearchDnsSecKey' => 'SearchDnsSecKey',
-		'SearchDnsSecKeyResponse' => 'SearchDnsSecKeyResponse',
-		'CreateDocumentation' => 'CreateDocumentation',
-		'CreateDocumentationResponse' => 'CreateDocumentationResponse',
-		'CreateApprovalDocumentation' => 'CreateApprovalDocumentation',
-		'ApprovalDocumentationType' => 'ApprovalDocumentationType',
-		'ApprovalDocumentation' => 'ApprovalDocumentation',
-		'CreateApprovalDocumentationResponse' => 'CreateApprovalDocumentationResponse',
-	);
-
-	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-class LogIn {
-    /**
-     * @var Session
-     */
-    public $session;
-
-	/**
-	 * @param Session $val
-	 * @throws Exception
-	 */
-	public function setSession($val) {
-		
-		$this->session = (int)$val;
-	}
-}
-
-class Session {
-    /**
-     * @var string
-     */
-    public $Account;
-    /**
-     * @var string
-     */
-    public $Password;
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setAccount($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Account');
-		$this->Account = (int)$val;
-	}
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setPassword($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Password');
-		$this->Password = (int)$val;
-	}
-}
-
-class LogInResponse {
-    /**
-     * @var Response
-     */
-    public $LogInResult;
-    /**
-     * @var string
-     */
-    public $sessionId;
-
-	/**
-	 * @param Response $val
-	 * @throws Exception
-	 */
-	public function setLogInResult($val) {
-		
-		$this->LogInResult = (int)$val;
-	}
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setSessionId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
-		$this->sessionId = (int)$val;
-	}
-}
-
-class Response {
-    /**
-     * @var string
-     */
-    public $Message;
-    /**
-     * @var short
-     */
-    public $ResultCode;
-    /**
-     * @var ArrayOfstring
-     */
-    public $Values;
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setMessage($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Message');
-		$this->Message = (int)$val;
-	}
-
-	/**
-	 * @param short $val
-	 * @throws Exception
-	 */
-	public function setResultCode($val) {
-		
-		$this->ResultCode = (int)$val;
-	}
-
-	/**
-	 * @param ArrayOfstring $val
-	 * @throws Exception
-	 */
-	public function setValues($val) {
-		
-		$this->Values = (int)$val;
-	}
-}
-
-class LogOut {
-    /**
-     * @var string
-     */
-    public $sessionId;
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setSessionId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
-		$this->sessionId = (int)$val;
-	}
-}
-
-class LogOutResponse {
-    /**
-     * @var Response
-     */
-    public $LogOutResult;
-
-	/**
-	 * @param Response $val
-	 * @throws Exception
-	 */
-	public function setLogOutResult($val) {
-		
-		$this->LogOutResult = (int)$val;
-	}
-}
-
-class GetOrder {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $orderId;
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setSessionId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for sessionId');
-		$this->sessionId = (int)$val;
-	}
-
-	/**
-	 * @param string $val
-	 * @throws Exception
-	 */
-	public function setOrderId($val) {
-		if(!is_string($val)) throw new Exception('POJO Proxy need a string for orderId');
-		$this->orderId = (int)$val;
-	}
-}
-
-class GetOrderResponse {
-    /**
-     * @var Response
-     */
-    public $GetOrderResult;
-    /**
-     * @var Order
-     */
-    public $order;
-
-	/**
-	 * @param Response $val
-	 * @throws Exception
-	 */
-	public function setGetOrderResult($val) {
-		
-		$this->GetOrderResult = (int)$val;
-	}
-
-	/**
-	 * @param Order $val
-	 * @throws Exception
-	 */
-	public function setOrder($val) {
-		
-		$this->order = (int)$val;
-	}
-}
-
-class Order {
-    /**
-     * @var string
-     */
-    public $OrderId;
-    /**
-     * @var OrderType
-     */
-    public $Type;
-    /**
-     * @var string
-     */
-    public $AccountReference;
-    /**
-     * @var OrderStatusType
-     */
-    public $Status;
-    /**
-     * @var string
-     */
-    public $TransactionComment;
-    /**
-     * @var string
-     */
-    public $Comments;
-    /**
-     * @var string
-     */
-    public $Options;
-    /**
-     * @var string
-     */
-    public $LocalPresence;
-    /**
-     * @var string
-     */
-    public $Batch;
-    /**
-     * @var string
-     */
-    public $Documentation;
-    /**
-     * @var Domain
-     */
-    public $Domain;
-    /**
-     * @var dateTime
-     */
-    public $CreDate;
-
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2191,112 +362,110 @@ class Order {
 		
 		$this->CreDate = (int)$val;
 	}
+
 }
 
-class OrderType {
-}
+class OrderType {}
 
-class OrderStatusType {
-}
+class OrderStatusType {}
 
 class Domain {
-    /**
-     * @var string
-     */
-    public $DomainName;
-    /**
-     * @var string
-     */
-    public $DomainHandle;
-    /**
-     * @var int
-     */
-    public $RegPeriod;
-    /**
-     * @var int
-     */
-    public $RenewPeriod;
-    /**
-     * @var string
-     */
-    public $Status;
-    /**
-     * @var string
-     */
-    public $AuthInfo;
-    /**
-     * @var dateTime
-     */
-    public $CreDate;
-    /**
-     * @var dateTime
-     */
-    public $ExpDate;
-    /**
-     * @var string
-     */
-    public $EncodingType;
-    /**
-     * @var string
-     */
-    public $DomainPurpose;
-    /**
-     * @var string
-     */
-    public $Comment;
-    /**
-     * @var string
-     */
-    public $TransferLock;
-    /**
-     * @var string
-     */
-    public $DeleteLock;
-    /**
-     * @var string
-     */
-    public $UpdateLock;
-    /**
-     * @var string
-     */
-    public $QueueType;
-    /**
-     * @var Registrant
-     */
-    public $Registrant;
-    /**
-     * @var Contact
-     */
-    public $AdminContact;
-    /**
-     * @var Contact
-     */
-    public $TechContact;
-    /**
-     * @var Contact
-     */
-    public $BillingContact;
-    /**
-     * @var Contact
-     */
-    public $ResellerContact;
-    /**
-     * @var NameServers
-     */
-    public $NameServers;
-    /**
-     * @var TradeMark
-     */
-    public $Trademark;
-    /**
-     * @var DnsSecKeys
-     */
-    public $DnsSecKeys;
-    /**
-     * @var PrivacyProxy
-     */
-    public $PrivacyProxy;
-
+	/**
+	 * @var string
+	 */
+	public $DomainName;
+	/**
+	 * @var string
+	 */
+	public $DomainHandle;
+	/**
+	 * @var int
+	 */
+	public $RegPeriod;
+	/**
+	 * @var int
+	 */
+	public $RenewPeriod;
+	/**
+	 * @var string
+	 */
+	public $Status;
+	/**
+	 * @var string
+	 */
+	public $AuthInfo;
+	/**
+	 * @var dateTime
+	 */
+	public $CreDate;
+	/**
+	 * @var dateTime
+	 */
+	public $ExpDate;
+	/**
+	 * @var string
+	 */
+	public $EncodingType;
+	/**
+	 * @var string
+	 */
+	public $DomainPurpose;
+	/**
+	 * @var string
+	 */
+	public $Comment;
+	/**
+	 * @var string
+	 */
+	public $TransferLock;
+	/**
+	 * @var string
+	 */
+	public $DeleteLock;
+	/**
+	 * @var string
+	 */
+	public $UpdateLock;
+	/**
+	 * @var string
+	 */
+	public $QueueType;
+	/**
+	 * @var Registrant
+	 */
+	public $Registrant;
+	/**
+	 * @var Contact
+	 */
+	public $AdminContact;
+	/**
+	 * @var Contact
+	 */
+	public $TechContact;
+	/**
+	 * @var Contact
+	 */
+	public $BillingContact;
+	/**
+	 * @var Contact
+	 */
+	public $ResellerContact;
+	/**
+	 * @var NameServers
+	 */
+	public $NameServers;
+	/**
+	 * @var TradeMark
+	 */
+	public $Trademark;
+	/**
+	 * @var DnsSecKeys
+	 */
+	public $DnsSecKeys;
+	/**
+	 * @var PrivacyProxy
+	 */
+	public $PrivacyProxy;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2512,90 +681,90 @@ class Domain {
 		
 		$this->PrivacyProxy = (int)$val;
 	}
+
 }
 
 class Registrant {
-    /**
-     * @var dateTime
-     */
-    public $CreDate;
-    /**
-     * @var string
-     */
-    public $Status;
-    /**
-     * @var string
-     */
-    public $Handle;
-    /**
-     * @var string
-     */
-    public $Name;
-    /**
-     * @var string
-     */
-    public $OrgName;
-    /**
-     * @var string
-     */
-    public $Address1;
-    /**
-     * @var string
-     */
-    public $Address2;
-    /**
-     * @var string
-     */
-    public $City;
-    /**
-     * @var string
-     */
-    public $State;
-    /**
-     * @var string
-     */
-    public $PostalCode;
-    /**
-     * @var string
-     */
-    public $CountryCode;
-    /**
-     * @var string
-     */
-    public $Email;
-    /**
-     * @var string
-     */
-    public $Phone;
-    /**
-     * @var string
-     */
-    public $Fax;
-    /**
-     * @var string
-     */
-    public $RegistrantType;
-    /**
-     * @var string
-     */
-    public $VatNumber;
-    /**
-     * @var string
-     */
-    public $RegistrantDate;
-    /**
-     * @var string
-     */
-    public $NexusCategory;
-    /**
-     * @var string
-     */
-    public $RegistrantNumber;
-    /**
-     * @var string
-     */
-    public $Details;
-
+	/**
+	 * @var dateTime
+	 */
+	public $CreDate;
+	/**
+	 * @var string
+	 */
+	public $Status;
+	/**
+	 * @var string
+	 */
+	public $Handle;
+	/**
+	 * @var string
+	 */
+	public $Name;
+	/**
+	 * @var string
+	 */
+	public $OrgName;
+	/**
+	 * @var string
+	 */
+	public $Address1;
+	/**
+	 * @var string
+	 */
+	public $Address2;
+	/**
+	 * @var string
+	 */
+	public $City;
+	/**
+	 * @var string
+	 */
+	public $State;
+	/**
+	 * @var string
+	 */
+	public $PostalCode;
+	/**
+	 * @var string
+	 */
+	public $CountryCode;
+	/**
+	 * @var string
+	 */
+	public $Email;
+	/**
+	 * @var string
+	 */
+	public $Phone;
+	/**
+	 * @var string
+	 */
+	public $Fax;
+	/**
+	 * @var string
+	 */
+	public $RegistrantType;
+	/**
+	 * @var string
+	 */
+	public $VatNumber;
+	/**
+	 * @var string
+	 */
+	public $RegistrantDate;
+	/**
+	 * @var string
+	 */
+	public $NexusCategory;
+	/**
+	 * @var string
+	 */
+	public $RegistrantNumber;
+	/**
+	 * @var string
+	 */
+	public $Details;
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
@@ -2775,82 +944,82 @@ class Registrant {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Details');
 		$this->Details = (int)$val;
 	}
+
 }
 
 class Contact {
-    /**
-     * @var dateTime
-     */
-    public $CreDate;
-    /**
-     * @var string
-     */
-    public $Status;
-    /**
-     * @var string
-     */
-    public $Handle;
-    /**
-     * @var string
-     */
-    public $FirstName;
-    /**
-     * @var string
-     */
-    public $LastName;
-    /**
-     * @var string
-     */
-    public $OrgName;
-    /**
-     * @var string
-     */
-    public $Address1;
-    /**
-     * @var string
-     */
-    public $Address2;
-    /**
-     * @var string
-     */
-    public $PostalCode;
-    /**
-     * @var string
-     */
-    public $City;
-    /**
-     * @var string
-     */
-    public $State;
-    /**
-     * @var string
-     */
-    public $CountryCode;
-    /**
-     * @var string
-     */
-    public $Email;
-    /**
-     * @var string
-     */
-    public $Phone;
-    /**
-     * @var string
-     */
-    public $Fax;
-    /**
-     * @var string
-     */
-    public $Type;
-    /**
-     * @var string
-     */
-    public $Details;
-    /**
-     * @var string
-     */
-    public $OrganisationNumber;
-
+	/**
+	 * @var dateTime
+	 */
+	public $CreDate;
+	/**
+	 * @var string
+	 */
+	public $Status;
+	/**
+	 * @var string
+	 */
+	public $Handle;
+	/**
+	 * @var string
+	 */
+	public $FirstName;
+	/**
+	 * @var string
+	 */
+	public $LastName;
+	/**
+	 * @var string
+	 */
+	public $OrgName;
+	/**
+	 * @var string
+	 */
+	public $Address1;
+	/**
+	 * @var string
+	 */
+	public $Address2;
+	/**
+	 * @var string
+	 */
+	public $PostalCode;
+	/**
+	 * @var string
+	 */
+	public $City;
+	/**
+	 * @var string
+	 */
+	public $State;
+	/**
+	 * @var string
+	 */
+	public $CountryCode;
+	/**
+	 * @var string
+	 */
+	public $Email;
+	/**
+	 * @var string
+	 */
+	public $Phone;
+	/**
+	 * @var string
+	 */
+	public $Fax;
+	/**
+	 * @var string
+	 */
+	public $Type;
+	/**
+	 * @var string
+	 */
+	public $Details;
+	/**
+	 * @var string
+	 */
+	public $OrganisationNumber;
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
@@ -3012,62 +1181,62 @@ class Contact {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for OrganisationNumber');
 		$this->OrganisationNumber = (int)$val;
 	}
+
 }
 
 class NameServers {
-    /**
-     * @var NameServer
-     */
-    public $NameServer1;
-    /**
-     * @var NameServer
-     */
-    public $NameServer2;
-    /**
-     * @var NameServer
-     */
-    public $NameServer3;
-    /**
-     * @var NameServer
-     */
-    public $NameServer4;
-    /**
-     * @var NameServer
-     */
-    public $NameServer5;
-    /**
-     * @var NameServer
-     */
-    public $NameServer6;
-    /**
-     * @var NameServer
-     */
-    public $NameServer7;
-    /**
-     * @var NameServer
-     */
-    public $NameServer8;
-    /**
-     * @var NameServer
-     */
-    public $NameServer9;
-    /**
-     * @var NameServer
-     */
-    public $NameServer10;
-    /**
-     * @var NameServer
-     */
-    public $NameServer11;
-    /**
-     * @var NameServer
-     */
-    public $NameServer12;
-    /**
-     * @var NameServer
-     */
-    public $NameServer13;
-
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer1;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer2;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer3;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer4;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer5;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer6;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer7;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer8;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer9;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer10;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer11;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer12;
+	/**
+	 * @var NameServer
+	 */
+	public $NameServer13;
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
@@ -3184,38 +1353,38 @@ class NameServers {
 		
 		$this->NameServer13 = (int)$val;
 	}
+
 }
 
 class NameServer {
-    /**
-     * @var dateTime
-     */
-    public $CreDate;
-    /**
-     * @var string
-     */
-    public $Handle;
-    /**
-     * @var string
-     */
-    public $HostName;
-    /**
-     * @var string
-     */
-    public $IpAddress;
-    /**
-     * @var string
-     */
-    public $Status;
-    /**
-     * @var string
-     */
-    public $IpV6Address;
-    /**
-     * @var string
-     */
-    public $Details;
-
+	/**
+	 * @var dateTime
+	 */
+	public $CreDate;
+	/**
+	 * @var string
+	 */
+	public $Handle;
+	/**
+	 * @var string
+	 */
+	public $HostName;
+	/**
+	 * @var string
+	 */
+	public $IpAddress;
+	/**
+	 * @var string
+	 */
+	public $Status;
+	/**
+	 * @var string
+	 */
+	public $IpV6Address;
+	/**
+	 * @var string
+	 */
+	public $Details;
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
@@ -3278,54 +1447,54 @@ class NameServer {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Details');
 		$this->Details = (int)$val;
 	}
+
 }
 
 class TradeMark {
-    /**
-     * @var string
-     */
-    public $Name;
-    /**
-     * @var string
-     */
-    public $Country;
-    /**
-     * @var dateTime
-     */
-    public $Date;
-    /**
-     * @var string
-     */
-    public $Number;
-    /**
-     * @var string
-     */
-    public $Type;
-    /**
-     * @var string
-     */
-    public $Contact;
-    /**
-     * @var string
-     */
-    public $ContactLanguage;
-    /**
-     * @var string
-     */
-    public $DocumentationLanguage;
-    /**
-     * @var string
-     */
-    public $SecondContact;
-    /**
-     * @var string
-     */
-    public $ThirdContact;
-    /**
-     * @var dateTime
-     */
-    public $RegDate;
-
+	/**
+	 * @var string
+	 */
+	public $Name;
+	/**
+	 * @var string
+	 */
+	public $Country;
+	/**
+	 * @var dateTime
+	 */
+	public $Date;
+	/**
+	 * @var string
+	 */
+	public $Number;
+	/**
+	 * @var string
+	 */
+	public $Type;
+	/**
+	 * @var string
+	 */
+	public $Contact;
+	/**
+	 * @var string
+	 */
+	public $ContactLanguage;
+	/**
+	 * @var string
+	 */
+	public $DocumentationLanguage;
+	/**
+	 * @var string
+	 */
+	public $SecondContact;
+	/**
+	 * @var string
+	 */
+	public $ThirdContact;
+	/**
+	 * @var dateTime
+	 */
+	public $RegDate;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3424,30 +1593,30 @@ class TradeMark {
 		
 		$this->RegDate = (int)$val;
 	}
+
 }
 
 class DnsSecKeys {
-    /**
-     * @var DnsSecKey
-     */
-    public $DnsSecKey1;
-    /**
-     * @var DnsSecKey
-     */
-    public $DnsSecKey2;
-    /**
-     * @var DnsSecKey
-     */
-    public $DnsSecKey3;
-    /**
-     * @var DnsSecKey
-     */
-    public $DnsSecKey4;
-    /**
-     * @var DnsSecKey
-     */
-    public $DnsSecKey5;
-
+	/**
+	 * @var DnsSecKey
+	 */
+	public $DnsSecKey1;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $DnsSecKey2;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $DnsSecKey3;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $DnsSecKey4;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $DnsSecKey5;
 	/**
 	 * @param DnsSecKey $val
 	 * @throws Exception
@@ -3492,54 +1661,54 @@ class DnsSecKeys {
 		
 		$this->DnsSecKey5 = (int)$val;
 	}
+
 }
 
 class DnsSecKey {
-    /**
-     * @var string
-     */
-    public $Handle;
-    /**
-     * @var string
-     */
-    public $Status;
-    /**
-     * @var string
-     */
-    public $DigestAlgorithm;
-    /**
-     * @var string
-     */
-    public $DigestType;
-    /**
-     * @var string
-     */
-    public $Digest;
-    /**
-     * @var string
-     */
-    public $Protocol;
-    /**
-     * @var string
-     */
-    public $KeyType;
-    /**
-     * @var string
-     */
-    public $KeyAlgorithm;
-    /**
-     * @var string
-     */
-    public $KeyTag;
-    /**
-     * @var string
-     */
-    public $PublicKey;
-    /**
-     * @var string
-     */
-    public $CreDate;
-
+	/**
+	 * @var string
+	 */
+	public $Handle;
+	/**
+	 * @var string
+	 */
+	public $Status;
+	/**
+	 * @var string
+	 */
+	public $DigestAlgorithm;
+	/**
+	 * @var string
+	 */
+	public $DigestType;
+	/**
+	 * @var string
+	 */
+	public $Digest;
+	/**
+	 * @var string
+	 */
+	public $Protocol;
+	/**
+	 * @var string
+	 */
+	public $KeyType;
+	/**
+	 * @var string
+	 */
+	public $KeyAlgorithm;
+	/**
+	 * @var string
+	 */
+	public $KeyTag;
+	/**
+	 * @var string
+	 */
+	public $PublicKey;
+	/**
+	 * @var string
+	 */
+	public $CreDate;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3638,30 +1807,30 @@ class DnsSecKey {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CreDate');
 		$this->CreDate = (int)$val;
 	}
+
 }
 
 class PrivacyProxy {
-    /**
-     * @var PrivacyProxyType
-     */
-    public $Type;
-    /**
-     * @var boolean
-     */
-    public $PrivacyAdmin;
-    /**
-     * @var boolean
-     */
-    public $PrivacyTech;
-    /**
-     * @var boolean
-     */
-    public $PrivacyBilling;
-    /**
-     * @var Extensions
-     */
-    public $Extensions;
-
+	/**
+	 * @var PrivacyProxyType
+	 */
+	public $Type;
+	/**
+	 * @var boolean
+	 */
+	public $PrivacyAdmin;
+	/**
+	 * @var boolean
+	 */
+	public $PrivacyTech;
+	/**
+	 * @var boolean
+	 */
+	public $PrivacyBilling;
+	/**
+	 * @var Extensions
+	 */
+	public $Extensions;
 	/**
 	 * @param PrivacyProxyType $val
 	 * @throws Exception
@@ -3706,17 +1875,16 @@ class PrivacyProxy {
 		
 		$this->Extensions = (int)$val;
 	}
+
 }
 
-class PrivacyProxyType {
-}
+class PrivacyProxyType {}
 
 class Extensions {
-    /**
-     * @var Extension
-     */
-    public $Extension;
-
+	/**
+	 * @var Extension
+	 */
+	public $Extension;
 	/**
 	 * @param Extension $val
 	 * @throws Exception
@@ -3725,18 +1893,18 @@ class Extensions {
 		
 		$this->Extension = (int)$val;
 	}
+
 }
 
 class Extension {
-    /**
-     * @var string
-     */
-    public $Key;
-    /**
-     * @var string
-     */
-    public $Value;
-
+	/**
+	 * @var string
+	 */
+	public $Key;
+	/**
+	 * @var string
+	 */
+	public $Value;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3754,18 +1922,18 @@ class Extension {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
 		$this->Value = (int)$val;
 	}
+
 }
 
 class CreateOrder {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var Order
-     */
-    public $order;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var Order
+	 */
+	public $order;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3783,18 +1951,18 @@ class CreateOrder {
 		
 		$this->order = (int)$val;
 	}
+
 }
 
 class CreateOrderResponse {
-    /**
-     * @var Response
-     */
-    public $CreateOrderResult;
-    /**
-     * @var Order
-     */
-    public $order;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateOrderResult;
+	/**
+	 * @var Order
+	 */
+	public $order;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -3812,18 +1980,18 @@ class CreateOrderResponse {
 		
 		$this->order = (int)$val;
 	}
+
 }
 
 class SearchOrder {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var SearchOrderRequest
-     */
-    public $orderRequest;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var SearchOrderRequest
+	 */
+	public $orderRequest;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3841,50 +2009,50 @@ class SearchOrder {
 		
 		$this->orderRequest = (int)$val;
 	}
+
 }
 
 class SearchOrderRequest {
-    /**
-     * @var ArrayOfOrderType
-     */
-    public $OrderTypes;
-    /**
-     * @var ArrayOfOrderStatusType
-     */
-    public $OrderStatusTypes;
-    /**
-     * @var dateTime
-     */
-    public $FromDate;
-    /**
-     * @var dateTime
-     */
-    public $ToDate;
-    /**
-     * @var string
-     */
-    public $DomainName;
-    /**
-     * @var string
-     */
-    public $TransactionComment;
-    /**
-     * @var string
-     */
-    public $Comments;
-    /**
-     * @var boolean
-     */
-    public $IncludeDomainDetails;
-    /**
-     * @var PagingInfo
-     */
-    public $PageInfo;
-    /**
-     * @var SearchOrderSortType
-     */
-    public $OrderSort;
-
+	/**
+	 * @var OrderType[]
+	 */
+	public $OrderTypes;
+	/**
+	 * @var OrderStatusType[]
+	 */
+	public $OrderStatusTypes;
+	/**
+	 * @var dateTime
+	 */
+	public $FromDate;
+	/**
+	 * @var dateTime
+	 */
+	public $ToDate;
+	/**
+	 * @var string
+	 */
+	public $DomainName;
+	/**
+	 * @var string
+	 */
+	public $TransactionComment;
+	/**
+	 * @var string
+	 */
+	public $Comments;
+	/**
+	 * @var boolean
+	 */
+	public $IncludeDomainDetails;
+	/**
+	 * @var PagingInfo
+	 */
+	public $PageInfo;
+	/**
+	 * @var SearchOrderSortType
+	 */
+	public $OrderSort;
 	/**
 	 * @param ArrayOfOrderType $val
 	 * @throws Exception
@@ -3974,21 +2142,20 @@ class SearchOrderRequest {
 		
 		$this->OrderSort = (int)$val;
 	}
+
 }
 
-class SearchOrderSortType {
-}
+class SearchOrderSortType {}
 
 class PagingInfo {
-    /**
-     * @var int
-     */
-    public $PageIndex;
-    /**
-     * @var int
-     */
-    public $PageSize;
-
+	/**
+	 * @var int
+	 */
+	public $PageIndex;
+	/**
+	 * @var int
+	 */
+	public $PageSize;
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -4006,22 +2173,22 @@ class PagingInfo {
 		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
 		$this->PageSize = (int)$val;
 	}
+
 }
 
 class SearchOrderResponse {
-    /**
-     * @var Response
-     */
-    public $SearchOrderResult;
-    /**
-     * @var int
-     */
-    public $totalOrders;
-    /**
-     * @var ArrayOfOrder
-     */
-    public $orders;
-
+	/**
+	 * @var Response
+	 */
+	public $SearchOrderResult;
+	/**
+	 * @var int
+	 */
+	public $totalOrders;
+	/**
+	 * @var Order[]
+	 */
+	public $orders;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4048,18 +2215,18 @@ class SearchOrderResponse {
 		
 		$this->orders = (int)$val;
 	}
+
 }
 
 class GetMessages {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $orderId;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $orderId;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4077,18 +2244,18 @@ class GetMessages {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for orderId');
 		$this->orderId = (int)$val;
 	}
+
 }
 
 class GetMessagesResponse {
-    /**
-     * @var Response
-     */
-    public $GetMessagesResult;
-    /**
-     * @var ArrayOfMessage
-     */
-    public $messages;
-
+	/**
+	 * @var Response
+	 */
+	public $GetMessagesResult;
+	/**
+	 * @var Message[]
+	 */
+	public $messages;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4106,38 +2273,38 @@ class GetMessagesResponse {
 		
 		$this->messages = (int)$val;
 	}
+
 }
 
 class Message {
-    /**
-     * @var ArrayOfAttachment
-     */
-    public $Attachments;
-    /**
-     * @var string
-     */
-    public $Body;
-    /**
-     * @var dateTime
-     */
-    public $Created;
-    /**
-     * @var string
-     */
-    public $FromAddress;
-    /**
-     * @var string
-     */
-    public $Subject;
-    /**
-     * @var string
-     */
-    public $ToAddress;
-    /**
-     * @var MessageType
-     */
-    public $Type;
-
+	/**
+	 * @var Attachment[]
+	 */
+	public $Attachments;
+	/**
+	 * @var string
+	 */
+	public $Body;
+	/**
+	 * @var dateTime
+	 */
+	public $Created;
+	/**
+	 * @var string
+	 */
+	public $FromAddress;
+	/**
+	 * @var string
+	 */
+	public $Subject;
+	/**
+	 * @var string
+	 */
+	public $ToAddress;
+	/**
+	 * @var MessageType
+	 */
+	public $Type;
 	/**
 	 * @param ArrayOfAttachment $val
 	 * @throws Exception
@@ -4200,18 +2367,18 @@ class Message {
 		
 		$this->Type = (int)$val;
 	}
+
 }
 
 class Attachment {
-    /**
-     * @var base64Binary
-     */
-    public $Data;
-    /**
-     * @var string
-     */
-    public $FileName;
-
+	/**
+	 * @var base64Binary
+	 */
+	public $Data;
+	/**
+	 * @var string
+	 */
+	public $FileName;
 	/**
 	 * @param base64Binary $val
 	 * @throws Exception
@@ -4229,21 +2396,20 @@ class Attachment {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for FileName');
 		$this->FileName = (int)$val;
 	}
+
 }
 
-class MessageType {
-}
+class MessageType {}
 
 class ValidateOrder {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var Order
-     */
-    public $order;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var Order
+	 */
+	public $order;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4261,14 +2427,14 @@ class ValidateOrder {
 		
 		$this->order = (int)$val;
 	}
+
 }
 
 class ValidateOrderResponse {
-    /**
-     * @var Response
-     */
-    public $ValidateOrderResult;
-
+	/**
+	 * @var Response
+	 */
+	public $ValidateOrderResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4277,26 +2443,26 @@ class ValidateOrderResponse {
 		
 		$this->ValidateOrderResult = (int)$val;
 	}
+
 }
 
 class UploadDocumentation {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $orderId;
-    /**
-     * @var string
-     */
-    public $fileName;
-    /**
-     * @var base64Binary
-     */
-    public $content;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $orderId;
+	/**
+	 * @var string
+	 */
+	public $fileName;
+	/**
+	 * @var base64Binary
+	 */
+	public $content;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4332,14 +2498,14 @@ class UploadDocumentation {
 		
 		$this->content = (int)$val;
 	}
+
 }
 
 class UploadDocumentationResponse {
-    /**
-     * @var Response
-     */
-    public $UploadDocumentationResult;
-
+	/**
+	 * @var Response
+	 */
+	public $UploadDocumentationResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4348,26 +2514,26 @@ class UploadDocumentationResponse {
 		
 		$this->UploadDocumentationResult = (int)$val;
 	}
+
 }
 
 class CreateSupportOrder {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $subject;
-    /**
-     * @var string
-     */
-    public $body;
-    /**
-     * @var ArrayOfAttachment
-     */
-    public $attachments;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $subject;
+	/**
+	 * @var string
+	 */
+	public $body;
+	/**
+	 * @var Attachment[]
+	 */
+	public $attachments;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4403,18 +2569,18 @@ class CreateSupportOrder {
 		
 		$this->attachments = (int)$val;
 	}
+
 }
 
 class CreateSupportOrderResponse {
-    /**
-     * @var Response
-     */
-    public $CreateSupportOrderResult;
-    /**
-     * @var string
-     */
-    public $orderId;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateSupportOrderResult;
+	/**
+	 * @var string
+	 */
+	public $orderId;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4432,22 +2598,22 @@ class CreateSupportOrderResponse {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for orderId');
 		$this->orderId = (int)$val;
 	}
+
 }
 
 class UploadMessage {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $orderId;
-    /**
-     * @var Message
-     */
-    public $message;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $orderId;
+	/**
+	 * @var Message
+	 */
+	public $message;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4474,14 +2640,14 @@ class UploadMessage {
 		
 		$this->message = (int)$val;
 	}
+
 }
 
 class UploadMessageResponse {
-    /**
-     * @var Response
-     */
-    public $UploadMessageResult;
-
+	/**
+	 * @var Response
+	 */
+	public $UploadMessageResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4490,18 +2656,18 @@ class UploadMessageResponse {
 		
 		$this->UploadMessageResult = (int)$val;
 	}
+
 }
 
 class GetDomain {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $domainHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $domainHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4519,18 +2685,18 @@ class GetDomain {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for domainHandle');
 		$this->domainHandle = (int)$val;
 	}
+
 }
 
 class GetDomainResponse {
-    /**
-     * @var Response
-     */
-    public $GetDomainResult;
-    /**
-     * @var Domain
-     */
-    public $domain;
-
+	/**
+	 * @var Response
+	 */
+	public $GetDomainResult;
+	/**
+	 * @var Domain
+	 */
+	public $domain;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4548,18 +2714,18 @@ class GetDomainResponse {
 		
 		$this->domain = (int)$val;
 	}
+
 }
 
 class SearchDomain {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var SearchCriteria
-     */
-    public $criteria;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var SearchCriteria
+	 */
+	public $criteria;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4577,26 +2743,26 @@ class SearchDomain {
 		
 		$this->criteria = (int)$val;
 	}
+
 }
 
 class SearchCriteria {
-    /**
-     * @var ArrayOfClause
-     */
-    public $Clauses;
-    /**
-     * @var SearchModeType
-     */
-    public $Mode;
-    /**
-     * @var ArrayOfstring
-     */
-    public $Withoutstates;
-    /**
-     * @var ArrayOfstring
-     */
-    public $Withstates;
-
+	/**
+	 * @var Clause[]
+	 */
+	public $Clauses;
+	/**
+	 * @var SearchModeType
+	 */
+	public $Mode;
+	/**
+	 * @var string[]
+	 */
+	public $Withoutstates;
+	/**
+	 * @var string[]
+	 */
+	public $Withstates;
 	/**
 	 * @param ArrayOfClause $val
 	 * @throws Exception
@@ -4632,22 +2798,22 @@ class SearchCriteria {
 		
 		$this->Withstates = (int)$val;
 	}
+
 }
 
 class Clause {
-    /**
-     * @var string
-     */
-    public $Attribute;
-    /**
-     * @var SearchOperatorType
-     */
-    public $Operator;
-    /**
-     * @var string
-     */
-    public $Value;
-
+	/**
+	 * @var string
+	 */
+	public $Attribute;
+	/**
+	 * @var SearchOperatorType
+	 */
+	public $Operator;
+	/**
+	 * @var string
+	 */
+	public $Value;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4674,24 +2840,22 @@ class Clause {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Value');
 		$this->Value = (int)$val;
 	}
+
 }
 
-class SearchOperatorType {
-}
+class SearchOperatorType {}
 
-class SearchModeType {
-}
+class SearchModeType {}
 
 class SearchDomainResponse {
-    /**
-     * @var Response
-     */
-    public $SearchDomainResult;
-    /**
-     * @var ArrayOfDomain
-     */
-    public $domains;
-
+	/**
+	 * @var Response
+	 */
+	public $SearchDomainResult;
+	/**
+	 * @var Domain[]
+	 */
+	public $domains;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4709,18 +2873,18 @@ class SearchDomainResponse {
 		
 		$this->domains = (int)$val;
 	}
+
 }
 
 class Whois {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $domainName;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $domainName;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4738,18 +2902,18 @@ class Whois {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for domainName');
 		$this->domainName = (int)$val;
 	}
+
 }
 
 class WhoisResponse {
-    /**
-     * @var Response
-     */
-    public $WhoisResult;
-    /**
-     * @var string
-     */
-    public $whoisData;
-
+	/**
+	 * @var Response
+	 */
+	public $WhoisResult;
+	/**
+	 * @var string
+	 */
+	public $whoisData;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4767,26 +2931,26 @@ class WhoisResponse {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for whoisData');
 		$this->whoisData = (int)$val;
 	}
+
 }
 
 class AvailabilityCheck {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var ArrayOfString
-     */
-    public $domains;
-    /**
-     * @var ArrayOfString
-     */
-    public $tlds;
-    /**
-     * @var QualityType
-     */
-    public $quality;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var String[]
+	 */
+	public $domains;
+	/**
+	 * @var String[]
+	 */
+	public $tlds;
+	/**
+	 * @var QualityType
+	 */
+	public $quality;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4822,21 +2986,20 @@ class AvailabilityCheck {
 		
 		$this->quality = (int)$val;
 	}
+
 }
 
-class QualityType {
-}
+class QualityType {}
 
 class AvailabilityCheckResponse {
-    /**
-     * @var Response
-     */
-    public $AvailabilityCheckResult;
-    /**
-     * @var ArrayOfAvailabilityCheckResult
-     */
-    public $results;
-
+	/**
+	 * @var Response
+	 */
+	public $AvailabilityCheckResult;
+	/**
+	 * @var AvailabilityCheckResult[]
+	 */
+	public $results;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4854,26 +3017,26 @@ class AvailabilityCheckResponse {
 		
 		$this->results = (int)$val;
 	}
+
 }
 
 class AvailabilityCheckResult {
-    /**
-     * @var string
-     */
-    public $DomainName;
-    /**
-     * @var QualityType
-     */
-    public $Quality;
-    /**
-     * @var int
-     */
-    public $StatusCode;
-    /**
-     * @var string
-     */
-    public $StatusMessage;
-
+	/**
+	 * @var string
+	 */
+	public $DomainName;
+	/**
+	 * @var QualityType
+	 */
+	public $Quality;
+	/**
+	 * @var int
+	 */
+	public $StatusCode;
+	/**
+	 * @var string
+	 */
+	public $StatusMessage;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4909,18 +3072,18 @@ class AvailabilityCheckResult {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for StatusMessage');
 		$this->StatusMessage = (int)$val;
 	}
+
 }
 
 class GetRegistrant {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $registrantHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $registrantHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4938,18 +3101,18 @@ class GetRegistrant {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for registrantHandle');
 		$this->registrantHandle = (int)$val;
 	}
+
 }
 
 class GetRegistrantResponse {
-    /**
-     * @var Response
-     */
-    public $GetRegistrantResult;
-    /**
-     * @var Registrant
-     */
-    public $registrant;
-
+	/**
+	 * @var Response
+	 */
+	public $GetRegistrantResult;
+	/**
+	 * @var Registrant
+	 */
+	public $registrant;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -4967,18 +3130,18 @@ class GetRegistrantResponse {
 		
 		$this->registrant = (int)$val;
 	}
+
 }
 
 class CreateRegistrant {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var Registrant
-     */
-    public $registrant;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var Registrant
+	 */
+	public $registrant;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -4996,18 +3159,18 @@ class CreateRegistrant {
 		
 		$this->registrant = (int)$val;
 	}
+
 }
 
 class CreateRegistrantResponse {
-    /**
-     * @var Response
-     */
-    public $CreateRegistrantResult;
-    /**
-     * @var Registrant
-     */
-    public $registrant;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateRegistrantResult;
+	/**
+	 * @var Registrant
+	 */
+	public $registrant;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5025,18 +3188,18 @@ class CreateRegistrantResponse {
 		
 		$this->registrant = (int)$val;
 	}
+
 }
 
 class DeleteRegistrant {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $registrantHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $registrantHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5054,14 +3217,14 @@ class DeleteRegistrant {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for registrantHandle');
 		$this->registrantHandle = (int)$val;
 	}
+
 }
 
 class DeleteRegistrantResponse {
-    /**
-     * @var Response
-     */
-    public $DeleteRegistrantResult;
-
+	/**
+	 * @var Response
+	 */
+	public $DeleteRegistrantResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5070,18 +3233,18 @@ class DeleteRegistrantResponse {
 		
 		$this->DeleteRegistrantResult = (int)$val;
 	}
+
 }
 
 class SearchRegistrant {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var SearchCriteria
-     */
-    public $criteria;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var SearchCriteria
+	 */
+	public $criteria;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5099,18 +3262,18 @@ class SearchRegistrant {
 		
 		$this->criteria = (int)$val;
 	}
+
 }
 
 class SearchRegistrantResponse {
-    /**
-     * @var Response
-     */
-    public $SearchRegistrantResult;
-    /**
-     * @var ArrayOfRegistrant
-     */
-    public $registrants;
-
+	/**
+	 * @var Response
+	 */
+	public $SearchRegistrantResult;
+	/**
+	 * @var Registrant[]
+	 */
+	public $registrants;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5128,18 +3291,18 @@ class SearchRegistrantResponse {
 		
 		$this->registrants = (int)$val;
 	}
+
 }
 
 class GetContact {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $contactHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $contactHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5157,18 +3320,18 @@ class GetContact {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for contactHandle');
 		$this->contactHandle = (int)$val;
 	}
+
 }
 
 class GetRegistrantVerificationInfo {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $value;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $value;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5186,18 +3349,18 @@ class GetRegistrantVerificationInfo {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for value');
 		$this->value = (int)$val;
 	}
+
 }
 
 class GetRegistrantVerificationInfoResponse {
-    /**
-     * @var Response
-     */
-    public $GetRegistrantVerificationInfoResult;
-    /**
-     * @var RegistrantVerificationInfo
-     */
-    public $verificationInfo;
-
+	/**
+	 * @var Response
+	 */
+	public $GetRegistrantVerificationInfoResult;
+	/**
+	 * @var RegistrantVerificationInfo
+	 */
+	public $verificationInfo;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5215,22 +3378,22 @@ class GetRegistrantVerificationInfoResponse {
 		
 		$this->verificationInfo = (int)$val;
 	}
+
 }
 
 class RegistrantVerificationInfo {
-    /**
-     * @var string
-     */
-    public $EmailAddress;
-    /**
-     * @var RegistrantVerificationStatus
-     */
-    public $VerificationStatus;
-    /**
-     * @var RegistrantVerificationDetails
-     */
-    public $VerificationDetails;
-
+	/**
+	 * @var string
+	 */
+	public $EmailAddress;
+	/**
+	 * @var RegistrantVerificationStatus
+	 */
+	public $VerificationStatus;
+	/**
+	 * @var RegistrantVerificationDetails
+	 */
+	public $VerificationDetails;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5257,25 +3420,24 @@ class RegistrantVerificationInfo {
 		
 		$this->VerificationDetails = (int)$val;
 	}
+
 }
 
-class RegistrantVerificationStatus {
-}
+class RegistrantVerificationStatus {}
 
 class RegistrantVerificationDetails {
-    /**
-     * @var string
-     */
-    public $VerifiedBy;
-    /**
-     * @var dateTime
-     */
-    public $VerificationDate;
-    /**
-     * @var ArrayOfMessage
-     */
-    public $Messages;
-
+	/**
+	 * @var string
+	 */
+	public $VerifiedBy;
+	/**
+	 * @var dateTime
+	 */
+	public $VerificationDate;
+	/**
+	 * @var Message[]
+	 */
+	public $Messages;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5302,18 +3464,18 @@ class RegistrantVerificationDetails {
 		
 		$this->Messages = (int)$val;
 	}
+
 }
 
 class DoRegistrantVerification {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $value;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $value;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5331,14 +3493,14 @@ class DoRegistrantVerification {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for value');
 		$this->value = (int)$val;
 	}
+
 }
 
 class DoRegistrantVerificationResponse {
-    /**
-     * @var Response
-     */
-    public $DoRegistrantVerificationResult;
-
+	/**
+	 * @var Response
+	 */
+	public $DoRegistrantVerificationResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5347,18 +3509,18 @@ class DoRegistrantVerificationResponse {
 		
 		$this->DoRegistrantVerificationResult = (int)$val;
 	}
+
 }
 
 class GetRegistrantVerificationStatus {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $value;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $value;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5376,18 +3538,18 @@ class GetRegistrantVerificationStatus {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for value');
 		$this->value = (int)$val;
 	}
+
 }
 
 class GetRegistrantVerificationStatusResponse {
-    /**
-     * @var Response
-     */
-    public $GetRegistrantVerificationStatusResult;
-    /**
-     * @var RegistrantVerificationStatus
-     */
-    public $verificationStatus;
-
+	/**
+	 * @var Response
+	 */
+	public $GetRegistrantVerificationStatusResult;
+	/**
+	 * @var RegistrantVerificationStatus
+	 */
+	public $verificationStatus;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5405,22 +3567,22 @@ class GetRegistrantVerificationStatusResponse {
 		
 		$this->verificationStatus = (int)$val;
 	}
+
 }
 
 class UploadRegistrantVerificationMessage {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @var RegistrantVerificationDetails
-     */
-    public $details;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $value;
+	/**
+	 * @var RegistrantVerificationDetails
+	 */
+	public $details;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5447,14 +3609,14 @@ class UploadRegistrantVerificationMessage {
 		
 		$this->details = (int)$val;
 	}
+
 }
 
 class UploadRegistrantVerificationMessageResponse {
-    /**
-     * @var Response
-     */
-    public $UploadRegistrantVerificationMessageResult;
-
+	/**
+	 * @var Response
+	 */
+	public $UploadRegistrantVerificationMessageResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5463,18 +3625,18 @@ class UploadRegistrantVerificationMessageResponse {
 		
 		$this->UploadRegistrantVerificationMessageResult = (int)$val;
 	}
+
 }
 
 class GetContactResponse {
-    /**
-     * @var Response
-     */
-    public $GetContactResult;
-    /**
-     * @var Contact
-     */
-    public $contact;
-
+	/**
+	 * @var Response
+	 */
+	public $GetContactResult;
+	/**
+	 * @var Contact
+	 */
+	public $contact;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5492,18 +3654,18 @@ class GetContactResponse {
 		
 		$this->contact = (int)$val;
 	}
+
 }
 
 class CreateContact {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var Contact
-     */
-    public $contact;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var Contact
+	 */
+	public $contact;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5521,18 +3683,18 @@ class CreateContact {
 		
 		$this->contact = (int)$val;
 	}
+
 }
 
 class CreateContactResponse {
-    /**
-     * @var Response
-     */
-    public $CreateContactResult;
-    /**
-     * @var Contact
-     */
-    public $contact;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateContactResult;
+	/**
+	 * @var Contact
+	 */
+	public $contact;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5550,18 +3712,18 @@ class CreateContactResponse {
 		
 		$this->contact = (int)$val;
 	}
+
 }
 
 class UpdateContact {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var Contact
-     */
-    public $contact;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var Contact
+	 */
+	public $contact;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5579,14 +3741,14 @@ class UpdateContact {
 		
 		$this->contact = (int)$val;
 	}
+
 }
 
 class UpdateContactResponse {
-    /**
-     * @var Response
-     */
-    public $UpdateContactResult;
-
+	/**
+	 * @var Response
+	 */
+	public $UpdateContactResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5595,18 +3757,18 @@ class UpdateContactResponse {
 		
 		$this->UpdateContactResult = (int)$val;
 	}
+
 }
 
 class DeleteContact {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $contactHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $contactHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5624,14 +3786,14 @@ class DeleteContact {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for contactHandle');
 		$this->contactHandle = (int)$val;
 	}
+
 }
 
 class DeleteContactResponse {
-    /**
-     * @var Response
-     */
-    public $DeleteContactResult;
-
+	/**
+	 * @var Response
+	 */
+	public $DeleteContactResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5640,18 +3802,18 @@ class DeleteContactResponse {
 		
 		$this->DeleteContactResult = (int)$val;
 	}
+
 }
 
 class SearchContact {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var SearchCriteria
-     */
-    public $criteria;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var SearchCriteria
+	 */
+	public $criteria;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5669,18 +3831,18 @@ class SearchContact {
 		
 		$this->criteria = (int)$val;
 	}
+
 }
 
 class SearchContactResponse {
-    /**
-     * @var Response
-     */
-    public $SearchContactResult;
-    /**
-     * @var ArrayOfContact
-     */
-    public $contacts;
-
+	/**
+	 * @var Response
+	 */
+	public $SearchContactResult;
+	/**
+	 * @var Contact[]
+	 */
+	public $contacts;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5698,18 +3860,18 @@ class SearchContactResponse {
 		
 		$this->contacts = (int)$val;
 	}
+
 }
 
 class GetNameServer {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $nameServerHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $nameServerHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5727,18 +3889,18 @@ class GetNameServer {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for nameServerHandle');
 		$this->nameServerHandle = (int)$val;
 	}
+
 }
 
 class GetNameServerResponse {
-    /**
-     * @var Response
-     */
-    public $GetNameServerResult;
-    /**
-     * @var NameServer
-     */
-    public $nameServer;
-
+	/**
+	 * @var Response
+	 */
+	public $GetNameServerResult;
+	/**
+	 * @var NameServer
+	 */
+	public $nameServer;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5756,18 +3918,18 @@ class GetNameServerResponse {
 		
 		$this->nameServer = (int)$val;
 	}
+
 }
 
 class CreateNameServer {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var NameServer
-     */
-    public $nameServer;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var NameServer
+	 */
+	public $nameServer;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5785,18 +3947,18 @@ class CreateNameServer {
 		
 		$this->nameServer = (int)$val;
 	}
+
 }
 
 class CreateNameServerResponse {
-    /**
-     * @var Response
-     */
-    public $CreateNameServerResult;
-    /**
-     * @var NameServer
-     */
-    public $nameServer;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateNameServerResult;
+	/**
+	 * @var NameServer
+	 */
+	public $nameServer;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5814,18 +3976,18 @@ class CreateNameServerResponse {
 		
 		$this->nameServer = (int)$val;
 	}
+
 }
 
 class DeleteNameServer {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $nameServerHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $nameServerHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5843,14 +4005,14 @@ class DeleteNameServer {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for nameServerHandle');
 		$this->nameServerHandle = (int)$val;
 	}
+
 }
 
 class DeleteNameServerResponse {
-    /**
-     * @var Response
-     */
-    public $DeleteNameServerResult;
-
+	/**
+	 * @var Response
+	 */
+	public $DeleteNameServerResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5859,18 +4021,18 @@ class DeleteNameServerResponse {
 		
 		$this->DeleteNameServerResult = (int)$val;
 	}
+
 }
 
 class SearchNameServer {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var SearchCriteria
-     */
-    public $criteria;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var SearchCriteria
+	 */
+	public $criteria;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5888,18 +4050,18 @@ class SearchNameServer {
 		
 		$this->criteria = (int)$val;
 	}
+
 }
 
 class SearchNameServerResponse {
-    /**
-     * @var Response
-     */
-    public $SearchNameServerResult;
-    /**
-     * @var ArrayOfNameServer
-     */
-    public $nameServers;
-
+	/**
+	 * @var Response
+	 */
+	public $SearchNameServerResult;
+	/**
+	 * @var NameServer[]
+	 */
+	public $nameServers;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5917,18 +4079,18 @@ class SearchNameServerResponse {
 		
 		$this->nameServers = (int)$val;
 	}
+
 }
 
 class PollMessage {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var MessageType
-     */
-    public $msgType;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var MessageType
+	 */
+	public $msgType;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -5946,22 +4108,22 @@ class PollMessage {
 		
 		$this->msgType = (int)$val;
 	}
+
 }
 
 class PollMessageResponse {
-    /**
-     * @var Response
-     */
-    public $PollMessageResult;
-    /**
-     * @var int
-     */
-    public $msgCount;
-    /**
-     * @var QueueItem
-     */
-    public $item;
-
+	/**
+	 * @var Response
+	 */
+	public $PollMessageResult;
+	/**
+	 * @var int
+	 */
+	public $msgCount;
+	/**
+	 * @var QueueItem
+	 */
+	public $item;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -5988,46 +4150,46 @@ class PollMessageResponse {
 		
 		$this->item = (int)$val;
 	}
+
 }
 
 class QueueItem {
-    /**
-     * @var ArrayOfAttachment
-     */
-    public $Attachments;
-    /**
-     * @var string
-     */
-    public $DomainHandle;
-    /**
-     * @var string
-     */
-    public $DomainName;
-    /**
-     * @var string
-     */
-    public $Msg;
-    /**
-     * @var int
-     */
-    public $MsgId;
-    /**
-     * @var MessageType
-     */
-    public $MsgType;
-    /**
-     * @var string
-     */
-    public $OrderId;
-    /**
-     * @var OrderStatusType
-     */
-    public $OrderStatus;
-    /**
-     * @var ArrayOfCallbackStatus
-     */
-    public $StatusList;
-
+	/**
+	 * @var Attachment[]
+	 */
+	public $Attachments;
+	/**
+	 * @var string
+	 */
+	public $DomainHandle;
+	/**
+	 * @var string
+	 */
+	public $DomainName;
+	/**
+	 * @var string
+	 */
+	public $Msg;
+	/**
+	 * @var int
+	 */
+	public $MsgId;
+	/**
+	 * @var MessageType
+	 */
+	public $MsgType;
+	/**
+	 * @var string
+	 */
+	public $OrderId;
+	/**
+	 * @var OrderStatusType
+	 */
+	public $OrderStatus;
+	/**
+	 * @var CallbackStatus[]
+	 */
+	public $StatusList;
 	/**
 	 * @param ArrayOfAttachment $val
 	 * @throws Exception
@@ -6108,18 +4270,18 @@ class QueueItem {
 		
 		$this->StatusList = (int)$val;
 	}
+
 }
 
 class CallbackStatus {
-    /**
-     * @var string
-     */
-    public $Message;
-    /**
-     * @var string
-     */
-    public $Status;
-
+	/**
+	 * @var string
+	 */
+	public $Message;
+	/**
+	 * @var string
+	 */
+	public $Status;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6137,18 +4299,18 @@ class CallbackStatus {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Status');
 		$this->Status = (int)$val;
 	}
+
 }
 
 class AckMessage {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var int
-     */
-    public $msgId;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var int
+	 */
+	public $msgId;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6166,14 +4328,14 @@ class AckMessage {
 		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
 		$this->msgId = (int)$val;
 	}
+
 }
 
 class AckMessageResponse {
-    /**
-     * @var Response
-     */
-    public $AckMessageResult;
-
+	/**
+	 * @var Response
+	 */
+	public $AckMessageResult;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6182,18 +4344,18 @@ class AckMessageResponse {
 		
 		$this->AckMessageResult = (int)$val;
 	}
+
 }
 
 class GetMessageQueue {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var int
-     */
-    public $msgId;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var int
+	 */
+	public $msgId;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6211,18 +4373,18 @@ class GetMessageQueue {
 		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
 		$this->msgId = (int)$val;
 	}
+
 }
 
 class GetMessageQueueResponse {
-    /**
-     * @var Response
-     */
-    public $GetMessageQueueResult;
-    /**
-     * @var QueueItem
-     */
-    public $item;
-
+	/**
+	 * @var Response
+	 */
+	public $GetMessageQueueResult;
+	/**
+	 * @var QueueItem
+	 */
+	public $item;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6240,18 +4402,18 @@ class GetMessageQueueResponse {
 		
 		$this->item = (int)$val;
 	}
+
 }
 
 class GetDnsSecKey {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $dnsSecKeyHandle;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var string
+	 */
+	public $dnsSecKeyHandle;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6269,18 +4431,18 @@ class GetDnsSecKey {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for dnsSecKeyHandle');
 		$this->dnsSecKeyHandle = (int)$val;
 	}
+
 }
 
 class GetDnsSecKeyResponse {
-    /**
-     * @var Response
-     */
-    public $GetDnsSecKeyResult;
-    /**
-     * @var DnsSecKey
-     */
-    public $dnsSecKey;
-
+	/**
+	 * @var Response
+	 */
+	public $GetDnsSecKeyResult;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $dnsSecKey;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6298,18 +4460,18 @@ class GetDnsSecKeyResponse {
 		
 		$this->dnsSecKey = (int)$val;
 	}
+
 }
 
 class CreateDnsSecKey {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var DnsSecKey
-     */
-    public $dnsSecKey;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $dnsSecKey;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6327,18 +4489,18 @@ class CreateDnsSecKey {
 		
 		$this->dnsSecKey = (int)$val;
 	}
+
 }
 
 class CreateDnsSecKeyResponse {
-    /**
-     * @var Response
-     */
-    public $CreateDnsSecKeyResult;
-    /**
-     * @var DnsSecKey
-     */
-    public $dnsSecKey;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateDnsSecKeyResult;
+	/**
+	 * @var DnsSecKey
+	 */
+	public $dnsSecKey;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6356,18 +4518,18 @@ class CreateDnsSecKeyResponse {
 		
 		$this->dnsSecKey = (int)$val;
 	}
+
 }
 
 class SearchDnsSecKey {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var SearchCriteria
-     */
-    public $criteria;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var SearchCriteria
+	 */
+	public $criteria;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6385,18 +4547,18 @@ class SearchDnsSecKey {
 		
 		$this->criteria = (int)$val;
 	}
+
 }
 
 class SearchDnsSecKeyResponse {
-    /**
-     * @var Response
-     */
-    public $SearchDnsSecKeyResult;
-    /**
-     * @var ArrayOfDnsSecKey
-     */
-    public $dnsSecKeys;
-
+	/**
+	 * @var Response
+	 */
+	public $SearchDnsSecKeyResult;
+	/**
+	 * @var DnsSecKey[]
+	 */
+	public $dnsSecKeys;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6414,18 +4576,18 @@ class SearchDnsSecKeyResponse {
 		
 		$this->dnsSecKeys = (int)$val;
 	}
+
 }
 
 class CreateDocumentation {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var ArrayOfAttachment
-     */
-    public $attachments;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var Attachment[]
+	 */
+	public $attachments;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6443,18 +4605,18 @@ class CreateDocumentation {
 		
 		$this->attachments = (int)$val;
 	}
+
 }
 
 class CreateDocumentationResponse {
-    /**
-     * @var Response
-     */
-    public $CreateDocumentationResult;
-    /**
-     * @var int
-     */
-    public $documentationId;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateDocumentationResult;
+	/**
+	 * @var int
+	 */
+	public $documentationId;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6472,18 +4634,18 @@ class CreateDocumentationResponse {
 		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
 		$this->documentationId = (int)$val;
 	}
+
 }
 
 class CreateApprovalDocumentation {
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var ApprovalDocumentation
-     */
-    public $approvalDocumentation;
-
+	/**
+	 * @var string
+	 */
+	public $sessionId;
+	/**
+	 * @var ApprovalDocumentation
+	 */
+	public $approvalDocumentation;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -6501,33 +4663,32 @@ class CreateApprovalDocumentation {
 		
 		$this->approvalDocumentation = (int)$val;
 	}
+
 }
 
-class ApprovalDocumentationType {
-}
+class ApprovalDocumentationType {}
 
 class ApprovalDocumentation {
-    /**
-     * @var ApprovalDocumentationType
-     */
-    public $Type;
-    /**
-     * @var ArrayOfstring
-     */
-    public $ObjectNames;
-    /**
-     * @var string
-     */
-    public $OrderId;
-    /**
-     * @var ArrayOfAttachment
-     */
-    public $Attachments;
-    /**
-     * @var Extensions
-     */
-    public $Extensions;
-
+	/**
+	 * @var ApprovalDocumentationType
+	 */
+	public $Type;
+	/**
+	 * @var string[]
+	 */
+	public $ObjectNames;
+	/**
+	 * @var string
+	 */
+	public $OrderId;
+	/**
+	 * @var Attachment[]
+	 */
+	public $Attachments;
+	/**
+	 * @var Extensions
+	 */
+	public $Extensions;
 	/**
 	 * @param ApprovalDocumentationType $val
 	 * @throws Exception
@@ -6572,18 +4733,18 @@ class ApprovalDocumentation {
 		
 		$this->Extensions = (int)$val;
 	}
+
 }
 
 class CreateApprovalDocumentationResponse {
-    /**
-     * @var Response
-     */
-    public $CreateApprovalDocumentationResult;
-    /**
-     * @var string
-     */
-    public $documentationId;
-
+	/**
+	 * @var Response
+	 */
+	public $CreateApprovalDocumentationResult;
+	/**
+	 * @var string
+	 */
+	public $documentationId;
 	/**
 	 * @param Response $val
 	 * @throws Exception
@@ -6601,8 +4762,141 @@ class CreateApprovalDocumentationResponse {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for documentationId');
 		$this->documentationId = (int)$val;
 	}
+
 }
 
+/**
+ * AscioServicesClient
+ */
+class AscioServicesClient extends SoapClient {
+
+	const WSDL_FILE = "AscioService.wsdl";
+	private $classmap = array(
+		'LogIn' => 'LogIn',
+		'Session' => 'Session',
+		'LogInResponse' => 'LogInResponse',
+		'Response' => 'Response',
+		'LogOut' => 'LogOut',
+		'LogOutResponse' => 'LogOutResponse',
+		'GetOrder' => 'GetOrder',
+		'GetOrderResponse' => 'GetOrderResponse',
+		'Order' => 'Order',
+		'OrderType' => 'OrderType',
+		'OrderStatusType' => 'OrderStatusType',
+		'Domain' => 'Domain',
+		'Registrant' => 'Registrant',
+		'Contact' => 'Contact',
+		'NameServers' => 'NameServers',
+		'NameServer' => 'NameServer',
+		'TradeMark' => 'TradeMark',
+		'DnsSecKeys' => 'DnsSecKeys',
+		'DnsSecKey' => 'DnsSecKey',
+		'PrivacyProxy' => 'PrivacyProxy',
+		'PrivacyProxyType' => 'PrivacyProxyType',
+		'Extensions' => 'Extensions',
+		'Extension' => 'Extension',
+		'CreateOrder' => 'CreateOrder',
+		'CreateOrderResponse' => 'CreateOrderResponse',
+		'SearchOrder' => 'SearchOrder',
+		'SearchOrderRequest' => 'SearchOrderRequest',
+		'SearchOrderSortType' => 'SearchOrderSortType',
+		'PagingInfo' => 'PagingInfo',
+		'SearchOrderResponse' => 'SearchOrderResponse',
+		'GetMessages' => 'GetMessages',
+		'GetMessagesResponse' => 'GetMessagesResponse',
+		'Message' => 'Message',
+		'Attachment' => 'Attachment',
+		'MessageType' => 'MessageType',
+		'ValidateOrder' => 'ValidateOrder',
+		'ValidateOrderResponse' => 'ValidateOrderResponse',
+		'UploadDocumentation' => 'UploadDocumentation',
+		'UploadDocumentationResponse' => 'UploadDocumentationResponse',
+		'CreateSupportOrder' => 'CreateSupportOrder',
+		'CreateSupportOrderResponse' => 'CreateSupportOrderResponse',
+		'UploadMessage' => 'UploadMessage',
+		'UploadMessageResponse' => 'UploadMessageResponse',
+		'GetDomain' => 'GetDomain',
+		'GetDomainResponse' => 'GetDomainResponse',
+		'SearchDomain' => 'SearchDomain',
+		'SearchCriteria' => 'SearchCriteria',
+		'Clause' => 'Clause',
+		'SearchOperatorType' => 'SearchOperatorType',
+		'SearchModeType' => 'SearchModeType',
+		'SearchDomainResponse' => 'SearchDomainResponse',
+		'Whois' => 'Whois',
+		'WhoisResponse' => 'WhoisResponse',
+		'AvailabilityCheck' => 'AvailabilityCheck',
+		'QualityType' => 'QualityType',
+		'AvailabilityCheckResponse' => 'AvailabilityCheckResponse',
+		'AvailabilityCheckResult' => 'AvailabilityCheckResult',
+		'GetRegistrant' => 'GetRegistrant',
+		'GetRegistrantResponse' => 'GetRegistrantResponse',
+		'CreateRegistrant' => 'CreateRegistrant',
+		'CreateRegistrantResponse' => 'CreateRegistrantResponse',
+		'DeleteRegistrant' => 'DeleteRegistrant',
+		'DeleteRegistrantResponse' => 'DeleteRegistrantResponse',
+		'SearchRegistrant' => 'SearchRegistrant',
+		'SearchRegistrantResponse' => 'SearchRegistrantResponse',
+		'GetContact' => 'GetContact',
+		'GetRegistrantVerificationInfo' => 'GetRegistrantVerificationInfo',
+		'GetRegistrantVerificationInfoResponse' => 'GetRegistrantVerificationInfoResponse',
+		'RegistrantVerificationInfo' => 'RegistrantVerificationInfo',
+		'RegistrantVerificationStatus' => 'RegistrantVerificationStatus',
+		'RegistrantVerificationDetails' => 'RegistrantVerificationDetails',
+		'DoRegistrantVerification' => 'DoRegistrantVerification',
+		'DoRegistrantVerificationResponse' => 'DoRegistrantVerificationResponse',
+		'GetRegistrantVerificationStatus' => 'GetRegistrantVerificationStatus',
+		'GetRegistrantVerificationStatusResponse' => 'GetRegistrantVerificationStatusResponse',
+		'UploadRegistrantVerificationMessage' => 'UploadRegistrantVerificationMessage',
+		'UploadRegistrantVerificationMessageResponse' => 'UploadRegistrantVerificationMessageResponse',
+		'GetContactResponse' => 'GetContactResponse',
+		'CreateContact' => 'CreateContact',
+		'CreateContactResponse' => 'CreateContactResponse',
+		'UpdateContact' => 'UpdateContact',
+		'UpdateContactResponse' => 'UpdateContactResponse',
+		'DeleteContact' => 'DeleteContact',
+		'DeleteContactResponse' => 'DeleteContactResponse',
+		'SearchContact' => 'SearchContact',
+		'SearchContactResponse' => 'SearchContactResponse',
+		'GetNameServer' => 'GetNameServer',
+		'GetNameServerResponse' => 'GetNameServerResponse',
+		'CreateNameServer' => 'CreateNameServer',
+		'CreateNameServerResponse' => 'CreateNameServerResponse',
+		'DeleteNameServer' => 'DeleteNameServer',
+		'DeleteNameServerResponse' => 'DeleteNameServerResponse',
+		'SearchNameServer' => 'SearchNameServer',
+		'SearchNameServerResponse' => 'SearchNameServerResponse',
+		'PollMessage' => 'PollMessage',
+		'PollMessageResponse' => 'PollMessageResponse',
+		'QueueItem' => 'QueueItem',
+		'CallbackStatus' => 'CallbackStatus',
+		'AckMessage' => 'AckMessage',
+		'AckMessageResponse' => 'AckMessageResponse',
+		'GetMessageQueue' => 'GetMessageQueue',
+		'GetMessageQueueResponse' => 'GetMessageQueueResponse',
+		'GetDnsSecKey' => 'GetDnsSecKey',
+		'GetDnsSecKeyResponse' => 'GetDnsSecKeyResponse',
+		'CreateDnsSecKey' => 'CreateDnsSecKey',
+		'CreateDnsSecKeyResponse' => 'CreateDnsSecKeyResponse',
+		'SearchDnsSecKey' => 'SearchDnsSecKey',
+		'SearchDnsSecKeyResponse' => 'SearchDnsSecKeyResponse',
+		'CreateDocumentation' => 'CreateDocumentation',
+		'CreateDocumentationResponse' => 'CreateDocumentationResponse',
+		'CreateApprovalDocumentation' => 'CreateApprovalDocumentation',
+		'ApprovalDocumentationType' => 'ApprovalDocumentationType',
+		'ApprovalDocumentation' => 'ApprovalDocumentation',
+		'CreateApprovalDocumentationResponse' => 'CreateApprovalDocumentationResponse',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

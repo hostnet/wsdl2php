@@ -13,5 +13,14 @@ class LookupAttributeArrayType {
 	 * @var \Controle\LookupAttributeType | The condition of the item.
 	 */
 	public $LookupAttribute;
+	/**
+	 * @param LookupAttributeType $val
+	 * @throws Exception
+	 */
+	public function setLookupAttribute($val) {
+		
+		$this->LookupAttribute = (int)$val;
+	}
+
 }
 

@@ -24,5 +24,41 @@ class StoreCustomListingHeaderLinkType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setLinkID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->LinkID = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setOrder($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Order = (int)$val;
+	}
+
+	/**
+	 * @param StoreCustomListingHeaderLinkCodeType $val
+	 * @throws Exception
+	 */
+	public function setLinkType($val) {
+		
+		$this->LinkType = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

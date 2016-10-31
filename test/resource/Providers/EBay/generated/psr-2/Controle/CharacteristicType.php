@@ -70,5 +70,77 @@ class CharacteristicType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param int $val
+     * @throws Exception
+     */
+    public function setAttributeID($val) {
+        if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+        $this->AttributeID = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDateFormat($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DateFormat');
+        $this->DateFormat = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDisplaySequence($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DisplaySequence');
+        $this->DisplaySequence = (int)$val;
+    }
+
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setDisplayUOM($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for DisplayUOM');
+        $this->DisplayUOM = (int)$val;
+    }
+
+    /**
+     * @param LabelType $val
+     * @throws Exception
+     */
+    public function setLabel($val) {
+        
+        $this->Label = (int)$val;
+    }
+
+    /**
+     * @param SortOrderCodeType $val
+     * @throws Exception
+     */
+    public function setSortOrder($val) {
+        
+        $this->SortOrder = (int)$val;
+    }
+
+    /**
+     * @param ValType $val
+     * @throws Exception
+     */
+    public function setValueList($val) {
+        
+        $this->ValueList = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

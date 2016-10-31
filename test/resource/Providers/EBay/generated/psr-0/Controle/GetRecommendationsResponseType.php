@@ -37,5 +37,50 @@ class GetRecommendationsResponseType extends \Controle\AbstractResponseType {
 	 * use one of the suggested product IDs to list the item with Pre-filled Item Information.
 	 */
 	public $ProductRecommendations;
+	/**
+	 * @param ListingAnalyzerRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setListingAnalyzerRecommendations($val) {
+		
+		$this->ListingAnalyzerRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param SIFFTASRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setSIFFTASRecommendations($val) {
+		
+		$this->SIFFTASRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param PricingRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setPricingRecommendations($val) {
+		
+		$this->PricingRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param AttributeRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setAttributeRecommendations($val) {
+		
+		$this->AttributeRecommendations = (int)$val;
+	}
+
+	/**
+	 * @param ProductRecommendationsType $val
+	 * @throws Exception
+	 */
+	public function setProductRecommendations($val) {
+		
+		$this->ProductRecommendations = (int)$val;
+	}
+
 }
 

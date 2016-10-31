@@ -44,5 +44,77 @@ class CrossPromotionPreferencesType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param boolean $val
+     * @throws Exception
+     */
+    public function setCrossPromotionEnabled($val) {
+        
+        $this->CrossPromotionEnabled = (int)$val;
+    }
+
+    /**
+     * @param ItemFormatSortFilterCodeType $val
+     * @throws Exception
+     */
+    public function setCrossSellItemFormatSortFilter($val) {
+        
+        $this->CrossSellItemFormatSortFilter = (int)$val;
+    }
+
+    /**
+     * @param GallerySortFilterCodeType $val
+     * @throws Exception
+     */
+    public function setCrossSellGallerySortFilter($val) {
+        
+        $this->CrossSellGallerySortFilter = (int)$val;
+    }
+
+    /**
+     * @param ItemSortFilterCodeType $val
+     * @throws Exception
+     */
+    public function setCrossSellItemSortFilter($val) {
+        
+        $this->CrossSellItemSortFilter = (int)$val;
+    }
+
+    /**
+     * @param ItemFormatSortFilterCodeType $val
+     * @throws Exception
+     */
+    public function setUpSellItemFormatSortFilter($val) {
+        
+        $this->UpSellItemFormatSortFilter = (int)$val;
+    }
+
+    /**
+     * @param GallerySortFilterCodeType $val
+     * @throws Exception
+     */
+    public function setUpSellGallerySortFilter($val) {
+        
+        $this->UpSellGallerySortFilter = (int)$val;
+    }
+
+    /**
+     * @param ItemSortFilterCodeType $val
+     * @throws Exception
+     */
+    public function setUpSellItemSortFilter($val) {
+        
+        $this->UpSellItemSortFilter = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

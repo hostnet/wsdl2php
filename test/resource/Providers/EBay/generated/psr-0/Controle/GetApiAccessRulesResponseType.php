@@ -11,5 +11,14 @@ class GetApiAccessRulesResponseType extends \Controle\AbstractResponseType {
 	 * current daily and hourly usage, and other values.
 	 */
 	public $ApiAccessRule;
+	/**
+	 * @param ApiAccessRuleType $val
+	 * @throws Exception
+	 */
+	public function setApiAccessRule($val) {
+		
+		$this->ApiAccessRule = (int)$val;
+	}
+
 }
 

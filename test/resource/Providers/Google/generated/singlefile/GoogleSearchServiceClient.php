@@ -45,85 +45,6 @@ class GoogleSearchResult {
 	 * @var double
 	 */
 	public $searchTime;
-}
-
-class DirectoryCategory {
-	/**
-	 * @var string
-	 */
-	public $fullViewableName;
-	/**
-	 * @var string
-	 */
-	public $specialEncoding;
-}
-
-/**
- * GoogleSearchServiceClient
- */
-class GoogleSearchServiceClient extends SoapClient {
-
-	const WSDL_FILE = "GoogleSearchTest.wsdl";
-	private $classmap = array(
-		'GoogleSearchResult' => 'GoogleSearchResult',
-		'DirectoryCategory' => 'DirectoryCategory',
-	);
-
-	public function __construct($wsdl = null, $options = array()) {
-		foreach($this->classmap as $key => $value) {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-		if(isset($options['headers'])) {
-			$this->__setSoapHeaders($options['headers']);
-		}
-class GoogleSearchResult {
-    /**
-     * @var boolean
-     */
-    public $documentFiltering;
-    /**
-     * @var string
-     */
-    public $searchComments;
-    /**
-     * @var int
-     */
-    public $estimatedTotalResultsCount;
-    /**
-     * @var boolean
-     */
-    public $estimateIsExact;
-    /**
-     * @var ResultElementArray
-     */
-    public $resultElements;
-    /**
-     * @var string
-     */
-    public $searchQuery;
-    /**
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * @var string
-     */
-    public $searchTips;
-    /**
-     * @var DirectoryCategoryArray
-     */
-    public $directoryCategories;
-    /**
-     * @var double
-     */
-    public $searchTime;
-
 	/**
 	 * @param boolean $val
 	 * @throws Exception
@@ -222,18 +143,18 @@ class GoogleSearchResult {
 		
 		$this->searchTime = (int)$val;
 	}
+
 }
 
 class DirectoryCategory {
-    /**
-     * @var string
-     */
-    public $fullViewableName;
-    /**
-     * @var string
-     */
-    public $specialEncoding;
-
+	/**
+	 * @var string
+	 */
+	public $fullViewableName;
+	/**
+	 * @var string
+	 */
+	public $specialEncoding;
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -251,8 +172,29 @@ class DirectoryCategory {
 		if(!is_string($val)) throw new Exception('POJO Proxy need a string for specialEncoding');
 		$this->specialEncoding = (int)$val;
 	}
+
 }
 
+/**
+ * GoogleSearchServiceClient
+ */
+class GoogleSearchServiceClient extends SoapClient {
+
+	const WSDL_FILE = "GoogleSearchTest.wsdl";
+	private $classmap = array(
+		'GoogleSearchResult' => 'GoogleSearchResult',
+		'DirectoryCategory' => 'DirectoryCategory',
+	);
+
+	public function __construct($wsdl = null, $options = array()) {
+		foreach($this->classmap as $key => $value) {
+			if(!isset($options['classmap'][$key])) {
+				$options['classmap'][$key] = $value;
+			}
+		}
+		if(isset($options['headers'])) {
+			$this->__setSoapHeaders($options['headers']);
+		}
 		parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
 	}
 

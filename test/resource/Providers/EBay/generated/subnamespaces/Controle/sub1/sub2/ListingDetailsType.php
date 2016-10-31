@@ -173,5 +173,230 @@ class ListingDetailsType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setAdult($val) {
+		
+		$this->Adult = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBindingAuction($val) {
+		
+		$this->BindingAuction = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setCheckoutEnabled($val) {
+		
+		$this->CheckoutEnabled = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedBuyItNowPrice($val) {
+		
+		$this->ConvertedBuyItNowPrice = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedStartPrice($val) {
+		
+		$this->ConvertedStartPrice = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedReservePrice($val) {
+		
+		$this->ConvertedReservePrice = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasReservePrice($val) {
+		
+		$this->HasReservePrice = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRegionName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RegionName');
+		$this->RegionName = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setRelistedItemID($val) {
+		
+		$this->RelistedItemID = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setSecondChanceOriginalItemID($val) {
+		
+		$this->SecondChanceOriginalItemID = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setStartTime($val) {
+		
+		$this->StartTime = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setEndTime($val) {
+		
+		$this->EndTime = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setViewItemURL($val) {
+		
+		$this->ViewItemURL = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasUnansweredQuestions($val) {
+		
+		$this->HasUnansweredQuestions = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setHasPublicMessages($val) {
+		
+		$this->HasPublicMessages = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setBuyItNowAvailable($val) {
+		
+		$this->BuyItNowAvailable = (int)$val;
+	}
+
+	/**
+	 * @param SellerBusinessCodeType $val
+	 * @throws Exception
+	 */
+	public function setSellerBusinessType($val) {
+		
+		$this->SellerBusinessType = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMinimumBestOfferPrice($val) {
+		
+		$this->MinimumBestOfferPrice = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setMinimumBestOfferMessage($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for MinimumBestOfferMessage');
+		$this->MinimumBestOfferMessage = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setLocalListingDistance($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for LocalListingDistance');
+		$this->LocalListingDistance = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setExpressListing($val) {
+		
+		$this->ExpressListing = (int)$val;
+	}
+
+	/**
+	 * @param ExpressItemRequirementsType $val
+	 * @throws Exception
+	 */
+	public function setExpressItemRequirements($val) {
+		
+		$this->ExpressItemRequirements = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setTCROriginalItemID($val) {
+		
+		$this->TCROriginalItemID = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setViewItemURLForNaturalSearch($val) {
+		
+		$this->ViewItemURLForNaturalSearch = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

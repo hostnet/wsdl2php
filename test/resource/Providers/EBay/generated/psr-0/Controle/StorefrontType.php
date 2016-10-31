@@ -42,5 +42,50 @@ class StorefrontType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setStoreCategoryID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->StoreCategoryID = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setStoreCategory2ID($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->StoreCategory2ID = (int)$val;
+	}
+
+	/**
+	 * @param anyURI $val
+	 * @throws Exception
+	 */
+	public function setStoreURL($val) {
+		
+		$this->StoreURL = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setStoreName($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for StoreName');
+		$this->StoreName = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

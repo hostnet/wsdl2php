@@ -20,5 +20,23 @@ class ListingDurationDefinitionsType {
 	 * that appear in the response.
 	 */
 	public $Version;
+	/**
+	 * @param ListingDurationDefinitionType $val
+	 * @throws Exception
+	 */
+	public function setListingDuration($val) {
+		
+		$this->ListingDuration = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setVersion($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->Version = (int)$val;
+	}
+
 }
 

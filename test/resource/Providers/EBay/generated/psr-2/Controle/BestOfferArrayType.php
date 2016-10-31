@@ -11,5 +11,14 @@ class BestOfferArrayType {
      * item .
      */
     public $BestOffer;
+    /**
+     * @param BestOfferType $val
+     * @throws Exception
+     */
+    public function setBestOffer($val) {
+        
+        $this->BestOffer = (int)$val;
+    }
+
 }
 

@@ -26,5 +26,50 @@ class ExternalTransactionType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param string $val
+     * @throws Exception
+     */
+    public function setExternalTransactionID($val) {
+        if(!is_string($val)) throw new Exception('POJO Proxy need a string for ExternalTransactionID');
+        $this->ExternalTransactionID = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setExternalTransactionTime($val) {
+        
+        $this->ExternalTransactionTime = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setFeeOrCreditAmount($val) {
+        
+        $this->FeeOrCreditAmount = (int)$val;
+    }
+
+    /**
+     * @param AmountType $val
+     * @throws Exception
+     */
+    public function setPaymentOrRefundAmount($val) {
+        
+        $this->PaymentOrRefundAmount = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

@@ -36,5 +36,68 @@ class WantItNowPostType {
 	 * @var string | Title of a Want It Now post.
 	 */
 	public $Title;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setCategoryID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for CategoryID');
+		$this->CategoryID = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setDescription($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Description');
+		$this->Description = (int)$val;
+	}
+
+	/**
+	 * @param ItemIDType $val
+	 * @throws Exception
+	 */
+	public function setPostID($val) {
+		
+		$this->PostID = (int)$val;
+	}
+
+	/**
+	 * @param SiteCodeType $val
+	 * @throws Exception
+	 */
+	public function setSite($val) {
+		
+		$this->Site = (int)$val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws Exception
+	 */
+	public function setStartTime($val) {
+		
+		$this->StartTime = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setResponseCount($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->ResponseCount = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setTitle($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for Title');
+		$this->Title = (int)$val;
+	}
+
 }
 

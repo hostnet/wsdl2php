@@ -24,5 +24,32 @@ class SearchLocationType {
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setRegionID($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for RegionID');
+		$this->RegionID = (int)$val;
+	}
+
+	/**
+	 * @param SiteLocationType $val
+	 * @throws Exception
+	 */
+	public function setSiteLocation($val) {
+		
+		$this->SiteLocation = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

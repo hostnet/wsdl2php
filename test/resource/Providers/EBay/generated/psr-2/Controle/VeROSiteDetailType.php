@@ -18,5 +18,32 @@ class VeROSiteDetailType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param SiteCodeType $val
+     * @throws Exception
+     */
+    public function setSite($val) {
+        
+        $this->Site = (int)$val;
+    }
+
+    /**
+     * @param ReasonCodeDetailType $val
+     * @throws Exception
+     */
+    public function setReasonCodeDetail($val) {
+        
+        $this->ReasonCodeDetail = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

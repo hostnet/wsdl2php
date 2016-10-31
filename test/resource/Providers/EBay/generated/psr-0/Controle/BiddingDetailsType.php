@@ -45,5 +45,59 @@ class BiddingDetailsType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setConvertedMaxBid($val) {
+		
+		$this->ConvertedMaxBid = (int)$val;
+	}
+
+	/**
+	 * @param AmountType $val
+	 * @throws Exception
+	 */
+	public function setMaxBid($val) {
+		
+		$this->MaxBid = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQuantityBid($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->QuantityBid = (int)$val;
+	}
+
+	/**
+	 * @param int $val
+	 * @throws Exception
+	 */
+	public function setQuantityWon($val) {
+		if(!is_int($val)) throw new Exception('POJO Proxy need a integer');
+		$this->QuantityWon = (int)$val;
+	}
+
+	/**
+	 * @param boolean $val
+	 * @throws Exception
+	 */
+	public function setWinning($val) {
+		
+		$this->Winning = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 

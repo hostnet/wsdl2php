@@ -1,4 +1,100 @@
 <?php
+
+namespace Controle;
+
+/**
+ * AscioServicesClient
+ */
+class AscioServicesClient extends \SoapClient {
+
+    const WSDL_FILE = "AscioService.wsdl";
+    private $classmap = array(
+        'Session' => '\Controle\Session',
+        'LogInResponse' => '\Controle\LogInResponse',
+        'Response' => '\Controle\Response',
+        'LogOutResponse' => '\Controle\LogOutResponse',
+        'GetOrderResponse' => '\Controle\GetOrderResponse',
+        'Order' => '\Controle\Order',
+        'OrderType' => '\Controle\OrderType',
+        'OrderStatusType' => '\Controle\OrderStatusType',
+        'Domain' => '\Controle\Domain',
+        'Registrant' => '\Controle\Registrant',
+        'Contact' => '\Controle\Contact',
+        'NameServers' => '\Controle\NameServers',
+        'NameServer' => '\Controle\NameServer',
+        'TradeMark' => '\Controle\TradeMark',
+        'DnsSecKeys' => '\Controle\DnsSecKeys',
+        'DnsSecKey' => '\Controle\DnsSecKey',
+        'PrivacyProxy' => '\Controle\PrivacyProxy',
+        'PrivacyProxyType' => '\Controle\PrivacyProxyType',
+        'Extensions' => '\Controle\Extensions',
+        'Extension' => '\Controle\Extension',
+        'CreateOrderResponse' => '\Controle\CreateOrderResponse',
+        'SearchOrderRequest' => '\Controle\SearchOrderRequest',
+        'SearchOrderSortType' => '\Controle\SearchOrderSortType',
+        'PagingInfo' => '\Controle\PagingInfo',
+        'SearchOrderResponse' => '\Controle\SearchOrderResponse',
+        'GetMessagesResponse' => '\Controle\GetMessagesResponse',
+        'Message' => '\Controle\Message',
+        'Attachment' => '\Controle\Attachment',
+        'MessageType' => '\Controle\MessageType',
+        'ValidateOrderResponse' => '\Controle\ValidateOrderResponse',
+        'UploadDocumentationResponse' => '\Controle\UploadDocumentationResponse',
+        'CreateSupportOrderResponse' => '\Controle\CreateSupportOrderResponse',
+        'UploadMessageResponse' => '\Controle\UploadMessageResponse',
+        'GetDomainResponse' => '\Controle\GetDomainResponse',
+        'SearchCriteria' => '\Controle\SearchCriteria',
+        'Clause' => '\Controle\Clause',
+        'SearchOperatorType' => '\Controle\SearchOperatorType',
+        'SearchModeType' => '\Controle\SearchModeType',
+        'SearchDomainResponse' => '\Controle\SearchDomainResponse',
+        'WhoisResponse' => '\Controle\WhoisResponse',
+        'QualityType' => '\Controle\QualityType',
+        'AvailabilityCheckResponse' => '\Controle\AvailabilityCheckResponse',
+        'AvailabilityCheckResult' => '\Controle\AvailabilityCheckResult',
+        'GetRegistrantResponse' => '\Controle\GetRegistrantResponse',
+        'CreateRegistrantResponse' => '\Controle\CreateRegistrantResponse',
+        'DeleteRegistrantResponse' => '\Controle\DeleteRegistrantResponse',
+        'SearchRegistrantResponse' => '\Controle\SearchRegistrantResponse',
+        'GetRegistrantVerificationInfoResponse' => '\Controle\GetRegistrantVerificationInfoResponse',
+        'RegistrantVerificationInfo' => '\Controle\RegistrantVerificationInfo',
+        'RegistrantVerificationStatus' => '\Controle\RegistrantVerificationStatus',
+        'RegistrantVerificationDetails' => '\Controle\RegistrantVerificationDetails',
+        'DoRegistrantVerificationResponse' => '\Controle\DoRegistrantVerificationResponse',
+        'GetRegistrantVerificationStatusResponse' => '\Controle\GetRegistrantVerificationStatusResponse',
+        'UploadRegistrantVerificationMessageResponse' => '\Controle\UploadRegistrantVerificationMessageResponse',
+        'GetContactResponse' => '\Controle\GetContactResponse',
+        'CreateContactResponse' => '\Controle\CreateContactResponse',
+        'UpdateContactResponse' => '\Controle\UpdateContactResponse',
+        'DeleteContactResponse' => '\Controle\DeleteContactResponse',
+        'SearchContactResponse' => '\Controle\SearchContactResponse',
+        'GetNameServerResponse' => '\Controle\GetNameServerResponse',
+        'CreateNameServerResponse' => '\Controle\CreateNameServerResponse',
+        'DeleteNameServerResponse' => '\Controle\DeleteNameServerResponse',
+        'SearchNameServerResponse' => '\Controle\SearchNameServerResponse',
+        'PollMessageResponse' => '\Controle\PollMessageResponse',
+        'QueueItem' => '\Controle\QueueItem',
+        'CallbackStatus' => '\Controle\CallbackStatus',
+        'AckMessageResponse' => '\Controle\AckMessageResponse',
+        'GetMessageQueueResponse' => '\Controle\GetMessageQueueResponse',
+        'GetDnsSecKeyResponse' => '\Controle\GetDnsSecKeyResponse',
+        'CreateDnsSecKeyResponse' => '\Controle\CreateDnsSecKeyResponse',
+        'SearchDnsSecKeyResponse' => '\Controle\SearchDnsSecKeyResponse',
+        'CreateDocumentationResponse' => '\Controle\CreateDocumentationResponse',
+        'ApprovalDocumentationType' => '\Controle\ApprovalDocumentationType',
+        'ApprovalDocumentation' => '\Controle\ApprovalDocumentation',
+        'CreateApprovalDocumentationResponse' => '\Controle\CreateApprovalDocumentationResponse',
+    );
+
+    public function __construct($wsdl = null, $options = array()) {
+        foreach($this->classmap as $key => $value) {
+            if(!isset($options['classmap'][$key])) {
+                $options['classmap'][$key] = $value;
+            }
+        }
+        if(isset($options['headers'])) {
+            $this->__setSoapHeaders($options['headers']);
+        }
         parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
     }
 

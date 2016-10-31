@@ -34,5 +34,23 @@ class GetProductFinderResponseType extends \Controle\AbstractResponseType {
 	 * eBay Web Services guide for general information about string data types.
 	 */
 	public $ProductFinderData;
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setAttributeSystemVersion($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+		$this->AttributeSystemVersion = (int)$val;
+	}
+
+	/**
+	 * @param string $val
+	 * @throws Exception
+	 */
+	public function setProductFinderData($val) {
+		if(!is_string($val)) throw new Exception('POJO Proxy need a string for ProductFinderData');
+		$this->ProductFinderData = (int)$val;
+	}
+
 }
 

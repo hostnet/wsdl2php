@@ -14,5 +14,14 @@ class NameValueListArrayType {
 	 * is set to Fine.
 	 */
 	public $NameValueList;
+	/**
+	 * @param NameValueListType $val
+	 * @throws Exception
+	 */
+	public function setNameValueList($val) {
+		
+		$this->NameValueList = (int)$val;
+	}
+
 }
 

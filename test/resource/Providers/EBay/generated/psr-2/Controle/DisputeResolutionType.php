@@ -25,5 +25,41 @@ class DisputeResolutionType {
      * @var \Controle\<anyXML>
      */
     public $any;
+    /**
+     * @param DisputeResolutionRecordTypeCodeType $val
+     * @throws Exception
+     */
+    public function setDisputeResolutionRecordType($val) {
+        
+        $this->DisputeResolutionRecordType = (int)$val;
+    }
+
+    /**
+     * @param DisputeResolutionReasonCodeType $val
+     * @throws Exception
+     */
+    public function setDisputeResolutionReason($val) {
+        
+        $this->DisputeResolutionReason = (int)$val;
+    }
+
+    /**
+     * @param dateTime $val
+     * @throws Exception
+     */
+    public function setResolutionTime($val) {
+        
+        $this->ResolutionTime = (int)$val;
+    }
+
+    /**
+     * @param <anyXML> $val
+     * @throws Exception
+     */
+    public function setAny($val) {
+        
+        $this->any = (int)$val;
+    }
+
 }
 

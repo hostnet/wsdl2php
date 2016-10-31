@@ -14,5 +14,23 @@ class SiteLocationType {
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	/**
+	 * @param SiteIDFilterCodeType $val
+	 * @throws Exception
+	 */
+	public function setSiteID($val) {
+		
+		$this->SiteID = (int)$val;
+	}
+
+	/**
+	 * @param <anyXML> $val
+	 * @throws Exception
+	 */
+	public function setAny($val) {
+		
+		$this->any = (int)$val;
+	}
+
 }
 
