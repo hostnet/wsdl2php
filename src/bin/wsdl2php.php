@@ -23,7 +23,7 @@
 // | see http://wsdl2php.sf.net                                             |
 // +------------------------------------------------------------------------+
 
-$options = getOptions('i:n:o:pg:sdvt');
+$options = getOptions('i:n:o:pg:sdvt4');
 /**
  * -i <path_to_wsdl>  | path to the wsdl file (can also be an accessible URL)
  * -o <output_dir>    | directory used for output
@@ -34,10 +34,13 @@ $options = getOptions('i:n:o:pg:sdvt');
  * -d                 | turn off documentation generation
  * -v                 | generate all code (docs and unused)
  * -t                 | turn off tab generated code, use '4 spaces' (PSR-2) instead
+ * -4                 | psr 4 namespace and spaces instead of tabs (using -t)
  */
 
+$psr4= isset($options['4']);
+
 if(!isset($options['i']))
-	die("usage: php wsdl2php.php -i <path_to_wsdl> [-n <namespace>] [-o <output_path>] [-g <sub_namespace>] [-p] [-s] [-d] [-v] [-t]\n");
+	die("usage: php wsdl2php.php -i <path_to_wsdl> [-n <namespace>] [-o <output_path>] [-g <sub_namespace>] [-p] [-s] [-d] [-v] [-t] [-4]\n");
 
 $wsdl = $options['i'];
 $namespace = '';
@@ -52,8 +55,14 @@ $sub_namespace = $namespace;
 if(isset($options['g']))
 	$sub_namespace = $namespace.($pear_style? ('_'.$options['g']): ('\\'.$options['g']));
 
+
+//var for alligning generated code fast
 $ident_char = "\t";
-if(isset($options['t'])){
+$ident2="        ";
+$ident3="            ";
+$ident4="            ";
+
+if(isset($options['t']) || $psr4){
   $ident_char = "    ";
 }
 
@@ -86,7 +95,7 @@ try{
 }
 print("[OK]\n");
 
-print("Loading WSDL");
+print("Loading WSDL".$wsdl);
 $dom = loadWSDL($wsdl);
 print(".");
 
@@ -124,9 +133,16 @@ $nodes = $dom->getElementsByTagName('definitions');
 $uri = $nodes->length? $nodes->item(0)->getAttribute('targetNamespace'): '';
 print(".");
 
+//If the $wsdl is a local file, remove the full path
+//If it's a URL keep the URL.
+$wsdl_location = $wsdl;
+if(is_file($wsdl_location)){
+	$wsdl_location = (new SplFileInfo($wsdl))->getBasename();
+}
+
 $service = array(
 	'class'=>$dom->getElementsByTagNameNS('*', 'service')->item(0)->getAttribute('name'),
-	'wsdl'=>$wsdl,
+	'wsdl'=>$wsdl_location,
 	'doc'=>$doc['service'],
 	'functions'=>array()
 );
@@ -203,6 +219,11 @@ foreach($operations as $operation){
 
 	if(in_array(strtolower($function['method']), $keywords))
 		$function['name'] = '_'.$function['method'];
+
+		if(preg_match('/_/', $function['name']))
+		{
+			$function['name']=str_replace("_", "", $function['name']);
+		}
 
 	if(strtolower($service['class']) == strtolower($function['method']))
 		$function['name'] = '_'.$function['method'];
@@ -321,6 +342,13 @@ foreach($types as $type){
 		$full_class = $pear_style?
 			$sub_namespace.$class:
 			suppressKeywords('\\'.$sub_namespace.'\\'.str_replace('_', '\\', $class), $keywords);
+
+		//makes last word of full path first char uppercase (classname)
+		$arr = explode('\\', $full_class);
+		$arr[sizeof($arr)-1]=ucfirst($arr[sizeof($arr)-1]);
+		$full_class=implode("\\", $arr);
+		$full_class = makePascalCase($full_class);
+
 		$parts = explode($pear_style? '_': '\\', $full_class);
 		$php_class = $parts[count($parts)-1];
 	}
@@ -383,13 +411,29 @@ foreach($types as $index=>$type){
 			if($dirname[0] == '/')
 				$dirname = substr($dirname, 1);
 
-			$filename = $type['php_class'] . '.php';
+			$filename = ucfirst($type['php_class']) . '.php';
 		}
 
-		if(!is_dir($dirname))
-			mkdir($dirname, 0777, true);
+		if($psr4){
+			$ns_dirname = trim(str_replace('\\', '/', $namespace));
+			$dirname = ltrim(trim(str_replace($ns_dirname, '', $dirname)), '/');
+		}
 
-		$file = fopen($dirname . '/' . $filename, 'w');
+		if($dirname != '' && !is_dir($dirname)){
+			$dirname=makePascalCase($dirname);
+			mkdir($dirname, 0777, true);
+		}
+
+		if($dirname != ''){
+			if(!$psr4)
+			  $filename = $dirname . '/' .$filename;
+			else
+			{
+				$tempfilename = makePascalCase(ucfirst($filename));
+				$filename = $dirname . '/' .$tempfilename;
+			}
+		}
+		$file = fopen($filename, 'w');
 	}
 
 	$parent_type = null;
@@ -406,7 +450,7 @@ foreach($types as $index=>$type){
 		$ns = str_replace('/', '\\', dirname(str_replace('\\', '/', $type['full_class'])));
 		if($ns[0] == '\\')
 			$ns = substr($ns, 1);
-		$code = "\nnamespace ".$ns.";";
+		$code = "\nnamespace ".$ns.";\n";
 		$class = $type['php_class'];
 	}
 
@@ -414,7 +458,8 @@ foreach($types as $index=>$type){
 		unset($service['types'][$index]);
 		continue;
 	}
-
+	if($psr4)
+		$class = ucfirst($class);
 	if($documentation && isset($doc['types'][$class])){
 		$code .= "\n/**";
 		$code .= "\n * ".$class;
@@ -422,18 +467,38 @@ foreach($types as $index=>$type){
 		$code .= " */";
 	}
 
-	$code .= "\nclass ".$class.(!empty($parent_type)? " extends ".$parent_type['full_class']: "")." {";
+	$class = makePascalCase($class);
+
+	$code .= "\nclass ".$class.(!empty($parent_type)? " extends\n ".$parent_type['full_class']: "")."\n{";
 
 	if(!$verbose && !count($type['values']) && !count($type['members'])){
 		$code .= "}\n";
 		continue;
 	}
-
+	$code .= "\n".$ident_char."// @codingStandardsIgnoreStart";
+	$longestconstname='';
+	$longestconstchars=0;
 	foreach($type['values'] as $value){
-		$code .= "\n" . $ident_char . "const ".generatePHPSymbol($value)." = '".$value."';";
+		$value=generatePHPSymbol($value);
+		if(strlen($value)>$longestconstchars){
+			$longestconstname=$value;
+			$longestconstchars = strlen($value);
+		}
 	}
+	if($longestconstname!='')
+	foreach($type['values'] as $value){
+		$value=generatePHPSymbol($value);
+		$lengthdiff = strlen($longestconstname)-strlen($value);
+		$alligner='';
+	   for($i=0;$i<$lengthdiff;$i++)
+	   {
+			$alligner.=" ";
+	   }
+		$code .= "\n" . $ident_char . "const ".strtoupper(generatePHPSymbol($value)).$alligner." = '".$value."';";
+   }
 
 	foreach($type['members'] as $member){
+
 		if($documentation){
 			$code .= "\n" . $ident_char . "/**\n";
 			if(!in_array($member['type'], $primitive_types) && $namespace){
@@ -454,17 +519,38 @@ foreach($types as $index=>$type){
 			if(isset($member['multiple']))
 				$code .= ' or '.$member['type'].'[]';
 
-			if(isset($doc['members'][$member['member']]))
-				$code .= " | ".$doc['members'][$member['member']];
-			$code .= "\n" . $ident_char . " */";
+			if(isset($doc['members'][$member['member']])){
+				$code .= " | ".  substr(parseDoc($ident_char . " * ", $doc['members'][$member['member']]), strlen($ident_char . " * "));
+				$code .= $ident_char . " */";
+			}else{
+				 $code .= "\n" . $ident_char . " */";
+			}
 		}
+
 		$code .= "\n" . $ident_char . "public \$".$member['member'].";";
 	}
-	$code .= "\n}\n";
+	$code .= "\n".$ident_char."// @codingStandardsIgnoreEnd\n";
+	// add access method
+	foreach($type['members'] as $member) {
+	$codestylefunctionname = ucfirst(str_replace("_", "", $member['member']));
+		$code .= sprintf("\n" .
+		$ident_char . "/**\n".
+		$ident_char . " * @param %s \$val\n" .
+		$ident_char . " * @throws Exception\n" .
+		$ident_char . " */\n" .
+		$ident_char ."public function set%s(\$val)\n".$ident_char."{\n" .
+		"%s" .
+		$ident2 . "\$this->%s = (int)\$val;\n" .
+		$ident_char ."}\n", $member['type'], $codestylefunctionname, accessMethodCaster($member['type'], $member['member']), $member['member']);
+	}
+	rtrim($code);
+	if(substr($code, -1)===';'||substr($code, -1)==='{'){
+		$code .= "\n";
+	}
+	$code .= "}\n";
 
 	if(isset($file)){
-		print("Writing ".$class.".php.");
-		fwrite($file, "<?php\n".$code. "\n");
+		fwrite($file, "<?php\n".$code);
 		fclose($file);
 		$code = "";
 		print("[OK]\n");
@@ -472,7 +558,7 @@ foreach($types as $index=>$type){
 }
 
 if(!$code && $namespace)
-    $code .= "\nnamespace ".$namespace.";\n";
+	$code .= "\nnamespace ".$namespace.";\n";
 
 $code .= "\n";
 $code .= "/**\n";
@@ -480,44 +566,63 @@ $code .= " * ".$service['class']."\n";
 $code .= $documentation && $service['doc']? parseDoc(" * ", $service['doc']): '';
 $code .= " */\n";
 
-$code .= "class ".$service['class']." extends ".($namespace? "\\": "")."Soap".($server? 'Server': 'Client')." {\n\n";
-$code .= $ident_char . "const WSDL_FILE = \"".str_replace('\\', '\\\\', $service['wsdl'])."\";\n";
+if(!$psr4){
+	$code .= "class ".$service['class']." extends ".($namespace? "\\": "")."Soap".($server? 'Server': 'Client')." {\n\n";
+	$code .= $ident_char . "const WSDL_FILE = \"".str_replace('\\', '\\\\', $service['wsdl'])."\";\n";
+}
+else{
+	$code .= "class ".$service['class']." extends ".($namespace? "\\": "")."Soap".($server? 'Server': 'Client')."\n{\n";
+	$code .= $ident_char . "const WSDL_FILE = \"".str_replace('\\', '\\\\', $service['wsdl'])."\";\n\n";
+}
+
+
 
 if(count($service['types'])){
 	$code .= $ident_char. "private \$classmap = array(\n";
 	foreach($service['types'] as $type){
-		$code .= $ident_char . $ident_char . "'".$type['class']."' => '".$type['full_class']."',\n";
+		$code .= $ident2 . "'".$type['class']."' =>\n            '".$type['full_class']."',\n";
 	}
 	$code .= $ident_char . ");\n\n";
 }else{
 	$code .= "\n";
 }
 
-$code .= $ident_char . "public function __construct(\$wsdl = null, \$options = array()".($server? ", \$exit = false": "").") {\n";
+if(!$psr4)
+{
+	$code .= $ident_char . "public function __construct(\$wsdl = null, \$options = array()".($server? ", \$exit = false": "").") {\n";
+}
+else
+{
+	$code .= $ident_char . "public function __construct(\n".$ident2.
+	"\$wsdl = null,\n".$ident2."\$options = array()".($server? ", \$exit = false": "")."\n".$ident_char.") {\n";
+}
+
 
 if($server){
-	$code .= $ident_char . $ident_char . "if(\$exit)\n";
-	$code .= $ident_char . $ident_char . $ident_char . "return;\n\n";
+	$code .= $ident2 . "if (\$exit)\n";
+	$code .= $ident3 . "return;\n\n";
 }
 
 if(count($service['types'])){
-	$code .= $ident_char . $ident_char . "foreach(\$this->classmap as \$key => \$value) {\n";
-	$code .= $ident_char . $ident_char . $ident_char . "if(!isset(\$options['classmap'][\$key])) {\n";
-	$code .= $ident_char . $ident_char.  $ident_char . $ident_char ."\$options['classmap'][\$key] = \$value;\n";
-	$code .= $ident_char . $ident_char . $ident_char . "}\n";
-	$code .= $ident_char . $ident_char . "}\n";
+	$temp = $psr4? 'foreach ' : 'foreach';
+	$if4  = $psr4? 'if ' : 'if';
+	$code .= $ident2 . $temp."(\$this->classmap as \$key => \$value) {\n";
+	$code .= $ident3 .$if4. "(!isset(\$options['classmap'][\$key])) {\n";
+	$code .= $ident4 . $ident_char ."\$options['classmap'][\$key] = \$value;\n";
+	$code .= $ident3 . "}\n";
+	$code .= $ident2 . "}\n";
 }
 
 if(!$server){
-	$code .= $ident_char . $ident_char . "if(isset(\$options['headers'])) {\n";
-	$code .= $ident_char . $ident_char . $ident_char . "\$this->__setSoapHeaders(\$options['headers']);\n";
-	$code .= $ident_char . $ident_char . "}\n";
+	$code .= $ident2 . $if4."(isset(\$options['headers'])) {\n";
+	$code .= $ident3 . "\$this->__setSoapHeaders(\$options['headers']);\n";
+	$code .= $ident2 . "}\n";
 }
 
-$code .= $ident_char . $ident_char . "parent::__construct(\$wsdl ? \$wsdl : self::WSDL_FILE, \$options);\n";
+$code .= $ident2 . "parent::__construct(\$wsdl ? \$wsdl : self::WSDL_FILE, \$options);\n";
 
 if($server)
-	$code .= $ident_char . $ident_char . "\$this->setClass('".$service['class']."', null, null, true);\n";
+	$code .= $ident2 . "\$this->setClass('".$service['class']."', null, null, true);\n";
 
 $code .= $ident_char . "}\n\n";
 
@@ -549,50 +654,62 @@ foreach($service['functions'] as $function){
 	if($documentation)
 		$code .= $doc_code;
 
-	$code .= $ident_char . "public function ".$function['name']."(".implode(', ', $signature).") {\n";
+	//function names in head class
+	if(!$psr4)
+	{
+		$code .= $ident_char . "public function ".$function['name']."(".implode(', ', $signature).") {\n";
+	}
+	else
+	{
+		$code .= $ident_char . "public function ".lcfirst($function['name'])."(\n".$ident2.implode(', ', $signature)."\n".$ident_char.") {\n";
+	}
 
 	if($server){
-		$code .= $ident_char . $ident_char . "//Your code that handles ".$function['name']." goes here.\n";
+		$code .= $ident2 . "//Your code that handles ".$function['name']." goes here.\n";
 	}else{
-		$code .= $ident_char . $ident_char . "return \$this->__soapCall(\n";
-		$code .= $ident_char . $ident_char . $ident_char . "'".$function['method']."',\n";
-		$code .= $ident_char . $ident_char . $ident_char ."array(";
+		$code .= $ident2. "return \$this->__soapCall(\n";
+		$code .= $ident3 . "'".$function['method']."',\n";
+		$code .= $ident3 ."array(";
 
 		$params = array();
 		if(count($signature) > 1){
-			$code .= "\n" . $ident_char . $ident_char . $ident_char . $ident_char;
+			$code .= "\n" . $ident4;
 			foreach($signature as $param){
 				if(strpos($param, ' '))
 					list($tmp, $param) = explode(' ', $param);
 
 				$params[] = $param;
 			}
-			$code .= implode(",\n" . $ident_char . $ident_char . $ident_char . $ident_char, $params)."\n" . $ident_char . $ident_char . $ident_char . $ident_char;
+			$code .= implode(",\n" . $ident4, $params)."\n" . $ident_char . $ident3;
 		}elseif(count($signature) == 1){
 			if(strpos($signature[0], ' '))
 				list($tmp, $signature[0]) = explode(' ', $signature[0]);
 
 			$code .= $signature[0];
 		}
-
 		$code .= "),\n";
-		$code .= $ident_char . $ident_char . $ident_char . "array('uri'=>'".$uri."')\n";
-		$code .= $ident_char . $ident_char . ");\n";
+		$code .= $ident3 . "array('uri'=>'".$uri."')\n";
+		$code .= $ident2 . ");\n";
 	}
-
 	$code .= $ident_char . "}\n\n";
 }
+$code = rtrim($code);
+$code .= "\n}\n";
 
-$code .= "}\n";
-print("Writing ".$service['class'].".php.");
-$filename = $service['class'].".php";
+print("Writing ".ucfirst($service['class']).".php.");
+$filename = ucfirst($service['class']).".php";
 
 if($namespace && !$pear_style){
 	$dirname = str_replace('\\', '/', $namespace);
-	if(!is_dir($dirname))
-		mkdir($dirname, 0777, true);
+	if(!is_dir($dirname)){
+		if(!$psr4){
+		  mkdir($dirname, 0777, true);
+		}
+	}
 
-	$filename = $dirname . '/' . $filename;
+	if(!$psr4){
+	   $filename = $dirname . '/' . $filename;
+	}
 }
 
 $fp = fopen($filename, 'w');
@@ -606,7 +723,10 @@ print("[OK]\n");
 function suppressKeywords($txt, $keywords){
 	foreach($keywords as $keyword){
 		if(preg_match('~(^|\\\\)'.$keyword.'($|\\\\)~i', $txt))
-			$txt = str_ireplace($keyword, '_'.$keyword, $txt);
+		{
+			$arr = explode('\\', $txt);
+			$txt = str_ireplace($keyword, $arr[1].$keyword, $txt);
+		}
 	}
 	return $txt;
 }
@@ -617,7 +737,8 @@ function parseDoc($prefix, $doc) {
 	$line = $prefix;
 
 	foreach($words as $word){
-		$line .= $word.' ';
+		$word = implode('', array_filter(explode("\t", implode(' ', explode("\n", $word))), function ($el){ if (trim($el) != ''){ return true;}return  false;}));
+		$line .=  trim($word) . ' ';
 		if(strlen($line) > 90){
 			$code .= rtrim($line)."\n";
 			$line = $prefix;
@@ -626,7 +747,7 @@ function parseDoc($prefix, $doc) {
 	if($line != $prefix)
 		$code .= rtrim($line)."\n";
 
-	return $code;
+		return $code;
 }
 
 function checkForEnum(&$dom, $class){
@@ -636,14 +757,14 @@ function checkForEnum(&$dom, $class){
 	if(!$node)
 		return $values;
 
-	$value_list = $node->getElementsByTagName('enumeration');
-	if($value_list->length == 0)
-		return $values;
+		$value_list = $node->getElementsByTagName('enumeration');
+		if($value_list->length == 0)
+			return $values;
 
-	for($i=0, $l=$value_list->length; $i<$l; $i++)
-		$values[] = $value_list->item($i)->attributes->getNamedItem('value')->nodeValue;
+			for($i=0, $l=$value_list->length; $i<$l; $i++)
+				$values[] = $value_list->item($i)->attributes->getNamedItem('value')->nodeValue;
 
-	return $values;
+				return $values;
 }
 
 function findType(&$dom, $class){
@@ -658,7 +779,7 @@ function findType(&$dom, $class){
 				$node->hasAttributes() &&
 				$node->attributes->getNamedItem('name') &&
 				$node->attributes->getNamedItem('name')->nodeValue == $class)
-					return $node;
+				return $node;
 		}
 	}
 
@@ -671,10 +792,10 @@ function generatePHPSymbol($s){
 	if(!preg_match('/^[A-Za-z_]/', $s))
 		$s = 'value_'.$s;
 
-	if(in_array(strtolower($s), $keywords))
-		$s = '_'.$s;
+		if(in_array(strtolower($s), $keywords))
+			$s = '_'.$s;
 
-	return preg_replace('/[-.\s]/', '_', $s);
+			return preg_replace('/[-.\s]/', '_', $s);
 }
 
 function isHint($hint, array $primitive_types) {
@@ -717,24 +838,22 @@ function getOptions($string){
 	if(function_exists('getopt'))
 		return getopt($string);
 
-	global $argv;
+		global $argv;
 
-	$options = array();
-	$l = strlen($string);
+		$options = array();
+		$l = strlen($string);
 
-	if(!$l)
-		return $options;
+		if(!$l)
+			return $options;
+			for($i=0; $i<$l; $i++){
+				$char = $string[$i];
+				$next = $i+1<$l? $string[$i+1]: '';
 
-	for($i=0; $i<$l; $i++){
-		$char = $string[$i];
-		$next = $i+1<$l? $string[$i+1]: '';
-
-		$index = array_search('-'.$char, $argv);
-		if($index)
-			$options[$char] = $next != ':'? true: $argv[$index+1];
-	}
-
-	return $options;
+				$index = array_search('-'.$char, $argv);
+				if($index)
+					$options[$char] = $next != ':'? true: $argv[$index+1];
+			}
+			return $options;
 }
 
 function sortTypes($types, &$sorted){
@@ -750,9 +869,34 @@ function sortTypes($types, &$sorted){
 			$sorted[$class] = $type;
 			continue;
 		}
-
 		$sorted[$class] = $type;
 	}
-
 	return $sorted;
+}
+
+/**
+ * Makes sure there is not 2 Capital letters after each other
+ * @param $text the input string to make PascalCase
+ * @return string in PascalCase
+ */
+function makePascalCase($text)
+{
+	for($i=0;$i<=strlen($text);$i++)
+	{
+		if(ctype_upper($text[$i])&&ctype_upper($text[($i+1)]))
+			{
+				$text[$i+1] =lcfirst($text[$i+1]);
+			}
+			else if(!ctype_upper($text[($i+1)]))$i++;
+	}
+	return $text;
+}
+
+function accessMethodCaster($type, $fieldname) {
+	switch($type) {
+		case 'string':
+			return '        if (!is_string($val)) '."{\n".'            throw new Exception(\'POJO Proxy need a string for '.$fieldname.'\');'."\n".'        }'."\n";
+		case 'int':
+			return '        if (!is_int($val)) '."{\n".'            throw new Exception(\'POJO Proxy need a integer\');'."\n".'        }'."\n";
+	}
 }

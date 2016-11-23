@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://api.nmbrs.nl/soap/v2.1/CompanyService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://api.nmbrs.nl/soap/v2.1/CompanyService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://api.nmbrs.nl/soap/v2.1/CompanyService">
+      <s:element name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult" type="tns:ArrayOfPayslip" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPayslip">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Payslip" nillable="true" type="tns:Payslip" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Payslip">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PDF" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="SalaryDocuments_GetAllPayslipsPDFByRunCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalaryDocuments_GetAllPayslipsPDFByRunCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalaryDocuments_GetAllPayslipsPDFByRunCompanyResult" type="tns:Payslip" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Company_GetCurrentPeriod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Company_GetCurrentPeriodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Company_GetCurrentPeriodResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BankAccount_GetCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BankAccount_GetCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BankAccount_GetCurrentResult" type="tns:BankAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BankAccount">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IBAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:BankAccountType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="BankAccountType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Bankrekening1" />
+          <s:enumeration value="Spaarloon" />
+          <s:enumeration value="Bankrekening2" />
+          <s:enumeration value="Bankrekening3" />
+          <s:enumeration value="Bankrekening4" />
+          <s:enumeration value="Bankrekening5" />
+          <s:enumeration value="Standaard" />
+          <s:enumeration value="Levensloop" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="BankAccount_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BankAccount" type="tns:BankAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BankAccount_UpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="BankAccount_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BankAccount" type="tns:BankAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BankAccount_InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BankAccount_InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileExplorer_UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrDocumentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrDocumentSubFolder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileExplorer_UploadFileResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Reports_GetPayslipByRunCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reports_GetPayslipByRunCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Reports_GetPayslipByRunCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reports_GetWageCodesByRunCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reports_GetWageCodesByRunCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Reports_GetWageCodesByRunCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reports_GetWageCodesByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reports_GetWageCodesByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Reports_GetWageCodesByYearResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Journals_GetByRunCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Journals_GetByRunEmployeeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunCostCenter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunCostCenterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Journals_GetByRunCostCenterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RunId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Journals_GetByRunDepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Journals_GetByRunDepartmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Run_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Run_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Run_GetListResult" type="tns:ArrayOfRunInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRunInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RunInfo" nillable="true" type="tns:RunInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RunInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Number" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PeriodStart" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PeriodEnd" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RunAt" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsLocked" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SVW_GetCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SVW_GetCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SVW_GetCurrentResult" type="tns:SVW" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SVW">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SVWSettings" type="tns:CompanySVWSettings" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sector" type="tns:Sector" />
+          <s:element minOccurs="0" maxOccurs="1" name="Risicogroep" type="tns:Risicogroep" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAO" type="tns:CAO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompanySVWSettings">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodeCao" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EigenrisicodragerGediffWGA" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EigenrisicodragerUniformeWAO" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EigenrisicodragerZiektewet" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="RisicoGroep" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Gediff_WGA_wn" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Gediff_WGA_wg" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sector" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Sector">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Risicogroep">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CAO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SVW_UpdateCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SVW" type="tns:SVW" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SVW_UpdateCurrentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SalaryTable_GetScales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Period" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalaryTable_GetScalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalaryTable_GetScalesResult" type="tns:ArrayOfSalaryTableScale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalaryTableScale">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalaryTableScale" nillable="true" type="tns:SalaryTableScale" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalaryTableScale">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Scale" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchaalDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScaleValue" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScalePercentageMax" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScalePercentageMin" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalaryTable_GetSteps">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Scale" type="tns:SalaryTableScale" />
+            <s:element minOccurs="1" maxOccurs="1" name="Period" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalaryTable_GetStepsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalaryTable_GetStepsResult" type="tns:ArrayOfSalaryTableStep" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalaryTableStep">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalaryTableStep" nillable="true" type="tns:SalaryTableStep" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalaryTableStep">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Step" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StepDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StepValue" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalaryTable_Get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Period" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalaryTable_GetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalaryTable_GetResult" type="tns:SalaryTable" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SalaryTable">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CostCenter_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CostCenter_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CostCenter_GetListResult" type="tns:ArrayOfCostCenter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCostCenter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CostCenter" nillable="true" type="tns:CostCenter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CostCenter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CostCenter_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kostenplaats" type="tns:CostCenter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CostCenter_InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CostCenter_InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Address_GetCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Address_GetCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Address_GetCurrentResult" type="tns:Address" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Address">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Default" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Street" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseNumberAddition" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryISOCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Address_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="tns:Address" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Address_UpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Address_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="tns:Address" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Address_InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Address_InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunRequest_Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunRequest_InsertResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RunRequest_GetList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunRequest_GetListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RunRequest_GetListResult" type="tns:ArrayOfRunRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRunRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RunRequest" nillable="true" type="tns:RunRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RunRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Period" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:RunRequestStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandledDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RunRequestStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Undefined" />
+          <s:enumeration value="Pending" />
+          <s:enumeration value="Handled" />
+          <s:enumeration value="Complete" />
+          <s:enumeration value="Canceled" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="Schedule_GetCurrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Schedule_GetCurrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Schedule_GetCurrentResult" type="tns:BedrijfFulltimeSchedule" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BedrijfFulltimeSchedule">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FulltimeScheduleOne" type="tns:FulltimeSchedule" />
+          <s:element minOccurs="0" maxOccurs="1" name="FulltimeScheduleTwo" type="tns:FulltimeSchedule" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FulltimeSchedule">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduleCalcMethod" type="tns:ScheduleCalcMethod" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursMonday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursTuesday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursWednesday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursThursday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursFriday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursSaturday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursSunday" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursMonday2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursTuesday2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursWednesday2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursThursday2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursFriday2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursSaturday2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoursSunday2" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ScheduleCalcMethod">
+        <s:restriction base="s:string">
+          <s:enumeration value="HoursYearDevidedPeriods" />
+          <s:enumeration value="Hours52WeeksDevidedPeriods" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="HourModel_GetHourCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HourModel_GetHourCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HourModel_GetHourCodesResult" type="tns:ArrayOfHourCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfHourCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HourCode" nillable="true" type="tns:HourCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HourCode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WageModel_GetWageCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WageModel_GetWageCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WageModel_GetWageCodesResult" type="tns:ArrayOfWageCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWageCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WageCode" nillable="true" type="tns:WageCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WageCode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="List_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="List_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_GetAllResult" type="tns:ArrayOfCompany" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCompany">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Company" nillable="true" type="tns:Company" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Company">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Number" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FaxNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Website" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoonaangifteTijdvak" type="tns:LoonaangifteTijdvak" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LoonaangifteTijdvak">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Month" />
+          <s:enumeration value="Week4" />
+          <s:enumeration value="Month6" />
+          <s:enumeration value="Year" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="List_GetByDebtor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DebtorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_GetByDebtorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_GetByDebtorResult" type="tns:ArrayOfCompany" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:SalaryDocuments_GetEmployeePayslipsPDFByRunCompany" />
+  </wsdl:message>
+  <wsdl:message name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SalaryDocuments_GetAllPayslipsPDFByRunCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:SalaryDocuments_GetAllPayslipsPDFByRunCompany" />
+  </wsdl:message>
+  <wsdl:message name="SalaryDocuments_GetAllPayslipsPDFByRunCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:SalaryDocuments_GetAllPayslipsPDFByRunCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalaryDocuments_GetAllPayslipsPDFByRunCompanyAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Company_GetCurrentPeriodSoapIn">
+    <wsdl:part name="parameters" element="tns:Company_GetCurrentPeriod" />
+  </wsdl:message>
+  <wsdl:message name="Company_GetCurrentPeriodSoapOut">
+    <wsdl:part name="parameters" element="tns:Company_GetCurrentPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="Company_GetCurrentPeriodAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_GetCurrentSoapIn">
+    <wsdl:part name="parameters" element="tns:BankAccount_GetCurrent" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_GetCurrentSoapOut">
+    <wsdl:part name="parameters" element="tns:BankAccount_GetCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_GetCurrentAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:BankAccount_Update" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:BankAccount_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_UpdateAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:BankAccount_Insert" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:BankAccount_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="BankAccount_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="FileExplorer_UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:FileExplorer_UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="FileExplorer_UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:FileExplorer_UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileExplorer_UploadFileAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetPayslipByRunCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:Reports_GetPayslipByRunCompany" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetPayslipByRunCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:Reports_GetPayslipByRunCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetPayslipByRunCompanyAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetWageCodesByRunCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:Reports_GetWageCodesByRunCompany" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetWageCodesByRunCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:Reports_GetWageCodesByRunCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetWageCodesByRunCompanyAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetWageCodesByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:Reports_GetWageCodesByYear" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetWageCodesByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:Reports_GetWageCodesByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports_GetWageCodesByYearAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunCompany" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunCompanyAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunEmployee" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunEmployeeAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunCostCenterSoapIn">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunCostCenterSoapOut">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunCostCenterAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunDepartment" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:Journals_GetByRunDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Journals_GetByRunDepartmentAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Run_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:Run_GetList" />
+  </wsdl:message>
+  <wsdl:message name="Run_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:Run_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Run_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SVW_GetCurrentSoapIn">
+    <wsdl:part name="parameters" element="tns:SVW_GetCurrent" />
+  </wsdl:message>
+  <wsdl:message name="SVW_GetCurrentSoapOut">
+    <wsdl:part name="parameters" element="tns:SVW_GetCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SVW_GetCurrentAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SVW_UpdateCurrentSoapIn">
+    <wsdl:part name="parameters" element="tns:SVW_UpdateCurrent" />
+  </wsdl:message>
+  <wsdl:message name="SVW_UpdateCurrentSoapOut">
+    <wsdl:part name="parameters" element="tns:SVW_UpdateCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SVW_UpdateCurrentAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetScalesSoapIn">
+    <wsdl:part name="parameters" element="tns:SalaryTable_GetScales" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetScalesSoapOut">
+    <wsdl:part name="parameters" element="tns:SalaryTable_GetScalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetScalesAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetStepsSoapIn">
+    <wsdl:part name="parameters" element="tns:SalaryTable_GetSteps" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetStepsSoapOut">
+    <wsdl:part name="parameters" element="tns:SalaryTable_GetStepsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetStepsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetSoapIn">
+    <wsdl:part name="parameters" element="tns:SalaryTable_Get" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetSoapOut">
+    <wsdl:part name="parameters" element="tns:SalaryTable_GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalaryTable_GetAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="CostCenter_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:CostCenter_GetList" />
+  </wsdl:message>
+  <wsdl:message name="CostCenter_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:CostCenter_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CostCenter_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="CostCenter_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:CostCenter_Insert" />
+  </wsdl:message>
+  <wsdl:message name="CostCenter_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:CostCenter_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="CostCenter_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Address_GetCurrentSoapIn">
+    <wsdl:part name="parameters" element="tns:Address_GetCurrent" />
+  </wsdl:message>
+  <wsdl:message name="Address_GetCurrentSoapOut">
+    <wsdl:part name="parameters" element="tns:Address_GetCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Address_GetCurrentAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Address_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Address_Update" />
+  </wsdl:message>
+  <wsdl:message name="Address_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Address_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Address_UpdateAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Address_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Address_Insert" />
+  </wsdl:message>
+  <wsdl:message name="Address_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:Address_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Address_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="RunRequest_InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:RunRequest_Insert" />
+  </wsdl:message>
+  <wsdl:message name="RunRequest_InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:RunRequest_InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="RunRequest_InsertAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="RunRequest_GetListSoapIn">
+    <wsdl:part name="parameters" element="tns:RunRequest_GetList" />
+  </wsdl:message>
+  <wsdl:message name="RunRequest_GetListSoapOut">
+    <wsdl:part name="parameters" element="tns:RunRequest_GetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="RunRequest_GetListAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="Schedule_GetCurrentSoapIn">
+    <wsdl:part name="parameters" element="tns:Schedule_GetCurrent" />
+  </wsdl:message>
+  <wsdl:message name="Schedule_GetCurrentSoapOut">
+    <wsdl:part name="parameters" element="tns:Schedule_GetCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Schedule_GetCurrentAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="HourModel_GetHourCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:HourModel_GetHourCodes" />
+  </wsdl:message>
+  <wsdl:message name="HourModel_GetHourCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:HourModel_GetHourCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="HourModel_GetHourCodesAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="WageModel_GetWageCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:WageModel_GetWageCodes" />
+  </wsdl:message>
+  <wsdl:message name="WageModel_GetWageCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:WageModel_GetWageCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WageModel_GetWageCodesAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="List_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:List_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="List_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:List_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_GetAllAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="List_GetByDebtorSoapIn">
+    <wsdl:part name="parameters" element="tns:List_GetByDebtor" />
+  </wsdl:message>
+  <wsdl:message name="List_GetByDebtorSoapOut">
+    <wsdl:part name="parameters" element="tns:List_GetByDebtorResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_GetByDebtorAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="CompanyServiceSoap">
+    <wsdl:operation name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get employee payslips in PDF by run company for a specific run period</wsdl:documentation>
+      <wsdl:input message="tns:SalaryDocuments_GetEmployeePayslipsPDFByRunCompanySoapIn" />
+      <wsdl:output message="tns:SalaryDocuments_GetEmployeePayslipsPDFByRunCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalaryDocuments_GetAllPayslipsPDFByRunCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all payslip PDF's of a company for a specific run period</wsdl:documentation>
+      <wsdl:input message="tns:SalaryDocuments_GetAllPayslipsPDFByRunCompanySoapIn" />
+      <wsdl:output message="tns:SalaryDocuments_GetAllPayslipsPDFByRunCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Company_GetCurrentPeriod">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the company's current period, Format = yyyy-pp-type, example: 2010-5-M or 2010-4-4W</wsdl:documentation>
+      <wsdl:input message="tns:Company_GetCurrentPeriodSoapIn" />
+      <wsdl:output message="tns:Company_GetCurrentPeriodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_GetCurrent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the company's current bankaccount.</wsdl:documentation>
+      <wsdl:input message="tns:BankAccount_GetCurrentSoapIn" />
+      <wsdl:output message="tns:BankAccount_GetCurrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Update">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update the current company bankaccount.</wsdl:documentation>
+      <wsdl:input message="tns:BankAccount_UpdateSoapIn" />
+      <wsdl:output message="tns:BankAccount_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insert a company bankaccount.</wsdl:documentation>
+      <wsdl:input message="tns:BankAccount_InsertSoapIn" />
+      <wsdl:output message="tns:BankAccount_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileExplorer_UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Uploads document for company</wsdl:documentation>
+      <wsdl:input message="tns:FileExplorer_UploadFileSoapIn" />
+      <wsdl:output message="tns:FileExplorer_UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetPayslipByRunCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the run's payslips</wsdl:documentation>
+      <wsdl:input message="tns:Reports_GetPayslipByRunCompanySoapIn" />
+      <wsdl:output message="tns:Reports_GetPayslipByRunCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetWageCodesByRunCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Journal XML</wsdl:documentation>
+      <wsdl:input message="tns:Reports_GetWageCodesByRunCompanySoapIn" />
+      <wsdl:output message="tns:Reports_GetWageCodesByRunCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetWageCodesByYear">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Journal XML</wsdl:documentation>
+      <wsdl:input message="tns:Reports_GetWageCodesByYearSoapIn" />
+      <wsdl:output message="tns:Reports_GetWageCodesByYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Journal XML</wsdl:documentation>
+      <wsdl:input message="tns:Journals_GetByRunCompanySoapIn" />
+      <wsdl:output message="tns:Journals_GetByRunCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunEmployee">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Journal XML</wsdl:documentation>
+      <wsdl:input message="tns:Journals_GetByRunEmployeeSoapIn" />
+      <wsdl:output message="tns:Journals_GetByRunEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunCostCenter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Journal XML</wsdl:documentation>
+      <wsdl:input message="tns:Journals_GetByRunCostCenterSoapIn" />
+      <wsdl:output message="tns:Journals_GetByRunCostCenterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunDepartment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Journal XML</wsdl:documentation>
+      <wsdl:input message="tns:Journals_GetByRunDepartmentSoapIn" />
+      <wsdl:output message="tns:Journals_GetByRunDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Run_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the company's run list for a specified year</wsdl:documentation>
+      <wsdl:input message="tns:Run_GetListSoapIn" />
+      <wsdl:output message="tns:Run_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SVW_GetCurrent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the current SVW settings.</wsdl:documentation>
+      <wsdl:input message="tns:SVW_GetCurrentSoapIn" />
+      <wsdl:output message="tns:SVW_GetCurrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SVW_UpdateCurrent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update the current SVW settings.</wsdl:documentation>
+      <wsdl:input message="tns:SVW_UpdateCurrentSoapIn" />
+      <wsdl:output message="tns:SVW_UpdateCurrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_GetScales">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a list of available scales for the company salary table</wsdl:documentation>
+      <wsdl:input message="tns:SalaryTable_GetScalesSoapIn" />
+      <wsdl:output message="tns:SalaryTable_GetScalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_GetSteps">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a list of available steps for the company salary table and selected scale</wsdl:documentation>
+      <wsdl:input message="tns:SalaryTable_GetStepsSoapIn" />
+      <wsdl:output message="tns:SalaryTable_GetStepsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_Get">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a list of available schalen for the company salarytable</wsdl:documentation>
+      <wsdl:input message="tns:SalaryTable_GetSoapIn" />
+      <wsdl:output message="tns:SalaryTable_GetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CostCenter_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns kostenplaatsen that belong to a company</wsdl:documentation>
+      <wsdl:input message="tns:CostCenter_GetListSoapIn" />
+      <wsdl:output message="tns:CostCenter_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CostCenter_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update or insert a kostenplaats into a company</wsdl:documentation>
+      <wsdl:input message="tns:CostCenter_InsertSoapIn" />
+      <wsdl:output message="tns:CostCenter_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Address_GetCurrent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the company's current address.</wsdl:documentation>
+      <wsdl:input message="tns:Address_GetCurrentSoapIn" />
+      <wsdl:output message="tns:Address_GetCurrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Address_Update">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update the current company address.</wsdl:documentation>
+      <wsdl:input message="tns:Address_UpdateSoapIn" />
+      <wsdl:output message="tns:Address_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Address_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insert the current company address.</wsdl:documentation>
+      <wsdl:input message="tns:Address_InsertSoapIn" />
+      <wsdl:output message="tns:Address_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RunRequest_Insert">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Requests a run for given company</wsdl:documentation>
+      <wsdl:input message="tns:RunRequest_InsertSoapIn" />
+      <wsdl:output message="tns:RunRequest_InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RunRequest_GetList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a list of requested runs with status for given company and year</wsdl:documentation>
+      <wsdl:input message="tns:RunRequest_GetListSoapIn" />
+      <wsdl:output message="tns:RunRequest_GetListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Schedule_GetCurrent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the current company schedules.</wsdl:documentation>
+      <wsdl:input message="tns:Schedule_GetCurrentSoapIn" />
+      <wsdl:output message="tns:Schedule_GetCurrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HourModel_GetHourCodes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns hour codes that belong to a company's hour model</wsdl:documentation>
+      <wsdl:input message="tns:HourModel_GetHourCodesSoapIn" />
+      <wsdl:output message="tns:HourModel_GetHourCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WageModel_GetWageCodes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns wagec odes that belong to a company's wagemodel</wsdl:documentation>
+      <wsdl:input message="tns:WageModel_GetWageCodesSoapIn" />
+      <wsdl:output message="tns:WageModel_GetWageCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_GetAll">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all companies</wsdl:documentation>
+      <wsdl:input message="tns:List_GetAllSoapIn" />
+      <wsdl:output message="tns:List_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_GetByDebtor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns companies that belong to a debtor</wsdl:documentation>
+      <wsdl:input message="tns:List_GetByDebtorSoapIn" />
+      <wsdl:output message="tns:List_GetByDebtorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CompanyServiceSoap" type="tns:CompanyServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompany">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryDocuments_GetEmployeePayslipsPDFByRunCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryDocuments_GetAllPayslipsPDFByRunCompany">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryDocuments_GetAllPayslipsPDFByRunCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SalaryDocuments_GetAllPayslipsPDFByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Company_GetCurrentPeriod">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Company_GetCurrentPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Company_GetCurrentPeriodAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_GetCurrent">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/BankAccount_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BankAccount_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Update">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/BankAccount_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BankAccount_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/BankAccount_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BankAccount_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileExplorer_UploadFile">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/FileExplorer_UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FileExplorer_UploadFileAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetPayslipByRunCompany">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Reports_GetPayslipByRunCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Reports_GetPayslipByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetWageCodesByRunCompany">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Reports_GetWageCodesByRunCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Reports_GetWageCodesByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetWageCodesByYear">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Reports_GetWageCodesByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Reports_GetWageCodesByYearAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunCompany">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Journals_GetByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunEmployee">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Journals_GetByRunEmployeeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunCostCenter">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Journals_GetByRunCostCenterAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunDepartment">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Journals_GetByRunDepartmentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Run_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Run_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Run_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SVW_GetCurrent">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SVW_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SVW_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SVW_UpdateCurrent">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SVW_UpdateCurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SVW_UpdateCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_GetScales">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryTable_GetScales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SalaryTable_GetScalesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_GetSteps">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryTable_GetSteps" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SalaryTable_GetStepsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_Get">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryTable_Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SalaryTable_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CostCenter_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/CostCenter_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CostCenter_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CostCenter_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/CostCenter_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CostCenter_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_GetCurrent">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Address_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Address_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_Update">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Address_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Address_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Address_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Address_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunRequest_Insert">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/RunRequest_Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:RunRequest_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunRequest_GetList">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/RunRequest_GetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:RunRequest_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Schedule_GetCurrent">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Schedule_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:Schedule_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HourModel_GetHourCodes">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/HourModel_GetHourCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:HourModel_GetHourCodesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WageModel_GetWageCodes">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/WageModel_GetWageCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:WageModel_GetWageCodesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetAll">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/List_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:List_GetAllAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetByDebtor">
+      <soap:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/List_GetByDebtor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:List_GetByDebtorAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CompanyServiceSoap12" type="tns:CompanyServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SalaryDocuments_GetEmployeePayslipsPDFByRunCompany">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryDocuments_GetEmployeePayslipsPDFByRunCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryDocuments_GetAllPayslipsPDFByRunCompany">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryDocuments_GetAllPayslipsPDFByRunCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SalaryDocuments_GetAllPayslipsPDFByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Company_GetCurrentPeriod">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Company_GetCurrentPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Company_GetCurrentPeriodAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_GetCurrent">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/BankAccount_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BankAccount_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Update">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/BankAccount_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BankAccount_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccount_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/BankAccount_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BankAccount_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileExplorer_UploadFile">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/FileExplorer_UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FileExplorer_UploadFileAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetPayslipByRunCompany">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Reports_GetPayslipByRunCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Reports_GetPayslipByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetWageCodesByRunCompany">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Reports_GetWageCodesByRunCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Reports_GetWageCodesByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reports_GetWageCodesByYear">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Reports_GetWageCodesByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Reports_GetWageCodesByYearAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunCompany">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Journals_GetByRunCompanyAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunEmployee">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Journals_GetByRunEmployeeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunCostCenter">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Journals_GetByRunCostCenterAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Journals_GetByRunDepartment">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Journals_GetByRunDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Journals_GetByRunDepartmentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Run_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Run_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Run_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SVW_GetCurrent">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SVW_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SVW_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SVW_UpdateCurrent">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SVW_UpdateCurrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SVW_UpdateCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_GetScales">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryTable_GetScales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SalaryTable_GetScalesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_GetSteps">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryTable_GetSteps" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SalaryTable_GetStepsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryTable_Get">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/SalaryTable_Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SalaryTable_GetAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CostCenter_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/CostCenter_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CostCenter_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CostCenter_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/CostCenter_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CostCenter_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_GetCurrent">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Address_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Address_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_Update">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Address_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Address_UpdateAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Address_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Address_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Address_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunRequest_Insert">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/RunRequest_Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:RunRequest_InsertAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunRequest_GetList">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/RunRequest_GetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:RunRequest_GetListAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Schedule_GetCurrent">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/Schedule_GetCurrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:Schedule_GetCurrentAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HourModel_GetHourCodes">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/HourModel_GetHourCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:HourModel_GetHourCodesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WageModel_GetWageCodes">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/WageModel_GetWageCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:WageModel_GetWageCodesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetAll">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/List_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:List_GetAllAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_GetByDebtor">
+      <soap12:operation soapAction="https://api.nmbrs.nl/soap/v2.1/CompanyService/List_GetByDebtor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:List_GetByDebtorAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CompanyService">
+    <wsdl:port name="CompanyServiceSoap" binding="tns:CompanyServiceSoap">
+      <soap:address location="http://api.nmbrs.nl/soap/v2.1/CompanyService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CompanyServiceSoap12" binding="tns:CompanyServiceSoap12">
+      <soap12:address location="http://api.nmbrs.nl/soap/v2.1/CompanyService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

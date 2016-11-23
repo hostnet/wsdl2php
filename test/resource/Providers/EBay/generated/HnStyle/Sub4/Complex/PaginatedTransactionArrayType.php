@@ -1,0 +1,41 @@
+<?php
+
+namespace Controle\Hostnet\Namesp\Sub4\Complex;
+
+/**
+ * PaginatedTransactionArrayType
+ * Contains a paginated list of transactions.
+ */
+class PaginatedTransactionArrayType
+{
+    // @codingStandardsIgnoreStart
+    /**
+     * @var \Controle\Hostnet\Namesp\Sub4\Complex\TransactionArrayType | Contains a list of transactions. Returned as an empty tag if no applicable transactions
+     * exist.
+     */
+    public $TransactionArray;
+    /**
+     * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationResultType | Provides information about the list of transactions, including number of pages and number
+     * of entries.
+     */
+    public $PaginationResult;
+    // @codingStandardsIgnoreEnd
+
+    /**
+     * @param TransactionArrayType $val
+     * @throws Exception
+     */
+    public function setTransactionArray($val)
+    {
+        $this->TransactionArray = (int)$val;
+    }
+
+    /**
+     * @param PaginationResultType $val
+     * @throws Exception
+     */
+    public function setPaginationResult($val)
+    {
+        $this->PaginationResult = (int)$val;
+    }
+}
