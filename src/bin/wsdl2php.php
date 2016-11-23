@@ -475,7 +475,7 @@ foreach($types as $index=>$type){
 		$code .= "}\n";
 		continue;
 	}
-
+	$code .= "\n".$ident_char."// @codingStandardsIgnoreStart";
 	$longestconstname='';
 	$longestconstchars=0;
 	foreach($type['values'] as $value){
@@ -527,9 +527,9 @@ foreach($types as $index=>$type){
 			}
 		}
 
-		$code .= "\n" . $ident_char . "public \$".strtolower($member['member']).";";
+		$code .= "\n" . $ident_char . "public \$".$member['member'].";";
 	}
-
+	$code .= "\n".$ident_char."// @codingStandardsIgnoreEnd\n";
 	// add access method
 	foreach($type['members'] as $member) {
 	$codestylefunctionname = ucfirst(str_replace("_", "", $member['member']));
@@ -541,7 +541,7 @@ foreach($types as $index=>$type){
 		$ident_char ."public function set%s(\$val)\n".$ident_char."{\n" .
 		"%s" .
 		$ident2 . "\$this->%s = (int)\$val;\n" .
-		$ident_char ."}\n", $member['type'], $codestylefunctionname, accessMethodCaster($member['type'], $member['member']), strtolower($member['member']));
+		$ident_char ."}\n", $member['type'], $codestylefunctionname, accessMethodCaster($member['type'], $member['member']), $member['member']);
 	}
 	rtrim($code);
 	if(substr($code, -1)===';'||substr($code, -1)==='{'){
@@ -580,7 +580,7 @@ else{
 if(count($service['types'])){
 	$code .= $ident_char. "private \$classmap = array(\n";
 	foreach($service['types'] as $type){
-		$code .= $ident2 . "'".$type['class']."\,' =>\n            '".$type['full_class']."',\n";
+		$code .= $ident2 . "'".$type['class']."' =>\n            '".$type['full_class']."',\n";
 	}
 	$code .= $ident_char . ");\n\n";
 }else{
