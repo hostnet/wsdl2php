@@ -4,12 +4,13 @@ namespace Controle\sub1\sub2;
 
 class ExpressSellerRequirementsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | If true, the seller's preferences in My eBay are set to include listings on eBay Express. If
 	 * false, the seller prefers not to include listings on Express, so the seller is therefore
 	 * ineligible for Express (and no other seller requirement settings are returned in this case).
 	 */
-	public $expresssellingpreference;
+	public $ExpressSellingPreference;
 	/**
 	 * @var boolean | If true, indicates eBay has marked the seller as eligible for eBay Express based on direct
 	 * evaluation. Only returned if true, and no other seller requirement settings are returned
@@ -17,12 +18,12 @@ class ExpressSellerRequirementsType
 	 * to become eligible to list on Express Germany. If they are approved, eBay sets ExpressApproved
 	 * to true and no other seller requirement settings are relevant.
 	 */
-	public $expressapproved;
+	public $ExpressApproved;
 	/**
 	 * @var boolean | If true, indicates that the user is in good standing with eBay. (One of the requirements
 	 * for listing a new item with Immediate Payment.)
 	 */
-	public $goodstanding;
+	public $GoodStanding;
 	/**
 	 * @var \Controle\sub1\sub2\FeedbackRequirementsType | The aggregate feedback score for a user. A user's feedback score is the net positive feedback
 	 * minus the net negative feedback left for the user. Feedback scores are a quantitative expression
@@ -42,7 +43,7 @@ class ExpressSellerRequirementsType
 	 * for that bidder, and the seller of an item that the user is bidding on. For all other users,
 	 * the value -99 is returned.
 	 */
-	public $feedbackscore;
+	public $FeedbackScore;
 	/**
 	 * @var \Controle\sub1\sub2\FeedbackRequirementsType | Percent of total feedback that is positive. For example, if the member has 50 feedbacks,
 	 * where 49 are positive and 1 is neutral or negative, the positive feedback percent could
@@ -53,17 +54,17 @@ class ExpressSellerRequirementsType
 	 * guide. In GetSearchResults and GetCategoryListings, feedback information is only returned
 	 * if IncludeFeedback = true in the request.
 	 */
-	public $positivefeedbackpercent;
+	public $PositiveFeedbackPercent;
 	/**
 	 * @var \Controle\sub1\sub2\FeedbackRequirementsType | If true, indicates that the seller meets the Express site's minimum feedback requirement
 	 * (if any) for transactions as a seller (not a buyer).
 	 */
-	public $feedbackassellerscore;
+	public $FeedbackAsSellerScore;
 	/**
 	 * @var \Controle\sub1\sub2\FeedbackRequirementsType | If true, indicates that the seller meets the Express site's minimum positive feedback requirement
 	 * (if any) for transactions as a seller (not a buyer).
 	 */
-	public $positivefeedbackassellerpercent;
+	public $PositiveFeedbackAsSellerPercent;
 	/**
 	 * @var boolean | If true, this indicates that the seller is a business user and intends to use listing features
 	 * that are offered to business users only. Applicable only to business sellers residing in
@@ -76,39 +77,41 @@ class ExpressSellerRequirementsType
 	 * item by specifying the appropriate VAT details. See the eBay Web Services guide for more
 	 * information and additional rules.
 	 */
-	public $businessseller;
+	public $BusinessSeller;
 	/**
 	 * @var boolean | If true, the seller has an eligible PayPal account for Express. Only returned if the site
 	 * assesses this requirement at the seller level.
 	 */
-	public $eligiblepaypalaccount;
+	public $EligiblePayPalAccount;
 	/**
 	 * @var boolean | If true, the seller has a PayPal account that accepts a payment from a buyer with an unconfirmed
 	 * address. Only returned if the site assesses this requirement at the seller level.
 	 */
-	public $paypalaccountacceptsunconfirmedaddress;
+	public $PayPalAccountAcceptsUnconfirmedAddress;
 	/**
 	 * @var boolean | If true, the seller accepts combined payments. If false, the seller doesn't accept combined
 	 * payments (and the seller is therefore ineligible for Express, if the site requires this
 	 * preference).
 	 */
-	public $combinedpaymentsaccepted;
+	public $CombinedPaymentsAccepted;
 	/**
 	 * @var boolean | If true, the seller's feedback profile is public. If false, the seller's feedback details
 	 * are private; that is, User.FeedbackPrivate is true (and the seller is therefore ineligible).
 	 */
-	public $feedbackpublic;
+	public $FeedbackPublic;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setExpressSellingPreference($val)
 	{
-        $this->expresssellingpreference = (int)$val;
+        $this->ExpressSellingPreference = (int)$val;
 	}
 
 	/**
@@ -117,7 +120,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setExpressApproved($val)
 	{
-        $this->expressapproved = (int)$val;
+        $this->ExpressApproved = (int)$val;
 	}
 
 	/**
@@ -126,7 +129,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setGoodStanding($val)
 	{
-        $this->goodstanding = (int)$val;
+        $this->GoodStanding = (int)$val;
 	}
 
 	/**
@@ -135,7 +138,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackScore($val)
 	{
-        $this->feedbackscore = (int)$val;
+        $this->FeedbackScore = (int)$val;
 	}
 
 	/**
@@ -144,7 +147,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
-        $this->positivefeedbackpercent = (int)$val;
+        $this->PositiveFeedbackPercent = (int)$val;
 	}
 
 	/**
@@ -153,7 +156,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackAsSellerScore($val)
 	{
-        $this->feedbackassellerscore = (int)$val;
+        $this->FeedbackAsSellerScore = (int)$val;
 	}
 
 	/**
@@ -162,7 +165,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPositiveFeedbackAsSellerPercent($val)
 	{
-        $this->positivefeedbackassellerpercent = (int)$val;
+        $this->PositiveFeedbackAsSellerPercent = (int)$val;
 	}
 
 	/**
@@ -171,7 +174,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setBusinessSeller($val)
 	{
-        $this->businessseller = (int)$val;
+        $this->BusinessSeller = (int)$val;
 	}
 
 	/**
@@ -180,7 +183,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
-        $this->eligiblepaypalaccount = (int)$val;
+        $this->EligiblePayPalAccount = (int)$val;
 	}
 
 	/**
@@ -189,7 +192,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
-        $this->paypalaccountacceptsunconfirmedaddress = (int)$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
 	}
 
 	/**
@@ -198,7 +201,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setCombinedPaymentsAccepted($val)
 	{
-        $this->combinedpaymentsaccepted = (int)$val;
+        $this->CombinedPaymentsAccepted = (int)$val;
 	}
 
 	/**
@@ -207,7 +210,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackPublic($val)
 	{
-        $this->feedbackpublic = (int)$val;
+        $this->FeedbackPublic = (int)$val;
 	}
 
 	/**

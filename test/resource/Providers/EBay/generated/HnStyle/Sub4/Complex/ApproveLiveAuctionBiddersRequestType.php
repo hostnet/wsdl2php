@@ -11,27 +11,30 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ApproveLiveAuctionBiddersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Number that identifies the seller's eBay Live Auctions catalog within which the lot
      * item will be listed. Use GetLiveAuctionCatalogDetails to determine the seller's available
      * catalog IDs.
      */
-    public $usercatalogid;
+    public $UserCatalogID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BidApprovalArrayType | Approval details for a specific set of bidders.
      */
-    public $bidapproval;
+    public $BidApproval;
     /**
      * @var boolean | This will approve all bidders in the catalog in the pending status only. This is an
      * optional field. If provided and set to true, do not send BidApproval.
      */
-    public $approveallpending;
+    public $ApproveAllPending;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | This is the amount that bidders are beings approved for. This is required if user has
      * set ApproveAllPending to true. It only applies to bidder requests that are in pending
      * status.
      */
-    public $allapprovedbiddinglimit;
+    public $AllApprovedBiddingLimit;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -41,7 +44,7 @@ class ApproveLiveAuctionBiddersRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->usercatalogid = (int)$val;
+        $this->UserCatalogID = (int)$val;
     }
 
     /**
@@ -50,7 +53,7 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setBidApproval($val)
     {
-        $this->bidapproval = (int)$val;
+        $this->BidApproval = (int)$val;
     }
 
     /**
@@ -59,7 +62,7 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setApproveAllPending($val)
     {
-        $this->approveallpending = (int)$val;
+        $this->ApproveAllPending = (int)$val;
     }
 
     /**
@@ -68,6 +71,6 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setAllApprovedBiddingLimit($val)
     {
-        $this->allapprovedbiddinglimit = (int)$val;
+        $this->AllApprovedBiddingLimit = (int)$val;
     }
 }

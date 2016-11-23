@@ -9,29 +9,32 @@ namespace Controle;
  */
 class ListingTipType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Identifier for the tip. Primarily for internal use. This value may change over time.
      */
-    public $listingtipid;
+    public $ListingTipID;
     /**
      * @var int | A number ranging from 0 to 10000 (inclusive), with 10000 having the highest priority.
      */
-    public $priority;
+    public $Priority;
     /**
      * @var \Controle\ListingTipMessageType | Contains the data for one message.
      */
-    public $message;
+    public $Message;
     /**
      * @var \Controle\ListingTipFieldType | The name of the field that is being modified. Use only first-level properties. The first
      * letter of each node in the field is case insensitive, so item.startPrice is the same
      * as Item.StartPrice. In RelistItem, this is required if you are also modifying fields
      * of the item that you are relisting.
      */
-    public $field;
+    public $Field;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -41,7 +44,7 @@ class ListingTipType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipID');
         }
-        $this->listingtipid = (int)$val;
+        $this->ListingTipID = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class ListingTipType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->priority = (int)$val;
+        $this->Priority = (int)$val;
     }
 
     /**
@@ -62,7 +65,7 @@ class ListingTipType
      */
     public function setMessage($val)
     {
-        $this->message = (int)$val;
+        $this->Message = (int)$val;
     }
 
     /**
@@ -71,7 +74,7 @@ class ListingTipType
      */
     public function setField($val)
     {
-        $this->field = (int)$val;
+        $this->Field = (int)$val;
     }
 
     /**

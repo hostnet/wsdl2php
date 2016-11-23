@@ -8,25 +8,28 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FlatRateInsuranceRangeCostType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FlatRateInsuranceRangeCodeType | The price range for the shipment for which the insurance cost is being specified.
      */
-    public $flatrateinsurancerange;
+    public $FlatRateInsuranceRange;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The cost of insurance for the specified price range.
      */
-    public $insurancecost;
+    public $InsuranceCost;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FlatRateInsuranceRangeCodeType $val
      * @throws Exception
      */
     public function setFlatRateInsuranceRange($val)
     {
-        $this->flatrateinsurancerange = (int)$val;
+        $this->FlatRateInsuranceRange = (int)$val;
     }
 
     /**
@@ -35,7 +38,7 @@ class FlatRateInsuranceRangeCostType
      */
     public function setInsuranceCost($val)
     {
-        $this->insurancecost = (int)$val;
+        $this->InsuranceCost = (int)$val;
     }
 
     /**

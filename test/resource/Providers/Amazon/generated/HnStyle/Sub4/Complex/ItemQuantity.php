@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ItemQuantity
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $itemid;
+    public $ItemId;
     /**
      * @var string
      */
-    public $quantity;
+    public $Quantity;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class ItemQuantity
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemId');
         }
-        $this->itemid = (int)$val;
+        $this->ItemId = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class ItemQuantity
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Quantity');
         }
-        $this->quantity = (int)$val;
+        $this->Quantity = (int)$val;
     }
 }

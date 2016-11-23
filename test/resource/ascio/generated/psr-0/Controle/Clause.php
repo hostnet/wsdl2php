@@ -4,18 +4,21 @@ namespace Controle;
 
 class Clause
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $attribute;
+	public $Attribute;
 	/**
 	 * @var \Controle\SearchOperatorType
 	 */
-	public $operator;
+	public $Operator;
 	/**
 	 * @var string
 	 */
-	public $value;
+	public $Value;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -25,7 +28,7 @@ class Clause
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Attribute');
         }
-        $this->attribute = (int)$val;
+        $this->Attribute = (int)$val;
 	}
 
 	/**
@@ -34,7 +37,7 @@ class Clause
 	 */
 	public function setOperator($val)
 	{
-        $this->operator = (int)$val;
+        $this->Operator = (int)$val;
 	}
 
 	/**
@@ -46,6 +49,6 @@ class Clause
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
 	}
 }

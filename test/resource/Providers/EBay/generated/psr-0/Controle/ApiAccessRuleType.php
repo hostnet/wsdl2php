@@ -9,43 +9,44 @@ namespace Controle;
  */
 class ApiAccessRuleType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | The name of the call that has an access rule. Can be a call name (e.g., AddItem), ApplicationAggregate
 	 * (returns totals for all calls), PasswordAuthenticationLimiter (dummy call), or NonUTF8UsageLimiter.
 	 */
-	public $callname;
+	public $CallName;
 	/**
 	 * @var boolean | Whether use of this call counts toward the application's aggregate limit for all calls.
 	 */
-	public $countstowardaggregate;
+	public $CountsTowardAggregate;
 	/**
 	 * @var long | The number of calls per day that your application can make to this call before being refused. The
 	 * day starts at midnight, 00:00:00 PST (not GMT).
 	 */
-	public $dailyhardlimit;
+	public $DailyHardLimit;
 	/**
 	 * @var long | The number of calls per day that your application can make to this call before you receive
 	 * a warning. The day starts at midnight, 00:00:00 PST.
 	 */
-	public $dailysoftlimit;
+	public $DailySoftLimit;
 	/**
 	 * @var long | The number of times your application has used this call today.
 	 */
-	public $dailyusage;
+	public $DailyUsage;
 	/**
 	 * @var long | The number of calls that your application can make per hour to this call before being refused.
 	 * Each count begins on the hour (e.g. 1:00:00).
 	 */
-	public $hourlyhardlimit;
+	public $HourlyHardLimit;
 	/**
 	 * @var long | The number of calls that your application can make to this call per hour before you receive
 	 * a warning. Each count begins on the hour (e.g. 1:00:00).
 	 */
-	public $hourlysoftlimit;
+	public $HourlySoftLimit;
 	/**
 	 * @var long | The number of times your application has executed this call during this hour.
 	 */
-	public $hourlyusage;
+	public $HourlyUsage;
 	/**
 	 * @var int | The length of time before your application's perodic usage counter restarts for this call.
 	 * If the number of calls you make exceeds the periodic hard limit before the current period
@@ -54,23 +55,23 @@ class ApiAccessRuleType
 	 * could be any positive integer). If the period is based on the calendar month, the usage counters
 	 * restart on the same day of every month, regardless of the number of days in the month.
 	 */
-	public $period;
+	public $Period;
 	/**
 	 * @var long | Number of calls per period that your application may make before a call is refused, if
 	 * the periodic limit is enforced. The length of the period is specified in Period.
 	 */
-	public $periodichardlimit;
+	public $PeriodicHardLimit;
 	/**
 	 * @var long | Number of calls per period that your application may make before you receive a warning,
 	 * if the periodic limit is enforced. The length of the period is specified in Period.
 	 */
-	public $periodicsoftlimit;
+	public $PeriodicSoftLimit;
 	/**
 	 * @var long | Number of calls that your application has already made this period. Returns 0 if the periodic
 	 * access rule has not been configured for the application. The length of the period is specified
 	 * in Period. The start date of the period is specified in PeriodicStartDate.
 	 */
-	public $periodicusage;
+	public $PeriodicUsage;
 	/**
 	 * @var dateTime | The time (in GMT) when this access rule's period started. The period starts at midnight
 	 * Pacific time. For example, if the period begins on June 29 in 2005 when California is on
@@ -80,26 +81,28 @@ class ApiAccessRuleType
 	 * Program has configured the start date for the access rule. The start date can vary per application
 	 * and per call name (i.e., per access rule).
 	 */
-	public $periodicstartdate;
+	public $PeriodicStartDate;
 	/**
 	 * @var dateTime | The date and time this access rule was last modified by eBay.
 	 */
-	public $modtime;
+	public $ModTime;
 	/**
 	 * @var \Controle\AccessRuleCurrentStatusCodeType | Your application's current status for this rule, including whether the rule is set for
 	 * your application and whether the application has exceeded its daily or hourly limit.
 	 */
-	public $rulecurrentstatus;
+	public $RuleCurrentStatus;
 	/**
 	 * @var \Controle\AccessRuleStatusCodeType | The status of the access rule, including whether the rule is turned on or off and whether
 	 * the application is currently blocked from using this call. No effect if RuleCurrentStatus
 	 * is set to NotSet.
 	 */
-	public $rulestatus;
+	public $RuleStatus;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -109,7 +112,7 @@ class ApiAccessRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallName');
         }
-        $this->callname = (int)$val;
+        $this->CallName = (int)$val;
 	}
 
 	/**
@@ -118,7 +121,7 @@ class ApiAccessRuleType
 	 */
 	public function setCountsTowardAggregate($val)
 	{
-        $this->countstowardaggregate = (int)$val;
+        $this->CountsTowardAggregate = (int)$val;
 	}
 
 	/**
@@ -127,7 +130,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailyHardLimit($val)
 	{
-        $this->dailyhardlimit = (int)$val;
+        $this->DailyHardLimit = (int)$val;
 	}
 
 	/**
@@ -136,7 +139,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailySoftLimit($val)
 	{
-        $this->dailysoftlimit = (int)$val;
+        $this->DailySoftLimit = (int)$val;
 	}
 
 	/**
@@ -145,7 +148,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailyUsage($val)
 	{
-        $this->dailyusage = (int)$val;
+        $this->DailyUsage = (int)$val;
 	}
 
 	/**
@@ -154,7 +157,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlyHardLimit($val)
 	{
-        $this->hourlyhardlimit = (int)$val;
+        $this->HourlyHardLimit = (int)$val;
 	}
 
 	/**
@@ -163,7 +166,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlySoftLimit($val)
 	{
-        $this->hourlysoftlimit = (int)$val;
+        $this->HourlySoftLimit = (int)$val;
 	}
 
 	/**
@@ -172,7 +175,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlyUsage($val)
 	{
-        $this->hourlyusage = (int)$val;
+        $this->HourlyUsage = (int)$val;
 	}
 
 	/**
@@ -184,7 +187,7 @@ class ApiAccessRuleType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->period = (int)$val;
+        $this->Period = (int)$val;
 	}
 
 	/**
@@ -193,7 +196,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicHardLimit($val)
 	{
-        $this->periodichardlimit = (int)$val;
+        $this->PeriodicHardLimit = (int)$val;
 	}
 
 	/**
@@ -202,7 +205,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicSoftLimit($val)
 	{
-        $this->periodicsoftlimit = (int)$val;
+        $this->PeriodicSoftLimit = (int)$val;
 	}
 
 	/**
@@ -211,7 +214,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicUsage($val)
 	{
-        $this->periodicusage = (int)$val;
+        $this->PeriodicUsage = (int)$val;
 	}
 
 	/**
@@ -220,7 +223,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicStartDate($val)
 	{
-        $this->periodicstartdate = (int)$val;
+        $this->PeriodicStartDate = (int)$val;
 	}
 
 	/**
@@ -229,7 +232,7 @@ class ApiAccessRuleType
 	 */
 	public function setModTime($val)
 	{
-        $this->modtime = (int)$val;
+        $this->ModTime = (int)$val;
 	}
 
 	/**
@@ -238,7 +241,7 @@ class ApiAccessRuleType
 	 */
 	public function setRuleCurrentStatus($val)
 	{
-        $this->rulecurrentstatus = (int)$val;
+        $this->RuleCurrentStatus = (int)$val;
 	}
 
 	/**
@@ -247,7 +250,7 @@ class ApiAccessRuleType
 	 */
 	public function setRuleStatus($val)
 	{
-        $this->rulestatus = (int)$val;
+        $this->RuleStatus = (int)$val;
 	}
 
 	/**

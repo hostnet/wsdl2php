@@ -10,17 +10,18 @@ namespace Controle\sub1\sub2;
  */
 class MarkUpMarkDownEventType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\MarkUpMarkDownEventTypeCodeType | Returns the notification type. Possible values include: AskSellerQuestion, AuctionCheckoutComplete,
 	 * BestOffer, CheckoutBuyerRequestTotal, EndOfAuction, Feedback, FixedPriceEndOfTransaction,
 	 * FixedPriceTransaction, ItemNotReceived, MyMessages, OutBid, SecondChanceOffer, UPIBuyerResponseDispute,
 	 * UPISellerClosedDispute, UPISellerOpenedDispute, and UPISellerRespondedToDispute.
 	 */
-	public $type;
+	public $Type;
 	/**
 	 * @var dateTime | Time when the application was marked up or marked down.
 	 */
-	public $time;
+	public $Time;
 	/**
 	 * @var string | Describes how the application was marked down, automatically or manually. When an application
 	 * is automatically marked down, eBay will ping the application periodically, and if communication
@@ -28,18 +29,20 @@ class MarkUpMarkDownEventType
 	 * manually, you must contact eBay Developer Support to get your application marked up. A
 	 * Reason is not provided for mark up events.
 	 */
-	public $reason;
+	public $Reason;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param MarkUpMarkDownEventTypeCodeType $val
 	 * @throws Exception
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
 	}
 
 	/**
@@ -48,7 +51,7 @@ class MarkUpMarkDownEventType
 	 */
 	public function setTime($val)
 	{
-        $this->time = (int)$val;
+        $this->Time = (int)$val;
 	}
 
 	/**
@@ -60,7 +63,7 @@ class MarkUpMarkDownEventType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reason');
         }
-        $this->reason = (int)$val;
+        $this->Reason = (int)$val;
 	}
 
 	/**

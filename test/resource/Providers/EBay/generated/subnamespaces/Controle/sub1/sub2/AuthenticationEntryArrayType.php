@@ -9,17 +9,20 @@ namespace Controle\sub1\sub2;
  */
 class AuthenticationEntryArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AuthenticationEntryType | Contains the data properties that define one authentication entry.            Multiple
 	 * AuthenticationEntry fields can be returned.
 	 */
-	public $authenticationentry;
+	public $AuthenticationEntry;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AuthenticationEntryType $val
 	 * @throws Exception
 	 */
 	public function setAuthenticationEntry($val)
 	{
-        $this->authenticationentry = (int)$val;
+        $this->AuthenticationEntry = (int)$val;
 	}
 }

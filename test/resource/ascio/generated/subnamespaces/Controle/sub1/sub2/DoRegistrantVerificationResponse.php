@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class DoRegistrantVerificationResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $doregistrantverificationresult;
+	public $DoRegistrantVerificationResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setDoRegistrantVerificationResult($val)
 	{
-        $this->doregistrantverificationresult = (int)$val;
+        $this->DoRegistrantVerificationResult = (int)$val;
 	}
 }

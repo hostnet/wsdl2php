@@ -9,6 +9,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ValidateTestUserRegistrationRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The aggregate feedback score for a user. A user's feedback score is the net positive
      * feedback minus the net negative feedback left for the user. Feedback scores are a quantitative
@@ -28,37 +29,39 @@ class ValidateTestUserRegistrationRequestType extends
      * only for that bidder, and the seller of an item that the user is bidding on. For all
      * other users, the value -99 is returned.
      */
-    public $feedbackscore;
+    public $FeedbackScore;
     /**
      * @var dateTime | Indicates the date the specified user originally registered with eBay. <br><br> Starting
      * Jan 2007, when a bidder's user info is made anonymous, this tag will be returned only
      * for that bidder, and the seller of an item that the user is bidding on.
      */
-    public $registrationdate;
+    public $RegistrationDate;
     /**
      * @var boolean | Indicates if a user subscribes to Seller's Assistant. You cannot request to subscribe
      * a user to both Seller's Assistant and Seller's Assistant Pro. You cannot request to
      * unsubscribe a user.
      */
-    public $subscribesa;
+    public $SubscribeSA;
     /**
      * @var boolean | Indicates if a user subscribes to Seller's Assistant Pro. You cannot request to subscribe
      * a user to both Seller's Assistant and Seller's Assistant Pro. You cannot request to
      * unsubscribe a user.
      */
-    public $subscribesapro;
+    public $SubscribeSAPro;
     /**
      * @var boolean | Indicates if a user subscribes to Selling Manager. You cannot request to subscribe a
      * user to both Selling Manager and Selling Manager Pro. You cannot request to unsubscribe
      * a user.
      */
-    public $subscribesm;
+    public $SubscribeSM;
     /**
      * @var boolean | Indicates if a user subscribes to Selling Manager Pro. You cannot request to subscribe
      * a user to both Selling Manager and Selling Manager Pro. You cannot request to unsubscribe
      * a user.
      */
-    public $subscribesmpro;
+    public $SubscribeSMPro;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -68,7 +71,7 @@ class ValidateTestUserRegistrationRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->feedbackscore = (int)$val;
+        $this->FeedbackScore = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setRegistrationDate($val)
     {
-        $this->registrationdate = (int)$val;
+        $this->RegistrationDate = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSA($val)
     {
-        $this->subscribesa = (int)$val;
+        $this->SubscribeSA = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSAPro($val)
     {
-        $this->subscribesapro = (int)$val;
+        $this->SubscribeSAPro = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSM($val)
     {
-        $this->subscribesm = (int)$val;
+        $this->SubscribeSM = (int)$val;
     }
 
     /**
@@ -113,6 +116,6 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSMPro($val)
     {
-        $this->subscribesmpro = (int)$val;
+        $this->SubscribeSMPro = (int)$val;
     }
 }

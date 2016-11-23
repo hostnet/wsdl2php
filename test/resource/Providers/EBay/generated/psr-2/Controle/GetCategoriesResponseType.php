@@ -14,21 +14,22 @@ namespace Controle;
 class GetCategoriesResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\CategoryArrayType | Statistical information about categories that contain items that match the query, if
      * any. Returns empty if no matches are found or when the Categories filter was not passed
      * in the request. (For categories associated with specific items, see items returned in
      * each search result.) Shows the distribution of items across each category.
      */
-    public $categoryarray;
+    public $CategoryArray;
     /**
      * @var int | Indicates the number of categories in the array.
      */
-    public $categorycount;
+    public $CategoryCount;
     /**
      * @var dateTime | Gives the time in GMT that the feature flags for the category hierarchy were last updated.
      */
-    public $updatetime;
+    public $UpdateTime;
     /**
      * @var string | Version value assigned to the current category mapping data for the site.
      *        Compare this value to the version value the application stored with the mappings
@@ -36,14 +37,14 @@ class GetCategoriesResponseType extends
      * the same,                  the data has not changed since the last time the data was
      * retrieved and stored.
      */
-    public $categoryversion;
+    public $CategoryVersion;
     /**
      * @var boolean | This field was marked as deprecated (no longer recommended) with release 435 (November
      * 2005). With client request version 485 and higher (November 2006), this field is no
      * longer returned. Please note that the names of ReservePriceInclusive and ReduceReserveInclusive
      * are REVERSED relative to their logic.
      */
-    public $reservepriceinclusive;
+    public $ReservePriceInclusive;
     /**
      * @var boolean | If true, ReservePriceAllowed indicates that all categories on the site allow the seller
      * to specify a reserve price for an item. If false, all categories on the site do not
@@ -54,23 +55,23 @@ class GetCategoriesResponseType extends
      * is true and Category.ORPA is true, the category overrides the site setting and does
      * does not support reserve prices.
      */
-    public $reservepriceallowed;
+    public $ReservePriceAllowed;
     /**
      * @var double | Specifies the default site setting for whether the Minimum Reserve Price feature is
      * supported for this category.
      */
-    public $minimumreserveprice;
+    public $MinimumReservePrice;
     /**
      * @var \Controle\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
     /**
      * @var boolean | This field was marked as deprecated (no longer recommended) with release 435 (November
      * 2005). With client request version 485 and higher (November 2006), this field is no
      * longer returned. Please note that the names of ReservePriceInclusive and ReduceReserveInclusive
      * are REVERSED relative to their logic.
      */
-    public $reducereserveinclusive;
+    public $ReduceReserveInclusive;
     /**
      * @var boolean | If true, ReduceReserveAllowed indicates that all categories on the site allow the seller
      * to reduce an item's reserve price. If false, all categories on the site do not normally
@@ -81,14 +82,16 @@ class GetCategoriesResponseType extends
      * ReduceReserveAllowed is true and Category.ORRA is true, the category overrides the site
      * setting and does does not support reducing reserve prices.
      */
-    public $reducereserveallowed;
+    public $ReduceReserveAllowed;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CategoryArrayType $val
      * @throws Exception
      */
     public function setCategoryArray($val)
     {
-        $this->categoryarray = (int)$val;
+        $this->CategoryArray = (int)$val;
     }
 
     /**
@@ -100,7 +103,7 @@ class GetCategoriesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->categorycount = (int)$val;
+        $this->CategoryCount = (int)$val;
     }
 
     /**
@@ -109,7 +112,7 @@ class GetCategoriesResponseType extends
      */
     public function setUpdateTime($val)
     {
-        $this->updatetime = (int)$val;
+        $this->UpdateTime = (int)$val;
     }
 
     /**
@@ -121,7 +124,7 @@ class GetCategoriesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->categoryversion = (int)$val;
+        $this->CategoryVersion = (int)$val;
     }
 
     /**
@@ -130,7 +133,7 @@ class GetCategoriesResponseType extends
      */
     public function setReservePriceInclusive($val)
     {
-        $this->reservepriceinclusive = (int)$val;
+        $this->ReservePriceInclusive = (int)$val;
     }
 
     /**
@@ -139,7 +142,7 @@ class GetCategoriesResponseType extends
      */
     public function setReservePriceAllowed($val)
     {
-        $this->reservepriceallowed = (int)$val;
+        $this->ReservePriceAllowed = (int)$val;
     }
 
     /**
@@ -148,7 +151,7 @@ class GetCategoriesResponseType extends
      */
     public function setMinimumReservePrice($val)
     {
-        $this->minimumreserveprice = (int)$val;
+        $this->MinimumReservePrice = (int)$val;
     }
 
     /**
@@ -157,7 +160,7 @@ class GetCategoriesResponseType extends
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 
     /**
@@ -166,7 +169,7 @@ class GetCategoriesResponseType extends
      */
     public function setReduceReserveInclusive($val)
     {
-        $this->reducereserveinclusive = (int)$val;
+        $this->ReduceReserveInclusive = (int)$val;
     }
 
     /**
@@ -175,6 +178,6 @@ class GetCategoriesResponseType extends
      */
     public function setReduceReserveAllowed($val)
     {
-        $this->reducereserveallowed = (int)$val;
+        $this->ReduceReserveAllowed = (int)$val;
     }
 }

@@ -9,21 +9,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetDescriptionTemplatesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var dateTime | The time the status was last modified. Also applicable to Half.com (for GetOrders).
      */
-    public $lastmodifiedtime;
+    public $LastModifiedTime;
     /**
      * @var boolean | Indicates whether to retrieve templates for motor vehicle categories for eBay Motors
      * (site 100). If true, templates are returned for motor vehicle categories. If false, templates
      * are returned for non-motor vehicle categories such as Parts and Accessories. If included
      * as an input field (whether true or false), this overrides any value provided for CategoryID.
      */
-    public $motorvehicles;
+    public $MotorVehicles;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class GetDescriptionTemplatesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -42,7 +45,7 @@ class GetDescriptionTemplatesRequestType extends
      */
     public function setLastModifiedTime($val)
     {
-        $this->lastmodifiedtime = (int)$val;
+        $this->LastModifiedTime = (int)$val;
     }
 
     /**
@@ -51,6 +54,6 @@ class GetDescriptionTemplatesRequestType extends
      */
     public function setMotorVehicles($val)
     {
-        $this->motorvehicles = (int)$val;
+        $this->MotorVehicles = (int)$val;
     }
 }

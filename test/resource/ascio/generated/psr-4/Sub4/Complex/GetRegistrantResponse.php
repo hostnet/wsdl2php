@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class GetRegistrantResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $getregistrantresult;
+    public $GetRegistrantResult;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Registrant
      */
     public $registrant;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setGetRegistrantResult($val)
     {
-        $this->getregistrantresult = (int)$val;
+        $this->GetRegistrantResult = (int)$val;
     }
 
     /**

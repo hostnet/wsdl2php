@@ -4,22 +4,25 @@ namespace Controle;
 
 class ProductInfo
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $totalresults;
+	public $TotalResults;
 	/**
 	 * @var string
 	 */
-	public $totalpages;
+	public $TotalPages;
 	/**
 	 * @var string
 	 */
-	public $listname;
+	public $ListName;
 	/**
 	 * @var \Controle\DetailsArray
 	 */
-	public $details;
+	public $Details;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -29,7 +32,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalResults');
         }
-        $this->totalresults = (int)$val;
+        $this->TotalResults = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalPages');
         }
-        $this->totalpages = (int)$val;
+        $this->TotalPages = (int)$val;
 	}
 
 	/**
@@ -53,7 +56,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListName');
         }
-        $this->listname = (int)$val;
+        $this->ListName = (int)$val;
 	}
 
 	/**
@@ -62,6 +65,6 @@ class ProductInfo
 	 */
 	public function setDetails($val)
 	{
-        $this->details = (int)$val;
+        $this->Details = (int)$val;
 	}
 }

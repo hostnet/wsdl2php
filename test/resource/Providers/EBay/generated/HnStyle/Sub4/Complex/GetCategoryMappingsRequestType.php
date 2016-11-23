@@ -11,6 +11,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategoryMappingsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Version value assigned to the current category mapping data for the site.
      *        Compare this value to the version value the application stored with the mappings
@@ -18,7 +19,9 @@ class GetCategoryMappingsRequestType extends
      * the same,                  the data has not changed since the last time the data was
      * retrieved and stored.
      */
-    public $categoryversion;
+    public $CategoryVersion;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -28,6 +31,6 @@ class GetCategoryMappingsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->categoryversion = (int)$val;
+        $this->CategoryVersion = (int)$val;
     }
 }

@@ -8,23 +8,26 @@ namespace Controle\sub1\sub2;
  */
 class FeedbackInfoType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Textual comment that explains, clarifies, or justifies the feedback rating specified in
 	 * CommentType. Still displayed if feedback is withdrawn.
 	 */
-	public $commenttext;
+	public $CommentText;
 	/**
 	 * @var \Controle\sub1\sub2\CommentTypeCodeType | Rating of the feedback being left (e.g., Positive).
 	 */
-	public $commenttype;
+	public $CommentType;
 	/**
 	 * @var \Controle\sub1\sub2\UserIDType | Recipient user for whom the feedback is being left.
 	 */
-	public $targetuser;
+	public $TargetUser;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -34,7 +37,7 @@ class FeedbackInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->commenttext = (int)$val;
+        $this->CommentText = (int)$val;
 	}
 
 	/**
@@ -43,7 +46,7 @@ class FeedbackInfoType
 	 */
 	public function setCommentType($val)
 	{
-        $this->commenttype = (int)$val;
+        $this->CommentType = (int)$val;
 	}
 
 	/**
@@ -52,7 +55,7 @@ class FeedbackInfoType
 	 */
 	public function setTargetUser($val)
 	{
-        $this->targetuser = (int)$val;
+        $this->TargetUser = (int)$val;
 	}
 
 	/**

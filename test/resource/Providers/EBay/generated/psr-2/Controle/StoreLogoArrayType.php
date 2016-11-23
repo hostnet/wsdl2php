@@ -8,16 +8,19 @@ namespace Controle;
  */
 class StoreLogoArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\StoreLogoType | Store logo.
      */
-    public $logo;
+    public $Logo;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreLogoType $val
      * @throws Exception
      */
     public function setLogo($val)
     {
-        $this->logo = (int)$val;
+        $this->Logo = (int)$val;
     }
 }

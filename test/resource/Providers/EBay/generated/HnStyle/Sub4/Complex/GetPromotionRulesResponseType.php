@@ -9,17 +9,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetPromotionRulesResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionRuleArrayType | Specifies a list of cross-promotion rules to set. Each rule defines a referring item
      * or store category and the cross-promoted items or store categories.
      */
-    public $promotionrulearray;
+    public $PromotionRuleArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PromotionRuleArrayType $val
      * @throws Exception
      */
     public function setPromotionRuleArray($val)
     {
-        $this->promotionrulearray = (int)$val;
+        $this->PromotionRuleArray = (int)$val;
     }
 }

@@ -2,22 +2,25 @@
 
 class ProductInfo
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $totalresults;
+	public $TotalResults;
 	/**
 	 * @var string
 	 */
-	public $totalpages;
+	public $TotalPages;
 	/**
 	 * @var string
 	 */
-	public $listname;
+	public $ListName;
 	/**
 	 * @var DetailsArray
 	 */
-	public $details;
+	public $Details;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -27,7 +30,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalResults');
         }
-        $this->totalresults = (int)$val;
+        $this->TotalResults = (int)$val;
 	}
 
 	/**
@@ -39,7 +42,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalPages');
         }
-        $this->totalpages = (int)$val;
+        $this->TotalPages = (int)$val;
 	}
 
 	/**
@@ -51,7 +54,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListName');
         }
-        $this->listname = (int)$val;
+        $this->ListName = (int)$val;
 	}
 
 	/**
@@ -60,24 +63,27 @@ class ProductInfo
 	 */
 	public function setDetails($val)
 	{
-        $this->details = (int)$val;
+        $this->Details = (int)$val;
 	}
 }
 
 class Reviews
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $avgcustomerrating;
+	public $AvgCustomerRating;
 	/**
 	 * @var string
 	 */
-	public $totalcustomerreviews;
+	public $TotalCustomerReviews;
 	/**
 	 * @var CustomerReviewArray
 	 */
-	public $customerreviews;
+	public $CustomerReviews;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -87,7 +93,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AvgCustomerRating');
         }
-        $this->avgcustomerrating = (int)$val;
+        $this->AvgCustomerRating = (int)$val;
 	}
 
 	/**
@@ -99,7 +105,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
         }
-        $this->totalcustomerreviews = (int)$val;
+        $this->TotalCustomerReviews = (int)$val;
 	}
 
 	/**
@@ -108,160 +114,175 @@ class Reviews
 	 */
 	public function setCustomerReviews($val)
 	{
-        $this->customerreviews = (int)$val;
+        $this->CustomerReviews = (int)$val;
 	}
 }
 
 class MarketplaceSearch
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var MarketplaceSearchDetailsArray
 	 */
-	public $marketplacesearchdetails;
+	public $MarketplaceSearchDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param MarketplaceSearchDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setMarketplaceSearchDetails($val)
 	{
-        $this->marketplacesearchdetails = (int)$val;
+        $this->MarketplaceSearchDetails = (int)$val;
 	}
 }
 
 class SellerProfile
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var SellerProfileDetailsArray
 	 */
-	public $sellerprofiledetails;
+	public $SellerProfileDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SellerProfileDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setSellerProfileDetails($val)
 	{
-        $this->sellerprofiledetails = (int)$val;
+        $this->SellerProfileDetails = (int)$val;
 	}
 }
 
 class SellerSearch
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var SellerSearchDetailsArray
 	 */
-	public $sellersearchdetails;
+	public $SellerSearchDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SellerSearchDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setSellerSearchDetails($val)
 	{
-        $this->sellersearchdetails = (int)$val;
+        $this->SellerSearchDetails = (int)$val;
 	}
 }
 
 class ListingProductInfo
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var ListingProductDetailsArray
 	 */
-	public $listingproductdetails;
+	public $ListingProductDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ListingProductDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setListingProductDetails($val)
 	{
-        $this->listingproductdetails = (int)$val;
+        $this->ListingProductDetails = (int)$val;
 	}
 }
 
 class ListingProductDetails
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $exchangeid;
+	public $ExchangeId;
 	/**
 	 * @var string
 	 */
-	public $listingid;
+	public $ListingId;
 	/**
 	 * @var string
 	 */
-	public $exchangetitle;
+	public $ExchangeTitle;
 	/**
 	 * @var string
 	 */
-	public $exchangeprice;
+	public $ExchangePrice;
 	/**
 	 * @var string
 	 */
-	public $exchangeasin;
+	public $ExchangeAsin;
 	/**
 	 * @var string
 	 */
-	public $exchangeenddate;
+	public $ExchangeEndDate;
 	/**
 	 * @var string
 	 */
-	public $exchangetinyimage;
+	public $ExchangeTinyImage;
 	/**
 	 * @var string
 	 */
-	public $exchangesellerid;
+	public $ExchangeSellerId;
 	/**
 	 * @var string
 	 */
-	public $exchangesellernickname;
+	public $ExchangeSellerNickname;
 	/**
 	 * @var string
 	 */
-	public $exchangestartdate;
+	public $ExchangeStartDate;
 	/**
 	 * @var string
 	 */
-	public $exchangestatus;
+	public $ExchangeStatus;
 	/**
 	 * @var string
 	 */
-	public $exchangequantity;
+	public $ExchangeQuantity;
 	/**
 	 * @var string
 	 */
-	public $exchangequantityallocated;
+	public $ExchangeQuantityAllocated;
 	/**
 	 * @var string
 	 */
-	public $exchangefeaturedcategory;
+	public $ExchangeFeaturedCategory;
 	/**
 	 * @var string
 	 */
-	public $exchangecondition;
+	public $ExchangeCondition;
 	/**
 	 * @var string
 	 */
-	public $exchangeconditiontype;
+	public $ExchangeConditionType;
 	/**
 	 * @var string
 	 */
-	public $exchangeavailability;
+	public $ExchangeAvailability;
 	/**
 	 * @var string
 	 */
-	public $exchangeofferingtype;
+	public $ExchangeOfferingType;
 	/**
 	 * @var string
 	 */
-	public $exchangesellerstate;
+	public $ExchangeSellerState;
 	/**
 	 * @var string
 	 */
-	public $exchangesellercountry;
+	public $ExchangeSellerCountry;
 	/**
 	 * @var string
 	 */
-	public $exchangesellerrating;
+	public $ExchangeSellerRating;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -271,7 +292,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->exchangeid = (int)$val;
+        $this->ExchangeId = (int)$val;
 	}
 
 	/**
@@ -283,7 +304,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingId');
         }
-        $this->listingid = (int)$val;
+        $this->ListingId = (int)$val;
 	}
 
 	/**
@@ -295,7 +316,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeTitle');
         }
-        $this->exchangetitle = (int)$val;
+        $this->ExchangeTitle = (int)$val;
 	}
 
 	/**
@@ -307,7 +328,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangePrice');
         }
-        $this->exchangeprice = (int)$val;
+        $this->ExchangePrice = (int)$val;
 	}
 
 	/**
@@ -319,7 +340,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAsin');
         }
-        $this->exchangeasin = (int)$val;
+        $this->ExchangeAsin = (int)$val;
 	}
 
 	/**
@@ -331,7 +352,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeEndDate');
         }
-        $this->exchangeenddate = (int)$val;
+        $this->ExchangeEndDate = (int)$val;
 	}
 
 	/**
@@ -343,7 +364,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
         }
-        $this->exchangetinyimage = (int)$val;
+        $this->ExchangeTinyImage = (int)$val;
 	}
 
 	/**
@@ -355,7 +376,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerId');
         }
-        $this->exchangesellerid = (int)$val;
+        $this->ExchangeSellerId = (int)$val;
 	}
 
 	/**
@@ -367,7 +388,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
         }
-        $this->exchangesellernickname = (int)$val;
+        $this->ExchangeSellerNickname = (int)$val;
 	}
 
 	/**
@@ -379,7 +400,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeStartDate');
         }
-        $this->exchangestartdate = (int)$val;
+        $this->ExchangeStartDate = (int)$val;
 	}
 
 	/**
@@ -391,7 +412,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeStatus');
         }
-        $this->exchangestatus = (int)$val;
+        $this->ExchangeStatus = (int)$val;
 	}
 
 	/**
@@ -403,7 +424,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeQuantity');
         }
-        $this->exchangequantity = (int)$val;
+        $this->ExchangeQuantity = (int)$val;
 	}
 
 	/**
@@ -415,7 +436,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
         }
-        $this->exchangequantityallocated = (int)$val;
+        $this->ExchangeQuantityAllocated = (int)$val;
 	}
 
 	/**
@@ -427,7 +448,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
         }
-        $this->exchangefeaturedcategory = (int)$val;
+        $this->ExchangeFeaturedCategory = (int)$val;
 	}
 
 	/**
@@ -439,7 +460,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeCondition');
         }
-        $this->exchangecondition = (int)$val;
+        $this->ExchangeCondition = (int)$val;
 	}
 
 	/**
@@ -451,7 +472,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeConditionType');
         }
-        $this->exchangeconditiontype = (int)$val;
+        $this->ExchangeConditionType = (int)$val;
 	}
 
 	/**
@@ -463,7 +484,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAvailability');
         }
-        $this->exchangeavailability = (int)$val;
+        $this->ExchangeAvailability = (int)$val;
 	}
 
 	/**
@@ -475,7 +496,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
         }
-        $this->exchangeofferingtype = (int)$val;
+        $this->ExchangeOfferingType = (int)$val;
 	}
 
 	/**
@@ -487,7 +508,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerState');
         }
-        $this->exchangesellerstate = (int)$val;
+        $this->ExchangeSellerState = (int)$val;
 	}
 
 	/**
@@ -499,7 +520,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
         }
-        $this->exchangesellercountry = (int)$val;
+        $this->ExchangeSellerCountry = (int)$val;
 	}
 
 	/**
@@ -511,44 +532,51 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
         }
-        $this->exchangesellerrating = (int)$val;
+        $this->ExchangeSellerRating = (int)$val;
 	}
 }
 
 class SellerFeedback
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var FeedbackArray
 	 */
-	public $feedback;
+	public $Feedback;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param FeedbackArray $val
 	 * @throws Exception
 	 */
 	public function setFeedback($val)
 	{
-        $this->feedback = (int)$val;
+        $this->Feedback = (int)$val;
 	}
 }
 
 class ThirdPartyProductInfo
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var ThirdPartyProductDetailsArray
 	 */
-	public $thirdpartyproductdetails;
+	public $ThirdPartyProductDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ThirdPartyProductDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setThirdPartyProductDetails($val)
 	{
-        $this->thirdpartyproductdetails = (int)$val;
+        $this->ThirdPartyProductDetails = (int)$val;
 	}
 }
 
 class KeywordRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -585,6 +613,8 @@ class KeywordRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -696,6 +726,7 @@ class KeywordRequest
 
 class PowerRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -732,6 +763,8 @@ class PowerRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -843,6 +876,7 @@ class PowerRequest
 
 class BrowseNodeRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -875,6 +909,8 @@ class BrowseNodeRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -974,6 +1010,7 @@ class BrowseNodeRequest
 
 class AsinRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1002,6 +1039,8 @@ class AsinRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1089,6 +1128,7 @@ class AsinRequest
 
 class BlendedRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1109,6 +1149,8 @@ class BlendedRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1172,6 +1214,7 @@ class BlendedRequest
 
 class UpcRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1204,6 +1247,8 @@ class UpcRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1303,6 +1348,7 @@ class UpcRequest
 
 class ArtistRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1339,6 +1385,8 @@ class ArtistRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1450,6 +1498,7 @@ class ArtistRequest
 
 class AuthorRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1486,6 +1535,8 @@ class AuthorRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1597,6 +1648,7 @@ class AuthorRequest
 
 class ActorRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1633,6 +1685,8 @@ class ActorRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1744,6 +1798,7 @@ class ActorRequest
 
 class DirectorRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1780,6 +1835,8 @@ class DirectorRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1891,6 +1948,7 @@ class DirectorRequest
 
 class ExchangeRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -1911,6 +1969,8 @@ class ExchangeRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -1974,6 +2034,7 @@ class ExchangeRequest
 
 class ManufacturerRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2010,6 +2071,8 @@ class ManufacturerRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2121,6 +2184,7 @@ class ManufacturerRequest
 
 class ListManiaRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2145,6 +2209,8 @@ class ListManiaRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2220,6 +2286,7 @@ class ListManiaRequest
 
 class WishlistRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2244,6 +2311,8 @@ class WishlistRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2319,6 +2388,7 @@ class WishlistRequest
 
 class MarketplaceRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2379,6 +2449,8 @@ class MarketplaceRequest
 	 * @var string
 	 */
 	public $index;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2562,6 +2634,7 @@ class MarketplaceRequest
 
 class SellerProfileRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2586,6 +2659,8 @@ class SellerProfileRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2661,6 +2736,7 @@ class SellerProfileRequest
 
 class SellerRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2701,6 +2777,8 @@ class SellerRequest
 	 * @var string
 	 */
 	public $index;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2824,6 +2902,7 @@ class SellerRequest
 
 class SimilarityRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2844,6 +2923,8 @@ class SimilarityRequest
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2907,22 +2988,25 @@ class SimilarityRequest
 
 class ShoppingCart
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var string
 	 */
-	public $purchaseurl;
+	public $PurchaseUrl;
 	/**
 	 * @var ItemArray
 	 */
-	public $items;
+	public $Items;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -2932,7 +3016,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -2944,7 +3028,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -2956,7 +3040,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PurchaseUrl');
         }
-        $this->purchaseurl = (int)$val;
+        $this->PurchaseUrl = (int)$val;
 	}
 
 	/**
@@ -2965,12 +3049,13 @@ class ShoppingCart
 	 */
 	public function setItems($val)
 	{
-        $this->items = (int)$val;
+        $this->Items = (int)$val;
 	}
 }
 
 class GetShoppingCartRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -2982,15 +3067,17 @@ class GetShoppingCartRequest
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3024,7 +3111,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -3036,7 +3123,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -3054,6 +3141,7 @@ class GetShoppingCartRequest
 
 class ClearShoppingCartRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -3065,15 +3153,17 @@ class ClearShoppingCartRequest
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3107,7 +3197,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -3119,7 +3209,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -3137,6 +3227,7 @@ class ClearShoppingCartRequest
 
 class AddShoppingCartItemsRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -3148,19 +3239,21 @@ class AddShoppingCartItemsRequest
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var AddItemArray
 	 */
-	public $items;
+	public $Items;
 	/**
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3194,7 +3287,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -3206,7 +3299,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -3215,7 +3308,7 @@ class AddShoppingCartItemsRequest
 	 */
 	public function setItems($val)
 	{
-        $this->items = (int)$val;
+        $this->Items = (int)$val;
 	}
 
 	/**
@@ -3233,6 +3326,7 @@ class AddShoppingCartItemsRequest
 
 class RemoveShoppingCartItemsRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -3244,19 +3338,21 @@ class RemoveShoppingCartItemsRequest
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var ItemIdArray
 	 */
-	public $items;
+	public $Items;
 	/**
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3290,7 +3386,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -3302,7 +3398,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -3311,7 +3407,7 @@ class RemoveShoppingCartItemsRequest
 	 */
 	public function setItems($val)
 	{
-        $this->items = (int)$val;
+        $this->Items = (int)$val;
 	}
 
 	/**
@@ -3329,6 +3425,7 @@ class RemoveShoppingCartItemsRequest
 
 class ModifyShoppingCartItemsRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
@@ -3340,19 +3437,21 @@ class ModifyShoppingCartItemsRequest
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var ItemQuantityArray
 	 */
-	public $items;
+	public $Items;
 	/**
 	 * @var string
 	 */
 	public $locale;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -3386,7 +3485,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -3398,7 +3497,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -3407,7 +3506,7 @@ class ModifyShoppingCartItemsRequest
 	 */
 	public function setItems($val)
 	{
-        $this->items = (int)$val;
+        $this->Items = (int)$val;
 	}
 
 	/**
@@ -3430,71 +3529,71 @@ class AmazonSearchServiceClient extends SoapClient {
 
 	const WSDL_FILE = "AmazonWebServicesTest.wsdl";
 	private $classmap = array(
-        'ProductInfo\,' =>
+        'ProductInfo' =>
             'ProductInfo',
-        'Reviews\,' =>
+        'Reviews' =>
             'Reviews',
-        'MarketplaceSearch\,' =>
+        'MarketplaceSearch' =>
             'MarketplaceSearch',
-        'SellerProfile\,' =>
+        'SellerProfile' =>
             'SellerProfile',
-        'SellerSearch\,' =>
+        'SellerSearch' =>
             'SellerSearch',
-        'ListingProductInfo\,' =>
+        'ListingProductInfo' =>
             'ListingProductInfo',
-        'ListingProductDetails\,' =>
+        'ListingProductDetails' =>
             'ListingProductDetails',
-        'SellerFeedback\,' =>
+        'SellerFeedback' =>
             'SellerFeedback',
-        'ThirdPartyProductInfo\,' =>
+        'ThirdPartyProductInfo' =>
             'ThirdPartyProductInfo',
-        'KeywordRequest\,' =>
+        'KeywordRequest' =>
             'KeywordRequest',
-        'PowerRequest\,' =>
+        'PowerRequest' =>
             'PowerRequest',
-        'BrowseNodeRequest\,' =>
+        'BrowseNodeRequest' =>
             'BrowseNodeRequest',
-        'AsinRequest\,' =>
+        'AsinRequest' =>
             'AsinRequest',
-        'BlendedRequest\,' =>
+        'BlendedRequest' =>
             'BlendedRequest',
-        'UpcRequest\,' =>
+        'UpcRequest' =>
             'UpcRequest',
-        'ArtistRequest\,' =>
+        'ArtistRequest' =>
             'ArtistRequest',
-        'AuthorRequest\,' =>
+        'AuthorRequest' =>
             'AuthorRequest',
-        'ActorRequest\,' =>
+        'ActorRequest' =>
             'ActorRequest',
-        'DirectorRequest\,' =>
+        'DirectorRequest' =>
             'DirectorRequest',
-        'ExchangeRequest\,' =>
+        'ExchangeRequest' =>
             'ExchangeRequest',
-        'ManufacturerRequest\,' =>
+        'ManufacturerRequest' =>
             'ManufacturerRequest',
-        'ListManiaRequest\,' =>
+        'ListManiaRequest' =>
             'ListManiaRequest',
-        'WishlistRequest\,' =>
+        'WishlistRequest' =>
             'WishlistRequest',
-        'MarketplaceRequest\,' =>
+        'MarketplaceRequest' =>
             'MarketplaceRequest',
-        'SellerProfileRequest\,' =>
+        'SellerProfileRequest' =>
             'SellerProfileRequest',
-        'SellerRequest\,' =>
+        'SellerRequest' =>
             'SellerRequest',
-        'SimilarityRequest\,' =>
+        'SimilarityRequest' =>
             'SimilarityRequest',
-        'ShoppingCart\,' =>
+        'ShoppingCart' =>
             'ShoppingCart',
-        'GetShoppingCartRequest\,' =>
+        'GetShoppingCartRequest' =>
             'GetShoppingCartRequest',
-        'ClearShoppingCartRequest\,' =>
+        'ClearShoppingCartRequest' =>
             'ClearShoppingCartRequest',
-        'AddShoppingCartItemsRequest\,' =>
+        'AddShoppingCartItemsRequest' =>
             'AddShoppingCartItemsRequest',
-        'RemoveShoppingCartItemsRequest\,' =>
+        'RemoveShoppingCartItemsRequest' =>
             'RemoveShoppingCartItemsRequest',
-        'ModifyShoppingCartItemsRequest\,' =>
+        'ModifyShoppingCartItemsRequest' =>
             'ModifyShoppingCartItemsRequest',
 	);
 

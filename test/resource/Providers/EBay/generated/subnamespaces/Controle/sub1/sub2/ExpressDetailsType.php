@@ -8,6 +8,7 @@ namespace Controle\sub1\sub2;
  */
 class ExpressDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | Large gallery image that appears in the "Grid View" in search results on the Express site. The
 	 * longest dimension is 140 pixels. Only returned when ItemDetails is set to Fine.<br> <br> Express
@@ -16,7 +17,7 @@ class ExpressDetailsType
 	 * the item was listed in an eBay category that does not require pictures for Express (like
 	 * Tickets), a generic image may be returned instead.
 	 */
-	public $expresslargeimage;
+	public $ExpressLargeImage;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | Small gallery image that appears in the "List View" in search results on the Express site. The
 	 * longest dimension is 96 pixels. Only returned when ItemDetails is set to Fine.<br> <br> Express
@@ -25,7 +26,7 @@ class ExpressDetailsType
 	 * the item was listed in an eBay category that does not require pictures for Express (like
 	 * Tickets), a generic image may be returned instead.
 	 */
-	public $expresssmallimage;
+	public $ExpressSmallImage;
 	/**
 	 * @var string | The item condition, if any. On Express US, this is often a value like "New", "Used", or
 	 * "Refurbished", but the exact value can vary based on the Item Condition data that the seller
@@ -37,18 +38,20 @@ class ExpressDetailsType
 	 * returned when ItemDetails is set to Fine.<br> <br> Not applicable to calls that browse
 	 * or search items on the main eBay site.
 	 */
-	public $condition;
+	public $Condition;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
 	public function setExpressLargeImage($val)
 	{
-        $this->expresslargeimage = (int)$val;
+        $this->ExpressLargeImage = (int)$val;
 	}
 
 	/**
@@ -57,7 +60,7 @@ class ExpressDetailsType
 	 */
 	public function setExpressSmallImage($val)
 	{
-        $this->expresssmallimage = (int)$val;
+        $this->ExpressSmallImage = (int)$val;
 	}
 
 	/**
@@ -69,7 +72,7 @@ class ExpressDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Condition');
         }
-        $this->condition = (int)$val;
+        $this->Condition = (int)$val;
 	}
 
 	/**

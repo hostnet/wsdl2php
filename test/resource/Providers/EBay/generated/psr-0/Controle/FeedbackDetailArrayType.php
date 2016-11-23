@@ -8,16 +8,19 @@ namespace Controle;
  */
 class FeedbackDetailArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\FeedbackDetailType | Contains a single feedback detail entry. Output only.
 	 */
-	public $feedbackdetail;
+	public $FeedbackDetail;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param FeedbackDetailType $val
 	 * @throws Exception
 	 */
 	public function setFeedbackDetail($val)
 	{
-        $this->feedbackdetail = (int)$val;
+        $this->FeedbackDetail = (int)$val;
 	}
 }

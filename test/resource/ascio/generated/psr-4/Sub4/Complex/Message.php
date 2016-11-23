@@ -4,41 +4,44 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Message
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Attachment
      */
-    public $attachments;
+    public $Attachments;
     /**
      * @var string
      */
-    public $body;
+    public $Body;
     /**
      * @var dateTime
      */
-    public $created;
+    public $Created;
     /**
      * @var string
      */
-    public $fromaddress;
+    public $FromAddress;
     /**
      * @var string
      */
-    public $subject;
+    public $Subject;
     /**
      * @var string
      */
-    public $toaddress;
+    public $ToAddress;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MessageType
      */
-    public $type;
+    public $Type;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ArrayOfAttachment $val
      * @throws Exception
      */
     public function setAttachments($val)
     {
-        $this->attachments = (int)$val;
+        $this->Attachments = (int)$val;
     }
 
     /**
@@ -50,7 +53,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Body');
         }
-        $this->body = (int)$val;
+        $this->Body = (int)$val;
     }
 
     /**
@@ -59,7 +62,7 @@ class Message
      */
     public function setCreated($val)
     {
-        $this->created = (int)$val;
+        $this->Created = (int)$val;
     }
 
     /**
@@ -71,7 +74,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FromAddress');
         }
-        $this->fromaddress = (int)$val;
+        $this->FromAddress = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->subject = (int)$val;
+        $this->Subject = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ToAddress');
         }
-        $this->toaddress = (int)$val;
+        $this->ToAddress = (int)$val;
     }
 
     /**
@@ -104,6 +107,6 @@ class Message
      */
     public function setType($val)
     {
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
     }
 }

@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class UploadMessageResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $uploadmessageresult;
+    public $UploadMessageResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setUploadMessageResult($val)
     {
-        $this->uploadmessageresult = (int)$val;
+        $this->UploadMessageResult = (int)$val;
     }
 }

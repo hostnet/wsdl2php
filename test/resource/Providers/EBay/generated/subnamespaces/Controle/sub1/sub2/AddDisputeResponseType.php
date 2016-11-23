@@ -10,16 +10,19 @@ namespace Controle\sub1\sub2;
 class AddDisputeResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\DisputeIDType | The unique identifier of a dispute, returned by the eBay site when the dispute is created.
 	 */
-	public $disputeid;
+	public $DisputeID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param DisputeIDType $val
 	 * @throws Exception
 	 */
 	public function setDisputeID($val)
 	{
-        $this->disputeid = (int)$val;
+        $this->DisputeID = (int)$val;
 	}
 }

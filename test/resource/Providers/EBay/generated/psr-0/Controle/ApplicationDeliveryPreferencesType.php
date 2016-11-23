@@ -10,50 +10,53 @@ namespace Controle;
  */
 class ApplicationDeliveryPreferencesType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\anyURI | The URL where eBay delivers all notifications sent to the application. For delivery to
 	 * a server, the URL begins with http:// or https:// and must be well formed. Use a URL that
 	 * is functional at the time of the call. For delivery to an email address, the URL begins with
 	 * mailto: and specifies a valid email address.
 	 */
-	public $applicationurl;
+	public $ApplicationURL;
 	/**
 	 * @var \Controle\EnableCodeType | A token indicating whether notifications are enabled or disabled. If you disable notifications, the
 	 * application does not receive them, but notification preferences are not erased.
 	 */
-	public $applicationenable;
+	public $ApplicationEnable;
 	/**
 	 * @var \Controle\anyURI | The email address where eBay sends all application markup and markdown event notifications.
 	 * When setting the email address, input must be in the format mailto://youremailaddress@yoursite.com
 	 * (with the mailto:// prefix). The application has to subscribe to recieve these events using
 	 * the AlertEnable field.
 	 */
-	public $alertemail;
+	public $AlertEmail;
 	/**
 	 * @var \Controle\EnableCodeType | A token indicating whether markup and markdown alerts are enabled or disabled.
 	 */
-	public $alertenable;
+	public $AlertEnable;
 	/**
 	 * @var \Controle\NotificationPayloadTypeCodeType | If this field is specified, the value must be eBLSchemaSOAP.
 	 */
-	public $notificationpayloadtype;
+	public $NotificationPayloadType;
 	/**
 	 * @var \Controle\DeviceTypeCodeType | The means of receipt of notification. In most cases, it is Platform (typical API calls
 	 * and web interaction), so this is the default, if not specified. For wireless applications,
 	 * use SMS.
 	 */
-	public $devicetype;
+	public $DeviceType;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
 	public function setApplicationURL($val)
 	{
-        $this->applicationurl = (int)$val;
+        $this->ApplicationURL = (int)$val;
 	}
 
 	/**
@@ -62,7 +65,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setApplicationEnable($val)
 	{
-        $this->applicationenable = (int)$val;
+        $this->ApplicationEnable = (int)$val;
 	}
 
 	/**
@@ -71,7 +74,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setAlertEmail($val)
 	{
-        $this->alertemail = (int)$val;
+        $this->AlertEmail = (int)$val;
 	}
 
 	/**
@@ -80,7 +83,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setAlertEnable($val)
 	{
-        $this->alertenable = (int)$val;
+        $this->AlertEnable = (int)$val;
 	}
 
 	/**
@@ -89,7 +92,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setNotificationPayloadType($val)
 	{
-        $this->notificationpayloadtype = (int)$val;
+        $this->NotificationPayloadType = (int)$val;
 	}
 
 	/**
@@ -98,7 +101,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setDeviceType($val)
 	{
-        $this->devicetype = (int)$val;
+        $this->DeviceType = (int)$val;
 	}
 
 	/**

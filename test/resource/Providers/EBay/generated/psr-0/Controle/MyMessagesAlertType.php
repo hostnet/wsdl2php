@@ -8,102 +8,105 @@ namespace Controle;
  */
 class MyMessagesAlertType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | The display name of the eBay user that sent the message.
 	 */
-	public $sender;
+	public $Sender;
 	/**
 	 * @var string | The displayable user ID of the recipient.
 	 */
-	public $recipientuserid;
+	public $RecipientUserID;
 	/**
 	 * @var string | The subject of the message.
 	 */
-	public $subject;
+	public $Subject;
 	/**
 	 * @var string | A number ranging from 0 to 10000 (inclusive), with 10000 having the highest priority.
 	 */
-	public $priority;
+	public $Priority;
 	/**
 	 * @var \Controle\MyMessagesAlertIDType | An ID that uniquely identifies an alert for a given user.
 	 */
-	public $alertid;
+	public $AlertID;
 	/**
 	 * @var string | An ID used by an external application to uniquely identify an alert.
 	 */
-	public $externalalertid;
+	public $ExternalAlertID;
 	/**
 	 * @var string | The content type of the body text. The three acceptable values are "TEXT", "HTML",  and
 	 * "XML" (case sensitive).
 	 */
-	public $contenttype;
+	public $ContentType;
 	/**
 	 * @var string | Suggestion for a different spelling of the search term or terms. The suggestions are given
 	 * in Text tags  and the suggestion for the first word is given before the suggestion for
 	 * subsequent words.  Suggestions are based on correctly-spelled terms in items, so suggestions
 	 * vary over time and depend on   whether a word or word combination is in one or more items.
 	 */
-	public $text;
+	public $Text;
 	/**
 	 * @var \Controle\MyMessagesAlertResolutionStatusCode | Whether or not an alert was resolved, and how.
 	 */
-	public $resolutionstatus;
+	public $ResolutionStatus;
 	/**
 	 * @var boolean | Whether or not a message has been viewed by a given user. Note that retrieving a message
 	 * with the API does not mark it as read.
 	 */
-	public $read;
+	public $Read;
 	/**
 	 * @var dateTime | The date and time that a message was created by the sender.
 	 */
-	public $creationdate;
+	public $CreationDate;
 	/**
 	 * @var dateTime | The date and time that a message was received by My Messages and stored in a database for
 	 * the recipient.
 	 */
-	public $receivedate;
+	public $ReceiveDate;
 	/**
 	 * @var dateTime | The date and time at which a message expires.
 	 */
-	public $expirationdate;
+	public $ExpirationDate;
 	/**
 	 * @var dateTime | The date and time at which an alert is resolved.
 	 */
-	public $resolutiondate;
+	public $ResolutionDate;
 	/**
 	 * @var dateTime | The date and time an alert was last viewed by a given user.
 	 */
-	public $lastreaddate;
+	public $LastReadDate;
 	/**
 	 * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var boolean | Indicates whether or not a time-delayed resolution is applicable for an alert.
 	 */
-	public $istimedresolution;
+	public $IsTimedResolution;
 	/**
 	 * @var string | A URL that the recipient must visit to resolve an alert. May be returned as an empty tag
 	 * if there is no applicable URL.
 	 */
-	public $actionurl;
+	public $ActionURL;
 	/**
 	 * @var \Controle\MyMessagesResponseDetailsType | Details relating to the response to an alert or message.
 	 */
-	public $responsedetails;
+	public $ResponseDetails;
 	/**
 	 * @var \Controle\MyMessagesForwardDetailsType | Details relating to the forwarding of an alert or message. Only returned if the alert or
 	 * message is forwarded.
 	 */
-	public $forwarddetails;
+	public $ForwardDetails;
 	/**
 	 * @var \Controle\MyMessagesFolderType | The folder requested in the album.
 	 */
-	public $folder;
+	public $Folder;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -113,7 +116,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Sender');
         }
-        $this->sender = (int)$val;
+        $this->Sender = (int)$val;
 	}
 
 	/**
@@ -125,7 +128,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->recipientuserid = (int)$val;
+        $this->RecipientUserID = (int)$val;
 	}
 
 	/**
@@ -137,7 +140,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->subject = (int)$val;
+        $this->Subject = (int)$val;
 	}
 
 	/**
@@ -149,7 +152,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Priority');
         }
-        $this->priority = (int)$val;
+        $this->Priority = (int)$val;
 	}
 
 	/**
@@ -158,7 +161,7 @@ class MyMessagesAlertType
 	 */
 	public function setAlertID($val)
 	{
-        $this->alertid = (int)$val;
+        $this->AlertID = (int)$val;
 	}
 
 	/**
@@ -170,7 +173,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAlertID');
         }
-        $this->externalalertid = (int)$val;
+        $this->ExternalAlertID = (int)$val;
 	}
 
 	/**
@@ -182,7 +185,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContentType');
         }
-        $this->contenttype = (int)$val;
+        $this->ContentType = (int)$val;
 	}
 
 	/**
@@ -194,7 +197,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->text = (int)$val;
+        $this->Text = (int)$val;
 	}
 
 	/**
@@ -203,7 +206,7 @@ class MyMessagesAlertType
 	 */
 	public function setResolutionStatus($val)
 	{
-        $this->resolutionstatus = (int)$val;
+        $this->ResolutionStatus = (int)$val;
 	}
 
 	/**
@@ -212,7 +215,7 @@ class MyMessagesAlertType
 	 */
 	public function setRead($val)
 	{
-        $this->read = (int)$val;
+        $this->Read = (int)$val;
 	}
 
 	/**
@@ -221,7 +224,7 @@ class MyMessagesAlertType
 	 */
 	public function setCreationDate($val)
 	{
-        $this->creationdate = (int)$val;
+        $this->CreationDate = (int)$val;
 	}
 
 	/**
@@ -230,7 +233,7 @@ class MyMessagesAlertType
 	 */
 	public function setReceiveDate($val)
 	{
-        $this->receivedate = (int)$val;
+        $this->ReceiveDate = (int)$val;
 	}
 
 	/**
@@ -239,7 +242,7 @@ class MyMessagesAlertType
 	 */
 	public function setExpirationDate($val)
 	{
-        $this->expirationdate = (int)$val;
+        $this->ExpirationDate = (int)$val;
 	}
 
 	/**
@@ -248,7 +251,7 @@ class MyMessagesAlertType
 	 */
 	public function setResolutionDate($val)
 	{
-        $this->resolutiondate = (int)$val;
+        $this->ResolutionDate = (int)$val;
 	}
 
 	/**
@@ -257,7 +260,7 @@ class MyMessagesAlertType
 	 */
 	public function setLastReadDate($val)
 	{
-        $this->lastreaddate = (int)$val;
+        $this->LastReadDate = (int)$val;
 	}
 
 	/**
@@ -266,7 +269,7 @@ class MyMessagesAlertType
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -275,7 +278,7 @@ class MyMessagesAlertType
 	 */
 	public function setIsTimedResolution($val)
 	{
-        $this->istimedresolution = (int)$val;
+        $this->IsTimedResolution = (int)$val;
 	}
 
 	/**
@@ -287,7 +290,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ActionURL');
         }
-        $this->actionurl = (int)$val;
+        $this->ActionURL = (int)$val;
 	}
 
 	/**
@@ -296,7 +299,7 @@ class MyMessagesAlertType
 	 */
 	public function setResponseDetails($val)
 	{
-        $this->responsedetails = (int)$val;
+        $this->ResponseDetails = (int)$val;
 	}
 
 	/**
@@ -305,7 +308,7 @@ class MyMessagesAlertType
 	 */
 	public function setForwardDetails($val)
 	{
-        $this->forwarddetails = (int)$val;
+        $this->ForwardDetails = (int)$val;
 	}
 
 	/**
@@ -314,7 +317,7 @@ class MyMessagesAlertType
 	 */
 	public function setFolder($val)
 	{
-        $this->folder = (int)$val;
+        $this->Folder = (int)$val;
 	}
 
 	/**

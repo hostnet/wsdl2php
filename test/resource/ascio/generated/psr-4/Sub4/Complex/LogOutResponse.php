@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class LogOutResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $logoutresult;
+    public $LogOutResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setLogOutResult($val)
     {
-        $this->logoutresult = (int)$val;
+        $this->LogOutResult = (int)$val;
     }
 }

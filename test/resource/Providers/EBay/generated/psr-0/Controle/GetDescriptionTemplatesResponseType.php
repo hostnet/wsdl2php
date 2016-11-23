@@ -9,38 +9,41 @@ namespace Controle;
 class GetDescriptionTemplatesResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\DescriptionTemplateType | The information for one Theme or one Layout. There can be multiple DescriptionTemplates.
 	 */
-	public $descriptiontemplate;
+	public $DescriptionTemplate;
 	/**
 	 * @var int | The number of Layout templates returned (that is, the number of DescriptionTemplates for
 	 * which Type is "Layout").
 	 */
-	public $layouttotal;
+	public $LayoutTotal;
 	/**
 	 * @var int | The ID of a returned layout that is obsolete. There can be zero or more IDs.
 	 */
-	public $obsoletelayoutid;
+	public $ObsoleteLayoutID;
 	/**
 	 * @var int | The ID of a returned theme that is obsolete. There can be zero or more IDs.
 	 */
-	public $obsoletethemeid;
+	public $ObsoleteThemeID;
 	/**
 	 * @var \Controle\ThemeGroupType | Data for one theme group. There can be multiple ThemeGroups in the response.
 	 */
-	public $themegroup;
+	public $ThemeGroup;
 	/**
 	 * @var int | The number of ThemeID elements in this group.
 	 */
-	public $themetotal;
+	public $ThemeTotal;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param DescriptionTemplateType $val
 	 * @throws Exception
 	 */
 	public function setDescriptionTemplate($val)
 	{
-        $this->descriptiontemplate = (int)$val;
+        $this->DescriptionTemplate = (int)$val;
 	}
 
 	/**
@@ -52,7 +55,7 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->layouttotal = (int)$val;
+        $this->LayoutTotal = (int)$val;
 	}
 
 	/**
@@ -64,7 +67,7 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->obsoletelayoutid = (int)$val;
+        $this->ObsoleteLayoutID = (int)$val;
 	}
 
 	/**
@@ -76,7 +79,7 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->obsoletethemeid = (int)$val;
+        $this->ObsoleteThemeID = (int)$val;
 	}
 
 	/**
@@ -85,7 +88,7 @@ class GetDescriptionTemplatesResponseType extends
 	 */
 	public function setThemeGroup($val)
 	{
-        $this->themegroup = (int)$val;
+        $this->ThemeGroup = (int)$val;
 	}
 
 	/**
@@ -97,6 +100,6 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->themetotal = (int)$val;
+        $this->ThemeTotal = (int)$val;
 	}
 }

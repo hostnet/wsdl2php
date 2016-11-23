@@ -4,6 +4,7 @@ namespace Controle;
 
 class BidActionCodeType
 {
+    // @codingStandardsIgnoreStart
     const UNKNOWN        = 'Unknown';
     const BID            = 'Bid';
     const NOTUSED        = 'NotUsed';
@@ -15,4 +16,5 @@ class BidActionCodeType
     const BUYITNOW       = 'BuyItNow';
     const PURCHASE       = 'Purchase';
     const CUSTOMCODE     = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

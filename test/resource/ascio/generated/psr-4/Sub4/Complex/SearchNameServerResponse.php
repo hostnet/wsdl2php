@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SearchNameServerResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $searchnameserverresult;
+    public $SearchNameServerResult;
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\NameServer
      */
-    public $nameservers;
+    public $nameServers;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setSearchNameServerResult($val)
     {
-        $this->searchnameserverresult = (int)$val;
+        $this->SearchNameServerResult = (int)$val;
     }
 
     /**
@@ -27,6 +30,6 @@ class SearchNameServerResponse
      */
     public function setNameServers($val)
     {
-        $this->nameservers = (int)$val;
+        $this->nameServers = (int)$val;
     }
 }

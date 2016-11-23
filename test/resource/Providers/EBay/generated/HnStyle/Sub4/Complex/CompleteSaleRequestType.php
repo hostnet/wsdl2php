@@ -13,46 +13,49 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class CompleteSaleRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeedbackInfoType | Specifies feedback the seller is leaving for the buyer. For a given transaction, the
      * seller can leave feedback once, and no further modifications can be made to that feedback
      * entry. If feedback has already been left, FeedbackInfo is not allowed. Call GetFeedback
      * to determine whether feedback has already been left.
      */
-    public $feedbackinfo;
+    public $FeedbackInfo;
     /**
      * @var boolean | If true, the transaction is marked as shipped in My eBay (applicable for Selling Manager
      * Pro users). If false, the transaction is marked as not shipped in My eBay. If not specified,
      * the shipped status in My eBay is not modified.
      */
-    public $shipped;
+    public $Shipped;
     /**
      * @var boolean | If true, the transaction is marked as paid in My eBay. If false, the transaction is
      * marked as not paid in My eBay. If not specified, the paid status in My eBay is not modified.
      */
-    public $paid;
+    public $Paid;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
      */
-    public $listingtype;
+    public $ListingType;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class CompleteSaleRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class CompleteSaleRequestType extends
      */
     public function setFeedbackInfo($val)
     {
-        $this->feedbackinfo = (int)$val;
+        $this->FeedbackInfo = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class CompleteSaleRequestType extends
      */
     public function setShipped($val)
     {
-        $this->shipped = (int)$val;
+        $this->Shipped = (int)$val;
     }
 
     /**
@@ -91,7 +94,7 @@ class CompleteSaleRequestType extends
      */
     public function setPaid($val)
     {
-        $this->paid = (int)$val;
+        $this->Paid = (int)$val;
     }
 
     /**
@@ -100,6 +103,6 @@ class CompleteSaleRequestType extends
      */
     public function setListingType($val)
     {
-        $this->listingtype = (int)$val;
+        $this->ListingType = (int)$val;
     }
 }

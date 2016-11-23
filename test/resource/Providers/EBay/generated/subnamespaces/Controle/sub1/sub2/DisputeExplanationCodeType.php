@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class DisputeExplanationCodeType
 {
+	// @codingStandardsIgnoreStart
 	const BUYERHASNOTRESPONDED        = 'BuyerHasNotResponded';
 	const BUYERREFUSEDTOPAY           = 'BuyerRefusedToPay';
 	const BUYERNOTCLEAREDTOPAY        = 'BuyerNotClearedToPay';
@@ -18,4 +19,5 @@ class DisputeExplanationCodeType
 	const OTHEREXPLANATION            = 'OtherExplanation';
 	const UNSPECIFIED                 = 'Unspecified';
 	const CUSTOMCODE                  = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

@@ -10,6 +10,7 @@ namespace Controle;
 class SetStoreCategoriesResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var long | The task ID associated with the category structure change request. If the SetStoreCategories
 	 * call is process synchronously, the task ID is 0. If the category structure changes affect
@@ -17,19 +18,21 @@ class SetStoreCategoriesResponseType extends
 	 * number. Use the task ID with GetStoreCategoryUpdateStatus to monitor the status of asynchronously
 	 * processed changes.
 	 */
-	public $taskid;
+	public $TaskID;
 	/**
 	 * @var \Controle\TaskStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a seller's
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
-	public $status;
+	public $Status;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param long $val
 	 * @throws Exception
 	 */
 	public function setTaskID($val)
 	{
-        $this->taskid = (int)$val;
+        $this->TaskID = (int)$val;
 	}
 
 	/**
@@ -38,6 +41,6 @@ class SetStoreCategoriesResponseType extends
 	 */
 	public function setStatus($val)
 	{
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 }

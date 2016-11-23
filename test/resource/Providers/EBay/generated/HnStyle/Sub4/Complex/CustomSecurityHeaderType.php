@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CustomSecurityHeaderType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Authentication token representing the user who is making the request. The user's token
      * must be retrieved from eBay. To determine a user's authentication token, see the Authentication
@@ -17,7 +18,7 @@ class CustomSecurityHeaderType
      * data may be restricted to the user whose data is being requested. The documentation
      * for each call includes information about such restrictions.
      */
-    public $ebayauthtoken;
+    public $eBayAuthToken;
     /**
      * @var string | Expiration date of the user's authentication token. Only returned within the 7-day period
      * prior to a token's expiration. To ensure that user authentication tokens are secure
@@ -25,7 +26,7 @@ class CustomSecurityHeaderType
      * A token is only valid for a period of time (set by eBay). After this amount of time
      * has passed, the token expires and must be replaced with a new token.
      */
-    public $hardexpirationwarning;
+    public $HardExpirationWarning;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIdPasswordType | Authentication information for the user on whose behalf the application is making the
      * request, and authorization information for the application making the request. Only
@@ -37,16 +38,18 @@ class CustomSecurityHeaderType
      * except the calls you use to retrieve a token in the first place. For such calls, you
      * use the eBay member's username and password instead.
      */
-    public $credentials;
+    public $Credentials;
     /**
      * @var string | A Base64-encoded MD5 hash that allows the recepient of a Platform Notification to verify
      * this is a valid Platform Notification sent by eBay.
      */
-    public $notificationsignature;
+    public $NotificationSignature;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -56,7 +59,7 @@ class CustomSecurityHeaderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->ebayauthtoken = (int)$val;
+        $this->eBayAuthToken = (int)$val;
     }
 
     /**
@@ -68,7 +71,7 @@ class CustomSecurityHeaderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HardExpirationWarning');
         }
-        $this->hardexpirationwarning = (int)$val;
+        $this->HardExpirationWarning = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class CustomSecurityHeaderType
      */
     public function setCredentials($val)
     {
-        $this->credentials = (int)$val;
+        $this->Credentials = (int)$val;
     }
 
     /**
@@ -89,7 +92,7 @@ class CustomSecurityHeaderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationSignature');
         }
-        $this->notificationsignature = (int)$val;
+        $this->NotificationSignature = (int)$val;
     }
 
     /**

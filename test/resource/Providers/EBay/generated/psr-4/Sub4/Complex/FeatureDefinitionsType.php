@@ -9,6 +9,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FeatureDefinitionsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingDurationDefinitionsType | Specifies one or more sets of listing durations. Each set gives durations for listing
      * types a category could allow. If present, the corresponding feature ID was passed in
@@ -16,65 +17,65 @@ class FeatureDefinitionsType
      * the data provided in SiteDefaults and Category to determine which listing formats support
      * each listing duration and whether any categories override the standard settings.
      */
-    public $listingdurations;
+    public $ListingDurations;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingTermRequiredDefinitionType | Specifies the default site setting for whether sellers are required to specify a shipping
      * service and its associated cost when listing items. True means the shipping terms are
      * required unless a specific category overrides this setting.
      */
-    public $shippingtermsrequired;
+    public $ShippingTermsRequired;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferEnabledDefinitionType | Specifies the default site setting for whether categories allow best offers. True means
      * best offers are allowed site-wide, unless a specific category overrides the setting.
      */
-    public $bestofferenabled;
+    public $BestOfferEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DutchBINEnabledDefinitionType | Specifies the default site setting for whether categories allow DutchBIN. True means
      * best offers are allowed site-wide, unless a specific category overrides the setting.
      */
-    public $dutchbinenabled;
+    public $DutchBINEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserConsentRequiredDefinitionType | Specifies the default site setting for whether a bidder must consent to the bid by confirming
      * that he or she read and agrees to the terms in eBay's privacy policy.
      */
-    public $userconsentrequired;
+    public $UserConsentRequired;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\HomePageFeaturedEnabledDefinitionType | Indicates whether or not it is possible to enhance a listing by putting it into a rotation
      * for display on a special area of the eBay home page. Support for this feature varies
      * by site. Item or feedback restrictions may apply.
      */
-    public $homepagefeaturedenabled;
+    public $HomePageFeaturedEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProPackEnabledDefinitionType | Specifies the default site setting for whether categories allow the ProPack feature
      * (a feature pack). True means ProPack is allowed site-wide, unless a specific category
      * overrides the setting.
      */
-    public $propackenabled;
+    public $ProPackEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BasicUpgradePackEnabledDefinitionType | Specifies the default site setting for whether categories allow the BasicUpgradePack
      * feature (a feature pack). True means it is allowed site-wide, unless a specific category
      * overrides the setting. Australia site (site ID 15, abbreviation AU) only. Effective
      * beginning February 22, 2006.
      */
-    public $basicupgradepackenabled;
+    public $BasicUpgradePackEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ValuePackEnabledDefinitionType | Specifies the default site setting for whether categories allow the ValuePack feature
      * (a feature pack). True means it is allowed site-wide, unless a specific category overrides
      * the setting. Effective beginning February 22, 2006.
      */
-    public $valuepackenabled;
+    public $ValuePackEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProPackPlusEnabledDefinitionType | Specifies the default site setting for whether categories allow the ProPackPlus feature
      * (a feature pack). True means it is allowed site-wide, unless a specific category overrides
      * the setting. Effective beginning February 22, 2006.
      */
-    public $propackplusenabled;
+    public $ProPackPlusEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AdFormatEnabledDefinitionType | Specifies the default site setting for whether categories allow the Ad Format feature.
      * True means the feature is allowed site-wide, unless a specific category overrides the
      * setting.
      */
-    public $adformatenabled;
+    public $AdFormatEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DigitalDeliveryEnabledDefinitionType | eBay enables you to list and sell digital files (such as Adobe PDF files) or information
      * that buyers can access online or have delivered electronically. This flag specifies
@@ -89,39 +90,39 @@ class FeatureDefinitionsType
      * if both categories support digital listings. Digital listings are not eligible for eBay
      * Express.
      */
-    public $digitaldeliveryenabled;
+    public $DigitalDeliveryEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferCounterEnabledDefinitionType | Specifies the default site setting for whether categories allow counter offers for best
      * offers. True means counter offers are allowed site-wide, unless a specific category
      * overrides the setting.
      */
-    public $bestoffercounterenabled;
+    public $BestOfferCounterEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferAutoDeclineEnabledDefinitionType | Specifies the default site setting for whether categories allow auto decline for best
      * offers. True means auto decline is allowed site-wide, unless a specific category overrides
      * the setting.
      */
-    public $bestofferautodeclineenabled;
+    public $BestOfferAutoDeclineEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketSpecialitySubscriptionDefinitionType | Specifies the default site setting for  whether LocalMarketSpecialitySubscription feature
      * is supported for this category.
      */
-    public $localmarketspecialitysubscription;
+    public $LocalMarketSpecialitySubscription;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketRegularSubscriptionDefinitionType | Specifies the default site setting for whether LocalMarketRegularSubscription feature
      * is supported for this category.
      */
-    public $localmarketregularsubscription;
+    public $LocalMarketRegularSubscription;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketPremiumSubscriptionDefinitionType | Specifies the default site setting for whether LocalMarketPremiumSubscription feature
      * is supported for this category.
      */
-    public $localmarketpremiumsubscription;
+    public $LocalMarketPremiumSubscription;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketNonSubscriptionDefinitionType | Specifies the default site setting for whether LocalMarketNonSubscription feature is
      * supported for this category.
      */
-    public $localmarketnonsubscription;
+    public $LocalMarketNonSubscription;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressEnabledDefinitionType | Specifies whether most categories on the site are eligible for eBay Express. eBay Express
      * is a specialty site where customers can buy new, fixed-price goods in a more conventional
@@ -136,7 +137,7 @@ class FeatureDefinitionsType
      * are met. See "eBay Express" in the eBay Web Services guide for information about other eligibility
      * requirements.
      */
-    public $expressenabled;
+    public $ExpressEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressPicturesRequiredDefinitionType | Specifies whether most categories on the site require a listing to include a picture in
      * order to qualify for eBay Express.<br><br> If true, items on the site require a picture
@@ -147,7 +148,7 @@ class FeatureDefinitionsType
      * may override the setting.<br><br> Only meaningful if ExpressEnabled is true for the
      * category.
      */
-    public $expresspicturesrequired;
+    public $ExpressPicturesRequired;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressConditionRequiredDefinitionType | Specifies whether most categories on the site require a listing to include the Item
      * Condition attribute in order to qualify for eBay Express. <br><br> If true, items on
@@ -160,64 +161,66 @@ class FeatureDefinitionsType
      * may override the setting.<br><br> Only meaningful if ExpressEnabled is true for the
      * category.
      */
-    public $expressconditionrequired;
+    public $ExpressConditionRequired;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MinimumReservePriceDefinitionType | Specifies the default site setting for whether the Minimum Reserve Price feature is
      * supported for this category.
      */
-    public $minimumreserveprice;
+    public $MinimumReservePrice;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TCREnabledDefinitionType | Specifies the default site setting for whether the Transaction Confirmation Request
      * feature is supported for this category.
      */
-    public $transactionconfirmationrequestenabled;
+    public $TransactionConfirmationRequestEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerContactDetailsEnabledDefinitionType | Specifies the default site setting for whether categories allow seller-level contact
      * information for Classified Ad format listings. A value of true means seller-level contact
      * information is available for Classified Ad format listings site-wide, unless a specific
      * category overrides the setting.
      */
-    public $sellercontactdetailsenabled;
+    public $SellerContactDetailsEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreInventoryEnabledDefinitionType | Specifies the default site setting for whether categories allow the Store Inventory
      * Format feature. True means the feature is allowed site-wide, unless a specific category
      * overrides the setting.
      */
-    public $storeinventoryenabled;
+    public $StoreInventoryEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SkypeMeTransactionalEnabledDefinitionType | Specifies the default site setting for whether categories allow the addition of Skype
      * buttons to listings for transactional formats (e.g., the Chinese auction format).
      */
-    public $skypemetransactionalenabled;
+    public $SkypeMeTransactionalEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SkypeMeNonTransactionalEnabledDefinitionType | Specifies the default site setting for whether categories allow the addition of Skype
      * buttons to listings for nontransactional formats (e.g., the advertisement format).
      */
-    public $skypemenontransactionalenabled;
+    public $SkypeMeNonTransactionalEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalListingDistancesRegularDefinitionType | Specifies the supported local listing distances of regular vehicles.
      */
-    public $locallistingdistancesregular;
+    public $LocalListingDistancesRegular;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalListingDistancesSpecialtyDefinitionType | Specifies the supported local listing distances of specialty vehicles.
      */
-    public $locallistingdistancesspecialty;
+    public $LocalListingDistancesSpecialty;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LocalListingDistancesNonSubscriptionDefinitionType | Specifies the supported local listing distances for users who have not subscribed to
      * either Regular or Specialty vehicles.
      */
-    public $locallistingdistancesnonsubscription;
+    public $LocalListingDistancesNonSubscription;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ListingDurationDefinitionsType $val
      * @throws Exception
      */
     public function setListingDurations($val)
     {
-        $this->listingdurations = (int)$val;
+        $this->ListingDurations = (int)$val;
     }
 
     /**
@@ -226,7 +229,7 @@ class FeatureDefinitionsType
      */
     public function setShippingTermsRequired($val)
     {
-        $this->shippingtermsrequired = (int)$val;
+        $this->ShippingTermsRequired = (int)$val;
     }
 
     /**
@@ -235,7 +238,7 @@ class FeatureDefinitionsType
      */
     public function setBestOfferEnabled($val)
     {
-        $this->bestofferenabled = (int)$val;
+        $this->BestOfferEnabled = (int)$val;
     }
 
     /**
@@ -244,7 +247,7 @@ class FeatureDefinitionsType
      */
     public function setDutchBINEnabled($val)
     {
-        $this->dutchbinenabled = (int)$val;
+        $this->DutchBINEnabled = (int)$val;
     }
 
     /**
@@ -253,7 +256,7 @@ class FeatureDefinitionsType
      */
     public function setUserConsentRequired($val)
     {
-        $this->userconsentrequired = (int)$val;
+        $this->UserConsentRequired = (int)$val;
     }
 
     /**
@@ -262,7 +265,7 @@ class FeatureDefinitionsType
      */
     public function setHomePageFeaturedEnabled($val)
     {
-        $this->homepagefeaturedenabled = (int)$val;
+        $this->HomePageFeaturedEnabled = (int)$val;
     }
 
     /**
@@ -271,7 +274,7 @@ class FeatureDefinitionsType
      */
     public function setProPackEnabled($val)
     {
-        $this->propackenabled = (int)$val;
+        $this->ProPackEnabled = (int)$val;
     }
 
     /**
@@ -280,7 +283,7 @@ class FeatureDefinitionsType
      */
     public function setBasicUpgradePackEnabled($val)
     {
-        $this->basicupgradepackenabled = (int)$val;
+        $this->BasicUpgradePackEnabled = (int)$val;
     }
 
     /**
@@ -289,7 +292,7 @@ class FeatureDefinitionsType
      */
     public function setValuePackEnabled($val)
     {
-        $this->valuepackenabled = (int)$val;
+        $this->ValuePackEnabled = (int)$val;
     }
 
     /**
@@ -298,7 +301,7 @@ class FeatureDefinitionsType
      */
     public function setProPackPlusEnabled($val)
     {
-        $this->propackplusenabled = (int)$val;
+        $this->ProPackPlusEnabled = (int)$val;
     }
 
     /**
@@ -307,7 +310,7 @@ class FeatureDefinitionsType
      */
     public function setAdFormatEnabled($val)
     {
-        $this->adformatenabled = (int)$val;
+        $this->AdFormatEnabled = (int)$val;
     }
 
     /**
@@ -316,7 +319,7 @@ class FeatureDefinitionsType
      */
     public function setDigitalDeliveryEnabled($val)
     {
-        $this->digitaldeliveryenabled = (int)$val;
+        $this->DigitalDeliveryEnabled = (int)$val;
     }
 
     /**
@@ -325,7 +328,7 @@ class FeatureDefinitionsType
      */
     public function setBestOfferCounterEnabled($val)
     {
-        $this->bestoffercounterenabled = (int)$val;
+        $this->BestOfferCounterEnabled = (int)$val;
     }
 
     /**
@@ -334,7 +337,7 @@ class FeatureDefinitionsType
      */
     public function setBestOfferAutoDeclineEnabled($val)
     {
-        $this->bestofferautodeclineenabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = (int)$val;
     }
 
     /**
@@ -343,7 +346,7 @@ class FeatureDefinitionsType
      */
     public function setLocalMarketSpecialitySubscription($val)
     {
-        $this->localmarketspecialitysubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = (int)$val;
     }
 
     /**
@@ -352,7 +355,7 @@ class FeatureDefinitionsType
      */
     public function setLocalMarketRegularSubscription($val)
     {
-        $this->localmarketregularsubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = (int)$val;
     }
 
     /**
@@ -361,7 +364,7 @@ class FeatureDefinitionsType
      */
     public function setLocalMarketPremiumSubscription($val)
     {
-        $this->localmarketpremiumsubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = (int)$val;
     }
 
     /**
@@ -370,7 +373,7 @@ class FeatureDefinitionsType
      */
     public function setLocalMarketNonSubscription($val)
     {
-        $this->localmarketnonsubscription = (int)$val;
+        $this->LocalMarketNonSubscription = (int)$val;
     }
 
     /**
@@ -379,7 +382,7 @@ class FeatureDefinitionsType
      */
     public function setExpressEnabled($val)
     {
-        $this->expressenabled = (int)$val;
+        $this->ExpressEnabled = (int)$val;
     }
 
     /**
@@ -388,7 +391,7 @@ class FeatureDefinitionsType
      */
     public function setExpressPicturesRequired($val)
     {
-        $this->expresspicturesrequired = (int)$val;
+        $this->ExpressPicturesRequired = (int)$val;
     }
 
     /**
@@ -397,7 +400,7 @@ class FeatureDefinitionsType
      */
     public function setExpressConditionRequired($val)
     {
-        $this->expressconditionrequired = (int)$val;
+        $this->ExpressConditionRequired = (int)$val;
     }
 
     /**
@@ -406,7 +409,7 @@ class FeatureDefinitionsType
      */
     public function setMinimumReservePrice($val)
     {
-        $this->minimumreserveprice = (int)$val;
+        $this->MinimumReservePrice = (int)$val;
     }
 
     /**
@@ -415,7 +418,7 @@ class FeatureDefinitionsType
      */
     public function setTransactionConfirmationRequestEnabled($val)
     {
-        $this->transactionconfirmationrequestenabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = (int)$val;
     }
 
     /**
@@ -424,7 +427,7 @@ class FeatureDefinitionsType
      */
     public function setSellerContactDetailsEnabled($val)
     {
-        $this->sellercontactdetailsenabled = (int)$val;
+        $this->SellerContactDetailsEnabled = (int)$val;
     }
 
     /**
@@ -433,7 +436,7 @@ class FeatureDefinitionsType
      */
     public function setStoreInventoryEnabled($val)
     {
-        $this->storeinventoryenabled = (int)$val;
+        $this->StoreInventoryEnabled = (int)$val;
     }
 
     /**
@@ -442,7 +445,7 @@ class FeatureDefinitionsType
      */
     public function setSkypeMeTransactionalEnabled($val)
     {
-        $this->skypemetransactionalenabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = (int)$val;
     }
 
     /**
@@ -451,7 +454,7 @@ class FeatureDefinitionsType
      */
     public function setSkypeMeNonTransactionalEnabled($val)
     {
-        $this->skypemenontransactionalenabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = (int)$val;
     }
 
     /**
@@ -460,7 +463,7 @@ class FeatureDefinitionsType
      */
     public function setLocalListingDistancesRegular($val)
     {
-        $this->locallistingdistancesregular = (int)$val;
+        $this->LocalListingDistancesRegular = (int)$val;
     }
 
     /**
@@ -469,7 +472,7 @@ class FeatureDefinitionsType
      */
     public function setLocalListingDistancesSpecialty($val)
     {
-        $this->locallistingdistancesspecialty = (int)$val;
+        $this->LocalListingDistancesSpecialty = (int)$val;
     }
 
     /**
@@ -478,7 +481,7 @@ class FeatureDefinitionsType
      */
     public function setLocalListingDistancesNonSubscription($val)
     {
-        $this->locallistingdistancesnonsubscription = (int)$val;
+        $this->LocalListingDistancesNonSubscription = (int)$val;
     }
 
     /**

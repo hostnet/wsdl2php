@@ -5,21 +5,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class AddMemberMessageAaQtoPartnerRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MemberMessageType | Holds the content of the message.
      */
-    public $membermessage;
+    public $MemberMessage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -28,6 +31,6 @@ class AddMemberMessageAaQtoPartnerRequestType extends
      */
     public function setMemberMessage($val)
     {
-        $this->membermessage = (int)$val;
+        $this->MemberMessage = (int)$val;
     }
 }

@@ -9,24 +9,27 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetPictureManagerDetailsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerDetailsType | Specifies the setting or folder to create, update, or delete, or the picture to update.
      * You cannot upload or delete pictures using SetPictureManagerDetails; you must use the
      * eBay site.
      */
-    public $picturemanagerdetails;
+    public $PictureManagerDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerActionCodeType | Indicates the type of offer being made on the specified listing. Valid values are enumerated
      * in the BidActionCodeType code list.
      */
-    public $action;
+    public $Action;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PictureManagerDetailsType $val
      * @throws Exception
      */
     public function setPictureManagerDetails($val)
     {
-        $this->picturemanagerdetails = (int)$val;
+        $this->PictureManagerDetails = (int)$val;
     }
 
     /**
@@ -35,6 +38,6 @@ class SetPictureManagerDetailsRequestType extends
      */
     public function setAction($val)
     {
-        $this->action = (int)$val;
+        $this->Action = (int)$val;
     }
 }

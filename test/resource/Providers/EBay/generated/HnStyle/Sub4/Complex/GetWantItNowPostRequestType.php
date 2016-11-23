@@ -12,16 +12,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetWantItNowPostRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | ID that uniquely identifies a Want It Now post.
      */
-    public $postid;
+    public $PostID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setPostID($val)
     {
-        $this->postid = (int)$val;
+        $this->PostID = (int)$val;
     }
 }

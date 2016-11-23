@@ -9,16 +9,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class MemberMessageExchangeArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MemberMessageExchangeType | Information about individual messages. Returned if the parent container is returned.
      */
-    public $membermessageexchange;
+    public $MemberMessageExchange;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param MemberMessageExchangeType $val
      * @throws Exception
      */
     public function setMemberMessageExchange($val)
     {
-        $this->membermessageexchange = (int)$val;
+        $this->MemberMessageExchange = (int)$val;
     }
 }

@@ -9,31 +9,34 @@ namespace Controle;
  */
 class MyeBaySelectionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | Whether to include information about this type of reminder in the response. When true,
 	 * the container is returned with default input parameters.
 	 */
-	public $include;
+	public $Include;
 	/**
 	 * @var \Controle\SortOrderCodeType | Specifies the result sort order. Default is Ascending.
 	 */
-	public $sort;
+	public $Sort;
 	/**
 	 * @var int | Specifies the maximum number of items in the returned list. If not specified, returns all
 	 * items in the list.
 	 */
-	public $maxresults;
+	public $MaxResults;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setInclude($val)
 	{
-        $this->include = (int)$val;
+        $this->Include = (int)$val;
 	}
 
 	/**
@@ -42,7 +45,7 @@ class MyeBaySelectionType
 	 */
 	public function setSort($val)
 	{
-        $this->sort = (int)$val;
+        $this->Sort = (int)$val;
 	}
 
 	/**
@@ -54,7 +57,7 @@ class MyeBaySelectionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxresults = (int)$val;
+        $this->MaxResults = (int)$val;
 	}
 
 	/**

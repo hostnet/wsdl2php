@@ -9,21 +9,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class AddToItemDescriptionRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
      */
-    public $description;
+    public $Description;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -35,6 +38,6 @@ class AddToItemDescriptionRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
     }
 }

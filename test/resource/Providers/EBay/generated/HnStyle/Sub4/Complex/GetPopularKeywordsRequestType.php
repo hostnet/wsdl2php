@@ -12,27 +12,30 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetPopularKeywordsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var boolean | If true, only one CategoryID can be specified, and keywords are returned for that category
      * and its subcategories. If false, keywords are returned only for the categories identified
      * by CategoryID. Default is false.
      */
-    public $includechildcategories;
+    public $IncludeChildCategories;
     /**
      * @var int | The maximum number of keywords to be retrieved per category for this call.
      */
-    public $maxkeywordsretrieved;
+    public $MaxKeywordsRetrieved;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -42,7 +45,7 @@ class GetPopularKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -51,7 +54,7 @@ class GetPopularKeywordsRequestType extends
      */
     public function setIncludeChildCategories($val)
     {
-        $this->includechildcategories = (int)$val;
+        $this->IncludeChildCategories = (int)$val;
     }
 
     /**
@@ -63,7 +66,7 @@ class GetPopularKeywordsRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxkeywordsretrieved = (int)$val;
+        $this->MaxKeywordsRetrieved = (int)$val;
     }
 
     /**
@@ -72,6 +75,6 @@ class GetPopularKeywordsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 }

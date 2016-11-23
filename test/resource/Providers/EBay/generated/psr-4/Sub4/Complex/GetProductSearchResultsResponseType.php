@@ -13,6 +13,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetProductSearchResultsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DataElementSetType | Container for one or more DataElement fields containing supplemental helpful data.
      *                 A DataElement field is an HTML snippet that specifies hints for the
@@ -21,20 +22,22 @@ class GetProductSearchResultsResponseType extends
      * the information                  to determine how it can be applied in an application.
      *                  Also returned with warnings when no matches are found.
      */
-    public $dataelementsets;
+    public $DataElementSets;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductSearchResultType | Contains the attributes and product details that match the attributes or query keywords
      *                  passed in the request. Always returned when product search results
      * are found.
      */
-    public $productsearchresult;
+    public $ProductSearchResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DataElementSetType $val
      * @throws Exception
      */
     public function setDataElementSets($val)
     {
-        $this->dataelementsets = (int)$val;
+        $this->DataElementSets = (int)$val;
     }
 
     /**
@@ -43,6 +46,6 @@ class GetProductSearchResultsResponseType extends
      */
     public function setProductSearchResult($val)
     {
-        $this->productsearchresult = (int)$val;
+        $this->ProductSearchResult = (int)$val;
     }
 }

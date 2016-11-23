@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ProductLine
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $mode;
+    public $Mode;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductInfo
      */
-    public $productinfo;
+    public $ProductInfo;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class ProductLine
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mode');
         }
-        $this->mode = (int)$val;
+        $this->Mode = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class ProductLine
      */
     public function setProductInfo($val)
     {
-        $this->productinfo = (int)$val;
+        $this->ProductInfo = (int)$val;
     }
 }

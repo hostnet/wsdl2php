@@ -8,46 +8,49 @@ namespace Controle;
  */
 class SellerPaymentPreferencesType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | Indicates whether the seller wants all transactions with eBay to use the address specified
 	 * in SellerPaymentAddress.
 	 */
-	public $alwaysusethispaymentaddress;
+	public $AlwaysUseThisPaymentAddress;
 	/**
 	 * @var \Controle\DisplayPayNowButtonCodeType | Determines whether the Pay Now button should always be displayed for the user's listings.
 	 */
-	public $displaypaynowbutton;
+	public $DisplayPayNowButton;
 	/**
 	 * @var boolean | Specifies whether a seller wants to let buyers know that PayPal payments are preferred.
 	 */
-	public $paypalpreferred;
+	public $PayPalPreferred;
 	/**
 	 * @var string | Specifies the default email address the seller uses for receiving PayPal payments.
 	 */
-	public $defaultpaypalemailaddress;
+	public $DefaultPayPalEmailAddress;
 	/**
 	 * @var boolean | Indicates whether PayPal is always accepted for the seller's listings.
 	 */
-	public $paypalalwayson;
+	public $PayPalAlwaysOn;
 	/**
 	 * @var \Controle\AddressType | Address used by eBay for purposes of billing the user for seller fees.
 	 */
-	public $sellerpaymentaddress;
+	public $SellerPaymentAddress;
 	/**
 	 * @var \Controle\UPSRateOptionCodeType | Specifies the type of United Postal Service rates to use.
 	 */
-	public $upsrateoption;
+	public $UPSRateOption;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setAlwaysUseThisPaymentAddress($val)
 	{
-        $this->alwaysusethispaymentaddress = (int)$val;
+        $this->AlwaysUseThisPaymentAddress = (int)$val;
 	}
 
 	/**
@@ -56,7 +59,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setDisplayPayNowButton($val)
 	{
-        $this->displaypaynowbutton = (int)$val;
+        $this->DisplayPayNowButton = (int)$val;
 	}
 
 	/**
@@ -65,7 +68,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->paypalpreferred = (int)$val;
+        $this->PayPalPreferred = (int)$val;
 	}
 
 	/**
@@ -77,7 +80,7 @@ class SellerPaymentPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
         }
-        $this->defaultpaypalemailaddress = (int)$val;
+        $this->DefaultPayPalEmailAddress = (int)$val;
 	}
 
 	/**
@@ -86,7 +89,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setPayPalAlwaysOn($val)
 	{
-        $this->paypalalwayson = (int)$val;
+        $this->PayPalAlwaysOn = (int)$val;
 	}
 
 	/**
@@ -95,7 +98,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setSellerPaymentAddress($val)
 	{
-        $this->sellerpaymentaddress = (int)$val;
+        $this->SellerPaymentAddress = (int)$val;
 	}
 
 	/**
@@ -104,7 +107,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setUPSRateOption($val)
 	{
-        $this->upsrateoption = (int)$val;
+        $this->UPSRateOption = (int)$val;
 	}
 
 	/**

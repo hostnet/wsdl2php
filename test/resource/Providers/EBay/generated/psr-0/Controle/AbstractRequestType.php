@@ -12,6 +12,7 @@ namespace Controle;
  */
 class AbstractRequestType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\DetailLevelCodeType | Detail levels are instructions that define standard subsets of data to return for particular
 	 * data components (e.g., each Item, Transaction, or User) within the response payload. For
@@ -33,7 +34,7 @@ class AbstractRequestType
 	 * call instead. If you do use ReturnAll with GetSellerList, use a small EntriesPerPage value
 	 * and a short EndTimeFrom/EndTimeTo range for better performance.
 	 */
-	public $detaillevel;
+	public $DetailLevel;
 	/**
 	 * @var string | Use ErrorLanguage to return error strings for the call in a different language from the
 	 * language commonly associated with the site that the requesting user is registered with.
@@ -44,34 +45,34 @@ class AbstractRequestType
 	 * Italy <br> nl_BE Belgium (Dutch)<br> nl_NL Netherlands <br> zh_TW Taiwan<br> zh_CN China<br> en_IN
 	 * India<br> en_IE Ireland<br> zh_HK Hong Kong
 	 */
-	public $errorlanguage;
+	public $ErrorLanguage;
 	/**
 	 * @var string | An ID that uniquely identifies a message for a given user. <br /><br /> This value is not
 	 * the same as the value used for the GetMemberMessages MessageID. Use the GetMemberMessages
 	 * value for used as the GetMyMessages ExternalID instead.
 	 */
-	public $messageid;
+	public $MessageID;
 	/**
 	 * @var string | The version of the response payload schema. Indicates the version of the schema that eBay
 	 * used to process the request. See "Standard Data for All Calls" in the eBay Web Services
 	 * Guide for information on using the response version when troubleshooting "CustomCode" values
 	 * that appear in the response.
 	 */
-	public $version;
+	public $Version;
 	/**
 	 * @var \Controle\ErrorHandlingCodeType | Error tolerance level for the call. For calls that support Item Specifics, this is a preference
 	 * that controls how eBay handles listing requests when invalid attribute data is passed in.
 	 * See Attribute Error Handling in the eBay Web Services guide for details about this field
 	 * in listing requests.
 	 */
-	public $errorhandling;
+	public $ErrorHandling;
 	/**
 	 * @var \Controle\UUIDType | A unique identifer for a particular call. If the same InvocationID is passed in after it
 	 * has been passed in once on a call that succeeded for a particular application and user,
 	 * then an error will be returned. The identifier can only contain digits from 0-9 and letters
 	 * from A-F. The identifier must be 32 characters long.  For example, 1FB02B2-9D27-3acb-ABA2-9D539C374228.
 	 */
-	public $invocationid;
+	public $InvocationID;
 	/**
 	 * @var \Controle\WarningLevelCodeType | Controls whether or not to return warnings when the application passes unrecognized elements
 	 * in a request (i.e., elements that are not defined in the schema). (This does not control
@@ -82,18 +83,20 @@ class AbstractRequestType
 	 * XML attributes.<br> <br> We recommend that you only use this during development and debugging.
 	 * Do not use this in requests in your production code.
 	 */
-	public $warninglevel;
+	public $WarningLevel;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param DetailLevelCodeType $val
 	 * @throws Exception
 	 */
 	public function setDetailLevel($val)
 	{
-        $this->detaillevel = (int)$val;
+        $this->DetailLevel = (int)$val;
 	}
 
 	/**
@@ -105,7 +108,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorLanguage');
         }
-        $this->errorlanguage = (int)$val;
+        $this->ErrorLanguage = (int)$val;
 	}
 
 	/**
@@ -117,7 +120,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageID');
         }
-        $this->messageid = (int)$val;
+        $this->MessageID = (int)$val;
 	}
 
 	/**
@@ -129,7 +132,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Version');
         }
-        $this->version = (int)$val;
+        $this->Version = (int)$val;
 	}
 
 	/**
@@ -138,7 +141,7 @@ class AbstractRequestType
 	 */
 	public function setErrorHandling($val)
 	{
-        $this->errorhandling = (int)$val;
+        $this->ErrorHandling = (int)$val;
 	}
 
 	/**
@@ -147,7 +150,7 @@ class AbstractRequestType
 	 */
 	public function setInvocationID($val)
 	{
-        $this->invocationid = (int)$val;
+        $this->InvocationID = (int)$val;
 	}
 
 	/**
@@ -156,7 +159,7 @@ class AbstractRequestType
 	 */
 	public function setWarningLevel($val)
 	{
-        $this->warninglevel = (int)$val;
+        $this->WarningLevel = (int)$val;
 	}
 
 	/**

@@ -8,19 +8,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CrossPromotionsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionSchemeCodeType | The primary cross-promotion rule scheme that was applied to return the cross-promoted
      * item.
      */
-    public $primaryscheme;
+    public $PrimaryScheme;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionMethodCodeType | The type of cross promotion, CrossSell or UpSell.
      */
-    public $promotionmethod;
+    public $PromotionMethod;
     /**
      * @var string | The eBay ID of the seller who listed the item. <br><br> Starting Jan 2007, when a bidder's
      * user info is made anonymous, this tag will be returned with the anonymous value "Seller
@@ -28,35 +29,37 @@ class CrossPromotionsType
      * has purchased items from. For example, if the seller is the third seller that the user
      * has purchased items from, the value "Seller 3" is returned.
      */
-    public $sellerid;
+    public $SellerID;
     /**
      * @var boolean | Whether a shipping discount is offered by the seller when the cross-promoted item is
      * purchased.
      */
-    public $shippingdiscount;
+    public $ShippingDiscount;
     /**
      * @var string | The key of the seller who is promoting the item.
      */
-    public $sellerkey;
+    public $SellerKey;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $storename;
+    public $StoreName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotedItemType | The unique item ID of the cross-promoted item. Use for an ItemToItem rule.
      */
-    public $promoteditem;
+    public $PromotedItem;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class CrossPromotionsType
      */
     public function setPrimaryScheme($val)
     {
-        $this->primaryscheme = (int)$val;
+        $this->PrimaryScheme = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class CrossPromotionsType
      */
     public function setPromotionMethod($val)
     {
-        $this->promotionmethod = (int)$val;
+        $this->PromotionMethod = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerID');
         }
-        $this->sellerid = (int)$val;
+        $this->SellerID = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class CrossPromotionsType
      */
     public function setShippingDiscount($val)
     {
-        $this->shippingdiscount = (int)$val;
+        $this->ShippingDiscount = (int)$val;
     }
 
     /**
@@ -107,7 +110,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerKey');
         }
-        $this->sellerkey = (int)$val;
+        $this->SellerKey = (int)$val;
     }
 
     /**
@@ -119,7 +122,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
     }
 
     /**
@@ -128,7 +131,7 @@ class CrossPromotionsType
      */
     public function setPromotedItem($val)
     {
-        $this->promoteditem = (int)$val;
+        $this->PromotedItem = (int)$val;
     }
 
     /**

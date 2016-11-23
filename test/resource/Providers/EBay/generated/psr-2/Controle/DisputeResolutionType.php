@@ -10,30 +10,33 @@ namespace Controle;
  */
 class DisputeResolutionType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\DisputeResolutionRecordTypeCodeType | The action resulting from the resolution, affecting either the buyer or the seller.
      */
-    public $disputeresolutionrecordtype;
+    public $DisputeResolutionRecordType;
     /**
      * @var \Controle\DisputeResolutionReasonCodeType | The reason for the resolution. The DisputeResolutionReason results in the action described
      * by the DisputeResolutionRecordType.
      */
-    public $disputeresolutionreason;
+    public $DisputeResolutionReason;
     /**
      * @var dateTime | The date and time the dispute was resolved, in GMT.
      */
-    public $resolutiontime;
+    public $ResolutionTime;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DisputeResolutionRecordTypeCodeType $val
      * @throws Exception
      */
     public function setDisputeResolutionRecordType($val)
     {
-        $this->disputeresolutionrecordtype = (int)$val;
+        $this->DisputeResolutionRecordType = (int)$val;
     }
 
     /**
@@ -42,7 +45,7 @@ class DisputeResolutionType
      */
     public function setDisputeResolutionReason($val)
     {
-        $this->disputeresolutionreason = (int)$val;
+        $this->DisputeResolutionReason = (int)$val;
     }
 
     /**
@@ -51,7 +54,7 @@ class DisputeResolutionType
      */
     public function setResolutionTime($val)
     {
-        $this->resolutiontime = (int)$val;
+        $this->ResolutionTime = (int)$val;
     }
 
     /**

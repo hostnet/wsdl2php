@@ -9,17 +9,20 @@ namespace Controle;
 class GetUserResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\UserType | Bidder information. See the schema documentation for UserType for details on its properties
      * and their meanings.
      */
-    public $user;
+    public $User;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserType $val
      * @throws Exception
      */
     public function setUser($val)
     {
-        $this->user = (int)$val;
+        $this->User = (int)$val;
     }
 }

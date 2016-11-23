@@ -8,53 +8,56 @@ namespace Controle;
  */
 class StoreFontType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\StoreFontFaceCodeType | Font for the Store name.
 	 */
-	public $nameface;
+	public $NameFace;
 	/**
 	 * @var \Controle\StoreFontSizeCodeType | Font size for the Store name.
 	 */
-	public $namesize;
+	public $NameSize;
 	/**
 	 * @var string | Font color for the Store name. Specified in 6-digit Hex format. For example: F6F6C9
 	 */
-	public $namecolor;
+	public $NameColor;
 	/**
 	 * @var \Controle\StoreFontFaceCodeType | Font for the Store section title.
 	 */
-	public $titleface;
+	public $TitleFace;
 	/**
 	 * @var \Controle\StoreFontSizeCodeType | Font size for the Store section title.
 	 */
-	public $titlesize;
+	public $TitleSize;
 	/**
 	 * @var string | Font color for the Store section title. Specified in 6-digit Hex format. For example: F6F6C9
 	 */
-	public $titlecolor;
+	public $TitleColor;
 	/**
 	 * @var \Controle\StoreFontFaceCodeType | Font for the Store description.
 	 */
-	public $descface;
+	public $DescFace;
 	/**
 	 * @var \Controle\StoreFontSizeCodeType | Font size for the Store description.
 	 */
-	public $descsize;
+	public $DescSize;
 	/**
 	 * @var string | Font color for the Store description. Specified in 6-digit Hex format. For example: F6F6C9
 	 */
-	public $desccolor;
+	public $DescColor;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreFontFaceCodeType $val
 	 * @throws Exception
 	 */
 	public function setNameFace($val)
 	{
-        $this->nameface = (int)$val;
+        $this->NameFace = (int)$val;
 	}
 
 	/**
@@ -63,7 +66,7 @@ class StoreFontType
 	 */
 	public function setNameSize($val)
 	{
-        $this->namesize = (int)$val;
+        $this->NameSize = (int)$val;
 	}
 
 	/**
@@ -75,7 +78,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NameColor');
         }
-        $this->namecolor = (int)$val;
+        $this->NameColor = (int)$val;
 	}
 
 	/**
@@ -84,7 +87,7 @@ class StoreFontType
 	 */
 	public function setTitleFace($val)
 	{
-        $this->titleface = (int)$val;
+        $this->TitleFace = (int)$val;
 	}
 
 	/**
@@ -93,7 +96,7 @@ class StoreFontType
 	 */
 	public function setTitleSize($val)
 	{
-        $this->titlesize = (int)$val;
+        $this->TitleSize = (int)$val;
 	}
 
 	/**
@@ -105,7 +108,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TitleColor');
         }
-        $this->titlecolor = (int)$val;
+        $this->TitleColor = (int)$val;
 	}
 
 	/**
@@ -114,7 +117,7 @@ class StoreFontType
 	 */
 	public function setDescFace($val)
 	{
-        $this->descface = (int)$val;
+        $this->DescFace = (int)$val;
 	}
 
 	/**
@@ -123,7 +126,7 @@ class StoreFontType
 	 */
 	public function setDescSize($val)
 	{
-        $this->descsize = (int)$val;
+        $this->DescSize = (int)$val;
 	}
 
 	/**
@@ -135,7 +138,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DescColor');
         }
-        $this->desccolor = (int)$val;
+        $this->DescColor = (int)$val;
 	}
 
 	/**

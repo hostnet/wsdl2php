@@ -4,30 +4,33 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class VeRoReportedItemType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\VeROItemStatusCodeType | The VeRO reporting status for a given item.
      */
-    public $itemstatus;
+    public $ItemStatus;
     /**
      * @var string | The explanation entered by eBay when an item reported for infringement is given a status
      * of SubmissionFailed or ClarificationRequired.
      */
-    public $itemreasonforfailure;
+    public $ItemReasonForFailure;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -36,7 +39,7 @@ class VeRoReportedItemType
      */
     public function setItemStatus($val)
     {
-        $this->itemstatus = (int)$val;
+        $this->ItemStatus = (int)$val;
     }
 
     /**
@@ -48,7 +51,7 @@ class VeRoReportedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemReasonForFailure');
         }
-        $this->itemreasonforfailure = (int)$val;
+        $this->ItemReasonForFailure = (int)$val;
     }
 
     /**

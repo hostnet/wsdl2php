@@ -4,41 +4,44 @@ namespace Controle;
 
 class NameServer
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var dateTime
 	 */
-	public $credate;
+	public $CreDate;
 	/**
 	 * @var string
 	 */
-	public $handle;
+	public $Handle;
 	/**
 	 * @var string
 	 */
-	public $hostname;
+	public $HostName;
 	/**
 	 * @var string
 	 */
-	public $ipaddress;
+	public $IpAddress;
 	/**
 	 * @var string
 	 */
-	public $status;
+	public $Status;
 	/**
 	 * @var string
 	 */
-	public $ipv6address;
+	public $IpV6Address;
 	/**
 	 * @var string
 	 */
-	public $details;
+	public $Details;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
 	public function setCreDate($val)
 	{
-        $this->credate = (int)$val;
+        $this->CreDate = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Handle');
         }
-        $this->handle = (int)$val;
+        $this->Handle = (int)$val;
 	}
 
 	/**
@@ -62,7 +65,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HostName');
         }
-        $this->hostname = (int)$val;
+        $this->HostName = (int)$val;
 	}
 
 	/**
@@ -74,7 +77,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IpAddress');
         }
-        $this->ipaddress = (int)$val;
+        $this->IpAddress = (int)$val;
 	}
 
 	/**
@@ -86,7 +89,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 
 	/**
@@ -98,7 +101,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IpV6Address');
         }
-        $this->ipv6address = (int)$val;
+        $this->IpV6Address = (int)$val;
 	}
 
 	/**
@@ -110,6 +113,6 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Details');
         }
-        $this->details = (int)$val;
+        $this->Details = (int)$val;
 	}
 }

@@ -8,18 +8,21 @@ namespace Controle;
  */
 class DistanceType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | The measurement used in a proximity search distance calculation.
 	 */
-	public $distancemeasurement;
+	public $DistanceMeasurement;
 	/**
 	 * @var string | The unit used in a proximity search distance calculation.
 	 */
-	public $distanceunit;
+	public $DistanceUnit;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -29,7 +32,7 @@ class DistanceType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->distancemeasurement = (int)$val;
+        $this->DistanceMeasurement = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class DistanceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DistanceUnit');
         }
-        $this->distanceunit = (int)$val;
+        $this->DistanceUnit = (int)$val;
 	}
 
 	/**

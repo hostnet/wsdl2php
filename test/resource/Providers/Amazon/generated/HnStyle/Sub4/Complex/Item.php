@@ -4,38 +4,41 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Item
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $itemid;
+    public $ItemId;
     /**
      * @var string
      */
-    public $productname;
+    public $ProductName;
     /**
      * @var string
      */
-    public $catalog;
+    public $Catalog;
     /**
      * @var string
      */
-    public $asin;
+    public $Asin;
     /**
      * @var string
      */
-    public $exchangeid;
+    public $ExchangeId;
     /**
      * @var string
      */
-    public $quantity;
+    public $Quantity;
     /**
      * @var string
      */
-    public $listprice;
+    public $ListPrice;
     /**
      * @var string
      */
-    public $ourprice;
+    public $OurPrice;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -45,7 +48,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemId');
         }
-        $this->itemid = (int)$val;
+        $this->ItemId = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductName');
         }
-        $this->productname = (int)$val;
+        $this->ProductName = (int)$val;
     }
 
     /**
@@ -69,7 +72,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Catalog');
         }
-        $this->catalog = (int)$val;
+        $this->Catalog = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Asin');
         }
-        $this->asin = (int)$val;
+        $this->Asin = (int)$val;
     }
 
     /**
@@ -93,7 +96,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->exchangeid = (int)$val;
+        $this->ExchangeId = (int)$val;
     }
 
     /**
@@ -105,7 +108,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Quantity');
         }
-        $this->quantity = (int)$val;
+        $this->Quantity = (int)$val;
     }
 
     /**
@@ -117,7 +120,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListPrice');
         }
-        $this->listprice = (int)$val;
+        $this->ListPrice = (int)$val;
     }
 
     /**
@@ -129,6 +132,6 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OurPrice');
         }
-        $this->ourprice = (int)$val;
+        $this->OurPrice = (int)$val;
     }
 }

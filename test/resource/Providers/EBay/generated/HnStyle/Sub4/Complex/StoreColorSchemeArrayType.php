@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class StoreColorSchemeArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreColorSchemeType | Theme color scheme.
      */
-    public $colorscheme;
+    public $ColorScheme;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreColorSchemeType $val
      * @throws Exception
      */
     public function setColorScheme($val)
     {
-        $this->colorscheme = (int)$val;
+        $this->ColorScheme = (int)$val;
     }
 }

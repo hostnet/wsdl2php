@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class StorePreferencesType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\StoreVacationPreferencesType | Store vacation hold preferences.
 	 */
-	public $vacationpreferences;
+	public $VacationPreferences;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreVacationPreferencesType $val
 	 * @throws Exception
 	 */
 	public function setVacationPreferences($val)
 	{
-        $this->vacationpreferences = (int)$val;
+        $this->VacationPreferences = (int)$val;
 	}
 }

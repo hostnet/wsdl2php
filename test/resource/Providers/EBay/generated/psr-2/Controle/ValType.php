@@ -4,6 +4,7 @@ namespace Controle;
 
 class ValType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The descriptive name of an attribute or characteristic value (e.g., "New" might be a
      * literal value for a Condition attribute). In item-listing requests, if you send ValueID
@@ -22,12 +23,12 @@ class ValType
      * the max length is 500 characters. You can revise AttributeArray.Attribute.Value.ValueLiteral
      * for Half.com listings.
      */
-    public $valueliteral;
+    public $ValueLiteral;
     /**
      * @var string | (out) Reserved for future use. Suggested alternative text for ValueLiteral. Multiple
      * SuggestedValueLiteral elements can be returned in a Value node. Not applicable to Half.com.
      */
-    public $suggestedvalueliteral;
+    public $SuggestedValueLiteral;
     /**
      * @var int | Constant value that identifies the attribute or characteristic in a language-independent
      * way. Unique within the characteristic set.<br> <br> In item-listing requests, if the
@@ -40,11 +41,13 @@ class ValType
      * for a pre-defined value that the user selected (e.g., -14 or 1001)<br> For eBay.com,
      * required if ValueList is specified. Not applicable to Half.com.
      */
-    public $valueid;
+    public $ValueID;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -54,7 +57,7 @@ class ValType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ValueLiteral');
         }
-        $this->valueliteral = (int)$val;
+        $this->ValueLiteral = (int)$val;
     }
 
     /**
@@ -66,7 +69,7 @@ class ValType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SuggestedValueLiteral');
         }
-        $this->suggestedvalueliteral = (int)$val;
+        $this->SuggestedValueLiteral = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class ValType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->valueid = (int)$val;
+        $this->ValueID = (int)$val;
     }
 
     /**

@@ -10,6 +10,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetLiveAuctionCatalogDetailsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionCatalogType | Each eBay Live Auctions catalog describes one live auction catalog created by the user, along
      * with one or more sale schedules. Use this information to determine an appropriate combination
@@ -17,13 +18,15 @@ class GetLiveAuctionCatalogDetailsResponseType extends
      * returns details about catalogs that contain pending sales. That is, if a catalog has
      * no sales or all its sales have ended, the catalog details are not returned.
      */
-    public $liveauctioncatalog;
+    public $LiveAuctionCatalog;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param LiveAuctionCatalogType $val
      * @throws Exception
      */
     public function setLiveAuctionCatalog($val)
     {
-        $this->liveauctioncatalog = (int)$val;
+        $this->LiveAuctionCatalog = (int)$val;
     }
 }

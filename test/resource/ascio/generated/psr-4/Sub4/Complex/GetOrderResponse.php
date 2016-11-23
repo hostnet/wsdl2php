@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class GetOrderResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $getorderresult;
+    public $GetOrderResult;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Order
      */
     public $order;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setGetOrderResult($val)
     {
-        $this->getorderresult = (int)$val;
+        $this->GetOrderResult = (int)$val;
     }
 
     /**

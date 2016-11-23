@@ -4,10 +4,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AvailabilityCheck
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var String[]
      */
@@ -20,6 +21,8 @@ class AvailabilityCheck
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\QualityType
      */
     public $quality;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class AvailabilityCheck
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**

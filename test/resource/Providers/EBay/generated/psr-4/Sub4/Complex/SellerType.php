@@ -8,12 +8,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SellerType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Indicates the seller's PaisaPay registration status. India site only.<br> 0 - Seller
      * not registered<br> 1 - Seller registered<br> 2 - Seller registered but registration
      * suspended<br> 3 - Seller registered but outbound payment suspended<br>
      */
-    public $paisapaystatus;
+    public $PaisaPayStatus;
     /**
      * @var boolean | Instead of using this tag, see the PaymentEdited tag. Originally, the AllowPaymentEdit
      * tag specified whether the seller allows the buyer to edit the payment amount for the
@@ -21,79 +22,79 @@ class SellerType
      * site.) ShippingDetails.AllowPaymentEdit is no longer being populated by calls to GetItemTransactions. Not
      * applicable to Half.com.
      */
-    public $allowpaymentedit;
+    public $AllowPaymentEdit;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType | Currency type in which the user is billed seller fees.
      */
-    public $billingcurrency;
+    public $BillingCurrency;
     /**
      * @var boolean | Indicates whether the user as a seller has the option set to default new item listings
      * to go through checkout. (Sellers enable this property in their My eBay user preferences
      * on the eBay site.)
      */
-    public $checkoutenabled;
+    public $CheckoutEnabled;
     /**
      * @var boolean | If true, indicates that the user has stored bank account information with eBay in order
      * to use the "CIP in checkout" feature. Applicable to all eBay sites that support CIP
      * as a payment method.
      */
-    public $cipbankaccountstored;
+    public $CIPBankAccountStored;
     /**
      * @var boolean | If true, indicates that the user is in good standing with eBay. (One of the requirements
      * for listing a new item with Immediate Payment.)
      */
-    public $goodstanding;
+    public $GoodStanding;
     /**
      * @var boolean | If true, the user is authorized to list lot items to the eBay Live Auctions site.
      */
-    public $liveauctionauthorized;
+    public $LiveAuctionAuthorized;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MerchandizingPrefCodeType | Indicates whether the seller participates in the Merchandising Manager feature. If so,
      * the seller can set up rules for cross-promoting items from the seller's store. If not,
      * eBay cross-promotes items as the seller's items are being viewed or purchased.
      */
-    public $merchandizingpref;
+    public $MerchandizingPref;
     /**
      * @var boolean | Indicates whether the user is subject to VAT. Users who have registered with eBay as
      * VAT-exempt are not subject to VAT.
      */
-    public $qualifiesforb2bvat;
+    public $QualifiesForB2BVAT;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerGuaranteeLevelCodeType | Maximum level of Motor's Seller guarantee the seller is authorized to offer.
      */
-    public $sellerguaranteelevel;
+    public $SellerGuaranteeLevel;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerLevelCodeType | The user's eBay PowerSeller tier. Possible values are enumerated in the SellerLevelCodeType
      * code list.
      */
-    public $sellerlevel;
+    public $SellerLevel;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AddressType | Address used by eBay for purposes of billing the user for seller fees.
      */
-    public $sellerpaymentaddress;
+    public $SellerPaymentAddress;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SchedulingInfoType | Container for scheduling limits for the user. Conveys the minimum and maximum minutes
      * the user may schedule listings in advance, as well as the maximum number of items the
      * user may schedule.
      */
-    public $schedulinginfo;
+    public $SchedulingInfo;
     /**
      * @var boolean | Indicates whether the user has an eBay Store (boolean value).
      */
-    public $storeowner;
+    public $StoreOwner;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | The URL of the seller's eBay Store page. Output only.
      */
-    public $storeurl;
+    public $StoreURL;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerBusinessCodeType | Type of seller account. This value is returned if the German site (site ID 77) or eBay
      * Motors site (site ID 100) is specified.
      */
-    public $sellerbusinesstype;
+    public $SellerBusinessType;
     /**
      * @var boolean | If true, the user is registered as a vehicle dealer on the eBay Motors site.
      */
-    public $registeredbusinessseller;
+    public $RegisteredBusinessSeller;
     /**
      * @var boolean | If true, the user is currently eligible to sell items on eBay Express, based on the
      * data available to eBay at the time you execute the call (e.g., GetUser). Users registered
@@ -109,20 +110,20 @@ class SellerType
      * flag in ExpressSellerRequirements could change, but it could take up to 7 days for the
      * seller's Express eligibility to change.
      */
-    public $expresseligible;
+    public $ExpressEligible;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentMethodCodeType |      */
-    public $paymentmethod;
+    public $PaymentMethod;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProStoresCheckoutPreferenceType | Details about the checkout preferences related to the ProStores store. Returned only
      * if set.
      */
-    public $prostorespreference;
+    public $ProStoresPreference;
     /**
      * @var boolean | If true, the seller has an Express wallet, which is used to store information about multiple
      * credit cards associated with the seller's account.
      */
-    public $expresswallet;
+    public $ExpressWallet;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressSellerRequirementsType | Contains detailed data relating to whether a seller qualifies as an Express seller. Whether
      * a child tag is returned can depend on whether its value would be true or false, whether
@@ -135,17 +136,19 @@ class SellerType
      * flag in ExpressSellerRequirements could change, but it could take up to 7 days for the
      * seller's Express eligibility to change.
      */
-    public $expresssellerrequirements;
+    public $ExpressSellerRequirements;
     /**
      * @var boolean | Indicates whether or not the seller is a registered charity seller. If CharityRegistered
      * is false, the user must register with the eBay Giving Works provider to list items with
      * eBay Giving Works.
      */
-    public $charityregistered;
+    public $CharityRegistered;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -155,7 +158,7 @@ class SellerType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->paisapaystatus = (int)$val;
+        $this->PaisaPayStatus = (int)$val;
     }
 
     /**
@@ -164,7 +167,7 @@ class SellerType
      */
     public function setAllowPaymentEdit($val)
     {
-        $this->allowpaymentedit = (int)$val;
+        $this->AllowPaymentEdit = (int)$val;
     }
 
     /**
@@ -173,7 +176,7 @@ class SellerType
      */
     public function setBillingCurrency($val)
     {
-        $this->billingcurrency = (int)$val;
+        $this->BillingCurrency = (int)$val;
     }
 
     /**
@@ -182,7 +185,7 @@ class SellerType
      */
     public function setCheckoutEnabled($val)
     {
-        $this->checkoutenabled = (int)$val;
+        $this->CheckoutEnabled = (int)$val;
     }
 
     /**
@@ -191,7 +194,7 @@ class SellerType
      */
     public function setCIPBankAccountStored($val)
     {
-        $this->cipbankaccountstored = (int)$val;
+        $this->CIPBankAccountStored = (int)$val;
     }
 
     /**
@@ -200,7 +203,7 @@ class SellerType
      */
     public function setGoodStanding($val)
     {
-        $this->goodstanding = (int)$val;
+        $this->GoodStanding = (int)$val;
     }
 
     /**
@@ -209,7 +212,7 @@ class SellerType
      */
     public function setLiveAuctionAuthorized($val)
     {
-        $this->liveauctionauthorized = (int)$val;
+        $this->LiveAuctionAuthorized = (int)$val;
     }
 
     /**
@@ -218,7 +221,7 @@ class SellerType
      */
     public function setMerchandizingPref($val)
     {
-        $this->merchandizingpref = (int)$val;
+        $this->MerchandizingPref = (int)$val;
     }
 
     /**
@@ -227,7 +230,7 @@ class SellerType
      */
     public function setQualifiesForB2BVAT($val)
     {
-        $this->qualifiesforb2bvat = (int)$val;
+        $this->QualifiesForB2BVAT = (int)$val;
     }
 
     /**
@@ -236,7 +239,7 @@ class SellerType
      */
     public function setSellerGuaranteeLevel($val)
     {
-        $this->sellerguaranteelevel = (int)$val;
+        $this->SellerGuaranteeLevel = (int)$val;
     }
 
     /**
@@ -245,7 +248,7 @@ class SellerType
      */
     public function setSellerLevel($val)
     {
-        $this->sellerlevel = (int)$val;
+        $this->SellerLevel = (int)$val;
     }
 
     /**
@@ -254,7 +257,7 @@ class SellerType
      */
     public function setSellerPaymentAddress($val)
     {
-        $this->sellerpaymentaddress = (int)$val;
+        $this->SellerPaymentAddress = (int)$val;
     }
 
     /**
@@ -263,7 +266,7 @@ class SellerType
      */
     public function setSchedulingInfo($val)
     {
-        $this->schedulinginfo = (int)$val;
+        $this->SchedulingInfo = (int)$val;
     }
 
     /**
@@ -272,7 +275,7 @@ class SellerType
      */
     public function setStoreOwner($val)
     {
-        $this->storeowner = (int)$val;
+        $this->StoreOwner = (int)$val;
     }
 
     /**
@@ -281,7 +284,7 @@ class SellerType
      */
     public function setStoreURL($val)
     {
-        $this->storeurl = (int)$val;
+        $this->StoreURL = (int)$val;
     }
 
     /**
@@ -290,7 +293,7 @@ class SellerType
      */
     public function setSellerBusinessType($val)
     {
-        $this->sellerbusinesstype = (int)$val;
+        $this->SellerBusinessType = (int)$val;
     }
 
     /**
@@ -299,7 +302,7 @@ class SellerType
      */
     public function setRegisteredBusinessSeller($val)
     {
-        $this->registeredbusinessseller = (int)$val;
+        $this->RegisteredBusinessSeller = (int)$val;
     }
 
     /**
@@ -308,7 +311,7 @@ class SellerType
      */
     public function setExpressEligible($val)
     {
-        $this->expresseligible = (int)$val;
+        $this->ExpressEligible = (int)$val;
     }
 
     /**
@@ -317,7 +320,7 @@ class SellerType
      */
     public function setPaymentMethod($val)
     {
-        $this->paymentmethod = (int)$val;
+        $this->PaymentMethod = (int)$val;
     }
 
     /**
@@ -326,7 +329,7 @@ class SellerType
      */
     public function setProStoresPreference($val)
     {
-        $this->prostorespreference = (int)$val;
+        $this->ProStoresPreference = (int)$val;
     }
 
     /**
@@ -335,7 +338,7 @@ class SellerType
      */
     public function setExpressWallet($val)
     {
-        $this->expresswallet = (int)$val;
+        $this->ExpressWallet = (int)$val;
     }
 
     /**
@@ -344,7 +347,7 @@ class SellerType
      */
     public function setExpressSellerRequirements($val)
     {
-        $this->expresssellerrequirements = (int)$val;
+        $this->ExpressSellerRequirements = (int)$val;
     }
 
     /**
@@ -353,7 +356,7 @@ class SellerType
      */
     public function setCharityRegistered($val)
     {
-        $this->charityregistered = (int)$val;
+        $this->CharityRegistered = (int)$val;
     }
 
     /**

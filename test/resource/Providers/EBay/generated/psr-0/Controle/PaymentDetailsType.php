@@ -8,6 +8,7 @@ namespace Controle;
  */
 class PaymentDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Applies to US eBay Motors site (except Parts and Accessories category). Number of hours
 	 * after a listing closes that the buyer can put down a deposit on an item (if the seller
@@ -16,7 +17,7 @@ class PaymentDetailsType
 	 * default is 48. Deposits can only be paid using PayPal, so the listing must offer PayPal
 	 * as a payment method (in addition to the payment methods offered for the full payment).
 	 */
-	public $hourstodeposit;
+	public $HoursToDeposit;
 	/**
 	 * @var int | Applies to vehicle categories on the US and Canada eBay Motors sites (not Parts and Accessories
 	 * categories). Number of days after a listing closes that the buyer can take to pay the full
@@ -25,11 +26,13 @@ class PaymentDetailsType
 	 * MOCC (cashier's check), PersonalCheck, LoanCheck, CashInPerson, and/or PaymentSeeDescription
 	 * as payment methods.
 	 */
-	public $daystofullpayment;
+	public $DaysToFullPayment;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -39,7 +42,7 @@ class PaymentDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->hourstodeposit = (int)$val;
+        $this->HoursToDeposit = (int)$val;
 	}
 
 	/**
@@ -51,7 +54,7 @@ class PaymentDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->daystofullpayment = (int)$val;
+        $this->DaysToFullPayment = (int)$val;
 	}
 
 	/**

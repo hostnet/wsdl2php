@@ -10,6 +10,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSuggestedCategoriesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | One or more keywords to search for when using the Suggested Attributes engine. Required
      * when SuggestedAttributes is specified as the recommendation engine (including when no
@@ -17,7 +18,9 @@ class GetSuggestedCategoriesRequestType extends
      * "and" and "or" are treated like any other word. Blank searches are not allowed (and
      * result in a warning).
      */
-    public $query;
+    public $Query;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -27,6 +30,6 @@ class GetSuggestedCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->query = (int)$val;
+        $this->Query = (int)$val;
     }
 }

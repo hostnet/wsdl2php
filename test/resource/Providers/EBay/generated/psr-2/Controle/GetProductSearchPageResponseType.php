@@ -12,18 +12,21 @@ namespace Controle;
 class GetProductSearchPageResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $attributesystemversion;
+    public $AttributeSystemVersion;
     /**
      * @var \Controle\ProductSearchPageType | A list of catalog search criteria and sort keys associated with a catalog-enabled category, plus
      * supplemental information to help the seller understand how to make selections.
      */
-    public $productsearchpage;
+    public $ProductSearchPage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class GetProductSearchPageResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->attributesystemversion = (int)$val;
+        $this->AttributeSystemVersion = (int)$val;
     }
 
     /**
@@ -42,6 +45,6 @@ class GetProductSearchPageResponseType extends
      */
     public function setProductSearchPage($val)
     {
-        $this->productsearchpage = (int)$val;
+        $this->ProductSearchPage = (int)$val;
     }
 }

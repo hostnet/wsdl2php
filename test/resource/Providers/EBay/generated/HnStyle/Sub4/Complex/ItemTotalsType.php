@@ -8,21 +8,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ItemTotalsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var long | Number of items involved in the summary.
      */
-    public $totalquantity;
+    public $TotalQuantity;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Total value associated with the items in this summary.
      */
-    public $totalvalue;
+    public $TotalValue;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param long $val
      * @throws Exception
      */
     public function setTotalQuantity($val)
     {
-        $this->totalquantity = (int)$val;
+        $this->TotalQuantity = (int)$val;
     }
 
     /**
@@ -31,6 +34,6 @@ class ItemTotalsType
      */
     public function setTotalValue($val)
     {
-        $this->totalvalue = (int)$val;
+        $this->TotalValue = (int)$val;
     }
 }

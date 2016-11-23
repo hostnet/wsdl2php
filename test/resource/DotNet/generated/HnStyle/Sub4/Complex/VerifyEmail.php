@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class VerifyEmail
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -11,7 +12,9 @@ class VerifyEmail
     /**
      * @var string
      */
-    public $licensekey;
+    public $LicenseKey;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,6 +36,6 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->licensekey = (int)$val;
+        $this->LicenseKey = (int)$val;
     }
 }

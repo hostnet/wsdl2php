@@ -4,32 +4,35 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex\SvW;
 
 class UpdateCurrent
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int
      */
-    public $employeeid;
+    public $CompanyId;
     /**
-     * @var \Controle\Hostnet\Namesp\Sub4\Complex\SVWSettings
+     * @var \Controle\Hostnet\Namesp\Sub4\Complex\SVW
      */
-    public $svwsettings;
+    public $SVW;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
      */
-    public function setEmployeeId($val)
+    public function setCompanyId($val)
     {
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->employeeid = (int)$val;
+        $this->CompanyId = (int)$val;
     }
 
     /**
-     * @param SVWSettings $val
+     * @param SVW $val
      * @throws Exception
      */
-    public function setSVWSettings($val)
+    public function setSVW($val)
     {
-        $this->svwsettings = (int)$val;
+        $this->SVW = (int)$val;
     }
 }

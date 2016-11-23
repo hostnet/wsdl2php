@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class AttributeArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AttributeType | A salient aspect or feature of an item in a given category.            Attributes are
      * known as "Item Specifics" in the eBay Web site.            Use attributes to describe
@@ -31,13 +32,15 @@ class AttributeArrayType
      * this returns the item condition only (and it is            only returned if IncludeCondition
      * = true in the request).            Not applicable to Half.com.
      */
-    public $attribute;
+    public $Attribute;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AttributeType $val
      * @throws Exception
      */
     public function setAttribute($val)
     {
-        $this->attribute = (int)$val;
+        $this->Attribute = (int)$val;
     }
 }

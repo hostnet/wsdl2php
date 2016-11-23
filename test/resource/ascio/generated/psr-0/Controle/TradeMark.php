@@ -4,50 +4,53 @@ namespace Controle;
 
 class TradeMark
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var string
 	 */
-	public $country;
+	public $Country;
 	/**
 	 * @var dateTime
 	 */
-	public $date;
+	public $Date;
 	/**
 	 * @var string
 	 */
-	public $number;
+	public $Number;
 	/**
 	 * @var string
 	 */
-	public $type;
+	public $Type;
 	/**
 	 * @var string
 	 */
-	public $contact;
+	public $Contact;
 	/**
 	 * @var string
 	 */
-	public $contactlanguage;
+	public $ContactLanguage;
 	/**
 	 * @var string
 	 */
-	public $documentationlanguage;
+	public $DocumentationLanguage;
 	/**
 	 * @var string
 	 */
-	public $secondcontact;
+	public $SecondContact;
 	/**
 	 * @var string
 	 */
-	public $thirdcontact;
+	public $ThirdContact;
 	/**
 	 * @var dateTime
 	 */
-	public $regdate;
+	public $RegDate;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -57,7 +60,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -69,7 +72,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Country');
         }
-        $this->country = (int)$val;
+        $this->Country = (int)$val;
 	}
 
 	/**
@@ -78,7 +81,7 @@ class TradeMark
 	 */
 	public function setDate($val)
 	{
-        $this->date = (int)$val;
+        $this->Date = (int)$val;
 	}
 
 	/**
@@ -90,7 +93,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Number');
         }
-        $this->number = (int)$val;
+        $this->Number = (int)$val;
 	}
 
 	/**
@@ -102,7 +105,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Type');
         }
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
 	}
 
 	/**
@@ -114,7 +117,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Contact');
         }
-        $this->contact = (int)$val;
+        $this->Contact = (int)$val;
 	}
 
 	/**
@@ -126,7 +129,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContactLanguage');
         }
-        $this->contactlanguage = (int)$val;
+        $this->ContactLanguage = (int)$val;
 	}
 
 	/**
@@ -138,7 +141,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DocumentationLanguage');
         }
-        $this->documentationlanguage = (int)$val;
+        $this->DocumentationLanguage = (int)$val;
 	}
 
 	/**
@@ -150,7 +153,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SecondContact');
         }
-        $this->secondcontact = (int)$val;
+        $this->SecondContact = (int)$val;
 	}
 
 	/**
@@ -162,7 +165,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ThirdContact');
         }
-        $this->thirdcontact = (int)$val;
+        $this->ThirdContact = (int)$val;
 	}
 
 	/**
@@ -171,6 +174,6 @@ class TradeMark
 	 */
 	public function setRegDate($val)
 	{
-        $this->regdate = (int)$val;
+        $this->RegDate = (int)$val;
 	}
 }

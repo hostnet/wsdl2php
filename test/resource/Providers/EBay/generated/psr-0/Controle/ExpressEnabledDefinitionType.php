@@ -11,10 +11,13 @@ namespace Controle;
  */
 class ExpressEnabledDefinitionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception

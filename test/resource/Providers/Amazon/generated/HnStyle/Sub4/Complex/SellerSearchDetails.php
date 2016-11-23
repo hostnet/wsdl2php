@@ -4,26 +4,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SellerSearchDetails
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sellernickname;
+    public $SellerNickname;
     /**
      * @var string
      */
-    public $storeid;
+    public $StoreId;
     /**
      * @var string
      */
-    public $storename;
+    public $StoreName;
     /**
      * @var string
      */
-    public $numberofopenlistings;
+    public $NumberOfOpenListings;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingProductInfo
      */
-    public $listingproductinfo;
+    public $ListingProductInfo;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerNickname');
         }
-        $this->sellernickname = (int)$val;
+        $this->SellerNickname = (int)$val;
     }
 
     /**
@@ -45,7 +48,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreId');
         }
-        $this->storeid = (int)$val;
+        $this->StoreId = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
     }
 
     /**
@@ -69,7 +72,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfOpenListings');
         }
-        $this->numberofopenlistings = (int)$val;
+        $this->NumberOfOpenListings = (int)$val;
     }
 
     /**
@@ -78,6 +81,6 @@ class SellerSearchDetails
      */
     public function setListingProductInfo($val)
     {
-        $this->listingproductinfo = (int)$val;
+        $this->ListingProductInfo = (int)$val;
     }
 }

@@ -8,40 +8,43 @@ namespace Controle;
  */
 class BiddingSummaryType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | The number of days included in the summary. Currently always set to 30 days.
 	 */
-	public $summarydays;
+	public $SummaryDays;
 	/**
 	 * @var int | The total number of bids that the bidder has placed.
 	 */
-	public $totalbids;
+	public $TotalBids;
 	/**
 	 * @var int | Percentage of the bidder's total bids that the bidder placed on items that the seller is
 	 * offering.
 	 */
-	public $bidactivitywithseller;
+	public $BidActivityWithSeller;
 	/**
 	 * @var int | Number of unique sellers whose items the bidder has placed bids on.
 	 */
-	public $bidstouniquesellers;
+	public $BidsToUniqueSellers;
 	/**
 	 * @var int | For items that the bidder has bid on, the number of unique categories that they belong
 	 * to.
 	 */
-	public $bidstouniquecategories;
+	public $BidsToUniqueCategories;
 	/**
 	 * @var int | The total number of bids that the bidder has retracted.
 	 */
-	public $bidretractions;
+	public $BidRetractions;
 	/**
 	 * @var \Controle\ItemBidDetailsType | Detail bidding information on the items that the bidder has bid on.
 	 */
-	public $itembiddetails;
+	public $ItemBidDetails;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -51,7 +54,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->summarydays = (int)$val;
+        $this->SummaryDays = (int)$val;
 	}
 
 	/**
@@ -63,7 +66,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalbids = (int)$val;
+        $this->TotalBids = (int)$val;
 	}
 
 	/**
@@ -75,7 +78,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidactivitywithseller = (int)$val;
+        $this->BidActivityWithSeller = (int)$val;
 	}
 
 	/**
@@ -87,7 +90,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidstouniquesellers = (int)$val;
+        $this->BidsToUniqueSellers = (int)$val;
 	}
 
 	/**
@@ -99,7 +102,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidstouniquecategories = (int)$val;
+        $this->BidsToUniqueCategories = (int)$val;
 	}
 
 	/**
@@ -111,7 +114,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidretractions = (int)$val;
+        $this->BidRetractions = (int)$val;
 	}
 
 	/**
@@ -120,7 +123,7 @@ class BiddingSummaryType
 	 */
 	public function setItemBidDetails($val)
 	{
-        $this->itembiddetails = (int)$val;
+        $this->ItemBidDetails = (int)$val;
 	}
 
 	/**

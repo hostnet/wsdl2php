@@ -12,13 +12,13 @@ class EmailVerNoTestEmailClient extends \SoapClient
     const WSDL_FILE = "EmailVerifyTest.wsdl";
 
     private $classmap = array(
-        'AdvancedVerifyEmailResponse\,' =>
+        'AdvancedVerifyEmailResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AdvancedVerifyEmailResponse',
-        'ReturnIndicator\,' =>
+        'ReturnIndicator' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReturnIndicator',
-        'VerifyEmailResponse\,' =>
+        'VerifyEmailResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\VerifyEmailResponse',
-        'ReturnCodesResponse\,' =>
+        'ReturnCodesResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReturnCodesResponse',
     );
 

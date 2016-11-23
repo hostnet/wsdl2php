@@ -8,29 +8,32 @@ namespace Controle\sub1\sub2;
  */
 class PictureManagerSubscriptionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\PictureManagerSubscriptionLevelCodeType | Subscription level (tier) for the user's eBay Store.
 	 */
-	public $subscriptionlevel;
+	public $SubscriptionLevel;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Monthly fee for the Store subscription level.
 	 */
-	public $fee;
+	public $Fee;
 	/**
 	 * @var int | The total amount of storage space available for the subscription type.      Read-only value.
 	 */
-	public $storagesize;
+	public $StorageSize;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param PictureManagerSubscriptionLevelCodeType $val
 	 * @throws Exception
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->subscriptionlevel = (int)$val;
+        $this->SubscriptionLevel = (int)$val;
 	}
 
 	/**
@@ -39,7 +42,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setFee($val)
 	{
-        $this->fee = (int)$val;
+        $this->Fee = (int)$val;
 	}
 
 	/**
@@ -51,7 +54,7 @@ class PictureManagerSubscriptionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->storagesize = (int)$val;
+        $this->StorageSize = (int)$val;
 	}
 
 	/**

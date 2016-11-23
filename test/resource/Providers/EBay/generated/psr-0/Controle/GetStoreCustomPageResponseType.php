@@ -9,16 +9,19 @@ namespace Controle;
 class GetStoreCustomPageResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\StoreCustomPageArrayType | The custom page or custom pages.
 	 */
-	public $custompagearray;
+	public $CustomPageArray;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreCustomPageArrayType $val
 	 * @throws Exception
 	 */
 	public function setCustomPageArray($val)
 	{
-        $this->custompagearray = (int)$val;
+        $this->CustomPageArray = (int)$val;
 	}
 }

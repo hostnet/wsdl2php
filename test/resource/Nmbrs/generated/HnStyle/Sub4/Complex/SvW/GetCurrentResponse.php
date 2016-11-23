@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex\SvW;
 
 class GetCurrentResponse
 {
+    // @codingStandardsIgnoreStart
     /**
-     * @var \Controle\Hostnet\Namesp\Sub4\Complex\SVWSettings
+     * @var \Controle\Hostnet\Namesp\Sub4\Complex\SVW
      */
-    public $svw_getcurrentresult;
+    public $SVW_GetCurrentResult;
+    // @codingStandardsIgnoreEnd
+
     /**
-     * @param SVWSettings $val
+     * @param SVW $val
      * @throws Exception
      */
     public function setSVWGetCurrentResult($val)
     {
-        $this->svw_getcurrentresult = (int)$val;
+        $this->SVW_GetCurrentResult = (int)$val;
     }
 }

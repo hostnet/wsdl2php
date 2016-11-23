@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class DisputeResolutionReasonCodeType
 {
+	// @codingStandardsIgnoreStart
 	const UNRESOLVED               = 'Unresolved';
 	const PROOFOFPAYMENT           = 'ProofOfPayment';
 	const COMPUTERTECHNICALPROBLEM = 'ComputerTechnicalProblem';
@@ -18,4 +19,5 @@ class DisputeResolutionReasonCodeType
 	const OTHERRESOLUTION          = 'OtherResolution';
 	const CLAIMPAID                = 'ClaimPaid';
 	const CUSTOMCODE               = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

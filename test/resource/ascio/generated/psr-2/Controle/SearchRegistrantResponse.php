@@ -4,21 +4,24 @@ namespace Controle;
 
 class SearchRegistrantResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $searchregistrantresult;
+    public $SearchRegistrantResult;
     /**
      * @var array \Controle\Registrant
      */
     public $registrants;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setSearchRegistrantResult($val)
     {
-        $this->searchregistrantresult = (int)$val;
+        $this->SearchRegistrantResult = (int)$val;
     }
 
     /**

@@ -8,6 +8,7 @@ namespace Controle;
  */
 class TaxTableType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\TaxJurisdictionType | Sales tax details for zero or more jurisdictions (states, provinces, etc). For GetTaxTable,
      * if DetailLevel is not specified, information is only returned for the jurisdictions
@@ -15,13 +16,15 @@ class TaxTableType
      * returned for all possible jurisdictions, whether specified by the user or not. ShippingIncludedInTax
      * and SalesTaxPercent are returned but are empty.
      */
-    public $taxjurisdiction;
+    public $TaxJurisdiction;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param TaxJurisdictionType $val
      * @throws Exception
      */
     public function setTaxJurisdiction($val)
     {
-        $this->taxjurisdiction = (int)$val;
+        $this->TaxJurisdiction = (int)$val;
     }
 }

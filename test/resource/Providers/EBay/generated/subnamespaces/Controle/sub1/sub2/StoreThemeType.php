@@ -8,23 +8,26 @@ namespace Controle\sub1\sub2;
  */
 class StoreThemeType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Unique identifier for each theme in this group. There is at least one theme in a theme
 	 * group.
 	 */
-	public $themeid;
+	public $ThemeID;
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var \Controle\sub1\sub2\StoreColorSchemeType | Theme color scheme.
 	 */
-	public $colorscheme;
+	public $ColorScheme;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -34,7 +37,7 @@ class StoreThemeType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->themeid = (int)$val;
+        $this->ThemeID = (int)$val;
 	}
 
 	/**
@@ -46,7 +49,7 @@ class StoreThemeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -55,7 +58,7 @@ class StoreThemeType
 	 */
 	public function setColorScheme($val)
 	{
-        $this->colorscheme = (int)$val;
+        $this->ColorScheme = (int)$val;
 	}
 
 	/**

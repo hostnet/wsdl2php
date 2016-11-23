@@ -9,18 +9,21 @@ namespace Controle;
  */
 class OfferArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\OfferType | Contains the data for one offer. This includes: data for the user making the
 	 *  offer, the amount of the offer, the quantity of items being bought from the
 	 *  listing, the type of offer being made, and more.
 	 */
-	public $offer;
+	public $Offer;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param OfferType $val
 	 * @throws Exception
 	 */
 	public function setOffer($val)
 	{
-        $this->offer = (int)$val;
+        $this->Offer = (int)$val;
 	}
 }

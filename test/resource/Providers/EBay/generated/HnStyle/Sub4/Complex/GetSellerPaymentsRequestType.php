@@ -23,10 +23,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSellerPaymentsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RCSPaymentStatusCodeType | Not supported.
      */
-    public $paymentstatus;
+    public $PaymentStatus;
     /**
      * @var dateTime | Time range filter that retrieves Half.com payments that were created within a single
      * pay period. Sellers can refer to the Half.com site to determine their pay periods. PaymentTimeFrom
@@ -47,7 +48,7 @@ class GetSellerPaymentsRequestType extends
      * two pay periods, only the payments from the most recent pay period are returned. The
      * earliest time you can specify is 18 months ago.
      */
-    public $paymenttimefrom;
+    public $PaymentTimeFrom;
     /**
      * @var dateTime | Time range filter that retrieves Half.com payments for a single pay period. See the
      * description of PaymentTimeTo for details about using this time range filter. For paid
@@ -55,21 +56,23 @@ class GetSellerPaymentsRequestType extends
      * pay period, where the time is converted to GMT. For example, if the period ends on 2005-09-30,
      * you could specify 2005-10-01T09:00:00.000Z, which is later than the end of the last day.
      */
-    public $paymenttimeto;
+    public $PaymentTimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param RCSPaymentStatusCodeType $val
      * @throws Exception
      */
     public function setPaymentStatus($val)
     {
-        $this->paymentstatus = (int)$val;
+        $this->PaymentStatus = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPaymentTimeFrom($val)
     {
-        $this->paymenttimefrom = (int)$val;
+        $this->PaymentTimeFrom = (int)$val;
     }
 
     /**
@@ -87,7 +90,7 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPaymentTimeTo($val)
     {
-        $this->paymenttimeto = (int)$val;
+        $this->PaymentTimeTo = (int)$val;
     }
 
     /**
@@ -96,6 +99,6 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 }

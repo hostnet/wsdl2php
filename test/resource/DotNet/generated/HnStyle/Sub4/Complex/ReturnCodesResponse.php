@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ReturnCodesResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\AnyType
      */
-    public $returncodesresult;
+    public $ReturnCodesResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ArrayOfAnyType $val
      * @throws Exception
      */
     public function setReturnCodesResult($val)
     {
-        $this->returncodesresult = (int)$val;
+        $this->ReturnCodesResult = (int)$val;
     }
 }

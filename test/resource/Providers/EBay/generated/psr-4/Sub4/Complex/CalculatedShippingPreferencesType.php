@@ -8,37 +8,40 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CalculatedShippingPreferencesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The calculated shipping amount for the entire order.
      */
-    public $calculatedshippingamountforentireorder;
+    public $CalculatedShippingAmountForEntireOrder;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingChargeOptionCodeType | Specifies whether to charge the actual shipping and handling cost for the entire order or
      * for each item.
      */
-    public $calculatedshippingchargeoption;
+    public $CalculatedShippingChargeOption;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingRateOptionCodeType | Specifies whether to calculate the actual rate shipping based on the combined item weight or
      * the individual item weight.
      */
-    public $calculatedshippingrateoption;
+    public $CalculatedShippingRateOption;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceOptionCodeType | Whether the seller offers shipping insurance and, if so, whether the insurance is optional
      * or required. Flat and calculated shipping. Optional as input and only allowed if ChangePaymentInstructions
      * is true. Also applicable to Half.com (for GetOrders). This field is ignored when Item.ListingType=Express.
      */
-    public $insuranceoption;
+    public $InsuranceOption;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AmountType $val
      * @throws Exception
      */
     public function setCalculatedShippingAmountForEntireOrder($val)
     {
-        $this->calculatedshippingamountforentireorder = (int)$val;
+        $this->CalculatedShippingAmountForEntireOrder = (int)$val;
     }
 
     /**
@@ -47,7 +50,7 @@ class CalculatedShippingPreferencesType
      */
     public function setCalculatedShippingChargeOption($val)
     {
-        $this->calculatedshippingchargeoption = (int)$val;
+        $this->CalculatedShippingChargeOption = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class CalculatedShippingPreferencesType
      */
     public function setCalculatedShippingRateOption($val)
     {
-        $this->calculatedshippingrateoption = (int)$val;
+        $this->CalculatedShippingRateOption = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class CalculatedShippingPreferencesType
      */
     public function setInsuranceOption($val)
     {
-        $this->insuranceoption = (int)$val;
+        $this->InsuranceOption = (int)$val;
     }
 
     /**

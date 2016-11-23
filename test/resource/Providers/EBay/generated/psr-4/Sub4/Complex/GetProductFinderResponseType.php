@@ -16,13 +16,14 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetProductFinderResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $attributesystemversion;
+    public $AttributeSystemVersion;
     /**
      * @var string | A string containing a list of search attributes that can be used in a "Product Finder"
      * style query, along with related meta-data. The meta-data specifies possible values of
@@ -36,7 +37,9 @@ class GetProductFinderResponseType extends
      * (e.g., &amp;lt;eBay&amp;gt;&amp;lt;ProductFinders&amp;gt;...). See the appendices in
      * the eBay Web Services guide for general information about string data types.
      */
-    public $productfinderdata;
+    public $ProductFinderData;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -46,7 +49,7 @@ class GetProductFinderResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->attributesystemversion = (int)$val;
+        $this->AttributeSystemVersion = (int)$val;
     }
 
     /**
@@ -58,6 +61,6 @@ class GetProductFinderResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductFinderData');
         }
-        $this->productfinderdata = (int)$val;
+        $this->ProductFinderData = (int)$val;
     }
 }

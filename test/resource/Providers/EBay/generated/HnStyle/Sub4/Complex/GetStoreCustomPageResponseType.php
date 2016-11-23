@@ -9,16 +9,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetStoreCustomPageResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomPageArrayType | The custom page or custom pages.
      */
-    public $custompagearray;
+    public $CustomPageArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreCustomPageArrayType $val
      * @throws Exception
      */
     public function setCustomPageArray($val)
     {
-        $this->custompagearray = (int)$val;
+        $this->CustomPageArray = (int)$val;
     }
 }

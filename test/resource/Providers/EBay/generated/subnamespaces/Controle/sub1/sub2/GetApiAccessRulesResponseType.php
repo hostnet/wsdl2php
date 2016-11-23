@@ -9,17 +9,20 @@ namespace Controle\sub1\sub2;
 class GetApiAccessRulesResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ApiAccessRuleType | Contains the description of an API access rule, including the call name, the application's
 	 * current daily and hourly usage, and other values.
 	 */
-	public $apiaccessrule;
+	public $ApiAccessRule;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ApiAccessRuleType $val
 	 * @throws Exception
 	 */
 	public function setApiAccessRule($val)
 	{
-        $this->apiaccessrule = (int)$val;
+        $this->ApiAccessRule = (int)$val;
 	}
 }

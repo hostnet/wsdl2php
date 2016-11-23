@@ -4,6 +4,7 @@ namespace Controle;
 
 class SummaryWindowPeriodCodeType
 {
+	// @codingStandardsIgnoreStart
 	const LAST24HOURS  = 'Last24Hours';
 	const LAST7DAYS    = 'Last7Days';
 	const LAST31DAYS   = 'Last31Days';
@@ -12,4 +13,5 @@ class SummaryWindowPeriodCodeType
 	const CURRENTMONTH = 'CurrentMonth';
 	const LASTMONTH    = 'LastMonth';
 	const LAST60DAYS   = 'Last60Days';
+	// @codingStandardsIgnoreEnd
 }

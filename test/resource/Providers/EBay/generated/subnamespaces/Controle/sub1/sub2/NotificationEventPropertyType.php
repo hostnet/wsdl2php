@@ -8,28 +8,31 @@ namespace Controle\sub1\sub2;
  */
 class NotificationEventPropertyType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\NotificationEventTypeCodeType | 	 */
-	public $eventtype;
+	public $EventType;
 	/**
 	 * @var \Controle\sub1\sub2\NotificationEventPropertyNameCodeType | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var string | Specifies the value for the property.
 	 */
-	public $value;
+	public $Value;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param NotificationEventTypeCodeType $val
 	 * @throws Exception
 	 */
 	public function setEventType($val)
 	{
-        $this->eventtype = (int)$val;
+        $this->EventType = (int)$val;
 	}
 
 	/**
@@ -38,7 +41,7 @@ class NotificationEventPropertyType
 	 */
 	public function setName($val)
 	{
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class NotificationEventPropertyType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
 	}
 
 	/**

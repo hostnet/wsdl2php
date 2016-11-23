@@ -8,25 +8,28 @@ namespace Controle;
  */
 class MyMessagesForwardDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var dateTime | The date and time a user forwarded an alert or message.
 	 */
-	public $userforwarddate;
+	public $UserForwardDate;
 	/**
 	 * @var string | Encoding used to forward an alert or message.
 	 */
-	public $forwardmessageencoding;
+	public $ForwardMessageEncoding;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
 	public function setUserForwardDate($val)
 	{
-        $this->userforwarddate = (int)$val;
+        $this->UserForwardDate = (int)$val;
 	}
 
 	/**
@@ -38,7 +41,7 @@ class MyMessagesForwardDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ForwardMessageEncoding');
         }
-        $this->forwardmessageencoding = (int)$val;
+        $this->ForwardMessageEncoding = (int)$val;
 	}
 
 	/**

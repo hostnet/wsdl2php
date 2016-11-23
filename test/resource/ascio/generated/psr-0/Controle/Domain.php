@@ -4,102 +4,105 @@ namespace Controle;
 
 class Domain
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $domainname;
+	public $DomainName;
 	/**
 	 * @var string
 	 */
-	public $domainhandle;
+	public $DomainHandle;
 	/**
 	 * @var int
 	 */
-	public $regperiod;
+	public $RegPeriod;
 	/**
 	 * @var int
 	 */
-	public $renewperiod;
+	public $RenewPeriod;
 	/**
 	 * @var string
 	 */
-	public $status;
+	public $Status;
 	/**
 	 * @var string
 	 */
-	public $authinfo;
+	public $AuthInfo;
 	/**
 	 * @var dateTime
 	 */
-	public $credate;
+	public $CreDate;
 	/**
 	 * @var dateTime
 	 */
-	public $expdate;
+	public $ExpDate;
 	/**
 	 * @var string
 	 */
-	public $encodingtype;
+	public $EncodingType;
 	/**
 	 * @var string
 	 */
-	public $domainpurpose;
+	public $DomainPurpose;
 	/**
 	 * @var string
 	 */
-	public $comment;
+	public $Comment;
 	/**
 	 * @var string
 	 */
-	public $transferlock;
+	public $TransferLock;
 	/**
 	 * @var string
 	 */
-	public $deletelock;
+	public $DeleteLock;
 	/**
 	 * @var string
 	 */
-	public $updatelock;
+	public $UpdateLock;
 	/**
 	 * @var string
 	 */
-	public $queuetype;
+	public $QueueType;
 	/**
 	 * @var \Controle\Registrant
 	 */
-	public $registrant;
+	public $Registrant;
 	/**
 	 * @var \Controle\Contact
 	 */
-	public $admincontact;
+	public $AdminContact;
 	/**
 	 * @var \Controle\Contact
 	 */
-	public $techcontact;
+	public $TechContact;
 	/**
 	 * @var \Controle\Contact
 	 */
-	public $billingcontact;
+	public $BillingContact;
 	/**
 	 * @var \Controle\Contact
 	 */
-	public $resellercontact;
+	public $ResellerContact;
 	/**
 	 * @var \Controle\NameServers
 	 */
-	public $nameservers;
+	public $NameServers;
 	/**
 	 * @var \Controle\TradeMark
 	 */
-	public $trademark;
+	public $Trademark;
 	/**
 	 * @var \Controle\DnsSecKeys
 	 */
-	public $dnsseckeys;
+	public $DnsSecKeys;
 	/**
 	 * @var \Controle\PrivacyProxy
 	 */
-	public $privacyproxy;
+	public $PrivacyProxy;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -109,7 +112,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->domainname = (int)$val;
+        $this->DomainName = (int)$val;
 	}
 
 	/**
@@ -121,7 +124,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainHandle');
         }
-        $this->domainhandle = (int)$val;
+        $this->DomainHandle = (int)$val;
 	}
 
 	/**
@@ -133,7 +136,7 @@ class Domain
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->regperiod = (int)$val;
+        $this->RegPeriod = (int)$val;
 	}
 
 	/**
@@ -145,7 +148,7 @@ class Domain
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->renewperiod = (int)$val;
+        $this->RenewPeriod = (int)$val;
 	}
 
 	/**
@@ -157,7 +160,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 
 	/**
@@ -169,7 +172,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AuthInfo');
         }
-        $this->authinfo = (int)$val;
+        $this->AuthInfo = (int)$val;
 	}
 
 	/**
@@ -178,7 +181,7 @@ class Domain
 	 */
 	public function setCreDate($val)
 	{
-        $this->credate = (int)$val;
+        $this->CreDate = (int)$val;
 	}
 
 	/**
@@ -187,7 +190,7 @@ class Domain
 	 */
 	public function setExpDate($val)
 	{
-        $this->expdate = (int)$val;
+        $this->ExpDate = (int)$val;
 	}
 
 	/**
@@ -199,7 +202,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EncodingType');
         }
-        $this->encodingtype = (int)$val;
+        $this->EncodingType = (int)$val;
 	}
 
 	/**
@@ -211,7 +214,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainPurpose');
         }
-        $this->domainpurpose = (int)$val;
+        $this->DomainPurpose = (int)$val;
 	}
 
 	/**
@@ -223,7 +226,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comment');
         }
-        $this->comment = (int)$val;
+        $this->Comment = (int)$val;
 	}
 
 	/**
@@ -235,7 +238,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransferLock');
         }
-        $this->transferlock = (int)$val;
+        $this->TransferLock = (int)$val;
 	}
 
 	/**
@@ -247,7 +250,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeleteLock');
         }
-        $this->deletelock = (int)$val;
+        $this->DeleteLock = (int)$val;
 	}
 
 	/**
@@ -259,7 +262,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UpdateLock');
         }
-        $this->updatelock = (int)$val;
+        $this->UpdateLock = (int)$val;
 	}
 
 	/**
@@ -271,7 +274,7 @@ class Domain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for QueueType');
         }
-        $this->queuetype = (int)$val;
+        $this->QueueType = (int)$val;
 	}
 
 	/**
@@ -280,7 +283,7 @@ class Domain
 	 */
 	public function setRegistrant($val)
 	{
-        $this->registrant = (int)$val;
+        $this->Registrant = (int)$val;
 	}
 
 	/**
@@ -289,7 +292,7 @@ class Domain
 	 */
 	public function setAdminContact($val)
 	{
-        $this->admincontact = (int)$val;
+        $this->AdminContact = (int)$val;
 	}
 
 	/**
@@ -298,7 +301,7 @@ class Domain
 	 */
 	public function setTechContact($val)
 	{
-        $this->techcontact = (int)$val;
+        $this->TechContact = (int)$val;
 	}
 
 	/**
@@ -307,7 +310,7 @@ class Domain
 	 */
 	public function setBillingContact($val)
 	{
-        $this->billingcontact = (int)$val;
+        $this->BillingContact = (int)$val;
 	}
 
 	/**
@@ -316,7 +319,7 @@ class Domain
 	 */
 	public function setResellerContact($val)
 	{
-        $this->resellercontact = (int)$val;
+        $this->ResellerContact = (int)$val;
 	}
 
 	/**
@@ -325,7 +328,7 @@ class Domain
 	 */
 	public function setNameServers($val)
 	{
-        $this->nameservers = (int)$val;
+        $this->NameServers = (int)$val;
 	}
 
 	/**
@@ -334,7 +337,7 @@ class Domain
 	 */
 	public function setTrademark($val)
 	{
-        $this->trademark = (int)$val;
+        $this->Trademark = (int)$val;
 	}
 
 	/**
@@ -343,7 +346,7 @@ class Domain
 	 */
 	public function setDnsSecKeys($val)
 	{
-        $this->dnsseckeys = (int)$val;
+        $this->DnsSecKeys = (int)$val;
 	}
 
 	/**
@@ -352,6 +355,6 @@ class Domain
 	 */
 	public function setPrivacyProxy($val)
 	{
-        $this->privacyproxy = (int)$val;
+        $this->PrivacyProxy = (int)$val;
 	}
 }

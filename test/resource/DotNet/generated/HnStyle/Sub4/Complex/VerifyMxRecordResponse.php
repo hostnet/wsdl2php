@@ -4,10 +4,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class VerifyMxRecordResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int
      */
-    public $verifymxrecordresult;
+    public $VerifyMXRecordResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -17,6 +20,6 @@ class VerifyMxRecordResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->verifymxrecordresult = (int)$val;
+        $this->VerifyMXRecordResult = (int)$val;
     }
 }

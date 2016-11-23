@@ -4,22 +4,25 @@ namespace Controle\sub1\sub2;
 
 class ShoppingCart
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $cartid;
+	public $CartId;
 	/**
 	 * @var string
 	 */
-	public $hmac;
+	public $HMAC;
 	/**
 	 * @var string
 	 */
-	public $purchaseurl;
+	public $PurchaseUrl;
 	/**
 	 * @var \Controle\sub1\sub2\ItemArray
 	 */
-	public $items;
+	public $Items;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -29,7 +32,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
 	}
 
 	/**
@@ -53,7 +56,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PurchaseUrl');
         }
-        $this->purchaseurl = (int)$val;
+        $this->PurchaseUrl = (int)$val;
 	}
 
 	/**
@@ -62,6 +65,6 @@ class ShoppingCart
 	 */
 	public function setItems($val)
 	{
-        $this->items = (int)$val;
+        $this->Items = (int)$val;
 	}
 }

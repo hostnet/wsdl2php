@@ -4,65 +4,68 @@ namespace Controle\sub1\sub2;
 
 class NameServers
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver1;
+	public $NameServer1;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver2;
+	public $NameServer2;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver3;
+	public $NameServer3;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver4;
+	public $NameServer4;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver5;
+	public $NameServer5;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver6;
+	public $NameServer6;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver7;
+	public $NameServer7;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver8;
+	public $NameServer8;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver9;
+	public $NameServer9;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver10;
+	public $NameServer10;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver11;
+	public $NameServer11;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver12;
+	public $NameServer12;
 	/**
 	 * @var \Controle\sub1\sub2\NameServer
 	 */
-	public $nameserver13;
+	public $NameServer13;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param NameServer $val
 	 * @throws Exception
 	 */
 	public function setNameServer1($val)
 	{
-        $this->nameserver1 = (int)$val;
+        $this->NameServer1 = (int)$val;
 	}
 
 	/**
@@ -71,7 +74,7 @@ class NameServers
 	 */
 	public function setNameServer2($val)
 	{
-        $this->nameserver2 = (int)$val;
+        $this->NameServer2 = (int)$val;
 	}
 
 	/**
@@ -80,7 +83,7 @@ class NameServers
 	 */
 	public function setNameServer3($val)
 	{
-        $this->nameserver3 = (int)$val;
+        $this->NameServer3 = (int)$val;
 	}
 
 	/**
@@ -89,7 +92,7 @@ class NameServers
 	 */
 	public function setNameServer4($val)
 	{
-        $this->nameserver4 = (int)$val;
+        $this->NameServer4 = (int)$val;
 	}
 
 	/**
@@ -98,7 +101,7 @@ class NameServers
 	 */
 	public function setNameServer5($val)
 	{
-        $this->nameserver5 = (int)$val;
+        $this->NameServer5 = (int)$val;
 	}
 
 	/**
@@ -107,7 +110,7 @@ class NameServers
 	 */
 	public function setNameServer6($val)
 	{
-        $this->nameserver6 = (int)$val;
+        $this->NameServer6 = (int)$val;
 	}
 
 	/**
@@ -116,7 +119,7 @@ class NameServers
 	 */
 	public function setNameServer7($val)
 	{
-        $this->nameserver7 = (int)$val;
+        $this->NameServer7 = (int)$val;
 	}
 
 	/**
@@ -125,7 +128,7 @@ class NameServers
 	 */
 	public function setNameServer8($val)
 	{
-        $this->nameserver8 = (int)$val;
+        $this->NameServer8 = (int)$val;
 	}
 
 	/**
@@ -134,7 +137,7 @@ class NameServers
 	 */
 	public function setNameServer9($val)
 	{
-        $this->nameserver9 = (int)$val;
+        $this->NameServer9 = (int)$val;
 	}
 
 	/**
@@ -143,7 +146,7 @@ class NameServers
 	 */
 	public function setNameServer10($val)
 	{
-        $this->nameserver10 = (int)$val;
+        $this->NameServer10 = (int)$val;
 	}
 
 	/**
@@ -152,7 +155,7 @@ class NameServers
 	 */
 	public function setNameServer11($val)
 	{
-        $this->nameserver11 = (int)$val;
+        $this->NameServer11 = (int)$val;
 	}
 
 	/**
@@ -161,7 +164,7 @@ class NameServers
 	 */
 	public function setNameServer12($val)
 	{
-        $this->nameserver12 = (int)$val;
+        $this->NameServer12 = (int)$val;
 	}
 
 	/**
@@ -170,6 +173,6 @@ class NameServers
 	 */
 	public function setNameServer13($val)
 	{
-        $this->nameserver13 = (int)$val;
+        $this->NameServer13 = (int)$val;
 	}
 }

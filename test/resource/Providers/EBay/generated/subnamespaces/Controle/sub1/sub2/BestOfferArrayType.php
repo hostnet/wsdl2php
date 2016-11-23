@@ -8,17 +8,20 @@ namespace Controle\sub1\sub2;
  */
 class BestOfferArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\BestOfferType | (GetMyeBayBuying only) Indicates the latest BestOffer the user has provided for the item
 	 * .
 	 */
-	public $bestoffer;
+	public $BestOffer;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param BestOfferType $val
 	 * @throws Exception
 	 */
 	public function setBestOffer($val)
 	{
-        $this->bestoffer = (int)$val;
+        $this->BestOffer = (int)$val;
 	}
 }

@@ -9,20 +9,23 @@ namespace Controle\sub1\sub2;
  */
 class SiteLocationType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\SiteIDFilterCodeType | 	 */
-	public $siteid;
+	public $SiteID;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SiteIDFilterCodeType $val
 	 * @throws Exception
 	 */
 	public function setSiteID($val)
 	{
-        $this->siteid = (int)$val;
+        $this->SiteID = (int)$val;
 	}
 
 	/**

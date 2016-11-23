@@ -13,52 +13,55 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetMyeBayBuyingRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user is watching. Only returned if items exist that meet the
      * request criteria.
      */
-    public $watchlist;
+    public $WatchList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains all the items the user has bid on. Only returned if items exist that meet the
      * request criteria.
      */
-    public $bidlist;
+    public $BidList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user has placed best offers on. Only returned if items exist
      * that meet the request criteria.
      */
-    public $bestofferlist;
+    public $BestOfferList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user has bid on and won. Only returned if items exist that meet
      * the request criteria.
      */
-    public $wonlist;
+    public $WonList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user has bid on and lost. Only returned if items exist that meet
      * the request criteria.
      */
-    public $lostlist;
+    public $LostList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyeBaySelectionType | Contains a list of the user's favorite searches. Only returned if items exist that meet
      * the request criteria.
      */
-    public $favoritesearches;
+    public $FavoriteSearches;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyeBaySelectionType | Contains a list of the user's favorite sellers. Only returned if items exist that meet
      * the request criteria.
      */
-    public $favoritesellers;
+    public $FavoriteSellers;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyeBaySelectionType | A Second Chance Offer item.
      */
-    public $secondchanceoffer;
+    public $SecondChanceOffer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemListCustomizationType $val
      * @throws Exception
      */
     public function setWatchList($val)
     {
-        $this->watchlist = (int)$val;
+        $this->WatchList = (int)$val;
     }
 
     /**
@@ -67,7 +70,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setBidList($val)
     {
-        $this->bidlist = (int)$val;
+        $this->BidList = (int)$val;
     }
 
     /**
@@ -76,7 +79,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setBestOfferList($val)
     {
-        $this->bestofferlist = (int)$val;
+        $this->BestOfferList = (int)$val;
     }
 
     /**
@@ -85,7 +88,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setWonList($val)
     {
-        $this->wonlist = (int)$val;
+        $this->WonList = (int)$val;
     }
 
     /**
@@ -94,7 +97,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setLostList($val)
     {
-        $this->lostlist = (int)$val;
+        $this->LostList = (int)$val;
     }
 
     /**
@@ -103,7 +106,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->favoritesearches = (int)$val;
+        $this->FavoriteSearches = (int)$val;
     }
 
     /**
@@ -112,7 +115,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->favoritesellers = (int)$val;
+        $this->FavoriteSellers = (int)$val;
     }
 
     /**
@@ -121,6 +124,6 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setSecondChanceOffer($val)
     {
-        $this->secondchanceoffer = (int)$val;
+        $this->SecondChanceOffer = (int)$val;
     }
 }

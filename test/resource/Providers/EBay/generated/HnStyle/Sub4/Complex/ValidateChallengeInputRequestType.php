@@ -9,18 +9,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ValidateChallengeInputRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Botblock token that was returned by GetChallengeToken.
      */
-    public $challengetoken;
+    public $ChallengeToken;
     /**
      * @var string | User response to a botblock challenge.
      */
-    public $userinput;
+    public $UserInput;
     /**
      * @var boolean | Whether the challenge token should remain valid for up to two minutes.
      */
-    public $keeptokenvalid;
+    public $KeepTokenValid;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -30,7 +33,7 @@ class ValidateChallengeInputRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ChallengeToken');
         }
-        $this->challengetoken = (int)$val;
+        $this->ChallengeToken = (int)$val;
     }
 
     /**
@@ -42,7 +45,7 @@ class ValidateChallengeInputRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserInput');
         }
-        $this->userinput = (int)$val;
+        $this->UserInput = (int)$val;
     }
 
     /**
@@ -51,6 +54,6 @@ class ValidateChallengeInputRequestType extends
      */
     public function setKeepTokenValid($val)
     {
-        $this->keeptokenvalid = (int)$val;
+        $this->KeepTokenValid = (int)$val;
     }
 }

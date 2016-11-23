@@ -10,6 +10,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var dateTime | This value represents the date and time when eBay processed the request. The time zone
      * of this value is GMT and the format is the ISO 8601 date and time format (YYYY-MM-DDTHH:MM:SS.SSSZ).
@@ -22,50 +23,50 @@ class AbstractResponseType
      * cached responses: GetCategories, GetAttributesCS, GetCategory2CS, GetAttributesXsl, GetProductFinder,
      * GetProductFinderXsl, and GetProductSearchPage.
      */
-    public $timestamp;
+    public $Timestamp;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AckCodeType | Indicates the response status (e.g., success).
      */
-    public $ack;
+    public $Ack;
     /**
      * @var string | Unique key to distinguish between recommendations for each item.              Matches
      * a correlation ID you defined in the request, if any.
      */
-    public $correlationid;
+    public $CorrelationID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ErrorType | A list of application-level errors (if any) that occurred when eBay processed the request.
      */
-    public $errors;
+    public $Errors;
     /**
      * @var string | Contains the data for one message.
      */
-    public $message;
+    public $Message;
     /**
      * @var string | The version of the response payload schema. Indicates the version of the schema that
      * eBay used to process the request. See "Standard Data for All Calls" in the eBay Web
      * Services Guide for information on using the response version when troubleshooting "CustomCode"
      * values that appear in the response.
      */
-    public $version;
+    public $Version;
     /**
      * @var string | This refers to the specific software build that eBay used when processing the request and
      * generating the response. This includes the version number plus additional information.
      * eBay Developer Support may request the build information when helping you resolve technical
      * issues.
      */
-    public $build;
+    public $Build;
     /**
      * @var string | Event name of the notification. Only returned by Platform Notifications.
      */
-    public $notificationeventname;
+    public $NotificationEventName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DuplicateInvocationDetailsType | Information that explains a failure due to a duplicate InvocationID being passed in.
      */
-    public $duplicateinvocationdetails;
+    public $DuplicateInvocationDetails;
     /**
      * @var string | The displayable user ID of the recipient.
      */
-    public $recipientuserid;
+    public $RecipientUserID;
     /**
      * @var string | Unique identifier for the user that does not change when the eBay user name is changed.
      * Use when an application needs to associate a new eBay user name with the corresponding
@@ -73,12 +74,12 @@ class AbstractResponseType
      * this tag will be returned only for that bidder, and the seller of an item that the user
      * is bidding on.
      */
-    public $eiastoken;
+    public $EIASToken;
     /**
      * @var string | A Base64-encoded MD5 hash that allows the recepient of a Platform Notification to verify
      * this is a valid Platform Notification sent by eBay.
      */
-    public $notificationsignature;
+    public $NotificationSignature;
     /**
      * @var string | Expiration date of the user's authentication token. Only returned within the 7-day period
      * prior to a token's expiration. To ensure that user authentication tokens are secure
@@ -86,18 +87,20 @@ class AbstractResponseType
      * A token is only valid for a period of time (set by eBay). After this amount of time
      * has passed, the token expires and must be replaced with a new token.
      */
-    public $hardexpirationwarning;
+    public $HardExpirationWarning;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param dateTime $val
      * @throws Exception
      */
     public function setTimestamp($val)
     {
-        $this->timestamp = (int)$val;
+        $this->Timestamp = (int)$val;
     }
 
     /**
@@ -106,7 +109,7 @@ class AbstractResponseType
      */
     public function setAck($val)
     {
-        $this->ack = (int)$val;
+        $this->Ack = (int)$val;
     }
 
     /**
@@ -118,7 +121,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->correlationid = (int)$val;
+        $this->CorrelationID = (int)$val;
     }
 
     /**
@@ -127,7 +130,7 @@ class AbstractResponseType
      */
     public function setErrors($val)
     {
-        $this->errors = (int)$val;
+        $this->Errors = (int)$val;
     }
 
     /**
@@ -139,7 +142,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->message = (int)$val;
+        $this->Message = (int)$val;
     }
 
     /**
@@ -151,7 +154,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Version');
         }
-        $this->version = (int)$val;
+        $this->Version = (int)$val;
     }
 
     /**
@@ -163,7 +166,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Build');
         }
-        $this->build = (int)$val;
+        $this->Build = (int)$val;
     }
 
     /**
@@ -175,7 +178,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationEventName');
         }
-        $this->notificationeventname = (int)$val;
+        $this->NotificationEventName = (int)$val;
     }
 
     /**
@@ -184,7 +187,7 @@ class AbstractResponseType
      */
     public function setDuplicateInvocationDetails($val)
     {
-        $this->duplicateinvocationdetails = (int)$val;
+        $this->DuplicateInvocationDetails = (int)$val;
     }
 
     /**
@@ -196,7 +199,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->recipientuserid = (int)$val;
+        $this->RecipientUserID = (int)$val;
     }
 
     /**
@@ -208,7 +211,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->eiastoken = (int)$val;
+        $this->EIASToken = (int)$val;
     }
 
     /**
@@ -220,7 +223,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationSignature');
         }
-        $this->notificationsignature = (int)$val;
+        $this->NotificationSignature = (int)$val;
     }
 
     /**
@@ -232,7 +235,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HardExpirationWarning');
         }
-        $this->hardexpirationwarning = (int)$val;
+        $this->HardExpirationWarning = (int)$val;
     }
 
     /**

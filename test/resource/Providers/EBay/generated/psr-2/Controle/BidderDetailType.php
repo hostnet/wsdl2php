@@ -8,6 +8,7 @@ namespace Controle;
  */
 class BidderDetailType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -21,7 +22,7 @@ class BidderDetailType
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var string | Email address for the user. You cannot retrieve an email address for any user with whom
      * you do not have a transactional relationship, regardless of site. Email is only returned
@@ -32,7 +33,7 @@ class BidderDetailType
      * when a bidder's user info is made anonymous, this tag will be returned only for that
      * bidder, and the seller of an item that the user is bidding on.
      */
-    public $email;
+    public $Email;
     /**
      * @var int | The aggregate feedback score for a user. A user's feedback score is the net positive
      * feedback minus the net negative feedback left for the user. Feedback scores are a quantitative
@@ -52,11 +53,11 @@ class BidderDetailType
      * only for that bidder, and the seller of an item that the user is bidding on. For all
      * other users, the value -99 is returned.
      */
-    public $feedbackscore;
+    public $FeedbackScore;
     /**
      * @var int | Total count of negative feedback entries from unique (distinct) users.
      */
-    public $uniquenegativefeedbackcount;
+    public $UniqueNegativeFeedbackCount;
     /**
      * @var int | Total count of positive feedback entries from unique (distinct) users. Contains the
      * aggregate feedback score for a user. A member's feedback score is the net positive feedback
@@ -69,23 +70,25 @@ class BidderDetailType
      * to as a "feedback rating" on the eBay site). This rating is commonly expressed as the
      * eBay Feedback score for the user.
      */
-    public $uniquepositivefeedbackcount;
+    public $UniquePositiveFeedbackCount;
     /**
      * @var \Controle\LiveAuctionBidType | Contains the bidder details that match the bidder query passed in the request. Always
      * returned when bidder search results are found.
      */
-    public $liveauctionbidresult;
+    public $LiveAuctionBidResult;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class BidderDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->email = (int)$val;
+        $this->Email = (int)$val;
     }
 
     /**
@@ -109,7 +112,7 @@ class BidderDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->feedbackscore = (int)$val;
+        $this->FeedbackScore = (int)$val;
     }
 
     /**
@@ -121,7 +124,7 @@ class BidderDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->uniquenegativefeedbackcount = (int)$val;
+        $this->UniqueNegativeFeedbackCount = (int)$val;
     }
 
     /**
@@ -133,7 +136,7 @@ class BidderDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->uniquepositivefeedbackcount = (int)$val;
+        $this->UniquePositiveFeedbackCount = (int)$val;
     }
 
     /**
@@ -142,7 +145,7 @@ class BidderDetailType
      */
     public function setLiveAuctionBidResult($val)
     {
-        $this->liveauctionbidresult = (int)$val;
+        $this->LiveAuctionBidResult = (int)$val;
     }
 
     /**

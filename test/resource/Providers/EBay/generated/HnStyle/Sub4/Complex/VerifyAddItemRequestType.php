@@ -13,32 +13,35 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class VerifyAddItemRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemType | Information about the item that spawned the transaction. It is a purchase from this
      * item's listing that the transaction represents. To remove a property from an item, specify
      * it in ModifyType as a changed property, but do not give it a value in Item. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $item;
+    public $Item;
     /**
      * @var boolean | Indicates if the response should include detailed data relating to whether an item would
      * qualify as an Express listing. For information about the Express-related data that can
      * be returned when IncludeExpressRequirements is set to true, see the annotations for
      * the output of VerifyAddItem and see the eBay Web Services Guide.
      */
-    public $includeexpressrequirements;
+    public $IncludeExpressRequirements;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
      * item. All Half.com items are listed with Pre-filled Item Information.
      */
-    public $externalproductid;
+    public $ExternalProductID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemType $val
      * @throws Exception
      */
     public function setItem($val)
     {
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
     }
 
     /**
@@ -47,7 +50,7 @@ class VerifyAddItemRequestType extends
      */
     public function setIncludeExpressRequirements($val)
     {
-        $this->includeexpressrequirements = (int)$val;
+        $this->IncludeExpressRequirements = (int)$val;
     }
 
     /**
@@ -56,6 +59,6 @@ class VerifyAddItemRequestType extends
      */
     public function setExternalProductID($val)
     {
-        $this->externalproductid = (int)$val;
+        $this->ExternalProductID = (int)$val;
     }
 }

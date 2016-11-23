@@ -9,27 +9,30 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ReviseMyMessagesFoldersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesFolderOperationCodeType | Indicates the type of operation to perform on a specified My Messages folder. Operations
      * include renaming, removing, and restoring folders. Operations cannot be performed on
      * the Inbox and Sent folders.
      */
-    public $operation;
+    public $Operation;
     /**
      * @var long | The ID of the folder.
      */
-    public $folderid;
+    public $FolderID;
     /**
      * @var string | The name of a specified My Messages folder.
      */
-    public $foldername;
+    public $FolderName;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param MyMessagesFolderOperationCodeType $val
      * @throws Exception
      */
     public function setOperation($val)
     {
-        $this->operation = (int)$val;
+        $this->Operation = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class ReviseMyMessagesFoldersRequestType extends
      */
     public function setFolderID($val)
     {
-        $this->folderid = (int)$val;
+        $this->FolderID = (int)$val;
     }
 
     /**
@@ -50,6 +53,6 @@ class ReviseMyMessagesFoldersRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->foldername = (int)$val;
+        $this->FolderName = (int)$val;
     }
 }

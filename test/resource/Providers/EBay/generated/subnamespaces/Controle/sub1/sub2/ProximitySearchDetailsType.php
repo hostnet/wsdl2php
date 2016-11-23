@@ -8,14 +8,17 @@ namespace Controle\sub1\sub2;
  */
 class ProximitySearchDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | The postal code to use as the basis for the proximity search.
 	 */
-	public $postalcode;
+	public $PostalCode;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -25,7 +28,7 @@ class ProximitySearchDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->postalcode = (int)$val;
+        $this->PostalCode = (int)$val;
 	}
 
 	/**

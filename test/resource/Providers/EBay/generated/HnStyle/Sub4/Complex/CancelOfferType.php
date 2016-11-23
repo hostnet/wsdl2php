@@ -9,26 +9,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CancelOfferType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OfferType | Contains the data for one offer. This includes: data for the user making the
      *     offer, the amount of the offer, the quantity of items being bought from the
      *        listing, the type of offer being made, and more.
      */
-    public $offer;
+    public $Offer;
     /**
      * @var string |      */
-    public $explanation;
+    public $Explanation;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OfferType $val
      * @throws Exception
      */
     public function setOffer($val)
     {
-        $this->offer = (int)$val;
+        $this->Offer = (int)$val;
     }
 
     /**
@@ -40,7 +43,7 @@ class CancelOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Explanation');
         }
-        $this->explanation = (int)$val;
+        $this->Explanation = (int)$val;
     }
 
     /**

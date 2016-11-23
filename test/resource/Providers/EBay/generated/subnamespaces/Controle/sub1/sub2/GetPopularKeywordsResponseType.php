@@ -11,18 +11,19 @@ namespace Controle\sub1\sub2;
 class GetPopularKeywordsResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\PaginationResultType | Provides information about the list of transactions, including number of pages and number
 	 * of entries.
 	 */
-	public $paginationresult;
+	public $PaginationResult;
 	/**
 	 * @var \Controle\sub1\sub2\CategoryArrayType | Statistical information about categories that contain items that match the query, if any.
 	 * Returns empty if no matches are found or when the Categories filter was not passed in the
 	 * request. (For categories associated with specific items, see items returned in each search result.)
 	 * Shows the distribution of items across each category.
 	 */
-	public $categoryarray;
+	public $CategoryArray;
 	/**
 	 * @var boolean | If true, the query results contain additional pages (higher than the current page number). You
 	 * can retrieve more results by incrementing the PageNumber value that was passed in the request.
@@ -31,14 +32,16 @@ class GetPopularKeywordsResponseType extends
 	 * 415 and higher.               With lower compatibility levels, ProductSearchResult.HasMore
 	 * is returned instead.
 	 */
-	public $hasmore;
+	public $HasMore;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param PaginationResultType $val
 	 * @throws Exception
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
 	}
 
 	/**
@@ -47,7 +50,7 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->categoryarray = (int)$val;
+        $this->CategoryArray = (int)$val;
 	}
 
 	/**
@@ -56,6 +59,6 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setHasMore($val)
 	{
-        $this->hasmore = (int)$val;
+        $this->HasMore = (int)$val;
 	}
 }

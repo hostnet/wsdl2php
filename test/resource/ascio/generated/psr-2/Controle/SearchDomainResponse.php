@@ -4,21 +4,24 @@ namespace Controle;
 
 class SearchDomainResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $searchdomainresult;
+    public $SearchDomainResult;
     /**
      * @var array \Controle\Domain
      */
     public $domains;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setSearchDomainResult($val)
     {
-        $this->searchdomainresult = (int)$val;
+        $this->SearchDomainResult = (int)$val;
     }
 
     /**

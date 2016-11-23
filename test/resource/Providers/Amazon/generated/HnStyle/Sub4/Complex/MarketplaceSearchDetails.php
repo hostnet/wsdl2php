@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class MarketplaceSearchDetails
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $numberofopenlistings;
+    public $NumberOfOpenListings;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingProductInfo
      */
-    public $listingproductinfo;
+    public $ListingProductInfo;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class MarketplaceSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfOpenListings');
         }
-        $this->numberofopenlistings = (int)$val;
+        $this->NumberOfOpenListings = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class MarketplaceSearchDetails
      */
     public function setListingProductInfo($val)
     {
-        $this->listingproductinfo = (int)$val;
+        $this->ListingProductInfo = (int)$val;
     }
 }

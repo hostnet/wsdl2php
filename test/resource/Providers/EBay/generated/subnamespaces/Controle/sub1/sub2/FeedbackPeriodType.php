@@ -10,21 +10,24 @@ namespace Controle\sub1\sub2;
  */
 class FeedbackPeriodType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Indicates the time period for the feedback count. Returns a value indicating the number
 	 * of days prior to the call for which feedbacks of the particular type are counted. Returned
 	 * if no detail level is specified.
 	 */
-	public $periodindays;
+	public $PeriodInDays;
 	/**
 	 * @var int | Count of the feedbacks received by the user for the time period prior to the call indicated
 	 * in PeriodInDays. Returned if no detail level is specified.
 	 */
-	public $count;
+	public $Count;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -34,7 +37,7 @@ class FeedbackPeriodType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->periodindays = (int)$val;
+        $this->PeriodInDays = (int)$val;
 	}
 
 	/**
@@ -46,7 +49,7 @@ class FeedbackPeriodType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->count = (int)$val;
+        $this->Count = (int)$val;
 	}
 
 	/**

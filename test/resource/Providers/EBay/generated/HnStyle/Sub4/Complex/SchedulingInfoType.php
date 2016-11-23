@@ -8,24 +8,27 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SchedulingInfoType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Maximum number of minutes that a listing may be scheduled in advance of its going live.
      *            Output only.
      */
-    public $maxscheduledminutes;
+    public $MaxScheduledMinutes;
     /**
      * @var int | Minimum number of minutes that a listing may be scheduled in advance of its going live.
      *            Output only.
      */
-    public $minscheduledminutes;
+    public $MinScheduledMinutes;
     /**
      * @var int | Maximum number of Items that a user may schedule.            Output only.
      */
-    public $maxscheduleditems;
+    public $MaxScheduledItems;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -35,7 +38,7 @@ class SchedulingInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxscheduledminutes = (int)$val;
+        $this->MaxScheduledMinutes = (int)$val;
     }
 
     /**
@@ -47,7 +50,7 @@ class SchedulingInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->minscheduledminutes = (int)$val;
+        $this->MinScheduledMinutes = (int)$val;
     }
 
     /**
@@ -59,7 +62,7 @@ class SchedulingInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxscheduleditems = (int)$val;
+        $this->MaxScheduledItems = (int)$val;
     }
 
     /**

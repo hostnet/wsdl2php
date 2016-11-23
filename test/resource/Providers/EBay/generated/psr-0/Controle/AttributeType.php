@@ -10,10 +10,11 @@ namespace Controle;
  */
 class AttributeType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ValType | Specifies the value for the property.
 	 */
-	public $value;
+	public $Value;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -21,18 +22,20 @@ class AttributeType
 	/**
 	 * @var int
 	 */
-	public $attributeid;
+	public $attributeID;
 	/**
 	 * @var string
 	 */
-	public $attributelabel;
+	public $attributeLabel;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ValType $val
 	 * @throws Exception
 	 */
 	public function setValue($val)
 	{
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
 	}
 
 	/**
@@ -53,7 +56,7 @@ class AttributeType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributeid = (int)$val;
+        $this->attributeID = (int)$val;
 	}
 
 	/**
@@ -65,6 +68,6 @@ class AttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for attributeLabel');
         }
-        $this->attributelabel = (int)$val;
+        $this->attributeLabel = (int)$val;
 	}
 }

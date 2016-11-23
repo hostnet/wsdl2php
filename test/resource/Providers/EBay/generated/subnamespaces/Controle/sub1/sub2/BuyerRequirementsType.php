@@ -8,52 +8,55 @@ namespace Controle\sub1\sub2;
  */
 class BuyerRequirementsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | If true, blocks bidders who are registered in countries to which the seller has specified
 	 * he will not shipo. Ignored as input if the application uses version 451 or older.
 	 */
-	public $shiptoregistrationcountry;
+	public $ShipToRegistrationCountry;
 	/**
 	 * @var boolean | If true, blocks bidders with a feedback score of 0 who attempt to bid on Buy It Now items
 	 * worth 100 RMB or more. Ignored as input if the application uses version 451 or older. This
 	 * requirement is only enabled for the CN site.
 	 */
-	public $zerofeedbackscore;
+	public $ZeroFeedbackScore;
 	/**
 	 * @var int | This field is ignored unless VerifiedUser is true. If this field is present, the user's
 	 * feedback score is also considered: a user is blocked from bidding if the user's feedback
 	 * score is less than or equal to the value of this field.
 	 */
-	public $minimumfeedbackscore;
+	public $MinimumFeedbackScore;
 	/**
 	 * @var boolean | If true, blocks bidders who have received two unpaid item strikes in the last 30 days. Ignored
 	 * as input if the application uses version 451 or older.
 	 */
-	public $maximumunpaiditemstrikes;
+	public $MaximumUnpaidItemStrikes;
 	/**
 	 * @var \Controle\sub1\sub2\MaximumItemRequirementsType | A means of limiting unpaying, low feedback bidders. Ignored as input if the application
 	 * uses version 451 or older.
 	 */
-	public $maximumitemrequirements;
+	public $MaximumItemRequirements;
 	/**
 	 * @var boolean | If true, only bidders with PayPal accounts linked to eBay may bid. The MyeBay setting is
 	 * automatically picked up on AddItem only if the compatibility level is greater than or equal
 	 * to 453. For lower compatibility levels, you must send in explicit BuyerRequirement input
 	 * even if you have your "global" MyeBay setting set to require this.
 	 */
-	public $linkedpaypalaccount;
+	public $LinkedPayPalAccount;
 	/**
 	 * @var \Controle\sub1\sub2\VerifiedUserRequirementsType | A means of limiting unverified bidders. Ignored as input if the application uses version
 	 * 451 or older.
 	 */
-	public $verifieduserrequirements;
+	public $VerifiedUserRequirements;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setShipToRegistrationCountry($val)
 	{
-        $this->shiptoregistrationcountry = (int)$val;
+        $this->ShipToRegistrationCountry = (int)$val;
 	}
 
 	/**
@@ -62,7 +65,7 @@ class BuyerRequirementsType
 	 */
 	public function setZeroFeedbackScore($val)
 	{
-        $this->zerofeedbackscore = (int)$val;
+        $this->ZeroFeedbackScore = (int)$val;
 	}
 
 	/**
@@ -74,7 +77,7 @@ class BuyerRequirementsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->minimumfeedbackscore = (int)$val;
+        $this->MinimumFeedbackScore = (int)$val;
 	}
 
 	/**
@@ -83,7 +86,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumUnpaidItemStrikes($val)
 	{
-        $this->maximumunpaiditemstrikes = (int)$val;
+        $this->MaximumUnpaidItemStrikes = (int)$val;
 	}
 
 	/**
@@ -92,7 +95,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumItemRequirements($val)
 	{
-        $this->maximumitemrequirements = (int)$val;
+        $this->MaximumItemRequirements = (int)$val;
 	}
 
 	/**
@@ -101,7 +104,7 @@ class BuyerRequirementsType
 	 */
 	public function setLinkedPayPalAccount($val)
 	{
-        $this->linkedpaypalaccount = (int)$val;
+        $this->LinkedPayPalAccount = (int)$val;
 	}
 
 	/**
@@ -110,6 +113,6 @@ class BuyerRequirementsType
 	 */
 	public function setVerifiedUserRequirements($val)
 	{
-        $this->verifieduserrequirements = (int)$val;
+        $this->VerifiedUserRequirements = (int)$val;
 	}
 }

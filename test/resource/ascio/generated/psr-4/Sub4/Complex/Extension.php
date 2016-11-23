@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Extension
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $key;
+    public $Key;
     /**
      * @var string
      */
-    public $value;
+    public $Value;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class Extension
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Key');
         }
-        $this->key = (int)$val;
+        $this->Key = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class Extension
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
     }
 }

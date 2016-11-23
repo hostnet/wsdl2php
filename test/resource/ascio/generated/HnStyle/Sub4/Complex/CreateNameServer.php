@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CreateNameServer
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\NameServer
      */
-    public $nameserver;
+    public $nameServer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class CreateNameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class CreateNameServer
      */
     public function setNameServer($val)
     {
-        $this->nameserver = (int)$val;
+        $this->nameServer = (int)$val;
     }
 }

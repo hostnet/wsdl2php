@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class StoreCustomCategoryArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomCategoryType | A Store custom category.
 	 */
-	public $customcategory;
+	public $CustomCategory;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreCustomCategoryType $val
 	 * @throws Exception
 	 */
 	public function setCustomCategory($val)
 	{
-        $this->customcategory = (int)$val;
+        $this->CustomCategory = (int)$val;
 	}
 }

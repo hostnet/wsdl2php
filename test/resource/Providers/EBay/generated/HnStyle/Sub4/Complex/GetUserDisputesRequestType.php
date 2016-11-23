@@ -12,17 +12,18 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetUserDisputesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeFilterTypeCodeType | A filter used to reduce the number of disputes returned. The filter uses criteria such
      * as whether the dispute is awaiting a response, is closed, or is eligible for credit.
      * Both Unpaid Item and Item Not Received disputes can be returned for the same filter
      * value.
      */
-    public $disputefiltertype;
+    public $DisputeFilterType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeSortTypeCodeType | The value and sequence to use to sort the returned disputes.
      */
-    public $disputesorttype;
+    public $DisputeSortType;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is later than or equal to
      * this value. Specify the time value in GMT. See the eBay Web Services documentation for
@@ -32,7 +33,7 @@ class GetUserDisputesRequestType extends
      * filters in combination with other filters like DisputeFilterType to control the amount
      * of data returned.
      */
-    public $modtimefrom;
+    public $ModTimeFrom;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is earlier than or equal
      * to this value. Specify the time value in GMT. See the eBay Web Services documentation
@@ -42,21 +43,23 @@ class GetUserDisputesRequestType extends
      * is optional. You can use date range filters in combination with other filters like DisputeFilterType
      * to control the amount of data returned.
      */
-    public $modtimeto;
+    public $ModTimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DisputeFilterTypeCodeType $val
      * @throws Exception
      */
     public function setDisputeFilterType($val)
     {
-        $this->disputefiltertype = (int)$val;
+        $this->DisputeFilterType = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class GetUserDisputesRequestType extends
      */
     public function setDisputeSortType($val)
     {
-        $this->disputesorttype = (int)$val;
+        $this->DisputeSortType = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class GetUserDisputesRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->modtimefrom = (int)$val;
+        $this->ModTimeFrom = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class GetUserDisputesRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->modtimeto = (int)$val;
+        $this->ModTimeTo = (int)$val;
     }
 
     /**
@@ -92,6 +95,6 @@ class GetUserDisputesRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 }

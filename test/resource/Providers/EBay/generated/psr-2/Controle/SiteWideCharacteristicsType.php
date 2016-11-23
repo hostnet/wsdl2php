@@ -10,25 +10,28 @@ namespace Controle;
  */
 class SiteWideCharacteristicsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\CharacteristicsSetType | Container for site-wide characteristics set information.
      */
-    public $characteristicsset;
+    public $CharacteristicsSet;
     /**
      * @var string | A category that does not support the specified site-wide characteristics set.
      */
-    public $excludecategoryid;
+    public $ExcludeCategoryID;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CharacteristicsSetType $val
      * @throws Exception
      */
     public function setCharacteristicsSet($val)
     {
-        $this->characteristicsset = (int)$val;
+        $this->CharacteristicsSet = (int)$val;
     }
 
     /**
@@ -40,7 +43,7 @@ class SiteWideCharacteristicsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExcludeCategoryID');
         }
-        $this->excludecategoryid = (int)$val;
+        $this->ExcludeCategoryID = (int)$val;
     }
 
     /**

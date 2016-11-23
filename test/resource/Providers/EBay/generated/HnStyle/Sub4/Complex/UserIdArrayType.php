@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class UserIdArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -17,18 +18,20 @@ class UserIdArrayType
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**

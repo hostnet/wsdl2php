@@ -75,6 +75,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSearchResultsExpressRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | One or more keywords to search for when using the Suggested Attributes engine. Required
      * when SuggestedAttributes is specified as the recommendation engine (including when no
@@ -82,7 +83,7 @@ class GetSearchResultsExpressRequestType extends
      * "and" and "or" are treated like any other word. Blank searches are not allowed (and
      * result in a warning).
      */
-    public $query;
+    public $Query;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExternalProductCodeType | The combination of ExternalProductIDType and ExternalProductIDValue create a query that
      * only retrieves items that were listed with Pre-filled Item Information in categories
@@ -94,12 +95,12 @@ class GetSearchResultsExpressRequestType extends
      * is required.<br> <br> <b>Note:</b> The ExternalProductID type and value structure is flat
      * to support REST API requests in the future.
      */
-    public $externalproductidtype;
+    public $ExternalProductIDType;
     /**
      * @var string | An ISBN or UPC code (depending on ExternalProductIDType) for the eBay catalog product
      * that you are searching for. Only valid when ExternalProductIDType is specified.
      */
-    public $externalproductidvalue;
+    public $ExternalProductIDValue;
     /**
      * @var long | The global reference ID for the eBay catalog product. Only returned when ProductDetails
      * is set to Fine.<br> <br> <span class="tablenote"><b>Note:</b> This value is not the
@@ -109,7 +110,7 @@ class GetSearchResultsExpressRequestType extends
      * product, which is useful for buy-side searching. One ProductReferenceID can be associated
      * with multiple ProductIDs.</span>
      */
-    public $productreferenceid;
+    public $ProductReferenceID;
     /**
      * @var string | A department is a grouping of aisles and/or product types that share a common theme.
      * This filter limits the search to the specified Express department. If not specified,
@@ -126,7 +127,7 @@ class GetSearchResultsExpressRequestType extends
      * ExternalProductIDValue (and Type), SellerID, DepartmentName, AisleName, or ProductTypeName
      * is required.
      */
-    public $departmentname;
+    public $DepartmentName;
     /**
      * @var string | An aisle is a grouping of product types that share a common theme. This filter limits
      * the search to the specified Express aisle. If not specified, this filter is ignored
@@ -138,7 +139,7 @@ class GetSearchResultsExpressRequestType extends
      * can be specified in the same request. In this case, the search engine treats the combination
      * as a fully qualified aisle name (and it returns an error if the combination is invalid).
      */
-    public $aislename;
+    public $AisleName;
     /**
      * @var string | A product type is a type of good or service that can be purchased. This filter limits
      * the search to the specified Express product type. If not specified, this filter is ignored
@@ -150,7 +151,7 @@ class GetSearchResultsExpressRequestType extends
      * In this case, the search engine treats the combination as a fully qualified product
      * type name (and it returns an error if the combination is invalid).
      */
-    public $producttypename;
+    public $ProductTypeName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressHistogramSortCodeType | Specifies the order of the data in the histogram (if any). Controls the way the histogram
      * data is organized in the response (not the details to return). If not specified, the
@@ -159,7 +160,7 @@ class GetSearchResultsExpressRequestType extends
      * If you want to sort the results by criteria that eBay has not defined, retrieve the
      * desired histogram data and then sort the results locally in your application.
      */
-    public $histogramsort;
+    public $HistogramSort;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressItemSortCodeType | Specifies the order in which listings (if any) are returned in the result set. If not
      * specified, the items are sorted by relevance (as determined by eBay). If you choose
@@ -171,7 +172,7 @@ class GetSearchResultsExpressRequestType extends
      * criteria that eBay has not defined, retrieve all available pages and then sort the results
      * locally in your application.
      */
-    public $itemsort;
+    public $ItemSort;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressProductSortCodeType | Specifies the order in which Express products are returned in a result set. If not specified,
      * the products are sorted by sales rank (bestselling first).<br> <br> This option has
@@ -181,7 +182,7 @@ class GetSearchResultsExpressRequestType extends
      * locally in your application.<br> <br> Controls the way the data is organized in the
      * response (not the details to return).
      */
-    public $productsort;
+    public $ProductSort;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | A filter that limits the results to items with a SellingStatus.CurrentPrice value lower
      * than this value. For example, if you specify 10.01, the results will include items with
@@ -195,7 +196,7 @@ class GetSearchResultsExpressRequestType extends
      * values.<br> <br> Does not control the order in which items are returned. (To sort by
      * highest total price, use ItemSort.)
      */
-    public $highestprice;
+    public $HighestPrice;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | A filter that limits the results to items with a SellingStatus.CurrentPrice value equal
      * to or higher than this value. For example, if you specify 6.00, the results will include
@@ -208,7 +209,7 @@ class GetSearchResultsExpressRequestType extends
      * specifying double values .<br> <br> Does not control the order in which items are returned.
      * (To sort by lowest total price, use ItemSort.)
      */
-    public $lowestprice;
+    public $LowestPrice;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ConditionSelectionCodeType | The item condition, if any. On Express US, this is often a value like "New", "Used",
      * or "Refurbished", but the exact value can vary based on the Item Condition data that
@@ -220,7 +221,7 @@ class GetSearchResultsExpressRequestType extends
      * well. Only returned when ItemDetails is set to Fine.<br> <br> Not applicable to calls
      * that browse or search items on the main eBay site.
      */
-    public $condition;
+    public $Condition;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | The eBay ID of the seller who listed the item. <br><br> Starting Jan 2007, when a bidder's
      * user info is made anonymous, this tag will be returned with the anonymous value "Seller
@@ -228,32 +229,32 @@ class GetSearchResultsExpressRequestType extends
      * has purchased items from. For example, if the seller is the third seller that the user
      * has purchased items from, the value "Seller 3" is returned.
      */
-    public $sellerid;
+    public $SellerID;
     /**
      * @var string | The postal code to use as the basis for the proximity search.
      */
-    public $postalcode;
+    public $PostalCode;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressDetailLevelCodeType | Controls the amount of statistical data to return in the response. If not specified,
      * the default is Coarse.<br> <br> This setting is not a filter that limits the search;
      * it only configures how much detail to retrieve in the resulting histogram. This setting
      * has no effect on the product or item details.
      */
-    public $histogramdetails;
+    public $HistogramDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressDetailLevelCodeType | Selects the set of fields to retrieve for each catalog product that matches the query.
      * If not specified, the default is Coarse.<br> <br> This setting is not a filter that
      * limits the search; it only configures which fields to retrieve for each product found.
      * This setting has no effect on the histogram or item details.
      */
-    public $productdetails;
+    public $ProductDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressDetailLevelCodeType | Selects the set of fields to retrieve for each item that matches the query. If not specified,
      * the default is Coarse.<br> <br> This setting is not a filter that limits the search;
      * it only configures which fields to retrieve for each item found. This setting has no
      * effect on the histogram or product details.
      */
-    public $itemdetails;
+    public $ItemDetails;
     /**
      * @var int | Specifies the maximum number of entries to return in a single call. If the number of
      * entries that can be returned is less than the value in EntriesPerPage, then the lower
@@ -262,7 +263,7 @@ class GetSearchResultsExpressRequestType extends
      * other individual calls to determine the correct max and default values. For GetOrders,
      * not applicable to eBay.com (for GetOrders, applicable to Half.com).
      */
-    public $entriesperpage;
+    public $EntriesPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -271,7 +272,7 @@ class GetSearchResultsExpressRequestType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AffiliateTrackingDetailsType | Container for affiliate tags for the REST API and for the unified schema API. If you
      * use affiliate tags, it is possible to get affiliate commissions based on calls made
@@ -282,7 +283,9 @@ class GetSearchResultsExpressRequestType extends
      * that includes affiliate tracking information. For GetSearchResultsExpress, the ViewItemURL
      * field is returned only if you specify AffiliateTrackingDetails in the request.
      */
-    public $affiliatetrackingdetails;
+    public $AffiliateTrackingDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -292,7 +295,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->query = (int)$val;
+        $this->Query = (int)$val;
     }
 
     /**
@@ -301,7 +304,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setExternalProductIDType($val)
     {
-        $this->externalproductidtype = (int)$val;
+        $this->ExternalProductIDType = (int)$val;
     }
 
     /**
@@ -313,7 +316,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalProductIDValue');
         }
-        $this->externalproductidvalue = (int)$val;
+        $this->ExternalProductIDValue = (int)$val;
     }
 
     /**
@@ -322,7 +325,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setProductReferenceID($val)
     {
-        $this->productreferenceid = (int)$val;
+        $this->ProductReferenceID = (int)$val;
     }
 
     /**
@@ -334,7 +337,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DepartmentName');
         }
-        $this->departmentname = (int)$val;
+        $this->DepartmentName = (int)$val;
     }
 
     /**
@@ -346,7 +349,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AisleName');
         }
-        $this->aislename = (int)$val;
+        $this->AisleName = (int)$val;
     }
 
     /**
@@ -358,7 +361,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductTypeName');
         }
-        $this->producttypename = (int)$val;
+        $this->ProductTypeName = (int)$val;
     }
 
     /**
@@ -367,7 +370,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setHistogramSort($val)
     {
-        $this->histogramsort = (int)$val;
+        $this->HistogramSort = (int)$val;
     }
 
     /**
@@ -376,7 +379,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setItemSort($val)
     {
-        $this->itemsort = (int)$val;
+        $this->ItemSort = (int)$val;
     }
 
     /**
@@ -385,7 +388,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setProductSort($val)
     {
-        $this->productsort = (int)$val;
+        $this->ProductSort = (int)$val;
     }
 
     /**
@@ -394,7 +397,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setHighestPrice($val)
     {
-        $this->highestprice = (int)$val;
+        $this->HighestPrice = (int)$val;
     }
 
     /**
@@ -403,7 +406,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setLowestPrice($val)
     {
-        $this->lowestprice = (int)$val;
+        $this->LowestPrice = (int)$val;
     }
 
     /**
@@ -412,7 +415,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setCondition($val)
     {
-        $this->condition = (int)$val;
+        $this->Condition = (int)$val;
     }
 
     /**
@@ -421,7 +424,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setSellerID($val)
     {
-        $this->sellerid = (int)$val;
+        $this->SellerID = (int)$val;
     }
 
     /**
@@ -433,7 +436,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->postalcode = (int)$val;
+        $this->PostalCode = (int)$val;
     }
 
     /**
@@ -442,7 +445,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setHistogramDetails($val)
     {
-        $this->histogramdetails = (int)$val;
+        $this->HistogramDetails = (int)$val;
     }
 
     /**
@@ -451,7 +454,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setProductDetails($val)
     {
-        $this->productdetails = (int)$val;
+        $this->ProductDetails = (int)$val;
     }
 
     /**
@@ -460,7 +463,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setItemDetails($val)
     {
-        $this->itemdetails = (int)$val;
+        $this->ItemDetails = (int)$val;
     }
 
     /**
@@ -472,7 +475,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->entriesperpage = (int)$val;
+        $this->EntriesPerPage = (int)$val;
     }
 
     /**
@@ -484,7 +487,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -493,6 +496,6 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setAffiliateTrackingDetails($val)
     {
-        $this->affiliatetrackingdetails = (int)$val;
+        $this->AffiliateTrackingDetails = (int)$val;
     }
 }

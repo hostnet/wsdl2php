@@ -9,6 +9,7 @@ namespace Controle;
  */
 class CharityAffiliationType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -21,6 +22,8 @@ class CharityAffiliationType
 	 * @var \Controle\CharityAffiliationTypeCodeType
 	 */
 	public $type;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception

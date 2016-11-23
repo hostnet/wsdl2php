@@ -10,12 +10,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetAllBiddersResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OfferArrayType | Contains a list of zero, one, or multiple OfferType objects. Each OfferType object represents
      * the data for one high bidder. See the schema documentation for OfferType for details
      * on its properties and their meanings.
      */
-    public $bidarray;
+    public $BidArray;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | For single-item (Quantity = 1) auction listings that have ended and have a winning bidder,
      * indicates the user who is the current high bidder. For single-item basic fixed price
@@ -24,13 +25,13 @@ class GetAllBiddersResponseType extends
      * price and Store Inventory listings that are still active, or any multi-item (Quantity
      * > 1) listings.
      */
-    public $highbidder;
+    public $HighBidder;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Amount the highest bidder had bid on the item. Applicable only to competitive-bidding
      * listings (Chinese and Dutch auctions) where there is progressive bidding and winning
      * bidders are determined based on the highest bid.
      */
-    public $highestbid;
+    public $HighestBid;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingStatusCodeType | Specifies an active or ended listing's status in eBay's processing workflow. If a listing
      * ends with a sale (or sales), eBay needs to update the sale details (e.g., total price
@@ -39,14 +40,16 @@ class GetAllBiddersResponseType extends
      * or no final value fee is available, use this listing status information to determine
      * whether eBay has finished processing the listing.
      */
-    public $listingstatus;
+    public $ListingStatus;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OfferArrayType $val
      * @throws Exception
      */
     public function setBidArray($val)
     {
-        $this->bidarray = (int)$val;
+        $this->BidArray = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class GetAllBiddersResponseType extends
      */
     public function setHighBidder($val)
     {
-        $this->highbidder = (int)$val;
+        $this->HighBidder = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class GetAllBiddersResponseType extends
      */
     public function setHighestBid($val)
     {
-        $this->highestbid = (int)$val;
+        $this->HighestBid = (int)$val;
     }
 
     /**
@@ -73,6 +76,6 @@ class GetAllBiddersResponseType extends
      */
     public function setListingStatus($val)
     {
-        $this->listingstatus = (int)$val;
+        $this->ListingStatus = (int)$val;
     }
 }

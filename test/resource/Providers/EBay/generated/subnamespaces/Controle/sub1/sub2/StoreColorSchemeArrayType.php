@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class StoreColorSchemeArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\StoreColorSchemeType | Theme color scheme.
 	 */
-	public $colorscheme;
+	public $ColorScheme;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreColorSchemeType $val
 	 * @throws Exception
 	 */
 	public function setColorScheme($val)
 	{
-        $this->colorscheme = (int)$val;
+        $this->ColorScheme = (int)$val;
 	}
 }

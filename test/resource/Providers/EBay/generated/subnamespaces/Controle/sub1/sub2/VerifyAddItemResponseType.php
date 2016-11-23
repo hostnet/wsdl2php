@@ -10,14 +10,15 @@ namespace Controle\sub1\sub2;
 class VerifyAddItemResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var \Controle\sub1\sub2\FeesType | (Not used.)
 	 */
-	public $fees;
+	public $Fees;
 	/**
 	 * @var boolean | If true, the item is qualified for the eBay Express site associated with the item's listing
 	 * site (US or Germany).<br> <br> For fixed-price, Store Inventory, and Express format listings, this
@@ -27,7 +28,7 @@ class VerifyAddItemResponseType extends
 	 * has bids or not, and see EndTime or Item.TimeLeft to to determine how soon the listing
 	 * ends.
 	 */
-	public $expresslisting;
+	public $ExpressListing;
 	/**
 	 * @var \Controle\sub1\sub2\ExpressItemRequirementsType | Contains details about why an item does or doesn't qualify as an Express listing. Only
 	 * returned when IncludeExpressRequirements is true the request. Whether a child field is
@@ -37,25 +38,27 @@ class VerifyAddItemResponseType extends
 	 * assessed in this order:<br> - SellerExpressEligible<br> - ExpressOptOut<br> - ExpressApproved<br> -
 	 * All other settings
 	 */
-	public $expressitemrequirements;
+	public $ExpressItemRequirements;
 	/**
 	 * @var string | ID of the category in which the Want It Now post is listed.
 	 */
-	public $categoryid;
+	public $CategoryID;
 	/**
 	 * @var string | ID of the secondary category in which the item would be listed. Only returned if you set
 	 * Item.CategoryMappingAllowed to true in the request and the ID you passed in SecondaryCategory
 	 * was mapped to a new ID by eBay. If the secondary category has not changed or it has expired
 	 * with no replacement, Category2ID does not return a value.
 	 */
-	public $category2id;
+	public $Category2ID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -64,7 +67,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->fees = (int)$val;
+        $this->Fees = (int)$val;
 	}
 
 	/**
@@ -73,7 +76,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setExpressListing($val)
 	{
-        $this->expresslisting = (int)$val;
+        $this->ExpressListing = (int)$val;
 	}
 
 	/**
@@ -82,7 +85,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setExpressItemRequirements($val)
 	{
-        $this->expressitemrequirements = (int)$val;
+        $this->ExpressItemRequirements = (int)$val;
 	}
 
 	/**
@@ -94,7 +97,7 @@ class VerifyAddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
 	}
 
 	/**
@@ -106,6 +109,6 @@ class VerifyAddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->category2id = (int)$val;
+        $this->Category2ID = (int)$val;
 	}
 }

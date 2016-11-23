@@ -4,21 +4,24 @@ namespace Controle;
 
 class CreateApprovalDocumentationResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $createapprovaldocumentationresult;
+    public $CreateApprovalDocumentationResult;
     /**
      * @var string
      */
-    public $documentationid;
+    public $documentationId;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setCreateApprovalDocumentationResult($val)
     {
-        $this->createapprovaldocumentationresult = (int)$val;
+        $this->CreateApprovalDocumentationResult = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class CreateApprovalDocumentationResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for documentationId');
         }
-        $this->documentationid = (int)$val;
+        $this->documentationId = (int)$val;
     }
 }

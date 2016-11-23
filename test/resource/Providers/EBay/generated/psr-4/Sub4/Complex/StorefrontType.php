@@ -10,6 +10,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class StorefrontType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Numeric ID for a custom category that the seller created in their eBay Store, if any. eBay
      * Stores sellers can create up to three levels of custom categories for their stores. Items
@@ -19,7 +20,7 @@ class StorefrontType
      * this field currently returns 0. As a workaround, use GetItem or related calls to get
      * the ID.
      */
-    public $storecategoryid;
+    public $StoreCategoryID;
     /**
      * @var int | Applicable for eBay Store sellers only. Numeric ID for a second custom category that
      * the seller created in their eBay Store. eBay Stores sellers can create up to 300 custom
@@ -32,19 +33,21 @@ class StorefrontType
      * to a value other than 0. In GetSearchResults, this field currently returns 0. As a workaround, use
      * GetItem or related calls to get the ID.
      */
-    public $storecategory2id;
+    public $StoreCategory2ID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | The URL of the seller's eBay Store page. Output only.
      */
-    public $storeurl;
+    public $StoreURL;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $storename;
+    public $StoreName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -54,7 +57,7 @@ class StorefrontType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->storecategoryid = (int)$val;
+        $this->StoreCategoryID = (int)$val;
     }
 
     /**
@@ -66,7 +69,7 @@ class StorefrontType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->storecategory2id = (int)$val;
+        $this->StoreCategory2ID = (int)$val;
     }
 
     /**
@@ -75,7 +78,7 @@ class StorefrontType
      */
     public function setStoreURL($val)
     {
-        $this->storeurl = (int)$val;
+        $this->StoreURL = (int)$val;
     }
 
     /**
@@ -87,7 +90,7 @@ class StorefrontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
     }
 
     /**

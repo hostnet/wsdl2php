@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BasicAmountType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -11,7 +12,9 @@ class BasicAmountType
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType
      */
-    public $currencyid;
+    public $currencyID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -30,6 +33,6 @@ class BasicAmountType
      */
     public function setCurrencyID($val)
     {
-        $this->currencyid = (int)$val;
+        $this->currencyID = (int)$val;
     }
 }

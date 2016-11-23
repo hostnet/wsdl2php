@@ -4,18 +4,21 @@ namespace Controle;
 
 class RegistrantVerificationInfo
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $emailaddress;
+    public $EmailAddress;
     /**
      * @var \Controle\RegistrantVerificationStatus
      */
-    public $verificationstatus;
+    public $VerificationStatus;
     /**
      * @var \Controle\RegistrantVerificationDetails
      */
-    public $verificationdetails;
+    public $VerificationDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class RegistrantVerificationInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EmailAddress');
         }
-        $this->emailaddress = (int)$val;
+        $this->EmailAddress = (int)$val;
     }
 
     /**
@@ -34,7 +37,7 @@ class RegistrantVerificationInfo
      */
     public function setVerificationStatus($val)
     {
-        $this->verificationstatus = (int)$val;
+        $this->VerificationStatus = (int)$val;
     }
 
     /**
@@ -43,6 +46,6 @@ class RegistrantVerificationInfo
      */
     public function setVerificationDetails($val)
     {
-        $this->verificationdetails = (int)$val;
+        $this->VerificationDetails = (int)$val;
     }
 }

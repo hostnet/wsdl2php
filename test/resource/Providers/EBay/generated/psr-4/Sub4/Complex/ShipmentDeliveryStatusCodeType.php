@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ShipmentDeliveryStatusCodeType
 {
+    // @codingStandardsIgnoreStart
     const CREATED      = 'Created';
     const DROPPEDOFF   = 'DroppedOff';
     const INTRANSIT    = 'InTransit';
@@ -12,4 +13,5 @@ class ShipmentDeliveryStatusCodeType
     const CANCELED     = 'Canceled';
     const LABELPRINTED = 'LabelPrinted';
     const CUSTOMCODE   = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

@@ -9,31 +9,34 @@ namespace Controle;
  */
 class NotificationStatisticsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Returns the number of notifications delivered successfully during the given time period.
      */
-    public $deliveredcount;
+    public $DeliveredCount;
     /**
      * @var int | Returns the number of new notifications that were queued during the given time period.
      */
-    public $queuednewcount;
+    public $QueuedNewCount;
     /**
      * @var int | Returns the number of pending notifications in the queue during the given time period.
      */
-    public $queuedpendingcount;
+    public $QueuedPendingCount;
     /**
      * @var int | Returns the number of notifications that permanently failed during the given time period.
      */
-    public $expiredcount;
+    public $ExpiredCount;
     /**
      * @var int | Returns the number of notifications for which there were delivery errors during the
      * given time period.
      */
-    public $errorcount;
+    public $ErrorCount;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -43,7 +46,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->deliveredcount = (int)$val;
+        $this->DeliveredCount = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->queuednewcount = (int)$val;
+        $this->QueuedNewCount = (int)$val;
     }
 
     /**
@@ -67,7 +70,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->queuedpendingcount = (int)$val;
+        $this->QueuedPendingCount = (int)$val;
     }
 
     /**
@@ -79,7 +82,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->expiredcount = (int)$val;
+        $this->ExpiredCount = (int)$val;
     }
 
     /**
@@ -91,7 +94,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->errorcount = (int)$val;
+        $this->ErrorCount = (int)$val;
     }
 
     /**

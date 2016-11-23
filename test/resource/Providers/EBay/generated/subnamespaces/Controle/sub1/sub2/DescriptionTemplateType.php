@@ -8,42 +8,45 @@ namespace Controle\sub1\sub2;
  */
 class DescriptionTemplateType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Unique identifier for this theme group.
 	 */
-	public $groupid;
+	public $GroupID;
 	/**
 	 * @var int | Key you specified in ProductSearchID in the search request to distinguish between query
 	 * results. Primarily useful when conducting multiple searches in the same call. If no ProductSearchID
 	 * value was specified in the request, returns the array index of the search result (beginning
 	 * with 0). Not applicable to GetProductFamilyMembers.
 	 */
-	public $id;
+	public $ID;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | The image associated with the department, aisle, or product, if any. All domains should
 	 * be associated with an image. However, there may be rare cases when an image is not available.
 	 */
-	public $imageurl;
+	public $ImageURL;
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var string | XML defining the template. Elements you must include in your XML: ThemeTop, ThemeUserCellTop,
 	 * ThemeUserContent, ThemeUserCellBottom, ThemeBottom. Not returned for Layouts.
 	 */
-	public $templatexml;
+	public $TemplateXML;
 	/**
 	 * @var \Controle\sub1\sub2\DescriptionTemplateCodeType | Returns the notification type. Possible values include: AskSellerQuestion, AuctionCheckoutComplete,
 	 * BestOffer, CheckoutBuyerRequestTotal, EndOfAuction, Feedback, FixedPriceEndOfTransaction,
 	 * FixedPriceTransaction, ItemNotReceived, MyMessages, OutBid, SecondChanceOffer, UPIBuyerResponseDispute,
 	 * UPISellerClosedDispute, UPISellerOpenedDispute, and UPISellerRespondedToDispute.
 	 */
-	public $type;
+	public $Type;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -53,7 +56,7 @@ class DescriptionTemplateType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->groupid = (int)$val;
+        $this->GroupID = (int)$val;
 	}
 
 	/**
@@ -65,7 +68,7 @@ class DescriptionTemplateType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->id = (int)$val;
+        $this->ID = (int)$val;
 	}
 
 	/**
@@ -74,7 +77,7 @@ class DescriptionTemplateType
 	 */
 	public function setImageURL($val)
 	{
-        $this->imageurl = (int)$val;
+        $this->ImageURL = (int)$val;
 	}
 
 	/**
@@ -86,7 +89,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -98,7 +101,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TemplateXML');
         }
-        $this->templatexml = (int)$val;
+        $this->TemplateXML = (int)$val;
 	}
 
 	/**
@@ -107,7 +110,7 @@ class DescriptionTemplateType
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
 	}
 
 	/**

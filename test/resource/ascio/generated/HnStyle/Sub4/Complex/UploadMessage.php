@@ -4,18 +4,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class UploadMessage
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var string
      */
-    public $orderid;
+    public $orderId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Message
      */
     public $message;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class UploadMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -37,7 +40,7 @@ class UploadMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for orderId');
         }
-        $this->orderid = (int)$val;
+        $this->orderId = (int)$val;
     }
 
     /**

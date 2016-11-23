@@ -12,21 +12,22 @@ namespace Controle;
  */
 class BuyingGuideType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $name;
+    public $Name;
     /**
      * @var \Controle\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item
      * URL) to launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be
      * used in certain types of applications. See your API license agreement. Also see this
      * page for logo usage rules:<br> http://developer.ebay.com/join/licenses/apilogousage
      */
-    public $url;
+    public $URL;
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
      *           search for Item Specifics in listings (e.g., how to search against a particular
@@ -39,11 +40,13 @@ class BuyingGuideType
      * level of ItemReturnAttributes or ReturnAll. Use GetProductFinder to determine valid
      * product finder IDs.
      */
-    public $productfinderid;
+    public $ProductFinderID;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -53,7 +56,7 @@ class BuyingGuideType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
     }
 
     /**
@@ -62,7 +65,7 @@ class BuyingGuideType
      */
     public function setURL($val)
     {
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class BuyingGuideType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class BuyingGuideType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->productfinderid = (int)$val;
+        $this->ProductFinderID = (int)$val;
     }
 
     /**

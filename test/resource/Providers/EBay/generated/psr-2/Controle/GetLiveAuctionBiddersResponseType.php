@@ -9,23 +9,24 @@ namespace Controle;
 class GetLiveAuctionBiddersResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\BidderDetailArrayType | Contains the bidder details that match the bidder query passed in the request. Returned
      * when bidder search results are found.
      */
-    public $bidderdetails;
+    public $BidderDetails;
     /**
      * @var int | Total number of bidders in Pending state.
      */
-    public $totalpending;
+    public $TotalPending;
     /**
      * @var int | Total number of bidders in Approved state.
      */
-    public $totalapproved;
+    public $TotalApproved;
     /**
      * @var int | Total number of bidders in Denied state.
      */
-    public $totaldenied;
+    public $TotalDenied;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -34,19 +35,21 @@ class GetLiveAuctionBiddersResponseType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param BidderDetailArrayType $val
      * @throws Exception
      */
     public function setBidderDetails($val)
     {
-        $this->bidderdetails = (int)$val;
+        $this->BidderDetails = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalpending = (int)$val;
+        $this->TotalPending = (int)$val;
     }
 
     /**
@@ -70,7 +73,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalapproved = (int)$val;
+        $this->TotalApproved = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totaldenied = (int)$val;
+        $this->TotalDenied = (int)$val;
     }
 
     /**
@@ -94,7 +97,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -103,6 +106,6 @@ class GetLiveAuctionBiddersResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 }

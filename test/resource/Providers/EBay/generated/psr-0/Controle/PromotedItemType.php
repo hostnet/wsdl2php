@@ -8,10 +8,11 @@ namespace Controle;
  */
 class PromotedItemType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var string | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
 	 * on a location of the seller's choice (other than eBay) and associated with an item. If
@@ -28,7 +29,7 @@ class PromotedItemType
 	 * the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
 	 * with that feature.
 	 */
-	public $pictureurl;
+	public $PictureURL;
 	/**
 	 * @var string | URL for multiple, self-hosted pictures (if any) that are stored/hosted at a non-eBay site
 	 * and used for the item. If specified, do not pass an empty/null value. On the main eBay
@@ -42,59 +43,61 @@ class PromotedItemType
 	 * between 383 and 439, SelfHostedURL is returned.<br> With compatibility 439 and higher,
 	 *  Item.PictureDetails.PictureURL is returned.
 	 */
-	public $selfhostedurl;
+	public $SelfHostedURL;
 	/**
 	 * @var int | The ordinal position of the cross-promoted item in the display. If the display is from
 	 * top to bottom, 1 is at top. If the display is from left to right, 1 is at left. Output
 	 * only.
 	 */
-	public $position;
+	public $Position;
 	/**
 	 * @var \Controle\AmountType | The price of the cross-promoted item in the currency of the site upon which the item is
 	 * listed. Output only. If the item is listed on a site different from the site specified
 	 * in the request, then ConvertedPromotionPrice is also returned.
 	 */
-	public $promotionprice;
+	public $PromotionPrice;
 	/**
 	 * @var \Controle\PromotionItemPriceTypeCodeType | The listing type for the promoted item and how the item price is used.
 	 */
-	public $promotionpricetype;
+	public $PromotionPriceType;
 	/**
 	 * @var \Controle\PromotionItemSelectionCodeType | The manner in which the cross-promoted item was chosen to be associated with the referring
 	 * item. Output only.
 	 */
-	public $selectiontype;
+	public $SelectionType;
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $title;
+	public $Title;
 	/**
 	 * @var \Controle\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
 	 */
-	public $listingtype;
+	public $ListingType;
 	/**
 	 * @var \Controle\PromotionDetailsType | Contains the details about the promoted item for a given PromotionPriceType. Output only.
 	 * Returned with request versions 485 or higher.
 	 */
-	public $promotiondetails;
+	public $PromotionDetails;
 	/**
 	 * @var \Controle\duration | Time left before the listing for the cross-promoted item ends. Output only. The duration
 	 * is represented in the ISO 8601 duration format (PnYnMnDTnHnMnS). See Data Types in the
 	 * eBay Web Services guide for information about this format. For ended listings, the time
 	 * left is PT0S (zero seconds).
 	 */
-	public $timeleft;
+	public $TimeLeft;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -106,7 +109,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->pictureurl = (int)$val;
+        $this->PictureURL = (int)$val;
 	}
 
 	/**
@@ -118,7 +121,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SelfHostedURL');
         }
-        $this->selfhostedurl = (int)$val;
+        $this->SelfHostedURL = (int)$val;
 	}
 
 	/**
@@ -130,7 +133,7 @@ class PromotedItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->position = (int)$val;
+        $this->Position = (int)$val;
 	}
 
 	/**
@@ -139,7 +142,7 @@ class PromotedItemType
 	 */
 	public function setPromotionPrice($val)
 	{
-        $this->promotionprice = (int)$val;
+        $this->PromotionPrice = (int)$val;
 	}
 
 	/**
@@ -148,7 +151,7 @@ class PromotedItemType
 	 */
 	public function setPromotionPriceType($val)
 	{
-        $this->promotionpricetype = (int)$val;
+        $this->PromotionPriceType = (int)$val;
 	}
 
 	/**
@@ -157,7 +160,7 @@ class PromotedItemType
 	 */
 	public function setSelectionType($val)
 	{
-        $this->selectiontype = (int)$val;
+        $this->SelectionType = (int)$val;
 	}
 
 	/**
@@ -169,7 +172,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
 	}
 
 	/**
@@ -178,7 +181,7 @@ class PromotedItemType
 	 */
 	public function setListingType($val)
 	{
-        $this->listingtype = (int)$val;
+        $this->ListingType = (int)$val;
 	}
 
 	/**
@@ -187,7 +190,7 @@ class PromotedItemType
 	 */
 	public function setPromotionDetails($val)
 	{
-        $this->promotiondetails = (int)$val;
+        $this->PromotionDetails = (int)$val;
 	}
 
 	/**
@@ -196,7 +199,7 @@ class PromotedItemType
 	 */
 	public function setTimeLeft($val)
 	{
-        $this->timeleft = (int)$val;
+        $this->TimeLeft = (int)$val;
 	}
 
 	/**

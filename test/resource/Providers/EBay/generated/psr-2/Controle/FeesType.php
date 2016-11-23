@@ -9,16 +9,19 @@ namespace Controle;
  */
 class FeesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\FeeType | Monthly fee for the Store subscription level.
      */
-    public $fee;
+    public $Fee;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FeeType $val
      * @throws Exception
      */
     public function setFee($val)
     {
-        $this->fee = (int)$val;
+        $this->Fee = (int)$val;
     }
 }

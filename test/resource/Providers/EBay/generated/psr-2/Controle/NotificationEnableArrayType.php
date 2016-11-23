@@ -9,17 +9,20 @@ namespace Controle;
  */
 class NotificationEnableArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\NotificationEnableType | Specifies one notification event and whether it is enabled or disabled. Returned if
      * previously set.
      */
-    public $notificationenable;
+    public $NotificationEnable;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param NotificationEnableType $val
      * @throws Exception
      */
     public function setNotificationEnable($val)
     {
-        $this->notificationenable = (int)$val;
+        $this->NotificationEnable = (int)$val;
     }
 }

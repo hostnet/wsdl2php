@@ -5,19 +5,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetVeRoReportStatusRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var long | A unique packet identifier for the items reported.
      */
-    public $veroreportpacketid;
+    public $VeROReportPacketID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var boolean | Set to true to return reported item details when you specify VeROReportPacketID in the
      * request.
      */
-    public $includereporteditemdetails;
+    public $IncludeReportedItemDetails;
     /**
      * @var dateTime | Limits returned items to only those that were submited on or after the date-time specified.
      * If specified, TimeTo must also be specified. Express the date-time in the format YYYY-MM-DD
@@ -27,7 +28,7 @@ class GetVeRoReportStatusRequestType extends
      * years after the date of submission. This field is ignored if VeROReportPacketID or ItemID
      * is specified.
      */
-    public $timefrom;
+    public $TimeFrom;
     /**
      * @var dateTime | Limits returned items to only those that were submited on or before the date-time specified.
      * If specified, TimeFrom must also be specified. Express date-time in the format YYYY-MM-DD
@@ -37,21 +38,23 @@ class GetVeRoReportStatusRequestType extends
      * years after the date of submission. This field is ignored if VeROReportPacketID or ItemID
      * is specified.
      */
-    public $timeto;
+    public $TimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param long $val
      * @throws Exception
      */
     public function setVeROReportPacketID($val)
     {
-        $this->veroreportpacketid = (int)$val;
+        $this->VeROReportPacketID = (int)$val;
     }
 
     /**
@@ -60,7 +63,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -69,7 +72,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setIncludeReportedItemDetails($val)
     {
-        $this->includereporteditemdetails = (int)$val;
+        $this->IncludeReportedItemDetails = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setTimeFrom($val)
     {
-        $this->timefrom = (int)$val;
+        $this->TimeFrom = (int)$val;
     }
 
     /**
@@ -87,7 +90,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setTimeTo($val)
     {
-        $this->timeto = (int)$val;
+        $this->TimeTo = (int)$val;
     }
 
     /**
@@ -96,6 +99,6 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 }

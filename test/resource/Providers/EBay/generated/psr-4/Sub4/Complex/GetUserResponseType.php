@@ -9,17 +9,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetUserResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserType | Bidder information. See the schema documentation for UserType for details on its properties
      * and their meanings.
      */
-    public $user;
+    public $User;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserType $val
      * @throws Exception
      */
     public function setUser($val)
     {
-        $this->user = (int)$val;
+        $this->User = (int)$val;
     }
 }

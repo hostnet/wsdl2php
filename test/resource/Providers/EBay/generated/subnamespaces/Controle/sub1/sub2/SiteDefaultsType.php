@@ -8,69 +8,70 @@ namespace Controle\sub1\sub2;
  */
 class SiteDefaultsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ListingDurationReferenceType | Specifies the ID of a set of default durations for a certain type of listing. The actual
 	 * duration values are returned within the FeatureDefinitions node. The type of listing is
 	 * named in the type attribute.
 	 */
-	public $listingduration;
+	public $ListingDuration;
 	/**
 	 * @var boolean | Specifies the default site setting for whether sellers are required to specify a shipping
 	 * service and its associated cost when listing items. True means the shipping terms are required unless
 	 * a specific category overrides this setting.
 	 */
-	public $shippingtermsrequired;
+	public $ShippingTermsRequired;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow best offers. True means
 	 * best offers are allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $bestofferenabled;
+	public $BestOfferEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow DutchBIN. True means best
 	 * offers are allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $dutchbinenabled;
+	public $DutchBINEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether a bidder must consent to the bid by confirming
 	 * that he or she read and agrees to the terms in eBay's privacy policy.
 	 */
-	public $userconsentrequired;
+	public $UserConsentRequired;
 	/**
 	 * @var boolean | Indicates whether or not it is possible to enhance a listing by putting it into a rotation
 	 * for display on a special area of the eBay home page. Support for this feature varies by
 	 * site. Item or feedback restrictions may apply.
 	 */
-	public $homepagefeaturedenabled;
+	public $HomePageFeaturedEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the ProPack feature (a
 	 * feature pack). True means ProPack is allowed site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $propackenabled;
+	public $ProPackEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the BasicUpgradePack feature
 	 * (a feature pack). True means it is allowed site-wide, unless a specific category overrides
 	 * the setting. Australia site (site ID 15, abbreviation AU) only. Effective beginning February
 	 * 22, 2006.
 	 */
-	public $basicupgradepackenabled;
+	public $BasicUpgradePackEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the ValuePack feature (a
 	 * feature pack). True means it is allowed site-wide, unless a specific category overrides
 	 * the setting. Effective beginning February 22, 2006.
 	 */
-	public $valuepackenabled;
+	public $ValuePackEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the ProPackPlus feature
 	 * (a feature pack). True means it is allowed site-wide, unless a specific category overrides
 	 * the setting. Effective beginning February 22, 2006.
 	 */
-	public $propackplusenabled;
+	public $ProPackPlusEnabled;
 	/**
 	 * @var \Controle\sub1\sub2\AdFormatEnabledCodeType | Specifies the default site setting for whether categories allow the Ad Format feature.
 	 * True means the feature is allowed site-wide, unless a specific category overrides the setting.
 	 */
-	public $adformatenabled;
+	public $AdFormatEnabled;
 	/**
 	 * @var \Controle\sub1\sub2\DigitalDeliveryEnabledCodeType | eBay enables you to list and sell digital files (such as Adobe PDF files) or information
 	 * that buyers can access online or have delivered electronically. This flag specifies whether
@@ -85,39 +86,39 @@ class SiteDefaultsType
 	 * if both categories support digital listings. Digital listings are not eligible for eBay
 	 * Express.
 	 */
-	public $digitaldeliveryenabled;
+	public $DigitalDeliveryEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow counter offers for best
 	 * offers. True means counter offers are allowed site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $bestoffercounterenabled;
+	public $BestOfferCounterEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow auto decline for best offers.
 	 * True means auto decline is allowed site-wide, unless a specific category overrides the
 	 * setting.
 	 */
-	public $bestofferautodeclineenabled;
+	public $BestOfferAutoDeclineEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for  whether LocalMarketSpecialitySubscription feature
 	 * is supported for this category.
 	 */
-	public $localmarketspecialitysubscription;
+	public $LocalMarketSpecialitySubscription;
 	/**
 	 * @var boolean | Specifies the default site setting for whether LocalMarketRegularSubscription feature is
 	 * supported for this category.
 	 */
-	public $localmarketregularsubscription;
+	public $LocalMarketRegularSubscription;
 	/**
 	 * @var boolean | Specifies the default site setting for whether LocalMarketPremiumSubscription feature is
 	 * supported for this category.
 	 */
-	public $localmarketpremiumsubscription;
+	public $LocalMarketPremiumSubscription;
 	/**
 	 * @var boolean | Specifies the default site setting for whether LocalMarketNonSubscription feature is supported
 	 * for this category.
 	 */
-	public $localmarketnonsubscription;
+	public $LocalMarketNonSubscription;
 	/**
 	 * @var boolean | Specifies whether most categories on the site are eligible for eBay Express. eBay Express
 	 * is a specialty site where customers can buy new, fixed-price goods in a more conventional
@@ -131,7 +132,7 @@ class SiteDefaultsType
 	 * all other Express eligibility requirements are met. See "eBay Express" in the eBay Web
 	 * Services guide for information about other eligibility requirements.
 	 */
-	public $expressenabled;
+	public $ExpressEnabled;
 	/**
 	 * @var boolean | Specifies whether most categories on the site require a listing to include a picture in
 	 * order to qualify for eBay Express.<br><br> If true, items on the site require a picture
@@ -141,7 +142,7 @@ class SiteDefaultsType
 	 * for tickets.<br> If false, items on the site do not require a picture, but some categories
 	 * may override the setting.<br><br> Only meaningful if ExpressEnabled is true for the category.
 	 */
-	public $expresspicturesrequired;
+	public $ExpressPicturesRequired;
 	/**
 	 * @var boolean | Specifies whether most categories on the site require a listing to include the Item Condition
 	 * attribute in order to qualify for eBay Express. <br><br> If true, items on the site require
@@ -153,64 +154,66 @@ class SiteDefaultsType
 	 * false, items on the site do not require the Item Condition, but some categories may override
 	 * the setting.<br><br> Only meaningful if ExpressEnabled is true for the category.
 	 */
-	public $expressconditionrequired;
+	public $ExpressConditionRequired;
 	/**
 	 * @var double | Specifies the default site setting for whether the Minimum Reserve Price feature is supported
 	 * for this category.
 	 */
-	public $minimumreserveprice;
+	public $MinimumReservePrice;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow seller-level contact information
 	 * for Classified Ad format listings. A value of true means seller-level contact information
 	 * is available for Classified Ad format listings site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $sellercontactdetailsenabled;
+	public $SellerContactDetailsEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether the Transaction Confirmation Request feature
 	 * is supported for this category.
 	 */
-	public $transactionconfirmationrequestenabled;
+	public $TransactionConfirmationRequestEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the Store Inventory Format
 	 * feature. True means the feature is allowed site-wide, unless a specific category overrides
 	 * the setting.
 	 */
-	public $storeinventoryenabled;
+	public $StoreInventoryEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the addition of Skype buttons
 	 * to listings for transactional formats (e.g., the Chinese auction format).
 	 */
-	public $skypemetransactionalenabled;
+	public $SkypeMeTransactionalEnabled;
 	/**
 	 * @var boolean | Specifies the default site setting for whether categories allow the addition of Skype buttons
 	 * to listings for nontransactional formats (e.g., the advertisement format).
 	 */
-	public $skypemenontransactionalenabled;
+	public $SkypeMeNonTransactionalEnabled;
 	/**
 	 * @var string | Specifies the supported local listing distances of regular vehicles.
 	 */
-	public $locallistingdistancesregular;
+	public $LocalListingDistancesRegular;
 	/**
 	 * @var string | Specifies the supported local listing distances of specialty vehicles.
 	 */
-	public $locallistingdistancesspecialty;
+	public $LocalListingDistancesSpecialty;
 	/**
 	 * @var string | Specifies the supported local listing distances for users who have not subscribed to either
 	 * Regular or Specialty vehicles.
 	 */
-	public $locallistingdistancesnonsubscription;
+	public $LocalListingDistancesNonSubscription;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ListingDurationReferenceType $val
 	 * @throws Exception
 	 */
 	public function setListingDuration($val)
 	{
-        $this->listingduration = (int)$val;
+        $this->ListingDuration = (int)$val;
 	}
 
 	/**
@@ -219,7 +222,7 @@ class SiteDefaultsType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->shippingtermsrequired = (int)$val;
+        $this->ShippingTermsRequired = (int)$val;
 	}
 
 	/**
@@ -228,7 +231,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->bestofferenabled = (int)$val;
+        $this->BestOfferEnabled = (int)$val;
 	}
 
 	/**
@@ -237,7 +240,7 @@ class SiteDefaultsType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->dutchbinenabled = (int)$val;
+        $this->DutchBINEnabled = (int)$val;
 	}
 
 	/**
@@ -246,7 +249,7 @@ class SiteDefaultsType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->userconsentrequired = (int)$val;
+        $this->UserConsentRequired = (int)$val;
 	}
 
 	/**
@@ -255,7 +258,7 @@ class SiteDefaultsType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->homepagefeaturedenabled = (int)$val;
+        $this->HomePageFeaturedEnabled = (int)$val;
 	}
 
 	/**
@@ -264,7 +267,7 @@ class SiteDefaultsType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->propackenabled = (int)$val;
+        $this->ProPackEnabled = (int)$val;
 	}
 
 	/**
@@ -273,7 +276,7 @@ class SiteDefaultsType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->basicupgradepackenabled = (int)$val;
+        $this->BasicUpgradePackEnabled = (int)$val;
 	}
 
 	/**
@@ -282,7 +285,7 @@ class SiteDefaultsType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->valuepackenabled = (int)$val;
+        $this->ValuePackEnabled = (int)$val;
 	}
 
 	/**
@@ -291,7 +294,7 @@ class SiteDefaultsType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->propackplusenabled = (int)$val;
+        $this->ProPackPlusEnabled = (int)$val;
 	}
 
 	/**
@@ -300,7 +303,7 @@ class SiteDefaultsType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->adformatenabled = (int)$val;
+        $this->AdFormatEnabled = (int)$val;
 	}
 
 	/**
@@ -309,7 +312,7 @@ class SiteDefaultsType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->digitaldeliveryenabled = (int)$val;
+        $this->DigitalDeliveryEnabled = (int)$val;
 	}
 
 	/**
@@ -318,7 +321,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->bestoffercounterenabled = (int)$val;
+        $this->BestOfferCounterEnabled = (int)$val;
 	}
 
 	/**
@@ -327,7 +330,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->bestofferautodeclineenabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = (int)$val;
 	}
 
 	/**
@@ -336,7 +339,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->localmarketspecialitysubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = (int)$val;
 	}
 
 	/**
@@ -345,7 +348,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->localmarketregularsubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = (int)$val;
 	}
 
 	/**
@@ -354,7 +357,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->localmarketpremiumsubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = (int)$val;
 	}
 
 	/**
@@ -363,7 +366,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->localmarketnonsubscription = (int)$val;
+        $this->LocalMarketNonSubscription = (int)$val;
 	}
 
 	/**
@@ -372,7 +375,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->expressenabled = (int)$val;
+        $this->ExpressEnabled = (int)$val;
 	}
 
 	/**
@@ -381,7 +384,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->expresspicturesrequired = (int)$val;
+        $this->ExpressPicturesRequired = (int)$val;
 	}
 
 	/**
@@ -390,7 +393,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->expressconditionrequired = (int)$val;
+        $this->ExpressConditionRequired = (int)$val;
 	}
 
 	/**
@@ -399,7 +402,7 @@ class SiteDefaultsType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->minimumreserveprice = (int)$val;
+        $this->MinimumReservePrice = (int)$val;
 	}
 
 	/**
@@ -408,7 +411,7 @@ class SiteDefaultsType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->sellercontactdetailsenabled = (int)$val;
+        $this->SellerContactDetailsEnabled = (int)$val;
 	}
 
 	/**
@@ -417,7 +420,7 @@ class SiteDefaultsType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->transactionconfirmationrequestenabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = (int)$val;
 	}
 
 	/**
@@ -426,7 +429,7 @@ class SiteDefaultsType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->storeinventoryenabled = (int)$val;
+        $this->StoreInventoryEnabled = (int)$val;
 	}
 
 	/**
@@ -435,7 +438,7 @@ class SiteDefaultsType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->skypemetransactionalenabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = (int)$val;
 	}
 
 	/**
@@ -444,7 +447,7 @@ class SiteDefaultsType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->skypemenontransactionalenabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = (int)$val;
 	}
 
 	/**
@@ -456,7 +459,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
         }
-        $this->locallistingdistancesregular = (int)$val;
+        $this->LocalListingDistancesRegular = (int)$val;
 	}
 
 	/**
@@ -468,7 +471,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
         }
-        $this->locallistingdistancesspecialty = (int)$val;
+        $this->LocalListingDistancesSpecialty = (int)$val;
 	}
 
 	/**
@@ -480,7 +483,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
         }
-        $this->locallistingdistancesnonsubscription = (int)$val;
+        $this->LocalListingDistancesNonSubscription = (int)$val;
 	}
 
 	/**

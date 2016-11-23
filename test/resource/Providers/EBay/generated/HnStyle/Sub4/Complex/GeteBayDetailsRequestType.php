@@ -15,19 +15,22 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GeteBayDetailsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DetailNameCodeType | A designation of what kind of information you wish returned for the specified eBay site.
      * If omitted, all details are returned. The possible values for input (the enumeration
      * values of DetailNameCodeType) are the same name as fields returned by the response.
      * See the documentation for the GeteBayDetails response to better understand the DetailName options.
      */
-    public $detailname;
+    public $DetailName;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DetailNameCodeType $val
      * @throws Exception
      */
     public function setDetailName($val)
     {
-        $this->detailname = (int)$val;
+        $this->DetailName = (int)$val;
     }
 }

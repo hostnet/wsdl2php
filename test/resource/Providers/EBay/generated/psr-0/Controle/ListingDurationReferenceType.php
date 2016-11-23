@@ -8,6 +8,7 @@ namespace Controle;
  */
 class ListingDurationReferenceType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int
 	 */
@@ -16,6 +17,8 @@ class ListingDurationReferenceType
 	 * @var \Controle\ListingTypeCodeType
 	 */
 	public $type;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception

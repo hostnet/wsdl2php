@@ -4,21 +4,24 @@ namespace Controle;
 
 class CreateDnsSecKeyResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\Response
 	 */
-	public $creatednsseckeyresult;
+	public $CreateDnsSecKeyResult;
 	/**
 	 * @var \Controle\DnsSecKey
 	 */
-	public $dnsseckey;
+	public $dnsSecKey;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setCreateDnsSecKeyResult($val)
 	{
-        $this->creatednsseckeyresult = (int)$val;
+        $this->CreateDnsSecKeyResult = (int)$val;
 	}
 
 	/**
@@ -27,6 +30,6 @@ class CreateDnsSecKeyResponse
 	 */
 	public function setDnsSecKey($val)
 	{
-        $this->dnsseckey = (int)$val;
+        $this->dnsSecKey = (int)$val;
 	}
 }

@@ -9,21 +9,24 @@ namespace Controle;
 class GetBidderListResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\UserType | Data for one eBay bidder.
 	 */
-	public $bidder;
+	public $Bidder;
 	/**
 	 * @var \Controle\ItemArrayType | Array of items the bidder has bid on, has won or has lost.
 	 */
-	public $biditemarray;
+	public $BidItemArray;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param UserType $val
 	 * @throws Exception
 	 */
 	public function setBidder($val)
 	{
-        $this->bidder = (int)$val;
+        $this->Bidder = (int)$val;
 	}
 
 	/**
@@ -32,6 +35,6 @@ class GetBidderListResponseType extends
 	 */
 	public function setBidItemArray($val)
 	{
-        $this->biditemarray = (int)$val;
+        $this->BidItemArray = (int)$val;
 	}
 }

@@ -9,4 +9,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SendInvoiceResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
+    // @codingStandardsIgnoreEnd
 }

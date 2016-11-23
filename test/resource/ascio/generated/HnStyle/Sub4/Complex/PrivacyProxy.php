@@ -4,33 +4,36 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class PrivacyProxy
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PrivacyProxyType
      */
-    public $type;
+    public $Type;
     /**
      * @var boolean
      */
-    public $privacyadmin;
+    public $PrivacyAdmin;
     /**
      * @var boolean
      */
-    public $privacytech;
+    public $PrivacyTech;
     /**
      * @var boolean
      */
-    public $privacybilling;
+    public $PrivacyBilling;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Extensions
      */
-    public $extensions;
+    public $Extensions;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PrivacyProxyType $val
      * @throws Exception
      */
     public function setType($val)
     {
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
     }
 
     /**
@@ -39,7 +42,7 @@ class PrivacyProxy
      */
     public function setPrivacyAdmin($val)
     {
-        $this->privacyadmin = (int)$val;
+        $this->PrivacyAdmin = (int)$val;
     }
 
     /**
@@ -48,7 +51,7 @@ class PrivacyProxy
      */
     public function setPrivacyTech($val)
     {
-        $this->privacytech = (int)$val;
+        $this->PrivacyTech = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class PrivacyProxy
      */
     public function setPrivacyBilling($val)
     {
-        $this->privacybilling = (int)$val;
+        $this->PrivacyBilling = (int)$val;
     }
 
     /**
@@ -66,6 +69,6 @@ class PrivacyProxy
      */
     public function setExtensions($val)
     {
-        $this->extensions = (int)$val;
+        $this->Extensions = (int)$val;
     }
 }

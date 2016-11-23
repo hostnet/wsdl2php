@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SubscriptionType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Unique identifier for the user that does not change when the eBay user name is changed.
      * Use when an application needs to associate a new eBay user name with the corresponding
@@ -15,17 +16,19 @@ class SubscriptionType
      * this tag will be returned only for that bidder, and the seller of an item that the user
      * is bidding on.
      */
-    public $eiastoken;
+    public $EIASToken;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteCodeType |      */
-    public $siteid;
+    public $SiteID;
     /**
      * @var boolean |      */
-    public $active;
+    public $Active;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -35,7 +38,7 @@ class SubscriptionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->eiastoken = (int)$val;
+        $this->EIASToken = (int)$val;
     }
 
     /**
@@ -44,7 +47,7 @@ class SubscriptionType
      */
     public function setSiteID($val)
     {
-        $this->siteid = (int)$val;
+        $this->SiteID = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class SubscriptionType
      */
     public function setActive($val)
     {
-        $this->active = (int)$val;
+        $this->Active = (int)$val;
     }
 
     /**

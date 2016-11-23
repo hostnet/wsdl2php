@@ -10,10 +10,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetUserPreferencesResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BidderNoticePreferencesType | The user's bidder notice preferences to be set.
      */
-    public $biddernoticepreferences;
+    public $BidderNoticePreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CombinedPaymentPreferencesType | The user's combined payment preferences to be set. When you change these preferences,
      * it can take up to 7 days for the change to have any logical or functional effect on
@@ -25,23 +26,23 @@ class GetUserPreferencesResponseType extends
      * be added to or removed from Express. Thus, it can take up to 14 days (total) for combined
      * payment preference changes to affect whether listings appear on Express. Also see ExpressPreferences.ExpressSellingPreferences.
      */
-    public $combinedpaymentpreferences;
+    public $CombinedPaymentPreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CrossPromotionPreferencesType | The user's cross promotion preferences to be set.
      */
-    public $crosspromotionpreferences;
+    public $CrossPromotionPreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentPreferencesType | The user's seller payment preferences to be set.
      */
-    public $sellerpaymentpreferences;
+    public $SellerPaymentPreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerFavoriteItemPreferencesType | Seller's favorite item preferences to be set.
      */
-    public $sellerfavoriteitempreferences;
+    public $SellerFavoriteItemPreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\EndOfAuctionEmailPreferencesType | The seller's end of auction email preferences to be set.
      */
-    public $endofauctionemailpreferences;
+    public $EndOfAuctionEmailPreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\eBxOptInPreferenceType | If true: The seller wants their eligible eBay listings to be included on eBay Express
      * (in addition to the main eBay site). If false: The seller does not want their listings
@@ -49,7 +50,7 @@ class GetUserPreferencesResponseType extends
      * not want to change their existing preference. (Initially, eBay sets this preference
      * to true for every seller.)
      */
-    public $ebxoptinpreference;
+    public $eBxOptInPreference;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExpressPreferencesType | The seller's Express preferences. Currently used to indicate which of the seller's eligible
      * listings to include on Express. You can only set these preferences for sellers who are
@@ -58,19 +59,21 @@ class GetUserPreferencesResponseType extends
      * cannot set them again (e.g., to change the value) within 7 days. Also see CombinedPaymentPreferences,
      * which affect a seller's eligibility to list on Express.
      */
-    public $expresspreferences;
+    public $ExpressPreferences;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProStoresCheckoutPreferenceType | Details about the checkout preferences related to the ProStores store. Returned only
      * if set.
      */
-    public $prostorespreference;
+    public $ProStoresPreference;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param BidderNoticePreferencesType $val
      * @throws Exception
      */
     public function setBidderNoticePreferences($val)
     {
-        $this->biddernoticepreferences = (int)$val;
+        $this->BidderNoticePreferences = (int)$val;
     }
 
     /**
@@ -79,7 +82,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setCombinedPaymentPreferences($val)
     {
-        $this->combinedpaymentpreferences = (int)$val;
+        $this->CombinedPaymentPreferences = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setCrossPromotionPreferences($val)
     {
-        $this->crosspromotionpreferences = (int)$val;
+        $this->CrossPromotionPreferences = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setSellerPaymentPreferences($val)
     {
-        $this->sellerpaymentpreferences = (int)$val;
+        $this->SellerPaymentPreferences = (int)$val;
     }
 
     /**
@@ -106,7 +109,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setSellerFavoriteItemPreferences($val)
     {
-        $this->sellerfavoriteitempreferences = (int)$val;
+        $this->SellerFavoriteItemPreferences = (int)$val;
     }
 
     /**
@@ -115,7 +118,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setEndOfAuctionEmailPreferences($val)
     {
-        $this->endofauctionemailpreferences = (int)$val;
+        $this->EndOfAuctionEmailPreferences = (int)$val;
     }
 
     /**
@@ -124,7 +127,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setEBxOptInPreference($val)
     {
-        $this->ebxoptinpreference = (int)$val;
+        $this->eBxOptInPreference = (int)$val;
     }
 
     /**
@@ -133,7 +136,7 @@ class GetUserPreferencesResponseType extends
      */
     public function setExpressPreferences($val)
     {
-        $this->expresspreferences = (int)$val;
+        $this->ExpressPreferences = (int)$val;
     }
 
     /**
@@ -142,6 +145,6 @@ class GetUserPreferencesResponseType extends
      */
     public function setProStoresPreference($val)
     {
-        $this->prostorespreference = (int)$val;
+        $this->ProStoresPreference = (int)$val;
     }
 }

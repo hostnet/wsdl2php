@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class DetailNameCodeType
 {
+    // @codingStandardsIgnoreStart
     const COUNTRYDETAILS          = 'CountryDetails';
     const CURRENCYDETAILS         = 'CurrencyDetails';
     const PAYMENTOPTIONDETAILS    = 'PaymentOptionDetails';
@@ -15,4 +16,5 @@ class DetailNameCodeType
     const URLDETAILS              = 'URLDetails';
     const CUSTOMCODE              = 'CustomCode';
     const DISPATCHTIMEMAXDETAILS  = 'DispatchTimeMaxDetails';
+    // @codingStandardsIgnoreEnd
 }

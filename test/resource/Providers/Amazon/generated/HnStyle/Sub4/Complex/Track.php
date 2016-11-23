@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Track
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $trackname;
+    public $TrackName;
     /**
      * @var string
      */
-    public $byartist;
+    public $ByArtist;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class Track
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackName');
         }
-        $this->trackname = (int)$val;
+        $this->TrackName = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class Track
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ByArtist');
         }
-        $this->byartist = (int)$val;
+        $this->ByArtist = (int)$val;
     }
 }

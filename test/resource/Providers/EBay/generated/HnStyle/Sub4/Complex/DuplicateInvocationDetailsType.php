@@ -8,31 +8,34 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class DuplicateInvocationDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UUIDType | The duplicate InvocationID.
      */
-    public $duplicateinvocationid;
+    public $DuplicateInvocationID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InvocationStatusType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $status;
+    public $Status;
     /**
      * @var string | The id that identifies the business item the previous API invocation created. For example,
      * the ItemID of the item created by an AddItem call.
      */
-    public $invocationtrackingid;
+    public $InvocationTrackingID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UUIDType $val
      * @throws Exception
      */
     public function setDuplicateInvocationID($val)
     {
-        $this->duplicateinvocationid = (int)$val;
+        $this->DuplicateInvocationID = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class DuplicateInvocationDetailsType
      */
     public function setStatus($val)
     {
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class DuplicateInvocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InvocationTrackingID');
         }
-        $this->invocationtrackingid = (int)$val;
+        $this->InvocationTrackingID = (int)$val;
     }
 
     /**

@@ -10,27 +10,30 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetUserNotesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SetUserNotesActionCodeType | Indicates the type of offer being made on the specified listing. Valid values are enumerated
      * in the BidActionCodeType code list.
      */
-    public $action;
+    public $Action;
     /**
      * @var string | Text of the note. Maximum 250 characters. Required only if the Action is AddOrUpdate.
      * This note text will completely replace any existing My eBay note for the specified item.
      */
-    public $notetext;
+    public $NoteText;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -39,7 +42,7 @@ class SetUserNotesRequestType extends
      */
     public function setAction($val)
     {
-        $this->action = (int)$val;
+        $this->Action = (int)$val;
     }
 
     /**
@@ -51,6 +54,6 @@ class SetUserNotesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NoteText');
         }
-        $this->notetext = (int)$val;
+        $this->NoteText = (int)$val;
     }
 }

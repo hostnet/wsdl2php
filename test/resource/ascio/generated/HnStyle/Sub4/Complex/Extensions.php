@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Extensions
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Extension
      */
-    public $extension;
+    public $Extension;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Extension $val
      * @throws Exception
      */
     public function setExtension($val)
     {
-        $this->extension = (int)$val;
+        $this->Extension = (int)$val;
     }
 }

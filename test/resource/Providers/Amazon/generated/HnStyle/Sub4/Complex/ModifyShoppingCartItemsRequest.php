@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ModifyShoppingCartItemsRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -15,19 +16,21 @@ class ModifyShoppingCartItemsRequest
     /**
      * @var string
      */
-    public $cartid;
+    public $CartId;
     /**
      * @var string
      */
-    public $hmac;
+    public $HMAC;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemQuantityArray
      */
-    public $items;
+    public $Items;
     /**
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -61,7 +64,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class ModifyShoppingCartItemsRequest
      */
     public function setItems($val)
     {
-        $this->items = (int)$val;
+        $this->Items = (int)$val;
     }
 
     /**

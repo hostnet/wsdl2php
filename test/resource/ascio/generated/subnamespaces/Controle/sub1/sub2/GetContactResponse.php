@@ -4,21 +4,24 @@ namespace Controle\sub1\sub2;
 
 class GetContactResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $getcontactresult;
+	public $GetContactResult;
 	/**
 	 * @var \Controle\sub1\sub2\Contact
 	 */
 	public $contact;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setGetContactResult($val)
 	{
-        $this->getcontactresult = (int)$val;
+        $this->GetContactResult = (int)$val;
 	}
 
 	/**

@@ -9,13 +9,16 @@ namespace Controle;
 class GetRuNameResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | A unique identifier associated with application and the combination            of URLs
 	 * within this authentication entry.            Unique across all applications that execute
 	 * eBay Web Services calls.            For convenience, you can call GetRuName to generate
 	 * a unique value.
 	 */
-	public $runame;
+	public $RuName;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -25,6 +28,6 @@ class GetRuNameResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RuName');
         }
-        $this->runame = (int)$val;
+        $this->RuName = (int)$val;
 	}
 }

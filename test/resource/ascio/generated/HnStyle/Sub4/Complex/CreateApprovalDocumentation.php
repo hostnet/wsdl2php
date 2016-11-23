@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CreateApprovalDocumentation
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ApprovalDocumentation
      */
-    public $approvaldocumentation;
+    public $approvalDocumentation;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class CreateApprovalDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class CreateApprovalDocumentation
      */
     public function setApprovalDocumentation($val)
     {
-        $this->approvaldocumentation = (int)$val;
+        $this->approvalDocumentation = (int)$val;
     }
 }

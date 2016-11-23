@@ -10,13 +10,14 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class VerifyAddSecondChanceItemRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Specifies the bidder from the original, ended listing to whom the seller is extending
      * the second chance offer. Specify only one RecipientBidderUserID per call. If multiple
      * users are specified (each in a RecipientBidderUserID node), only the last one specified
      * receives the offer.
      */
-    public $recipientbidderuserid;
+    public $RecipientBidderUserID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | For Chinese auction listings, Buy It Now allows a user to purchase the item at a fixed
      * price and end the auction immediately. eBay China also supports Buy It Now for Dutch
@@ -40,36 +41,38 @@ class VerifyAddSecondChanceItemRequestType extends
      * in eBay's API documentation, as they may vary for each user.) <br><br> To remove this
      * value when revising or relisting an item, use DeletedField.
      */
-    public $buyitnowprice;
+    public $BuyItNowPrice;
     /**
      * @var boolean | Regardless of the request version you specify, the seller always receives a copy of
      * the notification email that goes to the recipient user.
      */
-    public $copyemailtoseller;
+    public $CopyEmailToSeller;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SecondChanceOfferDurationCodeType | Specifies the length of time an auction can be open, in days. The allowed durations vary
      * according to the type of listing. The value GTC means Good Til Canceled.
      */
-    public $duration;
+    public $Duration;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteCodeType | Site where the Want It Now post is listed.
      */
-    public $site;
+    public $Site;
     /**
      * @var string | Text response to buyer from seller.
      */
-    public $sellermessage;
+    public $SellerMessage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setRecipientBidderUserID($val)
     {
-        $this->recipientbidderuserid = (int)$val;
+        $this->RecipientBidderUserID = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setBuyItNowPrice($val)
     {
-        $this->buyitnowprice = (int)$val;
+        $this->BuyItNowPrice = (int)$val;
     }
 
     /**
@@ -87,7 +90,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setCopyEmailToSeller($val)
     {
-        $this->copyemailtoseller = (int)$val;
+        $this->CopyEmailToSeller = (int)$val;
     }
 
     /**
@@ -96,7 +99,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setDuration($val)
     {
-        $this->duration = (int)$val;
+        $this->Duration = (int)$val;
     }
 
     /**
@@ -105,7 +108,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -114,7 +117,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setSite($val)
     {
-        $this->site = (int)$val;
+        $this->Site = (int)$val;
     }
 
     /**
@@ -126,6 +129,6 @@ class VerifyAddSecondChanceItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->sellermessage = (int)$val;
+        $this->SellerMessage = (int)$val;
     }
 }

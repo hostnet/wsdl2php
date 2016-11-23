@@ -4,34 +4,37 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BuyingSummaryType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The number of items the user has bid on.
      */
-    public $biddingcount;
+    public $BiddingCount;
     /**
      * @var int | The number of items the user has bid on and is winning, but that have not yet ended.
      */
-    public $winningcount;
+    public $WinningCount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The total cost of items the user is presently winning.
      */
-    public $totalwinningcost;
+    public $TotalWinningCost;
     /**
      * @var int | The number of items the user has bid on and won.
      */
-    public $woncount;
+    public $WonCount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The total cost of items the user has bid on and won.
      */
-    public $totalwoncost;
+    public $TotalWonCost;
     /**
      * @var int | The time period for which won items are displayed. Default is 31 days.
      */
-    public $wondurationindays;
+    public $WonDurationInDays;
     /**
      * @var int | The number of items the user has made best offers on.
      */
-    public $bestoffercount;
+    public $BestOfferCount;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -41,7 +44,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->biddingcount = (int)$val;
+        $this->BiddingCount = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->winningcount = (int)$val;
+        $this->WinningCount = (int)$val;
     }
 
     /**
@@ -62,7 +65,7 @@ class BuyingSummaryType
      */
     public function setTotalWinningCost($val)
     {
-        $this->totalwinningcost = (int)$val;
+        $this->TotalWinningCost = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->woncount = (int)$val;
+        $this->WonCount = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class BuyingSummaryType
      */
     public function setTotalWonCost($val)
     {
-        $this->totalwoncost = (int)$val;
+        $this->TotalWonCost = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->wondurationindays = (int)$val;
+        $this->WonDurationInDays = (int)$val;
     }
 
     /**
@@ -107,6 +110,6 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bestoffercount = (int)$val;
+        $this->BestOfferCount = (int)$val;
     }
 }

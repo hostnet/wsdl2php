@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class InsuranceDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Cost of shipping insurance set by the seller. If the buyer bought more than one of this
      * item, this is the insurance for just a single item. Exception: for GetItemShipping,
@@ -17,24 +18,26 @@ class InsuranceDetailsType
      * field is ignored when Item.ListingType=Express. Not applicable to eBay Motors vehicle
      * listings.
      */
-    public $insurancefee;
+    public $InsuranceFee;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceOptionCodeType | Whether the seller offers shipping insurance and, if so, whether the insurance is optional
      * or required. Flat and calculated shipping. Optional as input and only allowed if ChangePaymentInstructions
      * is true. Also applicable to Half.com (for GetOrders). This field is ignored when Item.ListingType=Express.
      */
-    public $insuranceoption;
+    public $InsuranceOption;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AmountType $val
      * @throws Exception
      */
     public function setInsuranceFee($val)
     {
-        $this->insurancefee = (int)$val;
+        $this->InsuranceFee = (int)$val;
     }
 
     /**
@@ -43,7 +46,7 @@ class InsuranceDetailsType
      */
     public function setInsuranceOption($val)
     {
-        $this->insuranceoption = (int)$val;
+        $this->InsuranceOption = (int)$val;
     }
 
     /**

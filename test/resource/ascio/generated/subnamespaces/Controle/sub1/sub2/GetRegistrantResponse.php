@@ -4,21 +4,24 @@ namespace Controle\sub1\sub2;
 
 class GetRegistrantResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $getregistrantresult;
+	public $GetRegistrantResult;
 	/**
 	 * @var \Controle\sub1\sub2\Registrant
 	 */
 	public $registrant;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setGetRegistrantResult($val)
 	{
-        $this->getregistrantresult = (int)$val;
+        $this->GetRegistrantResult = (int)$val;
 	}
 
 	/**

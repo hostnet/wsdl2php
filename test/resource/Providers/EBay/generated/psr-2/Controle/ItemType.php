@@ -13,6 +13,7 @@ namespace Controle;
  */
 class ItemType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Returns custom, application-specific data associated with the item. The data you specify
      * is stored by eBay with the item for your own reference, but it is not used by eBay in
@@ -21,30 +22,30 @@ class ItemType
      * value when revising or relisting an item, use DeletedField. ApplicationData is not applicable
      * to Half.com. For Half.com listings, use SellerInventoryID instead.
      */
-    public $applicationdata;
+    public $ApplicationData;
     /**
      * @var \Controle\AttributeSetArrayType | Reserved for future use.
      */
-    public $attributesetarray;
+    public $AttributeSetArray;
     /**
      * @var \Controle\AttributeArrayType | Used to specify the item condition. Only applicable to Half.com (not eBay listings). You
      * can revise this property for Half.com listings. This does not use the same Attributes
      * format as eBay's Item Specifics.
      */
-    public $attributearray;
+    public $AttributeArray;
     /**
      * @var \Controle\LookupAttributeArrayType | Use this as a shortcut for specifying the Item Condition attribute by name instead of
      * by ID. Only valid when using AddItem for items in Media categories (Books, DVD and Movies,
      * Music, and Video Game categories). You can pass either AttributeSetArray or LookupAttributeArray,
      * but you cannot pass both in the same request. Not applicable to Half.com.
      */
-    public $lookupattributearray;
+    public $LookupAttributeArray;
     /**
      * @var boolean | Whether the seller specifies that a shipping discount is to be applied (in the event
      * that an item's transaction is later combined with others into a single order). Not applicable
      * to Half.com.
      */
-    public $applyshippingdiscount;
+    public $ApplyShippingDiscount;
     /**
      * @var boolean | If true, the seller requests immediate payment for the item. If false or not specified,
      * immediate payment is not requested. (In responses, does not indicate whether the item
@@ -58,17 +59,17 @@ class ItemType
      * and dependencies. Also see the section on working with the eBay Motors site for additional
      * rules. Not applicable to Half.com.
      */
-    public $autopay;
+    public $AutoPay;
     /**
      * @var \Controle\PaymentDetailsType | Contains data associated with eBay Motors payments (Durations for deposit and full payments).
      * Returned for Motors listings. Not applicable to Half.com.
      */
-    public $paymentdetails;
+    public $PaymentDetails;
     /**
      * @var \Controle\BiddingDetailsType | Detailed information about a bid. For GetMyeBayBuying, returned as a self-closed element
      * if no bids meet the request criteria. Not applicable to Half.com.
      */
-    public $biddingdetails;
+    public $BiddingDetails;
     /**
      * @var boolean | Listing upgrade that features the item in eBay search results on the mobile.de partner
      * site. Applicable to eBay Germany. If true in listing requests and responses, the seller
@@ -77,12 +78,12 @@ class ItemType
      * additional information on featuring vehicles on the Mobile.de Site. Not applicable to
      * Half.com.
      */
-    public $motorsgermanysearchable;
+    public $MotorsGermanySearchable;
     /**
      * @var \Controle\BuyerProtectionCodeType | Indicates the status of the item's eligibility for the PayPal Buyer Protection program.
      * Not applicable to Half.com.
      */
-    public $buyerprotection;
+    public $BuyerProtection;
     /**
      * @var \Controle\AmountType | For Chinese auction listings, Buy It Now allows a user to purchase the item at a fixed
      * price and end the auction immediately. eBay China also supports Buy It Now for Dutch
@@ -106,7 +107,7 @@ class ItemType
      * in eBay's API documentation, as they may vary for each user.) <br><br> To remove this
      * value when revising or relisting an item, use DeletedField.
      */
-    public $buyitnowprice;
+    public $BuyItNowPrice;
     /**
      * @var boolean | Controls how eBay handles cases in which an ID specified in PrimaryCategory and/or SecondaryCategory
      * no longer exists in the current category structure: If you pass a value of true in CategoryMappingAllowed,
@@ -116,7 +117,7 @@ class ItemType
      * is not set or contains a value of "false" (the default), an error will be returned if
      * a selected category ID no longer exists. Not applicable to Half.com.
      */
-    public $categorymappingallowed;
+    public $CategoryMappingAllowed;
     /**
      * @var \Controle\CharityType | Identifies a Giving Works listing and the benefiting nonprofit charity organization
      * selected by the charity seller, if any. If specified, the seller must also accept PayPal
@@ -127,61 +128,61 @@ class ItemType
      * information, but you cannot remove it. When you relist an item, use DeletedField to
      * remove a charity information. <br><br> Not applicable to Half.com.
      */
-    public $charity;
+    public $Charity;
     /**
      * @var \Controle\CountryCodeType | Two-letter ISO 3166 country code. In some calls, used with the Location field to indicate
      * the city and country where the item is located. Also applicable as input to AddItem
      * and related calls when you list items to Half.com (specify US). <br> <br> In GetSearchResultsExpress,
      * only returned when ItemDetails is set to Fine.
      */
-    public $country;
+    public $Country;
     /**
      * @var \Controle\CrossPromotionsType | Container for cross-promoted items related to a specific item ID. The items are either
      * upsell or cross-sell, according to the promotion method passed in the request. Not applicable
      * to Half.com.
      */
-    public $crosspromotion;
+    public $CrossPromotion;
     /**
      * @var \Controle\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
     /**
      * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
      */
-    public $description;
+    public $Description;
     /**
      * @var \Controle\DescriptionReviseModeCodeType | If you are changing the description of an item, specifies whether the new next is an
      * addition, a replacement, etc.
      */
-    public $descriptionrevisemode;
+    public $DescriptionReviseMode;
     /**
      * @var \Controle\DistanceType | The distance used in a proximity search distance calculation. Not applicable to Half.com.
      */
-    public $distance;
+    public $Distance;
     /**
      * @var string | Specifies a promotional offer that allow the buyer to purchase items on credit.
      */
-    public $financeofferid;
+    public $FinanceOfferID;
     /**
      * @var int | If set, a generic gift icon displays next the listing's title in search and browse pages.
      * GiftIcon must be set to be able to use GiftServices options. Not applicable to Half.com.
      */
-    public $gifticon;
+    public $GiftIcon;
     /**
      * @var \Controle\GiftServicesCodeType | Optional gift services that the seller is offering if the buyer chooses to purchase
      * the item as a gift. Only returned if offered by the seller. Not applicable to Half.com.
      */
-    public $giftservices;
+    public $GiftServices;
     /**
      * @var \Controle\HitCounterCodeType | Indicates whether an optional hit counter is displayed on the item's listing page and,
      * if so, what type. See HitCounterCodeType for specific values. Not applicable to Half.com. This
      * field is ignored when Item.ListingType=Express.
      */
-    public $hitcounter;
+    public $HitCounter;
     /**
      * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\ListingDetailsType | Various details about a listing, some of which are calculated or derived after the item
      * is listed. These include the start and end time, converted (localized) prices, and certain
@@ -189,20 +190,20 @@ class ItemType
      * to the requesting user. For GetMyeBayBuying, returned as a self- closed element if no
      * listings meet the request criteria. Not applicable to Half.com.
      */
-    public $listingdetails;
+    public $ListingDetails;
     /**
      * @var \Controle\ListingDesignerType | Contains the detail data for the Listing Designer theme and template (if either are
      * used), which can optionally be used to enhance the appearance of the description area
      * of an item's description. See ListingDesignerType for its child elements. Not applicable
      * to Half.com.
      */
-    public $listingdesigner;
+    public $ListingDesigner;
     /**
      * @var \Controle\token | Specifies the ID of a set of default durations for a certain type of listing. The actual
      * duration values are returned within the FeatureDefinitions node. The type of listing
      * is named in the type attribute.
      */
-    public $listingduration;
+    public $ListingDuration;
     /**
      * @var \Controle\ListingEnhancementsCodeType | Describes listing upgrades that sellers can select for a fee, such as the BoldTitle
      * upgrade. Also includes feature packs for saving on listing upgrades. See <a href="http://pages.ebay.com/help/sell/ia/promoting_your_item.html">Listing
@@ -212,22 +213,22 @@ class ItemType
      * a maximum of 10 featured lot items per live auction catalog. Not applicable to Half.com. This
      * field is ignored when Item.ListingType=Express.
      */
-    public $listingenhancement;
+    public $ListingEnhancement;
     /**
      * @var \Controle\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
      */
-    public $listingtype;
+    public $ListingType;
     /**
      * @var \Controle\ListingSubtypeEnum | Indicates the specific type of lead generation format listing (i.e., classified subtypes).
      */
-    public $listingsubtype;
+    public $ListingSubtype;
     /**
      * @var string | Indicates the geographical location of the item (along with Country). When you revise
      * a listing, you can add or change this value only if the listing has no bids (or no items
      * have sold) and it does not end within 12 hours. Also applicable as input to AddItem
      * and related calls when you list items to Half.com.
      */
-    public $location;
+    public $Location;
     /**
      * @var int | A lot is a set of two or more similar items that must be purchased together in a single
      * transaction. A listing can have multiple lots (instead of multiple items). When LotSize
@@ -239,7 +240,7 @@ class ItemType
      * of true for categories that do not support lots. Not applicable to Half.com. This field
      * is ignored when Item.ListingType=Express.
      */
-    public $lotsize;
+    public $LotSize;
     /**
      * @var boolean | If true in listing requests and responses, the item is listed with Now and New. Only
      * applicable to Buy It Now, fixed-price, and Store Inventory listings on certain eBay
@@ -250,21 +251,21 @@ class ItemType
      * or the listing ends within 12 hours, you cannot add or remove NowAndNew when you revise
      * the listing. Not applicable to Half.com.
      */
-    public $nowandnew;
+    public $NowAndNew;
     /**
      * @var string | Not currently operational.
      */
-    public $partnercode;
+    public $PartnerCode;
     /**
      * @var string | Not currently operational.
      */
-    public $partnername;
+    public $PartnerName;
     /**
      * @var \Controle\BuyerPaymentMethodCodeType | The payment methods the buyer uses to pay for      the order. An order can have multiple
      * payment methods if the      buyer combines several transactions into one order.
      *  Also applicable to Half.com (for GetOrders).
      */
-    public $paymentmethods;
+    public $PaymentMethods;
     /**
      * @var string | Valid PayPal email address for the PayPal account that the seller will use if they offer
      * PayPal as a payment method for the listing. eBay uses this to identify the correct PayPal
@@ -289,7 +290,7 @@ class ItemType
      * within 12 hours, you can add PayPalEmailAddress, but you cannot remove it.<br> <br> Not
      * applicable to eBay Motors listings. Also not applicable to Half.com.
      */
-    public $paypalemailaddress;
+    public $PayPalEmailAddress;
     /**
      * @var \Controle\CategoryType | Category ID for the first (or only) category in which the item is listed (or will be
      * listed, if the item is new). A number of listing features have dependencies on the primary
@@ -325,14 +326,14 @@ class ItemType
      * you are using the Listing Analyzer engine, Product Pricing engine, or Suggested Attributes
      * engine.
      */
-    public $primarycategory;
+    public $PrimaryCategory;
     /**
      * @var boolean | If true, designates the listing as a private auction. The list of bidders on private
      * auctions is hidden when the active listing is viewed. Sellers may want to use this option
      * when they believe that potential bidders for a listing would not want their User IDs
      * disclosed to others. Not applicable to Half.com.
      */
-    public $privatelisting;
+    public $PrivateListing;
     /**
      * @var \Controle\ProductListingDetailsType | Specifies stock product information to include in a listing. Only applicable when listing
      * items with Pre-filled Item Information. If the item's primary and secondary category
@@ -353,35 +354,35 @@ class ItemType
      * see the eBay Web Services guide for validation rule differences when using the Product
      * Pricing engine.<br><br> Not applicable to Half.com.
      */
-    public $productlistingdetails;
+    public $ProductListingDetails;
     /**
      * @var \Controle\ProximitySearchDetailsType | Applications should remove dependencies on this type. For item location, refer to Item.PostalCode
      * instead.
      */
-    public $proximitysearchdetails;
+    public $ProximitySearchDetails;
     /**
      * @var int | Specifies the number of items from the specified listing the user tendering the offer
      * intends to purchase or bid on. For Chinese auctions and other listing formats that only
      * allow one item per listing, value may not exceed one. For multi-item listings, must
      * be greater than zero and not exceeding the number of items offered for sale in the listing.
      */
-    public $quantity;
+    public $Quantity;
     /**
      * @var string | A text note that the seller specified for the Half.com item, if any. Only visible to
      * the seller. Not returned if the seller specified no notes.
      */
-    public $privatenotes;
+    public $PrivateNotes;
     /**
      * @var string | Specifies a region ID. The item must have been listed for the specified region to be
      * returned in the search result set.
      */
-    public $regionid;
+    public $RegionID;
     /**
      * @var boolean | Applicable only to re-listing an item. If true, creates a link in the item's old listing
      * for the item that points to the new relist page, which accommodates users who might
      * still look for the item under its old item ID. Not applicable to Half.com.
      */
-    public $relistlink;
+    public $RelistLink;
     /**
      * @var \Controle\AmountType | The lowest price at which the seller is willing to sell the item. (StartPrice must be
      * lower than ReservePrice.) Not all categories support reserve prices. See GetCategories
@@ -402,17 +403,17 @@ class ItemType
      * an existing reserve price if the item has absentee bids or ends in less than 12 hours.<br><br> Not
      * applicable to Half.com. This field is ignored when Item.ListingType=Express.
      */
-    public $reserveprice;
+    public $ReservePrice;
     /**
      * @var \Controle\ReviseStatusType | Indicates whether an item has been revised since the listing became active and, if so,
      * which among a subset of properties have been changed by the revision. Output only. Not
      * applicable to Half.com.
      */
-    public $revisestatus;
+    public $ReviseStatus;
     /**
      * @var dateTime | Date and time that the sale schedule starts.
      */
-    public $scheduletime;
+    public $ScheduleTime;
     /**
      * @var \Controle\CategoryType | ID for second category in which the item is listed (also see Item.PrimaryCategory).
      * <br> <br> <b>For the AddItem family of calls:</b> Listing an item in a second category
@@ -456,13 +457,13 @@ class ItemType
      * you are using the Listing Analyzer engine, Product Pricing engine, or Suggested Attributes
      * engine.
      */
-    public $secondarycategory;
+    public $SecondaryCategory;
     /**
      * @var \Controle\CategoryType | ID for a second category that eBay added as a free promotion. You cannot add this yourself. Only
      * returned if the item was listed in a single category and eBay added a free second category. Not
      * applicable to Half.com.
      */
-    public $freeaddedcategory;
+    public $FreeAddedCategory;
     /**
      * @var \Controle\SiteHostedPictureType | In requests, if SiteHostedPicture or VendorHostedPicture are passed in with PictureDetails,
      * PictureDetails will take precedence. In responses, PictureDetails is returned instead
@@ -475,42 +476,42 @@ class ItemType
      * photo URL. Some categories are exempt from this requirement.<br> <br> Not applicable
      * to Half.com.
      */
-    public $sitehostedpicture;
+    public $SiteHostedPicture;
     /**
      * @var \Controle\UserType | Container for information about this listing's seller. Not applicable to Half.com. <br> <br> In
      * GetSearchResultsExpress, only returned when ItemDetails is set to Fine.
      */
-    public $seller;
+    public $Seller;
     /**
      * @var \Controle\SellingStatusType | Various details about the current status of the listing, such as the current number
      * of bids and the current high bidder. Not applicable to Half.com.<br> <br> For GetSearchResultsExpress,
      * this is always returned when ItemArray.Item is returned.
      */
-    public $sellingstatus;
+    public $SellingStatus;
     /**
      * @var \Controle\ShippingOptionCodeType | Previous behavior: Indicates where the seller is willing to ship the item. Default is
      * SiteOnly. If SitePlusRegions is selected, when the item is listed, then at least one
      * region must also be specified (in ShippingRegions). Not applicable to Half.com.
      */
-    public $shippingoption;
+    public $ShippingOption;
     /**
      * @var \Controle\ShippingDetailsType | The shipping-related details for an item or transaction, including flat and calculated
      * shipping costs and shipping insurance costs. For GetOrders, also applicable to Half.com.
      * For GetOrders, minimal ShippingDetails information is returned under the Transaction
      * container.
      */
-    public $shippingdetails;
+    public $ShippingDetails;
     /**
      * @var \Controle\ShippingRegionCodeType | Previous behavior: Indicates the global regions to which the seller is willing to ship
      * the item(s). Only applicable if the seller specifies SitePlusRegions for the shipping
      * option (ShippingOptionCodeType). Not applicable to Half.com.
      */
-    public $shippingregions;
+    public $ShippingRegions;
     /**
      * @var \Controle\ShippingTermsCodeType | Previous behavior: Indicates who pays the shipping costs for the item(s), the buyer
      * or the seller. Not applicable to Half.com.
      */
-    public $shippingterms;
+    public $ShippingTerms;
     /**
      * @var string | An international location or region to which the seller is willing to ship, regardless
      * of shipping service. The country of the listing site is added by eBay. Use GeteBayDetails
@@ -520,11 +521,11 @@ class ItemType
      * to None. ReviseItem can add a ShipToLocation. Applicable with compatibility level 373
      * and higher. Not applicable to Half.com.
      */
-    public $shiptolocations;
+    public $ShipToLocations;
     /**
      * @var \Controle\SiteCodeType | Site where the Want It Now post is listed.
      */
-    public $site;
+    public $Site;
     /**
      * @var \Controle\AmountType | The original price of the item at listing or re-listing time. If this value changes
      * when the item is revised, the new value becomes the original price. <br><br> For auction-type
@@ -544,13 +545,13 @@ class ItemType
      * The seller needs to make sure they specify the amount in the currency selected for the
      * live auction event.
      */
-    public $startprice;
+    public $StartPrice;
     /**
      * @var \Controle\StorefrontType | Contains information related to the item in the context of a seller's eBay Store. Applicable
      * for auction formats, Basic Fixed Price, and Store Inventory format items listed by eBay
      * Stores sellers. Not applicable to Half.com. This field is ignored when Item.ListingType=Express.
      */
-    public $storefront;
+    public $Storefront;
     /**
      * @var string | Subtitle to use in addition to the title. Provides more keywords when buyers search
      * in titles and descriptions. You cannot use HTML in the Subtitle. (HTML characters will
@@ -565,18 +566,18 @@ class ItemType
      * GetSearchResultsExpress, only returned when ItemDetails is set to Fine and a subtitle
      * was specified for the item.
      */
-    public $subtitle;
+    public $SubTitle;
     /**
      * @var \Controle\duration | Time left before the listing for the cross-promoted item ends. Output only. The duration
      * is represented in the ISO 8601 duration format (PnYnMnDTnHnMnS). See Data Types in the
      * eBay Web Services guide for information about this format. For ended listings, the time
      * left is PT0S (zero seconds).
      */
-    public $timeleft;
+    public $TimeLeft;
     /**
      * @var string | Title of a Want It Now post.
      */
-    public $title;
+    public $Title;
     /**
      * @var \Controle\UUIDType | Universally unique constraint tag. Use UUID to ensure that you only list a particular
      * item once, particularly if you are listing many items at once. If you add an item and
@@ -591,14 +592,14 @@ class ItemType
      * across all item listings on all sites. <br><br> Also applicable as input to AddItem
      * and related calls when you list items to Half.com.
      */
-    public $uuid;
+    public $UUID;
     /**
      * @var \Controle\VATDetailsType | Container for eBay's VAT features. A business seller can choose to offer an item exclusively
      * to bidders and buyers that also represent businesses. Only applicable when the item
      * is listed in a B2B-enabled category (on a site that supports B2B business features). Not
      * applicable to Half.com.
      */
-    public $vatdetails;
+    public $VATDetails;
     /**
      * @var \Controle\VendorHostedPictureType | In requests, if SiteHostedPicture or VendorHostedPicture are passed in with PictureDetails,
      * PictureDetails will take precedence. In responses, PictureDetails is returned instead
@@ -611,31 +612,31 @@ class ItemType
      * gallery, or stock photo URL. Some categories are exempt from this requirement.<br> <br> Not
      * applicable to Half.com.
      */
-    public $vendorhostedpicture;
+    public $VendorHostedPicture;
     /**
      * @var string | The seller is on vacation (as determined by the seller's store preferences) in two cases:
      * i.) the item is a Store Inventory item and the seller has chosen to hide Store Inventory
      * items while on vacation, and ii.) the seller has chosen to add a message to listed items
      * while on vacation. Not applicable to Half.com.
      */
-    public $sellervacationnote;
+    public $SellerVacationNote;
     /**
      * @var long | The number of watches placed on this item from buyers' My eBay accounts. Specify IncludeWatchCount
      * as true in the request. Not applicable to Half.com.
      */
-    public $watchcount;
+    public $WatchCount;
     /**
      * @var long | The number of page views for the item. This number is calculated by eBay and cannot
      * be set via the API. Returned if the hit counter type is BasicStyle, RetroStyle, or HiddenStyle.
      * For HiddenStyle, HitCount is returned only if the requestor is the item's seller.
      */
-    public $hitcount;
+    public $HitCount;
     /**
      * @var boolean | If false (or omitted): if BuyerRequirements is present, its requirements are to be used;
      * otherwise, any requirements specified in My eBay are to be used. If true: no requirements
      * are considered from any source (and if BuyerRequirements is present, it is ignored).
      */
-    public $disablebuyerrequirements;
+    public $DisableBuyerRequirements;
     /**
      * @var \Controle\BuyerRequirementsType | Container for buyer requirements. Individual buyer requirements cannot be modified or
      * added. The call needs to provide the entire set of buyer requirements to modify or add
@@ -643,32 +644,32 @@ class ItemType
      * regarding <a target="_blank" href="http://pages.ebay.com/help/sell/buyer-requirements.html">Selecting Buyer
      * Requirements</a>. Not applicable to Half.com.
      */
-    public $buyerrequirements;
+    public $BuyerRequirements;
     /**
      * @var \Controle\BestOfferDetailsType | Container for BestOffer properties associated with the item. Not applicable to Half.com.
      */
-    public $bestofferdetails;
+    public $BestOfferDetails;
     /**
      * @var boolean | No longer available. Always returns false.
      */
-    public $anythingpoints;
+    public $AnythingPoints;
     /**
      * @var \Controle\LiveAuctionDetailsType | Describes the live auction-specific details of a lot item. Applicable to eBay Live Auctions
      * only.
      */
-    public $liveauctiondetails;
+    public $LiveAuctionDetails;
     /**
      * @var boolean | True if eBay provided a central location as a result of the user not specifying a location.
      * This typically occurs when the seller specifies PostalCode without Location. Not applicable
      * to Half.com.
      */
-    public $locationdefaulted;
+    public $LocationDefaulted;
     /**
      * @var boolean | Whether checkout for this is to be handled by a Third-Party Checkout application. The
      * counterpart in the Add family of calls is Item.ThirdPartyCheckout. Not applicable to
      * Half.com.
      */
-    public $thirdpartycheckout;
+    public $ThirdPartyCheckout;
     /**
      * @var boolean | Indicates whether the seller's tax table is to be used when applying and calculating
      * taxes. If true, a tax table must exist for the seller, and the following tags should
@@ -678,7 +679,7 @@ class ItemType
      * via a shopping cart, you will not be able to calculate and add sales tax during your
      * own checkout flow. <br><br> Not applicable to Half.com.
      */
-    public $usetaxtable;
+    public $UseTaxTable;
     /**
      * @var boolean | Indicates whether the seller has opted the listing into the Get It Fast feature. If
      * GetItFast is true and if at least one of the domestic shipping services offered by the
@@ -687,7 +688,7 @@ class ItemType
      * the buyer-selected shipping service within one day. Also applicable to Half.com (for
      * GetOrders).
      */
-    public $getitfast;
+    public $GetItFast;
     /**
      * @var boolean | Applicable for listings in vehicle categories on the US eBay Motors site and eBay Canada
      * site. (No business effect if specified for other categories or sites, as the Web site
@@ -702,7 +703,7 @@ class ItemType
      * be visible on the US eBay Motors site, set Item.ShipToLocations to US. Not applicable
      * to Half.com.
      */
-    public $buyerresponsibleforshipping;
+    public $BuyerResponsibleForShipping;
     /**
      * @var boolean | Applicable to US eBay Motors vehicle listings only. If false, the vehicle will not be
      * considered for a limited warranty by eBay. If your application lists Motors vehicles,
@@ -716,27 +717,27 @@ class ItemType
      * Web Services Guide for more information about Motors vehicle listings. Not applicable
      * to Half.com.
      */
-    public $limitedwarrantyeligible;
+    public $LimitedWarrantyEligible;
     /**
      * @var string | Returns a note from eBay displayed below items in the user's My eBay account. Not applicable
      * to Half.com.
      */
-    public $ebaynotes;
+    public $eBayNotes;
     /**
      * @var long | Specifies the number of questions buyers have posted about the item. Not applicable
      * to Half.com.
      */
-    public $questioncount;
+    public $QuestionCount;
     /**
      * @var boolean | Whether or not the item is a relisted item. This value is determined by eBay and cannot
      * be set.
      */
-    public $relisted;
+    public $Relisted;
     /**
      * @var int | Specifies how many of a certain item are available. Not applicable to Half.com.<br> <br> For
      * GetSearchResultsExpress, only returned when ItemDetails is set to Fine.<br>
      */
-    public $quantityavailable;
+    public $QuantityAvailable;
     /**
      * @var \Controle\SKUType | Identifier defined and used by a seller to identify an item. The seller can use a SKU
      * to identify one item or use the same SKU for multiple items. Preferable to ApplicationData
@@ -744,7 +745,7 @@ class ItemType
      * can be used by sellers to track complex flows of products and information. This element
      * preserves a SKU, enabling a seller to obtain it before and after a transaction is created.
      */
-    public $sku;
+    public $SKU;
     /**
      * @var boolean | Allows eBay to auto-fill some of a listing's Item Specifics (attribute) values based
      * on the listing's category (or categories). Auto-filling attributes based on a category
@@ -758,34 +759,34 @@ class ItemType
      * for a given listing, eBay will not auto-fill it on subsequent ReviseItem requests (even
      * if you remove the overridden value). <br> <br> Not applicable to Half.com.
      */
-    public $categorybasedattributesprefill;
+    public $CategoryBasedAttributesPrefill;
     /**
      * @var \Controle\SearchDetailsType | Container for values that indicate whether a listing uses the Buy It Now feature, whether
      * a listing is no more than one day old, and whether a listing has an image associated
      * with it. Not applicable to Half.com.
      */
-    public $searchdetails;
+    public $SearchDetails;
     /**
      * @var string | The postal code to use as the basis for the proximity search.
      */
-    public $postalcode;
+    public $PostalCode;
     /**
      * @var boolean | Indicates whether details about shipping costs and arrangements are specified in the
      * item description. Not applicable to Half.com.
      */
-    public $shippingtermsindescription;
+    public $ShippingTermsInDescription;
     /**
      * @var \Controle\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
      * item. All Half.com items are listed with Pre-filled Item Information.
      */
-    public $externalproductid;
+    public $ExternalProductID;
     /**
      * @var string | An ID that the seller specified when they listed the Half.com item, if any. It can be
      * used for the seller's SKU. Note that SellerInventoryID is not returned if no ID was
      * specified. (Note: The SKU field used for eBay.com listings is not applicable to Half.com
      * listings.)
      */
-    public $sellerinventoryid;
+    public $SellerInventoryID;
     /**
      * @var \Controle\PictureDetailsType | Contains the data for a picture associated with an item. Replaces the deprecated SiteHostedPicture
      * and VendorHostedPicture in the response with compatibility level 439 or greater. With
@@ -796,7 +797,7 @@ class ItemType
      * photo URL. Some categories are exempt from this requirement. See the eBay Web Services
      * Guide links below for details.<br> <br> Not applicable to Half.com.
      */
-    public $picturedetails;
+    public $PictureDetails;
     /**
      * @var \Controle\DigitalDeliveryDetailsType | Indicates that the listing is a digitally delivered item. For listing calls, specifies
      * information about the file and how it is delivered. By specifying the digital delivery
@@ -829,7 +830,7 @@ class ItemType
      * DigitalDeliveryDetails node for digital listing purchases. (If the transaction is not
      * for a digital listing, the node is not returned.)<br> <br> Not supported for Half.com.
      */
-    public $digitaldeliverydetails;
+    public $DigitalDeliveryDetails;
     /**
      * @var int | Specifies the maximum number of business days the seller commits to for shipping an
      * item to domestic buyers after receiving a cleared payment. The seller sets this to an
@@ -839,7 +840,7 @@ class ItemType
      * service. GetItem returns DispatchTimeMax only when shipping service options are specified
      * for the item.
      */
-    public $dispatchtimemax;
+    public $DispatchTimeMax;
     /**
      * @var boolean | Specifies that Skype-related information is included with an item listing, including,
      * for example, Skype Voice. Skype-related information provides buttons that enable potential
@@ -848,32 +849,32 @@ class ItemType
      * Web Services Guide), you can make communication through Skype available in listings.
      * SkypeEnabled must be true if SkypeID and SkypeContactOption are specified.
      */
-    public $skypeenabled;
+    public $SkypeEnabled;
     /**
      * @var string | Indicates the Skype name of the user. Available if the seller has a Skype account and
      * has linked it (on the eBay site) with his or her eBay account.
      */
-    public $skypeid;
+    public $SkypeID;
     /**
      * @var \Controle\SkypeOptionCodeType | Regardless of the request version you specify, if you use SkypeOption when listing an
      * item, it is mapped to the corresponding values of SkypeContactOption.
      */
-    public $skypeoption;
+    public $SkypeOption;
     /**
      * @var \Controle\SkypeContactOptionCodeType | Specifies the Skype contact options supported. Requires that SkypeEnabled is set to
      * true. Available if the seller has a Skype account and has linked it (on the eBay site)
      * with his or her eBay account.
      */
-    public $skypecontactoption;
+    public $SkypeContactOption;
     /**
      * @var boolean | Specifies the default site setting for whether categories allow best offers. True means
      * best offers are allowed site-wide, unless a specific category overrides the setting.
      */
-    public $bestofferenabled;
+    public $BestOfferEnabled;
     /**
      * @var boolean | Indicates, when true, that an item is available locally.
      */
-    public $locallisting;
+    public $LocalListing;
     /**
      * @var boolean | Only authorized Third-Party Checkout providers can use this flag. <br><br> IMPORTANT:
      * If you are not authorized to support Third Party Checkout and your application is not
@@ -908,7 +909,7 @@ class ItemType
      * determine whether an item sold on Express, use a transaction call like GetItemTransactions
      * (or the Checkout notification), and check the value of TransactionPlatform.
      */
-    public $thirdpartycheckoutintegration;
+    public $ThirdPartyCheckoutIntegration;
     /**
      * @var boolean | Preference to opt out an individual fixed price, auction with Buy It Now, or Store Inventory
      * item from eBay Express. Specify as input when listing an item to indicate that the item should
@@ -923,17 +924,17 @@ class ItemType
      * determine whether an item sold on Express, use a transaction call like GetItemTransactions
      * (or the Checkout notification), and check the value of TransactionPlatform.
      */
-    public $expressoptout;
+    public $ExpressOptOut;
     /**
      * @var \Controle\ListingCheckoutRedirectPreferenceType | ProStores listing level preferences regarding the store to which checkout should be
      * redirected for the listing if ThirdPartyCheckout is true.
      */
-    public $listingcheckoutredirectpreference;
+    public $ListingCheckoutRedirectPreference;
     /**
      * @var \Controle\ExpressDetailsType | Additional item details that only appear in eBay Express search results. In GetSearchResultsExpress,
      * only returned when ItemDetails is set to Fine.
      */
-    public $expressdetails;
+    public $ExpressDetails;
     /**
      * @var \Controle\AddressType | Contact information for sellers using the Classified Ad format for eBay Motors vehicles
      * categories. To remove seller contact information when revising or relisting an item,
@@ -941,12 +942,12 @@ class ItemType
      * cannot be deleted individually. To delete the secondary phone number, for example, you
      * must delete all of the secondary phone fields:<br> Item.SellerContactDetails.Phone2AreaOrCityCode<br> Item.SellerContactDetails.Phone2CountryCode<br> Item.SellerContactDetails.Phone2CountryPrefix<br> Item.SellerContactDetails.Phone2LocalNumber
      */
-    public $sellercontactdetails;
+    public $SellerContactDetails;
     /**
      * @var long | The number of questions asked about this item. Applies to eBay Motors Pro applications
      * only.
      */
-    public $totalquestioncount;
+    public $TotalQuestionCount;
     /**
      * @var boolean | Some listings on the eBay platform originate from eBay affiliates. Depending on the
      * relationship the affiliate has with eBay, there are times when the affiliate retains
@@ -954,11 +955,13 @@ class ItemType
      * is considered a proxy item.  Proxy items can only be edited using API requests from
      * the applications that originally listed them.
      */
-    public $proxyitem;
+    public $ProxyItem;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -968,7 +971,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationData');
         }
-        $this->applicationdata = (int)$val;
+        $this->ApplicationData = (int)$val;
     }
 
     /**
@@ -977,7 +980,7 @@ class ItemType
      */
     public function setAttributeSetArray($val)
     {
-        $this->attributesetarray = (int)$val;
+        $this->AttributeSetArray = (int)$val;
     }
 
     /**
@@ -986,7 +989,7 @@ class ItemType
      */
     public function setAttributeArray($val)
     {
-        $this->attributearray = (int)$val;
+        $this->AttributeArray = (int)$val;
     }
 
     /**
@@ -995,7 +998,7 @@ class ItemType
      */
     public function setLookupAttributeArray($val)
     {
-        $this->lookupattributearray = (int)$val;
+        $this->LookupAttributeArray = (int)$val;
     }
 
     /**
@@ -1004,7 +1007,7 @@ class ItemType
      */
     public function setApplyShippingDiscount($val)
     {
-        $this->applyshippingdiscount = (int)$val;
+        $this->ApplyShippingDiscount = (int)$val;
     }
 
     /**
@@ -1013,7 +1016,7 @@ class ItemType
      */
     public function setAutoPay($val)
     {
-        $this->autopay = (int)$val;
+        $this->AutoPay = (int)$val;
     }
 
     /**
@@ -1022,7 +1025,7 @@ class ItemType
      */
     public function setPaymentDetails($val)
     {
-        $this->paymentdetails = (int)$val;
+        $this->PaymentDetails = (int)$val;
     }
 
     /**
@@ -1031,7 +1034,7 @@ class ItemType
      */
     public function setBiddingDetails($val)
     {
-        $this->biddingdetails = (int)$val;
+        $this->BiddingDetails = (int)$val;
     }
 
     /**
@@ -1040,7 +1043,7 @@ class ItemType
      */
     public function setMotorsGermanySearchable($val)
     {
-        $this->motorsgermanysearchable = (int)$val;
+        $this->MotorsGermanySearchable = (int)$val;
     }
 
     /**
@@ -1049,7 +1052,7 @@ class ItemType
      */
     public function setBuyerProtection($val)
     {
-        $this->buyerprotection = (int)$val;
+        $this->BuyerProtection = (int)$val;
     }
 
     /**
@@ -1058,7 +1061,7 @@ class ItemType
      */
     public function setBuyItNowPrice($val)
     {
-        $this->buyitnowprice = (int)$val;
+        $this->BuyItNowPrice = (int)$val;
     }
 
     /**
@@ -1067,7 +1070,7 @@ class ItemType
      */
     public function setCategoryMappingAllowed($val)
     {
-        $this->categorymappingallowed = (int)$val;
+        $this->CategoryMappingAllowed = (int)$val;
     }
 
     /**
@@ -1076,7 +1079,7 @@ class ItemType
      */
     public function setCharity($val)
     {
-        $this->charity = (int)$val;
+        $this->Charity = (int)$val;
     }
 
     /**
@@ -1085,7 +1088,7 @@ class ItemType
      */
     public function setCountry($val)
     {
-        $this->country = (int)$val;
+        $this->Country = (int)$val;
     }
 
     /**
@@ -1094,7 +1097,7 @@ class ItemType
      */
     public function setCrossPromotion($val)
     {
-        $this->crosspromotion = (int)$val;
+        $this->CrossPromotion = (int)$val;
     }
 
     /**
@@ -1103,7 +1106,7 @@ class ItemType
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 
     /**
@@ -1115,7 +1118,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
     }
 
     /**
@@ -1124,7 +1127,7 @@ class ItemType
      */
     public function setDescriptionReviseMode($val)
     {
-        $this->descriptionrevisemode = (int)$val;
+        $this->DescriptionReviseMode = (int)$val;
     }
 
     /**
@@ -1133,7 +1136,7 @@ class ItemType
      */
     public function setDistance($val)
     {
-        $this->distance = (int)$val;
+        $this->Distance = (int)$val;
     }
 
     /**
@@ -1145,7 +1148,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->financeofferid = (int)$val;
+        $this->FinanceOfferID = (int)$val;
     }
 
     /**
@@ -1157,7 +1160,7 @@ class ItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->gifticon = (int)$val;
+        $this->GiftIcon = (int)$val;
     }
 
     /**
@@ -1166,7 +1169,7 @@ class ItemType
      */
     public function setGiftServices($val)
     {
-        $this->giftservices = (int)$val;
+        $this->GiftServices = (int)$val;
     }
 
     /**
@@ -1175,7 +1178,7 @@ class ItemType
      */
     public function setHitCounter($val)
     {
-        $this->hitcounter = (int)$val;
+        $this->HitCounter = (int)$val;
     }
 
     /**
@@ -1184,7 +1187,7 @@ class ItemType
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -1193,7 +1196,7 @@ class ItemType
      */
     public function setListingDetails($val)
     {
-        $this->listingdetails = (int)$val;
+        $this->ListingDetails = (int)$val;
     }
 
     /**
@@ -1202,7 +1205,7 @@ class ItemType
      */
     public function setListingDesigner($val)
     {
-        $this->listingdesigner = (int)$val;
+        $this->ListingDesigner = (int)$val;
     }
 
     /**
@@ -1211,7 +1214,7 @@ class ItemType
      */
     public function setListingDuration($val)
     {
-        $this->listingduration = (int)$val;
+        $this->ListingDuration = (int)$val;
     }
 
     /**
@@ -1220,7 +1223,7 @@ class ItemType
      */
     public function setListingEnhancement($val)
     {
-        $this->listingenhancement = (int)$val;
+        $this->ListingEnhancement = (int)$val;
     }
 
     /**
@@ -1229,7 +1232,7 @@ class ItemType
      */
     public function setListingType($val)
     {
-        $this->listingtype = (int)$val;
+        $this->ListingType = (int)$val;
     }
 
     /**
@@ -1238,7 +1241,7 @@ class ItemType
      */
     public function setListingSubtype($val)
     {
-        $this->listingsubtype = (int)$val;
+        $this->ListingSubtype = (int)$val;
     }
 
     /**
@@ -1250,7 +1253,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Location');
         }
-        $this->location = (int)$val;
+        $this->Location = (int)$val;
     }
 
     /**
@@ -1262,7 +1265,7 @@ class ItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->lotsize = (int)$val;
+        $this->LotSize = (int)$val;
     }
 
     /**
@@ -1271,7 +1274,7 @@ class ItemType
      */
     public function setNowAndNew($val)
     {
-        $this->nowandnew = (int)$val;
+        $this->NowAndNew = (int)$val;
     }
 
     /**
@@ -1283,7 +1286,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PartnerCode');
         }
-        $this->partnercode = (int)$val;
+        $this->PartnerCode = (int)$val;
     }
 
     /**
@@ -1295,7 +1298,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PartnerName');
         }
-        $this->partnername = (int)$val;
+        $this->PartnerName = (int)$val;
     }
 
     /**
@@ -1304,7 +1307,7 @@ class ItemType
      */
     public function setPaymentMethods($val)
     {
-        $this->paymentmethods = (int)$val;
+        $this->PaymentMethods = (int)$val;
     }
 
     /**
@@ -1316,7 +1319,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
-        $this->paypalemailaddress = (int)$val;
+        $this->PayPalEmailAddress = (int)$val;
     }
 
     /**
@@ -1325,7 +1328,7 @@ class ItemType
      */
     public function setPrimaryCategory($val)
     {
-        $this->primarycategory = (int)$val;
+        $this->PrimaryCategory = (int)$val;
     }
 
     /**
@@ -1334,7 +1337,7 @@ class ItemType
      */
     public function setPrivateListing($val)
     {
-        $this->privatelisting = (int)$val;
+        $this->PrivateListing = (int)$val;
     }
 
     /**
@@ -1343,7 +1346,7 @@ class ItemType
      */
     public function setProductListingDetails($val)
     {
-        $this->productlistingdetails = (int)$val;
+        $this->ProductListingDetails = (int)$val;
     }
 
     /**
@@ -1352,7 +1355,7 @@ class ItemType
      */
     public function setProximitySearchDetails($val)
     {
-        $this->proximitysearchdetails = (int)$val;
+        $this->ProximitySearchDetails = (int)$val;
     }
 
     /**
@@ -1364,7 +1367,7 @@ class ItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantity = (int)$val;
+        $this->Quantity = (int)$val;
     }
 
     /**
@@ -1376,7 +1379,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PrivateNotes');
         }
-        $this->privatenotes = (int)$val;
+        $this->PrivateNotes = (int)$val;
     }
 
     /**
@@ -1388,7 +1391,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->regionid = (int)$val;
+        $this->RegionID = (int)$val;
     }
 
     /**
@@ -1397,7 +1400,7 @@ class ItemType
      */
     public function setRelistLink($val)
     {
-        $this->relistlink = (int)$val;
+        $this->RelistLink = (int)$val;
     }
 
     /**
@@ -1406,7 +1409,7 @@ class ItemType
      */
     public function setReservePrice($val)
     {
-        $this->reserveprice = (int)$val;
+        $this->ReservePrice = (int)$val;
     }
 
     /**
@@ -1415,7 +1418,7 @@ class ItemType
      */
     public function setReviseStatus($val)
     {
-        $this->revisestatus = (int)$val;
+        $this->ReviseStatus = (int)$val;
     }
 
     /**
@@ -1424,7 +1427,7 @@ class ItemType
      */
     public function setScheduleTime($val)
     {
-        $this->scheduletime = (int)$val;
+        $this->ScheduleTime = (int)$val;
     }
 
     /**
@@ -1433,7 +1436,7 @@ class ItemType
      */
     public function setSecondaryCategory($val)
     {
-        $this->secondarycategory = (int)$val;
+        $this->SecondaryCategory = (int)$val;
     }
 
     /**
@@ -1442,7 +1445,7 @@ class ItemType
      */
     public function setFreeAddedCategory($val)
     {
-        $this->freeaddedcategory = (int)$val;
+        $this->FreeAddedCategory = (int)$val;
     }
 
     /**
@@ -1451,7 +1454,7 @@ class ItemType
      */
     public function setSiteHostedPicture($val)
     {
-        $this->sitehostedpicture = (int)$val;
+        $this->SiteHostedPicture = (int)$val;
     }
 
     /**
@@ -1460,7 +1463,7 @@ class ItemType
      */
     public function setSeller($val)
     {
-        $this->seller = (int)$val;
+        $this->Seller = (int)$val;
     }
 
     /**
@@ -1469,7 +1472,7 @@ class ItemType
      */
     public function setSellingStatus($val)
     {
-        $this->sellingstatus = (int)$val;
+        $this->SellingStatus = (int)$val;
     }
 
     /**
@@ -1478,7 +1481,7 @@ class ItemType
      */
     public function setShippingOption($val)
     {
-        $this->shippingoption = (int)$val;
+        $this->ShippingOption = (int)$val;
     }
 
     /**
@@ -1487,7 +1490,7 @@ class ItemType
      */
     public function setShippingDetails($val)
     {
-        $this->shippingdetails = (int)$val;
+        $this->ShippingDetails = (int)$val;
     }
 
     /**
@@ -1496,7 +1499,7 @@ class ItemType
      */
     public function setShippingRegions($val)
     {
-        $this->shippingregions = (int)$val;
+        $this->ShippingRegions = (int)$val;
     }
 
     /**
@@ -1505,7 +1508,7 @@ class ItemType
      */
     public function setShippingTerms($val)
     {
-        $this->shippingterms = (int)$val;
+        $this->ShippingTerms = (int)$val;
     }
 
     /**
@@ -1517,7 +1520,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipToLocations');
         }
-        $this->shiptolocations = (int)$val;
+        $this->ShipToLocations = (int)$val;
     }
 
     /**
@@ -1526,7 +1529,7 @@ class ItemType
      */
     public function setSite($val)
     {
-        $this->site = (int)$val;
+        $this->Site = (int)$val;
     }
 
     /**
@@ -1535,7 +1538,7 @@ class ItemType
      */
     public function setStartPrice($val)
     {
-        $this->startprice = (int)$val;
+        $this->StartPrice = (int)$val;
     }
 
     /**
@@ -1544,7 +1547,7 @@ class ItemType
      */
     public function setStorefront($val)
     {
-        $this->storefront = (int)$val;
+        $this->Storefront = (int)$val;
     }
 
     /**
@@ -1556,7 +1559,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SubTitle');
         }
-        $this->subtitle = (int)$val;
+        $this->SubTitle = (int)$val;
     }
 
     /**
@@ -1565,7 +1568,7 @@ class ItemType
      */
     public function setTimeLeft($val)
     {
-        $this->timeleft = (int)$val;
+        $this->TimeLeft = (int)$val;
     }
 
     /**
@@ -1577,7 +1580,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
     }
 
     /**
@@ -1586,7 +1589,7 @@ class ItemType
      */
     public function setUUID($val)
     {
-        $this->uuid = (int)$val;
+        $this->UUID = (int)$val;
     }
 
     /**
@@ -1595,7 +1598,7 @@ class ItemType
      */
     public function setVATDetails($val)
     {
-        $this->vatdetails = (int)$val;
+        $this->VATDetails = (int)$val;
     }
 
     /**
@@ -1604,7 +1607,7 @@ class ItemType
      */
     public function setVendorHostedPicture($val)
     {
-        $this->vendorhostedpicture = (int)$val;
+        $this->VendorHostedPicture = (int)$val;
     }
 
     /**
@@ -1616,7 +1619,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerVacationNote');
         }
-        $this->sellervacationnote = (int)$val;
+        $this->SellerVacationNote = (int)$val;
     }
 
     /**
@@ -1625,7 +1628,7 @@ class ItemType
      */
     public function setWatchCount($val)
     {
-        $this->watchcount = (int)$val;
+        $this->WatchCount = (int)$val;
     }
 
     /**
@@ -1634,7 +1637,7 @@ class ItemType
      */
     public function setHitCount($val)
     {
-        $this->hitcount = (int)$val;
+        $this->HitCount = (int)$val;
     }
 
     /**
@@ -1643,7 +1646,7 @@ class ItemType
      */
     public function setDisableBuyerRequirements($val)
     {
-        $this->disablebuyerrequirements = (int)$val;
+        $this->DisableBuyerRequirements = (int)$val;
     }
 
     /**
@@ -1652,7 +1655,7 @@ class ItemType
      */
     public function setBuyerRequirements($val)
     {
-        $this->buyerrequirements = (int)$val;
+        $this->BuyerRequirements = (int)$val;
     }
 
     /**
@@ -1661,7 +1664,7 @@ class ItemType
      */
     public function setBestOfferDetails($val)
     {
-        $this->bestofferdetails = (int)$val;
+        $this->BestOfferDetails = (int)$val;
     }
 
     /**
@@ -1670,7 +1673,7 @@ class ItemType
      */
     public function setAnythingPoints($val)
     {
-        $this->anythingpoints = (int)$val;
+        $this->AnythingPoints = (int)$val;
     }
 
     /**
@@ -1679,7 +1682,7 @@ class ItemType
      */
     public function setLiveAuctionDetails($val)
     {
-        $this->liveauctiondetails = (int)$val;
+        $this->LiveAuctionDetails = (int)$val;
     }
 
     /**
@@ -1688,7 +1691,7 @@ class ItemType
      */
     public function setLocationDefaulted($val)
     {
-        $this->locationdefaulted = (int)$val;
+        $this->LocationDefaulted = (int)$val;
     }
 
     /**
@@ -1697,7 +1700,7 @@ class ItemType
      */
     public function setThirdPartyCheckout($val)
     {
-        $this->thirdpartycheckout = (int)$val;
+        $this->ThirdPartyCheckout = (int)$val;
     }
 
     /**
@@ -1706,7 +1709,7 @@ class ItemType
      */
     public function setUseTaxTable($val)
     {
-        $this->usetaxtable = (int)$val;
+        $this->UseTaxTable = (int)$val;
     }
 
     /**
@@ -1715,7 +1718,7 @@ class ItemType
      */
     public function setGetItFast($val)
     {
-        $this->getitfast = (int)$val;
+        $this->GetItFast = (int)$val;
     }
 
     /**
@@ -1724,7 +1727,7 @@ class ItemType
      */
     public function setBuyerResponsibleForShipping($val)
     {
-        $this->buyerresponsibleforshipping = (int)$val;
+        $this->BuyerResponsibleForShipping = (int)$val;
     }
 
     /**
@@ -1733,7 +1736,7 @@ class ItemType
      */
     public function setLimitedWarrantyEligible($val)
     {
-        $this->limitedwarrantyeligible = (int)$val;
+        $this->LimitedWarrantyEligible = (int)$val;
     }
 
     /**
@@ -1745,7 +1748,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayNotes');
         }
-        $this->ebaynotes = (int)$val;
+        $this->eBayNotes = (int)$val;
     }
 
     /**
@@ -1754,7 +1757,7 @@ class ItemType
      */
     public function setQuestionCount($val)
     {
-        $this->questioncount = (int)$val;
+        $this->QuestionCount = (int)$val;
     }
 
     /**
@@ -1763,7 +1766,7 @@ class ItemType
      */
     public function setRelisted($val)
     {
-        $this->relisted = (int)$val;
+        $this->Relisted = (int)$val;
     }
 
     /**
@@ -1775,7 +1778,7 @@ class ItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantityavailable = (int)$val;
+        $this->QuantityAvailable = (int)$val;
     }
 
     /**
@@ -1784,7 +1787,7 @@ class ItemType
      */
     public function setSKU($val)
     {
-        $this->sku = (int)$val;
+        $this->SKU = (int)$val;
     }
 
     /**
@@ -1793,7 +1796,7 @@ class ItemType
      */
     public function setCategoryBasedAttributesPrefill($val)
     {
-        $this->categorybasedattributesprefill = (int)$val;
+        $this->CategoryBasedAttributesPrefill = (int)$val;
     }
 
     /**
@@ -1802,7 +1805,7 @@ class ItemType
      */
     public function setSearchDetails($val)
     {
-        $this->searchdetails = (int)$val;
+        $this->SearchDetails = (int)$val;
     }
 
     /**
@@ -1814,7 +1817,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->postalcode = (int)$val;
+        $this->PostalCode = (int)$val;
     }
 
     /**
@@ -1823,7 +1826,7 @@ class ItemType
      */
     public function setShippingTermsInDescription($val)
     {
-        $this->shippingtermsindescription = (int)$val;
+        $this->ShippingTermsInDescription = (int)$val;
     }
 
     /**
@@ -1832,7 +1835,7 @@ class ItemType
      */
     public function setExternalProductID($val)
     {
-        $this->externalproductid = (int)$val;
+        $this->ExternalProductID = (int)$val;
     }
 
     /**
@@ -1844,7 +1847,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->sellerinventoryid = (int)$val;
+        $this->SellerInventoryID = (int)$val;
     }
 
     /**
@@ -1853,7 +1856,7 @@ class ItemType
      */
     public function setPictureDetails($val)
     {
-        $this->picturedetails = (int)$val;
+        $this->PictureDetails = (int)$val;
     }
 
     /**
@@ -1862,7 +1865,7 @@ class ItemType
      */
     public function setDigitalDeliveryDetails($val)
     {
-        $this->digitaldeliverydetails = (int)$val;
+        $this->DigitalDeliveryDetails = (int)$val;
     }
 
     /**
@@ -1874,7 +1877,7 @@ class ItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->dispatchtimemax = (int)$val;
+        $this->DispatchTimeMax = (int)$val;
     }
 
     /**
@@ -1883,7 +1886,7 @@ class ItemType
      */
     public function setSkypeEnabled($val)
     {
-        $this->skypeenabled = (int)$val;
+        $this->SkypeEnabled = (int)$val;
     }
 
     /**
@@ -1895,7 +1898,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->skypeid = (int)$val;
+        $this->SkypeID = (int)$val;
     }
 
     /**
@@ -1904,7 +1907,7 @@ class ItemType
      */
     public function setSkypeOption($val)
     {
-        $this->skypeoption = (int)$val;
+        $this->SkypeOption = (int)$val;
     }
 
     /**
@@ -1913,7 +1916,7 @@ class ItemType
      */
     public function setSkypeContactOption($val)
     {
-        $this->skypecontactoption = (int)$val;
+        $this->SkypeContactOption = (int)$val;
     }
 
     /**
@@ -1922,7 +1925,7 @@ class ItemType
      */
     public function setBestOfferEnabled($val)
     {
-        $this->bestofferenabled = (int)$val;
+        $this->BestOfferEnabled = (int)$val;
     }
 
     /**
@@ -1931,7 +1934,7 @@ class ItemType
      */
     public function setLocalListing($val)
     {
-        $this->locallisting = (int)$val;
+        $this->LocalListing = (int)$val;
     }
 
     /**
@@ -1940,7 +1943,7 @@ class ItemType
      */
     public function setThirdPartyCheckoutIntegration($val)
     {
-        $this->thirdpartycheckoutintegration = (int)$val;
+        $this->ThirdPartyCheckoutIntegration = (int)$val;
     }
 
     /**
@@ -1949,7 +1952,7 @@ class ItemType
      */
     public function setExpressOptOut($val)
     {
-        $this->expressoptout = (int)$val;
+        $this->ExpressOptOut = (int)$val;
     }
 
     /**
@@ -1958,7 +1961,7 @@ class ItemType
      */
     public function setListingCheckoutRedirectPreference($val)
     {
-        $this->listingcheckoutredirectpreference = (int)$val;
+        $this->ListingCheckoutRedirectPreference = (int)$val;
     }
 
     /**
@@ -1967,7 +1970,7 @@ class ItemType
      */
     public function setExpressDetails($val)
     {
-        $this->expressdetails = (int)$val;
+        $this->ExpressDetails = (int)$val;
     }
 
     /**
@@ -1976,7 +1979,7 @@ class ItemType
      */
     public function setSellerContactDetails($val)
     {
-        $this->sellercontactdetails = (int)$val;
+        $this->SellerContactDetails = (int)$val;
     }
 
     /**
@@ -1985,7 +1988,7 @@ class ItemType
      */
     public function setTotalQuestionCount($val)
     {
-        $this->totalquestioncount = (int)$val;
+        $this->TotalQuestionCount = (int)$val;
     }
 
     /**
@@ -1994,7 +1997,7 @@ class ItemType
      */
     public function setProxyItem($val)
     {
-        $this->proxyitem = (int)$val;
+        $this->ProxyItem = (int)$val;
     }
 
     /**

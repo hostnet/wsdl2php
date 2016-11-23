@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class DeleteContact
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var string
      */
-    public $contacthandle;
+    public $contactHandle;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class DeleteContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class DeleteContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for contactHandle');
         }
-        $this->contacthandle = (int)$val;
+        $this->contactHandle = (int)$val;
     }
 }

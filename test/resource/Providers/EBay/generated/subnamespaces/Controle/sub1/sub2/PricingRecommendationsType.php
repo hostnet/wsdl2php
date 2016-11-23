@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class PricingRecommendationsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ProductInfoType | A product's pricing data (if any) and brief information about the product.
 	 */
-	public $productinfo;
+	public $ProductInfo;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ProductInfoType $val
 	 * @throws Exception
 	 */
 	public function setProductInfo($val)
 	{
-        $this->productinfo = (int)$val;
+        $this->ProductInfo = (int)$val;
 	}
 }

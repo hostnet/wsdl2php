@@ -8,21 +8,24 @@ namespace Controle\sub1\sub2;
  */
 class ListingAnalyzerRecommendationsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ListingTipArrayType | A collection of tips returned from the Listing Analyzer recommendation engine.
 	 */
-	public $listingtiparray;
+	public $ListingTipArray;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ListingTipArrayType $val
 	 * @throws Exception
 	 */
 	public function setListingTipArray($val)
 	{
-        $this->listingtiparray = (int)$val;
+        $this->ListingTipArray = (int)$val;
 	}
 
 	/**

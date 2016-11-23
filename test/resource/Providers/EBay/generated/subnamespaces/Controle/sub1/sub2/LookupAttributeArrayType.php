@@ -11,16 +11,19 @@ namespace Controle\sub1\sub2;
  */
 class LookupAttributeArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\LookupAttributeType | The condition of the item.
 	 */
-	public $lookupattribute;
+	public $LookupAttribute;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param LookupAttributeType $val
 	 * @throws Exception
 	 */
 	public function setLookupAttribute($val)
 	{
-        $this->lookupattribute = (int)$val;
+        $this->LookupAttribute = (int)$val;
 	}
 }

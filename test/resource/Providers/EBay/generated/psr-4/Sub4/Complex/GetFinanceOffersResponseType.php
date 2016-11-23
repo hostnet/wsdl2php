@@ -9,17 +9,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetFinanceOffersResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Count of the feedbacks received by the user for the time period prior to the call indicated
      * in PeriodInDays. Returned if no detail level is specified.
      */
-    public $count;
+    public $Count;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FinanceOfferArrayType | Set of currently available finance offers or a set that contains a specific finance
      * offer (if a particular finance offer ID was specified in the call input). Only returned
      * if finance offers meeting the request criteria exist.
      */
-    public $financeofferarray;
+    public $FinanceOfferArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -29,7 +32,7 @@ class GetFinanceOffersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->count = (int)$val;
+        $this->Count = (int)$val;
     }
 
     /**
@@ -38,6 +41,6 @@ class GetFinanceOffersResponseType extends
      */
     public function setFinanceOfferArray($val)
     {
-        $this->financeofferarray = (int)$val;
+        $this->FinanceOfferArray = (int)$val;
     }
 }

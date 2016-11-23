@@ -12,6 +12,7 @@ namespace Controle\sub1\sub2;
  */
 class AmountType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var double
 	 */
@@ -19,7 +20,9 @@ class AmountType
 	/**
 	 * @var \Controle\sub1\sub2\CurrencyCodeType
 	 */
-	public $currencyid;
+	public $currencyID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param double $val
 	 * @throws Exception
@@ -35,6 +38,6 @@ class AmountType
 	 */
 	public function setCurrencyID($val)
 	{
-        $this->currencyid = (int)$val;
+        $this->currencyID = (int)$val;
 	}
 }

@@ -12,17 +12,18 @@ namespace Controle;
 class GetSearchResultsResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\SearchResultItemArrayType | Contains the returned item listings, if any. The data for each listing is returned in
      * an ItemType object.
      */
-    public $searchresultitemarray;
+    public $SearchResultItemArray;
     /**
      * @var int | Indicates the maximum number of Want It Now posts that can be returned in a WantItNowPostArray
      * for a request. This value can be specified in the request by  EntriesPerPage in Pagination
      * in the request.
      */
-    public $itemsperpage;
+    public $ItemsPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -31,23 +32,23 @@ class GetSearchResultsResponseType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var boolean | Indicates whether there are additional Want It Now posts that meet the search criteria.
      */
-    public $hasmoreitems;
+    public $HasMoreItems;
     /**
      * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
     /**
      * @var \Controle\CategoryArrayType | Statistical information about categories that contain items that match the query, if
      * any. Returns empty if no matches are found or when the Categories filter was not passed
      * in the request. (For categories associated with specific items, see items returned in
      * each search result.) Shows the distribution of items across each category.
      */
-    public $categoryarray;
+    public $CategoryArray;
     /**
      * @var \Controle\BuyingGuideDetailsType | Contains URLs and other information about relevant buying guides (if any), as well as
      * the site's buying guide hub. Unavailable in the Sandbox environment. Buying guides are
@@ -56,13 +57,13 @@ class GetSearchResultsResponseType extends
      * for them. Only returned for product finder searches (using SearchRequest.SearchAttributes)
      * and for searches that retrieve matching categories along with item data (using Categories.CategoriesOnly=false).
      */
-    public $buyingguidedetails;
+    public $BuyingGuideDetails;
     /**
      * @var \Controle\ExpansionArrayType | Returned for the US site, US eBay Motors site, and Canada site; returned for other international
      * sites beginning in mid-September 2006. Contains items listed in the Store Inventory
      * Format, if the request specifies that ExpandSearch is true.
      */
-    public $storeexpansionarray;
+    public $StoreExpansionArray;
     /**
      * @var \Controle\ExpansionArrayType | Can be returned if the request specifies that ExpandSearch is true. Provides additional
      * search results when a small result set would have been returned with the original search.
@@ -72,7 +73,7 @@ class GetSearchResultsResponseType extends
      * as other containers. The InternationalExpansionArray container contains items available
      * from international sellers.
      */
-    public $internationalexpansionarray;
+    public $InternationalExpansionArray;
     /**
      * @var \Controle\ExpansionArrayType | Can be returned if the request specifies that ExpandSearch is true. Provides additional
      * search results when a small result set would have been returned with the original search.
@@ -82,7 +83,7 @@ class GetSearchResultsResponseType extends
      * as other containers. The FilterRemovedExpansionArray container contains items that would
      * be returned if filters such as PriceRangeFilter are removed.
      */
-    public $filterremovedexpansionarray;
+    public $FilterRemovedExpansionArray;
     /**
      * @var \Controle\ExpansionArrayType | Can be returned if the request specifies that ExpandSearch is true. Provides additional
      * search results when a small result set would have been returned with the original search.
@@ -92,7 +93,7 @@ class GetSearchResultsResponseType extends
      * as other containers. The AllCategoriesExpansionArray container contains items available
      * if category filters are removed.
      */
-    public $allcategoriesexpansionarray;
+    public $AllCategoriesExpansionArray;
     /**
      * @var \Controle\SpellingSuggestionType | Suggestion for a different spelling of the search term or terms, along with the number
      * of matching items that would have been returned if the suggestions had been used. The
@@ -101,19 +102,21 @@ class GetSearchResultsResponseType extends
      * in items, so suggestions vary over time and depend on whether a word or word combination
      * is in one or more items.
      */
-    public $spellingsuggestion;
+    public $SpellingSuggestion;
     /**
      * @var \Controle\RelatedSearchKeywordArrayType | Container for keywords related to the original keywords in the request. Can be returned
      * if the request specified more than zero in the MaxRelatedSearchKeywords field.
      */
-    public $relatedsearchkeywordarray;
+    public $RelatedSearchKeywordArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SearchResultItemArrayType $val
      * @throws Exception
      */
     public function setSearchResultItemArray($val)
     {
-        $this->searchresultitemarray = (int)$val;
+        $this->SearchResultItemArray = (int)$val;
     }
 
     /**
@@ -125,7 +128,7 @@ class GetSearchResultsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->itemsperpage = (int)$val;
+        $this->ItemsPerPage = (int)$val;
     }
 
     /**
@@ -137,7 +140,7 @@ class GetSearchResultsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -146,7 +149,7 @@ class GetSearchResultsResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->hasmoreitems = (int)$val;
+        $this->HasMoreItems = (int)$val;
     }
 
     /**
@@ -155,7 +158,7 @@ class GetSearchResultsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 
     /**
@@ -164,7 +167,7 @@ class GetSearchResultsResponseType extends
      */
     public function setCategoryArray($val)
     {
-        $this->categoryarray = (int)$val;
+        $this->CategoryArray = (int)$val;
     }
 
     /**
@@ -173,7 +176,7 @@ class GetSearchResultsResponseType extends
      */
     public function setBuyingGuideDetails($val)
     {
-        $this->buyingguidedetails = (int)$val;
+        $this->BuyingGuideDetails = (int)$val;
     }
 
     /**
@@ -182,7 +185,7 @@ class GetSearchResultsResponseType extends
      */
     public function setStoreExpansionArray($val)
     {
-        $this->storeexpansionarray = (int)$val;
+        $this->StoreExpansionArray = (int)$val;
     }
 
     /**
@@ -191,7 +194,7 @@ class GetSearchResultsResponseType extends
      */
     public function setInternationalExpansionArray($val)
     {
-        $this->internationalexpansionarray = (int)$val;
+        $this->InternationalExpansionArray = (int)$val;
     }
 
     /**
@@ -200,7 +203,7 @@ class GetSearchResultsResponseType extends
      */
     public function setFilterRemovedExpansionArray($val)
     {
-        $this->filterremovedexpansionarray = (int)$val;
+        $this->FilterRemovedExpansionArray = (int)$val;
     }
 
     /**
@@ -209,7 +212,7 @@ class GetSearchResultsResponseType extends
      */
     public function setAllCategoriesExpansionArray($val)
     {
-        $this->allcategoriesexpansionarray = (int)$val;
+        $this->AllCategoriesExpansionArray = (int)$val;
     }
 
     /**
@@ -218,7 +221,7 @@ class GetSearchResultsResponseType extends
      */
     public function setSpellingSuggestion($val)
     {
-        $this->spellingsuggestion = (int)$val;
+        $this->SpellingSuggestion = (int)$val;
     }
 
     /**
@@ -227,6 +230,6 @@ class GetSearchResultsResponseType extends
      */
     public function setRelatedSearchKeywordArray($val)
     {
-        $this->relatedsearchkeywordarray = (int)$val;
+        $this->RelatedSearchKeywordArray = (int)$val;
     }
 }

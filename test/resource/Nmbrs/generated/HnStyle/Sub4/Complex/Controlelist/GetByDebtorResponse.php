@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex\Controlelist;
 
 class GetByDebtorResponse
 {
+    // @codingStandardsIgnoreStart
     /**
-     * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Employee
+     * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Company
      */
-    public $list_getbydebtorresult;
+    public $List_GetByDebtorResult;
+    // @codingStandardsIgnoreEnd
+
     /**
-     * @param ArrayOfEmployee $val
+     * @param ArrayOfCompany $val
      * @throws Exception
      */
     public function setListGetByDebtorResult($val)
     {
-        $this->list_getbydebtorresult = (int)$val;
+        $this->List_GetByDebtorResult = (int)$val;
     }
 }

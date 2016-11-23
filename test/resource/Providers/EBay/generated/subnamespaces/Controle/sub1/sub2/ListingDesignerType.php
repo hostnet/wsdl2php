@@ -12,6 +12,7 @@ namespace Controle\sub1\sub2;
  */
 class ListingDesignerType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Identifies the Layout template to use when displaying the            item's description.
 	 * Call GetDescriptionTemplates for valid IDs.            Set to false in GetDescriptionTemplates
@@ -21,21 +22,23 @@ class ListingDesignerType
 	 * the listing if you specify             ListingDesignerType without LayoutID. Alternatively,
 	 * to remove this value             when revising or relisting an item, use DeletedField.
 	 */
-	public $layoutid;
+	public $LayoutID;
 	/**
 	 * @var boolean | If true, indicates that the item's picture will be enlarged to fit description
 	 *    of the item.
 	 */
-	public $optimalpicturesize;
+	public $OptimalPictureSize;
 	/**
 	 * @var int | Unique identifier for each theme in this group. There is at least one theme in a theme
 	 * group.
 	 */
-	public $themeid;
+	public $ThemeID;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -45,7 +48,7 @@ class ListingDesignerType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->layoutid = (int)$val;
+        $this->LayoutID = (int)$val;
 	}
 
 	/**
@@ -54,7 +57,7 @@ class ListingDesignerType
 	 */
 	public function setOptimalPictureSize($val)
 	{
-        $this->optimalpicturesize = (int)$val;
+        $this->OptimalPictureSize = (int)$val;
 	}
 
 	/**
@@ -66,7 +69,7 @@ class ListingDesignerType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->themeid = (int)$val;
+        $this->ThemeID = (int)$val;
 	}
 
 	/**

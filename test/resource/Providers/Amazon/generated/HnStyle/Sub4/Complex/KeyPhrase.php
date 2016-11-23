@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class KeyPhrase
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $keyphrase;
+    public $KeyPhrase;
     /**
      * @var string
      */
-    public $type;
+    public $Type;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class KeyPhrase
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for KeyPhrase');
         }
-        $this->keyphrase = (int)$val;
+        $this->KeyPhrase = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class KeyPhrase
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Type');
         }
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
     }
 }

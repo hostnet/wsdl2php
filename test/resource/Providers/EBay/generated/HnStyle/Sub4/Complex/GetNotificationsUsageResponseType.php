@@ -18,40 +18,43 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetNotificationsUsageResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
      */
-    public $starttime;
+    public $StartTime;
     /**
      * @var dateTime | Time stamp (in GMT) when the listing is scheduled to end (calculated based on the values
      * of StartTime and ListingDuration) or the actual end time if the item has ended.
      */
-    public $endtime;
+    public $EndTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\NotificationDetailsArrayType | List of notification objects representing the notifications sent to an application for
      * the given time period. It will only be returned if ItemID was specified in the input
      * request.
      */
-    public $notificationdetailsarray;
+    public $NotificationDetailsArray;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MarkUpMarkDownHistoryType | List of objects representing MarkUp or MarkDown history for a given appID and for given
      * StartTime and EndTime. This node will always be returned.
      */
-    public $markupmarkdownhistory;
+    public $MarkUpMarkDownHistory;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\NotificationStatisticsType | Summary information about number of notifications that were successfully delivered,
      * queued, failed, connection attempts made, connection timeouts, http errors for the given
      * appID and given time period. By default, statistics for only one day (Now-1day) is included.
      * Maximum time duration allowed is 3 days (Now-3days).
      */
-    public $notificationstatistics;
+    public $NotificationStatistics;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param dateTime $val
      * @throws Exception
      */
     public function setStartTime($val)
     {
-        $this->starttime = (int)$val;
+        $this->StartTime = (int)$val;
     }
 
     /**
@@ -60,7 +63,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->endtime = (int)$val;
+        $this->EndTime = (int)$val;
     }
 
     /**
@@ -69,7 +72,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setNotificationDetailsArray($val)
     {
-        $this->notificationdetailsarray = (int)$val;
+        $this->NotificationDetailsArray = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setMarkUpMarkDownHistory($val)
     {
-        $this->markupmarkdownhistory = (int)$val;
+        $this->MarkUpMarkDownHistory = (int)$val;
     }
 
     /**
@@ -87,6 +90,6 @@ class GetNotificationsUsageResponseType extends
      */
     public function setNotificationStatistics($val)
     {
-        $this->notificationstatistics = (int)$val;
+        $this->NotificationStatistics = (int)$val;
     }
 }

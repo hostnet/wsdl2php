@@ -13,17 +13,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetStoreCategoryUpdateStatusResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TaskStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $status;
+    public $Status;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param TaskStatusCodeType $val
      * @throws Exception
      */
     public function setStatus($val)
     {
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 }

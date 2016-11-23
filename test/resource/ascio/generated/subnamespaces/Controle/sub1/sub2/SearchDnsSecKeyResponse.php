@@ -4,21 +4,24 @@ namespace Controle\sub1\sub2;
 
 class SearchDnsSecKeyResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $searchdnsseckeyresult;
+	public $SearchDnsSecKeyResult;
 	/**
 	 * @var array \Controle\sub1\sub2\DnsSecKey
 	 */
-	public $dnsseckeys;
+	public $dnsSecKeys;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setSearchDnsSecKeyResult($val)
 	{
-        $this->searchdnsseckeyresult = (int)$val;
+        $this->SearchDnsSecKeyResult = (int)$val;
 	}
 
 	/**
@@ -27,6 +30,6 @@ class SearchDnsSecKeyResponse
 	 */
 	public function setDnsSecKeys($val)
 	{
-        $this->dnsseckeys = (int)$val;
+        $this->dnsSecKeys = (int)$val;
 	}
 }

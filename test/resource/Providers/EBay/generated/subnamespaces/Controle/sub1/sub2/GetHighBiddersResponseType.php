@@ -10,12 +10,13 @@ namespace Controle\sub1\sub2;
 class GetHighBiddersResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\OfferArrayType | Contains a list of zero, one, or multiple OfferType objects. Each OfferType object represents
 	 * the data for one high bidder. See the schema documentation for OfferType for details on
 	 * its properties and their meanings.
 	 */
-	public $bidarray;
+	public $BidArray;
 	/**
 	 * @var \Controle\sub1\sub2\ListingStatusCodeType | Specifies an active or ended listing's status in eBay's processing workflow. If a listing
 	 * ends with a sale (or sales), eBay needs to update the sale details (e.g., total price and
@@ -24,14 +25,16 @@ class GetHighBiddersResponseType extends
 	 * final value fee is available, use this listing status information to determine whether
 	 * eBay has finished processing the listing.
 	 */
-	public $listingstatus;
+	public $ListingStatus;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param OfferArrayType $val
 	 * @throws Exception
 	 */
 	public function setBidArray($val)
 	{
-        $this->bidarray = (int)$val;
+        $this->BidArray = (int)$val;
 	}
 
 	/**
@@ -40,6 +43,6 @@ class GetHighBiddersResponseType extends
 	 */
 	public function setListingStatus($val)
 	{
-        $this->listingstatus = (int)$val;
+        $this->ListingStatus = (int)$val;
 	}
 }

@@ -4,33 +4,36 @@ namespace Controle;
 
 class ApprovalDocumentation
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ApprovalDocumentationType
 	 */
-	public $type;
+	public $Type;
 	/**
 	 * @var array \Controle\string
 	 */
-	public $objectnames;
+	public $ObjectNames;
 	/**
 	 * @var string
 	 */
-	public $orderid;
+	public $OrderId;
 	/**
 	 * @var array \Controle\Attachment
 	 */
-	public $attachments;
+	public $Attachments;
 	/**
 	 * @var \Controle\Extensions
 	 */
-	public $extensions;
+	public $Extensions;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ApprovalDocumentationType $val
 	 * @throws Exception
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
 	}
 
 	/**
@@ -39,7 +42,7 @@ class ApprovalDocumentation
 	 */
 	public function setObjectNames($val)
 	{
-        $this->objectnames = (int)$val;
+        $this->ObjectNames = (int)$val;
 	}
 
 	/**
@@ -51,7 +54,7 @@ class ApprovalDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderId');
         }
-        $this->orderid = (int)$val;
+        $this->OrderId = (int)$val;
 	}
 
 	/**
@@ -60,7 +63,7 @@ class ApprovalDocumentation
 	 */
 	public function setAttachments($val)
 	{
-        $this->attachments = (int)$val;
+        $this->Attachments = (int)$val;
 	}
 
 	/**
@@ -69,6 +72,6 @@ class ApprovalDocumentation
 	 */
 	public function setExtensions($val)
 	{
-        $this->extensions = (int)$val;
+        $this->Extensions = (int)$val;
 	}
 }

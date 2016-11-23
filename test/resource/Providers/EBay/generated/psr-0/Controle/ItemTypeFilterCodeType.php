@@ -4,6 +4,7 @@ namespace Controle;
 
 class ItemTypeFilterCodeType
 {
+	// @codingStandardsIgnoreStart
 	const AUCTIONITEMSONLY                = 'AuctionItemsOnly';
 	const FIXEDPRICEDITEM                 = 'FixedPricedItem';
 	const ALLITEMS                        = 'AllItems';
@@ -14,4 +15,5 @@ class ItemTypeFilterCodeType
 	const ALLFIXEDPRICEITEMTYPES          = 'AllFixedPriceItemTypes';
 	const CUSTOMCODE                      = 'CustomCode';
 	const CLASSIFIEDITEMSONLY             = 'ClassifiedItemsOnly';
+	// @codingStandardsIgnoreEnd
 }

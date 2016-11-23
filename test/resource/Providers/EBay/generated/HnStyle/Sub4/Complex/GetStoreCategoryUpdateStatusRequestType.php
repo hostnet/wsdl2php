@@ -12,6 +12,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetStoreCategoryUpdateStatusRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var long | The task ID associated with the category structure change request. If the SetStoreCategories
      * call is process synchronously, the task ID is 0. If the category structure changes affect
@@ -19,13 +20,15 @@ class GetStoreCategoryUpdateStatusRequestType extends
      * a positive number. Use the task ID with GetStoreCategoryUpdateStatus to monitor the
      * status of asynchronously processed changes.
      */
-    public $taskid;
+    public $TaskID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param long $val
      * @throws Exception
      */
     public function setTaskID($val)
     {
-        $this->taskid = (int)$val;
+        $this->TaskID = (int)$val;
     }
 }

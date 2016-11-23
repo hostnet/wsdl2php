@@ -8,6 +8,7 @@ namespace Controle;
  */
 class CategoryMappingType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -15,11 +16,13 @@ class CategoryMappingType
 	/**
 	 * @var string
 	 */
-	public $oldid;
+	public $oldID;
 	/**
 	 * @var string
 	 */
 	public $id;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception
@@ -38,7 +41,7 @@ class CategoryMappingType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for oldID');
         }
-        $this->oldid = (int)$val;
+        $this->oldID = (int)$val;
 	}
 
 	/**

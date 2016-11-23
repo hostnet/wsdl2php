@@ -5,21 +5,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class VeRoReportItemsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var long | A unique packet identifier for the items reported.
      */
-    public $veroreportpacketid;
+    public $VeROReportPacketID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\VeROReportPacketStatusCodeType | The processing status of the packet.
      */
-    public $veroreportpacketstatus;
+    public $VeROReportPacketStatus;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param long $val
      * @throws Exception
      */
     public function setVeROReportPacketID($val)
     {
-        $this->veroreportpacketid = (int)$val;
+        $this->VeROReportPacketID = (int)$val;
     }
 
     /**
@@ -28,6 +31,6 @@ class VeRoReportItemsResponseType extends
      */
     public function setVeROReportPacketStatus($val)
     {
-        $this->veroreportpacketstatus = (int)$val;
+        $this->VeROReportPacketStatus = (int)$val;
     }
 }

@@ -9,14 +9,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class NotificationMessageType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | (out) The SMS message.
      */
-    public $messagebody;
+    public $MessageBody;
     /**
      * @var string | (out) The EIAS userId.
      */
-    public $eias;
+    public $EIAS;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -26,7 +29,7 @@ class NotificationMessageType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageBody');
         }
-        $this->messagebody = (int)$val;
+        $this->MessageBody = (int)$val;
     }
 
     /**
@@ -38,6 +41,6 @@ class NotificationMessageType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIAS');
         }
-        $this->eias = (int)$val;
+        $this->EIAS = (int)$val;
     }
 }

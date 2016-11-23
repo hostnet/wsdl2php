@@ -10,21 +10,22 @@ namespace Controle;
 class GetWantItNowSearchResultsResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\WantItNowPostArrayType | Contains the returned Want It Now posts, if any. The data for each post is returned
      * in a WantItNowPostType object.
      */
-    public $wantitnowpostarray;
+    public $WantItNowPostArray;
     /**
      * @var boolean | Indicates whether there are additional Want It Now posts that meet the search criteria.
      */
-    public $hasmoreitems;
+    public $HasMoreItems;
     /**
      * @var int | Indicates the maximum number of Want It Now posts that can be returned in a WantItNowPostArray
      * for a request. This value can be specified in the request by  EntriesPerPage in Pagination
      * in the request.
      */
-    public $itemsperpage;
+    public $ItemsPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -33,19 +34,21 @@ class GetWantItNowSearchResultsResponseType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param WantItNowPostArrayType $val
      * @throws Exception
      */
     public function setWantItNowPostArray($val)
     {
-        $this->wantitnowpostarray = (int)$val;
+        $this->WantItNowPostArray = (int)$val;
     }
 
     /**
@@ -54,7 +57,7 @@ class GetWantItNowSearchResultsResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->hasmoreitems = (int)$val;
+        $this->HasMoreItems = (int)$val;
     }
 
     /**
@@ -66,7 +69,7 @@ class GetWantItNowSearchResultsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->itemsperpage = (int)$val;
+        $this->ItemsPerPage = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class GetWantItNowSearchResultsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -87,6 +90,6 @@ class GetWantItNowSearchResultsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 }

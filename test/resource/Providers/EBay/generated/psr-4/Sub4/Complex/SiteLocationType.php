@@ -9,20 +9,23 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SiteLocationType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteIDFilterCodeType |      */
-    public $siteid;
+    public $SiteID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SiteIDFilterCodeType $val
      * @throws Exception
      */
     public function setSiteID($val)
     {
-        $this->siteid = (int)$val;
+        $this->SiteID = (int)$val;
     }
 
     /**

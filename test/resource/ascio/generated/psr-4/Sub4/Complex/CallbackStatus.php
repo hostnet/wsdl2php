@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CallbackStatus
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $message;
+    public $Message;
     /**
      * @var string
      */
-    public $status;
+    public $Status;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class CallbackStatus
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->message = (int)$val;
+        $this->Message = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class CallbackStatus
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 }

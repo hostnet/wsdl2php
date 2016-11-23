@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class FinanceOfferArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\FinanceOfferType | A financing offer.
 	 */
-	public $financeoffer;
+	public $FinanceOffer;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param FinanceOfferType $val
 	 * @throws Exception
 	 */
 	public function setFinanceOffer($val)
 	{
-        $this->financeoffer = (int)$val;
+        $this->FinanceOffer = (int)$val;
 	}
 }

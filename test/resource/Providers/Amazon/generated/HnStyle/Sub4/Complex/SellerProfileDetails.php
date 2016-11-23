@@ -4,38 +4,41 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SellerProfileDetails
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sellernickname;
+    public $SellerNickname;
     /**
      * @var string
      */
-    public $overallfeedbackrating;
+    public $OverallFeedbackRating;
     /**
      * @var string
      */
-    public $numberoffeedback;
+    public $NumberOfFeedback;
     /**
      * @var string
      */
-    public $numberofcanceledbids;
+    public $NumberOfCanceledBids;
     /**
      * @var string
      */
-    public $numberofcanceledauctions;
+    public $NumberOfCanceledAuctions;
     /**
      * @var string
      */
-    public $storeid;
+    public $StoreId;
     /**
      * @var string
      */
-    public $storename;
+    public $StoreName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerFeedback
      */
-    public $sellerfeedback;
+    public $SellerFeedback;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -45,7 +48,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerNickname');
         }
-        $this->sellernickname = (int)$val;
+        $this->SellerNickname = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OverallFeedbackRating');
         }
-        $this->overallfeedbackrating = (int)$val;
+        $this->OverallFeedbackRating = (int)$val;
     }
 
     /**
@@ -69,7 +72,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfFeedback');
         }
-        $this->numberoffeedback = (int)$val;
+        $this->NumberOfFeedback = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfCanceledBids');
         }
-        $this->numberofcanceledbids = (int)$val;
+        $this->NumberOfCanceledBids = (int)$val;
     }
 
     /**
@@ -93,7 +96,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfCanceledAuctions');
         }
-        $this->numberofcanceledauctions = (int)$val;
+        $this->NumberOfCanceledAuctions = (int)$val;
     }
 
     /**
@@ -105,7 +108,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreId');
         }
-        $this->storeid = (int)$val;
+        $this->StoreId = (int)$val;
     }
 
     /**
@@ -117,7 +120,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
     }
 
     /**
@@ -126,6 +129,6 @@ class SellerProfileDetails
      */
     public function setSellerFeedback($val)
     {
-        $this->sellerfeedback = (int)$val;
+        $this->SellerFeedback = (int)$val;
     }
 }

@@ -4,16 +4,19 @@ namespace Controle;
 
 class DeleteNameServerResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $deletenameserverresult;
+    public $DeleteNameServerResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setDeleteNameServerResult($val)
     {
-        $this->deletenameserverresult = (int)$val;
+        $this->DeleteNameServerResult = (int)$val;
     }
 }

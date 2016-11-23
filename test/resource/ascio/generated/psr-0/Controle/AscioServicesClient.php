@@ -9,155 +9,155 @@ class AscioServicesClient extends \SoapClient {
 
 	const WSDL_FILE = "AscioService.wsdl";
 	private $classmap = array(
-        'Session\,' =>
+        'Session' =>
             '\Controle\Session',
-        'LogInResponse\,' =>
+        'LogInResponse' =>
             '\Controle\LogInResponse',
-        'Response\,' =>
+        'Response' =>
             '\Controle\Response',
-        'LogOutResponse\,' =>
+        'LogOutResponse' =>
             '\Controle\LogOutResponse',
-        'GetOrderResponse\,' =>
+        'GetOrderResponse' =>
             '\Controle\GetOrderResponse',
-        'Order\,' =>
+        'Order' =>
             '\Controle\Order',
-        'OrderType\,' =>
+        'OrderType' =>
             '\Controle\OrderType',
-        'OrderStatusType\,' =>
+        'OrderStatusType' =>
             '\Controle\OrderStatusType',
-        'Domain\,' =>
+        'Domain' =>
             '\Controle\Domain',
-        'Registrant\,' =>
+        'Registrant' =>
             '\Controle\Registrant',
-        'Contact\,' =>
+        'Contact' =>
             '\Controle\Contact',
-        'NameServers\,' =>
+        'NameServers' =>
             '\Controle\NameServers',
-        'NameServer\,' =>
+        'NameServer' =>
             '\Controle\NameServer',
-        'TradeMark\,' =>
+        'TradeMark' =>
             '\Controle\TradeMark',
-        'DnsSecKeys\,' =>
+        'DnsSecKeys' =>
             '\Controle\DnsSecKeys',
-        'DnsSecKey\,' =>
+        'DnsSecKey' =>
             '\Controle\DnsSecKey',
-        'PrivacyProxy\,' =>
+        'PrivacyProxy' =>
             '\Controle\PrivacyProxy',
-        'PrivacyProxyType\,' =>
+        'PrivacyProxyType' =>
             '\Controle\PrivacyProxyType',
-        'Extensions\,' =>
+        'Extensions' =>
             '\Controle\Extensions',
-        'Extension\,' =>
+        'Extension' =>
             '\Controle\Extension',
-        'CreateOrderResponse\,' =>
+        'CreateOrderResponse' =>
             '\Controle\CreateOrderResponse',
-        'SearchOrderRequest\,' =>
+        'SearchOrderRequest' =>
             '\Controle\SearchOrderRequest',
-        'SearchOrderSortType\,' =>
+        'SearchOrderSortType' =>
             '\Controle\SearchOrderSortType',
-        'PagingInfo\,' =>
+        'PagingInfo' =>
             '\Controle\PagingInfo',
-        'SearchOrderResponse\,' =>
+        'SearchOrderResponse' =>
             '\Controle\SearchOrderResponse',
-        'GetMessagesResponse\,' =>
+        'GetMessagesResponse' =>
             '\Controle\GetMessagesResponse',
-        'Message\,' =>
+        'Message' =>
             '\Controle\Message',
-        'Attachment\,' =>
+        'Attachment' =>
             '\Controle\Attachment',
-        'MessageType\,' =>
+        'MessageType' =>
             '\Controle\MessageType',
-        'ValidateOrderResponse\,' =>
+        'ValidateOrderResponse' =>
             '\Controle\ValidateOrderResponse',
-        'UploadDocumentationResponse\,' =>
+        'UploadDocumentationResponse' =>
             '\Controle\UploadDocumentationResponse',
-        'CreateSupportOrderResponse\,' =>
+        'CreateSupportOrderResponse' =>
             '\Controle\CreateSupportOrderResponse',
-        'UploadMessageResponse\,' =>
+        'UploadMessageResponse' =>
             '\Controle\UploadMessageResponse',
-        'GetDomainResponse\,' =>
+        'GetDomainResponse' =>
             '\Controle\GetDomainResponse',
-        'SearchCriteria\,' =>
+        'SearchCriteria' =>
             '\Controle\SearchCriteria',
-        'Clause\,' =>
+        'Clause' =>
             '\Controle\Clause',
-        'SearchOperatorType\,' =>
+        'SearchOperatorType' =>
             '\Controle\SearchOperatorType',
-        'SearchModeType\,' =>
+        'SearchModeType' =>
             '\Controle\SearchModeType',
-        'SearchDomainResponse\,' =>
+        'SearchDomainResponse' =>
             '\Controle\SearchDomainResponse',
-        'WhoisResponse\,' =>
+        'WhoisResponse' =>
             '\Controle\WhoisResponse',
-        'QualityType\,' =>
+        'QualityType' =>
             '\Controle\QualityType',
-        'AvailabilityCheckResponse\,' =>
+        'AvailabilityCheckResponse' =>
             '\Controle\AvailabilityCheckResponse',
-        'AvailabilityCheckResult\,' =>
+        'AvailabilityCheckResult' =>
             '\Controle\AvailabilityCheckResult',
-        'GetRegistrantResponse\,' =>
+        'GetRegistrantResponse' =>
             '\Controle\GetRegistrantResponse',
-        'CreateRegistrantResponse\,' =>
+        'CreateRegistrantResponse' =>
             '\Controle\CreateRegistrantResponse',
-        'DeleteRegistrantResponse\,' =>
+        'DeleteRegistrantResponse' =>
             '\Controle\DeleteRegistrantResponse',
-        'SearchRegistrantResponse\,' =>
+        'SearchRegistrantResponse' =>
             '\Controle\SearchRegistrantResponse',
-        'GetRegistrantVerificationInfoResponse\,' =>
+        'GetRegistrantVerificationInfoResponse' =>
             '\Controle\GetRegistrantVerificationInfoResponse',
-        'RegistrantVerificationInfo\,' =>
+        'RegistrantVerificationInfo' =>
             '\Controle\RegistrantVerificationInfo',
-        'RegistrantVerificationStatus\,' =>
+        'RegistrantVerificationStatus' =>
             '\Controle\RegistrantVerificationStatus',
-        'RegistrantVerificationDetails\,' =>
+        'RegistrantVerificationDetails' =>
             '\Controle\RegistrantVerificationDetails',
-        'DoRegistrantVerificationResponse\,' =>
+        'DoRegistrantVerificationResponse' =>
             '\Controle\DoRegistrantVerificationResponse',
-        'GetRegistrantVerificationStatusResponse\,' =>
+        'GetRegistrantVerificationStatusResponse' =>
             '\Controle\GetRegistrantVerificationStatusResponse',
-        'UploadRegistrantVerificationMessageResponse\,' =>
+        'UploadRegistrantVerificationMessageResponse' =>
             '\Controle\UploadRegistrantVerificationMessageResponse',
-        'GetContactResponse\,' =>
+        'GetContactResponse' =>
             '\Controle\GetContactResponse',
-        'CreateContactResponse\,' =>
+        'CreateContactResponse' =>
             '\Controle\CreateContactResponse',
-        'UpdateContactResponse\,' =>
+        'UpdateContactResponse' =>
             '\Controle\UpdateContactResponse',
-        'DeleteContactResponse\,' =>
+        'DeleteContactResponse' =>
             '\Controle\DeleteContactResponse',
-        'SearchContactResponse\,' =>
+        'SearchContactResponse' =>
             '\Controle\SearchContactResponse',
-        'GetNameServerResponse\,' =>
+        'GetNameServerResponse' =>
             '\Controle\GetNameServerResponse',
-        'CreateNameServerResponse\,' =>
+        'CreateNameServerResponse' =>
             '\Controle\CreateNameServerResponse',
-        'DeleteNameServerResponse\,' =>
+        'DeleteNameServerResponse' =>
             '\Controle\DeleteNameServerResponse',
-        'SearchNameServerResponse\,' =>
+        'SearchNameServerResponse' =>
             '\Controle\SearchNameServerResponse',
-        'PollMessageResponse\,' =>
+        'PollMessageResponse' =>
             '\Controle\PollMessageResponse',
-        'QueueItem\,' =>
+        'QueueItem' =>
             '\Controle\QueueItem',
-        'CallbackStatus\,' =>
+        'CallbackStatus' =>
             '\Controle\CallbackStatus',
-        'AckMessageResponse\,' =>
+        'AckMessageResponse' =>
             '\Controle\AckMessageResponse',
-        'GetMessageQueueResponse\,' =>
+        'GetMessageQueueResponse' =>
             '\Controle\GetMessageQueueResponse',
-        'GetDnsSecKeyResponse\,' =>
+        'GetDnsSecKeyResponse' =>
             '\Controle\GetDnsSecKeyResponse',
-        'CreateDnsSecKeyResponse\,' =>
+        'CreateDnsSecKeyResponse' =>
             '\Controle\CreateDnsSecKeyResponse',
-        'SearchDnsSecKeyResponse\,' =>
+        'SearchDnsSecKeyResponse' =>
             '\Controle\SearchDnsSecKeyResponse',
-        'CreateDocumentationResponse\,' =>
+        'CreateDocumentationResponse' =>
             '\Controle\CreateDocumentationResponse',
-        'ApprovalDocumentationType\,' =>
+        'ApprovalDocumentationType' =>
             '\Controle\ApprovalDocumentationType',
-        'ApprovalDocumentation\,' =>
+        'ApprovalDocumentation' =>
             '\Controle\ApprovalDocumentation',
-        'CreateApprovalDocumentationResponse\,' =>
+        'CreateApprovalDocumentationResponse' =>
             '\Controle\CreateApprovalDocumentationResponse',
 	);
 

@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SellerSearch
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerSearchDetailsArray
      */
-    public $sellersearchdetails;
+    public $SellerSearchDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SellerSearchDetailsArray $val
      * @throws Exception
      */
     public function setSellerSearchDetails($val)
     {
-        $this->sellersearchdetails = (int)$val;
+        $this->SellerSearchDetails = (int)$val;
     }
 }

@@ -4,21 +4,24 @@ namespace Controle;
 
 class LogInResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $loginresult;
+    public $LogInResult;
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setLogInResult($val)
     {
-        $this->loginresult = (int)$val;
+        $this->LogInResult = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class LogInResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 }

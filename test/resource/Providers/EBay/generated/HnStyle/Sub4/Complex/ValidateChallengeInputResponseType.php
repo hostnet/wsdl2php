@@ -9,16 +9,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ValidateChallengeInputResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Indicates whether the token is valid.
      */
-    public $validtoken;
+    public $ValidToken;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setValidToken($val)
     {
-        $this->validtoken = (int)$val;
+        $this->ValidToken = (int)$val;
     }
 }

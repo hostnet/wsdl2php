@@ -30,19 +30,22 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetProductFamilyMembersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductSearchType | Specifies the keywords or attributes that make up the product query,
      *   with pagination instructions. ProductSearch is a required input. To search for multiple
      * different products at the same time (i.e., to perform a batch search), pass in multiple
      * ProductSearch properties.
      */
-    public $productsearch;
+    public $ProductSearch;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ProductSearchType $val
      * @throws Exception
      */
     public function setProductSearch($val)
     {
-        $this->productsearch = (int)$val;
+        $this->ProductSearch = (int)$val;
     }
 }

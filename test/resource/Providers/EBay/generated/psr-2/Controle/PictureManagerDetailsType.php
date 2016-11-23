@@ -4,49 +4,52 @@ namespace Controle;
 
 class PictureManagerDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\PictureManagerSubscriptionLevelCodeType | Subscription level (tier) for the user's eBay Store.
      */
-    public $subscriptionlevel;
+    public $SubscriptionLevel;
     /**
      * @var int | The amount of storage already in use. Measured in bytes. Read-only value.
      */
-    public $storageused;
+    public $StorageUsed;
     /**
      * @var int | The amount of storage space remaining in the authenticated user's album. Measured in
      * bytes. Read-only value.
      */
-    public $totalstorageavailable;
+    public $TotalStorageAvailable;
     /**
      * @var boolean | Whether to keep a copy of the original picture without resizing. Default is false. true
      * = keep originals.
      */
-    public $keeporiginal;
+    public $KeepOriginal;
     /**
      * @var boolean | Whether to show the EPS watermark when photos are displayed. Default is false. true
      * = show.
      */
-    public $watermarkeps;
+    public $WatermarkEPS;
     /**
      * @var boolean | Whether to show the user ID watermark when photos are displayed. Default is false. true
      * = show.
      */
-    public $watermarkuserid;
+    public $WatermarkUserID;
     /**
      * @var \Controle\PictureManagerFolderType | The folder requested in the album.
      */
-    public $folder;
+    public $Folder;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PictureManagerSubscriptionLevelCodeType $val
      * @throws Exception
      */
     public function setSubscriptionLevel($val)
     {
-        $this->subscriptionlevel = (int)$val;
+        $this->SubscriptionLevel = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class PictureManagerDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->storageused = (int)$val;
+        $this->StorageUsed = (int)$val;
     }
 
     /**
@@ -70,7 +73,7 @@ class PictureManagerDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalstorageavailable = (int)$val;
+        $this->TotalStorageAvailable = (int)$val;
     }
 
     /**
@@ -79,7 +82,7 @@ class PictureManagerDetailsType
      */
     public function setKeepOriginal($val)
     {
-        $this->keeporiginal = (int)$val;
+        $this->KeepOriginal = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class PictureManagerDetailsType
      */
     public function setWatermarkEPS($val)
     {
-        $this->watermarkeps = (int)$val;
+        $this->WatermarkEPS = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class PictureManagerDetailsType
      */
     public function setWatermarkUserID($val)
     {
-        $this->watermarkuserid = (int)$val;
+        $this->WatermarkUserID = (int)$val;
     }
 
     /**
@@ -106,7 +109,7 @@ class PictureManagerDetailsType
      */
     public function setFolder($val)
     {
-        $this->folder = (int)$val;
+        $this->Folder = (int)$val;
     }
 
     /**

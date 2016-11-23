@@ -10,26 +10,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class VerifyAddSecondChanceItemResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeesType | (Not used.)
      */
-    public $fees;
+    public $Fees;
     /**
      * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
      */
-    public $starttime;
+    public $StartTime;
     /**
      * @var dateTime | Time stamp (in GMT) when the listing is scheduled to end (calculated based on the values
      * of StartTime and ListingDuration) or the actual end time if the item has ended.
      */
-    public $endtime;
+    public $EndTime;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FeesType $val
      * @throws Exception
      */
     public function setFees($val)
     {
-        $this->fees = (int)$val;
+        $this->Fees = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class VerifyAddSecondChanceItemResponseType extends
      */
     public function setStartTime($val)
     {
-        $this->starttime = (int)$val;
+        $this->StartTime = (int)$val;
     }
 
     /**
@@ -47,6 +50,6 @@ class VerifyAddSecondChanceItemResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->endtime = (int)$val;
+        $this->EndTime = (int)$val;
     }
 }

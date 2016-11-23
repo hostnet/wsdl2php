@@ -5,6 +5,7 @@ namespace Controle;
 class GetCategoryFeaturesResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Version value assigned to the current category mapping data for the site.
 	 *     Compare this value to the version value the application stored with the mappings
@@ -12,26 +13,28 @@ class GetCategoryFeaturesResponseType extends
 	 * same,                  the data has not changed since the last time the data was retrieved
 	 * and stored.
 	 */
-	public $categoryversion;
+	public $CategoryVersion;
 	/**
 	 * @var dateTime | Gives the time in GMT that the feature flags for the category hierarchy were last updated.
 	 */
-	public $updatetime;
+	public $UpdateTime;
 	/**
 	 * @var \Controle\CategoryFeatureType | Describes a category that contains items that match the query.
 	 */
-	public $category;
+	public $Category;
 	/**
 	 * @var \Controle\SiteDefaultsType | Returns the feature settings defined for the entire site. All categories share these settings.
 	 * However, some categories can override some settings, as indicated in the Category nodes (if
 	 * any).
 	 */
-	public $sitedefaults;
+	public $SiteDefaults;
 	/**
 	 * @var \Controle\FeatureDefinitionsType | Returns definitions of the various features on the site, or the features you requested
 	 * in FeatureID (if any). Each feature has a node within FeatureDefinitions.
 	 */
-	public $featuredefinitions;
+	public $FeatureDefinitions;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -41,7 +44,7 @@ class GetCategoryFeaturesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->categoryversion = (int)$val;
+        $this->CategoryVersion = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setUpdateTime($val)
 	{
-        $this->updatetime = (int)$val;
+        $this->UpdateTime = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setCategory($val)
 	{
-        $this->category = (int)$val;
+        $this->Category = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setSiteDefaults($val)
 	{
-        $this->sitedefaults = (int)$val;
+        $this->SiteDefaults = (int)$val;
 	}
 
 	/**
@@ -77,6 +80,6 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setFeatureDefinitions($val)
 	{
-        $this->featuredefinitions = (int)$val;
+        $this->FeatureDefinitions = (int)$val;
 	}
 }

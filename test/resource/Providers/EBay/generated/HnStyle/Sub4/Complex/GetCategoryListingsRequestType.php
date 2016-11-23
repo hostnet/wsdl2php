@@ -12,6 +12,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategoryListingsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Listing upgrade that features the item in eBay search results on the mobile.de partner
      * site. Applicable to eBay Germany. If true in listing requests and responses, the seller
@@ -20,28 +21,28 @@ class GetCategoryListingsRequestType extends
      * additional information on featuring vehicles on the Mobile.de Site. Not applicable to
      * Half.com.
      */
-    public $motorsgermanysearchable;
+    public $MotorsGermanySearchable;
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var boolean | Restricts listings to return only items that have the Ad Format feature. If true, the
      * values of ItemTypeFilter, StoresFixedPrice, and StoreSearchFilter are ignored (if they
      * are specified). That is, "AND" logic is not applied.
      */
-    public $adformat;
+    public $AdFormat;
     /**
      * @var boolean | If true, only items with free shipping for the user's location are returned. The user's
      * location is determined from the site ID specified in the request. If false, no filtering
      * is done via this attribute. A listing is not considered a free shipping listing if it
      * requires insurance or requires pick up or requires a shipping surcharge.
      */
-    public $freeshipping;
+    public $FreeShipping;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemTypeFilterCodeType | Filters items based on the ListingType set for the items. If you search for Store Inventory
      * items, you must use values in ItemTypeFilter instead of StoresFixedPrice, which soon
@@ -49,7 +50,7 @@ class GetCategoryListingsRequestType extends
      * ItemTypeFilter is specified), all listing types can be returned unless another relevant
      * filter is specified. You cannot use GetSearchResults to search eBay Express.
      */
-    public $itemtypefilter;
+    public $ItemTypeFilter;
     /**
      * @var boolean | Applications currently using StoresFixedPrice must begin using values in ItemTypeFilter
      * instead of StoresFixedPrice. Otherwise, you may get unexpected results. This field is
@@ -69,42 +70,42 @@ class GetCategoryListingsRequestType extends
      * succeed but no listings will be returned (because no listings can use both auction and
      * Store Inventory formats).
      */
-    public $storesfixedprice;
+    public $StoresFixedPrice;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CategoryListingsSearchCodeType | Indicates whether one attribute or multiple attributes can be used as the search keyword
      *          when calling GetProductSearchResults. Applications can ignore this data because
      *          GetProductSearchPage only supports single-attribute searches.          Use
      * GetProductFinder to determine valid multi-attribute searches.
      */
-    public $searchtype;
+    public $SearchType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CategoryListingsOrderCodeType | Specifies the order in which the item listings returned will be sorted. Store Inventory
      * listings are usually returned after other listing types, regardless of the sort order.
      */
-    public $orderby;
+    public $OrderBy;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SearchLocationType | Specifies filtering based on site ID.
      */
-    public $searchlocation;
+    public $SearchLocation;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProximitySearchType | Limits the result set to just those items whose location is within a specified distance
      * of a postal code. The ProximitySearchType includes a maximum distance and a postal code.
      */
-    public $proximitysearch;
+    public $ProximitySearch;
     /**
      * @var boolean | When passed with a value of true, limits the results to Get It Fast listings.
      */
-    public $includegetitfastitems;
+    public $IncludeGetItFastItems;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaymentMethodSearchCodeType |      */
-    public $paymentmethod;
+    public $PaymentMethod;
     /**
      * @var boolean | If true, each item in the result set can also include the item condition attribute (e.g.,
      * New or Used) in the ItemSpecific property of the response. An item only includes a condition attribute
@@ -116,32 +117,34 @@ class GetCategoryListingsRequestType extends
      * or used items. In some categories, you can use a product finder search (SearchRequest)
      * to only retrieve new or used items.
      */
-    public $includecondition;
+    public $IncludeCondition;
     /**
      * @var boolean | If true, each item in the result set also includes information about the seller's feedback.
      * Controls the details to return for each listing (not the set of listings that match
      * the query).
      */
-    public $includefeedback;
+    public $IncludeFeedback;
     /**
      * @var string | Include local items in returning results near this postal code. This postal code is
      * the basis for local search.
      */
-    public $localsearchpostalcode;
+    public $LocalSearchPostalCode;
     /**
      * @var int | The maximum number of related keywords to be retrieved. Use this field if you want the
      * search results to include recommended keywords (that is, keywords matching one or more
      * of the original keywords) in a RelatedSearchKeywordArray container. A value of 0 (the
      * default) means no related search information is processed.
      */
-    public $maxrelatedsearchkeywords;
+    public $MaxRelatedSearchKeywords;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setMotorsGermanySearchable($val)
     {
-        $this->motorsgermanysearchable = (int)$val;
+        $this->MotorsGermanySearchable = (int)$val;
     }
 
     /**
@@ -153,7 +156,7 @@ class GetCategoryListingsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -162,7 +165,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setAdFormat($val)
     {
-        $this->adformat = (int)$val;
+        $this->AdFormat = (int)$val;
     }
 
     /**
@@ -171,7 +174,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setFreeShipping($val)
     {
-        $this->freeshipping = (int)$val;
+        $this->FreeShipping = (int)$val;
     }
 
     /**
@@ -180,7 +183,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 
     /**
@@ -189,7 +192,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setItemTypeFilter($val)
     {
-        $this->itemtypefilter = (int)$val;
+        $this->ItemTypeFilter = (int)$val;
     }
 
     /**
@@ -198,7 +201,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setStoresFixedPrice($val)
     {
-        $this->storesfixedprice = (int)$val;
+        $this->StoresFixedPrice = (int)$val;
     }
 
     /**
@@ -207,7 +210,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setSearchType($val)
     {
-        $this->searchtype = (int)$val;
+        $this->SearchType = (int)$val;
     }
 
     /**
@@ -216,7 +219,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setOrderBy($val)
     {
-        $this->orderby = (int)$val;
+        $this->OrderBy = (int)$val;
     }
 
     /**
@@ -225,7 +228,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**
@@ -234,7 +237,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setSearchLocation($val)
     {
-        $this->searchlocation = (int)$val;
+        $this->SearchLocation = (int)$val;
     }
 
     /**
@@ -243,7 +246,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setProximitySearch($val)
     {
-        $this->proximitysearch = (int)$val;
+        $this->ProximitySearch = (int)$val;
     }
 
     /**
@@ -252,7 +255,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setIncludeGetItFastItems($val)
     {
-        $this->includegetitfastitems = (int)$val;
+        $this->IncludeGetItFastItems = (int)$val;
     }
 
     /**
@@ -261,7 +264,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setPaymentMethod($val)
     {
-        $this->paymentmethod = (int)$val;
+        $this->PaymentMethod = (int)$val;
     }
 
     /**
@@ -270,7 +273,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setIncludeCondition($val)
     {
-        $this->includecondition = (int)$val;
+        $this->IncludeCondition = (int)$val;
     }
 
     /**
@@ -279,7 +282,7 @@ class GetCategoryListingsRequestType extends
      */
     public function setIncludeFeedback($val)
     {
-        $this->includefeedback = (int)$val;
+        $this->IncludeFeedback = (int)$val;
     }
 
     /**
@@ -291,7 +294,7 @@ class GetCategoryListingsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
-        $this->localsearchpostalcode = (int)$val;
+        $this->LocalSearchPostalCode = (int)$val;
     }
 
     /**
@@ -303,6 +306,6 @@ class GetCategoryListingsRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxrelatedsearchkeywords = (int)$val;
+        $this->MaxRelatedSearchKeywords = (int)$val;
     }
 }

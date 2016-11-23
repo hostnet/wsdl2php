@@ -9,19 +9,20 @@ namespace Controle\sub1\sub2;
  */
 class OfferType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\BidActionCodeType | Indicates the type of offer being made on the specified listing. Valid values are enumerated
 	 * in the BidActionCodeType code list.
 	 */
-	public $action;
+	public $Action;
 	/**
 	 * @var \Controle\sub1\sub2\CurrencyCodeType | Limits the result set to just those items with a specified currency.
 	 */
-	public $currency;
+	public $Currency;
 	/**
 	 * @var \Controle\sub1\sub2\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount of the offer placed. For competitive-bidding listings, the amount bid on the item
 	 * (subject to outbid by other buyers). For fixed-price listings, the fixed sale price at
@@ -30,72 +31,74 @@ class OfferType
 	 * bid, depending on the offer type (as specified in Action). For PlaceOffer, the currencyID
 	 * attribute is ignored if provided.
 	 */
-	public $maxbid;
+	public $MaxBid;
 	/**
 	 * @var int | Specifies the number of items from the specified listing the user tendering the offer intends
 	 * to purchase or bid on. For Chinese auctions and other listing formats that only allow one
 	 * item per listing, value may not exceed one. For multi-item listings, must be greater than
 	 * zero and not exceeding the number of items offered for sale in the listing.
 	 */
-	public $quantity;
+	public $Quantity;
 	/**
 	 * @var boolean | Indicates the user's preference to accept second chance offers. If true, the user is willing
 	 * to be the recipient of second chance offers.
 	 */
-	public $secondchanceenabled;
+	public $SecondChanceEnabled;
 	/**
 	 * @var \Controle\sub1\sub2\CurrencyCodeType | Unique ID identifying the currency in which the localized offer amounts are expressed.
 	 */
-	public $sitecurrency;
+	public $SiteCurrency;
 	/**
 	 * @var dateTime | Date and time the offer or bid was placed.
 	 */
-	public $timebid;
+	public $TimeBid;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount the highest bidder had bid on the item. Applicable only to competitive-bidding listings
 	 * (Chinese and Dutch auctions) where there is progressive bidding and winning bidders are
 	 * determined based on the highest bid.
 	 */
-	public $highestbid;
+	public $HighestBid;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Localized amount for the item's current price.
 	 */
-	public $convertedprice;
+	public $ConvertedPrice;
 	/**
 	 * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
 	 * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
 	 * spawned it, so a transaction is only uniquely identified on a global basis by a combination
 	 * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
 	 */
-	public $transactionid;
+	public $TransactionID;
 	/**
 	 * @var \Controle\sub1\sub2\UserType | Bidder information. See the schema documentation for UserType for details on its properties
 	 * and their meanings.
 	 */
-	public $user;
+	public $User;
 	/**
 	 * @var boolean | If true, confirms that the bidder read and agrees to eBay's privacy policy. Applies if
 	 * the subject item is in a category that requires user consent. If user consent (that is, confirmation
 	 * that a bidder read and agrees to eBay's privacy policy) is required for a category that
 	 * the subject item is in, this value must be true for a bid to occur.
 	 */
-	public $userconsent;
+	public $UserConsent;
 	/**
 	 * @var int | Number of bids placed so far against the item. Only applicable to competitive-bidding listings
 	 * (Chinese and Dutch auctions).
 	 */
-	public $bidcount;
+	public $BidCount;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param BidActionCodeType $val
 	 * @throws Exception
 	 */
 	public function setAction($val)
 	{
-        $this->action = (int)$val;
+        $this->Action = (int)$val;
 	}
 
 	/**
@@ -104,7 +107,7 @@ class OfferType
 	 */
 	public function setCurrency($val)
 	{
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
 	}
 
 	/**
@@ -113,7 +116,7 @@ class OfferType
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -122,7 +125,7 @@ class OfferType
 	 */
 	public function setMaxBid($val)
 	{
-        $this->maxbid = (int)$val;
+        $this->MaxBid = (int)$val;
 	}
 
 	/**
@@ -134,7 +137,7 @@ class OfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantity = (int)$val;
+        $this->Quantity = (int)$val;
 	}
 
 	/**
@@ -143,7 +146,7 @@ class OfferType
 	 */
 	public function setSecondChanceEnabled($val)
 	{
-        $this->secondchanceenabled = (int)$val;
+        $this->SecondChanceEnabled = (int)$val;
 	}
 
 	/**
@@ -152,7 +155,7 @@ class OfferType
 	 */
 	public function setSiteCurrency($val)
 	{
-        $this->sitecurrency = (int)$val;
+        $this->SiteCurrency = (int)$val;
 	}
 
 	/**
@@ -161,7 +164,7 @@ class OfferType
 	 */
 	public function setTimeBid($val)
 	{
-        $this->timebid = (int)$val;
+        $this->TimeBid = (int)$val;
 	}
 
 	/**
@@ -170,7 +173,7 @@ class OfferType
 	 */
 	public function setHighestBid($val)
 	{
-        $this->highestbid = (int)$val;
+        $this->HighestBid = (int)$val;
 	}
 
 	/**
@@ -179,7 +182,7 @@ class OfferType
 	 */
 	public function setConvertedPrice($val)
 	{
-        $this->convertedprice = (int)$val;
+        $this->ConvertedPrice = (int)$val;
 	}
 
 	/**
@@ -191,7 +194,7 @@ class OfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
 	}
 
 	/**
@@ -200,7 +203,7 @@ class OfferType
 	 */
 	public function setUser($val)
 	{
-        $this->user = (int)$val;
+        $this->User = (int)$val;
 	}
 
 	/**
@@ -209,7 +212,7 @@ class OfferType
 	 */
 	public function setUserConsent($val)
 	{
-        $this->userconsent = (int)$val;
+        $this->UserConsent = (int)$val;
 	}
 
 	/**
@@ -221,7 +224,7 @@ class OfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidcount = (int)$val;
+        $this->BidCount = (int)$val;
 	}
 
 	/**

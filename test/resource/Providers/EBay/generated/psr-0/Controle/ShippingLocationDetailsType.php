@@ -8,19 +8,22 @@ namespace Controle;
  */
 class ShippingLocationDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Short name or abbreviation for a region (e.g., Asia) or location (e.g. Japan).<br><br> Related
 	 * field:<br> Item.ShippingDetails.InternationalShippingServiceOption.ShipToLocation in AddItem
 	 */
-	public $shippinglocation;
+	public $ShippingLocation;
 	/**
 	 * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
 	 */
-	public $description;
+	public $Description;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -30,7 +33,7 @@ class ShippingLocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingLocation');
         }
-        $this->shippinglocation = (int)$val;
+        $this->ShippingLocation = (int)$val;
 	}
 
 	/**
@@ -42,7 +45,7 @@ class ShippingLocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
 	}
 
 	/**

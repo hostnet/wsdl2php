@@ -8,22 +8,23 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CategoryType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Specifies the default site setting for whether categories allow best offers. True means
      * best offers are allowed site-wide, unless a specific category overrides the setting.
      */
-    public $bestofferenabled;
+    public $BestOfferEnabled;
     /**
      * @var boolean | If true, indicates that the category supports immediate payment. If false or not present,
      * the category does not support immediate payment.
      */
-    public $autopayenabled;
+    public $AutoPayEnabled;
     /**
      * @var boolean | If true, the category supports business-to-business (B2B) VAT listings. Applicable to
      * the eBay Germany (DE), Austria (AT), and Switzerland CH) sites only. If false or not
      * present, the category does not support this feature.
      */
-    public $b2bvatenabled;
+    public $B2BVATEnabled;
     /**
      * @var boolean | If true, the category is associated with catalog content and the corresponding catalog
      * is identified by the characteristic set ID. See CharacteristicsSets. As the Pre-filled
@@ -31,11 +32,11 @@ class CategoryType
      * categories is a subset of the categories that are mapped to characteristic sets. Not
      * returned if false.
      */
-    public $catalogenabled;
+    public $CatalogEnabled;
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var int | The level where the category fits in the site's category hierarchy. For example, if
      * this field has a value of 2, then the category is two levels below the root category
@@ -43,13 +44,13 @@ class CategoryType
      * the total quantity of matching items in a category. Matching categories at the same
      * level (i.e., in sibling categories) are sorted by NumOfItems, descending order.
      */
-    public $categorylevel;
+    public $CategoryLevel;
     /**
      * @var string | Display name of the category as it would appear on the eBay Web site. In GetItem, this
      * is a fully qualified category name (e.g., Collectibles:Decorative Collectibles:Hummel,
      * Goebel).
      */
-    public $categoryname;
+    public $CategoryName;
     /**
      * @var string | Category ID identifying a category that is an ancestor of the category indicated in
      * CategoryID. For GetCategories, returns the same value as CategoryID if the CategoryLevel
@@ -59,7 +60,7 @@ class CategoryType
      * field to build the fully qualified category browse path or "breadcrumbs" (e.g., 58058:3516:3517). For
      * GetPopularKeywords, -1 represents the root category.
      */
-    public $categoryparentid;
+    public $CategoryParentID;
     /**
      * @var string | Display name of the category indicated in CategoryParentID. For GetSuggestedCategories,
      * multiple CategoryParentName fields can be returned in sequence, starting with the root
@@ -68,7 +69,7 @@ class CategoryType
      * qualified category browse path or "breadcrumbs" (e.g., Computers & Networking > Technology
      * Books > Certification).
      */
-    public $categoryparentname;
+    public $CategoryParentName;
     /**
      * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
      *           search for Item Specifics in listings (e.g., how to search against a particular
@@ -81,52 +82,52 @@ class CategoryType
      * level of ItemReturnAttributes or ReturnAll. Use GetProductFinder to determine valid
      * product finder IDs.
      */
-    public $productfinderid;
+    public $ProductFinderID;
     /**
      * @var boolean | Returned from GetCategory2CS calls. Supports listing with Pre-filled Item Information. If
      * the category supports single-attribute search, this field returns a value of true. Otherwise
      * this field not returned or returned as false.
      */
-    public $productsearchpageavailable;
+    public $ProductSearchPageAvailable;
     /**
      * @var boolean | Previous behavior: Supports listing with Pre-filled Item Information. If the category
      * supports a product finder-based search, this field returns a value of true. Otherwise
      * this field returns null or false.
      */
-    public $productfinderavailable;
+    public $ProductFinderAvailable;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExtendedProductFinderIDType | Returned from GetCategory2CS calls with compatibility level 369 and higher. Supports
      * listing with Pre-filled Item Information. Specifies the buy-side and/or sell-side product
      * finder IDs associated with this category, if any.
      */
-    public $productfinderids;
+    public $ProductFinderIDs;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicsSetType | Returned from GetCategory2CS calls. A list of one or more characteristics sets mapped
      * to the category. Use this information when working with Item Specifics (Attributes)
      * and Pre-filled Item Information (Catalogs) functionality. Output only.
      */
-    public $characteristicssets;
+    public $CharacteristicsSets;
     /**
      * @var boolean | If true, indicates a category that has expired and to which items may not be listed.
      */
-    public $expired;
+    public $Expired;
     /**
      * @var boolean | If true, indicates that the category is a fixed-fee category. Use this information to
      * identify categories are not eligible for eBay Stores Inventory format listings. You
      * cannot list eBay Store Inventory format listings in fixed-fee categories on international
      * sites. Output only.
      */
-    public $intlautosfixedcat;
+    public $IntlAutosFixedCat;
     /**
      * @var boolean | If true, indicates that the category indicated in CategoryID is a leaf category, in
      * which items may be listed (if the category is not also expired or virtual).
      */
-    public $leafcategory;
+    public $LeafCategory;
     /**
      * @var boolean | If true, indicates the that category indicated in CategoryID is a virtual category,
      * to which items may not be listed.
      */
-    public $virtual;
+    public $Virtual;
     /**
      * @var int | The total quantity of matching items in the category. In the GetSearchResults response,
      * matching categories at the same level (i.e., sibling categories) are sorted by this
@@ -134,12 +135,12 @@ class CategoryType
      * be returned, the ones with the most matching items are returned first. See the Developer's
      * guide for more information.
      */
-    public $numofitems;
+    public $NumOfItems;
     /**
      * @var boolean | Indicates whether this category is eligible for Motors Seller Guarantee program. This
      * tag is emitted for eligible categories only on the eBay Motors site.
      */
-    public $sellerguaranteeeligible;
+    public $SellerGuaranteeEligible;
     /**
      * @var boolean | Indicates whether the category (and its subcategories) allows or disallows listing with
      * a reserve price, depending on the prevailing site configuration indicated by ReservePriceAllowed. ORPA
@@ -155,7 +156,7 @@ class CategoryType
      * a category, you can assume its subcategories inherit the same setting unless otherwise
      * specified.)
      */
-    public $orpa;
+    public $ORPA;
     /**
      * @var boolean | Indicates whether the category (and its subcategories) allows or disallows reducing
      * a listing's reserve price, depending on the prevailing site configuration indicated
@@ -171,27 +172,29 @@ class CategoryType
      * ORRA is true for a category, you can assume its subcategories inherit the same setting
      * unless otherwise specified.)
      */
-    public $orra;
+    public $ORRA;
     /**
      * @var boolean | Item.LotSize is not permitted when you list in this category. If true, indicates that
      * lot sizes are disabled in the specified category.
      */
-    public $lsd;
+    public $LSD;
     /**
      * @var string | The list of keywords returned by GetPopularKeywords.
      */
-    public $keywords;
+    public $Keywords;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setBestOfferEnabled($val)
     {
-        $this->bestofferenabled = (int)$val;
+        $this->BestOfferEnabled = (int)$val;
     }
 
     /**
@@ -200,7 +203,7 @@ class CategoryType
      */
     public function setAutoPayEnabled($val)
     {
-        $this->autopayenabled = (int)$val;
+        $this->AutoPayEnabled = (int)$val;
     }
 
     /**
@@ -209,7 +212,7 @@ class CategoryType
      */
     public function setB2BVATEnabled($val)
     {
-        $this->b2bvatenabled = (int)$val;
+        $this->B2BVATEnabled = (int)$val;
     }
 
     /**
@@ -218,7 +221,7 @@ class CategoryType
      */
     public function setCatalogEnabled($val)
     {
-        $this->catalogenabled = (int)$val;
+        $this->CatalogEnabled = (int)$val;
     }
 
     /**
@@ -230,7 +233,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -242,7 +245,7 @@ class CategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->categorylevel = (int)$val;
+        $this->CategoryLevel = (int)$val;
     }
 
     /**
@@ -254,7 +257,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryName');
         }
-        $this->categoryname = (int)$val;
+        $this->CategoryName = (int)$val;
     }
 
     /**
@@ -266,7 +269,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentID');
         }
-        $this->categoryparentid = (int)$val;
+        $this->CategoryParentID = (int)$val;
     }
 
     /**
@@ -278,7 +281,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentName');
         }
-        $this->categoryparentname = (int)$val;
+        $this->CategoryParentName = (int)$val;
     }
 
     /**
@@ -290,7 +293,7 @@ class CategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->productfinderid = (int)$val;
+        $this->ProductFinderID = (int)$val;
     }
 
     /**
@@ -299,7 +302,7 @@ class CategoryType
      */
     public function setProductSearchPageAvailable($val)
     {
-        $this->productsearchpageavailable = (int)$val;
+        $this->ProductSearchPageAvailable = (int)$val;
     }
 
     /**
@@ -308,7 +311,7 @@ class CategoryType
      */
     public function setProductFinderAvailable($val)
     {
-        $this->productfinderavailable = (int)$val;
+        $this->ProductFinderAvailable = (int)$val;
     }
 
     /**
@@ -317,7 +320,7 @@ class CategoryType
      */
     public function setProductFinderIDs($val)
     {
-        $this->productfinderids = (int)$val;
+        $this->ProductFinderIDs = (int)$val;
     }
 
     /**
@@ -326,7 +329,7 @@ class CategoryType
      */
     public function setCharacteristicsSets($val)
     {
-        $this->characteristicssets = (int)$val;
+        $this->CharacteristicsSets = (int)$val;
     }
 
     /**
@@ -335,7 +338,7 @@ class CategoryType
      */
     public function setExpired($val)
     {
-        $this->expired = (int)$val;
+        $this->Expired = (int)$val;
     }
 
     /**
@@ -344,7 +347,7 @@ class CategoryType
      */
     public function setIntlAutosFixedCat($val)
     {
-        $this->intlautosfixedcat = (int)$val;
+        $this->IntlAutosFixedCat = (int)$val;
     }
 
     /**
@@ -353,7 +356,7 @@ class CategoryType
      */
     public function setLeafCategory($val)
     {
-        $this->leafcategory = (int)$val;
+        $this->LeafCategory = (int)$val;
     }
 
     /**
@@ -362,7 +365,7 @@ class CategoryType
      */
     public function setVirtual($val)
     {
-        $this->virtual = (int)$val;
+        $this->Virtual = (int)$val;
     }
 
     /**
@@ -374,7 +377,7 @@ class CategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->numofitems = (int)$val;
+        $this->NumOfItems = (int)$val;
     }
 
     /**
@@ -383,7 +386,7 @@ class CategoryType
      */
     public function setSellerGuaranteeEligible($val)
     {
-        $this->sellerguaranteeeligible = (int)$val;
+        $this->SellerGuaranteeEligible = (int)$val;
     }
 
     /**
@@ -392,7 +395,7 @@ class CategoryType
      */
     public function setORPA($val)
     {
-        $this->orpa = (int)$val;
+        $this->ORPA = (int)$val;
     }
 
     /**
@@ -401,7 +404,7 @@ class CategoryType
      */
     public function setORRA($val)
     {
-        $this->orra = (int)$val;
+        $this->ORRA = (int)$val;
     }
 
     /**
@@ -410,7 +413,7 @@ class CategoryType
      */
     public function setLSD($val)
     {
-        $this->lsd = (int)$val;
+        $this->LSD = (int)$val;
     }
 
     /**
@@ -422,7 +425,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keywords');
         }
-        $this->keywords = (int)$val;
+        $this->Keywords = (int)$val;
     }
 
     /**

@@ -8,28 +8,31 @@ namespace Controle;
  */
 class SummaryEventScheduleType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\NotificationEventTypeCodeType | 	 */
-	public $eventtype;
+	public $EventType;
 	/**
 	 * @var \Controle\SummaryWindowPeriodCodeType | The period of time for which to create a summary.
 	 */
-	public $summaryperiod;
+	public $SummaryPeriod;
 	/**
 	 * @var \Controle\SummaryFrequencyCodeType | How often the summary is to be delivered.
 	 */
-	public $frequency;
+	public $Frequency;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param NotificationEventTypeCodeType $val
 	 * @throws Exception
 	 */
 	public function setEventType($val)
 	{
-        $this->eventtype = (int)$val;
+        $this->EventType = (int)$val;
 	}
 
 	/**
@@ -38,7 +41,7 @@ class SummaryEventScheduleType
 	 */
 	public function setSummaryPeriod($val)
 	{
-        $this->summaryperiod = (int)$val;
+        $this->SummaryPeriod = (int)$val;
 	}
 
 	/**
@@ -47,7 +50,7 @@ class SummaryEventScheduleType
 	 */
 	public function setFrequency($val)
 	{
-        $this->frequency = (int)$val;
+        $this->Frequency = (int)$val;
 	}
 
 	/**

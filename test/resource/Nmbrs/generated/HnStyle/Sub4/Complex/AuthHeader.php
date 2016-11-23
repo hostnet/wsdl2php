@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AuthHeader
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $username;
+    public $Username;
     /**
      * @var string
      */
-    public $token;
+    public $Token;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class AuthHeader
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Username');
         }
-        $this->username = (int)$val;
+        $this->Username = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class AuthHeader
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Token');
         }
-        $this->token = (int)$val;
+        $this->Token = (int)$val;
     }
 }

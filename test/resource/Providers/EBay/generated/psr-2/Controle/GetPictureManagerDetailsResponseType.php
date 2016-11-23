@@ -9,18 +9,21 @@ namespace Controle;
 class GetPictureManagerDetailsResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\PictureManagerDetailsType | Specifies the setting or folder to create, update, or delete, or the picture to update.
      * You cannot upload or delete pictures using SetPictureManagerDetails; you must use the
      * eBay site.
      */
-    public $picturemanagerdetails;
+    public $PictureManagerDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PictureManagerDetailsType $val
      * @throws Exception
      */
     public function setPictureManagerDetails($val)
     {
-        $this->picturemanagerdetails = (int)$val;
+        $this->PictureManagerDetails = (int)$val;
     }
 }

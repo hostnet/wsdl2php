@@ -8,18 +8,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class MyeBayFavoriteSearchListType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The total number of My eBay Second Chance Offers available.
      */
-    public $totalavailable;
+    public $TotalAvailable;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyeBayFavoriteSearchType | A favorite search the user has saved, with a name and a search query.
      */
-    public $favoritesearch;
+    public $FavoriteSearch;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -29,7 +32,7 @@ class MyeBayFavoriteSearchListType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalavailable = (int)$val;
+        $this->TotalAvailable = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class MyeBayFavoriteSearchListType
      */
     public function setFavoriteSearch($val)
     {
-        $this->favoritesearch = (int)$val;
+        $this->FavoriteSearch = (int)$val;
     }
 
     /**

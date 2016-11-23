@@ -10,11 +10,11 @@ class SoapTestClient extends \SoapClient
     const WSDL_FILE = "MicrosoftSoapToolkitV3RoundBTypedTest.wsdl";
 
     private $classmap = array(
-        'SOAPStruct\,' =>
+        'SOAPStruct' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SoApStruct',
-        'SOAPStructStruct\,' =>
+        'SOAPStructStruct' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SoApStructStruct',
-        'SOAPArrayStruct\,' =>
+        'SOAPArrayStruct' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SoApArrayStruct',
     );
 

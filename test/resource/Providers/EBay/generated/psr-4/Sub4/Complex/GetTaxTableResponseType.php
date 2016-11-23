@@ -9,25 +9,28 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetTaxTableResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var dateTime | The last time (in GMT) that the tax table was updated. Only returned if the user previously
      * created a tax table and if the site has jurisdictions. LastUpdateTime is useful for
      * synchronization. If you cache the user's tax table, you can use GetTaxTable to check
      * if it has changed and whether you need to update the cached tax table.
      */
-    public $lastupdatetime;
+    public $LastUpdateTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TaxTableType | Tax details for a jurisdiction such as a state or province. Returns empty in GetItem
      * if no tax table was used. Not applicable to Half.com.
      */
-    public $taxtable;
+    public $TaxTable;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param dateTime $val
      * @throws Exception
      */
     public function setLastUpdateTime($val)
     {
-        $this->lastupdatetime = (int)$val;
+        $this->LastUpdateTime = (int)$val;
     }
 
     /**
@@ -36,6 +39,6 @@ class GetTaxTableResponseType extends
      */
     public function setTaxTable($val)
     {
-        $this->taxtable = (int)$val;
+        $this->TaxTable = (int)$val;
     }
 }

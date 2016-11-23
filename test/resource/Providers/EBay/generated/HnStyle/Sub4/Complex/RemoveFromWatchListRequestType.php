@@ -9,22 +9,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class RemoveFromWatchListRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var boolean | If true, then all the items in the user's watch list are removed. Either ItemID or RemoveAllItems
      * must be specified, but NOT both.
      */
-    public $removeallitems;
+    public $RemoveAllItems;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class RemoveFromWatchListRequestType extends
      */
     public function setRemoveAllItems($val)
     {
-        $this->removeallitems = (int)$val;
+        $this->RemoveAllItems = (int)$val;
     }
 }

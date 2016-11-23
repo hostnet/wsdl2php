@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AckMessage
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var int
      */
-    public $msgid;
+    public $msgId;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class AckMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class AckMessage
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->msgid = (int)$val;
+        $this->msgId = (int)$val;
     }
 }

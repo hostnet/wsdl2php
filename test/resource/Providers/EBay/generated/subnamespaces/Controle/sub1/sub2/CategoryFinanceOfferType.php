@@ -8,18 +8,21 @@ namespace Controle\sub1\sub2;
  */
 class CategoryFinanceOfferType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Specifies a promotional offer that allow the buyer to purchase items on credit.
 	 */
-	public $financeofferid;
+	public $FinanceOfferID;
 	/**
 	 * @var string | ID of the category in which the Want It Now post is listed.
 	 */
-	public $categoryid;
+	public $CategoryID;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -29,7 +32,7 @@ class CategoryFinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->financeofferid = (int)$val;
+        $this->FinanceOfferID = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class CategoryFinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
 	}
 
 	/**

@@ -10,147 +10,150 @@ namespace Controle\sub1\sub2;
  */
 class AddressType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var string | A concatenation of Street1 and Street2, primarily for RegistrationAddress. Not applicable
 	 * to Half.com.
 	 */
-	public $street;
+	public $Street;
 	/**
 	 * @var string | Line 1 of the user's street address. Also applicable to Half.com (for GetOrders).
 	 */
-	public $street1;
+	public $Street1;
 	/**
 	 * @var string | Line 2 of the user's address (such as an apartment number). Returned if the user specified
 	 * a second street value for their address. Also applicable to Half.com (for GetOrders).
 	 */
-	public $street2;
+	public $Street2;
 	/**
 	 * @var string | The name of the user's city. Also applicable to Half.com (for GetOrders).
 	 */
-	public $cityname;
+	public $CityName;
 	/**
 	 * @var string | County information for the user. This field applies to Classified Ad format listings only. Not
 	 * applicable to Half.com.
 	 */
-	public $county;
+	public $County;
 	/**
 	 * @var string | The region of the user's address. Also applicable to Half.com (for GetOrders).
 	 */
-	public $stateorprovince;
+	public $StateOrProvince;
 	/**
 	 * @var \Controle\sub1\sub2\CountryCodeType | Two-letter ISO 3166 country code. In some calls, used with the Location field to indicate
 	 * the city and country where the item is located. Also applicable as input to AddItem and
 	 * related calls when you list items to Half.com (specify US). <br> <br> In GetSearchResultsExpress,
 	 * only returned when ItemDetails is set to Fine.
 	 */
-	public $country;
+	public $Country;
 	/**
 	 * @var string | The name of the user's country. Also applicable to Half.com (for GetOrders).
 	 */
-	public $countryname;
+	public $CountryName;
 	/**
 	 * @var string | User's primary phone number. This may return a value of "Invalid Request" if you are not
 	 * authorized to see the user's phone number. Also applicable to Half.com (for GetOrders).
 	 */
-	public $phone;
+	public $Phone;
 	/**
 	 * @var \Controle\sub1\sub2\CountryCodeType | Standard ISO code for the country of the user's primay telephone phone number. For Classifed
 	 * Ad format listings, this code is used to look up the country's international calling prefix.
 	 * Both the ISO code and country phone prefix are stored with listings of this type. This
 	 * field applies to Classified Ad format listings only.
 	 */
-	public $phonecountrycode;
+	public $PhoneCountryCode;
 	/**
 	 * @var string | Country Prefix of the secondary phone number. This value is derived from inputs supplied
 	 * for PhoneCountryCode. This field applies to Classified Ad format listings only.
 	 */
-	public $phonecountryprefix;
+	public $PhoneCountryPrefix;
 	/**
 	 * @var string | Area or City Code of a user's primary phone number. This field applies to Classified Ad
 	 * format listings only.
 	 */
-	public $phoneareaorcitycode;
+	public $PhoneAreaOrCityCode;
 	/**
 	 * @var string | The local number portion of the user's primary phone number. This field applies to Classified
 	 * Ad format listings only.
 	 */
-	public $phonelocalnumber;
+	public $PhoneLocalNumber;
 	/**
 	 * @var \Controle\sub1\sub2\CountryCodeType | Standard ISO code for the country of a user's secondary telephone phone number. For Classifed
 	 * Ad format listings, this code is used to look up the country's international calling prefix.
 	 * Both the ISO code and country phone prefix are stored with listings of this type. This
 	 * field applies to Classified Ad format listings only.
 	 */
-	public $phone2countrycode;
+	public $Phone2CountryCode;
 	/**
 	 * @var string | Country prefix of a user's secondary phone number. This value is derived from inputs supplied
 	 * for Phone2CountryCode. This field applies to Classified Ad format listings only.
 	 */
-	public $phone2countryprefix;
+	public $Phone2CountryPrefix;
 	/**
 	 * @var string | Area or City Code of a user's secondary phone number. This field applies to Classified
 	 * Ad format listings only.
 	 */
-	public $phone2areaorcitycode;
+	public $Phone2AreaOrCityCode;
 	/**
 	 * @var string | The local number portion of the user's secondary phone number. This field applies to Classified
 	 * Ad format listings only.
 	 */
-	public $phone2localnumber;
+	public $Phone2LocalNumber;
 	/**
 	 * @var string | The postal code to use as the basis for the proximity search.
 	 */
-	public $postalcode;
+	public $PostalCode;
 	/**
 	 * @var string | ID assigned to the address in the eBay database. For GetOrders, applies only to Half.com.
 	 */
-	public $addressid;
+	public $AddressID;
 	/**
 	 * @var \Controle\sub1\sub2\AddressOwnerCodeType | The realm to which the address belongs (e.g. eBay vs PayPal). For GetOrders, applies only
 	 * to Half.com.
 	 */
-	public $addressowner;
+	public $AddressOwner;
 	/**
 	 * @var \Controle\sub1\sub2\AddressStatusCodeType | PayPal address status. Not applicable to Half.com.
 	 */
-	public $addressstatus;
+	public $AddressStatus;
 	/**
 	 * @var string | ID assigned to the address by the owner of the address (fitting only if the address is
 	 * owned by PayPal; see AddressOwner). Also applicable to Half.com (for GetOrders).
 	 */
-	public $externaladdressid;
+	public $ExternalAddressID;
 	/**
 	 * @var string | Seller's international name that is associated with the payment address. Only applicable
 	 * to SellerPaymentAddress. Not applicable to Half.com.
 	 */
-	public $internationalname;
+	public $InternationalName;
 	/**
 	 * @var string | International state and city for the seller's payment address. Only applicable to SellerPaymentAddress. Not
 	 * applicable to Half.com.
 	 */
-	public $internationalstateandcity;
+	public $InternationalStateAndCity;
 	/**
 	 * @var string | Seller's international street address that is associated with the payment address. Only
 	 * applicable to SellerPaymentAddress. Not applicable to Half.com.
 	 */
-	public $internationalstreet;
+	public $InternationalStreet;
 	/**
 	 * @var string | User's company name. Only returned if available. Not applicable to Half.com.
 	 */
-	public $companyname;
+	public $CompanyName;
 	/**
 	 * @var \Controle\sub1\sub2\AddressRecordTypeCodeType | Indicates the nature of the address (e.g., residential or business). Not applicable to
 	 * Half.com.
 	 */
-	public $addressrecordtype;
+	public $AddressRecordType;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -160,7 +163,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -172,7 +175,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street');
         }
-        $this->street = (int)$val;
+        $this->Street = (int)$val;
 	}
 
 	/**
@@ -184,7 +187,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street1');
         }
-        $this->street1 = (int)$val;
+        $this->Street1 = (int)$val;
 	}
 
 	/**
@@ -196,7 +199,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street2');
         }
-        $this->street2 = (int)$val;
+        $this->Street2 = (int)$val;
 	}
 
 	/**
@@ -208,7 +211,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CityName');
         }
-        $this->cityname = (int)$val;
+        $this->CityName = (int)$val;
 	}
 
 	/**
@@ -220,7 +223,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for County');
         }
-        $this->county = (int)$val;
+        $this->County = (int)$val;
 	}
 
 	/**
@@ -232,7 +235,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StateOrProvince');
         }
-        $this->stateorprovince = (int)$val;
+        $this->StateOrProvince = (int)$val;
 	}
 
 	/**
@@ -241,7 +244,7 @@ class AddressType
 	 */
 	public function setCountry($val)
 	{
-        $this->country = (int)$val;
+        $this->Country = (int)$val;
 	}
 
 	/**
@@ -253,7 +256,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryName');
         }
-        $this->countryname = (int)$val;
+        $this->CountryName = (int)$val;
 	}
 
 	/**
@@ -265,7 +268,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->phone = (int)$val;
+        $this->Phone = (int)$val;
 	}
 
 	/**
@@ -274,7 +277,7 @@ class AddressType
 	 */
 	public function setPhoneCountryCode($val)
 	{
-        $this->phonecountrycode = (int)$val;
+        $this->PhoneCountryCode = (int)$val;
 	}
 
 	/**
@@ -286,7 +289,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneCountryPrefix');
         }
-        $this->phonecountryprefix = (int)$val;
+        $this->PhoneCountryPrefix = (int)$val;
 	}
 
 	/**
@@ -298,7 +301,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneAreaOrCityCode');
         }
-        $this->phoneareaorcitycode = (int)$val;
+        $this->PhoneAreaOrCityCode = (int)$val;
 	}
 
 	/**
@@ -310,7 +313,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneLocalNumber');
         }
-        $this->phonelocalnumber = (int)$val;
+        $this->PhoneLocalNumber = (int)$val;
 	}
 
 	/**
@@ -319,7 +322,7 @@ class AddressType
 	 */
 	public function setPhone2CountryCode($val)
 	{
-        $this->phone2countrycode = (int)$val;
+        $this->Phone2CountryCode = (int)$val;
 	}
 
 	/**
@@ -331,7 +334,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2CountryPrefix');
         }
-        $this->phone2countryprefix = (int)$val;
+        $this->Phone2CountryPrefix = (int)$val;
 	}
 
 	/**
@@ -343,7 +346,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2AreaOrCityCode');
         }
-        $this->phone2areaorcitycode = (int)$val;
+        $this->Phone2AreaOrCityCode = (int)$val;
 	}
 
 	/**
@@ -355,7 +358,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2LocalNumber');
         }
-        $this->phone2localnumber = (int)$val;
+        $this->Phone2LocalNumber = (int)$val;
 	}
 
 	/**
@@ -367,7 +370,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->postalcode = (int)$val;
+        $this->PostalCode = (int)$val;
 	}
 
 	/**
@@ -379,7 +382,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AddressID');
         }
-        $this->addressid = (int)$val;
+        $this->AddressID = (int)$val;
 	}
 
 	/**
@@ -388,7 +391,7 @@ class AddressType
 	 */
 	public function setAddressOwner($val)
 	{
-        $this->addressowner = (int)$val;
+        $this->AddressOwner = (int)$val;
 	}
 
 	/**
@@ -397,7 +400,7 @@ class AddressType
 	 */
 	public function setAddressStatus($val)
 	{
-        $this->addressstatus = (int)$val;
+        $this->AddressStatus = (int)$val;
 	}
 
 	/**
@@ -409,7 +412,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAddressID');
         }
-        $this->externaladdressid = (int)$val;
+        $this->ExternalAddressID = (int)$val;
 	}
 
 	/**
@@ -421,7 +424,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalName');
         }
-        $this->internationalname = (int)$val;
+        $this->InternationalName = (int)$val;
 	}
 
 	/**
@@ -433,7 +436,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalStateAndCity');
         }
-        $this->internationalstateandcity = (int)$val;
+        $this->InternationalStateAndCity = (int)$val;
 	}
 
 	/**
@@ -445,7 +448,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalStreet');
         }
-        $this->internationalstreet = (int)$val;
+        $this->InternationalStreet = (int)$val;
 	}
 
 	/**
@@ -457,7 +460,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CompanyName');
         }
-        $this->companyname = (int)$val;
+        $this->CompanyName = (int)$val;
 	}
 
 	/**
@@ -466,7 +469,7 @@ class AddressType
 	 */
 	public function setAddressRecordType($val)
 	{
-        $this->addressrecordtype = (int)$val;
+        $this->AddressRecordType = (int)$val;
 	}
 
 	/**

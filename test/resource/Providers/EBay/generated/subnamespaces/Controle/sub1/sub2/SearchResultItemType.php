@@ -8,13 +8,14 @@ namespace Controle\sub1\sub2;
  */
 class SearchResultItemType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ItemType | Information about the item that spawned the transaction. It is a purchase from this item's
 	 * listing that the transaction represents. To remove a property from an item, specify it
 	 * in ModifyType as a changed property, but do not give it a value in Item. Also applicable
 	 * to Half.com (for GetOrders).
 	 */
-	public $item;
+	public $Item;
 	/**
 	 * @var \Controle\sub1\sub2\NameValueListArrayType | A list of attribute and value pairs. GetSearchResults can return this            when the
 	 * request either specifies IncludeCondition as true or specifies a product finder
@@ -25,7 +26,7 @@ class SearchResultItemType
 	 *    no summary attributes are returned in search results (even when the item
 	 * is listed with Item Specifics.)
 	 */
-	public $itemspecific;
+	public $ItemSpecific;
 	/**
 	 * @var \Controle\sub1\sub2\SearchResultValuesCodeType | Contains additional information about the item listing returned in Item. This
 	 *   information includes whether the item has an image associated with it,            and
@@ -34,18 +35,20 @@ class SearchResultItemType
 	 * analogous to the icons that appear in an            item listing's line in a Search page.
 	 *            Output only.
 	 */
-	public $searchresultvalues;
+	public $SearchResultValues;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ItemType $val
 	 * @throws Exception
 	 */
 	public function setItem($val)
 	{
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
 	}
 
 	/**
@@ -54,7 +57,7 @@ class SearchResultItemType
 	 */
 	public function setItemSpecific($val)
 	{
-        $this->itemspecific = (int)$val;
+        $this->ItemSpecific = (int)$val;
 	}
 
 	/**
@@ -63,7 +66,7 @@ class SearchResultItemType
 	 */
 	public function setSearchResultValues($val)
 	{
-        $this->searchresultvalues = (int)$val;
+        $this->SearchResultValues = (int)$val;
 	}
 
 	/**

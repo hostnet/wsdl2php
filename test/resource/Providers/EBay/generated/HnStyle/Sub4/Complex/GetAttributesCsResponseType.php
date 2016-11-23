@@ -5,13 +5,14 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetAttributesCsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $attributesystemversion;
+    public $AttributeSystemVersion;
     /**
      * @var string | A string containing a list of all the attributes that are applicable to the site (or
      * characteristic sets in the request), along with related meta-data. The meta-data specifies
@@ -23,7 +24,9 @@ class GetAttributesCsResponseType extends
      * references (e.g., &amp;lt;eBay&amp;gt;&amp;lt;Attributes&amp;gt; ...). See the appendices
      * in the eBay Web Services guide for general information about string data types.
      */
-    public $attributedata;
+    public $AttributeData;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class GetAttributesCsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->attributesystemversion = (int)$val;
+        $this->AttributeSystemVersion = (int)$val;
     }
 
     /**
@@ -45,6 +48,6 @@ class GetAttributesCsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeData');
         }
-        $this->attributedata = (int)$val;
+        $this->AttributeData = (int)$val;
     }
 }

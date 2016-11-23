@@ -5,16 +5,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetReturnUrLresponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Sets an application display name for the eBay sign-in page. Need not be set with every
      * call. Optional.
      */
-    public $applicationdisplayname;
+    public $ApplicationDisplayName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AuthenticationEntryArrayType | One or more sets of authentication preferences and other data that you have configured
      * for your application (if any). Call SetReturnURL to configure this data.
      */
-    public $authenticationentryarray;
+    public $AuthenticationEntryArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -24,7 +27,7 @@ class GetReturnUrLresponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
-        $this->applicationdisplayname = (int)$val;
+        $this->ApplicationDisplayName = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class GetReturnUrLresponseType extends
      */
     public function setAuthenticationEntryArray($val)
     {
-        $this->authenticationentryarray = (int)$val;
+        $this->AuthenticationEntryArray = (int)$val;
     }
 }

@@ -9,20 +9,23 @@ namespace Controle;
  */
 class SearchStoreFilterType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $storename;
+    public $StoreName;
     /**
      * @var \Controle\StoreSearchCodeType | Specifies the type of store search used in the filtering: one eBay Store (name
      *       specified in StoreName) or all eBay stores, and also by listing type. Possible
      *            values are enumerated in the StoreSearchCodeType code list.
      */
-    public $storesearch;
+    public $StoreSearch;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -32,7 +35,7 @@ class SearchStoreFilterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class SearchStoreFilterType
      */
     public function setStoreSearch($val)
     {
-        $this->storesearch = (int)$val;
+        $this->StoreSearch = (int)$val;
     }
 
     /**

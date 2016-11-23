@@ -9,6 +9,7 @@ namespace Controle\sub1\sub2;
  */
 class BidApprovalType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned when
 	 * ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
@@ -22,32 +23,34 @@ class BidApprovalType
 	 * on a different auction, the bidder will be listed for that auction as "Bidder 1", not "Bidder
 	 * 3".
 	 */
-	public $userid;
+	public $UserID;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount that has been approved by the seller. If the seller has not yet approved, return
 	 * value "Pending"
 	 */
-	public $approvedbiddinglimit;
+	public $ApprovedBiddingLimit;
 	/**
 	 * @var string | Comments entered by the seller when it declined an approval request, if any.
 	 */
-	public $declinedcomment;
+	public $DeclinedComment;
 	/**
 	 * @var \Controle\sub1\sub2\BidderStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a seller's
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
-	public $status;
+	public $Status;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param UserIDType $val
 	 * @throws Exception
 	 */
 	public function setUserID($val)
 	{
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
 	}
 
 	/**
@@ -56,7 +59,7 @@ class BidApprovalType
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
-        $this->approvedbiddinglimit = (int)$val;
+        $this->ApprovedBiddingLimit = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class BidApprovalType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeclinedComment');
         }
-        $this->declinedcomment = (int)$val;
+        $this->DeclinedComment = (int)$val;
 	}
 
 	/**
@@ -77,7 +80,7 @@ class BidApprovalType
 	 */
 	public function setStatus($val)
 	{
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 
 	/**

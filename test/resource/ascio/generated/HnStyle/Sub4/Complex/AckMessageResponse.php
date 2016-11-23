@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AckMessageResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $ackmessageresult;
+    public $AckMessageResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setAckMessageResult($val)
     {
-        $this->ackmessageresult = (int)$val;
+        $this->AckMessageResult = (int)$val;
     }
 }

@@ -9,27 +9,30 @@ namespace Controle;
  */
 class SuggestedCategoryType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\CategoryType | Describes a category that contains items that match the query.
 	 */
-	public $category;
+	public $Category;
 	/**
 	 * @var int | Percentage of the matching items that were found in this category, relative to other categories
 	 * in which matching items were also found. Indicates the distribution of matching items across
 	 * the suggested categories.
 	 */
-	public $percentitemfound;
+	public $PercentItemFound;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param CategoryType $val
 	 * @throws Exception
 	 */
 	public function setCategory($val)
 	{
-        $this->category = (int)$val;
+        $this->Category = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class SuggestedCategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->percentitemfound = (int)$val;
+        $this->PercentItemFound = (int)$val;
 	}
 
 	/**

@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class LiveAuctionApprovalStatusArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionApprovalStatusType | Indicates the current approval status of a bidder.
      */
-    public $liveauctionstatus;
+    public $LiveAuctionStatus;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param LiveAuctionApprovalStatusType $val
      * @throws Exception
      */
     public function setLiveAuctionStatus($val)
     {
-        $this->liveauctionstatus = (int)$val;
+        $this->LiveAuctionStatus = (int)$val;
     }
 }

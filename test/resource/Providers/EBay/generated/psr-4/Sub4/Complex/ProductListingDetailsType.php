@@ -10,12 +10,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ProductListingDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Identifier for a representative stock product in a product family.            Used as
      * input in GetProductFamilyMembers requests to identify a product family.            Use
      * GetProductSearchResults to determine the available IDs.
      */
-    public $productid;
+    public $ProductID;
     /**
      * @var boolean | If true, indicates that the item listing includes the stock photo. To use an eBay stock
      * photo in an item listing, set IncludeStockPhotoURL to true. If a stock photo is available,
@@ -30,14 +31,14 @@ class ProductListingDetailsType
      * a picture or a gallery URL. You can choose to use the eBay stock photo for this purpose. See
      * the eBay Web Services Guide links below for details.<br> <br> Not applicable to Half.com.
      */
-    public $includestockphotourl;
+    public $IncludeStockPhotoURL;
     /**
      * @var boolean | If true, specifies that the listing should include additional information about the
      * product, such as a publisher's description or film credits. Such information is hosted
      * through the eBay site and cannot be edited. If true, Item.Description is optional in
      * item-listing requests.
      */
-    public $includeprefillediteminformation;
+    public $IncludePrefilledItemInformation;
     /**
      * @var boolean | If true, indicates that the stock photo for an item (if available) is used as the gallery
      * thumbnail. When listing an item, IncludeStockPhotoURL must also be true and Item.PictureDetails.GalleryType
@@ -48,12 +49,12 @@ class ProductListingDetailsType
      * can choose to use the eBay stock photo for this purpose. See "Working with eBay Express
      * Listings" in the eBay Web Services Guide.
      */
-    public $usestockphotourlasgallery;
+    public $UseStockPhotoURLAsGallery;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | Fully qualified URL for a standard image (if any) that is associated with the product. A
      * seller includes the stock photo in the listing by setting IncludeStockPhotoURL.
      */
-    public $stockphotourl;
+    public $StockPhotoURL;
     /**
      * @var string | Copyright statement indicating the source of the product information. This information
      * will be included in the listing with Pre-filled Item Information. Your application should
@@ -61,11 +62,13 @@ class ProductListingDetailsType
      * more than one copyright statement is applicable, they can be presented to the user in
      * alphabetical order. Returned as HTML. Output only.
      */
-    public $copyright;
+    public $Copyright;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -75,7 +78,7 @@ class ProductListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->productid = (int)$val;
+        $this->ProductID = (int)$val;
     }
 
     /**
@@ -84,7 +87,7 @@ class ProductListingDetailsType
      */
     public function setIncludeStockPhotoURL($val)
     {
-        $this->includestockphotourl = (int)$val;
+        $this->IncludeStockPhotoURL = (int)$val;
     }
 
     /**
@@ -93,7 +96,7 @@ class ProductListingDetailsType
      */
     public function setIncludePrefilledItemInformation($val)
     {
-        $this->includeprefillediteminformation = (int)$val;
+        $this->IncludePrefilledItemInformation = (int)$val;
     }
 
     /**
@@ -102,7 +105,7 @@ class ProductListingDetailsType
      */
     public function setUseStockPhotoURLAsGallery($val)
     {
-        $this->usestockphotourlasgallery = (int)$val;
+        $this->UseStockPhotoURLAsGallery = (int)$val;
     }
 
     /**
@@ -111,7 +114,7 @@ class ProductListingDetailsType
      */
     public function setStockPhotoURL($val)
     {
-        $this->stockphotourl = (int)$val;
+        $this->StockPhotoURL = (int)$val;
     }
 
     /**
@@ -123,7 +126,7 @@ class ProductListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Copyright');
         }
-        $this->copyright = (int)$val;
+        $this->Copyright = (int)$val;
     }
 
     /**

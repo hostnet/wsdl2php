@@ -10,16 +10,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetStoreCustomPageResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomPageType | A Store custom page.
      */
-    public $custompage;
+    public $CustomPage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreCustomPageType $val
      * @throws Exception
      */
     public function setCustomPage($val)
     {
-        $this->custompage = (int)$val;
+        $this->CustomPage = (int)$val;
     }
 }

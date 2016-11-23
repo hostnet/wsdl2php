@@ -4,6 +4,7 @@ namespace Controle;
 
 class DisputeStateCodeType
 {
+	// @codingStandardsIgnoreStart
 	const LOCKED                                    = 'Locked';
 	const CLOSED                                    = 'Closed';
 	const BUYERFIRSTRESPONSEPAYOPTION               = 'BuyerFirstResponsePayOption';
@@ -30,4 +31,5 @@ class DisputeStateCodeType
 	const CLAIMRESOLVED                             = 'ClaimResolved';
 	const CLAIMSUBMITTED                            = 'ClaimSubmitted';
 	const CUSTOMCODE                                = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

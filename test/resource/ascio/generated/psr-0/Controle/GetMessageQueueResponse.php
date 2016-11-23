@@ -4,21 +4,24 @@ namespace Controle;
 
 class GetMessageQueueResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\Response
 	 */
-	public $getmessagequeueresult;
+	public $GetMessageQueueResult;
 	/**
 	 * @var \Controle\QueueItem
 	 */
 	public $item;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setGetMessageQueueResult($val)
 	{
-        $this->getmessagequeueresult = (int)$val;
+        $this->GetMessageQueueResult = (int)$val;
 	}
 
 	/**

@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class GetDomainResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $getdomainresult;
+    public $GetDomainResult;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Domain
      */
     public $domain;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setGetDomainResult($val)
     {
-        $this->getdomainresult = (int)$val;
+        $this->GetDomainResult = (int)$val;
     }
 
     /**

@@ -4,29 +4,32 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SoApArrayStruct
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyType
      */
-    public $varstring;
+    public $varString;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyType
      */
-    public $varint;
+    public $varInt;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyType
      */
-    public $varfloat;
+    public $varFloat;
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\string
      */
-    public $vararray;
+    public $varArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param anyType $val
      * @throws Exception
      */
     public function setVarString($val)
     {
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
     }
 
     /**
@@ -35,7 +38,7 @@ class SoApArrayStruct
      */
     public function setVarInt($val)
     {
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
     }
 
     /**
@@ -44,7 +47,7 @@ class SoApArrayStruct
      */
     public function setVarFloat($val)
     {
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
     }
 
     /**
@@ -53,6 +56,6 @@ class SoApArrayStruct
      */
     public function setVarArray($val)
     {
-        $this->vararray = (int)$val;
+        $this->varArray = (int)$val;
     }
 }

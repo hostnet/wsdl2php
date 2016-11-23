@@ -4,6 +4,7 @@ namespace Controle;
 
 class DisputeStatusCodeType
 {
+    // @codingStandardsIgnoreStart
     const CLOSED                             = 'Closed';
     const WAITINGFORSELLERRESPONSE           = 'WaitingForSellerResponse';
     const WAITINGFORBUYERRESPONSE            = 'WaitingForBuyerResponse';
@@ -24,4 +25,5 @@ class DisputeStatusCodeType
     const CLAIMRESOLVED                      = 'ClaimResolved';
     const CLAIMSUBMITTED                     = 'ClaimSubmitted';
     const CUSTOMCODE                         = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

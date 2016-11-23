@@ -12,10 +12,11 @@ namespace Controle;
  */
 class ErrorParameterType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Specifies the value for the property.
      */
-    public $value;
+    public $Value;
     /**
      * @var \Controle\<anyXML>
      */
@@ -23,7 +24,9 @@ class ErrorParameterType
     /**
      * @var string
      */
-    public $paramid;
+    public $ParamID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class ErrorParameterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
     }
 
     /**
@@ -54,6 +57,6 @@ class ErrorParameterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ParamID');
         }
-        $this->paramid = (int)$val;
+        $this->ParamID = (int)$val;
     }
 }

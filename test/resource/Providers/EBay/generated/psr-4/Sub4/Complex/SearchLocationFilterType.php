@@ -10,35 +10,38 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SearchLocationFilterType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CountryCodeType | Country the item is either located in or available to (depending on the value
      *      specified in ItemLocation).
      */
-    public $countrycode;
+    public $CountryCode;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemLocationCodeType | Specifies whether the filter should be for items located in the country            specified
      * in Country or available to that country.
      */
-    public $itemlocation;
+    public $ItemLocation;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SearchLocationType | Specifies filtering based on site ID.
      */
-    public $searchlocation;
+    public $SearchLocation;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CountryCodeType $val
      * @throws Exception
      */
     public function setCountryCode($val)
     {
-        $this->countrycode = (int)$val;
+        $this->CountryCode = (int)$val;
     }
 
     /**
@@ -47,7 +50,7 @@ class SearchLocationFilterType
      */
     public function setItemLocation($val)
     {
-        $this->itemlocation = (int)$val;
+        $this->ItemLocation = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class SearchLocationFilterType
      */
     public function setSearchLocation($val)
     {
-        $this->searchlocation = (int)$val;
+        $this->SearchLocation = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class SearchLocationFilterType
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 
     /**

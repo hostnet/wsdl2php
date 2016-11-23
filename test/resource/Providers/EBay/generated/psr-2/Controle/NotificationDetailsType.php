@@ -11,57 +11,60 @@ namespace Controle;
  */
 class NotificationDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\anyURI | Returns the destination address for the notification. This is the value set using SetNotificationPreferences.
      */
-    public $deliveryurl;
+    public $DeliveryURL;
     /**
      * @var string | Reference identifier for the notification.
      */
-    public $referenceid;
+    public $ReferenceID;
     /**
      * @var dateTime | Date and time when this notification will be removed from the eBay system.
      */
-    public $expirationtime;
+    public $ExpirationTime;
     /**
      * @var \Controle\NotificationEventTypeCodeType | Returns the notification type. Possible values include: AskSellerQuestion, AuctionCheckoutComplete,
      * BestOffer, CheckoutBuyerRequestTotal, EndOfAuction, Feedback, FixedPriceEndOfTransaction,
      * FixedPriceTransaction, ItemNotReceived, MyMessages, OutBid, SecondChanceOffer, UPIBuyerResponseDispute,
      * UPISellerClosedDispute, UPISellerOpenedDispute, and UPISellerRespondedToDispute.
      */
-    public $type;
+    public $Type;
     /**
      * @var int | Returns the total number of retries for the given notification.
      */
-    public $retries;
+    public $Retries;
     /**
      * @var \Controle\NotificationEventStateCodeType | Revise only
      */
-    public $deliverystatus;
+    public $DeliveryStatus;
     /**
      * @var dateTime | Returns the time when the notification is scheduled for retry. This won't be included
      * if the DeliveryStatus is Delivered.
      */
-    public $nextretrytime;
+    public $NextRetryTime;
     /**
      * @var dateTime | Returns the time when the notification was delivered.
      */
-    public $deliverytime;
+    public $DeliveryTime;
     /**
      * @var string | Returns the error message.
      */
-    public $errormessage;
+    public $ErrorMessage;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param anyURI $val
      * @throws Exception
      */
     public function setDeliveryURL($val)
     {
-        $this->deliveryurl = (int)$val;
+        $this->DeliveryURL = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReferenceID');
         }
-        $this->referenceid = (int)$val;
+        $this->ReferenceID = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class NotificationDetailsType
      */
     public function setExpirationTime($val)
     {
-        $this->expirationtime = (int)$val;
+        $this->ExpirationTime = (int)$val;
     }
 
     /**
@@ -91,7 +94,7 @@ class NotificationDetailsType
      */
     public function setType($val)
     {
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
     }
 
     /**
@@ -103,7 +106,7 @@ class NotificationDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->retries = (int)$val;
+        $this->Retries = (int)$val;
     }
 
     /**
@@ -112,7 +115,7 @@ class NotificationDetailsType
      */
     public function setDeliveryStatus($val)
     {
-        $this->deliverystatus = (int)$val;
+        $this->DeliveryStatus = (int)$val;
     }
 
     /**
@@ -121,7 +124,7 @@ class NotificationDetailsType
      */
     public function setNextRetryTime($val)
     {
-        $this->nextretrytime = (int)$val;
+        $this->NextRetryTime = (int)$val;
     }
 
     /**
@@ -130,7 +133,7 @@ class NotificationDetailsType
      */
     public function setDeliveryTime($val)
     {
-        $this->deliverytime = (int)$val;
+        $this->DeliveryTime = (int)$val;
     }
 
     /**
@@ -142,7 +145,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorMessage');
         }
-        $this->errormessage = (int)$val;
+        $this->ErrorMessage = (int)$val;
     }
 
     /**

@@ -8,116 +8,119 @@ namespace Controle;
  */
 class DisputeType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\DisputeIDType | The unique identifier of a dispute, returned by the eBay site when the dispute is created.
      */
-    public $disputeid;
+    public $DisputeID;
     /**
      * @var \Controle\DisputeRecordTypeCodeType | The type of dispute.
      */
-    public $disputerecordtype;
+    public $DisputeRecordType;
     /**
      * @var \Controle\DisputeStateCodeType | The internal state of the dispute. The value determines which values of DisputeActivity
      * are valid when responding to a dispute.
      */
-    public $disputestate;
+    public $DisputeState;
     /**
      * @var \Controle\DisputeStatusCodeType | The status of the dispute, which provides additional information about the dispute state.
      */
-    public $disputestatus;
+    public $DisputeStatus;
     /**
      * @var \Controle\TradingRoleCodeType | The role of the person involved in the dispute who is not taking action or requesting
      * information. The role is either Buyer or Seller.
      */
-    public $otherpartyrole;
+    public $OtherPartyRole;
     /**
      * @var string | The user name of the person involved in the dispute who is not taking action or requesting
      * information. The role is either Buyer or Seller.
      */
-    public $otherpartyname;
+    public $OtherPartyName;
     /**
      * @var \Controle\TradingRoleCodeType | The role of the person involved in the dispute who is taking action or  requesting information.
      * The role is either Buyer or Seller.
      */
-    public $userrole;
+    public $UserRole;
     /**
      * @var \Controle\UserIDType | User ID of the order's buyer. Not applicable to Half.com.
      */
-    public $buyeruserid;
+    public $BuyerUserID;
     /**
      * @var \Controle\UserIDType | The eBay user ID of the seller involved in the dispute.
      */
-    public $selleruserid;
+    public $SellerUserID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\ItemType | Information about the item that spawned the transaction. It is a purchase from this
      * item's listing that the transaction represents. To remove a property from an item, specify
      * it in ModifyType as a changed property, but do not give it a value in Item. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $item;
+    public $Item;
     /**
      * @var \Controle\DisputeReasonCodeType | The top-level reason for the dispute. The value of DisputeReason determines which values
      * of DisputeExplanation are valid. See DisputeExplanationCodeList for details.
      */
-    public $disputereason;
+    public $DisputeReason;
     /**
      * @var \Controle\DisputeExplanationCodeType | The detailed explanation for the dispute. Valid values depend on the value of DisputeReason.
      * See DisputeExplanationCodeList for details.
      */
-    public $disputeexplanation;
+    public $DisputeExplanation;
     /**
      * @var \Controle\DisputeCreditEligibilityCodeType | Whether the dispute is currently eligible for Final Value Fee credit. The value is usually
      * Ineligible until 7 days after the dispute was created, unless a fee exception applies.
      */
-    public $disputecrediteligibility;
+    public $DisputeCreditEligibility;
     /**
      * @var dateTime | The date and time the dispute was created, in GMT.
      */
-    public $disputecreatedtime;
+    public $DisputeCreatedTime;
     /**
      * @var dateTime | The date and time the dispute was modified, in GMT.
      */
-    public $disputemodifiedtime;
+    public $DisputeModifiedTime;
     /**
      * @var \Controle\DisputeResolutionType | The action resulting from the dispute resolution. The action might include a Final Value
      * Fee credit to the seller, a strike to the buyer, a reversal, or an appeal.
      */
-    public $disputeresolution;
+    public $DisputeResolution;
     /**
      * @var \Controle\DisputeMessageType | A response or message posted to a dispute, either by an application or by a user on
      * the eBay site.
      */
-    public $disputemessage;
+    public $DisputeMessage;
     /**
      * @var boolean | Whether the buyer can close a dispute unhappy and escalate it to the eBay Standard Purchase
      * Protection Program. To escalate, the buyer must be eligible for the PPP. Used in Item
      * Not Received disputes.
      */
-    public $escalation;
+    public $Escalation;
     /**
      * @var boolean | Whether the buyer is eligible for the eBay Standard Purchase Protection Program. The
      * eligibility rules are described in the eBay site online help. Used in Item Not Received
      * disputes.
      */
-    public $purchaseprotection;
+    public $PurchaseProtection;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DisputeIDType $val
      * @throws Exception
      */
     public function setDisputeID($val)
     {
-        $this->disputeid = (int)$val;
+        $this->DisputeID = (int)$val;
     }
 
     /**
@@ -126,7 +129,7 @@ class DisputeType
      */
     public function setDisputeRecordType($val)
     {
-        $this->disputerecordtype = (int)$val;
+        $this->DisputeRecordType = (int)$val;
     }
 
     /**
@@ -135,7 +138,7 @@ class DisputeType
      */
     public function setDisputeState($val)
     {
-        $this->disputestate = (int)$val;
+        $this->DisputeState = (int)$val;
     }
 
     /**
@@ -144,7 +147,7 @@ class DisputeType
      */
     public function setDisputeStatus($val)
     {
-        $this->disputestatus = (int)$val;
+        $this->DisputeStatus = (int)$val;
     }
 
     /**
@@ -153,7 +156,7 @@ class DisputeType
      */
     public function setOtherPartyRole($val)
     {
-        $this->otherpartyrole = (int)$val;
+        $this->OtherPartyRole = (int)$val;
     }
 
     /**
@@ -165,7 +168,7 @@ class DisputeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OtherPartyName');
         }
-        $this->otherpartyname = (int)$val;
+        $this->OtherPartyName = (int)$val;
     }
 
     /**
@@ -174,7 +177,7 @@ class DisputeType
      */
     public function setUserRole($val)
     {
-        $this->userrole = (int)$val;
+        $this->UserRole = (int)$val;
     }
 
     /**
@@ -183,7 +186,7 @@ class DisputeType
      */
     public function setBuyerUserID($val)
     {
-        $this->buyeruserid = (int)$val;
+        $this->BuyerUserID = (int)$val;
     }
 
     /**
@@ -192,7 +195,7 @@ class DisputeType
      */
     public function setSellerUserID($val)
     {
-        $this->selleruserid = (int)$val;
+        $this->SellerUserID = (int)$val;
     }
 
     /**
@@ -204,7 +207,7 @@ class DisputeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -213,7 +216,7 @@ class DisputeType
      */
     public function setItem($val)
     {
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
     }
 
     /**
@@ -222,7 +225,7 @@ class DisputeType
      */
     public function setDisputeReason($val)
     {
-        $this->disputereason = (int)$val;
+        $this->DisputeReason = (int)$val;
     }
 
     /**
@@ -231,7 +234,7 @@ class DisputeType
      */
     public function setDisputeExplanation($val)
     {
-        $this->disputeexplanation = (int)$val;
+        $this->DisputeExplanation = (int)$val;
     }
 
     /**
@@ -240,7 +243,7 @@ class DisputeType
      */
     public function setDisputeCreditEligibility($val)
     {
-        $this->disputecrediteligibility = (int)$val;
+        $this->DisputeCreditEligibility = (int)$val;
     }
 
     /**
@@ -249,7 +252,7 @@ class DisputeType
      */
     public function setDisputeCreatedTime($val)
     {
-        $this->disputecreatedtime = (int)$val;
+        $this->DisputeCreatedTime = (int)$val;
     }
 
     /**
@@ -258,7 +261,7 @@ class DisputeType
      */
     public function setDisputeModifiedTime($val)
     {
-        $this->disputemodifiedtime = (int)$val;
+        $this->DisputeModifiedTime = (int)$val;
     }
 
     /**
@@ -267,7 +270,7 @@ class DisputeType
      */
     public function setDisputeResolution($val)
     {
-        $this->disputeresolution = (int)$val;
+        $this->DisputeResolution = (int)$val;
     }
 
     /**
@@ -276,7 +279,7 @@ class DisputeType
      */
     public function setDisputeMessage($val)
     {
-        $this->disputemessage = (int)$val;
+        $this->DisputeMessage = (int)$val;
     }
 
     /**
@@ -285,7 +288,7 @@ class DisputeType
      */
     public function setEscalation($val)
     {
-        $this->escalation = (int)$val;
+        $this->Escalation = (int)$val;
     }
 
     /**
@@ -294,7 +297,7 @@ class DisputeType
      */
     public function setPurchaseProtection($val)
     {
-        $this->purchaseprotection = (int)$val;
+        $this->PurchaseProtection = (int)$val;
     }
 
     /**

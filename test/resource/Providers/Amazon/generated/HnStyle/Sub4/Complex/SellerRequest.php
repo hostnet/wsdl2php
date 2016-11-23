@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SellerRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -44,6 +45,8 @@ class SellerRequest
      * @var string
      */
     public $index;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class VerifyMxRecord
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -11,7 +12,9 @@ class VerifyMxRecord
     /**
      * @var string
      */
-    public $licensekey;
+    public $LicenseKey;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,6 +36,6 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->licensekey = (int)$val;
+        $this->LicenseKey = (int)$val;
     }
 }

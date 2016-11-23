@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class StoreSubscriptionArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\StoreSubscriptionType | A Store subscription level.
 	 */
-	public $subscription;
+	public $Subscription;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreSubscriptionType $val
 	 * @throws Exception
 	 */
 	public function setSubscription($val)
 	{
-        $this->subscription = (int)$val;
+        $this->Subscription = (int)$val;
 	}
 }

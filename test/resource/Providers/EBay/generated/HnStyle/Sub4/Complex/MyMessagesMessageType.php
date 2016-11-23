@@ -9,39 +9,40 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class MyMessagesMessageType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The display name of the eBay user that sent the message.
      */
-    public $sender;
+    public $Sender;
     /**
      * @var string | The displayable user ID of the recipient.
      */
-    public $recipientuserid;
+    public $RecipientUserID;
     /**
      * @var string | The displayable name of the user or eBay application to which the message is sent. Only returned
      * for M2M, and if a value exists.
      */
-    public $sendtoname;
+    public $SendToName;
     /**
      * @var string | The subject of the message.
      */
-    public $subject;
+    public $Subject;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesMessageIDType | An ID that uniquely identifies a message for a given user. <br /><br /> This value is
      * not the same as the value used for the GetMemberMessages MessageID. Use the GetMemberMessages
      * value for used as the GetMyMessages ExternalID instead.
      */
-    public $messageid;
+    public $MessageID;
     /**
      * @var string | An ID used by an external application to uniquely identify a message. <br /><br /> This
      * value is equivalent to the value used for MessageID in GetMemberMessages.
      */
-    public $externalmessageid;
+    public $ExternalMessageID;
     /**
      * @var string | The content type of the body text. The three acceptable values are "TEXT", "HTML",
      * and "XML" (case sensitive).
      */
-    public $contenttype;
+    public $ContentType;
     /**
      * @var string | Suggestion for a different spelling of the search term or terms. The suggestions are
      * given in Text tags  and the suggestion for the first word is given before the suggestion
@@ -49,50 +50,52 @@ class MyMessagesMessageType
      * suggestions vary over time and depend on   whether a word or word combination is in
      * one or more items.
      */
-    public $text;
+    public $Text;
     /**
      * @var boolean | Whether or not a message has been flagged.
      */
-    public $flagged;
+    public $Flagged;
     /**
      * @var boolean | Whether or not a message has been viewed by a given user. Note that retrieving a message
      * with the API does not mark it as read.
      */
-    public $read;
+    public $Read;
     /**
      * @var dateTime | The date and time that a message was created by the sender.
      */
-    public $creationdate;
+    public $CreationDate;
     /**
      * @var dateTime | The date and time that a message was received by My Messages and stored in a database
      * for the recipient.
      */
-    public $receivedate;
+    public $ReceiveDate;
     /**
      * @var dateTime | The date and time at which a message expires.
      */
-    public $expirationdate;
+    public $ExpirationDate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesResponseDetailsType | Details relating to the response to an alert or message.
      */
-    public $responsedetails;
+    public $ResponseDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesForwardDetailsType | Details relating to the forwarding of an alert or message. Only returned if the alert
      * or message is forwarded.
      */
-    public $forwarddetails;
+    public $ForwardDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesFolderType | The folder requested in the album.
      */
-    public $folder;
+    public $Folder;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -102,7 +105,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Sender');
         }
-        $this->sender = (int)$val;
+        $this->Sender = (int)$val;
     }
 
     /**
@@ -114,7 +117,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->recipientuserid = (int)$val;
+        $this->RecipientUserID = (int)$val;
     }
 
     /**
@@ -126,7 +129,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SendToName');
         }
-        $this->sendtoname = (int)$val;
+        $this->SendToName = (int)$val;
     }
 
     /**
@@ -138,7 +141,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->subject = (int)$val;
+        $this->Subject = (int)$val;
     }
 
     /**
@@ -147,7 +150,7 @@ class MyMessagesMessageType
      */
     public function setMessageID($val)
     {
-        $this->messageid = (int)$val;
+        $this->MessageID = (int)$val;
     }
 
     /**
@@ -159,7 +162,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalMessageID');
         }
-        $this->externalmessageid = (int)$val;
+        $this->ExternalMessageID = (int)$val;
     }
 
     /**
@@ -171,7 +174,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContentType');
         }
-        $this->contenttype = (int)$val;
+        $this->ContentType = (int)$val;
     }
 
     /**
@@ -183,7 +186,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->text = (int)$val;
+        $this->Text = (int)$val;
     }
 
     /**
@@ -192,7 +195,7 @@ class MyMessagesMessageType
      */
     public function setFlagged($val)
     {
-        $this->flagged = (int)$val;
+        $this->Flagged = (int)$val;
     }
 
     /**
@@ -201,7 +204,7 @@ class MyMessagesMessageType
      */
     public function setRead($val)
     {
-        $this->read = (int)$val;
+        $this->Read = (int)$val;
     }
 
     /**
@@ -210,7 +213,7 @@ class MyMessagesMessageType
      */
     public function setCreationDate($val)
     {
-        $this->creationdate = (int)$val;
+        $this->CreationDate = (int)$val;
     }
 
     /**
@@ -219,7 +222,7 @@ class MyMessagesMessageType
      */
     public function setReceiveDate($val)
     {
-        $this->receivedate = (int)$val;
+        $this->ReceiveDate = (int)$val;
     }
 
     /**
@@ -228,7 +231,7 @@ class MyMessagesMessageType
      */
     public function setExpirationDate($val)
     {
-        $this->expirationdate = (int)$val;
+        $this->ExpirationDate = (int)$val;
     }
 
     /**
@@ -237,7 +240,7 @@ class MyMessagesMessageType
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -246,7 +249,7 @@ class MyMessagesMessageType
      */
     public function setResponseDetails($val)
     {
-        $this->responsedetails = (int)$val;
+        $this->ResponseDetails = (int)$val;
     }
 
     /**
@@ -255,7 +258,7 @@ class MyMessagesMessageType
      */
     public function setForwardDetails($val)
     {
-        $this->forwarddetails = (int)$val;
+        $this->ForwardDetails = (int)$val;
     }
 
     /**
@@ -264,7 +267,7 @@ class MyMessagesMessageType
      */
     public function setFolder($val)
     {
-        $this->folder = (int)$val;
+        $this->Folder = (int)$val;
     }
 
     /**

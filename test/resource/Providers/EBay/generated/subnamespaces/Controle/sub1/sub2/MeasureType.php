@@ -12,6 +12,7 @@ namespace Controle\sub1\sub2;
  */
 class MeasureType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var decimal
 	 */
@@ -23,7 +24,9 @@ class MeasureType
 	/**
 	 * @var \Controle\sub1\sub2\MeasurementSystemCodeType
 	 */
-	public $measurementsystem;
+	public $measurementSystem;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param decimal $val
 	 * @throws Exception
@@ -48,6 +51,6 @@ class MeasureType
 	 */
 	public function setMeasurementSystem($val)
 	{
-        $this->measurementsystem = (int)$val;
+        $this->measurementSystem = (int)$val;
 	}
 }

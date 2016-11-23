@@ -14,22 +14,25 @@ namespace Controle;
  */
 class AccountEntriesType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\AccountEntryType | Contains the data for one account entry. (See the schema                documentation for
 	 * AccountEntryType for details on its properties.)
 	 */
-	public $accountentry;
+	public $AccountEntry;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AccountEntryType $val
 	 * @throws Exception
 	 */
 	public function setAccountEntry($val)
 	{
-        $this->accountentry = (int)$val;
+        $this->AccountEntry = (int)$val;
 	}
 
 	/**

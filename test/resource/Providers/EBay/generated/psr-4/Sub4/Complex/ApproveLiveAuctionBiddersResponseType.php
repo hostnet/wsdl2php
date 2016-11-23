@@ -10,17 +10,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ApproveLiveAuctionBiddersResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionApprovalStatusArrayType | Contains the results of the request for each item. Mulitple bidders can be approved
      * with one call.
      */
-    public $bidderupdatestatus;
+    public $BidderUpdateStatus;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param LiveAuctionApprovalStatusArrayType $val
      * @throws Exception
      */
     public function setBidderUpdateStatus($val)
     {
-        $this->bidderupdatestatus = (int)$val;
+        $this->BidderUpdateStatus = (int)$val;
     }
 }

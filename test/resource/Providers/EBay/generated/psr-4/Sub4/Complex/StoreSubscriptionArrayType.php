@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class StoreSubscriptionArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreSubscriptionType | A Store subscription level.
      */
-    public $subscription;
+    public $Subscription;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreSubscriptionType $val
      * @throws Exception
      */
     public function setSubscription($val)
     {
-        $this->subscription = (int)$val;
+        $this->Subscription = (int)$val;
     }
 }

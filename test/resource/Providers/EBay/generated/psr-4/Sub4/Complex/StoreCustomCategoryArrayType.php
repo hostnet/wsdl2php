@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class StoreCustomCategoryArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomCategoryType | A Store custom category.
      */
-    public $customcategory;
+    public $CustomCategory;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreCustomCategoryType $val
      * @throws Exception
      */
     public function setCustomCategory($val)
     {
-        $this->customcategory = (int)$val;
+        $this->CustomCategory = (int)$val;
     }
 }

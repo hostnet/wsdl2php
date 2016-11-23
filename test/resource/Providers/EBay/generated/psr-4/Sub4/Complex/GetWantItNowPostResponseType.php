@@ -10,16 +10,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetWantItNowPostResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\WantItNowPostType | Contains data for a Want It Now post found by a search.
      */
-    public $wantitnowpost;
+    public $WantItNowPost;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param WantItNowPostType $val
      * @throws Exception
      */
     public function setWantItNowPost($val)
     {
-        $this->wantitnowpost = (int)$val;
+        $this->WantItNowPost = (int)$val;
     }
 }

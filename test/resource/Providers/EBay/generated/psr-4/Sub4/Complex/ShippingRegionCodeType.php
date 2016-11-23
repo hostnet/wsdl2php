@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ShippingRegionCodeType
 {
+    // @codingStandardsIgnoreStart
     const AFRICA        = 'Africa';
     const ASIA          = 'Asia';
     const CARIBBEAN     = 'Caribbean';
@@ -19,4 +20,5 @@ class ShippingRegionCodeType
     const AMERICAS      = 'Americas';
     const NONE          = 'None';
     const CUSTOMCODE    = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

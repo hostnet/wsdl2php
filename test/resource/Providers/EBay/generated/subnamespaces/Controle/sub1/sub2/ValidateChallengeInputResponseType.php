@@ -9,16 +9,19 @@ namespace Controle\sub1\sub2;
 class ValidateChallengeInputResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | Indicates whether the token is valid.
 	 */
-	public $validtoken;
+	public $ValidToken;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setValidToken($val)
 	{
-        $this->validtoken = (int)$val;
+        $this->ValidToken = (int)$val;
 	}
 }

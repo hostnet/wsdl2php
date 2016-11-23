@@ -4,6 +4,7 @@ namespace Controle;
 
 class DigitalDeliveryDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | File type, operating system specifications, or other requirements for using the digital
      * item. In this section, specify the following information about your digital item, if
@@ -18,18 +19,18 @@ class DigitalDeliveryDetailsType
      * buyers know exactly what they need to access and use the item successfully. This information
      * will appear in your listing so that buyers can make an informed purchase decision.
      */
-    public $requirements;
+    public $Requirements;
     /**
      * @var \Controle\DigitalDeliveryMethodCodeType | The digital download method.
      */
-    public $method;
+    public $Method;
     /**
      * @var \Controle\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item
      * URL) to launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be
      * used in certain types of applications. See your API license agreement. Also see this
      * page for logo usage rules:<br> http://developer.ebay.com/join/licenses/apilogousage
      */
-    public $url;
+    public $URL;
     /**
      * @var string | Text instructions for accessing the digital item. For example, if no delivery URL is
      * provided, the seller may ask the buyer to specify an email address when they pay for
@@ -40,11 +41,13 @@ class DigitalDeliveryDetailsType
      * if Method value is DownloadURL and a DownloadURL value is specified. Ignored if Method
      * value is None.
      */
-    public $instructions;
+    public $Instructions;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -54,7 +57,7 @@ class DigitalDeliveryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Requirements');
         }
-        $this->requirements = (int)$val;
+        $this->Requirements = (int)$val;
     }
 
     /**
@@ -63,7 +66,7 @@ class DigitalDeliveryDetailsType
      */
     public function setMethod($val)
     {
-        $this->method = (int)$val;
+        $this->Method = (int)$val;
     }
 
     /**
@@ -72,7 +75,7 @@ class DigitalDeliveryDetailsType
      */
     public function setURL($val)
     {
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
     }
 
     /**
@@ -84,7 +87,7 @@ class DigitalDeliveryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Instructions');
         }
-        $this->instructions = (int)$val;
+        $this->Instructions = (int)$val;
     }
 
     /**

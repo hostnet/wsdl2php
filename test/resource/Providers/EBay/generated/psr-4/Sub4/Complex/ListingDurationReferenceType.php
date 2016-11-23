@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ListingDurationReferenceType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int
      */
@@ -16,6 +17,8 @@ class ListingDurationReferenceType
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTypeCodeType
      */
     public $type;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception

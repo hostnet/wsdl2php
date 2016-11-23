@@ -14,24 +14,27 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetUserContactDetailsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | An eBay ID that uniquely identifies a given user. The same as the contact's eBay username. Either
      * the seller's or bidder's username may be specified here, as long as a bidding relationship
      * exists between them. That is, the bidder must be bidding on the seller's active item,
      * or an eBay user must have made an offer on the item via Best Offer.
      */
-    public $contactid;
+    public $ContactID;
     /**
      * @var string | An eBay ID that uniquely identifies a given user. The same as the seller's eBay username. Either
      * the seller's or bidder's username may be specified here, as long as a bidding relationship
      * exists between them. That is, the bidder must be bidding on the seller's active item,
      * or an eBay user must have made an offer on the item via Best Offer.
      */
-    public $requesterid;
+    public $RequesterID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -41,7 +44,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemID');
         }
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContactID');
         }
-        $this->contactid = (int)$val;
+        $this->ContactID = (int)$val;
     }
 
     /**
@@ -65,6 +68,6 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RequesterID');
         }
-        $this->requesterid = (int)$val;
+        $this->RequesterID = (int)$val;
     }
 }

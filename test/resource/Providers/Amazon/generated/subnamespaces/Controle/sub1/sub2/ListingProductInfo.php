@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class ListingProductInfo
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ListingProductDetailsArray
 	 */
-	public $listingproductdetails;
+	public $ListingProductDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ListingProductDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setListingProductDetails($val)
 	{
-        $this->listingproductdetails = (int)$val;
+        $this->ListingProductDetails = (int)$val;
 	}
 }

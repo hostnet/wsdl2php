@@ -9,6 +9,7 @@ namespace Controle\sub1\sub2;
  */
 class AuthenticationEntryType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | A URL that you set up in order to determine when a            user's authentication and
 	 * authorization process succeeded.            After a user signs into eBay and authorizes
@@ -17,11 +18,11 @@ class AuthenticationEntryType
 	 * appends the user's authentication token plus            other data that you specified to
 	 * identify the user.
 	 */
-	public $accepturl;
+	public $AcceptURL;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | Your privacy policy URL, which is shown to end users on the eBay sign-in page.
 	 */
-	public $privacypolicyurl;
+	public $PrivacyPolicyURL;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | A URL that you set up in order to determine when a            user's authentication and
 	 * authorization process did not succeed.            After a user signs into eBay but chooses
@@ -29,30 +30,32 @@ class AuthenticationEntryType
 	 * redirects the            user's browser to this URL and appends data that you specified
 	 *            to identify the user (but does not return an authentication token).
 	 */
-	public $rejecturl;
+	public $RejectURL;
 	/**
 	 * @var string | A unique identifier associated with application and the combination            of URLs
 	 * within this authentication entry.            Unique across all applications that execute
 	 * eBay Web Services calls.            For convenience, you can call GetRuName to generate
 	 * a unique value.
 	 */
-	public $runame;
+	public $RuName;
 	/**
 	 * @var \Controle\sub1\sub2\TokenReturnMethodCodeType | Specifies whether to return the token in the HTTP response stream            sent to the
 	 * accept URL, or to make it available for retrieval via FetchToken.
 	 */
-	public $tokenreturnmethod;
+	public $TokenReturnMethod;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param anyURI $val
 	 * @throws Exception
 	 */
 	public function setAcceptURL($val)
 	{
-        $this->accepturl = (int)$val;
+        $this->AcceptURL = (int)$val;
 	}
 
 	/**
@@ -61,7 +64,7 @@ class AuthenticationEntryType
 	 */
 	public function setPrivacyPolicyURL($val)
 	{
-        $this->privacypolicyurl = (int)$val;
+        $this->PrivacyPolicyURL = (int)$val;
 	}
 
 	/**
@@ -70,7 +73,7 @@ class AuthenticationEntryType
 	 */
 	public function setRejectURL($val)
 	{
-        $this->rejecturl = (int)$val;
+        $this->RejectURL = (int)$val;
 	}
 
 	/**
@@ -82,7 +85,7 @@ class AuthenticationEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RuName');
         }
-        $this->runame = (int)$val;
+        $this->RuName = (int)$val;
 	}
 
 	/**
@@ -91,7 +94,7 @@ class AuthenticationEntryType
 	 */
 	public function setTokenReturnMethod($val)
 	{
-        $this->tokenreturnmethod = (int)$val;
+        $this->TokenReturnMethod = (int)$val;
 	}
 
 	/**

@@ -14,53 +14,54 @@ namespace Controle;
  */
 class AccountEntryType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\AccountDetailEntryCodeType | Indicates the type of transaction or reason for the transaction. For example, a value
      * of FeeGallery indicates a debit for listing an item in the Gallery. Possible values
      * are enumerated in the AccountDetailEntryCodeType code list.
      */
-    public $accountdetailsentrytype;
+    public $AccountDetailsEntryType;
     /**
      * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
      */
-    public $description;
+    public $Description;
     /**
      * @var \Controle\AmountType | Indicates the current balance of the additional account.
      */
-    public $balance;
+    public $Balance;
     /**
      * @var \Controle\AmountType | Previous behavior: Credit amount for the entry. Returns 0.00 if the entry is a debit.
      */
-    public $credit;
+    public $Credit;
     /**
      * @var dateTime | The date the picture was uploaded to the Picture Manager account.
      */
-    public $date;
+    public $Date;
     /**
      * @var \Controle\AmountType | Previous behavior: Debit amount for the entry. Returns 0.00 if the entry is a credit.
      */
-    public $debit;
+    public $Debit;
     /**
      * @var \Controle\AmountType | Gross fees that are assessed by eBay (net fees plus VAT, if any). Returned even if VAT
      * does not apply. With compatibility level 387, the value is positive for debits and negative
      * for credits, reversing the sign of earlier versions.
      */
-    public $grossdetailamount;
+    public $GrossDetailAmount;
     /**
      * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Memo line for the account entry, can be an empty string.
      */
-    public $memo;
+    public $Memo;
     /**
      * @var \Controle\AmountType | Net fees that are assessed by eBay, excluding additional surchargesand VAT (if any).
      * Returned even if VAT does not apply. With compatibility level 387 and higher, the value
      * is positive for debits (user pays eBay) and negative for credits (eBay pays user), reversing
      * the sign of earlier versions.
      */
-    public $netdetailamount;
+    public $NetDetailAmount;
     /**
      * @var string | eBay reference number for the account entry. May return no value for some account transactions,
      * such as an administrative action like placing the user's credit card on file.  You can
@@ -69,7 +70,7 @@ class AccountEntryType
      * be used in combination as a unique key: AccountEntry.Date, AccountEntry.AccountDetailsEntryType, AccountEntry.ItemID,
      * and AccountEntry.RefNumber.
      */
-    public $refnumber;
+    public $RefNumber;
     /**
      * @var decimal | VAT rate for the item, if any. When the VATPercent is specified, the item's VAT information
      * appears on the item's listing page. In addition, the seller can choose to print an invoice
@@ -82,22 +83,24 @@ class AccountEntryType
      * up the value to 12.346.) Note: The View Item page may display the precision to 2 decimal
      * places with no trailing zeros. However, the full value you send in is stored.
      */
-    public $vatpercent;
+    public $VATPercent;
     /**
      * @var string | Title of a Want It Now post.
      */
-    public $title;
+    public $Title;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AccountDetailEntryCodeType $val
      * @throws Exception
      */
     public function setAccountDetailsEntryType($val)
     {
-        $this->accountdetailsentrytype = (int)$val;
+        $this->AccountDetailsEntryType = (int)$val;
     }
 
     /**
@@ -109,7 +112,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
     }
 
     /**
@@ -118,7 +121,7 @@ class AccountEntryType
      */
     public function setBalance($val)
     {
-        $this->balance = (int)$val;
+        $this->Balance = (int)$val;
     }
 
     /**
@@ -127,7 +130,7 @@ class AccountEntryType
      */
     public function setCredit($val)
     {
-        $this->credit = (int)$val;
+        $this->Credit = (int)$val;
     }
 
     /**
@@ -136,7 +139,7 @@ class AccountEntryType
      */
     public function setDate($val)
     {
-        $this->date = (int)$val;
+        $this->Date = (int)$val;
     }
 
     /**
@@ -145,7 +148,7 @@ class AccountEntryType
      */
     public function setDebit($val)
     {
-        $this->debit = (int)$val;
+        $this->Debit = (int)$val;
     }
 
     /**
@@ -154,7 +157,7 @@ class AccountEntryType
      */
     public function setGrossDetailAmount($val)
     {
-        $this->grossdetailamount = (int)$val;
+        $this->GrossDetailAmount = (int)$val;
     }
 
     /**
@@ -163,7 +166,7 @@ class AccountEntryType
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -175,7 +178,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Memo');
         }
-        $this->memo = (int)$val;
+        $this->Memo = (int)$val;
     }
 
     /**
@@ -184,7 +187,7 @@ class AccountEntryType
      */
     public function setNetDetailAmount($val)
     {
-        $this->netdetailamount = (int)$val;
+        $this->NetDetailAmount = (int)$val;
     }
 
     /**
@@ -196,7 +199,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefNumber');
         }
-        $this->refnumber = (int)$val;
+        $this->RefNumber = (int)$val;
     }
 
     /**
@@ -205,7 +208,7 @@ class AccountEntryType
      */
     public function setVATPercent($val)
     {
-        $this->vatpercent = (int)$val;
+        $this->VATPercent = (int)$val;
     }
 
     /**
@@ -217,7 +220,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
     }
 
     /**

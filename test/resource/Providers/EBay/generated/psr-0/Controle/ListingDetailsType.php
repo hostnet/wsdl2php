@@ -12,45 +12,46 @@ namespace Controle;
  */
 class ListingDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | If true, the item is listed in a Mature category. Users must accept the Mature Category
 	 * agreement on the eBay site to retrieve items listed in Mature categories. (Users do not
 	 * need to sign this agreement to be able to list items in Mature Categories.)
 	 */
-	public $adult;
+	public $Adult;
 	/**
 	 * @var boolean | Applicable for Real Estate auctions only. If true, buyers and sellers are expected to follow
 	 * through on the sale. If false, bids for the Real Estate auction are only expressions of
 	 * interest.
 	 */
-	public $bindingauction;
+	public $BindingAuction;
 	/**
 	 * @var boolean | Indicates whether the user as a seller has the option set to default new item listings
 	 * to go through checkout. (Sellers enable this property in their My eBay user preferences
 	 * on the eBay site.)
 	 */
-	public $checkoutenabled;
+	public $CheckoutEnabled;
 	/**
 	 * @var \Controle\AmountType | Converted value of the BuyItNowPrice in the currency of the site that returned this response. For
 	 * active items, refresh this value every 24 hours to pick up the current conversion rates.
 	 */
-	public $convertedbuyitnowprice;
+	public $ConvertedBuyItNowPrice;
 	/**
 	 * @var \Controle\AmountType | Converted value of the StartPrice in the currency of the site that returned this response. For
 	 * active items, refresh this value every 24 hours to pick up the current conversion rates.
 	 */
-	public $convertedstartprice;
+	public $ConvertedStartPrice;
 	/**
 	 * @var \Controle\AmountType | Converted value of the ReservePrice in the currency of the site that returned this response.
 	 * Only returned for listings with a reserve price when the requesting user is the listing's
 	 * seller. For active items, refresh this value every 24 hours to pick up the current conversion
 	 * rates. Not applicable to Fixed Price and Store Inventory listings.
 	 */
-	public $convertedreserveprice;
+	public $ConvertedReservePrice;
 	/**
 	 * @var boolean | If true, the seller specified a value in ReservePrice.
 	 */
-	public $hasreserveprice;
+	public $HasReservePrice;
 	/**
 	 * @var string | Obsolete: the use of regions for locating items is being phased out and has been replaced
 	 * on most sites by distance-based searching and searches by location. Some sites, such as
@@ -60,29 +61,29 @@ class ListingDetailsType
 	 * be used by the web site. For sites that no longer support the use of regions, use Item.PostalCode
 	 * and Item.Location instead.
 	 */
-	public $regionname;
+	public $RegionName;
 	/**
 	 * @var \Controle\ItemIDType | Indicates the new item ID for a re-listed item. When an item is re-listed, the item ID
 	 * for the new (re-list) item is added to the old (expired) listing to provide buyers a means
 	 * to navigate to the new listing. This value only appears when the old listing is retrieved. Output
 	 * only.
 	 */
-	public $relisteditemid;
+	public $RelistedItemID;
 	/**
 	 * @var \Controle\ItemIDType | The item ID for the original listing from which a second chance offer is made. This value
 	 * is only returned when the data for the second chance offer listing is retrieved. Output
 	 * only.
 	 */
-	public $secondchanceoriginalitemid;
+	public $SecondChanceOriginalItemID;
 	/**
 	 * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
 	 */
-	public $starttime;
+	public $StartTime;
 	/**
 	 * @var dateTime | Time stamp (in GMT) when the listing is scheduled to end (calculated based on the values
 	 * of StartTime and ListingDuration) or the actual end time if the item has ended.
 	 */
-	public $endtime;
+	public $EndTime;
 	/**
 	 * @var \Controle\anyURI | The URL of the Web page where a user can view the listing. On the US site, this is called
 	 * the "View Item" page. If you enabled affiliate tracking in a search-related call (for example,
@@ -91,27 +92,27 @@ class ListingDetailsType
 	 * target="_blank">eBay Affiliate Program</a>). For GetSearchResultsExpress, the ViewItemURL
 	 * field is returned only if you specified AffiliateTrackingDetails in the request.
 	 */
-	public $viewitemurl;
+	public $ViewItemURL;
 	/**
 	 * @var boolean | Indicates whether the item has any unanswered questions. Use GetMemberMessages to retrieve
 	 * unanswered questions for the item if this flag indicates that there are any.
 	 */
-	public $hasunansweredquestions;
+	public $HasUnansweredQuestions;
 	/**
 	 * @var boolean | Indicates whether the item has any publicly displayed messages. Use GetMemberMessages to
 	 * retrieve public messages for the item if this flag indicates that there are any.
 	 */
-	public $haspublicmessages;
+	public $HasPublicMessages;
 	/**
 	 * @var boolean | Indicates whether, for a Dutch Auction, there is a Buy It Now option. Germany site (site
 	 * ID 77) and China site (site ID 223) only.
 	 */
-	public $buyitnowavailable;
+	public $BuyItNowAvailable;
 	/**
 	 * @var \Controle\SellerBusinessCodeType | Type of seller account. This value is returned if the German site (site ID 77) or eBay
 	 * Motors site (site ID 100) is specified.
 	 */
-	public $sellerbusinesstype;
+	public $SellerBusinessType;
 	/**
 	 * @var \Controle\AmountType | Specifies the minimum acceptable best offer price. If a buyer submits a best offer that
 	 * is below this value, the offer is automatically declined by the seller. Applies only to
@@ -119,7 +120,7 @@ class ListingDetailsType
 	 * must be enabled for the item, and only the seller who listed the item can see this value. To
 	 * remove this value when revising or relisting an item, use DeletedField.
 	 */
-	public $minimumbestofferprice;
+	public $MinimumBestOfferPrice;
 	/**
 	 * @var string | Specifies the message sent from the seller to the buyer when a submitted best offer is
 	 * automatically declined by the seller. A best offer is automatically declined if it does
@@ -128,13 +129,13 @@ class ListingDetailsType
 	 * Best Offer must be enabled for the item. To remove this value when revising or relisting
 	 * an item, use DeletedField.
 	 */
-	public $minimumbestoffermessage;
+	public $MinimumBestOfferMessage;
 	/**
 	 * @var string | Specifies a distance (in miles) used as the radius of the area about the supplied postal
 	 * code that constitutes the local market. Use GetCategoryFeatures to determine the local
 	 * listing distances supported by a given site, category, and Local Market subscription level.
 	 */
-	public $locallistingdistance;
+	public $LocalListingDistance;
 	/**
 	 * @var boolean | If true, the item is qualified for the eBay Express site associated with the item's listing
 	 * site (US or Germany).<br> <br> For fixed-price, Store Inventory, and Express format listings, this
@@ -144,7 +145,7 @@ class ListingDetailsType
 	 * has bids or not, and see EndTime or Item.TimeLeft to to determine how soon the listing
 	 * ends.
 	 */
-	public $expresslisting;
+	public $ExpressListing;
 	/**
 	 * @var \Controle\ExpressItemRequirementsType | Contains details about why an item does or doesn't qualify as an Express listing. Only
 	 * returned when IncludeExpressRequirements is true the request. Whether a child field is
@@ -154,12 +155,12 @@ class ListingDetailsType
 	 * assessed in this order:<br> - SellerExpressEligible<br> - ExpressOptOut<br> - ExpressApproved<br> -
 	 * All other settings
 	 */
-	public $expressitemrequirements;
+	public $ExpressItemRequirements;
 	/**
 	 * @var \Controle\ItemIDType | Indicates the item ID of the original item listing from which a Transaction Confirmation
 	 * Request (TCR) was created. This value is only returned when the data for a TCR is retrieved.
 	 */
-	public $tcroriginalitemid;
+	public $TCROriginalItemID;
 	/**
 	 * @var \Controle\anyURI | This URL takes you to the same View Item page as ViewItemURL, but this URL is optimized
 	 * to support natural search. That is, this URL is designed to make items on eBay easier to
@@ -170,18 +171,20 @@ class ListingDetailsType
 	 * should not modify the query syntax.  For example, eBay won't recognize the URL if you change
 	 * QQ to ?.</span>
 	 */
-	public $viewitemurlfornaturalsearch;
+	public $ViewItemURLForNaturalSearch;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setAdult($val)
 	{
-        $this->adult = (int)$val;
+        $this->Adult = (int)$val;
 	}
 
 	/**
@@ -190,7 +193,7 @@ class ListingDetailsType
 	 */
 	public function setBindingAuction($val)
 	{
-        $this->bindingauction = (int)$val;
+        $this->BindingAuction = (int)$val;
 	}
 
 	/**
@@ -199,7 +202,7 @@ class ListingDetailsType
 	 */
 	public function setCheckoutEnabled($val)
 	{
-        $this->checkoutenabled = (int)$val;
+        $this->CheckoutEnabled = (int)$val;
 	}
 
 	/**
@@ -208,7 +211,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedBuyItNowPrice($val)
 	{
-        $this->convertedbuyitnowprice = (int)$val;
+        $this->ConvertedBuyItNowPrice = (int)$val;
 	}
 
 	/**
@@ -217,7 +220,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedStartPrice($val)
 	{
-        $this->convertedstartprice = (int)$val;
+        $this->ConvertedStartPrice = (int)$val;
 	}
 
 	/**
@@ -226,7 +229,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedReservePrice($val)
 	{
-        $this->convertedreserveprice = (int)$val;
+        $this->ConvertedReservePrice = (int)$val;
 	}
 
 	/**
@@ -235,7 +238,7 @@ class ListingDetailsType
 	 */
 	public function setHasReservePrice($val)
 	{
-        $this->hasreserveprice = (int)$val;
+        $this->HasReservePrice = (int)$val;
 	}
 
 	/**
@@ -247,7 +250,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionName');
         }
-        $this->regionname = (int)$val;
+        $this->RegionName = (int)$val;
 	}
 
 	/**
@@ -256,7 +259,7 @@ class ListingDetailsType
 	 */
 	public function setRelistedItemID($val)
 	{
-        $this->relisteditemid = (int)$val;
+        $this->RelistedItemID = (int)$val;
 	}
 
 	/**
@@ -265,7 +268,7 @@ class ListingDetailsType
 	 */
 	public function setSecondChanceOriginalItemID($val)
 	{
-        $this->secondchanceoriginalitemid = (int)$val;
+        $this->SecondChanceOriginalItemID = (int)$val;
 	}
 
 	/**
@@ -274,7 +277,7 @@ class ListingDetailsType
 	 */
 	public function setStartTime($val)
 	{
-        $this->starttime = (int)$val;
+        $this->StartTime = (int)$val;
 	}
 
 	/**
@@ -283,7 +286,7 @@ class ListingDetailsType
 	 */
 	public function setEndTime($val)
 	{
-        $this->endtime = (int)$val;
+        $this->EndTime = (int)$val;
 	}
 
 	/**
@@ -292,7 +295,7 @@ class ListingDetailsType
 	 */
 	public function setViewItemURL($val)
 	{
-        $this->viewitemurl = (int)$val;
+        $this->ViewItemURL = (int)$val;
 	}
 
 	/**
@@ -301,7 +304,7 @@ class ListingDetailsType
 	 */
 	public function setHasUnansweredQuestions($val)
 	{
-        $this->hasunansweredquestions = (int)$val;
+        $this->HasUnansweredQuestions = (int)$val;
 	}
 
 	/**
@@ -310,7 +313,7 @@ class ListingDetailsType
 	 */
 	public function setHasPublicMessages($val)
 	{
-        $this->haspublicmessages = (int)$val;
+        $this->HasPublicMessages = (int)$val;
 	}
 
 	/**
@@ -319,7 +322,7 @@ class ListingDetailsType
 	 */
 	public function setBuyItNowAvailable($val)
 	{
-        $this->buyitnowavailable = (int)$val;
+        $this->BuyItNowAvailable = (int)$val;
 	}
 
 	/**
@@ -328,7 +331,7 @@ class ListingDetailsType
 	 */
 	public function setSellerBusinessType($val)
 	{
-        $this->sellerbusinesstype = (int)$val;
+        $this->SellerBusinessType = (int)$val;
 	}
 
 	/**
@@ -337,7 +340,7 @@ class ListingDetailsType
 	 */
 	public function setMinimumBestOfferPrice($val)
 	{
-        $this->minimumbestofferprice = (int)$val;
+        $this->MinimumBestOfferPrice = (int)$val;
 	}
 
 	/**
@@ -349,7 +352,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MinimumBestOfferMessage');
         }
-        $this->minimumbestoffermessage = (int)$val;
+        $this->MinimumBestOfferMessage = (int)$val;
 	}
 
 	/**
@@ -361,7 +364,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistance');
         }
-        $this->locallistingdistance = (int)$val;
+        $this->LocalListingDistance = (int)$val;
 	}
 
 	/**
@@ -370,7 +373,7 @@ class ListingDetailsType
 	 */
 	public function setExpressListing($val)
 	{
-        $this->expresslisting = (int)$val;
+        $this->ExpressListing = (int)$val;
 	}
 
 	/**
@@ -379,7 +382,7 @@ class ListingDetailsType
 	 */
 	public function setExpressItemRequirements($val)
 	{
-        $this->expressitemrequirements = (int)$val;
+        $this->ExpressItemRequirements = (int)$val;
 	}
 
 	/**
@@ -388,7 +391,7 @@ class ListingDetailsType
 	 */
 	public function setTCROriginalItemID($val)
 	{
-        $this->tcroriginalitemid = (int)$val;
+        $this->TCROriginalItemID = (int)$val;
 	}
 
 	/**
@@ -397,7 +400,7 @@ class ListingDetailsType
 	 */
 	public function setViewItemURLForNaturalSearch($val)
 	{
-        $this->viewitemurlfornaturalsearch = (int)$val;
+        $this->ViewItemURLForNaturalSearch = (int)$val;
 	}
 
 	/**

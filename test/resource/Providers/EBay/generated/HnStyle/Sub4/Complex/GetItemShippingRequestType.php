@@ -16,32 +16,35 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetItemShippingRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var int | Number of items purchased so far. (Subtract from the value returned in the Item.Quantity
      * field to calculate the number of items remaining.)
      */
-    public $quantitysold;
+    public $QuantitySold;
     /**
      * @var string | Destination country postal code (or zipcode, for US). Ignored if no country code is
      * provided. Optional tag for some countries. More likely to be required for large countries.
      */
-    public $destinationpostalcode;
+    public $DestinationPostalCode;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CountryCodeType | Destination country code. If DestinationCountryCode is US, postal code is required and
      * represents US zip code.
      */
-    public $destinationcountrycode;
+    public $DestinationCountryCode;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class GetItemShippingRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantitysold = (int)$val;
+        $this->QuantitySold = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class GetItemShippingRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DestinationPostalCode');
         }
-        $this->destinationpostalcode = (int)$val;
+        $this->DestinationPostalCode = (int)$val;
     }
 
     /**
@@ -74,6 +77,6 @@ class GetItemShippingRequestType extends
      */
     public function setDestinationCountryCode($val)
     {
-        $this->destinationcountrycode = (int)$val;
+        $this->DestinationCountryCode = (int)$val;
     }
 }

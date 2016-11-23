@@ -8,13 +8,14 @@ namespace Controle;
  */
 class ExpressPreferencesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\ExpressSellingPreferenceCodeType | If true, the seller's preferences in My eBay are set to include listings on eBay Express. If
      * false, the seller prefers not to include listings on Express, so the seller is therefore
      * ineligible for Express (and no other seller requirement settings are returned in this
      * case).
      */
-    public $expresssellingpreference;
+    public $ExpressSellingPreference;
     /**
      * @var string | For eBay Germany users only. The PayPal account (email address) to use for eBay Express
      * payments during checkout. If the first item in an order doesn't specify a PayPal account, Express
@@ -41,18 +42,20 @@ class ExpressPreferencesType
      * Services guide.)<br> <br> In GetUserPreferences, this preference is only returned if
      * a default PayPal account has been specified.
      */
-    public $defaultpaypalaccount;
+    public $DefaultPayPalAccount;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ExpressSellingPreferenceCodeType $val
      * @throws Exception
      */
     public function setExpressSellingPreference($val)
     {
-        $this->expresssellingpreference = (int)$val;
+        $this->ExpressSellingPreference = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class ExpressPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
         }
-        $this->defaultpaypalaccount = (int)$val;
+        $this->DefaultPayPalAccount = (int)$val;
     }
 
     /**

@@ -10,22 +10,23 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetFeedbackResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeedbackDetailArrayType | Contains the individual feedbacks for the user, one FeedbackDetailType object for each
      * feedback. Only populated with data when a detail level of ReturnAll is specified in
      * the request. Not returned if you specify FeedbackID in the request.
      */
-    public $feedbackdetailarray;
+    public $FeedbackDetailArray;
     /**
      * @var int | Indicates the number of FeedbackDetailType objects returned in the FeedbackDetailArray
      * property. Only applicable if feedback details are returned.
      */
-    public $feedbackdetailitemtotal;
+    public $FeedbackDetailItemTotal;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeedbackSummaryType | Summary feedback data for the user. Contains counts of positive, neutral, and negative
      * feedback for predefined time periods. Only applicable if feedback details are returned.
      */
-    public $feedbacksummary;
+    public $FeedbackSummary;
     /**
      * @var int | The aggregate feedback score for a user. A user's feedback score is the net positive
      * feedback minus the net negative feedback left for the user. Feedback scores are a quantitative
@@ -45,14 +46,16 @@ class GetFeedbackResponseType extends
      * only for that bidder, and the seller of an item that the user is bidding on. For all
      * other users, the value -99 is returned.
      */
-    public $feedbackscore;
+    public $FeedbackScore;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FeedbackDetailArrayType $val
      * @throws Exception
      */
     public function setFeedbackDetailArray($val)
     {
-        $this->feedbackdetailarray = (int)$val;
+        $this->FeedbackDetailArray = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class GetFeedbackResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->feedbackdetailitemtotal = (int)$val;
+        $this->FeedbackDetailItemTotal = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class GetFeedbackResponseType extends
      */
     public function setFeedbackSummary($val)
     {
-        $this->feedbacksummary = (int)$val;
+        $this->FeedbackSummary = (int)$val;
     }
 
     /**
@@ -85,6 +88,6 @@ class GetFeedbackResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->feedbackscore = (int)$val;
+        $this->FeedbackScore = (int)$val;
     }
 }

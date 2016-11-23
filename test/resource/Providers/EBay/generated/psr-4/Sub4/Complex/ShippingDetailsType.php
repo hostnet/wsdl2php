@@ -9,6 +9,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ShippingDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Instead of using this tag, see the PaymentEdited tag. Originally, the AllowPaymentEdit
      * tag specified whether the seller allows the buyer to edit the payment amount for the
@@ -16,26 +17,26 @@ class ShippingDetailsType
      * site.) ShippingDetails.AllowPaymentEdit is no longer being populated by calls to GetItemTransactions. Not
      * applicable to Half.com.
      */
-    public $allowpaymentedit;
+    public $AllowPaymentEdit;
     /**
      * @var boolean | Whether the seller specifies that a shipping discount is to be applied (in the event
      * that an item's transaction is later combined with others into a single order). Not applicable
      * to Half.com.
      */
-    public $applyshippingdiscount;
+    public $ApplyShippingDiscount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingRateType | Details pertinent to one or more items for which calculated shipping has been offered
      * by the seller, such as package dimension and weight and packaging/handling costs. Not
      * applicable to Half.com or eBay Motors vehicle listings. For Germany and the UK, this
      * field is ignored when Item.ListingType=Express.
      */
-    public $calculatedshippingrate;
+    public $CalculatedShippingRate;
     /**
      * @var boolean | Whether the seller specified payment and shipping instructions during checkout (for example,
      * to update the details of a transaction). Flat and calculated shipping. Not applicable
      * to Half.com.
      */
-    public $changepaymentinstructions;
+    public $ChangePaymentInstructions;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Cost of shipping insurance set by the seller. If the buyer bought more than one of this
      * item, this is the insurance for just a single item. Exception: for GetItemShipping,
@@ -45,25 +46,25 @@ class ShippingDetailsType
      * field is ignored when Item.ListingType=Express. Not applicable to eBay Motors vehicle
      * listings.
      */
-    public $insurancefee;
+    public $InsuranceFee;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceOptionCodeType | Whether the seller offers shipping insurance and, if so, whether the insurance is optional
      * or required. Flat and calculated shipping. Optional as input and only allowed if ChangePaymentInstructions
      * is true. Also applicable to Half.com (for GetOrders). This field is ignored when Item.ListingType=Express.
      */
-    public $insuranceoption;
+    public $InsuranceOption;
     /**
      * @var boolean | Whether the buyer selected to pay for insurance offered by the seller as an option.
      * This only has a value after the buyer has gone through checkout and selected the insurance preference. Also
      * applicable to Half.com (for GetOrders).
      */
-    public $insurancewanted;
+    public $InsuranceWanted;
     /**
      * @var boolean | Whether the seller allows the buyer to edit the payment amount for the transaction.
      * (Sellers enable this property in their My eBay user preferences on the eBay site.) Not
      * applicable to Half.com.
      */
-    public $paymentedited;
+    public $PaymentEdited;
     /**
      * @var string | Payment instructions/message from the seller to the buyer. These instructions appear
      * on eBay's View Item page and on eBay's checkout page when the buyer pays for the item.
@@ -78,7 +79,7 @@ class ShippingDetailsType
      * item, use DeletedField. Applicable to eBay Motors (usually used for the return policy). Not
      * applicable to Half.com.
      */
-    public $paymentinstructions;
+    public $PaymentInstructions;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SalesTaxType | Sales tax details. US site only. Flat and calculated shipping. Also applicable to Half.com
      * (for GetOrders). If your application normally calculates sales tax without using eBay's
@@ -86,12 +87,12 @@ class ShippingDetailsType
      * process payments. For general information about listings on eBay Express, see the eBay
      * Web Services Guide links below. Not applicable to eBay Motors vehicle listings.
      */
-    public $salestax;
+    public $SalesTax;
     /**
      * @var string | Not be returned with compatibility level 483 and higher. See Item.PostalCode instead. This
      * field will be deleted from the schema in early 2007. Not for calculating shipping costs--see CalculatedShippingRateType.OriginatingPostalCode.
      */
-    public $sellerpostalcode;
+    public $SellerPostalCode;
     /**
      * @var string | For most applicable calls, returns the words No Error or returns an error message related
      * to an attempt to calculate shipping rates. For calculated shipping only. Not applicable
@@ -100,14 +101,14 @@ class ShippingDetailsType
      * shipping rates. The message text explains that a postal code is needed to calculate
      * shipping. Only returned when ItemDetails is set to Fine.
      */
-    public $shippingrateerrormessage;
+    public $ShippingRateErrorMessage;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingRateTypeCodeType | A shipping rate scale for shipping through UPS that affects the shipping cost calculated
      * for UPS (lower if ShippingRateType is DailyPickup). ShippingRateType is only returned
      * if ShippingService is one of the UPS shipping services. For calculated shipping only. Not
      * applicable to Half.com or eBay Motors vehicle listings.
      */
-    public $shippingratetype;
+    public $ShippingRateType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingServiceOptionsType | Shipping costs and options related to domestic shipping services offered by the seller.
      * Flat and calculated shipping. Required if InternationalShippingServiceOption is specified.<br> <br> If
@@ -121,7 +122,7 @@ class ShippingDetailsType
      * may be simplest to specify all ShippingDetails that you still want to include in the listing.<br> <br> Not
      * applicable to Half.com or eBay Motors vehicle listings.
      */
-    public $shippingserviceoptions;
+    public $ShippingServiceOptions;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InternationalShippingServiceOptionsType | Shipping costs and options related to an international shipping service. If used, at
      * least one domestic shipping service must also be provided in ShippingServiceOptions.<br> <br> If
@@ -135,30 +136,30 @@ class ShippingDetailsType
      * that you still want to include in the listing.<br> <br> Not applicable to Half.com or
      * eBay Motors vehicle listings. This field is ignored when Item.ListingType=Express.
      */
-    public $internationalshippingserviceoption;
+    public $InternationalShippingServiceOption;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingTypeCodeType | The shipping cost model offered by the seller. This is not returned for various calls
      * since shipping type can be deduced: if a CalculatedShippingRate structure is returned
      * by the call, the shipping type is Calculated. Otherwise, it is one of the other non-Calculated
      * shipping types. Not applicable to Half.com.
      */
-    public $shippingtype;
+    public $ShippingType;
     /**
      * @var int | Applicable to Selling Manager Pro sellers. Also applicable to Half.com (for GetOrders).
      * For GetOrders, the Transaction container includes this element within ShippingDetails.
      */
-    public $sellingmanagersalesrecordnumber;
+    public $SellingManagerSalesRecordNumber;
     /**
      * @var boolean | Whether checkout for this is to be handled by a Third-Party Checkout application. The
      * counterpart in the Add family of calls is Item.ThirdPartyCheckout. Not applicable to
      * Half.com.
      */
-    public $thirdpartycheckout;
+    public $ThirdPartyCheckout;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TaxTableType | Tax details for a jurisdiction such as a state or province. Returns empty in GetItem
      * if no tax table was used. Not applicable to Half.com.
      */
-    public $taxtable;
+    public $TaxTable;
     /**
      * @var boolean | Indicates whether the seller has opted the listing into the Get It Fast feature. If
      * GetItFast is true and if at least one of the domestic shipping services offered by the
@@ -167,15 +168,15 @@ class ShippingDetailsType
      * the buyer-selected shipping service within one day. Also applicable to Half.com (for
      * GetOrders).
      */
-    public $getitfast;
+    public $GetItFast;
     /**
      * @var string | Shipment tracking number supplied by the shipping carrier. Not applicable to Half.com.
      */
-    public $shipmenttrackingnumber;
+    public $ShipmentTrackingNumber;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\token | The shipping service that actually shipped the item(s). Not applicable to Half.com.
      */
-    public $shippingserviceused;
+    public $ShippingServiceUsed;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The default shipping cost for the item. If the seller specified multiple shipping services,
      * this is the "first" shipping service as specified by the seller when they listed the
@@ -192,32 +193,34 @@ class ShippingDetailsType
      * for the shipping calculation. Only returned when ItemDetails is set to Fine. <br> <br> Not
      * applicable to Half.com.
      */
-    public $defaultshippingcost;
+    public $DefaultShippingCost;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceDetailsType | Container for domestic insurance information. If provided on input, ShippingDetails.InsuranceFee
      * and ShippingDetails.InsuranceOption are ignored if provided. If omitted on input, InsuranceDetails.InsuranceFee
      * and InsuranceDetails.InsuranceOption are set to match ShippingDetails.InsuranceFee and
      * ShippingDetails.InsuranceOption.
      */
-    public $insurancedetails;
+    public $InsuranceDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceDetailsType | Container for international insurance information. If provided on input, ShippingDetails.InsuranceFee
      * and ShippingDetails.InsuranceOption are ignored if provided. If omitted on input, InternationalInsuranceDetails.InsuranceFee
      * and InternationalInsuranceDetails.InsuranceOption are set to match ShippingDetails.InsuranceFee
      * and ShippingDetails.InsuranceOption.
      */
-    public $internationalinsurancedetails;
+    public $InternationalInsuranceDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setAllowPaymentEdit($val)
     {
-        $this->allowpaymentedit = (int)$val;
+        $this->AllowPaymentEdit = (int)$val;
     }
 
     /**
@@ -226,7 +229,7 @@ class ShippingDetailsType
      */
     public function setApplyShippingDiscount($val)
     {
-        $this->applyshippingdiscount = (int)$val;
+        $this->ApplyShippingDiscount = (int)$val;
     }
 
     /**
@@ -235,7 +238,7 @@ class ShippingDetailsType
      */
     public function setCalculatedShippingRate($val)
     {
-        $this->calculatedshippingrate = (int)$val;
+        $this->CalculatedShippingRate = (int)$val;
     }
 
     /**
@@ -244,7 +247,7 @@ class ShippingDetailsType
      */
     public function setChangePaymentInstructions($val)
     {
-        $this->changepaymentinstructions = (int)$val;
+        $this->ChangePaymentInstructions = (int)$val;
     }
 
     /**
@@ -253,7 +256,7 @@ class ShippingDetailsType
      */
     public function setInsuranceFee($val)
     {
-        $this->insurancefee = (int)$val;
+        $this->InsuranceFee = (int)$val;
     }
 
     /**
@@ -262,7 +265,7 @@ class ShippingDetailsType
      */
     public function setInsuranceOption($val)
     {
-        $this->insuranceoption = (int)$val;
+        $this->InsuranceOption = (int)$val;
     }
 
     /**
@@ -271,7 +274,7 @@ class ShippingDetailsType
      */
     public function setInsuranceWanted($val)
     {
-        $this->insurancewanted = (int)$val;
+        $this->InsuranceWanted = (int)$val;
     }
 
     /**
@@ -280,7 +283,7 @@ class ShippingDetailsType
      */
     public function setPaymentEdited($val)
     {
-        $this->paymentedited = (int)$val;
+        $this->PaymentEdited = (int)$val;
     }
 
     /**
@@ -292,7 +295,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PaymentInstructions');
         }
-        $this->paymentinstructions = (int)$val;
+        $this->PaymentInstructions = (int)$val;
     }
 
     /**
@@ -301,7 +304,7 @@ class ShippingDetailsType
      */
     public function setSalesTax($val)
     {
-        $this->salestax = (int)$val;
+        $this->SalesTax = (int)$val;
     }
 
     /**
@@ -313,7 +316,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerPostalCode');
         }
-        $this->sellerpostalcode = (int)$val;
+        $this->SellerPostalCode = (int)$val;
     }
 
     /**
@@ -325,7 +328,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingRateErrorMessage');
         }
-        $this->shippingrateerrormessage = (int)$val;
+        $this->ShippingRateErrorMessage = (int)$val;
     }
 
     /**
@@ -334,7 +337,7 @@ class ShippingDetailsType
      */
     public function setShippingRateType($val)
     {
-        $this->shippingratetype = (int)$val;
+        $this->ShippingRateType = (int)$val;
     }
 
     /**
@@ -343,7 +346,7 @@ class ShippingDetailsType
      */
     public function setShippingServiceOptions($val)
     {
-        $this->shippingserviceoptions = (int)$val;
+        $this->ShippingServiceOptions = (int)$val;
     }
 
     /**
@@ -352,7 +355,7 @@ class ShippingDetailsType
      */
     public function setInternationalShippingServiceOption($val)
     {
-        $this->internationalshippingserviceoption = (int)$val;
+        $this->InternationalShippingServiceOption = (int)$val;
     }
 
     /**
@@ -361,7 +364,7 @@ class ShippingDetailsType
      */
     public function setShippingType($val)
     {
-        $this->shippingtype = (int)$val;
+        $this->ShippingType = (int)$val;
     }
 
     /**
@@ -373,7 +376,7 @@ class ShippingDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->sellingmanagersalesrecordnumber = (int)$val;
+        $this->SellingManagerSalesRecordNumber = (int)$val;
     }
 
     /**
@@ -382,7 +385,7 @@ class ShippingDetailsType
      */
     public function setThirdPartyCheckout($val)
     {
-        $this->thirdpartycheckout = (int)$val;
+        $this->ThirdPartyCheckout = (int)$val;
     }
 
     /**
@@ -391,7 +394,7 @@ class ShippingDetailsType
      */
     public function setTaxTable($val)
     {
-        $this->taxtable = (int)$val;
+        $this->TaxTable = (int)$val;
     }
 
     /**
@@ -400,7 +403,7 @@ class ShippingDetailsType
      */
     public function setGetItFast($val)
     {
-        $this->getitfast = (int)$val;
+        $this->GetItFast = (int)$val;
     }
 
     /**
@@ -412,7 +415,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
-        $this->shipmenttrackingnumber = (int)$val;
+        $this->ShipmentTrackingNumber = (int)$val;
     }
 
     /**
@@ -421,7 +424,7 @@ class ShippingDetailsType
      */
     public function setShippingServiceUsed($val)
     {
-        $this->shippingserviceused = (int)$val;
+        $this->ShippingServiceUsed = (int)$val;
     }
 
     /**
@@ -430,7 +433,7 @@ class ShippingDetailsType
      */
     public function setDefaultShippingCost($val)
     {
-        $this->defaultshippingcost = (int)$val;
+        $this->DefaultShippingCost = (int)$val;
     }
 
     /**
@@ -439,7 +442,7 @@ class ShippingDetailsType
      */
     public function setInsuranceDetails($val)
     {
-        $this->insurancedetails = (int)$val;
+        $this->InsuranceDetails = (int)$val;
     }
 
     /**
@@ -448,7 +451,7 @@ class ShippingDetailsType
      */
     public function setInternationalInsuranceDetails($val)
     {
-        $this->internationalinsurancedetails = (int)$val;
+        $this->InternationalInsuranceDetails = (int)$val;
     }
 
     /**

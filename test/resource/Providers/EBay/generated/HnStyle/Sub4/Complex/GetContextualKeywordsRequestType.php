@@ -14,28 +14,31 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetContextualKeywordsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item
      * URL) to launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be
      * used in certain types of applications. See your API license agreement. Also see this
      * page for logo usage rules:<br> http://developer.ebay.com/join/licenses/apilogousage
      */
-    public $url;
+    public $URL;
     /**
      * @var string | Web page encoding by which the URL is to be handled, such as ISO-8859-1.
      */
-    public $encoding;
+    public $Encoding;
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param anyURI $val
      * @throws Exception
      */
     public function setURL($val)
     {
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
     }
 
     /**
@@ -47,7 +50,7 @@ class GetContextualKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Encoding');
         }
-        $this->encoding = (int)$val;
+        $this->Encoding = (int)$val;
     }
 
     /**
@@ -59,6 +62,6 @@ class GetContextualKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 }

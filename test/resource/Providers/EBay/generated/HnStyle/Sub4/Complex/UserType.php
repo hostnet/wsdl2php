@@ -10,10 +10,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class UserType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | If true, indicates that the user has set up an About Me page.
      */
-    public $aboutmepage;
+    public $AboutMePage;
     /**
      * @var string | Unique identifier for the user that does not change when the eBay user name is changed.
      * Use when an application needs to associate a new eBay user name with the corresponding
@@ -21,14 +22,14 @@ class UserType
      * this tag will be returned only for that bidder, and the seller of an item that the user
      * is bidding on.
      */
-    public $eiastoken;
+    public $EIASToken;
     /**
      * @var string | REST token (if available) for the user who is making the request. Not returned when
      * UserID is for a different user than the one identified in eBayAuthToken. Use the REST
      * token to authenticate REST API calls. For more information about REST tokens and the
      * REST API, see http://developer.ebay.com/rest/.
      */
-    public $resttoken;
+    public $RESTToken;
     /**
      * @var string | Email address for the user. You cannot retrieve an email address for any user with whom
      * you do not have a transactional relationship, regardless of site. Email is only returned
@@ -39,7 +40,7 @@ class UserType
      * when a bidder's user info is made anonymous, this tag will be returned only for that
      * bidder, and the seller of an item that the user is bidding on.
      */
-    public $email;
+    public $Email;
     /**
      * @var int | The aggregate feedback score for a user. A user's feedback score is the net positive
      * feedback minus the net negative feedback left for the user. Feedback scores are a quantitative
@@ -59,11 +60,11 @@ class UserType
      * only for that bidder, and the seller of an item that the user is bidding on. For all
      * other users, the value -99 is returned.
      */
-    public $feedbackscore;
+    public $FeedbackScore;
     /**
      * @var int | Total count of negative feedback entries from unique (distinct) users.
      */
-    public $uniquenegativefeedbackcount;
+    public $UniqueNegativeFeedbackCount;
     /**
      * @var int | Total count of positive feedback entries from unique (distinct) users. Contains the
      * aggregate feedback score for a user. A member's feedback score is the net positive feedback
@@ -76,7 +77,7 @@ class UserType
      * to as a "feedback rating" on the eBay site). This rating is commonly expressed as the
      * eBay Feedback score for the user.
      */
-    public $uniquepositivefeedbackcount;
+    public $UniquePositiveFeedbackCount;
     /**
      * @var float | Percent of total feedback that is positive. For example, if the member has 50 feedbacks,
      * where 49 are positive and 1 is neutral or negative, the positive feedback percent could
@@ -87,7 +88,7 @@ class UserType
      * the eBay Web Services guide. In GetSearchResults and GetCategoryListings, feedback information
      * is only returned if IncludeFeedback = true in the request.
      */
-    public $positivefeedbackpercent;
+    public $PositiveFeedbackPercent;
     /**
      * @var boolean | Indicates whether the user has chosen to make their feedback score and feedback details
      * private (hidden from other users). Note that the percentage of positive feedback can
@@ -98,27 +99,27 @@ class UserType
      * when a bidder's user info is made anonymous, this tag will be returned only for that
      * bidder, and the seller of an item that the user is bidding on.
      */
-    public $feedbackprivate;
+    public $FeedbackPrivate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeedbackRatingStarCodeType | Visual indicator of user's feedback score. See FeedbackRatingStarCodeType for specific
      * values.
      */
-    public $feedbackratingstar;
+    public $FeedbackRatingStar;
     /**
      * @var boolean | Indicates whether the user has been verified. For more information about the ID Verify
      * program, see: http://pages.ebay.com/help/policies/identity-idverify.html
      */
-    public $idverified;
+    public $IDVerified;
     /**
      * @var boolean | If true, indicates that the user is in good standing with eBay.
      */
-    public $ebaygoodstanding;
+    public $eBayGoodStanding;
     /**
      * @var boolean | If true, identifies a new user who has been a registered eBay user for 30 days or less.
      * Always false after the user has been registered for more than 30 days. Does not indicate
      * an ID change (see UserIdChanged).
      */
-    public $newuser;
+    public $NewUser;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AddressType | Registration address for a user.<br> <br> <b>GetUser:</b> eBay returns complete RegistrationAddress
      * details (including Phone), as applicable to the registration site, when you retrieve
@@ -133,22 +134,22 @@ class UserType
      * Germany, a seller's registration address must be in Germany. See "eBay Express" in the eBay
      * Web Services guide.
      */
-    public $registrationaddress;
+    public $RegistrationAddress;
     /**
      * @var dateTime | Indicates the date the specified user originally registered with eBay. <br><br> Starting
      * Jan 2007, when a bidder's user info is made anonymous, this tag will be returned only
      * for that bidder, and the seller of an item that the user is bidding on.
      */
-    public $registrationdate;
+    public $RegistrationDate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteCodeType | Site where the Want It Now post is listed.
      */
-    public $site;
+    public $Site;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $status;
+    public $Status;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -162,50 +163,50 @@ class UserType
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var boolean | If true, identifies a user whose ID has changed within the last 30 days. Does not indicate
      * a new user (see NewUser). <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
      * this tag will be returned only for that bidder, and the seller of an item that the user
      * is bidding on.
      */
-    public $useridchanged;
+    public $UserIDChanged;
     /**
      * @var dateTime | Date and time the user's data was last changed (in GMT). <br><br> Starting Jan 2007,
      * when a bidder's user info is made anonymous, this tag will be returned only for that
      * bidder, and the seller of an item that the user is bidding on.
      */
-    public $useridlastchanged;
+    public $UserIDLastChanged;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\VATStatusCodeType | Indicates whether or not the user is subject to VAT. Users who have registered with
      * eBay as VAT-exempt are not subject to VAT. See documentation on Value-Added Tax (VAT).
      */
-    public $vatstatus;
+    public $VATStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BuyerType | Contains information about the user as a buyer, such as the shipping address. See BuyerType
      * for its child elements. <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
      * this tag will be returned only for that bidder, and the seller of an item that the user
      * is bidding on.
      */
-    public $buyerinfo;
+    public $BuyerInfo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerType | Contains information about the user as a seller, such as whether the seller is authorized
      * to list Live Auctions items or opts to have items cross-promoted. See SellerType for
      * its child elements.
      */
-    public $sellerinfo;
+    public $SellerInfo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharityAffiliationsType | Contains information about the seller's charity affliations. Returned if the user is
      * affiliated with one or more charities. Seller must be registered with the eBay Giving Works
      * provider to be affiliated with a charity non-profit organization.
      */
-    public $charityaffiliations;
+    public $CharityAffiliations;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharitySellerType | Contains information about the registered charity seller. Registered charity sellers
      * have registered and are in good standing with the eBay Giving Works provider and are eligible
      * to list items with the eBay Giving Works program.
      */
-    public $charityseller;
+    public $CharitySeller;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PayPalAccountLevelCodeType | The user's PayPal account level. Only returned for the user identified in eBayAuthToken.
      * That is, you cannot see someone else's PayPal account level. Use this information to
@@ -213,7 +214,7 @@ class UserType
      * requests. See the eBay Web site online help for current PayPal requirements for listing
      * digital items.
      */
-    public $paypalaccountlevel;
+    public $PayPalAccountLevel;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PayPalAccountTypeCodeType | The user's PayPal account type. Only returned for the user identified in eBayAuthToken.
      * That is, you cannot see someone else's PayPal account type. Use this information to
@@ -223,7 +224,7 @@ class UserType
      * to determine whether a seller is eligible to list items on eBay Express, because a seller
      * can have more than one PayPal account (and any of these accounts can be used for a given listing).
      */
-    public $paypalaccounttype;
+    public $PayPalAccountType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PayPalAccountStatusCodeType | The user's PayPal account status. Only returned for the user identified in eBayAuthToken.
      * That is, you cannot see someone else's PayPal account status. Use this information to
@@ -231,11 +232,11 @@ class UserType
      * requests. See the eBay Web site online help for current PayPal requirements for listing
      * digital items.
      */
-    public $paypalaccountstatus;
+    public $PayPalAccountStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\EBaySubscriptionTypeCodeType | Specifies the subscription level for a user.
      */
-    public $usersubscription;
+    public $UserSubscription;
     /**
      * @var boolean | If the user is a registered eBay China site user, this indicates whether the user has
      * been verified. This value is based on the user's registration site, not the site that
@@ -244,46 +245,46 @@ class UserType
      * on the China site and is verified (value is true). <br><br> Not applicable to users
      * who are not registered China site users.
      */
-    public $siteverified;
+    public $SiteVerified;
     /**
      * @var string | Indicates the Skype name of the user. Available if the seller has a Skype account and
      * has linked it (on the eBay site) with his or her eBay account.
      */
-    public $skypeid;
+    public $SkypeID;
     /**
      * @var boolean | Indicates whether a user has read-only access to the eBay Wiki (true) or whether the
      * user is able contribute or edit articles on the eBay Wiki (false). By default, all registered
      * eBay users have access to contribute and edit articles on the eBay Wiki. All content
      * contributed to the eBay Wiki is subject to the Community Content Policy.
      */
-    public $ebaywikireadonly;
+    public $eBayWikiReadOnly;
     /**
      * @var int | TUV level is a number allocated to a user based on various characteristics such as buyer,
      * seller, new buyer, new seller, high risk, or bid limit. Applies to eBay Motors Pro applications
      * only.
      */
-    public $tuvlevel;
+    public $TUVLevel;
     /**
      * @var string | The value added tax identifier (VATID) is applicable to the VAT-enabled sites. Applies
      * to eBay Motors Pro applications only.
      */
-    public $vatid;
+    public $VATID;
     /**
      * @var boolean | Indicates if item is listed for sale by owner (FSBO) or listed by a dealer. Applies
      * to eBay Motors Pro applications only.
      */
-    public $motorsdealer;
+    public $MotorsDealer;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentMethodCodeType | Indicates the method the seller selected to pay eBay with for the account. The payment
      * methods vary from one eBay site to the next. Payment methods are enumerated in the SellerPaymentMethodCodeType
      * code list.
      */
-    public $sellerpaymentmethod;
+    public $SellerPaymentMethod;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BiddingSummaryType | Contains information about the user as a bidder on a certain item. Returned for GetAllBidders
      * if IncludeBiddingSummary = true is included in the request.
      */
-    public $biddingsummary;
+    public $BiddingSummary;
     /**
      * @var boolean | Indicates whether or not the User container has been made anonymous. If true, some elements
      * in the User container have either been removed, or had their values changed to remove identifying
@@ -292,18 +293,20 @@ class UserType
      * false only for that bidder, and the seller of an item that the user is bidding on. All
      * other users will have this tag returned as true.
      */
-    public $useranonymized;
+    public $UserAnonymized;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setAboutMePage($val)
     {
-        $this->aboutmepage = (int)$val;
+        $this->AboutMePage = (int)$val;
     }
 
     /**
@@ -315,7 +318,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->eiastoken = (int)$val;
+        $this->EIASToken = (int)$val;
     }
 
     /**
@@ -327,7 +330,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RESTToken');
         }
-        $this->resttoken = (int)$val;
+        $this->RESTToken = (int)$val;
     }
 
     /**
@@ -339,7 +342,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->email = (int)$val;
+        $this->Email = (int)$val;
     }
 
     /**
@@ -351,7 +354,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->feedbackscore = (int)$val;
+        $this->FeedbackScore = (int)$val;
     }
 
     /**
@@ -363,7 +366,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->uniquenegativefeedbackcount = (int)$val;
+        $this->UniqueNegativeFeedbackCount = (int)$val;
     }
 
     /**
@@ -375,7 +378,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->uniquepositivefeedbackcount = (int)$val;
+        $this->UniquePositiveFeedbackCount = (int)$val;
     }
 
     /**
@@ -384,7 +387,7 @@ class UserType
      */
     public function setPositiveFeedbackPercent($val)
     {
-        $this->positivefeedbackpercent = (int)$val;
+        $this->PositiveFeedbackPercent = (int)$val;
     }
 
     /**
@@ -393,7 +396,7 @@ class UserType
      */
     public function setFeedbackPrivate($val)
     {
-        $this->feedbackprivate = (int)$val;
+        $this->FeedbackPrivate = (int)$val;
     }
 
     /**
@@ -402,7 +405,7 @@ class UserType
      */
     public function setFeedbackRatingStar($val)
     {
-        $this->feedbackratingstar = (int)$val;
+        $this->FeedbackRatingStar = (int)$val;
     }
 
     /**
@@ -411,7 +414,7 @@ class UserType
      */
     public function setIDVerified($val)
     {
-        $this->idverified = (int)$val;
+        $this->IDVerified = (int)$val;
     }
 
     /**
@@ -420,7 +423,7 @@ class UserType
      */
     public function setEBayGoodStanding($val)
     {
-        $this->ebaygoodstanding = (int)$val;
+        $this->eBayGoodStanding = (int)$val;
     }
 
     /**
@@ -429,7 +432,7 @@ class UserType
      */
     public function setNewUser($val)
     {
-        $this->newuser = (int)$val;
+        $this->NewUser = (int)$val;
     }
 
     /**
@@ -438,7 +441,7 @@ class UserType
      */
     public function setRegistrationAddress($val)
     {
-        $this->registrationaddress = (int)$val;
+        $this->RegistrationAddress = (int)$val;
     }
 
     /**
@@ -447,7 +450,7 @@ class UserType
      */
     public function setRegistrationDate($val)
     {
-        $this->registrationdate = (int)$val;
+        $this->RegistrationDate = (int)$val;
     }
 
     /**
@@ -456,7 +459,7 @@ class UserType
      */
     public function setSite($val)
     {
-        $this->site = (int)$val;
+        $this->Site = (int)$val;
     }
 
     /**
@@ -465,7 +468,7 @@ class UserType
      */
     public function setStatus($val)
     {
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 
     /**
@@ -474,7 +477,7 @@ class UserType
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -483,7 +486,7 @@ class UserType
      */
     public function setUserIDChanged($val)
     {
-        $this->useridchanged = (int)$val;
+        $this->UserIDChanged = (int)$val;
     }
 
     /**
@@ -492,7 +495,7 @@ class UserType
      */
     public function setUserIDLastChanged($val)
     {
-        $this->useridlastchanged = (int)$val;
+        $this->UserIDLastChanged = (int)$val;
     }
 
     /**
@@ -501,7 +504,7 @@ class UserType
      */
     public function setVATStatus($val)
     {
-        $this->vatstatus = (int)$val;
+        $this->VATStatus = (int)$val;
     }
 
     /**
@@ -510,7 +513,7 @@ class UserType
      */
     public function setBuyerInfo($val)
     {
-        $this->buyerinfo = (int)$val;
+        $this->BuyerInfo = (int)$val;
     }
 
     /**
@@ -519,7 +522,7 @@ class UserType
      */
     public function setSellerInfo($val)
     {
-        $this->sellerinfo = (int)$val;
+        $this->SellerInfo = (int)$val;
     }
 
     /**
@@ -528,7 +531,7 @@ class UserType
      */
     public function setCharityAffiliations($val)
     {
-        $this->charityaffiliations = (int)$val;
+        $this->CharityAffiliations = (int)$val;
     }
 
     /**
@@ -537,7 +540,7 @@ class UserType
      */
     public function setCharitySeller($val)
     {
-        $this->charityseller = (int)$val;
+        $this->CharitySeller = (int)$val;
     }
 
     /**
@@ -546,7 +549,7 @@ class UserType
      */
     public function setPayPalAccountLevel($val)
     {
-        $this->paypalaccountlevel = (int)$val;
+        $this->PayPalAccountLevel = (int)$val;
     }
 
     /**
@@ -555,7 +558,7 @@ class UserType
      */
     public function setPayPalAccountType($val)
     {
-        $this->paypalaccounttype = (int)$val;
+        $this->PayPalAccountType = (int)$val;
     }
 
     /**
@@ -564,7 +567,7 @@ class UserType
      */
     public function setPayPalAccountStatus($val)
     {
-        $this->paypalaccountstatus = (int)$val;
+        $this->PayPalAccountStatus = (int)$val;
     }
 
     /**
@@ -573,7 +576,7 @@ class UserType
      */
     public function setUserSubscription($val)
     {
-        $this->usersubscription = (int)$val;
+        $this->UserSubscription = (int)$val;
     }
 
     /**
@@ -582,7 +585,7 @@ class UserType
      */
     public function setSiteVerified($val)
     {
-        $this->siteverified = (int)$val;
+        $this->SiteVerified = (int)$val;
     }
 
     /**
@@ -594,7 +597,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->skypeid = (int)$val;
+        $this->SkypeID = (int)$val;
     }
 
     /**
@@ -603,7 +606,7 @@ class UserType
      */
     public function setEBayWikiReadOnly($val)
     {
-        $this->ebaywikireadonly = (int)$val;
+        $this->eBayWikiReadOnly = (int)$val;
     }
 
     /**
@@ -615,7 +618,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->tuvlevel = (int)$val;
+        $this->TUVLevel = (int)$val;
     }
 
     /**
@@ -627,7 +630,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VATID');
         }
-        $this->vatid = (int)$val;
+        $this->VATID = (int)$val;
     }
 
     /**
@@ -636,7 +639,7 @@ class UserType
      */
     public function setMotorsDealer($val)
     {
-        $this->motorsdealer = (int)$val;
+        $this->MotorsDealer = (int)$val;
     }
 
     /**
@@ -645,7 +648,7 @@ class UserType
      */
     public function setSellerPaymentMethod($val)
     {
-        $this->sellerpaymentmethod = (int)$val;
+        $this->SellerPaymentMethod = (int)$val;
     }
 
     /**
@@ -654,7 +657,7 @@ class UserType
      */
     public function setBiddingSummary($val)
     {
-        $this->biddingsummary = (int)$val;
+        $this->BiddingSummary = (int)$val;
     }
 
     /**
@@ -663,7 +666,7 @@ class UserType
      */
     public function setUserAnonymized($val)
     {
-        $this->useranonymized = (int)$val;
+        $this->UserAnonymized = (int)$val;
     }
 
     /**

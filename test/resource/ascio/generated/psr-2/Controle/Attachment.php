@@ -4,21 +4,24 @@ namespace Controle;
 
 class Attachment
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var base64Binary
      */
-    public $data;
+    public $Data;
     /**
      * @var string
      */
-    public $filename;
+    public $FileName;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param base64Binary $val
      * @throws Exception
      */
     public function setData($val)
     {
-        $this->data = (int)$val;
+        $this->Data = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class Attachment
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->filename = (int)$val;
+        $this->FileName = (int)$val;
     }
 }

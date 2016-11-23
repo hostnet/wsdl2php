@@ -8,35 +8,36 @@ namespace Controle;
  */
 class ExpressProductType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $title;
+	public $Title;
 	/**
 	 * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
 	 */
-	public $minprice;
+	public $MinPrice;
 	/**
 	 * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
 	 */
-	public $maxprice;
+	public $MaxPrice;
 	/**
 	 * @var \Controle\anyURI | Fully qualified URL for a standard image (if any) that is associated with the product. A
 	 * seller includes the stock photo in the listing by setting IncludeStockPhotoURL.
 	 */
-	public $stockphotourl;
+	public $StockPhotoURL;
 	/**
 	 * @var int | Total number of active listings (on the specified Express site) that were pre-filled based
 	 * on this eBay catalog product. Only returned when ProductDetails is set to Fine. This does
 	 * not necessarily match the number of items returned in ItemArray (if any), because the call
 	 * returns deduped items in ItemArray.
 	 */
-	public $itemcount;
+	public $ItemCount;
 	/**
 	 * @var \Controle\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
 	 * item. All Half.com items are listed with Pre-filled Item Information.
 	 */
-	public $externalproductid;
+	public $ExternalProductID;
 	/**
 	 * @var long | The global reference ID for the eBay catalog product. Only returned when ProductDetails
 	 * is set to Fine.<br> <br> <span class="tablenote"><b>Note:</b> This value is not the same
@@ -46,7 +47,7 @@ class ExpressProductType
 	 * product, which is useful for buy-side searching. One ProductReferenceID can be associated
 	 * with multiple ProductIDs.</span>
 	 */
-	public $productreferenceid;
+	public $ProductReferenceID;
 	/**
 	 * @var \Controle\NameValueListArrayType | A list of attribute and value pairs that are included in the product's pre-filled Item
 	 * Specifics and that are applicable in Express search results. This does not necessarily
@@ -54,11 +55,13 @@ class ExpressProductType
 	 * it returns only the top attributes (as determined by Express). See ExternalProductID for
 	 * the ISBN or UPC, if applicable. Only returned when ProductDetails is set to Fine.
 	 */
-	public $itemspecifics;
+	public $ItemSpecifics;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -68,7 +71,7 @@ class ExpressProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
 	}
 
 	/**
@@ -77,7 +80,7 @@ class ExpressProductType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->minprice = (int)$val;
+        $this->MinPrice = (int)$val;
 	}
 
 	/**
@@ -86,7 +89,7 @@ class ExpressProductType
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->maxprice = (int)$val;
+        $this->MaxPrice = (int)$val;
 	}
 
 	/**
@@ -95,7 +98,7 @@ class ExpressProductType
 	 */
 	public function setStockPhotoURL($val)
 	{
-        $this->stockphotourl = (int)$val;
+        $this->StockPhotoURL = (int)$val;
 	}
 
 	/**
@@ -107,7 +110,7 @@ class ExpressProductType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->itemcount = (int)$val;
+        $this->ItemCount = (int)$val;
 	}
 
 	/**
@@ -116,7 +119,7 @@ class ExpressProductType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->externalproductid = (int)$val;
+        $this->ExternalProductID = (int)$val;
 	}
 
 	/**
@@ -125,7 +128,7 @@ class ExpressProductType
 	 */
 	public function setProductReferenceID($val)
 	{
-        $this->productreferenceid = (int)$val;
+        $this->ProductReferenceID = (int)$val;
 	}
 
 	/**
@@ -134,7 +137,7 @@ class ExpressProductType
 	 */
 	public function setItemSpecifics($val)
 	{
-        $this->itemspecifics = (int)$val;
+        $this->ItemSpecifics = (int)$val;
 	}
 
 	/**

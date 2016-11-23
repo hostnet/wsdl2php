@@ -4,26 +4,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class XsLfileType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The name of the XSL file. Store this information to use it as input to the call in the
      * future.
      */
-    public $filename;
+    public $FileName;
     /**
      * @var string | The version number of the XSL file. Store this information to use it            as input
      * to the call in the future.
      */
-    public $fileversion;
+    public $FileVersion;
     /**
      * @var string | Contains a MIME base-64-encoded representation of the XSL file. See the eBay Web Services
      * Guide for information on decoding the XSL stylesheet file. If no XSL file is available
      * (or if you passed no detail level), this property is empty or not returned.
      */
-    public $filecontent;
+    public $FileContent;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->filename = (int)$val;
+        $this->FileName = (int)$val;
     }
 
     /**
@@ -45,7 +48,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->fileversion = (int)$val;
+        $this->FileVersion = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileContent');
         }
-        $this->filecontent = (int)$val;
+        $this->FileContent = (int)$val;
     }
 
     /**

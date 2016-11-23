@@ -9,17 +9,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetApiAccessRulesResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ApiAccessRuleType | Contains the description of an API access rule, including the call name, the application's
      * current daily and hourly usage, and other values.
      */
-    public $apiaccessrule;
+    public $ApiAccessRule;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ApiAccessRuleType $val
      * @throws Exception
      */
     public function setApiAccessRule($val)
     {
-        $this->apiaccessrule = (int)$val;
+        $this->ApiAccessRule = (int)$val;
     }
 }

@@ -4,54 +4,57 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ThirdPartyProductDetails
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $offeringtype;
+    public $OfferingType;
     /**
      * @var string
      */
-    public $sellerid;
+    public $SellerId;
     /**
      * @var string
      */
-    public $sellernickname;
+    public $SellerNickname;
     /**
      * @var string
      */
-    public $exchangeid;
+    public $ExchangeId;
     /**
      * @var string
      */
-    public $offeringprice;
+    public $OfferingPrice;
     /**
      * @var string
      */
-    public $condition;
+    public $Condition;
     /**
      * @var string
      */
-    public $conditiontype;
+    public $ConditionType;
     /**
      * @var string
      */
-    public $exchangeavailability;
+    public $ExchangeAvailability;
     /**
      * @var string
      */
-    public $sellercountry;
+    public $SellerCountry;
     /**
      * @var string
      */
-    public $sellerstate;
+    public $SellerState;
     /**
      * @var string
      */
-    public $shipcomments;
+    public $ShipComments;
     /**
      * @var string
      */
-    public $sellerrating;
+    public $SellerRating;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -61,7 +64,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OfferingType');
         }
-        $this->offeringtype = (int)$val;
+        $this->OfferingType = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerId');
         }
-        $this->sellerid = (int)$val;
+        $this->SellerId = (int)$val;
     }
 
     /**
@@ -85,7 +88,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerNickname');
         }
-        $this->sellernickname = (int)$val;
+        $this->SellerNickname = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->exchangeid = (int)$val;
+        $this->ExchangeId = (int)$val;
     }
 
     /**
@@ -109,7 +112,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OfferingPrice');
         }
-        $this->offeringprice = (int)$val;
+        $this->OfferingPrice = (int)$val;
     }
 
     /**
@@ -121,7 +124,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Condition');
         }
-        $this->condition = (int)$val;
+        $this->Condition = (int)$val;
     }
 
     /**
@@ -133,7 +136,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ConditionType');
         }
-        $this->conditiontype = (int)$val;
+        $this->ConditionType = (int)$val;
     }
 
     /**
@@ -145,7 +148,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAvailability');
         }
-        $this->exchangeavailability = (int)$val;
+        $this->ExchangeAvailability = (int)$val;
     }
 
     /**
@@ -157,7 +160,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerCountry');
         }
-        $this->sellercountry = (int)$val;
+        $this->SellerCountry = (int)$val;
     }
 
     /**
@@ -169,7 +172,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerState');
         }
-        $this->sellerstate = (int)$val;
+        $this->SellerState = (int)$val;
     }
 
     /**
@@ -181,7 +184,7 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipComments');
         }
-        $this->shipcomments = (int)$val;
+        $this->ShipComments = (int)$val;
     }
 
     /**
@@ -193,6 +196,6 @@ class ThirdPartyProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerRating');
         }
-        $this->sellerrating = (int)$val;
+        $this->SellerRating = (int)$val;
     }
 }

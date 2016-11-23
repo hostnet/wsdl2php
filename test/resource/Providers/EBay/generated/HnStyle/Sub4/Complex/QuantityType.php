@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class QuantityType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var decimal
      */
@@ -16,6 +17,8 @@ class QuantityType
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\token
      */
     public $unit;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param decimal $val
      * @throws Exception

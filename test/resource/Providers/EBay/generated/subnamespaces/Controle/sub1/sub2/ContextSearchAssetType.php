@@ -8,19 +8,22 @@ namespace Controle\sub1\sub2;
  */
 class ContextSearchAssetType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Related keyword.
 	 */
-	public $keyword;
+	public $Keyword;
 	/**
 	 * @var \Controle\sub1\sub2\CategoryType | Describes a category that contains items that match the query.
 	 */
-	public $category;
+	public $Category;
 	/**
 	 * @var int | The ranking of this keyword and category relative to other keywords and categories (when
 	 * scores are sorted).
 	 */
-	public $ranking;
+	public $Ranking;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -30,7 +33,7 @@ class ContextSearchAssetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keyword');
         }
-        $this->keyword = (int)$val;
+        $this->Keyword = (int)$val;
 	}
 
 	/**
@@ -39,7 +42,7 @@ class ContextSearchAssetType
 	 */
 	public function setCategory($val)
 	{
-        $this->category = (int)$val;
+        $this->Category = (int)$val;
 	}
 
 	/**
@@ -51,6 +54,6 @@ class ContextSearchAssetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ranking = (int)$val;
+        $this->Ranking = (int)$val;
 	}
 }

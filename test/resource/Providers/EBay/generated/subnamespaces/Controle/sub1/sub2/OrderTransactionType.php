@@ -10,25 +10,28 @@ namespace Controle\sub1\sub2;
  */
 class OrderTransactionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\OrderType | Order in which the page is displayed in the list of custom pages.
 	 */
-	public $order;
+	public $Order;
 	/**
 	 * @var \Controle\sub1\sub2\TransactionType | Information about one transaction. Also applicable to Half.com (for GetOrders).
 	 */
-	public $transaction;
+	public $Transaction;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param OrderType $val
 	 * @throws Exception
 	 */
 	public function setOrder($val)
 	{
-        $this->order = (int)$val;
+        $this->Order = (int)$val;
 	}
 
 	/**
@@ -37,7 +40,7 @@ class OrderTransactionType
 	 */
 	public function setTransaction($val)
 	{
-        $this->transaction = (int)$val;
+        $this->Transaction = (int)$val;
 	}
 
 	/**

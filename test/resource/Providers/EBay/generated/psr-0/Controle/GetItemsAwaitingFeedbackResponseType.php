@@ -9,17 +9,20 @@ namespace Controle;
 class GetItemsAwaitingFeedbackResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\PaginatedTransactionArrayType | Contains the items awaiting feedback. Returned only if there are items that do not yet have
 	 * feedback.
 	 */
-	public $itemsawaitingfeedback;
+	public $ItemsAwaitingFeedback;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param PaginatedTransactionArrayType $val
 	 * @throws Exception
 	 */
 	public function setItemsAwaitingFeedback($val)
 	{
-        $this->itemsawaitingfeedback = (int)$val;
+        $this->ItemsAwaitingFeedback = (int)$val;
 	}
 }

@@ -13,6 +13,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSellerEventsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -26,27 +27,27 @@ class GetSellerEventsRequestType extends
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var dateTime | Specifies the earliest (oldest) date to use in a date range filter based on item start
      * time. Specify either the end time range or start time range filter in every request.
      */
-    public $starttimefrom;
+    public $StartTimeFrom;
     /**
      * @var dateTime | Specifies the latest (most recent) date to use in a date range filter based on item start
      * time. Must be specified if StartTimeFrom is specified.
      */
-    public $starttimeto;
+    public $StartTimeTo;
     /**
      * @var dateTime | Specifies the earliest (oldest) date to use in a date range filter based on item end
      * time. Specify either the end time range or start time range filter in every request.
      */
-    public $endtimefrom;
+    public $EndTimeFrom;
     /**
      * @var dateTime | Specifies the latest (most recent) date to use in a date range filter based on item
      * end time. Must be specified if EndTimeFrom is specified.
      */
-    public $endtimeto;
+    public $EndTimeTo;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is later than or equal to
      * this value. Specify the time value in GMT. See the eBay Web Services documentation for
@@ -56,7 +57,7 @@ class GetSellerEventsRequestType extends
      * filters in combination with other filters like DisputeFilterType to control the amount
      * of data returned.
      */
-    public $modtimefrom;
+    public $ModTimeFrom;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is earlier than or equal
      * to this value. Specify the time value in GMT. See the eBay Web Services documentation
@@ -66,23 +67,25 @@ class GetSellerEventsRequestType extends
      * is optional. You can use date range filters in combination with other filters like DisputeFilterType
      * to control the amount of data returned.
      */
-    public $modtimeto;
+    public $ModTimeTo;
     /**
      * @var boolean | Specifies that only new items are to be returned. NewItemFilter is an optional input.
      */
-    public $newitemfilter;
+    public $NewItemFilter;
     /**
      * @var boolean | Specifies whether to include WatchCount in Item nodes returned. WatchCount is only returned
      * with DetailLevel ReturnAll.
      */
-    public $includewatchcount;
+    public $IncludeWatchCount;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -91,7 +94,7 @@ class GetSellerEventsRequestType extends
      */
     public function setStartTimeFrom($val)
     {
-        $this->starttimefrom = (int)$val;
+        $this->StartTimeFrom = (int)$val;
     }
 
     /**
@@ -100,7 +103,7 @@ class GetSellerEventsRequestType extends
      */
     public function setStartTimeTo($val)
     {
-        $this->starttimeto = (int)$val;
+        $this->StartTimeTo = (int)$val;
     }
 
     /**
@@ -109,7 +112,7 @@ class GetSellerEventsRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->endtimefrom = (int)$val;
+        $this->EndTimeFrom = (int)$val;
     }
 
     /**
@@ -118,7 +121,7 @@ class GetSellerEventsRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->endtimeto = (int)$val;
+        $this->EndTimeTo = (int)$val;
     }
 
     /**
@@ -127,7 +130,7 @@ class GetSellerEventsRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->modtimefrom = (int)$val;
+        $this->ModTimeFrom = (int)$val;
     }
 
     /**
@@ -136,7 +139,7 @@ class GetSellerEventsRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->modtimeto = (int)$val;
+        $this->ModTimeTo = (int)$val;
     }
 
     /**
@@ -145,7 +148,7 @@ class GetSellerEventsRequestType extends
      */
     public function setNewItemFilter($val)
     {
-        $this->newitemfilter = (int)$val;
+        $this->NewItemFilter = (int)$val;
     }
 
     /**
@@ -154,6 +157,6 @@ class GetSellerEventsRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->includewatchcount = (int)$val;
+        $this->IncludeWatchCount = (int)$val;
     }
 }

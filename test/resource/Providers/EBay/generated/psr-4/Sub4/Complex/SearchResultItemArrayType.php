@@ -10,16 +10,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SearchResultItemArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SearchResultItemType | Contains data for an item listing found by a search.            Output only.
      */
-    public $searchresultitem;
+    public $SearchResultItem;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SearchResultItemType $val
      * @throws Exception
      */
     public function setSearchResultItem($val)
     {
-        $this->searchresultitem = (int)$val;
+        $this->SearchResultItem = (int)$val;
     }
 }

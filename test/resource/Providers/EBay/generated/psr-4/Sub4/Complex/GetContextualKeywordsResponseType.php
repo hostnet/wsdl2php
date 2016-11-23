@@ -9,16 +9,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetContextualKeywordsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ContextSearchAssetType | An array of either keyword/category pairs or categories, with ranking and score.
      */
-    public $contextsearchasset;
+    public $ContextSearchAsset;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ContextSearchAssetType $val
      * @throws Exception
      */
     public function setContextSearchAsset($val)
     {
-        $this->contextsearchasset = (int)$val;
+        $this->ContextSearchAsset = (int)$val;
     }
 }

@@ -4,16 +4,19 @@ namespace Controle;
 
 class AdvancedVerifyEmailResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\ReturnIndicator
      */
-    public $advancedverifyemailresult;
+    public $AdvancedVerifyEmailResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ReturnIndicator $val
      * @throws Exception
      */
     public function setAdvancedVerifyEmailResult($val)
     {
-        $this->advancedverifyemailresult = (int)$val;
+        $this->AdvancedVerifyEmailResult = (int)$val;
     }
 }

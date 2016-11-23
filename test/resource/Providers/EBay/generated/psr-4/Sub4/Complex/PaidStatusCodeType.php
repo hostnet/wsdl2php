@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class PaidStatusCodeType
 {
+    // @codingStandardsIgnoreStart
     const NOTPAID                      = 'NotPaid';
     const BUYERHASNOTCOMPLETEDCHECKOUT = 'BuyerHasNotCompletedCheckout';
     const PAYMENTPENDINGWITHPAYPAL     = 'PaymentPendingWithPayPal';
@@ -16,4 +17,5 @@ class PaidStatusCodeType
     const PAIDWITHPAISAPAY             = 'PaidWithPaisaPay';
     const PAYMENTPENDING               = 'PaymentPending';
     const CUSTOMCODE                   = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

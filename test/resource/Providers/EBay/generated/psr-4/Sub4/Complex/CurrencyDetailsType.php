@@ -8,25 +8,28 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CurrencyDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
     /**
      * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
      */
-    public $description;
+    public $Description;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CurrencyCodeType $val
      * @throws Exception
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class CurrencyDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
     }
 
     /**

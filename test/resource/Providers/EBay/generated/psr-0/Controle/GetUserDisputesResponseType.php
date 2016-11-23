@@ -10,30 +10,31 @@ namespace Controle;
 class GetUserDisputesResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\DisputeIDType | The index of the first dispute in the current result set, relative to the total number
 	 * of disputes available. Primarily useful for interpreting paginated results. For example,
 	 * if 228 disputes are available and 200 results are returned per page: The first page returns a
 	 * StartingDisputeID value of 1 and the second page returns a StartingDisputeID value of 201.
 	 */
-	public $startingdisputeid;
+	public $StartingDisputeID;
 	/**
 	 * @var \Controle\DisputeIDType | The index of the last dispute in the current result set, relative to the total number of
 	 * disputes available. Primarily useful for interpreting paginated results. For example, if
 	 * 228 disputes are available and 200 results are returned per page: The first page returns an
 	 * EndingDisputeID value of 200 and the second page returns an EndingDisputeID value of 228.
 	 */
-	public $endingdisputeid;
+	public $EndingDisputeID;
 	/**
 	 * @var \Controle\DisputeArrayType | The array of disputes returned.
 	 */
-	public $disputearray;
+	public $DisputeArray;
 	/**
 	 * @var int | Indicates the maximum number of Want It Now posts that can be returned in a WantItNowPostArray
 	 * for a request. This value can be specified in the request by  EntriesPerPage in Pagination
 	 * in the request.
 	 */
-	public $itemsperpage;
+	public $ItemsPerPage;
 	/**
 	 * @var int | Specifies the number of the page of data to return in the current call. Default is 1 for
 	 * most calls. For some calls, the default is 0. Specify a positive value equal to or lower
@@ -41,24 +42,26 @@ class GetUserDisputesResponseType extends
 	 * initial request). See the documentation for other individual calls to determine the correct default
 	 * value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable to Half.com).
 	 */
-	public $pagenumber;
+	public $PageNumber;
 	/**
 	 * @var \Controle\DisputeFilterCountType | The number of disputes that involve the requester as buyer or seller and match a given
 	 * filter type.
 	 */
-	public $disputefiltercount;
+	public $DisputeFilterCount;
 	/**
 	 * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
 	 * of entries.
 	 */
-	public $paginationresult;
+	public $PaginationResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param DisputeIDType $val
 	 * @throws Exception
 	 */
 	public function setStartingDisputeID($val)
 	{
-        $this->startingdisputeid = (int)$val;
+        $this->StartingDisputeID = (int)$val;
 	}
 
 	/**
@@ -67,7 +70,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setEndingDisputeID($val)
 	{
-        $this->endingdisputeid = (int)$val;
+        $this->EndingDisputeID = (int)$val;
 	}
 
 	/**
@@ -76,7 +79,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setDisputeArray($val)
 	{
-        $this->disputearray = (int)$val;
+        $this->DisputeArray = (int)$val;
 	}
 
 	/**
@@ -88,7 +91,7 @@ class GetUserDisputesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->itemsperpage = (int)$val;
+        $this->ItemsPerPage = (int)$val;
 	}
 
 	/**
@@ -100,7 +103,7 @@ class GetUserDisputesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
 	}
 
 	/**
@@ -109,7 +112,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setDisputeFilterCount($val)
 	{
-        $this->disputefiltercount = (int)$val;
+        $this->DisputeFilterCount = (int)$val;
 	}
 
 	/**
@@ -118,6 +121,6 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
 	}
 }

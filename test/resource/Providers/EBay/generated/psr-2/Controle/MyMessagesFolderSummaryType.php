@@ -8,41 +8,44 @@ namespace Controle;
  */
 class MyMessagesFolderSummaryType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var long | The ID of the folder.
      */
-    public $folderid;
+    public $FolderID;
     /**
      * @var string | The name of a specified My Messages folder.
      */
-    public $foldername;
+    public $FolderName;
     /**
      * @var int | The number of new alerts that a given user has. Always returned for detail level ReturnSummary.
      */
-    public $newalertcount;
+    public $NewAlertCount;
     /**
      * @var int | The number of new messages that a given user has. Always returned for detail level ReturnSummary.
      */
-    public $newmessagecount;
+    public $NewMessageCount;
     /**
      * @var int | The total number of alerts for a given user. Always returned for detail level ReturnSummary.
      */
-    public $totalalertcount;
+    public $TotalAlertCount;
     /**
      * @var int | The total number of messages for a given user. Always returned for detail level ReturnSummary.
      */
-    public $totalmessagecount;
+    public $TotalMessageCount;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param long $val
      * @throws Exception
      */
     public function setFolderID($val)
     {
-        $this->folderid = (int)$val;
+        $this->FolderID = (int)$val;
     }
 
     /**
@@ -54,7 +57,7 @@ class MyMessagesFolderSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->foldername = (int)$val;
+        $this->FolderName = (int)$val;
     }
 
     /**
@@ -66,7 +69,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->newalertcount = (int)$val;
+        $this->NewAlertCount = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->newmessagecount = (int)$val;
+        $this->NewMessageCount = (int)$val;
     }
 
     /**
@@ -90,7 +93,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalalertcount = (int)$val;
+        $this->TotalAlertCount = (int)$val;
     }
 
     /**
@@ -102,7 +105,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalmessagecount = (int)$val;
+        $this->TotalMessageCount = (int)$val;
     }
 
     /**

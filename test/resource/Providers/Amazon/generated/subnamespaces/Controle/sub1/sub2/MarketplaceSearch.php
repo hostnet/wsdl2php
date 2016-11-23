@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class MarketplaceSearch
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\MarketplaceSearchDetailsArray
 	 */
-	public $marketplacesearchdetails;
+	public $MarketplaceSearchDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param MarketplaceSearchDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setMarketplaceSearchDetails($val)
 	{
-        $this->marketplacesearchdetails = (int)$val;
+        $this->MarketplaceSearchDetails = (int)$val;
 	}
 }

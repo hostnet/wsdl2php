@@ -8,11 +8,12 @@ namespace Controle;
  */
 class ListingDurationDefinitionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\token | Specifies the length of time an auction can be open, in days. The allowed durations vary
 	 * according to the type of listing. The value GTC means Good Til Canceled.
 	 */
-	public $duration;
+	public $Duration;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -20,14 +21,16 @@ class ListingDurationDefinitionType
 	/**
 	 * @var int
 	 */
-	public $durationsetid;
+	public $durationSetID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param token $val
 	 * @throws Exception
 	 */
 	public function setDuration($val)
 	{
-        $this->duration = (int)$val;
+        $this->Duration = (int)$val;
 	}
 
 	/**
@@ -48,6 +51,6 @@ class ListingDurationDefinitionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->durationsetid = (int)$val;
+        $this->durationSetID = (int)$val;
 	}
 }

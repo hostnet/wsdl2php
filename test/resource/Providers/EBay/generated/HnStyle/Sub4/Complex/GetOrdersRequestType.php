@@ -18,47 +18,50 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetOrdersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OrderIDArrayType | A set of orders to retrieve. Not applicable to Half.com.
      */
-    public $orderidarray;
+    public $OrderIDArray;
     /**
      * @var dateTime | The starting date of the date range for the orders to retrieve. Also applicable to Half.com.
      */
-    public $createtimefrom;
+    public $CreateTimeFrom;
     /**
      * @var dateTime | The ending date of the date range for the orders to retrieve. Also applicable to Half.com.
      */
-    public $createtimeto;
+    public $CreateTimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TradingRoleCodeType | Filters the returned orders to only those where the user for whom the call is being
      * made is a participant in the order in the specified role. Not applicable to Half.com.
      */
-    public $orderrole;
+    public $OrderRole;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OrderStatusCodeType | The current status of the order.<br> <br> For transaction calls (like GetItemTransactions),
      * please use the TransactionPlatform element to determine whether an item was purchased
      * on Express on eBay.<br> <br> Also applicable to Half.com (for GetOrders).
      */
-    public $orderstatus;
+    public $OrderStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
      */
-    public $listingtype;
+    public $ListingType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OrderIDArrayType $val
      * @throws Exception
      */
     public function setOrderIDArray($val)
     {
-        $this->orderidarray = (int)$val;
+        $this->OrderIDArray = (int)$val;
     }
 
     /**
@@ -67,7 +70,7 @@ class GetOrdersRequestType extends
      */
     public function setCreateTimeFrom($val)
     {
-        $this->createtimefrom = (int)$val;
+        $this->CreateTimeFrom = (int)$val;
     }
 
     /**
@@ -76,7 +79,7 @@ class GetOrdersRequestType extends
      */
     public function setCreateTimeTo($val)
     {
-        $this->createtimeto = (int)$val;
+        $this->CreateTimeTo = (int)$val;
     }
 
     /**
@@ -85,7 +88,7 @@ class GetOrdersRequestType extends
      */
     public function setOrderRole($val)
     {
-        $this->orderrole = (int)$val;
+        $this->OrderRole = (int)$val;
     }
 
     /**
@@ -94,7 +97,7 @@ class GetOrdersRequestType extends
      */
     public function setOrderStatus($val)
     {
-        $this->orderstatus = (int)$val;
+        $this->OrderStatus = (int)$val;
     }
 
     /**
@@ -103,7 +106,7 @@ class GetOrdersRequestType extends
      */
     public function setListingType($val)
     {
-        $this->listingtype = (int)$val;
+        $this->ListingType = (int)$val;
     }
 
     /**
@@ -112,6 +115,6 @@ class GetOrdersRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 }

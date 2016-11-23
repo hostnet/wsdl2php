@@ -8,73 +8,76 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class MemberMessageType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MessageTypeCodeType | The type of message being retrieved. Note that some message types can only be created
      * via the eBay Web site.
      */
-    public $messagetype;
+    public $MessageType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\QuestionTypeCodeType | The context of the question (e.g. Shipping, General).
      */
-    public $questiontype;
+    public $QuestionType;
     /**
      * @var boolean | Specifies whether or not to email a copy of the message to the sender. If omitted, this
      * defaults to whatever the user set in preferences.
      */
-    public $emailcopytosender;
+    public $EmailCopyToSender;
     /**
      * @var boolean | Specifies whether or not to hide sender's email address from the recipient. If omitted,
      * this defaults to whatever the user set in preferences--or on site policy, which determines
      * whether or not this field is recognized.
      */
-    public $hidesendersemailaddress;
+    public $HideSendersEmailAddress;
     /**
      * @var boolean | Specifies if the body should be displayed to the public.
      */
-    public $displaytopublic;
+    public $DisplayToPublic;
     /**
      * @var string | The eBay user ID of the person who asked the question or sent the message.
      */
-    public $senderid;
+    public $SenderID;
     /**
      * @var string | The email address of the person who asked the question or sent the message. Returned
      * for MessageType = AskSellerQuestion and by the AskSellerQuestion notification.
      */
-    public $senderemail;
+    public $SenderEmail;
     /**
      * @var string | Recipient's eBay user ID. For AddMemberMessagesAAQToBidder, must be the seller of an item,
      * that item's bidder, or a user who has made an offer on that item via Best Offer.
      */
-    public $recipientid;
+    public $RecipientID;
     /**
      * @var string | The subject of the message.
      */
-    public $subject;
+    public $Subject;
     /**
      * @var string | Message content.
      */
-    public $body;
+    public $Body;
     /**
      * @var string | An ID that uniquely identifies a message for a given user. <br /><br /> This value is
      * not the same as the value used for the GetMemberMessages MessageID. Use the GetMemberMessages
      * value for used as the GetMyMessages ExternalID instead.
      */
-    public $messageid;
+    public $MessageID;
     /**
      * @var string | ID number of the question this message is responding to.
      */
-    public $parentmessageid;
+    public $ParentMessageID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param MessageTypeCodeType $val
      * @throws Exception
      */
     public function setMessageType($val)
     {
-        $this->messagetype = (int)$val;
+        $this->MessageType = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class MemberMessageType
      */
     public function setQuestionType($val)
     {
-        $this->questiontype = (int)$val;
+        $this->QuestionType = (int)$val;
     }
 
     /**
@@ -92,7 +95,7 @@ class MemberMessageType
      */
     public function setEmailCopyToSender($val)
     {
-        $this->emailcopytosender = (int)$val;
+        $this->EmailCopyToSender = (int)$val;
     }
 
     /**
@@ -101,7 +104,7 @@ class MemberMessageType
      */
     public function setHideSendersEmailAddress($val)
     {
-        $this->hidesendersemailaddress = (int)$val;
+        $this->HideSendersEmailAddress = (int)$val;
     }
 
     /**
@@ -110,7 +113,7 @@ class MemberMessageType
      */
     public function setDisplayToPublic($val)
     {
-        $this->displaytopublic = (int)$val;
+        $this->DisplayToPublic = (int)$val;
     }
 
     /**
@@ -122,7 +125,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SenderID');
         }
-        $this->senderid = (int)$val;
+        $this->SenderID = (int)$val;
     }
 
     /**
@@ -134,7 +137,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SenderEmail');
         }
-        $this->senderemail = (int)$val;
+        $this->SenderEmail = (int)$val;
     }
 
     /**
@@ -146,7 +149,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientID');
         }
-        $this->recipientid = (int)$val;
+        $this->RecipientID = (int)$val;
     }
 
     /**
@@ -158,7 +161,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->subject = (int)$val;
+        $this->Subject = (int)$val;
     }
 
     /**
@@ -170,7 +173,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Body');
         }
-        $this->body = (int)$val;
+        $this->Body = (int)$val;
     }
 
     /**
@@ -182,7 +185,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageID');
         }
-        $this->messageid = (int)$val;
+        $this->MessageID = (int)$val;
     }
 
     /**
@@ -194,7 +197,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ParentMessageID');
         }
-        $this->parentmessageid = (int)$val;
+        $this->ParentMessageID = (int)$val;
     }
 
     /**

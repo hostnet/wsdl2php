@@ -19,6 +19,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetProductSellingPagesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductUseCaseCodeType | Specifies the context in which the call is being executed, which will imply certain
      * validation rules. Use this property to make sure you retrieve the appropriate version
@@ -35,20 +36,22 @@ class GetProductSellingPagesRequestType extends
      * the response to include the latest product ID in the system (given an ID specified in
      * the Products element) and the corresponding characteristic meta-data. (Same as SYI).
      */
-    public $usecase;
+    public $UseCase;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductType | A suggested product to use to list an item with Pre-filled Item Information.
      *     Returned from GetItemRecommendations when the Suggested Attributes engine is used
      *             See the Developer's Guide for additional details.
      */
-    public $product;
+    public $Product;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ProductUseCaseCodeType $val
      * @throws Exception
      */
     public function setUseCase($val)
     {
-        $this->usecase = (int)$val;
+        $this->UseCase = (int)$val;
     }
 
     /**
@@ -57,6 +60,6 @@ class GetProductSellingPagesRequestType extends
      */
     public function setProduct($val)
     {
-        $this->product = (int)$val;
+        $this->Product = (int)$val;
     }
 }

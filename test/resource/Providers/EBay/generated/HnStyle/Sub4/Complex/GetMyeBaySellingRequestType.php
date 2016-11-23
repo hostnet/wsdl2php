@@ -17,30 +17,33 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetMyeBaySellingRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user has scheduled for sale, but whose listings have not yet
      * started.
      */
-    public $scheduledlist;
+    public $ScheduledList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user is selling that have active listings.
      */
-    public $activelist;
+    public $ActiveList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items the user has sold.
      */
-    public $soldlist;
+    public $SoldList;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType | Contains the items whose listings have ended but that have not sold.
      */
-    public $unsoldlist;
+    public $UnsoldList;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemListCustomizationType $val
      * @throws Exception
      */
     public function setScheduledList($val)
     {
-        $this->scheduledlist = (int)$val;
+        $this->ScheduledList = (int)$val;
     }
 
     /**
@@ -49,7 +52,7 @@ class GetMyeBaySellingRequestType extends
      */
     public function setActiveList($val)
     {
-        $this->activelist = (int)$val;
+        $this->ActiveList = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class GetMyeBaySellingRequestType extends
      */
     public function setSoldList($val)
     {
-        $this->soldlist = (int)$val;
+        $this->SoldList = (int)$val;
     }
 
     /**
@@ -67,6 +70,6 @@ class GetMyeBaySellingRequestType extends
      */
     public function setUnsoldList($val)
     {
-        $this->unsoldlist = (int)$val;
+        $this->UnsoldList = (int)$val;
     }
 }

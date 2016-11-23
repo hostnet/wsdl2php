@@ -10,233 +10,233 @@ class AscioServicesClient extends \SoapClient
     const WSDL_FILE = "AscioService.wsdl";
 
     private $classmap = array(
-        'LogIn\,' =>
+        'LogIn' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LogIn',
-        'Session\,' =>
+        'Session' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Session',
-        'LogInResponse\,' =>
+        'LogInResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LogInResponse',
-        'Response\,' =>
+        'Response' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Response',
-        'LogOut\,' =>
+        'LogOut' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LogOut',
-        'LogOutResponse\,' =>
+        'LogOutResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LogOutResponse',
-        'GetOrder\,' =>
+        'GetOrder' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetOrder',
-        'GetOrderResponse\,' =>
+        'GetOrderResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetOrderResponse',
-        'Order\,' =>
+        'Order' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Order',
-        'OrderType\,' =>
+        'OrderType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderType',
-        'OrderStatusType\,' =>
+        'OrderStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderStatusType',
-        'Domain\,' =>
+        'Domain' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Domain',
-        'Registrant\,' =>
+        'Registrant' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Registrant',
-        'Contact\,' =>
+        'Contact' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Contact',
-        'NameServers\,' =>
+        'NameServers' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NameServers',
-        'NameServer\,' =>
+        'NameServer' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NameServer',
-        'TradeMark\,' =>
+        'TradeMark' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TradeMark',
-        'DnsSecKeys\,' =>
+        'DnsSecKeys' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DnsSecKeys',
-        'DnsSecKey\,' =>
+        'DnsSecKey' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DnsSecKey',
-        'PrivacyProxy\,' =>
+        'PrivacyProxy' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PrivacyProxy',
-        'PrivacyProxyType\,' =>
+        'PrivacyProxyType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PrivacyProxyType',
-        'Extensions\,' =>
+        'Extensions' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Extensions',
-        'Extension\,' =>
+        'Extension' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Extension',
-        'CreateOrder\,' =>
+        'CreateOrder' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateOrder',
-        'CreateOrderResponse\,' =>
+        'CreateOrderResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateOrderResponse',
-        'SearchOrder\,' =>
+        'SearchOrder' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchOrder',
-        'SearchOrderRequest\,' =>
+        'SearchOrderRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchOrderRequest',
-        'SearchOrderSortType\,' =>
+        'SearchOrderSortType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchOrderSortType',
-        'PagingInfo\,' =>
+        'PagingInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PagingInfo',
-        'SearchOrderResponse\,' =>
+        'SearchOrderResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchOrderResponse',
-        'GetMessages\,' =>
+        'GetMessages' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMessages',
-        'GetMessagesResponse\,' =>
+        'GetMessagesResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMessagesResponse',
-        'Message\,' =>
+        'Message' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Message',
-        'Attachment\,' =>
+        'Attachment' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Attachment',
-        'MessageType\,' =>
+        'MessageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MessageType',
-        'ValidateOrder\,' =>
+        'ValidateOrder' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ValidateOrder',
-        'ValidateOrderResponse\,' =>
+        'ValidateOrderResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ValidateOrderResponse',
-        'UploadDocumentation\,' =>
+        'UploadDocumentation' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UploadDocumentation',
-        'UploadDocumentationResponse\,' =>
+        'UploadDocumentationResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UploadDocumentationResponse',
-        'CreateSupportOrder\,' =>
+        'CreateSupportOrder' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateSupportOrder',
-        'CreateSupportOrderResponse\,' =>
+        'CreateSupportOrderResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateSupportOrderResponse',
-        'UploadMessage\,' =>
+        'UploadMessage' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UploadMessage',
-        'UploadMessageResponse\,' =>
+        'UploadMessageResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UploadMessageResponse',
-        'GetDomain\,' =>
+        'GetDomain' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetDomain',
-        'GetDomainResponse\,' =>
+        'GetDomainResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetDomainResponse',
-        'SearchDomain\,' =>
+        'SearchDomain' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchDomain',
-        'SearchCriteria\,' =>
+        'SearchCriteria' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchCriteria',
-        'Clause\,' =>
+        'Clause' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Clause',
-        'SearchOperatorType\,' =>
+        'SearchOperatorType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchOperatorType',
-        'SearchModeType\,' =>
+        'SearchModeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchModeType',
-        'SearchDomainResponse\,' =>
+        'SearchDomainResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchDomainResponse',
-        'Whois\,' =>
+        'Whois' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Whois',
-        'WhoisResponse\,' =>
+        'WhoisResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\WhoisResponse',
-        'AvailabilityCheck\,' =>
+        'AvailabilityCheck' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AvailabilityCheck',
-        'QualityType\,' =>
+        'QualityType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\QualityType',
-        'AvailabilityCheckResponse\,' =>
+        'AvailabilityCheckResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AvailabilityCheckResponse',
-        'AvailabilityCheckResult\,' =>
+        'AvailabilityCheckResult' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AvailabilityCheckResult',
-        'GetRegistrant\,' =>
+        'GetRegistrant' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRegistrant',
-        'GetRegistrantResponse\,' =>
+        'GetRegistrantResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRegistrantResponse',
-        'CreateRegistrant\,' =>
+        'CreateRegistrant' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateRegistrant',
-        'CreateRegistrantResponse\,' =>
+        'CreateRegistrantResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateRegistrantResponse',
-        'DeleteRegistrant\,' =>
+        'DeleteRegistrant' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteRegistrant',
-        'DeleteRegistrantResponse\,' =>
+        'DeleteRegistrantResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteRegistrantResponse',
-        'SearchRegistrant\,' =>
+        'SearchRegistrant' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchRegistrant',
-        'SearchRegistrantResponse\,' =>
+        'SearchRegistrantResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchRegistrantResponse',
-        'GetContact\,' =>
+        'GetContact' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetContact',
-        'GetRegistrantVerificationInfo\,' =>
+        'GetRegistrantVerificationInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRegistrantVerificationInfo',
-        'GetRegistrantVerificationInfoResponse\,' =>
+        'GetRegistrantVerificationInfoResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRegistrantVerificationInfoResponse',
-        'RegistrantVerificationInfo\,' =>
+        'RegistrantVerificationInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RegistrantVerificationInfo',
-        'RegistrantVerificationStatus\,' =>
+        'RegistrantVerificationStatus' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RegistrantVerificationStatus',
-        'RegistrantVerificationDetails\,' =>
+        'RegistrantVerificationDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RegistrantVerificationDetails',
-        'DoRegistrantVerification\,' =>
+        'DoRegistrantVerification' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DoRegistrantVerification',
-        'DoRegistrantVerificationResponse\,' =>
+        'DoRegistrantVerificationResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DoRegistrantVerificationResponse',
-        'GetRegistrantVerificationStatus\,' =>
+        'GetRegistrantVerificationStatus' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRegistrantVerificationStatus',
-        'GetRegistrantVerificationStatusResponse\,' =>
+        'GetRegistrantVerificationStatusResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRegistrantVerificationStatusResponse',
-        'UploadRegistrantVerificationMessage\,' =>
+        'UploadRegistrantVerificationMessage' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UploadRegistrantVerificationMessage',
-        'UploadRegistrantVerificationMessageResponse\,' =>
+        'UploadRegistrantVerificationMessageResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UploadRegistrantVerificationMessageResponse',
-        'GetContactResponse\,' =>
+        'GetContactResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetContactResponse',
-        'CreateContact\,' =>
+        'CreateContact' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateContact',
-        'CreateContactResponse\,' =>
+        'CreateContactResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateContactResponse',
-        'UpdateContact\,' =>
+        'UpdateContact' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UpdateContact',
-        'UpdateContactResponse\,' =>
+        'UpdateContactResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UpdateContactResponse',
-        'DeleteContact\,' =>
+        'DeleteContact' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteContact',
-        'DeleteContactResponse\,' =>
+        'DeleteContactResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteContactResponse',
-        'SearchContact\,' =>
+        'SearchContact' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchContact',
-        'SearchContactResponse\,' =>
+        'SearchContactResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchContactResponse',
-        'GetNameServer\,' =>
+        'GetNameServer' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetNameServer',
-        'GetNameServerResponse\,' =>
+        'GetNameServerResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetNameServerResponse',
-        'CreateNameServer\,' =>
+        'CreateNameServer' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateNameServer',
-        'CreateNameServerResponse\,' =>
+        'CreateNameServerResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateNameServerResponse',
-        'DeleteNameServer\,' =>
+        'DeleteNameServer' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteNameServer',
-        'DeleteNameServerResponse\,' =>
+        'DeleteNameServerResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteNameServerResponse',
-        'SearchNameServer\,' =>
+        'SearchNameServer' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchNameServer',
-        'SearchNameServerResponse\,' =>
+        'SearchNameServerResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchNameServerResponse',
-        'PollMessage\,' =>
+        'PollMessage' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PollMessage',
-        'PollMessageResponse\,' =>
+        'PollMessageResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PollMessageResponse',
-        'QueueItem\,' =>
+        'QueueItem' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\QueueItem',
-        'CallbackStatus\,' =>
+        'CallbackStatus' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CallbackStatus',
-        'AckMessage\,' =>
+        'AckMessage' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AckMessage',
-        'AckMessageResponse\,' =>
+        'AckMessageResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AckMessageResponse',
-        'GetMessageQueue\,' =>
+        'GetMessageQueue' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMessageQueue',
-        'GetMessageQueueResponse\,' =>
+        'GetMessageQueueResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMessageQueueResponse',
-        'GetDnsSecKey\,' =>
+        'GetDnsSecKey' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetDnsSecKey',
-        'GetDnsSecKeyResponse\,' =>
+        'GetDnsSecKeyResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetDnsSecKeyResponse',
-        'CreateDnsSecKey\,' =>
+        'CreateDnsSecKey' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateDnsSecKey',
-        'CreateDnsSecKeyResponse\,' =>
+        'CreateDnsSecKeyResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateDnsSecKeyResponse',
-        'SearchDnsSecKey\,' =>
+        'SearchDnsSecKey' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchDnsSecKey',
-        'SearchDnsSecKeyResponse\,' =>
+        'SearchDnsSecKeyResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchDnsSecKeyResponse',
-        'CreateDocumentation\,' =>
+        'CreateDocumentation' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateDocumentation',
-        'CreateDocumentationResponse\,' =>
+        'CreateDocumentationResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateDocumentationResponse',
-        'CreateApprovalDocumentation\,' =>
+        'CreateApprovalDocumentation' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateApprovalDocumentation',
-        'ApprovalDocumentationType\,' =>
+        'ApprovalDocumentationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ApprovalDocumentationType',
-        'ApprovalDocumentation\,' =>
+        'ApprovalDocumentation' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ApprovalDocumentation',
-        'CreateApprovalDocumentationResponse\,' =>
+        'CreateApprovalDocumentationResponse' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CreateApprovalDocumentationResponse',
     );
 

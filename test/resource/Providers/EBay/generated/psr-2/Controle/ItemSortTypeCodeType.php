@@ -4,6 +4,7 @@ namespace Controle;
 
 class ItemSortTypeCodeType
 {
+    // @codingStandardsIgnoreStart
     const ITEMID                        = 'ItemID';
     const PRICE                         = 'Price';
     const STARTPRICE                    = 'StartPrice';
@@ -75,4 +76,5 @@ class ItemSortTypeCodeType
     const WONPLATFORMDESCENDING         = 'WonPlatformDescending';
     const SOLDPLATFORMDESCENDING        = 'SoldPlatformDescending';
     const CUSTOMCODE                    = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

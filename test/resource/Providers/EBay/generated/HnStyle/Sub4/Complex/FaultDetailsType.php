@@ -10,23 +10,26 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FaultDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Reason for SMS subscription error (postback from thired-party integrator).
      */
-    public $errorcode;
+    public $ErrorCode;
     /**
      * @var string | Indicates whether the error is a severe error (causing the request to fail)
      *           or an informational error (a warning).
      */
-    public $severity;
+    public $Severity;
     /**
      * @var string | Description of the condition that caused the SOAP fault.
      */
-    public $detailedmessage;
+    public $DetailedMessage;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -36,7 +39,7 @@ class FaultDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorCode');
         }
-        $this->errorcode = (int)$val;
+        $this->ErrorCode = (int)$val;
     }
 
     /**
@@ -48,7 +51,7 @@ class FaultDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Severity');
         }
-        $this->severity = (int)$val;
+        $this->Severity = (int)$val;
     }
 
     /**
@@ -60,7 +63,7 @@ class FaultDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DetailedMessage');
         }
-        $this->detailedmessage = (int)$val;
+        $this->DetailedMessage = (int)$val;
     }
 
     /**

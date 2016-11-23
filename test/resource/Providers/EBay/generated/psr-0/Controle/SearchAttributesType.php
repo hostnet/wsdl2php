@@ -10,11 +10,12 @@ namespace Controle;
  */
 class SearchAttributesType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Unique identifier for the attribute within the characteristic set.            Required
 	 * if SearchAttributes is specified.
 	 */
-	public $attributeid;
+	public $AttributeID;
 	/**
 	 * @var \Controle\DateSpecifierCodeType | Specifies the date sub-component that the attribute represents. This only applies to date
 	 * attributes. Required when searching by date attributes.            Allows for separate
@@ -22,23 +23,25 @@ class SearchAttributesType
 	 * the day, month, and year can be rendered as            separate drop-down lists. See DateSpecifierCodeType
 	 * for possible values.
 	 */
-	public $datespecifier;
+	public $DateSpecifier;
 	/**
 	 * @var \Controle\RangeCodeType | Indicates that the attribute represents the high or low end in a range, such as a date
 	 * range or a price range. Required when searching on ranges.
 	 */
-	public $rangespecifier;
+	public $RangeSpecifier;
 	/**
 	 * @var \Controle\ValType | Container for the list of one or more valid values that the user has selected for the searchable
 	 * attribute. If multiple values are specified, the search engine applies "OR" logic to the
 	 * query (i.e., at least one of the specified values must match). Required if SearchAttributes
 	 * is specified.
 	 */
-	public $valuelist;
+	public $ValueList;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -48,7 +51,7 @@ class SearchAttributesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributeid = (int)$val;
+        $this->AttributeID = (int)$val;
 	}
 
 	/**
@@ -57,7 +60,7 @@ class SearchAttributesType
 	 */
 	public function setDateSpecifier($val)
 	{
-        $this->datespecifier = (int)$val;
+        $this->DateSpecifier = (int)$val;
 	}
 
 	/**
@@ -66,7 +69,7 @@ class SearchAttributesType
 	 */
 	public function setRangeSpecifier($val)
 	{
-        $this->rangespecifier = (int)$val;
+        $this->RangeSpecifier = (int)$val;
 	}
 
 	/**
@@ -75,7 +78,7 @@ class SearchAttributesType
 	 */
 	public function setValueList($val)
 	{
-        $this->valuelist = (int)$val;
+        $this->ValueList = (int)$val;
 	}
 
 	/**

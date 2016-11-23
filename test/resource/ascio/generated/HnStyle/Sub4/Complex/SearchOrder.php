@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SearchOrder
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SearchOrderRequest
      */
-    public $orderrequest;
+    public $orderRequest;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class SearchOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class SearchOrder
      */
     public function setOrderRequest($val)
     {
-        $this->orderrequest = (int)$val;
+        $this->orderRequest = (int)$val;
     }
 }

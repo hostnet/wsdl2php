@@ -4,16 +4,19 @@ namespace Controle;
 
 class UpdateContactResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $updatecontactresult;
+    public $UpdateContactResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setUpdateContactResult($val)
     {
-        $this->updatecontactresult = (int)$val;
+        $this->UpdateContactResult = (int)$val;
     }
 }

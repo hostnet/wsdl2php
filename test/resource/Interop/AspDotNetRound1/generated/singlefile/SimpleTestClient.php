@@ -2,18 +2,21 @@
 
 class SoApStruct
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int
 	 */
-	public $varint;
+	public $varInt;
 	/**
 	 * @var string
 	 */
-	public $varstring;
+	public $varString;
 	/**
 	 * @var float
 	 */
-	public $varfloat;
+	public $varFloat;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -23,7 +26,7 @@ class SoApStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
 	}
 
 	/**
@@ -35,7 +38,7 @@ class SoApStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
 	}
 
 	/**
@@ -44,7 +47,7 @@ class SoApStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
 	}
 }
 
@@ -57,7 +60,7 @@ class SimpleTestClient extends SoapClient {
 
 	const WSDL_FILE = "AspDotNetRound1Test.wsdl";
 	private $classmap = array(
-        'SOAPStruct\,' =>
+        'SOAPStruct' =>
             'SOAPStruct',
 	);
 

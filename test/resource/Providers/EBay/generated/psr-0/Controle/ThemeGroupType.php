@@ -8,27 +8,30 @@ namespace Controle;
  */
 class ThemeGroupType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Unique identifier for this theme group.
 	 */
-	public $groupid;
+	public $GroupID;
 	/**
 	 * @var string | Name of this theme group (localized to the language associated with the eBay site).
 	 */
-	public $groupname;
+	public $GroupName;
 	/**
 	 * @var int | Unique identifier for each theme in this group. There is at least one theme in a theme
 	 * group.
 	 */
-	public $themeid;
+	public $ThemeID;
 	/**
 	 * @var int | The number of ThemeID elements in this group.
 	 */
-	public $themetotal;
+	public $ThemeTotal;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -38,7 +41,7 @@ class ThemeGroupType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->groupid = (int)$val;
+        $this->GroupID = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class ThemeGroupType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for GroupName');
         }
-        $this->groupname = (int)$val;
+        $this->GroupName = (int)$val;
 	}
 
 	/**
@@ -62,7 +65,7 @@ class ThemeGroupType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->themeid = (int)$val;
+        $this->ThemeID = (int)$val;
 	}
 
 	/**
@@ -74,7 +77,7 @@ class ThemeGroupType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->themetotal = (int)$val;
+        $this->ThemeTotal = (int)$val;
 	}
 
 	/**

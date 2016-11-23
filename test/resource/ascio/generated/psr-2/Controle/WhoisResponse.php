@@ -4,21 +4,24 @@ namespace Controle;
 
 class WhoisResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $whoisresult;
+    public $WhoisResult;
     /**
      * @var string
      */
-    public $whoisdata;
+    public $whoisData;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setWhoisResult($val)
     {
-        $this->whoisresult = (int)$val;
+        $this->WhoisResult = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class WhoisResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for whoisData');
         }
-        $this->whoisdata = (int)$val;
+        $this->whoisData = (int)$val;
     }
 }

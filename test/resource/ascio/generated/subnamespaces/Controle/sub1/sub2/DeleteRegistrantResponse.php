@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class DeleteRegistrantResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $deleteregistrantresult;
+	public $DeleteRegistrantResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setDeleteRegistrantResult($val)
 	{
-        $this->deleteregistrantresult = (int)$val;
+        $this->DeleteRegistrantResult = (int)$val;
 	}
 }

@@ -12,47 +12,50 @@ namespace Controle;
 class GetMyeBayResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user has bid on. BiddingItemArray is
      *             an array of ItemType objects, each of which represents one item.
      */
-    public $biddingitemarray;
+    public $BiddingItemArray;
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user has bid on but not has won. LostItemArray
      * is an array of ItemType objects, each of which represents one item.
      */
-    public $lostitemarray;
+    public $LostItemArray;
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user is watching. WatchItemArray is an array
      * of ItemType objects, each of which represents one item.
      */
-    public $watchitemarray;
+    public $WatchItemArray;
     /**
      * @var \Controle\ItemArrayType | Contains the list of items the requesting user has won. WonItemArray is an array of
      * ItemType objects, each of which represents one item.
      */
-    public $wonitemarray;
+    public $WonItemArray;
     /**
      * @var \Controle\MyeBayFavoriteSearchListType | Contains a list of the user's favorite searches. Only returned if items exist that meet
      * the request criteria.
      */
-    public $favoritesearches;
+    public $FavoriteSearches;
     /**
      * @var \Controle\MyeBayFavoriteSellerListType | Contains a list of the user's favorite sellers. Only returned if items exist that meet
      * the request criteria.
      */
-    public $favoritesellers;
+    public $FavoriteSellers;
     /**
      * @var \Controle\MyeBaySecondChanceOfferListType | Contains a list of the user's My eBay Second Chance Offers.
      */
-    public $secondchanceoffers;
+    public $SecondChanceOffers;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemArrayType $val
      * @throws Exception
      */
     public function setBiddingItemArray($val)
     {
-        $this->biddingitemarray = (int)$val;
+        $this->BiddingItemArray = (int)$val;
     }
 
     /**
@@ -61,7 +64,7 @@ class GetMyeBayResponseType extends
      */
     public function setLostItemArray($val)
     {
-        $this->lostitemarray = (int)$val;
+        $this->LostItemArray = (int)$val;
     }
 
     /**
@@ -70,7 +73,7 @@ class GetMyeBayResponseType extends
      */
     public function setWatchItemArray($val)
     {
-        $this->watchitemarray = (int)$val;
+        $this->WatchItemArray = (int)$val;
     }
 
     /**
@@ -79,7 +82,7 @@ class GetMyeBayResponseType extends
      */
     public function setWonItemArray($val)
     {
-        $this->wonitemarray = (int)$val;
+        $this->WonItemArray = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class GetMyeBayResponseType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->favoritesearches = (int)$val;
+        $this->FavoriteSearches = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class GetMyeBayResponseType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->favoritesellers = (int)$val;
+        $this->FavoriteSellers = (int)$val;
     }
 
     /**
@@ -106,6 +109,6 @@ class GetMyeBayResponseType extends
      */
     public function setSecondChanceOffers($val)
     {
-        $this->secondchanceoffers = (int)$val;
+        $this->SecondChanceOffers = (int)$val;
     }
 }

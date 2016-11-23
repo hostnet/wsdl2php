@@ -11,6 +11,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetItemRecommendationsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GetRecommendationsResponseContainerType | Specifies recommended changes or opportunities for improving the data of a single item.
      *                  If multiple items were processed, a separate GetRecommendationsResponseContainer
@@ -18,13 +19,15 @@ class GetItemRecommendationsResponseType extends
      * ID                   to help you match items in the request to recommendations in the
      * response.
      */
-    public $getrecommendationsresponsecontainer;
+    public $GetRecommendationsResponseContainer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param GetRecommendationsResponseContainerType $val
      * @throws Exception
      */
     public function setGetRecommendationsResponseContainer($val)
     {
-        $this->getrecommendationsresponsecontainer = (int)$val;
+        $this->GetRecommendationsResponseContainer = (int)$val;
     }
 }

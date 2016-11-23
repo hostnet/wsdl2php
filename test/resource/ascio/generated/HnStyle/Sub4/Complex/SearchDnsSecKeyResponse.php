@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SearchDnsSecKeyResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $searchdnsseckeyresult;
+    public $SearchDnsSecKeyResult;
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\DnsSecKey
      */
-    public $dnsseckeys;
+    public $dnsSecKeys;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setSearchDnsSecKeyResult($val)
     {
-        $this->searchdnsseckeyresult = (int)$val;
+        $this->SearchDnsSecKeyResult = (int)$val;
     }
 
     /**
@@ -27,6 +30,6 @@ class SearchDnsSecKeyResponse
      */
     public function setDnsSecKeys($val)
     {
-        $this->dnsseckeys = (int)$val;
+        $this->dnsSecKeys = (int)$val;
     }
 }

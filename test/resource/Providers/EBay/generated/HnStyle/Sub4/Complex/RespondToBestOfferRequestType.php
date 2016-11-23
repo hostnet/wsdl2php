@@ -11,42 +11,45 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class RespondToBestOfferRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferIDType | An id to distinguish this best offer from other best offers made on the item.
      */
-    public $bestofferid;
+    public $BestOfferID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferActionCodeType | Indicates the type of offer being made on the specified listing. Valid values are enumerated
      * in the BidActionCodeType code list.
      */
-    public $action;
+    public $Action;
     /**
      * @var string | A comment from the seller to the buyer.
      */
-    public $sellerresponse;
+    public $SellerResponse;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The counter offer price. When Action is set to Counter, you must specify the amount
      * for the counteroffer with CounterOfferPrice. The value of CounterOfferPrice cannot exceed
      * the Buy It Now price for a single quantity item. The value of CounterOfferPrice may
      * exceed the Buy It Now price if the value for CounterOfferQuantity is greater than 1.
      */
-    public $counterofferprice;
+    public $CounterOfferPrice;
     /**
      * @var int | The counter offer quantity. When Action is set to Counter you must specify the quantity
      * of items for the counteroffer with CounterOfferQuantity.
      */
-    public $counterofferquantity;
+    public $CounterOfferQuantity;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setBestOfferID($val)
     {
-        $this->bestofferid = (int)$val;
+        $this->BestOfferID = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setAction($val)
     {
-        $this->action = (int)$val;
+        $this->Action = (int)$val;
     }
 
     /**
@@ -76,7 +79,7 @@ class RespondToBestOfferRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerResponse');
         }
-        $this->sellerresponse = (int)$val;
+        $this->SellerResponse = (int)$val;
     }
 
     /**
@@ -85,7 +88,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setCounterOfferPrice($val)
     {
-        $this->counterofferprice = (int)$val;
+        $this->CounterOfferPrice = (int)$val;
     }
 
     /**
@@ -97,6 +100,6 @@ class RespondToBestOfferRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->counterofferquantity = (int)$val;
+        $this->CounterOfferQuantity = (int)$val;
     }
 }

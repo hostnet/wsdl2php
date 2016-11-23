@@ -8,16 +8,19 @@ namespace Controle;
  */
 class StoreCustomPageArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\StoreCustomPageType | A Store custom page.
      */
-    public $custompage;
+    public $CustomPage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreCustomPageType $val
      * @throws Exception
      */
     public function setCustomPage($val)
     {
-        $this->custompage = (int)$val;
+        $this->CustomPage = (int)$val;
     }
 }

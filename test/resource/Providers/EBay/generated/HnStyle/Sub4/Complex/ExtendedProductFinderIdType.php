@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ExtendedProductFinderIdType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
      *           search for Item Specifics in listings (e.g., how to search against a particular
@@ -16,14 +17,16 @@ class ExtendedProductFinderIdType
      * level of ItemReturnAttributes or ReturnAll. Use GetProductFinder to determine valid
      * product finder IDs.
      */
-    public $productfinderid;
+    public $ProductFinderID;
     /**
      * @var boolean | If true, the product finder can be used as input to GetSearchResults to search for listings
      * with Item Specifics on the eBay site. If false or not present, the product finder can
      * be used as input to GetProductSearchResults to search for catalog data (Pre-filled Item
      * Information) that a seller might want to include in a listing.
      */
-    public $productfinderbuyside;
+    public $ProductFinderBuySide;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -33,7 +36,7 @@ class ExtendedProductFinderIdType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->productfinderid = (int)$val;
+        $this->ProductFinderID = (int)$val;
     }
 
     /**
@@ -42,6 +45,6 @@ class ExtendedProductFinderIdType
      */
     public function setProductFinderBuySide($val)
     {
-        $this->productfinderbuyside = (int)$val;
+        $this->ProductFinderBuySide = (int)$val;
     }
 }

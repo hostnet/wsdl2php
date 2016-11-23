@@ -10,18 +10,21 @@ namespace Controle\sub1\sub2;
 class GetCrossPromotionsResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\CrossPromotionsType | Container for cross-promoted items related to a specific item ID. The items are either
 	 * upsell or cross-sell, according to the promotion method passed in the request. Not applicable
 	 * to Half.com.
 	 */
-	public $crosspromotion;
+	public $CrossPromotion;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param CrossPromotionsType $val
 	 * @throws Exception
 	 */
 	public function setCrossPromotion($val)
 	{
-        $this->crosspromotion = (int)$val;
+        $this->CrossPromotion = (int)$val;
 	}
 }

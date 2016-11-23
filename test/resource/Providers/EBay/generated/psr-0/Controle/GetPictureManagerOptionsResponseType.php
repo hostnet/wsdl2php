@@ -9,21 +9,24 @@ namespace Controle;
 class GetPictureManagerOptionsResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\PictureManagerSubscriptionType | A Store subscription level.
 	 */
-	public $subscription;
+	public $Subscription;
 	/**
 	 * @var \Controle\PictureManagerPictureDisplayType | A global definition for displaying pictures, with a maximum size.
 	 */
-	public $picturetype;
+	public $PictureType;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param PictureManagerSubscriptionType $val
 	 * @throws Exception
 	 */
 	public function setSubscription($val)
 	{
-        $this->subscription = (int)$val;
+        $this->Subscription = (int)$val;
 	}
 
 	/**
@@ -32,6 +35,6 @@ class GetPictureManagerOptionsResponseType extends
 	 */
 	public function setPictureType($val)
 	{
-        $this->picturetype = (int)$val;
+        $this->PictureType = (int)$val;
 	}
 }

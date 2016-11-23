@@ -12,18 +12,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetStoreRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | If this is set to True, only the category structure of the store is returned. If this
      * is not specified or set to False, the complete store configuration is returned.
      */
-    public $categorystructureonly;
+    public $CategoryStructureOnly;
     /**
      * @var int | Specifies the category ID for the topmost category to return (along with the subcategories
      * under it, the value of the LevelLimit property determining how deep). This tag is optional.
      * If RootCategoryID is not specified, then the category tree starting at that root Category
      * is returned.
      */
-    public $rootcategoryid;
+    public $RootCategoryID;
     /**
      * @var int | Specifies the limit for the number of levels of the category hierarchy to return, where
      * the given root category is level 1 and its children are level 2. Only categories at
@@ -31,14 +32,16 @@ class GetStoreRequestType extends
      * set, the complete category hierarchy is returned. Stores support category hierarchies
      * up to 3 levels only.
      */
-    public $levellimit;
+    public $LevelLimit;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setCategoryStructureOnly($val)
     {
-        $this->categorystructureonly = (int)$val;
+        $this->CategoryStructureOnly = (int)$val;
     }
 
     /**
@@ -50,7 +53,7 @@ class GetStoreRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->rootcategoryid = (int)$val;
+        $this->RootCategoryID = (int)$val;
     }
 
     /**
@@ -62,6 +65,6 @@ class GetStoreRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->levellimit = (int)$val;
+        $this->LevelLimit = (int)$val;
     }
 }

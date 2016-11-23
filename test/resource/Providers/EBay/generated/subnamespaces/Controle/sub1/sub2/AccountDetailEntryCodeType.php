@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class AccountDetailEntryCodeType
 {
+	// @codingStandardsIgnoreStart
 	const UNKNOWN                                         = 'Unknown';
 	const FEEINSERTION                                    = 'FeeInsertion';
 	const FEEBOLD                                         = 'FeeBold';
@@ -252,4 +253,5 @@ class AccountDetailEntryCodeType
 	const CREDITEBAYMOTORSPROFEATUREFEE                   = 'CrediteBayMotorsProFeatureFee';
 	const FEEGALLERYPLUS                                  = 'FeeGalleryPlus';
 	const CREDITGALLERYPLUS                               = 'CreditGalleryPlus';
+	// @codingStandardsIgnoreEnd
 }

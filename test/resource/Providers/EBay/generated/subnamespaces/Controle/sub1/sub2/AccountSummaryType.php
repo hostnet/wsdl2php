@@ -10,30 +10,31 @@ namespace Controle\sub1\sub2;
  */
 class AccountSummaryType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AccountStateCodeType | Indicates the current state of the account (such as active or inactive). Possible values
 	 * are enumerated in the AccountStateCodeType code list.
 	 */
-	public $accountstate;
+	public $AccountState;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Specifies payment made since the previous invoice, but is returned only if AccountHistorySelection
 	 * is LastInvoice or Specified Invoice. With compatibility level 387, the value is positive
 	 * for debits and negative for credits, reversing the sign of earlier versions.
 	 */
-	public $invoicepayment;
+	public $InvoicePayment;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Specifies credits granted since the previous invoice, but is only returned AccountHistorySelection
 	 * is LastInvoice or Specified Invoice. With compatibility level 387, the value is positive
 	 * for debits and negative for credits, reversing the sign of earlier versions.
 	 */
-	public $invoicecredit;
+	public $InvoiceCredit;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Specifies fees incurred since the last invoice, including tax if applicable. Returned only
 	 * if AccountHistorySelection is LastInvoice or Specified Invoice. With compatibility level
 	 * 387, the value is positive for debits and negative for credits, reversing the sign of earlier
 	 * versions.
 	 */
-	public $invoicenewfee;
+	public $InvoiceNewFee;
 	/**
 	 * @var \Controle\sub1\sub2\AdditionalAccountType | Contains the data for one additional account. An AccountSummaryType object
 	 *    may return zero, one, or multiple additional accounts. See the schema
@@ -41,56 +42,56 @@ class AccountSummaryType
 	 *      With compatibility level 387, the value is positive for debits                and
 	 * negative for credits, reversing the sign of earlier versions.
 	 */
-	public $additionalaccount;
+	public $AdditionalAccount;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount past due, 0.00 if not past due. With compatibility level 387, the value is positive
 	 * for debits and negative for credits, reversing the sign of earlier versions.
 	 */
-	public $amountpastdue;
+	public $AmountPastDue;
 	/**
 	 * @var string | First four digits of the bank account the user associated with the seller account (with
 	 * remainder Xed-out). This may be an empty string depending upon the payment type the user
 	 * selected for the account (e.g., if no debit-card specified).
 	 */
-	public $bankaccountinfo;
+	public $BankAccountInfo;
 	/**
 	 * @var dateTime | Indicates the date and time BankAccountInfo was last modified, in GMT. (Also see the Data
 	 * Types appendix for more information on how GMT dates are handled in SOAP.) This may be
 	 * an empty string depending upon the payment type the user selected for the account (e.g.,
 	 * if no debit-card specified).
 	 */
-	public $bankmodifydate;
+	public $BankModifyDate;
 	/**
 	 * @var int | Indicates the billing cycle in which eBay sends a billing invoice to the user. A value
 	 * of 0 (zero) indicates an invoice sent on the last day of the month. A value of 15 indicates
 	 * an invoice sent on the 15th day of the month.
 	 */
-	public $billingcycledate;
+	public $BillingCycleDate;
 	/**
 	 * @var dateTime | Expiration date for the credit card selected by the user as payment method for the account,
 	 * in GMT. (Also see the Data Types appendix for more information on how GMT dates are handled
 	 * in SOAP.) Empty string if no credit card is on file or if the account is inactive - even
 	 * if there is a credit card on file.
 	 */
-	public $creditcardexpiration;
+	public $CreditCardExpiration;
 	/**
 	 * @var string | Last four digits of the credit card the user selected as payment method for the account.
 	 * Empty string if no credit is on file.
 	 */
-	public $creditcardinfo;
+	public $CreditCardInfo;
 	/**
 	 * @var dateTime | Indicates the date and time credit card or credit card expiration date was last modified,
 	 * in GMT. (Also see the Data Types appendix for more information on how GMT dates are handled
 	 * in SOAP.) This may be an empty string depending on the payment method the user selected
 	 * for the account (e.g., Empty string if no credit card is on file.)
 	 */
-	public $creditcardmodifydate;
+	public $CreditCardModifyDate;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Current balance for the account. Can be 0.00, positive, or negative. With compatibility
 	 * level 387, the value is positive for debits and negative for credits, reversing the sign
 	 * of earlier versions.
 	 */
-	public $currentbalance;
+	public $CurrentBalance;
 	/**
 	 * @var string | Email address for the user. You cannot retrieve an email address for any user with whom
 	 * you do not have a transactional relationship, regardless of site. Email is only returned
@@ -101,50 +102,52 @@ class AccountSummaryType
 	 * info is made anonymous, this tag will be returned only for that bidder, and the seller
 	 * of an item that the user is bidding on.
 	 */
-	public $email;
+	public $Email;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount of last invoice. 0.00 if account not yet invoiced. With compatibility level 387,
 	 * the value is positive for debits and negative for credits, reversing the sign of earlier
 	 * versions.
 	 */
-	public $invoicebalance;
+	public $InvoiceBalance;
 	/**
 	 * @var dateTime | Date of last invoice sent by eBay to the user, in GMT. (Also see the Data Types appendix
 	 * for more information on how GMT dates are handled in SOAP.) Empty string if this account
 	 * has not been invoiced yet.
 	 */
-	public $invoicedate;
+	public $InvoiceDate;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Amount of last payment posted, 0.00 if no payments posted. With compatibility level 387,
 	 * the value is positive for debits and negative for credits, reversing the sign of earlier
 	 * versions.
 	 */
-	public $lastamountpaid;
+	public $LastAmountPaid;
 	/**
 	 * @var dateTime | Date of last payment by the user to eBay, in GMT. (Also see the Data Types appendix for
 	 * more information on how GMT dates are handled in SOAP.) Empty string if no payments have
 	 * been posted.
 	 */
-	public $lastpaymentdate;
+	public $LastPaymentDate;
 	/**
 	 * @var boolean | Indicates whether the account has past due amounts outstanding. A value of true indicates
 	 * that the account is past due. A value of false indicates the account is current.
 	 */
-	public $pastdue;
+	public $PastDue;
 	/**
 	 * @var \Controle\sub1\sub2\SellerPaymentMethodCodeType | 	 */
-	public $paymentmethod;
+	public $PaymentMethod;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AccountStateCodeType $val
 	 * @throws Exception
 	 */
 	public function setAccountState($val)
 	{
-        $this->accountstate = (int)$val;
+        $this->AccountState = (int)$val;
 	}
 
 	/**
@@ -153,7 +156,7 @@ class AccountSummaryType
 	 */
 	public function setInvoicePayment($val)
 	{
-        $this->invoicepayment = (int)$val;
+        $this->InvoicePayment = (int)$val;
 	}
 
 	/**
@@ -162,7 +165,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceCredit($val)
 	{
-        $this->invoicecredit = (int)$val;
+        $this->InvoiceCredit = (int)$val;
 	}
 
 	/**
@@ -171,7 +174,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceNewFee($val)
 	{
-        $this->invoicenewfee = (int)$val;
+        $this->InvoiceNewFee = (int)$val;
 	}
 
 	/**
@@ -180,7 +183,7 @@ class AccountSummaryType
 	 */
 	public function setAdditionalAccount($val)
 	{
-        $this->additionalaccount = (int)$val;
+        $this->AdditionalAccount = (int)$val;
 	}
 
 	/**
@@ -189,7 +192,7 @@ class AccountSummaryType
 	 */
 	public function setAmountPastDue($val)
 	{
-        $this->amountpastdue = (int)$val;
+        $this->AmountPastDue = (int)$val;
 	}
 
 	/**
@@ -201,7 +204,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BankAccountInfo');
         }
-        $this->bankaccountinfo = (int)$val;
+        $this->BankAccountInfo = (int)$val;
 	}
 
 	/**
@@ -210,7 +213,7 @@ class AccountSummaryType
 	 */
 	public function setBankModifyDate($val)
 	{
-        $this->bankmodifydate = (int)$val;
+        $this->BankModifyDate = (int)$val;
 	}
 
 	/**
@@ -222,7 +225,7 @@ class AccountSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->billingcycledate = (int)$val;
+        $this->BillingCycleDate = (int)$val;
 	}
 
 	/**
@@ -231,7 +234,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardExpiration($val)
 	{
-        $this->creditcardexpiration = (int)$val;
+        $this->CreditCardExpiration = (int)$val;
 	}
 
 	/**
@@ -243,7 +246,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CreditCardInfo');
         }
-        $this->creditcardinfo = (int)$val;
+        $this->CreditCardInfo = (int)$val;
 	}
 
 	/**
@@ -252,7 +255,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardModifyDate($val)
 	{
-        $this->creditcardmodifydate = (int)$val;
+        $this->CreditCardModifyDate = (int)$val;
 	}
 
 	/**
@@ -261,7 +264,7 @@ class AccountSummaryType
 	 */
 	public function setCurrentBalance($val)
 	{
-        $this->currentbalance = (int)$val;
+        $this->CurrentBalance = (int)$val;
 	}
 
 	/**
@@ -273,7 +276,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->email = (int)$val;
+        $this->Email = (int)$val;
 	}
 
 	/**
@@ -282,7 +285,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceBalance($val)
 	{
-        $this->invoicebalance = (int)$val;
+        $this->InvoiceBalance = (int)$val;
 	}
 
 	/**
@@ -291,7 +294,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceDate($val)
 	{
-        $this->invoicedate = (int)$val;
+        $this->InvoiceDate = (int)$val;
 	}
 
 	/**
@@ -300,7 +303,7 @@ class AccountSummaryType
 	 */
 	public function setLastAmountPaid($val)
 	{
-        $this->lastamountpaid = (int)$val;
+        $this->LastAmountPaid = (int)$val;
 	}
 
 	/**
@@ -309,7 +312,7 @@ class AccountSummaryType
 	 */
 	public function setLastPaymentDate($val)
 	{
-        $this->lastpaymentdate = (int)$val;
+        $this->LastPaymentDate = (int)$val;
 	}
 
 	/**
@@ -318,7 +321,7 @@ class AccountSummaryType
 	 */
 	public function setPastDue($val)
 	{
-        $this->pastdue = (int)$val;
+        $this->PastDue = (int)$val;
 	}
 
 	/**
@@ -327,7 +330,7 @@ class AccountSummaryType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->paymentmethod = (int)$val;
+        $this->PaymentMethod = (int)$val;
 	}
 
 	/**

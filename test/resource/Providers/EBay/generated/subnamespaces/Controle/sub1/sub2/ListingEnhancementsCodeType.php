@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class ListingEnhancementsCodeType
 {
+	// @codingStandardsIgnoreStart
 	const BORDER                 = 'Border';
 	const BOLDTITLE              = 'BoldTitle';
 	const FEATURED               = 'Featured';
@@ -14,4 +15,5 @@ class ListingEnhancementsCodeType
 	const VALUEPACKBUNDLE        = 'ValuePackBundle';
 	const PROPACKPLUSBUNDLE      = 'ProPackPlusBundle';
 	const CUSTOMCODE             = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

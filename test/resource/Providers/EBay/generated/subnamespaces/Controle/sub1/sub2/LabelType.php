@@ -10,10 +10,11 @@ namespace Controle\sub1\sub2;
  */
 class LabelType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -22,6 +23,8 @@ class LabelType
 	 * @var boolean
 	 */
 	public $visible;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -31,7 +34,7 @@ class LabelType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**

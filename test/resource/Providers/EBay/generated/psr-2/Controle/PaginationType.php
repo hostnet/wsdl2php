@@ -10,6 +10,7 @@ namespace Controle;
  */
 class PaginationType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Specifies the maximum number of entries to return in a single call. If the number of
      * entries that can be returned is less than the value in EntriesPerPage, then the lower
@@ -18,7 +19,7 @@ class PaginationType
      * other individual calls to determine the correct max and default values. For GetOrders,
      * not applicable to eBay.com (for GetOrders, applicable to Half.com).
      */
-    public $entriesperpage;
+    public $EntriesPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -27,11 +28,13 @@ class PaginationType
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -41,7 +44,7 @@ class PaginationType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->entriesperpage = (int)$val;
+        $this->EntriesPerPage = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class PaginationType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**

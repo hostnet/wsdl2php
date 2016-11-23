@@ -5,26 +5,29 @@ namespace Controle;
 class GetMemberMessagesResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\MemberMessageExchangeArrayType | Holds the content of the message.
 	 */
-	public $membermessage;
+	public $MemberMessage;
 	/**
 	 * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
 	 * of entries.
 	 */
-	public $paginationresult;
+	public $PaginationResult;
 	/**
 	 * @var boolean | Indicates whether there are additional Want It Now posts that meet the search criteria.
 	 */
-	public $hasmoreitems;
+	public $HasMoreItems;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param MemberMessageExchangeArrayType $val
 	 * @throws Exception
 	 */
 	public function setMemberMessage($val)
 	{
-        $this->membermessage = (int)$val;
+        $this->MemberMessage = (int)$val;
 	}
 
 	/**
@@ -33,7 +36,7 @@ class GetMemberMessagesResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
 	}
 
 	/**
@@ -42,6 +45,6 @@ class GetMemberMessagesResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->hasmoreitems = (int)$val;
+        $this->HasMoreItems = (int)$val;
 	}
 }

@@ -4,6 +4,7 @@ namespace Controle;
 
 class NotificationEventStateCodeType
 {
+    // @codingStandardsIgnoreStart
     const _NEW              = '_New';
     const FAILED            = 'Failed';
     const MARKEDDOWN        = 'MarkedDown';
@@ -15,4 +16,5 @@ class NotificationEventStateCodeType
     const REJECTED          = 'Rejected';
     const CANCELED          = 'Canceled';
     const CUSTOMCODE        = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

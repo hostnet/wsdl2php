@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class PictureManagerPictureType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
      * on a location of the seller's choice (other than eBay) and associated with an item.
@@ -24,30 +25,32 @@ class PictureManagerPictureType
      * that the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
      * with that feature.
      */
-    public $pictureurl;
+    public $PictureURL;
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $name;
+    public $Name;
     /**
      * @var dateTime | The date the picture was uploaded to the Picture Manager account.
      */
-    public $date;
+    public $Date;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerPictureDisplayType | The type of picture display in Picture Manager.
      */
-    public $displayformat;
+    public $DisplayFormat;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param anyURI $val
      * @throws Exception
      */
     public function setPictureURL($val)
     {
-        $this->pictureurl = (int)$val;
+        $this->PictureURL = (int)$val;
     }
 
     /**
@@ -59,7 +62,7 @@ class PictureManagerPictureType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
     }
 
     /**
@@ -68,7 +71,7 @@ class PictureManagerPictureType
      */
     public function setDate($val)
     {
-        $this->date = (int)$val;
+        $this->Date = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class PictureManagerPictureType
      */
     public function setDisplayFormat($val)
     {
-        $this->displayformat = (int)$val;
+        $this->DisplayFormat = (int)$val;
     }
 
     /**

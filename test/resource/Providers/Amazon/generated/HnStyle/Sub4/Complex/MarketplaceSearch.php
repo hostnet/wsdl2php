@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class MarketplaceSearch
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MarketplaceSearchDetailsArray
      */
-    public $marketplacesearchdetails;
+    public $MarketplaceSearchDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param MarketplaceSearchDetailsArray $val
      * @throws Exception
      */
     public function setMarketplaceSearchDetails($val)
     {
-        $this->marketplacesearchdetails = (int)$val;
+        $this->MarketplaceSearchDetails = (int)$val;
     }
 }

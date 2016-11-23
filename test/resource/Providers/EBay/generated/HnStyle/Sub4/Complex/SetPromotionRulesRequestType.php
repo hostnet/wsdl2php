@@ -10,24 +10,27 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetPromotionRulesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OperationTypeCodeType | Specifies whether the update is for item rules or default rules for the promotion type.
      * Allowed values are ItemRules or ReplaceAllDefaultRules. Required when setting default
      * rules.
      */
-    public $operationtype;
+    public $OperationType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionRuleArrayType | Specifies a list of cross-promotion rules to set. Each rule defines a referring item
      * or store category and the cross-promoted items or store categories.
      */
-    public $promotionrulearray;
+    public $PromotionRuleArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OperationTypeCodeType $val
      * @throws Exception
      */
     public function setOperationType($val)
     {
-        $this->operationtype = (int)$val;
+        $this->OperationType = (int)$val;
     }
 
     /**
@@ -36,6 +39,6 @@ class SetPromotionRulesRequestType extends
      */
     public function setPromotionRuleArray($val)
     {
-        $this->promotionrulearray = (int)$val;
+        $this->PromotionRuleArray = (int)$val;
     }
 }

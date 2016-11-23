@@ -11,25 +11,26 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class IssueRefundRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RefundReasonCodeType | Explanation of the reason that the refund is being issued.
      */
-    public $refundreason;
+    public $RefundReason;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RefundTypeCodeType | Explanation of the costs that the refund amount covers.
      */
-    public $refundtype;
+    public $RefundType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The amount the seller wants to refund to the buyer, in US Dollars (USD). Must be greater
      * than 0.00. Half.com allows a maximum of the original item sale price (transaction price
@@ -42,18 +43,20 @@ class IssueRefundRequestType extends
      * amount for you. If you pass RefundAmount in the request, the amount you specify will override
      * Half.com's calculated value. Required if RefundType= CustomOrPartial.
      */
-    public $refundamount;
+    public $RefundAmount;
     /**
      * @var string | Note to the buyer. Cannot include HTML.
      */
-    public $refundmessage;
+    public $RefundMessage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class IssueRefundRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class IssueRefundRequestType extends
      */
     public function setRefundReason($val)
     {
-        $this->refundreason = (int)$val;
+        $this->RefundReason = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class IssueRefundRequestType extends
      */
     public function setRefundType($val)
     {
-        $this->refundtype = (int)$val;
+        $this->RefundType = (int)$val;
     }
 
     /**
@@ -92,7 +95,7 @@ class IssueRefundRequestType extends
      */
     public function setRefundAmount($val)
     {
-        $this->refundamount = (int)$val;
+        $this->RefundAmount = (int)$val;
     }
 
     /**
@@ -104,6 +107,6 @@ class IssueRefundRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefundMessage');
         }
-        $this->refundmessage = (int)$val;
+        $this->RefundMessage = (int)$val;
     }
 }

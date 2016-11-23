@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ShippingPackageCodeType
 {
+    // @codingStandardsIgnoreStart
     const NONE                 = 'None';
     const LETTER               = 'Letter';
     const LARGEENVELOPE        = 'LargeEnvelope';
@@ -23,4 +24,5 @@ class ShippingPackageCodeType
     const CARAVAN              = 'Caravan';
     const INDUSTRYVEHICLES     = 'IndustryVehicles';
     const CUSTOMCODE           = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

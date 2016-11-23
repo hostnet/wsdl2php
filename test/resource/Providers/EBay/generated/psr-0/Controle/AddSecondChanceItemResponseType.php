@@ -9,30 +9,33 @@ namespace Controle;
 class AddSecondChanceItemResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\FeesType | (Not used.)
 	 */
-	public $fees;
+	public $Fees;
 	/**
 	 * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
 	 */
-	public $starttime;
+	public $StartTime;
 	/**
 	 * @var dateTime | Time stamp (in GMT) when the listing is scheduled to end (calculated based on the values
 	 * of StartTime and ListingDuration) or the actual end time if the item has ended.
 	 */
-	public $endtime;
+	public $EndTime;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param FeesType $val
 	 * @throws Exception
 	 */
 	public function setFees($val)
 	{
-        $this->fees = (int)$val;
+        $this->Fees = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->starttime = (int)$val;
+        $this->StartTime = (int)$val;
 	}
 
 	/**
@@ -59,6 +62,6 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->endtime = (int)$val;
+        $this->EndTime = (int)$val;
 	}
 }

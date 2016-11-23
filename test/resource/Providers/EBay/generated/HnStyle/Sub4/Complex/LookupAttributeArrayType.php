@@ -11,16 +11,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class LookupAttributeArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\LookupAttributeType | The condition of the item.
      */
-    public $lookupattribute;
+    public $LookupAttribute;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param LookupAttributeType $val
      * @throws Exception
      */
     public function setLookupAttribute($val)
     {
-        $this->lookupattribute = (int)$val;
+        $this->LookupAttribute = (int)$val;
     }
 }

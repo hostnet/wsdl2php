@@ -12,16 +12,19 @@ namespace Controle;
  */
 class MarkUpMarkDownHistoryType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\MarkUpMarkDownEventType | Details for a MarkDown or MarkUp event.
 	 */
-	public $markupmarkdownevent;
+	public $MarkUpMarkDownEvent;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param MarkUpMarkDownEventType $val
 	 * @throws Exception
 	 */
 	public function setMarkUpMarkDownEvent($val)
 	{
-        $this->markupmarkdownevent = (int)$val;
+        $this->MarkUpMarkDownEvent = (int)$val;
 	}
 }

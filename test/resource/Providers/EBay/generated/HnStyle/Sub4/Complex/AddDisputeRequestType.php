@@ -10,34 +10,37 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class AddDisputeRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeExplanationCodeType | The detailed explanation for the dispute. Valid values depend on the value of DisputeReason.
      * See DisputeExplanationCodeList for details.
      */
-    public $disputeexplanation;
+    public $DisputeExplanation;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeReasonCodeType | The top-level reason for the dispute. The value of DisputeReason determines which values
      * of DisputeExplanation are valid. See DisputeExplanationCodeList for details.
      */
-    public $disputereason;
+    public $DisputeReason;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DisputeExplanationCodeType $val
      * @throws Exception
      */
     public function setDisputeExplanation($val)
     {
-        $this->disputeexplanation = (int)$val;
+        $this->DisputeExplanation = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class AddDisputeRequestType extends
      */
     public function setDisputeReason($val)
     {
-        $this->disputereason = (int)$val;
+        $this->DisputeReason = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class AddDisputeRequestType extends
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -67,6 +70,6 @@ class AddDisputeRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 }

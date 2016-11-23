@@ -12,6 +12,7 @@ namespace Controle\sub1\sub2;
 class GetSellerEventsResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var dateTime | Limits returned items to only those that were submited on or before the date-time specified.
 	 * If specified, TimeFrom must also be specified. Express date-time in the format YYYY-MM-DD
@@ -21,18 +22,20 @@ class GetSellerEventsResponseType extends
 	 * after the date of submission. This field is ignored if VeROReportPacketID or ItemID is
 	 * specified.
 	 */
-	public $timeto;
+	public $TimeTo;
 	/**
 	 * @var \Controle\sub1\sub2\ItemArrayType | Contains a list of Item types.
 	 */
-	public $itemarray;
+	public $ItemArray;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param dateTime $val
 	 * @throws Exception
 	 */
 	public function setTimeTo($val)
 	{
-        $this->timeto = (int)$val;
+        $this->TimeTo = (int)$val;
 	}
 
 	/**
@@ -41,6 +44,6 @@ class GetSellerEventsResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->itemarray = (int)$val;
+        $this->ItemArray = (int)$val;
 	}
 }

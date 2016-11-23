@@ -9,50 +9,53 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CrossPromotionPreferencesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | (For eBay store owners only) Specifies whether cross-promotions are enabled for the
      * seller's listings.
      */
-    public $crosspromotionenabled;
+    public $CrossPromotionEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemFormatSortFilterCodeType | (For eBay store owners only) Specifies which items should be shown in cross-sell promotions
      * (such as Buy It Now or Store Inventory items) and in which sequence.
      */
-    public $crosssellitemformatsortfilter;
+    public $CrossSellItemFormatSortFilter;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GallerySortFilterCodeType | (For eBay store owners only) Specifies whether to display only items with gallery images
      * and whether they should precede other items in cross-sell promotions.
      */
-    public $crosssellgallerysortfilter;
+    public $CrossSellGallerySortFilter;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemSortFilterCodeType | (For eBay store owners only) Specifies how to sort items displayed in a cross-sell promotion.
      */
-    public $crosssellitemsortfilter;
+    public $CrossSellItemSortFilter;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemFormatSortFilterCodeType | (For eBay store owners only) Specifies which items (such as Buy It Now or Store Inventory
      * items) should be shown in upsell promotions and in which sequence.
      */
-    public $upsellitemformatsortfilter;
+    public $UpSellItemFormatSortFilter;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GallerySortFilterCodeType | (For eBay store owners only) Specifies whether to display only items with gallery images
      * in upsell promotions and whether they should precede other items.
      */
-    public $upsellgallerysortfilter;
+    public $UpSellGallerySortFilter;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemSortFilterCodeType | (For eBay store owners only) Specifies how to sort items used in an upsell promotion.
      */
-    public $upsellitemsortfilter;
+    public $UpSellItemSortFilter;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setCrossPromotionEnabled($val)
     {
-        $this->crosspromotionenabled = (int)$val;
+        $this->CrossPromotionEnabled = (int)$val;
     }
 
     /**
@@ -61,7 +64,7 @@ class CrossPromotionPreferencesType
      */
     public function setCrossSellItemFormatSortFilter($val)
     {
-        $this->crosssellitemformatsortfilter = (int)$val;
+        $this->CrossSellItemFormatSortFilter = (int)$val;
     }
 
     /**
@@ -70,7 +73,7 @@ class CrossPromotionPreferencesType
      */
     public function setCrossSellGallerySortFilter($val)
     {
-        $this->crosssellgallerysortfilter = (int)$val;
+        $this->CrossSellGallerySortFilter = (int)$val;
     }
 
     /**
@@ -79,7 +82,7 @@ class CrossPromotionPreferencesType
      */
     public function setCrossSellItemSortFilter($val)
     {
-        $this->crosssellitemsortfilter = (int)$val;
+        $this->CrossSellItemSortFilter = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class CrossPromotionPreferencesType
      */
     public function setUpSellItemFormatSortFilter($val)
     {
-        $this->upsellitemformatsortfilter = (int)$val;
+        $this->UpSellItemFormatSortFilter = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class CrossPromotionPreferencesType
      */
     public function setUpSellGallerySortFilter($val)
     {
-        $this->upsellgallerysortfilter = (int)$val;
+        $this->UpSellGallerySortFilter = (int)$val;
     }
 
     /**
@@ -106,7 +109,7 @@ class CrossPromotionPreferencesType
      */
     public function setUpSellItemSortFilter($val)
     {
-        $this->upsellitemsortfilter = (int)$val;
+        $this->UpSellItemSortFilter = (int)$val;
     }
 
     /**

@@ -12,10 +12,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetWantItNowSearchResultsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var string | One or more keywords to search for when using the Suggested Attributes engine. Required
      * when SuggestedAttributes is specified as the recommendation engine (including when no
@@ -23,26 +24,28 @@ class GetWantItNowSearchResultsRequestType extends
      * "and" and "or" are treated like any other word. Blank searches are not allowed (and
      * result in a warning).
      */
-    public $query;
+    public $Query;
     /**
      * @var boolean | If true, include the description field of Want It Now posts in the keyword search. Want It
      * Now posts returned are those where specified search keywords appear in either the description
      * or the title. This is the default behavior if SearchInDescription is not specified.
      * If false, only the title will be searched. SearchInDescription is an optional input.
      */
-    public $searchindescription;
+    public $SearchInDescription;
     /**
      * @var boolean | If true, the search applies to all eBay sites. If false, the search is limited to the
      * site specified in the URL query string when the call is made.
      */
-    public $searchworldwide;
+    public $SearchWorldwide;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -52,7 +55,7 @@ class GetWantItNowSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class GetWantItNowSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->query = (int)$val;
+        $this->Query = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class GetWantItNowSearchResultsRequestType extends
      */
     public function setSearchInDescription($val)
     {
-        $this->searchindescription = (int)$val;
+        $this->SearchInDescription = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class GetWantItNowSearchResultsRequestType extends
      */
     public function setSearchWorldwide($val)
     {
-        $this->searchworldwide = (int)$val;
+        $this->SearchWorldwide = (int)$val;
     }
 
     /**
@@ -91,6 +94,6 @@ class GetWantItNowSearchResultsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 }

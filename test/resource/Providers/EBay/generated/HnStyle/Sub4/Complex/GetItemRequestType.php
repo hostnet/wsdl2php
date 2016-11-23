@@ -12,22 +12,23 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetItemRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var boolean | Indicates if the response should include detailed data relating to whether an item would
      * qualify as an Express listing. For information about the Express-related data that can
      * be returned when IncludeExpressRequirements is set to true, see the annotations for
      * the output of VerifyAddItem and see the eBay Web Services Guide.
      */
-    public $includeexpressrequirements;
+    public $IncludeExpressRequirements;
     /**
      * @var boolean | Specifies whether to include WatchCount in Item nodes returned. WatchCount is only returned
      * with DetailLevel ReturnAll.
      */
-    public $includewatchcount;
+    public $IncludeWatchCount;
     /**
      * @var boolean | Specifies whether or not to to include cross-promotion information for the item in the
      * call response. <br><br> With a request version of 485 or higher, the default is false
@@ -40,14 +41,16 @@ class GetItemRequestType extends
      * If a promoted item has multiple PromotedPriceType and PromotedPrice value pairs, only
      * the last pair is returned.
      */
-    public $includecrosspromotion;
+    public $IncludeCrossPromotion;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class GetItemRequestType extends
      */
     public function setIncludeExpressRequirements($val)
     {
-        $this->includeexpressrequirements = (int)$val;
+        $this->IncludeExpressRequirements = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class GetItemRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->includewatchcount = (int)$val;
+        $this->IncludeWatchCount = (int)$val;
     }
 
     /**
@@ -74,6 +77,6 @@ class GetItemRequestType extends
      */
     public function setIncludeCrossPromotion($val)
     {
-        $this->includecrosspromotion = (int)$val;
+        $this->IncludeCrossPromotion = (int)$val;
     }
 }

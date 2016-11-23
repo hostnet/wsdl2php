@@ -4,31 +4,34 @@ namespace Controle;
 
 class ProductInfoType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\AmountType | The average start price (minimum bid), if any, of completed auction items that were listed
 	 *            with Pre-filled Item Information from this product.
 	 */
-	public $averagestartprice;
+	public $AverageStartPrice;
 	/**
 	 * @var \Controle\AmountType | The average sold price (winning bid, Buy It Now price, or fixed price), if any, of completed
 	 * items that were listed with Pre-filled Item Information from this product.
 	 */
-	public $averagesoldprice;
+	public $AverageSoldPrice;
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $title;
+	public $Title;
 	/**
 	 * @var string
 	 */
-	public $productinfoid;
+	public $productInfoID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
 	public function setAverageStartPrice($val)
 	{
-        $this->averagestartprice = (int)$val;
+        $this->AverageStartPrice = (int)$val;
 	}
 
 	/**
@@ -37,7 +40,7 @@ class ProductInfoType
 	 */
 	public function setAverageSoldPrice($val)
 	{
-        $this->averagesoldprice = (int)$val;
+        $this->AverageSoldPrice = (int)$val;
 	}
 
 	/**
@@ -49,7 +52,7 @@ class ProductInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
 	}
 
 	/**
@@ -61,6 +64,6 @@ class ProductInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for productInfoID');
         }
-        $this->productinfoid = (int)$val;
+        $this->productInfoID = (int)$val;
 	}
 }

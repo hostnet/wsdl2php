@@ -10,6 +10,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ProductFamilyType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductType | A transient header that describes the current search results. Contains a
      *  an ID, a subset of attributes, and a typical stock photo             to help a user
@@ -17,11 +18,11 @@ class ProductFamilyType
      * other result sets returned in the same response.             One ParentProduct is returned
      * per ProductFamily.
      */
-    public $parentproduct;
+    public $ParentProduct;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductType | A set of products (within the same product family) that match the search query.
      */
-    public $familymembers;
+    public $FamilyMembers;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
@@ -29,14 +30,16 @@ class ProductFamilyType
     /**
      * @var boolean
      */
-    public $hasmorechildren;
+    public $hasMoreChildren;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ProductType $val
      * @throws Exception
      */
     public function setParentProduct($val)
     {
-        $this->parentproduct = (int)$val;
+        $this->ParentProduct = (int)$val;
     }
 
     /**
@@ -45,7 +48,7 @@ class ProductFamilyType
      */
     public function setFamilyMembers($val)
     {
-        $this->familymembers = (int)$val;
+        $this->FamilyMembers = (int)$val;
     }
 
     /**
@@ -63,6 +66,6 @@ class ProductFamilyType
      */
     public function setHasMoreChildren($val)
     {
-        $this->hasmorechildren = (int)$val;
+        $this->hasMoreChildren = (int)$val;
     }
 }

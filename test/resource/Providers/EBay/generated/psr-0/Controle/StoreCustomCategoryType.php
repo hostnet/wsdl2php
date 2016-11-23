@@ -8,32 +8,35 @@ namespace Controle;
  */
 class StoreCustomCategoryType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | ID of the category in which the Want It Now post is listed.
 	 */
-	public $categoryid;
+	public $CategoryID;
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var int | Order in which the page is displayed in the list of custom pages.
 	 */
-	public $order;
+	public $Order;
 	/**
 	 * @var \Controle\StoreCustomCategoryType | Container for store custom subcategory configuration information. This field is being deprecated.
 	 * Use ChildCategory to specify subcategories.
 	 */
-	public $childrencategories;
+	public $ChildrenCategories;
 	/**
 	 * @var \Controle\StoreCustomCategoryType | Describes the configuration of a store custom subcategory. Stores support three levels
 	 * of categories.
 	 */
-	public $childcategory;
+	public $ChildCategory;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -43,7 +46,7 @@ class StoreCustomCategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
 	}
 
 	/**
@@ -55,7 +58,7 @@ class StoreCustomCategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -67,7 +70,7 @@ class StoreCustomCategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->order = (int)$val;
+        $this->Order = (int)$val;
 	}
 
 	/**
@@ -76,7 +79,7 @@ class StoreCustomCategoryType
 	 */
 	public function setChildrenCategories($val)
 	{
-        $this->childrencategories = (int)$val;
+        $this->ChildrenCategories = (int)$val;
 	}
 
 	/**
@@ -85,7 +88,7 @@ class StoreCustomCategoryType
 	 */
 	public function setChildCategory($val)
 	{
-        $this->childcategory = (int)$val;
+        $this->ChildCategory = (int)$val;
 	}
 
 	/**

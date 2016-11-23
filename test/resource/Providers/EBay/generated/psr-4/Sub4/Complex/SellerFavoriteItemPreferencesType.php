@@ -9,10 +9,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SellerFavoriteItemPreferencesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The keywords in the item title for the automatic item search criteria.
      */
-    public $searchkeywords;
+    public $SearchKeywords;
     /**
      * @var int | Numeric ID for a custom category that the seller created in their eBay Store, if any. eBay
      * Stores sellers can create up to three levels of custom categories for their stores. Items
@@ -22,31 +23,33 @@ class SellerFavoriteItemPreferencesType
      * this field currently returns 0. As a workaround, use GetItem or related calls to get
      * the ID.
      */
-    public $storecategoryid;
+    public $StoreCategoryID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
      */
-    public $listingtype;
+    public $ListingType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreItemListSortOrderCodeType | The sort order chosen from the standard ebay sorts for the automatic search criteria.
      */
-    public $searchsortorder;
+    public $SearchSortOrder;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Specifies the lower limit of price range for the automatic search criteria.
      */
-    public $minprice;
+    public $MinPrice;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Specifies the upper limit of price range for the automatic search criteria.
      */
-    public $maxprice;
+    public $MaxPrice;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | Specifies the list of favorite items.
      */
-    public $favoriteitemid;
+    public $FavoriteItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -56,7 +59,7 @@ class SellerFavoriteItemPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchKeywords');
         }
-        $this->searchkeywords = (int)$val;
+        $this->SearchKeywords = (int)$val;
     }
 
     /**
@@ -68,7 +71,7 @@ class SellerFavoriteItemPreferencesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->storecategoryid = (int)$val;
+        $this->StoreCategoryID = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setListingType($val)
     {
-        $this->listingtype = (int)$val;
+        $this->ListingType = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setSearchSortOrder($val)
     {
-        $this->searchsortorder = (int)$val;
+        $this->SearchSortOrder = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setMinPrice($val)
     {
-        $this->minprice = (int)$val;
+        $this->MinPrice = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setMaxPrice($val)
     {
-        $this->maxprice = (int)$val;
+        $this->MaxPrice = (int)$val;
     }
 
     /**
@@ -113,7 +116,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setFavoriteItemID($val)
     {
-        $this->favoriteitemid = (int)$val;
+        $this->FavoriteItemID = (int)$val;
     }
 
     /**

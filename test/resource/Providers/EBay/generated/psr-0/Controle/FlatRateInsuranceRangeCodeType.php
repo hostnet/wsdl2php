@@ -4,6 +4,7 @@ namespace Controle;
 
 class FlatRateInsuranceRangeCodeType
 {
+	// @codingStandardsIgnoreStart
 	const FLATRATEINSURANCERANGE1 = 'FlatRateInsuranceRange1';
 	const FLATRATEINSURANCERANGE2 = 'FlatRateInsuranceRange2';
 	const FLATRATEINSURANCERANGE3 = 'FlatRateInsuranceRange3';
@@ -11,4 +12,5 @@ class FlatRateInsuranceRangeCodeType
 	const FLATRATEINSURANCERANGE5 = 'FlatRateInsuranceRange5';
 	const FLATRATEINSURANCERANGE6 = 'FlatRateInsuranceRange6';
 	const CUSTOMCODE              = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

@@ -9,6 +9,7 @@ namespace Controle;
  */
 class DispatchTimeMaxDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | Specifies the maximum number of business days the seller commits to for shipping an
      * item to domestic buyers after receiving a cleared payment. The seller sets this to an
@@ -18,15 +19,17 @@ class DispatchTimeMaxDetailsType
      * service. GetItem returns DispatchTimeMax only when shipping service options are specified
      * for the item.
      */
-    public $dispatchtimemax;
+    public $DispatchTimeMax;
     /**
      * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
      */
-    public $description;
+    public $Description;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -36,7 +39,7 @@ class DispatchTimeMaxDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->dispatchtimemax = (int)$val;
+        $this->DispatchTimeMax = (int)$val;
     }
 
     /**
@@ -48,7 +51,7 @@ class DispatchTimeMaxDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
     }
 
     /**

@@ -9,12 +9,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SpellingSuggestionType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The number of matching items if the suggested spelling of the search term or terms had
      * been used. If multiple terms are used, MatchingItemCount applies to the terms taken
      * as a unit.
      */
-    public $matchingitemcount;
+    public $MatchingItemCount;
     /**
      * @var string | Suggestion for a different spelling of the search term or terms. The suggestions are
      * given in Text tags  and the suggestion for the first word is given before the suggestion
@@ -22,11 +23,13 @@ class SpellingSuggestionType
      * suggestions vary over time and depend on   whether a word or word combination is in
      * one or more items.
      */
-    public $text;
+    public $Text;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -36,7 +39,7 @@ class SpellingSuggestionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->matchingitemcount = (int)$val;
+        $this->MatchingItemCount = (int)$val;
     }
 
     /**
@@ -48,7 +51,7 @@ class SpellingSuggestionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->text = (int)$val;
+        $this->Text = (int)$val;
     }
 
     /**

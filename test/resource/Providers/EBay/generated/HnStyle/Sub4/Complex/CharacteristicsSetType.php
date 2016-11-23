@@ -10,15 +10,16 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CharacteristicsSetType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $name;
+    public $Name;
     /**
      * @var int | Numeric identifier for a characteristic set that defines the attributes            (unique
      * across all eBay sites).
      */
-    public $attributesetid;
+    public $AttributeSetID;
     /**
      * @var string | Version of the characteristics set. Not to be confused with AttributeSystemVersion,
      * which can be used to retrieve changes to attribute meta-data. In item-listing requests,
@@ -28,7 +29,7 @@ class CharacteristicsSetType
      * help determine if you might be sending outdated data. The current value of version is
      * not necessarily "greater than" the previous value.
      */
-    public $attributesetversion;
+    public $AttributeSetVersion;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicType | A salient aspect or feature of an item. Used to describe an item in a standard way so
      * that buyers can find it more easily. An individual, standardized characteristic that
@@ -39,11 +40,13 @@ class CharacteristicsSetType
      * Pre- filled Item Information related to books. See the eBay Web Services guide for more
      * information.
      */
-    public $characteristics;
+    public $Characteristics;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -53,7 +56,7 @@ class CharacteristicsSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class CharacteristicsSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributesetid = (int)$val;
+        $this->AttributeSetID = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class CharacteristicsSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSetVersion');
         }
-        $this->attributesetversion = (int)$val;
+        $this->AttributeSetVersion = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class CharacteristicsSetType
      */
     public function setCharacteristics($val)
     {
-        $this->characteristics = (int)$val;
+        $this->Characteristics = (int)$val;
     }
 
     /**

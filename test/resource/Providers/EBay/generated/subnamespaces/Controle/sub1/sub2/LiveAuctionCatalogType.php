@@ -10,17 +10,18 @@ namespace Controle\sub1\sub2;
  */
 class LiveAuctionCatalogType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Number that identifies the seller's eBay Live Auctions catalog within which the lot item
 	 * will be listed. Use GetLiveAuctionCatalogDetails to determine the seller's available catalog
 	 * IDs.
 	 */
-	public $usercatalogid;
+	public $UserCatalogID;
 	/**
 	 * @var string | Descriptive name that the seller created for the catalog. Pass as input to AddLiveAuctionItem
 	 * when you list a lot item.
 	 */
-	public $catalogname;
+	public $CatalogName;
 	/**
 	 * @var \Controle\sub1\sub2\ScheduleType | Describes a single live auction sale schedule that the user defined. A seller can define
 	 * a maximum of 5 schedules for each catalog. Each schedule defines the start and end time
@@ -30,11 +31,13 @@ class LiveAuctionCatalogType
 	 * are returned. That is, schedules for ended sales or sales in progress are not returned. Pass
 	 * as input to AddLiveAuctionItem when you list a lot item.
 	 */
-	public $schedule;
+	public $Schedule;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -44,7 +47,7 @@ class LiveAuctionCatalogType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->usercatalogid = (int)$val;
+        $this->UserCatalogID = (int)$val;
 	}
 
 	/**
@@ -56,7 +59,7 @@ class LiveAuctionCatalogType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CatalogName');
         }
-        $this->catalogname = (int)$val;
+        $this->CatalogName = (int)$val;
 	}
 
 	/**
@@ -65,7 +68,7 @@ class LiveAuctionCatalogType
 	 */
 	public function setSchedule($val)
 	{
-        $this->schedule = (int)$val;
+        $this->Schedule = (int)$val;
 	}
 
 	/**

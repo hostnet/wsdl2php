@@ -9,17 +9,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetItemsAwaitingFeedbackResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginatedTransactionArrayType | Contains the items awaiting feedback. Returned only if there are items that do not yet have
      * feedback.
      */
-    public $itemsawaitingfeedback;
+    public $ItemsAwaitingFeedback;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PaginatedTransactionArrayType $val
      * @throws Exception
      */
     public function setItemsAwaitingFeedback($val)
     {
-        $this->itemsawaitingfeedback = (int)$val;
+        $this->ItemsAwaitingFeedback = (int)$val;
     }
 }

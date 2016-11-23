@@ -8,21 +8,24 @@ namespace Controle;
  */
 class AttributeRecommendationsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\AttributeSetArrayType | Reserved for future use.
 	 */
-	public $attributesetarray;
+	public $AttributeSetArray;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AttributeSetArrayType $val
 	 * @throws Exception
 	 */
 	public function setAttributeSetArray($val)
 	{
-        $this->attributesetarray = (int)$val;
+        $this->AttributeSetArray = (int)$val;
 	}
 
 	/**

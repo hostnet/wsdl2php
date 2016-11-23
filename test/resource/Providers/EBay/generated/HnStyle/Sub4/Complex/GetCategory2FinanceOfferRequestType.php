@@ -10,14 +10,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategory2FinanceOfferRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var dateTime | Date the message was last modified. Returned if the parent container is returned.
      */
-    public $lastmodifieddate;
+    public $LastModifiedDate;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -27,7 +30,7 @@ class GetCategory2FinanceOfferRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -36,6 +39,6 @@ class GetCategory2FinanceOfferRequestType extends
      */
     public function setLastModifiedDate($val)
     {
-        $this->lastmodifieddate = (int)$val;
+        $this->LastModifiedDate = (int)$val;
     }
 }

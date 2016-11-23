@@ -9,16 +9,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FeesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeeType | Monthly fee for the Store subscription level.
      */
-    public $fee;
+    public $Fee;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FeeType $val
      * @throws Exception
      */
     public function setFee($val)
     {
-        $this->fee = (int)$val;
+        $this->Fee = (int)$val;
     }
 }

@@ -10,25 +10,25 @@ class AmazonSearchServiceClient extends \SoapClient
     const WSDL_FILE = "AmazonWebServicesTest.wsdl";
 
     private $classmap = array(
-        'ProductInfo\,' =>
+        'ProductInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductInfo',
-        'Reviews\,' =>
+        'Reviews' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Reviews',
-        'MarketplaceSearch\,' =>
+        'MarketplaceSearch' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarketplaceSearch',
-        'SellerProfile\,' =>
+        'SellerProfile' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerProfile',
-        'SellerSearch\,' =>
+        'SellerSearch' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerSearch',
-        'ListingProductInfo\,' =>
+        'ListingProductInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingProductInfo',
-        'ListingProductDetails\,' =>
+        'ListingProductDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingProductDetails',
-        'SellerFeedback\,' =>
+        'SellerFeedback' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerFeedback',
-        'ThirdPartyProductInfo\,' =>
+        'ThirdPartyProductInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ThirdPartyProductInfo',
-        'ShoppingCart\,' =>
+        'ShoppingCart' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShoppingCart',
     );
 

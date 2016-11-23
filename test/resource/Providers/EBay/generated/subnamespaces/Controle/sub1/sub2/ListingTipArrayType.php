@@ -8,16 +8,19 @@ namespace Controle\sub1\sub2;
  */
 class ListingTipArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ListingTipType | An individual tip on improving a listing's details.
 	 */
-	public $listingtip;
+	public $ListingTip;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ListingTipType $val
 	 * @throws Exception
 	 */
 	public function setListingTip($val)
 	{
-        $this->listingtip = (int)$val;
+        $this->ListingTip = (int)$val;
 	}
 }

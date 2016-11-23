@@ -9,23 +9,26 @@ namespace Controle;
  */
 class DomainHistogramType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ExpressHistogramDepartmentType | Contains item and product counts for a department, aisles, and/or Express product types. Only
 	 * returned when HistogramDetails is configured to retrieve histogram data. Multiple Department
 	 * nodes can be returned.
 	 */
-	public $department;
+	public $Department;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ExpressHistogramDepartmentType $val
 	 * @throws Exception
 	 */
 	public function setDepartment($val)
 	{
-        $this->department = (int)$val;
+        $this->Department = (int)$val;
 	}
 
 	/**

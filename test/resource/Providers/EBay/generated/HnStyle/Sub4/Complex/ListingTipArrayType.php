@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ListingTipArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTipType | An individual tip on improving a listing's details.
      */
-    public $listingtip;
+    public $ListingTip;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ListingTipType $val
      * @throws Exception
      */
     public function setListingTip($val)
     {
-        $this->listingtip = (int)$val;
+        $this->ListingTip = (int)$val;
     }
 }

@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BlendedRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -24,6 +25,8 @@ class BlendedRequest
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

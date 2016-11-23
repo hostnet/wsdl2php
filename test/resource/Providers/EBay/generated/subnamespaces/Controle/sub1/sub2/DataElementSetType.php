@@ -12,6 +12,7 @@ namespace Controle\sub1\sub2;
  */
 class DataElementSetType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | An HTML snippet that specifies hints for the user, help links, help graphics, and other
 	 * supplemental information that varies per characteristic set. In GetProductSearchPage, one
@@ -24,12 +25,12 @@ class DataElementSetType
 	 * with character entity references (e.g.,&lt;a href=""&gt;&lt;Attributes&gt;...). See the
 	 * appendices in the eBay Web Services guide for general information about string data types.
 	 */
-	public $dataelement;
+	public $DataElement;
 	/**
 	 * @var int | Identifier for a data element. This is primarily for internal use by eBay. Developers can
 	 * choose to inspect this information and determine how it can be applied in their applications.
 	 */
-	public $dataelementid;
+	public $DataElementID;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
@@ -37,7 +38,9 @@ class DataElementSetType
 	/**
 	 * @var int
 	 */
-	public $attributesetid;
+	public $attributeSetID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -47,7 +50,7 @@ class DataElementSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElement');
         }
-        $this->dataelement = (int)$val;
+        $this->DataElement = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class DataElementSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->dataelementid = (int)$val;
+        $this->DataElementID = (int)$val;
 	}
 
 	/**
@@ -80,6 +83,6 @@ class DataElementSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributesetid = (int)$val;
+        $this->attributeSetID = (int)$val;
 	}
 }

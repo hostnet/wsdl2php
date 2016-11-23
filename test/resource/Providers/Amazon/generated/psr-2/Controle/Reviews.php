@@ -4,18 +4,21 @@ namespace Controle;
 
 class Reviews
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $avgcustomerrating;
+    public $AvgCustomerRating;
     /**
      * @var string
      */
-    public $totalcustomerreviews;
+    public $TotalCustomerReviews;
     /**
      * @var \Controle\CustomerReviewArray
      */
-    public $customerreviews;
+    public $CustomerReviews;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AvgCustomerRating');
         }
-        $this->avgcustomerrating = (int)$val;
+        $this->AvgCustomerRating = (int)$val;
     }
 
     /**
@@ -37,7 +40,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
         }
-        $this->totalcustomerreviews = (int)$val;
+        $this->TotalCustomerReviews = (int)$val;
     }
 
     /**
@@ -46,6 +49,6 @@ class Reviews
      */
     public function setCustomerReviews($val)
     {
-        $this->customerreviews = (int)$val;
+        $this->CustomerReviews = (int)$val;
     }
 }

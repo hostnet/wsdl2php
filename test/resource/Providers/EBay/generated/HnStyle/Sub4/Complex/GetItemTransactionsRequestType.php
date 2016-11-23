@@ -9,10 +9,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetItemTransactionsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is later than or equal to
      * this value. Specify the time value in GMT. See the eBay Web Services documentation for
@@ -22,7 +23,7 @@ class GetItemTransactionsRequestType extends
      * filters in combination with other filters like DisputeFilterType to control the amount
      * of data returned.
      */
-    public $modtimefrom;
+    public $ModTimeFrom;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is earlier than or equal
      * to this value. Specify the time value in GMT. See the eBay Web Services documentation
@@ -32,21 +33,21 @@ class GetItemTransactionsRequestType extends
      * is optional. You can use date range filters in combination with other filters like DisputeFilterType
      * to control the amount of data returned.
      */
-    public $modtimeto;
+    public $ModTimeTo;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var boolean | Indicates whether to include final value fees in the response. For most listing types,
      * the fee is returned in Transaction.FinalValueFee. For Dutch auctions that end with bids
@@ -56,18 +57,20 @@ class GetItemTransactionsRequestType extends
      * Chinese and Dutch (no Buy It Now purchases), the Final Value Fee is returned when the
      * listing status is Completed.
      */
-    public $includefinalvaluefee;
+    public $IncludeFinalValueFee;
     /**
      * @var boolean | Whether to retrieve the order information. Default is false.
      */
-    public $includecontainingorder;
+    public $IncludeContainingOrder;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -76,7 +79,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->modtimefrom = (int)$val;
+        $this->ModTimeFrom = (int)$val;
     }
 
     /**
@@ -85,7 +88,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->modtimeto = (int)$val;
+        $this->ModTimeTo = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class GetItemTransactionsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -106,7 +109,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**
@@ -115,7 +118,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setIncludeFinalValueFee($val)
     {
-        $this->includefinalvaluefee = (int)$val;
+        $this->IncludeFinalValueFee = (int)$val;
     }
 
     /**
@@ -124,6 +127,6 @@ class GetItemTransactionsRequestType extends
      */
     public function setIncludeContainingOrder($val)
     {
-        $this->includecontainingorder = (int)$val;
+        $this->IncludeContainingOrder = (int)$val;
     }
 }

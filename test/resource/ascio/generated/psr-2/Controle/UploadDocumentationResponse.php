@@ -4,16 +4,19 @@ namespace Controle;
 
 class UploadDocumentationResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $uploaddocumentationresult;
+    public $UploadDocumentationResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setUploadDocumentationResult($val)
     {
-        $this->uploaddocumentationresult = (int)$val;
+        $this->UploadDocumentationResult = (int)$val;
     }
 }

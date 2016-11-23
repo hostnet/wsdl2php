@@ -4,49 +4,52 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class QueueItem
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Attachment
      */
-    public $attachments;
+    public $Attachments;
     /**
      * @var string
      */
-    public $domainhandle;
+    public $DomainHandle;
     /**
      * @var string
      */
-    public $domainname;
+    public $DomainName;
     /**
      * @var string
      */
-    public $msg;
+    public $Msg;
     /**
      * @var int
      */
-    public $msgid;
+    public $MsgId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MessageType
      */
-    public $msgtype;
+    public $MsgType;
     /**
      * @var string
      */
-    public $orderid;
+    public $OrderId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OrderStatusType
      */
-    public $orderstatus;
+    public $OrderStatus;
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\CallbackStatus
      */
-    public $statuslist;
+    public $StatusList;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ArrayOfAttachment $val
      * @throws Exception
      */
     public function setAttachments($val)
     {
-        $this->attachments = (int)$val;
+        $this->Attachments = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainHandle');
         }
-        $this->domainhandle = (int)$val;
+        $this->DomainHandle = (int)$val;
     }
 
     /**
@@ -70,7 +73,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->domainname = (int)$val;
+        $this->DomainName = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Msg');
         }
-        $this->msg = (int)$val;
+        $this->Msg = (int)$val;
     }
 
     /**
@@ -94,7 +97,7 @@ class QueueItem
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->msgid = (int)$val;
+        $this->MsgId = (int)$val;
     }
 
     /**
@@ -103,7 +106,7 @@ class QueueItem
      */
     public function setMsgType($val)
     {
-        $this->msgtype = (int)$val;
+        $this->MsgType = (int)$val;
     }
 
     /**
@@ -115,7 +118,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderId');
         }
-        $this->orderid = (int)$val;
+        $this->OrderId = (int)$val;
     }
 
     /**
@@ -124,7 +127,7 @@ class QueueItem
      */
     public function setOrderStatus($val)
     {
-        $this->orderstatus = (int)$val;
+        $this->OrderStatus = (int)$val;
     }
 
     /**
@@ -133,6 +136,6 @@ class QueueItem
      */
     public function setStatusList($val)
     {
-        $this->statuslist = (int)$val;
+        $this->StatusList = (int)$val;
     }
 }

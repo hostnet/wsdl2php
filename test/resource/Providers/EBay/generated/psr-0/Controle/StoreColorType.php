@@ -8,22 +8,25 @@ namespace Controle;
  */
 class StoreColorType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Primary color for the Store. Specified in 6-digit Hex format. For example: F6F6C9
 	 */
-	public $primary;
+	public $Primary;
 	/**
 	 * @var string | Secondary color for the Store. Specified in 6-digit Hex format. For example: F6F6C9
 	 */
-	public $secondary;
+	public $Secondary;
 	/**
 	 * @var string | Accent color for the Store. Specified in 6-digit Hex format. For example: F6F6C9
 	 */
-	public $accent;
+	public $Accent;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -33,7 +36,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Primary');
         }
-        $this->primary = (int)$val;
+        $this->Primary = (int)$val;
 	}
 
 	/**
@@ -45,7 +48,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Secondary');
         }
-        $this->secondary = (int)$val;
+        $this->Secondary = (int)$val;
 	}
 
 	/**
@@ -57,7 +60,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Accent');
         }
-        $this->accent = (int)$val;
+        $this->Accent = (int)$val;
 	}
 
 	/**

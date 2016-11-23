@@ -8,6 +8,7 @@ namespace Controle;
  */
 class MyeBayFavoriteSellerType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -21,15 +22,17 @@ class MyeBayFavoriteSellerType
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var string | The name of the seller's eBay Store.
      */
-    public $storename;
+    public $StoreName;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -39,7 +42,7 @@ class MyeBayFavoriteSellerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -51,7 +54,7 @@ class MyeBayFavoriteSellerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
     }
 
     /**

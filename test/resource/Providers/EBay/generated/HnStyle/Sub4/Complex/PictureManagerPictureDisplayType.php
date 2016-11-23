@@ -8,42 +8,45 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class PictureManagerPictureDisplayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerPictureDisplayTypeCodeType | Display type for the custom listing header.
      */
-    public $displaytype;
+    public $DisplayType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item
      * URL) to launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be
      * used in certain types of applications. See your API license agreement. Also see this
      * page for logo usage rules:<br> http://developer.ebay.com/join/licenses/apilogousage
      */
-    public $url;
+    public $URL;
     /**
      * @var int | The total file size of the picture, in bytes.
      */
-    public $size;
+    public $Size;
     /**
      * @var int | The height of a specific image, or the maximum allowed height, in pixels. Varies for
      * different calls.
      */
-    public $height;
+    public $Height;
     /**
      * @var int | The width of a specific image, or the maximum allowed width, in pixels. Varies for different
      * calls.
      */
-    public $width;
+    public $Width;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PictureManagerPictureDisplayTypeCodeType $val
      * @throws Exception
      */
     public function setDisplayType($val)
     {
-        $this->displaytype = (int)$val;
+        $this->DisplayType = (int)$val;
     }
 
     /**
@@ -52,7 +55,7 @@ class PictureManagerPictureDisplayType
      */
     public function setURL($val)
     {
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class PictureManagerPictureDisplayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->size = (int)$val;
+        $this->Size = (int)$val;
     }
 
     /**
@@ -76,7 +79,7 @@ class PictureManagerPictureDisplayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->height = (int)$val;
+        $this->Height = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class PictureManagerPictureDisplayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->width = (int)$val;
+        $this->Width = (int)$val;
     }
 
     /**

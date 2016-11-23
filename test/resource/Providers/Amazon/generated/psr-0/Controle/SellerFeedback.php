@@ -4,16 +4,19 @@ namespace Controle;
 
 class SellerFeedback
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\FeedbackArray
 	 */
-	public $feedback;
+	public $Feedback;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param FeedbackArray $val
 	 * @throws Exception
 	 */
 	public function setFeedback($val)
 	{
-        $this->feedback = (int)$val;
+        $this->Feedback = (int)$val;
 	}
 }

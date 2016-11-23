@@ -10,9 +10,9 @@ class GoogleSearchServiceClient extends \SoapClient
     const WSDL_FILE = "GoogleSearchTest.wsdl";
 
     private $classmap = array(
-        'GoogleSearchResult\,' =>
+        'GoogleSearchResult' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GoogleSearchResult',
-        'DirectoryCategory\,' =>
+        'DirectoryCategory' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DirectoryCategory',
     );
 

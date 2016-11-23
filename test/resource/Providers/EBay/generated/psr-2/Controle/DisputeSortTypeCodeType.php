@@ -4,6 +4,7 @@ namespace Controle;
 
 class DisputeSortTypeCodeType
 {
+    // @codingStandardsIgnoreStart
     const NONE                               = 'None';
     const DISPUTECREATEDTIMEASCENDING        = 'DisputeCreatedTimeAscending';
     const DISPUTECREATEDTIMEDESCENDING       = 'DisputeCreatedTimeDescending';
@@ -12,4 +13,5 @@ class DisputeSortTypeCodeType
     const DISPUTECREDITELIGIBILITYASCENDING  = 'DisputeCreditEligibilityAscending';
     const DISPUTECREDITELIGIBILITYDESCENDING = 'DisputeCreditEligibilityDescending';
     const CUSTOMCODE                         = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

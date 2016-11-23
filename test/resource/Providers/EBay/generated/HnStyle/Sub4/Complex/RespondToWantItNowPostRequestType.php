@@ -12,21 +12,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class RespondToWantItNowPostRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | ID that uniquely identifies a Want It Now post.
      */
-    public $postid;
+    public $PostID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -35,6 +38,6 @@ class RespondToWantItNowPostRequestType extends
      */
     public function setPostID($val)
     {
-        $this->postid = (int)$val;
+        $this->PostID = (int)$val;
     }
 }

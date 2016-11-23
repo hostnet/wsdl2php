@@ -11,6 +11,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class RequestCategoriesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Filter to retrieve matching categories but not matching items or buying guides. If true,
      * only matching categories are returned (with no item or buying guide details). If false
@@ -21,30 +22,32 @@ class RequestCategoriesType
      * matching categories but no item data or buying guides. If TotalOnly is false and Categories.CategoriesOnly
      * is true, the results include matching categories, item data, and buying guides.
      */
-    public $categoriesonly;
+    public $CategoriesOnly;
     /**
      * @var int | Maximum quantity of matching categories to return at the first level of the
      *     category hierarchy (CategoryLevel 1).
      */
-    public $maxcategories;
+    public $MaxCategories;
     /**
      * @var int | Maximum quantity of matching subcategories to return at each lower level
      *  of the hierarchy.
      */
-    public $maxsubcategories;
+    public $MaxSubcategories;
     /**
      * @var int | Filter to control the deepest matching category level to return.             If you
      * specify 0, no category data is returned. If you specify a negative number,
      *    the results are unpredictable.
      */
-    public $levels;
+    public $Levels;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setCategoriesOnly($val)
     {
-        $this->categoriesonly = (int)$val;
+        $this->CategoriesOnly = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class RequestCategoriesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxcategories = (int)$val;
+        $this->MaxCategories = (int)$val;
     }
 
     /**
@@ -68,7 +71,7 @@ class RequestCategoriesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxsubcategories = (int)$val;
+        $this->MaxSubcategories = (int)$val;
     }
 
     /**
@@ -80,6 +83,6 @@ class RequestCategoriesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->levels = (int)$val;
+        $this->Levels = (int)$val;
     }
 }

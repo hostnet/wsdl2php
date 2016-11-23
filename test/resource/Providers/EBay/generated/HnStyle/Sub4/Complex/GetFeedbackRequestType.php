@@ -11,13 +11,14 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetFeedbackRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -31,19 +32,21 @@ class GetFeedbackRequestType extends
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var string | Unique identifier for the feedback entry. Returned for a detail level of ReturnAll (if
      * the parent is returned).
      */
-    public $feedbackid;
+    public $FeedbackID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PaginationType $val
      * @throws Exception
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**
@@ -52,7 +55,7 @@ class GetFeedbackRequestType extends
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -64,6 +67,6 @@ class GetFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->feedbackid = (int)$val;
+        $this->FeedbackID = (int)$val;
     }
 }

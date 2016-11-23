@@ -9,10 +9,11 @@ namespace Controle;
  */
 class ProductType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\CharacteristicsSetType | Container for site-wide characteristics set information.
      */
-    public $characteristicsset;
+    public $CharacteristicsSet;
     /**
      * @var \Controle\anyURI | Fully qualified URL for optional information about the product,            such as a
      * movie's description or film credits. This information            is hosted through the
@@ -20,20 +21,20 @@ class ProductType
      * in product search results            so that end users can view additional descriptive
      * details about the product.
      */
-    public $detailsurl;
+    public $DetailsURL;
     /**
      * @var int | Total number of active listings on the specified eBay site            that were pre-filled
      * based on this product.
      */
-    public $numitems;
+    public $NumItems;
     /**
      * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
      */
-    public $minprice;
+    public $MinPrice;
     /**
      * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
      */
-    public $maxprice;
+    public $MaxPrice;
     /**
      * @var \Controle\<anyXML>
      */
@@ -41,22 +42,24 @@ class ProductType
     /**
      * @var string
      */
-    public $productid;
+    public $productID;
     /**
      * @var \Controle\anyURI
      */
-    public $stockphotourl;
+    public $stockPhotoURL;
     /**
      * @var string
      */
     public $title;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CharacteristicsSetType $val
      * @throws Exception
      */
     public function setCharacteristicsSet($val)
     {
-        $this->characteristicsset = (int)$val;
+        $this->CharacteristicsSet = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class ProductType
      */
     public function setDetailsURL($val)
     {
-        $this->detailsurl = (int)$val;
+        $this->DetailsURL = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class ProductType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->numitems = (int)$val;
+        $this->NumItems = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class ProductType
      */
     public function setMinPrice($val)
     {
-        $this->minprice = (int)$val;
+        $this->MinPrice = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class ProductType
      */
     public function setMaxPrice($val)
     {
-        $this->maxprice = (int)$val;
+        $this->MaxPrice = (int)$val;
     }
 
     /**
@@ -116,7 +119,7 @@ class ProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for productID');
         }
-        $this->productid = (int)$val;
+        $this->productID = (int)$val;
     }
 
     /**
@@ -125,7 +128,7 @@ class ProductType
      */
     public function setStockPhotoURL($val)
     {
-        $this->stockphotourl = (int)$val;
+        $this->stockPhotoURL = (int)$val;
     }
 
     /**

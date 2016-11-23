@@ -9,23 +9,24 @@ namespace Controle;
  */
 class SellingStatusType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Number of bids placed so far against the item. Only applicable to competitive-bidding listings
 	 * (Chinese and Dutch auctions).
 	 */
-	public $bidcount;
+	public $BidCount;
 	/**
 	 * @var \Controle\AmountType | Smallest amount a bid must be above the current high bid. Only applicable to competitive-bidding
 	 * listings (Chinese and Dutch auctions). Returns zero (0.00) for Ad type, eBay Stores Inventory
 	 * (Stores Fixed-price), and Basic Fixed-Price (Fixed Price Item) listings.
 	 */
-	public $bidincrement;
+	public $BidIncrement;
 	/**
 	 * @var \Controle\AmountType | Converted value of the CurrentPrice in the currency of the site that returned this response.
 	 * For active items, refresh the listing's data every 24 hours to pick up the current conversion
 	 * rates.
 	 */
-	public $convertedcurrentprice;
+	public $ConvertedCurrentPrice;
 	/**
 	 * @var \Controle\AmountType | For competitive-bidding listings (Chinese and Dutch auctions), current minimum asking price
 	 * (start price) or the current highest bid for the item if bids have been placed. Shows minimum
@@ -35,7 +36,7 @@ class SellingStatusType
 	 * GetSearchResultsExpress, this is the current fixed price of the listing, and it is always
 	 * returned when ItemArray.Item is returned.
 	 */
-	public $currentprice;
+	public $CurrentPrice;
 	/**
 	 * @var \Controle\UserType | For single-item (Quantity = 1) auction listings that have ended and have a winning bidder,
 	 * indicates the user who is the current high bidder. For single-item basic fixed price (FixedPriceItem)
@@ -43,39 +44,39 @@ class SellingStatusType
 	 * the item. Not returned for auctions that have received no bids, fixed price and Store Inventory
 	 * listings that are still active, or any multi-item (Quantity > 1) listings.
 	 */
-	public $highbidder;
+	public $HighBidder;
 	/**
 	 * @var int | Applicable to Ad type listings only. Indicates how many leads to potential buyers are associated
 	 * with this item. Returns 0 (zero) for listings in other formats.
 	 */
-	public $leadcount;
+	public $LeadCount;
 	/**
 	 * @var \Controle\AmountType | Smallest amount the next bid on the item can be. Returns same value as Item.StartPrice
 	 * (if no bids have yet been placed) or CurrentPrice plus BidIncrement (if at least one bid
 	 * has been placed). Only applicable to Chinese and Dutch auction listings. Returns null for
 	 * basic Fixed Price (FixedPriceItem), Store Inventory (StoresFixedPrice), and Ad type listings.
 	 */
-	public $minimumtobid;
+	public $MinimumToBid;
 	/**
 	 * @var int | Number of items purchased so far. (Subtract from the value returned in the Item.Quantity
 	 * field to calculate the number of items remaining.)
 	 */
-	public $quantitysold;
+	public $QuantitySold;
 	/**
 	 * @var boolean | Indicates whether the reserve price has been met for the listing. Returns true if the reserve
 	 * price was met or no reserve price was specified.
 	 */
-	public $reservemet;
+	public $ReserveMet;
 	/**
 	 * @var boolean | Part of the Second Chance Offer feature, indicates whether the seller can extend a second
 	 * chance offer for the item.
 	 */
-	public $secondchanceeligible;
+	public $SecondChanceEligible;
 	/**
 	 * @var long | Number of bidders for an item. Only applicable to competitive-bidding listings (Chinese
 	 * and Dutch auctions). Only returned for the seller of the item.
 	 */
-	public $biddercount;
+	public $BidderCount;
 	/**
 	 * @var \Controle\ListingStatusCodeType | Specifies an active or ended listing's status in eBay's processing workflow. If a listing
 	 * ends with a sale (or sales), eBay needs to update the sale details (e.g., total price and
@@ -84,7 +85,7 @@ class SellingStatusType
 	 * final value fee is available, use this listing status information to determine whether
 	 * eBay has finished processing the listing.
 	 */
-	public $listingstatus;
+	public $ListingStatus;
 	/**
 	 * @var \Controle\AmountType | You are charged a Final Value Fee if your item is sold, ends with a winning bid, or is
 	 * purchased. This fee applies whether or not you actually complete the sale with the buyer.
@@ -100,11 +101,13 @@ class SellingStatusType
 	 * that end with Buy It Now purchases, the Final Value Fee is returned in Transaction.FinalValueFee.
 	 * Not applicable to Half.com.
 	 */
-	public $finalvaluefee;
+	public $FinalValueFee;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -114,7 +117,7 @@ class SellingStatusType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidcount = (int)$val;
+        $this->BidCount = (int)$val;
 	}
 
 	/**
@@ -123,7 +126,7 @@ class SellingStatusType
 	 */
 	public function setBidIncrement($val)
 	{
-        $this->bidincrement = (int)$val;
+        $this->BidIncrement = (int)$val;
 	}
 
 	/**
@@ -132,7 +135,7 @@ class SellingStatusType
 	 */
 	public function setConvertedCurrentPrice($val)
 	{
-        $this->convertedcurrentprice = (int)$val;
+        $this->ConvertedCurrentPrice = (int)$val;
 	}
 
 	/**
@@ -141,7 +144,7 @@ class SellingStatusType
 	 */
 	public function setCurrentPrice($val)
 	{
-        $this->currentprice = (int)$val;
+        $this->CurrentPrice = (int)$val;
 	}
 
 	/**
@@ -150,7 +153,7 @@ class SellingStatusType
 	 */
 	public function setHighBidder($val)
 	{
-        $this->highbidder = (int)$val;
+        $this->HighBidder = (int)$val;
 	}
 
 	/**
@@ -162,7 +165,7 @@ class SellingStatusType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->leadcount = (int)$val;
+        $this->LeadCount = (int)$val;
 	}
 
 	/**
@@ -171,7 +174,7 @@ class SellingStatusType
 	 */
 	public function setMinimumToBid($val)
 	{
-        $this->minimumtobid = (int)$val;
+        $this->MinimumToBid = (int)$val;
 	}
 
 	/**
@@ -183,7 +186,7 @@ class SellingStatusType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantitysold = (int)$val;
+        $this->QuantitySold = (int)$val;
 	}
 
 	/**
@@ -192,7 +195,7 @@ class SellingStatusType
 	 */
 	public function setReserveMet($val)
 	{
-        $this->reservemet = (int)$val;
+        $this->ReserveMet = (int)$val;
 	}
 
 	/**
@@ -201,7 +204,7 @@ class SellingStatusType
 	 */
 	public function setSecondChanceEligible($val)
 	{
-        $this->secondchanceeligible = (int)$val;
+        $this->SecondChanceEligible = (int)$val;
 	}
 
 	/**
@@ -210,7 +213,7 @@ class SellingStatusType
 	 */
 	public function setBidderCount($val)
 	{
-        $this->biddercount = (int)$val;
+        $this->BidderCount = (int)$val;
 	}
 
 	/**
@@ -219,7 +222,7 @@ class SellingStatusType
 	 */
 	public function setListingStatus($val)
 	{
-        $this->listingstatus = (int)$val;
+        $this->ListingStatus = (int)$val;
 	}
 
 	/**
@@ -228,7 +231,7 @@ class SellingStatusType
 	 */
 	public function setFinalValueFee($val)
 	{
-        $this->finalvaluefee = (int)$val;
+        $this->FinalValueFee = (int)$val;
 	}
 
 	/**

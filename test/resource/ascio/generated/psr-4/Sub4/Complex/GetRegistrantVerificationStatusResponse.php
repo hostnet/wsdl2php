@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class GetRegistrantVerificationStatusResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $getregistrantverificationstatusresult;
+    public $GetRegistrantVerificationStatusResult;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RegistrantVerificationStatus
      */
-    public $verificationstatus;
+    public $verificationStatus;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setGetRegistrantVerificationStatusResult($val)
     {
-        $this->getregistrantverificationstatusresult = (int)$val;
+        $this->GetRegistrantVerificationStatusResult = (int)$val;
     }
 
     /**
@@ -27,6 +30,6 @@ class GetRegistrantVerificationStatusResponse
      */
     public function setVerificationStatus($val)
     {
-        $this->verificationstatus = (int)$val;
+        $this->verificationStatus = (int)$val;
     }
 }

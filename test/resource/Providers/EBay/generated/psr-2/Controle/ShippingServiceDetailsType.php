@@ -8,55 +8,58 @@ namespace Controle;
  */
 class ShippingServiceDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
      */
-    public $description;
+    public $Description;
     /**
      * @var boolean | Indicates whether the service is an expedited shipping service. See Enabling Get It
      * Fast. Not applicable to Half.com.
      */
-    public $expeditedservice;
+    public $ExpeditedService;
     /**
      * @var boolean | Whether the shipping service is an international shipping service, i.e. one that ships
      * from to another country from the country of the specified site.<br><br> Related field:<br> Item.ShippingDetails.InternationalShippingServiceOption
      * in AddItem
      */
-    public $internationalservice;
+    public $InternationalService;
     /**
      * @var \Controle\token | A domestic shipping service offered for shipping the item (for example, UPS Ground).
      * For a list of valid values that you can cache for future use, call GeteBayDetails with
      * DetailName set to ShippingServiceDetails. For flat and calculated shipping. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $shippingservice;
+    public $ShippingService;
     /**
      * @var int | Numeric identifier. A value greater than 50000 represents an international shipping
      * service (confirmed by InternationalShippingService being true). Some applications use
      * this ID to look up shipping services more efficiently. Also useful for applications
      * that have migrated from the legacy XML API.
      */
-    public $shippingserviceid;
+    public $ShippingServiceID;
     /**
      * @var int | The maximum guaranteed number of days the shipping carrier will take to ship an item
      * (not including the time it takes the seller to deliver the item to the shipping carrier).
      * See Enabling Get It Fast. Not applicable to Half.com.
      */
-    public $shippingtimemax;
+    public $ShippingTimeMax;
     /**
      * @var int | The minimum guaranteed number of days in which the shipping carrier can ship an item
      * (not including the time it takes the seller to deliver the item to the shipping carrier).
      * See Enabling Get It Fast. Not applicable to Half.com.
      */
-    public $shippingtimemin;
+    public $ShippingTimeMin;
     /**
      * @var \Controle\ShippingServiceCodeType | For future use.
      */
-    public $shippingservicecode;
+    public $ShippingServiceCode;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -66,7 +69,7 @@ class ShippingServiceDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
     }
 
     /**
@@ -75,7 +78,7 @@ class ShippingServiceDetailsType
      */
     public function setExpeditedService($val)
     {
-        $this->expeditedservice = (int)$val;
+        $this->ExpeditedService = (int)$val;
     }
 
     /**
@@ -84,7 +87,7 @@ class ShippingServiceDetailsType
      */
     public function setInternationalService($val)
     {
-        $this->internationalservice = (int)$val;
+        $this->InternationalService = (int)$val;
     }
 
     /**
@@ -93,7 +96,7 @@ class ShippingServiceDetailsType
      */
     public function setShippingService($val)
     {
-        $this->shippingservice = (int)$val;
+        $this->ShippingService = (int)$val;
     }
 
     /**
@@ -105,7 +108,7 @@ class ShippingServiceDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->shippingserviceid = (int)$val;
+        $this->ShippingServiceID = (int)$val;
     }
 
     /**
@@ -117,7 +120,7 @@ class ShippingServiceDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->shippingtimemax = (int)$val;
+        $this->ShippingTimeMax = (int)$val;
     }
 
     /**
@@ -129,7 +132,7 @@ class ShippingServiceDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->shippingtimemin = (int)$val;
+        $this->ShippingTimeMin = (int)$val;
     }
 
     /**
@@ -138,7 +141,7 @@ class ShippingServiceDetailsType
      */
     public function setShippingServiceCode($val)
     {
-        $this->shippingservicecode = (int)$val;
+        $this->ShippingServiceCode = (int)$val;
     }
 
     /**

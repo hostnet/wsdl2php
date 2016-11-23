@@ -9,20 +9,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class GetRecommendationsResponseContainerType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingAnalyzerRecommendationsType | Contains tips returned from the Listing Analyzer recommendation engine,
      * if this engine was specified in the request (or if no engine was specified).
      */
-    public $listinganalyzerrecommendations;
+    public $ListingAnalyzerRecommendations;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SIFFTASRecommendationsType | Reserved for future use.
      */
-    public $sifftasrecommendations;
+    public $SIFFTASRecommendations;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PricingRecommendationsType | Contains pricing data returned from the Product Pricing engine,             if this
      * engine was specified in the request (or if no engine was specified).
      */
-    public $pricingrecommendations;
+    public $PricingRecommendations;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AttributeRecommendationsType | Contains attribute suggestions returned from the Suggested Attributes engine, if this
      * engine was specified in the request. The results include suggested attributes and values
@@ -33,30 +34,32 @@ class GetRecommendationsResponseContainerType
      * in order of rank (i.e., the value that best meets eBay's recommendation criteria is
      * returned first).
      */
-    public $attributerecommendations;
+    public $AttributeRecommendations;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ProductRecommendationsType | Contains zero or more product titles and IDs returned from the Suggested Attributes
      * engine, if this engine was specified in the request (or if no engine was specified). If
      * applicable, use one of the suggested product IDs to list the item with Pre-filled Item
      * Information.
      */
-    public $productrecommendations;
+    public $ProductRecommendations;
     /**
      * @var string | Unique key to distinguish between recommendations for each item.              Matches
      * a correlation ID you defined in the request, if any.
      */
-    public $correlationid;
+    public $CorrelationID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ListingAnalyzerRecommendationsType $val
      * @throws Exception
      */
     public function setListingAnalyzerRecommendations($val)
     {
-        $this->listinganalyzerrecommendations = (int)$val;
+        $this->ListingAnalyzerRecommendations = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class GetRecommendationsResponseContainerType
      */
     public function setSIFFTASRecommendations($val)
     {
-        $this->sifftasrecommendations = (int)$val;
+        $this->SIFFTASRecommendations = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class GetRecommendationsResponseContainerType
      */
     public function setPricingRecommendations($val)
     {
-        $this->pricingrecommendations = (int)$val;
+        $this->PricingRecommendations = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class GetRecommendationsResponseContainerType
      */
     public function setAttributeRecommendations($val)
     {
-        $this->attributerecommendations = (int)$val;
+        $this->AttributeRecommendations = (int)$val;
     }
 
     /**
@@ -92,7 +95,7 @@ class GetRecommendationsResponseContainerType
      */
     public function setProductRecommendations($val)
     {
-        $this->productrecommendations = (int)$val;
+        $this->ProductRecommendations = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class GetRecommendationsResponseContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->correlationid = (int)$val;
+        $this->CorrelationID = (int)$val;
     }
 
     /**

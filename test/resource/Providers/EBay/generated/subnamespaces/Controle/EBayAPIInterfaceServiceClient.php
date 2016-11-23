@@ -10,1185 +10,1185 @@ class eBayAPIInterfaceServiceClient extends \SoapClient {
 
 	const WSDL_FILE = "eBayTest.wsdl";
 	private $classmap = array(
-        'AddDisputeResponseType\,' =>
+        'AddDisputeResponseType' =>
             '\Controle\sub1\sub2\AddDisputeResponseType',
-        'AddDisputeResponseResponseType\,' =>
+        'AddDisputeResponseResponseType' =>
             '\Controle\sub1\sub2\AddDisputeResponseResponseType',
-        'AddItemResponseType\,' =>
+        'AddItemResponseType' =>
             '\Controle\sub1\sub2\AddItemResponseType',
-        'AddLiveAuctionItemResponseType\,' =>
+        'AddLiveAuctionItemResponseType' =>
             '\Controle\sub1\sub2\AddLiveAuctionItemResponseType',
-        'AddOrderResponseType\,' =>
+        'AddOrderResponseType' =>
             '\Controle\sub1\sub2\AddOrderResponseType',
-        'AddSecondChanceItemResponseType\,' =>
+        'AddSecondChanceItemResponseType' =>
             '\Controle\sub1\sub2\AddSecondChanceItemResponseType',
-        'AddToItemDescriptionResponseType\,' =>
+        'AddToItemDescriptionResponseType' =>
             '\Controle\sub1\sub2\AddToItemDescriptionResponseType',
-        'AddToWatchListResponseType\,' =>
+        'AddToWatchListResponseType' =>
             '\Controle\sub1\sub2\AddToWatchListResponseType',
-        'AddTransactionConfirmationItemResponseType\,' =>
+        'AddTransactionConfirmationItemResponseType' =>
             '\Controle\sub1\sub2\AddTransactionConfirmationItemResponseType',
-        'ApproveLiveAuctionBiddersResponseType\,' =>
+        'ApproveLiveAuctionBiddersResponseType' =>
             '\Controle\sub1\sub2\ApproveLiveAuctionBiddersResponseType',
-        'CompleteSaleResponseType\,' =>
+        'CompleteSaleResponseType' =>
             '\Controle\sub1\sub2\CompleteSaleResponseType',
-        'DeleteMyMessagesResponseType\,' =>
+        'DeleteMyMessagesResponseType' =>
             '\Controle\sub1\sub2\DeleteMyMessagesResponseType',
-        'EndItemResponseType\,' =>
+        'EndItemResponseType' =>
             '\Controle\sub1\sub2\EndItemResponseType',
-        'FetchTokenResponseType\,' =>
+        'FetchTokenResponseType' =>
             '\Controle\sub1\sub2\FetchTokenResponseType',
-        'GetAccountResponseType\,' =>
+        'GetAccountResponseType' =>
             '\Controle\sub1\sub2\GetAccountResponseType',
-        'GetAdFormatLeadsResponseType\,' =>
+        'GetAdFormatLeadsResponseType' =>
             '\Controle\sub1\sub2\GetAdFormatLeadsResponseType',
-        'GetAllBiddersResponseType\,' =>
+        'GetAllBiddersResponseType' =>
             '\Controle\sub1\sub2\GetAllBiddersResponseType',
-        'GetApiAccessRulesResponseType\,' =>
+        'GetApiAccessRulesResponseType' =>
             '\Controle\sub1\sub2\GetApiAccessRulesResponseType',
-        'GetBestOffersResponseType\,' =>
+        'GetBestOffersResponseType' =>
             '\Controle\sub1\sub2\GetBestOffersResponseType',
-        'GetBidderListResponseType\,' =>
+        'GetBidderListResponseType' =>
             '\Controle\sub1\sub2\GetBidderListResponseType',
-        'GetCategoriesResponseType\,' =>
+        'GetCategoriesResponseType' =>
             '\Controle\sub1\sub2\GetCategoriesResponseType',
-        'GetCategory2FinanceOfferResponseType\,' =>
+        'GetCategory2FinanceOfferResponseType' =>
             '\Controle\sub1\sub2\GetCategory2FinanceOfferResponseType',
-        'GetCategoryFeaturesResponseType\,' =>
+        'GetCategoryFeaturesResponseType' =>
             '\Controle\sub1\sub2\GetCategoryFeaturesResponseType',
-        'GetCategoryListingsResponseType\,' =>
+        'GetCategoryListingsResponseType' =>
             '\Controle\sub1\sub2\GetCategoryListingsResponseType',
-        'GetCategoryMappingsResponseType\,' =>
+        'GetCategoryMappingsResponseType' =>
             '\Controle\sub1\sub2\GetCategoryMappingsResponseType',
-        'GetChallengeTokenResponseType\,' =>
+        'GetChallengeTokenResponseType' =>
             '\Controle\sub1\sub2\GetChallengeTokenResponseType',
-        'GetCharitiesResponseType\,' =>
+        'GetCharitiesResponseType' =>
             '\Controle\sub1\sub2\GetCharitiesResponseType',
-        'GetContextualKeywordsResponseType\,' =>
+        'GetContextualKeywordsResponseType' =>
             '\Controle\sub1\sub2\GetContextualKeywordsResponseType',
-        'GetCrossPromotionsResponseType\,' =>
+        'GetCrossPromotionsResponseType' =>
             '\Controle\sub1\sub2\GetCrossPromotionsResponseType',
-        'GetDescriptionTemplatesResponseType\,' =>
+        'GetDescriptionTemplatesResponseType' =>
             '\Controle\sub1\sub2\GetDescriptionTemplatesResponseType',
-        'GetDisputeResponseType\,' =>
+        'GetDisputeResponseType' =>
             '\Controle\sub1\sub2\GetDisputeResponseType',
-        'GetFeedbackResponseType\,' =>
+        'GetFeedbackResponseType' =>
             '\Controle\sub1\sub2\GetFeedbackResponseType',
-        'GetFinanceOffersResponseType\,' =>
+        'GetFinanceOffersResponseType' =>
             '\Controle\sub1\sub2\GetFinanceOffersResponseType',
-        'GetHighBiddersResponseType\,' =>
+        'GetHighBiddersResponseType' =>
             '\Controle\sub1\sub2\GetHighBiddersResponseType',
-        'GetItemResponseType\,' =>
+        'GetItemResponseType' =>
             '\Controle\sub1\sub2\GetItemResponseType',
-        'GetItemRecommendationsResponseType\,' =>
+        'GetItemRecommendationsResponseType' =>
             '\Controle\sub1\sub2\GetItemRecommendationsResponseType',
-        'GetItemShippingResponseType\,' =>
+        'GetItemShippingResponseType' =>
             '\Controle\sub1\sub2\GetItemShippingResponseType',
-        'GetItemTransactionsResponseType\,' =>
+        'GetItemTransactionsResponseType' =>
             '\Controle\sub1\sub2\GetItemTransactionsResponseType',
-        'GetItemsAwaitingFeedbackResponseType\,' =>
+        'GetItemsAwaitingFeedbackResponseType' =>
             '\Controle\sub1\sub2\GetItemsAwaitingFeedbackResponseType',
-        'GetLiveAuctionBiddersResponseType\,' =>
+        'GetLiveAuctionBiddersResponseType' =>
             '\Controle\sub1\sub2\GetLiveAuctionBiddersResponseType',
-        'GetLiveAuctionCatalogDetailsResponseType\,' =>
+        'GetLiveAuctionCatalogDetailsResponseType' =>
             '\Controle\sub1\sub2\GetLiveAuctionCatalogDetailsResponseType',
-        'GetMemberMessagesResponseType\,' =>
+        'GetMemberMessagesResponseType' =>
             '\Controle\sub1\sub2\GetMemberMessagesResponseType',
-        'GetMyMessagesResponseType\,' =>
+        'GetMyMessagesResponseType' =>
             '\Controle\sub1\sub2\GetMyMessagesResponseType',
-        'GetMyeBayResponseType\,' =>
+        'GetMyeBayResponseType' =>
             '\Controle\sub1\sub2\GetMyeBayResponseType',
-        'GetMyeBayBuyingResponseType\,' =>
+        'GetMyeBayBuyingResponseType' =>
             '\Controle\sub1\sub2\GetMyeBayBuyingResponseType',
-        'GetMyeBayRemindersResponseType\,' =>
+        'GetMyeBayRemindersResponseType' =>
             '\Controle\sub1\sub2\GetMyeBayRemindersResponseType',
-        'GetMyeBaySellingResponseType\,' =>
+        'GetMyeBaySellingResponseType' =>
             '\Controle\sub1\sub2\GetMyeBaySellingResponseType',
-        'GetNotificationPreferencesResponseType\,' =>
+        'GetNotificationPreferencesResponseType' =>
             '\Controle\sub1\sub2\GetNotificationPreferencesResponseType',
-        'GetNotificationsUsageResponseType\,' =>
+        'GetNotificationsUsageResponseType' =>
             '\Controle\sub1\sub2\GetNotificationsUsageResponseType',
-        'GetOrderTransactionsResponseType\,' =>
+        'GetOrderTransactionsResponseType' =>
             '\Controle\sub1\sub2\GetOrderTransactionsResponseType',
-        'GetOrdersResponseType\,' =>
+        'GetOrdersResponseType' =>
             '\Controle\sub1\sub2\GetOrdersResponseType',
-        'GetPictureManagerDetailsResponseType\,' =>
+        'GetPictureManagerDetailsResponseType' =>
             '\Controle\sub1\sub2\GetPictureManagerDetailsResponseType',
-        'GetPictureManagerOptionsResponseType\,' =>
+        'GetPictureManagerOptionsResponseType' =>
             '\Controle\sub1\sub2\GetPictureManagerOptionsResponseType',
-        'GetPopularKeywordsResponseType\,' =>
+        'GetPopularKeywordsResponseType' =>
             '\Controle\sub1\sub2\GetPopularKeywordsResponseType',
-        'GetProductFamilyMembersResponseType\,' =>
+        'GetProductFamilyMembersResponseType' =>
             '\Controle\sub1\sub2\GetProductFamilyMembersResponseType',
-        'GetProductFinderResponseType\,' =>
+        'GetProductFinderResponseType' =>
             '\Controle\sub1\sub2\GetProductFinderResponseType',
-        'GetProductSearchPageResponseType\,' =>
+        'GetProductSearchPageResponseType' =>
             '\Controle\sub1\sub2\GetProductSearchPageResponseType',
-        'GetProductSearchResultsResponseType\,' =>
+        'GetProductSearchResultsResponseType' =>
             '\Controle\sub1\sub2\GetProductSearchResultsResponseType',
-        'GetProductSellingPagesResponseType\,' =>
+        'GetProductSellingPagesResponseType' =>
             '\Controle\sub1\sub2\GetProductSellingPagesResponseType',
-        'GetPromotionRulesResponseType\,' =>
+        'GetPromotionRulesResponseType' =>
             '\Controle\sub1\sub2\GetPromotionRulesResponseType',
-        'GetRecommendationsResponseType\,' =>
+        'GetRecommendationsResponseType' =>
             '\Controle\sub1\sub2\GetRecommendationsResponseType',
-        'GetRuNameResponseType\,' =>
+        'GetRuNameResponseType' =>
             '\Controle\sub1\sub2\GetRuNameResponseType',
-        'GetSearchResultsResponseType\,' =>
+        'GetSearchResultsResponseType' =>
             '\Controle\sub1\sub2\GetSearchResultsResponseType',
-        'GetSearchResultsExpressResponseType\,' =>
+        'GetSearchResultsExpressResponseType' =>
             '\Controle\sub1\sub2\GetSearchResultsExpressResponseType',
-        'GetSellerEventsResponseType\,' =>
+        'GetSellerEventsResponseType' =>
             '\Controle\sub1\sub2\GetSellerEventsResponseType',
-        'GetSellerListResponseType\,' =>
+        'GetSellerListResponseType' =>
             '\Controle\sub1\sub2\GetSellerListResponseType',
-        'GetSellerPaymentsResponseType\,' =>
+        'GetSellerPaymentsResponseType' =>
             '\Controle\sub1\sub2\GetSellerPaymentsResponseType',
-        'GetSellerTransactionsResponseType\,' =>
+        'GetSellerTransactionsResponseType' =>
             '\Controle\sub1\sub2\GetSellerTransactionsResponseType',
-        'GetStoreResponseType\,' =>
+        'GetStoreResponseType' =>
             '\Controle\sub1\sub2\GetStoreResponseType',
-        'GetStoreCategoryUpdateStatusResponseType\,' =>
+        'GetStoreCategoryUpdateStatusResponseType' =>
             '\Controle\sub1\sub2\GetStoreCategoryUpdateStatusResponseType',
-        'GetStoreCustomPageResponseType\,' =>
+        'GetStoreCustomPageResponseType' =>
             '\Controle\sub1\sub2\GetStoreCustomPageResponseType',
-        'GetStoreOptionsResponseType\,' =>
+        'GetStoreOptionsResponseType' =>
             '\Controle\sub1\sub2\GetStoreOptionsResponseType',
-        'GetStorePreferencesResponseType\,' =>
+        'GetStorePreferencesResponseType' =>
             '\Controle\sub1\sub2\GetStorePreferencesResponseType',
-        'GetSuggestedCategoriesResponseType\,' =>
+        'GetSuggestedCategoriesResponseType' =>
             '\Controle\sub1\sub2\GetSuggestedCategoriesResponseType',
-        'GetTaxTableResponseType\,' =>
+        'GetTaxTableResponseType' =>
             '\Controle\sub1\sub2\GetTaxTableResponseType',
-        'GetUserResponseType\,' =>
+        'GetUserResponseType' =>
             '\Controle\sub1\sub2\GetUserResponseType',
-        'GetUserContactDetailsResponseType\,' =>
+        'GetUserContactDetailsResponseType' =>
             '\Controle\sub1\sub2\GetUserContactDetailsResponseType',
-        'GetUserDisputesResponseType\,' =>
+        'GetUserDisputesResponseType' =>
             '\Controle\sub1\sub2\GetUserDisputesResponseType',
-        'GetUserPreferencesResponseType\,' =>
+        'GetUserPreferencesResponseType' =>
             '\Controle\sub1\sub2\GetUserPreferencesResponseType',
-        'GetWantItNowPostResponseType\,' =>
+        'GetWantItNowPostResponseType' =>
             '\Controle\sub1\sub2\GetWantItNowPostResponseType',
-        'GetWantItNowSearchResultsResponseType\,' =>
+        'GetWantItNowSearchResultsResponseType' =>
             '\Controle\sub1\sub2\GetWantItNowSearchResultsResponseType',
-        'GeteBayDetailsResponseType\,' =>
+        'GeteBayDetailsResponseType' =>
             '\Controle\sub1\sub2\GeteBayDetailsResponseType',
-        'GeteBayOfficialTimeResponseType\,' =>
+        'GeteBayOfficialTimeResponseType' =>
             '\Controle\sub1\sub2\GeteBayOfficialTimeResponseType',
-        'IssueRefundResponseType\,' =>
+        'IssueRefundResponseType' =>
             '\Controle\sub1\sub2\IssueRefundResponseType',
-        'LeaveFeedbackResponseType\,' =>
+        'LeaveFeedbackResponseType' =>
             '\Controle\sub1\sub2\LeaveFeedbackResponseType',
-        'PlaceOfferResponseType\,' =>
+        'PlaceOfferResponseType' =>
             '\Controle\sub1\sub2\PlaceOfferResponseType',
-        'RelistItemResponseType\,' =>
+        'RelistItemResponseType' =>
             '\Controle\sub1\sub2\RelistItemResponseType',
-        'RemoveFromWatchListResponseType\,' =>
+        'RemoveFromWatchListResponseType' =>
             '\Controle\sub1\sub2\RemoveFromWatchListResponseType',
-        'RespondToBestOfferResponseType\,' =>
+        'RespondToBestOfferResponseType' =>
             '\Controle\sub1\sub2\RespondToBestOfferResponseType',
-        'RespondToFeedbackResponseType\,' =>
+        'RespondToFeedbackResponseType' =>
             '\Controle\sub1\sub2\RespondToFeedbackResponseType',
-        'RespondToWantItNowPostResponseType\,' =>
+        'RespondToWantItNowPostResponseType' =>
             '\Controle\sub1\sub2\RespondToWantItNowPostResponseType',
-        'ReviseCheckoutStatusResponseType\,' =>
+        'ReviseCheckoutStatusResponseType' =>
             '\Controle\sub1\sub2\ReviseCheckoutStatusResponseType',
-        'ReviseItemResponseType\,' =>
+        'ReviseItemResponseType' =>
             '\Controle\sub1\sub2\ReviseItemResponseType',
-        'ReviseLiveAuctionItemResponseType\,' =>
+        'ReviseLiveAuctionItemResponseType' =>
             '\Controle\sub1\sub2\ReviseLiveAuctionItemResponseType',
-        'ReviseMyMessagesResponseType\,' =>
+        'ReviseMyMessagesResponseType' =>
             '\Controle\sub1\sub2\ReviseMyMessagesResponseType',
-        'ReviseMyMessagesFoldersResponseType\,' =>
+        'ReviseMyMessagesFoldersResponseType' =>
             '\Controle\sub1\sub2\ReviseMyMessagesFoldersResponseType',
-        'SellerReverseDisputeResponseType\,' =>
+        'SellerReverseDisputeResponseType' =>
             '\Controle\sub1\sub2\SellerReverseDisputeResponseType',
-        'SendInvoiceResponseType\,' =>
+        'SendInvoiceResponseType' =>
             '\Controle\sub1\sub2\SendInvoiceResponseType',
-        'SetNotificationPreferencesResponseType\,' =>
+        'SetNotificationPreferencesResponseType' =>
             '\Controle\sub1\sub2\SetNotificationPreferencesResponseType',
-        'SetPictureManagerDetailsResponseType\,' =>
+        'SetPictureManagerDetailsResponseType' =>
             '\Controle\sub1\sub2\SetPictureManagerDetailsResponseType',
-        'SetPromotionRulesResponseType\,' =>
+        'SetPromotionRulesResponseType' =>
             '\Controle\sub1\sub2\SetPromotionRulesResponseType',
-        'SetStoreResponseType\,' =>
+        'SetStoreResponseType' =>
             '\Controle\sub1\sub2\SetStoreResponseType',
-        'SetStoreCategoriesResponseType\,' =>
+        'SetStoreCategoriesResponseType' =>
             '\Controle\sub1\sub2\SetStoreCategoriesResponseType',
-        'SetStoreCustomPageResponseType\,' =>
+        'SetStoreCustomPageResponseType' =>
             '\Controle\sub1\sub2\SetStoreCustomPageResponseType',
-        'SetStorePreferencesResponseType\,' =>
+        'SetStorePreferencesResponseType' =>
             '\Controle\sub1\sub2\SetStorePreferencesResponseType',
-        'SetTaxTableResponseType\,' =>
+        'SetTaxTableResponseType' =>
             '\Controle\sub1\sub2\SetTaxTableResponseType',
-        'SetUserNotesResponseType\,' =>
+        'SetUserNotesResponseType' =>
             '\Controle\sub1\sub2\SetUserNotesResponseType',
-        'SetUserPreferencesResponseType\,' =>
+        'SetUserPreferencesResponseType' =>
             '\Controle\sub1\sub2\SetUserPreferencesResponseType',
-        'ValidateChallengeInputResponseType\,' =>
+        'ValidateChallengeInputResponseType' =>
             '\Controle\sub1\sub2\ValidateChallengeInputResponseType',
-        'ValidateTestUserRegistrationResponseType\,' =>
+        'ValidateTestUserRegistrationResponseType' =>
             '\Controle\sub1\sub2\ValidateTestUserRegistrationResponseType',
-        'VerifyAddItemResponseType\,' =>
+        'VerifyAddItemResponseType' =>
             '\Controle\sub1\sub2\VerifyAddItemResponseType',
-        'VerifyAddSecondChanceItemResponseType\,' =>
+        'VerifyAddSecondChanceItemResponseType' =>
             '\Controle\sub1\sub2\VerifyAddSecondChanceItemResponseType',
-        'AbstractRequestType\,' =>
+        'AbstractRequestType' =>
             '\Controle\sub1\sub2\AbstractRequestType',
-        'AbstractResponseType\,' =>
+        'AbstractResponseType' =>
             '\Controle\sub1\sub2\AbstractResponseType',
-        'AckCodeType\,' =>
+        'AckCodeType' =>
             '\Controle\sub1\sub2\AckCodeType',
-        'BuyerPaymentMethodCodeType\,' =>
+        'BuyerPaymentMethodCodeType' =>
             '\Controle\sub1\sub2\BuyerPaymentMethodCodeType',
-        'DetailLevelCodeType\,' =>
+        'DetailLevelCodeType' =>
             '\Controle\sub1\sub2\DetailLevelCodeType',
-        'DisputeActivityCodeType\,' =>
+        'DisputeActivityCodeType' =>
             '\Controle\sub1\sub2\DisputeActivityCodeType',
-        'DisputeCreditEligibilityCodeType\,' =>
+        'DisputeCreditEligibilityCodeType' =>
             '\Controle\sub1\sub2\DisputeCreditEligibilityCodeType',
-        'DisputeExplanationCodeType\,' =>
+        'DisputeExplanationCodeType' =>
             '\Controle\sub1\sub2\DisputeExplanationCodeType',
-        'DisputeFilterCountType\,' =>
+        'DisputeFilterCountType' =>
             '\Controle\sub1\sub2\DisputeFilterCountType',
-        'DisputeFilterTypeCodeType\,' =>
+        'DisputeFilterTypeCodeType' =>
             '\Controle\sub1\sub2\DisputeFilterTypeCodeType',
-        'DisputeMessageSourceCodeType\,' =>
+        'DisputeMessageSourceCodeType' =>
             '\Controle\sub1\sub2\DisputeMessageSourceCodeType',
-        'DisputeMessageType\,' =>
+        'DisputeMessageType' =>
             '\Controle\sub1\sub2\DisputeMessageType',
-        'DisputeReasonCodeType\,' =>
+        'DisputeReasonCodeType' =>
             '\Controle\sub1\sub2\DisputeReasonCodeType',
-        'DisputeRecordTypeCodeType\,' =>
+        'DisputeRecordTypeCodeType' =>
             '\Controle\sub1\sub2\DisputeRecordTypeCodeType',
-        'DisputeResolutionReasonCodeType\,' =>
+        'DisputeResolutionReasonCodeType' =>
             '\Controle\sub1\sub2\DisputeResolutionReasonCodeType',
-        'DisputeResolutionRecordTypeCodeType\,' =>
+        'DisputeResolutionRecordTypeCodeType' =>
             '\Controle\sub1\sub2\DisputeResolutionRecordTypeCodeType',
-        'DisputeResolutionType\,' =>
+        'DisputeResolutionType' =>
             '\Controle\sub1\sub2\DisputeResolutionType',
-        'DisputeSortTypeCodeType\,' =>
+        'DisputeSortTypeCodeType' =>
             '\Controle\sub1\sub2\DisputeSortTypeCodeType',
-        'DisputeStateCodeType\,' =>
+        'DisputeStateCodeType' =>
             '\Controle\sub1\sub2\DisputeStateCodeType',
-        'DisputeStatusCodeType\,' =>
+        'DisputeStatusCodeType' =>
             '\Controle\sub1\sub2\DisputeStatusCodeType',
-        'DuplicateInvocationDetailsType\,' =>
+        'DuplicateInvocationDetailsType' =>
             '\Controle\sub1\sub2\DuplicateInvocationDetailsType',
-        'ErrorClassificationCodeType\,' =>
+        'ErrorClassificationCodeType' =>
             '\Controle\sub1\sub2\ErrorClassificationCodeType',
-        'ErrorHandlingCodeType\,' =>
+        'ErrorHandlingCodeType' =>
             '\Controle\sub1\sub2\ErrorHandlingCodeType',
-        'ErrorParameterType\,' =>
+        'ErrorParameterType' =>
             '\Controle\sub1\sub2\ErrorParameterType',
-        'ErrorType\,' =>
+        'ErrorType' =>
             '\Controle\sub1\sub2\ErrorType',
-        'InvocationStatusType\,' =>
+        'InvocationStatusType' =>
             '\Controle\sub1\sub2\InvocationStatusType',
-        'MeasureType\,' =>
+        'MeasureType' =>
             '\Controle\sub1\sub2\MeasureType',
-        'MeasurementSystemCodeType\,' =>
+        'MeasurementSystemCodeType' =>
             '\Controle\sub1\sub2\MeasurementSystemCodeType',
-        'PaginationType\,' =>
+        'PaginationType' =>
             '\Controle\sub1\sub2\PaginationType',
-        'SeverityCodeType\,' =>
+        'SeverityCodeType' =>
             '\Controle\sub1\sub2\SeverityCodeType',
-        'UserIdPasswordType\,' =>
+        'UserIdPasswordType' =>
             '\Controle\sub1\sub2\UserIdPasswordType',
-        'WarningLevelCodeType\,' =>
+        'WarningLevelCodeType' =>
             '\Controle\sub1\sub2\WarningLevelCodeType',
-        'AccessRuleCurrentStatusCodeType\,' =>
+        'AccessRuleCurrentStatusCodeType' =>
             '\Controle\sub1\sub2\AccessRuleCurrentStatusCodeType',
-        'AccessRuleStatusCodeType\,' =>
+        'AccessRuleStatusCodeType' =>
             '\Controle\sub1\sub2\AccessRuleStatusCodeType',
-        'AccountDetailEntryCodeType\,' =>
+        'AccountDetailEntryCodeType' =>
             '\Controle\sub1\sub2\AccountDetailEntryCodeType',
-        'AccountEntriesType\,' =>
+        'AccountEntriesType' =>
             '\Controle\sub1\sub2\AccountEntriesType',
-        'AccountEntrySortTypeCodeType\,' =>
+        'AccountEntrySortTypeCodeType' =>
             '\Controle\sub1\sub2\AccountEntrySortTypeCodeType',
-        'AccountEntryType\,' =>
+        'AccountEntryType' =>
             '\Controle\sub1\sub2\AccountEntryType',
-        'AccountHistorySelectionCodeType\,' =>
+        'AccountHistorySelectionCodeType' =>
             '\Controle\sub1\sub2\AccountHistorySelectionCodeType',
-        'AccountStateCodeType\,' =>
+        'AccountStateCodeType' =>
             '\Controle\sub1\sub2\AccountStateCodeType',
-        'AccountSummaryType\,' =>
+        'AccountSummaryType' =>
             '\Controle\sub1\sub2\AccountSummaryType',
-        'AdFormatEnabledCodeType\,' =>
+        'AdFormatEnabledCodeType' =>
             '\Controle\sub1\sub2\AdFormatEnabledCodeType',
-        'AdFormatEnabledDefinitionType\,' =>
+        'AdFormatEnabledDefinitionType' =>
             '\Controle\sub1\sub2\AdFormatEnabledDefinitionType',
-        'AdFormatLeadType\,' =>
+        'AdFormatLeadType' =>
             '\Controle\sub1\sub2\AdFormatLeadType',
-        'AdditionalAccountType\,' =>
+        'AdditionalAccountType' =>
             '\Controle\sub1\sub2\AdditionalAccountType',
-        'AddressOwnerCodeType\,' =>
+        'AddressOwnerCodeType' =>
             '\Controle\sub1\sub2\AddressOwnerCodeType',
-        'AddressRecordTypeCodeType\,' =>
+        'AddressRecordTypeCodeType' =>
             '\Controle\sub1\sub2\AddressRecordTypeCodeType',
-        'AddressStatusCodeType\,' =>
+        'AddressStatusCodeType' =>
             '\Controle\sub1\sub2\AddressStatusCodeType',
-        'AddressType\,' =>
+        'AddressType' =>
             '\Controle\sub1\sub2\AddressType',
-        'AffiliateTrackingDetailsType\,' =>
+        'AffiliateTrackingDetailsType' =>
             '\Controle\sub1\sub2\AffiliateTrackingDetailsType',
-        'AmountType\,' =>
+        'AmountType' =>
             '\Controle\sub1\sub2\AmountType',
-        'ApiAccessRuleType\,' =>
+        'ApiAccessRuleType' =>
             '\Controle\sub1\sub2\ApiAccessRuleType',
-        'ApplicationDeliveryPreferencesType\,' =>
+        'ApplicationDeliveryPreferencesType' =>
             '\Controle\sub1\sub2\ApplicationDeliveryPreferencesType',
-        'ApplicationDeviceTypeCodeType\,' =>
+        'ApplicationDeviceTypeCodeType' =>
             '\Controle\sub1\sub2\ApplicationDeviceTypeCodeType',
-        'AttributeArrayType\,' =>
+        'AttributeArrayType' =>
             '\Controle\sub1\sub2\AttributeArrayType',
-        'AttributeRecommendationsType\,' =>
+        'AttributeRecommendationsType' =>
             '\Controle\sub1\sub2\AttributeRecommendationsType',
-        'AttributeSetArrayType\,' =>
+        'AttributeSetArrayType' =>
             '\Controle\sub1\sub2\AttributeSetArrayType',
-        'AttributeSetType\,' =>
+        'AttributeSetType' =>
             '\Controle\sub1\sub2\AttributeSetType',
-        'AttributeType\,' =>
+        'AttributeType' =>
             '\Controle\sub1\sub2\AttributeType',
-        'AuthenticationEntryArrayType\,' =>
+        'AuthenticationEntryArrayType' =>
             '\Controle\sub1\sub2\AuthenticationEntryArrayType',
-        'AuthenticationEntryType\,' =>
+        'AuthenticationEntryType' =>
             '\Controle\sub1\sub2\AuthenticationEntryType',
-        'BasicUpgradePackEnabledDefinitionType\,' =>
+        'BasicUpgradePackEnabledDefinitionType' =>
             '\Controle\sub1\sub2\BasicUpgradePackEnabledDefinitionType',
-        'BestOfferActionCodeType\,' =>
+        'BestOfferActionCodeType' =>
             '\Controle\sub1\sub2\BestOfferActionCodeType',
-        'BestOfferArrayType\,' =>
+        'BestOfferArrayType' =>
             '\Controle\sub1\sub2\BestOfferArrayType',
-        'BestOfferAutoDeclineEnabledDefinitionType\,' =>
+        'BestOfferAutoDeclineEnabledDefinitionType' =>
             '\Controle\sub1\sub2\BestOfferAutoDeclineEnabledDefinitionType',
-        'BestOfferCounterEnabledDefinitionType\,' =>
+        'BestOfferCounterEnabledDefinitionType' =>
             '\Controle\sub1\sub2\BestOfferCounterEnabledDefinitionType',
-        'BestOfferDetailsType\,' =>
+        'BestOfferDetailsType' =>
             '\Controle\sub1\sub2\BestOfferDetailsType',
-        'BestOfferEnabledDefinitionType\,' =>
+        'BestOfferEnabledDefinitionType' =>
             '\Controle\sub1\sub2\BestOfferEnabledDefinitionType',
-        'BestOfferStatusCodeType\,' =>
+        'BestOfferStatusCodeType' =>
             '\Controle\sub1\sub2\BestOfferStatusCodeType',
-        'BestOfferType\,' =>
+        'BestOfferType' =>
             '\Controle\sub1\sub2\BestOfferType',
-        'BestOfferTypeCodeType\,' =>
+        'BestOfferTypeCodeType' =>
             '\Controle\sub1\sub2\BestOfferTypeCodeType',
-        'BidActionCodeType\,' =>
+        'BidActionCodeType' =>
             '\Controle\sub1\sub2\BidActionCodeType',
-        'BidApprovalArrayType\,' =>
+        'BidApprovalArrayType' =>
             '\Controle\sub1\sub2\BidApprovalArrayType',
-        'BidApprovalType\,' =>
+        'BidApprovalType' =>
             '\Controle\sub1\sub2\BidApprovalType',
-        'BidderDetailArrayType\,' =>
+        'BidderDetailArrayType' =>
             '\Controle\sub1\sub2\BidderDetailArrayType',
-        'BidderDetailType\,' =>
+        'BidderDetailType' =>
             '\Controle\sub1\sub2\BidderDetailType',
-        'BidderNoticePreferencesType\,' =>
+        'BidderNoticePreferencesType' =>
             '\Controle\sub1\sub2\BidderNoticePreferencesType',
-        'BidderStatusCodeType\,' =>
+        'BidderStatusCodeType' =>
             '\Controle\sub1\sub2\BidderStatusCodeType',
-        'BiddingDetailsType\,' =>
+        'BiddingDetailsType' =>
             '\Controle\sub1\sub2\BiddingDetailsType',
-        'BiddingSummaryType\,' =>
+        'BiddingSummaryType' =>
             '\Controle\sub1\sub2\BiddingSummaryType',
-        'BuyerProtectionCodeType\,' =>
+        'BuyerProtectionCodeType' =>
             '\Controle\sub1\sub2\BuyerProtectionCodeType',
-        'BuyerRequirementsType\,' =>
+        'BuyerRequirementsType' =>
             '\Controle\sub1\sub2\BuyerRequirementsType',
-        'BuyerType\,' =>
+        'BuyerType' =>
             '\Controle\sub1\sub2\BuyerType',
-        'BuyingGuideDetailsType\,' =>
+        'BuyingGuideDetailsType' =>
             '\Controle\sub1\sub2\BuyingGuideDetailsType',
-        'BuyingGuideType\,' =>
+        'BuyingGuideType' =>
             '\Controle\sub1\sub2\BuyingGuideType',
-        'BuyingSummaryType\,' =>
+        'BuyingSummaryType' =>
             '\Controle\sub1\sub2\BuyingSummaryType',
-        'CalculatedShippingChargeOptionCodeType\,' =>
+        'CalculatedShippingChargeOptionCodeType' =>
             '\Controle\sub1\sub2\CalculatedShippingChargeOptionCodeType',
-        'CalculatedShippingPreferencesType\,' =>
+        'CalculatedShippingPreferencesType' =>
             '\Controle\sub1\sub2\CalculatedShippingPreferencesType',
-        'CalculatedShippingRateOptionCodeType\,' =>
+        'CalculatedShippingRateOptionCodeType' =>
             '\Controle\sub1\sub2\CalculatedShippingRateOptionCodeType',
-        'CalculatedShippingRateType\,' =>
+        'CalculatedShippingRateType' =>
             '\Controle\sub1\sub2\CalculatedShippingRateType',
-        'CancelOfferType\,' =>
+        'CancelOfferType' =>
             '\Controle\sub1\sub2\CancelOfferType',
-        'CategoryArrayType\,' =>
+        'CategoryArrayType' =>
             '\Controle\sub1\sub2\CategoryArrayType',
-        'CategoryFeatureType\,' =>
+        'CategoryFeatureType' =>
             '\Controle\sub1\sub2\CategoryFeatureType',
-        'CategoryFinanceOfferArrayType\,' =>
+        'CategoryFinanceOfferArrayType' =>
             '\Controle\sub1\sub2\CategoryFinanceOfferArrayType',
-        'CategoryFinanceOfferType\,' =>
+        'CategoryFinanceOfferType' =>
             '\Controle\sub1\sub2\CategoryFinanceOfferType',
-        'CategoryListingsOrderCodeType\,' =>
+        'CategoryListingsOrderCodeType' =>
             '\Controle\sub1\sub2\CategoryListingsOrderCodeType',
-        'CategoryListingsSearchCodeType\,' =>
+        'CategoryListingsSearchCodeType' =>
             '\Controle\sub1\sub2\CategoryListingsSearchCodeType',
-        'CategoryMappingType\,' =>
+        'CategoryMappingType' =>
             '\Controle\sub1\sub2\CategoryMappingType',
-        'CategoryType\,' =>
+        'CategoryType' =>
             '\Controle\sub1\sub2\CategoryType',
-        'CharacteristicType\,' =>
+        'CharacteristicType' =>
             '\Controle\sub1\sub2\CharacteristicType',
-        'CharacteristicsSearchCodeType\,' =>
+        'CharacteristicsSearchCodeType' =>
             '\Controle\sub1\sub2\CharacteristicsSearchCodeType',
-        'CharacteristicsSetType\,' =>
+        'CharacteristicsSetType' =>
             '\Controle\sub1\sub2\CharacteristicsSetType',
-        'CharityAffiliationType\,' =>
+        'CharityAffiliationType' =>
             '\Controle\sub1\sub2\CharityAffiliationType',
-        'CharityAffiliationTypeCodeType\,' =>
+        'CharityAffiliationTypeCodeType' =>
             '\Controle\sub1\sub2\CharityAffiliationTypeCodeType',
-        'CharityAffiliationsType\,' =>
+        'CharityAffiliationsType' =>
             '\Controle\sub1\sub2\CharityAffiliationsType',
-        'CharityInfoType\,' =>
+        'CharityInfoType' =>
             '\Controle\sub1\sub2\CharityInfoType',
-        'CharitySellerStatusCodeType\,' =>
+        'CharitySellerStatusCodeType' =>
             '\Controle\sub1\sub2\CharitySellerStatusCodeType',
-        'CharitySellerType\,' =>
+        'CharitySellerType' =>
             '\Controle\sub1\sub2\CharitySellerType',
-        'CharityStatusCodeType\,' =>
+        'CharityStatusCodeType' =>
             '\Controle\sub1\sub2\CharityStatusCodeType',
-        'CharityType\,' =>
+        'CharityType' =>
             '\Controle\sub1\sub2\CharityType',
-        'CheckoutMethodCodeType\,' =>
+        'CheckoutMethodCodeType' =>
             '\Controle\sub1\sub2\CheckoutMethodCodeType',
-        'CheckoutStatusCodeType\,' =>
+        'CheckoutStatusCodeType' =>
             '\Controle\sub1\sub2\CheckoutStatusCodeType',
-        'CheckoutStatusType\,' =>
+        'CheckoutStatusType' =>
             '\Controle\sub1\sub2\CheckoutStatusType',
-        'CombinedPaymentOptionCodeType\,' =>
+        'CombinedPaymentOptionCodeType' =>
             '\Controle\sub1\sub2\CombinedPaymentOptionCodeType',
-        'CombinedPaymentPeriodCodeType\,' =>
+        'CombinedPaymentPeriodCodeType' =>
             '\Controle\sub1\sub2\CombinedPaymentPeriodCodeType',
-        'CombinedPaymentPreferencesType\,' =>
+        'CombinedPaymentPreferencesType' =>
             '\Controle\sub1\sub2\CombinedPaymentPreferencesType',
-        'CommentTypeCodeType\,' =>
+        'CommentTypeCodeType' =>
             '\Controle\sub1\sub2\CommentTypeCodeType',
-        'CompleteStatusCodeType\,' =>
+        'CompleteStatusCodeType' =>
             '\Controle\sub1\sub2\CompleteStatusCodeType',
-        'ConditionSelectionCodeType\,' =>
+        'ConditionSelectionCodeType' =>
             '\Controle\sub1\sub2\ConditionSelectionCodeType',
-        'ContextSearchAssetType\,' =>
+        'ContextSearchAssetType' =>
             '\Controle\sub1\sub2\ContextSearchAssetType',
-        'CountryCodeType\,' =>
+        'CountryCodeType' =>
             '\Controle\sub1\sub2\CountryCodeType',
-        'CountryDetailsType\,' =>
+        'CountryDetailsType' =>
             '\Controle\sub1\sub2\CountryDetailsType',
-        'CrossPromotionPreferencesType\,' =>
+        'CrossPromotionPreferencesType' =>
             '\Controle\sub1\sub2\CrossPromotionPreferencesType',
-        'CrossPromotionsType\,' =>
+        'CrossPromotionsType' =>
             '\Controle\sub1\sub2\CrossPromotionsType',
-        'CurrencyCodeType\,' =>
+        'CurrencyCodeType' =>
             '\Controle\sub1\sub2\CurrencyCodeType',
-        'CurrencyDetailsType\,' =>
+        'CurrencyDetailsType' =>
             '\Controle\sub1\sub2\CurrencyDetailsType',
-        'DataElementSetType\,' =>
+        'DataElementSetType' =>
             '\Controle\sub1\sub2\DataElementSetType',
-        'DateSpecifierCodeType\,' =>
+        'DateSpecifierCodeType' =>
             '\Controle\sub1\sub2\DateSpecifierCodeType',
-        'DepositTypeCodeType\,' =>
+        'DepositTypeCodeType' =>
             '\Controle\sub1\sub2\DepositTypeCodeType',
-        'DescriptionReviseModeCodeType\,' =>
+        'DescriptionReviseModeCodeType' =>
             '\Controle\sub1\sub2\DescriptionReviseModeCodeType',
-        'DescriptionTemplateCodeType\,' =>
+        'DescriptionTemplateCodeType' =>
             '\Controle\sub1\sub2\DescriptionTemplateCodeType',
-        'DescriptionTemplateType\,' =>
+        'DescriptionTemplateType' =>
             '\Controle\sub1\sub2\DescriptionTemplateType',
-        'DetailNameCodeType\,' =>
+        'DetailNameCodeType' =>
             '\Controle\sub1\sub2\DetailNameCodeType',
-        'DeviceTypeCodeType\,' =>
+        'DeviceTypeCodeType' =>
             '\Controle\sub1\sub2\DeviceTypeCodeType',
-        'DigitalDeliveryDetailsType\,' =>
+        'DigitalDeliveryDetailsType' =>
             '\Controle\sub1\sub2\DigitalDeliveryDetailsType',
-        'DigitalDeliveryEnabledCodeType\,' =>
+        'DigitalDeliveryEnabledCodeType' =>
             '\Controle\sub1\sub2\DigitalDeliveryEnabledCodeType',
-        'DigitalDeliveryEnabledDefinitionType\,' =>
+        'DigitalDeliveryEnabledDefinitionType' =>
             '\Controle\sub1\sub2\DigitalDeliveryEnabledDefinitionType',
-        'DigitalDeliveryMethodCodeType\,' =>
+        'DigitalDeliveryMethodCodeType' =>
             '\Controle\sub1\sub2\DigitalDeliveryMethodCodeType',
-        'DispatchTimeMaxDetailsType\,' =>
+        'DispatchTimeMaxDetailsType' =>
             '\Controle\sub1\sub2\DispatchTimeMaxDetailsType',
-        'DisplayPayNowButtonCodeType\,' =>
+        'DisplayPayNowButtonCodeType' =>
             '\Controle\sub1\sub2\DisplayPayNowButtonCodeType',
-        'DisputeArrayType\,' =>
+        'DisputeArrayType' =>
             '\Controle\sub1\sub2\DisputeArrayType',
-        'DisputeType\,' =>
+        'DisputeType' =>
             '\Controle\sub1\sub2\DisputeType',
-        'DistanceType\,' =>
+        'DistanceType' =>
             '\Controle\sub1\sub2\DistanceType',
-        'DomainHistogramType\,' =>
+        'DomainHistogramType' =>
             '\Controle\sub1\sub2\DomainHistogramType',
-        'EnableCodeType\,' =>
+        'EnableCodeType' =>
             '\Controle\sub1\sub2\EnableCodeType',
-        'EndOfAuctionEmailPreferencesType\,' =>
+        'EndOfAuctionEmailPreferencesType' =>
             '\Controle\sub1\sub2\EndOfAuctionEmailPreferencesType',
-        'EndOfAuctionLogoTypeCodeType\,' =>
+        'EndOfAuctionLogoTypeCodeType' =>
             '\Controle\sub1\sub2\EndOfAuctionLogoTypeCodeType',
-        'EndReasonCodeType\,' =>
+        'EndReasonCodeType' =>
             '\Controle\sub1\sub2\EndReasonCodeType',
-        'ExpansionArrayType\,' =>
+        'ExpansionArrayType' =>
             '\Controle\sub1\sub2\ExpansionArrayType',
-        'ExpressConditionRequiredDefinitionType\,' =>
+        'ExpressConditionRequiredDefinitionType' =>
             '\Controle\sub1\sub2\ExpressConditionRequiredDefinitionType',
-        'ExpressDetailLevelCodeType\,' =>
+        'ExpressDetailLevelCodeType' =>
             '\Controle\sub1\sub2\ExpressDetailLevelCodeType',
-        'ExpressDetailsType\,' =>
+        'ExpressDetailsType' =>
             '\Controle\sub1\sub2\ExpressDetailsType',
-        'ExpressEnabledDefinitionType\,' =>
+        'ExpressEnabledDefinitionType' =>
             '\Controle\sub1\sub2\ExpressEnabledDefinitionType',
-        'ExpressHistogramAisleType\,' =>
+        'ExpressHistogramAisleType' =>
             '\Controle\sub1\sub2\ExpressHistogramAisleType',
-        'ExpressHistogramDepartmentType\,' =>
+        'ExpressHistogramDepartmentType' =>
             '\Controle\sub1\sub2\ExpressHistogramDepartmentType',
-        'ExpressHistogramDomainDetailsType\,' =>
+        'ExpressHistogramDomainDetailsType' =>
             '\Controle\sub1\sub2\ExpressHistogramDomainDetailsType',
-        'ExpressHistogramProductType\,' =>
+        'ExpressHistogramProductType' =>
             '\Controle\sub1\sub2\ExpressHistogramProductType',
-        'ExpressHistogramSortCodeType\,' =>
+        'ExpressHistogramSortCodeType' =>
             '\Controle\sub1\sub2\ExpressHistogramSortCodeType',
-        'ExpressItemRequirementsType\,' =>
+        'ExpressItemRequirementsType' =>
             '\Controle\sub1\sub2\ExpressItemRequirementsType',
-        'ExpressItemSortCodeType\,' =>
+        'ExpressItemSortCodeType' =>
             '\Controle\sub1\sub2\ExpressItemSortCodeType',
-        'ExpressPicturesRequiredDefinitionType\,' =>
+        'ExpressPicturesRequiredDefinitionType' =>
             '\Controle\sub1\sub2\ExpressPicturesRequiredDefinitionType',
-        'ExpressPreferencesType\,' =>
+        'ExpressPreferencesType' =>
             '\Controle\sub1\sub2\ExpressPreferencesType',
-        'ExpressProductSortCodeType\,' =>
+        'ExpressProductSortCodeType' =>
             '\Controle\sub1\sub2\ExpressProductSortCodeType',
-        'ExpressProductType\,' =>
+        'ExpressProductType' =>
             '\Controle\sub1\sub2\ExpressProductType',
-        'ExpressSellerRequirementsType\,' =>
+        'ExpressSellerRequirementsType' =>
             '\Controle\sub1\sub2\ExpressSellerRequirementsType',
-        'ExpressSellingPreferenceCodeType\,' =>
+        'ExpressSellingPreferenceCodeType' =>
             '\Controle\sub1\sub2\ExpressSellingPreferenceCodeType',
-        'ExternalProductCodeType\,' =>
+        'ExternalProductCodeType' =>
             '\Controle\sub1\sub2\ExternalProductCodeType',
-        'ExternalTransactionType\,' =>
+        'ExternalTransactionType' =>
             '\Controle\sub1\sub2\ExternalTransactionType',
-        'FeatureDefinitionsType\,' =>
+        'FeatureDefinitionsType' =>
             '\Controle\sub1\sub2\FeatureDefinitionsType',
-        'FeeType\,' =>
+        'FeeType' =>
             '\Controle\sub1\sub2\FeeType',
-        'FeedbackDetailArrayType\,' =>
+        'FeedbackDetailArrayType' =>
             '\Controle\sub1\sub2\FeedbackDetailArrayType',
-        'FeedbackDetailType\,' =>
+        'FeedbackDetailType' =>
             '\Controle\sub1\sub2\FeedbackDetailType',
-        'FeedbackInfoType\,' =>
+        'FeedbackInfoType' =>
             '\Controle\sub1\sub2\FeedbackInfoType',
-        'FeedbackPeriodArrayType\,' =>
+        'FeedbackPeriodArrayType' =>
             '\Controle\sub1\sub2\FeedbackPeriodArrayType',
-        'FeedbackPeriodType\,' =>
+        'FeedbackPeriodType' =>
             '\Controle\sub1\sub2\FeedbackPeriodType',
-        'FeedbackRatingStarCodeType\,' =>
+        'FeedbackRatingStarCodeType' =>
             '\Controle\sub1\sub2\FeedbackRatingStarCodeType',
-        'FeedbackRequirementsType\,' =>
+        'FeedbackRequirementsType' =>
             '\Controle\sub1\sub2\FeedbackRequirementsType',
-        'FeedbackResponseCodeType\,' =>
+        'FeedbackResponseCodeType' =>
             '\Controle\sub1\sub2\FeedbackResponseCodeType',
-        'FeedbackSummaryType\,' =>
+        'FeedbackSummaryType' =>
             '\Controle\sub1\sub2\FeedbackSummaryType',
-        'FeesType\,' =>
+        'FeesType' =>
             '\Controle\sub1\sub2\FeesType',
-        'FinanceOfferArrayType\,' =>
+        'FinanceOfferArrayType' =>
             '\Controle\sub1\sub2\FinanceOfferArrayType',
-        'FinanceOfferType\,' =>
+        'FinanceOfferType' =>
             '\Controle\sub1\sub2\FinanceOfferType',
-        'FlatRateInsuranceRangeCodeType\,' =>
+        'FlatRateInsuranceRangeCodeType' =>
             '\Controle\sub1\sub2\FlatRateInsuranceRangeCodeType',
-        'FlatRateInsuranceRangeCostType\,' =>
+        'FlatRateInsuranceRangeCostType' =>
             '\Controle\sub1\sub2\FlatRateInsuranceRangeCostType',
-        'FlatShippingPreferencesType\,' =>
+        'FlatShippingPreferencesType' =>
             '\Controle\sub1\sub2\FlatShippingPreferencesType',
-        'FlatShippingRateOptionCodeType\,' =>
+        'FlatShippingRateOptionCodeType' =>
             '\Controle\sub1\sub2\FlatShippingRateOptionCodeType',
-        'GallerySortFilterCodeType\,' =>
+        'GallerySortFilterCodeType' =>
             '\Controle\sub1\sub2\GallerySortFilterCodeType',
-        'GalleryTypeCodeType\,' =>
+        'GalleryTypeCodeType' =>
             '\Controle\sub1\sub2\GalleryTypeCodeType',
-        'GetAllBiddersModeCodeType\,' =>
+        'GetAllBiddersModeCodeType' =>
             '\Controle\sub1\sub2\GetAllBiddersModeCodeType',
-        'GetRecommendationsRequestContainerType\,' =>
+        'GetRecommendationsRequestContainerType' =>
             '\Controle\sub1\sub2\GetRecommendationsRequestContainerType',
-        'GetRecommendationsResponseContainerType\,' =>
+        'GetRecommendationsResponseContainerType' =>
             '\Controle\sub1\sub2\GetRecommendationsResponseContainerType',
-        'GiftServicesCodeType\,' =>
+        'GiftServicesCodeType' =>
             '\Controle\sub1\sub2\GiftServicesCodeType',
-        'GranularityLevelCodeType\,' =>
+        'GranularityLevelCodeType' =>
             '\Controle\sub1\sub2\GranularityLevelCodeType',
-        'HitCounterCodeType\,' =>
+        'HitCounterCodeType' =>
             '\Controle\sub1\sub2\HitCounterCodeType',
-        'HomePageFeaturedEnabledDefinitionType\,' =>
+        'HomePageFeaturedEnabledDefinitionType' =>
             '\Controle\sub1\sub2\HomePageFeaturedEnabledDefinitionType',
-        'InsuranceDetailsType\,' =>
+        'InsuranceDetailsType' =>
             '\Controle\sub1\sub2\InsuranceDetailsType',
-        'InsuranceOptionCodeType\,' =>
+        'InsuranceOptionCodeType' =>
             '\Controle\sub1\sub2\InsuranceOptionCodeType',
-        'InsuranceSelectedCodeType\,' =>
+        'InsuranceSelectedCodeType' =>
             '\Controle\sub1\sub2\InsuranceSelectedCodeType',
-        'InternationalShippingServiceOptionsType\,' =>
+        'InternationalShippingServiceOptionsType' =>
             '\Controle\sub1\sub2\InternationalShippingServiceOptionsType',
-        'ItemArrayType\,' =>
+        'ItemArrayType' =>
             '\Controle\sub1\sub2\ItemArrayType',
-        'ItemBidDetailsType\,' =>
+        'ItemBidDetailsType' =>
             '\Controle\sub1\sub2\ItemBidDetailsType',
-        'ItemFormatSortFilterCodeType\,' =>
+        'ItemFormatSortFilterCodeType' =>
             '\Controle\sub1\sub2\ItemFormatSortFilterCodeType',
-        'ItemListCustomizationType\,' =>
+        'ItemListCustomizationType' =>
             '\Controle\sub1\sub2\ItemListCustomizationType',
-        'ItemLocationCodeType\,' =>
+        'ItemLocationCodeType' =>
             '\Controle\sub1\sub2\ItemLocationCodeType',
-        'ItemSortFilterCodeType\,' =>
+        'ItemSortFilterCodeType' =>
             '\Controle\sub1\sub2\ItemSortFilterCodeType',
-        'ItemSortTypeCodeType\,' =>
+        'ItemSortTypeCodeType' =>
             '\Controle\sub1\sub2\ItemSortTypeCodeType',
-        'ItemType\,' =>
+        'ItemType' =>
             '\Controle\sub1\sub2\ItemType',
-        'ItemTypeFilterCodeType\,' =>
+        'ItemTypeFilterCodeType' =>
             '\Controle\sub1\sub2\ItemTypeFilterCodeType',
-        'LabelType\,' =>
+        'LabelType' =>
             '\Controle\sub1\sub2\LabelType',
-        'ListingAnalyzerRecommendationsType\,' =>
+        'ListingAnalyzerRecommendationsType' =>
             '\Controle\sub1\sub2\ListingAnalyzerRecommendationsType',
-        'ListingCheckoutRedirectPreferenceType\,' =>
+        'ListingCheckoutRedirectPreferenceType' =>
             '\Controle\sub1\sub2\ListingCheckoutRedirectPreferenceType',
-        'ListingDesignerType\,' =>
+        'ListingDesignerType' =>
             '\Controle\sub1\sub2\ListingDesignerType',
-        'ListingDetailsType\,' =>
+        'ListingDetailsType' =>
             '\Controle\sub1\sub2\ListingDetailsType',
-        'ListingDurationDefinitionType\,' =>
+        'ListingDurationDefinitionType' =>
             '\Controle\sub1\sub2\ListingDurationDefinitionType',
-        'ListingDurationDefinitionsType\,' =>
+        'ListingDurationDefinitionsType' =>
             '\Controle\sub1\sub2\ListingDurationDefinitionsType',
-        'ListingDurationReferenceType\,' =>
+        'ListingDurationReferenceType' =>
             '\Controle\sub1\sub2\ListingDurationReferenceType',
-        'ListingEnhancementsCodeType\,' =>
+        'ListingEnhancementsCodeType' =>
             '\Controle\sub1\sub2\ListingEnhancementsCodeType',
-        'ListingFlowCodeType\,' =>
+        'ListingFlowCodeType' =>
             '\Controle\sub1\sub2\ListingFlowCodeType',
-        'ListingStatusCodeType\,' =>
+        'ListingStatusCodeType' =>
             '\Controle\sub1\sub2\ListingStatusCodeType',
-        'ListingSubtypeEnum\,' =>
+        'ListingSubtypeEnum' =>
             '\Controle\sub1\sub2\ListingSubtypeEnum',
-        'ListingTipArrayType\,' =>
+        'ListingTipArrayType' =>
             '\Controle\sub1\sub2\ListingTipArrayType',
-        'ListingTipFieldType\,' =>
+        'ListingTipFieldType' =>
             '\Controle\sub1\sub2\ListingTipFieldType',
-        'ListingTipMessageType\,' =>
+        'ListingTipMessageType' =>
             '\Controle\sub1\sub2\ListingTipMessageType',
-        'ListingTipType\,' =>
+        'ListingTipType' =>
             '\Controle\sub1\sub2\ListingTipType',
-        'ListingTypeCodeType\,' =>
+        'ListingTypeCodeType' =>
             '\Controle\sub1\sub2\ListingTypeCodeType',
-        'LiveAuctionApprovalStatusArrayType\,' =>
+        'LiveAuctionApprovalStatusArrayType' =>
             '\Controle\sub1\sub2\LiveAuctionApprovalStatusArrayType',
-        'LiveAuctionApprovalStatusType\,' =>
+        'LiveAuctionApprovalStatusType' =>
             '\Controle\sub1\sub2\LiveAuctionApprovalStatusType',
-        'LiveAuctionBidType\,' =>
+        'LiveAuctionBidType' =>
             '\Controle\sub1\sub2\LiveAuctionBidType',
-        'LiveAuctionCatalogType\,' =>
+        'LiveAuctionCatalogType' =>
             '\Controle\sub1\sub2\LiveAuctionCatalogType',
-        'LiveAuctionDetailsType\,' =>
+        'LiveAuctionDetailsType' =>
             '\Controle\sub1\sub2\LiveAuctionDetailsType',
-        'LocalListingDistancesNonSubscriptionDefinitionType\,' =>
+        'LocalListingDistancesNonSubscriptionDefinitionType' =>
             '\Controle\sub1\sub2\LocalListingDistancesNonSubscriptionDefinitionType',
-        'LocalListingDistancesRegularDefinitionType\,' =>
+        'LocalListingDistancesRegularDefinitionType' =>
             '\Controle\sub1\sub2\LocalListingDistancesRegularDefinitionType',
-        'LocalListingDistancesSpecialtyDefinitionType\,' =>
+        'LocalListingDistancesSpecialtyDefinitionType' =>
             '\Controle\sub1\sub2\LocalListingDistancesSpecialtyDefinitionType',
-        'LocalMarketNonSubscriptionDefinitionType\,' =>
+        'LocalMarketNonSubscriptionDefinitionType' =>
             '\Controle\sub1\sub2\LocalMarketNonSubscriptionDefinitionType',
-        'LocalMarketPremiumSubscriptionDefinitionType\,' =>
+        'LocalMarketPremiumSubscriptionDefinitionType' =>
             '\Controle\sub1\sub2\LocalMarketPremiumSubscriptionDefinitionType',
-        'LocalMarketRegularSubscriptionDefinitionType\,' =>
+        'LocalMarketRegularSubscriptionDefinitionType' =>
             '\Controle\sub1\sub2\LocalMarketRegularSubscriptionDefinitionType',
-        'LocalMarketSpecialitySubscriptionDefinitionType\,' =>
+        'LocalMarketSpecialitySubscriptionDefinitionType' =>
             '\Controle\sub1\sub2\LocalMarketSpecialitySubscriptionDefinitionType',
-        'LookupAttributeArrayType\,' =>
+        'LookupAttributeArrayType' =>
             '\Controle\sub1\sub2\LookupAttributeArrayType',
-        'LookupAttributeType\,' =>
+        'LookupAttributeType' =>
             '\Controle\sub1\sub2\LookupAttributeType',
-        'MarkUpMarkDownEventType\,' =>
+        'MarkUpMarkDownEventType' =>
             '\Controle\sub1\sub2\MarkUpMarkDownEventType',
-        'MarkUpMarkDownEventTypeCodeType\,' =>
+        'MarkUpMarkDownEventTypeCodeType' =>
             '\Controle\sub1\sub2\MarkUpMarkDownEventTypeCodeType',
-        'MarkUpMarkDownHistoryType\,' =>
+        'MarkUpMarkDownHistoryType' =>
             '\Controle\sub1\sub2\MarkUpMarkDownHistoryType',
-        'MaximumItemRequirementsType\,' =>
+        'MaximumItemRequirementsType' =>
             '\Controle\sub1\sub2\MaximumItemRequirementsType',
-        'MemberMessageExchangeArrayType\,' =>
+        'MemberMessageExchangeArrayType' =>
             '\Controle\sub1\sub2\MemberMessageExchangeArrayType',
-        'MemberMessageExchangeType\,' =>
+        'MemberMessageExchangeType' =>
             '\Controle\sub1\sub2\MemberMessageExchangeType',
-        'MemberMessageType\,' =>
+        'MemberMessageType' =>
             '\Controle\sub1\sub2\MemberMessageType',
-        'MerchDisplayCodeType\,' =>
+        'MerchDisplayCodeType' =>
             '\Controle\sub1\sub2\MerchDisplayCodeType',
-        'MerchandizingPrefCodeType\,' =>
+        'MerchandizingPrefCodeType' =>
             '\Controle\sub1\sub2\MerchandizingPrefCodeType',
-        'MessageStatusTypeCodeType\,' =>
+        'MessageStatusTypeCodeType' =>
             '\Controle\sub1\sub2\MessageStatusTypeCodeType',
-        'MessageTypeCodeType\,' =>
+        'MessageTypeCodeType' =>
             '\Controle\sub1\sub2\MessageTypeCodeType',
-        'MinimumReservePriceDefinitionType\,' =>
+        'MinimumReservePriceDefinitionType' =>
             '\Controle\sub1\sub2\MinimumReservePriceDefinitionType',
-        'ModifiedFieldType\,' =>
+        'ModifiedFieldType' =>
             '\Controle\sub1\sub2\ModifiedFieldType',
-        'ModifyActionCodeType\,' =>
+        'ModifyActionCodeType' =>
             '\Controle\sub1\sub2\ModifyActionCodeType',
-        'ModifyCodeType\,' =>
+        'ModifyCodeType' =>
             '\Controle\sub1\sub2\ModifyCodeType',
-        'MyMessagesAlertArrayType\,' =>
+        'MyMessagesAlertArrayType' =>
             '\Controle\sub1\sub2\MyMessagesAlertArrayType',
-        'MyMessagesAlertResolutionStatusCode\,' =>
+        'MyMessagesAlertResolutionStatusCode' =>
             '\Controle\sub1\sub2\MyMessagesAlertResolutionStatusCode',
-        'MyMessagesAlertType\,' =>
+        'MyMessagesAlertType' =>
             '\Controle\sub1\sub2\MyMessagesAlertType',
-        'MyMessagesFolderOperationCodeType\,' =>
+        'MyMessagesFolderOperationCodeType' =>
             '\Controle\sub1\sub2\MyMessagesFolderOperationCodeType',
-        'MyMessagesFolderSummaryType\,' =>
+        'MyMessagesFolderSummaryType' =>
             '\Controle\sub1\sub2\MyMessagesFolderSummaryType',
-        'MyMessagesFolderType\,' =>
+        'MyMessagesFolderType' =>
             '\Controle\sub1\sub2\MyMessagesFolderType',
-        'MyMessagesForwardDetailsType\,' =>
+        'MyMessagesForwardDetailsType' =>
             '\Controle\sub1\sub2\MyMessagesForwardDetailsType',
-        'MyMessagesMessageArrayType\,' =>
+        'MyMessagesMessageArrayType' =>
             '\Controle\sub1\sub2\MyMessagesMessageArrayType',
-        'MyMessagesMessageType\,' =>
+        'MyMessagesMessageType' =>
             '\Controle\sub1\sub2\MyMessagesMessageType',
-        'MyMessagesResponseDetailsType\,' =>
+        'MyMessagesResponseDetailsType' =>
             '\Controle\sub1\sub2\MyMessagesResponseDetailsType',
-        'MyMessagesSummaryType\,' =>
+        'MyMessagesSummaryType' =>
             '\Controle\sub1\sub2\MyMessagesSummaryType',
-        'MyeBayFavoriteSearchListType\,' =>
+        'MyeBayFavoriteSearchListType' =>
             '\Controle\sub1\sub2\MyeBayFavoriteSearchListType',
-        'MyeBayFavoriteSearchType\,' =>
+        'MyeBayFavoriteSearchType' =>
             '\Controle\sub1\sub2\MyeBayFavoriteSearchType',
-        'MyeBayFavoriteSellerListType\,' =>
+        'MyeBayFavoriteSellerListType' =>
             '\Controle\sub1\sub2\MyeBayFavoriteSellerListType',
-        'MyeBayFavoriteSellerType\,' =>
+        'MyeBayFavoriteSellerType' =>
             '\Controle\sub1\sub2\MyeBayFavoriteSellerType',
-        'MyeBaySecondChanceOfferListType\,' =>
+        'MyeBaySecondChanceOfferListType' =>
             '\Controle\sub1\sub2\MyeBaySecondChanceOfferListType',
-        'MyeBaySelectionType\,' =>
+        'MyeBaySelectionType' =>
             '\Controle\sub1\sub2\MyeBaySelectionType',
-        'NameValueListArrayType\,' =>
+        'NameValueListArrayType' =>
             '\Controle\sub1\sub2\NameValueListArrayType',
-        'NameValueListType\,' =>
+        'NameValueListType' =>
             '\Controle\sub1\sub2\NameValueListType',
-        'NotificationDetailsArrayType\,' =>
+        'NotificationDetailsArrayType' =>
             '\Controle\sub1\sub2\NotificationDetailsArrayType',
-        'NotificationDetailsType\,' =>
+        'NotificationDetailsType' =>
             '\Controle\sub1\sub2\NotificationDetailsType',
-        'NotificationEnableArrayType\,' =>
+        'NotificationEnableArrayType' =>
             '\Controle\sub1\sub2\NotificationEnableArrayType',
-        'NotificationEnableType\,' =>
+        'NotificationEnableType' =>
             '\Controle\sub1\sub2\NotificationEnableType',
-        'NotificationEventPropertyNameCodeType\,' =>
+        'NotificationEventPropertyNameCodeType' =>
             '\Controle\sub1\sub2\NotificationEventPropertyNameCodeType',
-        'NotificationEventPropertyType\,' =>
+        'NotificationEventPropertyType' =>
             '\Controle\sub1\sub2\NotificationEventPropertyType',
-        'NotificationEventStateCodeType\,' =>
+        'NotificationEventStateCodeType' =>
             '\Controle\sub1\sub2\NotificationEventStateCodeType',
-        'NotificationEventTypeCodeType\,' =>
+        'NotificationEventTypeCodeType' =>
             '\Controle\sub1\sub2\NotificationEventTypeCodeType',
-        'NotificationPayloadTypeCodeType\,' =>
+        'NotificationPayloadTypeCodeType' =>
             '\Controle\sub1\sub2\NotificationPayloadTypeCodeType',
-        'NotificationRoleCodeType\,' =>
+        'NotificationRoleCodeType' =>
             '\Controle\sub1\sub2\NotificationRoleCodeType',
-        'NotificationStatisticsType\,' =>
+        'NotificationStatisticsType' =>
             '\Controle\sub1\sub2\NotificationStatisticsType',
-        'NotificationUserDataType\,' =>
+        'NotificationUserDataType' =>
             '\Controle\sub1\sub2\NotificationUserDataType',
-        'OfferArrayType\,' =>
+        'OfferArrayType' =>
             '\Controle\sub1\sub2\OfferArrayType',
-        'OfferType\,' =>
+        'OfferType' =>
             '\Controle\sub1\sub2\OfferType',
-        'OperationTypeCodeType\,' =>
+        'OperationTypeCodeType' =>
             '\Controle\sub1\sub2\OperationTypeCodeType',
-        'OrderArrayType\,' =>
+        'OrderArrayType' =>
             '\Controle\sub1\sub2\OrderArrayType',
-        'OrderStatusCodeType\,' =>
+        'OrderStatusCodeType' =>
             '\Controle\sub1\sub2\OrderStatusCodeType',
-        'OrderTransactionArrayType\,' =>
+        'OrderTransactionArrayType' =>
             '\Controle\sub1\sub2\OrderTransactionArrayType',
-        'OrderTransactionType\,' =>
+        'OrderTransactionType' =>
             '\Controle\sub1\sub2\OrderTransactionType',
-        'OrderType\,' =>
+        'OrderType' =>
             '\Controle\sub1\sub2\OrderType',
-        'PaginatedItemArrayType\,' =>
+        'PaginatedItemArrayType' =>
             '\Controle\sub1\sub2\PaginatedItemArrayType',
-        'PaginatedOrderTransactionArrayType\,' =>
+        'PaginatedOrderTransactionArrayType' =>
             '\Controle\sub1\sub2\PaginatedOrderTransactionArrayType',
-        'PaginatedTransactionArrayType\,' =>
+        'PaginatedTransactionArrayType' =>
             '\Controle\sub1\sub2\PaginatedTransactionArrayType',
-        'PaginationResultType\,' =>
+        'PaginationResultType' =>
             '\Controle\sub1\sub2\PaginationResultType',
-        'PaidStatusCodeType\,' =>
+        'PaidStatusCodeType' =>
             '\Controle\sub1\sub2\PaidStatusCodeType',
-        'PayPalAccountLevelCodeType\,' =>
+        'PayPalAccountLevelCodeType' =>
             '\Controle\sub1\sub2\PayPalAccountLevelCodeType',
-        'PayPalAccountStatusCodeType\,' =>
+        'PayPalAccountStatusCodeType' =>
             '\Controle\sub1\sub2\PayPalAccountStatusCodeType',
-        'PayPalAccountTypeCodeType\,' =>
+        'PayPalAccountTypeCodeType' =>
             '\Controle\sub1\sub2\PayPalAccountTypeCodeType',
-        'PaymentDetailsType\,' =>
+        'PaymentDetailsType' =>
             '\Controle\sub1\sub2\PaymentDetailsType',
-        'PaymentMethodSearchCodeType\,' =>
+        'PaymentMethodSearchCodeType' =>
             '\Controle\sub1\sub2\PaymentMethodSearchCodeType',
-        'PaymentOptionDetailsType\,' =>
+        'PaymentOptionDetailsType' =>
             '\Controle\sub1\sub2\PaymentOptionDetailsType',
-        'PaymentStatusCodeType\,' =>
+        'PaymentStatusCodeType' =>
             '\Controle\sub1\sub2\PaymentStatusCodeType',
-        'PaymentTypeCodeType\,' =>
+        'PaymentTypeCodeType' =>
             '\Controle\sub1\sub2\PaymentTypeCodeType',
-        'PhotoDisplayCodeType\,' =>
+        'PhotoDisplayCodeType' =>
             '\Controle\sub1\sub2\PhotoDisplayCodeType',
-        'PictureDetailsType\,' =>
+        'PictureDetailsType' =>
             '\Controle\sub1\sub2\PictureDetailsType',
-        'PictureManagerActionCodeType\,' =>
+        'PictureManagerActionCodeType' =>
             '\Controle\sub1\sub2\PictureManagerActionCodeType',
-        'PictureManagerDetailLevelCodeType\,' =>
+        'PictureManagerDetailLevelCodeType' =>
             '\Controle\sub1\sub2\PictureManagerDetailLevelCodeType',
-        'PictureManagerDetailsType\,' =>
+        'PictureManagerDetailsType' =>
             '\Controle\sub1\sub2\PictureManagerDetailsType',
-        'PictureManagerFolderType\,' =>
+        'PictureManagerFolderType' =>
             '\Controle\sub1\sub2\PictureManagerFolderType',
-        'PictureManagerPictureDisplayType\,' =>
+        'PictureManagerPictureDisplayType' =>
             '\Controle\sub1\sub2\PictureManagerPictureDisplayType',
-        'PictureManagerPictureDisplayTypeCodeType\,' =>
+        'PictureManagerPictureDisplayTypeCodeType' =>
             '\Controle\sub1\sub2\PictureManagerPictureDisplayTypeCodeType',
-        'PictureManagerPictureType\,' =>
+        'PictureManagerPictureType' =>
             '\Controle\sub1\sub2\PictureManagerPictureType',
-        'PictureManagerSubscriptionLevelCodeType\,' =>
+        'PictureManagerSubscriptionLevelCodeType' =>
             '\Controle\sub1\sub2\PictureManagerSubscriptionLevelCodeType',
-        'PictureManagerSubscriptionType\,' =>
+        'PictureManagerSubscriptionType' =>
             '\Controle\sub1\sub2\PictureManagerSubscriptionType',
-        'PictureSourceCodeType\,' =>
+        'PictureSourceCodeType' =>
             '\Controle\sub1\sub2\PictureSourceCodeType',
-        'PriceRangeFilterType\,' =>
+        'PriceRangeFilterType' =>
             '\Controle\sub1\sub2\PriceRangeFilterType',
-        'PricingRecommendationsType\,' =>
+        'PricingRecommendationsType' =>
             '\Controle\sub1\sub2\PricingRecommendationsType',
-        'ProPackEnabledDefinitionType\,' =>
+        'ProPackEnabledDefinitionType' =>
             '\Controle\sub1\sub2\ProPackEnabledDefinitionType',
-        'ProPackPlusEnabledDefinitionType\,' =>
+        'ProPackPlusEnabledDefinitionType' =>
             '\Controle\sub1\sub2\ProPackPlusEnabledDefinitionType',
-        'ProStoresCheckoutPreferenceType\,' =>
+        'ProStoresCheckoutPreferenceType' =>
             '\Controle\sub1\sub2\ProStoresCheckoutPreferenceType',
-        'ProStoresDetailsType\,' =>
+        'ProStoresDetailsType' =>
             '\Controle\sub1\sub2\ProStoresDetailsType',
-        'ProductArrayType\,' =>
+        'ProductArrayType' =>
             '\Controle\sub1\sub2\ProductArrayType',
-        'ProductFamilyType\,' =>
+        'ProductFamilyType' =>
             '\Controle\sub1\sub2\ProductFamilyType',
-        'ProductFinderConstraintType\,' =>
+        'ProductFinderConstraintType' =>
             '\Controle\sub1\sub2\ProductFinderConstraintType',
-        'ProductInfoType\,' =>
+        'ProductInfoType' =>
             '\Controle\sub1\sub2\ProductInfoType',
-        'ProductListingDetailsType\,' =>
+        'ProductListingDetailsType' =>
             '\Controle\sub1\sub2\ProductListingDetailsType',
-        'ProductRecommendationsType\,' =>
+        'ProductRecommendationsType' =>
             '\Controle\sub1\sub2\ProductRecommendationsType',
-        'ProductSearchPageType\,' =>
+        'ProductSearchPageType' =>
             '\Controle\sub1\sub2\ProductSearchPageType',
-        'ProductSearchResultType\,' =>
+        'ProductSearchResultType' =>
             '\Controle\sub1\sub2\ProductSearchResultType',
-        'ProductSearchType\,' =>
+        'ProductSearchType' =>
             '\Controle\sub1\sub2\ProductSearchType',
-        'ProductType\,' =>
+        'ProductType' =>
             '\Controle\sub1\sub2\ProductType',
-        'ProductUseCaseCodeType\,' =>
+        'ProductUseCaseCodeType' =>
             '\Controle\sub1\sub2\ProductUseCaseCodeType',
-        'PromotedItemType\,' =>
+        'PromotedItemType' =>
             '\Controle\sub1\sub2\PromotedItemType',
-        'PromotionDetailsType\,' =>
+        'PromotionDetailsType' =>
             '\Controle\sub1\sub2\PromotionDetailsType',
-        'PromotionItemPriceTypeCodeType\,' =>
+        'PromotionItemPriceTypeCodeType' =>
             '\Controle\sub1\sub2\PromotionItemPriceTypeCodeType',
-        'PromotionItemSelectionCodeType\,' =>
+        'PromotionItemSelectionCodeType' =>
             '\Controle\sub1\sub2\PromotionItemSelectionCodeType',
-        'PromotionMethodCodeType\,' =>
+        'PromotionMethodCodeType' =>
             '\Controle\sub1\sub2\PromotionMethodCodeType',
-        'PromotionRuleArrayType\,' =>
+        'PromotionRuleArrayType' =>
             '\Controle\sub1\sub2\PromotionRuleArrayType',
-        'PromotionRuleType\,' =>
+        'PromotionRuleType' =>
             '\Controle\sub1\sub2\PromotionRuleType',
-        'PromotionSchemeCodeType\,' =>
+        'PromotionSchemeCodeType' =>
             '\Controle\sub1\sub2\PromotionSchemeCodeType',
-        'ProximitySearchDetailsType\,' =>
+        'ProximitySearchDetailsType' =>
             '\Controle\sub1\sub2\ProximitySearchDetailsType',
-        'ProximitySearchType\,' =>
+        'ProximitySearchType' =>
             '\Controle\sub1\sub2\ProximitySearchType',
-        'QuantityOperatorCodeType\,' =>
+        'QuantityOperatorCodeType' =>
             '\Controle\sub1\sub2\QuantityOperatorCodeType',
-        'QuestionTypeCodeType\,' =>
+        'QuestionTypeCodeType' =>
             '\Controle\sub1\sub2\QuestionTypeCodeType',
-        'RangeCodeType\,' =>
+        'RangeCodeType' =>
             '\Controle\sub1\sub2\RangeCodeType',
-        'ReasonCodeDetailType\,' =>
+        'ReasonCodeDetailType' =>
             '\Controle\sub1\sub2\ReasonCodeDetailType',
-        'RecipientRelationCodeType\,' =>
+        'RecipientRelationCodeType' =>
             '\Controle\sub1\sub2\RecipientRelationCodeType',
-        'RecommendationEngineCodeType\,' =>
+        'RecommendationEngineCodeType' =>
             '\Controle\sub1\sub2\RecommendationEngineCodeType',
-        'RefundArrayType\,' =>
+        'RefundArrayType' =>
             '\Controle\sub1\sub2\RefundArrayType',
-        'RefundReasonCodeType\,' =>
+        'RefundReasonCodeType' =>
             '\Controle\sub1\sub2\RefundReasonCodeType',
-        'RefundType\,' =>
+        'RefundType' =>
             '\Controle\sub1\sub2\RefundType',
-        'RefundTypeCodeType\,' =>
+        'RefundTypeCodeType' =>
             '\Controle\sub1\sub2\RefundTypeCodeType',
-        'RegionDetailsType\,' =>
+        'RegionDetailsType' =>
             '\Controle\sub1\sub2\RegionDetailsType',
-        'RelatedSearchKeywordArrayType\,' =>
+        'RelatedSearchKeywordArrayType' =>
             '\Controle\sub1\sub2\RelatedSearchKeywordArrayType',
-        'ReminderCustomizationType\,' =>
+        'ReminderCustomizationType' =>
             '\Controle\sub1\sub2\ReminderCustomizationType',
-        'RemindersType\,' =>
+        'RemindersType' =>
             '\Controle\sub1\sub2\RemindersType',
-        'RequestCategoriesType\,' =>
+        'RequestCategoriesType' =>
             '\Controle\sub1\sub2\RequestCategoriesType',
-        'ResponseAttributeSetType\,' =>
+        'ResponseAttributeSetType' =>
             '\Controle\sub1\sub2\ResponseAttributeSetType',
-        'ReviseStatusType\,' =>
+        'ReviseStatusType' =>
             '\Controle\sub1\sub2\ReviseStatusType',
-        'SalesTaxType\,' =>
+        'SalesTaxType' =>
             '\Controle\sub1\sub2\SalesTaxType',
-        'ScheduleType\,' =>
+        'ScheduleType' =>
             '\Controle\sub1\sub2\ScheduleType',
-        'SchedulingInfoType\,' =>
+        'SchedulingInfoType' =>
             '\Controle\sub1\sub2\SchedulingInfoType',
-        'SearchAttributesType\,' =>
+        'SearchAttributesType' =>
             '\Controle\sub1\sub2\SearchAttributesType',
-        'SearchDetailsType\,' =>
+        'SearchDetailsType' =>
             '\Controle\sub1\sub2\SearchDetailsType',
-        'SearchFlagsCodeType\,' =>
+        'SearchFlagsCodeType' =>
             '\Controle\sub1\sub2\SearchFlagsCodeType',
-        'SearchLocationFilterType\,' =>
+        'SearchLocationFilterType' =>
             '\Controle\sub1\sub2\SearchLocationFilterType',
-        'SearchLocationType\,' =>
+        'SearchLocationType' =>
             '\Controle\sub1\sub2\SearchLocationType',
-        'SearchRequestType\,' =>
+        'SearchRequestType' =>
             '\Controle\sub1\sub2\SearchRequestType',
-        'SearchResultItemArrayType\,' =>
+        'SearchResultItemArrayType' =>
             '\Controle\sub1\sub2\SearchResultItemArrayType',
-        'SearchResultItemType\,' =>
+        'SearchResultItemType' =>
             '\Controle\sub1\sub2\SearchResultItemType',
-        'SearchResultValuesCodeType\,' =>
+        'SearchResultValuesCodeType' =>
             '\Controle\sub1\sub2\SearchResultValuesCodeType',
-        'SearchSortOrderCodeType\,' =>
+        'SearchSortOrderCodeType' =>
             '\Controle\sub1\sub2\SearchSortOrderCodeType',
-        'SearchStoreFilterType\,' =>
+        'SearchStoreFilterType' =>
             '\Controle\sub1\sub2\SearchStoreFilterType',
-        'SearchTypeCodeType\,' =>
+        'SearchTypeCodeType' =>
             '\Controle\sub1\sub2\SearchTypeCodeType',
-        'SecondChanceOfferDurationCodeType\,' =>
+        'SecondChanceOfferDurationCodeType' =>
             '\Controle\sub1\sub2\SecondChanceOfferDurationCodeType',
-        'SellerBusinessCodeType\,' =>
+        'SellerBusinessCodeType' =>
             '\Controle\sub1\sub2\SellerBusinessCodeType',
-        'SellerContactDetailsEnabledDefinitionType\,' =>
+        'SellerContactDetailsEnabledDefinitionType' =>
             '\Controle\sub1\sub2\SellerContactDetailsEnabledDefinitionType',
-        'SellerFavoriteItemPreferencesType\,' =>
+        'SellerFavoriteItemPreferencesType' =>
             '\Controle\sub1\sub2\SellerFavoriteItemPreferencesType',
-        'SellerGuaranteeLevelCodeType\,' =>
+        'SellerGuaranteeLevelCodeType' =>
             '\Controle\sub1\sub2\SellerGuaranteeLevelCodeType',
-        'SellerLevelCodeType\,' =>
+        'SellerLevelCodeType' =>
             '\Controle\sub1\sub2\SellerLevelCodeType',
-        'SellerPaymentMethodCodeType\,' =>
+        'SellerPaymentMethodCodeType' =>
             '\Controle\sub1\sub2\SellerPaymentMethodCodeType',
-        'SellerPaymentPreferencesType\,' =>
+        'SellerPaymentPreferencesType' =>
             '\Controle\sub1\sub2\SellerPaymentPreferencesType',
-        'SellerPaymentType\,' =>
+        'SellerPaymentType' =>
             '\Controle\sub1\sub2\SellerPaymentType',
-        'SellerType\,' =>
+        'SellerType' =>
             '\Controle\sub1\sub2\SellerType',
-        'SellingManagerProductDetailsType\,' =>
+        'SellingManagerProductDetailsType' =>
             '\Controle\sub1\sub2\SellingManagerProductDetailsType',
-        'SellingStatusType\,' =>
+        'SellingStatusType' =>
             '\Controle\sub1\sub2\SellingStatusType',
-        'SellingSummaryType\,' =>
+        'SellingSummaryType' =>
             '\Controle\sub1\sub2\SellingSummaryType',
-        'SetUserNotesActionCodeType\,' =>
+        'SetUserNotesActionCodeType' =>
             '\Controle\sub1\sub2\SetUserNotesActionCodeType',
-        'ShipmentDeliveryStatusCodeType\,' =>
+        'ShipmentDeliveryStatusCodeType' =>
             '\Controle\sub1\sub2\ShipmentDeliveryStatusCodeType',
-        'ShipmentStatusCodeType\,' =>
+        'ShipmentStatusCodeType' =>
             '\Controle\sub1\sub2\ShipmentStatusCodeType',
-        'ShippingCarrierCodeType\,' =>
+        'ShippingCarrierCodeType' =>
             '\Controle\sub1\sub2\ShippingCarrierCodeType',
-        'ShippingDetailsType\,' =>
+        'ShippingDetailsType' =>
             '\Controle\sub1\sub2\ShippingDetailsType',
-        'ShippingFeatureCodeType\,' =>
+        'ShippingFeatureCodeType' =>
             '\Controle\sub1\sub2\ShippingFeatureCodeType',
-        'ShippingLocationDetailsType\,' =>
+        'ShippingLocationDetailsType' =>
             '\Controle\sub1\sub2\ShippingLocationDetailsType',
-        'ShippingOptionCodeType\,' =>
+        'ShippingOptionCodeType' =>
             '\Controle\sub1\sub2\ShippingOptionCodeType',
-        'ShippingPackageCodeType\,' =>
+        'ShippingPackageCodeType' =>
             '\Controle\sub1\sub2\ShippingPackageCodeType',
-        'ShippingRateTypeCodeType\,' =>
+        'ShippingRateTypeCodeType' =>
             '\Controle\sub1\sub2\ShippingRateTypeCodeType',
-        'ShippingRegionCodeType\,' =>
+        'ShippingRegionCodeType' =>
             '\Controle\sub1\sub2\ShippingRegionCodeType',
-        'ShippingServiceCodeType\,' =>
+        'ShippingServiceCodeType' =>
             '\Controle\sub1\sub2\ShippingServiceCodeType',
-        'ShippingServiceDetailsType\,' =>
+        'ShippingServiceDetailsType' =>
             '\Controle\sub1\sub2\ShippingServiceDetailsType',
-        'ShippingServiceOptionsType\,' =>
+        'ShippingServiceOptionsType' =>
             '\Controle\sub1\sub2\ShippingServiceOptionsType',
-        'ShippingTermRequiredDefinitionType\,' =>
+        'ShippingTermRequiredDefinitionType' =>
             '\Controle\sub1\sub2\ShippingTermRequiredDefinitionType',
-        'ShippingTermsCodeType\,' =>
+        'ShippingTermsCodeType' =>
             '\Controle\sub1\sub2\ShippingTermsCodeType',
-        'ShippingTypeCodeType\,' =>
+        'ShippingTypeCodeType' =>
             '\Controle\sub1\sub2\ShippingTypeCodeType',
-        'SiteCodeType\,' =>
+        'SiteCodeType' =>
             '\Controle\sub1\sub2\SiteCodeType',
-        'SiteDefaultsType\,' =>
+        'SiteDefaultsType' =>
             '\Controle\sub1\sub2\SiteDefaultsType',
-        'SiteDetailsType\,' =>
+        'SiteDetailsType' =>
             '\Controle\sub1\sub2\SiteDetailsType',
-        'SiteHostedPictureType\,' =>
+        'SiteHostedPictureType' =>
             '\Controle\sub1\sub2\SiteHostedPictureType',
-        'SiteLocationType\,' =>
+        'SiteLocationType' =>
             '\Controle\sub1\sub2\SiteLocationType',
-        'SiteWideCharacteristicsType\,' =>
+        'SiteWideCharacteristicsType' =>
             '\Controle\sub1\sub2\SiteWideCharacteristicsType',
-        'SkypeContactOptionCodeType\,' =>
+        'SkypeContactOptionCodeType' =>
             '\Controle\sub1\sub2\SkypeContactOptionCodeType',
-        'SkypeMeNonTransactionalEnabledDefinitionType\,' =>
+        'SkypeMeNonTransactionalEnabledDefinitionType' =>
             '\Controle\sub1\sub2\SkypeMeNonTransactionalEnabledDefinitionType',
-        'SkypeMeTransactionalEnabledDefinitionType\,' =>
+        'SkypeMeTransactionalEnabledDefinitionType' =>
             '\Controle\sub1\sub2\SkypeMeTransactionalEnabledDefinitionType',
-        'SkypeOptionCodeType\,' =>
+        'SkypeOptionCodeType' =>
             '\Controle\sub1\sub2\SkypeOptionCodeType',
-        'SortOrderCodeType\,' =>
+        'SortOrderCodeType' =>
             '\Controle\sub1\sub2\SortOrderCodeType',
-        'SpellingSuggestionType\,' =>
+        'SpellingSuggestionType' =>
             '\Controle\sub1\sub2\SpellingSuggestionType',
-        'StoreCategoryUpdateActionCodeType\,' =>
+        'StoreCategoryUpdateActionCodeType' =>
             '\Controle\sub1\sub2\StoreCategoryUpdateActionCodeType',
-        'StoreColorSchemeArrayType\,' =>
+        'StoreColorSchemeArrayType' =>
             '\Controle\sub1\sub2\StoreColorSchemeArrayType',
-        'StoreColorSchemeType\,' =>
+        'StoreColorSchemeType' =>
             '\Controle\sub1\sub2\StoreColorSchemeType',
-        'StoreColorType\,' =>
+        'StoreColorType' =>
             '\Controle\sub1\sub2\StoreColorType',
-        'StoreCustomCategoryArrayType\,' =>
+        'StoreCustomCategoryArrayType' =>
             '\Controle\sub1\sub2\StoreCustomCategoryArrayType',
-        'StoreCustomCategoryType\,' =>
+        'StoreCustomCategoryType' =>
             '\Controle\sub1\sub2\StoreCustomCategoryType',
-        'StoreCustomHeaderLayoutCodeType\,' =>
+        'StoreCustomHeaderLayoutCodeType' =>
             '\Controle\sub1\sub2\StoreCustomHeaderLayoutCodeType',
-        'StoreCustomListingHeaderDisplayCodeType\,' =>
+        'StoreCustomListingHeaderDisplayCodeType' =>
             '\Controle\sub1\sub2\StoreCustomListingHeaderDisplayCodeType',
-        'StoreCustomListingHeaderLinkCodeType\,' =>
+        'StoreCustomListingHeaderLinkCodeType' =>
             '\Controle\sub1\sub2\StoreCustomListingHeaderLinkCodeType',
-        'StoreCustomListingHeaderLinkType\,' =>
+        'StoreCustomListingHeaderLinkType' =>
             '\Controle\sub1\sub2\StoreCustomListingHeaderLinkType',
-        'StoreCustomListingHeaderType\,' =>
+        'StoreCustomListingHeaderType' =>
             '\Controle\sub1\sub2\StoreCustomListingHeaderType',
-        'StoreCustomPageArrayType\,' =>
+        'StoreCustomPageArrayType' =>
             '\Controle\sub1\sub2\StoreCustomPageArrayType',
-        'StoreCustomPageStatusCodeType\,' =>
+        'StoreCustomPageStatusCodeType' =>
             '\Controle\sub1\sub2\StoreCustomPageStatusCodeType',
-        'StoreCustomPageType\,' =>
+        'StoreCustomPageType' =>
             '\Controle\sub1\sub2\StoreCustomPageType',
-        'StoreFontFaceCodeType\,' =>
+        'StoreFontFaceCodeType' =>
             '\Controle\sub1\sub2\StoreFontFaceCodeType',
-        'StoreFontSizeCodeType\,' =>
+        'StoreFontSizeCodeType' =>
             '\Controle\sub1\sub2\StoreFontSizeCodeType',
-        'StoreFontType\,' =>
+        'StoreFontType' =>
             '\Controle\sub1\sub2\StoreFontType',
-        'StoreHeaderStyleCodeType\,' =>
+        'StoreHeaderStyleCodeType' =>
             '\Controle\sub1\sub2\StoreHeaderStyleCodeType',
-        'StoreInventoryEnabledDefinitionType\,' =>
+        'StoreInventoryEnabledDefinitionType' =>
             '\Controle\sub1\sub2\StoreInventoryEnabledDefinitionType',
-        'StoreItemListLayoutCodeType\,' =>
+        'StoreItemListLayoutCodeType' =>
             '\Controle\sub1\sub2\StoreItemListLayoutCodeType',
-        'StoreItemListSortOrderCodeType\,' =>
+        'StoreItemListSortOrderCodeType' =>
             '\Controle\sub1\sub2\StoreItemListSortOrderCodeType',
-        'StoreLogoArrayType\,' =>
+        'StoreLogoArrayType' =>
             '\Controle\sub1\sub2\StoreLogoArrayType',
-        'StoreLogoType\,' =>
+        'StoreLogoType' =>
             '\Controle\sub1\sub2\StoreLogoType',
-        'StorePreferencesType\,' =>
+        'StorePreferencesType' =>
             '\Controle\sub1\sub2\StorePreferencesType',
-        'StoreSearchCodeType\,' =>
+        'StoreSearchCodeType' =>
             '\Controle\sub1\sub2\StoreSearchCodeType',
-        'StoreSubscriptionArrayType\,' =>
+        'StoreSubscriptionArrayType' =>
             '\Controle\sub1\sub2\StoreSubscriptionArrayType',
-        'StoreSubscriptionLevelCodeType\,' =>
+        'StoreSubscriptionLevelCodeType' =>
             '\Controle\sub1\sub2\StoreSubscriptionLevelCodeType',
-        'StoreSubscriptionType\,' =>
+        'StoreSubscriptionType' =>
             '\Controle\sub1\sub2\StoreSubscriptionType',
-        'StoreThemeArrayType\,' =>
+        'StoreThemeArrayType' =>
             '\Controle\sub1\sub2\StoreThemeArrayType',
-        'StoreThemeType\,' =>
+        'StoreThemeType' =>
             '\Controle\sub1\sub2\StoreThemeType',
-        'StoreType\,' =>
+        'StoreType' =>
             '\Controle\sub1\sub2\StoreType',
-        'StoreVacationPreferencesType\,' =>
+        'StoreVacationPreferencesType' =>
             '\Controle\sub1\sub2\StoreVacationPreferencesType',
-        'StorefrontType\,' =>
+        'StorefrontType' =>
             '\Controle\sub1\sub2\StorefrontType',
-        'StringMatchCodeType\,' =>
+        'StringMatchCodeType' =>
             '\Controle\sub1\sub2\StringMatchCodeType',
-        'SuggestedCategoryArrayType\,' =>
+        'SuggestedCategoryArrayType' =>
             '\Controle\sub1\sub2\SuggestedCategoryArrayType',
-        'SuggestedCategoryType\,' =>
+        'SuggestedCategoryType' =>
             '\Controle\sub1\sub2\SuggestedCategoryType',
-        'SummaryEventScheduleType\,' =>
+        'SummaryEventScheduleType' =>
             '\Controle\sub1\sub2\SummaryEventScheduleType',
-        'SummaryFrequencyCodeType\,' =>
+        'SummaryFrequencyCodeType' =>
             '\Controle\sub1\sub2\SummaryFrequencyCodeType',
-        'SummaryWindowPeriodCodeType\,' =>
+        'SummaryWindowPeriodCodeType' =>
             '\Controle\sub1\sub2\SummaryWindowPeriodCodeType',
-        'TaskStatusCodeType\,' =>
+        'TaskStatusCodeType' =>
             '\Controle\sub1\sub2\TaskStatusCodeType',
-        'TaxJurisdictionType\,' =>
+        'TaxJurisdictionType' =>
             '\Controle\sub1\sub2\TaxJurisdictionType',
-        'TaxTableType\,' =>
+        'TaxTableType' =>
             '\Controle\sub1\sub2\TaxTableType',
-        'ThemeGroupType\,' =>
+        'ThemeGroupType' =>
             '\Controle\sub1\sub2\ThemeGroupType',
-        'TokenReturnMethodCodeType\,' =>
+        'TokenReturnMethodCodeType' =>
             '\Controle\sub1\sub2\TokenReturnMethodCodeType',
-        'TradingRoleCodeType\,' =>
+        'TradingRoleCodeType' =>
             '\Controle\sub1\sub2\TradingRoleCodeType',
-        'TransactionArrayType\,' =>
+        'TransactionArrayType' =>
             '\Controle\sub1\sub2\TransactionArrayType',
-        'TransactionPlatformType\,' =>
+        'TransactionPlatformType' =>
             '\Controle\sub1\sub2\TransactionPlatformType',
-        'TransactionStatusType\,' =>
+        'TransactionStatusType' =>
             '\Controle\sub1\sub2\TransactionStatusType',
-        'TransactionType\,' =>
+        'TransactionType' =>
             '\Controle\sub1\sub2\TransactionType',
-        'UserConsentRequiredDefinitionType\,' =>
+        'UserConsentRequiredDefinitionType' =>
             '\Controle\sub1\sub2\UserConsentRequiredDefinitionType',
-        'UserIdFilterType\,' =>
+        'UserIdFilterType' =>
             '\Controle\sub1\sub2\UserIdFilterType',
-        'UserStatusCodeType\,' =>
+        'UserStatusCodeType' =>
             '\Controle\sub1\sub2\UserStatusCodeType',
-        'UserType\,' =>
+        'UserType' =>
             '\Controle\sub1\sub2\UserType',
-        'ValType\,' =>
+        'ValType' =>
             '\Controle\sub1\sub2\ValType',
-        'ValuePackEnabledDefinitionType\,' =>
+        'ValuePackEnabledDefinitionType' =>
             '\Controle\sub1\sub2\ValuePackEnabledDefinitionType',
-        'VendorHostedPictureType\,' =>
+        'VendorHostedPictureType' =>
             '\Controle\sub1\sub2\VendorHostedPictureType',
-        'VerifiedUserRequirementsType\,' =>
+        'VerifiedUserRequirementsType' =>
             '\Controle\sub1\sub2\VerifiedUserRequirementsType',
-        'WantItNowPostArrayType\,' =>
+        'WantItNowPostArrayType' =>
             '\Controle\sub1\sub2\WantItNowPostArrayType',
-        'WantItNowPostType\,' =>
+        'WantItNowPostType' =>
             '\Controle\sub1\sub2\WantItNowPostType',
 	);
 

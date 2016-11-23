@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class DeleteRegistrant
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var string
      */
-    public $registranthandle;
+    public $registrantHandle;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class DeleteRegistrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class DeleteRegistrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for registrantHandle');
         }
-        $this->registranthandle = (int)$val;
+        $this->registrantHandle = (int)$val;
     }
 }

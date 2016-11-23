@@ -8,16 +8,19 @@ namespace Controle;
  */
 class PromotionRuleArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\PromotionRuleType | Defines one cross-promotion rule.
      */
-    public $promotionrule;
+    public $PromotionRule;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PromotionRuleType $val
      * @throws Exception
      */
     public function setPromotionRule($val)
     {
-        $this->promotionrule = (int)$val;
+        $this->PromotionRule = (int)$val;
     }
 }

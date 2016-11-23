@@ -10,23 +10,26 @@ namespace Controle;
 class GetSuggestedCategoriesResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\SuggestedCategoryArrayType | Contains the categories that contain listings that match the query string in the request.
 	 * The array can have up to 10 categories. Not returned if no categories match the query in
 	 * the request.
 	 */
-	public $suggestedcategoryarray;
+	public $SuggestedCategoryArray;
 	/**
 	 * @var int | Indicates the number of categories in the array.
 	 */
-	public $categorycount;
+	public $CategoryCount;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SuggestedCategoryArrayType $val
 	 * @throws Exception
 	 */
 	public function setSuggestedCategoryArray($val)
 	{
-        $this->suggestedcategoryarray = (int)$val;
+        $this->SuggestedCategoryArray = (int)$val;
 	}
 
 	/**
@@ -38,6 +41,6 @@ class GetSuggestedCategoriesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->categorycount = (int)$val;
+        $this->CategoryCount = (int)$val;
 	}
 }

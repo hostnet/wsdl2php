@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CharitySellerStatusCodeType
 {
+    // @codingStandardsIgnoreStart
     const SUSPENDED                           = 'Suspended';
     const REGISTERED                          = 'Registered';
     const CLOSED                              = 'Closed';
@@ -14,4 +15,5 @@ class CharitySellerStatusCodeType
     const NOTREGISTEREDLOSTDIRECTSELLERSTATUS = 'NotRegisteredLostDirectSellerStatus';
     const DIRECTDEBITREJECTED                 = 'DirectDebitRejected';
     const CUSTOMCODE                          = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

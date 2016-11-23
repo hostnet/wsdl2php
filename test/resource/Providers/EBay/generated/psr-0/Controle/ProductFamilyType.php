@@ -10,17 +10,18 @@ namespace Controle;
  */
 class ProductFamilyType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ProductType | A transient header that describes the current search results. Contains a             an
 	 * ID, a subset of attributes, and a typical stock photo             to help a user easily
 	 * distinguish the products in the current result set            from products in other result
 	 * sets returned in the same response.             One ParentProduct is returned per ProductFamily.
 	 */
-	public $parentproduct;
+	public $ParentProduct;
 	/**
 	 * @var \Controle\ProductType | A set of products (within the same product family) that match the search query.
 	 */
-	public $familymembers;
+	public $FamilyMembers;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
@@ -28,14 +29,16 @@ class ProductFamilyType
 	/**
 	 * @var boolean
 	 */
-	public $hasmorechildren;
+	public $hasMoreChildren;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ProductType $val
 	 * @throws Exception
 	 */
 	public function setParentProduct($val)
 	{
-        $this->parentproduct = (int)$val;
+        $this->ParentProduct = (int)$val;
 	}
 
 	/**
@@ -44,7 +47,7 @@ class ProductFamilyType
 	 */
 	public function setFamilyMembers($val)
 	{
-        $this->familymembers = (int)$val;
+        $this->FamilyMembers = (int)$val;
 	}
 
 	/**
@@ -62,6 +65,6 @@ class ProductFamilyType
 	 */
 	public function setHasMoreChildren($val)
 	{
-        $this->hasmorechildren = (int)$val;
+        $this->hasMoreChildren = (int)$val;
 	}
 }

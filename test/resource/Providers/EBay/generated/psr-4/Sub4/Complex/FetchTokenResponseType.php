@@ -9,6 +9,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class FetchTokenResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Authentication token representing the user who is making the request. The user's token
      * must be retrieved from eBay. To determine a user's authentication token, see the Authentication
@@ -18,12 +19,14 @@ class FetchTokenResponseType extends
      * data may be restricted to the user whose data is being requested. The documentation
      * for each call includes information about such restrictions.
      */
-    public $ebayauthtoken;
+    public $eBayAuthToken;
     /**
      * @var dateTime | Date and time at which the token returned in eBayAuthToken expires and can no longer
      * be used to authenticate the user for that application.
      */
-    public $hardexpirationtime;
+    public $HardExpirationTime;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class FetchTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->ebayauthtoken = (int)$val;
+        $this->eBayAuthToken = (int)$val;
     }
 
     /**
@@ -42,6 +45,6 @@ class FetchTokenResponseType extends
      */
     public function setHardExpirationTime($val)
     {
-        $this->hardexpirationtime = (int)$val;
+        $this->HardExpirationTime = (int)$val;
     }
 }

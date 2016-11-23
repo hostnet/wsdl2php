@@ -8,14 +8,15 @@ namespace Controle;
  */
 class ReasonCodeDetailType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The short description of the infringement associated with the reason code ID.
      */
-    public $brieftext;
+    public $BriefText;
     /**
      * @var string | The long description of the infringement associated with the reason code ID.
      */
-    public $detailedtext;
+    public $DetailedText;
     /**
      * @var \Controle\<anyXML>
      */
@@ -23,7 +24,9 @@ class ReasonCodeDetailType
     /**
      * @var long
      */
-    public $codeid;
+    public $codeID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class ReasonCodeDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BriefText');
         }
-        $this->brieftext = (int)$val;
+        $this->BriefText = (int)$val;
     }
 
     /**
@@ -45,7 +48,7 @@ class ReasonCodeDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DetailedText');
         }
-        $this->detailedtext = (int)$val;
+        $this->DetailedText = (int)$val;
     }
 
     /**
@@ -63,6 +66,6 @@ class ReasonCodeDetailType
      */
     public function setCodeID($val)
     {
-        $this->codeid = (int)$val;
+        $this->codeID = (int)$val;
     }
 }

@@ -12,11 +12,12 @@ namespace Controle\sub1\sub2;
  */
 class CharacteristicType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Unique identifier for the attribute within the characteristic set.            Required
 	 * if SearchAttributes is specified.
 	 */
-	public $attributeid;
+	public $AttributeID;
 	/**
 	 * @var string | Applicable when working with Pre-filled Item Information (Catalogs) functionality.
 	 *        Returned if the characteristic is a Date data type. Specifies the pattern
@@ -24,7 +25,7 @@ class CharacteristicType
 	 * Month/Year, Year Only.            For example, the Year Only format would indicate that
 	 * the date            should be a value like 1999.            Output only.
 	 */
-	public $dateformat;
+	public $DateFormat;
 	/**
 	 * @var string | The suggested order in which the characteristic should be presented to the user in a list.
 	 * Indicates the relative position of the sort key in the list of characteristics. The characteristic
@@ -35,20 +36,20 @@ class CharacteristicType
 	 * multiple sort characteristics are returned for a characteristic set, compare their display
 	 * sequence values to determine the lowest available value (usually 0) and the overall sequence.
 	 */
-	public $displaysequence;
+	public $DisplaySequence;
 	/**
 	 * @var string | Applicable when working with Pre-filled Item Information (Catalogs) functionality. The
 	 * unit of measure (e.g., Inch) to use when the characteristic is numeric indicates a measurement. Not
 	 * returned if not applicable. Output only.
 	 */
-	public $displayuom;
+	public $DisplayUOM;
 	/**
 	 * @var \Controle\sub1\sub2\LabelType | Applicable when working with Pre-filled Item Information (Catalogs) functionality.
 	 *        The label to display when presenting the attribute to a user.            Not necessarily
 	 * the same as the attribute's label as defined in the characteristic set (i.e., the label
 	 * could be overridden by the catalog).
 	 */
-	public $label;
+	public $Label;
 	/**
 	 * @var \Controle\sub1\sub2\SortOrderCodeType | Applicable when working with Pre-filled Item Information (Catalogs) functionality. Indicates
 	 * the order in which eBay's search engine will sort the results if you            pass this
@@ -59,18 +60,20 @@ class CharacteristicType
 	 * are stored on eBay (which can be useful for international sites that use ideographic characters). Output
 	 * only.
 	 */
-	public $sortorder;
+	public $SortOrder;
 	/**
 	 * @var \Controle\sub1\sub2\ValType | Container for the list of one or more valid values that the user has selected for the searchable
 	 * attribute. If multiple values are specified, the search engine applies "OR" logic to the
 	 * query (i.e., at least one of the specified values must match). Required if SearchAttributes
 	 * is specified.
 	 */
-	public $valuelist;
+	public $ValueList;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -80,7 +83,7 @@ class CharacteristicType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributeid = (int)$val;
+        $this->AttributeID = (int)$val;
 	}
 
 	/**
@@ -92,7 +95,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DateFormat');
         }
-        $this->dateformat = (int)$val;
+        $this->DateFormat = (int)$val;
 	}
 
 	/**
@@ -104,7 +107,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplaySequence');
         }
-        $this->displaysequence = (int)$val;
+        $this->DisplaySequence = (int)$val;
 	}
 
 	/**
@@ -116,7 +119,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayUOM');
         }
-        $this->displayuom = (int)$val;
+        $this->DisplayUOM = (int)$val;
 	}
 
 	/**
@@ -125,7 +128,7 @@ class CharacteristicType
 	 */
 	public function setLabel($val)
 	{
-        $this->label = (int)$val;
+        $this->Label = (int)$val;
 	}
 
 	/**
@@ -134,7 +137,7 @@ class CharacteristicType
 	 */
 	public function setSortOrder($val)
 	{
-        $this->sortorder = (int)$val;
+        $this->SortOrder = (int)$val;
 	}
 
 	/**
@@ -143,7 +146,7 @@ class CharacteristicType
 	 */
 	public function setValueList($val)
 	{
-        $this->valuelist = (int)$val;
+        $this->ValueList = (int)$val;
 	}
 
 	/**

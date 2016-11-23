@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class UrLtypeCodeType
 {
+    // @codingStandardsIgnoreStart
     const VIEWITEMURL       = 'ViewItemURL';
     const VIEWUSERURL       = 'ViewUserURL';
     const MYEBAYURL         = 'MyeBayURL';
@@ -16,4 +17,5 @@ class UrLtypeCodeType
     const MEDIUMLOGOURL     = 'MediumLogoURL';
     const LARGELOGOURL      = 'LargeLogoURL';
     const CUSTOMCODE        = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

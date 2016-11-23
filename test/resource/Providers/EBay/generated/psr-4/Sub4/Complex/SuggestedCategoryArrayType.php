@@ -9,22 +9,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SuggestedCategoryArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SuggestedCategoryType | Describes a category that contains listings that match    specified keywords in the
      * query. Returned if a category matches the query.
      */
-    public $suggestedcategory;
+    public $SuggestedCategory;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SuggestedCategoryType $val
      * @throws Exception
      */
     public function setSuggestedCategory($val)
     {
-        $this->suggestedcategory = (int)$val;
+        $this->SuggestedCategory = (int)$val;
     }
 
     /**

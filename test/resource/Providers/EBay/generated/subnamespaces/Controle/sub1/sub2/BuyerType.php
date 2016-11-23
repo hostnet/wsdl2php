@@ -8,21 +8,24 @@ namespace Controle\sub1\sub2;
  */
 class BuyerType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AddressType | The address to which the item is to be shipped.
 	 */
-	public $shippingaddress;
+	public $ShippingAddress;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AddressType $val
 	 * @throws Exception
 	 */
 	public function setShippingAddress($val)
 	{
-        $this->shippingaddress = (int)$val;
+        $this->ShippingAddress = (int)$val;
 	}
 
 	/**

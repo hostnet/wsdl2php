@@ -4,6 +4,7 @@ namespace Controle;
 
 class BuyerPaymentMethodCodeType
 {
+	// @codingStandardsIgnoreStart
 	const NONE                        = 'None';
 	const MOCC                        = 'MOCC';
 	const AMEX                        = 'AmEx';
@@ -28,4 +29,5 @@ class BuyerPaymentMethodCodeType
 	const LOANCHECK                   = 'LoanCheck';
 	const CASHINPERSON                = 'CashInPerson';
 	const ELV                         = 'ELV';
+	// @codingStandardsIgnoreEnd
 }

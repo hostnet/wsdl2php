@@ -11,10 +11,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategoryFeaturesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | ID of the category in which the Want It Now post is listed.
      */
-    public $categoryid;
+    public $CategoryID;
     /**
      * @var int | Specifies the limit for the number of levels of the category hierarchy to return, where
      * the given root category is level 1 and its children are level 2. Only categories at
@@ -22,7 +23,7 @@ class GetCategoryFeaturesRequestType extends
      * set, the complete category hierarchy is returned. Stores support category hierarchies
      * up to 3 levels only.
      */
-    public $levellimit;
+    public $LevelLimit;
     /**
      * @var boolean | Set this value to true to retrieve useful results. If true, retrieves all categories
      * that override the site default settings. (If false or not specified, only retrieves
@@ -30,13 +31,15 @@ class GetCategoryFeaturesRequestType extends
      * on a category's ancestor, the call does not return those settings if you only retrieve
      * leaf categories.)
      */
-    public $viewallnodes;
+    public $ViewAllNodes;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FeatureIDCodeType | Retrieves the specified feature setting for the site and for the category you specified
      * in CategoryID, if any. If no feature IDs are specified, the call retrieves all feature
      * settings.
      */
-    public $featureid;
+    public $FeatureID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -46,7 +49,7 @@ class GetCategoryFeaturesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class GetCategoryFeaturesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->levellimit = (int)$val;
+        $this->LevelLimit = (int)$val;
     }
 
     /**
@@ -67,7 +70,7 @@ class GetCategoryFeaturesRequestType extends
      */
     public function setViewAllNodes($val)
     {
-        $this->viewallnodes = (int)$val;
+        $this->ViewAllNodes = (int)$val;
     }
 
     /**
@@ -76,6 +79,6 @@ class GetCategoryFeaturesRequestType extends
      */
     public function setFeatureID($val)
     {
-        $this->featureid = (int)$val;
+        $this->FeatureID = (int)$val;
     }
 }

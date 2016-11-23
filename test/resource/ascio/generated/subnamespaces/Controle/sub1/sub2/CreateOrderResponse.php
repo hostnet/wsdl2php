@@ -4,21 +4,24 @@ namespace Controle\sub1\sub2;
 
 class CreateOrderResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $createorderresult;
+	public $CreateOrderResult;
 	/**
 	 * @var \Controle\sub1\sub2\Order
 	 */
 	public $order;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setCreateOrderResult($val)
 	{
-        $this->createorderresult = (int)$val;
+        $this->CreateOrderResult = (int)$val;
 	}
 
 	/**

@@ -8,45 +8,48 @@ namespace Controle;
  */
 class StoreCustomListingHeaderType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\StoreCustomListingHeaderDisplayCodeType | Display type for the custom listing header.
      */
-    public $displaytype;
+    public $DisplayType;
     /**
      * @var boolean | Store logo.
      */
-    public $logo;
+    public $Logo;
     /**
      * @var boolean | Specifies whether the custom header has a search box.
      */
-    public $searchbox;
+    public $SearchBox;
     /**
      * @var \Controle\StoreCustomListingHeaderLinkType | Link to include in the custom header.
      */
-    public $linktoinclude;
+    public $LinkToInclude;
     /**
      * @var boolean | Specifies whether the custom header has a link to Add to Favorite Stores.
      */
-    public $addtofavoritestores;
+    public $AddToFavoriteStores;
     /**
      * @var boolean | Specifies whether the custom header has a link to Sign up for Store Newsletter.
      */
-    public $signupforstorenewsletter;
+    public $SignUpForStoreNewsletter;
     /**
      * @var boolean | Specifies whether the bread crumb needs to be displayed above the listing header.
      */
-    public $breadcrumb;
+    public $BreadCrumb;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreCustomListingHeaderDisplayCodeType $val
      * @throws Exception
      */
     public function setDisplayType($val)
     {
-        $this->displaytype = (int)$val;
+        $this->DisplayType = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class StoreCustomListingHeaderType
      */
     public function setLogo($val)
     {
-        $this->logo = (int)$val;
+        $this->Logo = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class StoreCustomListingHeaderType
      */
     public function setSearchBox($val)
     {
-        $this->searchbox = (int)$val;
+        $this->SearchBox = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class StoreCustomListingHeaderType
      */
     public function setLinkToInclude($val)
     {
-        $this->linktoinclude = (int)$val;
+        $this->LinkToInclude = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class StoreCustomListingHeaderType
      */
     public function setAddToFavoriteStores($val)
     {
-        $this->addtofavoritestores = (int)$val;
+        $this->AddToFavoriteStores = (int)$val;
     }
 
     /**
@@ -91,7 +94,7 @@ class StoreCustomListingHeaderType
      */
     public function setSignUpForStoreNewsletter($val)
     {
-        $this->signupforstorenewsletter = (int)$val;
+        $this->SignUpForStoreNewsletter = (int)$val;
     }
 
     /**
@@ -100,7 +103,7 @@ class StoreCustomListingHeaderType
      */
     public function setBreadCrumb($val)
     {
-        $this->breadcrumb = (int)$val;
+        $this->BreadCrumb = (int)$val;
     }
 
     /**

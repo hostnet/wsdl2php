@@ -10,7 +10,7 @@ class InteropClient extends \SoapClient
     const WSDL_FILE = "InteropTyped.wsdl";
 
     private $classmap = array(
-        'SOAPStruct\,' =>
+        'SOAPStruct' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SoApStruct',
     );
 

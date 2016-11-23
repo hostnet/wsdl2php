@@ -4,22 +4,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SoApStructStruct
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $varstring;
+    public $varString;
     /**
      * @var int
      */
-    public $varint;
+    public $varInt;
     /**
      * @var float
      */
-    public $varfloat;
+    public $varFloat;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SOAPStruct
      */
-    public $varstruct;
+    public $varStruct;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class SoApStructStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class SoApStructStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
     }
 
     /**
@@ -50,7 +53,7 @@ class SoApStructStruct
      */
     public function setVarFloat($val)
     {
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
     }
 
     /**
@@ -59,6 +62,6 @@ class SoApStructStruct
      */
     public function setVarStruct($val)
     {
-        $this->varstruct = (int)$val;
+        $this->varStruct = (int)$val;
     }
 }

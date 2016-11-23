@@ -9,6 +9,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSellerTransactionsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is later than or equal to
      * this value. Specify the time value in GMT. See the eBay Web Services documentation for
@@ -18,7 +19,7 @@ class GetSellerTransactionsRequestType extends
      * filters in combination with other filters like DisputeFilterType to control the amount
      * of data returned.
      */
-    public $modtimefrom;
+    public $ModTimeFrom;
     /**
      * @var dateTime | A filter that retrieves disputes whose DisputeModifiedTime is earlier than or equal
      * to this value. Specify the time value in GMT. See the eBay Web Services documentation
@@ -28,14 +29,14 @@ class GetSellerTransactionsRequestType extends
      * is optional. You can use date range filters in combination with other filters like DisputeFilterType
      * to control the amount of data returned.
      */
-    public $modtimeto;
+    public $ModTimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var boolean | Indicates whether to include final value fees in the response. For most listing types,
      * the fee is returned in Transaction.FinalValueFee. For Dutch auctions that end with bids
@@ -45,25 +46,27 @@ class GetSellerTransactionsRequestType extends
      * Chinese and Dutch (no Buy It Now purchases), the Final Value Fee is returned when the
      * listing status is Completed.
      */
-    public $includefinalvaluefee;
+    public $IncludeFinalValueFee;
     /**
      * @var boolean | Whether to retrieve the order information. Default is false.
      */
-    public $includecontainingorder;
+    public $IncludeContainingOrder;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SKUArrayType | Specifies a set of seller SKUs to use as a filter. Only items with the specified SKUs
      * are returned. Do not specify this tag if you do not want to filter by SKU. Corresponds
      * to the SKU property that is part of ItemType and that can be provided when, for example,
      * you use the AddItem call.
      */
-    public $skuarray;
+    public $SKUArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param dateTime $val
      * @throws Exception
      */
     public function setModTimeFrom($val)
     {
-        $this->modtimefrom = (int)$val;
+        $this->ModTimeFrom = (int)$val;
     }
 
     /**
@@ -72,7 +75,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->modtimeto = (int)$val;
+        $this->ModTimeTo = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**
@@ -90,7 +93,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setIncludeFinalValueFee($val)
     {
-        $this->includefinalvaluefee = (int)$val;
+        $this->IncludeFinalValueFee = (int)$val;
     }
 
     /**
@@ -99,7 +102,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setIncludeContainingOrder($val)
     {
-        $this->includecontainingorder = (int)$val;
+        $this->IncludeContainingOrder = (int)$val;
     }
 
     /**
@@ -108,6 +111,6 @@ class GetSellerTransactionsRequestType extends
      */
     public function setSKUArray($val)
     {
-        $this->skuarray = (int)$val;
+        $this->SKUArray = (int)$val;
     }
 }

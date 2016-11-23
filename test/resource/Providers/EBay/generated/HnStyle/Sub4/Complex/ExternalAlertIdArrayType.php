@@ -4,10 +4,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ExternalAlertIdArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | An ID used by an external application to uniquely identify an alert.
      */
-    public $externalalertid;
+    public $ExternalAlertID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -17,6 +20,6 @@ class ExternalAlertIdArrayType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAlertID');
         }
-        $this->externalalertid = (int)$val;
+        $this->ExternalAlertID = (int)$val;
     }
 }

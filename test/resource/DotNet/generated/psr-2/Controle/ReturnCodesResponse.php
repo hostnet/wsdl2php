@@ -4,16 +4,19 @@ namespace Controle;
 
 class ReturnCodesResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var array \Controle\AnyType
      */
-    public $returncodesresult;
+    public $ReturnCodesResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ArrayOfAnyType $val
      * @throws Exception
      */
     public function setReturnCodesResult($val)
     {
-        $this->returncodesresult = (int)$val;
+        $this->ReturnCodesResult = (int)$val;
     }
 }

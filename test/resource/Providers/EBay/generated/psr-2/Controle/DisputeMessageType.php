@@ -9,28 +9,31 @@ namespace Controle;
  */
 class DisputeMessageType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | An ID that uniquely identifies a message for a given user. <br /><br /> This value is
      * not the same as the value used for the GetMemberMessages MessageID. Use the GetMemberMessages
      * value for used as the GetMyMessages ExternalID instead.
      */
-    public $messageid;
+    public $MessageID;
     /**
      * @var \Controle\DisputeMessageSourceCodeType | The party who posted the message: the buyer, the seller, or an eBay representative.
      */
-    public $messagesource;
+    public $MessageSource;
     /**
      * @var dateTime | The date and time the message was created, in GMT.
      */
-    public $messagecreationtime;
+    public $MessageCreationTime;
     /**
      * @var string | The text of the message.
      */
-    public $messagetext;
+    public $MessageText;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -40,7 +43,7 @@ class DisputeMessageType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->messageid = (int)$val;
+        $this->MessageID = (int)$val;
     }
 
     /**
@@ -49,7 +52,7 @@ class DisputeMessageType
      */
     public function setMessageSource($val)
     {
-        $this->messagesource = (int)$val;
+        $this->MessageSource = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class DisputeMessageType
      */
     public function setMessageCreationTime($val)
     {
-        $this->messagecreationtime = (int)$val;
+        $this->MessageCreationTime = (int)$val;
     }
 
     /**
@@ -70,7 +73,7 @@ class DisputeMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->messagetext = (int)$val;
+        $this->MessageText = (int)$val;
     }
 
     /**

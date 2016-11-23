@@ -14,30 +14,33 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class EndItemRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\EndReasonCodeType | Indicates the seller's reason for ending the listing early. This field is required if
      * the seller is ending the item early and the item did not successfully sell. Also applicable
      * to Half.com.
      */
-    public $endingreason;
+    public $EndingReason;
     /**
      * @var string | An ID that the seller specified when they listed the Half.com item, if any. It can be
      * used for the seller's SKU. Note that SellerInventoryID is not returned if no ID was
      * specified. (Note: The SKU field used for eBay.com listings is not applicable to Half.com
      * listings.)
      */
-    public $sellerinventoryid;
+    public $SellerInventoryID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class EndItemRequestType extends
      */
     public function setEndingReason($val)
     {
-        $this->endingreason = (int)$val;
+        $this->EndingReason = (int)$val;
     }
 
     /**
@@ -58,6 +61,6 @@ class EndItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->sellerinventoryid = (int)$val;
+        $this->SellerInventoryID = (int)$val;
     }
 }

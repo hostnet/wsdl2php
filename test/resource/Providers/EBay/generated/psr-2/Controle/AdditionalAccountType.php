@@ -12,29 +12,32 @@ namespace Controle;
  */
 class AdditionalAccountType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\AmountType | Indicates the current balance of the additional account.
      */
-    public $balance;
+    public $Balance;
     /**
      * @var \Controle\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
     /**
      * @var string | Indicates the unique identifier for the additional account (the account ID).
      */
-    public $accountcode;
+    public $AccountCode;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AmountType $val
      * @throws Exception
      */
     public function setBalance($val)
     {
-        $this->balance = (int)$val;
+        $this->Balance = (int)$val;
     }
 
     /**
@@ -43,7 +46,7 @@ class AdditionalAccountType
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class AdditionalAccountType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountCode');
         }
-        $this->accountcode = (int)$val;
+        $this->AccountCode = (int)$val;
     }
 
     /**

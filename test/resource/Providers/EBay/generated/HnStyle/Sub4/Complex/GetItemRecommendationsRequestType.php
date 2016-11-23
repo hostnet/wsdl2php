@@ -13,19 +13,22 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetItemRecommendationsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GetRecommendationsRequestContainerType | Specifies the data for a single item and configures the recommendation engines to use when
      * processing the item. To retrieve recommendations for multiple items, pass a separate GetRecommendationsRequestContainer
      * for each item. In this case, pass a user-defined correlation ID for each item to identify
      * the matching response.
      */
-    public $getrecommendationsrequestcontainer;
+    public $GetRecommendationsRequestContainer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param GetRecommendationsRequestContainerType $val
      * @throws Exception
      */
     public function setGetRecommendationsRequestContainer($val)
     {
-        $this->getrecommendationsrequestcontainer = (int)$val;
+        $this->GetRecommendationsRequestContainer = (int)$val;
     }
 }

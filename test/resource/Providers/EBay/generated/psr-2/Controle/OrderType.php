@@ -10,23 +10,24 @@ namespace Controle;
  */
 class OrderType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\OrderIDType | ID of the Half.com order associated with the payment. Returns 0 for single-transaction
      * orders.
      */
-    public $orderid;
+    public $OrderID;
     /**
      * @var \Controle\OrderStatusCodeType | The current status of the order.<br> <br> For transaction calls (like GetItemTransactions),
      * please use the TransactionPlatform element to determine whether an item was purchased
      * on Express on eBay.<br> <br> Also applicable to Half.com (for GetOrders).
      */
-    public $orderstatus;
+    public $OrderStatus;
     /**
      * @var \Controle\AmountType | Adjustment amount entered by the buyer. A positive amount indicates the amount is an
      * extra charge being paid to the seller by the buyer. A negative value indicates this
      * amount is a credit given to the buyer by the seller. Not applicable to Half.com.
      */
-    public $adjustmentamount;
+    public $AdjustmentAmount;
     /**
      * @var \Controle\AmountType | The amount the buyer paid for the item(s) in the transaction. If the seller allowed
      * the buyer to change the item total, the buyer is able to change the total until the
@@ -37,96 +38,98 @@ class OrderType
      * which the transaction belongs. For Motors items, AmountPaid is the amount paid by the
      * buyer for the deposit. Not applicable to Half.com.
      */
-    public $amountpaid;
+    public $AmountPaid;
     /**
      * @var \Controle\AmountType | Amount the buyer saved by having multiple items combined into a single order, versus
      * purchasing the items separately.
      */
-    public $amountsaved;
+    public $AmountSaved;
     /**
      * @var \Controle\CheckoutStatusType | Indicates the current status of the checkout process for the transaction.
      */
-    public $checkoutstatus;
+    public $CheckoutStatus;
     /**
      * @var \Controle\ShippingDetailsType | The shipping-related details for an item or transaction, including flat and calculated
      * shipping costs and shipping insurance costs. For GetOrders, also applicable to Half.com.
      * For GetOrders, minimal ShippingDetails information is returned under the Transaction
      * container.
      */
-    public $shippingdetails;
+    public $ShippingDetails;
     /**
      * @var \Controle\TradingRoleCodeType | Indicates whether the order is created by the buyer or by the seller.
      */
-    public $creatinguserrole;
+    public $CreatingUserRole;
     /**
      * @var dateTime | Date and time the order was created. Also applicable to Half.com (for GetOrders).
      */
-    public $createdtime;
+    public $CreatedTime;
     /**
      * @var string | Specifies a promotional offer that allow the buyer to purchase items on credit.
      */
-    public $financeofferid;
+    public $FinanceOfferID;
     /**
      * @var \Controle\BuyerPaymentMethodCodeType | The payment methods the buyer uses to pay for      the order. An order can have multiple
      * payment methods if the      buyer combines several transactions into one order.
      *  Also applicable to Half.com (for GetOrders).
      */
-    public $paymentmethods;
+    public $PaymentMethods;
     /**
      * @var string | The email of the order's seller.
      */
-    public $selleremail;
+    public $SellerEmail;
     /**
      * @var \Controle\AddressType | The address to which the item is to be shipped.
      */
-    public $shippingaddress;
+    public $ShippingAddress;
     /**
      * @var \Controle\ShippingServiceOptionsType | The shipping service selected by the buyer from the services offered by the seller. Not
      * applicable to Half.com.
      */
-    public $shippingserviceselected;
+    public $ShippingServiceSelected;
     /**
      * @var \Controle\AmountType | The sum of the sale prices of all of the transactions in the order, where a transaction
      * sale price is the item sale price times the quantity sold. Also applicable to Half.com
      * (for GetOrders).
      */
-    public $subtotal;
+    public $Subtotal;
     /**
      * @var \Controle\AmountType | Subtotal plus the shipping cost plus the sales tax plus cost of insurance. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $total;
+    public $Total;
     /**
      * @var \Controle\ExternalTransactionType | A PayPal transaction that relates to this eBay transaction. Returned only if there is
      * at least one PayPal transaction related to this eBay transaction. Not applicable to
      * Half.com.
      */
-    public $externaltransaction;
+    public $ExternalTransaction;
     /**
      * @var boolean | Indicates whether the order contains at least one transaction for a digital listing. Not
      * applicable to Half.com.
      */
-    public $digitaldelivery;
+    public $DigitalDelivery;
     /**
      * @var \Controle\TransactionArrayType | Contains a list of transactions. Returned as an empty tag if no applicable transactions
      * exist.
      */
-    public $transactionarray;
+    public $TransactionArray;
     /**
      * @var \Controle\UserIDType | User ID of the order's buyer. Not applicable to Half.com.
      */
-    public $buyeruserid;
+    public $BuyerUserID;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OrderIDType $val
      * @throws Exception
      */
     public function setOrderID($val)
     {
-        $this->orderid = (int)$val;
+        $this->OrderID = (int)$val;
     }
 
     /**
@@ -135,7 +138,7 @@ class OrderType
      */
     public function setOrderStatus($val)
     {
-        $this->orderstatus = (int)$val;
+        $this->OrderStatus = (int)$val;
     }
 
     /**
@@ -144,7 +147,7 @@ class OrderType
      */
     public function setAdjustmentAmount($val)
     {
-        $this->adjustmentamount = (int)$val;
+        $this->AdjustmentAmount = (int)$val;
     }
 
     /**
@@ -153,7 +156,7 @@ class OrderType
      */
     public function setAmountPaid($val)
     {
-        $this->amountpaid = (int)$val;
+        $this->AmountPaid = (int)$val;
     }
 
     /**
@@ -162,7 +165,7 @@ class OrderType
      */
     public function setAmountSaved($val)
     {
-        $this->amountsaved = (int)$val;
+        $this->AmountSaved = (int)$val;
     }
 
     /**
@@ -171,7 +174,7 @@ class OrderType
      */
     public function setCheckoutStatus($val)
     {
-        $this->checkoutstatus = (int)$val;
+        $this->CheckoutStatus = (int)$val;
     }
 
     /**
@@ -180,7 +183,7 @@ class OrderType
      */
     public function setShippingDetails($val)
     {
-        $this->shippingdetails = (int)$val;
+        $this->ShippingDetails = (int)$val;
     }
 
     /**
@@ -189,7 +192,7 @@ class OrderType
      */
     public function setCreatingUserRole($val)
     {
-        $this->creatinguserrole = (int)$val;
+        $this->CreatingUserRole = (int)$val;
     }
 
     /**
@@ -198,7 +201,7 @@ class OrderType
      */
     public function setCreatedTime($val)
     {
-        $this->createdtime = (int)$val;
+        $this->CreatedTime = (int)$val;
     }
 
     /**
@@ -210,7 +213,7 @@ class OrderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->financeofferid = (int)$val;
+        $this->FinanceOfferID = (int)$val;
     }
 
     /**
@@ -219,7 +222,7 @@ class OrderType
      */
     public function setPaymentMethods($val)
     {
-        $this->paymentmethods = (int)$val;
+        $this->PaymentMethods = (int)$val;
     }
 
     /**
@@ -231,7 +234,7 @@ class OrderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerEmail');
         }
-        $this->selleremail = (int)$val;
+        $this->SellerEmail = (int)$val;
     }
 
     /**
@@ -240,7 +243,7 @@ class OrderType
      */
     public function setShippingAddress($val)
     {
-        $this->shippingaddress = (int)$val;
+        $this->ShippingAddress = (int)$val;
     }
 
     /**
@@ -249,7 +252,7 @@ class OrderType
      */
     public function setShippingServiceSelected($val)
     {
-        $this->shippingserviceselected = (int)$val;
+        $this->ShippingServiceSelected = (int)$val;
     }
 
     /**
@@ -258,7 +261,7 @@ class OrderType
      */
     public function setSubtotal($val)
     {
-        $this->subtotal = (int)$val;
+        $this->Subtotal = (int)$val;
     }
 
     /**
@@ -267,7 +270,7 @@ class OrderType
      */
     public function setTotal($val)
     {
-        $this->total = (int)$val;
+        $this->Total = (int)$val;
     }
 
     /**
@@ -276,7 +279,7 @@ class OrderType
      */
     public function setExternalTransaction($val)
     {
-        $this->externaltransaction = (int)$val;
+        $this->ExternalTransaction = (int)$val;
     }
 
     /**
@@ -285,7 +288,7 @@ class OrderType
      */
     public function setDigitalDelivery($val)
     {
-        $this->digitaldelivery = (int)$val;
+        $this->DigitalDelivery = (int)$val;
     }
 
     /**
@@ -294,7 +297,7 @@ class OrderType
      */
     public function setTransactionArray($val)
     {
-        $this->transactionarray = (int)$val;
+        $this->TransactionArray = (int)$val;
     }
 
     /**
@@ -303,7 +306,7 @@ class OrderType
      */
     public function setBuyerUserID($val)
     {
-        $this->buyeruserid = (int)$val;
+        $this->BuyerUserID = (int)$val;
     }
 
     /**

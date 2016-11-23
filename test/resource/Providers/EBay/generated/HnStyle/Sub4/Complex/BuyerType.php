@@ -8,21 +8,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class BuyerType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AddressType | The address to which the item is to be shipped.
      */
-    public $shippingaddress;
+    public $ShippingAddress;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AddressType $val
      * @throws Exception
      */
     public function setShippingAddress($val)
     {
-        $this->shippingaddress = (int)$val;
+        $this->ShippingAddress = (int)$val;
     }
 
     /**

@@ -9,17 +9,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetTaxTableRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TaxTableType | Tax details for a jurisdiction such as a state or province. Returns empty in GetItem
      * if no tax table was used. Not applicable to Half.com.
      */
-    public $taxtable;
+    public $TaxTable;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param TaxTableType $val
      * @throws Exception
      */
     public function setTaxTable($val)
     {
-        $this->taxtable = (int)$val;
+        $this->TaxTable = (int)$val;
     }
 }

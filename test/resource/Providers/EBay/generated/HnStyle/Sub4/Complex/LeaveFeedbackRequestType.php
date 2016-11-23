@@ -12,37 +12,40 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class LeaveFeedbackRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Textual comment that explains, clarifies, or justifies the feedback rating specified
      * in CommentType. Still displayed if feedback is withdrawn.
      */
-    public $commenttext;
+    public $CommentText;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CommentTypeCodeType | Rating of the feedback being left (e.g., Positive).
      */
-    public $commenttype;
+    public $CommentType;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Recipient user for whom the feedback is being left.
      */
-    public $targetuser;
+    public $TargetUser;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -54,7 +57,7 @@ class LeaveFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->commenttext = (int)$val;
+        $this->CommentText = (int)$val;
     }
 
     /**
@@ -63,7 +66,7 @@ class LeaveFeedbackRequestType extends
      */
     public function setCommentType($val)
     {
-        $this->commenttype = (int)$val;
+        $this->CommentType = (int)$val;
     }
 
     /**
@@ -75,7 +78,7 @@ class LeaveFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -84,6 +87,6 @@ class LeaveFeedbackRequestType extends
      */
     public function setTargetUser($val)
     {
-        $this->targetuser = (int)$val;
+        $this->TargetUser = (int)$val;
     }
 }

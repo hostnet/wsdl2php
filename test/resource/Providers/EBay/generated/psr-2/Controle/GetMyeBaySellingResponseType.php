@@ -10,34 +10,37 @@ namespace Controle;
 class GetMyeBaySellingResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\SellingSummaryType | Contains summary information about the items the user is selling.
      */
-    public $sellingsummary;
+    public $SellingSummary;
     /**
      * @var \Controle\PaginatedItemArrayType | Contains the items the user has scheduled for sale, but whose listings have not yet
      * started.
      */
-    public $scheduledlist;
+    public $ScheduledList;
     /**
      * @var \Controle\PaginatedItemArrayType | Contains the items the user is selling that have active listings.
      */
-    public $activelist;
+    public $ActiveList;
     /**
      * @var \Controle\PaginatedOrderTransactionArrayType | Contains the items the user has sold.
      */
-    public $soldlist;
+    public $SoldList;
     /**
      * @var \Controle\PaginatedItemArrayType | Contains the items whose listings have ended but that have not sold.
      */
-    public $unsoldlist;
+    public $UnsoldList;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SellingSummaryType $val
      * @throws Exception
      */
     public function setSellingSummary($val)
     {
-        $this->sellingsummary = (int)$val;
+        $this->SellingSummary = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class GetMyeBaySellingResponseType extends
      */
     public function setScheduledList($val)
     {
-        $this->scheduledlist = (int)$val;
+        $this->ScheduledList = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class GetMyeBaySellingResponseType extends
      */
     public function setActiveList($val)
     {
-        $this->activelist = (int)$val;
+        $this->ActiveList = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class GetMyeBaySellingResponseType extends
      */
     public function setSoldList($val)
     {
-        $this->soldlist = (int)$val;
+        $this->SoldList = (int)$val;
     }
 
     /**
@@ -73,6 +76,6 @@ class GetMyeBaySellingResponseType extends
      */
     public function setUnsoldList($val)
     {
-        $this->unsoldlist = (int)$val;
+        $this->UnsoldList = (int)$val;
     }
 }

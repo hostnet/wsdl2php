@@ -4,14 +4,17 @@ namespace Controle\sub1\sub2;
 
 class PagingInfo
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int
 	 */
-	public $pageindex;
+	public $PageIndex;
 	/**
 	 * @var int
 	 */
-	public $pagesize;
+	public $PageSize;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -21,7 +24,7 @@ class PagingInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pageindex = (int)$val;
+        $this->PageIndex = (int)$val;
 	}
 
 	/**
@@ -33,6 +36,6 @@ class PagingInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagesize = (int)$val;
+        $this->PageSize = (int)$val;
 	}
 }

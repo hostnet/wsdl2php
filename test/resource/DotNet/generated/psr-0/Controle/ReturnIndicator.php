@@ -4,22 +4,25 @@ namespace Controle;
 
 class ReturnIndicator
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $responsetext;
+	public $ResponseText;
 	/**
 	 * @var int
 	 */
-	public $responsecode;
+	public $ResponseCode;
 	/**
 	 * @var string
 	 */
-	public $lastmailserver;
+	public $LastMailServer;
 	/**
 	 * @var boolean
 	 */
-	public $goodemail;
+	public $GoodEmail;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -29,7 +32,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ResponseText');
         }
-        $this->responsetext = (int)$val;
+        $this->ResponseText = (int)$val;
 	}
 
 	/**
@@ -41,7 +44,7 @@ class ReturnIndicator
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->responsecode = (int)$val;
+        $this->ResponseCode = (int)$val;
 	}
 
 	/**
@@ -53,7 +56,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastMailServer');
         }
-        $this->lastmailserver = (int)$val;
+        $this->LastMailServer = (int)$val;
 	}
 
 	/**
@@ -62,6 +65,6 @@ class ReturnIndicator
 	 */
 	public function setGoodEmail($val)
 	{
-        $this->goodemail = (int)$val;
+        $this->GoodEmail = (int)$val;
 	}
 }

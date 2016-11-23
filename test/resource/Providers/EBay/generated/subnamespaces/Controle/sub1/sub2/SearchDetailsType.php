@@ -4,29 +4,32 @@ namespace Controle\sub1\sub2;
 
 class SearchDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | Indicates whether a listing uses the Buy It Now feature.
 	 */
-	public $buyitnowenabled;
+	public $BuyItNowEnabled;
 	/**
 	 * @var boolean | Indicates whether a listing has an image associated with it.
 	 */
-	public $picture;
+	public $Picture;
 	/**
 	 * @var boolean | Indicates whether a listing is no more than one day old.
 	 */
-	public $recentlisting;
+	public $RecentListing;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setBuyItNowEnabled($val)
 	{
-        $this->buyitnowenabled = (int)$val;
+        $this->BuyItNowEnabled = (int)$val;
 	}
 
 	/**
@@ -35,7 +38,7 @@ class SearchDetailsType
 	 */
 	public function setPicture($val)
 	{
-        $this->picture = (int)$val;
+        $this->Picture = (int)$val;
 	}
 
 	/**
@@ -44,7 +47,7 @@ class SearchDetailsType
 	 */
 	public function setRecentListing($val)
 	{
-        $this->recentlisting = (int)$val;
+        $this->RecentListing = (int)$val;
 	}
 
 	/**

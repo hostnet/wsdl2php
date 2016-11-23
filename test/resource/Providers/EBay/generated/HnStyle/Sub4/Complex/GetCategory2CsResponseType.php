@@ -5,6 +5,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategory2CsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CategoryArrayType | Contains data about categories that are mapped to characteristics sets. Use this data
      * to determine:<br> - The names and IDs of the characteristics sets<br> - The availability
@@ -13,34 +14,36 @@ class GetCategory2CsResponseType extends
      * product search methods<br> - The current version information for the complete mapping<br> -
      * The version information for each characteristics set
      */
-    public $mappedcategoryarray;
+    public $MappedCategoryArray;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CategoryArrayType | Contains data about categories (if any) whose characteristics set mappings have changed since
      * the version specified in the request. When a characteristics set mapping changes, the
      * data appears in both the UnmappedCategoryArray object (to indicate that the change occurred)
      * and the MappedCategoryArray object.
      */
-    public $unmappedcategoryarray;
+    public $UnmappedCategoryArray;
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $attributesystemversion;
+    public $AttributeSystemVersion;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteWideCharacteristicsType | A list of one or more characteristics sets mapped to the category, if any. Use this information
      * when working with Item Specifics (Attributes) and Pre-filled Item Information (Catalogs)
      * functionality.
      */
-    public $sitewidecharacteristicsets;
+    public $SiteWideCharacteristicSets;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CategoryArrayType $val
      * @throws Exception
      */
     public function setMappedCategoryArray($val)
     {
-        $this->mappedcategoryarray = (int)$val;
+        $this->MappedCategoryArray = (int)$val;
     }
 
     /**
@@ -49,7 +52,7 @@ class GetCategory2CsResponseType extends
      */
     public function setUnmappedCategoryArray($val)
     {
-        $this->unmappedcategoryarray = (int)$val;
+        $this->UnmappedCategoryArray = (int)$val;
     }
 
     /**
@@ -61,7 +64,7 @@ class GetCategory2CsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->attributesystemversion = (int)$val;
+        $this->AttributeSystemVersion = (int)$val;
     }
 
     /**
@@ -70,6 +73,6 @@ class GetCategory2CsResponseType extends
      */
     public function setSiteWideCharacteristicSets($val)
     {
-        $this->sitewidecharacteristicsets = (int)$val;
+        $this->SiteWideCharacteristicSets = (int)$val;
     }
 }

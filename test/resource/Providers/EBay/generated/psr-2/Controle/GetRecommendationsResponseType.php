@@ -10,20 +10,21 @@ namespace Controle;
 class GetRecommendationsResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\ListingAnalyzerRecommendationsType | Contains tips returned from the Listing Analyzer recommendation engine,
      * if this engine was specified in the request (or if no engine was specified).
      */
-    public $listinganalyzerrecommendations;
+    public $ListingAnalyzerRecommendations;
     /**
      * @var \Controle\SIFFTASRecommendationsType | Reserved for future use.
      */
-    public $sifftasrecommendations;
+    public $SIFFTASRecommendations;
     /**
      * @var \Controle\PricingRecommendationsType | Contains pricing data returned from the Product Pricing engine,             if this
      * engine was specified in the request (or if no engine was specified).
      */
-    public $pricingrecommendations;
+    public $PricingRecommendations;
     /**
      * @var \Controle\AttributeRecommendationsType | Contains attribute suggestions returned from the Suggested Attributes engine, if this
      * engine was specified in the request. The results include suggested attributes and values
@@ -34,21 +35,23 @@ class GetRecommendationsResponseType extends
      * in order of rank (i.e., the value that best meets eBay's recommendation criteria is
      * returned first).
      */
-    public $attributerecommendations;
+    public $AttributeRecommendations;
     /**
      * @var \Controle\ProductRecommendationsType | Contains zero or more product titles and IDs returned from the Suggested Attributes
      * engine, if this engine was specified in the request (or if no engine was specified). If
      * applicable, use one of the suggested product IDs to list the item with Pre-filled Item
      * Information.
      */
-    public $productrecommendations;
+    public $ProductRecommendations;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ListingAnalyzerRecommendationsType $val
      * @throws Exception
      */
     public function setListingAnalyzerRecommendations($val)
     {
-        $this->listinganalyzerrecommendations = (int)$val;
+        $this->ListingAnalyzerRecommendations = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class GetRecommendationsResponseType extends
      */
     public function setSIFFTASRecommendations($val)
     {
-        $this->sifftasrecommendations = (int)$val;
+        $this->SIFFTASRecommendations = (int)$val;
     }
 
     /**
@@ -66,7 +69,7 @@ class GetRecommendationsResponseType extends
      */
     public function setPricingRecommendations($val)
     {
-        $this->pricingrecommendations = (int)$val;
+        $this->PricingRecommendations = (int)$val;
     }
 
     /**
@@ -75,7 +78,7 @@ class GetRecommendationsResponseType extends
      */
     public function setAttributeRecommendations($val)
     {
-        $this->attributerecommendations = (int)$val;
+        $this->AttributeRecommendations = (int)$val;
     }
 
     /**
@@ -84,6 +87,6 @@ class GetRecommendationsResponseType extends
      */
     public function setProductRecommendations($val)
     {
-        $this->productrecommendations = (int)$val;
+        $this->ProductRecommendations = (int)$val;
     }
 }

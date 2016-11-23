@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class KeywordRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -40,6 +41,8 @@ class KeywordRequest
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

@@ -15,13 +15,14 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class RelistItemRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemType | Information about the item that spawned the transaction. It is a purchase from this
      * item's listing that the transaction represents. To remove a property from an item, specify
      * it in ModifyType as a changed property, but do not give it a value in Item. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $item;
+    public $Item;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ModifiedFieldType | Applicable when the ListingFlow is ReviseItem or RelistItem. Array of item properties
      * that are being changed. In release 439 and later, ModifiedFields is no longer required
@@ -29,7 +30,7 @@ class RelistItemRequestType extends
      * Developer's Guide for rules on adding, modifying, and removing values when revising
      * or relisting items.
      */
-    public $modifiedfields;
+    public $ModifiedFields;
     /**
      * @var string | Specifies the name of the field to remove from a listing. Applicable when the ListingFlow
      * is ReviseItem or RelistItem. See the Developer's Guide for rules on removing values
@@ -40,14 +41,16 @@ class RelistItemRequestType extends
      * are also allowed: item.charity, item.secondaryCategory, and item.subTitle. DeletedField
      * is case sensitive. The request can contain zero, one, or many instances of DeletedField.
      */
-    public $deletedfield;
+    public $DeletedField;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemType $val
      * @throws Exception
      */
     public function setItem($val)
     {
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class RelistItemRequestType extends
      */
     public function setModifiedFields($val)
     {
-        $this->modifiedfields = (int)$val;
+        $this->ModifiedFields = (int)$val;
     }
 
     /**
@@ -68,6 +71,6 @@ class RelistItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->deletedfield = (int)$val;
+        $this->DeletedField = (int)$val;
     }
 }

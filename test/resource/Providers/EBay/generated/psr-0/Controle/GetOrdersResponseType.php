@@ -9,30 +9,31 @@ namespace Controle;
 class GetOrdersResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
 	 * of entries.
 	 */
-	public $paginationresult;
+	public $PaginationResult;
 	/**
 	 * @var boolean | Applies only to Half.com. If true, there are more orders yet to be retrieved. Additional
 	 * GetOrders calls with higher page numbers or more entries per page must be made to retrieve
 	 * these orders. If false, no more orders are available or no orders match the request (based
 	 * on the input filters).
 	 */
-	public $hasmoreorders;
+	public $HasMoreOrders;
 	/**
 	 * @var \Controle\OrderArrayType | The set of orders that match the order IDs or filter criteria specified. Also applicable
 	 * to Half.com (only returns orders that have not been marked as shipped).
 	 */
-	public $orderarray;
+	public $OrderArray;
 	/**
 	 * @var int | Applies only to Half.com. Indicates the number of orders that can be returned per page
 	 * of data (i.e., per call). This is the same as the value specified in the Pagination.EntriesPerPage
 	 * input (or the default value, if EntriesPerPage was not specified). This is not necessarily
 	 * the actual number of orders returned per page (see ReturnedOrderCountActual).
 	 */
-	public $ordersperpage;
+	public $OrdersPerPage;
 	/**
 	 * @var int | Specifies the number of the page of data to return in the current call. Default is 1 for
 	 * most calls. For some calls, the default is 0. Specify a positive value equal to or lower
@@ -40,18 +41,20 @@ class GetOrdersResponseType extends
 	 * initial request). See the documentation for other individual calls to determine the correct default
 	 * value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable to Half.com).
 	 */
-	public $pagenumber;
+	public $PageNumber;
 	/**
 	 * @var int | Applies only to Half.com. Indicates the total number of orders returned.
 	 */
-	public $returnedordercountactual;
+	public $ReturnedOrderCountActual;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param PaginationResultType $val
 	 * @throws Exception
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
 	}
 
 	/**
@@ -60,7 +63,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setHasMoreOrders($val)
 	{
-        $this->hasmoreorders = (int)$val;
+        $this->HasMoreOrders = (int)$val;
 	}
 
 	/**
@@ -69,7 +72,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setOrderArray($val)
 	{
-        $this->orderarray = (int)$val;
+        $this->OrderArray = (int)$val;
 	}
 
 	/**
@@ -81,7 +84,7 @@ class GetOrdersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ordersperpage = (int)$val;
+        $this->OrdersPerPage = (int)$val;
 	}
 
 	/**
@@ -93,7 +96,7 @@ class GetOrdersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
 	}
 
 	/**
@@ -105,6 +108,6 @@ class GetOrdersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->returnedordercountactual = (int)$val;
+        $this->ReturnedOrderCountActual = (int)$val;
 	}
 }

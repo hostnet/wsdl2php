@@ -4,21 +4,24 @@ namespace Controle;
 
 class AvailabilityCheckResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $availabilitycheckresult;
+    public $AvailabilityCheckResult;
     /**
      * @var array \Controle\AvailabilityCheckResult
      */
     public $results;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setAvailabilityCheckResult($val)
     {
-        $this->availabilitycheckresult = (int)$val;
+        $this->AvailabilityCheckResult = (int)$val;
     }
 
     /**

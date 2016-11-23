@@ -4,15 +4,16 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class XmLrequesterCredentialsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | eBay user ID (i.e., eBay.com Web site login name) for the user the application is retrieving
      * a token for. This is typically the application's end-user (not the developer).
      */
-    public $username;
+    public $Username;
     /**
      * @var string | Password for the user specified in Username.
      */
-    public $password;
+    public $Password;
     /**
      * @var string | Authentication token representing the user who is making the request. The user's token
      * must be retrieved from eBay. To determine a user's authentication token, see the Authentication
@@ -22,11 +23,13 @@ class XmLrequesterCredentialsType
      * data may be restricted to the user whose data is being requested. The documentation
      * for each call includes information about such restrictions.
      */
-    public $ebayauthtoken;
+    public $eBayAuthToken;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -36,7 +39,7 @@ class XmLrequesterCredentialsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Username');
         }
-        $this->username = (int)$val;
+        $this->Username = (int)$val;
     }
 
     /**
@@ -48,7 +51,7 @@ class XmLrequesterCredentialsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Password');
         }
-        $this->password = (int)$val;
+        $this->Password = (int)$val;
     }
 
     /**
@@ -60,7 +63,7 @@ class XmLrequesterCredentialsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->ebayauthtoken = (int)$val;
+        $this->eBayAuthToken = (int)$val;
     }
 
     /**

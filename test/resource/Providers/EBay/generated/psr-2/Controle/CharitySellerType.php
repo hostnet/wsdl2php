@@ -8,26 +8,29 @@ namespace Controle;
  */
 class CharitySellerType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\CharitySellerStatusCodeType | Indicates the status of the seller's charity seller account.
      */
-    public $charitysellerstatus;
+    public $CharitySellerStatus;
     /**
      * @var \Controle\CharityAffiliationType | Indicates the affiliation status for nonprofit charity organizations registered with
      * the dedicated eBay Giving Works provider.
      */
-    public $charityaffiliation;
+    public $CharityAffiliation;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CharitySellerStatusCodeType $val
      * @throws Exception
      */
     public function setCharitySellerStatus($val)
     {
-        $this->charitysellerstatus = (int)$val;
+        $this->CharitySellerStatus = (int)$val;
     }
 
     /**
@@ -36,7 +39,7 @@ class CharitySellerType
      */
     public function setCharityAffiliation($val)
     {
-        $this->charityaffiliation = (int)$val;
+        $this->CharityAffiliation = (int)$val;
     }
 
     /**

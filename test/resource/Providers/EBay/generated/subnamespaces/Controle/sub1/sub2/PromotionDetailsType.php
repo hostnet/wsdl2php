@@ -8,38 +8,41 @@ namespace Controle\sub1\sub2;
  */
 class PromotionDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | The price of the cross-promoted item in the currency of the site upon which the item is
 	 * listed. Output only. If the item is listed on a site different from the site specified
 	 * in the request, then ConvertedPromotionPrice is also returned.
 	 */
-	public $promotionprice;
+	public $PromotionPrice;
 	/**
 	 * @var \Controle\sub1\sub2\PromotionItemPriceTypeCodeType | The listing type for the promoted item and how the item price is used.
 	 */
-	public $promotionpricetype;
+	public $PromotionPriceType;
 	/**
 	 * @var int | Number of bids placed so far against the item. Only applicable to competitive-bidding listings
 	 * (Chinese and Dutch auctions).
 	 */
-	public $bidcount;
+	public $BidCount;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | The converted price of the cross-promoted item. Output only. Emitted only when the item
 	 * is listed on a site other than the site specified in the request. Returns the price in
 	 * the currency of the site specified in the request.
 	 */
-	public $convertedpromotionprice;
+	public $ConvertedPromotionPrice;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
 	public function setPromotionPrice($val)
 	{
-        $this->promotionprice = (int)$val;
+        $this->PromotionPrice = (int)$val;
 	}
 
 	/**
@@ -48,7 +51,7 @@ class PromotionDetailsType
 	 */
 	public function setPromotionPriceType($val)
 	{
-        $this->promotionpricetype = (int)$val;
+        $this->PromotionPriceType = (int)$val;
 	}
 
 	/**
@@ -60,7 +63,7 @@ class PromotionDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidcount = (int)$val;
+        $this->BidCount = (int)$val;
 	}
 
 	/**
@@ -69,7 +72,7 @@ class PromotionDetailsType
 	 */
 	public function setConvertedPromotionPrice($val)
 	{
-        $this->convertedpromotionprice = (int)$val;
+        $this->ConvertedPromotionPrice = (int)$val;
 	}
 
 	/**

@@ -8,112 +8,115 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ShipmentType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var dateTime |      */
-    public $estimateddeliverydate;
+    public $EstimatedDeliveryDate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType |      */
-    public $insuredvalue;
+    public $InsuredValue;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MeasureType | Depth dimension of the package needed to ship the item after it is sold.
      * For calculated shipping only.
      */
-    public $packagedepth;
+    public $PackageDepth;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MeasureType | Length dimension of the package needed to ship the item after it is sold.
      *  For calculated shipping only.
      */
-    public $packagelength;
+    public $PackageLength;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MeasureType | Width dimension of the package needed to ship the item after it is sold.
      * For calculated shipping only.
      */
-    public $packagewidth;
+    public $PackageWidth;
     /**
      * @var string |      */
-    public $paypalshipmentid;
+    public $PayPalShipmentID;
     /**
      * @var long |      */
-    public $shipmentid;
+    public $ShipmentID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType |      */
-    public $postagetotal;
+    public $PostageTotal;
     /**
      * @var dateTime |      */
-    public $printedtime;
+    public $PrintedTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AddressType | The address from which the item is being shipped.
      */
-    public $shipfromaddress;
+    public $ShipFromAddress;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AddressType | The address to which the item is to be shipped.
      */
-    public $shippingaddress;
+    public $ShippingAddress;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingCarrierCodeType | The shipping carrier used.
      */
-    public $shippingcarrierused;
+    public $ShippingCarrierUsed;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingFeatureCodeType |      */
-    public $shippingfeature;
+    public $ShippingFeature;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingPackageCodeType | The size of the package used to ship the item(s). See ShippingPackageCodeType
      *      for its possible values. Input.
      */
-    public $shippingpackage;
+    public $ShippingPackage;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\token | The shipping service that actually shipped the item(s). Not applicable to Half.com.
      */
-    public $shippingserviceused;
+    public $ShippingServiceUsed;
     /**
      * @var string | Shipment tracking number supplied by the shipping carrier. Not applicable to Half.com.
      */
-    public $shipmenttrackingnumber;
+    public $ShipmentTrackingNumber;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MeasureType | See the documentation regarding "Working with Item Weights".            The 'unit' attribute
      * can have a value of lbs.
      */
-    public $weightmajor;
+    public $WeightMajor;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MeasureType | See the documentation regarding "Working with Item Weights". The 'unit' attribute is
      * optional and assumed to be the minor compared to the value of 'unit' in WeightMajor.
      */
-    public $weightminor;
+    public $WeightMinor;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemTransactionIDType |      */
-    public $itemtransactionid;
+    public $ItemTransactionID;
     /**
      * @var dateTime | Revise only
      */
-    public $deliverydate;
+    public $DeliveryDate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShipmentDeliveryStatusCodeType | Revise only
      */
-    public $deliverystatus;
+    public $DeliveryStatus;
     /**
      * @var dateTime | Revise only
      */
-    public $refundgrantedtime;
+    public $RefundGrantedTime;
     /**
      * @var dateTime | Revise only
      */
-    public $refundrequestedtime;
+    public $RefundRequestedTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShipmentStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $status;
+    public $Status;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param dateTime $val
      * @throws Exception
      */
     public function setEstimatedDeliveryDate($val)
     {
-        $this->estimateddeliverydate = (int)$val;
+        $this->EstimatedDeliveryDate = (int)$val;
     }
 
     /**
@@ -122,7 +125,7 @@ class ShipmentType
      */
     public function setInsuredValue($val)
     {
-        $this->insuredvalue = (int)$val;
+        $this->InsuredValue = (int)$val;
     }
 
     /**
@@ -131,7 +134,7 @@ class ShipmentType
      */
     public function setPackageDepth($val)
     {
-        $this->packagedepth = (int)$val;
+        $this->PackageDepth = (int)$val;
     }
 
     /**
@@ -140,7 +143,7 @@ class ShipmentType
      */
     public function setPackageLength($val)
     {
-        $this->packagelength = (int)$val;
+        $this->PackageLength = (int)$val;
     }
 
     /**
@@ -149,7 +152,7 @@ class ShipmentType
      */
     public function setPackageWidth($val)
     {
-        $this->packagewidth = (int)$val;
+        $this->PackageWidth = (int)$val;
     }
 
     /**
@@ -161,7 +164,7 @@ class ShipmentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalShipmentID');
         }
-        $this->paypalshipmentid = (int)$val;
+        $this->PayPalShipmentID = (int)$val;
     }
 
     /**
@@ -170,7 +173,7 @@ class ShipmentType
      */
     public function setShipmentID($val)
     {
-        $this->shipmentid = (int)$val;
+        $this->ShipmentID = (int)$val;
     }
 
     /**
@@ -179,7 +182,7 @@ class ShipmentType
      */
     public function setPostageTotal($val)
     {
-        $this->postagetotal = (int)$val;
+        $this->PostageTotal = (int)$val;
     }
 
     /**
@@ -188,7 +191,7 @@ class ShipmentType
      */
     public function setPrintedTime($val)
     {
-        $this->printedtime = (int)$val;
+        $this->PrintedTime = (int)$val;
     }
 
     /**
@@ -197,7 +200,7 @@ class ShipmentType
      */
     public function setShipFromAddress($val)
     {
-        $this->shipfromaddress = (int)$val;
+        $this->ShipFromAddress = (int)$val;
     }
 
     /**
@@ -206,7 +209,7 @@ class ShipmentType
      */
     public function setShippingAddress($val)
     {
-        $this->shippingaddress = (int)$val;
+        $this->ShippingAddress = (int)$val;
     }
 
     /**
@@ -215,7 +218,7 @@ class ShipmentType
      */
     public function setShippingCarrierUsed($val)
     {
-        $this->shippingcarrierused = (int)$val;
+        $this->ShippingCarrierUsed = (int)$val;
     }
 
     /**
@@ -224,7 +227,7 @@ class ShipmentType
      */
     public function setShippingFeature($val)
     {
-        $this->shippingfeature = (int)$val;
+        $this->ShippingFeature = (int)$val;
     }
 
     /**
@@ -233,7 +236,7 @@ class ShipmentType
      */
     public function setShippingPackage($val)
     {
-        $this->shippingpackage = (int)$val;
+        $this->ShippingPackage = (int)$val;
     }
 
     /**
@@ -242,7 +245,7 @@ class ShipmentType
      */
     public function setShippingServiceUsed($val)
     {
-        $this->shippingserviceused = (int)$val;
+        $this->ShippingServiceUsed = (int)$val;
     }
 
     /**
@@ -254,7 +257,7 @@ class ShipmentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
-        $this->shipmenttrackingnumber = (int)$val;
+        $this->ShipmentTrackingNumber = (int)$val;
     }
 
     /**
@@ -263,7 +266,7 @@ class ShipmentType
      */
     public function setWeightMajor($val)
     {
-        $this->weightmajor = (int)$val;
+        $this->WeightMajor = (int)$val;
     }
 
     /**
@@ -272,7 +275,7 @@ class ShipmentType
      */
     public function setWeightMinor($val)
     {
-        $this->weightminor = (int)$val;
+        $this->WeightMinor = (int)$val;
     }
 
     /**
@@ -281,7 +284,7 @@ class ShipmentType
      */
     public function setItemTransactionID($val)
     {
-        $this->itemtransactionid = (int)$val;
+        $this->ItemTransactionID = (int)$val;
     }
 
     /**
@@ -290,7 +293,7 @@ class ShipmentType
      */
     public function setDeliveryDate($val)
     {
-        $this->deliverydate = (int)$val;
+        $this->DeliveryDate = (int)$val;
     }
 
     /**
@@ -299,7 +302,7 @@ class ShipmentType
      */
     public function setDeliveryStatus($val)
     {
-        $this->deliverystatus = (int)$val;
+        $this->DeliveryStatus = (int)$val;
     }
 
     /**
@@ -308,7 +311,7 @@ class ShipmentType
      */
     public function setRefundGrantedTime($val)
     {
-        $this->refundgrantedtime = (int)$val;
+        $this->RefundGrantedTime = (int)$val;
     }
 
     /**
@@ -317,7 +320,7 @@ class ShipmentType
      */
     public function setRefundRequestedTime($val)
     {
-        $this->refundrequestedtime = (int)$val;
+        $this->RefundRequestedTime = (int)$val;
     }
 
     /**
@@ -326,7 +329,7 @@ class ShipmentType
      */
     public function setStatus($val)
     {
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 
     /**

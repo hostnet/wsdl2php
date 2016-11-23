@@ -8,48 +8,51 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ItemListCustomizationType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Whether to include information about this type of reminder in the response. When true,
      * the container is returned with default input parameters.
      */
-    public $include;
+    public $Include;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTypeCodeType | The listing format (fixed price, auction, etc) for the automatic item search criteria.
      */
-    public $listingtype;
+    public $ListingType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemSortTypeCodeType | Specifies the result sort order. Default is Ascending.
      */
-    public $sort;
+    public $Sort;
     /**
      * @var int | The length of time the reminder has existed in the user's My eBay account, in days.
      * Valid values are 1-60.
      */
-    public $durationindays;
+    public $DurationInDays;
     /**
      * @var boolean | Specifies whether to include Item.PrivateNotes and Item.eBayNotes in the response. Valid
      * for WatchList, BidList, WonList, LostList, ScheduledList, ActiveList, SoldList, and
      * UnsoldList.
      */
-    public $includenotes;
+    public $IncludeNotes;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setInclude($val)
     {
-        $this->include = (int)$val;
+        $this->Include = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class ItemListCustomizationType
      */
     public function setListingType($val)
     {
-        $this->listingtype = (int)$val;
+        $this->ListingType = (int)$val;
     }
 
     /**
@@ -67,7 +70,7 @@ class ItemListCustomizationType
      */
     public function setSort($val)
     {
-        $this->sort = (int)$val;
+        $this->Sort = (int)$val;
     }
 
     /**
@@ -79,7 +82,7 @@ class ItemListCustomizationType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->durationindays = (int)$val;
+        $this->DurationInDays = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class ItemListCustomizationType
      */
     public function setIncludeNotes($val)
     {
-        $this->includenotes = (int)$val;
+        $this->IncludeNotes = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class ItemListCustomizationType
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**

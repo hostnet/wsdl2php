@@ -9,11 +9,12 @@ namespace Controle\sub1\sub2;
  */
 class SearchRequestType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Numeric identifier for a characteristic set that defines the attributes            (unique
 	 * across all eBay sites).
 	 */
-	public $attributesetid;
+	public $AttributeSetID;
 	/**
 	 * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
 	 *        search for Item Specifics in listings (e.g., how to search against a particular
@@ -25,7 +26,7 @@ class SearchRequestType
 	 * this data, you must specify the product finder ID, and also specify a detail level of ItemReturnAttributes
 	 * or ReturnAll. Use GetProductFinder to determine valid product finder IDs.
 	 */
-	public $productfinderid;
+	public $ProductFinderID;
 	/**
 	 * @var \Controle\sub1\sub2\SearchAttributesType | A query consisting of a set of attributes (search criteria). If the query             includes
 	 * multiple attributes, the search engine will apply "AND" logic to the             query.
@@ -33,11 +34,13 @@ class SearchRequestType
 	 * are permitted for the specified characteristic set.            If specified, ProductFinderID
 	 * must also be specified.
 	 */
-	public $searchattributes;
+	public $SearchAttributes;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -47,7 +50,7 @@ class SearchRequestType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributesetid = (int)$val;
+        $this->AttributeSetID = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class SearchRequestType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->productfinderid = (int)$val;
+        $this->ProductFinderID = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class SearchRequestType
 	 */
 	public function setSearchAttributes($val)
 	{
-        $this->searchattributes = (int)$val;
+        $this->SearchAttributes = (int)$val;
 	}
 
 	/**

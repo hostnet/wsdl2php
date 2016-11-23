@@ -4,22 +4,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Feedback
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $feedbackrating;
+    public $FeedbackRating;
     /**
      * @var string
      */
-    public $feedbackcomments;
+    public $FeedbackComments;
     /**
      * @var string
      */
-    public $feedbackdate;
+    public $FeedbackDate;
     /**
      * @var string
      */
-    public $feedbackrater;
+    public $FeedbackRater;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackRating');
         }
-        $this->feedbackrating = (int)$val;
+        $this->FeedbackRating = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackComments');
         }
-        $this->feedbackcomments = (int)$val;
+        $this->FeedbackComments = (int)$val;
     }
 
     /**
@@ -53,7 +56,7 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackDate');
         }
-        $this->feedbackdate = (int)$val;
+        $this->FeedbackDate = (int)$val;
     }
 
     /**
@@ -65,6 +68,6 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackRater');
         }
-        $this->feedbackrater = (int)$val;
+        $this->FeedbackRater = (int)$val;
     }
 }

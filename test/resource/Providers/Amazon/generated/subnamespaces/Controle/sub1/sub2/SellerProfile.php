@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class SellerProfile
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\SellerProfileDetailsArray
 	 */
-	public $sellerprofiledetails;
+	public $SellerProfileDetails;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SellerProfileDetailsArray $val
 	 * @throws Exception
 	 */
 	public function setSellerProfileDetails($val)
 	{
-        $this->sellerprofiledetails = (int)$val;
+        $this->SellerProfileDetails = (int)$val;
 	}
 }

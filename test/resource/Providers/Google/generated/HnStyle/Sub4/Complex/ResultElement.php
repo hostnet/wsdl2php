@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ResultElement
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -11,7 +12,7 @@ class ResultElement
     /**
      * @var string
      */
-    public $url;
+    public $URL;
     /**
      * @var string
      */
@@ -23,23 +24,25 @@ class ResultElement
     /**
      * @var string
      */
-    public $cachedsize;
+    public $cachedSize;
     /**
      * @var boolean
      */
-    public $relatedinformationpresent;
+    public $relatedInformationPresent;
     /**
      * @var string
      */
-    public $hostname;
+    public $hostName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DirectoryCategory
      */
-    public $directorycategory;
+    public $directoryCategory;
     /**
      * @var string
      */
-    public $directorytitle;
+    public $directoryTitle;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -61,7 +64,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URL');
         }
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for cachedSize');
         }
-        $this->cachedsize = (int)$val;
+        $this->cachedSize = (int)$val;
     }
 
     /**
@@ -106,7 +109,7 @@ class ResultElement
      */
     public function setRelatedInformationPresent($val)
     {
-        $this->relatedinformationpresent = (int)$val;
+        $this->relatedInformationPresent = (int)$val;
     }
 
     /**
@@ -118,7 +121,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for hostName');
         }
-        $this->hostname = (int)$val;
+        $this->hostName = (int)$val;
     }
 
     /**
@@ -127,7 +130,7 @@ class ResultElement
      */
     public function setDirectoryCategory($val)
     {
-        $this->directorycategory = (int)$val;
+        $this->directoryCategory = (int)$val;
     }
 
     /**
@@ -139,6 +142,6 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for directoryTitle');
         }
-        $this->directorytitle = (int)$val;
+        $this->directoryTitle = (int)$val;
     }
 }

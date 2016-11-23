@@ -4,57 +4,60 @@ namespace Controle;
 
 class GoogleSearchResult
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean
      */
-    public $documentfiltering;
+    public $documentFiltering;
     /**
      * @var string
      */
-    public $searchcomments;
+    public $searchComments;
     /**
      * @var int
      */
-    public $estimatedtotalresultscount;
+    public $estimatedTotalResultsCount;
     /**
      * @var boolean
      */
-    public $estimateisexact;
+    public $estimateIsExact;
     /**
      * @var \Controle\ResultElementArray
      */
-    public $resultelements;
+    public $resultElements;
     /**
      * @var string
      */
-    public $searchquery;
+    public $searchQuery;
     /**
      * @var int
      */
-    public $startindex;
+    public $startIndex;
     /**
      * @var int
      */
-    public $endindex;
+    public $endIndex;
     /**
      * @var string
      */
-    public $searchtips;
+    public $searchTips;
     /**
      * @var \Controle\DirectoryCategoryArray
      */
-    public $directorycategories;
+    public $directoryCategories;
     /**
      * @var double
      */
-    public $searchtime;
+    public $searchTime;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setDocumentFiltering($val)
     {
-        $this->documentfiltering = (int)$val;
+        $this->documentFiltering = (int)$val;
     }
 
     /**
@@ -66,7 +69,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchComments');
         }
-        $this->searchcomments = (int)$val;
+        $this->searchComments = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->estimatedtotalresultscount = (int)$val;
+        $this->estimatedTotalResultsCount = (int)$val;
     }
 
     /**
@@ -87,7 +90,7 @@ class GoogleSearchResult
      */
     public function setEstimateIsExact($val)
     {
-        $this->estimateisexact = (int)$val;
+        $this->estimateIsExact = (int)$val;
     }
 
     /**
@@ -96,7 +99,7 @@ class GoogleSearchResult
      */
     public function setResultElements($val)
     {
-        $this->resultelements = (int)$val;
+        $this->resultElements = (int)$val;
     }
 
     /**
@@ -108,7 +111,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchQuery');
         }
-        $this->searchquery = (int)$val;
+        $this->searchQuery = (int)$val;
     }
 
     /**
@@ -120,7 +123,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->startindex = (int)$val;
+        $this->startIndex = (int)$val;
     }
 
     /**
@@ -132,7 +135,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->endindex = (int)$val;
+        $this->endIndex = (int)$val;
     }
 
     /**
@@ -144,7 +147,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchTips');
         }
-        $this->searchtips = (int)$val;
+        $this->searchTips = (int)$val;
     }
 
     /**
@@ -153,7 +156,7 @@ class GoogleSearchResult
      */
     public function setDirectoryCategories($val)
     {
-        $this->directorycategories = (int)$val;
+        $this->directoryCategories = (int)$val;
     }
 
     /**
@@ -162,6 +165,6 @@ class GoogleSearchResult
      */
     public function setSearchTime($val)
     {
-        $this->searchtime = (int)$val;
+        $this->searchTime = (int)$val;
     }
 }

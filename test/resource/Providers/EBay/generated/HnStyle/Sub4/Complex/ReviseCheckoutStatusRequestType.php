@@ -9,22 +9,23 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ReviseCheckoutStatusRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var string | ID of the Half.com order associated with the payment. Returns 0 for single-transaction
      * orders.
      */
-    public $orderid;
+    public $OrderID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The amount the buyer paid for the item(s) in the transaction. If the seller allowed
      * the buyer to change the item total, the buyer is able to change the total until the
@@ -35,51 +36,51 @@ class ReviseCheckoutStatusRequestType extends
      * which the transaction belongs. For Motors items, AmountPaid is the amount paid by the
      * buyer for the deposit. Not applicable to Half.com.
      */
-    public $amountpaid;
+    public $AmountPaid;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BuyerPaymentMethodCodeType | Payment method the buyer selected for paying the seller for the transaction. If checkout
      * is not yet complete, PaymentMethodUsed is set to whatever the buyer selected as his or
      * her preference on the Review Your Purchase page.
      */
-    public $paymentmethodused;
+    public $PaymentMethodUsed;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CompleteStatusCodeType | Indicates the current status of the checkout process for the transaction.
      */
-    public $checkoutstatus;
+    public $CheckoutStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\token | A domestic shipping service offered for shipping the item (for example, UPS Ground).
      * For a list of valid values that you can cache for future use, call GeteBayDetails with
      * DetailName set to ShippingServiceDetails. For flat and calculated shipping. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $shippingservice;
+    public $ShippingService;
     /**
      * @var boolean | Whether shipping costs are to be part of the base amount that is taxed. GetTaxTable:
      * This tag is empty if the user did not previously provide information.
      */
-    public $shippingincludedintax;
+    public $ShippingIncludedInTax;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CheckoutMethodCodeType | Not supported.
      */
-    public $checkoutmethod;
+    public $CheckoutMethod;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceSelectedCodeType | The insurance option selected by the buyer.
      */
-    public $insurancetype;
+    public $InsuranceType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RCSPaymentStatusCodeType | Not supported.
      */
-    public $paymentstatus;
+    public $PaymentStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Adjustment amount entered by the buyer. A positive amount indicates the amount is an
      * extra charge being paid to the seller by the buyer. A negative value indicates this
      * amount is a credit given to the buyer by the seller. Not applicable to Half.com.
      */
-    public $adjustmentamount;
+    public $AdjustmentAmount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AddressType | The address to which the item is to be shipped.
      */
-    public $shippingaddress;
+    public $ShippingAddress;
     /**
      * @var string | eBay ID for the buyer in the transaction being revised. A transaction is uniquely identified
      * by one of two means: (a) You provide a TransactionID and ItemID. (This is the preferred
@@ -88,14 +89,14 @@ class ReviseCheckoutStatusRequestType extends
      * combination). Note: If all three are provided (that is, BuyerID, ItemID and TransactionID),
      * BuyerID is ignored.
      */
-    public $buyerid;
+    public $BuyerID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The insurance cost associated with shipping a single item with this shipping service.
      * Exception: for GetItemShipping, this is proportional to QuantitySold. If the item has
      * not yet been sold, insurance information cannot be calculated and the value is 0.00.
      * For calculated shipping only. Also applicable to Half.com (for GetOrders).
      */
-    public $shippinginsurancecost;
+    public $ShippingInsuranceCost;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Sales tax details. US site only. Flat and calculated shipping. Also applicable to Half.com
      * (for GetOrders). If your application normally calculates sales tax without using eBay's
@@ -103,32 +104,34 @@ class ReviseCheckoutStatusRequestType extends
      * process payments. For general information about listings on eBay Express, see the eBay
      * Web Services Guide links below. Not applicable to eBay Motors vehicle listings.
      */
-    public $salestax;
+    public $SalesTax;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Amount of money paid for shipping. For Third-party Checkout applications.
      */
-    public $shippingcost;
+    public $ShippingCost;
     /**
      * @var string | Not supported.
      */
-    public $encryptedid;
+    public $EncryptedID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExternalTransactionType | A PayPal transaction that relates to this eBay transaction. Returned only if there is
      * at least one PayPal transaction related to this eBay transaction. Not applicable to
      * Half.com.
      */
-    public $externaltransaction;
+    public $ExternalTransaction;
     /**
      * @var string | Not supported.
      */
-    public $multiplesellerpaymentid;
+    public $MultipleSellerPaymentID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -140,7 +143,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -152,7 +155,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderID');
         }
-        $this->orderid = (int)$val;
+        $this->OrderID = (int)$val;
     }
 
     /**
@@ -161,7 +164,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setAmountPaid($val)
     {
-        $this->amountpaid = (int)$val;
+        $this->AmountPaid = (int)$val;
     }
 
     /**
@@ -170,7 +173,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setPaymentMethodUsed($val)
     {
-        $this->paymentmethodused = (int)$val;
+        $this->PaymentMethodUsed = (int)$val;
     }
 
     /**
@@ -179,7 +182,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setCheckoutStatus($val)
     {
-        $this->checkoutstatus = (int)$val;
+        $this->CheckoutStatus = (int)$val;
     }
 
     /**
@@ -188,7 +191,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingService($val)
     {
-        $this->shippingservice = (int)$val;
+        $this->ShippingService = (int)$val;
     }
 
     /**
@@ -197,7 +200,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingIncludedInTax($val)
     {
-        $this->shippingincludedintax = (int)$val;
+        $this->ShippingIncludedInTax = (int)$val;
     }
 
     /**
@@ -206,7 +209,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setCheckoutMethod($val)
     {
-        $this->checkoutmethod = (int)$val;
+        $this->CheckoutMethod = (int)$val;
     }
 
     /**
@@ -215,7 +218,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setInsuranceType($val)
     {
-        $this->insurancetype = (int)$val;
+        $this->InsuranceType = (int)$val;
     }
 
     /**
@@ -224,7 +227,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setPaymentStatus($val)
     {
-        $this->paymentstatus = (int)$val;
+        $this->PaymentStatus = (int)$val;
     }
 
     /**
@@ -233,7 +236,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setAdjustmentAmount($val)
     {
-        $this->adjustmentamount = (int)$val;
+        $this->AdjustmentAmount = (int)$val;
     }
 
     /**
@@ -242,7 +245,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingAddress($val)
     {
-        $this->shippingaddress = (int)$val;
+        $this->ShippingAddress = (int)$val;
     }
 
     /**
@@ -254,7 +257,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerID');
         }
-        $this->buyerid = (int)$val;
+        $this->BuyerID = (int)$val;
     }
 
     /**
@@ -263,7 +266,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingInsuranceCost($val)
     {
-        $this->shippinginsurancecost = (int)$val;
+        $this->ShippingInsuranceCost = (int)$val;
     }
 
     /**
@@ -272,7 +275,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setSalesTax($val)
     {
-        $this->salestax = (int)$val;
+        $this->SalesTax = (int)$val;
     }
 
     /**
@@ -281,7 +284,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingCost($val)
     {
-        $this->shippingcost = (int)$val;
+        $this->ShippingCost = (int)$val;
     }
 
     /**
@@ -293,7 +296,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EncryptedID');
         }
-        $this->encryptedid = (int)$val;
+        $this->EncryptedID = (int)$val;
     }
 
     /**
@@ -302,7 +305,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setExternalTransaction($val)
     {
-        $this->externaltransaction = (int)$val;
+        $this->ExternalTransaction = (int)$val;
     }
 
     /**
@@ -314,6 +317,6 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MultipleSellerPaymentID');
         }
-        $this->multiplesellerpaymentid = (int)$val;
+        $this->MultipleSellerPaymentID = (int)$val;
     }
 }

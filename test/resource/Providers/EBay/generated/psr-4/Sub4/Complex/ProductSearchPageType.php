@@ -8,24 +8,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ProductSearchPageType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Applications should remove dependencies on this element.
      */
-    public $dataelements;
+    public $DataElements;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicsSetType | A list of attributes that describe the choice of search criteria          for the specified
      * characteristic set. The order in which the criteria are returned          is not significant
      * and may vary for different requests. See the eBay Web Services guide          for details
      * about how to use this data as input to GetProductSearchResults.
      */
-    public $searchcharacteristicsset;
+    public $SearchCharacteristicsSet;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicsSearchCodeType | Indicates whether one attribute or multiple attributes can be used as the search keyword
      *          when calling GetProductSearchResults. Applications can ignore this data because
      *          GetProductSearchPage only supports single-attribute searches.          Use
      * GetProductFinder to determine valid multi-attribute searches.
      */
-    public $searchtype;
+    public $SearchType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicType | A product aspect or feature that can be used as a key for sorting catalog search results.
      *          This does not necessarily match a searchable attribute. For example, you might
@@ -38,15 +39,17 @@ class ProductSearchPageType
      * and may vary for          different requests.          See the eBay Web Services guide
      * for details about how to use this data as input to          GetProductSearchResults.
      */
-    public $sortcharacteristics;
+    public $SortCharacteristics;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DataElementSetType | Contains helpful hints for the user. Usage of this information is optional.
      */
-    public $dataelementset;
+    public $DataElementSet;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -56,7 +59,7 @@ class ProductSearchPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElements');
         }
-        $this->dataelements = (int)$val;
+        $this->DataElements = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class ProductSearchPageType
      */
     public function setSearchCharacteristicsSet($val)
     {
-        $this->searchcharacteristicsset = (int)$val;
+        $this->SearchCharacteristicsSet = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class ProductSearchPageType
      */
     public function setSearchType($val)
     {
-        $this->searchtype = (int)$val;
+        $this->SearchType = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class ProductSearchPageType
      */
     public function setSortCharacteristics($val)
     {
-        $this->sortcharacteristics = (int)$val;
+        $this->SortCharacteristics = (int)$val;
     }
 
     /**
@@ -92,7 +95,7 @@ class ProductSearchPageType
      */
     public function setDataElementSet($val)
     {
-        $this->dataelementset = (int)$val;
+        $this->DataElementSet = (int)$val;
     }
 
     /**

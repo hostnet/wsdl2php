@@ -9,30 +9,33 @@ namespace Controle;
  */
 class ListingTipMessageType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Identifier for the tip message. Primarily for internal use. This value may change over
 	 * time.
 	 */
-	public $listingtipmessageid;
+	public $ListingTipMessageID;
 	/**
 	 * @var string | Brief version of the tip message.
 	 */
-	public $shortmessage;
+	public $ShortMessage;
 	/**
 	 * @var string | Detailed version of the tip message.
 	 */
-	public $longmessage;
+	public $LongMessage;
 	/**
 	 * @var string | Path part of a URL for a "Learn More" link that points to a relevant eBay Web site online
 	 * help page.            The path is relative to http://pages.ebay.XX, where XX is the 2-letter
 	 * site code            (e.g., http://pages.ebay.de for the eBay Germany site). Applications
 	 * should append the            URL to the appropriate path for the user's site.
 	 */
-	public $helpurlpath;
+	public $HelpURLPath;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -42,7 +45,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipMessageID');
         }
-        $this->listingtipmessageid = (int)$val;
+        $this->ListingTipMessageID = (int)$val;
 	}
 
 	/**
@@ -54,7 +57,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->shortmessage = (int)$val;
+        $this->ShortMessage = (int)$val;
 	}
 
 	/**
@@ -66,7 +69,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->longmessage = (int)$val;
+        $this->LongMessage = (int)$val;
 	}
 
 	/**
@@ -78,7 +81,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HelpURLPath');
         }
-        $this->helpurlpath = (int)$val;
+        $this->HelpURLPath = (int)$val;
 	}
 
 	/**

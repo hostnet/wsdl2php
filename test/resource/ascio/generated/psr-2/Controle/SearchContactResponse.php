@@ -4,21 +4,24 @@ namespace Controle;
 
 class SearchContactResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $searchcontactresult;
+    public $SearchContactResult;
     /**
      * @var array \Controle\Contact
      */
     public $contacts;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setSearchContactResult($val)
     {
-        $this->searchcontactresult = (int)$val;
+        $this->SearchContactResult = (int)$val;
     }
 
     /**

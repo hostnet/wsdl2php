@@ -4,53 +4,56 @@ namespace Controle\sub1\sub2;
 
 class SearchOrderRequest
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var array \Controle\sub1\sub2\OrderType
 	 */
-	public $ordertypes;
+	public $OrderTypes;
 	/**
 	 * @var array \Controle\sub1\sub2\OrderStatusType
 	 */
-	public $orderstatustypes;
+	public $OrderStatusTypes;
 	/**
 	 * @var dateTime
 	 */
-	public $fromdate;
+	public $FromDate;
 	/**
 	 * @var dateTime
 	 */
-	public $todate;
+	public $ToDate;
 	/**
 	 * @var string
 	 */
-	public $domainname;
+	public $DomainName;
 	/**
 	 * @var string
 	 */
-	public $transactioncomment;
+	public $TransactionComment;
 	/**
 	 * @var string
 	 */
-	public $comments;
+	public $Comments;
 	/**
 	 * @var boolean
 	 */
-	public $includedomaindetails;
+	public $IncludeDomainDetails;
 	/**
 	 * @var \Controle\sub1\sub2\PagingInfo
 	 */
-	public $pageinfo;
+	public $PageInfo;
 	/**
 	 * @var \Controle\sub1\sub2\SearchOrderSortType
 	 */
-	public $ordersort;
+	public $OrderSort;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ArrayOfOrderType $val
 	 * @throws Exception
 	 */
 	public function setOrderTypes($val)
 	{
-        $this->ordertypes = (int)$val;
+        $this->OrderTypes = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class SearchOrderRequest
 	 */
 	public function setOrderStatusTypes($val)
 	{
-        $this->orderstatustypes = (int)$val;
+        $this->OrderStatusTypes = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class SearchOrderRequest
 	 */
 	public function setFromDate($val)
 	{
-        $this->fromdate = (int)$val;
+        $this->FromDate = (int)$val;
 	}
 
 	/**
@@ -77,7 +80,7 @@ class SearchOrderRequest
 	 */
 	public function setToDate($val)
 	{
-        $this->todate = (int)$val;
+        $this->ToDate = (int)$val;
 	}
 
 	/**
@@ -89,7 +92,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->domainname = (int)$val;
+        $this->DomainName = (int)$val;
 	}
 
 	/**
@@ -101,7 +104,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionComment');
         }
-        $this->transactioncomment = (int)$val;
+        $this->TransactionComment = (int)$val;
 	}
 
 	/**
@@ -113,7 +116,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->comments = (int)$val;
+        $this->Comments = (int)$val;
 	}
 
 	/**
@@ -122,7 +125,7 @@ class SearchOrderRequest
 	 */
 	public function setIncludeDomainDetails($val)
 	{
-        $this->includedomaindetails = (int)$val;
+        $this->IncludeDomainDetails = (int)$val;
 	}
 
 	/**
@@ -131,7 +134,7 @@ class SearchOrderRequest
 	 */
 	public function setPageInfo($val)
 	{
-        $this->pageinfo = (int)$val;
+        $this->PageInfo = (int)$val;
 	}
 
 	/**
@@ -140,6 +143,6 @@ class SearchOrderRequest
 	 */
 	public function setOrderSort($val)
 	{
-        $this->ordersort = (int)$val;
+        $this->OrderSort = (int)$val;
 	}
 }

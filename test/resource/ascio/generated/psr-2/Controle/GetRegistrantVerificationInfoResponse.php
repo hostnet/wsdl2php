@@ -4,21 +4,24 @@ namespace Controle;
 
 class GetRegistrantVerificationInfoResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $getregistrantverificationinforesult;
+    public $GetRegistrantVerificationInfoResult;
     /**
      * @var \Controle\RegistrantVerificationInfo
      */
-    public $verificationinfo;
+    public $verificationInfo;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setGetRegistrantVerificationInfoResult($val)
     {
-        $this->getregistrantverificationinforesult = (int)$val;
+        $this->GetRegistrantVerificationInfoResult = (int)$val;
     }
 
     /**
@@ -27,6 +30,6 @@ class GetRegistrantVerificationInfoResponse
      */
     public function setVerificationInfo($val)
     {
-        $this->verificationinfo = (int)$val;
+        $this->verificationInfo = (int)$val;
     }
 }

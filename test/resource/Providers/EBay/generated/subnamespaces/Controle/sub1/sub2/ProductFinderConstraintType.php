@@ -10,19 +10,22 @@ namespace Controle\sub1\sub2;
  */
 class ProductFinderConstraintType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | The search attribute name (e.g., Manufacturer).
 	 */
-	public $displayname;
+	public $DisplayName;
 	/**
 	 * @var string | The search attribute value the user specified in the query             (e.g., the actual
 	 * name the user chose for the manufacturer).
 	 */
-	public $displayvalue;
+	public $DisplayValue;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -32,7 +35,7 @@ class ProductFinderConstraintType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayName');
         }
-        $this->displayname = (int)$val;
+        $this->DisplayName = (int)$val;
 	}
 
 	/**
@@ -44,7 +47,7 @@ class ProductFinderConstraintType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayValue');
         }
-        $this->displayvalue = (int)$val;
+        $this->DisplayValue = (int)$val;
 	}
 
 	/**

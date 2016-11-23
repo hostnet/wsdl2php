@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class DisputeActivityCodeType
 {
+	// @codingStandardsIgnoreStart
 	const SELLERADDINFORMATION             = 'SellerAddInformation';
 	const SELLERCOMPLETEDTRANSACTION       = 'SellerCompletedTransaction';
 	const CAMETOAGREEMENTNEEDFVFCREDIT     = 'CameToAgreementNeedFVFCredit';
@@ -14,4 +15,5 @@ class DisputeActivityCodeType
 	const SELLERCOMMENT                    = 'SellerComment';
 	const SELLERPAYMENTNOTRECEIVED         = 'SellerPaymentNotReceived';
 	const CUSTOMCODE                       = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

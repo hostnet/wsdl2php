@@ -10,42 +10,45 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ReviseStatusType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | If true, indicates the item was revised since the listing became            active.
      *            Output only.
      */
-    public $itemrevised;
+    public $ItemRevised;
     /**
      * @var boolean | If true, indicates that a Buy It Now Price was added for the item.            Only applicable
      * to US eBay Motors items.            Output only.
      */
-    public $buyitnowadded;
+    public $BuyItNowAdded;
     /**
      * @var boolean | If true, indicates that the item's Buy It Now price was lowered.            Only applicable
      * to US eBay Motors items.            Output only.
      */
-    public $buyitnowlowered;
+    public $BuyItNowLowered;
     /**
      * @var boolean | If true, indicates that the reserve price was lowered for            the item. Only
      * applicable to US eBay Motors items.            Output only.
      */
-    public $reservelowered;
+    public $ReserveLowered;
     /**
      * @var boolean | If true, indicates that the reserve price was removed            from the item. Only
      * applicable to US eBay Motors items.            Output only.
      */
-    public $reserveremoved;
+    public $ReserveRemoved;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setItemRevised($val)
     {
-        $this->itemrevised = (int)$val;
+        $this->ItemRevised = (int)$val;
     }
 
     /**
@@ -54,7 +57,7 @@ class ReviseStatusType
      */
     public function setBuyItNowAdded($val)
     {
-        $this->buyitnowadded = (int)$val;
+        $this->BuyItNowAdded = (int)$val;
     }
 
     /**
@@ -63,7 +66,7 @@ class ReviseStatusType
      */
     public function setBuyItNowLowered($val)
     {
-        $this->buyitnowlowered = (int)$val;
+        $this->BuyItNowLowered = (int)$val;
     }
 
     /**
@@ -72,7 +75,7 @@ class ReviseStatusType
      */
     public function setReserveLowered($val)
     {
-        $this->reservelowered = (int)$val;
+        $this->ReserveLowered = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class ReviseStatusType
      */
     public function setReserveRemoved($val)
     {
-        $this->reserveremoved = (int)$val;
+        $this->ReserveRemoved = (int)$val;
     }
 
     /**

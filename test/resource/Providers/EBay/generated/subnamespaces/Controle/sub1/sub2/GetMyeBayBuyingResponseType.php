@@ -9,56 +9,59 @@ namespace Controle\sub1\sub2;
 class GetMyeBayBuyingResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\BuyingSummaryType | Contains a summary of the items the user has bid on. Returned at all detail levels.
 	 */
-	public $buyingsummary;
+	public $BuyingSummary;
 	/**
 	 * @var \Controle\sub1\sub2\PaginatedItemArrayType | Contains the items the user is watching. Only returned if items exist that meet the request
 	 * criteria.
 	 */
-	public $watchlist;
+	public $WatchList;
 	/**
 	 * @var \Controle\sub1\sub2\PaginatedItemArrayType | Contains all the items the user has bid on. Only returned if items exist that meet the
 	 * request criteria.
 	 */
-	public $bidlist;
+	public $BidList;
 	/**
 	 * @var \Controle\sub1\sub2\PaginatedItemArrayType | Contains the items the user has placed best offers on. Only returned if items exist that
 	 * meet the request criteria.
 	 */
-	public $bestofferlist;
+	public $BestOfferList;
 	/**
 	 * @var \Controle\sub1\sub2\PaginatedOrderTransactionArrayType | Contains the items the user has bid on and won. Only returned if items exist that meet
 	 * the request criteria.
 	 */
-	public $wonlist;
+	public $WonList;
 	/**
 	 * @var \Controle\sub1\sub2\PaginatedItemArrayType | Contains the items the user has bid on and lost. Only returned if items exist that meet
 	 * the request criteria.
 	 */
-	public $lostlist;
+	public $LostList;
 	/**
 	 * @var \Controle\sub1\sub2\MyeBayFavoriteSearchListType | Contains a list of the user's favorite searches. Only returned if items exist that meet
 	 * the request criteria.
 	 */
-	public $favoritesearches;
+	public $FavoriteSearches;
 	/**
 	 * @var \Controle\sub1\sub2\MyeBayFavoriteSellerListType | Contains a list of the user's favorite sellers. Only returned if items exist that meet
 	 * the request criteria.
 	 */
-	public $favoritesellers;
+	public $FavoriteSellers;
 	/**
 	 * @var \Controle\sub1\sub2\ItemType | A Second Chance Offer item.
 	 */
-	public $secondchanceoffer;
+	public $SecondChanceOffer;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param BuyingSummaryType $val
 	 * @throws Exception
 	 */
 	public function setBuyingSummary($val)
 	{
-        $this->buyingsummary = (int)$val;
+        $this->BuyingSummary = (int)$val;
 	}
 
 	/**
@@ -67,7 +70,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setWatchList($val)
 	{
-        $this->watchlist = (int)$val;
+        $this->WatchList = (int)$val;
 	}
 
 	/**
@@ -76,7 +79,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setBidList($val)
 	{
-        $this->bidlist = (int)$val;
+        $this->BidList = (int)$val;
 	}
 
 	/**
@@ -85,7 +88,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setBestOfferList($val)
 	{
-        $this->bestofferlist = (int)$val;
+        $this->BestOfferList = (int)$val;
 	}
 
 	/**
@@ -94,7 +97,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setWonList($val)
 	{
-        $this->wonlist = (int)$val;
+        $this->WonList = (int)$val;
 	}
 
 	/**
@@ -103,7 +106,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setLostList($val)
 	{
-        $this->lostlist = (int)$val;
+        $this->LostList = (int)$val;
 	}
 
 	/**
@@ -112,7 +115,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setFavoriteSearches($val)
 	{
-        $this->favoritesearches = (int)$val;
+        $this->FavoriteSearches = (int)$val;
 	}
 
 	/**
@@ -121,7 +124,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setFavoriteSellers($val)
 	{
-        $this->favoritesellers = (int)$val;
+        $this->FavoriteSellers = (int)$val;
 	}
 
 	/**
@@ -130,6 +133,6 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setSecondChanceOffer($val)
 	{
-        $this->secondchanceoffer = (int)$val;
+        $this->SecondChanceOffer = (int)$val;
 	}
 }

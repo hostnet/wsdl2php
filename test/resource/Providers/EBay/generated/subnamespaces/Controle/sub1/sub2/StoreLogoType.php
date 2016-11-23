@@ -8,25 +8,28 @@ namespace Controle\sub1\sub2;
  */
 class StoreLogoType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Store logo ID (use GetStoreOptions to get the list of valid logo IDs).
 	 */
-	public $logoid;
+	public $LogoID;
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item URL) to
 	 * launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be used in certain
 	 * types of applications. See your API license agreement. Also see this page for logo usage
 	 * rules:<br> http://developer.ebay.com/join/licenses/apilogousage
 	 */
-	public $url;
+	public $URL;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -36,7 +39,7 @@ class StoreLogoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->logoid = (int)$val;
+        $this->LogoID = (int)$val;
 	}
 
 	/**
@@ -48,7 +51,7 @@ class StoreLogoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -57,7 +60,7 @@ class StoreLogoType
 	 */
 	public function setURL($val)
 	{
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
 	}
 
 	/**

@@ -5,28 +5,31 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetReturnUrLrequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AuthenticationEntryType | Contains the data properties that define one authentication entry.            Multiple
      * AuthenticationEntry fields can be returned.
      */
-    public $authenticationentry;
+    public $AuthenticationEntry;
     /**
      * @var string | Sets an application display name for the eBay sign-in page. Need not be set with every
      * call. Optional.
      */
-    public $applicationdisplayname;
+    public $ApplicationDisplayName;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ModifyActionCodeType | Indicates the type of offer being made on the specified listing. Valid values are enumerated
      * in the BidActionCodeType code list.
      */
-    public $action;
+    public $Action;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AuthenticationEntryType $val
      * @throws Exception
      */
     public function setAuthenticationEntry($val)
     {
-        $this->authenticationentry = (int)$val;
+        $this->AuthenticationEntry = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class SetReturnUrLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
-        $this->applicationdisplayname = (int)$val;
+        $this->ApplicationDisplayName = (int)$val;
     }
 
     /**
@@ -47,6 +50,6 @@ class SetReturnUrLrequestType extends
      */
     public function setAction($val)
     {
-        $this->action = (int)$val;
+        $this->Action = (int)$val;
     }
 }

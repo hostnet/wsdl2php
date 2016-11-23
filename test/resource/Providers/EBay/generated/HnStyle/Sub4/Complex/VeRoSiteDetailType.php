@@ -4,25 +4,28 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class VeRoSiteDetailType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteCodeType | Site where the Want It Now post is listed.
      */
-    public $site;
+    public $Site;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ReasonCodeDetailType | Contains details for a given reason code.
      */
-    public $reasoncodedetail;
+    public $ReasonCodeDetail;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param SiteCodeType $val
      * @throws Exception
      */
     public function setSite($val)
     {
-        $this->site = (int)$val;
+        $this->Site = (int)$val;
     }
 
     /**
@@ -31,7 +34,7 @@ class VeRoSiteDetailType
      */
     public function setReasonCodeDetail($val)
     {
-        $this->reasoncodedetail = (int)$val;
+        $this->ReasonCodeDetail = (int)$val;
     }
 
     /**

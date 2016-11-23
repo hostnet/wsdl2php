@@ -8,15 +8,18 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SupportedEventTypesArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\NotificationEventTypeCodeType |      */
-    public $eventtype;
+    public $EventType;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param NotificationEventTypeCodeType $val
      * @throws Exception
      */
     public function setEventType($val)
     {
-        $this->eventtype = (int)$val;
+        $this->EventType = (int)$val;
     }
 }

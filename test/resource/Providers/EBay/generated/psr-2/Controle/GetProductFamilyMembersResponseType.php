@@ -15,6 +15,7 @@ namespace Controle;
 class GetProductFamilyMembersResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\DataElementSetType | Container for one or more DataElement fields containing supplemental helpful data.
      *                 A DataElement field is an HTML snippet that specifies hints for the
@@ -23,20 +24,22 @@ class GetProductFamilyMembersResponseType extends
      * the information                  to determine how it can be applied in an application.
      *                  Also returned with warnings when no matches are found.
      */
-    public $dataelementsets;
+    public $DataElementSets;
     /**
      * @var \Controle\ProductSearchResultType | Contains the attributes and product details that match the attributes or query keywords
      *                  passed in the request. Always returned when product search results
      * are found.
      */
-    public $productsearchresult;
+    public $ProductSearchResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DataElementSetType $val
      * @throws Exception
      */
     public function setDataElementSets($val)
     {
-        $this->dataelementsets = (int)$val;
+        $this->DataElementSets = (int)$val;
     }
 
     /**
@@ -45,6 +48,6 @@ class GetProductFamilyMembersResponseType extends
      */
     public function setProductSearchResult($val)
     {
-        $this->productsearchresult = (int)$val;
+        $this->ProductSearchResult = (int)$val;
     }
 }

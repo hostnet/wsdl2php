@@ -8,23 +8,26 @@ namespace Controle\sub1\sub2;
  */
 class ProStoresDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | The username associated with the store.  Returned only if the parent container is returned.
 	 */
-	public $sellerthirdpartyusername;
+	public $SellerThirdPartyUsername;
 	/**
 	 * @var string | The name of the seller's eBay Store.
 	 */
-	public $storename;
+	public $StoreName;
 	/**
 	 * @var \Controle\sub1\sub2\EnableCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a seller's
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
-	public $status;
+	public $Status;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -34,7 +37,7 @@ class ProStoresDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
-        $this->sellerthirdpartyusername = (int)$val;
+        $this->SellerThirdPartyUsername = (int)$val;
 	}
 
 	/**
@@ -46,7 +49,7 @@ class ProStoresDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->storename = (int)$val;
+        $this->StoreName = (int)$val;
 	}
 
 	/**
@@ -55,7 +58,7 @@ class ProStoresDetailsType
 	 */
 	public function setStatus($val)
 	{
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 
 	/**

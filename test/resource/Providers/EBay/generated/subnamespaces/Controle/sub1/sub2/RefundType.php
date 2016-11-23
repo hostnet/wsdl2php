@@ -11,29 +11,32 @@ namespace Controle\sub1\sub2;
  */
 class RefundType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Total amount refunded by the seller for this transaction. Applicable to Half.com (for GetOrders).
 	 */
-	public $refundfromseller;
+	public $RefundFromSeller;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Total amount refunded to the buyer for this transaction. Applicable to Half.com (for GetOrders).
 	 */
-	public $totalrefundtobuyer;
+	public $TotalRefundToBuyer;
 	/**
 	 * @var dateTime | The date and time at which the refund was issued. Applicable to Half.com (for GetOrders).
 	 */
-	public $refundtime;
+	public $RefundTime;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
 	public function setRefundFromSeller($val)
 	{
-        $this->refundfromseller = (int)$val;
+        $this->RefundFromSeller = (int)$val;
 	}
 
 	/**
@@ -42,7 +45,7 @@ class RefundType
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
-        $this->totalrefundtobuyer = (int)$val;
+        $this->TotalRefundToBuyer = (int)$val;
 	}
 
 	/**
@@ -51,7 +54,7 @@ class RefundType
 	 */
 	public function setRefundTime($val)
 	{
-        $this->refundtime = (int)$val;
+        $this->RefundTime = (int)$val;
 	}
 
 	/**

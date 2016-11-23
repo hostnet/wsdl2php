@@ -8,24 +8,27 @@ namespace Controle;
  */
 class NotificationEnableType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\NotificationEventTypeCodeType | 	 */
-	public $eventtype;
+	public $EventType;
 	/**
 	 * @var \Controle\EnableCodeType | Whether the event is enabled or disabled.
 	 */
-	public $eventenable;
+	public $EventEnable;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param NotificationEventTypeCodeType $val
 	 * @throws Exception
 	 */
 	public function setEventType($val)
 	{
-        $this->eventtype = (int)$val;
+        $this->EventType = (int)$val;
 	}
 
 	/**
@@ -34,7 +37,7 @@ class NotificationEnableType
 	 */
 	public function setEventEnable($val)
 	{
-        $this->eventenable = (int)$val;
+        $this->EventEnable = (int)$val;
 	}
 
 	/**

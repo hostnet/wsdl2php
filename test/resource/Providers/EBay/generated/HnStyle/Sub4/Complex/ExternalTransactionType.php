@@ -8,26 +8,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ExternalTransactionType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Unique payment transaction ID.
      */
-    public $externaltransactionid;
+    public $ExternalTransactionID;
     /**
      * @var dateTime | Date on which transaction occurs in PayPal.
      */
-    public $externaltransactiontime;
+    public $ExternalTransactionTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType |      */
-    public $feeorcreditamount;
+    public $FeeOrCreditAmount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | If positive, the amount the buyer pays the seller through PayPal on the purchase of
      * items. If negative, the amount refunded the buyer. Default = 0.
      */
-    public $paymentorrefundamount;
+    public $PaymentOrRefundAmount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -37,7 +40,7 @@ class ExternalTransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalTransactionID');
         }
-        $this->externaltransactionid = (int)$val;
+        $this->ExternalTransactionID = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class ExternalTransactionType
      */
     public function setExternalTransactionTime($val)
     {
-        $this->externaltransactiontime = (int)$val;
+        $this->ExternalTransactionTime = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class ExternalTransactionType
      */
     public function setFeeOrCreditAmount($val)
     {
-        $this->feeorcreditamount = (int)$val;
+        $this->FeeOrCreditAmount = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class ExternalTransactionType
      */
     public function setPaymentOrRefundAmount($val)
     {
-        $this->paymentorrefundamount = (int)$val;
+        $this->PaymentOrRefundAmount = (int)$val;
     }
 
     /**

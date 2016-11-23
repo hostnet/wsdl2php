@@ -10,18 +10,21 @@ namespace Controle;
  */
 class ScheduleType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Identifier for an event schedule in the seller's Live Auctions catalog.
 	 */
-	public $scheduleid;
+	public $ScheduleID;
 	/**
 	 * @var dateTime | Date and time that the sale schedule starts.
 	 */
-	public $scheduletime;
+	public $ScheduleTime;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -31,7 +34,7 @@ class ScheduleType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->scheduleid = (int)$val;
+        $this->ScheduleID = (int)$val;
 	}
 
 	/**
@@ -40,7 +43,7 @@ class ScheduleType
 	 */
 	public function setScheduleTime($val)
 	{
-        $this->scheduletime = (int)$val;
+        $this->ScheduleTime = (int)$val;
 	}
 
 	/**

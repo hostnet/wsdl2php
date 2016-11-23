@@ -8,17 +8,20 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class BestOfferArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferType | (GetMyeBayBuying only) Indicates the latest BestOffer the user has provided for the
      * item .
      */
-    public $bestoffer;
+    public $BestOffer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param BestOfferType $val
      * @throws Exception
      */
     public function setBestOffer($val)
     {
-        $this->bestoffer = (int)$val;
+        $this->BestOffer = (int)$val;
     }
 }

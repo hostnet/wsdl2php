@@ -8,21 +8,24 @@ namespace Controle;
  */
 class BidApprovalArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\BidApprovalType | Contains data for an item listing found by a search.            Output only.
 	 */
-	public $liveauctionbid;
+	public $LiveAuctionBid;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param BidApprovalType $val
 	 * @throws Exception
 	 */
 	public function setLiveAuctionBid($val)
 	{
-        $this->liveauctionbid = (int)$val;
+        $this->LiveAuctionBid = (int)$val;
 	}
 
 	/**

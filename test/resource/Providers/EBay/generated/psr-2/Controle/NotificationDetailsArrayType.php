@@ -9,16 +9,19 @@ namespace Controle;
  */
 class NotificationDetailsArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\NotificationDetailsType | List of notifications, if there are any, for the given ItemID and given time period.
      */
-    public $notificationdetails;
+    public $NotificationDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param NotificationDetailsType $val
      * @throws Exception
      */
     public function setNotificationDetails($val)
     {
-        $this->notificationdetails = (int)$val;
+        $this->NotificationDetails = (int)$val;
     }
 }

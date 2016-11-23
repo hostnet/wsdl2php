@@ -10,26 +10,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCrossPromotionsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionMethodCodeType | The type of cross promotion, CrossSell or UpSell.
      */
-    public $promotionmethod;
+    public $PromotionMethod;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TradingRoleCodeType | The role of the person requesting to view the cross-promoted items, either seller or
      * buyer. Default is buyer.
      */
-    public $promotionviewmode;
+    public $PromotionViewMode;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class GetCrossPromotionsRequestType extends
      */
     public function setPromotionMethod($val)
     {
-        $this->promotionmethod = (int)$val;
+        $this->PromotionMethod = (int)$val;
     }
 
     /**
@@ -47,6 +50,6 @@ class GetCrossPromotionsRequestType extends
      */
     public function setPromotionViewMode($val)
     {
-        $this->promotionviewmode = (int)$val;
+        $this->PromotionViewMode = (int)$val;
     }
 }

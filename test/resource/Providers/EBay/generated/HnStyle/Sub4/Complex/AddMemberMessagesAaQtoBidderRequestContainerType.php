@@ -4,19 +4,22 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AddMemberMessagesAaQtoBidderRequestContainerType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Unique key to distinguish between recommendations for each item.              Matches
      * a correlation ID you defined in the request, if any.
      */
-    public $correlationid;
+    public $CorrelationID;
     /**
      * @var string | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MemberMessageType | Holds the content of the message.
      */
-    public $membermessage;
+    public $MemberMessage;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -26,7 +29,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->correlationid = (int)$val;
+        $this->CorrelationID = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemID');
         }
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -47,6 +50,6 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
      */
     public function setMemberMessage($val)
     {
-        $this->membermessage = (int)$val;
+        $this->MemberMessage = (int)$val;
     }
 }

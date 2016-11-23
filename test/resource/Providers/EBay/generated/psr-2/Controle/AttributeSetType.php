@@ -12,6 +12,7 @@ namespace Controle;
  */
 class AttributeSetType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\AttributeType | A salient aspect or feature of an item in a given category.            Attributes are
      * known as "Item Specifics" in the eBay Web site.            Use attributes to describe
@@ -35,7 +36,7 @@ class AttributeSetType
      * this returns the item condition only (and it is            only returned if IncludeCondition
      * = true in the request).            Not applicable to Half.com.
      */
-    public $attribute;
+    public $Attribute;
     /**
      * @var \Controle\<anyXML>
      */
@@ -43,18 +44,20 @@ class AttributeSetType
     /**
      * @var int
      */
-    public $attributesetid;
+    public $attributeSetID;
     /**
      * @var string
      */
-    public $attributesetversion;
+    public $attributeSetVersion;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AttributeType $val
      * @throws Exception
      */
     public function setAttribute($val)
     {
-        $this->attribute = (int)$val;
+        $this->Attribute = (int)$val;
     }
 
     /**
@@ -75,7 +78,7 @@ class AttributeSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributesetid = (int)$val;
+        $this->attributeSetID = (int)$val;
     }
 
     /**
@@ -87,6 +90,6 @@ class AttributeSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for attributeSetVersion');
         }
-        $this->attributesetversion = (int)$val;
+        $this->attributeSetVersion = (int)$val;
     }
 }

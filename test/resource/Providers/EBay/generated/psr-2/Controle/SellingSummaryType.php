@@ -8,38 +8,41 @@ namespace Controle;
  */
 class SellingSummaryType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The number of currently active auctions that will sell. That is, there is at least one
      * bidder, and any reserve price has been met. Equivalent to the "Will Sell" value in My
      * eBay.
      */
-    public $activeauctioncount;
+    public $ActiveAuctionCount;
     /**
      * @var int | The total number of currently active auctions for a given seller. Note that this does
      * not include listings that are FixedPriceItem or StoresFixedPrice. Equivalent to the "Auction
      * Quantity" value in My eBay.
      */
-    public $auctionsellingcount;
+    public $AuctionSellingCount;
     /**
      * @var int | The total number of bids made on the user's active listings.
      */
-    public $auctionbidcount;
+    public $AuctionBidCount;
     /**
      * @var \Controle\AmountType | The total value of all items the user has for sale in all listings.
      */
-    public $totalauctionsellingvalue;
+    public $TotalAuctionSellingValue;
     /**
      * @var int | The total number of items the user has sold.
      */
-    public $totalsoldcount;
+    public $TotalSoldCount;
     /**
      * @var \Controle\AmountType | The total monetary value of the items the user has sold.
      */
-    public $totalsoldvalue;
+    public $TotalSoldValue;
     /**
      * @var int | The average duration, in days, of all items sold.
      */
-    public $solddurationindays;
+    public $SoldDurationInDays;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -49,7 +52,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->activeauctioncount = (int)$val;
+        $this->ActiveAuctionCount = (int)$val;
     }
 
     /**
@@ -61,7 +64,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->auctionsellingcount = (int)$val;
+        $this->AuctionSellingCount = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->auctionbidcount = (int)$val;
+        $this->AuctionBidCount = (int)$val;
     }
 
     /**
@@ -82,7 +85,7 @@ class SellingSummaryType
      */
     public function setTotalAuctionSellingValue($val)
     {
-        $this->totalauctionsellingvalue = (int)$val;
+        $this->TotalAuctionSellingValue = (int)$val;
     }
 
     /**
@@ -94,7 +97,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalsoldcount = (int)$val;
+        $this->TotalSoldCount = (int)$val;
     }
 
     /**
@@ -103,7 +106,7 @@ class SellingSummaryType
      */
     public function setTotalSoldValue($val)
     {
-        $this->totalsoldvalue = (int)$val;
+        $this->TotalSoldValue = (int)$val;
     }
 
     /**
@@ -115,6 +118,6 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->solddurationindays = (int)$val;
+        $this->SoldDurationInDays = (int)$val;
     }
 }

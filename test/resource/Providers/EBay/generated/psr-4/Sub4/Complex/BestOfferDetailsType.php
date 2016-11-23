@@ -8,34 +8,37 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class BestOfferDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The number of items the user has made best offers on.
      */
-    public $bestoffercount;
+    public $BestOfferCount;
     /**
      * @var boolean | Specifies the default site setting for whether categories allow best offers. True means
      * best offers are allowed site-wide, unless a specific category overrides the setting.
      */
-    public $bestofferenabled;
+    public $BestOfferEnabled;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | (GetMyeBayBuying only) Indicates the latest BestOffer the user has provided for the
      * item .
      */
-    public $bestoffer;
+    public $BestOffer;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferStatusCodeType | (GetMyeBayBuying only) Indicates the status of the latest BestOffer the user has provided
      * for the item .
      */
-    public $bestofferstatus;
+    public $BestOfferStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferTypeCodeType | Indicates the best offer type of the latest BestOffer the user has provided for the
      * item .
      */
-    public $bestoffertype;
+    public $BestOfferType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -45,7 +48,7 @@ class BestOfferDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bestoffercount = (int)$val;
+        $this->BestOfferCount = (int)$val;
     }
 
     /**
@@ -54,7 +57,7 @@ class BestOfferDetailsType
      */
     public function setBestOfferEnabled($val)
     {
-        $this->bestofferenabled = (int)$val;
+        $this->BestOfferEnabled = (int)$val;
     }
 
     /**
@@ -63,7 +66,7 @@ class BestOfferDetailsType
      */
     public function setBestOffer($val)
     {
-        $this->bestoffer = (int)$val;
+        $this->BestOffer = (int)$val;
     }
 
     /**
@@ -72,7 +75,7 @@ class BestOfferDetailsType
      */
     public function setBestOfferStatus($val)
     {
-        $this->bestofferstatus = (int)$val;
+        $this->BestOfferStatus = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class BestOfferDetailsType
      */
     public function setBestOfferType($val)
     {
-        $this->bestoffertype = (int)$val;
+        $this->BestOfferType = (int)$val;
     }
 
     /**

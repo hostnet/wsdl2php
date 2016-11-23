@@ -13,16 +13,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetNotificationPreferencesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\NotificationRoleCodeType | Specifies what type of Preference to retrieve.
      */
-    public $preferencelevel;
+    public $PreferenceLevel;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param NotificationRoleCodeType $val
      * @throws Exception
      */
     public function setPreferenceLevel($val)
     {
-        $this->preferencelevel = (int)$val;
+        $this->PreferenceLevel = (int)$val;
     }
 }

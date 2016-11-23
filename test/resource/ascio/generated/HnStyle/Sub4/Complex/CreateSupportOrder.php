@@ -4,10 +4,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CreateSupportOrder
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var string
      */
@@ -20,6 +21,8 @@ class CreateSupportOrder
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Attachment
      */
     public $attachments;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class CreateSupportOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**

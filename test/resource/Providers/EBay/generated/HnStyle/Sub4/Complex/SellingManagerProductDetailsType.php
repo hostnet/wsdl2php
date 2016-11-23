@@ -8,22 +8,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class SellingManagerProductDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The exact product name of an item.
      */
-    public $productname;
+    public $ProductName;
     /**
      * @var int | The numeric part number of an item.
      */
-    public $partnumber;
+    public $PartNumber;
     /**
      * @var string | The alphanumeric part number of an item.
      */
-    public $productpartnumber;
+    public $ProductPartNumber;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -33,7 +36,7 @@ class SellingManagerProductDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductName');
         }
-        $this->productname = (int)$val;
+        $this->ProductName = (int)$val;
     }
 
     /**
@@ -45,7 +48,7 @@ class SellingManagerProductDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->partnumber = (int)$val;
+        $this->PartNumber = (int)$val;
     }
 
     /**
@@ -57,7 +60,7 @@ class SellingManagerProductDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductPartNumber');
         }
-        $this->productpartnumber = (int)$val;
+        $this->ProductPartNumber = (int)$val;
     }
 
     /**

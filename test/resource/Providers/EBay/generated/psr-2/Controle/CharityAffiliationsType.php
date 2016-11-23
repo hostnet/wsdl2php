@@ -8,22 +8,25 @@ namespace Controle;
  */
 class CharityAffiliationsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\CharityIDType | A unique identification number assigned by eBay to registered nonprofit charity organizations.
      * Required input when listing Giving Works items.
      */
-    public $charityid;
+    public $CharityID;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CharityIDType $val
      * @throws Exception
      */
     public function setCharityID($val)
     {
-        $this->charityid = (int)$val;
+        $this->CharityID = (int)$val;
     }
 
     /**

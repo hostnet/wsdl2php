@@ -4,22 +4,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SoApArrayStruct
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $varstring;
+    public $varString;
     /**
      * @var int
      */
-    public $varint;
+    public $varInt;
     /**
      * @var float
      */
-    public $varfloat;
+    public $varFloat;
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\string
      */
-    public $vararray;
+    public $varArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class SoApArrayStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class SoApArrayStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
     }
 
     /**
@@ -50,7 +53,7 @@ class SoApArrayStruct
      */
     public function setVarFloat($val)
     {
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
     }
 
     /**
@@ -59,6 +62,6 @@ class SoApArrayStruct
      */
     public function setVarArray($val)
     {
-        $this->vararray = (int)$val;
+        $this->varArray = (int)$val;
     }
 }

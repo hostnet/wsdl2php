@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SellerProfileRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -28,6 +29,8 @@ class SellerProfileRequest
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

@@ -11,23 +11,26 @@ namespace Controle;
 class IssueRefundResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\AmountType | Total amount refunded by the seller for this transaction. Applicable to Half.com (for
      * GetOrders).
      */
-    public $refundfromseller;
+    public $RefundFromSeller;
     /**
      * @var \Controle\AmountType | Total amount refunded to the buyer for this transaction. Applicable to Half.com (for
      * GetOrders).
      */
-    public $totalrefundtobuyer;
+    public $TotalRefundToBuyer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AmountType $val
      * @throws Exception
      */
     public function setRefundFromSeller($val)
     {
-        $this->refundfromseller = (int)$val;
+        $this->RefundFromSeller = (int)$val;
     }
 
     /**
@@ -36,6 +39,6 @@ class IssueRefundResponseType extends
      */
     public function setTotalRefundToBuyer($val)
     {
-        $this->totalrefundtobuyer = (int)$val;
+        $this->TotalRefundToBuyer = (int)$val;
     }
 }

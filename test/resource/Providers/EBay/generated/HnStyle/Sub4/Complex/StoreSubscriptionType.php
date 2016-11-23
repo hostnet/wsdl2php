@@ -4,25 +4,28 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class StoreSubscriptionType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreSubscriptionLevelCodeType | Store subscription level.
      */
-    public $level;
+    public $Level;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Monthly fee for the Store subscription level.
      */
-    public $fee;
+    public $Fee;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreSubscriptionLevelCodeType $val
      * @throws Exception
      */
     public function setLevel($val)
     {
-        $this->level = (int)$val;
+        $this->Level = (int)$val;
     }
 
     /**
@@ -31,7 +34,7 @@ class StoreSubscriptionType
      */
     public function setFee($val)
     {
-        $this->fee = (int)$val;
+        $this->Fee = (int)$val;
     }
 
     /**

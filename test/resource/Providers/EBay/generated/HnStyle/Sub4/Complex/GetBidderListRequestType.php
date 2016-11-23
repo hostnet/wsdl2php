@@ -11,22 +11,23 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetBidderListRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Indicates whether to limit the result set to active items. If true, only active items
      * are returned and the EndTimeFrom and EndTimeTo filters are ignored. If false (or not
      * sent), active and ended items are returned.
      */
-    public $activeitemsonly;
+    public $ActiveItemsOnly;
     /**
      * @var dateTime | Specifies the earliest (oldest) date to use in a date range filter based on item end
      * time. Specify either the end time range or start time range filter in every request.
      */
-    public $endtimefrom;
+    public $EndTimeFrom;
     /**
      * @var dateTime | Specifies the latest (most recent) date to use in a date range filter based on item
      * end time. Must be specified if EndTimeFrom is specified.
      */
-    public $endtimeto;
+    public $EndTimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -40,21 +41,23 @@ class GetBidderListRequestType extends
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GranularityLevelCodeType | Specifies the subset of item and user fields to return. See GetSellerList in the eBay
      * Web Services guide for a list of the fields that are returned for each granularity level. For
      * GetSellerList, use DetailLevel or GranularityLevel in a request, but not both. For GetSellerList,
      * if GranularityLevel is specified, DetailLevel is ignored.
      */
-    public $granularitylevel;
+    public $GranularityLevel;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setActiveItemsOnly($val)
     {
-        $this->activeitemsonly = (int)$val;
+        $this->ActiveItemsOnly = (int)$val;
     }
 
     /**
@@ -63,7 +66,7 @@ class GetBidderListRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->endtimefrom = (int)$val;
+        $this->EndTimeFrom = (int)$val;
     }
 
     /**
@@ -72,7 +75,7 @@ class GetBidderListRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->endtimeto = (int)$val;
+        $this->EndTimeTo = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class GetBidderListRequestType extends
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -90,6 +93,6 @@ class GetBidderListRequestType extends
      */
     public function setGranularityLevel($val)
     {
-        $this->granularitylevel = (int)$val;
+        $this->GranularityLevel = (int)$val;
     }
 }

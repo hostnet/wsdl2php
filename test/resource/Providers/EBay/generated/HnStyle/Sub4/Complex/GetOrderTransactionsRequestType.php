@@ -13,21 +13,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetOrderTransactionsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemTransactionIDArrayType | An array of ItemTransactionIDs.
      */
-    public $itemtransactionidarray;
+    public $ItemTransactionIDArray;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OrderIDArrayType | A set of orders to retrieve. Not applicable to Half.com.
      */
-    public $orderidarray;
+    public $OrderIDArray;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemTransactionIDArrayType $val
      * @throws Exception
      */
     public function setItemTransactionIDArray($val)
     {
-        $this->itemtransactionidarray = (int)$val;
+        $this->ItemTransactionIDArray = (int)$val;
     }
 
     /**
@@ -36,6 +39,6 @@ class GetOrderTransactionsRequestType extends
      */
     public function setOrderIDArray($val)
     {
-        $this->orderidarray = (int)$val;
+        $this->OrderIDArray = (int)$val;
     }
 }

@@ -4,54 +4,57 @@ namespace Controle;
 
 class Order
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $orderid;
+	public $OrderId;
 	/**
 	 * @var \Controle\OrderType
 	 */
-	public $type;
+	public $Type;
 	/**
 	 * @var string
 	 */
-	public $accountreference;
+	public $AccountReference;
 	/**
 	 * @var \Controle\OrderStatusType
 	 */
-	public $status;
+	public $Status;
 	/**
 	 * @var string
 	 */
-	public $transactioncomment;
+	public $TransactionComment;
 	/**
 	 * @var string
 	 */
-	public $comments;
+	public $Comments;
 	/**
 	 * @var string
 	 */
-	public $options;
+	public $Options;
 	/**
 	 * @var string
 	 */
-	public $localpresence;
+	public $LocalPresence;
 	/**
 	 * @var string
 	 */
-	public $batch;
+	public $Batch;
 	/**
 	 * @var string
 	 */
-	public $documentation;
+	public $Documentation;
 	/**
 	 * @var \Controle\Domain
 	 */
-	public $domain;
+	public $Domain;
 	/**
 	 * @var dateTime
 	 */
-	public $credate;
+	public $CreDate;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -61,7 +64,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderId');
         }
-        $this->orderid = (int)$val;
+        $this->OrderId = (int)$val;
 	}
 
 	/**
@@ -70,7 +73,7 @@ class Order
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
 	}
 
 	/**
@@ -82,7 +85,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountReference');
         }
-        $this->accountreference = (int)$val;
+        $this->AccountReference = (int)$val;
 	}
 
 	/**
@@ -91,7 +94,7 @@ class Order
 	 */
 	public function setStatus($val)
 	{
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 
 	/**
@@ -103,7 +106,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionComment');
         }
-        $this->transactioncomment = (int)$val;
+        $this->TransactionComment = (int)$val;
 	}
 
 	/**
@@ -115,7 +118,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->comments = (int)$val;
+        $this->Comments = (int)$val;
 	}
 
 	/**
@@ -127,7 +130,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Options');
         }
-        $this->options = (int)$val;
+        $this->Options = (int)$val;
 	}
 
 	/**
@@ -139,7 +142,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalPresence');
         }
-        $this->localpresence = (int)$val;
+        $this->LocalPresence = (int)$val;
 	}
 
 	/**
@@ -151,7 +154,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Batch');
         }
-        $this->batch = (int)$val;
+        $this->Batch = (int)$val;
 	}
 
 	/**
@@ -163,7 +166,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Documentation');
         }
-        $this->documentation = (int)$val;
+        $this->Documentation = (int)$val;
 	}
 
 	/**
@@ -172,7 +175,7 @@ class Order
 	 */
 	public function setDomain($val)
 	{
-        $this->domain = (int)$val;
+        $this->Domain = (int)$val;
 	}
 
 	/**
@@ -181,6 +184,6 @@ class Order
 	 */
 	public function setCreDate($val)
 	{
-        $this->credate = (int)$val;
+        $this->CreDate = (int)$val;
 	}
 }

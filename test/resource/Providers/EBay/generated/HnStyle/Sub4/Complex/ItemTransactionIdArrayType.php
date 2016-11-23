@@ -4,15 +4,18 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ItemTransactionIdArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemTransactionIDType |      */
-    public $itemtransactionid;
+    public $ItemTransactionID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemTransactionIDType $val
      * @throws Exception
      */
     public function setItemTransactionID($val)
     {
-        $this->itemtransactionid = (int)$val;
+        $this->ItemTransactionID = (int)$val;
     }
 }

@@ -10,6 +10,7 @@ namespace Controle\sub1\sub2;
 class GetUserContactDetailsResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned when
 	 * ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info is made anonymous,
@@ -23,17 +24,19 @@ class GetUserContactDetailsResponseType extends
 	 * on a different auction, the bidder will be listed for that auction as "Bidder 1", not "Bidder
 	 * 3".
 	 */
-	public $userid;
+	public $UserID;
 	/**
 	 * @var \Controle\sub1\sub2\AddressType | Contact information for the requested contact. Note that the email address is NOT returned.
 	 */
-	public $contactaddress;
+	public $ContactAddress;
 	/**
 	 * @var dateTime | Indicates the date the specified user originally registered with eBay. <br><br> Starting
 	 * Jan 2007, when a bidder's user info is made anonymous, this tag will be returned only for
 	 * that bidder, and the seller of an item that the user is bidding on.
 	 */
-	public $registrationdate;
+	public $RegistrationDate;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -43,7 +46,7 @@ class GetUserContactDetailsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
 	}
 
 	/**
@@ -52,7 +55,7 @@ class GetUserContactDetailsResponseType extends
 	 */
 	public function setContactAddress($val)
 	{
-        $this->contactaddress = (int)$val;
+        $this->ContactAddress = (int)$val;
 	}
 
 	/**
@@ -61,6 +64,6 @@ class GetUserContactDetailsResponseType extends
 	 */
 	public function setRegistrationDate($val)
 	{
-        $this->registrationdate = (int)$val;
+        $this->RegistrationDate = (int)$val;
 	}
 }

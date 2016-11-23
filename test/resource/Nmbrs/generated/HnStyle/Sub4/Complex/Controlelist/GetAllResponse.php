@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex\Controlelist;
 
 class GetAllResponse
 {
+    // @codingStandardsIgnoreStart
     /**
-     * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Debtor
+     * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Company
      */
-    public $list_getallresult;
+    public $List_GetAllResult;
+    // @codingStandardsIgnoreEnd
+
     /**
-     * @param ArrayOfDebtor $val
+     * @param ArrayOfCompany $val
      * @throws Exception
      */
     public function setListGetAllResult($val)
     {
-        $this->list_getallresult = (int)$val;
+        $this->List_GetAllResult = (int)$val;
     }
 }

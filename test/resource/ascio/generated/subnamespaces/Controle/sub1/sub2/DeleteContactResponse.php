@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class DeleteContactResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $deletecontactresult;
+	public $DeleteContactResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setDeleteContactResult($val)
 	{
-        $this->deletecontactresult = (int)$val;
+        $this->DeleteContactResult = (int)$val;
 	}
 }

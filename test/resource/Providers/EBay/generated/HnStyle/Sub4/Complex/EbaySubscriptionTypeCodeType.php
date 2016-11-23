@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class EbaySubscriptionTypeCodeType
 {
+    // @codingStandardsIgnoreStart
     const SELLERASSISTANT      = 'SellerAssistant';
     const SELLERASSISTANTPRO   = 'SellerAssistantPro';
     const EBAYSTOREBASIC       = 'EBayStoreBasic';
@@ -25,4 +26,5 @@ class EbaySubscriptionTypeCodeType
     const LOCALMARKETREGULAR   = 'LocalMarketRegular';
     const LOCALMARKETPREMIUM   = 'LocalMarketPremium';
     const CUSTOMCODE           = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

@@ -4,18 +4,21 @@ namespace Controle;
 
 class Response
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $message;
+	public $Message;
 	/**
 	 * @var short
 	 */
-	public $resultcode;
+	public $ResultCode;
 	/**
 	 * @var array \Controle\string
 	 */
-	public $values;
+	public $Values;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -25,7 +28,7 @@ class Response
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->message = (int)$val;
+        $this->Message = (int)$val;
 	}
 
 	/**
@@ -34,7 +37,7 @@ class Response
 	 */
 	public function setResultCode($val)
 	{
-        $this->resultcode = (int)$val;
+        $this->ResultCode = (int)$val;
 	}
 
 	/**
@@ -43,6 +46,6 @@ class Response
 	 */
 	public function setValues($val)
 	{
-        $this->values = (int)$val;
+        $this->Values = (int)$val;
 	}
 }

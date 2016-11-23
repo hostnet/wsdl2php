@@ -4,6 +4,7 @@ namespace Controle;
 
 class SearchSortOrderCodeType
 {
+	// @codingStandardsIgnoreStart
 	const SORTBYENDDATE        = 'SortByEndDate';
 	const SORTBYSTARTDATE      = 'SortByStartDate';
 	const SORTBYCURRENTBID     = 'SortByCurrentBid';
@@ -21,4 +22,5 @@ class SearchSortOrderCodeType
 	const SORTBYBIDCOUNTDESC   = 'SortByBidCountDesc';
 	const BESTMATCHSORT        = 'BestMatchSort';
 	const CUSTOMCODE           = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

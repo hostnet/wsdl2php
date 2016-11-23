@@ -14,29 +14,32 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class PlaceOfferRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OfferType | Contains the data for one offer. This includes: data for the user making the
      *     offer, the amount of the offer, the quantity of items being bought from the
      *        listing, the type of offer being made, and more.
      */
-    public $offer;
+    public $Offer;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var boolean | If a warning message exists and BlockOnWarning is true, the warning message is returned
      * and the bid is blocked. If no warning message exists and BlockOnWarning is true, the
      * bid is placed. If BlockOnWarning is false, the bid is placed, regardless of warning.
      */
-    public $blockonwarning;
+    public $BlockOnWarning;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OfferType $val
      * @throws Exception
      */
     public function setOffer($val)
     {
-        $this->offer = (int)$val;
+        $this->Offer = (int)$val;
     }
 
     /**
@@ -45,7 +48,7 @@ class PlaceOfferRequestType extends
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -54,6 +57,6 @@ class PlaceOfferRequestType extends
      */
     public function setBlockOnWarning($val)
     {
-        $this->blockonwarning = (int)$val;
+        $this->BlockOnWarning = (int)$val;
     }
 }

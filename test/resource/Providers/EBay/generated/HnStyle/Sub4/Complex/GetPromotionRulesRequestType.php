@@ -10,10 +10,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetPromotionRulesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var int | Numeric ID for a custom category that the seller created in their eBay Store, if any. eBay
      * Stores sellers can create up to three levels of custom categories for their stores. Items
@@ -23,18 +24,20 @@ class GetPromotionRulesRequestType extends
      * this field currently returns 0. As a workaround, use GetItem or related calls to get
      * the ID.
      */
-    public $storecategoryid;
+    public $StoreCategoryID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionMethodCodeType | The type of cross promotion, CrossSell or UpSell.
      */
-    public $promotionmethod;
+    public $PromotionMethod;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class GetPromotionRulesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->storecategoryid = (int)$val;
+        $this->StoreCategoryID = (int)$val;
     }
 
     /**
@@ -55,6 +58,6 @@ class GetPromotionRulesRequestType extends
      */
     public function setPromotionMethod($val)
     {
-        $this->promotionmethod = (int)$val;
+        $this->PromotionMethod = (int)$val;
     }
 }

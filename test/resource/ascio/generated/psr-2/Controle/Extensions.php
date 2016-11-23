@@ -4,16 +4,19 @@ namespace Controle;
 
 class Extensions
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Extension
      */
-    public $extension;
+    public $Extension;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Extension $val
      * @throws Exception
      */
     public function setExtension($val)
     {
-        $this->extension = (int)$val;
+        $this->Extension = (int)$val;
     }
 }

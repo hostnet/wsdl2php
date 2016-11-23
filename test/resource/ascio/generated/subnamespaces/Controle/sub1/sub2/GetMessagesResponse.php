@@ -4,21 +4,24 @@ namespace Controle\sub1\sub2;
 
 class GetMessagesResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $getmessagesresult;
+	public $GetMessagesResult;
 	/**
 	 * @var array \Controle\sub1\sub2\Message
 	 */
 	public $messages;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setGetMessagesResult($val)
 	{
-        $this->getmessagesresult = (int)$val;
+        $this->GetMessagesResult = (int)$val;
 	}
 
 	/**

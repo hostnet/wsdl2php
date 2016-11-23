@@ -9,22 +9,25 @@ namespace Controle\sub1\sub2;
  */
 class SuggestedCategoryArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\SuggestedCategoryType | Describes a category that contains listings that match    specified keywords in the query.
 	 * Returned if a category matches the query.
 	 */
-	public $suggestedcategory;
+	public $SuggestedCategory;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SuggestedCategoryType $val
 	 * @throws Exception
 	 */
 	public function setSuggestedCategory($val)
 	{
-        $this->suggestedcategory = (int)$val;
+        $this->SuggestedCategory = (int)$val;
 	}
 
 	/**

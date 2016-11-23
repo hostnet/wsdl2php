@@ -9,12 +9,13 @@ namespace Controle;
  */
 class AffiliateTrackingDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Specifies an ID to identify you to your tracking partner (tracking provider). The value
 	 * you specify is obtained from your tracking partner. For example, in the case of Commission
 	 * Junction, the TrackingID is the PID given to you by Commission Junction.
 	 */
-	public $trackingid;
+	public $TrackingID;
 	/**
 	 * @var string | Specifies the third party, e.g. Commission Junction, who is your tracking partner (tracking
 	 * provider). Required if you specify a TrackingID. Depending on your tracking partner, specify
@@ -22,21 +23,23 @@ class AffiliateTrackingDetailsType
 	 * Junction <br>2 = Be Free <br>3 = Affilinet <br>4 = TradeDoubler <br>5 = Mediaplex <br>6
 	 * = DoubleClick <br>7 = Allyes <br>8 = BJMT
 	 */
-	public $trackingpartnercode;
+	public $TrackingPartnerCode;
 	/**
 	 * @var \Controle\ApplicationDeviceTypeCodeType | Reserved for future use.
 	 */
-	public $applicationdevicetype;
+	public $ApplicationDeviceType;
 	/**
 	 * @var string | Optional value that depends on your tracking partner (tracking provider). For example,
 	 * if you specify a TrackingPartnerCode of 1 for Commission Junction, the AffiliateUserID
 	 * is your Commission Junction Shopper ID (SID).
 	 */
-	public $affiliateuserid;
+	public $AffiliateUserID;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -46,7 +49,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackingID');
         }
-        $this->trackingid = (int)$val;
+        $this->TrackingID = (int)$val;
 	}
 
 	/**
@@ -58,7 +61,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackingPartnerCode');
         }
-        $this->trackingpartnercode = (int)$val;
+        $this->TrackingPartnerCode = (int)$val;
 	}
 
 	/**
@@ -67,7 +70,7 @@ class AffiliateTrackingDetailsType
 	 */
 	public function setApplicationDeviceType($val)
 	{
-        $this->applicationdevicetype = (int)$val;
+        $this->ApplicationDeviceType = (int)$val;
 	}
 
 	/**
@@ -79,7 +82,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AffiliateUserID');
         }
-        $this->affiliateuserid = (int)$val;
+        $this->AffiliateUserID = (int)$val;
 	}
 
 	/**

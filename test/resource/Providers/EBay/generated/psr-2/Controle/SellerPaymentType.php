@@ -11,53 +11,54 @@ namespace Controle;
  */
 class SellerPaymentType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\OrderIDType | ID of the Half.com order associated with the payment. Returns 0 for single-transaction
      * orders.
      */
-    public $orderid;
+    public $OrderID;
     /**
      * @var string | An ID that the seller specified when they listed the Half.com item, if any. It can be
      * used for the seller's SKU. Note that SellerInventoryID is not returned if no ID was
      * specified. (Note: The SKU field used for eBay.com listings is not applicable to Half.com
      * listings.)
      */
-    public $sellerinventoryid;
+    public $SellerInventoryID;
     /**
      * @var string | A text note that the seller specified for the Half.com item, if any. Only visible to
      * the seller. Not returned if the seller specified no notes.
      */
-    public $privatenotes;
+    public $PrivateNotes;
     /**
      * @var \Controle\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
      * item. All Half.com items are listed with Pre-filled Item Information.
      */
-    public $externalproductid;
+    public $ExternalProductID;
     /**
      * @var string | Title of a Want It Now post.
      */
-    public $title;
+    public $Title;
     /**
      * @var \Controle\PaymentTypeCodeType | Indicates whether the payment is for a Half.com sale or a refund.
      */
-    public $paymenttype;
+    public $PaymentType;
     /**
      * @var \Controle\AmountType | Price of the transaction (before shipping and sales tax) that the buyer needs to pay to
      * complete the purchase. For eBay Motors, TransactionPrice is the deposit amount. Also
      * applicable to Half.com (for GetOrders).
      */
-    public $transactionprice;
+    public $TransactionPrice;
     /**
      * @var \Controle\AmountType | The adjusted shipping cost that Half.com pays the seller. If multiple items from the
      * same seller are in the same order, this amount may be less than the rate for shipping
@@ -65,11 +66,11 @@ class SellerPaymentType
      * (Due to the way shipping costs are calculated, this value may be different for identical
      * items in different orders.)
      */
-    public $shippingreimbursement;
+    public $ShippingReimbursement;
     /**
      * @var \Controle\AmountType | Amount of commission charged by Half.com.
      */
-    public $commission;
+    public $Commission;
     /**
      * @var \Controle\AmountType | The amount the buyer paid for the item(s) in the transaction. If the seller allowed
      * the buyer to change the item total, the buyer is able to change the total until the
@@ -80,7 +81,7 @@ class SellerPaymentType
      * which the transaction belongs. For Motors items, AmountPaid is the amount paid by the
      * buyer for the deposit. Not applicable to Half.com.
      */
-    public $amountpaid;
+    public $AmountPaid;
     /**
      * @var dateTime | Indicates the time when the transaction was marked paid, if known. The value is set
      * by eBay when payment is made via PayPal or a third-party checkout flow. This value is
@@ -91,18 +92,20 @@ class SellerPaymentType
      * Manager Pro user, PaidTime returns the transaction creation time instead. Not applicable
      * to Half.com.
      */
-    public $paidtime;
+    public $PaidTime;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -114,7 +117,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -123,7 +126,7 @@ class SellerPaymentType
      */
     public function setOrderID($val)
     {
-        $this->orderid = (int)$val;
+        $this->OrderID = (int)$val;
     }
 
     /**
@@ -135,7 +138,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->sellerinventoryid = (int)$val;
+        $this->SellerInventoryID = (int)$val;
     }
 
     /**
@@ -147,7 +150,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PrivateNotes');
         }
-        $this->privatenotes = (int)$val;
+        $this->PrivateNotes = (int)$val;
     }
 
     /**
@@ -156,7 +159,7 @@ class SellerPaymentType
      */
     public function setExternalProductID($val)
     {
-        $this->externalproductid = (int)$val;
+        $this->ExternalProductID = (int)$val;
     }
 
     /**
@@ -168,7 +171,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
     }
 
     /**
@@ -177,7 +180,7 @@ class SellerPaymentType
      */
     public function setPaymentType($val)
     {
-        $this->paymenttype = (int)$val;
+        $this->PaymentType = (int)$val;
     }
 
     /**
@@ -186,7 +189,7 @@ class SellerPaymentType
      */
     public function setTransactionPrice($val)
     {
-        $this->transactionprice = (int)$val;
+        $this->TransactionPrice = (int)$val;
     }
 
     /**
@@ -195,7 +198,7 @@ class SellerPaymentType
      */
     public function setShippingReimbursement($val)
     {
-        $this->shippingreimbursement = (int)$val;
+        $this->ShippingReimbursement = (int)$val;
     }
 
     /**
@@ -204,7 +207,7 @@ class SellerPaymentType
      */
     public function setCommission($val)
     {
-        $this->commission = (int)$val;
+        $this->Commission = (int)$val;
     }
 
     /**
@@ -213,7 +216,7 @@ class SellerPaymentType
      */
     public function setAmountPaid($val)
     {
-        $this->amountpaid = (int)$val;
+        $this->AmountPaid = (int)$val;
     }
 
     /**
@@ -222,7 +225,7 @@ class SellerPaymentType
      */
     public function setPaidTime($val)
     {
-        $this->paidtime = (int)$val;
+        $this->PaidTime = (int)$val;
     }
 
     /**

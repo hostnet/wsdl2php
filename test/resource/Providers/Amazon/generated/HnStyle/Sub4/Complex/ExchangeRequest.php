@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ExchangeRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -24,6 +25,8 @@ class ExchangeRequest
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

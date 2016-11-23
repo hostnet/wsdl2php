@@ -8,10 +8,11 @@ namespace Controle\sub1\sub2;
  */
 class StoreType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var string | The URL path of the Store (58 characters maximum). Only if you are using Chinese characters
 	 * in the Name property do you need to use this field, such as if you are opening a Store
@@ -19,82 +20,84 @@ class StoreType
 	 * Store name, but it cannot be derived from the name of the Store if it contains Chinese
 	 * characters because URLs cannot contain Chinese characters.
 	 */
-	public $urlpath;
+	public $URLPath;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | A commonly used eBay URL. Applications use some of these URLs (such as the View Item URL) to
 	 * launch eBay Web site pages in a browser.<br><br> Logo URLs are required to be used in certain
 	 * types of applications. See your API license agreement. Also see this page for logo usage
 	 * rules:<br> http://developer.ebay.com/join/licenses/apilogousage
 	 */
-	public $url;
+	public $URL;
 	/**
 	 * @var \Controle\sub1\sub2\StoreSubscriptionLevelCodeType | Subscription level (tier) for the user's eBay Store.
 	 */
-	public $subscriptionlevel;
+	public $SubscriptionLevel;
 	/**
 	 * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
 	 */
-	public $description;
+	public $Description;
 	/**
 	 * @var \Controle\sub1\sub2\StoreLogoType | Store logo.
 	 */
-	public $logo;
+	public $Logo;
 	/**
 	 * @var \Controle\sub1\sub2\StoreThemeType | Store theme.
 	 */
-	public $theme;
+	public $Theme;
 	/**
 	 * @var \Controle\sub1\sub2\StoreHeaderStyleCodeType | Style for the Store header.
 	 */
-	public $headerstyle;
+	public $HeaderStyle;
 	/**
 	 * @var int | Page to use as the Store's homepage (default is 0). To change the homepage, specify the
 	 * PageID of one of the Store's custom pages.
 	 */
-	public $homepage;
+	public $HomePage;
 	/**
 	 * @var \Controle\sub1\sub2\StoreItemListLayoutCodeType | The default layout type to use for the Store items.
 	 */
-	public $itemlistlayout;
+	public $ItemListLayout;
 	/**
 	 * @var \Controle\sub1\sub2\StoreItemListSortOrderCodeType | The default sort order to use for the items for sale in the Store.
 	 */
-	public $itemlistsortorder;
+	public $ItemListSortOrder;
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomHeaderLayoutCodeType | Layout for the Store's custom header.
 	 */
-	public $customheaderlayout;
+	public $CustomHeaderLayout;
 	/**
 	 * @var string | Custom header text for the Store.
 	 */
-	public $customheader;
+	public $CustomHeader;
 	/**
 	 * @var boolean | Specifies whether to export the Store listings to comparison shopping websites.
 	 */
-	public $exportlistings;
+	public $ExportListings;
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomCategoryArrayType | Custom categories for the Store. Deprecated (input ignored) for SetStore with request version
 	 * 449 or higher. Use SetStoreCategories with request verison 449 or higher to modify store
 	 * category structures.
 	 */
-	public $customcategories;
+	public $CustomCategories;
 	/**
 	 * @var \Controle\sub1\sub2\StoreCustomListingHeaderType | Custom listing header for the Store.
 	 */
-	public $customlistingheader;
+	public $CustomListingHeader;
 	/**
 	 * @var \Controle\sub1\sub2\MerchDisplayCodeType | Specifies the chosen customization display scheme for this store's Merch Widgets. See MerchDisplayCodeType
 	 * for specific values.
 	 */
-	public $merchdisplay;
+	public $MerchDisplay;
 	/**
 	 * @var dateTime | Indicates the time the store was last opened or reopened.
 	 */
-	public $lastopenedtime;
+	public $LastOpenedTime;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -104,7 +107,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -116,7 +119,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URLPath');
         }
-        $this->urlpath = (int)$val;
+        $this->URLPath = (int)$val;
 	}
 
 	/**
@@ -125,7 +128,7 @@ class StoreType
 	 */
 	public function setURL($val)
 	{
-        $this->url = (int)$val;
+        $this->URL = (int)$val;
 	}
 
 	/**
@@ -134,7 +137,7 @@ class StoreType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->subscriptionlevel = (int)$val;
+        $this->SubscriptionLevel = (int)$val;
 	}
 
 	/**
@@ -146,7 +149,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
 	}
 
 	/**
@@ -155,7 +158,7 @@ class StoreType
 	 */
 	public function setLogo($val)
 	{
-        $this->logo = (int)$val;
+        $this->Logo = (int)$val;
 	}
 
 	/**
@@ -164,7 +167,7 @@ class StoreType
 	 */
 	public function setTheme($val)
 	{
-        $this->theme = (int)$val;
+        $this->Theme = (int)$val;
 	}
 
 	/**
@@ -173,7 +176,7 @@ class StoreType
 	 */
 	public function setHeaderStyle($val)
 	{
-        $this->headerstyle = (int)$val;
+        $this->HeaderStyle = (int)$val;
 	}
 
 	/**
@@ -185,7 +188,7 @@ class StoreType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->homepage = (int)$val;
+        $this->HomePage = (int)$val;
 	}
 
 	/**
@@ -194,7 +197,7 @@ class StoreType
 	 */
 	public function setItemListLayout($val)
 	{
-        $this->itemlistlayout = (int)$val;
+        $this->ItemListLayout = (int)$val;
 	}
 
 	/**
@@ -203,7 +206,7 @@ class StoreType
 	 */
 	public function setItemListSortOrder($val)
 	{
-        $this->itemlistsortorder = (int)$val;
+        $this->ItemListSortOrder = (int)$val;
 	}
 
 	/**
@@ -212,7 +215,7 @@ class StoreType
 	 */
 	public function setCustomHeaderLayout($val)
 	{
-        $this->customheaderlayout = (int)$val;
+        $this->CustomHeaderLayout = (int)$val;
 	}
 
 	/**
@@ -224,7 +227,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CustomHeader');
         }
-        $this->customheader = (int)$val;
+        $this->CustomHeader = (int)$val;
 	}
 
 	/**
@@ -233,7 +236,7 @@ class StoreType
 	 */
 	public function setExportListings($val)
 	{
-        $this->exportlistings = (int)$val;
+        $this->ExportListings = (int)$val;
 	}
 
 	/**
@@ -242,7 +245,7 @@ class StoreType
 	 */
 	public function setCustomCategories($val)
 	{
-        $this->customcategories = (int)$val;
+        $this->CustomCategories = (int)$val;
 	}
 
 	/**
@@ -251,7 +254,7 @@ class StoreType
 	 */
 	public function setCustomListingHeader($val)
 	{
-        $this->customlistingheader = (int)$val;
+        $this->CustomListingHeader = (int)$val;
 	}
 
 	/**
@@ -260,7 +263,7 @@ class StoreType
 	 */
 	public function setMerchDisplay($val)
 	{
-        $this->merchdisplay = (int)$val;
+        $this->MerchDisplay = (int)$val;
 	}
 
 	/**
@@ -269,7 +272,7 @@ class StoreType
 	 */
 	public function setLastOpenedTime($val)
 	{
-        $this->lastopenedtime = (int)$val;
+        $this->LastOpenedTime = (int)$val;
 	}
 
 	/**

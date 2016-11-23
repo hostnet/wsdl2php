@@ -8,23 +8,26 @@ namespace Controle\sub1\sub2;
  */
 class PaginatedTransactionArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\TransactionArrayType | Contains a list of transactions. Returned as an empty tag if no applicable transactions
 	 * exist.
 	 */
-	public $transactionarray;
+	public $TransactionArray;
 	/**
 	 * @var \Controle\sub1\sub2\PaginationResultType | Provides information about the list of transactions, including number of pages and number
 	 * of entries.
 	 */
-	public $paginationresult;
+	public $PaginationResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param TransactionArrayType $val
 	 * @throws Exception
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->transactionarray = (int)$val;
+        $this->TransactionArray = (int)$val;
 	}
 
 	/**
@@ -33,6 +36,6 @@ class PaginatedTransactionArrayType
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
 	}
 }

@@ -8,6 +8,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class LiveAuctionApprovalStatusType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -21,19 +22,21 @@ class LiveAuctionApprovalStatusType
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var string | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $status;
+    public $Status;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -45,6 +48,6 @@ class LiveAuctionApprovalStatusType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 }

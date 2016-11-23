@@ -8,27 +8,30 @@ namespace Controle\sub1\sub2;
  */
 class StoreColorSchemeType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Store color scheme ID. (use GetStoreOptions to get the list of valid theme color scheme
 	 * IDs).
 	 */
-	public $colorschemeid;
+	public $ColorSchemeID;
 	/**
 	 * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
 	 */
-	public $name;
+	public $Name;
 	/**
 	 * @var \Controle\sub1\sub2\StoreColorType | Store color set.
 	 */
-	public $color;
+	public $Color;
 	/**
 	 * @var \Controle\sub1\sub2\StoreFontType | Store font set.
 	 */
-	public $font;
+	public $Font;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -38,7 +41,7 @@ class StoreColorSchemeType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->colorschemeid = (int)$val;
+        $this->ColorSchemeID = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class StoreColorSchemeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class StoreColorSchemeType
 	 */
 	public function setColor($val)
 	{
-        $this->color = (int)$val;
+        $this->Color = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class StoreColorSchemeType
 	 */
 	public function setFont($val)
 	{
-        $this->font = (int)$val;
+        $this->Font = (int)$val;
 	}
 
 	/**

@@ -10,10 +10,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetPictureManagerDetailsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The ID of the folder.
      */
-    public $folderid;
+    public $FolderID;
     /**
      * @var string | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
      * on a location of the seller's choice (other than eBay) and associated with an item.
@@ -30,13 +31,15 @@ class GetPictureManagerDetailsRequestType extends
      * that the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
      * with that feature.
      */
-    public $pictureurl;
+    public $PictureURL;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerDetailLevelCodeType | The type of information you want returned, about pictures and folders, the account subscription,
      * or both. Use this element rather than the generic DetailLevel element defined in AbstractRequestType.
      * You can use the following values: ReturnAll, ReturnSubscription, or ReturnPicture.
      */
-    public $picturemanagerdetaillevel;
+    public $PictureManagerDetailLevel;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -46,7 +49,7 @@ class GetPictureManagerDetailsRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->folderid = (int)$val;
+        $this->FolderID = (int)$val;
     }
 
     /**
@@ -58,7 +61,7 @@ class GetPictureManagerDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->pictureurl = (int)$val;
+        $this->PictureURL = (int)$val;
     }
 
     /**
@@ -67,6 +70,6 @@ class GetPictureManagerDetailsRequestType extends
      */
     public function setPictureManagerDetailLevel($val)
     {
-        $this->picturemanagerdetaillevel = (int)$val;
+        $this->PictureManagerDetailLevel = (int)$val;
     }
 }

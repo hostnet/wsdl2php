@@ -10,4 +10,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetStoreResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
+    // @codingStandardsIgnoreEnd
 }

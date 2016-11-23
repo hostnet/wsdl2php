@@ -4,33 +4,36 @@ namespace Controle;
 
 class DnsSecKeys
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\DnsSecKey
 	 */
-	public $dnsseckey1;
+	public $DnsSecKey1;
 	/**
 	 * @var \Controle\DnsSecKey
 	 */
-	public $dnsseckey2;
+	public $DnsSecKey2;
 	/**
 	 * @var \Controle\DnsSecKey
 	 */
-	public $dnsseckey3;
+	public $DnsSecKey3;
 	/**
 	 * @var \Controle\DnsSecKey
 	 */
-	public $dnsseckey4;
+	public $DnsSecKey4;
 	/**
 	 * @var \Controle\DnsSecKey
 	 */
-	public $dnsseckey5;
+	public $DnsSecKey5;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param DnsSecKey $val
 	 * @throws Exception
 	 */
 	public function setDnsSecKey1($val)
 	{
-        $this->dnsseckey1 = (int)$val;
+        $this->DnsSecKey1 = (int)$val;
 	}
 
 	/**
@@ -39,7 +42,7 @@ class DnsSecKeys
 	 */
 	public function setDnsSecKey2($val)
 	{
-        $this->dnsseckey2 = (int)$val;
+        $this->DnsSecKey2 = (int)$val;
 	}
 
 	/**
@@ -48,7 +51,7 @@ class DnsSecKeys
 	 */
 	public function setDnsSecKey3($val)
 	{
-        $this->dnsseckey3 = (int)$val;
+        $this->DnsSecKey3 = (int)$val;
 	}
 
 	/**
@@ -57,7 +60,7 @@ class DnsSecKeys
 	 */
 	public function setDnsSecKey4($val)
 	{
-        $this->dnsseckey4 = (int)$val;
+        $this->DnsSecKey4 = (int)$val;
 	}
 
 	/**
@@ -66,6 +69,6 @@ class DnsSecKeys
 	 */
 	public function setDnsSecKey5($val)
 	{
-        $this->dnsseckey5 = (int)$val;
+        $this->DnsSecKey5 = (int)$val;
 	}
 }

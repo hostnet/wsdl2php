@@ -4,31 +4,34 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SmSsubscriptionType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The wireless phone number to be used for receiving SMS messages. Max length of phone
      * number varies by country.
      */
-    public $smsphone;
+    public $SMSPhone;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SMSSubscriptionUserStatusCodeType | Registered/Unregistered/Pending.
      */
-    public $userstatus;
+    public $UserStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\WirelessCarrierIDCodeType | The wireless carrier ID.
      */
-    public $carrierid;
+    public $CarrierID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SMSSubscriptionErrorCodeCodeType | Reason for SMS subscription error (postback from thired-party integrator).
      */
-    public $errorcode;
+    public $ErrorCode;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | ID of item to unsubscribe from SMS notification.
      */
-    public $itemtounsubscribe;
+    public $ItemToUnsubscribe;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -38,7 +41,7 @@ class SmSsubscriptionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SMSPhone');
         }
-        $this->smsphone = (int)$val;
+        $this->SMSPhone = (int)$val;
     }
 
     /**
@@ -47,7 +50,7 @@ class SmSsubscriptionType
      */
     public function setUserStatus($val)
     {
-        $this->userstatus = (int)$val;
+        $this->UserStatus = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class SmSsubscriptionType
      */
     public function setCarrierID($val)
     {
-        $this->carrierid = (int)$val;
+        $this->CarrierID = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class SmSsubscriptionType
      */
     public function setErrorCode($val)
     {
-        $this->errorcode = (int)$val;
+        $this->ErrorCode = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class SmSsubscriptionType
      */
     public function setItemToUnsubscribe($val)
     {
-        $this->itemtounsubscribe = (int)$val;
+        $this->ItemToUnsubscribe = (int)$val;
     }
 
     /**

@@ -4,21 +4,24 @@ namespace Controle\sub1\sub2;
 
 class SearchNameServerResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $searchnameserverresult;
+	public $SearchNameServerResult;
 	/**
 	 * @var array \Controle\sub1\sub2\NameServer
 	 */
-	public $nameservers;
+	public $nameServers;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setSearchNameServerResult($val)
 	{
-        $this->searchnameserverresult = (int)$val;
+        $this->SearchNameServerResult = (int)$val;
 	}
 
 	/**
@@ -27,6 +30,6 @@ class SearchNameServerResponse
 	 */
 	public function setNameServers($val)
 	{
-        $this->nameservers = (int)$val;
+        $this->nameServers = (int)$val;
 	}
 }

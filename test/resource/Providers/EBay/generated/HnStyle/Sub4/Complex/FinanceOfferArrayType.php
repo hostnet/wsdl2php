@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FinanceOfferArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\FinanceOfferType | A financing offer.
      */
-    public $financeoffer;
+    public $FinanceOffer;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FinanceOfferType $val
      * @throws Exception
      */
     public function setFinanceOffer($val)
     {
-        $this->financeoffer = (int)$val;
+        $this->FinanceOffer = (int)$val;
     }
 }

@@ -4,21 +4,24 @@ namespace Controle;
 
 class CreateDocumentationResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\Response
 	 */
-	public $createdocumentationresult;
+	public $CreateDocumentationResult;
 	/**
 	 * @var int
 	 */
-	public $documentationid;
+	public $documentationId;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setCreateDocumentationResult($val)
 	{
-        $this->createdocumentationresult = (int)$val;
+        $this->CreateDocumentationResult = (int)$val;
 	}
 
 	/**
@@ -30,6 +33,6 @@ class CreateDocumentationResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->documentationid = (int)$val;
+        $this->documentationId = (int)$val;
 	}
 }

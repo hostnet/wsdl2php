@@ -8,19 +8,20 @@ namespace Controle;
  */
 class ItemBidDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var string | ID of the category in which the Want It Now post is listed.
 	 */
-	public $categoryid;
+	public $CategoryID;
 	/**
 	 * @var int | Number of bids placed so far against the item. Only applicable to competitive-bidding listings
 	 * (Chinese and Dutch auctions).
 	 */
-	public $bidcount;
+	public $BidCount;
 	/**
 	 * @var \Controle\UserIDType | The eBay ID of the seller who listed the item. <br><br> Starting Jan 2007, when a bidder's
 	 * user info is made anonymous, this tag will be returned with the anonymous value "Seller
@@ -28,22 +29,24 @@ class ItemBidDetailsType
 	 * purchased items from. For example, if the seller is the third seller that the user has
 	 * purchased items from, the value "Seller 3" is returned.
 	 */
-	public $sellerid;
+	public $SellerID;
 	/**
 	 * @var dateTime | The time at which the user placed the last bid on the item.
 	 */
-	public $lastbidtime;
+	public $LastBidTime;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -55,7 +58,7 @@ class ItemBidDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
 	}
 
 	/**
@@ -67,7 +70,7 @@ class ItemBidDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->bidcount = (int)$val;
+        $this->BidCount = (int)$val;
 	}
 
 	/**
@@ -76,7 +79,7 @@ class ItemBidDetailsType
 	 */
 	public function setSellerID($val)
 	{
-        $this->sellerid = (int)$val;
+        $this->SellerID = (int)$val;
 	}
 
 	/**
@@ -85,7 +88,7 @@ class ItemBidDetailsType
 	 */
 	public function setLastBidTime($val)
 	{
-        $this->lastbidtime = (int)$val;
+        $this->LastBidTime = (int)$val;
 	}
 
 	/**

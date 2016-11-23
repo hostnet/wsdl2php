@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BrowseNode
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $browseid;
+    public $BrowseId;
     /**
      * @var string
      */
-    public $browsename;
+    public $BrowseName;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class BrowseNode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BrowseId');
         }
-        $this->browseid = (int)$val;
+        $this->BrowseId = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class BrowseNode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BrowseName');
         }
-        $this->browsename = (int)$val;
+        $this->BrowseName = (int)$val;
     }
 }

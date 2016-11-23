@@ -13,31 +13,34 @@ namespace Controle\sub1\sub2;
 class GetNotificationPreferencesResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ApplicationDeliveryPreferencesType | Specifies application-based event preferences that have been enabled.
 	 */
-	public $applicationdeliverypreferences;
+	public $ApplicationDeliveryPreferences;
 	/**
 	 * @var \Controle\sub1\sub2\NotificationEnableArrayType | Array of NotificationEventEnableTypes. Each NotificationEventEnableType contains an EventSetting
 	 * and an EventType.
 	 */
-	public $userdeliverypreferencearray;
+	public $UserDeliveryPreferenceArray;
 	/**
 	 * @var \Controle\sub1\sub2\NotificationUserDataType | Specifies user data for notification settings such as mobile phone number.
 	 */
-	public $userdata;
+	public $UserData;
 	/**
 	 * @var \Controle\sub1\sub2\NotificationEventPropertyType | Characteristics or details of an event such as type, name and value. Currently can only
 	 * be set for wireless applications.
 	 */
-	public $eventproperty;
+	public $EventProperty;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ApplicationDeliveryPreferencesType $val
 	 * @throws Exception
 	 */
 	public function setApplicationDeliveryPreferences($val)
 	{
-        $this->applicationdeliverypreferences = (int)$val;
+        $this->ApplicationDeliveryPreferences = (int)$val;
 	}
 
 	/**
@@ -46,7 +49,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setUserDeliveryPreferenceArray($val)
 	{
-        $this->userdeliverypreferencearray = (int)$val;
+        $this->UserDeliveryPreferenceArray = (int)$val;
 	}
 
 	/**
@@ -55,7 +58,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setUserData($val)
 	{
-        $this->userdata = (int)$val;
+        $this->UserData = (int)$val;
 	}
 
 	/**
@@ -64,6 +67,6 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setEventProperty($val)
 	{
-        $this->eventproperty = (int)$val;
+        $this->EventProperty = (int)$val;
 	}
 }

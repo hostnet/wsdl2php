@@ -9,16 +9,19 @@ namespace Controle;
 class RemoveFromWatchListResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | (out) The current number of items in the user's watch list (after those specified in
      * the call request have been removed)
      */
-    public $watchlistcount;
+    public $WatchListCount;
     /**
      * @var int | (out) The maximum number of items allowed in watch lists. Currently this value is the
      * same for all sites and all users.
      */
-    public $watchlistmaximum;
+    public $WatchListMaximum;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -28,7 +31,7 @@ class RemoveFromWatchListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->watchlistcount = (int)$val;
+        $this->WatchListCount = (int)$val;
     }
 
     /**
@@ -40,6 +43,6 @@ class RemoveFromWatchListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->watchlistmaximum = (int)$val;
+        $this->WatchListMaximum = (int)$val;
     }
 }

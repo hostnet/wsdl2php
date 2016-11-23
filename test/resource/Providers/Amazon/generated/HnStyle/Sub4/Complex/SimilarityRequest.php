@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SimilarityRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -24,6 +25,8 @@ class SimilarityRequest
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

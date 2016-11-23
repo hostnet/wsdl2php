@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class DeleteRegistrantResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $deleteregistrantresult;
+    public $DeleteRegistrantResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setDeleteRegistrantResult($val)
     {
-        $this->deleteregistrantresult = (int)$val;
+        $this->DeleteRegistrantResult = (int)$val;
     }
 }

@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class WirelessCarrierIdCodeType
 {
+    // @codingStandardsIgnoreStart
     const CINGULAR       = 'Cingular';
     const TMOBILE        = 'TMobile';
     const SPRINT         = 'Sprint';
@@ -19,4 +20,5 @@ class WirelessCarrierIdCodeType
     const VODAFONE       = 'Vodafone';
     const ATT            = 'ATT';
     const CUSTOMCODE     = 'CustomCode';
+    // @codingStandardsIgnoreEnd
 }

@@ -8,26 +8,29 @@ namespace Controle;
  */
 class PaymentOptionDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\BuyerPaymentMethodCodeType | A payment method value defined in the schema.<br><br> Related fields:<br> Item.PaymentMethods
 	 * in AddItem<br> PaymentMethodUsed in ReviseCheckoutStatus
 	 */
-	public $paymentoption;
+	public $PaymentOption;
 	/**
 	 * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
 	 */
-	public $description;
+	public $Description;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
 	 * @throws Exception
 	 */
 	public function setPaymentOption($val)
 	{
-        $this->paymentoption = (int)$val;
+        $this->PaymentOption = (int)$val;
 	}
 
 	/**
@@ -39,7 +42,7 @@ class PaymentOptionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
 	}
 
 	/**

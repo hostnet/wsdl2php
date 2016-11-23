@@ -8,16 +8,19 @@ namespace Controle;
  */
 class CategoryFinanceOfferArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\CategoryFinanceOfferType | A financing offer valid within a particular category.
 	 */
-	public $categoryfinanceoffer;
+	public $CategoryFinanceOffer;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param CategoryFinanceOfferType $val
 	 * @throws Exception
 	 */
 	public function setCategoryFinanceOffer($val)
 	{
-        $this->categoryfinanceoffer = (int)$val;
+        $this->CategoryFinanceOffer = (int)$val;
 	}
 }

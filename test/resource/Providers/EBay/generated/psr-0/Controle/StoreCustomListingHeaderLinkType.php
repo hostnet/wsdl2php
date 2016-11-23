@@ -8,24 +8,27 @@ namespace Controle;
  */
 class StoreCustomListingHeaderLinkType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Link ID for the listing header link. The ID is used when the link  is a custom category
 	 * or for a custom page, and it is not needed  when the LinkType property is "AboutMe" or
 	 * "None".
 	 */
-	public $linkid;
+	public $LinkID;
 	/**
 	 * @var int | Order in which the page is displayed in the list of custom pages.
 	 */
-	public $order;
+	public $Order;
 	/**
 	 * @var \Controle\StoreCustomListingHeaderLinkCodeType | Type of link to include in the custom listing header.
 	 */
-	public $linktype;
+	public $LinkType;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -35,7 +38,7 @@ class StoreCustomListingHeaderLinkType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->linkid = (int)$val;
+        $this->LinkID = (int)$val;
 	}
 
 	/**
@@ -47,7 +50,7 @@ class StoreCustomListingHeaderLinkType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->order = (int)$val;
+        $this->Order = (int)$val;
 	}
 
 	/**
@@ -56,7 +59,7 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setLinkType($val)
 	{
-        $this->linktype = (int)$val;
+        $this->LinkType = (int)$val;
 	}
 
 	/**

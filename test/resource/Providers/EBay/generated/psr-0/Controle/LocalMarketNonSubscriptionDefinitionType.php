@@ -10,10 +10,13 @@ namespace Controle;
  */
 class LocalMarketNonSubscriptionDefinitionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception

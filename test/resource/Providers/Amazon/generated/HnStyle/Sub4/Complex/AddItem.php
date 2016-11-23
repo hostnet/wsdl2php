@@ -4,18 +4,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AddItem
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $asin;
+    public $Asin;
     /**
      * @var string
      */
-    public $exchangeid;
+    public $ExchangeId;
     /**
      * @var string
      */
-    public $quantity;
+    public $Quantity;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class AddItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Asin');
         }
-        $this->asin = (int)$val;
+        $this->Asin = (int)$val;
     }
 
     /**
@@ -37,7 +40,7 @@ class AddItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->exchangeid = (int)$val;
+        $this->ExchangeId = (int)$val;
     }
 
     /**
@@ -49,6 +52,6 @@ class AddItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Quantity');
         }
-        $this->quantity = (int)$val;
+        $this->Quantity = (int)$val;
     }
 }

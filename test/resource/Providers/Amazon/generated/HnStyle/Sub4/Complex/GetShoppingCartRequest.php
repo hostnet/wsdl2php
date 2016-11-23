@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class GetShoppingCartRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -15,15 +16,17 @@ class GetShoppingCartRequest
     /**
      * @var string
      */
-    public $cartid;
+    public $CartId;
     /**
      * @var string
      */
-    public $hmac;
+    public $HMAC;
     /**
      * @var string
      */
     public $locale;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -57,7 +60,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->cartid = (int)$val;
+        $this->CartId = (int)$val;
     }
 
     /**
@@ -69,7 +72,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->hmac = (int)$val;
+        $this->HMAC = (int)$val;
     }
 
     /**

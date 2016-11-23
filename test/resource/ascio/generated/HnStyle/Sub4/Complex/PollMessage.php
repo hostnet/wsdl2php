@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class PollMessage
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MessageType
      */
-    public $msgtype;
+    public $msgType;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class PollMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class PollMessage
      */
     public function setMsgType($val)
     {
-        $this->msgtype = (int)$val;
+        $this->msgType = (int)$val;
     }
 }

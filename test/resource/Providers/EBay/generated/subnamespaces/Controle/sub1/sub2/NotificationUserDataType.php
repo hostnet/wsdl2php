@@ -8,27 +8,30 @@ namespace Controle\sub1\sub2;
  */
 class NotificationUserDataType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\SMSSubscriptionType | User data related to SMS notifications.
 	 */
-	public $smssubscription;
+	public $SMSSubscription;
 	/**
 	 * @var \Controle\sub1\sub2\SummaryEventScheduleType | User account activity summary alert delivery schedule. Returned if PreferenceLevel is set
 	 * to UserData in GetNotificationPreferences. See "Working with Platform Notifications" for
 	 * instructions on "Informational Alerts".
 	 */
-	public $summaryschedule;
+	public $SummarySchedule;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SMSSubscriptionType $val
 	 * @throws Exception
 	 */
 	public function setSMSSubscription($val)
 	{
-        $this->smssubscription = (int)$val;
+        $this->SMSSubscription = (int)$val;
 	}
 
 	/**
@@ -37,7 +40,7 @@ class NotificationUserDataType
 	 */
 	public function setSummarySchedule($val)
 	{
-        $this->summaryschedule = (int)$val;
+        $this->SummarySchedule = (int)$val;
 	}
 
 	/**

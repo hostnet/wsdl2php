@@ -4,16 +4,19 @@ namespace Controle;
 
 class LogOutResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $logoutresult;
+    public $LogOutResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setLogOutResult($val)
     {
-        $this->logoutresult = (int)$val;
+        $this->LogOutResult = (int)$val;
     }
 }

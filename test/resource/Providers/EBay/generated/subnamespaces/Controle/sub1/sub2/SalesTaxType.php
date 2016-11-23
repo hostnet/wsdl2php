@@ -8,37 +8,40 @@ namespace Controle\sub1\sub2;
  */
 class SalesTaxType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var float | The tax percent to apply for a listing shipped to this jurisdiction. The value passed in
 	 * is stored with a precision of 3 digits after the decimal point (##.###). GetTaxTable: this
 	 * tag has no value if the user's tax table has not been set.
 	 */
-	public $salestaxpercent;
+	public $SalesTaxPercent;
 	/**
 	 * @var string | State or jurisdiction for which the sales tax is being collected.            Also returned
 	 * for Half.com (for GetOrders).
 	 */
-	public $salestaxstate;
+	public $SalesTaxState;
 	/**
 	 * @var boolean | Whether shipping costs are to be part of the base amount that is taxed. GetTaxTable: This
 	 * tag is empty if the user did not previously provide information.
 	 */
-	public $shippingincludedintax;
+	public $ShippingIncludedInTax;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | (US only) The amount of sales tax. Also returned for Half.com (for GetOrders).
 	 */
-	public $salestaxamount;
+	public $SalesTaxAmount;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param float $val
 	 * @throws Exception
 	 */
 	public function setSalesTaxPercent($val)
 	{
-        $this->salestaxpercent = (int)$val;
+        $this->SalesTaxPercent = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class SalesTaxType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SalesTaxState');
         }
-        $this->salestaxstate = (int)$val;
+        $this->SalesTaxState = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class SalesTaxType
 	 */
 	public function setShippingIncludedInTax($val)
 	{
-        $this->shippingincludedintax = (int)$val;
+        $this->ShippingIncludedInTax = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class SalesTaxType
 	 */
 	public function setSalesTaxAmount($val)
 	{
-        $this->salestaxamount = (int)$val;
+        $this->SalesTaxAmount = (int)$val;
 	}
 
 	/**

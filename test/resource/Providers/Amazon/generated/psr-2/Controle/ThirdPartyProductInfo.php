@@ -4,16 +4,19 @@ namespace Controle;
 
 class ThirdPartyProductInfo
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\ThirdPartyProductDetailsArray
      */
-    public $thirdpartyproductdetails;
+    public $ThirdPartyProductDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ThirdPartyProductDetailsArray $val
      * @throws Exception
      */
     public function setThirdPartyProductDetails($val)
     {
-        $this->thirdpartyproductdetails = (int)$val;
+        $this->ThirdPartyProductDetails = (int)$val;
     }
 }

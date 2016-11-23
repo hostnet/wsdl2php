@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class StorePreferencesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreVacationPreferencesType | Store vacation hold preferences.
      */
-    public $vacationpreferences;
+    public $VacationPreferences;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreVacationPreferencesType $val
      * @throws Exception
      */
     public function setVacationPreferences($val)
     {
-        $this->vacationpreferences = (int)$val;
+        $this->VacationPreferences = (int)$val;
     }
 }

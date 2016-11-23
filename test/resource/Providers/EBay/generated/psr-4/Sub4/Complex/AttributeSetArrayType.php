@@ -14,6 +14,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class AttributeSetArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AttributeSetType | A result containing a set of one or more product families. For GetProductSearchResults,
      * if QueryKeywords and multiple characteristic set IDs were specified in the request,
@@ -23,13 +24,15 @@ class AttributeSetArrayType
      * 387 and higher. For GetProductFamilyMembers, only returned with request version 415
      * and higher.
      */
-    public $attributeset;
+    public $AttributeSet;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AttributeSetType $val
      * @throws Exception
      */
     public function setAttributeSet($val)
     {
-        $this->attributeset = (int)$val;
+        $this->AttributeSet = (int)$val;
     }
 }

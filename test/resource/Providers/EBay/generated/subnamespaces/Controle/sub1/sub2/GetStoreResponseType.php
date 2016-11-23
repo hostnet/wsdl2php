@@ -13,16 +13,19 @@ namespace Controle\sub1\sub2;
 class GetStoreResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\StoreType | Specifies the Store configuration that is being set for the user.
 	 */
-	public $store;
+	public $Store;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param StoreType $val
 	 * @throws Exception
 	 */
 	public function setStore($val)
 	{
-        $this->store = (int)$val;
+        $this->Store = (int)$val;
 	}
 }

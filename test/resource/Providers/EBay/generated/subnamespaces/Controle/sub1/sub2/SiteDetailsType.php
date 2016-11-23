@@ -8,24 +8,27 @@ namespace Controle\sub1\sub2;
  */
 class SiteDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\SiteCodeType | Site where the Want It Now post is listed.
 	 */
-	public $site;
+	public $Site;
 	/**
 	 * @var int | 	 */
-	public $siteid;
+	public $SiteID;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SiteCodeType $val
 	 * @throws Exception
 	 */
 	public function setSite($val)
 	{
-        $this->site = (int)$val;
+        $this->Site = (int)$val;
 	}
 
 	/**
@@ -37,7 +40,7 @@ class SiteDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->siteid = (int)$val;
+        $this->SiteID = (int)$val;
 	}
 
 	/**

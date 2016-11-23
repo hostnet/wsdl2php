@@ -19,18 +19,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetProductSearchPageRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $attributesystemversion;
+    public $AttributeSystemVersion;
     /**
      * @var int | Numeric identifier for a characteristic set that defines the attributes            (unique
      * across all eBay sites).
      */
-    public $attributesetid;
+    public $AttributeSetID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -40,7 +43,7 @@ class GetProductSearchPageRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->attributesystemversion = (int)$val;
+        $this->AttributeSystemVersion = (int)$val;
     }
 
     /**
@@ -52,6 +55,6 @@ class GetProductSearchPageRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributesetid = (int)$val;
+        $this->AttributeSetID = (int)$val;
     }
 }

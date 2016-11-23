@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class PhotoDisplayCodeType
 {
+	// @codingStandardsIgnoreStart
 	const NONE                    = 'None';
 	const SLIDESHOW               = 'SlideShow';
 	const SUPERSIZE               = 'SuperSize';
@@ -12,4 +13,5 @@ class PhotoDisplayCodeType
 	const VENDORHOSTEDPICTURESHOW = 'VendorHostedPictureShow';
 	const SUPERSIZEPICTURESHOW    = 'SuperSizePictureShow';
 	const CUSTOMCODE              = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

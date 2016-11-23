@@ -9,35 +9,38 @@ namespace Controle\sub1\sub2;
  */
 class WantItNowPostType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | ID of the category in which the Want It Now post is listed.
 	 */
-	public $categoryid;
+	public $CategoryID;
 	/**
 	 * @var string | Description of a Want It Now post. Description will not be returned for GetWantItNowSearchResults.
 	 */
-	public $description;
+	public $Description;
 	/**
 	 * @var \Controle\sub1\sub2\ItemIDType | ID that uniquely identifies a Want It Now post.
 	 */
-	public $postid;
+	public $PostID;
 	/**
 	 * @var \Controle\sub1\sub2\SiteCodeType | Site where the Want It Now post is listed.
 	 */
-	public $site;
+	public $Site;
 	/**
 	 * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
 	 */
-	public $starttime;
+	public $StartTime;
 	/**
 	 * @var int | Number of responses for a Want It Now post. Sellers respond to a Want It Now post by submitting
 	 * an item number, so each response corresponds to an item listing.
 	 */
-	public $responsecount;
+	public $ResponseCount;
 	/**
 	 * @var string | Title of a Want It Now post.
 	 */
-	public $title;
+	public $Title;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -47,7 +50,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->description = (int)$val;
+        $this->Description = (int)$val;
 	}
 
 	/**
@@ -68,7 +71,7 @@ class WantItNowPostType
 	 */
 	public function setPostID($val)
 	{
-        $this->postid = (int)$val;
+        $this->PostID = (int)$val;
 	}
 
 	/**
@@ -77,7 +80,7 @@ class WantItNowPostType
 	 */
 	public function setSite($val)
 	{
-        $this->site = (int)$val;
+        $this->Site = (int)$val;
 	}
 
 	/**
@@ -86,7 +89,7 @@ class WantItNowPostType
 	 */
 	public function setStartTime($val)
 	{
-        $this->starttime = (int)$val;
+        $this->StartTime = (int)$val;
 	}
 
 	/**
@@ -98,7 +101,7 @@ class WantItNowPostType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->responsecount = (int)$val;
+        $this->ResponseCount = (int)$val;
 	}
 
 	/**
@@ -110,6 +113,6 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->title = (int)$val;
+        $this->Title = (int)$val;
 	}
 }

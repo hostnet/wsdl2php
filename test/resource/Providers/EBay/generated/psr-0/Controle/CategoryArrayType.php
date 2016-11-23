@@ -8,16 +8,19 @@ namespace Controle;
  */
 class CategoryArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\CategoryType | Describes a category that contains items that match the query.
 	 */
-	public $category;
+	public $Category;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param CategoryType $val
 	 * @throws Exception
 	 */
 	public function setCategory($val)
 	{
-        $this->category = (int)$val;
+        $this->Category = (int)$val;
 	}
 }

@@ -8,16 +8,19 @@ namespace Controle;
  */
 class RefundArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\RefundType | Contains information about one refund. Applicable to Half.com (for GetOrders).
      */
-    public $refund;
+    public $Refund;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param RefundType $val
      * @throws Exception
      */
     public function setRefund($val)
     {
-        $this->refund = (int)$val;
+        $this->Refund = (int)$val;
     }
 }

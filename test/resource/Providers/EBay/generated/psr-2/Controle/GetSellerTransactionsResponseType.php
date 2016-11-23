@@ -17,22 +17,23 @@ namespace Controle;
 class GetSellerTransactionsResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
     /**
      * @var boolean | Indicates whether there are additional transactions to retrieve. That is, indicates
      * whether more pages of data are available to be returned, given the filters that were
      * specified in the request. Returns false for the last page of data.
      */
-    public $hasmoretransactions;
+    public $HasMoreTransactions;
     /**
      * @var int | Number of transactions returned per page (per call). May be a higher value than ReturnedTransactionCountActual
      * if the page returned is the last page and more than one page of data exists.
      */
-    public $transactionsperpage;
+    public $TransactionsPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -41,34 +42,36 @@ class GetSellerTransactionsResponseType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var int | Number of transactions retrieved in the current page of results just returned. May be
      * a lower value than TransactionsPerPage if the page returned is the last page and more
      * than one page of data exists.
      */
-    public $returnedtransactioncountactual;
+    public $ReturnedTransactionCountActual;
     /**
      * @var \Controle\UserType | Container for information about this listing's seller. Not applicable to Half.com. <br> <br> In
      * GetSearchResultsExpress, only returned when ItemDetails is set to Fine.
      */
-    public $seller;
+    public $Seller;
     /**
      * @var \Controle\TransactionArrayType | Contains a list of transactions. Returned as an empty tag if no applicable transactions
      * exist.
      */
-    public $transactionarray;
+    public $TransactionArray;
     /**
      * @var boolean | Specifies whether a seller wants to let buyers know that PayPal payments are preferred.
      */
-    public $paypalpreferred;
+    public $PayPalPreferred;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PaginationResultType $val
      * @throws Exception
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class GetSellerTransactionsResponseType extends
      */
     public function setHasMoreTransactions($val)
     {
-        $this->hasmoretransactions = (int)$val;
+        $this->HasMoreTransactions = (int)$val;
     }
 
     /**
@@ -89,7 +92,7 @@ class GetSellerTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->transactionsperpage = (int)$val;
+        $this->TransactionsPerPage = (int)$val;
     }
 
     /**
@@ -101,7 +104,7 @@ class GetSellerTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -113,7 +116,7 @@ class GetSellerTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->returnedtransactioncountactual = (int)$val;
+        $this->ReturnedTransactionCountActual = (int)$val;
     }
 
     /**
@@ -122,7 +125,7 @@ class GetSellerTransactionsResponseType extends
      */
     public function setSeller($val)
     {
-        $this->seller = (int)$val;
+        $this->Seller = (int)$val;
     }
 
     /**
@@ -131,7 +134,7 @@ class GetSellerTransactionsResponseType extends
      */
     public function setTransactionArray($val)
     {
-        $this->transactionarray = (int)$val;
+        $this->TransactionArray = (int)$val;
     }
 
     /**
@@ -140,6 +143,6 @@ class GetSellerTransactionsResponseType extends
      */
     public function setPayPalPreferred($val)
     {
-        $this->paypalpreferred = (int)$val;
+        $this->PayPalPreferred = (int)$val;
     }
 }

@@ -11,40 +11,41 @@ namespace Controle;
  */
 class FeedbackSummaryType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\FeedbackPeriodArrayType | Bid retractions count, for multiple predefined time periods preceding the call. Returned
      * if no detail level is specified.
      */
-    public $bidretractionfeedbackperiodarray;
+    public $BidRetractionFeedbackPeriodArray;
     /**
      * @var \Controle\FeedbackPeriodArrayType | Negative feedback entries count, for multiple predefined time periods preceding the
      * call. Returned if no detail level is specified.
      */
-    public $negativefeedbackperiodarray;
+    public $NegativeFeedbackPeriodArray;
     /**
      * @var \Controle\FeedbackPeriodArrayType | Neutral feedback entries count, for multiple predefined time periods preceding the call.
      * Returned if no detail level is specified.
      */
-    public $neutralfeedbackperiodarray;
+    public $NeutralFeedbackPeriodArray;
     /**
      * @var \Controle\FeedbackPeriodArrayType | Positive feedback entries count, for multiple predefined time periods preceding the
      * call. Returned if no detail level is specified.
      */
-    public $positivefeedbackperiodarray;
+    public $PositiveFeedbackPeriodArray;
     /**
      * @var \Controle\FeedbackPeriodArrayType | Total feedback score, for multiple predefined time periods preceding the call. Returned
      * if no detail level is specified.
      */
-    public $totalfeedbackperiodarray;
+    public $TotalFeedbackPeriodArray;
     /**
      * @var int | Number of neutral comments received from suspended users. Returned if no detail level
      * is specified.
      */
-    public $neutralcommentcountfromsuspendedusers;
+    public $NeutralCommentCountFromSuspendedUsers;
     /**
      * @var int | Total count of negative feedback entries from unique (distinct) users.
      */
-    public $uniquenegativefeedbackcount;
+    public $UniqueNegativeFeedbackCount;
     /**
      * @var int | Total count of positive feedback entries from unique (distinct) users. Contains the
      * aggregate feedback score for a user. A member's feedback score is the net positive feedback
@@ -57,18 +58,20 @@ class FeedbackSummaryType
      * to as a "feedback rating" on the eBay site). This rating is commonly expressed as the
      * eBay Feedback score for the user.
      */
-    public $uniquepositivefeedbackcount;
+    public $UniquePositiveFeedbackCount;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param FeedbackPeriodArrayType $val
      * @throws Exception
      */
     public function setBidRetractionFeedbackPeriodArray($val)
     {
-        $this->bidretractionfeedbackperiodarray = (int)$val;
+        $this->BidRetractionFeedbackPeriodArray = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class FeedbackSummaryType
      */
     public function setNegativeFeedbackPeriodArray($val)
     {
-        $this->negativefeedbackperiodarray = (int)$val;
+        $this->NegativeFeedbackPeriodArray = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class FeedbackSummaryType
      */
     public function setNeutralFeedbackPeriodArray($val)
     {
-        $this->neutralfeedbackperiodarray = (int)$val;
+        $this->NeutralFeedbackPeriodArray = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class FeedbackSummaryType
      */
     public function setPositiveFeedbackPeriodArray($val)
     {
-        $this->positivefeedbackperiodarray = (int)$val;
+        $this->PositiveFeedbackPeriodArray = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class FeedbackSummaryType
      */
     public function setTotalFeedbackPeriodArray($val)
     {
-        $this->totalfeedbackperiodarray = (int)$val;
+        $this->TotalFeedbackPeriodArray = (int)$val;
     }
 
     /**
@@ -116,7 +119,7 @@ class FeedbackSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->neutralcommentcountfromsuspendedusers = (int)$val;
+        $this->NeutralCommentCountFromSuspendedUsers = (int)$val;
     }
 
     /**
@@ -128,7 +131,7 @@ class FeedbackSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->uniquenegativefeedbackcount = (int)$val;
+        $this->UniqueNegativeFeedbackCount = (int)$val;
     }
 
     /**
@@ -140,7 +143,7 @@ class FeedbackSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->uniquepositivefeedbackcount = (int)$val;
+        $this->UniquePositiveFeedbackCount = (int)$val;
     }
 
     /**

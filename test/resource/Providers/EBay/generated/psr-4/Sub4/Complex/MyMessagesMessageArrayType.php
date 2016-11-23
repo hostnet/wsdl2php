@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class MyMessagesMessageArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesMessageType | Contains the data for one message.
      */
-    public $message;
+    public $Message;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param MyMessagesMessageType $val
      * @throws Exception
      */
     public function setMessage($val)
     {
-        $this->message = (int)$val;
+        $this->Message = (int)$val;
     }
 }

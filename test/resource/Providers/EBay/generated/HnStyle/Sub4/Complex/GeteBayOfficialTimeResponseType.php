@@ -11,4 +11,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GeteBayOfficialTimeResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
+    // @codingStandardsIgnoreEnd
 }

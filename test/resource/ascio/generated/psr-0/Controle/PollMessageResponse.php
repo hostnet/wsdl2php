@@ -4,25 +4,28 @@ namespace Controle;
 
 class PollMessageResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\Response
 	 */
-	public $pollmessageresult;
+	public $PollMessageResult;
 	/**
 	 * @var int
 	 */
-	public $msgcount;
+	public $msgCount;
 	/**
 	 * @var \Controle\QueueItem
 	 */
 	public $item;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setPollMessageResult($val)
 	{
-        $this->pollmessageresult = (int)$val;
+        $this->PollMessageResult = (int)$val;
 	}
 
 	/**
@@ -34,7 +37,7 @@ class PollMessageResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->msgcount = (int)$val;
+        $this->msgCount = (int)$val;
 	}
 
 	/**

@@ -8,26 +8,29 @@ namespace Controle;
  */
 class ProStoresCheckoutPreferenceType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | Indicates whether third party checkout is to be redirected to the ProStores application
      * specified via My eBay preferences.
      */
-    public $checkoutredirectprostores;
+    public $CheckoutRedirectProStores;
     /**
      * @var \Controle\ProStoresDetailsType | Details about the store.
      */
-    public $prostoresdetails;
+    public $ProStoresDetails;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setCheckoutRedirectProStores($val)
     {
-        $this->checkoutredirectprostores = (int)$val;
+        $this->CheckoutRedirectProStores = (int)$val;
     }
 
     /**
@@ -36,7 +39,7 @@ class ProStoresCheckoutPreferenceType
      */
     public function setProStoresDetails($val)
     {
-        $this->prostoresdetails = (int)$val;
+        $this->ProStoresDetails = (int)$val;
     }
 
     /**

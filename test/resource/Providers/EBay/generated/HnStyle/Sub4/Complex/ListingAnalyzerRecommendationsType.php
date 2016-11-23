@@ -8,21 +8,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ListingAnalyzerRecommendationsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ListingTipArrayType | A collection of tips returned from the Listing Analyzer recommendation engine.
      */
-    public $listingtiparray;
+    public $ListingTipArray;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ListingTipArrayType $val
      * @throws Exception
      */
     public function setListingTipArray($val)
     {
-        $this->listingtiparray = (int)$val;
+        $this->ListingTipArray = (int)$val;
     }
 
     /**

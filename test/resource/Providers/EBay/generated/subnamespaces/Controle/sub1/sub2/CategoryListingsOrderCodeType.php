@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class CategoryListingsOrderCodeType
 {
+	// @codingStandardsIgnoreStart
 	const NOFILTER        = 'NoFilter';
 	const ITEMSBY24HR     = 'ItemsBy24Hr';
 	const ITEMSENDTODAY   = 'ItemsEndToday';
@@ -13,4 +14,5 @@ class CategoryListingsOrderCodeType
 	const BESTMATCHSORT   = 'BestMatchSort';
 	const DISTANCESORT    = 'DistanceSort';
 	const CUSTOMCODE      = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

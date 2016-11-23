@@ -10,10 +10,13 @@ namespace Controle\sub1\sub2;
  */
 class LocalMarketRegularSubscriptionDefinitionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception

@@ -4,25 +4,28 @@ namespace Controle\sub1\sub2;
 
 class SearchOrderResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $searchorderresult;
+	public $SearchOrderResult;
 	/**
 	 * @var int
 	 */
-	public $totalorders;
+	public $totalOrders;
 	/**
 	 * @var array \Controle\sub1\sub2\Order
 	 */
 	public $orders;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setSearchOrderResult($val)
 	{
-        $this->searchorderresult = (int)$val;
+        $this->SearchOrderResult = (int)$val;
 	}
 
 	/**
@@ -34,7 +37,7 @@ class SearchOrderResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalorders = (int)$val;
+        $this->totalOrders = (int)$val;
 	}
 
 	/**

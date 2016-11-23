@@ -9,16 +9,19 @@ namespace Controle;
 class GetStorePreferencesResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\StorePreferencesType | Specifies the store preferences.
      */
-    public $storepreferences;
+    public $StorePreferences;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StorePreferencesType $val
      * @throws Exception
      */
     public function setStorePreferences($val)
     {
-        $this->storepreferences = (int)$val;
+        $this->StorePreferences = (int)$val;
     }
 }

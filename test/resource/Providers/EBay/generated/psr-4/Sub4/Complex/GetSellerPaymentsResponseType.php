@@ -20,18 +20,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSellerPaymentsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
     /**
      * @var boolean | If true, there are more payments yet to be retrieved. Additional GetSellerPayments calls
      * with higher page numbers or more entries per page must be made to retrieve these payments.
      * If false, no more payments are available or no payments match the request (based on
      * the payment status and time filter).
      */
-    public $hasmorepayments;
+    public $HasMorePayments;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentType | Information about a single payment that matches the criteria in the request. A payment
      * is between Half.com and a seller. Each payment is for one transaction for one item in
@@ -44,14 +45,14 @@ class GetSellerPaymentsResponseType extends
      * in reverse chronological order (most recent PaidTime first). Only returned if payments
      * exist that match the request.
      */
-    public $sellerpayment;
+    public $SellerPayment;
     /**
      * @var int | Indicates the number of payments that can be returned per page of data (i.e., per call).
      * This is the same as the value specified in the Pagination.EntriesPerPage input (or the
      * default value, if EntriesPerPage was not specified). This is not necessarily the actual
      * number of payments returned per page (see ReturnedPaymentCountActual).
      */
-    public $paymentsperpage;
+    public $PaymentsPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -60,19 +61,21 @@ class GetSellerPaymentsResponseType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var int | Indicates the total number of payments returned (i.e., the number of SellerPayment entries
      * returned.
      */
-    public $returnedpaymentcountactual;
+    public $ReturnedPaymentCountActual;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PaginationResultType $val
      * @throws Exception
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 
     /**
@@ -81,7 +84,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setHasMorePayments($val)
     {
-        $this->hasmorepayments = (int)$val;
+        $this->HasMorePayments = (int)$val;
     }
 
     /**
@@ -90,7 +93,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setSellerPayment($val)
     {
-        $this->sellerpayment = (int)$val;
+        $this->SellerPayment = (int)$val;
     }
 
     /**
@@ -102,7 +105,7 @@ class GetSellerPaymentsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->paymentsperpage = (int)$val;
+        $this->PaymentsPerPage = (int)$val;
     }
 
     /**
@@ -114,7 +117,7 @@ class GetSellerPaymentsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -126,6 +129,6 @@ class GetSellerPaymentsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->returnedpaymentcountactual = (int)$val;
+        $this->ReturnedPaymentCountActual = (int)$val;
     }
 }

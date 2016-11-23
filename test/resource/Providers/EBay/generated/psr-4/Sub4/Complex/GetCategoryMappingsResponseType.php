@@ -11,12 +11,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategoryMappingsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CategoryMappingType | Mapping between an old category ID and an active category ID.               Returned
      * when category mappings exist and the value of CategoryVersion is               different
      * from the current version on the site.
      */
-    public $categorymapping;
+    public $CategoryMapping;
     /**
      * @var string | Version value assigned to the current category mapping data for the site.
      *        Compare this value to the version value the application stored with the mappings
@@ -24,14 +25,16 @@ class GetCategoryMappingsResponseType extends
      * the same,                  the data has not changed since the last time the data was
      * retrieved and stored.
      */
-    public $categoryversion;
+    public $CategoryVersion;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CategoryMappingType $val
      * @throws Exception
      */
     public function setCategoryMapping($val)
     {
-        $this->categorymapping = (int)$val;
+        $this->CategoryMapping = (int)$val;
     }
 
     /**
@@ -43,6 +46,6 @@ class GetCategoryMappingsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->categoryversion = (int)$val;
+        $this->CategoryVersion = (int)$val;
     }
 }

@@ -4,18 +4,21 @@ namespace Controle;
 
 class RegistrantVerificationDetails
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $verifiedby;
+    public $VerifiedBy;
     /**
      * @var dateTime
      */
-    public $verificationdate;
+    public $VerificationDate;
     /**
      * @var array \Controle\Message
      */
-    public $messages;
+    public $Messages;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class RegistrantVerificationDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VerifiedBy');
         }
-        $this->verifiedby = (int)$val;
+        $this->VerifiedBy = (int)$val;
     }
 
     /**
@@ -34,7 +37,7 @@ class RegistrantVerificationDetails
      */
     public function setVerificationDate($val)
     {
-        $this->verificationdate = (int)$val;
+        $this->VerificationDate = (int)$val;
     }
 
     /**
@@ -43,6 +46,6 @@ class RegistrantVerificationDetails
      */
     public function setMessages($val)
     {
-        $this->messages = (int)$val;
+        $this->Messages = (int)$val;
     }
 }

@@ -12,10 +12,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetUserRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -29,21 +30,23 @@ class GetUserRequestType extends
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var boolean | Indicates if the response should include detailed data relating to whether an item would
      * qualify as an Express listing. For information about the Express-related data that can
      * be returned when IncludeExpressRequirements is set to true, see the annotations for
      * the output of VerifyAddItem and see the eBay Web Services Guide.
      */
-    public $includeexpressrequirements;
+    public $IncludeExpressRequirements;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class GetUserRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -64,6 +67,6 @@ class GetUserRequestType extends
      */
     public function setIncludeExpressRequirements($val)
     {
-        $this->includeexpressrequirements = (int)$val;
+        $this->IncludeExpressRequirements = (int)$val;
     }
 }

@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class OrderTransactionArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OrderTransactionType | The individual order or transaction.
      */
-    public $ordertransaction;
+    public $OrderTransaction;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param OrderTransactionType $val
      * @throws Exception
      */
     public function setOrderTransaction($val)
     {
-        $this->ordertransaction = (int)$val;
+        $this->OrderTransaction = (int)$val;
     }
 }

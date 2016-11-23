@@ -4,21 +4,24 @@ namespace Controle;
 
 class GetOrderResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Response
      */
-    public $getorderresult;
+    public $GetOrderResult;
     /**
      * @var \Controle\Order
      */
     public $order;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setGetOrderResult($val)
     {
-        $this->getorderresult = (int)$val;
+        $this->GetOrderResult = (int)$val;
     }
 
     /**

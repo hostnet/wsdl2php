@@ -9,12 +9,15 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetStoreCustomPageRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Unique identifier for the Store custom page. When you are using   SetStoreCustomPage,
      * if you specify a valid PageID, the custom page  is updated. If you do not specify a
      * PageID, the custom page is  added.
      */
-    public $pageid;
+    public $PageID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -24,6 +27,6 @@ class GetStoreCustomPageRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PageID');
         }
-        $this->pageid = (int)$val;
+        $this->PageID = (int)$val;
     }
 }

@@ -2,25 +2,28 @@
 
 class SoApStruct
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var anyType
 	 */
-	public $varstring;
+	public $varString;
 	/**
 	 * @var anyType
 	 */
-	public $varint;
+	public $varInt;
 	/**
 	 * @var anyType
 	 */
-	public $varfloat;
+	public $varFloat;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param anyType $val
 	 * @throws Exception
 	 */
 	public function setVarString($val)
 	{
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
 	}
 
 	/**
@@ -29,7 +32,7 @@ class SoApStruct
 	 */
 	public function setVarInt($val)
 	{
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
 	}
 
 	/**
@@ -38,35 +41,38 @@ class SoApStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
 	}
 }
 
 class SoApStructStruct
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var anyType
 	 */
-	public $varstring;
+	public $varString;
 	/**
 	 * @var anyType
 	 */
-	public $varint;
+	public $varInt;
 	/**
 	 * @var anyType
 	 */
-	public $varfloat;
+	public $varFloat;
 	/**
 	 * @var SOAPStruct
 	 */
-	public $varstruct;
+	public $varStruct;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param anyType $val
 	 * @throws Exception
 	 */
 	public function setVarString($val)
 	{
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
 	}
 
 	/**
@@ -75,7 +81,7 @@ class SoApStructStruct
 	 */
 	public function setVarInt($val)
 	{
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
 	}
 
 	/**
@@ -84,7 +90,7 @@ class SoApStructStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
 	}
 
 	/**
@@ -93,35 +99,38 @@ class SoApStructStruct
 	 */
 	public function setVarStruct($val)
 	{
-        $this->varstruct = (int)$val;
+        $this->varStruct = (int)$val;
 	}
 }
 
 class SoApArrayStruct
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var anyType
 	 */
-	public $varstring;
+	public $varString;
 	/**
 	 * @var anyType
 	 */
-	public $varint;
+	public $varInt;
 	/**
 	 * @var anyType
 	 */
-	public $varfloat;
+	public $varFloat;
 	/**
 	 * @var string[]
 	 */
-	public $vararray;
+	public $varArray;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param anyType $val
 	 * @throws Exception
 	 */
 	public function setVarString($val)
 	{
-        $this->varstring = (int)$val;
+        $this->varString = (int)$val;
 	}
 
 	/**
@@ -130,7 +139,7 @@ class SoApArrayStruct
 	 */
 	public function setVarInt($val)
 	{
-        $this->varint = (int)$val;
+        $this->varInt = (int)$val;
 	}
 
 	/**
@@ -139,7 +148,7 @@ class SoApArrayStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varfloat = (int)$val;
+        $this->varFloat = (int)$val;
 	}
 
 	/**
@@ -148,7 +157,7 @@ class SoApArrayStruct
 	 */
 	public function setVarArray($val)
 	{
-        $this->vararray = (int)$val;
+        $this->varArray = (int)$val;
 	}
 }
 
@@ -159,11 +168,11 @@ class SoapTestClient extends SoapClient {
 
 	const WSDL_FILE = "InteropBtyped.wsdl";
 	private $classmap = array(
-        'SOAPStruct\,' =>
+        'SOAPStruct' =>
             'SOAPStruct',
-        'SOAPStructStruct\,' =>
+        'SOAPStructStruct' =>
             'SOAPStructStruct',
-        'SOAPArrayStruct\,' =>
+        'SOAPArrayStruct' =>
             'SOAPArrayStruct',
 	);
 

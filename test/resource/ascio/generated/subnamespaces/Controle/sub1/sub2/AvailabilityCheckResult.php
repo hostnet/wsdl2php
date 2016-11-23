@@ -4,22 +4,25 @@ namespace Controle\sub1\sub2;
 
 class AvailabilityCheckResult
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string
 	 */
-	public $domainname;
+	public $DomainName;
 	/**
 	 * @var \Controle\sub1\sub2\QualityType
 	 */
-	public $quality;
+	public $Quality;
 	/**
 	 * @var int
 	 */
-	public $statuscode;
+	public $StatusCode;
 	/**
 	 * @var string
 	 */
-	public $statusmessage;
+	public $StatusMessage;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -29,7 +32,7 @@ class AvailabilityCheckResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->domainname = (int)$val;
+        $this->DomainName = (int)$val;
 	}
 
 	/**
@@ -38,7 +41,7 @@ class AvailabilityCheckResult
 	 */
 	public function setQuality($val)
 	{
-        $this->quality = (int)$val;
+        $this->Quality = (int)$val;
 	}
 
 	/**
@@ -50,7 +53,7 @@ class AvailabilityCheckResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->statuscode = (int)$val;
+        $this->StatusCode = (int)$val;
 	}
 
 	/**
@@ -62,6 +65,6 @@ class AvailabilityCheckResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StatusMessage');
         }
-        $this->statusmessage = (int)$val;
+        $this->StatusMessage = (int)$val;
 	}
 }

@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class StoreLogoArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StoreLogoType | Store logo.
      */
-    public $logo;
+    public $Logo;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param StoreLogoType $val
      * @throws Exception
      */
     public function setLogo($val)
     {
-        $this->logo = (int)$val;
+        $this->Logo = (int)$val;
     }
 }

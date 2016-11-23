@@ -11,6 +11,7 @@ namespace Controle\sub1\sub2;
  */
 class PictureDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\GalleryTypeCodeType | Indicates whether a picture for the item is included in the Gallery and, if so whether
 	 * the item is also featured or Plus in the Gallery. If the value is Gallery or Plus or Featured,
@@ -26,7 +27,7 @@ class PictureDetailsType
 	 *            about working with pictures and related validation rules.            You cannot
 	 * remove Gallery or Plus or Featured when you revise a listing.
 	 */
-	public $gallerytype;
+	public $GalleryType;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | URL for a picture to be used as the Gallery thumbnail. Ignored if GalleryType is None or
 	 * unspecified. If the value of GalleryType is Gallery or Featured, you can either specify
@@ -43,14 +44,14 @@ class PictureDetailsType
 	 * image enhancement does not support VendorHostedPicture. Use Item.PictureDetails with that
 	 * feature.
 	 */
-	public $galleryurl;
+	public $GalleryURL;
 	/**
 	 * @var \Controle\sub1\sub2\PhotoDisplayCodeType | Specifies the type of image display used in a listing. Some options are only available
 	 * if images are hosted through eBay Picture Services (EPS). eBay determines this by parsing
 	 * the associated PictureURL. Cannot be used in combination with Listing Designer layouts. Specify
 	 * None or do not add PhotoDisplay when ListingDesigner.LayoutID is a value other than 0.
 	 */
-	public $photodisplay;
+	public $PhotoDisplay;
 	/**
 	 * @var \Controle\sub1\sub2\anyURI | Deprecated with compatibility level 383 and higher. Contains the URL for an image hosted
 	 * on a location of the seller's choice (other than eBay) and associated with an item. If
@@ -67,24 +68,26 @@ class PictureDetailsType
 	 * the Gallery Plus image enhancement does not support VendorHostedPicture. Use Item.PictureDetails
 	 * with that feature.
 	 */
-	public $pictureurl;
+	public $PictureURL;
 	/**
 	 * @var \Controle\sub1\sub2\PictureSourceCodeType | The service hosting the images in PictureURL, if any. This information is primarily useful
 	 * for Picture Manager subscribers, who pay a flat subscription fee instead of individual
 	 * picture fees per listing. Only returned when PictureURL is returned.
 	 */
-	public $picturesource;
+	public $PictureSource;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param GalleryTypeCodeType $val
 	 * @throws Exception
 	 */
 	public function setGalleryType($val)
 	{
-        $this->gallerytype = (int)$val;
+        $this->GalleryType = (int)$val;
 	}
 
 	/**
@@ -93,7 +96,7 @@ class PictureDetailsType
 	 */
 	public function setGalleryURL($val)
 	{
-        $this->galleryurl = (int)$val;
+        $this->GalleryURL = (int)$val;
 	}
 
 	/**
@@ -102,7 +105,7 @@ class PictureDetailsType
 	 */
 	public function setPhotoDisplay($val)
 	{
-        $this->photodisplay = (int)$val;
+        $this->PhotoDisplay = (int)$val;
 	}
 
 	/**
@@ -111,7 +114,7 @@ class PictureDetailsType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->pictureurl = (int)$val;
+        $this->PictureURL = (int)$val;
 	}
 
 	/**
@@ -120,7 +123,7 @@ class PictureDetailsType
 	 */
 	public function setPictureSource($val)
 	{
-        $this->picturesource = (int)$val;
+        $this->PictureSource = (int)$val;
 	}
 
 	/**

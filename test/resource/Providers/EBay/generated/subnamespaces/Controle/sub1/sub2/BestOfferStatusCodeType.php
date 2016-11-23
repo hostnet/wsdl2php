@@ -4,6 +4,7 @@ namespace Controle\sub1\sub2;
 
 class BestOfferStatusCodeType
 {
+	// @codingStandardsIgnoreStart
 	const PENDING    = 'Pending';
 	const ACCEPTED   = 'Accepted';
 	const DECLINED   = 'Declined';
@@ -14,4 +15,5 @@ class BestOfferStatusCodeType
 	const COUNTERED  = 'Countered';
 	const ALL        = 'All';
 	const CUSTOMCODE = 'CustomCode';
+	// @codingStandardsIgnoreEnd
 }

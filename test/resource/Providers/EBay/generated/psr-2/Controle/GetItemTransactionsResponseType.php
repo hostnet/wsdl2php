@@ -16,22 +16,23 @@ namespace Controle;
 class GetItemTransactionsResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
     /**
      * @var boolean | Indicates whether there are additional transactions to retrieve. That is, indicates
      * whether more pages of data are available to be returned, given the filters that were
      * specified in the request. Returns false for the last page of data.
      */
-    public $hasmoretransactions;
+    public $HasMoreTransactions;
     /**
      * @var int | Number of transactions returned per page (per call). May be a higher value than ReturnedTransactionCountActual
      * if the page returned is the last page and more than one page of data exists.
      */
-    public $transactionsperpage;
+    public $TransactionsPerPage;
     /**
      * @var int | Specifies the number of the page of data to return in the current call. Default is 1
      * for most calls. For some calls, the default is 0. Specify a positive value equal to
@@ -40,36 +41,38 @@ class GetItemTransactionsResponseType extends
      * the correct default value. For GetOrders, not applicable to eBay.com (for GetOrders, applicable
      * to Half.com).
      */
-    public $pagenumber;
+    public $PageNumber;
     /**
      * @var int | Number of transactions retrieved in the current page of results just returned. May be
      * a lower value than TransactionsPerPage if the page returned is the last page and more
      * than one page of data exists.
      */
-    public $returnedtransactioncountactual;
+    public $ReturnedTransactionCountActual;
     /**
      * @var \Controle\ItemType | Information about the item that spawned the transaction. It is a purchase from this
      * item's listing that the transaction represents. To remove a property from an item, specify
      * it in ModifyType as a changed property, but do not give it a value in Item. Also applicable
      * to Half.com (for GetOrders).
      */
-    public $item;
+    public $Item;
     /**
      * @var \Controle\TransactionArrayType | Contains a list of transactions. Returned as an empty tag if no applicable transactions
      * exist.
      */
-    public $transactionarray;
+    public $TransactionArray;
     /**
      * @var boolean | Specifies whether a seller wants to let buyers know that PayPal payments are preferred.
      */
-    public $paypalpreferred;
+    public $PayPalPreferred;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PaginationResultType $val
      * @throws Exception
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 
     /**
@@ -78,7 +81,7 @@ class GetItemTransactionsResponseType extends
      */
     public function setHasMoreTransactions($val)
     {
-        $this->hasmoretransactions = (int)$val;
+        $this->HasMoreTransactions = (int)$val;
     }
 
     /**
@@ -90,7 +93,7 @@ class GetItemTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->transactionsperpage = (int)$val;
+        $this->TransactionsPerPage = (int)$val;
     }
 
     /**
@@ -102,7 +105,7 @@ class GetItemTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->pagenumber = (int)$val;
+        $this->PageNumber = (int)$val;
     }
 
     /**
@@ -114,7 +117,7 @@ class GetItemTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->returnedtransactioncountactual = (int)$val;
+        $this->ReturnedTransactionCountActual = (int)$val;
     }
 
     /**
@@ -123,7 +126,7 @@ class GetItemTransactionsResponseType extends
      */
     public function setItem($val)
     {
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
     }
 
     /**
@@ -132,7 +135,7 @@ class GetItemTransactionsResponseType extends
      */
     public function setTransactionArray($val)
     {
-        $this->transactionarray = (int)$val;
+        $this->TransactionArray = (int)$val;
     }
 
     /**
@@ -141,6 +144,6 @@ class GetItemTransactionsResponseType extends
      */
     public function setPayPalPreferred($val)
     {
-        $this->paypalpreferred = (int)$val;
+        $this->PayPalPreferred = (int)$val;
     }
 }

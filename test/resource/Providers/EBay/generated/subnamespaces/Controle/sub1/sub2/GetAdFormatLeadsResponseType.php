@@ -10,23 +10,26 @@ namespace Controle\sub1\sub2;
 class GetAdFormatLeadsResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AdFormatLeadType | Contains contact and other information for one lead. One node is returned for each lead.
 	 * Only returned at a detail level of ReturnAll. At least one lead must be available for the
 	 * specified item to return AdFormatLead.
 	 */
-	public $adformatlead;
+	public $AdFormatLead;
 	/**
 	 * @var int | The total number of leads returned. Only returned if you do not specify a detail level.
 	 */
-	public $adformatleadcount;
+	public $AdFormatLeadCount;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AdFormatLeadType $val
 	 * @throws Exception
 	 */
 	public function setAdFormatLead($val)
 	{
-        $this->adformatlead = (int)$val;
+        $this->AdFormatLead = (int)$val;
 	}
 
 	/**
@@ -38,6 +41,6 @@ class GetAdFormatLeadsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->adformatleadcount = (int)$val;
+        $this->AdFormatLeadCount = (int)$val;
 	}
 }

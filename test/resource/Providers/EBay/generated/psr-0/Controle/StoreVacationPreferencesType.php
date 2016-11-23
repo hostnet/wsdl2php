@@ -8,47 +8,50 @@ namespace Controle;
  */
 class StoreVacationPreferencesType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var boolean | Specifies whether the Store owner is on vacation.<br> When OnVacation is true, the Store
 	 * owner's listings do not appear on Express, regardless of the listing format and regardless
 	 * of how the seller has configured their vacation settings for items that appear on eBay.
 	 */
-	public $onvacation;
+	public $OnVacation;
 	/**
 	 * @var dateTime | Seller return date from vacation.
 	 */
-	public $returndate;
+	public $ReturnDate;
 	/**
 	 * @var boolean | Hide Store Inventory format items when the Store owner is on vacation.<br><br> When OnVacation
 	 * is true, the Store owner's listings do not appear on Express, regardless of the listing
 	 * format and regardless of how the seller has configured their vacation settings for items
 	 * that appear on eBay.
 	 */
-	public $hidefixedpricestoreitems;
+	public $HideFixedPriceStoreItems;
 	/**
 	 * @var boolean | Add a message when the Store owner is on vacation to all their active items.
 	 */
-	public $messageitem;
+	public $MessageItem;
 	/**
 	 * @var boolean | Add a message to all the Store pages when the Store owner is on vacation.
 	 */
-	public $messagestore;
+	public $MessageStore;
 	/**
 	 * @var boolean | Display custom message on the Store pages instead of the default message.
 	 */
-	public $displaymessagestorecustomtext;
+	public $DisplayMessageStoreCustomText;
 	/**
 	 * @var string | The custom message to display for the Store when the user is on vacation. May contain HTML
 	 * markup.
 	 */
-	public $messagestorecustomtext;
+	public $MessageStoreCustomText;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param boolean $val
 	 * @throws Exception
 	 */
 	public function setOnVacation($val)
 	{
-        $this->onvacation = (int)$val;
+        $this->OnVacation = (int)$val;
 	}
 
 	/**
@@ -57,7 +60,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setReturnDate($val)
 	{
-        $this->returndate = (int)$val;
+        $this->ReturnDate = (int)$val;
 	}
 
 	/**
@@ -66,7 +69,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setHideFixedPriceStoreItems($val)
 	{
-        $this->hidefixedpricestoreitems = (int)$val;
+        $this->HideFixedPriceStoreItems = (int)$val;
 	}
 
 	/**
@@ -75,7 +78,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setMessageItem($val)
 	{
-        $this->messageitem = (int)$val;
+        $this->MessageItem = (int)$val;
 	}
 
 	/**
@@ -84,7 +87,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setMessageStore($val)
 	{
-        $this->messagestore = (int)$val;
+        $this->MessageStore = (int)$val;
 	}
 
 	/**
@@ -93,7 +96,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setDisplayMessageStoreCustomText($val)
 	{
-        $this->displaymessagestorecustomtext = (int)$val;
+        $this->DisplayMessageStoreCustomText = (int)$val;
 	}
 
 	/**
@@ -105,6 +108,6 @@ class StoreVacationPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageStoreCustomText');
         }
-        $this->messagestorecustomtext = (int)$val;
+        $this->MessageStoreCustomText = (int)$val;
 	}
 }

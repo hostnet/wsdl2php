@@ -10,16 +10,19 @@ namespace Controle\sub1\sub2;
  */
 class SearchResultItemArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\SearchResultItemType | Contains data for an item listing found by a search.            Output only.
 	 */
-	public $searchresultitem;
+	public $SearchResultItem;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param SearchResultItemType $val
 	 * @throws Exception
 	 */
 	public function setSearchResultItem($val)
 	{
-        $this->searchresultitem = (int)$val;
+        $this->SearchResultItem = (int)$val;
 	}
 }

@@ -19,13 +19,14 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetProductFinderRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Current version of the product search page data for the site. This value changes each
      * time changes are made to the search page data. The current version value is not necessarily
      * greater than the previous value. Therefore, when comparing versions, only compare whether
      * the value has changed.
      */
-    public $attributesystemversion;
+    public $AttributeSystemVersion;
     /**
      * @var int | Numeric identifier for a buy-side product finder. A product finder defines how to
      *           search for Item Specifics in listings (e.g., how to search against a particular
@@ -38,7 +39,9 @@ class GetProductFinderRequestType extends
      * level of ItemReturnAttributes or ReturnAll. Use GetProductFinder to determine valid
      * product finder IDs.
      */
-    public $productfinderid;
+    public $ProductFinderID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -48,7 +51,7 @@ class GetProductFinderRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->attributesystemversion = (int)$val;
+        $this->AttributeSystemVersion = (int)$val;
     }
 
     /**
@@ -60,6 +63,6 @@ class GetProductFinderRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->productfinderid = (int)$val;
+        $this->ProductFinderID = (int)$val;
     }
 }

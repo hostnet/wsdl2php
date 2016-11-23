@@ -10,22 +10,25 @@ namespace Controle;
  */
 class PaginationResultType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Indicates the total number of pages of data that could be returned by repeated requests.
 	 * For GetOrders, not applicable to eBay.com (for GetOrders, applicable to Half.com). Returned
 	 * with a value of 0 if no pages are available.
 	 */
-	public $totalnumberofpages;
+	public $TotalNumberOfPages;
 	/**
 	 * @var int | Indicates the total number of entries that could be returned by repeated requests. For GetOrders,
 	 * not applicable to eBay.com (for GetOrders, applicable to Half.com). Returned with a value
 	 * of 0 if no entries are available.
 	 */
-	public $totalnumberofentries;
+	public $TotalNumberOfEntries;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -35,7 +38,7 @@ class PaginationResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalnumberofpages = (int)$val;
+        $this->TotalNumberOfPages = (int)$val;
 	}
 
 	/**
@@ -47,7 +50,7 @@ class PaginationResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalnumberofentries = (int)$val;
+        $this->TotalNumberOfEntries = (int)$val;
 	}
 
 	/**

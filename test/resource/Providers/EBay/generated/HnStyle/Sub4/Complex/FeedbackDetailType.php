@@ -9,85 +9,86 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FeedbackDetailType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | eBay user ID for the user who left the feedback. Returned for a detail level of ReturnAll
      * (if the parent is returned).
      */
-    public $commentinguser;
+    public $CommentingUser;
     /**
      * @var int | Feedback score of the user indicated in CommentingUser. Returned for a detail level
      * of ReturnAll (if the parent is returned).
      */
-    public $commentinguserscore;
+    public $CommentingUserScore;
     /**
      * @var string | Textual comment that explains, clarifies, or justifies the feedback rating specified
      * in CommentType. Still displayed if feedback is withdrawn.
      */
-    public $commenttext;
+    public $CommentText;
     /**
      * @var dateTime | Date and time (in GMT) that the feedback was submitted to eBay. Returned for a detail
      * level of ReturnAll (if the parent is returned).
      */
-    public $commenttime;
+    public $CommentTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CommentTypeCodeType | Rating of the feedback being left (e.g., Positive).
      */
-    public $commenttype;
+    public $CommentType;
     /**
      * @var string | Textual comment that the user targeted by feedback may leave in response or rebuttal
      * to the feedback. (Cannot be submitted or edited via the API.)
      */
-    public $feedbackresponse;
+    public $FeedbackResponse;
     /**
      * @var string | Explanation a user can give to a response. (Cannot be submitted or edited via the API.) Returned
      * for a detail level of ReturnAll (if the parent is returned).
      */
-    public $followup;
+    public $Followup;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TradingRoleCodeType | Indicates whether the user who was the feedback recipient was a Buyer or the Seller
      * for that transaction. Returned for a detail level of ReturnAll (if the parent is returned).
      */
-    public $role;
+    public $Role;
     /**
      * @var string | Name of the listing for which feedback was provided. Returned as CDATA. This value is
      * returned only if the site is China (site ID 223).
      */
-    public $itemtitle;
+    public $ItemTitle;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The final price for the item, associated with the currency identified by the currencyId
      * attribute of the AmountType. This value is returned only if the site is China (site
      * ID 223).
      */
-    public $itemprice;
+    public $ItemPrice;
     /**
      * @var string | Unique identifier for the feedback entry. Returned for a detail level of ReturnAll (if
      * the parent is returned).
      */
-    public $feedbackid;
+    public $FeedbackID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var boolean | Indicates whether eBay replaced the comment with a message that the comment was removed.
      */
-    public $commentreplaced;
+    public $CommentReplaced;
     /**
      * @var boolean | Indicates whether eBay replaced the response with a message that the response was removed.
      */
-    public $responsereplaced;
+    public $ResponseReplaced;
     /**
      * @var boolean | Indicates whether eBay replaced the follow-up with a message that the follow-up was
      * removed.
      */
-    public $followupreplaced;
+    public $FollowUpReplaced;
     /**
      * @var boolean | Specifies if a user's feedback score is or is not countable. This field is returned
      * only when a user's feedback score is not countable (value is false). <br><br> Only feedback
@@ -103,18 +104,20 @@ class FeedbackDetailType
      * do with the verification status of the one receiving the comment, only the one leaving
      * the feedback.
      */
-    public $countable;
+    public $Countable;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setCommentingUser($val)
     {
-        $this->commentinguser = (int)$val;
+        $this->CommentingUser = (int)$val;
     }
 
     /**
@@ -126,7 +129,7 @@ class FeedbackDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->commentinguserscore = (int)$val;
+        $this->CommentingUserScore = (int)$val;
     }
 
     /**
@@ -138,7 +141,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->commenttext = (int)$val;
+        $this->CommentText = (int)$val;
     }
 
     /**
@@ -147,7 +150,7 @@ class FeedbackDetailType
      */
     public function setCommentTime($val)
     {
-        $this->commenttime = (int)$val;
+        $this->CommentTime = (int)$val;
     }
 
     /**
@@ -156,7 +159,7 @@ class FeedbackDetailType
      */
     public function setCommentType($val)
     {
-        $this->commenttype = (int)$val;
+        $this->CommentType = (int)$val;
     }
 
     /**
@@ -168,7 +171,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackResponse');
         }
-        $this->feedbackresponse = (int)$val;
+        $this->FeedbackResponse = (int)$val;
     }
 
     /**
@@ -180,7 +183,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Followup');
         }
-        $this->followup = (int)$val;
+        $this->Followup = (int)$val;
     }
 
     /**
@@ -189,7 +192,7 @@ class FeedbackDetailType
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -198,7 +201,7 @@ class FeedbackDetailType
      */
     public function setRole($val)
     {
-        $this->role = (int)$val;
+        $this->Role = (int)$val;
     }
 
     /**
@@ -210,7 +213,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemTitle');
         }
-        $this->itemtitle = (int)$val;
+        $this->ItemTitle = (int)$val;
     }
 
     /**
@@ -219,7 +222,7 @@ class FeedbackDetailType
      */
     public function setItemPrice($val)
     {
-        $this->itemprice = (int)$val;
+        $this->ItemPrice = (int)$val;
     }
 
     /**
@@ -231,7 +234,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->feedbackid = (int)$val;
+        $this->FeedbackID = (int)$val;
     }
 
     /**
@@ -243,7 +246,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -252,7 +255,7 @@ class FeedbackDetailType
      */
     public function setCommentReplaced($val)
     {
-        $this->commentreplaced = (int)$val;
+        $this->CommentReplaced = (int)$val;
     }
 
     /**
@@ -261,7 +264,7 @@ class FeedbackDetailType
      */
     public function setResponseReplaced($val)
     {
-        $this->responsereplaced = (int)$val;
+        $this->ResponseReplaced = (int)$val;
     }
 
     /**
@@ -270,7 +273,7 @@ class FeedbackDetailType
      */
     public function setFollowUpReplaced($val)
     {
-        $this->followupreplaced = (int)$val;
+        $this->FollowUpReplaced = (int)$val;
     }
 
     /**
@@ -279,7 +282,7 @@ class FeedbackDetailType
      */
     public function setCountable($val)
     {
-        $this->countable = (int)$val;
+        $this->Countable = (int)$val;
     }
 
     /**

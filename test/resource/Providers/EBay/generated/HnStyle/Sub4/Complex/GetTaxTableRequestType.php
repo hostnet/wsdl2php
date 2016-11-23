@@ -10,4 +10,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetTaxTableRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
+    // @codingStandardsIgnoreEnd
 }

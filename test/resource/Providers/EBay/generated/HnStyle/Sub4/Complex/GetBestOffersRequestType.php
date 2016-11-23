@@ -11,26 +11,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetBestOffersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferIDType | An id to distinguish this best offer from other best offers made on the item.
      */
-    public $bestofferid;
+    public $BestOfferID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferStatusCodeType | (GetMyeBayBuying only) Indicates the status of the latest BestOffer the user has provided
      * for the item .
      */
-    public $bestofferstatus;
+    public $BestOfferStatus;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -39,7 +42,7 @@ class GetBestOffersRequestType extends
      */
     public function setBestOfferID($val)
     {
-        $this->bestofferid = (int)$val;
+        $this->BestOfferID = (int)$val;
     }
 
     /**
@@ -48,6 +51,6 @@ class GetBestOffersRequestType extends
      */
     public function setBestOfferStatus($val)
     {
-        $this->bestofferstatus = (int)$val;
+        $this->BestOfferStatus = (int)$val;
     }
 }

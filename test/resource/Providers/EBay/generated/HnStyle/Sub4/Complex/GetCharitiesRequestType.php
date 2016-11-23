@@ -9,15 +9,16 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCharitiesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | A unique identification number assigned by eBay to registered nonprofit charity organizations.
      * Required input when listing Giving Works items.
      */
-    public $charityid;
+    public $CharityID;
     /**
      * @var string | The name of the benefiting nonprofit charity organization selected by the charity seller.
      */
-    public $charityname;
+    public $CharityName;
     /**
      * @var string | One or more keywords to search for when using the Suggested Attributes engine. Required
      * when SuggestedAttributes is specified as the recommendation engine (including when no
@@ -25,7 +26,7 @@ class GetCharitiesRequestType extends
      * "and" and "or" are treated like any other word. Blank searches are not allowed (and
      * result in a warning).
      */
-    public $query;
+    public $Query;
     /**
      * @var int | Region that the nonprofit charity organization is associated with. A specific nonprofit
      * charity organization may be associated with only one region. Meaning of input values
@@ -33,25 +34,27 @@ class GetCharitiesRequestType extends
      * meaning of each input/output value. CharityRegion input value must be valid for that
      * SiteID.
      */
-    public $charityregion;
+    public $CharityRegion;
     /**
      * @var int | Domain (mission area) that a nonprofit charity organization belongs to. Nonprofit charity
      * organizations may belong to multiple mission areas. Meaning of input values differs
      * depending on the site. See GetCharities in the API Developer's Guide for the meaning
      * of each input/output value. CharityDomain input value must be valid for that SiteID.
      */
-    public $charitydomain;
+    public $CharityDomain;
     /**
      * @var boolean | Used with Query to search for charity nonprofit organizations. A value of true will
      * search the Mission field as well as the CharityName field for a string specified in
      * Query.
      */
-    public $includedescription;
+    public $IncludeDescription;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\StringMatchCodeType | Indicates the type of string matching to use when a value is submitted in CharityName.
      * If no value is specified, default behavior is "StartsWith." Does not apply to Query.
      */
-    public $matchtype;
+    public $MatchType;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -61,7 +64,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->charityid = (int)$val;
+        $this->CharityID = (int)$val;
     }
 
     /**
@@ -73,7 +76,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityName');
         }
-        $this->charityname = (int)$val;
+        $this->CharityName = (int)$val;
     }
 
     /**
@@ -85,7 +88,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->query = (int)$val;
+        $this->Query = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class GetCharitiesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->charityregion = (int)$val;
+        $this->CharityRegion = (int)$val;
     }
 
     /**
@@ -109,7 +112,7 @@ class GetCharitiesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->charitydomain = (int)$val;
+        $this->CharityDomain = (int)$val;
     }
 
     /**
@@ -118,7 +121,7 @@ class GetCharitiesRequestType extends
      */
     public function setIncludeDescription($val)
     {
-        $this->includedescription = (int)$val;
+        $this->IncludeDescription = (int)$val;
     }
 
     /**
@@ -127,6 +130,6 @@ class GetCharitiesRequestType extends
      */
     public function setMatchType($val)
     {
-        $this->matchtype = (int)$val;
+        $this->MatchType = (int)$val;
     }
 }

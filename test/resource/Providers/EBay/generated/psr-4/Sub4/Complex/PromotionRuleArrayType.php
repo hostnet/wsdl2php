@@ -8,16 +8,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class PromotionRuleArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PromotionRuleType | Defines one cross-promotion rule.
      */
-    public $promotionrule;
+    public $PromotionRule;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param PromotionRuleType $val
      * @throws Exception
      */
     public function setPromotionRule($val)
     {
-        $this->promotionrule = (int)$val;
+        $this->PromotionRule = (int)$val;
     }
 }

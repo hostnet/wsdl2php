@@ -10,41 +10,44 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class AddDisputeResponseRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeIDType | The unique identifier of a dispute, returned by the eBay site when the dispute is created.
      */
-    public $disputeid;
+    public $DisputeID;
     /**
      * @var string | The text of the message.
      */
-    public $messagetext;
+    public $MessageText;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeActivityCodeType | The type of activity the seller is taking on the dispute. The allowed value is determined
      * by the current value of DisputeState, returned by GetDispute or GetUserDisputes. Some
      * values are for Unpaid Item disputes and some are for Item Not Received disputes.
      */
-    public $disputeactivity;
+    public $DisputeActivity;
     /**
      * @var string | The shipping carrier used.
      */
-    public $shippingcarrierused;
+    public $ShippingCarrierUsed;
     /**
      * @var string | The shipper's tracking number for the item being shipped. Required if DisputeActivity
      * is SellerShippedItem; otherwise, optional.
      */
-    public $shipmenttracknumber;
+    public $ShipmentTrackNumber;
     /**
      * @var dateTime | The date the item under dispute was shipped. Required if DisputeActivity is SellerShippedItem;
      * otherwise, optional.
      */
-    public $shippingtime;
+    public $ShippingTime;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DisputeIDType $val
      * @throws Exception
      */
     public function setDisputeID($val)
     {
-        $this->disputeid = (int)$val;
+        $this->DisputeID = (int)$val;
     }
 
     /**
@@ -56,7 +59,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->messagetext = (int)$val;
+        $this->MessageText = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class AddDisputeResponseRequestType extends
      */
     public function setDisputeActivity($val)
     {
-        $this->disputeactivity = (int)$val;
+        $this->DisputeActivity = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingCarrierUsed');
         }
-        $this->shippingcarrierused = (int)$val;
+        $this->ShippingCarrierUsed = (int)$val;
     }
 
     /**
@@ -89,7 +92,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackNumber');
         }
-        $this->shipmenttracknumber = (int)$val;
+        $this->ShipmentTrackNumber = (int)$val;
     }
 
     /**
@@ -98,6 +101,6 @@ class AddDisputeResponseRequestType extends
      */
     public function setShippingTime($val)
     {
-        $this->shippingtime = (int)$val;
+        $this->ShippingTime = (int)$val;
     }
 }

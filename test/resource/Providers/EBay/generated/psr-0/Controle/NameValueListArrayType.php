@@ -8,6 +8,7 @@ namespace Controle;
  */
 class NameValueListArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\NameValueListType | A name and corresponding value (a name/value pair).<br> <br> In the GetSearchResults response,
 	 * this is only returned for applicable items when the value of IncludeCondition was true
@@ -15,13 +16,15 @@ class NameValueListArrayType
 	 * search.<br> <br> In the GetSearchResultsExpress response, this is only returned when ProductDetails
 	 * is set to Fine.
 	 */
-	public $namevaluelist;
+	public $NameValueList;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param NameValueListType $val
 	 * @throws Exception
 	 */
 	public function setNameValueList($val)
 	{
-        $this->namevaluelist = (int)$val;
+        $this->NameValueList = (int)$val;
 	}
 }

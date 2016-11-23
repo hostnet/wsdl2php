@@ -9,22 +9,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class PictureManagerFolderType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The ID of the folder.
      */
-    public $folderid;
+    public $FolderID;
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $name;
+    public $Name;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerPictureType | Indicates whether a listing has an image associated with it.
      */
-    public $picture;
+    public $Picture;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -34,7 +37,7 @@ class PictureManagerFolderType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->folderid = (int)$val;
+        $this->FolderID = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class PictureManagerFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class PictureManagerFolderType
      */
     public function setPicture($val)
     {
-        $this->picture = (int)$val;
+        $this->Picture = (int)$val;
     }
 
     /**

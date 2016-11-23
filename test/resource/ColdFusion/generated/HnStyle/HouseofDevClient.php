@@ -11,7 +11,7 @@ class HouseofDevClient extends \SoapClient
     const WSDL_FILE = "ComicsWebServiceTest.wsdl";
 
     private $classmap = array(
-        'CFCInvocationException\,' =>
+        'CFCInvocationException' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CfCinvocationException',
     );
 

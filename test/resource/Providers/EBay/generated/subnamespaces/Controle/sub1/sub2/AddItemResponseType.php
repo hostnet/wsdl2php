@@ -10,41 +10,44 @@ namespace Controle\sub1\sub2;
 class AddItemResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ItemIDType | The item ID of the item reported for infringment.
 	 */
-	public $itemid;
+	public $ItemID;
 	/**
 	 * @var dateTime | Date and time (in GMT) that a Want It Now post was added.
 	 */
-	public $starttime;
+	public $StartTime;
 	/**
 	 * @var dateTime | Time stamp (in GMT) when the listing is scheduled to end (calculated based on the values
 	 * of StartTime and ListingDuration) or the actual end time if the item has ended.
 	 */
-	public $endtime;
+	public $EndTime;
 	/**
 	 * @var \Controle\sub1\sub2\FeesType | (Not used.)
 	 */
-	public $fees;
+	public $Fees;
 	/**
 	 * @var string | ID of the category in which the Want It Now post is listed.
 	 */
-	public $categoryid;
+	public $CategoryID;
 	/**
 	 * @var string | ID of the secondary category in which the item would be listed. Only returned if you set
 	 * Item.CategoryMappingAllowed to true in the request and the ID you passed in SecondaryCategory
 	 * was mapped to a new ID by eBay. If the secondary category has not changed or it has expired
 	 * with no replacement, Category2ID does not return a value.
 	 */
-	public $category2id;
+	public $Category2ID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ItemIDType $val
 	 * @throws Exception
 	 */
 	public function setItemID($val)
 	{
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
 	}
 
 	/**
@@ -53,7 +56,7 @@ class AddItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->starttime = (int)$val;
+        $this->StartTime = (int)$val;
 	}
 
 	/**
@@ -62,7 +65,7 @@ class AddItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->endtime = (int)$val;
+        $this->EndTime = (int)$val;
 	}
 
 	/**
@@ -71,7 +74,7 @@ class AddItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->fees = (int)$val;
+        $this->Fees = (int)$val;
 	}
 
 	/**
@@ -83,7 +86,7 @@ class AddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->categoryid = (int)$val;
+        $this->CategoryID = (int)$val;
 	}
 
 	/**
@@ -95,6 +98,6 @@ class AddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->category2id = (int)$val;
+        $this->Category2ID = (int)$val;
 	}
 }

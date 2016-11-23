@@ -10,14 +10,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetFinanceOffersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Specifies a promotional offer that allow the buyer to purchase items on credit.
      */
-    public $financeofferid;
+    public $FinanceOfferID;
     /**
      * @var dateTime | Date the message was last modified. Returned if the parent container is returned.
      */
-    public $lastmodifieddate;
+    public $LastModifiedDate;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -27,7 +30,7 @@ class GetFinanceOffersRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->financeofferid = (int)$val;
+        $this->FinanceOfferID = (int)$val;
     }
 
     /**
@@ -36,6 +39,6 @@ class GetFinanceOffersRequestType extends
      */
     public function setLastModifiedDate($val)
     {
-        $this->lastmodifieddate = (int)$val;
+        $this->LastModifiedDate = (int)$val;
     }
 }

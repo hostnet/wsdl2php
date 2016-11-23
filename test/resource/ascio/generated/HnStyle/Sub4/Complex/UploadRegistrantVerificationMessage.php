@@ -4,10 +4,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class UploadRegistrantVerificationMessage
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var string
      */
@@ -16,6 +17,8 @@ class UploadRegistrantVerificationMessage
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RegistrantVerificationDetails
      */
     public $details;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class UploadRegistrantVerificationMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**

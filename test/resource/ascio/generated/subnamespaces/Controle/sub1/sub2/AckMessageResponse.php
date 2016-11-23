@@ -4,16 +4,19 @@ namespace Controle\sub1\sub2;
 
 class AckMessageResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\Response
 	 */
-	public $ackmessageresult;
+	public $AckMessageResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setAckMessageResult($val)
 	{
-        $this->ackmessageresult = (int)$val;
+        $this->AckMessageResult = (int)$val;
 	}
 }

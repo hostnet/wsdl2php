@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ValidateOrderResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $validateorderresult;
+    public $ValidateOrderResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setValidateOrderResult($val)
     {
-        $this->validateorderresult = (int)$val;
+        $this->ValidateOrderResult = (int)$val;
     }
 }

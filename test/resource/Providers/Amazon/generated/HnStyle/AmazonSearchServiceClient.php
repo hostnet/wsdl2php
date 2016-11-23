@@ -10,99 +10,99 @@ class AmazonSearchServiceClient extends \SoapClient
     const WSDL_FILE = "AmazonWebServicesTest.wsdl";
 
     private $classmap = array(
-        'ProductLine\,' =>
+        'ProductLine' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductLine',
-        'ProductInfo\,' =>
+        'ProductInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductInfo',
-        'Details\,' =>
+        'Details' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Details',
-        'KeyPhrase\,' =>
+        'KeyPhrase' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\KeyPhrase',
-        'BrowseNode\,' =>
+        'BrowseNode' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BrowseNode',
-        'Track\,' =>
+        'Track' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Track',
-        'Reviews\,' =>
+        'Reviews' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Reviews',
-        'CustomerReview\,' =>
+        'CustomerReview' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CustomerReview',
-        'MarketplaceSearch\,' =>
+        'MarketplaceSearch' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarketplaceSearch',
-        'SellerProfile\,' =>
+        'SellerProfile' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerProfile',
-        'SellerSearch\,' =>
+        'SellerSearch' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerSearch',
-        'MarketplaceSearchDetails\,' =>
+        'MarketplaceSearchDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarketplaceSearchDetails',
-        'SellerProfileDetails\,' =>
+        'SellerProfileDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerProfileDetails',
-        'SellerSearchDetails\,' =>
+        'SellerSearchDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerSearchDetails',
-        'ListingProductInfo\,' =>
+        'ListingProductInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingProductInfo',
-        'ListingProductDetails\,' =>
+        'ListingProductDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingProductDetails',
-        'SellerFeedback\,' =>
+        'SellerFeedback' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerFeedback',
-        'Feedback\,' =>
+        'Feedback' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Feedback',
-        'ThirdPartyProductInfo\,' =>
+        'ThirdPartyProductInfo' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ThirdPartyProductInfo',
-        'ThirdPartyProductDetails\,' =>
+        'ThirdPartyProductDetails' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ThirdPartyProductDetails',
-        'KeywordRequest\,' =>
+        'KeywordRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\KeywordRequest',
-        'PowerRequest\,' =>
+        'PowerRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PowerRequest',
-        'BrowseNodeRequest\,' =>
+        'BrowseNodeRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BrowseNodeRequest',
-        'AsinRequest\,' =>
+        'AsinRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AsinRequest',
-        'BlendedRequest\,' =>
+        'BlendedRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BlendedRequest',
-        'UpcRequest\,' =>
+        'UpcRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UpcRequest',
-        'ArtistRequest\,' =>
+        'ArtistRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ArtistRequest',
-        'AuthorRequest\,' =>
+        'AuthorRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AuthorRequest',
-        'ActorRequest\,' =>
+        'ActorRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ActorRequest',
-        'DirectorRequest\,' =>
+        'DirectorRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DirectorRequest',
-        'ExchangeRequest\,' =>
+        'ExchangeRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExchangeRequest',
-        'ManufacturerRequest\,' =>
+        'ManufacturerRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ManufacturerRequest',
-        'ListManiaRequest\,' =>
+        'ListManiaRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListManiaRequest',
-        'WishlistRequest\,' =>
+        'WishlistRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\WishlistRequest',
-        'MarketplaceRequest\,' =>
+        'MarketplaceRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarketplaceRequest',
-        'SellerProfileRequest\,' =>
+        'SellerProfileRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerProfileRequest',
-        'SellerRequest\,' =>
+        'SellerRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerRequest',
-        'SimilarityRequest\,' =>
+        'SimilarityRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SimilarityRequest',
-        'Item\,' =>
+        'Item' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\Item',
-        'ItemQuantity\,' =>
+        'ItemQuantity' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemQuantity',
-        'AddItem\,' =>
+        'AddItem' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddItem',
-        'ShoppingCart\,' =>
+        'ShoppingCart' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShoppingCart',
-        'GetShoppingCartRequest\,' =>
+        'GetShoppingCartRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetShoppingCartRequest',
-        'ClearShoppingCartRequest\,' =>
+        'ClearShoppingCartRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ClearShoppingCartRequest',
-        'AddShoppingCartItemsRequest\,' =>
+        'AddShoppingCartItemsRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddShoppingCartItemsRequest',
-        'RemoveShoppingCartItemsRequest\,' =>
+        'RemoveShoppingCartItemsRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RemoveShoppingCartItemsRequest',
-        'ModifyShoppingCartItemsRequest\,' =>
+        'ModifyShoppingCartItemsRequest' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ModifyShoppingCartItemsRequest',
     );
 

@@ -8,64 +8,67 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class BestOfferType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferIDType | An id to distinguish this best offer from other best offers made on the item.
      */
-    public $bestofferid;
+    public $BestOfferID;
     /**
      * @var dateTime | Date and time when this notification will be removed from the eBay system.
      */
-    public $expirationtime;
+    public $ExpirationTime;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserType | Contains the data for the transaction's buyer. See UserType for its child elements. Not
      * applicable to Half.com except for GetOrders.
      */
-    public $buyer;
+    public $Buyer;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The amount of the best offer.
      */
-    public $price;
+    public $Price;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferStatusCodeType | Indicates the user's registration/user status. To be eligible to list on Express, a
      * seller's status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
      */
-    public $status;
+    public $Status;
     /**
      * @var int | Specifies the number of items from the specified listing the user tendering the offer
      * intends to purchase or bid on. For Chinese auctions and other listing formats that only
      * allow one item per listing, value may not exceed one. For multi-item listings, must
      * be greater than zero and not exceeding the number of items offered for sale in the listing.
      */
-    public $quantity;
+    public $Quantity;
     /**
      * @var string | Display message from buyer. This field holds transient data that is only being returned
      * in the notification flow. This field is only returned in the Checkout related notifications. Not
      * applicable to Half.com.
      */
-    public $buyermessage;
+    public $BuyerMessage;
     /**
      * @var string | Text response to buyer from seller.
      */
-    public $sellermessage;
+    public $SellerMessage;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BestOfferTypeCodeType | The best offer type.
      */
-    public $bestoffercodetype;
+    public $BestOfferCodeType;
     /**
      * @var string | The status of the call, either Success or Failure.
      */
-    public $callstatus;
+    public $CallStatus;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param BestOfferIDType $val
      * @throws Exception
      */
     public function setBestOfferID($val)
     {
-        $this->bestofferid = (int)$val;
+        $this->BestOfferID = (int)$val;
     }
 
     /**
@@ -74,7 +77,7 @@ class BestOfferType
      */
     public function setExpirationTime($val)
     {
-        $this->expirationtime = (int)$val;
+        $this->ExpirationTime = (int)$val;
     }
 
     /**
@@ -83,7 +86,7 @@ class BestOfferType
      */
     public function setBuyer($val)
     {
-        $this->buyer = (int)$val;
+        $this->Buyer = (int)$val;
     }
 
     /**
@@ -92,7 +95,7 @@ class BestOfferType
      */
     public function setPrice($val)
     {
-        $this->price = (int)$val;
+        $this->Price = (int)$val;
     }
 
     /**
@@ -101,7 +104,7 @@ class BestOfferType
      */
     public function setStatus($val)
     {
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
     }
 
     /**
@@ -113,7 +116,7 @@ class BestOfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantity = (int)$val;
+        $this->Quantity = (int)$val;
     }
 
     /**
@@ -125,7 +128,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->buyermessage = (int)$val;
+        $this->BuyerMessage = (int)$val;
     }
 
     /**
@@ -137,7 +140,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->sellermessage = (int)$val;
+        $this->SellerMessage = (int)$val;
     }
 
     /**
@@ -146,7 +149,7 @@ class BestOfferType
      */
     public function setBestOfferCodeType($val)
     {
-        $this->bestoffercodetype = (int)$val;
+        $this->BestOfferCodeType = (int)$val;
     }
 
     /**
@@ -158,7 +161,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallStatus');
         }
-        $this->callstatus = (int)$val;
+        $this->CallStatus = (int)$val;
     }
 
     /**

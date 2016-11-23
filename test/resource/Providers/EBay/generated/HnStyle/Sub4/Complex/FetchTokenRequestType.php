@@ -12,13 +12,16 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class FetchTokenRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | A value that is associated with the token retrieval request. The secret ID is a value
      * that is defined by the application, and is passed in redirect URL to the eBay signin
      * page. eBay recommends using a UUID for the secret ID value. You must also set Username
      * (part of the RequesterCredentials) for the particular user of interest.
      */
-    public $secretid;
+    public $SecretID;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -28,6 +31,6 @@ class FetchTokenRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SecretID');
         }
-        $this->secretid = (int)$val;
+        $this->SecretID = (int)$val;
     }
 }

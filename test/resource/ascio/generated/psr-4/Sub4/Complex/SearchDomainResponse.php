@@ -4,21 +4,24 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SearchDomainResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\Response
      */
-    public $searchdomainresult;
+    public $SearchDomainResult;
     /**
      * @var array \Controle\Hostnet\Namesp\Sub4\Complex\Domain
      */
     public $domains;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param Response $val
      * @throws Exception
      */
     public function setSearchDomainResult($val)
     {
-        $this->searchdomainresult = (int)$val;
+        $this->SearchDomainResult = (int)$val;
     }
 
     /**

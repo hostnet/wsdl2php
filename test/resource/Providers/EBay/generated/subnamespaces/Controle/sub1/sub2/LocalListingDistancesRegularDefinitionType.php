@@ -9,10 +9,13 @@ namespace Controle\sub1\sub2;
  */
 class LocalListingDistancesRegularDefinitionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception

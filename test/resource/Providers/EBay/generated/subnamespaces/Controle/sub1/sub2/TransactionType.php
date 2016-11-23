@@ -13,6 +13,7 @@ namespace Controle\sub1\sub2;
  */
 class TransactionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | The amount the buyer paid for the item(s) in the transaction. If the seller allowed the
 	 * buyer to change the item total, the buyer is able to change the total until the time that
@@ -23,88 +24,88 @@ class TransactionType
 	 * Motors items, AmountPaid is the amount paid by the buyer for the deposit. Not applicable
 	 * to Half.com.
 	 */
-	public $amountpaid;
+	public $AmountPaid;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Adjustment amount entered by the buyer. A positive amount indicates the amount is an extra
 	 * charge being paid to the seller by the buyer. A negative value indicates this amount is
 	 * a credit given to the buyer by the seller. Not applicable to Half.com.
 	 */
-	public $adjustmentamount;
+	public $AdjustmentAmount;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Converted value of AdjustmentAmount in the currency of the site that returned the response.
 	 * Refresh this value every 24 hours to pick up the current conversion rates. Not applicable
 	 * to Half.com.
 	 */
-	public $convertedadjustmentamount;
+	public $ConvertedAdjustmentAmount;
 	/**
 	 * @var \Controle\sub1\sub2\UserType | Contains the data for the transaction's buyer. See UserType for its child elements. Not
 	 * applicable to Half.com except for GetOrders.
 	 */
-	public $buyer;
+	public $Buyer;
 	/**
 	 * @var \Controle\sub1\sub2\ShippingDetailsType | The shipping-related details for an item or transaction, including flat and calculated
 	 * shipping costs and shipping insurance costs. For GetOrders, also applicable to Half.com.
 	 * For GetOrders, minimal ShippingDetails information is returned under the Transaction container.
 	 */
-	public $shippingdetails;
+	public $ShippingDetails;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Converted value of AmountPaid in the currency of the site that returned the response. Refresh
 	 * this value every 24 hours to pick up the current conversion rates. Not applicable to Half.com.
 	 */
-	public $convertedamountpaid;
+	public $ConvertedAmountPaid;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Converted value of TransactionPrice in the currency of the site that returned the response.
 	 * Refresh this value every 24 hours to pick up the current conversion rates. Not applicable
 	 * to Half.com.
 	 */
-	public $convertedtransactionprice;
+	public $ConvertedTransactionPrice;
 	/**
 	 * @var dateTime | Indicates when the transaction was created. For fixed-price, Stores, and BIN items this
 	 * indicates when the purchase (or BIN) occurred. For competitive-bidding listing types this
 	 * indicates when listing ended, the winning bidder(s) determined, and the transaction created. For
 	 * GetOrders, only applicable to Half.com.
 	 */
-	public $createddate;
+	public $CreatedDate;
 	/**
 	 * @var \Controle\sub1\sub2\DepositTypeCodeType | Deposit type for US eBay Motors items. If item is not a Motors item, then returns an empty
 	 * value for DepositType. See DepositTypeCodeType for specific values. Not applicable to Half.com.
 	 */
-	public $deposittype;
+	public $DepositType;
 	/**
 	 * @var \Controle\sub1\sub2\ItemType | Information about the item that spawned the transaction. It is a purchase from this item's
 	 * listing that the transaction represents. To remove a property from an item, specify it
 	 * in ModifyType as a changed property, but do not give it a value in Item. Also applicable
 	 * to Half.com (for GetOrders).
 	 */
-	public $item;
+	public $Item;
 	/**
 	 * @var int | Indicates the number of items the buyer purchased from the listing identified in ItemID. Also
 	 * applicable to Half.com (for GetOrders).
 	 */
-	public $quantitypurchased;
+	public $QuantityPurchased;
 	/**
 	 * @var \Controle\sub1\sub2\TransactionStatusType | Indicates the user's registration/user status. To be eligible to list on Express, a seller's
 	 * status must be Confirmed. See "eBay Express" in the eBay Web Services guide.
 	 */
-	public $status;
+	public $Status;
 	/**
 	 * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
 	 * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
 	 * spawned it, so a transaction is only uniquely identified on a global basis by a combination
 	 * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
 	 */
-	public $transactionid;
+	public $TransactionID;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Price of the transaction (before shipping and sales tax) that the buyer needs to pay to
 	 * complete the purchase. For eBay Motors, TransactionPrice is the deposit amount. Also applicable
 	 * to Half.com (for GetOrders).
 	 */
-	public $transactionprice;
+	public $TransactionPrice;
 	/**
 	 * @var boolean | Whether the transaction was completed with the seller selecting a best offer. Not applicable
 	 * to Half.com.
 	 */
-	public $bestoffersale;
+	public $BestOfferSale;
 	/**
 	 * @var decimal | VAT rate for the item, if any. When the VATPercent is specified, the item's VAT information
 	 * appears on the item's listing page. In addition, the seller can choose to print an invoice
@@ -117,43 +118,43 @@ class TransactionType
 	 * The View Item page may display the precision to 2 decimal places with no trailing zeros.
 	 * However, the full value you send in is stored.
 	 */
-	public $vatpercent;
+	public $VATPercent;
 	/**
 	 * @var \Controle\sub1\sub2\ExternalTransactionType | A PayPal transaction that relates to this eBay transaction. Returned only if there is at
 	 * least one PayPal transaction related to this eBay transaction. Not applicable to Half.com.
 	 */
-	public $externaltransaction;
+	public $ExternalTransaction;
 	/**
 	 * @var \Controle\sub1\sub2\SellingManagerProductDetailsType | Not applicable to Half.com.
 	 */
-	public $sellingmanagerproductdetails;
+	public $SellingManagerProductDetails;
 	/**
 	 * @var \Controle\sub1\sub2\ShippingServiceOptionsType | The shipping service selected by the buyer from the services offered by the seller. Not
 	 * applicable to Half.com.
 	 */
-	public $shippingserviceselected;
+	public $ShippingServiceSelected;
 	/**
 	 * @var string | Display message from buyer. This field holds transient data that is only being returned
 	 * in the notification flow. This field is only returned in the Checkout related notifications. Not
 	 * applicable to Half.com.
 	 */
-	public $buyermessage;
+	public $BuyerMessage;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | This field holds the Dutch Auction Offer Bid by the buyer in this transaction, if this
 	 * is a Dutch Auction Item. This field will only be returned if caller has set IncludeDuctionAuctionBid
 	 * to true. Not applicable to Half.com.
 	 */
-	public $dutchauctionbid;
+	public $DutchAuctionBid;
 	/**
 	 * @var \Controle\sub1\sub2\PaidStatusCodeType | Specifies the transaction's paid status, as seen by the buyer. Returned in lists of won
 	 * and sold items. Not applicable to Half.com.
 	 */
-	public $buyerpaidstatus;
+	public $BuyerPaidStatus;
 	/**
 	 * @var \Controle\sub1\sub2\PaidStatusCodeType | Specifies the transaction's payment status, as seen by the seller. Returned in lists of
 	 * won and sold items. Not applicable to Half.com.
 	 */
-	public $sellerpaidstatus;
+	public $SellerPaidStatus;
 	/**
 	 * @var dateTime | Indicates the time when the transaction was marked paid, if known. The value is set by
 	 * eBay when payment is made via PayPal or a third-party checkout flow. This value is also
@@ -163,7 +164,7 @@ class TransactionType
 	 * transaction. If the item is marked as paid but the seller is not a Selling Manager Pro
 	 * user, PaidTime returns the transaction creation time instead. Not applicable to Half.com.
 	 */
-	public $paidtime;
+	public $PaidTime;
 	/**
 	 * @var dateTime | Indicates the time when the item(s) associated with the transaction were marked as shipped,
 	 * if known. The value is set when the seller uses shipment tracking features offered by eBay
@@ -172,25 +173,25 @@ class TransactionType
 	 * item as shipped by using My eBay. Note that this value is only visible if the request user
 	 * is the buyer or seller associated with the transaction. Applicable to Half.com (for GetOrders).
 	 */
-	public $shippedtime;
+	public $ShippedTime;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Not applicable to Half.com.
 	 */
-	public $totalprice;
+	public $TotalPrice;
 	/**
 	 * @var \Controle\sub1\sub2\FeedbackInfoType | Not applicable to Half.com.
 	 */
-	public $feedbackleft;
+	public $FeedbackLeft;
 	/**
 	 * @var \Controle\sub1\sub2\FeedbackInfoType | Not applicable to Half.com.
 	 */
-	public $feedbackreceived;
+	public $FeedbackReceived;
 	/**
 	 * @var \Controle\sub1\sub2\OrderType | The order to which the transaction belongs. This is only returned if IncludeContainingOrder
 	 * is true and and if this transaction is part of an active or completed order. Not applicable
 	 * to Half.com.
 	 */
-	public $containingorder;
+	public $ContainingOrder;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | You are charged a Final Value Fee if your item is sold, ends with a winning bid, or is
 	 * purchased. This fee applies whether or not you actually complete the sale with the buyer.
@@ -206,32 +207,34 @@ class TransactionType
 	 * that end with Buy It Now purchases, the Final Value Fee is returned in Transaction.FinalValueFee.
 	 * Not applicable to Half.com.
 	 */
-	public $finalvaluefee;
+	public $FinalValueFee;
 	/**
 	 * @var \Controle\sub1\sub2\TransactionPlatformType | Indicates the platform the item was purchased on (such as eBay or eBay Express). Not applicable
 	 * to Half.com.
 	 */
-	public $transactionplatform;
+	public $TransactionPlatform;
 	/**
 	 * @var \Controle\sub1\sub2\ListingCheckoutRedirectPreferenceType | ProStores listing level preferences regarding the store to which checkout should be redirected
 	 * for the listing if ThirdPartyCheckout is true.
 	 */
-	public $listingcheckoutredirectpreference;
+	public $ListingCheckoutRedirectPreference;
 	/**
 	 * @var \Controle\sub1\sub2\RefundArrayType | Contains an array of refunds. Applicable to Half.com (for GetOrders).
 	 */
-	public $refundarray;
+	public $RefundArray;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
 	public function setAmountPaid($val)
 	{
-        $this->amountpaid = (int)$val;
+        $this->AmountPaid = (int)$val;
 	}
 
 	/**
@@ -240,7 +243,7 @@ class TransactionType
 	 */
 	public function setAdjustmentAmount($val)
 	{
-        $this->adjustmentamount = (int)$val;
+        $this->AdjustmentAmount = (int)$val;
 	}
 
 	/**
@@ -249,7 +252,7 @@ class TransactionType
 	 */
 	public function setConvertedAdjustmentAmount($val)
 	{
-        $this->convertedadjustmentamount = (int)$val;
+        $this->ConvertedAdjustmentAmount = (int)$val;
 	}
 
 	/**
@@ -258,7 +261,7 @@ class TransactionType
 	 */
 	public function setBuyer($val)
 	{
-        $this->buyer = (int)$val;
+        $this->Buyer = (int)$val;
 	}
 
 	/**
@@ -267,7 +270,7 @@ class TransactionType
 	 */
 	public function setShippingDetails($val)
 	{
-        $this->shippingdetails = (int)$val;
+        $this->ShippingDetails = (int)$val;
 	}
 
 	/**
@@ -276,7 +279,7 @@ class TransactionType
 	 */
 	public function setConvertedAmountPaid($val)
 	{
-        $this->convertedamountpaid = (int)$val;
+        $this->ConvertedAmountPaid = (int)$val;
 	}
 
 	/**
@@ -285,7 +288,7 @@ class TransactionType
 	 */
 	public function setConvertedTransactionPrice($val)
 	{
-        $this->convertedtransactionprice = (int)$val;
+        $this->ConvertedTransactionPrice = (int)$val;
 	}
 
 	/**
@@ -294,7 +297,7 @@ class TransactionType
 	 */
 	public function setCreatedDate($val)
 	{
-        $this->createddate = (int)$val;
+        $this->CreatedDate = (int)$val;
 	}
 
 	/**
@@ -303,7 +306,7 @@ class TransactionType
 	 */
 	public function setDepositType($val)
 	{
-        $this->deposittype = (int)$val;
+        $this->DepositType = (int)$val;
 	}
 
 	/**
@@ -312,7 +315,7 @@ class TransactionType
 	 */
 	public function setItem($val)
 	{
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
 	}
 
 	/**
@@ -324,7 +327,7 @@ class TransactionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->quantitypurchased = (int)$val;
+        $this->QuantityPurchased = (int)$val;
 	}
 
 	/**
@@ -333,7 +336,7 @@ class TransactionType
 	 */
 	public function setStatus($val)
 	{
-        $this->status = (int)$val;
+        $this->Status = (int)$val;
 	}
 
 	/**
@@ -345,7 +348,7 @@ class TransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
 	}
 
 	/**
@@ -354,7 +357,7 @@ class TransactionType
 	 */
 	public function setTransactionPrice($val)
 	{
-        $this->transactionprice = (int)$val;
+        $this->TransactionPrice = (int)$val;
 	}
 
 	/**
@@ -363,7 +366,7 @@ class TransactionType
 	 */
 	public function setBestOfferSale($val)
 	{
-        $this->bestoffersale = (int)$val;
+        $this->BestOfferSale = (int)$val;
 	}
 
 	/**
@@ -372,7 +375,7 @@ class TransactionType
 	 */
 	public function setVATPercent($val)
 	{
-        $this->vatpercent = (int)$val;
+        $this->VATPercent = (int)$val;
 	}
 
 	/**
@@ -381,7 +384,7 @@ class TransactionType
 	 */
 	public function setExternalTransaction($val)
 	{
-        $this->externaltransaction = (int)$val;
+        $this->ExternalTransaction = (int)$val;
 	}
 
 	/**
@@ -390,7 +393,7 @@ class TransactionType
 	 */
 	public function setSellingManagerProductDetails($val)
 	{
-        $this->sellingmanagerproductdetails = (int)$val;
+        $this->SellingManagerProductDetails = (int)$val;
 	}
 
 	/**
@@ -399,7 +402,7 @@ class TransactionType
 	 */
 	public function setShippingServiceSelected($val)
 	{
-        $this->shippingserviceselected = (int)$val;
+        $this->ShippingServiceSelected = (int)$val;
 	}
 
 	/**
@@ -411,7 +414,7 @@ class TransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->buyermessage = (int)$val;
+        $this->BuyerMessage = (int)$val;
 	}
 
 	/**
@@ -420,7 +423,7 @@ class TransactionType
 	 */
 	public function setDutchAuctionBid($val)
 	{
-        $this->dutchauctionbid = (int)$val;
+        $this->DutchAuctionBid = (int)$val;
 	}
 
 	/**
@@ -429,7 +432,7 @@ class TransactionType
 	 */
 	public function setBuyerPaidStatus($val)
 	{
-        $this->buyerpaidstatus = (int)$val;
+        $this->BuyerPaidStatus = (int)$val;
 	}
 
 	/**
@@ -438,7 +441,7 @@ class TransactionType
 	 */
 	public function setSellerPaidStatus($val)
 	{
-        $this->sellerpaidstatus = (int)$val;
+        $this->SellerPaidStatus = (int)$val;
 	}
 
 	/**
@@ -447,7 +450,7 @@ class TransactionType
 	 */
 	public function setPaidTime($val)
 	{
-        $this->paidtime = (int)$val;
+        $this->PaidTime = (int)$val;
 	}
 
 	/**
@@ -456,7 +459,7 @@ class TransactionType
 	 */
 	public function setShippedTime($val)
 	{
-        $this->shippedtime = (int)$val;
+        $this->ShippedTime = (int)$val;
 	}
 
 	/**
@@ -465,7 +468,7 @@ class TransactionType
 	 */
 	public function setTotalPrice($val)
 	{
-        $this->totalprice = (int)$val;
+        $this->TotalPrice = (int)$val;
 	}
 
 	/**
@@ -474,7 +477,7 @@ class TransactionType
 	 */
 	public function setFeedbackLeft($val)
 	{
-        $this->feedbackleft = (int)$val;
+        $this->FeedbackLeft = (int)$val;
 	}
 
 	/**
@@ -483,7 +486,7 @@ class TransactionType
 	 */
 	public function setFeedbackReceived($val)
 	{
-        $this->feedbackreceived = (int)$val;
+        $this->FeedbackReceived = (int)$val;
 	}
 
 	/**
@@ -492,7 +495,7 @@ class TransactionType
 	 */
 	public function setContainingOrder($val)
 	{
-        $this->containingorder = (int)$val;
+        $this->ContainingOrder = (int)$val;
 	}
 
 	/**
@@ -501,7 +504,7 @@ class TransactionType
 	 */
 	public function setFinalValueFee($val)
 	{
-        $this->finalvaluefee = (int)$val;
+        $this->FinalValueFee = (int)$val;
 	}
 
 	/**
@@ -510,7 +513,7 @@ class TransactionType
 	 */
 	public function setTransactionPlatform($val)
 	{
-        $this->transactionplatform = (int)$val;
+        $this->TransactionPlatform = (int)$val;
 	}
 
 	/**
@@ -519,7 +522,7 @@ class TransactionType
 	 */
 	public function setListingCheckoutRedirectPreference($val)
 	{
-        $this->listingcheckoutredirectpreference = (int)$val;
+        $this->ListingCheckoutRedirectPreference = (int)$val;
 	}
 
 	/**
@@ -528,7 +531,7 @@ class TransactionType
 	 */
 	public function setRefundArray($val)
 	{
-        $this->refundarray = (int)$val;
+        $this->RefundArray = (int)$val;
 	}
 
 	/**

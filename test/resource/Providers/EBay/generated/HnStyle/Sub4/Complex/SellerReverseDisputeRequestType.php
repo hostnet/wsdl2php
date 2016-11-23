@@ -16,22 +16,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SellerReverseDisputeRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeIDType | The unique identifier of a dispute, returned by the eBay site when the dispute is created.
      */
-    public $disputeid;
+    public $DisputeID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DisputeResolutionReasonCodeType | The reason for the resolution. The DisputeResolutionReason results in the action described
      * by the DisputeResolutionRecordType.
      */
-    public $disputeresolutionreason;
+    public $DisputeResolutionReason;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param DisputeIDType $val
      * @throws Exception
      */
     public function setDisputeID($val)
     {
-        $this->disputeid = (int)$val;
+        $this->DisputeID = (int)$val;
     }
 
     /**
@@ -40,6 +43,6 @@ class SellerReverseDisputeRequestType extends
      */
     public function setDisputeResolutionReason($val)
     {
-        $this->disputeresolutionreason = (int)$val;
+        $this->DisputeResolutionReason = (int)$val;
     }
 }

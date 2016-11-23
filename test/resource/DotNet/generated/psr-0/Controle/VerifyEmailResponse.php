@@ -4,16 +4,19 @@ namespace Controle;
 
 class VerifyEmailResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ReturnIndicator
 	 */
-	public $verifyemailresult;
+	public $VerifyEmailResult;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ReturnIndicator $val
 	 * @throws Exception
 	 */
 	public function setVerifyEmailResult($val)
 	{
-        $this->verifyemailresult = (int)$val;
+        $this->VerifyEmailResult = (int)$val;
 	}
 }

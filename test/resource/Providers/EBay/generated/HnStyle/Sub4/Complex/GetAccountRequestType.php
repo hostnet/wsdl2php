@@ -11,64 +11,67 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetAccountRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AccountHistorySelectionCodeType | Specifies the report format in which to return account entries.
      */
-    public $accounthistoryselection;
+    public $AccountHistorySelection;
     /**
      * @var dateTime | Date of last invoice sent by eBay to the user, in GMT. (Also see the Data Types appendix
      * for more information on how GMT dates are handled in SOAP.) Empty string if this account
      * has not been invoiced yet.
      */
-    public $invoicedate;
+    public $InvoiceDate;
     /**
      * @var dateTime | Specifies the beginning of a date range during which a credit or debit occurred. Used
      * when AccountHistorySelection is BetweenSpecifiedDates. Value must be less than or equal
      * to the value specified in EndDate. The allowed date formats are YYYY-MM-DD and YYYY-MM-DD
      * HH:mm:ss.
      */
-    public $begindate;
+    public $BeginDate;
     /**
      * @var dateTime | Specifies the end of a date range during which a credit or debit occurred. Used when
      * AccountHistorySelection is BetweenSpecifiedDates. Value must be greater than or equal
      * to the value specified in BeginDate. The allowed date formats are YYYY-MM-DD and YYYY-MM-DD
      * HH:mm:ss.
      */
-    public $enddate;
+    public $EndDate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var boolean | Specifies whether to calculate balances. Default is  false, which calculates balances.
      * The value true means  do not calculate balances. If true, AccountEntry.Balance and
      * AccountSummary.CurrentBalance are never returned in the response.
      */
-    public $excludebalance;
+    public $ExcludeBalance;
     /**
      * @var boolean | Specifies whether to return account summary information in an AccountSummary node. Default
      * is true, to return AccountSummary.
      */
-    public $excludesummary;
+    public $ExcludeSummary;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AccountEntrySortTypeCodeType | Specifies how account entries should be sorted in the response, by an element and then
      * in ascending or descending order.
      */
-    public $accountentrysorttype;
+    public $AccountEntrySortType;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType | Limits the result set to just those items with a specified currency.
      */
-    public $currency;
+    public $Currency;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AccountHistorySelectionCodeType $val
      * @throws Exception
      */
     public function setAccountHistorySelection($val)
     {
-        $this->accounthistoryselection = (int)$val;
+        $this->AccountHistorySelection = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class GetAccountRequestType extends
      */
     public function setInvoiceDate($val)
     {
-        $this->invoicedate = (int)$val;
+        $this->InvoiceDate = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class GetAccountRequestType extends
      */
     public function setBeginDate($val)
     {
-        $this->begindate = (int)$val;
+        $this->BeginDate = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class GetAccountRequestType extends
      */
     public function setEndDate($val)
     {
-        $this->enddate = (int)$val;
+        $this->EndDate = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class GetAccountRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**
@@ -113,7 +116,7 @@ class GetAccountRequestType extends
      */
     public function setExcludeBalance($val)
     {
-        $this->excludebalance = (int)$val;
+        $this->ExcludeBalance = (int)$val;
     }
 
     /**
@@ -122,7 +125,7 @@ class GetAccountRequestType extends
      */
     public function setExcludeSummary($val)
     {
-        $this->excludesummary = (int)$val;
+        $this->ExcludeSummary = (int)$val;
     }
 
     /**
@@ -131,7 +134,7 @@ class GetAccountRequestType extends
      */
     public function setAccountEntrySortType($val)
     {
-        $this->accountentrysorttype = (int)$val;
+        $this->AccountEntrySortType = (int)$val;
     }
 
     /**
@@ -140,6 +143,6 @@ class GetAccountRequestType extends
      */
     public function setCurrency($val)
     {
-        $this->currency = (int)$val;
+        $this->Currency = (int)$val;
     }
 }

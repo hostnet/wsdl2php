@@ -9,18 +9,19 @@ namespace Controle;
  */
 class ErrorType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Brief version of the tip message.
 	 */
-	public $shortmessage;
+	public $ShortMessage;
 	/**
 	 * @var string | Detailed version of the tip message.
 	 */
-	public $longmessage;
+	public $LongMessage;
 	/**
 	 * @var \Controle\token | Reason for SMS subscription error (postback from thired-party integrator).
 	 */
-	public $errorcode;
+	public $ErrorCode;
 	/**
 	 * @var boolean | Indicates whether the error message text is intended to be displayed to an end user or
 	 * intended only to be parsed by the application. If true or not present (the default), the
@@ -28,26 +29,28 @@ class ErrorType
 	 * application, and the application should translate the error into a more appropriate message. Only
 	 * applicable to Item Specifics errors and warnings returned from listing requests.
 	 */
-	public $userdisplayhint;
+	public $UserDisplayHint;
 	/**
 	 * @var \Controle\SeverityCodeType | Indicates whether the error is a severe error (causing the request to fail) or an informational
 	 * error (a warning) that should be communicated to the user.
 	 */
-	public $severitycode;
+	public $SeverityCode;
 	/**
 	 * @var \Controle\ErrorParameterType | This optional element carries a list of context-specific error variables that indicate
 	 * details about the error condition. These are useful when multiple instances of ErrorType
 	 * are returned.
 	 */
-	public $errorparameters;
+	public $ErrorParameters;
 	/**
 	 * @var \Controle\ErrorClassificationCodeType | API errors are divided between two classes: system errors and request errors.
 	 */
-	public $errorclassification;
+	public $ErrorClassification;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -57,7 +60,7 @@ class ErrorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->shortmessage = (int)$val;
+        $this->ShortMessage = (int)$val;
 	}
 
 	/**
@@ -69,7 +72,7 @@ class ErrorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->longmessage = (int)$val;
+        $this->LongMessage = (int)$val;
 	}
 
 	/**
@@ -78,7 +81,7 @@ class ErrorType
 	 */
 	public function setErrorCode($val)
 	{
-        $this->errorcode = (int)$val;
+        $this->ErrorCode = (int)$val;
 	}
 
 	/**
@@ -87,7 +90,7 @@ class ErrorType
 	 */
 	public function setUserDisplayHint($val)
 	{
-        $this->userdisplayhint = (int)$val;
+        $this->UserDisplayHint = (int)$val;
 	}
 
 	/**
@@ -96,7 +99,7 @@ class ErrorType
 	 */
 	public function setSeverityCode($val)
 	{
-        $this->severitycode = (int)$val;
+        $this->SeverityCode = (int)$val;
 	}
 
 	/**
@@ -105,7 +108,7 @@ class ErrorType
 	 */
 	public function setErrorParameters($val)
 	{
-        $this->errorparameters = (int)$val;
+        $this->ErrorParameters = (int)$val;
 	}
 
 	/**
@@ -114,7 +117,7 @@ class ErrorType
 	 */
 	public function setErrorClassification($val)
 	{
-        $this->errorclassification = (int)$val;
+        $this->ErrorClassification = (int)$val;
 	}
 
 	/**

@@ -8,42 +8,45 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class FinanceOfferType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Specifies a promotional offer that allow the buyer to purchase items on credit.
      */
-    public $financeofferid;
+    public $FinanceOfferID;
     /**
      * @var string | Text that the buyer sees describing the details of the financing offer.
      */
-    public $buyerterms;
+    public $BuyerTerms;
     /**
      * @var string | Text that the seller sees describing the details of the financing offer.
      */
-    public $sellerterms;
+    public $SellerTerms;
     /**
      * @var dateTime | Date on which the offer first becomes active.
      */
-    public $startdate;
+    public $StartDate;
     /**
      * @var dateTime | Date the message was last modified. Returned if the parent container is returned.
      */
-    public $lastmodifieddate;
+    public $LastModifiedDate;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | The minimum amount for an item to which the offer applies.
      */
-    public $minimumamount;
+    public $MinimumAmount;
     /**
      * @var double | Interest charges associated with the finance offer.
      */
-    public $ratefactor;
+    public $RateFactor;
     /**
      * @var int | A number ranging from 0 to 10000 (inclusive), with 10000 having the highest priority.
      */
-    public $priority;
+    public $Priority;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -53,7 +56,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->financeofferid = (int)$val;
+        $this->FinanceOfferID = (int)$val;
     }
 
     /**
@@ -65,7 +68,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerTerms');
         }
-        $this->buyerterms = (int)$val;
+        $this->BuyerTerms = (int)$val;
     }
 
     /**
@@ -77,7 +80,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerTerms');
         }
-        $this->sellerterms = (int)$val;
+        $this->SellerTerms = (int)$val;
     }
 
     /**
@@ -86,7 +89,7 @@ class FinanceOfferType
      */
     public function setStartDate($val)
     {
-        $this->startdate = (int)$val;
+        $this->StartDate = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class FinanceOfferType
      */
     public function setLastModifiedDate($val)
     {
-        $this->lastmodifieddate = (int)$val;
+        $this->LastModifiedDate = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class FinanceOfferType
      */
     public function setMinimumAmount($val)
     {
-        $this->minimumamount = (int)$val;
+        $this->MinimumAmount = (int)$val;
     }
 
     /**
@@ -113,7 +116,7 @@ class FinanceOfferType
      */
     public function setRateFactor($val)
     {
-        $this->ratefactor = (int)$val;
+        $this->RateFactor = (int)$val;
     }
 
     /**
@@ -125,7 +128,7 @@ class FinanceOfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->priority = (int)$val;
+        $this->Priority = (int)$val;
     }
 
     /**

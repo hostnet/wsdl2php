@@ -14,22 +14,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class AccountEntriesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AccountEntryType | Contains the data for one account entry. (See the schema                documentation
      * for AccountEntryType for details on its properties.)
      */
-    public $accountentry;
+    public $AccountEntry;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param AccountEntryType $val
      * @throws Exception
      */
     public function setAccountEntry($val)
     {
-        $this->accountentry = (int)$val;
+        $this->AccountEntry = (int)$val;
     }
 
     /**

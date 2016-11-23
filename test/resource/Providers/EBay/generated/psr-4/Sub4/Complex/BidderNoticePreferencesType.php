@@ -8,22 +8,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class BidderNoticePreferencesType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean | If true, sends the seller a notice containing the contact information for unsuccessful
      *  bidders.
      */
-    public $unsuccessfulbiddernoticeincludemyitems;
+    public $UnsuccessfulBidderNoticeIncludeMyItems;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception
      */
     public function setUnsuccessfulBidderNoticeIncludeMyItems($val)
     {
-        $this->unsuccessfulbiddernoticeincludemyitems = (int)$val;
+        $this->UnsuccessfulBidderNoticeIncludeMyItems = (int)$val;
     }
 
     /**

@@ -11,25 +11,28 @@ namespace Controle;
  */
 class PriceRangeFilterType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\AmountType | Specifies the upper limit of price range for the automatic search criteria.
 	 */
-	public $maxprice;
+	public $MaxPrice;
 	/**
 	 * @var \Controle\AmountType | Specifies the lower limit of price range for the automatic search criteria.
 	 */
-	public $minprice;
+	public $MinPrice;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param AmountType $val
 	 * @throws Exception
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->maxprice = (int)$val;
+        $this->MaxPrice = (int)$val;
 	}
 
 	/**
@@ -38,7 +41,7 @@ class PriceRangeFilterType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->minprice = (int)$val;
+        $this->MinPrice = (int)$val;
 	}
 
 	/**

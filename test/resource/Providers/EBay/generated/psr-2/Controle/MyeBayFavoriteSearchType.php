@@ -8,18 +8,21 @@ namespace Controle;
  */
 class MyeBayFavoriteSearchType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The name of the My eBay Favorite Search.
      */
-    public $searchname;
+    public $SearchName;
     /**
      * @var string | The query string of a My eBay Favorite Search.
      */
-    public $searchquery;
+    public $SearchQuery;
     /**
      * @var \Controle\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class MyeBayFavoriteSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchName');
         }
-        $this->searchname = (int)$val;
+        $this->SearchName = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class MyeBayFavoriteSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchQuery');
         }
-        $this->searchquery = (int)$val;
+        $this->SearchQuery = (int)$val;
     }
 
     /**

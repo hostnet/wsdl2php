@@ -11,33 +11,36 @@ namespace Controle;
 class GetMyMessagesResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\MyMessagesSummaryType | Summary data for a given user's alerts and messages. This includes the numbers of new
      * alerts and messages, unresolved alerts, flagged messages, and total alerts and messages. The
      * amount and type of data returned is the same whether or not the request included specific AlertID
      * or MessageID values. Always/Conditionally returned logic assumes a detail level of ReturnMessages.
      */
-    public $summary;
+    public $Summary;
     /**
      * @var \Controle\MyMessagesAlertArrayType | Contains the alert information for each alert specified in AlertIDs. The amount and
      * type of information returned varies based on the requested detail level. Contains one MyMessagesAlertType
      * object per alert. Returned as an empty node if user has no alerts.
      */
-    public $alerts;
+    public $Alerts;
     /**
      * @var \Controle\MyMessagesMessageArrayType | Contains the message information for each message specified in MessageIDs. The amount
      * and type of information returned varies based on the requested detail level. Contains
      * one MyMessagesMessageType object per message. Returned as an empty node if user has
      * no messages.
      */
-    public $messages;
+    public $Messages;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param MyMessagesSummaryType $val
      * @throws Exception
      */
     public function setSummary($val)
     {
-        $this->summary = (int)$val;
+        $this->Summary = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class GetMyMessagesResponseType extends
      */
     public function setAlerts($val)
     {
-        $this->alerts = (int)$val;
+        $this->Alerts = (int)$val;
     }
 
     /**
@@ -55,6 +58,6 @@ class GetMyMessagesResponseType extends
      */
     public function setMessages($val)
     {
-        $this->messages = (int)$val;
+        $this->Messages = (int)$val;
     }
 }

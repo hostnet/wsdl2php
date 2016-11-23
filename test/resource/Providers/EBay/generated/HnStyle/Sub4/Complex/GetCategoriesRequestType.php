@@ -23,12 +23,13 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetCategoriesRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Specifies the eBay site for which to retrieve the category hierarchy. Use the numeric
      * site code (e.g., 77 for eBay Germany). Only necessary if you want to retrieve category
      * data for a site other than the site to which you are submitting the request.
      */
-    public $categorysiteid;
+    public $CategorySiteID;
     /**
      * @var string | Specifies the ID of the highest-level category to return, along with its subcategories. If
      * no parent category is specified, all categories are returned for the specified site.
@@ -37,7 +38,7 @@ class GetCategoriesRequestType extends
      * value of ReturnAll. If you specify multiple parent categories, the hierarchy for each
      * one is returned.
      */
-    public $categoryparent;
+    public $CategoryParent;
     /**
      * @var int | Specifies the limit for the number of levels of the category hierarchy to return, where
      * the given root category is level 1 and its children are level 2. Only categories at
@@ -45,7 +46,7 @@ class GetCategoriesRequestType extends
      * set, the complete category hierarchy is returned. Stores support category hierarchies
      * up to 3 levels only.
      */
-    public $levellimit;
+    public $LevelLimit;
     /**
      * @var boolean | Set this value to true to retrieve useful results. If true, retrieves all categories
      * that override the site default settings. (If false or not specified, only retrieves
@@ -53,7 +54,9 @@ class GetCategoriesRequestType extends
      * on a category's ancestor, the call does not return those settings if you only retrieve
      * leaf categories.)
      */
-    public $viewallnodes;
+    public $ViewAllNodes;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -63,7 +66,7 @@ class GetCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategorySiteID');
         }
-        $this->categorysiteid = (int)$val;
+        $this->CategorySiteID = (int)$val;
     }
 
     /**
@@ -75,7 +78,7 @@ class GetCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParent');
         }
-        $this->categoryparent = (int)$val;
+        $this->CategoryParent = (int)$val;
     }
 
     /**
@@ -87,7 +90,7 @@ class GetCategoriesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->levellimit = (int)$val;
+        $this->LevelLimit = (int)$val;
     }
 
     /**
@@ -96,6 +99,6 @@ class GetCategoriesRequestType extends
      */
     public function setViewAllNodes($val)
     {
-        $this->viewallnodes = (int)$val;
+        $this->ViewAllNodes = (int)$val;
     }
 }

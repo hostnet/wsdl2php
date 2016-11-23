@@ -15,6 +15,7 @@ namespace Controle;
 class GetProductSellingPagesResponseType extends
  \Controle\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | A string containing a list of all the attributes that are applicable to the products
      * specified in the request, along with related meta-data. The meta-data specifies the
@@ -34,7 +35,9 @@ class GetProductSellingPagesResponseType extends
      * (e.g.,&amp;lt;eBay&amp;gt;&amp;lt;Attributes&amp;gt;...). See the appendices in the
      * eBay Web Services guide for general information about string data types.
      */
-    public $productsellingpagesdata;
+    public $ProductSellingPagesData;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -44,6 +47,6 @@ class GetProductSellingPagesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
         }
-        $this->productsellingpagesdata = (int)$val;
+        $this->ProductSellingPagesData = (int)$val;
     }
 }

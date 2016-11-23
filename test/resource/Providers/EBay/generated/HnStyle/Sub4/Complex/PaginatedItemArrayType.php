@@ -8,22 +8,25 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class PaginatedItemArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemArrayType | Contains a list of Item types.
      */
-    public $itemarray;
+    public $ItemArray;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationResultType | Provides information about the list of transactions, including number of pages and number
      * of entries.
      */
-    public $paginationresult;
+    public $PaginationResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemArrayType $val
      * @throws Exception
      */
     public function setItemArray($val)
     {
-        $this->itemarray = (int)$val;
+        $this->ItemArray = (int)$val;
     }
 
     /**
@@ -32,6 +35,6 @@ class PaginatedItemArrayType
      */
     public function setPaginationResult($val)
     {
-        $this->paginationresult = (int)$val;
+        $this->PaginationResult = (int)$val;
     }
 }

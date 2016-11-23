@@ -8,10 +8,13 @@ namespace Controle;
  */
 class RelatedSearchKeywordArrayType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Related keyword.
 	 */
-	public $keyword;
+	public $Keyword;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -21,6 +24,6 @@ class RelatedSearchKeywordArrayType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keyword');
         }
-        $this->keyword = (int)$val;
+        $this->Keyword = (int)$val;
 	}
 }

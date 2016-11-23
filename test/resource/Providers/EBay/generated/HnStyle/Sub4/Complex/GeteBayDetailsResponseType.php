@@ -11,51 +11,52 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GeteBayDetailsResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CountryDetailsType | Details about a specific country. GeteBayDetails returns all countries in the system,
      * regardless of the site to which you sent the request.
      */
-    public $countrydetails;
+    public $CountryDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CurrencyDetailsType | Details about a specific currency that can be used for listing on an eBay site. GeteBayDetails
      * returns all site currencies in the system, regardless of the site to which you sent
      * the request.
      */
-    public $currencydetails;
+    public $CurrencyDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DispatchTimeMaxDetailsType | Details about a specific max dispatch time. A dispatch time specifies the maximum number
      * of business days a seller commits to for shipping an item to domestic buyers after receiving
      * a cleared payment. GeteBayDetails returns all dispatch times in the system, regardless
      * of the site to which you sent the request.
      */
-    public $dispatchtimemaxdetails;
+    public $DispatchTimeMaxDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaymentOptionDetailsType | Details about a specific buyer payment method. GeteBayDetails only returns payment methods
      * that are applicable to the site to which you sent the request.
      */
-    public $paymentoptiondetails;
+    public $PaymentOptionDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\RegionDetailsType | Details about a specific geographical region. GeteBayDetails only returns regions that
      * are applicable to the site to which you sent the request. However, you should ignore
      * region values for all sites except China.
      */
-    public $regiondetails;
+    public $RegionDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingLocationDetailsType | Details about a location or region to which the seller is willing to ship. GeteBayDetails
      * returns all shipping locations in the system, regardless of the site to which you sent
      * the request.
      */
-    public $shippinglocationdetails;
+    public $ShippingLocationDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingServiceDetailsType | Details about a specific shipping service. GeteBayDetails only returns shipping services
      * that are applicable to the site to which you sent the request.
      */
-    public $shippingservicedetails;
+    public $ShippingServiceDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SiteDetailsType | Details about a specific eBay site. GeteBayDetails returns all sites in the system,
      * regardless of the site to which you sent the request.
      */
-    public $sitedetails;
+    public $SiteDetails;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\TaxJurisdictionType | Sales tax details for zero or more jurisdictions (states, provinces, etc). For GetTaxTable,
      * if DetailLevel is not specified, information is only returned for the jurisdictions
@@ -63,19 +64,21 @@ class GeteBayDetailsResponseType extends
      * returned for all possible jurisdictions, whether specified by the user or not. ShippingIncludedInTax
      * and SalesTaxPercent are returned but are empty.
      */
-    public $taxjurisdiction;
+    public $TaxJurisdiction;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\URLDetailsType | Details about a specific eBay URL. GeteBayDetails only returns URLs that are applicable
      * to the site to which you sent the request.
      */
-    public $urldetails;
+    public $URLDetails;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CountryDetailsType $val
      * @throws Exception
      */
     public function setCountryDetails($val)
     {
-        $this->countrydetails = (int)$val;
+        $this->CountryDetails = (int)$val;
     }
 
     /**
@@ -84,7 +87,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setCurrencyDetails($val)
     {
-        $this->currencydetails = (int)$val;
+        $this->CurrencyDetails = (int)$val;
     }
 
     /**
@@ -93,7 +96,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setDispatchTimeMaxDetails($val)
     {
-        $this->dispatchtimemaxdetails = (int)$val;
+        $this->DispatchTimeMaxDetails = (int)$val;
     }
 
     /**
@@ -102,7 +105,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setPaymentOptionDetails($val)
     {
-        $this->paymentoptiondetails = (int)$val;
+        $this->PaymentOptionDetails = (int)$val;
     }
 
     /**
@@ -111,7 +114,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setRegionDetails($val)
     {
-        $this->regiondetails = (int)$val;
+        $this->RegionDetails = (int)$val;
     }
 
     /**
@@ -120,7 +123,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setShippingLocationDetails($val)
     {
-        $this->shippinglocationdetails = (int)$val;
+        $this->ShippingLocationDetails = (int)$val;
     }
 
     /**
@@ -129,7 +132,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setShippingServiceDetails($val)
     {
-        $this->shippingservicedetails = (int)$val;
+        $this->ShippingServiceDetails = (int)$val;
     }
 
     /**
@@ -138,7 +141,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setSiteDetails($val)
     {
-        $this->sitedetails = (int)$val;
+        $this->SiteDetails = (int)$val;
     }
 
     /**
@@ -147,7 +150,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setTaxJurisdiction($val)
     {
-        $this->taxjurisdiction = (int)$val;
+        $this->TaxJurisdiction = (int)$val;
     }
 
     /**
@@ -156,6 +159,6 @@ class GeteBayDetailsResponseType extends
      */
     public function setURLDetails($val)
     {
-        $this->urldetails = (int)$val;
+        $this->URLDetails = (int)$val;
     }
 }

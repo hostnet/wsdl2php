@@ -8,18 +8,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class LocalSearchType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var int | The maximum distance from the specified postal code to search for items.
      */
-    public $maxdistance;
+    public $MaxDistance;
     /**
      * @var string | The postal code to use as the basis for the proximity search.
      */
-    public $postalcode;
+    public $PostalCode;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param int $val
      * @throws Exception
@@ -29,7 +32,7 @@ class LocalSearchType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->maxdistance = (int)$val;
+        $this->MaxDistance = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class LocalSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->postalcode = (int)$val;
+        $this->PostalCode = (int)$val;
     }
 
     /**

@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class VerifyEmailResponse
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ReturnIndicator
      */
-    public $verifyemailresult;
+    public $VerifyEmailResult;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ReturnIndicator $val
      * @throws Exception
      */
     public function setVerifyEmailResult($val)
     {
-        $this->verifyemailresult = (int)$val;
+        $this->VerifyEmailResult = (int)$val;
     }
 }

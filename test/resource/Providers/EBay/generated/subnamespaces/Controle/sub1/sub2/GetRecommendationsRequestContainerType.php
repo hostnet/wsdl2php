@@ -9,50 +9,51 @@ namespace Controle\sub1\sub2;
  */
 class GetRecommendationsRequestContainerType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\ListingFlowCodeType | The listing flow for which the seller is seeking Listing Analyzer recommendations. Not
 	 * applicable to results from other recommendation engines (i.e., the Suggested Attributes
 	 * engine or the Product Pricing engine). The default flow is AddItem.
 	 */
-	public $listingflow;
+	public $ListingFlow;
 	/**
 	 * @var \Controle\sub1\sub2\ItemType | Information about the item that spawned the transaction. It is a purchase from this item's
 	 * listing that the transaction represents. To remove a property from an item, specify it
 	 * in ModifyType as a changed property, but do not give it a value in Item. Also applicable
 	 * to Half.com (for GetOrders).
 	 */
-	public $item;
+	public $Item;
 	/**
 	 * @var \Controle\sub1\sub2\ExternalProductIDType | Contains an ISBN, UPC, or EAN value from the catalog product associated with the Half.com
 	 * item. All Half.com items are listed with Pre-filled Item Information.
 	 */
-	public $externalproductid;
+	public $ExternalProductID;
 	/**
 	 * @var \Controle\sub1\sub2\ModifiedFieldType | Applicable when the ListingFlow is ReviseItem or RelistItem. Array of item properties that
 	 * are being changed. In release 439 and later, ModifiedFields is no longer required to revise field
 	 * values, but it is still supported for backward compatibility. See the Developer's Guide
 	 * for rules on adding, modifying, and removing values when revising or relisting items.
 	 */
-	public $modifiedfields;
+	public $ModifiedFields;
 	/**
 	 * @var \Controle\sub1\sub2\RecommendationEngineCodeType | A recommendation engine to run. If no engines are specified, all available recommendation
 	 * engines will run. Some engines require additional fields, such as Item.PrimaryCategory.CategoryID,
 	 * to be specified. If the ProductPricing engine is specified but Item.ProductListingDetails
 	 * is not specified, no Product Pricing engine results are returned.
 	 */
-	public $recommendationengine;
+	public $RecommendationEngine;
 	/**
 	 * @var string | One or more keywords to search for when using the Suggested Attributes engine. Required
 	 * when SuggestedAttributes is specified as the recommendation engine (including when no recommendation
 	 * engines are specified). Only the listing title is searched. The words "and" and "or" are
 	 * treated like any other word. Blank searches are not allowed (and result in a warning).
 	 */
-	public $query;
+	public $Query;
 	/**
 	 * @var string | Unique key to distinguish between recommendations for each item.              Matches a
 	 * correlation ID you defined in the request, if any.
 	 */
-	public $correlationid;
+	public $CorrelationID;
 	/**
 	 * @var string | Specifies the name of the field to remove from a listing. Applicable when the ListingFlow
 	 * is ReviseItem or RelistItem. See the Developer's Guide for rules on removing values when
@@ -63,18 +64,20 @@ class GetRecommendationsRequestContainerType
 	 * are also allowed: item.charity, item.secondaryCategory, and item.subTitle. DeletedField
 	 * is case sensitive. The request can contain zero, one, or many instances of DeletedField.
 	 */
-	public $deletedfield;
+	public $DeletedField;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ListingFlowCodeType $val
 	 * @throws Exception
 	 */
 	public function setListingFlow($val)
 	{
-        $this->listingflow = (int)$val;
+        $this->ListingFlow = (int)$val;
 	}
 
 	/**
@@ -83,7 +86,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setItem($val)
 	{
-        $this->item = (int)$val;
+        $this->Item = (int)$val;
 	}
 
 	/**
@@ -92,7 +95,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->externalproductid = (int)$val;
+        $this->ExternalProductID = (int)$val;
 	}
 
 	/**
@@ -101,7 +104,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->modifiedfields = (int)$val;
+        $this->ModifiedFields = (int)$val;
 	}
 
 	/**
@@ -110,7 +113,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setRecommendationEngine($val)
 	{
-        $this->recommendationengine = (int)$val;
+        $this->RecommendationEngine = (int)$val;
 	}
 
 	/**
@@ -122,7 +125,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->query = (int)$val;
+        $this->Query = (int)$val;
 	}
 
 	/**
@@ -134,7 +137,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->correlationid = (int)$val;
+        $this->CorrelationID = (int)$val;
 	}
 
 	/**
@@ -146,7 +149,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->deletedfield = (int)$val;
+        $this->DeletedField = (int)$val;
 	}
 
 	/**

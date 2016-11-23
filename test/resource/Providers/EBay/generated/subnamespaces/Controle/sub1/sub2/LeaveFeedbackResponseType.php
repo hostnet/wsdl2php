@@ -10,11 +10,14 @@ namespace Controle\sub1\sub2;
 class LeaveFeedbackResponseType extends
  \Controle\sub1\sub2\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Unique identifier for the feedback entry. Returned for a detail level of ReturnAll (if
 	 * the parent is returned).
 	 */
-	public $feedbackid;
+	public $FeedbackID;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -24,6 +27,6 @@ class LeaveFeedbackResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->feedbackid = (int)$val;
+        $this->FeedbackID = (int)$val;
 	}
 }

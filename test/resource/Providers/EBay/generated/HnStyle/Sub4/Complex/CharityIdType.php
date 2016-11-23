@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CharityIdType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -12,6 +13,8 @@ class CharityIdType
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharityAffiliationTypeCodeType
      */
     public $type;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

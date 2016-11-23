@@ -4,16 +4,19 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex\Schedule;
 
 class GetCurrentResponse
 {
+    // @codingStandardsIgnoreStart
     /**
-     * @var \Controle\Hostnet\Namesp\Sub4\Complex\Schedule
+     * @var \Controle\Hostnet\Namesp\Sub4\Complex\BedrijfFulltimeSchedule
      */
-    public $schedule_getcurrentresult;
+    public $Schedule_GetCurrentResult;
+    // @codingStandardsIgnoreEnd
+
     /**
-     * @param Schedule $val
+     * @param BedrijfFulltimeSchedule $val
      * @throws Exception
      */
     public function setScheduleGetCurrentResult($val)
     {
-        $this->schedule_getcurrentresult = (int)$val;
+        $this->Schedule_GetCurrentResult = (int)$val;
     }
 }

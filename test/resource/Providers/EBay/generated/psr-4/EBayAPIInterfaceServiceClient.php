@@ -11,1185 +11,1185 @@ class eBayAPIInterfaceServiceClient extends \SoapClient
     const WSDL_FILE = "eBayTest.wsdl";
 
     private $classmap = array(
-        'AddDisputeResponseType\,' =>
+        'AddDisputeResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddDisputeResponseType',
-        'AddDisputeResponseResponseType\,' =>
+        'AddDisputeResponseResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddDisputeResponseResponseType',
-        'AddItemResponseType\,' =>
+        'AddItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddItemResponseType',
-        'AddLiveAuctionItemResponseType\,' =>
+        'AddLiveAuctionItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddLiveAuctionItemResponseType',
-        'AddOrderResponseType\,' =>
+        'AddOrderResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddOrderResponseType',
-        'AddSecondChanceItemResponseType\,' =>
+        'AddSecondChanceItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddSecondChanceItemResponseType',
-        'AddToItemDescriptionResponseType\,' =>
+        'AddToItemDescriptionResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddToItemDescriptionResponseType',
-        'AddToWatchListResponseType\,' =>
+        'AddToWatchListResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddToWatchListResponseType',
-        'AddTransactionConfirmationItemResponseType\,' =>
+        'AddTransactionConfirmationItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddTransactionConfirmationItemResponseType',
-        'ApproveLiveAuctionBiddersResponseType\,' =>
+        'ApproveLiveAuctionBiddersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ApproveLiveAuctionBiddersResponseType',
-        'CompleteSaleResponseType\,' =>
+        'CompleteSaleResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CompleteSaleResponseType',
-        'DeleteMyMessagesResponseType\,' =>
+        'DeleteMyMessagesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeleteMyMessagesResponseType',
-        'EndItemResponseType\,' =>
+        'EndItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\EndItemResponseType',
-        'FetchTokenResponseType\,' =>
+        'FetchTokenResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FetchTokenResponseType',
-        'GetAccountResponseType\,' =>
+        'GetAccountResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetAccountResponseType',
-        'GetAdFormatLeadsResponseType\,' =>
+        'GetAdFormatLeadsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetAdFormatLeadsResponseType',
-        'GetAllBiddersResponseType\,' =>
+        'GetAllBiddersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetAllBiddersResponseType',
-        'GetApiAccessRulesResponseType\,' =>
+        'GetApiAccessRulesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetApiAccessRulesResponseType',
-        'GetBestOffersResponseType\,' =>
+        'GetBestOffersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetBestOffersResponseType',
-        'GetBidderListResponseType\,' =>
+        'GetBidderListResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetBidderListResponseType',
-        'GetCategoriesResponseType\,' =>
+        'GetCategoriesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCategoriesResponseType',
-        'GetCategory2FinanceOfferResponseType\,' =>
+        'GetCategory2FinanceOfferResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCategory2FinanceOfferResponseType',
-        'GetCategoryFeaturesResponseType\,' =>
+        'GetCategoryFeaturesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCategoryFeaturesResponseType',
-        'GetCategoryListingsResponseType\,' =>
+        'GetCategoryListingsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCategoryListingsResponseType',
-        'GetCategoryMappingsResponseType\,' =>
+        'GetCategoryMappingsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCategoryMappingsResponseType',
-        'GetChallengeTokenResponseType\,' =>
+        'GetChallengeTokenResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetChallengeTokenResponseType',
-        'GetCharitiesResponseType\,' =>
+        'GetCharitiesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCharitiesResponseType',
-        'GetContextualKeywordsResponseType\,' =>
+        'GetContextualKeywordsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetContextualKeywordsResponseType',
-        'GetCrossPromotionsResponseType\,' =>
+        'GetCrossPromotionsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetCrossPromotionsResponseType',
-        'GetDescriptionTemplatesResponseType\,' =>
+        'GetDescriptionTemplatesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetDescriptionTemplatesResponseType',
-        'GetDisputeResponseType\,' =>
+        'GetDisputeResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetDisputeResponseType',
-        'GetFeedbackResponseType\,' =>
+        'GetFeedbackResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetFeedbackResponseType',
-        'GetFinanceOffersResponseType\,' =>
+        'GetFinanceOffersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetFinanceOffersResponseType',
-        'GetHighBiddersResponseType\,' =>
+        'GetHighBiddersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetHighBiddersResponseType',
-        'GetItemResponseType\,' =>
+        'GetItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetItemResponseType',
-        'GetItemRecommendationsResponseType\,' =>
+        'GetItemRecommendationsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetItemRecommendationsResponseType',
-        'GetItemShippingResponseType\,' =>
+        'GetItemShippingResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetItemShippingResponseType',
-        'GetItemTransactionsResponseType\,' =>
+        'GetItemTransactionsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetItemTransactionsResponseType',
-        'GetItemsAwaitingFeedbackResponseType\,' =>
+        'GetItemsAwaitingFeedbackResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetItemsAwaitingFeedbackResponseType',
-        'GetLiveAuctionBiddersResponseType\,' =>
+        'GetLiveAuctionBiddersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetLiveAuctionBiddersResponseType',
-        'GetLiveAuctionCatalogDetailsResponseType\,' =>
+        'GetLiveAuctionCatalogDetailsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetLiveAuctionCatalogDetailsResponseType',
-        'GetMemberMessagesResponseType\,' =>
+        'GetMemberMessagesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMemberMessagesResponseType',
-        'GetMyMessagesResponseType\,' =>
+        'GetMyMessagesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMyMessagesResponseType',
-        'GetMyeBayResponseType\,' =>
+        'GetMyeBayResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMyeBayResponseType',
-        'GetMyeBayBuyingResponseType\,' =>
+        'GetMyeBayBuyingResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMyeBayBuyingResponseType',
-        'GetMyeBayRemindersResponseType\,' =>
+        'GetMyeBayRemindersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMyeBayRemindersResponseType',
-        'GetMyeBaySellingResponseType\,' =>
+        'GetMyeBaySellingResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetMyeBaySellingResponseType',
-        'GetNotificationPreferencesResponseType\,' =>
+        'GetNotificationPreferencesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetNotificationPreferencesResponseType',
-        'GetNotificationsUsageResponseType\,' =>
+        'GetNotificationsUsageResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetNotificationsUsageResponseType',
-        'GetOrderTransactionsResponseType\,' =>
+        'GetOrderTransactionsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetOrderTransactionsResponseType',
-        'GetOrdersResponseType\,' =>
+        'GetOrdersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetOrdersResponseType',
-        'GetPictureManagerDetailsResponseType\,' =>
+        'GetPictureManagerDetailsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetPictureManagerDetailsResponseType',
-        'GetPictureManagerOptionsResponseType\,' =>
+        'GetPictureManagerOptionsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetPictureManagerOptionsResponseType',
-        'GetPopularKeywordsResponseType\,' =>
+        'GetPopularKeywordsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetPopularKeywordsResponseType',
-        'GetProductFamilyMembersResponseType\,' =>
+        'GetProductFamilyMembersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetProductFamilyMembersResponseType',
-        'GetProductFinderResponseType\,' =>
+        'GetProductFinderResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetProductFinderResponseType',
-        'GetProductSearchPageResponseType\,' =>
+        'GetProductSearchPageResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetProductSearchPageResponseType',
-        'GetProductSearchResultsResponseType\,' =>
+        'GetProductSearchResultsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetProductSearchResultsResponseType',
-        'GetProductSellingPagesResponseType\,' =>
+        'GetProductSellingPagesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetProductSellingPagesResponseType',
-        'GetPromotionRulesResponseType\,' =>
+        'GetPromotionRulesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetPromotionRulesResponseType',
-        'GetRecommendationsResponseType\,' =>
+        'GetRecommendationsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRecommendationsResponseType',
-        'GetRuNameResponseType\,' =>
+        'GetRuNameResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRuNameResponseType',
-        'GetSearchResultsResponseType\,' =>
+        'GetSearchResultsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSearchResultsResponseType',
-        'GetSearchResultsExpressResponseType\,' =>
+        'GetSearchResultsExpressResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSearchResultsExpressResponseType',
-        'GetSellerEventsResponseType\,' =>
+        'GetSellerEventsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSellerEventsResponseType',
-        'GetSellerListResponseType\,' =>
+        'GetSellerListResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSellerListResponseType',
-        'GetSellerPaymentsResponseType\,' =>
+        'GetSellerPaymentsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSellerPaymentsResponseType',
-        'GetSellerTransactionsResponseType\,' =>
+        'GetSellerTransactionsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSellerTransactionsResponseType',
-        'GetStoreResponseType\,' =>
+        'GetStoreResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetStoreResponseType',
-        'GetStoreCategoryUpdateStatusResponseType\,' =>
+        'GetStoreCategoryUpdateStatusResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetStoreCategoryUpdateStatusResponseType',
-        'GetStoreCustomPageResponseType\,' =>
+        'GetStoreCustomPageResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetStoreCustomPageResponseType',
-        'GetStoreOptionsResponseType\,' =>
+        'GetStoreOptionsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetStoreOptionsResponseType',
-        'GetStorePreferencesResponseType\,' =>
+        'GetStorePreferencesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetStorePreferencesResponseType',
-        'GetSuggestedCategoriesResponseType\,' =>
+        'GetSuggestedCategoriesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetSuggestedCategoriesResponseType',
-        'GetTaxTableResponseType\,' =>
+        'GetTaxTableResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetTaxTableResponseType',
-        'GetUserResponseType\,' =>
+        'GetUserResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetUserResponseType',
-        'GetUserContactDetailsResponseType\,' =>
+        'GetUserContactDetailsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetUserContactDetailsResponseType',
-        'GetUserDisputesResponseType\,' =>
+        'GetUserDisputesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetUserDisputesResponseType',
-        'GetUserPreferencesResponseType\,' =>
+        'GetUserPreferencesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetUserPreferencesResponseType',
-        'GetWantItNowPostResponseType\,' =>
+        'GetWantItNowPostResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetWantItNowPostResponseType',
-        'GetWantItNowSearchResultsResponseType\,' =>
+        'GetWantItNowSearchResultsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetWantItNowSearchResultsResponseType',
-        'GeteBayDetailsResponseType\,' =>
+        'GeteBayDetailsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GeteBayDetailsResponseType',
-        'GeteBayOfficialTimeResponseType\,' =>
+        'GeteBayOfficialTimeResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GeteBayOfficialTimeResponseType',
-        'IssueRefundResponseType\,' =>
+        'IssueRefundResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\IssueRefundResponseType',
-        'LeaveFeedbackResponseType\,' =>
+        'LeaveFeedbackResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LeaveFeedbackResponseType',
-        'PlaceOfferResponseType\,' =>
+        'PlaceOfferResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PlaceOfferResponseType',
-        'RelistItemResponseType\,' =>
+        'RelistItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RelistItemResponseType',
-        'RemoveFromWatchListResponseType\,' =>
+        'RemoveFromWatchListResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RemoveFromWatchListResponseType',
-        'RespondToBestOfferResponseType\,' =>
+        'RespondToBestOfferResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RespondToBestOfferResponseType',
-        'RespondToFeedbackResponseType\,' =>
+        'RespondToFeedbackResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RespondToFeedbackResponseType',
-        'RespondToWantItNowPostResponseType\,' =>
+        'RespondToWantItNowPostResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RespondToWantItNowPostResponseType',
-        'ReviseCheckoutStatusResponseType\,' =>
+        'ReviseCheckoutStatusResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReviseCheckoutStatusResponseType',
-        'ReviseItemResponseType\,' =>
+        'ReviseItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReviseItemResponseType',
-        'ReviseLiveAuctionItemResponseType\,' =>
+        'ReviseLiveAuctionItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReviseLiveAuctionItemResponseType',
-        'ReviseMyMessagesResponseType\,' =>
+        'ReviseMyMessagesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReviseMyMessagesResponseType',
-        'ReviseMyMessagesFoldersResponseType\,' =>
+        'ReviseMyMessagesFoldersResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReviseMyMessagesFoldersResponseType',
-        'SellerReverseDisputeResponseType\,' =>
+        'SellerReverseDisputeResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerReverseDisputeResponseType',
-        'SendInvoiceResponseType\,' =>
+        'SendInvoiceResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SendInvoiceResponseType',
-        'SetNotificationPreferencesResponseType\,' =>
+        'SetNotificationPreferencesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetNotificationPreferencesResponseType',
-        'SetPictureManagerDetailsResponseType\,' =>
+        'SetPictureManagerDetailsResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetPictureManagerDetailsResponseType',
-        'SetPromotionRulesResponseType\,' =>
+        'SetPromotionRulesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetPromotionRulesResponseType',
-        'SetStoreResponseType\,' =>
+        'SetStoreResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetStoreResponseType',
-        'SetStoreCategoriesResponseType\,' =>
+        'SetStoreCategoriesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetStoreCategoriesResponseType',
-        'SetStoreCustomPageResponseType\,' =>
+        'SetStoreCustomPageResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetStoreCustomPageResponseType',
-        'SetStorePreferencesResponseType\,' =>
+        'SetStorePreferencesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetStorePreferencesResponseType',
-        'SetTaxTableResponseType\,' =>
+        'SetTaxTableResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetTaxTableResponseType',
-        'SetUserNotesResponseType\,' =>
+        'SetUserNotesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetUserNotesResponseType',
-        'SetUserPreferencesResponseType\,' =>
+        'SetUserPreferencesResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetUserPreferencesResponseType',
-        'ValidateChallengeInputResponseType\,' =>
+        'ValidateChallengeInputResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ValidateChallengeInputResponseType',
-        'ValidateTestUserRegistrationResponseType\,' =>
+        'ValidateTestUserRegistrationResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ValidateTestUserRegistrationResponseType',
-        'VerifyAddItemResponseType\,' =>
+        'VerifyAddItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\VerifyAddItemResponseType',
-        'VerifyAddSecondChanceItemResponseType\,' =>
+        'VerifyAddSecondChanceItemResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\VerifyAddSecondChanceItemResponseType',
-        'AbstractRequestType\,' =>
+        'AbstractRequestType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType',
-        'AbstractResponseType\,' =>
+        'AbstractResponseType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType',
-        'AckCodeType\,' =>
+        'AckCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AckCodeType',
-        'BuyerPaymentMethodCodeType\,' =>
+        'BuyerPaymentMethodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyerPaymentMethodCodeType',
-        'DetailLevelCodeType\,' =>
+        'DetailLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DetailLevelCodeType',
-        'DisputeActivityCodeType\,' =>
+        'DisputeActivityCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeActivityCodeType',
-        'DisputeCreditEligibilityCodeType\,' =>
+        'DisputeCreditEligibilityCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeCreditEligibilityCodeType',
-        'DisputeExplanationCodeType\,' =>
+        'DisputeExplanationCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeExplanationCodeType',
-        'DisputeFilterCountType\,' =>
+        'DisputeFilterCountType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeFilterCountType',
-        'DisputeFilterTypeCodeType\,' =>
+        'DisputeFilterTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeFilterTypeCodeType',
-        'DisputeMessageSourceCodeType\,' =>
+        'DisputeMessageSourceCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeMessageSourceCodeType',
-        'DisputeMessageType\,' =>
+        'DisputeMessageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeMessageType',
-        'DisputeReasonCodeType\,' =>
+        'DisputeReasonCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeReasonCodeType',
-        'DisputeRecordTypeCodeType\,' =>
+        'DisputeRecordTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeRecordTypeCodeType',
-        'DisputeResolutionReasonCodeType\,' =>
+        'DisputeResolutionReasonCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeResolutionReasonCodeType',
-        'DisputeResolutionRecordTypeCodeType\,' =>
+        'DisputeResolutionRecordTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeResolutionRecordTypeCodeType',
-        'DisputeResolutionType\,' =>
+        'DisputeResolutionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeResolutionType',
-        'DisputeSortTypeCodeType\,' =>
+        'DisputeSortTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeSortTypeCodeType',
-        'DisputeStateCodeType\,' =>
+        'DisputeStateCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeStateCodeType',
-        'DisputeStatusCodeType\,' =>
+        'DisputeStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeStatusCodeType',
-        'DuplicateInvocationDetailsType\,' =>
+        'DuplicateInvocationDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DuplicateInvocationDetailsType',
-        'ErrorClassificationCodeType\,' =>
+        'ErrorClassificationCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ErrorClassificationCodeType',
-        'ErrorHandlingCodeType\,' =>
+        'ErrorHandlingCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ErrorHandlingCodeType',
-        'ErrorParameterType\,' =>
+        'ErrorParameterType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ErrorParameterType',
-        'ErrorType\,' =>
+        'ErrorType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ErrorType',
-        'InvocationStatusType\,' =>
+        'InvocationStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\InvocationStatusType',
-        'MeasureType\,' =>
+        'MeasureType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MeasureType',
-        'MeasurementSystemCodeType\,' =>
+        'MeasurementSystemCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MeasurementSystemCodeType',
-        'PaginationType\,' =>
+        'PaginationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaginationType',
-        'SeverityCodeType\,' =>
+        'SeverityCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SeverityCodeType',
-        'UserIdPasswordType\,' =>
+        'UserIdPasswordType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UserIdPasswordType',
-        'WarningLevelCodeType\,' =>
+        'WarningLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\WarningLevelCodeType',
-        'AccessRuleCurrentStatusCodeType\,' =>
+        'AccessRuleCurrentStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccessRuleCurrentStatusCodeType',
-        'AccessRuleStatusCodeType\,' =>
+        'AccessRuleStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccessRuleStatusCodeType',
-        'AccountDetailEntryCodeType\,' =>
+        'AccountDetailEntryCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountDetailEntryCodeType',
-        'AccountEntriesType\,' =>
+        'AccountEntriesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountEntriesType',
-        'AccountEntrySortTypeCodeType\,' =>
+        'AccountEntrySortTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountEntrySortTypeCodeType',
-        'AccountEntryType\,' =>
+        'AccountEntryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountEntryType',
-        'AccountHistorySelectionCodeType\,' =>
+        'AccountHistorySelectionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountHistorySelectionCodeType',
-        'AccountStateCodeType\,' =>
+        'AccountStateCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountStateCodeType',
-        'AccountSummaryType\,' =>
+        'AccountSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AccountSummaryType',
-        'AdFormatEnabledCodeType\,' =>
+        'AdFormatEnabledCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AdFormatEnabledCodeType',
-        'AdFormatEnabledDefinitionType\,' =>
+        'AdFormatEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AdFormatEnabledDefinitionType',
-        'AdFormatLeadType\,' =>
+        'AdFormatLeadType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AdFormatLeadType',
-        'AdditionalAccountType\,' =>
+        'AdditionalAccountType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AdditionalAccountType',
-        'AddressOwnerCodeType\,' =>
+        'AddressOwnerCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddressOwnerCodeType',
-        'AddressRecordTypeCodeType\,' =>
+        'AddressRecordTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddressRecordTypeCodeType',
-        'AddressStatusCodeType\,' =>
+        'AddressStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddressStatusCodeType',
-        'AddressType\,' =>
+        'AddressType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AddressType',
-        'AffiliateTrackingDetailsType\,' =>
+        'AffiliateTrackingDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AffiliateTrackingDetailsType',
-        'AmountType\,' =>
+        'AmountType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AmountType',
-        'ApiAccessRuleType\,' =>
+        'ApiAccessRuleType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ApiAccessRuleType',
-        'ApplicationDeliveryPreferencesType\,' =>
+        'ApplicationDeliveryPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ApplicationDeliveryPreferencesType',
-        'ApplicationDeviceTypeCodeType\,' =>
+        'ApplicationDeviceTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ApplicationDeviceTypeCodeType',
-        'AttributeArrayType\,' =>
+        'AttributeArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AttributeArrayType',
-        'AttributeRecommendationsType\,' =>
+        'AttributeRecommendationsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AttributeRecommendationsType',
-        'AttributeSetArrayType\,' =>
+        'AttributeSetArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AttributeSetArrayType',
-        'AttributeSetType\,' =>
+        'AttributeSetType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AttributeSetType',
-        'AttributeType\,' =>
+        'AttributeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AttributeType',
-        'AuthenticationEntryArrayType\,' =>
+        'AuthenticationEntryArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AuthenticationEntryArrayType',
-        'AuthenticationEntryType\,' =>
+        'AuthenticationEntryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\AuthenticationEntryType',
-        'BasicUpgradePackEnabledDefinitionType\,' =>
+        'BasicUpgradePackEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BasicUpgradePackEnabledDefinitionType',
-        'BestOfferActionCodeType\,' =>
+        'BestOfferActionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferActionCodeType',
-        'BestOfferArrayType\,' =>
+        'BestOfferArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferArrayType',
-        'BestOfferAutoDeclineEnabledDefinitionType\,' =>
+        'BestOfferAutoDeclineEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferAutoDeclineEnabledDefinitionType',
-        'BestOfferCounterEnabledDefinitionType\,' =>
+        'BestOfferCounterEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferCounterEnabledDefinitionType',
-        'BestOfferDetailsType\,' =>
+        'BestOfferDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferDetailsType',
-        'BestOfferEnabledDefinitionType\,' =>
+        'BestOfferEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferEnabledDefinitionType',
-        'BestOfferStatusCodeType\,' =>
+        'BestOfferStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferStatusCodeType',
-        'BestOfferType\,' =>
+        'BestOfferType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferType',
-        'BestOfferTypeCodeType\,' =>
+        'BestOfferTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BestOfferTypeCodeType',
-        'BidActionCodeType\,' =>
+        'BidActionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidActionCodeType',
-        'BidApprovalArrayType\,' =>
+        'BidApprovalArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidApprovalArrayType',
-        'BidApprovalType\,' =>
+        'BidApprovalType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidApprovalType',
-        'BidderDetailArrayType\,' =>
+        'BidderDetailArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidderDetailArrayType',
-        'BidderDetailType\,' =>
+        'BidderDetailType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidderDetailType',
-        'BidderNoticePreferencesType\,' =>
+        'BidderNoticePreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidderNoticePreferencesType',
-        'BidderStatusCodeType\,' =>
+        'BidderStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BidderStatusCodeType',
-        'BiddingDetailsType\,' =>
+        'BiddingDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BiddingDetailsType',
-        'BiddingSummaryType\,' =>
+        'BiddingSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BiddingSummaryType',
-        'BuyerProtectionCodeType\,' =>
+        'BuyerProtectionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyerProtectionCodeType',
-        'BuyerRequirementsType\,' =>
+        'BuyerRequirementsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyerRequirementsType',
-        'BuyerType\,' =>
+        'BuyerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyerType',
-        'BuyingGuideDetailsType\,' =>
+        'BuyingGuideDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyingGuideDetailsType',
-        'BuyingGuideType\,' =>
+        'BuyingGuideType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyingGuideType',
-        'BuyingSummaryType\,' =>
+        'BuyingSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\BuyingSummaryType',
-        'CalculatedShippingChargeOptionCodeType\,' =>
+        'CalculatedShippingChargeOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingChargeOptionCodeType',
-        'CalculatedShippingPreferencesType\,' =>
+        'CalculatedShippingPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingPreferencesType',
-        'CalculatedShippingRateOptionCodeType\,' =>
+        'CalculatedShippingRateOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingRateOptionCodeType',
-        'CalculatedShippingRateType\,' =>
+        'CalculatedShippingRateType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CalculatedShippingRateType',
-        'CancelOfferType\,' =>
+        'CancelOfferType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CancelOfferType',
-        'CategoryArrayType\,' =>
+        'CategoryArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryArrayType',
-        'CategoryFeatureType\,' =>
+        'CategoryFeatureType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryFeatureType',
-        'CategoryFinanceOfferArrayType\,' =>
+        'CategoryFinanceOfferArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryFinanceOfferArrayType',
-        'CategoryFinanceOfferType\,' =>
+        'CategoryFinanceOfferType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryFinanceOfferType',
-        'CategoryListingsOrderCodeType\,' =>
+        'CategoryListingsOrderCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryListingsOrderCodeType',
-        'CategoryListingsSearchCodeType\,' =>
+        'CategoryListingsSearchCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryListingsSearchCodeType',
-        'CategoryMappingType\,' =>
+        'CategoryMappingType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryMappingType',
-        'CategoryType\,' =>
+        'CategoryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CategoryType',
-        'CharacteristicType\,' =>
+        'CharacteristicType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicType',
-        'CharacteristicsSearchCodeType\,' =>
+        'CharacteristicsSearchCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicsSearchCodeType',
-        'CharacteristicsSetType\,' =>
+        'CharacteristicsSetType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharacteristicsSetType',
-        'CharityAffiliationType\,' =>
+        'CharityAffiliationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharityAffiliationType',
-        'CharityAffiliationTypeCodeType\,' =>
+        'CharityAffiliationTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharityAffiliationTypeCodeType',
-        'CharityAffiliationsType\,' =>
+        'CharityAffiliationsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharityAffiliationsType',
-        'CharityInfoType\,' =>
+        'CharityInfoType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharityInfoType',
-        'CharitySellerStatusCodeType\,' =>
+        'CharitySellerStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharitySellerStatusCodeType',
-        'CharitySellerType\,' =>
+        'CharitySellerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharitySellerType',
-        'CharityStatusCodeType\,' =>
+        'CharityStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharityStatusCodeType',
-        'CharityType\,' =>
+        'CharityType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CharityType',
-        'CheckoutMethodCodeType\,' =>
+        'CheckoutMethodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CheckoutMethodCodeType',
-        'CheckoutStatusCodeType\,' =>
+        'CheckoutStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CheckoutStatusCodeType',
-        'CheckoutStatusType\,' =>
+        'CheckoutStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CheckoutStatusType',
-        'CombinedPaymentOptionCodeType\,' =>
+        'CombinedPaymentOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CombinedPaymentOptionCodeType',
-        'CombinedPaymentPeriodCodeType\,' =>
+        'CombinedPaymentPeriodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CombinedPaymentPeriodCodeType',
-        'CombinedPaymentPreferencesType\,' =>
+        'CombinedPaymentPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CombinedPaymentPreferencesType',
-        'CommentTypeCodeType\,' =>
+        'CommentTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CommentTypeCodeType',
-        'CompleteStatusCodeType\,' =>
+        'CompleteStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CompleteStatusCodeType',
-        'ConditionSelectionCodeType\,' =>
+        'ConditionSelectionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ConditionSelectionCodeType',
-        'ContextSearchAssetType\,' =>
+        'ContextSearchAssetType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ContextSearchAssetType',
-        'CountryCodeType\,' =>
+        'CountryCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CountryCodeType',
-        'CountryDetailsType\,' =>
+        'CountryDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CountryDetailsType',
-        'CrossPromotionPreferencesType\,' =>
+        'CrossPromotionPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CrossPromotionPreferencesType',
-        'CrossPromotionsType\,' =>
+        'CrossPromotionsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CrossPromotionsType',
-        'CurrencyCodeType\,' =>
+        'CurrencyCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CurrencyCodeType',
-        'CurrencyDetailsType\,' =>
+        'CurrencyDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\CurrencyDetailsType',
-        'DataElementSetType\,' =>
+        'DataElementSetType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DataElementSetType',
-        'DateSpecifierCodeType\,' =>
+        'DateSpecifierCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DateSpecifierCodeType',
-        'DepositTypeCodeType\,' =>
+        'DepositTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DepositTypeCodeType',
-        'DescriptionReviseModeCodeType\,' =>
+        'DescriptionReviseModeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DescriptionReviseModeCodeType',
-        'DescriptionTemplateCodeType\,' =>
+        'DescriptionTemplateCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DescriptionTemplateCodeType',
-        'DescriptionTemplateType\,' =>
+        'DescriptionTemplateType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DescriptionTemplateType',
-        'DetailNameCodeType\,' =>
+        'DetailNameCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DetailNameCodeType',
-        'DeviceTypeCodeType\,' =>
+        'DeviceTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DeviceTypeCodeType',
-        'DigitalDeliveryDetailsType\,' =>
+        'DigitalDeliveryDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DigitalDeliveryDetailsType',
-        'DigitalDeliveryEnabledCodeType\,' =>
+        'DigitalDeliveryEnabledCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DigitalDeliveryEnabledCodeType',
-        'DigitalDeliveryEnabledDefinitionType\,' =>
+        'DigitalDeliveryEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DigitalDeliveryEnabledDefinitionType',
-        'DigitalDeliveryMethodCodeType\,' =>
+        'DigitalDeliveryMethodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DigitalDeliveryMethodCodeType',
-        'DispatchTimeMaxDetailsType\,' =>
+        'DispatchTimeMaxDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DispatchTimeMaxDetailsType',
-        'DisplayPayNowButtonCodeType\,' =>
+        'DisplayPayNowButtonCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisplayPayNowButtonCodeType',
-        'DisputeArrayType\,' =>
+        'DisputeArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeArrayType',
-        'DisputeType\,' =>
+        'DisputeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DisputeType',
-        'DistanceType\,' =>
+        'DistanceType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DistanceType',
-        'DomainHistogramType\,' =>
+        'DomainHistogramType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\DomainHistogramType',
-        'EnableCodeType\,' =>
+        'EnableCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\EnableCodeType',
-        'EndOfAuctionEmailPreferencesType\,' =>
+        'EndOfAuctionEmailPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\EndOfAuctionEmailPreferencesType',
-        'EndOfAuctionLogoTypeCodeType\,' =>
+        'EndOfAuctionLogoTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\EndOfAuctionLogoTypeCodeType',
-        'EndReasonCodeType\,' =>
+        'EndReasonCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\EndReasonCodeType',
-        'ExpansionArrayType\,' =>
+        'ExpansionArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpansionArrayType',
-        'ExpressConditionRequiredDefinitionType\,' =>
+        'ExpressConditionRequiredDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressConditionRequiredDefinitionType',
-        'ExpressDetailLevelCodeType\,' =>
+        'ExpressDetailLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressDetailLevelCodeType',
-        'ExpressDetailsType\,' =>
+        'ExpressDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressDetailsType',
-        'ExpressEnabledDefinitionType\,' =>
+        'ExpressEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressEnabledDefinitionType',
-        'ExpressHistogramAisleType\,' =>
+        'ExpressHistogramAisleType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressHistogramAisleType',
-        'ExpressHistogramDepartmentType\,' =>
+        'ExpressHistogramDepartmentType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressHistogramDepartmentType',
-        'ExpressHistogramDomainDetailsType\,' =>
+        'ExpressHistogramDomainDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressHistogramDomainDetailsType',
-        'ExpressHistogramProductType\,' =>
+        'ExpressHistogramProductType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressHistogramProductType',
-        'ExpressHistogramSortCodeType\,' =>
+        'ExpressHistogramSortCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressHistogramSortCodeType',
-        'ExpressItemRequirementsType\,' =>
+        'ExpressItemRequirementsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressItemRequirementsType',
-        'ExpressItemSortCodeType\,' =>
+        'ExpressItemSortCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressItemSortCodeType',
-        'ExpressPicturesRequiredDefinitionType\,' =>
+        'ExpressPicturesRequiredDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressPicturesRequiredDefinitionType',
-        'ExpressPreferencesType\,' =>
+        'ExpressPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressPreferencesType',
-        'ExpressProductSortCodeType\,' =>
+        'ExpressProductSortCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressProductSortCodeType',
-        'ExpressProductType\,' =>
+        'ExpressProductType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressProductType',
-        'ExpressSellerRequirementsType\,' =>
+        'ExpressSellerRequirementsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressSellerRequirementsType',
-        'ExpressSellingPreferenceCodeType\,' =>
+        'ExpressSellingPreferenceCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExpressSellingPreferenceCodeType',
-        'ExternalProductCodeType\,' =>
+        'ExternalProductCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExternalProductCodeType',
-        'ExternalTransactionType\,' =>
+        'ExternalTransactionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ExternalTransactionType',
-        'FeatureDefinitionsType\,' =>
+        'FeatureDefinitionsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeatureDefinitionsType',
-        'FeeType\,' =>
+        'FeeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeeType',
-        'FeedbackDetailArrayType\,' =>
+        'FeedbackDetailArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackDetailArrayType',
-        'FeedbackDetailType\,' =>
+        'FeedbackDetailType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackDetailType',
-        'FeedbackInfoType\,' =>
+        'FeedbackInfoType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackInfoType',
-        'FeedbackPeriodArrayType\,' =>
+        'FeedbackPeriodArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackPeriodArrayType',
-        'FeedbackPeriodType\,' =>
+        'FeedbackPeriodType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackPeriodType',
-        'FeedbackRatingStarCodeType\,' =>
+        'FeedbackRatingStarCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackRatingStarCodeType',
-        'FeedbackRequirementsType\,' =>
+        'FeedbackRequirementsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackRequirementsType',
-        'FeedbackResponseCodeType\,' =>
+        'FeedbackResponseCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackResponseCodeType',
-        'FeedbackSummaryType\,' =>
+        'FeedbackSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeedbackSummaryType',
-        'FeesType\,' =>
+        'FeesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FeesType',
-        'FinanceOfferArrayType\,' =>
+        'FinanceOfferArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FinanceOfferArrayType',
-        'FinanceOfferType\,' =>
+        'FinanceOfferType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FinanceOfferType',
-        'FlatRateInsuranceRangeCodeType\,' =>
+        'FlatRateInsuranceRangeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FlatRateInsuranceRangeCodeType',
-        'FlatRateInsuranceRangeCostType\,' =>
+        'FlatRateInsuranceRangeCostType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FlatRateInsuranceRangeCostType',
-        'FlatShippingPreferencesType\,' =>
+        'FlatShippingPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FlatShippingPreferencesType',
-        'FlatShippingRateOptionCodeType\,' =>
+        'FlatShippingRateOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\FlatShippingRateOptionCodeType',
-        'GallerySortFilterCodeType\,' =>
+        'GallerySortFilterCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GallerySortFilterCodeType',
-        'GalleryTypeCodeType\,' =>
+        'GalleryTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GalleryTypeCodeType',
-        'GetAllBiddersModeCodeType\,' =>
+        'GetAllBiddersModeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetAllBiddersModeCodeType',
-        'GetRecommendationsRequestContainerType\,' =>
+        'GetRecommendationsRequestContainerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRecommendationsRequestContainerType',
-        'GetRecommendationsResponseContainerType\,' =>
+        'GetRecommendationsResponseContainerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GetRecommendationsResponseContainerType',
-        'GiftServicesCodeType\,' =>
+        'GiftServicesCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GiftServicesCodeType',
-        'GranularityLevelCodeType\,' =>
+        'GranularityLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\GranularityLevelCodeType',
-        'HitCounterCodeType\,' =>
+        'HitCounterCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\HitCounterCodeType',
-        'HomePageFeaturedEnabledDefinitionType\,' =>
+        'HomePageFeaturedEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\HomePageFeaturedEnabledDefinitionType',
-        'InsuranceDetailsType\,' =>
+        'InsuranceDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\InsuranceDetailsType',
-        'InsuranceOptionCodeType\,' =>
+        'InsuranceOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\InsuranceOptionCodeType',
-        'InsuranceSelectedCodeType\,' =>
+        'InsuranceSelectedCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\InsuranceSelectedCodeType',
-        'InternationalShippingServiceOptionsType\,' =>
+        'InternationalShippingServiceOptionsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\InternationalShippingServiceOptionsType',
-        'ItemArrayType\,' =>
+        'ItemArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemArrayType',
-        'ItemBidDetailsType\,' =>
+        'ItemBidDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemBidDetailsType',
-        'ItemFormatSortFilterCodeType\,' =>
+        'ItemFormatSortFilterCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemFormatSortFilterCodeType',
-        'ItemListCustomizationType\,' =>
+        'ItemListCustomizationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemListCustomizationType',
-        'ItemLocationCodeType\,' =>
+        'ItemLocationCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemLocationCodeType',
-        'ItemSortFilterCodeType\,' =>
+        'ItemSortFilterCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemSortFilterCodeType',
-        'ItemSortTypeCodeType\,' =>
+        'ItemSortTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemSortTypeCodeType',
-        'ItemType\,' =>
+        'ItemType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemType',
-        'ItemTypeFilterCodeType\,' =>
+        'ItemTypeFilterCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ItemTypeFilterCodeType',
-        'LabelType\,' =>
+        'LabelType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LabelType',
-        'ListingAnalyzerRecommendationsType\,' =>
+        'ListingAnalyzerRecommendationsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingAnalyzerRecommendationsType',
-        'ListingCheckoutRedirectPreferenceType\,' =>
+        'ListingCheckoutRedirectPreferenceType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingCheckoutRedirectPreferenceType',
-        'ListingDesignerType\,' =>
+        'ListingDesignerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingDesignerType',
-        'ListingDetailsType\,' =>
+        'ListingDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingDetailsType',
-        'ListingDurationDefinitionType\,' =>
+        'ListingDurationDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingDurationDefinitionType',
-        'ListingDurationDefinitionsType\,' =>
+        'ListingDurationDefinitionsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingDurationDefinitionsType',
-        'ListingDurationReferenceType\,' =>
+        'ListingDurationReferenceType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingDurationReferenceType',
-        'ListingEnhancementsCodeType\,' =>
+        'ListingEnhancementsCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingEnhancementsCodeType',
-        'ListingFlowCodeType\,' =>
+        'ListingFlowCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingFlowCodeType',
-        'ListingStatusCodeType\,' =>
+        'ListingStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingStatusCodeType',
-        'ListingSubtypeEnum\,' =>
+        'ListingSubtypeEnum' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingSubtypeEnum',
-        'ListingTipArrayType\,' =>
+        'ListingTipArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingTipArrayType',
-        'ListingTipFieldType\,' =>
+        'ListingTipFieldType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingTipFieldType',
-        'ListingTipMessageType\,' =>
+        'ListingTipMessageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingTipMessageType',
-        'ListingTipType\,' =>
+        'ListingTipType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingTipType',
-        'ListingTypeCodeType\,' =>
+        'ListingTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ListingTypeCodeType',
-        'LiveAuctionApprovalStatusArrayType\,' =>
+        'LiveAuctionApprovalStatusArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionApprovalStatusArrayType',
-        'LiveAuctionApprovalStatusType\,' =>
+        'LiveAuctionApprovalStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionApprovalStatusType',
-        'LiveAuctionBidType\,' =>
+        'LiveAuctionBidType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionBidType',
-        'LiveAuctionCatalogType\,' =>
+        'LiveAuctionCatalogType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionCatalogType',
-        'LiveAuctionDetailsType\,' =>
+        'LiveAuctionDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LiveAuctionDetailsType',
-        'LocalListingDistancesNonSubscriptionDefinitionType\,' =>
+        'LocalListingDistancesNonSubscriptionDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalListingDistancesNonSubscriptionDefinitionType',
-        'LocalListingDistancesRegularDefinitionType\,' =>
+        'LocalListingDistancesRegularDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalListingDistancesRegularDefinitionType',
-        'LocalListingDistancesSpecialtyDefinitionType\,' =>
+        'LocalListingDistancesSpecialtyDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalListingDistancesSpecialtyDefinitionType',
-        'LocalMarketNonSubscriptionDefinitionType\,' =>
+        'LocalMarketNonSubscriptionDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketNonSubscriptionDefinitionType',
-        'LocalMarketPremiumSubscriptionDefinitionType\,' =>
+        'LocalMarketPremiumSubscriptionDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketPremiumSubscriptionDefinitionType',
-        'LocalMarketRegularSubscriptionDefinitionType\,' =>
+        'LocalMarketRegularSubscriptionDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketRegularSubscriptionDefinitionType',
-        'LocalMarketSpecialitySubscriptionDefinitionType\,' =>
+        'LocalMarketSpecialitySubscriptionDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LocalMarketSpecialitySubscriptionDefinitionType',
-        'LookupAttributeArrayType\,' =>
+        'LookupAttributeArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LookupAttributeArrayType',
-        'LookupAttributeType\,' =>
+        'LookupAttributeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\LookupAttributeType',
-        'MarkUpMarkDownEventType\,' =>
+        'MarkUpMarkDownEventType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarkUpMarkDownEventType',
-        'MarkUpMarkDownEventTypeCodeType\,' =>
+        'MarkUpMarkDownEventTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarkUpMarkDownEventTypeCodeType',
-        'MarkUpMarkDownHistoryType\,' =>
+        'MarkUpMarkDownHistoryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MarkUpMarkDownHistoryType',
-        'MaximumItemRequirementsType\,' =>
+        'MaximumItemRequirementsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MaximumItemRequirementsType',
-        'MemberMessageExchangeArrayType\,' =>
+        'MemberMessageExchangeArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MemberMessageExchangeArrayType',
-        'MemberMessageExchangeType\,' =>
+        'MemberMessageExchangeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MemberMessageExchangeType',
-        'MemberMessageType\,' =>
+        'MemberMessageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MemberMessageType',
-        'MerchDisplayCodeType\,' =>
+        'MerchDisplayCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MerchDisplayCodeType',
-        'MerchandizingPrefCodeType\,' =>
+        'MerchandizingPrefCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MerchandizingPrefCodeType',
-        'MessageStatusTypeCodeType\,' =>
+        'MessageStatusTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MessageStatusTypeCodeType',
-        'MessageTypeCodeType\,' =>
+        'MessageTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MessageTypeCodeType',
-        'MinimumReservePriceDefinitionType\,' =>
+        'MinimumReservePriceDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MinimumReservePriceDefinitionType',
-        'ModifiedFieldType\,' =>
+        'ModifiedFieldType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ModifiedFieldType',
-        'ModifyActionCodeType\,' =>
+        'ModifyActionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ModifyActionCodeType',
-        'ModifyCodeType\,' =>
+        'ModifyCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ModifyCodeType',
-        'MyMessagesAlertArrayType\,' =>
+        'MyMessagesAlertArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesAlertArrayType',
-        'MyMessagesAlertResolutionStatusCode\,' =>
+        'MyMessagesAlertResolutionStatusCode' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesAlertResolutionStatusCode',
-        'MyMessagesAlertType\,' =>
+        'MyMessagesAlertType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesAlertType',
-        'MyMessagesFolderOperationCodeType\,' =>
+        'MyMessagesFolderOperationCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesFolderOperationCodeType',
-        'MyMessagesFolderSummaryType\,' =>
+        'MyMessagesFolderSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesFolderSummaryType',
-        'MyMessagesFolderType\,' =>
+        'MyMessagesFolderType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesFolderType',
-        'MyMessagesForwardDetailsType\,' =>
+        'MyMessagesForwardDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesForwardDetailsType',
-        'MyMessagesMessageArrayType\,' =>
+        'MyMessagesMessageArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesMessageArrayType',
-        'MyMessagesMessageType\,' =>
+        'MyMessagesMessageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesMessageType',
-        'MyMessagesResponseDetailsType\,' =>
+        'MyMessagesResponseDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesResponseDetailsType',
-        'MyMessagesSummaryType\,' =>
+        'MyMessagesSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyMessagesSummaryType',
-        'MyeBayFavoriteSearchListType\,' =>
+        'MyeBayFavoriteSearchListType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyeBayFavoriteSearchListType',
-        'MyeBayFavoriteSearchType\,' =>
+        'MyeBayFavoriteSearchType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyeBayFavoriteSearchType',
-        'MyeBayFavoriteSellerListType\,' =>
+        'MyeBayFavoriteSellerListType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyeBayFavoriteSellerListType',
-        'MyeBayFavoriteSellerType\,' =>
+        'MyeBayFavoriteSellerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyeBayFavoriteSellerType',
-        'MyeBaySecondChanceOfferListType\,' =>
+        'MyeBaySecondChanceOfferListType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyeBaySecondChanceOfferListType',
-        'MyeBaySelectionType\,' =>
+        'MyeBaySelectionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\MyeBaySelectionType',
-        'NameValueListArrayType\,' =>
+        'NameValueListArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NameValueListArrayType',
-        'NameValueListType\,' =>
+        'NameValueListType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NameValueListType',
-        'NotificationDetailsArrayType\,' =>
+        'NotificationDetailsArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationDetailsArrayType',
-        'NotificationDetailsType\,' =>
+        'NotificationDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationDetailsType',
-        'NotificationEnableArrayType\,' =>
+        'NotificationEnableArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationEnableArrayType',
-        'NotificationEnableType\,' =>
+        'NotificationEnableType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationEnableType',
-        'NotificationEventPropertyNameCodeType\,' =>
+        'NotificationEventPropertyNameCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationEventPropertyNameCodeType',
-        'NotificationEventPropertyType\,' =>
+        'NotificationEventPropertyType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationEventPropertyType',
-        'NotificationEventStateCodeType\,' =>
+        'NotificationEventStateCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationEventStateCodeType',
-        'NotificationEventTypeCodeType\,' =>
+        'NotificationEventTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationEventTypeCodeType',
-        'NotificationPayloadTypeCodeType\,' =>
+        'NotificationPayloadTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationPayloadTypeCodeType',
-        'NotificationRoleCodeType\,' =>
+        'NotificationRoleCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationRoleCodeType',
-        'NotificationStatisticsType\,' =>
+        'NotificationStatisticsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationStatisticsType',
-        'NotificationUserDataType\,' =>
+        'NotificationUserDataType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\NotificationUserDataType',
-        'OfferArrayType\,' =>
+        'OfferArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OfferArrayType',
-        'OfferType\,' =>
+        'OfferType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OfferType',
-        'OperationTypeCodeType\,' =>
+        'OperationTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OperationTypeCodeType',
-        'OrderArrayType\,' =>
+        'OrderArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderArrayType',
-        'OrderStatusCodeType\,' =>
+        'OrderStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderStatusCodeType',
-        'OrderTransactionArrayType\,' =>
+        'OrderTransactionArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderTransactionArrayType',
-        'OrderTransactionType\,' =>
+        'OrderTransactionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderTransactionType',
-        'OrderType\,' =>
+        'OrderType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\OrderType',
-        'PaginatedItemArrayType\,' =>
+        'PaginatedItemArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaginatedItemArrayType',
-        'PaginatedOrderTransactionArrayType\,' =>
+        'PaginatedOrderTransactionArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaginatedOrderTransactionArrayType',
-        'PaginatedTransactionArrayType\,' =>
+        'PaginatedTransactionArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaginatedTransactionArrayType',
-        'PaginationResultType\,' =>
+        'PaginationResultType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaginationResultType',
-        'PaidStatusCodeType\,' =>
+        'PaidStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaidStatusCodeType',
-        'PayPalAccountLevelCodeType\,' =>
+        'PayPalAccountLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PayPalAccountLevelCodeType',
-        'PayPalAccountStatusCodeType\,' =>
+        'PayPalAccountStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PayPalAccountStatusCodeType',
-        'PayPalAccountTypeCodeType\,' =>
+        'PayPalAccountTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PayPalAccountTypeCodeType',
-        'PaymentDetailsType\,' =>
+        'PaymentDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaymentDetailsType',
-        'PaymentMethodSearchCodeType\,' =>
+        'PaymentMethodSearchCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaymentMethodSearchCodeType',
-        'PaymentOptionDetailsType\,' =>
+        'PaymentOptionDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaymentOptionDetailsType',
-        'PaymentStatusCodeType\,' =>
+        'PaymentStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaymentStatusCodeType',
-        'PaymentTypeCodeType\,' =>
+        'PaymentTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PaymentTypeCodeType',
-        'PhotoDisplayCodeType\,' =>
+        'PhotoDisplayCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PhotoDisplayCodeType',
-        'PictureDetailsType\,' =>
+        'PictureDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureDetailsType',
-        'PictureManagerActionCodeType\,' =>
+        'PictureManagerActionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerActionCodeType',
-        'PictureManagerDetailLevelCodeType\,' =>
+        'PictureManagerDetailLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerDetailLevelCodeType',
-        'PictureManagerDetailsType\,' =>
+        'PictureManagerDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerDetailsType',
-        'PictureManagerFolderType\,' =>
+        'PictureManagerFolderType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerFolderType',
-        'PictureManagerPictureDisplayType\,' =>
+        'PictureManagerPictureDisplayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerPictureDisplayType',
-        'PictureManagerPictureDisplayTypeCodeType\,' =>
+        'PictureManagerPictureDisplayTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerPictureDisplayTypeCodeType',
-        'PictureManagerPictureType\,' =>
+        'PictureManagerPictureType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerPictureType',
-        'PictureManagerSubscriptionLevelCodeType\,' =>
+        'PictureManagerSubscriptionLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerSubscriptionLevelCodeType',
-        'PictureManagerSubscriptionType\,' =>
+        'PictureManagerSubscriptionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureManagerSubscriptionType',
-        'PictureSourceCodeType\,' =>
+        'PictureSourceCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PictureSourceCodeType',
-        'PriceRangeFilterType\,' =>
+        'PriceRangeFilterType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PriceRangeFilterType',
-        'PricingRecommendationsType\,' =>
+        'PricingRecommendationsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PricingRecommendationsType',
-        'ProPackEnabledDefinitionType\,' =>
+        'ProPackEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProPackEnabledDefinitionType',
-        'ProPackPlusEnabledDefinitionType\,' =>
+        'ProPackPlusEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProPackPlusEnabledDefinitionType',
-        'ProStoresCheckoutPreferenceType\,' =>
+        'ProStoresCheckoutPreferenceType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProStoresCheckoutPreferenceType',
-        'ProStoresDetailsType\,' =>
+        'ProStoresDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProStoresDetailsType',
-        'ProductArrayType\,' =>
+        'ProductArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductArrayType',
-        'ProductFamilyType\,' =>
+        'ProductFamilyType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductFamilyType',
-        'ProductFinderConstraintType\,' =>
+        'ProductFinderConstraintType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductFinderConstraintType',
-        'ProductInfoType\,' =>
+        'ProductInfoType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductInfoType',
-        'ProductListingDetailsType\,' =>
+        'ProductListingDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductListingDetailsType',
-        'ProductRecommendationsType\,' =>
+        'ProductRecommendationsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductRecommendationsType',
-        'ProductSearchPageType\,' =>
+        'ProductSearchPageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductSearchPageType',
-        'ProductSearchResultType\,' =>
+        'ProductSearchResultType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductSearchResultType',
-        'ProductSearchType\,' =>
+        'ProductSearchType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductSearchType',
-        'ProductType\,' =>
+        'ProductType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductType',
-        'ProductUseCaseCodeType\,' =>
+        'ProductUseCaseCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProductUseCaseCodeType',
-        'PromotedItemType\,' =>
+        'PromotedItemType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotedItemType',
-        'PromotionDetailsType\,' =>
+        'PromotionDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionDetailsType',
-        'PromotionItemPriceTypeCodeType\,' =>
+        'PromotionItemPriceTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionItemPriceTypeCodeType',
-        'PromotionItemSelectionCodeType\,' =>
+        'PromotionItemSelectionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionItemSelectionCodeType',
-        'PromotionMethodCodeType\,' =>
+        'PromotionMethodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionMethodCodeType',
-        'PromotionRuleArrayType\,' =>
+        'PromotionRuleArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionRuleArrayType',
-        'PromotionRuleType\,' =>
+        'PromotionRuleType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionRuleType',
-        'PromotionSchemeCodeType\,' =>
+        'PromotionSchemeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\PromotionSchemeCodeType',
-        'ProximitySearchDetailsType\,' =>
+        'ProximitySearchDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProximitySearchDetailsType',
-        'ProximitySearchType\,' =>
+        'ProximitySearchType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ProximitySearchType',
-        'QuantityOperatorCodeType\,' =>
+        'QuantityOperatorCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\QuantityOperatorCodeType',
-        'QuestionTypeCodeType\,' =>
+        'QuestionTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\QuestionTypeCodeType',
-        'RangeCodeType\,' =>
+        'RangeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RangeCodeType',
-        'ReasonCodeDetailType\,' =>
+        'ReasonCodeDetailType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReasonCodeDetailType',
-        'RecipientRelationCodeType\,' =>
+        'RecipientRelationCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RecipientRelationCodeType',
-        'RecommendationEngineCodeType\,' =>
+        'RecommendationEngineCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RecommendationEngineCodeType',
-        'RefundArrayType\,' =>
+        'RefundArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RefundArrayType',
-        'RefundReasonCodeType\,' =>
+        'RefundReasonCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RefundReasonCodeType',
-        'RefundType\,' =>
+        'RefundType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RefundType',
-        'RefundTypeCodeType\,' =>
+        'RefundTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RefundTypeCodeType',
-        'RegionDetailsType\,' =>
+        'RegionDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RegionDetailsType',
-        'RelatedSearchKeywordArrayType\,' =>
+        'RelatedSearchKeywordArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RelatedSearchKeywordArrayType',
-        'ReminderCustomizationType\,' =>
+        'ReminderCustomizationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReminderCustomizationType',
-        'RemindersType\,' =>
+        'RemindersType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RemindersType',
-        'RequestCategoriesType\,' =>
+        'RequestCategoriesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\RequestCategoriesType',
-        'ResponseAttributeSetType\,' =>
+        'ResponseAttributeSetType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ResponseAttributeSetType',
-        'ReviseStatusType\,' =>
+        'ReviseStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ReviseStatusType',
-        'SalesTaxType\,' =>
+        'SalesTaxType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SalesTaxType',
-        'ScheduleType\,' =>
+        'ScheduleType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ScheduleType',
-        'SchedulingInfoType\,' =>
+        'SchedulingInfoType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SchedulingInfoType',
-        'SearchAttributesType\,' =>
+        'SearchAttributesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchAttributesType',
-        'SearchDetailsType\,' =>
+        'SearchDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchDetailsType',
-        'SearchFlagsCodeType\,' =>
+        'SearchFlagsCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchFlagsCodeType',
-        'SearchLocationFilterType\,' =>
+        'SearchLocationFilterType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchLocationFilterType',
-        'SearchLocationType\,' =>
+        'SearchLocationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchLocationType',
-        'SearchRequestType\,' =>
+        'SearchRequestType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchRequestType',
-        'SearchResultItemArrayType\,' =>
+        'SearchResultItemArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchResultItemArrayType',
-        'SearchResultItemType\,' =>
+        'SearchResultItemType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchResultItemType',
-        'SearchResultValuesCodeType\,' =>
+        'SearchResultValuesCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchResultValuesCodeType',
-        'SearchSortOrderCodeType\,' =>
+        'SearchSortOrderCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchSortOrderCodeType',
-        'SearchStoreFilterType\,' =>
+        'SearchStoreFilterType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchStoreFilterType',
-        'SearchTypeCodeType\,' =>
+        'SearchTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SearchTypeCodeType',
-        'SecondChanceOfferDurationCodeType\,' =>
+        'SecondChanceOfferDurationCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SecondChanceOfferDurationCodeType',
-        'SellerBusinessCodeType\,' =>
+        'SellerBusinessCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerBusinessCodeType',
-        'SellerContactDetailsEnabledDefinitionType\,' =>
+        'SellerContactDetailsEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerContactDetailsEnabledDefinitionType',
-        'SellerFavoriteItemPreferencesType\,' =>
+        'SellerFavoriteItemPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerFavoriteItemPreferencesType',
-        'SellerGuaranteeLevelCodeType\,' =>
+        'SellerGuaranteeLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerGuaranteeLevelCodeType',
-        'SellerLevelCodeType\,' =>
+        'SellerLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerLevelCodeType',
-        'SellerPaymentMethodCodeType\,' =>
+        'SellerPaymentMethodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentMethodCodeType',
-        'SellerPaymentPreferencesType\,' =>
+        'SellerPaymentPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentPreferencesType',
-        'SellerPaymentType\,' =>
+        'SellerPaymentType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerPaymentType',
-        'SellerType\,' =>
+        'SellerType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellerType',
-        'SellingManagerProductDetailsType\,' =>
+        'SellingManagerProductDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellingManagerProductDetailsType',
-        'SellingStatusType\,' =>
+        'SellingStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellingStatusType',
-        'SellingSummaryType\,' =>
+        'SellingSummaryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SellingSummaryType',
-        'SetUserNotesActionCodeType\,' =>
+        'SetUserNotesActionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SetUserNotesActionCodeType',
-        'ShipmentDeliveryStatusCodeType\,' =>
+        'ShipmentDeliveryStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShipmentDeliveryStatusCodeType',
-        'ShipmentStatusCodeType\,' =>
+        'ShipmentStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShipmentStatusCodeType',
-        'ShippingCarrierCodeType\,' =>
+        'ShippingCarrierCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingCarrierCodeType',
-        'ShippingDetailsType\,' =>
+        'ShippingDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingDetailsType',
-        'ShippingFeatureCodeType\,' =>
+        'ShippingFeatureCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingFeatureCodeType',
-        'ShippingLocationDetailsType\,' =>
+        'ShippingLocationDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingLocationDetailsType',
-        'ShippingOptionCodeType\,' =>
+        'ShippingOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingOptionCodeType',
-        'ShippingPackageCodeType\,' =>
+        'ShippingPackageCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingPackageCodeType',
-        'ShippingRateTypeCodeType\,' =>
+        'ShippingRateTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingRateTypeCodeType',
-        'ShippingRegionCodeType\,' =>
+        'ShippingRegionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingRegionCodeType',
-        'ShippingServiceCodeType\,' =>
+        'ShippingServiceCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingServiceCodeType',
-        'ShippingServiceDetailsType\,' =>
+        'ShippingServiceDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingServiceDetailsType',
-        'ShippingServiceOptionsType\,' =>
+        'ShippingServiceOptionsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingServiceOptionsType',
-        'ShippingTermRequiredDefinitionType\,' =>
+        'ShippingTermRequiredDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingTermRequiredDefinitionType',
-        'ShippingTermsCodeType\,' =>
+        'ShippingTermsCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingTermsCodeType',
-        'ShippingTypeCodeType\,' =>
+        'ShippingTypeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ShippingTypeCodeType',
-        'SiteCodeType\,' =>
+        'SiteCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SiteCodeType',
-        'SiteDefaultsType\,' =>
+        'SiteDefaultsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SiteDefaultsType',
-        'SiteDetailsType\,' =>
+        'SiteDetailsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SiteDetailsType',
-        'SiteHostedPictureType\,' =>
+        'SiteHostedPictureType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SiteHostedPictureType',
-        'SiteLocationType\,' =>
+        'SiteLocationType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SiteLocationType',
-        'SiteWideCharacteristicsType\,' =>
+        'SiteWideCharacteristicsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SiteWideCharacteristicsType',
-        'SkypeContactOptionCodeType\,' =>
+        'SkypeContactOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SkypeContactOptionCodeType',
-        'SkypeMeNonTransactionalEnabledDefinitionType\,' =>
+        'SkypeMeNonTransactionalEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SkypeMeNonTransactionalEnabledDefinitionType',
-        'SkypeMeTransactionalEnabledDefinitionType\,' =>
+        'SkypeMeTransactionalEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SkypeMeTransactionalEnabledDefinitionType',
-        'SkypeOptionCodeType\,' =>
+        'SkypeOptionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SkypeOptionCodeType',
-        'SortOrderCodeType\,' =>
+        'SortOrderCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SortOrderCodeType',
-        'SpellingSuggestionType\,' =>
+        'SpellingSuggestionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SpellingSuggestionType',
-        'StoreCategoryUpdateActionCodeType\,' =>
+        'StoreCategoryUpdateActionCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCategoryUpdateActionCodeType',
-        'StoreColorSchemeArrayType\,' =>
+        'StoreColorSchemeArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreColorSchemeArrayType',
-        'StoreColorSchemeType\,' =>
+        'StoreColorSchemeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreColorSchemeType',
-        'StoreColorType\,' =>
+        'StoreColorType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreColorType',
-        'StoreCustomCategoryArrayType\,' =>
+        'StoreCustomCategoryArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomCategoryArrayType',
-        'StoreCustomCategoryType\,' =>
+        'StoreCustomCategoryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomCategoryType',
-        'StoreCustomHeaderLayoutCodeType\,' =>
+        'StoreCustomHeaderLayoutCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomHeaderLayoutCodeType',
-        'StoreCustomListingHeaderDisplayCodeType\,' =>
+        'StoreCustomListingHeaderDisplayCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomListingHeaderDisplayCodeType',
-        'StoreCustomListingHeaderLinkCodeType\,' =>
+        'StoreCustomListingHeaderLinkCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomListingHeaderLinkCodeType',
-        'StoreCustomListingHeaderLinkType\,' =>
+        'StoreCustomListingHeaderLinkType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomListingHeaderLinkType',
-        'StoreCustomListingHeaderType\,' =>
+        'StoreCustomListingHeaderType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomListingHeaderType',
-        'StoreCustomPageArrayType\,' =>
+        'StoreCustomPageArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomPageArrayType',
-        'StoreCustomPageStatusCodeType\,' =>
+        'StoreCustomPageStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomPageStatusCodeType',
-        'StoreCustomPageType\,' =>
+        'StoreCustomPageType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreCustomPageType',
-        'StoreFontFaceCodeType\,' =>
+        'StoreFontFaceCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreFontFaceCodeType',
-        'StoreFontSizeCodeType\,' =>
+        'StoreFontSizeCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreFontSizeCodeType',
-        'StoreFontType\,' =>
+        'StoreFontType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreFontType',
-        'StoreHeaderStyleCodeType\,' =>
+        'StoreHeaderStyleCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreHeaderStyleCodeType',
-        'StoreInventoryEnabledDefinitionType\,' =>
+        'StoreInventoryEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreInventoryEnabledDefinitionType',
-        'StoreItemListLayoutCodeType\,' =>
+        'StoreItemListLayoutCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreItemListLayoutCodeType',
-        'StoreItemListSortOrderCodeType\,' =>
+        'StoreItemListSortOrderCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreItemListSortOrderCodeType',
-        'StoreLogoArrayType\,' =>
+        'StoreLogoArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreLogoArrayType',
-        'StoreLogoType\,' =>
+        'StoreLogoType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreLogoType',
-        'StorePreferencesType\,' =>
+        'StorePreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StorePreferencesType',
-        'StoreSearchCodeType\,' =>
+        'StoreSearchCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreSearchCodeType',
-        'StoreSubscriptionArrayType\,' =>
+        'StoreSubscriptionArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreSubscriptionArrayType',
-        'StoreSubscriptionLevelCodeType\,' =>
+        'StoreSubscriptionLevelCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreSubscriptionLevelCodeType',
-        'StoreSubscriptionType\,' =>
+        'StoreSubscriptionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreSubscriptionType',
-        'StoreThemeArrayType\,' =>
+        'StoreThemeArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreThemeArrayType',
-        'StoreThemeType\,' =>
+        'StoreThemeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreThemeType',
-        'StoreType\,' =>
+        'StoreType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreType',
-        'StoreVacationPreferencesType\,' =>
+        'StoreVacationPreferencesType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StoreVacationPreferencesType',
-        'StorefrontType\,' =>
+        'StorefrontType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StorefrontType',
-        'StringMatchCodeType\,' =>
+        'StringMatchCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\StringMatchCodeType',
-        'SuggestedCategoryArrayType\,' =>
+        'SuggestedCategoryArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SuggestedCategoryArrayType',
-        'SuggestedCategoryType\,' =>
+        'SuggestedCategoryType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SuggestedCategoryType',
-        'SummaryEventScheduleType\,' =>
+        'SummaryEventScheduleType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SummaryEventScheduleType',
-        'SummaryFrequencyCodeType\,' =>
+        'SummaryFrequencyCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SummaryFrequencyCodeType',
-        'SummaryWindowPeriodCodeType\,' =>
+        'SummaryWindowPeriodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\SummaryWindowPeriodCodeType',
-        'TaskStatusCodeType\,' =>
+        'TaskStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TaskStatusCodeType',
-        'TaxJurisdictionType\,' =>
+        'TaxJurisdictionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TaxJurisdictionType',
-        'TaxTableType\,' =>
+        'TaxTableType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TaxTableType',
-        'ThemeGroupType\,' =>
+        'ThemeGroupType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ThemeGroupType',
-        'TokenReturnMethodCodeType\,' =>
+        'TokenReturnMethodCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TokenReturnMethodCodeType',
-        'TradingRoleCodeType\,' =>
+        'TradingRoleCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TradingRoleCodeType',
-        'TransactionArrayType\,' =>
+        'TransactionArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TransactionArrayType',
-        'TransactionPlatformType\,' =>
+        'TransactionPlatformType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TransactionPlatformType',
-        'TransactionStatusType\,' =>
+        'TransactionStatusType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TransactionStatusType',
-        'TransactionType\,' =>
+        'TransactionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\TransactionType',
-        'UserConsentRequiredDefinitionType\,' =>
+        'UserConsentRequiredDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UserConsentRequiredDefinitionType',
-        'UserIdFilterType\,' =>
+        'UserIdFilterType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UserIdFilterType',
-        'UserStatusCodeType\,' =>
+        'UserStatusCodeType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UserStatusCodeType',
-        'UserType\,' =>
+        'UserType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\UserType',
-        'ValType\,' =>
+        'ValType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ValType',
-        'ValuePackEnabledDefinitionType\,' =>
+        'ValuePackEnabledDefinitionType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\ValuePackEnabledDefinitionType',
-        'VendorHostedPictureType\,' =>
+        'VendorHostedPictureType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\VendorHostedPictureType',
-        'VerifiedUserRequirementsType\,' =>
+        'VerifiedUserRequirementsType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\VerifiedUserRequirementsType',
-        'WantItNowPostArrayType\,' =>
+        'WantItNowPostArrayType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\WantItNowPostArrayType',
-        'WantItNowPostType\,' =>
+        'WantItNowPostType' =>
             '\Controle\Hostnet\Namesp\Sub4\Complex\WantItNowPostType',
     );
 

@@ -8,25 +8,28 @@ namespace Controle\sub1\sub2;
  */
 class MyMessagesFolderType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var long | The ID of the folder.
 	 */
-	public $folderid;
+	public $FolderID;
 	/**
 	 * @var string | The name of a specified My Messages folder.
 	 */
-	public $foldername;
+	public $FolderName;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param long $val
 	 * @throws Exception
 	 */
 	public function setFolderID($val)
 	{
-        $this->folderid = (int)$val;
+        $this->FolderID = (int)$val;
 	}
 
 	/**
@@ -38,7 +41,7 @@ class MyMessagesFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->foldername = (int)$val;
+        $this->FolderName = (int)$val;
 	}
 
 	/**

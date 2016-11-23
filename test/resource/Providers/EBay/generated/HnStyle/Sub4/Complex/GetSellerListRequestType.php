@@ -11,6 +11,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetSellerListRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDType | Unique eBay user ID for the user.<br> <br> In GetSearchResultsExpress, only returned
      * when ItemDetails is set to Fine. <br><br> Starting Jan 2007, when a bidder's user info
@@ -24,69 +25,71 @@ class GetSellerListRequestType extends
      * if that same bidder is the first bidder on a different auction, the bidder will be listed
      * for that auction as "Bidder 1", not "Bidder 3".
      */
-    public $userid;
+    public $UserID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\UserIDArrayType | Specifies the list of Motors Dealer sellers for which a special set of metrics can be
      * requested. Applies to eBay Motors Pro applications only.
      */
-    public $motorsdealerusers;
+    public $MotorsDealerUsers;
     /**
      * @var dateTime | Specifies the earliest (oldest) date to use in a date range filter based on item end
      * time. Specify either the end time range or start time range filter in every request.
      */
-    public $endtimefrom;
+    public $EndTimeFrom;
     /**
      * @var dateTime | Specifies the latest (most recent) date to use in a date range filter based on item
      * end time. Must be specified if EndTimeFrom is specified.
      */
-    public $endtimeto;
+    public $EndTimeTo;
     /**
      * @var int | Specifies the result sort order. Default is Ascending.
      */
-    public $sort;
+    public $Sort;
     /**
      * @var dateTime | Specifies the earliest (oldest) date to use in a date range filter based on item start
      * time. Specify either the end time range or start time range filter in every request.
      */
-    public $starttimefrom;
+    public $StartTimeFrom;
     /**
      * @var dateTime | Specifies the latest (most recent) date to use in a date range filter based on item start
      * time. Must be specified if StartTimeFrom is specified.
      */
-    public $starttimeto;
+    public $StartTimeTo;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\PaginationType | Pagination instruction that specifies the virtual page of data to return
      * per search request. Default page number is 0 (the first page).            Specify a
      * page number of 0 or a positive value lower            than the approximate number of
      * pages available.
      */
-    public $pagination;
+    public $Pagination;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GranularityLevelCodeType | Specifies the subset of item and user fields to return. See GetSellerList in the eBay
      * Web Services guide for a list of the fields that are returned for each granularity level. For
      * GetSellerList, use DetailLevel or GranularityLevel in a request, but not both. For GetSellerList,
      * if GranularityLevel is specified, DetailLevel is ignored.
      */
-    public $granularitylevel;
+    public $GranularityLevel;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SKUArrayType | Specifies a set of seller SKUs to use as a filter. Only items with the specified SKUs
      * are returned. Do not specify this tag if you do not want to filter by SKU. Corresponds
      * to the SKU property that is part of ItemType and that can be provided when, for example,
      * you use the AddItem call.
      */
-    public $skuarray;
+    public $SKUArray;
     /**
      * @var boolean | Specifies whether to include WatchCount in Item nodes returned. WatchCount is only returned
      * with DetailLevel ReturnAll.
      */
-    public $includewatchcount;
+    public $IncludeWatchCount;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param UserIDType $val
      * @throws Exception
      */
     public function setUserID($val)
     {
-        $this->userid = (int)$val;
+        $this->UserID = (int)$val;
     }
 
     /**
@@ -95,7 +98,7 @@ class GetSellerListRequestType extends
      */
     public function setMotorsDealerUsers($val)
     {
-        $this->motorsdealerusers = (int)$val;
+        $this->MotorsDealerUsers = (int)$val;
     }
 
     /**
@@ -104,7 +107,7 @@ class GetSellerListRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->endtimefrom = (int)$val;
+        $this->EndTimeFrom = (int)$val;
     }
 
     /**
@@ -113,7 +116,7 @@ class GetSellerListRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->endtimeto = (int)$val;
+        $this->EndTimeTo = (int)$val;
     }
 
     /**
@@ -125,7 +128,7 @@ class GetSellerListRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->sort = (int)$val;
+        $this->Sort = (int)$val;
     }
 
     /**
@@ -134,7 +137,7 @@ class GetSellerListRequestType extends
      */
     public function setStartTimeFrom($val)
     {
-        $this->starttimefrom = (int)$val;
+        $this->StartTimeFrom = (int)$val;
     }
 
     /**
@@ -143,7 +146,7 @@ class GetSellerListRequestType extends
      */
     public function setStartTimeTo($val)
     {
-        $this->starttimeto = (int)$val;
+        $this->StartTimeTo = (int)$val;
     }
 
     /**
@@ -152,7 +155,7 @@ class GetSellerListRequestType extends
      */
     public function setPagination($val)
     {
-        $this->pagination = (int)$val;
+        $this->Pagination = (int)$val;
     }
 
     /**
@@ -161,7 +164,7 @@ class GetSellerListRequestType extends
      */
     public function setGranularityLevel($val)
     {
-        $this->granularitylevel = (int)$val;
+        $this->GranularityLevel = (int)$val;
     }
 
     /**
@@ -170,7 +173,7 @@ class GetSellerListRequestType extends
      */
     public function setSKUArray($val)
     {
-        $this->skuarray = (int)$val;
+        $this->SKUArray = (int)$val;
     }
 
     /**
@@ -179,6 +182,6 @@ class GetSellerListRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->includewatchcount = (int)$val;
+        $this->IncludeWatchCount = (int)$val;
     }
 }

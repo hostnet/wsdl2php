@@ -9,21 +9,22 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ExpressHistogramDomainDetailsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $name;
+    public $Name;
     /**
      * @var string | Specifies whether the bread crumb needs to be displayed above the listing header.
      */
-    public $breadcrumb;
+    public $BreadCrumb;
     /**
      * @var int | Total number of active listings (on the specified Express site) that were pre-filled
      * based on this eBay catalog product. Only returned when ProductDetails is set to Fine. This
      * does not necessarily match the number of items returned in ItemArray (if any), because
      * the call returns deduped items in ItemArray.
      */
-    public $itemcount;
+    public $ItemCount;
     /**
      * @var int | The number of matching eBay catalog products that were found in the specified department,
      * aisle, or product type at the moment when your request was processed.<br> <br> If HistogramDetails==Coarse
@@ -33,16 +34,18 @@ class ExpressHistogramDomainDetailsType
      * products are in stand-alone product types or aisles (because they aren't grouped into
      * departments).
      */
-    public $productcount;
+    public $ProductCount;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\anyURI | The image associated with the department, aisle, or product, if any. All domains should
      * be associated with an image. However, there may be rare cases when an image is not available.
      */
-    public $imageurl;
+    public $ImageURL;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -52,7 +55,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
     }
 
     /**
@@ -64,7 +67,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BreadCrumb');
         }
-        $this->breadcrumb = (int)$val;
+        $this->BreadCrumb = (int)$val;
     }
 
     /**
@@ -76,7 +79,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->itemcount = (int)$val;
+        $this->ItemCount = (int)$val;
     }
 
     /**
@@ -88,7 +91,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->productcount = (int)$val;
+        $this->ProductCount = (int)$val;
     }
 
     /**
@@ -97,7 +100,7 @@ class ExpressHistogramDomainDetailsType
      */
     public function setImageURL($val)
     {
-        $this->imageurl = (int)$val;
+        $this->ImageURL = (int)$val;
     }
 
     /**

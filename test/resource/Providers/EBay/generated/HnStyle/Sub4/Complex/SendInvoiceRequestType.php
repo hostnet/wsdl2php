@@ -9,28 +9,29 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SendInvoiceRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var string | Identifier for the transaction. A value of zero is used for the Chinese auction format. Thus,
      * a value of zero is a valid transaction ID. A transaction ID is only unique to the listing that
      * spawned it, so a transaction is only uniquely identified on a global basis by a combination
      * of ItemID and TransactionID. Also applicable to Half.com (for GetOrders).
      */
-    public $transactionid;
+    public $TransactionID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\OrderIDType | ID of the Half.com order associated with the payment. Returns 0 for single-transaction
      * orders.
      */
-    public $orderid;
+    public $OrderID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InternationalShippingServiceOptionsType | Shipping costs and options related to an international shipping service. When used as
      * input, if one is provided, at least one domestic ShippingService must be provided.<br> <br> Not
      * applicable to invoices for digital listings.
      */
-    public $internationalshippingserviceoptions;
+    public $InternationalShippingServiceOptions;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ShippingServiceOptionsType | Shipping costs and options related to domestic shipping services offered by the seller.
      * Flat and calculated shipping. Required if InternationalShippingServiceOption is specified.<br> <br> If
@@ -44,7 +45,7 @@ class SendInvoiceRequestType extends
      * may be simplest to specify all ShippingDetails that you still want to include in the listing.<br> <br> Not
      * applicable to Half.com or eBay Motors vehicle listings.
      */
-    public $shippingserviceoptions;
+    public $ShippingServiceOptions;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\SalesTaxType | Sales tax details. US site only. Flat and calculated shipping. Also applicable to Half.com
      * (for GetOrders). If your application normally calculates sales tax without using eBay's
@@ -52,13 +53,13 @@ class SendInvoiceRequestType extends
      * process payments. For general information about listings on eBay Express, see the eBay
      * Web Services Guide links below. Not applicable to eBay Motors vehicle listings.
      */
-    public $salestax;
+    public $SalesTax;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\InsuranceOptionCodeType | Whether the seller offers shipping insurance and, if so, whether the insurance is optional
      * or required. Flat and calculated shipping. Optional as input and only allowed if ChangePaymentInstructions
      * is true. Also applicable to Half.com (for GetOrders). This field is ignored when Item.ListingType=Express.
      */
-    public $insuranceoption;
+    public $InsuranceOption;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\AmountType | Cost of shipping insurance set by the seller. If the buyer bought more than one of this
      * item, this is the insurance for just a single item. Exception: for GetItemShipping,
@@ -68,13 +69,13 @@ class SendInvoiceRequestType extends
      * field is ignored when Item.ListingType=Express. Not applicable to eBay Motors vehicle
      * listings.
      */
-    public $insurancefee;
+    public $InsuranceFee;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\BuyerPaymentMethodCodeType | The payment methods the buyer uses to pay for      the order. An order can have multiple
      * payment methods if the      buyer combines several transactions into one order.
      *  Also applicable to Half.com (for GetOrders).
      */
-    public $paymentmethods;
+    public $PaymentMethods;
     /**
      * @var string | Valid PayPal email address for the PayPal account that the seller will use if they offer
      * PayPal as a payment method for the listing. eBay uses this to identify the correct PayPal
@@ -99,23 +100,25 @@ class SendInvoiceRequestType extends
      * within 12 hours, you can add PayPalEmailAddress, but you cannot remove it.<br> <br> Not
      * applicable to eBay Motors listings. Also not applicable to Half.com.
      */
-    public $paypalemailaddress;
+    public $PayPalEmailAddress;
     /**
      * @var string | Seller's Payment instructions/message to the buyer and return policy. Default is null.
      */
-    public $checkoutinstructions;
+    public $CheckoutInstructions;
     /**
      * @var boolean | Specifies whether the seller wishes to be copied on the invoice email that will be sent
      * to the buyer. Default will be true.
      */
-    public $emailcopytoseller;
+    public $EmailCopyToSeller;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -127,7 +130,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->transactionid = (int)$val;
+        $this->TransactionID = (int)$val;
     }
 
     /**
@@ -136,7 +139,7 @@ class SendInvoiceRequestType extends
      */
     public function setOrderID($val)
     {
-        $this->orderid = (int)$val;
+        $this->OrderID = (int)$val;
     }
 
     /**
@@ -145,7 +148,7 @@ class SendInvoiceRequestType extends
      */
     public function setInternationalShippingServiceOptions($val)
     {
-        $this->internationalshippingserviceoptions = (int)$val;
+        $this->InternationalShippingServiceOptions = (int)$val;
     }
 
     /**
@@ -154,7 +157,7 @@ class SendInvoiceRequestType extends
      */
     public function setShippingServiceOptions($val)
     {
-        $this->shippingserviceoptions = (int)$val;
+        $this->ShippingServiceOptions = (int)$val;
     }
 
     /**
@@ -163,7 +166,7 @@ class SendInvoiceRequestType extends
      */
     public function setSalesTax($val)
     {
-        $this->salestax = (int)$val;
+        $this->SalesTax = (int)$val;
     }
 
     /**
@@ -172,7 +175,7 @@ class SendInvoiceRequestType extends
      */
     public function setInsuranceOption($val)
     {
-        $this->insuranceoption = (int)$val;
+        $this->InsuranceOption = (int)$val;
     }
 
     /**
@@ -181,7 +184,7 @@ class SendInvoiceRequestType extends
      */
     public function setInsuranceFee($val)
     {
-        $this->insurancefee = (int)$val;
+        $this->InsuranceFee = (int)$val;
     }
 
     /**
@@ -190,7 +193,7 @@ class SendInvoiceRequestType extends
      */
     public function setPaymentMethods($val)
     {
-        $this->paymentmethods = (int)$val;
+        $this->PaymentMethods = (int)$val;
     }
 
     /**
@@ -202,7 +205,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
-        $this->paypalemailaddress = (int)$val;
+        $this->PayPalEmailAddress = (int)$val;
     }
 
     /**
@@ -214,7 +217,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CheckoutInstructions');
         }
-        $this->checkoutinstructions = (int)$val;
+        $this->CheckoutInstructions = (int)$val;
     }
 
     /**
@@ -223,6 +226,6 @@ class SendInvoiceRequestType extends
      */
     public function setEmailCopyToSeller($val)
     {
-        $this->emailcopytoseller = (int)$val;
+        $this->EmailCopyToSeller = (int)$val;
     }
 }

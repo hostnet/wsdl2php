@@ -4,6 +4,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class MarketplaceRequest
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
@@ -64,6 +65,8 @@ class MarketplaceRequest
      * @var string
      */
     public $index;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception

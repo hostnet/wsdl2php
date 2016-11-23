@@ -4,21 +4,24 @@ namespace Controle;
 
 class GetNameServerResponse
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\Response
 	 */
-	public $getnameserverresult;
+	public $GetNameServerResult;
 	/**
 	 * @var \Controle\NameServer
 	 */
-	public $nameserver;
+	public $nameServer;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param Response $val
 	 * @throws Exception
 	 */
 	public function setGetNameServerResult($val)
 	{
-        $this->getnameserverresult = (int)$val;
+        $this->GetNameServerResult = (int)$val;
 	}
 
 	/**
@@ -27,6 +30,6 @@ class GetNameServerResponse
 	 */
 	public function setNameServer($val)
 	{
-        $this->nameserver = (int)$val;
+        $this->nameServer = (int)$val;
 	}
 }

@@ -8,36 +8,39 @@ namespace Controle\sub1\sub2;
  */
 class LiveAuctionDetailsType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var int | Number that identifies the seller's eBay Live Auctions catalog within which the lot item
 	 * will be listed. Use GetLiveAuctionCatalogDetails to determine the seller's available catalog
 	 * IDs.
 	 */
-	public $usercatalogid;
+	public $UserCatalogID;
 	/**
 	 * @var int | Identifier for an event schedule in the seller's Live Auctions catalog.
 	 */
-	public $scheduleid;
+	public $ScheduleID;
 	/**
 	 * @var string | Lot number defined by the seller. Each lot number must be unique within the schedule. A
 	 * lot number can consist of 1-10 alphanumeric characters beginning with a number from 0-9.
 	 * If all values are numbers, the highest allowed value is 2147483647.
 	 */
-	public $lotnumber;
+	public $LotNumber;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Highest appraised value for the item. Must be greater than zero and greater than the value
 	 * in LowEstimate. (Pass an integer value only, not a double.)
 	 */
-	public $highestimate;
+	public $HighEstimate;
 	/**
 	 * @var \Controle\sub1\sub2\AmountType | Lowest appraised value for the item. Must be greater than zero and less than the value
 	 * in HighEstimate. (Pass an integer value only, not a double.)
 	 */
-	public $lowestimate;
+	public $LowEstimate;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param int $val
 	 * @throws Exception
@@ -47,7 +50,7 @@ class LiveAuctionDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->usercatalogid = (int)$val;
+        $this->UserCatalogID = (int)$val;
 	}
 
 	/**
@@ -59,7 +62,7 @@ class LiveAuctionDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->scheduleid = (int)$val;
+        $this->ScheduleID = (int)$val;
 	}
 
 	/**
@@ -71,7 +74,7 @@ class LiveAuctionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LotNumber');
         }
-        $this->lotnumber = (int)$val;
+        $this->LotNumber = (int)$val;
 	}
 
 	/**
@@ -80,7 +83,7 @@ class LiveAuctionDetailsType
 	 */
 	public function setHighEstimate($val)
 	{
-        $this->highestimate = (int)$val;
+        $this->HighEstimate = (int)$val;
 	}
 
 	/**
@@ -89,7 +92,7 @@ class LiveAuctionDetailsType
 	 */
 	public function setLowEstimate($val)
 	{
-        $this->lowestimate = (int)$val;
+        $this->LowEstimate = (int)$val;
 	}
 
 	/**

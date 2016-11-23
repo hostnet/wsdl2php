@@ -11,29 +11,32 @@ namespace Controle;
  */
 class UserIdFilterType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\UserIDType | Specifies a list of one or more eBay user IDs that represent sellers whose item
 	 *     listings should NOT be returned in the search result set. That is, the sellers'
 	 *         items are excluded from the search results.
 	 */
-	public $excludesellers;
+	public $ExcludeSellers;
 	/**
 	 * @var \Controle\UserIDType | Specifies a list of one or more eBay user IDs that represent sellers whose item
 	 *     listings are returned in the search result set (and only listings by the
 	 *  specified sellers. That is, the sellers' items are included in the search            results.
 	 */
-	public $includesellers;
+	public $IncludeSellers;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param UserIDType $val
 	 * @throws Exception
 	 */
 	public function setExcludeSellers($val)
 	{
-        $this->excludesellers = (int)$val;
+        $this->ExcludeSellers = (int)$val;
 	}
 
 	/**
@@ -42,7 +45,7 @@ class UserIdFilterType
 	 */
 	public function setIncludeSellers($val)
 	{
-        $this->includesellers = (int)$val;
+        $this->IncludeSellers = (int)$val;
 	}
 
 	/**

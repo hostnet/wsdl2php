@@ -10,10 +10,13 @@ namespace Controle;
  */
 class SellerContactDetailsEnabledDefinitionType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param <anyXML> $val
 	 * @throws Exception

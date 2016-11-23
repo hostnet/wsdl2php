@@ -10,66 +10,69 @@ namespace Controle;
  */
 class CalculatedShippingRateType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var string | Postal code for the location from which the package will be shipped. For calculated shipping
 	 * only. Use Item.PostalCode to specify the location of the item and where it will be shipped
 	 * from. The value of Item.PostalCode overrides any value specified with OriginatingPostalCode,
 	 * and will be used to calculate shipping costs.
 	 */
-	public $originatingpostalcode;
+	public $OriginatingPostalCode;
 	/**
 	 * @var \Controle\MeasureType | Depth dimension of the package needed to ship the item after it is sold.            For
 	 * calculated shipping only.
 	 */
-	public $packagedepth;
+	public $PackageDepth;
 	/**
 	 * @var \Controle\MeasureType | Length dimension of the package needed to ship the item after it is sold.            For
 	 * calculated shipping only.
 	 */
-	public $packagelength;
+	public $PackageLength;
 	/**
 	 * @var \Controle\MeasureType | Width dimension of the package needed to ship the item after it is sold.            For
 	 * calculated shipping only.
 	 */
-	public $packagewidth;
+	public $PackageWidth;
 	/**
 	 * @var \Controle\AmountType | Fees a seller might assess for the shipping of the item (in addition to whatever the shipping
 	 * service might charge). Any packaging/handling cost specified on input is added to each
 	 * shipping service on output. When UPS is one of the shipping services offered by the seller, package
 	 * dimensions are required on list/relist/revise. For calculated shipping only.
 	 */
-	public $packaginghandlingcosts;
+	public $PackagingHandlingCosts;
 	/**
 	 * @var boolean | Whether a package is irregular and therefore cannot go through the stamping machine at
 	 * the shipping service office and thus requires special or fragile handling. For calculated shipping
 	 * only.
 	 */
-	public $shippingirregular;
+	public $ShippingIrregular;
 	/**
 	 * @var \Controle\ShippingPackageCodeType | The size of the package used to ship the item(s). See ShippingPackageCodeType
 	 *   for its possible values. Input.
 	 */
-	public $shippingpackage;
+	public $ShippingPackage;
 	/**
 	 * @var \Controle\MeasureType | See the documentation regarding "Working with Item Weights".            The 'unit' attribute
 	 * can have a value of lbs.
 	 */
-	public $weightmajor;
+	public $WeightMajor;
 	/**
 	 * @var \Controle\MeasureType | See the documentation regarding "Working with Item Weights". The 'unit' attribute is optional
 	 * and assumed to be the minor compared to the value of 'unit' in WeightMajor.
 	 */
-	public $weightminor;
+	public $WeightMinor;
 	/**
 	 * @var \Controle\AmountType | Fees a seller might assess for the shipping of the item (in addition to whatever the shipping
 	 * service might charge). Any packaging/handling cost specified on input is added  to each
 	 * shipping service on output. For international calculated shipping only.
 	 */
-	public $internationalpackaginghandlingcosts;
+	public $InternationalPackagingHandlingCosts;
 	/**
 	 * @var \Controle\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param string $val
 	 * @throws Exception
@@ -79,7 +82,7 @@ class CalculatedShippingRateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OriginatingPostalCode');
         }
-        $this->originatingpostalcode = (int)$val;
+        $this->OriginatingPostalCode = (int)$val;
 	}
 
 	/**
@@ -88,7 +91,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageDepth($val)
 	{
-        $this->packagedepth = (int)$val;
+        $this->PackageDepth = (int)$val;
 	}
 
 	/**
@@ -97,7 +100,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageLength($val)
 	{
-        $this->packagelength = (int)$val;
+        $this->PackageLength = (int)$val;
 	}
 
 	/**
@@ -106,7 +109,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageWidth($val)
 	{
-        $this->packagewidth = (int)$val;
+        $this->PackageWidth = (int)$val;
 	}
 
 	/**
@@ -115,7 +118,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackagingHandlingCosts($val)
 	{
-        $this->packaginghandlingcosts = (int)$val;
+        $this->PackagingHandlingCosts = (int)$val;
 	}
 
 	/**
@@ -124,7 +127,7 @@ class CalculatedShippingRateType
 	 */
 	public function setShippingIrregular($val)
 	{
-        $this->shippingirregular = (int)$val;
+        $this->ShippingIrregular = (int)$val;
 	}
 
 	/**
@@ -133,7 +136,7 @@ class CalculatedShippingRateType
 	 */
 	public function setShippingPackage($val)
 	{
-        $this->shippingpackage = (int)$val;
+        $this->ShippingPackage = (int)$val;
 	}
 
 	/**
@@ -142,7 +145,7 @@ class CalculatedShippingRateType
 	 */
 	public function setWeightMajor($val)
 	{
-        $this->weightmajor = (int)$val;
+        $this->WeightMajor = (int)$val;
 	}
 
 	/**
@@ -151,7 +154,7 @@ class CalculatedShippingRateType
 	 */
 	public function setWeightMinor($val)
 	{
-        $this->weightminor = (int)$val;
+        $this->WeightMinor = (int)$val;
 	}
 
 	/**
@@ -160,7 +163,7 @@ class CalculatedShippingRateType
 	 */
 	public function setInternationalPackagingHandlingCosts($val)
 	{
-        $this->internationalpackaginghandlingcosts = (int)$val;
+        $this->InternationalPackagingHandlingCosts = (int)$val;
 	}
 
 	/**

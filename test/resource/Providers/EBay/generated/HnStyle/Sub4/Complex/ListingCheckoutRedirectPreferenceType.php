@@ -8,19 +8,22 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class ListingCheckoutRedirectPreferenceType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | The name of the store, if Item.ThirdPartyCheckout is true. To remove this value when
      * revising or relisting an item, use DeletedField.
      */
-    public $prostoresstorename;
+    public $ProStoresStoreName;
     /**
      * @var string | The username associated with the store.  Returned only if the parent container is returned.
      */
-    public $sellerthirdpartyusername;
+    public $SellerThirdPartyUsername;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -30,7 +33,7 @@ class ListingCheckoutRedirectPreferenceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProStoresStoreName');
         }
-        $this->prostoresstorename = (int)$val;
+        $this->ProStoresStoreName = (int)$val;
     }
 
     /**
@@ -42,7 +45,7 @@ class ListingCheckoutRedirectPreferenceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
-        $this->sellerthirdpartyusername = (int)$val;
+        $this->SellerThirdPartyUsername = (int)$val;
     }
 
     /**

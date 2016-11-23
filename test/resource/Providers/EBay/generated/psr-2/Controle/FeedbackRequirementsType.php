@@ -4,6 +4,7 @@ namespace Controle;
 
 class FeedbackRequirementsType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var boolean
      */
@@ -12,6 +13,8 @@ class FeedbackRequirementsType
      * @var string
      */
     public $minimum;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param boolean $val
      * @throws Exception

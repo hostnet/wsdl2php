@@ -11,25 +11,28 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetAllBiddersRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ItemIDType | The item ID of the item reported for infringment.
      */
-    public $itemid;
+    public $ItemID;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\GetAllBiddersModeCodeType | Specifies which bidder information to return.
      */
-    public $callmode;
+    public $CallMode;
     /**
      * @var boolean | Specifies whether return BiddingSummary container for each offer.
      */
-    public $includebiddingsummary;
+    public $IncludeBiddingSummary;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param ItemIDType $val
      * @throws Exception
      */
     public function setItemID($val)
     {
-        $this->itemid = (int)$val;
+        $this->ItemID = (int)$val;
     }
 
     /**
@@ -38,7 +41,7 @@ class GetAllBiddersRequestType extends
      */
     public function setCallMode($val)
     {
-        $this->callmode = (int)$val;
+        $this->CallMode = (int)$val;
     }
 
     /**
@@ -47,6 +50,6 @@ class GetAllBiddersRequestType extends
      */
     public function setIncludeBiddingSummary($val)
     {
-        $this->includebiddingsummary = (int)$val;
+        $this->IncludeBiddingSummary = (int)$val;
     }
 }

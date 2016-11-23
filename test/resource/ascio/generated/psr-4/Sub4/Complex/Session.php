@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class Session
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $account;
+    public $Account;
     /**
      * @var string
      */
-    public $password;
+    public $Password;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class Session
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Account');
         }
-        $this->account = (int)$val;
+        $this->Account = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class Session
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Password');
         }
-        $this->password = (int)$val;
+        $this->Password = (int)$val;
     }
 }

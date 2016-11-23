@@ -9,31 +9,32 @@ namespace Controle\sub1\sub2;
  */
 class TransactionStatusType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\sub1\sub2\PaymentStatusCodeType | Indicates the success or failure of the buyer's online payment for a transaction. Only
 	 * applicable if the buyer chose PayPal as the payment method for the transaction. If the
 	 * payment failed, the value returned indicates the reason for the failure. Output only.
 	 */
-	public $ebaypaymentstatus;
+	public $eBayPaymentStatus;
 	/**
 	 * @var \Controle\sub1\sub2\CheckoutStatusCodeType | Indicates the current status of the checkout process for the transaction.
 	 */
-	public $checkoutstatus;
+	public $CheckoutStatus;
 	/**
 	 * @var dateTime | Indicates date and time a transaction's status or incomplete state was last updated (in
 	 * GMT).
 	 */
-	public $lasttimemodified;
+	public $LastTimeModified;
 	/**
 	 * @var \Controle\sub1\sub2\BuyerPaymentMethodCodeType | Payment method the buyer selected for paying the seller for the transaction. If checkout
 	 * is not yet complete, PaymentMethodUsed is set to whatever the buyer selected as his or
 	 * her preference on the Review Your Purchase page.
 	 */
-	public $paymentmethodused;
+	public $PaymentMethodUsed;
 	/**
 	 * @var \Controle\sub1\sub2\CompleteStatusCodeType | Indicates whether the transaction process is complete or incomplete.
 	 */
-	public $completestatus;
+	public $CompleteStatus;
 	/**
 	 * @var boolean | Indicates whether the buyer has selected shipping details during checkout. False indicates
 	 * that the shipping service was selected by eBay for the buyer. For example, if the buyer
@@ -41,18 +42,20 @@ class TransactionStatusType
 	 * If it is false, the application should ignore ShippingServiceCost and ShippingServiceSelected (items
 	 * whose values are defaulted by eBay).
 	 */
-	public $buyerselectedshipping;
+	public $BuyerSelectedShipping;
 	/**
 	 * @var \Controle\sub1\sub2\<anyXML>
 	 */
 	public $any;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param PaymentStatusCodeType $val
 	 * @throws Exception
 	 */
 	public function setEBayPaymentStatus($val)
 	{
-        $this->ebaypaymentstatus = (int)$val;
+        $this->eBayPaymentStatus = (int)$val;
 	}
 
 	/**
@@ -61,7 +64,7 @@ class TransactionStatusType
 	 */
 	public function setCheckoutStatus($val)
 	{
-        $this->checkoutstatus = (int)$val;
+        $this->CheckoutStatus = (int)$val;
 	}
 
 	/**
@@ -70,7 +73,7 @@ class TransactionStatusType
 	 */
 	public function setLastTimeModified($val)
 	{
-        $this->lasttimemodified = (int)$val;
+        $this->LastTimeModified = (int)$val;
 	}
 
 	/**
@@ -79,7 +82,7 @@ class TransactionStatusType
 	 */
 	public function setPaymentMethodUsed($val)
 	{
-        $this->paymentmethodused = (int)$val;
+        $this->PaymentMethodUsed = (int)$val;
 	}
 
 	/**
@@ -88,7 +91,7 @@ class TransactionStatusType
 	 */
 	public function setCompleteStatus($val)
 	{
-        $this->completestatus = (int)$val;
+        $this->CompleteStatus = (int)$val;
 	}
 
 	/**
@@ -97,7 +100,7 @@ class TransactionStatusType
 	 */
 	public function setBuyerSelectedShipping($val)
 	{
-        $this->buyerselectedshipping = (int)$val;
+        $this->BuyerSelectedShipping = (int)$val;
 	}
 
 	/**

@@ -8,18 +8,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class NameValueListType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Name of the eBay Store. The name is shown at the top of the Store page.
      */
-    public $name;
+    public $Name;
     /**
      * @var string | Specifies the value for the property.
      */
-    public $value;
+    public $Value;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -29,7 +32,7 @@ class NameValueListType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->name = (int)$val;
+        $this->Name = (int)$val;
     }
 
     /**
@@ -41,7 +44,7 @@ class NameValueListType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
     }
 
     /**

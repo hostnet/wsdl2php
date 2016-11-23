@@ -9,16 +9,19 @@ namespace Controle;
 class GetContextualKeywordsResponseType extends
  \Controle\AbstractResponseType
 {
+	// @codingStandardsIgnoreStart
 	/**
 	 * @var \Controle\ContextSearchAssetType | An array of either keyword/category pairs or categories, with ranking and score.
 	 */
-	public $contextsearchasset;
+	public $ContextSearchAsset;
+	// @codingStandardsIgnoreEnd
+
 	/**
 	 * @param ContextSearchAssetType $val
 	 * @throws Exception
 	 */
 	public function setContextSearchAsset($val)
 	{
-        $this->contextsearchasset = (int)$val;
+        $this->ContextSearchAsset = (int)$val;
 	}
 }

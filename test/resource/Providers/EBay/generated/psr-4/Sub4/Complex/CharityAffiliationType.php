@@ -9,6 +9,7 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CharityAffiliationType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
@@ -21,6 +22,8 @@ class CharityAffiliationType
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CharityAffiliationTypeCodeType
      */
     public $type;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param <anyXML> $val
      * @throws Exception

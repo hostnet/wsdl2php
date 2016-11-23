@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CreateDnsSecKey
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $sessionid;
+    public $sessionId;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\DnsSecKey
      */
-    public $dnsseckey;
+    public $dnsSecKey;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class CreateDnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionid = (int)$val;
+        $this->sessionId = (int)$val;
     }
 
     /**
@@ -30,6 +33,6 @@ class CreateDnsSecKey
      */
     public function setDnsSecKey($val)
     {
-        $this->dnsseckey = (int)$val;
+        $this->dnsSecKey = (int)$val;
     }
 }

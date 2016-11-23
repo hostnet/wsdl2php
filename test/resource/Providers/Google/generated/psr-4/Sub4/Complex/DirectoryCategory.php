@@ -4,14 +4,17 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class DirectoryCategory
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $fullviewablename;
+    public $fullViewableName;
     /**
      * @var string
      */
-    public $specialencoding;
+    public $specialEncoding;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -21,7 +24,7 @@ class DirectoryCategory
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for fullViewableName');
         }
-        $this->fullviewablename = (int)$val;
+        $this->fullViewableName = (int)$val;
     }
 
     /**
@@ -33,6 +36,6 @@ class DirectoryCategory
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for specialEncoding');
         }
-        $this->specialencoding = (int)$val;
+        $this->specialEncoding = (int)$val;
     }
 }

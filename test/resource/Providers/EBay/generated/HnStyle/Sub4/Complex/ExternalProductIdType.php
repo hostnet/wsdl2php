@@ -4,10 +4,11 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ExternalProductIdType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string | Specifies the value for the property.
      */
-    public $value;
+    public $Value;
     /**
      * @var boolean | Applicable for listing use cases only (not buy-side searching). Indicates what eBay
      * should do if more than one product matches the value passed in Value. Only takes effect
@@ -16,18 +17,20 @@ class ExternalProductIdType
      * not return the matching product IDs. This field is also applicable when listing Half.com
      * items.
      */
-    public $returnsearchresultonduplicates;
+    public $ReturnSearchResultOnDuplicates;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\ExternalProductCodeType | Returns the notification type. Possible values include: AskSellerQuestion, AuctionCheckoutComplete,
      * BestOffer, CheckoutBuyerRequestTotal, EndOfAuction, Feedback, FixedPriceEndOfTransaction,
      * FixedPriceTransaction, ItemNotReceived, MyMessages, OutBid, SecondChanceOffer, UPIBuyerResponseDispute,
      * UPISellerClosedDispute, UPISellerOpenedDispute, and UPISellerRespondedToDispute.
      */
-    public $type;
+    public $Type;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -37,7 +40,7 @@ class ExternalProductIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->value = (int)$val;
+        $this->Value = (int)$val;
     }
 
     /**
@@ -46,7 +49,7 @@ class ExternalProductIdType
      */
     public function setReturnSearchResultOnDuplicates($val)
     {
-        $this->returnsearchresultonduplicates = (int)$val;
+        $this->ReturnSearchResultOnDuplicates = (int)$val;
     }
 
     /**
@@ -55,7 +58,7 @@ class ExternalProductIdType
      */
     public function setType($val)
     {
-        $this->type = (int)$val;
+        $this->Type = (int)$val;
     }
 
     /**

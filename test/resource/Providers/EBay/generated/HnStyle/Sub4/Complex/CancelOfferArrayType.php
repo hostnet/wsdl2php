@@ -9,23 +9,26 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
  */
 class CancelOfferArrayType
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\CancelOfferType | Contains the data for one offer. This includes: data for the user making the
      *     offer, the amount of the offer, the quantity of items being bought from the
      *        listing, the type of offer being made, and more.
      */
-    public $canceloffer;
+    public $CancelOffer;
     /**
      * @var \Controle\Hostnet\Namesp\Sub4\Complex\<anyXML>
      */
     public $any;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param CancelOfferType $val
      * @throws Exception
      */
     public function setCancelOffer($val)
     {
-        $this->canceloffer = (int)$val;
+        $this->CancelOffer = (int)$val;
     }
 
     /**

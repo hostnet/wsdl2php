@@ -4,18 +4,21 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CustomerReview
 {
+    // @codingStandardsIgnoreStart
     /**
      * @var string
      */
-    public $rating;
+    public $Rating;
     /**
      * @var string
      */
-    public $summary;
+    public $Summary;
     /**
      * @var string
      */
-    public $comment;
+    public $Comment;
+    // @codingStandardsIgnoreEnd
+
     /**
      * @param string $val
      * @throws Exception
@@ -25,7 +28,7 @@ class CustomerReview
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Rating');
         }
-        $this->rating = (int)$val;
+        $this->Rating = (int)$val;
     }
 
     /**
@@ -37,7 +40,7 @@ class CustomerReview
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Summary');
         }
-        $this->summary = (int)$val;
+        $this->Summary = (int)$val;
     }
 
     /**
@@ -49,6 +52,6 @@ class CustomerReview
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comment');
         }
-        $this->comment = (int)$val;
+        $this->Comment = (int)$val;
     }
 }
