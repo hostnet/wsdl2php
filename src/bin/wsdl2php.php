@@ -475,7 +475,7 @@ foreach($types as $index=>$type){
 		$code .= "}\n";
 		continue;
 	}
-	$code .= "\n".$ident_char."// @codingStandardsIgnoreStart";
+
 	$longestconstname='';
 	$longestconstchars=0;
 	foreach($type['values'] as $value){
@@ -496,7 +496,8 @@ foreach($types as $index=>$type){
 	   }
 		$code .= "\n" . $ident_char . "const ".strtoupper(generatePHPSymbol($value)).$alligner." = '".$value."';";
    }
-
+	if(count($type['members'])>0)
+	    $code .= "\n".$ident_char."// @codingStandardsIgnoreStart";
 	foreach($type['members'] as $member){
 
 		if($documentation){
@@ -526,10 +527,10 @@ foreach($types as $index=>$type){
 				 $code .= "\n" . $ident_char . " */";
 			}
 		}
-
 		$code .= "\n" . $ident_char . "public \$".$member['member'].";";
 	}
-	$code .= "\n".$ident_char."// @codingStandardsIgnoreEnd\n";
+	if(count($type['members'])>0)
+	   $code .= "\n".$ident_char."// @codingStandardsIgnoreEnd\n";
 	// add access method
 	foreach($type['members'] as $member) {
 	$codestylefunctionname = ucfirst(str_replace("_", "", $member['member']));
