@@ -4,7 +4,6 @@ namespace Controle;
 
 class HitCounterCodeType
 {
-    // @codingStandardsIgnoreStart
     const NOHITCOUNTER = 'NoHitCounter';
     const HONESTYSTYLE = 'HonestyStyle';
     const GREENLED     = 'GreenLED';
@@ -13,5 +12,4 @@ class HitCounterCodeType
     const RETROSTYLE   = 'RetroStyle';
     const HIDDENSTYLE  = 'HiddenStyle';
     const CUSTOMCODE   = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class CurrencyCodeType
 {
-    // @codingStandardsIgnoreStart
     const AFA        = 'AFA';
     const ALL        = 'ALL';
     const DZD        = 'DZD';
@@ -180,5 +179,4 @@ class CurrencyCodeType
     const ZMK        = 'ZMK';
     const ZWD        = 'ZWD';
     const CUSTOMCODE = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

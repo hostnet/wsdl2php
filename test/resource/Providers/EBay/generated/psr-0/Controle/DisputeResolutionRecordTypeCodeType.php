@@ -4,7 +4,6 @@ namespace Controle;
 
 class DisputeResolutionRecordTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const STRIKEBUYER                = 'StrikeBuyer';
 	const SUSPENDBUYER               = 'SuspendBuyer';
 	const FVFCREDIT                  = 'FVFCredit';
@@ -17,5 +16,4 @@ class DisputeResolutionRecordTypeCodeType
 	const FVFCREDITNOTGRANTED        = 'FVFCreditNotGranted';
 	const ITEMNOTRECEIVEDCLAIMFILED  = 'ItemNotReceivedClaimFiled';
 	const CUSTOMCODE                 = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ShippingServiceCodeType
 {
-    // @codingStandardsIgnoreStart
     const UPSGROUND                                           = 'UPSGround';
     const UPS3RDDAY                                           = 'UPS3rdDay';
     const UPS2NDDAY                                           = 'UPS2ndDay';
@@ -431,5 +430,4 @@ class ShippingServiceCodeType
     const CAFR_UPSWORLDWIDEEXPRESS                            = 'CAFR_UPSWorldWideExpress';
     const CAFR_UPSWORLDWIDEEXPEDITED                          = 'CAFR_UPSWorldWideExpedited';
     const UK_ROYALMAILSPECIALDELIVERY9AM                      = 'UK_RoyalMailSpecialDelivery9am';
-    // @codingStandardsIgnoreEnd
 }

@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BulkCatalogListerStatusCodeType
 {
-    // @codingStandardsIgnoreStart
     const PREAPPROVED = 'Preapproved';
     const ACTIVE      = 'Active';
     const ONWATCH     = 'OnWatch';
@@ -12,5 +11,4 @@ class BulkCatalogListerStatusCodeType
     const SUSPENDED   = 'Suspended';
     const WATCHWARN   = 'WatchWarn';
     const CUSTOMCODE  = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

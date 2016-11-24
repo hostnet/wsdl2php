@@ -4,6 +4,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ApprovalDocumentationType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

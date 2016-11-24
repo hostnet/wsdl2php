@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class FeatureIdCodeType
 {
-    // @codingStandardsIgnoreStart
     const LISTINGDURATIONS                      = 'ListingDurations';
     const BESTOFFERENABLED                      = 'BestOfferEnabled';
     const DUTCHBINENABLED                       = 'DutchBINEnabled';
@@ -34,5 +33,4 @@ class FeatureIdCodeType
     const LOCALLISTINGDISTANCES                 = 'LocalListingDistances';
     const SKYPEMETRANSACTIONALENABLED           = 'SkypeMeTransactionalEnabled';
     const SKYPEMENONTRANSACTIONALENABLED        = 'SkypeMeNonTransactionalEnabled';
-    // @codingStandardsIgnoreEnd
 }

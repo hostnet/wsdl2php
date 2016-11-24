@@ -4,7 +4,6 @@ namespace Controle;
 
 class PictureManagerPictureDisplayTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const THUMBNAIL  = 'Thumbnail';
 	const BIBO       = 'BIBO';
 	const STANDARD   = 'Standard';
@@ -12,5 +11,4 @@ class PictureManagerPictureDisplayTypeCodeType
 	const SUPERSIZE  = 'Supersize';
 	const ORIGINAL   = 'Original';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

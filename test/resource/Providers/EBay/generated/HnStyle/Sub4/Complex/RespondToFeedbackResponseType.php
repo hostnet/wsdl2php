@@ -11,6 +11,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class RespondToFeedbackResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

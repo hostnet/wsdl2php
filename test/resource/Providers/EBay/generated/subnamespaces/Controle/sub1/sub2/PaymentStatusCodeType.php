@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class PaymentStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOPAYMENTFAILURE                   = 'NoPaymentFailure';
 	const BUYERECHECKBOUNCED                 = 'BuyerECheckBounced';
 	const BUYERCREDITCARDFAILED              = 'BuyerCreditCardFailed';
@@ -12,5 +11,4 @@ class PaymentStatusCodeType
 	const PAYPALPAYMENTINPROCESS             = 'PayPalPaymentInProcess';
 	const PAYMENTINPROCESS                   = 'PaymentInProcess';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

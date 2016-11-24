@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class StoreFontSizeCodeType
 {
-    // @codingStandardsIgnoreStart
     const XXS        = 'XXS';
     const XS         = 'XS';
     const S          = 'S';
@@ -13,5 +12,4 @@ class StoreFontSizeCodeType
     const XL         = 'XL';
     const XXL        = 'XXL';
     const CUSTOMCODE = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class SellerLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BRONZE     = 'Bronze';
 	const SILVER     = 'Silver';
 	const GOLD       = 'Gold';
@@ -12,5 +11,4 @@ class SellerLevelCodeType
 	const TITANIUM   = 'Titanium';
 	const NONE       = 'None';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

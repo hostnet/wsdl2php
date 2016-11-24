@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class SummaryFrequencyCodeType
 {
-    // @codingStandardsIgnoreStart
     const EVERYSUNDAY    = 'EverySunday';
     const EVERYMONDAY    = 'EveryMonday';
     const EVERYTUESDAY   = 'EveryTuesday';
@@ -45,5 +44,4 @@ class SummaryFrequencyCodeType
     const MONTHLYON31ST  = 'MonthlyOn31st';
     const EVERY31DAYS    = 'Every31Days';
     const EVERY60DAYS    = 'Every60Days';
-    // @codingStandardsIgnoreEnd
 }

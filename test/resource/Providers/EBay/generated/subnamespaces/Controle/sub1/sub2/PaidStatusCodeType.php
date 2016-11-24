@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class PaidStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOTPAID                      = 'NotPaid';
 	const BUYERHASNOTCOMPLETEDCHECKOUT = 'BuyerHasNotCompletedCheckout';
 	const PAYMENTPENDINGWITHPAYPAL     = 'PaymentPendingWithPayPal';
@@ -17,5 +16,4 @@ class PaidStatusCodeType
 	const PAIDWITHPAISAPAY             = 'PaidWithPaisaPay';
 	const PAYMENTPENDING               = 'PaymentPending';
 	const CUSTOMCODE                   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

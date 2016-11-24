@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class ShippingCarrierCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UPS          = 'UPS';
 	const USPS         = 'USPS';
 	const DEUTSCHEPOST = 'DeutschePost';
@@ -13,5 +12,4 @@ class ShippingCarrierCodeType
 	const ILOXX        = 'iLoxx';
 	const OTHER        = 'Other';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

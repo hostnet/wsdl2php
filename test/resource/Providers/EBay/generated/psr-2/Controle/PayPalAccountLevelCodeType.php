@@ -4,7 +4,6 @@ namespace Controle;
 
 class PayPalAccountLevelCodeType
 {
-    // @codingStandardsIgnoreStart
     const UNVERIFIED              = 'Unverified';
     const INTERNATIONALUNVERIFIED = 'InternationalUnverified';
     const VERIFIED                = 'Verified';
@@ -13,5 +12,4 @@ class PayPalAccountLevelCodeType
     const UNKNOWN                 = 'Unknown';
     const INVALID                 = 'Invalid';
     const CUSTOMCODE              = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

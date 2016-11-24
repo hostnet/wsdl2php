@@ -4,9 +4,7 @@ namespace Controle\sub1\sub2;
 
 class AddressRecordTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RESIDENTIAL = 'Residential';
 	const BUSINESS    = 'Business';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

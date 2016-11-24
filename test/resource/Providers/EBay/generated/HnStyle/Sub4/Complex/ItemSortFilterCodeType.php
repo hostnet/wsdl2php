@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ItemSortFilterCodeType
 {
-    // @codingStandardsIgnoreStart
     const ENDINGLAST       = 'EndingLast';
     const ENDINGSOONEST    = 'EndingSoonest';
     const HIGHESTPRICE     = 'HighestPrice';
@@ -12,5 +11,4 @@ class ItemSortFilterCodeType
     const NEWLYLISTED      = 'NewlyListed';
     const RANDOMLYSELECTED = 'RandomlySelected';
     const CUSTOMCODE       = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

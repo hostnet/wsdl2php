@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BestOfferStatusCodeType
 {
-    // @codingStandardsIgnoreStart
     const PENDING    = 'Pending';
     const ACCEPTED   = 'Accepted';
     const DECLINED   = 'Declined';
@@ -15,5 +14,4 @@ class BestOfferStatusCodeType
     const COUNTERED  = 'Countered';
     const ALL        = 'All';
     const CUSTOMCODE = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }
