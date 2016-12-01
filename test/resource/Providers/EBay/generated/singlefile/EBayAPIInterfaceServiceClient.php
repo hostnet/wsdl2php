@@ -16532,18 +16532,15 @@ class VerifyAddSecondChanceItemResponseType extends
 
 class AckCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SUCCESS        = 'Success';
 	const FAILURE        = 'Failure';
 	const WARNING        = 'Warning';
 	const PARTIALFAILURE = 'PartialFailure';
 	const CUSTOMCODE     = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class BuyerPaymentMethodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                        = 'None';
 	const MOCC                        = 'MOCC';
 	const AMEX                        = 'AmEx';
@@ -16568,12 +16565,10 @@ class BuyerPaymentMethodCodeType
 	const LOANCHECK                   = 'LoanCheck';
 	const CASHINPERSON                = 'CashInPerson';
 	const ELV                         = 'ELV';
-	// @codingStandardsIgnoreEnd
 }
 
 class DetailLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RETURNALL             = 'ReturnAll';
 	const ITEMRETURNDESCRIPTION = 'ItemReturnDescription';
 	const ITEMRETURNATTRIBUTES  = 'ItemReturnAttributes';
@@ -16581,12 +16576,10 @@ class DetailLevelCodeType
 	const RETURNSUMMARY         = 'ReturnSummary';
 	const RETURNHEADERS         = 'ReturnHeaders';
 	const RETURNMESSAGES        = 'ReturnMessages';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeActivityCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SELLERADDINFORMATION             = 'SellerAddInformation';
 	const SELLERCOMPLETEDTRANSACTION       = 'SellerCompletedTransaction';
 	const CAMETOAGREEMENTNEEDFVFCREDIT     = 'CameToAgreementNeedFVFCredit';
@@ -16597,21 +16590,17 @@ class DisputeActivityCodeType
 	const SELLERCOMMENT                    = 'SellerComment';
 	const SELLERPAYMENTNOTRECEIVED         = 'SellerPaymentNotReceived';
 	const CUSTOMCODE                       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeCreditEligibilityCodeType
 {
-	// @codingStandardsIgnoreStart
 	const INELIGIBLE = 'InEligible';
 	const ELIGIBLE   = 'Eligible';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeExplanationCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BUYERHASNOTRESPONDED        = 'BuyerHasNotResponded';
 	const BUYERREFUSEDTOPAY           = 'BuyerRefusedToPay';
 	const BUYERNOTCLEAREDTOPAY        = 'BuyerNotClearedToPay';
@@ -16626,7 +16615,6 @@ class DisputeExplanationCodeType
 	const OTHEREXPLANATION            = 'OtherExplanation';
 	const UNSPECIFIED                 = 'Unspecified';
 	const CUSTOMCODE                  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -16685,7 +16673,6 @@ class DisputeFilterCountType
 
 class DisputeFilterTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ALLINVOLVEDDISPUTES                = 'AllInvolvedDisputes';
 	const DISPUTESAWAITINGMYRESPONSE         = 'DisputesAwaitingMyResponse';
 	const DISPUTESAWAITINGOTHERPARTYRESPONSE = 'DisputesAwaitingOtherPartyResponse';
@@ -16694,7 +16681,6 @@ class DisputeFilterTypeCodeType
 	const UNPAIDITEMDISPUTES                 = 'UnpaidItemDisputes';
 	const ITEMNOTRECEIVEDDISPUTES            = 'ItemNotReceivedDisputes';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeIdType
@@ -16702,12 +16688,10 @@ class DisputeIdType
 
 class DisputeMessageSourceCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BUYER      = 'Buyer';
 	const SELLER     = 'Seller';
 	const EBAY       = 'eBay';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -16796,7 +16780,6 @@ class DisputeMessageType
 
 class DisputeReasonCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BUYERHASNOTPAID             = 'BuyerHasNotPaid';
 	const TRANSACTIONMUTUALLYCANCELED = 'TransactionMutuallyCanceled';
 	const ITEMNOTRECEIVED             = 'ItemNotReceived';
@@ -16804,21 +16787,17 @@ class DisputeReasonCodeType
 	const NOREFUND                    = 'NoRefund';
 	const RETURNPOLICYUNPAIDITEM      = 'ReturnPolicyUnpaidItem';
 	const CUSTOMCODE                  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeRecordTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNPAIDITEM      = 'UnpaidItem';
 	const ITEMNOTRECEIVED = 'ItemNotReceived';
 	const CUSTOMCODE      = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeResolutionReasonCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNRESOLVED               = 'Unresolved';
 	const PROOFOFPAYMENT           = 'ProofOfPayment';
 	const COMPUTERTECHNICALPROBLEM = 'ComputerTechnicalProblem';
@@ -16833,12 +16812,10 @@ class DisputeResolutionReasonCodeType
 	const OTHERRESOLUTION          = 'OtherResolution';
 	const CLAIMPAID                = 'ClaimPaid';
 	const CUSTOMCODE               = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeResolutionRecordTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const STRIKEBUYER                = 'StrikeBuyer';
 	const SUSPENDBUYER               = 'SuspendBuyer';
 	const FVFCREDIT                  = 'FVFCredit';
@@ -16851,7 +16828,6 @@ class DisputeResolutionRecordTypeCodeType
 	const FVFCREDITNOTGRANTED        = 'FVFCreditNotGranted';
 	const ITEMNOTRECEIVEDCLAIMFILED  = 'ItemNotReceivedClaimFiled';
 	const CUSTOMCODE                 = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -16921,7 +16897,6 @@ class DisputeResolutionType
 
 class DisputeSortTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                               = 'None';
 	const DISPUTECREATEDTIMEASCENDING        = 'DisputeCreatedTimeAscending';
 	const DISPUTECREATEDTIMEDESCENDING       = 'DisputeCreatedTimeDescending';
@@ -16930,12 +16905,10 @@ class DisputeSortTypeCodeType
 	const DISPUTECREDITELIGIBILITYASCENDING  = 'DisputeCreditEligibilityAscending';
 	const DISPUTECREDITELIGIBILITYDESCENDING = 'DisputeCreditEligibilityDescending';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeStateCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LOCKED                                    = 'Locked';
 	const CLOSED                                    = 'Closed';
 	const BUYERFIRSTRESPONSEPAYOPTION               = 'BuyerFirstResponsePayOption';
@@ -16962,12 +16935,10 @@ class DisputeStateCodeType
 	const CLAIMRESOLVED                             = 'ClaimResolved';
 	const CLAIMSUBMITTED                            = 'ClaimSubmitted';
 	const CUSTOMCODE                                = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DisputeStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CLOSED                             = 'Closed';
 	const WAITINGFORSELLERRESPONSE           = 'WaitingForSellerResponse';
 	const WAITINGFORBUYERRESPONSE            = 'WaitingForBuyerResponse';
@@ -16988,7 +16959,6 @@ class DisputeStatusCodeType
 	const CLAIMRESOLVED                      = 'ClaimResolved';
 	const CLAIMSUBMITTED                     = 'ClaimSubmitted';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -17060,21 +17030,17 @@ class DuplicateInvocationDetailsType
 
 class ErrorClassificationCodeType
 {
-	// @codingStandardsIgnoreStart
 	const REQUESTERROR = 'RequestError';
 	const SYSTEMERROR  = 'SystemError';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ErrorHandlingCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LEGACY       = 'Legacy';
 	const BESTEFFORT   = 'BestEffort';
 	const ALLORNOTHING = 'AllOrNothing';
 	const FAILONERROR  = 'FailOnError';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -17266,12 +17232,10 @@ class ErrorType
 
 class InvocationStatusType
 {
-	// @codingStandardsIgnoreStart
 	const INPROGRESS = 'InProgress';
 	const SUCCESS    = 'Success';
 	const FAILURE    = 'Failure';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -17329,10 +17293,8 @@ class MeasureType
 
 class MeasurementSystemCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ENGLISH = 'English';
 	const METRIC  = 'Metric';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -17403,11 +17365,9 @@ class PaginationType
 
 class SeverityCodeType
 {
-	// @codingStandardsIgnoreStart
 	const WARNING    = 'Warning';
 	const ERROR      = 'Error';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class UuIdType
@@ -17528,15 +17488,12 @@ class UserIdPasswordType
 
 class WarningLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LOW  = 'Low';
 	const HIGH = 'High';
-	// @codingStandardsIgnoreEnd
 }
 
 class AccessRuleCurrentStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOTSET                    = 'NotSet';
 	const HOURLYLIMITEXCEEDED       = 'HourlyLimitExceeded';
 	const DAILYLIMITEXCEEDED        = 'DailyLimitExceeded';
@@ -17545,22 +17502,18 @@ class AccessRuleCurrentStatusCodeType
 	const DAILYSOFTLIMITEXCEEDED    = 'DailySoftLimitExceeded';
 	const PERIODICSOFTLIMITEXCEEDED = 'PeriodicSoftLimitExceeded';
 	const CUSTOMCODE                = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class AccessRuleStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RULEOFF            = 'RuleOff';
 	const RULEON             = 'RuleOn';
 	const APPLICATIONBLOCKED = 'ApplicationBlocked';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class AccountDetailEntryCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNKNOWN                                         = 'Unknown';
 	const FEEINSERTION                                    = 'FeeInsertion';
 	const FEEBOLD                                         = 'FeeBold';
@@ -17809,7 +17762,6 @@ class AccountDetailEntryCodeType
 	const CREDITEBAYMOTORSPROFEATUREFEE                   = 'CrediteBayMotorsProFeatureFee';
 	const FEEGALLERYPLUS                                  = 'FeeGalleryPlus';
 	const CREDITGALLERYPLUS                               = 'CreditGalleryPlus';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -17857,7 +17809,6 @@ class AccountEntriesType
 
 class AccountEntrySortTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                              = 'None';
 	const ACCOUNTENTRYCREATEDTIMEASCENDING  = 'AccountEntryCreatedTimeAscending';
 	const ACCOUNTENTRYCREATEDTIMEDESCENDING = 'AccountEntryCreatedTimeDescending';
@@ -17866,7 +17817,6 @@ class AccountEntrySortTypeCodeType
 	const ACCOUNTENTRYFEETYPEASCENDING      = 'AccountEntryFeeTypeAscending';
 	const ACCOUNTENTRYFEETYPEDESCENDING     = 'AccountEntryFeeTypeDescending';
 	const CUSTOMCODE                        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -18102,22 +18052,18 @@ class AccountEntryType
 
 class AccountHistorySelectionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LASTINVOICE           = 'LastInvoice';
 	const SPECIFIEDINVOICE      = 'SpecifiedInvoice';
 	const BETWEENSPECIFIEDDATES = 'BetweenSpecifiedDates';
 	const CUSTOMCODE            = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class AccountStateCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACTIVE     = 'Active';
 	const PENDING    = 'Pending';
 	const INACTIVE   = 'Inactive';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -18463,13 +18409,11 @@ class AccountSummaryType
 
 class AdFormatEnabledCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DISABLED            = 'Disabled';
 	const ENABLED             = 'Enabled';
 	const ONLY                = 'Only';
 	const CLASSIFIEDADENABLED = 'ClassifiedAdEnabled';
 	const CLASSIFIEDADONLY    = 'ClassifiedAdOnly';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -18819,30 +18763,24 @@ class AdditionalAccountType
 
 class AddressOwnerCodeType
 {
-	// @codingStandardsIgnoreStart
 	const PAYPAL     = 'PayPal';
 	const EBAY       = 'eBay';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class AddressRecordTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RESIDENTIAL = 'Residential';
 	const BUSINESS    = 'Business';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class AddressStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE        = 'None';
 	const CONFIRMED   = 'Confirmed';
 	const UNCONFIRMED = 'Unconfirmed';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -19833,13 +19771,11 @@ class ApplicationDeliveryPreferencesType
 
 class ApplicationDeviceTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BROWSER     = 'Browser';
 	const WIRELESS    = 'Wireless';
 	const DESKTOP     = 'Desktop';
 	const SETTOPTVBOX = 'SetTopTVBox';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -20275,12 +20211,10 @@ class BasicUpgradePackEnabledDefinitionType
 
 class BestOfferActionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACCEPT     = 'Accept';
 	const DECLINE    = 'Decline';
 	const COUNTER    = 'Counter';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -20482,7 +20416,6 @@ class BestOfferIdType
 
 class BestOfferStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const PENDING    = 'Pending';
 	const ACCEPTED   = 'Accepted';
 	const DECLINED   = 'Declined';
@@ -20493,7 +20426,6 @@ class BestOfferStatusCodeType
 	const COUNTERED  = 'Countered';
 	const ALL        = 'All';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -20670,17 +20602,14 @@ class BestOfferType
 
 class BestOfferTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BUYERBESTOFFER     = 'BuyerBestOffer';
 	const BUYERCOUNTEROFFER  = 'BuyerCounterOffer';
 	const SELLERCOUNTEROFFER = 'SellerCounterOffer';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class BidActionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNKNOWN        = 'Unknown';
 	const BID            = 'Bid';
 	const NOTUSED        = 'NotUsed';
@@ -20692,7 +20621,6 @@ class BidActionCodeType
 	const BUYITNOW       = 'BuyItNow';
 	const PURCHASE       = 'Purchase';
 	const CUSTOMCODE     = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -21039,12 +20967,10 @@ class BidderNoticePreferencesType
 
 class BidderStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const APPROVED   = 'Approved';
 	const DENIED     = 'Denied';
 	const PENDING    = 'Pending';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -21292,13 +21218,11 @@ class BiddingSummaryType
 
 class BuyerProtectionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMINELIGIBLE       = 'ItemIneligible';
 	const ITEMELIGIBLE         = 'ItemEligible';
 	const ITEMMARKEDINELIGIBLE = 'ItemMarkedIneligible';
 	const ITEMMARKEDELIGIBLE   = 'ItemMarkedEligible';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -21725,11 +21649,9 @@ class BuyingSummaryType
 
 class CalculatedShippingChargeOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CHARGEEACHITEM    = 'ChargeEachItem';
 	const CHARGEENTIREORDER = 'ChargeEntireOrder';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -21813,11 +21735,9 @@ class CalculatedShippingPreferencesType
 
 class CalculatedShippingRateOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const COMBINEDITEMWEIGHT   = 'CombinedItemWeight';
 	const INDIVIDUALITEMWEIGHT = 'IndividualItemWeight';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -22613,7 +22533,6 @@ class CategoryFinanceOfferType
 
 class CategoryListingsOrderCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOFILTER        = 'NoFilter';
 	const ITEMSBY24HR     = 'ItemsBy24Hr';
 	const ITEMSENDTODAY   = 'ItemsEndToday';
@@ -22623,16 +22542,13 @@ class CategoryListingsOrderCodeType
 	const BESTMATCHSORT   = 'BestMatchSort';
 	const DISTANCESORT    = 'DistanceSort';
 	const CUSTOMCODE      = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class CategoryListingsSearchCodeType
 {
-	// @codingStandardsIgnoreStart
 	const FEATURED      = 'Featured';
 	const SUPERFEATURED = 'SuperFeatured';
 	const CUSTOMCODE    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -23312,11 +23228,9 @@ class CharacteristicType
 
 class CharacteristicsSearchCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SINGLE     = 'Single';
 	const MULTI      = 'Multi';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -23473,12 +23387,10 @@ class CharityAffiliationType
 
 class CharityAffiliationTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const COMMUNITY  = 'Community';
 	const DIRECT     = 'Direct';
 	const REMOVE     = 'Remove';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -23730,7 +23642,6 @@ class CharityInfoType
 
 class CharitySellerStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SUSPENDED                           = 'Suspended';
 	const REGISTERED                          = 'Registered';
 	const CLOSED                              = 'Closed';
@@ -23741,7 +23652,6 @@ class CharitySellerStatusCodeType
 	const NOTREGISTEREDLOSTDIRECTSELLERSTATUS = 'NotRegisteredLostDirectSellerStatus';
 	const DIRECTDEBITREJECTED                 = 'DirectDebitRejected';
 	const CUSTOMCODE                          = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -23796,11 +23706,9 @@ class CharitySellerType
 
 class CharityStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const VALID         = 'Valid';
 	const NOLONGERVALID = 'NoLongerValid';
 	const CUSTOMCODE    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -23959,22 +23867,18 @@ class CharityType
 
 class CheckoutMethodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const OTHER              = 'Other';
 	const THIRDPARTYCHECKOUT = 'ThirdPartyCheckout';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class CheckoutStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CHECKOUTCOMPLETE   = 'CheckoutComplete';
 	const CHECKOUTINCOMPLETE = 'CheckoutIncomplete';
 	const BUYERREQUESTSTOTAL = 'BuyerRequestsTotal';
 	const SELLERRESPONDED    = 'SellerResponded';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class CheckoutStatusType
@@ -24052,24 +23956,20 @@ class CheckoutStatusType
 
 class CombinedPaymentOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOCOMBINEDPAYMENT    = 'NoCombinedPayment';
 	const DISCOUNTSPECIFIED    = 'DiscountSpecified';
 	const SPECIFYDISCOUNTLATER = 'SpecifyDiscountLater';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class CombinedPaymentPeriodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DAYS_3     = 'Days_3';
 	const DAYS_5     = 'Days_5';
 	const DAYS_7     = 'Days_7';
 	const DAYS_14    = 'Days_14';
 	const DAYS_30    = 'Days_30';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -24152,33 +24052,27 @@ class CombinedPaymentPreferencesType
 
 class CommentTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const POSITIVE               = 'Positive';
 	const NEUTRAL                = 'Neutral';
 	const NEGATIVE               = 'Negative';
 	const WITHDRAWN              = 'Withdrawn';
 	const INDEPENDENTLYWITHDRAWN = 'IndependentlyWithdrawn';
 	const CUSTOMCODE             = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class CompleteStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const INCOMPLETE = 'Incomplete';
 	const COMPLETE   = 'Complete';
 	const PENDING    = 'Pending';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ConditionSelectionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ALL        = 'All';
 	const _NEW       = '_New';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -24239,7 +24133,6 @@ class ContextSearchAssetType
 
 class CountryCodeType
 {
-	// @codingStandardsIgnoreStart
 	const AF         = 'AF';
 	const AL         = 'AL';
 	const DZ         = 'DZ';
@@ -24485,7 +24378,6 @@ class CountryCodeType
 	const QO         = 'QO';
 	const QP         = 'QP';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -24805,7 +24697,6 @@ class CrossPromotionsType
 
 class CurrencyCodeType
 {
-	// @codingStandardsIgnoreStart
 	const AFA        = 'AFA';
 	const ALL        = 'ALL';
 	const DZD        = 'DZD';
@@ -24981,7 +24872,6 @@ class CurrencyCodeType
 	const ZMK        = 'ZMK';
 	const ZWD        = 'ZWD';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -25123,41 +25013,33 @@ class DataElementSetType
 
 class DateSpecifierCodeType
 {
-	// @codingStandardsIgnoreStart
 	const M          = 'M';
 	const D          = 'D';
 	const Y          = 'Y';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DepositTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE        = 'None';
 	const OTHERMETHOD = 'OtherMethod';
 	const FASTDEPOSIT = 'FastDeposit';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DescriptionReviseModeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const REPLACE    = 'Replace';
 	const PREPEND    = 'Prepend';
 	const APPEND     = 'Append';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DescriptionTemplateCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LAYOUT     = 'Layout';
 	const THEME      = 'Theme';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -25283,7 +25165,6 @@ class DescriptionTemplateType
 
 class DetailNameCodeType
 {
-	// @codingStandardsIgnoreStart
 	const COUNTRYDETAILS          = 'CountryDetails';
 	const CURRENCYDETAILS         = 'CurrencyDetails';
 	const PAYMENTOPTIONDETAILS    = 'PaymentOptionDetails';
@@ -25295,16 +25176,13 @@ class DetailNameCodeType
 	const URLDETAILS              = 'URLDetails';
 	const CUSTOMCODE              = 'CustomCode';
 	const DISPATCHTIMEMAXDETAILS  = 'DispatchTimeMaxDetails';
-	// @codingStandardsIgnoreEnd
 }
 
 class DeviceTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const PLATFORM   = 'Platform';
 	const SMS        = 'SMS';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class DigitalDeliveryDetailsType
@@ -25407,12 +25285,10 @@ class DigitalDeliveryDetailsType
 
 class DigitalDeliveryEnabledCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DISABLED   = 'Disabled';
 	const ENABLED    = 'Enabled';
 	const PROMOTED   = 'Promoted';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -25441,12 +25317,10 @@ class DigitalDeliveryEnabledDefinitionType
 
 class DigitalDeliveryMethodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                          = 'None';
 	const DOWNLOADURL                   = 'DownloadURL';
 	const ALTERNATEDELIVERYINSTRUCTIONS = 'AlternateDeliveryInstructions';
 	const CUSTOMCODE                    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -25512,11 +25386,9 @@ class DispatchTimeMaxDetailsType
 
 class DisplayPayNowButtonCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SHOWPAYNOWBUTTONFORALLPAYMENTMETHODS = 'ShowPayNowButtonForAllPaymentMethods';
 	const SHOWPAYNOWBUTTONFORPAYPALONLY        = 'ShowPayNowButtonForPayPalOnly';
 	const CUSTOMCODE                           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -25973,7 +25845,6 @@ class DutchBiNenabledDefinitionType
 
 class EbaySubscriptionTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SELLERASSISTANT      = 'SellerAssistant';
 	const SELLERASSISTANTPRO   = 'SellerAssistantPro';
 	const EBAYSTOREBASIC       = 'EBayStoreBasic';
@@ -25995,16 +25866,13 @@ class EbaySubscriptionTypeCodeType
 	const LOCALMARKETREGULAR   = 'LocalMarketRegular';
 	const LOCALMARKETPREMIUM   = 'LocalMarketPremium';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class EnableCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ENABLE     = 'Enable';
 	const DISABLE    = 'Disable';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -26128,25 +25996,21 @@ class EndOfAuctionEmailPreferencesType
 
 class EndOfAuctionLogoTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const WINNINGBIDDERNOTICE = 'WinningBidderNotice';
 	const STORE               = 'Store';
 	const CUSTOMIZED          = 'Customized';
 	const CUSTOMCODE          = 'CustomCode';
 	const NONE                = 'None';
-	// @codingStandardsIgnoreEnd
 }
 
 class EndReasonCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LOSTORBROKEN      = 'LostOrBroken';
 	const NOTAVAILABLE      = 'NotAvailable';
 	const INCORRECT         = 'Incorrect';
 	const OTHERLISTINGERROR = 'OtherListingError';
 	const CUSTOMCODE        = 'CustomCode';
 	const SELLTOHIGHBIDDER  = 'SellToHighBidder';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -26225,12 +26089,10 @@ class ExpressConditionRequiredDefinitionType
 
 class ExpressDetailLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const COARSE     = 'Coarse';
 	const FINE       = 'Fine';
 	const NONE       = 'None';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -26604,12 +26466,10 @@ class ExpressHistogramProductType
 
 class ExpressHistogramSortCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMCOUNT    = 'ItemCount';
 	const PRODUCTCOUNT = 'ProductCount';
 	const ALPHABETICAL = 'Alphabetical';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ExpressItemRequirementsType
@@ -26916,12 +26776,10 @@ class ExpressItemRequirementsType
 
 class ExpressItemSortCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LOWESTTOTALCOST  = 'LowestTotalCost';
 	const HIGHESTTOTALCOST = 'HighestTotalCost';
 	const RELEVANCE        = 'Relevance';
 	const CUSTOMCODE       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -27028,12 +26886,10 @@ class ExpressPreferencesType
 
 class ExpressProductSortCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LOWESTPRICE  = 'LowestPrice';
 	const HIGHESTPRICE = 'HighestPrice';
 	const SALESRANK    = 'SalesRank';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -27407,12 +27263,10 @@ class ExpressSellerRequirementsType
 
 class ExpressSellingPreferenceCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ALL         = 'All';
 	const EXPRESSONLY = 'ExpressOnly';
 	const OPTOUT      = 'OptOut';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ExtendedProductFinderIdType
@@ -27463,14 +27317,12 @@ class ExtendedProductFinderIdType
 
 class ExternalProductCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ISBN       = 'ISBN';
 	const UPC        = 'UPC';
 	const PRODUCTID  = 'ProductID';
 	const EAN        = 'EAN';
 	const KEYWORDS   = 'Keywords';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -28122,7 +27974,6 @@ class FeatureDefinitionsType
 
 class FeatureIdCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LISTINGDURATIONS                      = 'ListingDurations';
 	const BESTOFFERENABLED                      = 'BestOfferEnabled';
 	const DUTCHBINENABLED                       = 'DutchBINEnabled';
@@ -28152,7 +28003,6 @@ class FeatureIdCodeType
 	const LOCALLISTINGDISTANCES                 = 'LocalListingDistances';
 	const SKYPEMETRANSACTIONALENABLED           = 'SkypeMeTransactionalEnabled';
 	const SKYPEMENONTRANSACTIONALENABLED        = 'SkypeMeNonTransactionalEnabled';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -28679,7 +28529,6 @@ class FeedbackPeriodType
 
 class FeedbackRatingStarCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE              = 'None';
 	const YELLOW            = 'Yellow';
 	const BLUE              = 'Blue';
@@ -28692,7 +28541,6 @@ class FeedbackRatingStarCodeType
 	const PURPLESHOOTING    = 'PurpleShooting';
 	const REDSHOOTING       = 'RedShooting';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class FeedbackRequirementsType
@@ -28732,10 +28580,8 @@ class FeedbackRequirementsType
 
 class FeedbackResponseCodeType
 {
-	// @codingStandardsIgnoreStart
 	const REPLY    = 'Reply';
 	const FOLLOWUP = 'FollowUp';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -29079,7 +28925,6 @@ class FinanceOfferType
 
 class FlatRateInsuranceRangeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const FLATRATEINSURANCERANGE1 = 'FlatRateInsuranceRange1';
 	const FLATRATEINSURANCERANGE2 = 'FlatRateInsuranceRange2';
 	const FLATRATEINSURANCERANGE3 = 'FlatRateInsuranceRange3';
@@ -29087,7 +28932,6 @@ class FlatRateInsuranceRangeCodeType
 	const FLATRATEINSURANCERANGE5 = 'FlatRateInsuranceRange5';
 	const FLATRATEINSURANCERANGE6 = 'FlatRateInsuranceRange6';
 	const CUSTOMCODE              = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -29235,43 +29079,35 @@ class FlatShippingPreferencesType
 
 class FlatShippingRateOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CHARGEAMOUNTFOREACHADDITIONALITEM  = 'ChargeAmountForEachAdditionalItem';
 	const DEDUCTAMOUNTFROMEACHADDITIONALITEM = 'DeductAmountFromEachAdditionalItem';
 	const SHIPADDITIONALITEMSFREE            = 'ShipAdditionalItemsFree';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class GallerySortFilterCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SHOWANYITEMS                    = 'ShowAnyItems';
 	const SHOWITEMSWITHGALLERYIMAGESFIRST = 'ShowItemsWithGalleryImagesFirst';
 	const SHOWONLYITEMSWITHGALLERYIMAGES  = 'ShowOnlyItemsWithGalleryImages';
 	const CUSTOMCODE                      = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class GalleryTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE       = 'None';
 	const FEATURED   = 'Featured';
 	const GALLERY    = 'Gallery';
 	const PLUS       = 'Plus';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class GetAllBiddersModeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const VIEWALL                          = 'ViewAll';
 	const ENDEDLISTING                     = 'EndedListing';
 	const SECONDCHANCEELIGIBLEENDEDLISTING = 'SecondChanceEligibleEndedListing';
 	const CUSTOMCODE                       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -29552,26 +29388,21 @@ class GetRecommendationsResponseContainerType
 
 class GiftServicesCodeType
 {
-	// @codingStandardsIgnoreStart
 	const GIFTEXPRESSSHIPPING = 'GiftExpressShipping';
 	const GIFTSHIPTORECIPIENT = 'GiftShipToRecipient';
 	const GIFTWRAP            = 'GiftWrap';
 	const CUSTOMCODE          = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class GranularityLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const COARSE = 'Coarse';
 	const FINE   = 'Fine';
 	const MEDIUM = 'Medium';
-	// @codingStandardsIgnoreEnd
 }
 
 class HitCounterCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOHITCOUNTER = 'NoHitCounter';
 	const HONESTYSTYLE = 'HonestyStyle';
 	const GREENLED     = 'GreenLED';
@@ -29580,7 +29411,6 @@ class HitCounterCodeType
 	const RETROSTYLE   = 'RetroStyle';
 	const HIDDENSTYLE  = 'HiddenStyle';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -29664,26 +29494,22 @@ class InsuranceDetailsType
 
 class InsuranceOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const OPTIONAL                   = 'Optional';
 	const REQUIRED                   = 'Required';
 	const NOTOFFERED                 = 'NotOffered';
 	const INCLUDEDINSHIPPINGHANDLING = 'IncludedInShippingHandling';
 	const NOTOFFEREDONSITE           = 'NotOfferedOnSite';
 	const CUSTOMCODE                 = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class InsuranceSelectedCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOTOFFERED                 = 'NotOffered';
 	const OFFEREDNOTSELECTED         = 'OfferedNotSelected';
 	const OFFEREDSELECTED            = 'OfferedSelected';
 	const REQUIRED                   = 'Required';
 	const INCLUDEDINSHIPPINGHANDLING = 'IncludedInShippingHandling';
 	const CUSTOMCODE                 = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -29941,13 +29767,11 @@ class ItemBidDetailsType
 
 class ItemFormatSortFilterCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SHOWANYITEMS          = 'ShowAnyItems';
 	const SHOWITEMSWITHBINFIRST = 'ShowItemsWithBINFirst';
 	const SHOWONLYITEMSWITHBIN  = 'ShowOnlyItemsWithBIN';
 	const SHOWONLYSTOREITEMS    = 'ShowOnlyStoreItems';
 	const CUSTOMCODE            = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ItemIdType
@@ -30064,16 +29888,13 @@ class ItemListCustomizationType
 
 class ItemLocationCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMAVAILABLEIN = 'ItemAvailableIn';
 	const ITEMLOCATEDIN   = 'ItemLocatedIn';
 	const CUSTOMCODE      = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ItemSortFilterCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ENDINGLAST       = 'EndingLast';
 	const ENDINGSOONEST    = 'EndingSoonest';
 	const HIGHESTPRICE     = 'HighestPrice';
@@ -30081,12 +29902,10 @@ class ItemSortFilterCodeType
 	const NEWLYLISTED      = 'NewlyListed';
 	const RANDOMLYSELECTED = 'RandomlySelected';
 	const CUSTOMCODE       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ItemSortTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMID                        = 'ItemID';
 	const PRICE                         = 'Price';
 	const STARTPRICE                    = 'StartPrice';
@@ -30158,7 +29977,6 @@ class ItemSortTypeCodeType
 	const WONPLATFORMDESCENDING         = 'WonPlatformDescending';
 	const SOLDPLATFORMDESCENDING        = 'SoldPlatformDescending';
 	const CUSTOMCODE                    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -32229,7 +32047,6 @@ class ItemType
 
 class ItemTypeFilterCodeType
 {
-	// @codingStandardsIgnoreStart
 	const AUCTIONITEMSONLY                = 'AuctionItemsOnly';
 	const FIXEDPRICEDITEM                 = 'FixedPricedItem';
 	const ALLITEMS                        = 'AllItems';
@@ -32240,7 +32057,6 @@ class ItemTypeFilterCodeType
 	const ALLFIXEDPRICEITEMTYPES          = 'AllFixedPriceItemTypes';
 	const CUSTOMCODE                      = 'CustomCode';
 	const CLASSIFIEDITEMSONLY             = 'ClassifiedItemsOnly';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -33019,7 +32835,6 @@ class ListingDurationReferenceType
 
 class ListingEnhancementsCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BORDER                 = 'Border';
 	const BOLDTITLE              = 'BoldTitle';
 	const FEATURED               = 'Featured';
@@ -33030,35 +32845,28 @@ class ListingEnhancementsCodeType
 	const VALUEPACKBUNDLE        = 'ValuePackBundle';
 	const PROPACKPLUSBUNDLE      = 'ProPackPlusBundle';
 	const CUSTOMCODE             = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ListingFlowCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ADDITEM    = 'AddItem';
 	const REVISEITEM = 'ReviseItem';
 	const RELISTITEM = 'RelistItem';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ListingStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACTIVE     = 'Active';
 	const ENDED      = 'Ended';
 	const COMPLETED  = 'Completed';
 	const CUSTOMCODE = 'CustomCode';
 	const CUSTOM     = 'Custom';
-	// @codingStandardsIgnoreEnd
 }
 
 class ListingSubtypeEnum
 {
-	// @codingStandardsIgnoreStart
 	const CLASSIFIEDAD = 'ClassifiedAd';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -33357,7 +33165,6 @@ class ListingTipType
 
 class ListingTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNKNOWN          = 'Unknown';
 	const CHINESE          = 'Chinese';
 	const DUTCH            = 'Dutch';
@@ -33371,7 +33178,6 @@ class ListingTypeCodeType
 	const LEADGENERATION   = 'LeadGeneration';
 	const EXPRESS          = 'Express';
 	const CUSTOMCODE       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -34042,11 +33848,9 @@ class MarkUpMarkDownEventType
 
 class MarkUpMarkDownEventTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const MARKUP     = 'MarkUp';
 	const MARKDOWN   = 'MarkDown';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -34464,34 +34268,27 @@ class MemberMessageType
 
 class MerchDisplayCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DEFAULTTHEME = 'DefaultTheme';
 	const STORETHEME   = 'StoreTheme';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class MerchandizingPrefCodeType
 {
-	// @codingStandardsIgnoreStart
 	const OPTIN      = 'OptIn';
 	const OPTOUT     = 'OptOut';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class MessageStatusTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ANSWERED   = 'Answered';
 	const UNANSWERED = 'Unanswered';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class MessageTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ASKSELLERQUESTION                 = 'AskSellerQuestion';
 	const RESPONSETOASQQUESTION             = 'ResponseToASQQuestion';
 	const CONTACTEBAYMEMBER                 = 'ContactEbayMember';
@@ -34499,7 +34296,6 @@ class MessageTypeCodeType
 	const RESPONSETOCONTACTEBAYMEMBER       = 'ResponseToContacteBayMember';
 	const CONTACTEBAYMEMBERVIACOMMUNITYLINK = 'ContacteBayMemberViaCommunityLink';
 	const CUSTOMCODE                        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -34588,21 +34384,17 @@ class ModifiedFieldType
 
 class ModifyActionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ADD        = 'Add';
 	const DELETE     = 'Delete';
 	const UPDATE     = 'Update';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ModifyCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DROPPED    = 'Dropped';
 	const MODIFY     = 'Modify';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -34657,11 +34449,9 @@ class MyMessagesAlertIdType
 
 class MyMessagesAlertResolutionStatusCode
 {
-	// @codingStandardsIgnoreStart
 	const UNRESOLVED               = 'Unresolved';
 	const RESOLVEDBYAUTORESOLUTION = 'ResolvedByAutoResolution';
 	const RESOLVEDBYUSER           = 'ResolvedByUser';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -34994,12 +34784,10 @@ class MyMessagesAlertType
 
 class MyMessagesFolderOperationCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DISPLAY    = 'Display';
 	const RENAME     = 'Rename';
 	const REMOVE     = 'Remove';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -36416,10 +36204,8 @@ class NotificationEnableType
 
 class NotificationEventPropertyNameCodeType
 {
-	// @codingStandardsIgnoreStart
 	const TIMELEFT   = 'TimeLeft';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -36488,7 +36274,6 @@ class NotificationEventPropertyType
 
 class NotificationEventStateCodeType
 {
-	// @codingStandardsIgnoreStart
 	const _NEW              = '_New';
 	const FAILED            = 'Failed';
 	const MARKEDDOWN        = 'MarkedDown';
@@ -36500,12 +36285,10 @@ class NotificationEventStateCodeType
 	const REJECTED          = 'Rejected';
 	const CANCELED          = 'Canceled';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class NotificationEventTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                        = 'None';
 	const OUTBID                      = 'OutBid';
 	const ENDOFAUCTION                = 'EndOfAuction';
@@ -36548,26 +36331,21 @@ class NotificationEventTypeCodeType
 	const ACCOUNTSUSPENDED            = 'AccountSuspended';
 	const ACCOUNTSUMMARY              = 'AccountSummary';
 	const CUSTOMCODE                  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class NotificationPayloadTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const EBLSCHEMASOAP = 'eBLSchemaSOAP';
 	const CUSTOMCODE    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class NotificationRoleCodeType
 {
-	// @codingStandardsIgnoreStart
 	const APPLICATION = 'Application';
 	const USER        = 'User';
 	const USERDATA    = 'UserData';
 	const EVENT       = 'Event';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -36989,11 +36767,9 @@ class OfferType
 
 class OperationTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMRULES              = 'ItemRules';
 	const REPLACEALLDEFAULTRULES = 'ReplaceAllDefaultRules';
 	const CUSTOMCODE             = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -37048,14 +36824,12 @@ class OrderIdType
 
 class OrderStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACTIVE     = 'Active';
 	const INACTIVE   = 'Inactive';
 	const COMPLETED  = 'Completed';
 	const CANCELLED  = 'Cancelled';
 	const SHIPPED    = 'Shipped';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -37622,7 +37396,6 @@ class PaginationResultType
 
 class PaidStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOTPAID                      = 'NotPaid';
 	const BUYERHASNOTCOMPLETEDCHECKOUT = 'BuyerHasNotCompletedCheckout';
 	const PAYMENTPENDINGWITHPAYPAL     = 'PaymentPendingWithPayPal';
@@ -37635,12 +37408,10 @@ class PaidStatusCodeType
 	const PAIDWITHPAISAPAY             = 'PaidWithPaisaPay';
 	const PAYMENTPENDING               = 'PaymentPending';
 	const CUSTOMCODE                   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PayPalAccountLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNVERIFIED              = 'Unverified';
 	const INTERNATIONALUNVERIFIED = 'InternationalUnverified';
 	const VERIFIED                = 'Verified';
@@ -37649,12 +37420,10 @@ class PayPalAccountLevelCodeType
 	const UNKNOWN                 = 'Unknown';
 	const INVALID                 = 'Invalid';
 	const CUSTOMCODE              = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PayPalAccountStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACTIVE         = 'Active';
 	const CLOSED         = 'Closed';
 	const HIGHRESTRICTED = 'HighRestricted';
@@ -37664,19 +37433,16 @@ class PayPalAccountStatusCodeType
 	const WIREOFF        = 'WireOff';
 	const UNKNOWN        = 'Unknown';
 	const INVALID        = 'Invalid';
-	// @codingStandardsIgnoreEnd
 }
 
 class PayPalAccountTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const PERSONAL   = 'Personal';
 	const PREMIER    = 'Premier';
 	const BUSINESS   = 'Business';
 	const UNKNOWN    = 'Unknown';
 	const INVALID    = 'Invalid';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -37746,11 +37512,9 @@ class PaymentDetailsType
 
 class PaymentMethodSearchCodeType
 {
-	// @codingStandardsIgnoreStart
 	const PAYPAL           = 'PayPal';
 	const PAISAPAY         = 'PaisaPay';
 	const PAYPALORPAISAPAY = 'PayPalOrPaisaPay';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -37808,7 +37572,6 @@ class PaymentOptionDetailsType
 
 class PaymentStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOPAYMENTFAILURE                   = 'NoPaymentFailure';
 	const BUYERECHECKBOUNCED                 = 'BuyerECheckBounced';
 	const BUYERCREDITCARDFAILED              = 'BuyerCreditCardFailed';
@@ -37816,24 +37579,20 @@ class PaymentStatusCodeType
 	const PAYPALPAYMENTINPROCESS             = 'PayPalPaymentInProcess';
 	const PAYMENTINPROCESS                   = 'PaymentInProcess';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PaymentTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SALE                = 'Sale';
 	const REFUND              = 'Refund';
 	const SELLERDENIEDPAYMENT = 'SellerDeniedPayment';
 	const ADMINREVERSAL       = 'AdminReversal';
 	const ALLOTHER            = 'AllOther';
 	const CUSTOMCODE          = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PhotoDisplayCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                    = 'None';
 	const SLIDESHOW               = 'SlideShow';
 	const SUPERSIZE               = 'SuperSize';
@@ -37842,7 +37601,6 @@ class PhotoDisplayCodeType
 	const VENDORHOSTEDPICTURESHOW = 'VendorHostedPictureShow';
 	const SUPERSIZEPICTURESHOW    = 'SuperSizePictureShow';
 	const CUSTOMCODE              = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -37981,24 +37739,20 @@ class PictureDetailsType
 
 class PictureManagerActionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ADD        = 'Add';
 	const DELETE     = 'Delete';
 	const RENAME     = 'Rename';
 	const MOVE       = 'Move';
 	const CHANGE     = 'Change';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PictureManagerDetailLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RETURNALL          = 'ReturnAll';
 	const RETURNSUBSCRIPTION = 'ReturnSubscription';
 	const RETURNPICTURE      = 'ReturnPicture';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PictureManagerDetailsType
@@ -38293,7 +38047,6 @@ class PictureManagerPictureDisplayType
 
 class PictureManagerPictureDisplayTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const THUMBNAIL  = 'Thumbnail';
 	const BIBO       = 'BIBO';
 	const STANDARD   = 'Standard';
@@ -38301,7 +38054,6 @@ class PictureManagerPictureDisplayTypeCodeType
 	const SUPERSIZE  = 'Supersize';
 	const ORIGINAL   = 'Original';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -38397,14 +38149,12 @@ class PictureManagerPictureType
 
 class PictureManagerSubscriptionLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const FREE       = 'Free';
 	const LEVEL1     = 'Level1';
 	const LEVEL2     = 'Level2';
 	const LEVEL3     = 'Level3';
 	const LEVEL4     = 'Level4';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -38474,12 +38224,10 @@ class PictureManagerSubscriptionType
 
 class PictureSourceCodeType
 {
-	// @codingStandardsIgnoreStart
 	const EPS            = 'EPS';
 	const PICTUREMANAGER = 'PictureManager';
 	const VENDOR         = 'Vendor';
 	const CUSTOMCODE     = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -39822,12 +39570,10 @@ class ProductType
 
 class ProductUseCaseCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ADDITEM    = 'AddItem';
 	const REVISEITEM = 'ReviseItem';
 	const RELISTITEM = 'RelistItem';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -40125,31 +39871,25 @@ class PromotionDetailsType
 
 class PromotionItemPriceTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const AUCTIONPRICE       = 'AuctionPrice';
 	const BUYITNOWPRICE      = 'BuyItNowPrice';
 	const BESTOFFERONLYPRICE = 'BestOfferOnlyPrice';
 	const CLASSIFIEDADPRICE  = 'ClassifiedAdPrice';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PromotionItemSelectionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const MANUAL     = 'Manual';
 	const AUTOMATIC  = 'Automatic';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class PromotionMethodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CROSSSELL  = 'CrossSell';
 	const UPSELL     = 'UpSell';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -40370,7 +40110,6 @@ class PromotionRuleType
 
 class PromotionSchemeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMTOITEM            = 'ItemToItem';
 	const ITEMTOSTORECAT        = 'ItemToStoreCat';
 	const STORETOSTORECAT       = 'StoreToStoreCat';
@@ -40381,7 +40120,6 @@ class PromotionSchemeCodeType
 	const DEFAULTUPSELLLOGIC    = 'DefaultUpSellLogic';
 	const DEFAULTCROSSSELLLOGIC = 'DefaultCrossSellLogic';
 	const CUSTOMCODE            = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -40480,44 +40218,36 @@ class ProximitySearchType
 
 class QuantityOperatorCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LESSTHAN           = 'LessThan';
 	const LESSTHANOREQUAL    = 'LessThanOrEqual';
 	const EQUAL              = 'Equal';
 	const GREATERTHAN        = 'GreaterThan';
 	const GREATERTHANOREQUAL = 'GreaterThanOrEqual';
 	const CUSTOMCODE         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class QuestionTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const GENERAL              = 'General';
 	const SHIPPING             = 'Shipping';
 	const PAYMENT              = 'Payment';
 	const MULTIPLEITEMSHIPPING = 'MultipleItemShipping';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class RcSpaymentStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CANCELED   = 'Canceled';
 	const PAID       = 'Paid';
 	const PENDING    = 'Pending';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class RangeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const HIGH       = 'High';
 	const LOW        = 'Low';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -40590,24 +40320,20 @@ class ReasonCodeDetailType
 
 class RecipientRelationCodeType
 {
-	// @codingStandardsIgnoreStart
 	const VALUE_1    = 'value_1';
 	const VALUE_2    = 'value_2';
 	const VALUE_3    = 'value_3';
 	const VALUE_4    = 'value_4';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class RecommendationEngineCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LISTINGANALYZER     = 'ListingAnalyzer';
 	const SIFFTAS             = 'SIFFTAS';
 	const PRODUCTPRICING      = 'ProductPricing';
 	const CUSTOMCODE          = 'CustomCode';
 	const SUGGESTEDATTRIBUTES = 'SuggestedAttributes';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -40635,7 +40361,6 @@ class RefundArrayType
 
 class RefundReasonCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CANNOTSHIPPRODUCT = 'CannotShipProduct';
 	const WRONGITEMSHIPPED  = 'WrongItemShipped';
 	const ITEMBADQUALITY    = 'ItemBadQuality';
@@ -40643,7 +40368,6 @@ class RefundReasonCodeType
 	const BUYERREMORSE      = 'BuyerRemorse';
 	const OTHER             = 'Other';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -40713,12 +40437,10 @@ class RefundType
 
 class RefundTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const FULL             = 'Full';
 	const FULLPLUSSHIPPING = 'FullPlusShipping';
 	const CUSTOMORPARTIAL  = 'CustomOrPartial';
 	const CUSTOMCODE       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -41394,14 +41116,12 @@ class SkUtype
 
 class SmSsubscriptionErrorCodeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SMSAGGREGATORNOTAVAILABLE   = 'SMSAggregatorNotAvailable';
 	const PHONENUMBERINVALID          = 'PhoneNumberInvalid';
 	const PHONENUMBERCHANGED          = 'PhoneNumberChanged';
 	const PHONENUMBERCARRIERCHANGED   = 'PhoneNumberCarrierChanged';
 	const USERREQUESTEDUNREGISTRATION = 'UserRequestedUnregistration';
 	const CUSTOMCODE                  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -41498,13 +41218,11 @@ class SmSsubscriptionType
 
 class SmSsubscriptionUserStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const REGISTERED   = 'Registered';
 	const UNREGISTERED = 'Unregistered';
 	const PENDING      = 'Pending';
 	const FAILED       = 'Failed';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -41865,13 +41583,11 @@ class SearchDetailsType
 
 class SearchFlagsCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CHARITY                  = 'Charity';
 	const SEARCHINDESCRIPTION      = 'SearchInDescription';
 	const PAYPALBUYERPAYMENTOPTION = 'PayPalBuyerPaymentOption';
 	const NOWANDNEW                = 'NowAndNew';
 	const CUSTOMCODE               = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -42197,19 +41913,16 @@ class SearchResultItemType
 
 class SearchResultValuesCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ESCROW         = 'Escrow';
 	const _NEW           = '_New';
 	const CHARITYLISTING = 'CharityListing';
 	const PICTURE        = 'Picture';
 	const GIFT           = 'Gift';
 	const CUSTOMCODE     = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class SearchSortOrderCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SORTBYENDDATE        = 'SortByEndDate';
 	const SORTBYSTARTDATE      = 'SortByStartDate';
 	const SORTBYCURRENTBID     = 'SortByCurrentBid';
@@ -42227,7 +41940,6 @@ class SearchSortOrderCodeType
 	const SORTBYBIDCOUNTDESC   = 'SortByBidCountDesc';
 	const BESTMATCHSORT        = 'BestMatchSort';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -42287,31 +41999,25 @@ class SearchStoreFilterType
 
 class SearchTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ALL        = 'All';
 	const GALLERY    = 'Gallery';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class SecondChanceOfferDurationCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DAYS_1     = 'Days_1';
 	const DAYS_3     = 'Days_3';
 	const DAYS_5     = 'Days_5';
 	const DAYS_7     = 'Days_7';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class SellerBusinessCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNDEFINED  = 'Undefined';
 	const _PRIVATE   = '_Private';
 	const COMMERCIAL = 'Commercial';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -42467,18 +42173,15 @@ class SellerFavoriteItemPreferencesType
 
 class SellerGuaranteeLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOTELIGIBLE = 'NotEligible';
 	const REGULAR     = 'Regular';
 	const PREMIUM     = 'Premium';
 	const ULTRA       = 'Ultra';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class SellerLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BRONZE     = 'Bronze';
 	const SILVER     = 'Silver';
 	const GOLD       = 'Gold';
@@ -42486,19 +42189,16 @@ class SellerLevelCodeType
 	const TITANIUM   = 'Titanium';
 	const NONE       = 'None';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class SellerPaymentMethodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOTHINGONFILE                      = 'NothingOnFile';
 	const CREDITCARD                         = 'CreditCard';
 	const DIRECTDEBIT                        = 'DirectDebit';
 	const DIRECTDEBITPENDINGSIGNATUREMANDATE = 'DirectDebitPendingSignatureMandate';
 	const EBAYDIRECTPAY                      = 'eBayDirectPay';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -43652,15 +43352,12 @@ class SellingSummaryType
 
 class SetUserNotesActionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ADDORUPDATE = 'AddOrUpdate';
 	const DELETE      = 'Delete';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShipmentDeliveryStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CREATED      = 'Created';
 	const DROPPEDOFF   = 'DroppedOff';
 	const INTRANSIT    = 'InTransit';
@@ -43669,21 +43366,17 @@ class ShipmentDeliveryStatusCodeType
 	const CANCELED     = 'Canceled';
 	const LABELPRINTED = 'LabelPrinted';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShipmentStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACTIVE     = 'Active';
 	const CANCELED   = 'Canceled';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShippingCarrierCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UPS          = 'UPS';
 	const USPS         = 'USPS';
 	const DEUTSCHEPOST = 'DeutschePost';
@@ -43692,7 +43385,6 @@ class ShippingCarrierCodeType
 	const ILOXX        = 'iLoxx';
 	const OTHER        = 'Other';
 	const CUSTOMCODE   = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -44153,7 +43845,6 @@ class ShippingDetailsType
 
 class ShippingFeatureCodeType
 {
-	// @codingStandardsIgnoreStart
 	const DELIVERYCONFIRMATION  = 'DeliveryConfirmation';
 	const SIGNATURECONFIRMATION = 'SignatureConfirmation';
 	const STEALTHPOSTAGE        = 'StealthPostage';
@@ -44161,7 +43852,6 @@ class ShippingFeatureCodeType
 	const OTHER                 = 'Other';
 	const NOTDEFINED            = 'NotDefined';
 	const CUSTOMCODE            = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -44222,18 +43912,15 @@ class ShippingLocationDetailsType
 
 class ShippingOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SITEONLY        = 'SiteOnly';
 	const WORLDWIDE       = 'WorldWide';
 	const SITEPLUSREGIONS = 'SitePlusRegions';
 	const WILLNOTSHIP     = 'WillNotShip';
 	const CUSTOMCODE      = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShippingPackageCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                 = 'None';
 	const LETTER               = 'Letter';
 	const LARGEENVELOPE        = 'LargeEnvelope';
@@ -44253,21 +43940,17 @@ class ShippingPackageCodeType
 	const CARAVAN              = 'Caravan';
 	const INDUSTRYVEHICLES     = 'IndustryVehicles';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShippingRateTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ONDEMAND    = 'OnDemand';
 	const DAILYPICKUP = 'DailyPickup';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShippingRegionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const AFRICA        = 'Africa';
 	const ASIA          = 'Asia';
 	const CARIBBEAN     = 'Caribbean';
@@ -44283,12 +43966,10 @@ class ShippingRegionCodeType
 	const AMERICAS      = 'Americas';
 	const NONE          = 'None';
 	const CUSTOMCODE    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShippingServiceCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UPSGROUND                                           = 'UPSGround';
 	const UPS3RDDAY                                           = 'UPS3rdDay';
 	const UPS2NDDAY                                           = 'UPS2ndDay';
@@ -44715,7 +44396,6 @@ class ShippingServiceCodeType
 	const CAFR_UPSWORLDWIDEEXPRESS                            = 'CAFR_UPSWorldWideExpress';
 	const CAFR_UPSWORLDWIDEEXPEDITED                          = 'CAFR_UPSWorldWideExpedited';
 	const UK_ROYALMAILSPECIALDELIVERY9AM                      = 'UK_RoyalMailSpecialDelivery9am';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -45066,16 +44746,13 @@ class ShippingTermRequiredDefinitionType
 
 class ShippingTermsCodeType
 {
-	// @codingStandardsIgnoreStart
 	const SELLERPAYS = 'SellerPays';
 	const BUYERPAYS  = 'BuyerPays';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ShippingTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const FLAT                                = 'Flat';
 	const CALCULATED                          = 'Calculated';
 	const FREIGHT                             = 'Freight';
@@ -45084,12 +44761,10 @@ class ShippingTypeCodeType
 	const FLATDOMESTICCALCULATEDINTERNATIONAL = 'FlatDomesticCalculatedInternational';
 	const CALCULATEDDOMESTICFLATINTERNATIONAL = 'CalculatedDomesticFlatInternational';
 	const CUSTOMCODE                          = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class SiteCodeType
 {
-	// @codingStandardsIgnoreStart
 	const US             = 'US';
 	const CANADA         = 'Canada';
 	const UK             = 'UK';
@@ -45116,7 +44791,6 @@ class SiteCodeType
 	const SWEDEN         = 'Sweden';
 	const CUSTOMCODE     = 'CustomCode';
 	const CANADAFRENCH   = 'CanadaFrench';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -45801,14 +45475,12 @@ class SiteHostedPictureType
 
 class SiteIdFilterCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LISTEDINCURRENCYIMPLIED   = 'ListedInCurrencyImplied';
 	const LOCATEDINCOUNTRYIMPLIED   = 'LocatedInCountryImplied';
 	const AVAILABLEINCOUNTRYIMPLIED = 'AvailableInCountryImplied';
 	const SITEIMPLIED               = 'SiteImplied';
 	const BELGIUMLISTING            = 'BelgiumListing';
 	const CUSTOMCODE                = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -45903,11 +45575,9 @@ class SiteWideCharacteristicsType
 
 class SkypeContactOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CHAT       = 'Chat';
 	const VOICE      = 'Voice';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -45963,19 +45633,15 @@ class SkypeMeTransactionalEnabledDefinitionType
 
 class SkypeOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE  = 'None';
 	const VOICE = 'Voice';
-	// @codingStandardsIgnoreEnd
 }
 
 class SortOrderCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ASCENDING  = 'Ascending';
 	const DESCENDING = 'Descending';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -46041,13 +45707,11 @@ class SpellingSuggestionType
 
 class StoreCategoryUpdateActionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ADD        = 'Add';
 	const DELETE     = 'Delete';
 	const MOVE       = 'Move';
 	const RENAME     = 'Rename';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -46350,32 +46014,26 @@ class StoreCustomCategoryType
 
 class StoreCustomHeaderLayoutCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOHEADER          = 'NoHeader';
 	const CUSTOMHEADERSHOWN = 'CustomHeaderShown';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class StoreCustomListingHeaderDisplayCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                     = 'None';
 	const FULL                     = 'Full';
 	const FULLANDLEFTNAVIGATIONBAR = 'FullAndLeftNavigationBar';
 	const CUSTOMCODE               = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class StoreCustomListingHeaderLinkCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE           = 'None';
 	const ABOUTMEPAGE    = 'AboutMePage';
 	const CUSTOMPAGE     = 'CustomPage';
 	const CUSTOMCATEGORY = 'CustomCategory';
 	const CUSTOMCODE     = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -46587,12 +46245,10 @@ class StoreCustomPageArrayType
 
 class StoreCustomPageStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ACTIVE     = 'Active';
 	const DELETE     = 'Delete';
 	const INACTIVE   = 'Inactive';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class StoreCustomPageType
@@ -46762,18 +46418,15 @@ class StoreCustomPageType
 
 class StoreFontFaceCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ARIAL      = 'Arial';
 	const COURIER    = 'Courier';
 	const TIMES      = 'Times';
 	const VERDANA    = 'Verdana';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class StoreFontSizeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const XXS        = 'XXS';
 	const XS         = 'XS';
 	const S          = 'S';
@@ -46782,7 +46435,6 @@ class StoreFontSizeCodeType
 	const XL         = 'XL';
 	const XXL        = 'XXL';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -46936,11 +46588,9 @@ class StoreFontType
 
 class StoreHeaderStyleCodeType
 {
-	// @codingStandardsIgnoreStart
 	const FULL       = 'Full';
 	const MINIMIZED  = 'Minimized';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -46970,22 +46620,18 @@ class StoreInventoryEnabledDefinitionType
 
 class StoreItemListLayoutCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LISTVIEW    = 'ListView';
 	const GALLERYVIEW = 'GalleryView';
 	const CUSTOMCODE  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class StoreItemListSortOrderCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ENDINGFIRST   = 'EndingFirst';
 	const NEWLYLISTED   = 'NewlyListed';
 	const LOWESTPRICED  = 'LowestPriced';
 	const HIGHESTPRICED = 'HighestPriced';
 	const CUSTOMCODE    = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -47107,13 +46753,11 @@ class StorePreferencesType
 
 class StoreSearchCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ALLITEMSINTHESTORE       = 'AllItemsInTheStore';
 	const AUCTIONITEMSINTHESTORE   = 'AuctionItemsInTheStore';
 	const BUYITNOWITEMSINTHESTORE  = 'BuyItNowItemsInTheStore';
 	const BUYITNOWITEMSINALLSTORES = 'BuyItNowItemsInAllStores';
 	const CUSTOMCODE               = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -47141,13 +46785,11 @@ class StoreSubscriptionArrayType
 
 class StoreSubscriptionLevelCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CLOSE      = 'Close';
 	const BASIC      = 'Basic';
 	const FEATURED   = 'Featured';
 	const ANCHOR     = 'Anchor';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class StoreSubscriptionType
@@ -47809,11 +47451,9 @@ class StorefrontType
 
 class StringMatchCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CUSTOMCODE = 'CustomCode';
 	const STARTSWITH = 'StartsWith';
 	const CONTAINS   = 'Contains';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -47972,7 +47612,6 @@ class SummaryEventScheduleType
 
 class SummaryFrequencyCodeType
 {
-	// @codingStandardsIgnoreStart
 	const EVERYSUNDAY    = 'EverySunday';
 	const EVERYMONDAY    = 'EveryMonday';
 	const EVERYTUESDAY   = 'EveryTuesday';
@@ -48013,12 +47652,10 @@ class SummaryFrequencyCodeType
 	const MONTHLYON31ST  = 'MonthlyOn31st';
 	const EVERY31DAYS    = 'Every31Days';
 	const EVERY60DAYS    = 'Every60Days';
-	// @codingStandardsIgnoreEnd
 }
 
 class SummaryWindowPeriodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const LAST24HOURS  = 'Last24Hours';
 	const LAST7DAYS    = 'Last7Days';
 	const LAST31DAYS   = 'Last31Days';
@@ -48027,7 +47664,6 @@ class SummaryWindowPeriodCodeType
 	const CURRENTMONTH = 'CurrentMonth';
 	const LASTMONTH    = 'LastMonth';
 	const LAST60DAYS   = 'Last60Days';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -48057,13 +47693,11 @@ class TcRenabledDefinitionType
 
 class TaskStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const PENDING    = 'Pending';
 	const INPROGRESS = 'InProgress';
 	const COMPLETE   = 'Complete';
 	const FAILED     = 'Failed';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -48268,20 +47902,16 @@ class ThemeGroupType
 
 class TokenReturnMethodCodeType
 {
-	// @codingStandardsIgnoreStart
 	const REDIRECT   = 'Redirect';
 	const FETCHTOKEN = 'FetchToken';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class TradingRoleCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BUYER      = 'Buyer';
 	const SELLER     = 'Seller';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -48309,10 +47939,8 @@ class TransactionArrayType
 
 class TransactionPlatformType
 {
-	// @codingStandardsIgnoreStart
 	const EBAY    = 'eBay';
 	const EXPRESS = 'Express';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -48970,11 +48598,9 @@ class TransactionType
 
 class UpSrateOptionCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UPSDAILYRATES    = 'UPSDailyRates';
 	const UPSONDEMANDRATES = 'UPSOnDemandRates';
 	const CUSTOMCODE       = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -49031,7 +48657,6 @@ class UrLdetailsType
 
 class UrLtypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const VIEWITEMURL       = 'ViewItemURL';
 	const VIEWUSERURL       = 'ViewUserURL';
 	const MYEBAYURL         = 'MyeBayURL';
@@ -49044,7 +48669,6 @@ class UrLtypeCodeType
 	const MEDIUMLOGOURL     = 'MediumLogoURL';
 	const LARGELOGOURL      = 'LargeLogoURL';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -49179,7 +48803,6 @@ class UserIdFilterType
 
 class UserStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const UNKNOWN                   = 'Unknown';
 	const SUSPENDED                 = 'Suspended';
 	const CONFIRMED                 = 'Confirmed';
@@ -49198,7 +48821,6 @@ class UserStatusCodeType
 	const CREDITCARDVERIFYPASSPORT  = 'CreditCardVerifyPassport';
 	const UNCONFIRMEDEXPRESS        = 'UnconfirmedExpress';
 	const CUSTOMCODE                = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -49965,12 +49587,10 @@ class VaTdetailsType
 
 class VaTstatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NOVATTAX   = 'NoVATTax';
 	const VATTAX     = 'VATTax';
 	const VATEXEMPT  = 'VATExempt';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 class ValType
@@ -50090,14 +49710,12 @@ class ValuePackEnabledDefinitionType
 
 class VeRoItemStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RECEIVED              = 'Received';
 	const SUBMITTED             = 'Submitted';
 	const REMOVED               = 'Removed';
 	const SUBMISSIONFAILED      = 'SubmissionFailed';
 	const CLARIFICATIONREQUIRED = 'ClarificationRequired';
 	const CUSTOMCODE            = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -50229,12 +49847,10 @@ class VeRoReportItemsType
 
 class VeRoReportPacketStatusCodeType
 {
-	// @codingStandardsIgnoreStart
 	const RECEIVED   = 'Received';
 	const INPROCESS  = 'InProcess';
 	const PROCESSED  = 'Processed';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**
@@ -50704,7 +50320,6 @@ class WantItNowPostType
 
 class WirelessCarrierIdCodeType
 {
-	// @codingStandardsIgnoreStart
 	const CINGULAR       = 'Cingular';
 	const TMOBILE        = 'TMobile';
 	const SPRINT         = 'Sprint';
@@ -50720,7 +50335,6 @@ class WirelessCarrierIdCodeType
 	const VODAFONE       = 'Vodafone';
 	const ATT            = 'ATT';
 	const CUSTOMCODE     = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }
 
 /**

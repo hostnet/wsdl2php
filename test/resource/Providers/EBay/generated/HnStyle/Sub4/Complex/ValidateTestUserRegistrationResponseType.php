@@ -9,6 +9,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class ValidateTestUserRegistrationResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

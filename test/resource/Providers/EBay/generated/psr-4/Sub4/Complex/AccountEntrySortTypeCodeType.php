@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AccountEntrySortTypeCodeType
 {
-    // @codingStandardsIgnoreStart
     const NONE                              = 'None';
     const ACCOUNTENTRYCREATEDTIMEASCENDING  = 'AccountEntryCreatedTimeAscending';
     const ACCOUNTENTRYCREATEDTIMEDESCENDING = 'AccountEntryCreatedTimeDescending';
@@ -13,5 +12,4 @@ class AccountEntrySortTypeCodeType
     const ACCOUNTENTRYFEETYPEASCENDING      = 'AccountEntryFeeTypeAscending';
     const ACCOUNTENTRYFEETYPEDESCENDING     = 'AccountEntryFeeTypeDescending';
     const CUSTOMCODE                        = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

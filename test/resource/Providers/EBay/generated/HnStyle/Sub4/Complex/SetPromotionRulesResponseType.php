@@ -10,6 +10,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class SetPromotionRulesResponseType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractResponseType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

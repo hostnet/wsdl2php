@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class NotificationEventTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                        = 'None';
 	const OUTBID                      = 'OutBid';
 	const ENDOFAUCTION                = 'EndOfAuction';
@@ -47,5 +46,4 @@ class NotificationEventTypeCodeType
 	const ACCOUNTSUSPENDED            = 'AccountSuspended';
 	const ACCOUNTSUMMARY              = 'AccountSummary';
 	const CUSTOMCODE                  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

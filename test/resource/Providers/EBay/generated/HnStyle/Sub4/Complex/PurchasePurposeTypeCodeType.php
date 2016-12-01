@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class PurchasePurposeTypeCodeType
 {
-    // @codingStandardsIgnoreStart
     const OTHER            = 'Other';
     const BUYNOWITEM       = 'BuyNowItem';
     const SHOPPINGCART     = 'ShoppingCart';
@@ -14,5 +13,4 @@ class PurchasePurposeTypeCodeType
     const DONATION         = 'Donation';
     const EBAYBILLING      = 'eBayBilling';
     const CUSTOMCODE       = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

@@ -12,6 +12,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetLiveAuctionCatalogDetailsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class CountryCodeType
 {
-	// @codingStandardsIgnoreStart
 	const AF         = 'AF';
 	const AL         = 'AL';
 	const DZ         = 'DZ';
@@ -250,5 +249,4 @@ class CountryCodeType
 	const QO         = 'QO';
 	const QP         = 'QP';
 	const CUSTOMCODE = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

@@ -4,6 +4,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex\BankAccount;
 
 class UpdateResponse
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

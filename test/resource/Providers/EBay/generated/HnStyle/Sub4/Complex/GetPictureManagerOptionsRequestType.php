@@ -10,6 +10,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetPictureManagerOptionsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

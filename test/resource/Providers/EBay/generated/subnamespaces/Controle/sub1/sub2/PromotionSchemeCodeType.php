@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class PromotionSchemeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ITEMTOITEM            = 'ItemToItem';
 	const ITEMTOSTORECAT        = 'ItemToStoreCat';
 	const STORETOSTORECAT       = 'StoreToStoreCat';
@@ -15,5 +14,4 @@ class PromotionSchemeCodeType
 	const DEFAULTUPSELLLOGIC    = 'DefaultUpSellLogic';
 	const DEFAULTCROSSSELLLOGIC = 'DefaultCrossSellLogic';
 	const CUSTOMCODE            = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

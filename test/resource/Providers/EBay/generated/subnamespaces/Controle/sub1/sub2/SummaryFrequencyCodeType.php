@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class SummaryFrequencyCodeType
 {
-	// @codingStandardsIgnoreStart
 	const EVERYSUNDAY    = 'EverySunday';
 	const EVERYMONDAY    = 'EveryMonday';
 	const EVERYTUESDAY   = 'EveryTuesday';
@@ -45,5 +44,4 @@ class SummaryFrequencyCodeType
 	const MONTHLYON31ST  = 'MonthlyOn31st';
 	const EVERY31DAYS    = 'Every31Days';
 	const EVERY60DAYS    = 'Every60Days';
-	// @codingStandardsIgnoreEnd
 }

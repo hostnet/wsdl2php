@@ -4,7 +4,6 @@ namespace Controle;
 
 class BankAccountType
 {
-	// @codingStandardsIgnoreStart
 	const NONE          = 'None';
 	const BANKREKENING1 = 'Bankrekening1';
 	const SPAARLOON     = 'Spaarloon';
@@ -14,5 +13,4 @@ class BankAccountType
 	const BANKREKENING5 = 'Bankrekening5';
 	const STANDAARD     = 'Standaard';
 	const LEVENSLOOP    = 'Levensloop';
-	// @codingStandardsIgnoreEnd
 }

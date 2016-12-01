@@ -9,6 +9,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GetStoreOptionsRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

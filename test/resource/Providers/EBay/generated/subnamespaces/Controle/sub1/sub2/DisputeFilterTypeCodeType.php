@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class DisputeFilterTypeCodeType
 {
-	// @codingStandardsIgnoreStart
 	const ALLINVOLVEDDISPUTES                = 'AllInvolvedDisputes';
 	const DISPUTESAWAITINGMYRESPONSE         = 'DisputesAwaitingMyResponse';
 	const DISPUTESAWAITINGOTHERPARTYRESPONSE = 'DisputesAwaitingOtherPartyResponse';
@@ -13,5 +12,4 @@ class DisputeFilterTypeCodeType
 	const UNPAIDITEMDISPUTES                 = 'UnpaidItemDisputes';
 	const ITEMNOTRECEIVEDDISPUTES            = 'ItemNotReceivedDisputes';
 	const CUSTOMCODE                         = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

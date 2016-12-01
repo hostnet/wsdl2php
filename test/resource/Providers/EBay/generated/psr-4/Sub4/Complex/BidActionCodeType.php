@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class BidActionCodeType
 {
-    // @codingStandardsIgnoreStart
     const UNKNOWN        = 'Unknown';
     const BID            = 'Bid';
     const NOTUSED        = 'NotUsed';
@@ -16,5 +15,4 @@ class BidActionCodeType
     const BUYITNOW       = 'BuyItNow';
     const PURCHASE       = 'Purchase';
     const CUSTOMCODE     = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

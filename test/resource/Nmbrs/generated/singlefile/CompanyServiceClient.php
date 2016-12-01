@@ -367,7 +367,6 @@ class BankAccount
 
 class BankAccountType
 {
-	// @codingStandardsIgnoreStart
 	const NONE          = 'None';
 	const BANKREKENING1 = 'Bankrekening1';
 	const SPAARLOON     = 'Spaarloon';
@@ -377,7 +376,6 @@ class BankAccountType
 	const BANKREKENING5 = 'Bankrekening5';
 	const STANDAARD     = 'Standaard';
 	const LEVENSLOOP    = 'Levensloop';
-	// @codingStandardsIgnoreEnd
 }
 
 class BankAccount_Update
@@ -2485,13 +2483,11 @@ class RunRequest
 
 class RunRequestStatus
 {
-	// @codingStandardsIgnoreStart
 	const UNDEFINED = 'Undefined';
 	const PENDING   = 'Pending';
 	const HANDLED   = 'Handled';
 	const COMPLETE  = 'Complete';
 	const CANCELED  = 'Canceled';
-	// @codingStandardsIgnoreEnd
 }
 
 class Schedule_GetCurrent
@@ -2770,10 +2766,8 @@ class FulltimeSchedule
 
 class ScheduleCalcMethod
 {
-	// @codingStandardsIgnoreStart
 	const HOURSYEARDEVIDEDPERIODS    = 'HoursYearDevidedPeriods';
 	const HOURS52WEEKSDEVIDEDPERIODS = 'Hours52WeeksDevidedPeriods';
-	// @codingStandardsIgnoreEnd
 }
 
 class HourModel_GetHourCodes
@@ -3089,13 +3083,11 @@ class Company
 
 class LoonaangifteTijdvak
 {
-	// @codingStandardsIgnoreStart
 	const NONE   = 'None';
 	const MONTH  = 'Month';
 	const WEEK4  = 'Week4';
 	const MONTH6 = 'Month6';
 	const YEAR   = 'Year';
-	// @codingStandardsIgnoreEnd
 }
 
 class List_GetByDebtor

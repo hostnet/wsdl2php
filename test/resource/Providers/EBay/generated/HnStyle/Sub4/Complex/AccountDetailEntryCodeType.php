@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class AccountDetailEntryCodeType
 {
-    // @codingStandardsIgnoreStart
     const UNKNOWN                                         = 'Unknown';
     const FEEINSERTION                                    = 'FeeInsertion';
     const FEEBOLD                                         = 'FeeBold';
@@ -253,5 +252,4 @@ class AccountDetailEntryCodeType
     const CREDITEBAYMOTORSPROFEATUREFEE                   = 'CrediteBayMotorsProFeatureFee';
     const FEEGALLERYPLUS                                  = 'FeeGalleryPlus';
     const CREDITGALLERYPLUS                               = 'CreditGalleryPlus';
-    // @codingStandardsIgnoreEnd
 }

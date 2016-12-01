@@ -4,7 +4,6 @@ namespace Controle;
 
 class ShippingPackageCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE                 = 'None';
 	const LETTER               = 'Letter';
 	const LARGEENVELOPE        = 'LargeEnvelope';
@@ -24,5 +23,4 @@ class ShippingPackageCodeType
 	const CARAVAN              = 'Caravan';
 	const INDUSTRYVEHICLES     = 'IndustryVehicles';
 	const CUSTOMCODE           = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

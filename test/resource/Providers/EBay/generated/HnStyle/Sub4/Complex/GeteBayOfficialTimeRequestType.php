@@ -9,6 +9,4 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 class GeteBayOfficialTimeRequestType extends
  \Controle\Hostnet\Namesp\Sub4\Complex\AbstractRequestType
 {
-    // @codingStandardsIgnoreStart
-    // @codingStandardsIgnoreEnd
 }

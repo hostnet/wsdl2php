@@ -4,7 +4,6 @@ namespace Controle;
 
 class DisputeReasonCodeType
 {
-	// @codingStandardsIgnoreStart
 	const BUYERHASNOTPAID             = 'BuyerHasNotPaid';
 	const TRANSACTIONMUTUALLYCANCELED = 'TransactionMutuallyCanceled';
 	const ITEMNOTRECEIVED             = 'ItemNotReceived';
@@ -12,5 +11,4 @@ class DisputeReasonCodeType
 	const NOREFUND                    = 'NoRefund';
 	const RETURNPOLICYUNPAIDITEM      = 'ReturnPolicyUnpaidItem';
 	const CUSTOMCODE                  = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

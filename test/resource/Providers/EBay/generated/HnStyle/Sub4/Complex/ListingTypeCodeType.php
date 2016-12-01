@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ListingTypeCodeType
 {
-    // @codingStandardsIgnoreStart
     const UNKNOWN          = 'Unknown';
     const CHINESE          = 'Chinese';
     const DUTCH            = 'Dutch';
@@ -18,5 +17,4 @@ class ListingTypeCodeType
     const LEADGENERATION   = 'LeadGeneration';
     const EXPRESS          = 'Express';
     const CUSTOMCODE       = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

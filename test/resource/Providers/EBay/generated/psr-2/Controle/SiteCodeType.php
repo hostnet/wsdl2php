@@ -4,7 +4,6 @@ namespace Controle;
 
 class SiteCodeType
 {
-    // @codingStandardsIgnoreStart
     const US             = 'US';
     const CANADA         = 'Canada';
     const UK             = 'UK';
@@ -31,5 +30,4 @@ class SiteCodeType
     const SWEDEN         = 'Sweden';
     const CUSTOMCODE     = 'CustomCode';
     const CANADAFRENCH   = 'CanadaFrench';
-    // @codingStandardsIgnoreEnd
 }

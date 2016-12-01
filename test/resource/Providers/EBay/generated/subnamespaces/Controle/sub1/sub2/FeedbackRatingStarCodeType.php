@@ -4,7 +4,6 @@ namespace Controle\sub1\sub2;
 
 class FeedbackRatingStarCodeType
 {
-	// @codingStandardsIgnoreStart
 	const NONE              = 'None';
 	const YELLOW            = 'Yellow';
 	const BLUE              = 'Blue';
@@ -17,5 +16,4 @@ class FeedbackRatingStarCodeType
 	const PURPLESHOOTING    = 'PurpleShooting';
 	const REDSHOOTING       = 'RedShooting';
 	const CUSTOMCODE        = 'CustomCode';
-	// @codingStandardsIgnoreEnd
 }

@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class ListingDurationCodeType
 {
-    // @codingStandardsIgnoreStart
     const DAYS_1     = 'Days_1';
     const DAYS_3     = 'Days_3';
     const DAYS_5     = 'Days_5';
@@ -18,5 +17,4 @@ class ListingDurationCodeType
     const DAYS_120   = 'Days_120';
     const GTC        = 'GTC';
     const CUSTOMCODE = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

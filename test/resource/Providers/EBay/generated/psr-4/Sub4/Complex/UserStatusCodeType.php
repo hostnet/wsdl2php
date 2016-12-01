@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class UserStatusCodeType
 {
-    // @codingStandardsIgnoreStart
     const UNKNOWN                   = 'Unknown';
     const SUSPENDED                 = 'Suspended';
     const CONFIRMED                 = 'Confirmed';
@@ -23,5 +22,4 @@ class UserStatusCodeType
     const CREDITCARDVERIFYPASSPORT  = 'CreditCardVerifyPassport';
     const UNCONFIRMEDEXPRESS        = 'UnconfirmedExpress';
     const CUSTOMCODE                = 'CustomCode';
-    // @codingStandardsIgnoreEnd
 }

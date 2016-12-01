@@ -4,7 +4,6 @@ namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 class PayPalAccountStatusCodeType
 {
-    // @codingStandardsIgnoreStart
     const ACTIVE         = 'Active';
     const CLOSED         = 'Closed';
     const HIGHRESTRICTED = 'HighRestricted';
@@ -14,5 +13,4 @@ class PayPalAccountStatusCodeType
     const WIREOFF        = 'WireOff';
     const UNKNOWN        = 'Unknown';
     const INVALID        = 'Invalid';
-    // @codingStandardsIgnoreEnd
 }
