@@ -32,7 +32,7 @@ class DeleteMyMessagesRequestType extends
      */
     public function setAlertIDs($val)
     {
-        $this->AlertIDs = (int)$val;
+        $this->AlertIDs = ()$val;
     }
 
     /**
@@ -41,6 +41,6 @@ class DeleteMyMessagesRequestType extends
      */
     public function setMessageIDs($val)
     {
-        $this->MessageIDs = (int)$val;
+        $this->MessageIDs = ()$val;
     }
 }

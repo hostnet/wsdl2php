@@ -36,7 +36,7 @@ class ReasonCodeDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BriefText');
         }
-        $this->BriefText = (int)$val;
+        $this->BriefText = ()$val;
 	}
 
 	/**
@@ -48,7 +48,7 @@ class ReasonCodeDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DetailedText');
         }
-        $this->DetailedText = (int)$val;
+        $this->DetailedText = ()$val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class ReasonCodeDetailType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 
 	/**
@@ -66,6 +66,6 @@ class ReasonCodeDetailType
 	 */
 	public function setCodeID($val)
 	{
-        $this->codeID = (int)$val;
+        $this->codeID = ()$val;
 	}
 }

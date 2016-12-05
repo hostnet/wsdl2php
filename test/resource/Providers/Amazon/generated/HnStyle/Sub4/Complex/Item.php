@@ -48,7 +48,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemId');
         }
-        $this->ItemId = (int)$val;
+        $this->ItemId = ()$val;
     }
 
     /**
@@ -60,7 +60,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductName');
         }
-        $this->ProductName = (int)$val;
+        $this->ProductName = ()$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Catalog');
         }
-        $this->Catalog = (int)$val;
+        $this->Catalog = ()$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Asin');
         }
-        $this->Asin = (int)$val;
+        $this->Asin = ()$val;
     }
 
     /**
@@ -96,7 +96,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->ExchangeId = (int)$val;
+        $this->ExchangeId = ()$val;
     }
 
     /**
@@ -108,7 +108,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Quantity');
         }
-        $this->Quantity = (int)$val;
+        $this->Quantity = ()$val;
     }
 
     /**
@@ -120,7 +120,7 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListPrice');
         }
-        $this->ListPrice = (int)$val;
+        $this->ListPrice = ()$val;
     }
 
     /**
@@ -132,6 +132,6 @@ class Item
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OurPrice');
         }
-        $this->OurPrice = (int)$val;
+        $this->OurPrice = ()$val;
     }
 }

@@ -24,7 +24,7 @@ class CostCenter
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -36,6 +36,6 @@ class CostCenter
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }

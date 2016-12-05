@@ -17,6 +17,6 @@ class VeRoReasonCodeDetailsType
      */
     public function setVeROSiteDetail($val)
     {
-        $this->VeROSiteDetail = (int)$val;
+        $this->VeROSiteDetail = ()$val;
     }
 }

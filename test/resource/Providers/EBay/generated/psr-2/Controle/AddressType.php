@@ -164,7 +164,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = ()$val;
     }
 
     /**
@@ -176,7 +176,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street');
         }
-        $this->Street = (int)$val;
+        $this->Street = ()$val;
     }
 
     /**
@@ -188,7 +188,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street1');
         }
-        $this->Street1 = (int)$val;
+        $this->Street1 = ()$val;
     }
 
     /**
@@ -200,7 +200,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street2');
         }
-        $this->Street2 = (int)$val;
+        $this->Street2 = ()$val;
     }
 
     /**
@@ -212,7 +212,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CityName');
         }
-        $this->CityName = (int)$val;
+        $this->CityName = ()$val;
     }
 
     /**
@@ -224,7 +224,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for County');
         }
-        $this->County = (int)$val;
+        $this->County = ()$val;
     }
 
     /**
@@ -236,7 +236,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StateOrProvince');
         }
-        $this->StateOrProvince = (int)$val;
+        $this->StateOrProvince = ()$val;
     }
 
     /**
@@ -245,7 +245,7 @@ class AddressType
      */
     public function setCountry($val)
     {
-        $this->Country = (int)$val;
+        $this->Country = ()$val;
     }
 
     /**
@@ -257,7 +257,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryName');
         }
-        $this->CountryName = (int)$val;
+        $this->CountryName = ()$val;
     }
 
     /**
@@ -269,7 +269,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = (int)$val;
+        $this->Phone = ()$val;
     }
 
     /**
@@ -278,7 +278,7 @@ class AddressType
      */
     public function setPhoneCountryCode($val)
     {
-        $this->PhoneCountryCode = (int)$val;
+        $this->PhoneCountryCode = ()$val;
     }
 
     /**
@@ -290,7 +290,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneCountryPrefix');
         }
-        $this->PhoneCountryPrefix = (int)$val;
+        $this->PhoneCountryPrefix = ()$val;
     }
 
     /**
@@ -302,7 +302,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneAreaOrCityCode');
         }
-        $this->PhoneAreaOrCityCode = (int)$val;
+        $this->PhoneAreaOrCityCode = ()$val;
     }
 
     /**
@@ -314,7 +314,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneLocalNumber');
         }
-        $this->PhoneLocalNumber = (int)$val;
+        $this->PhoneLocalNumber = ()$val;
     }
 
     /**
@@ -323,7 +323,7 @@ class AddressType
      */
     public function setPhone2CountryCode($val)
     {
-        $this->Phone2CountryCode = (int)$val;
+        $this->Phone2CountryCode = ()$val;
     }
 
     /**
@@ -335,7 +335,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2CountryPrefix');
         }
-        $this->Phone2CountryPrefix = (int)$val;
+        $this->Phone2CountryPrefix = ()$val;
     }
 
     /**
@@ -347,7 +347,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2AreaOrCityCode');
         }
-        $this->Phone2AreaOrCityCode = (int)$val;
+        $this->Phone2AreaOrCityCode = ()$val;
     }
 
     /**
@@ -359,7 +359,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2LocalNumber');
         }
-        $this->Phone2LocalNumber = (int)$val;
+        $this->Phone2LocalNumber = ()$val;
     }
 
     /**
@@ -371,7 +371,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = ()$val;
     }
 
     /**
@@ -383,7 +383,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AddressID');
         }
-        $this->AddressID = (int)$val;
+        $this->AddressID = ()$val;
     }
 
     /**
@@ -392,7 +392,7 @@ class AddressType
      */
     public function setAddressOwner($val)
     {
-        $this->AddressOwner = (int)$val;
+        $this->AddressOwner = ()$val;
     }
 
     /**
@@ -401,7 +401,7 @@ class AddressType
      */
     public function setAddressStatus($val)
     {
-        $this->AddressStatus = (int)$val;
+        $this->AddressStatus = ()$val;
     }
 
     /**
@@ -413,7 +413,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAddressID');
         }
-        $this->ExternalAddressID = (int)$val;
+        $this->ExternalAddressID = ()$val;
     }
 
     /**
@@ -425,7 +425,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalName');
         }
-        $this->InternationalName = (int)$val;
+        $this->InternationalName = ()$val;
     }
 
     /**
@@ -437,7 +437,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalStateAndCity');
         }
-        $this->InternationalStateAndCity = (int)$val;
+        $this->InternationalStateAndCity = ()$val;
     }
 
     /**
@@ -449,7 +449,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalStreet');
         }
-        $this->InternationalStreet = (int)$val;
+        $this->InternationalStreet = ()$val;
     }
 
     /**
@@ -461,7 +461,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CompanyName');
         }
-        $this->CompanyName = (int)$val;
+        $this->CompanyName = ()$val;
     }
 
     /**
@@ -470,7 +470,7 @@ class AddressType
      */
     public function setAddressRecordType($val)
     {
-        $this->AddressRecordType = (int)$val;
+        $this->AddressRecordType = ()$val;
     }
 
     /**
@@ -479,6 +479,6 @@ class AddressType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

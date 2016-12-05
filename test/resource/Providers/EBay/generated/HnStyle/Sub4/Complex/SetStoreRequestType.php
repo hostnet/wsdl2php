@@ -22,6 +22,6 @@ class SetStoreRequestType extends
      */
     public function setStore($val)
     {
-        $this->Store = (int)$val;
+        $this->Store = ()$val;
     }
 }

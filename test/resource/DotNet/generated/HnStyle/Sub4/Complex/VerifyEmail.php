@@ -24,7 +24,7 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = (int)$val;
+        $this->email = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = (int)$val;
+        $this->LicenseKey = ()$val;
     }
 }

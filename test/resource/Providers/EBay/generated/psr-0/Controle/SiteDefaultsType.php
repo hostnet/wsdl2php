@@ -213,7 +213,7 @@ class SiteDefaultsType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = ()$val;
 	}
 
 	/**
@@ -222,7 +222,7 @@ class SiteDefaultsType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = (int)$val;
+        $this->ShippingTermsRequired = ()$val;
 	}
 
 	/**
@@ -231,7 +231,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = ()$val;
 	}
 
 	/**
@@ -240,7 +240,7 @@ class SiteDefaultsType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = (int)$val;
+        $this->DutchBINEnabled = ()$val;
 	}
 
 	/**
@@ -249,7 +249,7 @@ class SiteDefaultsType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = (int)$val;
+        $this->UserConsentRequired = ()$val;
 	}
 
 	/**
@@ -258,7 +258,7 @@ class SiteDefaultsType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = (int)$val;
+        $this->HomePageFeaturedEnabled = ()$val;
 	}
 
 	/**
@@ -267,7 +267,7 @@ class SiteDefaultsType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = (int)$val;
+        $this->ProPackEnabled = ()$val;
 	}
 
 	/**
@@ -276,7 +276,7 @@ class SiteDefaultsType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = (int)$val;
+        $this->BasicUpgradePackEnabled = ()$val;
 	}
 
 	/**
@@ -285,7 +285,7 @@ class SiteDefaultsType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = (int)$val;
+        $this->ValuePackEnabled = ()$val;
 	}
 
 	/**
@@ -294,7 +294,7 @@ class SiteDefaultsType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = (int)$val;
+        $this->ProPackPlusEnabled = ()$val;
 	}
 
 	/**
@@ -303,7 +303,7 @@ class SiteDefaultsType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = (int)$val;
+        $this->AdFormatEnabled = ()$val;
 	}
 
 	/**
@@ -312,7 +312,7 @@ class SiteDefaultsType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = (int)$val;
+        $this->DigitalDeliveryEnabled = ()$val;
 	}
 
 	/**
@@ -321,7 +321,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = (int)$val;
+        $this->BestOfferCounterEnabled = ()$val;
 	}
 
 	/**
@@ -330,7 +330,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = ()$val;
 	}
 
 	/**
@@ -339,7 +339,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = ()$val;
 	}
 
 	/**
@@ -348,7 +348,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = ()$val;
 	}
 
 	/**
@@ -357,7 +357,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = ()$val;
 	}
 
 	/**
@@ -366,7 +366,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = (int)$val;
+        $this->LocalMarketNonSubscription = ()$val;
 	}
 
 	/**
@@ -375,7 +375,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = (int)$val;
+        $this->ExpressEnabled = ()$val;
 	}
 
 	/**
@@ -384,7 +384,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = (int)$val;
+        $this->ExpressPicturesRequired = ()$val;
 	}
 
 	/**
@@ -393,7 +393,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = (int)$val;
+        $this->ExpressConditionRequired = ()$val;
 	}
 
 	/**
@@ -402,7 +402,7 @@ class SiteDefaultsType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = ()$val;
 	}
 
 	/**
@@ -411,7 +411,7 @@ class SiteDefaultsType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = (int)$val;
+        $this->SellerContactDetailsEnabled = ()$val;
 	}
 
 	/**
@@ -420,7 +420,7 @@ class SiteDefaultsType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = ()$val;
 	}
 
 	/**
@@ -429,7 +429,7 @@ class SiteDefaultsType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = (int)$val;
+        $this->StoreInventoryEnabled = ()$val;
 	}
 
 	/**
@@ -438,7 +438,7 @@ class SiteDefaultsType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = ()$val;
 	}
 
 	/**
@@ -447,7 +447,7 @@ class SiteDefaultsType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = ()$val;
 	}
 
 	/**
@@ -459,7 +459,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
         }
-        $this->LocalListingDistancesRegular = (int)$val;
+        $this->LocalListingDistancesRegular = ()$val;
 	}
 
 	/**
@@ -471,7 +471,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
         }
-        $this->LocalListingDistancesSpecialty = (int)$val;
+        $this->LocalListingDistancesSpecialty = ()$val;
 	}
 
 	/**
@@ -483,7 +483,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
         }
-        $this->LocalListingDistancesNonSubscription = (int)$val;
+        $this->LocalListingDistancesNonSubscription = ()$val;
 	}
 
 	/**
@@ -492,6 +492,6 @@ class SiteDefaultsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

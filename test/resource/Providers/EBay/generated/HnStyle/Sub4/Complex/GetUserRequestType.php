@@ -46,7 +46,7 @@ class GetUserRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class GetUserRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->UserID = (int)$val;
+        $this->UserID = ()$val;
     }
 
     /**
@@ -67,6 +67,6 @@ class GetUserRequestType extends
      */
     public function setIncludeExpressRequirements($val)
     {
-        $this->IncludeExpressRequirements = (int)$val;
+        $this->IncludeExpressRequirements = ()$val;
     }
 }

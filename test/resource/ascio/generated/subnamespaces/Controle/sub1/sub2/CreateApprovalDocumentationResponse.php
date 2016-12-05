@@ -21,7 +21,7 @@ class CreateApprovalDocumentationResponse
 	 */
 	public function setCreateApprovalDocumentationResult($val)
 	{
-        $this->CreateApprovalDocumentationResult = (int)$val;
+        $this->CreateApprovalDocumentationResult = ()$val;
 	}
 
 	/**
@@ -33,6 +33,6 @@ class CreateApprovalDocumentationResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for documentationId');
         }
-        $this->documentationId = (int)$val;
+        $this->documentationId = ()$val;
 	}
 }

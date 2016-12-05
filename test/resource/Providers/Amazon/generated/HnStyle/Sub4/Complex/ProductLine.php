@@ -24,7 +24,7 @@ class ProductLine
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mode');
         }
-        $this->Mode = (int)$val;
+        $this->Mode = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class ProductLine
      */
     public function setProductInfo($val)
     {
-        $this->ProductInfo = (int)$val;
+        $this->ProductInfo = ()$val;
     }
 }

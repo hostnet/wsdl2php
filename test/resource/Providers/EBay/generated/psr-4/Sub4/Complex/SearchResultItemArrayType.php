@@ -23,6 +23,6 @@ class SearchResultItemArrayType
      */
     public function setSearchResultItem($val)
     {
-        $this->SearchResultItem = (int)$val;
+        $this->SearchResultItem = ()$val;
     }
 }

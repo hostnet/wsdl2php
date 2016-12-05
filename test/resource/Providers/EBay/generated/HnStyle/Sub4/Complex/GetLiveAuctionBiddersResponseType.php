@@ -49,7 +49,7 @@ class GetLiveAuctionBiddersResponseType extends
      */
     public function setBidderDetails($val)
     {
-        $this->BidderDetails = (int)$val;
+        $this->BidderDetails = ()$val;
     }
 
     /**
@@ -61,7 +61,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalPending = (int)$val;
+        $this->TotalPending = ()$val;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalApproved = (int)$val;
+        $this->TotalApproved = ()$val;
     }
 
     /**
@@ -85,7 +85,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalDenied = (int)$val;
+        $this->TotalDenied = ()$val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetLiveAuctionBiddersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = (int)$val;
+        $this->PageNumber = ()$val;
     }
 
     /**
@@ -106,6 +106,6 @@ class GetLiveAuctionBiddersResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = ()$val;
     }
 }

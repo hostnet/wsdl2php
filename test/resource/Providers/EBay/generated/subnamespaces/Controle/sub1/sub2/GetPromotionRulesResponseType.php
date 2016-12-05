@@ -23,6 +23,6 @@ class GetPromotionRulesResponseType extends
 	 */
 	public function setPromotionRuleArray($val)
 	{
-        $this->PromotionRuleArray = (int)$val;
+        $this->PromotionRuleArray = ()$val;
 	}
 }

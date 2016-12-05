@@ -24,7 +24,7 @@ class SearchDnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class SearchDnsSecKey
      */
     public function setCriteria($val)
     {
-        $this->criteria = (int)$val;
+        $this->criteria = ()$val;
     }
 }

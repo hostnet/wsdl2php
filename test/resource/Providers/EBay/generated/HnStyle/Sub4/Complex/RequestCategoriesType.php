@@ -47,7 +47,7 @@ class RequestCategoriesType
      */
     public function setCategoriesOnly($val)
     {
-        $this->CategoriesOnly = (int)$val;
+        $this->CategoriesOnly = ()$val;
     }
 
     /**
@@ -59,7 +59,7 @@ class RequestCategoriesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxCategories = (int)$val;
+        $this->MaxCategories = ()$val;
     }
 
     /**
@@ -71,7 +71,7 @@ class RequestCategoriesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxSubcategories = (int)$val;
+        $this->MaxSubcategories = ()$val;
     }
 
     /**
@@ -83,6 +83,6 @@ class RequestCategoriesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Levels = (int)$val;
+        $this->Levels = ()$val;
     }
 }

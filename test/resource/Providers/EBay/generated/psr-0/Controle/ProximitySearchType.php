@@ -32,7 +32,7 @@ class ProximitySearchType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxDistance = (int)$val;
+        $this->MaxDistance = ()$val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class ProximitySearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = ()$val;
 	}
 
 	/**
@@ -53,6 +53,6 @@ class ProximitySearchType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

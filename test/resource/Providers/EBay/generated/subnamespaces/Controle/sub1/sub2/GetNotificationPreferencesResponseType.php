@@ -40,7 +40,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setApplicationDeliveryPreferences($val)
 	{
-        $this->ApplicationDeliveryPreferences = (int)$val;
+        $this->ApplicationDeliveryPreferences = ()$val;
 	}
 
 	/**
@@ -49,7 +49,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setUserDeliveryPreferenceArray($val)
 	{
-        $this->UserDeliveryPreferenceArray = (int)$val;
+        $this->UserDeliveryPreferenceArray = ()$val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setUserData($val)
 	{
-        $this->UserData = (int)$val;
+        $this->UserData = ()$val;
 	}
 
 	/**
@@ -67,6 +67,6 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setEventProperty($val)
 	{
-        $this->EventProperty = (int)$val;
+        $this->EventProperty = ()$val;
 	}
 }

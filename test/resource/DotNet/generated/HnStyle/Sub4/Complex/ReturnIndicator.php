@@ -32,7 +32,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ResponseText');
         }
-        $this->ResponseText = (int)$val;
+        $this->ResponseText = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class ReturnIndicator
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ResponseCode = (int)$val;
+        $this->ResponseCode = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastMailServer');
         }
-        $this->LastMailServer = (int)$val;
+        $this->LastMailServer = ()$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class ReturnIndicator
      */
     public function setGoodEmail($val)
     {
-        $this->GoodEmail = (int)$val;
+        $this->GoodEmail = ()$val;
     }
 }

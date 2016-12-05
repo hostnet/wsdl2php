@@ -25,6 +25,6 @@ class AddOrderRequestType extends
      */
     public function setOrder($val)
     {
-        $this->Order = (int)$val;
+        $this->Order = ()$val;
     }
 }

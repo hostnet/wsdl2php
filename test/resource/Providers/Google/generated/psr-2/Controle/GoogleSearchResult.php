@@ -57,7 +57,7 @@ class GoogleSearchResult
      */
     public function setDocumentFiltering($val)
     {
-        $this->documentFiltering = (int)$val;
+        $this->documentFiltering = ()$val;
     }
 
     /**
@@ -69,7 +69,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchComments');
         }
-        $this->searchComments = (int)$val;
+        $this->searchComments = ()$val;
     }
 
     /**
@@ -81,7 +81,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->estimatedTotalResultsCount = (int)$val;
+        $this->estimatedTotalResultsCount = ()$val;
     }
 
     /**
@@ -90,7 +90,7 @@ class GoogleSearchResult
      */
     public function setEstimateIsExact($val)
     {
-        $this->estimateIsExact = (int)$val;
+        $this->estimateIsExact = ()$val;
     }
 
     /**
@@ -99,7 +99,7 @@ class GoogleSearchResult
      */
     public function setResultElements($val)
     {
-        $this->resultElements = (int)$val;
+        $this->resultElements = ()$val;
     }
 
     /**
@@ -111,7 +111,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchQuery');
         }
-        $this->searchQuery = (int)$val;
+        $this->searchQuery = ()$val;
     }
 
     /**
@@ -123,7 +123,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->startIndex = (int)$val;
+        $this->startIndex = ()$val;
     }
 
     /**
@@ -135,7 +135,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->endIndex = (int)$val;
+        $this->endIndex = ()$val;
     }
 
     /**
@@ -147,7 +147,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchTips');
         }
-        $this->searchTips = (int)$val;
+        $this->searchTips = ()$val;
     }
 
     /**
@@ -156,7 +156,7 @@ class GoogleSearchResult
      */
     public function setDirectoryCategories($val)
     {
-        $this->directoryCategories = (int)$val;
+        $this->directoryCategories = ()$val;
     }
 
     /**
@@ -165,6 +165,6 @@ class GoogleSearchResult
      */
     public function setSearchTime($val)
     {
-        $this->searchTime = (int)$val;
+        $this->searchTime = ()$val;
     }
 }

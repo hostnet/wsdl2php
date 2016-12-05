@@ -24,6 +24,6 @@ class GetDisputeRequestType extends
      */
     public function setDisputeID($val)
     {
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = ()$val;
     }
 }

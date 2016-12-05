@@ -36,7 +36,7 @@ class MyeBaySelectionType
      */
     public function setInclude($val)
     {
-        $this->Include = (int)$val;
+        $this->Include = ()$val;
     }
 
     /**
@@ -45,7 +45,7 @@ class MyeBaySelectionType
      */
     public function setSort($val)
     {
-        $this->Sort = (int)$val;
+        $this->Sort = ()$val;
     }
 
     /**
@@ -57,7 +57,7 @@ class MyeBaySelectionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxResults = (int)$val;
+        $this->MaxResults = ()$val;
     }
 
     /**
@@ -66,6 +66,6 @@ class MyeBaySelectionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

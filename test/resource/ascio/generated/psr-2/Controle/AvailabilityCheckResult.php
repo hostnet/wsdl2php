@@ -32,7 +32,7 @@ class AvailabilityCheckResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->DomainName = (int)$val;
+        $this->DomainName = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class AvailabilityCheckResult
      */
     public function setQuality($val)
     {
-        $this->Quality = (int)$val;
+        $this->Quality = ()$val;
     }
 
     /**
@@ -53,7 +53,7 @@ class AvailabilityCheckResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->StatusCode = (int)$val;
+        $this->StatusCode = ()$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class AvailabilityCheckResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StatusMessage');
         }
-        $this->StatusMessage = (int)$val;
+        $this->StatusMessage = ()$val;
     }
 }

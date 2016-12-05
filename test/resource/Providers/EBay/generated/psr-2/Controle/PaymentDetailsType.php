@@ -42,7 +42,7 @@ class PaymentDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->HoursToDeposit = (int)$val;
+        $this->HoursToDeposit = ()$val;
     }
 
     /**
@@ -54,7 +54,7 @@ class PaymentDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DaysToFullPayment = (int)$val;
+        $this->DaysToFullPayment = ()$val;
     }
 
     /**
@@ -63,6 +63,6 @@ class PaymentDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

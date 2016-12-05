@@ -46,7 +46,7 @@ class RelistItemResponseType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -55,7 +55,7 @@ class RelistItemResponseType extends
      */
     public function setFees($val)
     {
-        $this->Fees = (int)$val;
+        $this->Fees = ()$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class RelistItemResponseType extends
      */
     public function setStartTime($val)
     {
-        $this->StartTime = (int)$val;
+        $this->StartTime = ()$val;
     }
 
     /**
@@ -73,7 +73,7 @@ class RelistItemResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->EndTime = (int)$val;
+        $this->EndTime = ()$val;
     }
 
     /**
@@ -85,7 +85,7 @@ class RelistItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = ()$val;
     }
 
     /**
@@ -97,6 +97,6 @@ class RelistItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = ()$val;
     }
 }

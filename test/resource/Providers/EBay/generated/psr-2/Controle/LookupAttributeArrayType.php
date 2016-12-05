@@ -24,6 +24,6 @@ class LookupAttributeArrayType
      */
     public function setLookupAttribute($val)
     {
-        $this->LookupAttribute = (int)$val;
+        $this->LookupAttribute = ()$val;
     }
 }

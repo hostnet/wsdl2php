@@ -64,7 +64,7 @@ class NotificationDetailsType
 	 */
 	public function setDeliveryURL($val)
 	{
-        $this->DeliveryURL = (int)$val;
+        $this->DeliveryURL = ()$val;
 	}
 
 	/**
@@ -76,7 +76,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReferenceID');
         }
-        $this->ReferenceID = (int)$val;
+        $this->ReferenceID = ()$val;
 	}
 
 	/**
@@ -85,7 +85,7 @@ class NotificationDetailsType
 	 */
 	public function setExpirationTime($val)
 	{
-        $this->ExpirationTime = (int)$val;
+        $this->ExpirationTime = ()$val;
 	}
 
 	/**
@@ -94,7 +94,7 @@ class NotificationDetailsType
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = ()$val;
 	}
 
 	/**
@@ -106,7 +106,7 @@ class NotificationDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Retries = (int)$val;
+        $this->Retries = ()$val;
 	}
 
 	/**
@@ -115,7 +115,7 @@ class NotificationDetailsType
 	 */
 	public function setDeliveryStatus($val)
 	{
-        $this->DeliveryStatus = (int)$val;
+        $this->DeliveryStatus = ()$val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class NotificationDetailsType
 	 */
 	public function setNextRetryTime($val)
 	{
-        $this->NextRetryTime = (int)$val;
+        $this->NextRetryTime = ()$val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class NotificationDetailsType
 	 */
 	public function setDeliveryTime($val)
 	{
-        $this->DeliveryTime = (int)$val;
+        $this->DeliveryTime = ()$val;
 	}
 
 	/**
@@ -145,7 +145,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorMessage');
         }
-        $this->ErrorMessage = (int)$val;
+        $this->ErrorMessage = ()$val;
 	}
 
 	/**
@@ -154,6 +154,6 @@ class NotificationDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

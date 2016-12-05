@@ -30,7 +30,7 @@ class SetPromotionRulesRequestType extends
      */
     public function setOperationType($val)
     {
-        $this->OperationType = (int)$val;
+        $this->OperationType = ()$val;
     }
 
     /**
@@ -39,6 +39,6 @@ class SetPromotionRulesRequestType extends
      */
     public function setPromotionRuleArray($val)
     {
-        $this->PromotionRuleArray = (int)$val;
+        $this->PromotionRuleArray = ()$val;
     }
 }

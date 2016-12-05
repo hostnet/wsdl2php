@@ -30,7 +30,7 @@ class VeRoReportedItemType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -39,7 +39,7 @@ class VeRoReportedItemType
      */
     public function setItemStatus($val)
     {
-        $this->ItemStatus = (int)$val;
+        $this->ItemStatus = ()$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class VeRoReportedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemReasonForFailure');
         }
-        $this->ItemReasonForFailure = (int)$val;
+        $this->ItemReasonForFailure = ()$val;
     }
 
     /**
@@ -60,6 +60,6 @@ class VeRoReportedItemType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

@@ -26,6 +26,6 @@ class GetNotificationPreferencesRequestType extends
      */
     public function setPreferenceLevel($val)
     {
-        $this->PreferenceLevel = (int)$val;
+        $this->PreferenceLevel = ()$val;
     }
 }

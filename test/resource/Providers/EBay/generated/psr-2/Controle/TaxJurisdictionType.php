@@ -44,7 +44,7 @@ class TaxJurisdictionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for JurisdictionID');
         }
-        $this->JurisdictionID = (int)$val;
+        $this->JurisdictionID = ()$val;
     }
 
     /**
@@ -53,7 +53,7 @@ class TaxJurisdictionType
      */
     public function setSalesTaxPercent($val)
     {
-        $this->SalesTaxPercent = (int)$val;
+        $this->SalesTaxPercent = ()$val;
     }
 
     /**
@@ -62,7 +62,7 @@ class TaxJurisdictionType
      */
     public function setShippingIncludedInTax($val)
     {
-        $this->ShippingIncludedInTax = (int)$val;
+        $this->ShippingIncludedInTax = ()$val;
     }
 
     /**
@@ -74,7 +74,7 @@ class TaxJurisdictionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for JurisdictionName');
         }
-        $this->JurisdictionName = (int)$val;
+        $this->JurisdictionName = ()$val;
     }
 
     /**
@@ -83,6 +83,6 @@ class TaxJurisdictionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

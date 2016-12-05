@@ -20,6 +20,6 @@ class ExternalAlertIdArrayType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAlertID');
         }
-        $this->ExternalAlertID = (int)$val;
+        $this->ExternalAlertID = ()$val;
     }
 }

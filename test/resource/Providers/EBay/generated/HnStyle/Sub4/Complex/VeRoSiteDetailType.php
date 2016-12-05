@@ -25,7 +25,7 @@ class VeRoSiteDetailType
      */
     public function setSite($val)
     {
-        $this->Site = (int)$val;
+        $this->Site = ()$val;
     }
 
     /**
@@ -34,7 +34,7 @@ class VeRoSiteDetailType
      */
     public function setReasonCodeDetail($val)
     {
-        $this->ReasonCodeDetail = (int)$val;
+        $this->ReasonCodeDetail = ()$val;
     }
 
     /**
@@ -43,6 +43,6 @@ class VeRoSiteDetailType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

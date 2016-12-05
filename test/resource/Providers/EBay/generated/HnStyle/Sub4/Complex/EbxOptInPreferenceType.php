@@ -25,7 +25,7 @@ class EbxOptInPreferenceType
      */
     public function setEBxOptInPreference($val)
     {
-        $this->eBxOptInPreference = (int)$val;
+        $this->eBxOptInPreference = ()$val;
     }
 
     /**
@@ -34,6 +34,6 @@ class EbxOptInPreferenceType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

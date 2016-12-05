@@ -112,7 +112,7 @@ class ApiAccessRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallName');
         }
-        $this->CallName = (int)$val;
+        $this->CallName = ()$val;
 	}
 
 	/**
@@ -121,7 +121,7 @@ class ApiAccessRuleType
 	 */
 	public function setCountsTowardAggregate($val)
 	{
-        $this->CountsTowardAggregate = (int)$val;
+        $this->CountsTowardAggregate = ()$val;
 	}
 
 	/**
@@ -130,7 +130,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailyHardLimit($val)
 	{
-        $this->DailyHardLimit = (int)$val;
+        $this->DailyHardLimit = ()$val;
 	}
 
 	/**
@@ -139,7 +139,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailySoftLimit($val)
 	{
-        $this->DailySoftLimit = (int)$val;
+        $this->DailySoftLimit = ()$val;
 	}
 
 	/**
@@ -148,7 +148,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailyUsage($val)
 	{
-        $this->DailyUsage = (int)$val;
+        $this->DailyUsage = ()$val;
 	}
 
 	/**
@@ -157,7 +157,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlyHardLimit($val)
 	{
-        $this->HourlyHardLimit = (int)$val;
+        $this->HourlyHardLimit = ()$val;
 	}
 
 	/**
@@ -166,7 +166,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlySoftLimit($val)
 	{
-        $this->HourlySoftLimit = (int)$val;
+        $this->HourlySoftLimit = ()$val;
 	}
 
 	/**
@@ -175,7 +175,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlyUsage($val)
 	{
-        $this->HourlyUsage = (int)$val;
+        $this->HourlyUsage = ()$val;
 	}
 
 	/**
@@ -187,7 +187,7 @@ class ApiAccessRuleType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = (int)$val;
+        $this->Period = ()$val;
 	}
 
 	/**
@@ -196,7 +196,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicHardLimit($val)
 	{
-        $this->PeriodicHardLimit = (int)$val;
+        $this->PeriodicHardLimit = ()$val;
 	}
 
 	/**
@@ -205,7 +205,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicSoftLimit($val)
 	{
-        $this->PeriodicSoftLimit = (int)$val;
+        $this->PeriodicSoftLimit = ()$val;
 	}
 
 	/**
@@ -214,7 +214,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicUsage($val)
 	{
-        $this->PeriodicUsage = (int)$val;
+        $this->PeriodicUsage = ()$val;
 	}
 
 	/**
@@ -223,7 +223,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicStartDate($val)
 	{
-        $this->PeriodicStartDate = (int)$val;
+        $this->PeriodicStartDate = ()$val;
 	}
 
 	/**
@@ -232,7 +232,7 @@ class ApiAccessRuleType
 	 */
 	public function setModTime($val)
 	{
-        $this->ModTime = (int)$val;
+        $this->ModTime = ()$val;
 	}
 
 	/**
@@ -241,7 +241,7 @@ class ApiAccessRuleType
 	 */
 	public function setRuleCurrentStatus($val)
 	{
-        $this->RuleCurrentStatus = (int)$val;
+        $this->RuleCurrentStatus = ()$val;
 	}
 
 	/**
@@ -250,7 +250,7 @@ class ApiAccessRuleType
 	 */
 	public function setRuleStatus($val)
 	{
-        $this->RuleStatus = (int)$val;
+        $this->RuleStatus = ()$val;
 	}
 
 	/**
@@ -259,6 +259,6 @@ class ApiAccessRuleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

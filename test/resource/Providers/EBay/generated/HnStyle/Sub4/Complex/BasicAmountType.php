@@ -24,7 +24,7 @@ class BasicAmountType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for _');
         }
-        $this->_ = (int)$val;
+        $this->_ = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class BasicAmountType
      */
     public function setCurrencyID($val)
     {
-        $this->currencyID = (int)$val;
+        $this->currencyID = ()$val;
     }
 }

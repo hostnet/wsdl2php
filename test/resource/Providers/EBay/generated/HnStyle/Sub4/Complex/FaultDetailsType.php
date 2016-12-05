@@ -39,7 +39,7 @@ class FaultDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorCode');
         }
-        $this->ErrorCode = (int)$val;
+        $this->ErrorCode = ()$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class FaultDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Severity');
         }
-        $this->Severity = (int)$val;
+        $this->Severity = ()$val;
     }
 
     /**
@@ -63,7 +63,7 @@ class FaultDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DetailedMessage');
         }
-        $this->DetailedMessage = (int)$val;
+        $this->DetailedMessage = ()$val;
     }
 
     /**
@@ -72,6 +72,6 @@ class FaultDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

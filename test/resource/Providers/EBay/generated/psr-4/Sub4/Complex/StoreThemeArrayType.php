@@ -30,7 +30,7 @@ class StoreThemeArrayType
      */
     public function setTheme($val)
     {
-        $this->Theme = (int)$val;
+        $this->Theme = ()$val;
     }
 
     /**
@@ -39,7 +39,7 @@ class StoreThemeArrayType
      */
     public function setGenericColorSchemeArray($val)
     {
-        $this->GenericColorSchemeArray = (int)$val;
+        $this->GenericColorSchemeArray = ()$val;
     }
 
     /**
@@ -48,6 +48,6 @@ class StoreThemeArrayType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

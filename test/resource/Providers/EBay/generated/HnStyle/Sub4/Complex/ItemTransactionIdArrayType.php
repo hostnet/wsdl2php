@@ -16,6 +16,6 @@ class ItemTransactionIdArrayType
      */
     public function setItemTransactionID($val)
     {
-        $this->ItemTransactionID = (int)$val;
+        $this->ItemTransactionID = ()$val;
     }
 }

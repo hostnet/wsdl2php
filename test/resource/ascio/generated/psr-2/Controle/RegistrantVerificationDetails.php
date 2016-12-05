@@ -28,7 +28,7 @@ class RegistrantVerificationDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VerifiedBy');
         }
-        $this->VerifiedBy = (int)$val;
+        $this->VerifiedBy = ()$val;
     }
 
     /**
@@ -37,7 +37,7 @@ class RegistrantVerificationDetails
      */
     public function setVerificationDate($val)
     {
-        $this->VerificationDate = (int)$val;
+        $this->VerificationDate = ()$val;
     }
 
     /**
@@ -46,6 +46,6 @@ class RegistrantVerificationDetails
      */
     public function setMessages($val)
     {
-        $this->Messages = (int)$val;
+        $this->Messages = ()$val;
     }
 }

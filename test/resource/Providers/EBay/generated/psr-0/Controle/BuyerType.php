@@ -25,7 +25,7 @@ class BuyerType
 	 */
 	public function setShippingAddress($val)
 	{
-        $this->ShippingAddress = (int)$val;
+        $this->ShippingAddress = ()$val;
 	}
 
 	/**
@@ -34,6 +34,6 @@ class BuyerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

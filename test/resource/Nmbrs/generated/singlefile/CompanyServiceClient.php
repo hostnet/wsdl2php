@@ -26,7 +26,7 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->EmployeeID = (int)$val;
+        $this->EmployeeID = ()$val;
 	}
 
 	/**
@@ -38,7 +38,7 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunID = (int)$val;
+        $this->RunID = ()$val;
 	}
 }
 
@@ -69,7 +69,7 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompanyResponse
 	 */
 	public function setSalaryDocumentsGetEmployeePayslipsPDFByRunCompanyResult($val)
 	{
-        $this->SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult = (int)$val;
+        $this->SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult = ()$val;
 	}
 }
 
@@ -88,7 +88,7 @@ class Payslip
 	 */
 	public function setPDF($val)
 	{
-        $this->PDF = (int)$val;
+        $this->PDF = ()$val;
 	}
 }
 
@@ -114,7 +114,7 @@ class SalaryDocuments_GetAllPayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -126,7 +126,7 @@ class SalaryDocuments_GetAllPayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunID = (int)$val;
+        $this->RunID = ()$val;
 	}
 }
 
@@ -145,7 +145,7 @@ class SalaryDocuments_GetAllPayslipsPdFbyRunCompanyResponse
 	 */
 	public function setSalaryDocumentsGetAllPayslipsPDFByRunCompanyResult($val)
 	{
-        $this->SalaryDocuments_GetAllPayslipsPDFByRunCompanyResult = (int)$val;
+        $this->SalaryDocuments_GetAllPayslipsPDFByRunCompanyResult = ()$val;
 	}
 }
 
@@ -167,7 +167,7 @@ class Company_GetCurrentPeriod
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -189,7 +189,7 @@ class Company_GetCurrentPeriodResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Company_GetCurrentPeriodResult');
         }
-        $this->Company_GetCurrentPeriodResult = (int)$val;
+        $this->Company_GetCurrentPeriodResult = ()$val;
 	}
 }
 
@@ -211,7 +211,7 @@ class BankAccount_GetCurrent
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -230,7 +230,7 @@ class BankAccount_GetCurrentResponse
 	 */
 	public function setBankAccountGetCurrentResult($val)
 	{
-        $this->BankAccount_GetCurrentResult = (int)$val;
+        $this->BankAccount_GetCurrentResult = ()$val;
 	}
 }
 
@@ -280,7 +280,7 @@ class BankAccount
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Id = (int)$val;
+        $this->Id = ()$val;
 	}
 
 	/**
@@ -292,7 +292,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Number');
         }
-        $this->Number = (int)$val;
+        $this->Number = ()$val;
 	}
 
 	/**
@@ -304,7 +304,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 
 	/**
@@ -316,7 +316,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IBAN');
         }
-        $this->IBAN = (int)$val;
+        $this->IBAN = ()$val;
 	}
 
 	/**
@@ -328,7 +328,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BIC');
         }
-        $this->BIC = (int)$val;
+        $this->BIC = ()$val;
 	}
 
 	/**
@@ -340,7 +340,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = (int)$val;
+        $this->City = ()$val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = ()$val;
 	}
 
 	/**
@@ -361,7 +361,7 @@ class BankAccount
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = ()$val;
 	}
 }
 
@@ -400,7 +400,7 @@ class BankAccount_Update
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -409,7 +409,7 @@ class BankAccount_Update
 	 */
 	public function setBankAccount($val)
 	{
-        $this->BankAccount = (int)$val;
+        $this->BankAccount = ()$val;
 	}
 }
 
@@ -438,7 +438,7 @@ class BankAccount_Insert
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -447,7 +447,7 @@ class BankAccount_Insert
 	 */
 	public function setBankAccount($val)
 	{
-        $this->BankAccount = (int)$val;
+        $this->BankAccount = ()$val;
 	}
 }
 
@@ -469,7 +469,7 @@ class BankAccount_InsertResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BankAccount_InsertResult = (int)$val;
+        $this->BankAccount_InsertResult = ()$val;
 	}
 }
 
@@ -503,7 +503,7 @@ class FileExplorer_UploadFile
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -515,7 +515,7 @@ class FileExplorer_UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentName');
         }
-        $this->StrDocumentName = (int)$val;
+        $this->StrDocumentName = ()$val;
 	}
 
 	/**
@@ -527,7 +527,7 @@ class FileExplorer_UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentSubFolder');
         }
-        $this->StrDocumentSubFolder = (int)$val;
+        $this->StrDocumentSubFolder = ()$val;
 	}
 
 	/**
@@ -536,7 +536,7 @@ class FileExplorer_UploadFile
 	 */
 	public function setBody($val)
 	{
-        $this->Body = (int)$val;
+        $this->Body = ()$val;
 	}
 }
 
@@ -565,7 +565,7 @@ class Reports_GetPayslipByRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -577,7 +577,7 @@ class Reports_GetPayslipByRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = ()$val;
 	}
 }
 
@@ -599,7 +599,7 @@ class Reports_GetPayslipByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
         }
-        $this->Reports_GetPayslipByRunCompanyResult = (int)$val;
+        $this->Reports_GetPayslipByRunCompanyResult = ()$val;
 	}
 }
 
@@ -625,7 +625,7 @@ class Reports_GetWageCodesByRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -637,7 +637,7 @@ class Reports_GetWageCodesByRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = ()$val;
 	}
 }
 
@@ -659,7 +659,7 @@ class Reports_GetWageCodesByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
         }
-        $this->Reports_GetWageCodesByRunCompanyResult = (int)$val;
+        $this->Reports_GetWageCodesByRunCompanyResult = ()$val;
 	}
 }
 
@@ -685,7 +685,7 @@ class Reports_GetWageCodesByYear
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -697,7 +697,7 @@ class Reports_GetWageCodesByYear
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 }
 
@@ -719,7 +719,7 @@ class Reports_GetWageCodesByYearResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
         }
-        $this->Reports_GetWageCodesByYearResult = (int)$val;
+        $this->Reports_GetWageCodesByYearResult = ()$val;
 	}
 }
 
@@ -745,7 +745,7 @@ class Journals_GetByRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -757,7 +757,7 @@ class Journals_GetByRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = ()$val;
 	}
 }
 
@@ -779,7 +779,7 @@ class Journals_GetByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
         }
-        $this->Journals_GetByRunCompanyResult = (int)$val;
+        $this->Journals_GetByRunCompanyResult = ()$val;
 	}
 }
 
@@ -805,7 +805,7 @@ class Journals_GetByRunEmployee
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -817,7 +817,7 @@ class Journals_GetByRunEmployee
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = ()$val;
 	}
 }
 
@@ -839,7 +839,7 @@ class Journals_GetByRunEmployeeResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunEmployeeResult');
         }
-        $this->Journals_GetByRunEmployeeResult = (int)$val;
+        $this->Journals_GetByRunEmployeeResult = ()$val;
 	}
 }
 
@@ -865,7 +865,7 @@ class Journals_GetByRunCostCenter
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -877,7 +877,7 @@ class Journals_GetByRunCostCenter
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = ()$val;
 	}
 }
 
@@ -899,7 +899,7 @@ class Journals_GetByRunCostCenterResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunCostCenterResult');
         }
-        $this->Journals_GetByRunCostCenterResult = (int)$val;
+        $this->Journals_GetByRunCostCenterResult = ()$val;
 	}
 }
 
@@ -925,7 +925,7 @@ class Journals_GetByRunDepartment
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -937,7 +937,7 @@ class Journals_GetByRunDepartment
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = ()$val;
 	}
 }
 
@@ -959,7 +959,7 @@ class Journals_GetByRunDepartmentResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
         }
-        $this->Journals_GetByRunDepartmentResult = (int)$val;
+        $this->Journals_GetByRunDepartmentResult = ()$val;
 	}
 }
 
@@ -985,7 +985,7 @@ class Run_GetList
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -997,7 +997,7 @@ class Run_GetList
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 }
 
@@ -1016,7 +1016,7 @@ class Run_GetListResponse
 	 */
 	public function setRunGetListResult($val)
 	{
-        $this->Run_GetListResult = (int)$val;
+        $this->Run_GetListResult = ()$val;
 	}
 }
 
@@ -1066,7 +1066,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ID = (int)$val;
+        $this->ID = ()$val;
 	}
 
 	/**
@@ -1078,7 +1078,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Number = (int)$val;
+        $this->Number = ()$val;
 	}
 
 	/**
@@ -1090,7 +1090,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 
 	/**
@@ -1102,7 +1102,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PeriodStart = (int)$val;
+        $this->PeriodStart = ()$val;
 	}
 
 	/**
@@ -1114,7 +1114,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PeriodEnd = (int)$val;
+        $this->PeriodEnd = ()$val;
 	}
 
 	/**
@@ -1126,7 +1126,7 @@ class RunInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 
 	/**
@@ -1135,7 +1135,7 @@ class RunInfo
 	 */
 	public function setRunAt($val)
 	{
-        $this->RunAt = (int)$val;
+        $this->RunAt = ()$val;
 	}
 
 	/**
@@ -1144,7 +1144,7 @@ class RunInfo
 	 */
 	public function setIsLocked($val)
 	{
-        $this->IsLocked = (int)$val;
+        $this->IsLocked = ()$val;
 	}
 }
 
@@ -1166,7 +1166,7 @@ class SvW_GetCurrent
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -1185,7 +1185,7 @@ class SvW_GetCurrentResponse
 	 */
 	public function setSVWGetCurrentResult($val)
 	{
-        $this->SVW_GetCurrentResult = (int)$val;
+        $this->SVW_GetCurrentResult = ()$val;
 	}
 }
 
@@ -1216,7 +1216,7 @@ class SvW
 	 */
 	public function setSVWSettings($val)
 	{
-        $this->SVWSettings = (int)$val;
+        $this->SVWSettings = ()$val;
 	}
 
 	/**
@@ -1225,7 +1225,7 @@ class SvW
 	 */
 	public function setSector($val)
 	{
-        $this->Sector = (int)$val;
+        $this->Sector = ()$val;
 	}
 
 	/**
@@ -1234,7 +1234,7 @@ class SvW
 	 */
 	public function setRisicogroep($val)
 	{
-        $this->Risicogroep = (int)$val;
+        $this->Risicogroep = ()$val;
 	}
 
 	/**
@@ -1243,7 +1243,7 @@ class SvW
 	 */
 	public function setCAO($val)
 	{
-        $this->CAO = (int)$val;
+        $this->CAO = ()$val;
 	}
 }
 
@@ -1293,7 +1293,7 @@ class CompanySvWsettings
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CodeCao = (int)$val;
+        $this->CodeCao = ()$val;
 	}
 
 	/**
@@ -1302,7 +1302,7 @@ class CompanySvWsettings
 	 */
 	public function setEigenrisicodragerGediffWGA($val)
 	{
-        $this->EigenrisicodragerGediffWGA = (int)$val;
+        $this->EigenrisicodragerGediffWGA = ()$val;
 	}
 
 	/**
@@ -1311,7 +1311,7 @@ class CompanySvWsettings
 	 */
 	public function setEigenrisicodragerUniformeWAO($val)
 	{
-        $this->EigenrisicodragerUniformeWAO = (int)$val;
+        $this->EigenrisicodragerUniformeWAO = ()$val;
 	}
 
 	/**
@@ -1320,7 +1320,7 @@ class CompanySvWsettings
 	 */
 	public function setEigenrisicodragerZiektewet($val)
 	{
-        $this->EigenrisicodragerZiektewet = (int)$val;
+        $this->EigenrisicodragerZiektewet = ()$val;
 	}
 
 	/**
@@ -1332,7 +1332,7 @@ class CompanySvWsettings
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RisicoGroep = (int)$val;
+        $this->RisicoGroep = ()$val;
 	}
 
 	/**
@@ -1341,7 +1341,7 @@ class CompanySvWsettings
 	 */
 	public function setGediffWGAwn($val)
 	{
-        $this->Gediff_WGA_wn = (int)$val;
+        $this->Gediff_WGA_wn = ()$val;
 	}
 
 	/**
@@ -1350,7 +1350,7 @@ class CompanySvWsettings
 	 */
 	public function setGediffWGAwg($val)
 	{
-        $this->Gediff_WGA_wg = (int)$val;
+        $this->Gediff_WGA_wg = ()$val;
 	}
 
 	/**
@@ -1362,7 +1362,7 @@ class CompanySvWsettings
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Sector = (int)$val;
+        $this->Sector = ()$val;
 	}
 }
 
@@ -1388,7 +1388,7 @@ class Sector
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -1400,7 +1400,7 @@ class Sector
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -1426,7 +1426,7 @@ class Risicogroep
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -1438,7 +1438,7 @@ class Risicogroep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -1464,7 +1464,7 @@ class CaO
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -1476,7 +1476,7 @@ class CaO
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -1502,7 +1502,7 @@ class SvW_UpdateCurrent
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -1511,7 +1511,7 @@ class SvW_UpdateCurrent
 	 */
 	public function setSVW($val)
 	{
-        $this->SVW = (int)$val;
+        $this->SVW = ()$val;
 	}
 }
 
@@ -1544,7 +1544,7 @@ class SalaryTable_GetScales
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -1556,7 +1556,7 @@ class SalaryTable_GetScales
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = (int)$val;
+        $this->Period = ()$val;
 	}
 
 	/**
@@ -1568,7 +1568,7 @@ class SalaryTable_GetScales
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 }
 
@@ -1587,7 +1587,7 @@ class SalaryTable_GetScalesResponse
 	 */
 	public function setSalaryTableGetScalesResult($val)
 	{
-        $this->SalaryTable_GetScalesResult = (int)$val;
+        $this->SalaryTable_GetScalesResult = ()$val;
 	}
 }
 
@@ -1625,7 +1625,7 @@ class SalaryTableScale
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Scale');
         }
-        $this->Scale = (int)$val;
+        $this->Scale = ()$val;
 	}
 
 	/**
@@ -1637,7 +1637,7 @@ class SalaryTableScale
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SchaalDescription');
         }
-        $this->SchaalDescription = (int)$val;
+        $this->SchaalDescription = ()$val;
 	}
 
 	/**
@@ -1646,7 +1646,7 @@ class SalaryTableScale
 	 */
 	public function setScaleValue($val)
 	{
-        $this->ScaleValue = (int)$val;
+        $this->ScaleValue = ()$val;
 	}
 
 	/**
@@ -1655,7 +1655,7 @@ class SalaryTableScale
 	 */
 	public function setScalePercentageMax($val)
 	{
-        $this->ScalePercentageMax = (int)$val;
+        $this->ScalePercentageMax = ()$val;
 	}
 
 	/**
@@ -1664,7 +1664,7 @@ class SalaryTableScale
 	 */
 	public function setScalePercentageMin($val)
 	{
-        $this->ScalePercentageMin = (int)$val;
+        $this->ScalePercentageMin = ()$val;
 	}
 }
 
@@ -1698,7 +1698,7 @@ class SalaryTable_GetSteps
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -1707,7 +1707,7 @@ class SalaryTable_GetSteps
 	 */
 	public function setScale($val)
 	{
-        $this->Scale = (int)$val;
+        $this->Scale = ()$val;
 	}
 
 	/**
@@ -1719,7 +1719,7 @@ class SalaryTable_GetSteps
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = (int)$val;
+        $this->Period = ()$val;
 	}
 
 	/**
@@ -1731,7 +1731,7 @@ class SalaryTable_GetSteps
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 }
 
@@ -1750,7 +1750,7 @@ class SalaryTable_GetStepsResponse
 	 */
 	public function setSalaryTableGetStepsResult($val)
 	{
-        $this->SalaryTable_GetStepsResult = (int)$val;
+        $this->SalaryTable_GetStepsResult = ()$val;
 	}
 }
 
@@ -1780,7 +1780,7 @@ class SalaryTableStep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Step');
         }
-        $this->Step = (int)$val;
+        $this->Step = ()$val;
 	}
 
 	/**
@@ -1792,7 +1792,7 @@ class SalaryTableStep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StepDescription');
         }
-        $this->StepDescription = (int)$val;
+        $this->StepDescription = ()$val;
 	}
 
 	/**
@@ -1801,7 +1801,7 @@ class SalaryTableStep
 	 */
 	public function setStepValue($val)
 	{
-        $this->StepValue = (int)$val;
+        $this->StepValue = ()$val;
 	}
 }
 
@@ -1831,7 +1831,7 @@ class SalaryTable_Get
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -1843,7 +1843,7 @@ class SalaryTable_Get
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = (int)$val;
+        $this->Period = ()$val;
 	}
 
 	/**
@@ -1855,7 +1855,7 @@ class SalaryTable_Get
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 }
 
@@ -1874,7 +1874,7 @@ class SalaryTable_GetResponse
 	 */
 	public function setSalaryTableGetResult($val)
 	{
-        $this->SalaryTable_GetResult = (int)$val;
+        $this->SalaryTable_GetResult = ()$val;
 	}
 }
 
@@ -1900,7 +1900,7 @@ class SalaryTable
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -1912,7 +1912,7 @@ class SalaryTable
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -1934,7 +1934,7 @@ class CostCenter_GetList
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -1953,7 +1953,7 @@ class CostCenter_GetListResponse
 	 */
 	public function setCostCenterGetListResult($val)
 	{
-        $this->CostCenter_GetListResult = (int)$val;
+        $this->CostCenter_GetListResult = ()$val;
 	}
 }
 
@@ -1979,7 +1979,7 @@ class CostCenter
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -1991,7 +1991,7 @@ class CostCenter
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -2017,7 +2017,7 @@ class CostCenter_Insert
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -2026,7 +2026,7 @@ class CostCenter_Insert
 	 */
 	public function setKostenplaats($val)
 	{
-        $this->kostenplaats = (int)$val;
+        $this->kostenplaats = ()$val;
 	}
 }
 
@@ -2048,7 +2048,7 @@ class CostCenter_InsertResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CostCenter_InsertResult = (int)$val;
+        $this->CostCenter_InsertResult = ()$val;
 	}
 }
 
@@ -2070,7 +2070,7 @@ class Address_GetCurrent
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -2089,7 +2089,7 @@ class Address_GetCurrentResponse
 	 */
 	public function setAddressGetCurrentResult($val)
 	{
-        $this->Address_GetCurrentResult = (int)$val;
+        $this->Address_GetCurrentResult = ()$val;
 	}
 }
 
@@ -2143,7 +2143,7 @@ class Address
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Id = (int)$val;
+        $this->Id = ()$val;
 	}
 
 	/**
@@ -2152,7 +2152,7 @@ class Address
 	 */
 	public function setDefault($val)
 	{
-        $this->Default = (int)$val;
+        $this->Default = ()$val;
 	}
 
 	/**
@@ -2164,7 +2164,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street');
         }
-        $this->Street = (int)$val;
+        $this->Street = ()$val;
 	}
 
 	/**
@@ -2176,7 +2176,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HouseNumber');
         }
-        $this->HouseNumber = (int)$val;
+        $this->HouseNumber = ()$val;
 	}
 
 	/**
@@ -2188,7 +2188,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HouseNumberAddition');
         }
-        $this->HouseNumberAddition = (int)$val;
+        $this->HouseNumberAddition = ()$val;
 	}
 
 	/**
@@ -2200,7 +2200,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = ()$val;
 	}
 
 	/**
@@ -2212,7 +2212,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = (int)$val;
+        $this->City = ()$val;
 	}
 
 	/**
@@ -2224,7 +2224,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StateProvince');
         }
-        $this->StateProvince = (int)$val;
+        $this->StateProvince = ()$val;
 	}
 
 	/**
@@ -2236,7 +2236,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryISOCode');
         }
-        $this->CountryISOCode = (int)$val;
+        $this->CountryISOCode = ()$val;
 	}
 }
 
@@ -2262,7 +2262,7 @@ class Address_Update
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -2271,7 +2271,7 @@ class Address_Update
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (int)$val;
+        $this->Address = ()$val;
 	}
 }
 
@@ -2300,7 +2300,7 @@ class Address_Insert
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -2309,7 +2309,7 @@ class Address_Insert
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (int)$val;
+        $this->Address = ()$val;
 	}
 }
 
@@ -2331,7 +2331,7 @@ class Address_InsertResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Address_InsertResult = (int)$val;
+        $this->Address_InsertResult = ()$val;
 	}
 }
 
@@ -2353,7 +2353,7 @@ class RunRequest_Insert
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -2382,7 +2382,7 @@ class RunRequest_GetList
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 
 	/**
@@ -2394,7 +2394,7 @@ class RunRequest_GetList
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 }
 
@@ -2413,7 +2413,7 @@ class RunRequest_GetListResponse
 	 */
 	public function setRunRequestGetListResult($val)
 	{
-        $this->RunRequest_GetListResult = (int)$val;
+        $this->RunRequest_GetListResult = ()$val;
 	}
 }
 
@@ -2447,7 +2447,7 @@ class RunRequest
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = (int)$val;
+        $this->Period = ()$val;
 	}
 
 	/**
@@ -2459,7 +2459,7 @@ class RunRequest
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 
 	/**
@@ -2468,7 +2468,7 @@ class RunRequest
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = ()$val;
 	}
 
 	/**
@@ -2477,7 +2477,7 @@ class RunRequest
 	 */
 	public function setHandledDate($val)
 	{
-        $this->HandledDate = (int)$val;
+        $this->HandledDate = ()$val;
 	}
 }
 
@@ -2508,7 +2508,7 @@ class Schedule_GetCurrent
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -2527,7 +2527,7 @@ class Schedule_GetCurrentResponse
 	 */
 	public function setScheduleGetCurrentResult($val)
 	{
-        $this->Schedule_GetCurrentResult = (int)$val;
+        $this->Schedule_GetCurrentResult = ()$val;
 	}
 }
 
@@ -2550,7 +2550,7 @@ class BedrijfFulltimeSchedule
 	 */
 	public function setFulltimeScheduleOne($val)
 	{
-        $this->FulltimeScheduleOne = (int)$val;
+        $this->FulltimeScheduleOne = ()$val;
 	}
 
 	/**
@@ -2559,7 +2559,7 @@ class BedrijfFulltimeSchedule
 	 */
 	public function setFulltimeScheduleTwo($val)
 	{
-        $this->FulltimeScheduleTwo = (int)$val;
+        $this->FulltimeScheduleTwo = ()$val;
 	}
 }
 
@@ -2634,7 +2634,7 @@ class FulltimeSchedule
 	 */
 	public function setScheduleCalcMethod($val)
 	{
-        $this->ScheduleCalcMethod = (int)$val;
+        $this->ScheduleCalcMethod = ()$val;
 	}
 
 	/**
@@ -2643,7 +2643,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursMonday($val)
 	{
-        $this->HoursMonday = (int)$val;
+        $this->HoursMonday = ()$val;
 	}
 
 	/**
@@ -2652,7 +2652,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursTuesday($val)
 	{
-        $this->HoursTuesday = (int)$val;
+        $this->HoursTuesday = ()$val;
 	}
 
 	/**
@@ -2661,7 +2661,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursWednesday($val)
 	{
-        $this->HoursWednesday = (int)$val;
+        $this->HoursWednesday = ()$val;
 	}
 
 	/**
@@ -2670,7 +2670,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursThursday($val)
 	{
-        $this->HoursThursday = (int)$val;
+        $this->HoursThursday = ()$val;
 	}
 
 	/**
@@ -2679,7 +2679,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursFriday($val)
 	{
-        $this->HoursFriday = (int)$val;
+        $this->HoursFriday = ()$val;
 	}
 
 	/**
@@ -2688,7 +2688,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSaturday($val)
 	{
-        $this->HoursSaturday = (int)$val;
+        $this->HoursSaturday = ()$val;
 	}
 
 	/**
@@ -2697,7 +2697,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSunday($val)
 	{
-        $this->HoursSunday = (int)$val;
+        $this->HoursSunday = ()$val;
 	}
 
 	/**
@@ -2706,7 +2706,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursMonday2($val)
 	{
-        $this->HoursMonday2 = (int)$val;
+        $this->HoursMonday2 = ()$val;
 	}
 
 	/**
@@ -2715,7 +2715,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursTuesday2($val)
 	{
-        $this->HoursTuesday2 = (int)$val;
+        $this->HoursTuesday2 = ()$val;
 	}
 
 	/**
@@ -2724,7 +2724,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursWednesday2($val)
 	{
-        $this->HoursWednesday2 = (int)$val;
+        $this->HoursWednesday2 = ()$val;
 	}
 
 	/**
@@ -2733,7 +2733,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursThursday2($val)
 	{
-        $this->HoursThursday2 = (int)$val;
+        $this->HoursThursday2 = ()$val;
 	}
 
 	/**
@@ -2742,7 +2742,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursFriday2($val)
 	{
-        $this->HoursFriday2 = (int)$val;
+        $this->HoursFriday2 = ()$val;
 	}
 
 	/**
@@ -2751,7 +2751,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSaturday2($val)
 	{
-        $this->HoursSaturday2 = (int)$val;
+        $this->HoursSaturday2 = ()$val;
 	}
 
 	/**
@@ -2760,7 +2760,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSunday2($val)
 	{
-        $this->HoursSunday2 = (int)$val;
+        $this->HoursSunday2 = ()$val;
 	}
 }
 
@@ -2788,7 +2788,7 @@ class HourModel_GetHourCodes
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -2807,7 +2807,7 @@ class HourModel_GetHourCodesResponse
 	 */
 	public function setHourModelGetHourCodesResult($val)
 	{
-        $this->HourModel_GetHourCodesResult = (int)$val;
+        $this->HourModel_GetHourCodesResult = ()$val;
 	}
 }
 
@@ -2833,7 +2833,7 @@ class HourCode
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -2845,7 +2845,7 @@ class HourCode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -2867,7 +2867,7 @@ class WageModel_GetWageCodes
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
 	}
 }
 
@@ -2886,7 +2886,7 @@ class WageModel_GetWageCodesResponse
 	 */
 	public function setWageModelGetWageCodesResult($val)
 	{
-        $this->WageModel_GetWageCodesResult = (int)$val;
+        $this->WageModel_GetWageCodesResult = ()$val;
 	}
 }
 
@@ -2912,7 +2912,7 @@ class WageCode
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = (int)$val;
+        $this->Code = ()$val;
 	}
 
 	/**
@@ -2924,7 +2924,7 @@ class WageCode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 }
 
@@ -2946,7 +2946,7 @@ class List_GetAllResponse
 	 */
 	public function setListGetAllResult($val)
 	{
-        $this->List_GetAllResult = (int)$val;
+        $this->List_GetAllResult = ()$val;
 	}
 }
 
@@ -2996,7 +2996,7 @@ class Company
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ID = (int)$val;
+        $this->ID = ()$val;
 	}
 
 	/**
@@ -3008,7 +3008,7 @@ class Company
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Number = (int)$val;
+        $this->Number = ()$val;
 	}
 
 	/**
@@ -3020,7 +3020,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = ()$val;
 	}
 
 	/**
@@ -3032,7 +3032,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneNumber');
         }
-        $this->PhoneNumber = (int)$val;
+        $this->PhoneNumber = ()$val;
 	}
 
 	/**
@@ -3044,7 +3044,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FaxNumber');
         }
-        $this->FaxNumber = (int)$val;
+        $this->FaxNumber = ()$val;
 	}
 
 	/**
@@ -3056,7 +3056,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = ()$val;
 	}
 
 	/**
@@ -3068,7 +3068,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Website');
         }
-        $this->Website = (int)$val;
+        $this->Website = ()$val;
 	}
 
 	/**
@@ -3077,7 +3077,7 @@ class Company
 	 */
 	public function setLoonaangifteTijdvak($val)
 	{
-        $this->LoonaangifteTijdvak = (int)$val;
+        $this->LoonaangifteTijdvak = ()$val;
 	}
 }
 
@@ -3108,7 +3108,7 @@ class List_GetByDebtor
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DebtorId = (int)$val;
+        $this->DebtorId = ()$val;
 	}
 }
 
@@ -3127,7 +3127,7 @@ class List_GetByDebtorResponse
 	 */
 	public function setListGetByDebtorResult($val)
 	{
-        $this->List_GetByDebtorResult = (int)$val;
+        $this->List_GetByDebtorResult = ()$val;
 	}
 }
 

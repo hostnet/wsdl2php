@@ -24,7 +24,7 @@ class Insert
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class Insert
      */
     public function setKostenplaats($val)
     {
-        $this->kostenplaats = (int)$val;
+        $this->kostenplaats = ()$val;
     }
 }

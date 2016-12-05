@@ -32,7 +32,7 @@ class ReviseMyMessagesFoldersRequestType extends
      */
     public function setOperation($val)
     {
-        $this->Operation = (int)$val;
+        $this->Operation = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class ReviseMyMessagesFoldersRequestType extends
      */
     public function setFolderID($val)
     {
-        $this->FolderID = (int)$val;
+        $this->FolderID = ()$val;
     }
 
     /**
@@ -53,6 +53,6 @@ class ReviseMyMessagesFoldersRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->FolderName = (int)$val;
+        $this->FolderName = ()$val;
     }
 }

@@ -25,7 +25,7 @@ class SearchOrderResponse
      */
     public function setSearchOrderResult($val)
     {
-        $this->SearchOrderResult = (int)$val;
+        $this->SearchOrderResult = ()$val;
     }
 
     /**
@@ -37,7 +37,7 @@ class SearchOrderResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->totalOrders = (int)$val;
+        $this->totalOrders = ()$val;
     }
 
     /**
@@ -46,6 +46,6 @@ class SearchOrderResponse
      */
     public function setOrders($val)
     {
-        $this->orders = (int)$val;
+        $this->orders = ()$val;
     }
 }

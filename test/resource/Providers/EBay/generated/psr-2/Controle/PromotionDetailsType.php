@@ -42,7 +42,7 @@ class PromotionDetailsType
      */
     public function setPromotionPrice($val)
     {
-        $this->PromotionPrice = (int)$val;
+        $this->PromotionPrice = ()$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class PromotionDetailsType
      */
     public function setPromotionPriceType($val)
     {
-        $this->PromotionPriceType = (int)$val;
+        $this->PromotionPriceType = ()$val;
     }
 
     /**
@@ -63,7 +63,7 @@ class PromotionDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidCount = (int)$val;
+        $this->BidCount = ()$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class PromotionDetailsType
      */
     public function setConvertedPromotionPrice($val)
     {
-        $this->ConvertedPromotionPrice = (int)$val;
+        $this->ConvertedPromotionPrice = ()$val;
     }
 
     /**
@@ -81,6 +81,6 @@ class PromotionDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

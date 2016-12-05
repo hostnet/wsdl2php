@@ -54,7 +54,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setStartTime($val)
     {
-        $this->StartTime = (int)$val;
+        $this->StartTime = ()$val;
     }
 
     /**
@@ -63,7 +63,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->EndTime = (int)$val;
+        $this->EndTime = ()$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setNotificationDetailsArray($val)
     {
-        $this->NotificationDetailsArray = (int)$val;
+        $this->NotificationDetailsArray = ()$val;
     }
 
     /**
@@ -81,7 +81,7 @@ class GetNotificationsUsageResponseType extends
      */
     public function setMarkUpMarkDownHistory($val)
     {
-        $this->MarkUpMarkDownHistory = (int)$val;
+        $this->MarkUpMarkDownHistory = ()$val;
     }
 
     /**
@@ -90,6 +90,6 @@ class GetNotificationsUsageResponseType extends
      */
     public function setNotificationStatistics($val)
     {
-        $this->NotificationStatistics = (int)$val;
+        $this->NotificationStatistics = ()$val;
     }
 }

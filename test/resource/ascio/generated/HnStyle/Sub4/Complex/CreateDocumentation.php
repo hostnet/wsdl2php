@@ -24,7 +24,7 @@ class CreateDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class CreateDocumentation
      */
     public function setAttachments($val)
     {
-        $this->attachments = (int)$val;
+        $this->attachments = ()$val;
     }
 }

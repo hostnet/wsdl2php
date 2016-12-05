@@ -35,7 +35,7 @@ class FeeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class FeeType
      */
     public function setFee($val)
     {
-        $this->Fee = (int)$val;
+        $this->Fee = ()$val;
     }
 
     /**
@@ -53,6 +53,6 @@ class FeeType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

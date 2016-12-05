@@ -41,7 +41,7 @@ class SetStoreCategoriesRequestType extends
      */
     public function setAction($val)
     {
-        $this->Action = (int)$val;
+        $this->Action = ()$val;
     }
 
     /**
@@ -53,7 +53,7 @@ class SetStoreCategoriesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemDestinationCategoryID = (int)$val;
+        $this->ItemDestinationCategoryID = ()$val;
     }
 
     /**
@@ -65,7 +65,7 @@ class SetStoreCategoriesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DestinationParentCategoryID = (int)$val;
+        $this->DestinationParentCategoryID = ()$val;
     }
 
     /**
@@ -74,6 +74,6 @@ class SetStoreCategoriesRequestType extends
      */
     public function setStoreCategories($val)
     {
-        $this->StoreCategories = (int)$val;
+        $this->StoreCategories = ()$val;
     }
 }

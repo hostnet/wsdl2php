@@ -45,7 +45,7 @@ class MyMessagesFolderSummaryType
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = (int)$val;
+        $this->FolderID = ()$val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class MyMessagesFolderSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->FolderName = (int)$val;
+        $this->FolderName = ()$val;
 	}
 
 	/**
@@ -69,7 +69,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NewAlertCount = (int)$val;
+        $this->NewAlertCount = ()$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NewMessageCount = (int)$val;
+        $this->NewMessageCount = ()$val;
 	}
 
 	/**
@@ -93,7 +93,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalAlertCount = (int)$val;
+        $this->TotalAlertCount = ()$val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class MyMessagesFolderSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalMessageCount = (int)$val;
+        $this->TotalMessageCount = ()$val;
 	}
 
 	/**
@@ -114,6 +114,6 @@ class MyMessagesFolderSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

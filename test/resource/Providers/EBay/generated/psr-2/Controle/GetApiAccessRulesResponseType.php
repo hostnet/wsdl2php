@@ -23,6 +23,6 @@ class GetApiAccessRulesResponseType extends
      */
     public function setApiAccessRule($val)
     {
-        $this->ApiAccessRule = (int)$val;
+        $this->ApiAccessRule = ()$val;
     }
 }

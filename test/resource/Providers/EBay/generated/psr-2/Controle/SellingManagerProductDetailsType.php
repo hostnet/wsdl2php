@@ -36,7 +36,7 @@ class SellingManagerProductDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductName');
         }
-        $this->ProductName = (int)$val;
+        $this->ProductName = ()$val;
     }
 
     /**
@@ -48,7 +48,7 @@ class SellingManagerProductDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PartNumber = (int)$val;
+        $this->PartNumber = ()$val;
     }
 
     /**
@@ -60,7 +60,7 @@ class SellingManagerProductDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductPartNumber');
         }
-        $this->ProductPartNumber = (int)$val;
+        $this->ProductPartNumber = ()$val;
     }
 
     /**
@@ -69,6 +69,6 @@ class SellingManagerProductDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

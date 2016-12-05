@@ -43,7 +43,7 @@ class GetProductSearchPageRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = ()$val;
     }
 
     /**
@@ -55,6 +55,6 @@ class GetProductSearchPageRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeSetID = (int)$val;
+        $this->AttributeSetID = ()$val;
     }
 }

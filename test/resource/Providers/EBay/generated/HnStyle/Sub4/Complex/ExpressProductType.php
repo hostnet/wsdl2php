@@ -71,7 +71,7 @@ class ExpressProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class ExpressProductType
      */
     public function setMinPrice($val)
     {
-        $this->MinPrice = (int)$val;
+        $this->MinPrice = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class ExpressProductType
      */
     public function setMaxPrice($val)
     {
-        $this->MaxPrice = (int)$val;
+        $this->MaxPrice = ()$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class ExpressProductType
      */
     public function setStockPhotoURL($val)
     {
-        $this->StockPhotoURL = (int)$val;
+        $this->StockPhotoURL = ()$val;
     }
 
     /**
@@ -110,7 +110,7 @@ class ExpressProductType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemCount = (int)$val;
+        $this->ItemCount = ()$val;
     }
 
     /**
@@ -119,7 +119,7 @@ class ExpressProductType
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = ()$val;
     }
 
     /**
@@ -128,7 +128,7 @@ class ExpressProductType
      */
     public function setProductReferenceID($val)
     {
-        $this->ProductReferenceID = (int)$val;
+        $this->ProductReferenceID = ()$val;
     }
 
     /**
@@ -137,7 +137,7 @@ class ExpressProductType
      */
     public function setItemSpecifics($val)
     {
-        $this->ItemSpecifics = (int)$val;
+        $this->ItemSpecifics = ()$val;
     }
 
     /**
@@ -146,6 +146,6 @@ class ExpressProductType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

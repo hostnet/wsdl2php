@@ -20,6 +20,6 @@ class InsertResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BankAccount_InsertResult = (int)$val;
+        $this->BankAccount_InsertResult = ()$val;
     }
 }

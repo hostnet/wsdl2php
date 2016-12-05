@@ -17,6 +17,6 @@ class GetEmployeePayslipsPdFbyRunCompanyResponse
      */
     public function setSalaryDocumentsGetEmployeePayslipsPDFByRunCompanyResult($val)
     {
-        $this->SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult = (int)$val;
+        $this->SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult = ()$val;
     }
 }

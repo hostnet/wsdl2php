@@ -48,7 +48,7 @@ class PictureManagerDetailsType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (int)$val;
+        $this->SubscriptionLevel = ()$val;
 	}
 
 	/**
@@ -60,7 +60,7 @@ class PictureManagerDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->StorageUsed = (int)$val;
+        $this->StorageUsed = ()$val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class PictureManagerDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalStorageAvailable = (int)$val;
+        $this->TotalStorageAvailable = ()$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class PictureManagerDetailsType
 	 */
 	public function setKeepOriginal($val)
 	{
-        $this->KeepOriginal = (int)$val;
+        $this->KeepOriginal = ()$val;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class PictureManagerDetailsType
 	 */
 	public function setWatermarkEPS($val)
 	{
-        $this->WatermarkEPS = (int)$val;
+        $this->WatermarkEPS = ()$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class PictureManagerDetailsType
 	 */
 	public function setWatermarkUserID($val)
 	{
-        $this->WatermarkUserID = (int)$val;
+        $this->WatermarkUserID = ()$val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class PictureManagerDetailsType
 	 */
 	public function setFolder($val)
 	{
-        $this->Folder = (int)$val;
+        $this->Folder = ()$val;
 	}
 
 	/**
@@ -117,6 +117,6 @@ class PictureManagerDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

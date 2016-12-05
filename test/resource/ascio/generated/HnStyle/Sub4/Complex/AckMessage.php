@@ -24,7 +24,7 @@ class AckMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class AckMessage
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->msgId = (int)$val;
+        $this->msgId = ()$val;
     }
 }

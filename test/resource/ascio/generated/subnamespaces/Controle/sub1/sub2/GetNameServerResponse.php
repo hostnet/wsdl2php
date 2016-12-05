@@ -21,7 +21,7 @@ class GetNameServerResponse
 	 */
 	public function setGetNameServerResult($val)
 	{
-        $this->GetNameServerResult = (int)$val;
+        $this->GetNameServerResult = ()$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class GetNameServerResponse
 	 */
 	public function setNameServer($val)
 	{
-        $this->nameServer = (int)$val;
+        $this->nameServer = ()$val;
 	}
 }

@@ -38,7 +38,7 @@ class StoreCustomListingHeaderLinkType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LinkID = (int)$val;
+        $this->LinkID = ()$val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class StoreCustomListingHeaderLinkType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Order = (int)$val;
+        $this->Order = ()$val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setLinkType($val)
 	{
-        $this->LinkType = (int)$val;
+        $this->LinkType = ()$val;
 	}
 
 	/**
@@ -68,6 +68,6 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

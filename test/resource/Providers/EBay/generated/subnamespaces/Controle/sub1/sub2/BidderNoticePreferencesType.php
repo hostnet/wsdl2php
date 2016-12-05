@@ -26,7 +26,7 @@ class BidderNoticePreferencesType
 	 */
 	public function setUnsuccessfulBidderNoticeIncludeMyItems($val)
 	{
-        $this->UnsuccessfulBidderNoticeIncludeMyItems = (int)$val;
+        $this->UnsuccessfulBidderNoticeIncludeMyItems = ()$val;
 	}
 
 	/**
@@ -35,6 +35,6 @@ class BidderNoticePreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

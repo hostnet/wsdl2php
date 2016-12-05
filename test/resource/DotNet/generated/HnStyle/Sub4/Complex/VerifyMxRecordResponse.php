@@ -20,6 +20,6 @@ class VerifyMxRecordResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->VerifyMXRecordResult = (int)$val;
+        $this->VerifyMXRecordResult = ()$val;
     }
 }

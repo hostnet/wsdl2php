@@ -27,6 +27,6 @@ class AddLiveAuctionItemRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = ()$val;
     }
 }

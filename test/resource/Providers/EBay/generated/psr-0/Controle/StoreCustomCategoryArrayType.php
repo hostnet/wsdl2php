@@ -21,6 +21,6 @@ class StoreCustomCategoryArrayType
 	 */
 	public function setCustomCategory($val)
 	{
-        $this->CustomCategory = (int)$val;
+        $this->CustomCategory = ()$val;
 	}
 }

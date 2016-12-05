@@ -17,6 +17,6 @@ class UpdateContactResponse
      */
     public function setUpdateContactResult($val)
     {
-        $this->UpdateContactResult = (int)$val;
+        $this->UpdateContactResult = ()$val;
     }
 }

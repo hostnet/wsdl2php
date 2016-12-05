@@ -31,7 +31,7 @@ class OrderTransactionType
      */
     public function setOrder($val)
     {
-        $this->Order = (int)$val;
+        $this->Order = ()$val;
     }
 
     /**
@@ -40,7 +40,7 @@ class OrderTransactionType
      */
     public function setTransaction($val)
     {
-        $this->Transaction = (int)$val;
+        $this->Transaction = ()$val;
     }
 
     /**
@@ -49,6 +49,6 @@ class OrderTransactionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

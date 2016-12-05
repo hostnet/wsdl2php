@@ -27,7 +27,7 @@ class AddToWatchListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->WatchListCount = (int)$val;
+        $this->WatchListCount = ()$val;
 	}
 
 	/**
@@ -39,6 +39,6 @@ class AddToWatchListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->WatchListMaximum = (int)$val;
+        $this->WatchListMaximum = ()$val;
 	}
 }

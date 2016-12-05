@@ -45,7 +45,7 @@ class ReviseLiveAuctionItemRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = ()$val;
     }
 
     /**
@@ -54,7 +54,7 @@ class ReviseLiveAuctionItemRequestType extends
      */
     public function setModifiedFields($val)
     {
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = ()$val;
     }
 
     /**
@@ -66,6 +66,6 @@ class ReviseLiveAuctionItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = ()$val;
     }
 }

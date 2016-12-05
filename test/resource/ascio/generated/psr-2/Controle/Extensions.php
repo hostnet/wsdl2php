@@ -17,6 +17,6 @@ class Extensions
      */
     public function setExtension($val)
     {
-        $this->Extension = (int)$val;
+        $this->Extension = ()$val;
     }
 }

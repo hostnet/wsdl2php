@@ -24,6 +24,6 @@ class ApproveLiveAuctionBiddersResponseType extends
      */
     public function setBidderUpdateStatus($val)
     {
-        $this->BidderUpdateStatus = (int)$val;
+        $this->BidderUpdateStatus = ()$val;
     }
 }

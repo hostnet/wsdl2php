@@ -29,7 +29,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemID');
         }
-        $this->ItemID = (int)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
      */
     public function setMemberMessage($val)
     {
-        $this->MemberMessage = (int)$val;
+        $this->MemberMessage = ()$val;
     }
 }

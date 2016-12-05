@@ -48,7 +48,7 @@ class CompanySvWsettings
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CodeCao = (int)$val;
+        $this->CodeCao = ()$val;
     }
 
     /**
@@ -57,7 +57,7 @@ class CompanySvWsettings
      */
     public function setEigenrisicodragerGediffWGA($val)
     {
-        $this->EigenrisicodragerGediffWGA = (int)$val;
+        $this->EigenrisicodragerGediffWGA = ()$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class CompanySvWsettings
      */
     public function setEigenrisicodragerUniformeWAO($val)
     {
-        $this->EigenrisicodragerUniformeWAO = (int)$val;
+        $this->EigenrisicodragerUniformeWAO = ()$val;
     }
 
     /**
@@ -75,7 +75,7 @@ class CompanySvWsettings
      */
     public function setEigenrisicodragerZiektewet($val)
     {
-        $this->EigenrisicodragerZiektewet = (int)$val;
+        $this->EigenrisicodragerZiektewet = ()$val;
     }
 
     /**
@@ -87,7 +87,7 @@ class CompanySvWsettings
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RisicoGroep = (int)$val;
+        $this->RisicoGroep = ()$val;
     }
 
     /**
@@ -96,7 +96,7 @@ class CompanySvWsettings
      */
     public function setGediffWGAwn($val)
     {
-        $this->Gediff_WGA_wn = (int)$val;
+        $this->Gediff_WGA_wn = ()$val;
     }
 
     /**
@@ -105,7 +105,7 @@ class CompanySvWsettings
      */
     public function setGediffWGAwg($val)
     {
-        $this->Gediff_WGA_wg = (int)$val;
+        $this->Gediff_WGA_wg = ()$val;
     }
 
     /**
@@ -117,6 +117,6 @@ class CompanySvWsettings
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Sector = (int)$val;
+        $this->Sector = ()$val;
     }
 }

@@ -20,6 +20,6 @@ class GetPayslipByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
         }
-        $this->Reports_GetPayslipByRunCompanyResult = (int)$val;
+        $this->Reports_GetPayslipByRunCompanyResult = ()$val;
     }
 }

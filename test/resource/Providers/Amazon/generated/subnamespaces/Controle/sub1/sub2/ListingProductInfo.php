@@ -17,6 +17,6 @@ class ListingProductInfo
 	 */
 	public function setListingProductDetails($val)
 	{
-        $this->ListingProductDetails = (int)$val;
+        $this->ListingProductDetails = ()$val;
 	}
 }

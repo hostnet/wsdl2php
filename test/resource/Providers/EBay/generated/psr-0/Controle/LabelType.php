@@ -34,7 +34,7 @@ class LabelType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = ()$val;
 	}
 
 	/**
@@ -43,7 +43,7 @@ class LabelType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 
 	/**
@@ -52,6 +52,6 @@ class LabelType
 	 */
 	public function setVisible($val)
 	{
-        $this->visible = (int)$val;
+        $this->visible = ()$val;
 	}
 }

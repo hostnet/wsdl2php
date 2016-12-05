@@ -17,6 +17,6 @@ class SellerSearch
 	 */
 	public function setSellerSearchDetails($val)
 	{
-        $this->SellerSearchDetails = (int)$val;
+        $this->SellerSearchDetails = ()$val;
 	}
 }

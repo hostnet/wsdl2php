@@ -17,6 +17,6 @@ class ReturnCodesResponse
      */
     public function setReturnCodesResult($val)
     {
-        $this->ReturnCodesResult = (int)$val;
+        $this->ReturnCodesResult = ()$val;
     }
 }

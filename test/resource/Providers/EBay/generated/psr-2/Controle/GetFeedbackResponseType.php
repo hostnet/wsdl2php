@@ -55,7 +55,7 @@ class GetFeedbackResponseType extends
      */
     public function setFeedbackDetailArray($val)
     {
-        $this->FeedbackDetailArray = (int)$val;
+        $this->FeedbackDetailArray = ()$val;
     }
 
     /**
@@ -67,7 +67,7 @@ class GetFeedbackResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackDetailItemTotal = (int)$val;
+        $this->FeedbackDetailItemTotal = ()$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class GetFeedbackResponseType extends
      */
     public function setFeedbackSummary($val)
     {
-        $this->FeedbackSummary = (int)$val;
+        $this->FeedbackSummary = ()$val;
     }
 
     /**
@@ -88,6 +88,6 @@ class GetFeedbackResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackScore = (int)$val;
+        $this->FeedbackScore = ()$val;
     }
 }

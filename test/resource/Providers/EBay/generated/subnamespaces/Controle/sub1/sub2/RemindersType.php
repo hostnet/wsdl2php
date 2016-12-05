@@ -52,7 +52,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PaymentToSendCount = (int)$val;
+        $this->PaymentToSendCount = ()$val;
 	}
 
 	/**
@@ -64,7 +64,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackToReceiveCount = (int)$val;
+        $this->FeedbackToReceiveCount = ()$val;
 	}
 
 	/**
@@ -76,7 +76,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackToSendCount = (int)$val;
+        $this->FeedbackToSendCount = ()$val;
 	}
 
 	/**
@@ -88,7 +88,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->OutbidCount = (int)$val;
+        $this->OutbidCount = ()$val;
 	}
 
 	/**
@@ -100,7 +100,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PaymentToReceiveCount = (int)$val;
+        $this->PaymentToReceiveCount = ()$val;
 	}
 
 	/**
@@ -112,7 +112,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->SecondChanceOfferCount = (int)$val;
+        $this->SecondChanceOfferCount = ()$val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingNeededCount = (int)$val;
+        $this->ShippingNeededCount = ()$val;
 	}
 
 	/**
@@ -136,6 +136,6 @@ class RemindersType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RelistingNeededCount = (int)$val;
+        $this->RelistingNeededCount = ()$val;
 	}
 }

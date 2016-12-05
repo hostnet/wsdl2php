@@ -38,7 +38,7 @@ class DispatchTimeMaxDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DispatchTimeMax = (int)$val;
+        $this->DispatchTimeMax = ()$val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class DispatchTimeMaxDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = ()$val;
 	}
 
 	/**
@@ -59,6 +59,6 @@ class DispatchTimeMaxDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

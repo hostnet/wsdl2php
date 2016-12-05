@@ -48,7 +48,7 @@ class Company
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ID = (int)$val;
+        $this->ID = ()$val;
     }
 
     /**
@@ -60,7 +60,7 @@ class Company
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Number = (int)$val;
+        $this->Number = ()$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = ()$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneNumber');
         }
-        $this->PhoneNumber = (int)$val;
+        $this->PhoneNumber = ()$val;
     }
 
     /**
@@ -96,7 +96,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FaxNumber');
         }
-        $this->FaxNumber = (int)$val;
+        $this->FaxNumber = ()$val;
     }
 
     /**
@@ -108,7 +108,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = ()$val;
     }
 
     /**
@@ -120,7 +120,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Website');
         }
-        $this->Website = (int)$val;
+        $this->Website = ()$val;
     }
 
     /**
@@ -129,6 +129,6 @@ class Company
      */
     public function setLoonaangifteTijdvak($val)
     {
-        $this->LoonaangifteTijdvak = (int)$val;
+        $this->LoonaangifteTijdvak = ()$val;
     }
 }

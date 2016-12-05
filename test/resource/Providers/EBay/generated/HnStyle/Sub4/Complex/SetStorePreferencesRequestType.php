@@ -23,6 +23,6 @@ class SetStorePreferencesRequestType extends
      */
     public function setStorePreferences($val)
     {
-        $this->StorePreferences = (int)$val;
+        $this->StorePreferences = ()$val;
     }
 }

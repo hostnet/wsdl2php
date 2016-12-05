@@ -98,7 +98,7 @@ class OfferType
      */
     public function setAction($val)
     {
-        $this->Action = (int)$val;
+        $this->Action = ()$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class OfferType
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = ()$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class OfferType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class OfferType
      */
     public function setMaxBid($val)
     {
-        $this->MaxBid = (int)$val;
+        $this->MaxBid = ()$val;
     }
 
     /**
@@ -137,7 +137,7 @@ class OfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Quantity = (int)$val;
+        $this->Quantity = ()$val;
     }
 
     /**
@@ -146,7 +146,7 @@ class OfferType
      */
     public function setSecondChanceEnabled($val)
     {
-        $this->SecondChanceEnabled = (int)$val;
+        $this->SecondChanceEnabled = ()$val;
     }
 
     /**
@@ -155,7 +155,7 @@ class OfferType
      */
     public function setSiteCurrency($val)
     {
-        $this->SiteCurrency = (int)$val;
+        $this->SiteCurrency = ()$val;
     }
 
     /**
@@ -164,7 +164,7 @@ class OfferType
      */
     public function setTimeBid($val)
     {
-        $this->TimeBid = (int)$val;
+        $this->TimeBid = ()$val;
     }
 
     /**
@@ -173,7 +173,7 @@ class OfferType
      */
     public function setHighestBid($val)
     {
-        $this->HighestBid = (int)$val;
+        $this->HighestBid = ()$val;
     }
 
     /**
@@ -182,7 +182,7 @@ class OfferType
      */
     public function setConvertedPrice($val)
     {
-        $this->ConvertedPrice = (int)$val;
+        $this->ConvertedPrice = ()$val;
     }
 
     /**
@@ -194,7 +194,7 @@ class OfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = ()$val;
     }
 
     /**
@@ -203,7 +203,7 @@ class OfferType
      */
     public function setUser($val)
     {
-        $this->User = (int)$val;
+        $this->User = ()$val;
     }
 
     /**
@@ -212,7 +212,7 @@ class OfferType
      */
     public function setUserConsent($val)
     {
-        $this->UserConsent = (int)$val;
+        $this->UserConsent = ()$val;
     }
 
     /**
@@ -224,7 +224,7 @@ class OfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidCount = (int)$val;
+        $this->BidCount = ()$val;
     }
 
     /**
@@ -233,6 +233,6 @@ class OfferType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = ()$val;
     }
 }

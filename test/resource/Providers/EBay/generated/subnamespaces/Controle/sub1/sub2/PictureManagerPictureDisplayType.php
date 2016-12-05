@@ -46,7 +46,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setDisplayType($val)
 	{
-        $this->DisplayType = (int)$val;
+        $this->DisplayType = ()$val;
 	}
 
 	/**
@@ -55,7 +55,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = ()$val;
 	}
 
 	/**
@@ -67,7 +67,7 @@ class PictureManagerPictureDisplayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Size = (int)$val;
+        $this->Size = ()$val;
 	}
 
 	/**
@@ -79,7 +79,7 @@ class PictureManagerPictureDisplayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Height = (int)$val;
+        $this->Height = ()$val;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class PictureManagerPictureDisplayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Width = (int)$val;
+        $this->Width = ()$val;
 	}
 
 	/**
@@ -100,6 +100,6 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

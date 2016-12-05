@@ -30,7 +30,7 @@ class ProStoresCheckoutPreferenceType
 	 */
 	public function setCheckoutRedirectProStores($val)
 	{
-        $this->CheckoutRedirectProStores = (int)$val;
+        $this->CheckoutRedirectProStores = ()$val;
 	}
 
 	/**
@@ -39,7 +39,7 @@ class ProStoresCheckoutPreferenceType
 	 */
 	public function setProStoresDetails($val)
 	{
-        $this->ProStoresDetails = (int)$val;
+        $this->ProStoresDetails = ()$val;
 	}
 
 	/**
@@ -48,6 +48,6 @@ class ProStoresCheckoutPreferenceType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = ()$val;
 	}
 }

@@ -27,7 +27,7 @@ class GetReturnUrLresponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
-        $this->ApplicationDisplayName = (int)$val;
+        $this->ApplicationDisplayName = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetReturnUrLresponseType extends
      */
     public function setAuthenticationEntryArray($val)
     {
-        $this->AuthenticationEntryArray = (int)$val;
+        $this->AuthenticationEntryArray = ()$val;
     }
 }
