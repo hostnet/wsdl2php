@@ -78,7 +78,7 @@ class StorefrontType
      */
     public function setStoreURL($val)
     {
-        $this->StoreURL = (int)$val;
+        $this->StoreURL = (anyURI)$val;
     }
 
     /**
@@ -90,7 +90,7 @@ class StorefrontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
     }
 
     /**
@@ -99,6 +99,6 @@ class StorefrontType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

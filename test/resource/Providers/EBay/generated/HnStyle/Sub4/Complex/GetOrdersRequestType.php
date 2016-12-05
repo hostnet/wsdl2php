@@ -61,7 +61,7 @@ class GetOrdersRequestType extends
      */
     public function setOrderIDArray($val)
     {
-        $this->OrderIDArray = (int)$val;
+        $this->OrderIDArray = (OrderIDArrayType)$val;
     }
 
     /**
@@ -70,7 +70,7 @@ class GetOrdersRequestType extends
      */
     public function setCreateTimeFrom($val)
     {
-        $this->CreateTimeFrom = (int)$val;
+        $this->CreateTimeFrom = (dateTime)$val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetOrdersRequestType extends
      */
     public function setCreateTimeTo($val)
     {
-        $this->CreateTimeTo = (int)$val;
+        $this->CreateTimeTo = (dateTime)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetOrdersRequestType extends
      */
     public function setOrderRole($val)
     {
-        $this->OrderRole = (int)$val;
+        $this->OrderRole = (TradingRoleCodeType)$val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetOrdersRequestType extends
      */
     public function setOrderStatus($val)
     {
-        $this->OrderStatus = (int)$val;
+        $this->OrderStatus = (OrderStatusCodeType)$val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetOrdersRequestType extends
      */
     public function setListingType($val)
     {
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
     }
 
     /**
@@ -115,6 +115,6 @@ class GetOrdersRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
     }
 }

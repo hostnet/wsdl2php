@@ -45,7 +45,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipMessageID');
         }
-        $this->ListingTipMessageID = (int)$val;
+        $this->ListingTipMessageID = (string)$val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->ShortMessage = (int)$val;
+        $this->ShortMessage = (string)$val;
 	}
 
 	/**
@@ -69,7 +69,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->LongMessage = (int)$val;
+        $this->LongMessage = (string)$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HelpURLPath');
         }
-        $this->HelpURLPath = (int)$val;
+        $this->HelpURLPath = (string)$val;
 	}
 
 	/**
@@ -90,6 +90,6 @@ class ListingTipMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

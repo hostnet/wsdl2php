@@ -314,7 +314,7 @@ class GetSearchResultsRequestType extends
      */
     public function setMotorsGermanySearchable($val)
     {
-        $this->MotorsGermanySearchable = (int)$val;
+        $this->MotorsGermanySearchable = (boolean)$val;
     }
 
     /**
@@ -326,7 +326,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
     }
 
     /**
@@ -338,7 +338,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
     }
 
     /**
@@ -347,7 +347,7 @@ class GetSearchResultsRequestType extends
      */
     public function setSearchFlags($val)
     {
-        $this->SearchFlags = (int)$val;
+        $this->SearchFlags = (SearchFlagsCodeType)$val;
     }
 
     /**
@@ -356,7 +356,7 @@ class GetSearchResultsRequestType extends
      */
     public function setPriceRangeFilter($val)
     {
-        $this->PriceRangeFilter = (int)$val;
+        $this->PriceRangeFilter = (PriceRangeFilterType)$val;
     }
 
     /**
@@ -365,7 +365,7 @@ class GetSearchResultsRequestType extends
      */
     public function setProximitySearch($val)
     {
-        $this->ProximitySearch = (int)$val;
+        $this->ProximitySearch = (ProximitySearchType)$val;
     }
 
     /**
@@ -374,7 +374,7 @@ class GetSearchResultsRequestType extends
      */
     public function setItemTypeFilter($val)
     {
-        $this->ItemTypeFilter = (int)$val;
+        $this->ItemTypeFilter = (ItemTypeFilterCodeType)$val;
     }
 
     /**
@@ -383,7 +383,7 @@ class GetSearchResultsRequestType extends
      */
     public function setSearchType($val)
     {
-        $this->SearchType = (int)$val;
+        $this->SearchType = (SearchTypeCodeType)$val;
     }
 
     /**
@@ -392,7 +392,7 @@ class GetSearchResultsRequestType extends
      */
     public function setUserIdFilter($val)
     {
-        $this->UserIdFilter = (int)$val;
+        $this->UserIdFilter = (UserIdFilterType)$val;
     }
 
     /**
@@ -401,7 +401,7 @@ class GetSearchResultsRequestType extends
      */
     public function setSearchLocationFilter($val)
     {
-        $this->SearchLocationFilter = (int)$val;
+        $this->SearchLocationFilter = (SearchLocationFilterType)$val;
     }
 
     /**
@@ -410,7 +410,7 @@ class GetSearchResultsRequestType extends
      */
     public function setStoreSearchFilter($val)
     {
-        $this->StoreSearchFilter = (int)$val;
+        $this->StoreSearchFilter = (SearchStoreFilterType)$val;
     }
 
     /**
@@ -419,7 +419,7 @@ class GetSearchResultsRequestType extends
      */
     public function setOrder($val)
     {
-        $this->Order = (int)$val;
+        $this->Order = (SearchSortOrderCodeType)$val;
     }
 
     /**
@@ -428,7 +428,7 @@ class GetSearchResultsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
     }
 
     /**
@@ -437,7 +437,7 @@ class GetSearchResultsRequestType extends
      */
     public function setSearchRequest($val)
     {
-        $this->SearchRequest = (int)$val;
+        $this->SearchRequest = (SearchRequestType)$val;
     }
 
     /**
@@ -449,7 +449,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->ProductID = (int)$val;
+        $this->ProductID = (string)$val;
     }
 
     /**
@@ -458,7 +458,7 @@ class GetSearchResultsRequestType extends
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
     }
 
     /**
@@ -467,7 +467,7 @@ class GetSearchResultsRequestType extends
      */
     public function setCategories($val)
     {
-        $this->Categories = (int)$val;
+        $this->Categories = (RequestCategoriesType)$val;
     }
 
     /**
@@ -476,7 +476,7 @@ class GetSearchResultsRequestType extends
      */
     public function setTotalOnly($val)
     {
-        $this->TotalOnly = (int)$val;
+        $this->TotalOnly = (boolean)$val;
     }
 
     /**
@@ -485,7 +485,7 @@ class GetSearchResultsRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->EndTimeFrom = (int)$val;
+        $this->EndTimeFrom = (dateTime)$val;
     }
 
     /**
@@ -494,7 +494,7 @@ class GetSearchResultsRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->EndTimeTo = (int)$val;
+        $this->EndTimeTo = (dateTime)$val;
     }
 
     /**
@@ -503,7 +503,7 @@ class GetSearchResultsRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = (dateTime)$val;
     }
 
     /**
@@ -512,7 +512,7 @@ class GetSearchResultsRequestType extends
      */
     public function setIncludeGetItFastItems($val)
     {
-        $this->IncludeGetItFastItems = (int)$val;
+        $this->IncludeGetItFastItems = (boolean)$val;
     }
 
     /**
@@ -521,7 +521,7 @@ class GetSearchResultsRequestType extends
      */
     public function setStoresFixedPrice($val)
     {
-        $this->StoresFixedPrice = (int)$val;
+        $this->StoresFixedPrice = (boolean)$val;
     }
 
     /**
@@ -530,7 +530,7 @@ class GetSearchResultsRequestType extends
      */
     public function setPaymentMethod($val)
     {
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (PaymentMethodSearchCodeType)$val;
     }
 
     /**
@@ -539,7 +539,7 @@ class GetSearchResultsRequestType extends
      */
     public function setGranularityLevel($val)
     {
-        $this->GranularityLevel = (int)$val;
+        $this->GranularityLevel = (GranularityLevelCodeType)$val;
     }
 
     /**
@@ -548,7 +548,7 @@ class GetSearchResultsRequestType extends
      */
     public function setExpandSearch($val)
     {
-        $this->ExpandSearch = (int)$val;
+        $this->ExpandSearch = (boolean)$val;
     }
 
     /**
@@ -557,7 +557,7 @@ class GetSearchResultsRequestType extends
      */
     public function setLot($val)
     {
-        $this->Lot = (int)$val;
+        $this->Lot = (boolean)$val;
     }
 
     /**
@@ -566,7 +566,7 @@ class GetSearchResultsRequestType extends
      */
     public function setAdFormat($val)
     {
-        $this->AdFormat = (int)$val;
+        $this->AdFormat = (boolean)$val;
     }
 
     /**
@@ -575,7 +575,7 @@ class GetSearchResultsRequestType extends
      */
     public function setFreeShipping($val)
     {
-        $this->FreeShipping = (int)$val;
+        $this->FreeShipping = (boolean)$val;
     }
 
     /**
@@ -596,7 +596,7 @@ class GetSearchResultsRequestType extends
      */
     public function setQuantityOperator($val)
     {
-        $this->QuantityOperator = (int)$val;
+        $this->QuantityOperator = (QuantityOperatorCodeType)$val;
     }
 
     /**
@@ -605,7 +605,7 @@ class GetSearchResultsRequestType extends
      */
     public function setSellerBusinessType($val)
     {
-        $this->SellerBusinessType = (int)$val;
+        $this->SellerBusinessType = (SellerBusinessCodeType)$val;
     }
 
     /**
@@ -614,7 +614,7 @@ class GetSearchResultsRequestType extends
      */
     public function setDigitalDelivery($val)
     {
-        $this->DigitalDelivery = (int)$val;
+        $this->DigitalDelivery = (boolean)$val;
     }
 
     /**
@@ -623,7 +623,7 @@ class GetSearchResultsRequestType extends
      */
     public function setIncludeCondition($val)
     {
-        $this->IncludeCondition = (int)$val;
+        $this->IncludeCondition = (boolean)$val;
     }
 
     /**
@@ -632,7 +632,7 @@ class GetSearchResultsRequestType extends
      */
     public function setIncludeFeedback($val)
     {
-        $this->IncludeFeedback = (int)$val;
+        $this->IncludeFeedback = (boolean)$val;
     }
 
     /**
@@ -656,7 +656,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
-        $this->LocalSearchPostalCode = (int)$val;
+        $this->LocalSearchPostalCode = (string)$val;
     }
 
     /**
@@ -677,6 +677,6 @@ class GetSearchResultsRequestType extends
      */
     public function setAffiliateTrackingDetails($val)
     {
-        $this->AffiliateTrackingDetails = (int)$val;
+        $this->AffiliateTrackingDetails = (AffiliateTrackingDetailsType)$val;
     }
 }

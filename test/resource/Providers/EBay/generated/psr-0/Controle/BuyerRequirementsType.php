@@ -56,7 +56,7 @@ class BuyerRequirementsType
 	 */
 	public function setShipToRegistrationCountry($val)
 	{
-        $this->ShipToRegistrationCountry = (int)$val;
+        $this->ShipToRegistrationCountry = (boolean)$val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class BuyerRequirementsType
 	 */
 	public function setZeroFeedbackScore($val)
 	{
-        $this->ZeroFeedbackScore = (int)$val;
+        $this->ZeroFeedbackScore = (boolean)$val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumUnpaidItemStrikes($val)
 	{
-        $this->MaximumUnpaidItemStrikes = (int)$val;
+        $this->MaximumUnpaidItemStrikes = (boolean)$val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumItemRequirements($val)
 	{
-        $this->MaximumItemRequirements = (int)$val;
+        $this->MaximumItemRequirements = (MaximumItemRequirementsType)$val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class BuyerRequirementsType
 	 */
 	public function setLinkedPayPalAccount($val)
 	{
-        $this->LinkedPayPalAccount = (int)$val;
+        $this->LinkedPayPalAccount = (boolean)$val;
 	}
 
 	/**
@@ -113,6 +113,6 @@ class BuyerRequirementsType
 	 */
 	public function setVerifiedUserRequirements($val)
 	{
-        $this->VerifiedUserRequirements = (int)$val;
+        $this->VerifiedUserRequirements = (VerifiedUserRequirementsType)$val;
 	}
 }

@@ -85,7 +85,7 @@ class Contact
 	 */
 	public function setCreDate($val)
 	{
-        $this->CreDate = (int)$val;
+        $this->CreDate = (dateTime)$val;
 	}
 
 	/**
@@ -97,7 +97,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = (string)$val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Handle');
         }
-        $this->Handle = (int)$val;
+        $this->Handle = (string)$val;
 	}
 
 	/**
@@ -121,7 +121,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FirstName');
         }
-        $this->FirstName = (int)$val;
+        $this->FirstName = (string)$val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastName');
         }
-        $this->LastName = (int)$val;
+        $this->LastName = (string)$val;
 	}
 
 	/**
@@ -145,7 +145,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrgName');
         }
-        $this->OrgName = (int)$val;
+        $this->OrgName = (string)$val;
 	}
 
 	/**
@@ -157,7 +157,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Address1');
         }
-        $this->Address1 = (int)$val;
+        $this->Address1 = (string)$val;
 	}
 
 	/**
@@ -169,7 +169,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Address2');
         }
-        $this->Address2 = (int)$val;
+        $this->Address2 = (string)$val;
 	}
 
 	/**
@@ -181,7 +181,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -193,7 +193,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = (int)$val;
+        $this->City = (string)$val;
 	}
 
 	/**
@@ -205,7 +205,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for State');
         }
-        $this->State = (int)$val;
+        $this->State = (string)$val;
 	}
 
 	/**
@@ -217,7 +217,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryCode');
         }
-        $this->CountryCode = (int)$val;
+        $this->CountryCode = (string)$val;
 	}
 
 	/**
@@ -229,7 +229,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -241,7 +241,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = (int)$val;
+        $this->Phone = (string)$val;
 	}
 
 	/**
@@ -253,7 +253,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Fax');
         }
-        $this->Fax = (int)$val;
+        $this->Fax = (string)$val;
 	}
 
 	/**
@@ -265,7 +265,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Type');
         }
-        $this->Type = (int)$val;
+        $this->Type = (string)$val;
 	}
 
 	/**
@@ -277,7 +277,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Details');
         }
-        $this->Details = (int)$val;
+        $this->Details = (string)$val;
 	}
 
 	/**
@@ -289,6 +289,6 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrganisationNumber');
         }
-        $this->OrganisationNumber = (int)$val;
+        $this->OrganisationNumber = (string)$val;
 	}
 }

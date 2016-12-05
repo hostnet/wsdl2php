@@ -25,7 +25,7 @@ class PollMessageResponse
 	 */
 	public function setPollMessageResult($val)
 	{
-        $this->PollMessageResult = (int)$val;
+        $this->PollMessageResult = (Response)$val;
 	}
 
 	/**
@@ -46,6 +46,6 @@ class PollMessageResponse
 	 */
 	public function setItem($val)
 	{
-        $this->item = (int)$val;
+        $this->item = (QueueItem)$val;
 	}
 }

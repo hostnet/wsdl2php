@@ -29,7 +29,7 @@ class ExpressHistogramProductType
 	 */
 	public function setDomainDetails($val)
 	{
-        $this->DomainDetails = (int)$val;
+        $this->DomainDetails = (ExpressHistogramDomainDetailsType)$val;
 	}
 
 	/**
@@ -38,6 +38,6 @@ class ExpressHistogramProductType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

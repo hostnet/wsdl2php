@@ -79,7 +79,7 @@ class GetRecommendationsRequestContainerType
      */
     public function setListingFlow($val)
     {
-        $this->ListingFlow = (int)$val;
+        $this->ListingFlow = (ListingFlowCodeType)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetRecommendationsRequestContainerType
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetRecommendationsRequestContainerType
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetRecommendationsRequestContainerType
      */
     public function setModifiedFields($val)
     {
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetRecommendationsRequestContainerType
      */
     public function setRecommendationEngine($val)
     {
-        $this->RecommendationEngine = (int)$val;
+        $this->RecommendationEngine = (RecommendationEngineCodeType)$val;
     }
 
     /**
@@ -127,7 +127,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
     }
 
     /**
@@ -139,7 +139,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
     }
 
     /**
@@ -151,7 +151,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = (string)$val;
     }
 
     /**
@@ -160,6 +160,6 @@ class GetRecommendationsRequestContainerType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

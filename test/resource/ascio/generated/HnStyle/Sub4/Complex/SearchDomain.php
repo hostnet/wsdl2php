@@ -24,7 +24,7 @@ class SearchDomain
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = (string)$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class SearchDomain
      */
     public function setCriteria($val)
     {
-        $this->criteria = (int)$val;
+        $this->criteria = (SearchCriteria)$val;
     }
 }

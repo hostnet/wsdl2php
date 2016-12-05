@@ -64,7 +64,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->CharityID = (int)$val;
+        $this->CharityID = (string)$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityName');
         }
-        $this->CharityName = (int)$val;
+        $this->CharityName = (string)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
     }
 
     /**
@@ -121,7 +121,7 @@ class GetCharitiesRequestType extends
      */
     public function setIncludeDescription($val)
     {
-        $this->IncludeDescription = (int)$val;
+        $this->IncludeDescription = (boolean)$val;
     }
 
     /**
@@ -130,6 +130,6 @@ class GetCharitiesRequestType extends
      */
     public function setMatchType($val)
     {
-        $this->MatchType = (int)$val;
+        $this->MatchType = (StringMatchCodeType)$val;
     }
 }

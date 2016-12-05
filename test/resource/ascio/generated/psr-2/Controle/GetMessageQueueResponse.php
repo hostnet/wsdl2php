@@ -21,7 +21,7 @@ class GetMessageQueueResponse
      */
     public function setGetMessageQueueResult($val)
     {
-        $this->GetMessageQueueResult = (int)$val;
+        $this->GetMessageQueueResult = (Response)$val;
     }
 
     /**
@@ -30,6 +30,6 @@ class GetMessageQueueResponse
      */
     public function setItem($val)
     {
-        $this->item = (int)$val;
+        $this->item = (QueueItem)$val;
     }
 }

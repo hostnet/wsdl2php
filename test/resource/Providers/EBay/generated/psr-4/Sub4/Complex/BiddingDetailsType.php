@@ -56,7 +56,7 @@ class BiddingDetailsType
      */
     public function setConvertedMaxBid($val)
     {
-        $this->ConvertedMaxBid = (int)$val;
+        $this->ConvertedMaxBid = (AmountType)$val;
     }
 
     /**
@@ -65,7 +65,7 @@ class BiddingDetailsType
      */
     public function setMaxBid($val)
     {
-        $this->MaxBid = (int)$val;
+        $this->MaxBid = (AmountType)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class BiddingDetailsType
      */
     public function setWinning($val)
     {
-        $this->Winning = (int)$val;
+        $this->Winning = (boolean)$val;
     }
 
     /**
@@ -107,6 +107,6 @@ class BiddingDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

@@ -32,7 +32,7 @@ class SoApStructStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varString = (int)$val;
+        $this->varString = (string)$val;
     }
 
     /**
@@ -53,7 +53,7 @@ class SoApStructStruct
      */
     public function setVarFloat($val)
     {
-        $this->varFloat = (int)$val;
+        $this->varFloat = (float)$val;
     }
 
     /**
@@ -62,6 +62,6 @@ class SoApStructStruct
      */
     public function setVarStruct($val)
     {
-        $this->varStruct = (int)$val;
+        $this->varStruct = (SOAPStruct)$val;
     }
 }

@@ -31,7 +31,7 @@ class SiteWideCharacteristicsType
      */
     public function setCharacteristicsSet($val)
     {
-        $this->CharacteristicsSet = (int)$val;
+        $this->CharacteristicsSet = (CharacteristicsSetType)$val;
     }
 
     /**
@@ -43,7 +43,7 @@ class SiteWideCharacteristicsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExcludeCategoryID');
         }
-        $this->ExcludeCategoryID = (int)$val;
+        $this->ExcludeCategoryID = (string)$val;
     }
 
     /**
@@ -52,6 +52,6 @@ class SiteWideCharacteristicsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

@@ -59,7 +59,7 @@ class LiveAuctionCatalogType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CatalogName');
         }
-        $this->CatalogName = (int)$val;
+        $this->CatalogName = (string)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class LiveAuctionCatalogType
      */
     public function setSchedule($val)
     {
-        $this->Schedule = (int)$val;
+        $this->Schedule = (ScheduleType)$val;
     }
 
     /**
@@ -77,6 +77,6 @@ class LiveAuctionCatalogType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

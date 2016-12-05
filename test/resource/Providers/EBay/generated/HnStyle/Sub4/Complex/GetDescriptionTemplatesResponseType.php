@@ -43,7 +43,7 @@ class GetDescriptionTemplatesResponseType extends
      */
     public function setDescriptionTemplate($val)
     {
-        $this->DescriptionTemplate = (int)$val;
+        $this->DescriptionTemplate = (DescriptionTemplateType)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetDescriptionTemplatesResponseType extends
      */
     public function setThemeGroup($val)
     {
-        $this->ThemeGroup = (int)$val;
+        $this->ThemeGroup = (ThemeGroupType)$val;
     }
 
     /**

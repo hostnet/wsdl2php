@@ -57,7 +57,7 @@ class ListingDesignerType
 	 */
 	public function setOptimalPictureSize($val)
 	{
-        $this->OptimalPictureSize = (int)$val;
+        $this->OptimalPictureSize = (boolean)$val;
 	}
 
 	/**
@@ -78,6 +78,6 @@ class ListingDesignerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

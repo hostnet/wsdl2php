@@ -64,7 +64,7 @@ class NotificationDetailsType
      */
     public function setDeliveryURL($val)
     {
-        $this->DeliveryURL = (int)$val;
+        $this->DeliveryURL = (anyURI)$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReferenceID');
         }
-        $this->ReferenceID = (int)$val;
+        $this->ReferenceID = (string)$val;
     }
 
     /**
@@ -85,7 +85,7 @@ class NotificationDetailsType
      */
     public function setExpirationTime($val)
     {
-        $this->ExpirationTime = (int)$val;
+        $this->ExpirationTime = (dateTime)$val;
     }
 
     /**
@@ -94,7 +94,7 @@ class NotificationDetailsType
      */
     public function setType($val)
     {
-        $this->Type = (int)$val;
+        $this->Type = (NotificationEventTypeCodeType)$val;
     }
 
     /**
@@ -115,7 +115,7 @@ class NotificationDetailsType
      */
     public function setDeliveryStatus($val)
     {
-        $this->DeliveryStatus = (int)$val;
+        $this->DeliveryStatus = (NotificationEventStateCodeType)$val;
     }
 
     /**
@@ -124,7 +124,7 @@ class NotificationDetailsType
      */
     public function setNextRetryTime($val)
     {
-        $this->NextRetryTime = (int)$val;
+        $this->NextRetryTime = (dateTime)$val;
     }
 
     /**
@@ -133,7 +133,7 @@ class NotificationDetailsType
      */
     public function setDeliveryTime($val)
     {
-        $this->DeliveryTime = (int)$val;
+        $this->DeliveryTime = (dateTime)$val;
     }
 
     /**
@@ -145,7 +145,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorMessage');
         }
-        $this->ErrorMessage = (int)$val;
+        $this->ErrorMessage = (string)$val;
     }
 
     /**
@@ -154,6 +154,6 @@ class NotificationDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

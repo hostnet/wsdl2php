@@ -18,6 +18,6 @@ class OrderIdArrayType
      */
     public function setOrderID($val)
     {
-        $this->OrderID = (int)$val;
+        $this->OrderID = (OrderIDType)$val;
     }
 }

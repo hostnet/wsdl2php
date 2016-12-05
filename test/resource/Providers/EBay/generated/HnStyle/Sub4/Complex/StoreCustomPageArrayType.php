@@ -21,6 +21,6 @@ class StoreCustomPageArrayType
      */
     public function setCustomPage($val)
     {
-        $this->CustomPage = (int)$val;
+        $this->CustomPage = (StoreCustomPageType)$val;
     }
 }

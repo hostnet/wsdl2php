@@ -22,7 +22,7 @@ class VeRoReportItemsResponseType extends
      */
     public function setVeROReportPacketID($val)
     {
-        $this->VeROReportPacketID = (int)$val;
+        $this->VeROReportPacketID = (long)$val;
     }
 
     /**
@@ -31,6 +31,6 @@ class VeRoReportItemsResponseType extends
      */
     public function setVeROReportPacketStatus($val)
     {
-        $this->VeROReportPacketStatus = (int)$val;
+        $this->VeROReportPacketStatus = (VeROReportPacketStatusCodeType)$val;
     }
 }

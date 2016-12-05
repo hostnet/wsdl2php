@@ -98,7 +98,7 @@ class OfferType
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (BidActionCodeType)$val;
 	}
 
 	/**
@@ -107,7 +107,7 @@ class OfferType
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -116,7 +116,7 @@ class OfferType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -125,7 +125,7 @@ class OfferType
 	 */
 	public function setMaxBid($val)
 	{
-        $this->MaxBid = (int)$val;
+        $this->MaxBid = (AmountType)$val;
 	}
 
 	/**
@@ -146,7 +146,7 @@ class OfferType
 	 */
 	public function setSecondChanceEnabled($val)
 	{
-        $this->SecondChanceEnabled = (int)$val;
+        $this->SecondChanceEnabled = (boolean)$val;
 	}
 
 	/**
@@ -155,7 +155,7 @@ class OfferType
 	 */
 	public function setSiteCurrency($val)
 	{
-        $this->SiteCurrency = (int)$val;
+        $this->SiteCurrency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -164,7 +164,7 @@ class OfferType
 	 */
 	public function setTimeBid($val)
 	{
-        $this->TimeBid = (int)$val;
+        $this->TimeBid = (dateTime)$val;
 	}
 
 	/**
@@ -173,7 +173,7 @@ class OfferType
 	 */
 	public function setHighestBid($val)
 	{
-        $this->HighestBid = (int)$val;
+        $this->HighestBid = (AmountType)$val;
 	}
 
 	/**
@@ -182,7 +182,7 @@ class OfferType
 	 */
 	public function setConvertedPrice($val)
 	{
-        $this->ConvertedPrice = (int)$val;
+        $this->ConvertedPrice = (AmountType)$val;
 	}
 
 	/**
@@ -194,7 +194,7 @@ class OfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -203,7 +203,7 @@ class OfferType
 	 */
 	public function setUser($val)
 	{
-        $this->User = (int)$val;
+        $this->User = (UserType)$val;
 	}
 
 	/**
@@ -212,7 +212,7 @@ class OfferType
 	 */
 	public function setUserConsent($val)
 	{
-        $this->UserConsent = (int)$val;
+        $this->UserConsent = (boolean)$val;
 	}
 
 	/**
@@ -233,6 +233,6 @@ class OfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

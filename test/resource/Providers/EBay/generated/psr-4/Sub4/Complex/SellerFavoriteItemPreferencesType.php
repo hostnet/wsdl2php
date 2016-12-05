@@ -59,7 +59,7 @@ class SellerFavoriteItemPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchKeywords');
         }
-        $this->SearchKeywords = (int)$val;
+        $this->SearchKeywords = (string)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setListingType($val)
     {
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setSearchSortOrder($val)
     {
-        $this->SearchSortOrder = (int)$val;
+        $this->SearchSortOrder = (StoreItemListSortOrderCodeType)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setMinPrice($val)
     {
-        $this->MinPrice = (int)$val;
+        $this->MinPrice = (AmountType)$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setMaxPrice($val)
     {
-        $this->MaxPrice = (int)$val;
+        $this->MaxPrice = (AmountType)$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class SellerFavoriteItemPreferencesType
      */
     public function setFavoriteItemID($val)
     {
-        $this->FavoriteItemID = (int)$val;
+        $this->FavoriteItemID = (ItemIDType)$val;
     }
 
     /**
@@ -125,6 +125,6 @@ class SellerFavoriteItemPreferencesType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

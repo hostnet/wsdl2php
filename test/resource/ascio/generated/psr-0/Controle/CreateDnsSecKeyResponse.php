@@ -21,7 +21,7 @@ class CreateDnsSecKeyResponse
 	 */
 	public function setCreateDnsSecKeyResult($val)
 	{
-        $this->CreateDnsSecKeyResult = (int)$val;
+        $this->CreateDnsSecKeyResult = (Response)$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class CreateDnsSecKeyResponse
 	 */
 	public function setDnsSecKey($val)
 	{
-        $this->dnsSecKey = (int)$val;
+        $this->dnsSecKey = (DnsSecKey)$val;
 	}
 }

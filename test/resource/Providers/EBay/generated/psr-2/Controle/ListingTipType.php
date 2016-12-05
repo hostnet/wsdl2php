@@ -44,7 +44,7 @@ class ListingTipType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipID');
         }
-        $this->ListingTipID = (int)$val;
+        $this->ListingTipID = (string)$val;
     }
 
     /**
@@ -65,7 +65,7 @@ class ListingTipType
      */
     public function setMessage($val)
     {
-        $this->Message = (int)$val;
+        $this->Message = (ListingTipMessageType)$val;
     }
 
     /**
@@ -74,7 +74,7 @@ class ListingTipType
      */
     public function setField($val)
     {
-        $this->Field = (int)$val;
+        $this->Field = (ListingTipFieldType)$val;
     }
 
     /**
@@ -83,6 +83,6 @@ class ListingTipType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

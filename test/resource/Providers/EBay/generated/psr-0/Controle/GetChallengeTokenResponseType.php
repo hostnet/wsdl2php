@@ -34,7 +34,7 @@ class GetChallengeTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ChallengeToken');
         }
-        $this->ChallengeToken = (int)$val;
+        $this->ChallengeToken = (string)$val;
 	}
 
 	/**
@@ -46,7 +46,7 @@ class GetChallengeTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ImageChallengeURL');
         }
-        $this->ImageChallengeURL = (int)$val;
+        $this->ImageChallengeURL = (string)$val;
 	}
 
 	/**
@@ -58,6 +58,6 @@ class GetChallengeTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AudioChallengeURL');
         }
-        $this->AudioChallengeURL = (int)$val;
+        $this->AudioChallengeURL = (string)$val;
 	}
 }

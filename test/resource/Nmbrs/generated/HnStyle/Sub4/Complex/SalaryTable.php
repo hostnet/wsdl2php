@@ -36,6 +36,6 @@ class SalaryTable
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
     }
 }

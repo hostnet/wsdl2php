@@ -116,7 +116,7 @@ class ResponseAttributeSetType
      */
     public function setHasMore($val)
     {
-        $this->HasMore = (int)$val;
+        $this->HasMore = (boolean)$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class ResponseAttributeSetType
      */
     public function setProductFamilies($val)
     {
-        $this->ProductFamilies = (int)$val;
+        $this->ProductFamilies = (ProductFamilyType)$val;
     }
 
     /**
@@ -134,7 +134,7 @@ class ResponseAttributeSetType
      */
     public function setProductFinderConstraints($val)
     {
-        $this->ProductFinderConstraints = (int)$val;
+        $this->ProductFinderConstraints = (ProductFinderConstraintType)$val;
     }
 
     /**
@@ -143,7 +143,7 @@ class ResponseAttributeSetType
      */
     public function setTooManyMatchesFound($val)
     {
-        $this->TooManyMatchesFound = (int)$val;
+        $this->TooManyMatchesFound = (boolean)$val;
     }
 
     /**
@@ -164,6 +164,6 @@ class ResponseAttributeSetType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

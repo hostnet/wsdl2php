@@ -50,7 +50,7 @@ class DataElementSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElement');
         }
-        $this->DataElement = (int)$val;
+        $this->DataElement = (string)$val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class DataElementSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**

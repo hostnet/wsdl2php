@@ -35,6 +35,6 @@ class GetCategory2FinanceOfferResponseType extends
 	 */
 	public function setCategoryFinanceOfferArray($val)
 	{
-        $this->CategoryFinanceOfferArray = (int)$val;
+        $this->CategoryFinanceOfferArray = (CategoryFinanceOfferArrayType)$val;
 	}
 }

@@ -72,7 +72,7 @@ class SearchRequestType
      */
     public function setSearchAttributes($val)
     {
-        $this->SearchAttributes = (int)$val;
+        $this->SearchAttributes = (SearchAttributesType)$val;
     }
 
     /**
@@ -81,6 +81,6 @@ class SearchRequestType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

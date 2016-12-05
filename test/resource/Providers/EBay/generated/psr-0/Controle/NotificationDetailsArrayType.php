@@ -22,6 +22,6 @@ class NotificationDetailsArrayType
 	 */
 	public function setNotificationDetails($val)
 	{
-        $this->NotificationDetails = (int)$val;
+        $this->NotificationDetails = (NotificationDetailsType)$val;
 	}
 }

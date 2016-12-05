@@ -57,7 +57,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOffer($val)
 	{
-        $this->BestOffer = (int)$val;
+        $this->BestOffer = (AmountType)$val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferStatus($val)
 	{
-        $this->BestOfferStatus = (int)$val;
+        $this->BestOfferStatus = (BestOfferStatusCodeType)$val;
 	}
 
 	/**
@@ -84,7 +84,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferType($val)
 	{
-        $this->BestOfferType = (int)$val;
+        $this->BestOfferType = (BestOfferTypeCodeType)$val;
 	}
 
 	/**
@@ -93,6 +93,6 @@ class BestOfferDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

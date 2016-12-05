@@ -108,7 +108,7 @@ class RunInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class RunInfo
 	 */
 	public function setRunAt($val)
 	{
-        $this->RunAt = (int)$val;
+        $this->RunAt = (dateTime)$val;
 	}
 
 	/**
@@ -126,6 +126,6 @@ class RunInfo
 	 */
 	public function setIsLocked($val)
 	{
-        $this->IsLocked = (int)$val;
+        $this->IsLocked = (boolean)$val;
 	}
 }

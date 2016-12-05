@@ -65,7 +65,7 @@ class BuyingSummaryType
 	 */
 	public function setTotalWinningCost($val)
 	{
-        $this->TotalWinningCost = (int)$val;
+        $this->TotalWinningCost = (AmountType)$val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class BuyingSummaryType
 	 */
 	public function setTotalWonCost($val)
 	{
-        $this->TotalWonCost = (int)$val;
+        $this->TotalWonCost = (AmountType)$val;
 	}
 
 	/**

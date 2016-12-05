@@ -165,7 +165,7 @@ class SellerType
 	 */
 	public function setAllowPaymentEdit($val)
 	{
-        $this->AllowPaymentEdit = (int)$val;
+        $this->AllowPaymentEdit = (boolean)$val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class SellerType
 	 */
 	public function setBillingCurrency($val)
 	{
-        $this->BillingCurrency = (int)$val;
+        $this->BillingCurrency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class SellerType
 	 */
 	public function setCheckoutEnabled($val)
 	{
-        $this->CheckoutEnabled = (int)$val;
+        $this->CheckoutEnabled = (boolean)$val;
 	}
 
 	/**
@@ -192,7 +192,7 @@ class SellerType
 	 */
 	public function setCIPBankAccountStored($val)
 	{
-        $this->CIPBankAccountStored = (int)$val;
+        $this->CIPBankAccountStored = (boolean)$val;
 	}
 
 	/**
@@ -201,7 +201,7 @@ class SellerType
 	 */
 	public function setGoodStanding($val)
 	{
-        $this->GoodStanding = (int)$val;
+        $this->GoodStanding = (boolean)$val;
 	}
 
 	/**
@@ -210,7 +210,7 @@ class SellerType
 	 */
 	public function setLiveAuctionAuthorized($val)
 	{
-        $this->LiveAuctionAuthorized = (int)$val;
+        $this->LiveAuctionAuthorized = (boolean)$val;
 	}
 
 	/**
@@ -219,7 +219,7 @@ class SellerType
 	 */
 	public function setMerchandizingPref($val)
 	{
-        $this->MerchandizingPref = (int)$val;
+        $this->MerchandizingPref = (MerchandizingPrefCodeType)$val;
 	}
 
 	/**
@@ -228,7 +228,7 @@ class SellerType
 	 */
 	public function setQualifiesForB2BVAT($val)
 	{
-        $this->QualifiesForB2BVAT = (int)$val;
+        $this->QualifiesForB2BVAT = (boolean)$val;
 	}
 
 	/**
@@ -237,7 +237,7 @@ class SellerType
 	 */
 	public function setSellerGuaranteeLevel($val)
 	{
-        $this->SellerGuaranteeLevel = (int)$val;
+        $this->SellerGuaranteeLevel = (SellerGuaranteeLevelCodeType)$val;
 	}
 
 	/**
@@ -246,7 +246,7 @@ class SellerType
 	 */
 	public function setSellerLevel($val)
 	{
-        $this->SellerLevel = (int)$val;
+        $this->SellerLevel = (SellerLevelCodeType)$val;
 	}
 
 	/**
@@ -255,7 +255,7 @@ class SellerType
 	 */
 	public function setSellerPaymentAddress($val)
 	{
-        $this->SellerPaymentAddress = (int)$val;
+        $this->SellerPaymentAddress = (AddressType)$val;
 	}
 
 	/**
@@ -264,7 +264,7 @@ class SellerType
 	 */
 	public function setSchedulingInfo($val)
 	{
-        $this->SchedulingInfo = (int)$val;
+        $this->SchedulingInfo = (SchedulingInfoType)$val;
 	}
 
 	/**
@@ -273,7 +273,7 @@ class SellerType
 	 */
 	public function setStoreOwner($val)
 	{
-        $this->StoreOwner = (int)$val;
+        $this->StoreOwner = (boolean)$val;
 	}
 
 	/**
@@ -282,7 +282,7 @@ class SellerType
 	 */
 	public function setStoreURL($val)
 	{
-        $this->StoreURL = (int)$val;
+        $this->StoreURL = (anyURI)$val;
 	}
 
 	/**
@@ -291,7 +291,7 @@ class SellerType
 	 */
 	public function setSellerBusinessType($val)
 	{
-        $this->SellerBusinessType = (int)$val;
+        $this->SellerBusinessType = (SellerBusinessCodeType)$val;
 	}
 
 	/**
@@ -300,7 +300,7 @@ class SellerType
 	 */
 	public function setRegisteredBusinessSeller($val)
 	{
-        $this->RegisteredBusinessSeller = (int)$val;
+        $this->RegisteredBusinessSeller = (boolean)$val;
 	}
 
 	/**
@@ -309,7 +309,7 @@ class SellerType
 	 */
 	public function setExpressEligible($val)
 	{
-        $this->ExpressEligible = (int)$val;
+        $this->ExpressEligible = (boolean)$val;
 	}
 
 	/**
@@ -318,7 +318,7 @@ class SellerType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (SellerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -327,7 +327,7 @@ class SellerType
 	 */
 	public function setProStoresPreference($val)
 	{
-        $this->ProStoresPreference = (int)$val;
+        $this->ProStoresPreference = (ProStoresCheckoutPreferenceType)$val;
 	}
 
 	/**
@@ -336,7 +336,7 @@ class SellerType
 	 */
 	public function setExpressWallet($val)
 	{
-        $this->ExpressWallet = (int)$val;
+        $this->ExpressWallet = (boolean)$val;
 	}
 
 	/**
@@ -345,7 +345,7 @@ class SellerType
 	 */
 	public function setExpressSellerRequirements($val)
 	{
-        $this->ExpressSellerRequirements = (int)$val;
+        $this->ExpressSellerRequirements = (ExpressSellerRequirementsType)$val;
 	}
 
 	/**
@@ -354,7 +354,7 @@ class SellerType
 	 */
 	public function setCharityRegistered($val)
 	{
-        $this->CharityRegistered = (int)$val;
+        $this->CharityRegistered = (boolean)$val;
 	}
 
 	/**
@@ -363,6 +363,6 @@ class SellerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -41,7 +41,7 @@ class GetSteps
      */
     public function setScale($val)
     {
-        $this->Scale = (int)$val;
+        $this->Scale = (SalaryTableScale)$val;
     }
 
     /**

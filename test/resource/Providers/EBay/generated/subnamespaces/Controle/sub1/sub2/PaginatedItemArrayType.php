@@ -26,7 +26,7 @@ class PaginatedItemArrayType
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -35,6 +35,6 @@ class PaginatedItemArrayType
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }

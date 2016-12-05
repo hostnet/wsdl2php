@@ -32,7 +32,7 @@ class AvailabilityCheck
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = (string)$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class AvailabilityCheck
      */
     public function setDomains($val)
     {
-        $this->domains = (int)$val;
+        $this->domains = (ArrayOfString)$val;
     }
 
     /**
@@ -50,7 +50,7 @@ class AvailabilityCheck
      */
     public function setTlds($val)
     {
-        $this->tlds = (int)$val;
+        $this->tlds = (ArrayOfString)$val;
     }
 
     /**
@@ -59,6 +59,6 @@ class AvailabilityCheck
      */
     public function setQuality($val)
     {
-        $this->quality = (int)$val;
+        $this->quality = (QualityType)$val;
     }
 }

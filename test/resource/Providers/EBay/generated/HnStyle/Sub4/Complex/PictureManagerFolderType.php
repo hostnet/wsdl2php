@@ -49,7 +49,7 @@ class PictureManagerFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class PictureManagerFolderType
      */
     public function setPicture($val)
     {
-        $this->Picture = (int)$val;
+        $this->Picture = (PictureManagerPictureType)$val;
     }
 
     /**
@@ -67,6 +67,6 @@ class PictureManagerFolderType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

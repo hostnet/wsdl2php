@@ -33,7 +33,7 @@ class SetUserNotesRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -42,7 +42,7 @@ class SetUserNotesRequestType extends
      */
     public function setAction($val)
     {
-        $this->Action = (int)$val;
+        $this->Action = (SetUserNotesActionCodeType)$val;
     }
 
     /**
@@ -54,6 +54,6 @@ class SetUserNotesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NoteText');
         }
-        $this->NoteText = (int)$val;
+        $this->NoteText = (string)$val;
     }
 }

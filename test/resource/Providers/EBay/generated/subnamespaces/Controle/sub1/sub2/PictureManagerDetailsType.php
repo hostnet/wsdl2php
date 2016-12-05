@@ -48,7 +48,7 @@ class PictureManagerDetailsType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (int)$val;
+        $this->SubscriptionLevel = (PictureManagerSubscriptionLevelCodeType)$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class PictureManagerDetailsType
 	 */
 	public function setKeepOriginal($val)
 	{
-        $this->KeepOriginal = (int)$val;
+        $this->KeepOriginal = (boolean)$val;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class PictureManagerDetailsType
 	 */
 	public function setWatermarkEPS($val)
 	{
-        $this->WatermarkEPS = (int)$val;
+        $this->WatermarkEPS = (boolean)$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class PictureManagerDetailsType
 	 */
 	public function setWatermarkUserID($val)
 	{
-        $this->WatermarkUserID = (int)$val;
+        $this->WatermarkUserID = (boolean)$val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class PictureManagerDetailsType
 	 */
 	public function setFolder($val)
 	{
-        $this->Folder = (int)$val;
+        $this->Folder = (PictureManagerFolderType)$val;
 	}
 
 	/**
@@ -117,6 +117,6 @@ class PictureManagerDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

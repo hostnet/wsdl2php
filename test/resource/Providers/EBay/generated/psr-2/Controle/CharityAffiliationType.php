@@ -30,7 +30,7 @@ class CharityAffiliationType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 
     /**
@@ -42,7 +42,7 @@ class CharityAffiliationType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for id');
         }
-        $this->id = (int)$val;
+        $this->id = (string)$val;
     }
 
     /**
@@ -51,6 +51,6 @@ class CharityAffiliationType
      */
     public function setType($val)
     {
-        $this->type = (int)$val;
+        $this->type = (CharityAffiliationTypeCodeType)$val;
     }
 }

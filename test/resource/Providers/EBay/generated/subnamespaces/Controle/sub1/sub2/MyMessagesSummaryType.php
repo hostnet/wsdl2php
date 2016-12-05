@@ -46,7 +46,7 @@ class MyMessagesSummaryType
 	 */
 	public function setFolderSummary($val)
 	{
-        $this->FolderSummary = (int)$val;
+        $this->FolderSummary = (MyMessagesFolderSummaryType)$val;
 	}
 
 	/**

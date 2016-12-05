@@ -41,7 +41,7 @@ class SalesTaxType
 	 */
 	public function setSalesTaxPercent($val)
 	{
-        $this->SalesTaxPercent = (int)$val;
+        $this->SalesTaxPercent = (float)$val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class SalesTaxType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SalesTaxState');
         }
-        $this->SalesTaxState = (int)$val;
+        $this->SalesTaxState = (string)$val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class SalesTaxType
 	 */
 	public function setShippingIncludedInTax($val)
 	{
-        $this->ShippingIncludedInTax = (int)$val;
+        $this->ShippingIncludedInTax = (boolean)$val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class SalesTaxType
 	 */
 	public function setSalesTaxAmount($val)
 	{
-        $this->SalesTaxAmount = (int)$val;
+        $this->SalesTaxAmount = (AmountType)$val;
 	}
 
 	/**
@@ -80,6 +80,6 @@ class SalesTaxType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

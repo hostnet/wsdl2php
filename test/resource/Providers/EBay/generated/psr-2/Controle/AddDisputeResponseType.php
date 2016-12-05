@@ -23,6 +23,6 @@ class AddDisputeResponseType extends
      */
     public function setDisputeID($val)
     {
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
     }
 }

@@ -53,7 +53,7 @@ class ThemeGroupType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for GroupName');
         }
-        $this->GroupName = (int)$val;
+        $this->GroupName = (string)$val;
     }
 
     /**
@@ -86,6 +86,6 @@ class ThemeGroupType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

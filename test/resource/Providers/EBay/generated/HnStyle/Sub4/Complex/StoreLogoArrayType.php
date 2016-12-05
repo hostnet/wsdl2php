@@ -21,6 +21,6 @@ class StoreLogoArrayType
      */
     public function setLogo($val)
     {
-        $this->Logo = (int)$val;
+        $this->Logo = (StoreLogoType)$val;
     }
 }

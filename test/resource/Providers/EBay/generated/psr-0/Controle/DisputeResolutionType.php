@@ -36,7 +36,7 @@ class DisputeResolutionType
 	 */
 	public function setDisputeResolutionRecordType($val)
 	{
-        $this->DisputeResolutionRecordType = (int)$val;
+        $this->DisputeResolutionRecordType = (DisputeResolutionRecordTypeCodeType)$val;
 	}
 
 	/**
@@ -45,7 +45,7 @@ class DisputeResolutionType
 	 */
 	public function setDisputeResolutionReason($val)
 	{
-        $this->DisputeResolutionReason = (int)$val;
+        $this->DisputeResolutionReason = (DisputeResolutionReasonCodeType)$val;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class DisputeResolutionType
 	 */
 	public function setResolutionTime($val)
 	{
-        $this->ResolutionTime = (int)$val;
+        $this->ResolutionTime = (dateTime)$val;
 	}
 
 	/**
@@ -63,6 +63,6 @@ class DisputeResolutionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -50,7 +50,7 @@ class ItemListCustomizationType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = (int)$val;
+        $this->Include = (boolean)$val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class ItemListCustomizationType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class ItemListCustomizationType
 	 */
 	public function setSort($val)
 	{
-        $this->Sort = (int)$val;
+        $this->Sort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class ItemListCustomizationType
 	 */
 	public function setIncludeNotes($val)
 	{
-        $this->IncludeNotes = (int)$val;
+        $this->IncludeNotes = (boolean)$val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class ItemListCustomizationType
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -107,6 +107,6 @@ class ItemListCustomizationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

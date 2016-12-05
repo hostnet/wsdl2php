@@ -53,7 +53,7 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setBidApproval($val)
     {
-        $this->BidApproval = (int)$val;
+        $this->BidApproval = (BidApprovalArrayType)$val;
     }
 
     /**
@@ -62,7 +62,7 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setApproveAllPending($val)
     {
-        $this->ApproveAllPending = (int)$val;
+        $this->ApproveAllPending = (boolean)$val;
     }
 
     /**
@@ -71,6 +71,6 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setAllApprovedBiddingLimit($val)
     {
-        $this->AllApprovedBiddingLimit = (int)$val;
+        $this->AllApprovedBiddingLimit = (AmountType)$val;
     }
 }

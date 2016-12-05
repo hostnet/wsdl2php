@@ -36,7 +36,7 @@ class MyeBaySelectionType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = (int)$val;
+        $this->Include = (boolean)$val;
 	}
 
 	/**
@@ -45,7 +45,7 @@ class MyeBaySelectionType
 	 */
 	public function setSort($val)
 	{
-        $this->Sort = (int)$val;
+        $this->Sort = (SortOrderCodeType)$val;
 	}
 
 	/**
@@ -66,6 +66,6 @@ class MyeBaySelectionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

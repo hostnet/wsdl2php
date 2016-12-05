@@ -42,7 +42,7 @@ class PromotionDetailsType
      */
     public function setPromotionPrice($val)
     {
-        $this->PromotionPrice = (int)$val;
+        $this->PromotionPrice = (AmountType)$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class PromotionDetailsType
      */
     public function setPromotionPriceType($val)
     {
-        $this->PromotionPriceType = (int)$val;
+        $this->PromotionPriceType = (PromotionItemPriceTypeCodeType)$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class PromotionDetailsType
      */
     public function setConvertedPromotionPrice($val)
     {
-        $this->ConvertedPromotionPrice = (int)$val;
+        $this->ConvertedPromotionPrice = (AmountType)$val;
     }
 
     /**
@@ -81,6 +81,6 @@ class PromotionDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

@@ -80,7 +80,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setRegistrationDate($val)
     {
-        $this->RegistrationDate = (int)$val;
+        $this->RegistrationDate = (dateTime)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSA($val)
     {
-        $this->SubscribeSA = (int)$val;
+        $this->SubscribeSA = (boolean)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSAPro($val)
     {
-        $this->SubscribeSAPro = (int)$val;
+        $this->SubscribeSAPro = (boolean)$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSM($val)
     {
-        $this->SubscribeSM = (int)$val;
+        $this->SubscribeSM = (boolean)$val;
     }
 
     /**
@@ -116,6 +116,6 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSMPro($val)
     {
-        $this->SubscribeSMPro = (int)$val;
+        $this->SubscribeSMPro = (boolean)$val;
     }
 }

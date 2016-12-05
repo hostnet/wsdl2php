@@ -21,7 +21,7 @@ class CreateDocumentationResponse
      */
     public function setCreateDocumentationResult($val)
     {
-        $this->CreateDocumentationResult = (int)$val;
+        $this->CreateDocumentationResult = (Response)$val;
     }
 
     /**

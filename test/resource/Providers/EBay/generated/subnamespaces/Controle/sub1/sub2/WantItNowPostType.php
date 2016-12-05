@@ -50,7 +50,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class WantItNowPostType
 	 */
 	public function setPostID($val)
 	{
-        $this->PostID = (int)$val;
+        $this->PostID = (ItemIDType)$val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class WantItNowPostType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class WantItNowPostType
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -113,6 +113,6 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 }

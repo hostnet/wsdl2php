@@ -41,7 +41,7 @@ class MyeBayFavoriteSearchListType
      */
     public function setFavoriteSearch($val)
     {
-        $this->FavoriteSearch = (int)$val;
+        $this->FavoriteSearch = (MyeBayFavoriteSearchType)$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class MyeBayFavoriteSearchListType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

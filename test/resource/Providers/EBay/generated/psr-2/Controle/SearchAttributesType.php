@@ -60,7 +60,7 @@ class SearchAttributesType
      */
     public function setDateSpecifier($val)
     {
-        $this->DateSpecifier = (int)$val;
+        $this->DateSpecifier = (DateSpecifierCodeType)$val;
     }
 
     /**
@@ -69,7 +69,7 @@ class SearchAttributesType
      */
     public function setRangeSpecifier($val)
     {
-        $this->RangeSpecifier = (int)$val;
+        $this->RangeSpecifier = (RangeCodeType)$val;
     }
 
     /**
@@ -78,7 +78,7 @@ class SearchAttributesType
      */
     public function setValueList($val)
     {
-        $this->ValueList = (int)$val;
+        $this->ValueList = (ValType)$val;
     }
 
     /**
@@ -87,6 +87,6 @@ class SearchAttributesType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

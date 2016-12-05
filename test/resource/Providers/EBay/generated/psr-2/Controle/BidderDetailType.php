@@ -88,7 +88,7 @@ class BidderDetailType
      */
     public function setUserID($val)
     {
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class BidderDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
     }
 
     /**
@@ -145,7 +145,7 @@ class BidderDetailType
      */
     public function setLiveAuctionBidResult($val)
     {
-        $this->LiveAuctionBidResult = (int)$val;
+        $this->LiveAuctionBidResult = (LiveAuctionBidType)$val;
     }
 
     /**
@@ -154,6 +154,6 @@ class BidderDetailType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

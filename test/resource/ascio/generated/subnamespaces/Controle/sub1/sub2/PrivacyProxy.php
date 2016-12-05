@@ -33,7 +33,7 @@ class PrivacyProxy
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = (PrivacyProxyType)$val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class PrivacyProxy
 	 */
 	public function setPrivacyAdmin($val)
 	{
-        $this->PrivacyAdmin = (int)$val;
+        $this->PrivacyAdmin = (boolean)$val;
 	}
 
 	/**
@@ -51,7 +51,7 @@ class PrivacyProxy
 	 */
 	public function setPrivacyTech($val)
 	{
-        $this->PrivacyTech = (int)$val;
+        $this->PrivacyTech = (boolean)$val;
 	}
 
 	/**
@@ -60,7 +60,7 @@ class PrivacyProxy
 	 */
 	public function setPrivacyBilling($val)
 	{
-        $this->PrivacyBilling = (int)$val;
+        $this->PrivacyBilling = (boolean)$val;
 	}
 
 	/**
@@ -69,6 +69,6 @@ class PrivacyProxy
 	 */
 	public function setExtensions($val)
 	{
-        $this->Extensions = (int)$val;
+        $this->Extensions = (Extensions)$val;
 	}
 }

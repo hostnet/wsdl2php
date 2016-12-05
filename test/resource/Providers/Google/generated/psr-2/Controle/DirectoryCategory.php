@@ -24,7 +24,7 @@ class DirectoryCategory
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for fullViewableName');
         }
-        $this->fullViewableName = (int)$val;
+        $this->fullViewableName = (string)$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class DirectoryCategory
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for specialEncoding');
         }
-        $this->specialEncoding = (int)$val;
+        $this->specialEncoding = (string)$val;
     }
 }

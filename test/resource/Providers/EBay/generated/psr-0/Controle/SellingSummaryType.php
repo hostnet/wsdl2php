@@ -84,7 +84,7 @@ class SellingSummaryType
 	 */
 	public function setTotalAuctionSellingValue($val)
 	{
-        $this->TotalAuctionSellingValue = (int)$val;
+        $this->TotalAuctionSellingValue = (AmountType)$val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class SellingSummaryType
 	 */
 	public function setTotalSoldValue($val)
 	{
-        $this->TotalSoldValue = (int)$val;
+        $this->TotalSoldValue = (AmountType)$val;
 	}
 
 	/**

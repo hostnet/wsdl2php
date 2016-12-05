@@ -47,7 +47,7 @@ class GetWantItNowSearchResultsResponseType extends
 	 */
 	public function setWantItNowPostArray($val)
 	{
-        $this->WantItNowPostArray = (int)$val;
+        $this->WantItNowPostArray = (WantItNowPostArrayType)$val;
 	}
 
 	/**
@@ -56,7 +56,7 @@ class GetWantItNowSearchResultsResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -89,6 +89,6 @@ class GetWantItNowSearchResultsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }

@@ -29,7 +29,7 @@ class SearchDetailsType
      */
     public function setBuyItNowEnabled($val)
     {
-        $this->BuyItNowEnabled = (int)$val;
+        $this->BuyItNowEnabled = (boolean)$val;
     }
 
     /**
@@ -38,7 +38,7 @@ class SearchDetailsType
      */
     public function setPicture($val)
     {
-        $this->Picture = (int)$val;
+        $this->Picture = (boolean)$val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SearchDetailsType
      */
     public function setRecentListing($val)
     {
-        $this->RecentListing = (int)$val;
+        $this->RecentListing = (boolean)$val;
     }
 
     /**
@@ -56,6 +56,6 @@ class SearchDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

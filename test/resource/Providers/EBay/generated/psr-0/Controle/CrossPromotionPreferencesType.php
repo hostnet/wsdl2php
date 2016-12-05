@@ -55,7 +55,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossPromotionEnabled($val)
 	{
-        $this->CrossPromotionEnabled = (int)$val;
+        $this->CrossPromotionEnabled = (boolean)$val;
 	}
 
 	/**
@@ -64,7 +64,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossSellItemFormatSortFilter($val)
 	{
-        $this->CrossSellItemFormatSortFilter = (int)$val;
+        $this->CrossSellItemFormatSortFilter = (ItemFormatSortFilterCodeType)$val;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossSellGallerySortFilter($val)
 	{
-        $this->CrossSellGallerySortFilter = (int)$val;
+        $this->CrossSellGallerySortFilter = (GallerySortFilterCodeType)$val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossSellItemSortFilter($val)
 	{
-        $this->CrossSellItemSortFilter = (int)$val;
+        $this->CrossSellItemSortFilter = (ItemSortFilterCodeType)$val;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setUpSellItemFormatSortFilter($val)
 	{
-        $this->UpSellItemFormatSortFilter = (int)$val;
+        $this->UpSellItemFormatSortFilter = (ItemFormatSortFilterCodeType)$val;
 	}
 
 	/**
@@ -100,7 +100,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setUpSellGallerySortFilter($val)
 	{
-        $this->UpSellGallerySortFilter = (int)$val;
+        $this->UpSellGallerySortFilter = (GallerySortFilterCodeType)$val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setUpSellItemSortFilter($val)
 	{
-        $this->UpSellItemSortFilter = (int)$val;
+        $this->UpSellItemSortFilter = (ItemSortFilterCodeType)$val;
 	}
 
 	/**
@@ -118,6 +118,6 @@ class CrossPromotionPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

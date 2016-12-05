@@ -59,7 +59,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowBidderNoticePreferences($val)
     {
-        $this->ShowBidderNoticePreferences = (int)$val;
+        $this->ShowBidderNoticePreferences = (boolean)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowCombinedPaymentPreferences($val)
     {
-        $this->ShowCombinedPaymentPreferences = (int)$val;
+        $this->ShowCombinedPaymentPreferences = (boolean)$val;
     }
 
     /**
@@ -77,7 +77,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowCrossPromotionPreferences($val)
     {
-        $this->ShowCrossPromotionPreferences = (int)$val;
+        $this->ShowCrossPromotionPreferences = (boolean)$val;
     }
 
     /**
@@ -86,7 +86,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowSellerPaymentPreferences($val)
     {
-        $this->ShowSellerPaymentPreferences = (int)$val;
+        $this->ShowSellerPaymentPreferences = (boolean)$val;
     }
 
     /**
@@ -95,7 +95,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowEndOfAuctionEmailPreferences($val)
     {
-        $this->ShowEndOfAuctionEmailPreferences = (int)$val;
+        $this->ShowEndOfAuctionEmailPreferences = (boolean)$val;
     }
 
     /**
@@ -104,7 +104,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowSellerFavoriteItemPreferences($val)
     {
-        $this->ShowSellerFavoriteItemPreferences = (int)$val;
+        $this->ShowSellerFavoriteItemPreferences = (boolean)$val;
     }
 
     /**
@@ -113,7 +113,7 @@ class GetUserPreferencesRequestType extends
      */
     public function setShoweBxOptInPreference($val)
     {
-        $this->ShoweBxOptInPreference = (int)$val;
+        $this->ShoweBxOptInPreference = (boolean)$val;
     }
 
     /**
@@ -122,6 +122,6 @@ class GetUserPreferencesRequestType extends
      */
     public function setShowProStoresPreferences($val)
     {
-        $this->ShowProStoresPreferences = (int)$val;
+        $this->ShowProStoresPreferences = (boolean)$val;
     }
 }

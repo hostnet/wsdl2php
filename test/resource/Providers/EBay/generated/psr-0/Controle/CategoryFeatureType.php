@@ -208,7 +208,7 @@ class CategoryFeatureType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -217,7 +217,7 @@ class CategoryFeatureType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (ListingDurationReferenceType)$val;
 	}
 
 	/**
@@ -226,7 +226,7 @@ class CategoryFeatureType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = (int)$val;
+        $this->ShippingTermsRequired = (boolean)$val;
 	}
 
 	/**
@@ -235,7 +235,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -244,7 +244,7 @@ class CategoryFeatureType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = (int)$val;
+        $this->DutchBINEnabled = (boolean)$val;
 	}
 
 	/**
@@ -253,7 +253,7 @@ class CategoryFeatureType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = (int)$val;
+        $this->UserConsentRequired = (boolean)$val;
 	}
 
 	/**
@@ -262,7 +262,7 @@ class CategoryFeatureType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = (int)$val;
+        $this->HomePageFeaturedEnabled = (boolean)$val;
 	}
 
 	/**
@@ -271,7 +271,7 @@ class CategoryFeatureType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = (int)$val;
+        $this->ProPackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -280,7 +280,7 @@ class CategoryFeatureType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = (int)$val;
+        $this->BasicUpgradePackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -289,7 +289,7 @@ class CategoryFeatureType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = (int)$val;
+        $this->ValuePackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -298,7 +298,7 @@ class CategoryFeatureType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = (int)$val;
+        $this->ProPackPlusEnabled = (boolean)$val;
 	}
 
 	/**
@@ -307,7 +307,7 @@ class CategoryFeatureType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = (int)$val;
+        $this->AdFormatEnabled = (AdFormatEnabledCodeType)$val;
 	}
 
 	/**
@@ -316,7 +316,7 @@ class CategoryFeatureType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = (int)$val;
+        $this->DigitalDeliveryEnabled = (DigitalDeliveryEnabledCodeType)$val;
 	}
 
 	/**
@@ -325,7 +325,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = (int)$val;
+        $this->BestOfferCounterEnabled = (boolean)$val;
 	}
 
 	/**
@@ -334,7 +334,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = (boolean)$val;
 	}
 
 	/**
@@ -343,7 +343,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = (boolean)$val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = (boolean)$val;
 	}
 
 	/**
@@ -361,7 +361,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = (boolean)$val;
 	}
 
 	/**
@@ -370,7 +370,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = (int)$val;
+        $this->LocalMarketNonSubscription = (boolean)$val;
 	}
 
 	/**
@@ -379,7 +379,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = (int)$val;
+        $this->ExpressEnabled = (boolean)$val;
 	}
 
 	/**
@@ -388,7 +388,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = (int)$val;
+        $this->ExpressPicturesRequired = (boolean)$val;
 	}
 
 	/**
@@ -397,7 +397,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = (int)$val;
+        $this->ExpressConditionRequired = (boolean)$val;
 	}
 
 	/**
@@ -406,7 +406,7 @@ class CategoryFeatureType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = (double)$val;
 	}
 
 	/**
@@ -415,7 +415,7 @@ class CategoryFeatureType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = (int)$val;
+        $this->SellerContactDetailsEnabled = (boolean)$val;
 	}
 
 	/**
@@ -424,7 +424,7 @@ class CategoryFeatureType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = (boolean)$val;
 	}
 
 	/**
@@ -433,7 +433,7 @@ class CategoryFeatureType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = (int)$val;
+        $this->StoreInventoryEnabled = (boolean)$val;
 	}
 
 	/**
@@ -442,7 +442,7 @@ class CategoryFeatureType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = (boolean)$val;
 	}
 
 	/**
@@ -451,7 +451,7 @@ class CategoryFeatureType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = (boolean)$val;
 	}
 
 	/**
@@ -460,6 +460,6 @@ class CategoryFeatureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

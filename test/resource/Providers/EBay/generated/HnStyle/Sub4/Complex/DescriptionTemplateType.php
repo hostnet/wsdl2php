@@ -77,7 +77,7 @@ class DescriptionTemplateType
      */
     public function setImageURL($val)
     {
-        $this->ImageURL = (int)$val;
+        $this->ImageURL = (anyURI)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
     }
 
     /**
@@ -101,7 +101,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TemplateXML');
         }
-        $this->TemplateXML = (int)$val;
+        $this->TemplateXML = (string)$val;
     }
 
     /**
@@ -110,7 +110,7 @@ class DescriptionTemplateType
      */
     public function setType($val)
     {
-        $this->Type = (int)$val;
+        $this->Type = (DescriptionTemplateCodeType)$val;
     }
 
     /**
@@ -119,6 +119,6 @@ class DescriptionTemplateType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

@@ -79,7 +79,7 @@ class ShippingServiceOptionsType
      */
     public function setShippingInsuranceCost($val)
     {
-        $this->ShippingInsuranceCost = (int)$val;
+        $this->ShippingInsuranceCost = (AmountType)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class ShippingServiceOptionsType
      */
     public function setShippingService($val)
     {
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
     }
 
     /**
@@ -97,7 +97,7 @@ class ShippingServiceOptionsType
      */
     public function setShippingServiceCost($val)
     {
-        $this->ShippingServiceCost = (int)$val;
+        $this->ShippingServiceCost = (AmountType)$val;
     }
 
     /**
@@ -106,7 +106,7 @@ class ShippingServiceOptionsType
      */
     public function setShippingServiceAdditionalCost($val)
     {
-        $this->ShippingServiceAdditionalCost = (int)$val;
+        $this->ShippingServiceAdditionalCost = (AmountType)$val;
     }
 
     /**
@@ -127,7 +127,7 @@ class ShippingServiceOptionsType
      */
     public function setExpeditedService($val)
     {
-        $this->ExpeditedService = (int)$val;
+        $this->ExpeditedService = (boolean)$val;
     }
 
     /**
@@ -160,7 +160,7 @@ class ShippingServiceOptionsType
      */
     public function setShippingSurcharge($val)
     {
-        $this->ShippingSurcharge = (int)$val;
+        $this->ShippingSurcharge = (AmountType)$val;
     }
 
     /**
@@ -169,6 +169,6 @@ class ShippingServiceOptionsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

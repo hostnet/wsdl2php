@@ -30,7 +30,7 @@ class GetOrderTransactionsRequestType extends
      */
     public function setItemTransactionIDArray($val)
     {
-        $this->ItemTransactionIDArray = (int)$val;
+        $this->ItemTransactionIDArray = (ItemTransactionIDArrayType)$val;
     }
 
     /**
@@ -39,6 +39,6 @@ class GetOrderTransactionsRequestType extends
      */
     public function setOrderIDArray($val)
     {
-        $this->OrderIDArray = (int)$val;
+        $this->OrderIDArray = (OrderIDArrayType)$val;
     }
 }

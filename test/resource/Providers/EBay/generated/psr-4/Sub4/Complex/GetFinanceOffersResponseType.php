@@ -41,6 +41,6 @@ class GetFinanceOffersResponseType extends
      */
     public function setFinanceOfferArray($val)
     {
-        $this->FinanceOfferArray = (int)$val;
+        $this->FinanceOfferArray = (FinanceOfferArrayType)$val;
     }
 }

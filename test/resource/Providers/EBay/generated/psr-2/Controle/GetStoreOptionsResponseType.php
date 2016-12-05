@@ -45,7 +45,7 @@ class GetStoreOptionsResponseType extends
      */
     public function setBasicThemeArray($val)
     {
-        $this->BasicThemeArray = (int)$val;
+        $this->BasicThemeArray = (StoreThemeArrayType)$val;
     }
 
     /**
@@ -54,7 +54,7 @@ class GetStoreOptionsResponseType extends
      */
     public function setAdvancedThemeArray($val)
     {
-        $this->AdvancedThemeArray = (int)$val;
+        $this->AdvancedThemeArray = (StoreThemeArrayType)$val;
     }
 
     /**
@@ -63,7 +63,7 @@ class GetStoreOptionsResponseType extends
      */
     public function setLogoArray($val)
     {
-        $this->LogoArray = (int)$val;
+        $this->LogoArray = (StoreLogoArrayType)$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class GetStoreOptionsResponseType extends
      */
     public function setSubscriptionArray($val)
     {
-        $this->SubscriptionArray = (int)$val;
+        $this->SubscriptionArray = (StoreSubscriptionArrayType)$val;
     }
 
     /**

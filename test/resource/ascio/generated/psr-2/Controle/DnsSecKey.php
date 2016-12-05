@@ -60,7 +60,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Handle');
         }
-        $this->Handle = (int)$val;
+        $this->Handle = (string)$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = (string)$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DigestAlgorithm');
         }
-        $this->DigestAlgorithm = (int)$val;
+        $this->DigestAlgorithm = (string)$val;
     }
 
     /**
@@ -96,7 +96,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DigestType');
         }
-        $this->DigestType = (int)$val;
+        $this->DigestType = (string)$val;
     }
 
     /**
@@ -108,7 +108,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Digest');
         }
-        $this->Digest = (int)$val;
+        $this->Digest = (string)$val;
     }
 
     /**
@@ -120,7 +120,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Protocol');
         }
-        $this->Protocol = (int)$val;
+        $this->Protocol = (string)$val;
     }
 
     /**
@@ -132,7 +132,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for KeyType');
         }
-        $this->KeyType = (int)$val;
+        $this->KeyType = (string)$val;
     }
 
     /**
@@ -144,7 +144,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for KeyAlgorithm');
         }
-        $this->KeyAlgorithm = (int)$val;
+        $this->KeyAlgorithm = (string)$val;
     }
 
     /**
@@ -156,7 +156,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for KeyTag');
         }
-        $this->KeyTag = (int)$val;
+        $this->KeyTag = (string)$val;
     }
 
     /**
@@ -168,7 +168,7 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PublicKey');
         }
-        $this->PublicKey = (int)$val;
+        $this->PublicKey = (string)$val;
     }
 
     /**
@@ -180,6 +180,6 @@ class DnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CreDate');
         }
-        $this->CreDate = (int)$val;
+        $this->CreDate = (string)$val;
     }
 }

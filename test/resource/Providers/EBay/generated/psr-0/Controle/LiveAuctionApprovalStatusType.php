@@ -36,7 +36,7 @@ class LiveAuctionApprovalStatusType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -48,6 +48,6 @@ class LiveAuctionApprovalStatusType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = (string)$val;
 	}
 }

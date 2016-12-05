@@ -52,7 +52,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for summary');
         }
-        $this->summary = (int)$val;
+        $this->summary = (string)$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URL');
         }
-        $this->URL = (int)$val;
+        $this->URL = (string)$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for snippet');
         }
-        $this->snippet = (int)$val;
+        $this->snippet = (string)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for title');
         }
-        $this->title = (int)$val;
+        $this->title = (string)$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for cachedSize');
         }
-        $this->cachedSize = (int)$val;
+        $this->cachedSize = (string)$val;
     }
 
     /**
@@ -109,7 +109,7 @@ class ResultElement
      */
     public function setRelatedInformationPresent($val)
     {
-        $this->relatedInformationPresent = (int)$val;
+        $this->relatedInformationPresent = (boolean)$val;
     }
 
     /**
@@ -121,7 +121,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for hostName');
         }
-        $this->hostName = (int)$val;
+        $this->hostName = (string)$val;
     }
 
     /**
@@ -130,7 +130,7 @@ class ResultElement
      */
     public function setDirectoryCategory($val)
     {
-        $this->directoryCategory = (int)$val;
+        $this->directoryCategory = (DirectoryCategory)$val;
     }
 
     /**
@@ -142,6 +142,6 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for directoryTitle');
         }
-        $this->directoryTitle = (int)$val;
+        $this->directoryTitle = (string)$val;
     }
 }

@@ -24,7 +24,7 @@ class KeyPhrase
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for KeyPhrase');
         }
-        $this->KeyPhrase = (int)$val;
+        $this->KeyPhrase = (string)$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class KeyPhrase
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Type');
         }
-        $this->Type = (int)$val;
+        $this->Type = (string)$val;
     }
 }

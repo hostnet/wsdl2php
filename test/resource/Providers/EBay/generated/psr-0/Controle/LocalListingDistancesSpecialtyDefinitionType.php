@@ -23,6 +23,6 @@ class LocalListingDistancesSpecialtyDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

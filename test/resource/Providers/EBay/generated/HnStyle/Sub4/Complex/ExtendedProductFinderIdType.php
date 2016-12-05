@@ -45,6 +45,6 @@ class ExtendedProductFinderIdType
      */
     public function setProductFinderBuySide($val)
     {
-        $this->ProductFinderBuySide = (int)$val;
+        $this->ProductFinderBuySide = (boolean)$val;
     }
 }

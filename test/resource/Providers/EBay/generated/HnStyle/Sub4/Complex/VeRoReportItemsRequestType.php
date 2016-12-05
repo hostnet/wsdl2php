@@ -23,7 +23,7 @@ class VeRoReportItemsRequestType extends
      */
     public function setRightsOwnerID($val)
     {
-        $this->RightsOwnerID = (int)$val;
+        $this->RightsOwnerID = (UserIDType)$val;
     }
 
     /**
@@ -32,6 +32,6 @@ class VeRoReportItemsRequestType extends
      */
     public function setReportItems($val)
     {
-        $this->ReportItems = (int)$val;
+        $this->ReportItems = (VeROReportItemsType)$val;
     }
 }

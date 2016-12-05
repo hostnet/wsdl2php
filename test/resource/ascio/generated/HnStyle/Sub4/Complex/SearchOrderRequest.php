@@ -53,7 +53,7 @@ class SearchOrderRequest
      */
     public function setOrderTypes($val)
     {
-        $this->OrderTypes = (int)$val;
+        $this->OrderTypes = (ArrayOfOrderType)$val;
     }
 
     /**
@@ -62,7 +62,7 @@ class SearchOrderRequest
      */
     public function setOrderStatusTypes($val)
     {
-        $this->OrderStatusTypes = (int)$val;
+        $this->OrderStatusTypes = (ArrayOfOrderStatusType)$val;
     }
 
     /**
@@ -71,7 +71,7 @@ class SearchOrderRequest
      */
     public function setFromDate($val)
     {
-        $this->FromDate = (int)$val;
+        $this->FromDate = (dateTime)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class SearchOrderRequest
      */
     public function setToDate($val)
     {
-        $this->ToDate = (int)$val;
+        $this->ToDate = (dateTime)$val;
     }
 
     /**
@@ -92,7 +92,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->DomainName = (int)$val;
+        $this->DomainName = (string)$val;
     }
 
     /**
@@ -104,7 +104,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionComment');
         }
-        $this->TransactionComment = (int)$val;
+        $this->TransactionComment = (string)$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->Comments = (int)$val;
+        $this->Comments = (string)$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class SearchOrderRequest
      */
     public function setIncludeDomainDetails($val)
     {
-        $this->IncludeDomainDetails = (int)$val;
+        $this->IncludeDomainDetails = (boolean)$val;
     }
 
     /**
@@ -134,7 +134,7 @@ class SearchOrderRequest
      */
     public function setPageInfo($val)
     {
-        $this->PageInfo = (int)$val;
+        $this->PageInfo = (PagingInfo)$val;
     }
 
     /**
@@ -143,6 +143,6 @@ class SearchOrderRequest
      */
     public function setOrderSort($val)
     {
-        $this->OrderSort = (int)$val;
+        $this->OrderSort = (SearchOrderSortType)$val;
     }
 }

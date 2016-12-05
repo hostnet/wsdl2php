@@ -68,7 +68,7 @@ class BestOfferType
 	 */
 	public function setBestOfferID($val)
 	{
-        $this->BestOfferID = (int)$val;
+        $this->BestOfferID = (BestOfferIDType)$val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class BestOfferType
 	 */
 	public function setExpirationTime($val)
 	{
-        $this->ExpirationTime = (int)$val;
+        $this->ExpirationTime = (dateTime)$val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class BestOfferType
 	 */
 	public function setBuyer($val)
 	{
-        $this->Buyer = (int)$val;
+        $this->Buyer = (UserType)$val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class BestOfferType
 	 */
 	public function setPrice($val)
 	{
-        $this->Price = (int)$val;
+        $this->Price = (AmountType)$val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class BestOfferType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (BestOfferStatusCodeType)$val;
 	}
 
 	/**
@@ -128,7 +128,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->BuyerMessage = (int)$val;
+        $this->BuyerMessage = (string)$val;
 	}
 
 	/**
@@ -140,7 +140,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (int)$val;
+        $this->SellerMessage = (string)$val;
 	}
 
 	/**
@@ -149,7 +149,7 @@ class BestOfferType
 	 */
 	public function setBestOfferCodeType($val)
 	{
-        $this->BestOfferCodeType = (int)$val;
+        $this->BestOfferCodeType = (BestOfferTypeCodeType)$val;
 	}
 
 	/**
@@ -161,7 +161,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallStatus');
         }
-        $this->CallStatus = (int)$val;
+        $this->CallStatus = (string)$val;
 	}
 
 	/**
@@ -170,6 +170,6 @@ class BestOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -35,7 +35,7 @@ class AttributeType
      */
     public function setValue($val)
     {
-        $this->Value = (int)$val;
+        $this->Value = (ValType)$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class AttributeType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 
     /**
@@ -68,6 +68,6 @@ class AttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for attributeLabel');
         }
-        $this->attributeLabel = (int)$val;
+        $this->attributeLabel = (string)$val;
     }
 }

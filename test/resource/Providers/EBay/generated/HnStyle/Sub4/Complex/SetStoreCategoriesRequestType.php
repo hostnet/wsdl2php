@@ -41,7 +41,7 @@ class SetStoreCategoriesRequestType extends
      */
     public function setAction($val)
     {
-        $this->Action = (int)$val;
+        $this->Action = (StoreCategoryUpdateActionCodeType)$val;
     }
 
     /**
@@ -74,6 +74,6 @@ class SetStoreCategoriesRequestType extends
      */
     public function setStoreCategories($val)
     {
-        $this->StoreCategories = (int)$val;
+        $this->StoreCategories = (StoreCustomCategoryArrayType)$val;
     }
 }

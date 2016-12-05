@@ -89,7 +89,7 @@ class GetSellerListRequestType extends
      */
     public function setUserID($val)
     {
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetSellerListRequestType extends
      */
     public function setMotorsDealerUsers($val)
     {
-        $this->MotorsDealerUsers = (int)$val;
+        $this->MotorsDealerUsers = (UserIDArrayType)$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class GetSellerListRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->EndTimeFrom = (int)$val;
+        $this->EndTimeFrom = (dateTime)$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class GetSellerListRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->EndTimeTo = (int)$val;
+        $this->EndTimeTo = (dateTime)$val;
     }
 
     /**
@@ -137,7 +137,7 @@ class GetSellerListRequestType extends
      */
     public function setStartTimeFrom($val)
     {
-        $this->StartTimeFrom = (int)$val;
+        $this->StartTimeFrom = (dateTime)$val;
     }
 
     /**
@@ -146,7 +146,7 @@ class GetSellerListRequestType extends
      */
     public function setStartTimeTo($val)
     {
-        $this->StartTimeTo = (int)$val;
+        $this->StartTimeTo = (dateTime)$val;
     }
 
     /**
@@ -155,7 +155,7 @@ class GetSellerListRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
     }
 
     /**
@@ -164,7 +164,7 @@ class GetSellerListRequestType extends
      */
     public function setGranularityLevel($val)
     {
-        $this->GranularityLevel = (int)$val;
+        $this->GranularityLevel = (GranularityLevelCodeType)$val;
     }
 
     /**
@@ -173,7 +173,7 @@ class GetSellerListRequestType extends
      */
     public function setSKUArray($val)
     {
-        $this->SKUArray = (int)$val;
+        $this->SKUArray = (SKUArrayType)$val;
     }
 
     /**
@@ -182,6 +182,6 @@ class GetSellerListRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->IncludeWatchCount = (int)$val;
+        $this->IncludeWatchCount = (boolean)$val;
     }
 }

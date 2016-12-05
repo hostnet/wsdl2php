@@ -32,7 +32,7 @@ class GetCrossPromotionsRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class GetCrossPromotionsRequestType extends
      */
     public function setPromotionMethod($val)
     {
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class GetCrossPromotionsRequestType extends
      */
     public function setPromotionViewMode($val)
     {
-        $this->PromotionViewMode = (int)$val;
+        $this->PromotionViewMode = (TradingRoleCodeType)$val;
     }
 }

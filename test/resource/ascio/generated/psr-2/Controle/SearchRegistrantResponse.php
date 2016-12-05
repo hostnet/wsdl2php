@@ -21,7 +21,7 @@ class SearchRegistrantResponse
      */
     public function setSearchRegistrantResult($val)
     {
-        $this->SearchRegistrantResult = (int)$val;
+        $this->SearchRegistrantResult = (Response)$val;
     }
 
     /**
@@ -30,6 +30,6 @@ class SearchRegistrantResponse
      */
     public function setRegistrants($val)
     {
-        $this->registrants = (int)$val;
+        $this->registrants = (ArrayOfRegistrant)$val;
     }
 }

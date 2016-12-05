@@ -56,7 +56,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for seller_id');
         }
-        $this->seller_id = (int)$val;
+        $this->seller_id = (string)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (int)$val;
+        $this->tag = (string)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (int)$val;
+        $this->type = (string)$val;
     }
 
     /**
@@ -92,7 +92,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (int)$val;
+        $this->devtag = (string)$val;
     }
 
     /**
@@ -104,7 +104,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for offerstatus');
         }
-        $this->offerstatus = (int)$val;
+        $this->offerstatus = (string)$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (int)$val;
+        $this->page = (string)$val;
     }
 
     /**
@@ -128,7 +128,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for seller_browse_id');
         }
-        $this->seller_browse_id = (int)$val;
+        $this->seller_browse_id = (string)$val;
     }
 
     /**
@@ -140,7 +140,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword');
         }
-        $this->keyword = (int)$val;
+        $this->keyword = (string)$val;
     }
 
     /**
@@ -152,7 +152,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (int)$val;
+        $this->locale = (string)$val;
     }
 
     /**
@@ -164,6 +164,6 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for index');
         }
-        $this->index = (int)$val;
+        $this->index = (string)$val;
     }
 }

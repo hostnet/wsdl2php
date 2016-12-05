@@ -39,7 +39,7 @@ class LiveAuctionBidType
 	 */
 	public function setRequestedBiddingLimit($val)
 	{
-        $this->RequestedBiddingLimit = (int)$val;
+        $this->RequestedBiddingLimit = (AmountType)$val;
 	}
 
 	/**
@@ -48,7 +48,7 @@ class LiveAuctionBidType
 	 */
 	public function setBidderStatus($val)
 	{
-        $this->BidderStatus = (int)$val;
+        $this->BidderStatus = (BidderStatusCodeType)$val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class LiveAuctionBidType
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
-        $this->ApprovedBiddingLimit = (int)$val;
+        $this->ApprovedBiddingLimit = (AmountType)$val;
 	}
 
 	/**
@@ -69,7 +69,7 @@ class LiveAuctionBidType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeclinedComment');
         }
-        $this->DeclinedComment = (int)$val;
+        $this->DeclinedComment = (string)$val;
 	}
 
 	/**
@@ -78,6 +78,6 @@ class LiveAuctionBidType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

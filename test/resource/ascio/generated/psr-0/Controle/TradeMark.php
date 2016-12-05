@@ -60,7 +60,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Country');
         }
-        $this->Country = (int)$val;
+        $this->Country = (string)$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class TradeMark
 	 */
 	public function setDate($val)
 	{
-        $this->Date = (int)$val;
+        $this->Date = (dateTime)$val;
 	}
 
 	/**
@@ -93,7 +93,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Number');
         }
-        $this->Number = (int)$val;
+        $this->Number = (string)$val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Type');
         }
-        $this->Type = (int)$val;
+        $this->Type = (string)$val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Contact');
         }
-        $this->Contact = (int)$val;
+        $this->Contact = (string)$val;
 	}
 
 	/**
@@ -129,7 +129,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContactLanguage');
         }
-        $this->ContactLanguage = (int)$val;
+        $this->ContactLanguage = (string)$val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DocumentationLanguage');
         }
-        $this->DocumentationLanguage = (int)$val;
+        $this->DocumentationLanguage = (string)$val;
 	}
 
 	/**
@@ -153,7 +153,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SecondContact');
         }
-        $this->SecondContact = (int)$val;
+        $this->SecondContact = (string)$val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class TradeMark
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ThirdContact');
         }
-        $this->ThirdContact = (int)$val;
+        $this->ThirdContact = (string)$val;
 	}
 
 	/**
@@ -174,6 +174,6 @@ class TradeMark
 	 */
 	public function setRegDate($val)
 	{
-        $this->RegDate = (int)$val;
+        $this->RegDate = (dateTime)$val;
 	}
 }

@@ -21,6 +21,6 @@ class ListingTipArrayType
      */
     public function setListingTip($val)
     {
-        $this->ListingTip = (int)$val;
+        $this->ListingTip = (ListingTipType)$val;
     }
 }

@@ -30,7 +30,7 @@ class ListingDurationDefinitionType
      */
     public function setDuration($val)
     {
-        $this->Duration = (int)$val;
+        $this->Duration = (token)$val;
     }
 
     /**
@@ -39,7 +39,7 @@ class ListingDurationDefinitionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 
     /**

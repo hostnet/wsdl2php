@@ -34,7 +34,7 @@ class ExpansionArrayType
 	 */
 	public function setExpansionItem($val)
 	{
-        $this->ExpansionItem = (int)$val;
+        $this->ExpansionItem = (SearchResultItemType)$val;
 	}
 
 	/**

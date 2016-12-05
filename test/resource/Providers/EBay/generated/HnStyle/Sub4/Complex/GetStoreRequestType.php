@@ -41,7 +41,7 @@ class GetStoreRequestType extends
      */
     public function setCategoryStructureOnly($val)
     {
-        $this->CategoryStructureOnly = (int)$val;
+        $this->CategoryStructureOnly = (boolean)$val;
     }
 
     /**

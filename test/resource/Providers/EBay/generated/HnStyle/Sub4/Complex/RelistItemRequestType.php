@@ -50,7 +50,7 @@ class RelistItemRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
     }
 
     /**
@@ -59,7 +59,7 @@ class RelistItemRequestType extends
      */
     public function setModifiedFields($val)
     {
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
     }
 
     /**
@@ -71,6 +71,6 @@ class RelistItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = (string)$val;
     }
 }

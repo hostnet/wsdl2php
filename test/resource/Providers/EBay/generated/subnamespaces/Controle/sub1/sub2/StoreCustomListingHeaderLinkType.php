@@ -59,7 +59,7 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setLinkType($val)
 	{
-        $this->LinkType = (int)$val;
+        $this->LinkType = (StoreCustomListingHeaderLinkCodeType)$val;
 	}
 
 	/**
@@ -68,6 +68,6 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -21,7 +21,7 @@ class FeedbackRequirementsType
      */
     public function set($val)
     {
-        $this->_ = (int)$val;
+        $this->_ = (boolean)$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class FeedbackRequirementsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for minimum');
         }
-        $this->minimum = (int)$val;
+        $this->minimum = (string)$val;
     }
 }

@@ -18,6 +18,6 @@ class AddMemberMessagesAaQtoBidderResponseType extends
      */
     public function setAddMemberMessagesAAQToBidderResponseContainer($val)
     {
-        $this->AddMemberMessagesAAQToBidderResponseContainer = (int)$val;
+        $this->AddMemberMessagesAAQToBidderResponseContainer = (AddMemberMessagesAAQToBidderResponseContainerType)$val;
     }
 }

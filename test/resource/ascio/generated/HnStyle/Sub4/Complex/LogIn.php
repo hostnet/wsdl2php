@@ -17,6 +17,6 @@ class LogIn
      */
     public function setSession($val)
     {
-        $this->session = (int)$val;
+        $this->session = (Session)$val;
     }
 }

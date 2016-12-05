@@ -33,6 +33,6 @@ class UpdateCurrent
      */
     public function setSVW($val)
     {
-        $this->SVW = (int)$val;
+        $this->SVW = (SVW)$val;
     }
 }

@@ -40,7 +40,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (int)$val;
+        $this->tag = (string)$val;
     }
 
     /**
@@ -52,7 +52,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (int)$val;
+        $this->devtag = (string)$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = (int)$val;
+        $this->CartId = (string)$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = (int)$val;
+        $this->HMAC = (string)$val;
     }
 
     /**
@@ -85,7 +85,7 @@ class AddShoppingCartItemsRequest
      */
     public function setItems($val)
     {
-        $this->Items = (int)$val;
+        $this->Items = (AddItemArray)$val;
     }
 
     /**
@@ -97,6 +97,6 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (int)$val;
+        $this->locale = (string)$val;
     }
 }

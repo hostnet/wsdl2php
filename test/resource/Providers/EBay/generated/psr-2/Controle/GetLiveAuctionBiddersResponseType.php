@@ -49,7 +49,7 @@ class GetLiveAuctionBiddersResponseType extends
      */
     public function setBidderDetails($val)
     {
-        $this->BidderDetails = (int)$val;
+        $this->BidderDetails = (BidderDetailArrayType)$val;
     }
 
     /**
@@ -106,6 +106,6 @@ class GetLiveAuctionBiddersResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
     }
 }

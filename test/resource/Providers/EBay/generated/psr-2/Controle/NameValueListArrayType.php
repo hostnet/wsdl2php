@@ -25,6 +25,6 @@ class NameValueListArrayType
      */
     public function setNameValueList($val)
     {
-        $this->NameValueList = (int)$val;
+        $this->NameValueList = (NameValueListType)$val;
     }
 }

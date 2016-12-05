@@ -52,7 +52,7 @@ class DisputeMessageType
 	 */
 	public function setMessageSource($val)
 	{
-        $this->MessageSource = (int)$val;
+        $this->MessageSource = (DisputeMessageSourceCodeType)$val;
 	}
 
 	/**
@@ -61,7 +61,7 @@ class DisputeMessageType
 	 */
 	public function setMessageCreationTime($val)
 	{
-        $this->MessageCreationTime = (int)$val;
+        $this->MessageCreationTime = (dateTime)$val;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class DisputeMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->MessageText = (int)$val;
+        $this->MessageText = (string)$val;
 	}
 
 	/**
@@ -82,6 +82,6 @@ class DisputeMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -25,6 +25,6 @@ class TaxTableType
      */
     public function setTaxJurisdiction($val)
     {
-        $this->TaxJurisdiction = (int)$val;
+        $this->TaxJurisdiction = (TaxJurisdictionType)$val;
     }
 }

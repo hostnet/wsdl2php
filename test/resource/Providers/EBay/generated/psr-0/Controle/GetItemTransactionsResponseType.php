@@ -71,7 +71,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setHasMoreTransactions($val)
 	{
-        $this->HasMoreTransactions = (int)$val;
+        $this->HasMoreTransactions = (boolean)$val;
 	}
 
 	/**
@@ -125,7 +125,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -134,7 +134,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (int)$val;
+        $this->TransactionArray = (TransactionArrayType)$val;
 	}
 
 	/**
@@ -143,6 +143,6 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = (int)$val;
+        $this->PayPalPreferred = (boolean)$val;
 	}
 }

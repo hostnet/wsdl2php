@@ -66,7 +66,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AdditionalInformation');
         }
-        $this->AdditionalInformation = (int)$val;
+        $this->AdditionalInformation = (string)$val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class AdFormatLeadType
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (int)$val;
+        $this->Address = (AddressType)$val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BestTimeToCall');
         }
-        $this->BestTimeToCall = (int)$val;
+        $this->BestTimeToCall = (string)$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -111,7 +111,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FirstName');
         }
-        $this->FirstName = (int)$val;
+        $this->FirstName = (string)$val;
 	}
 
 	/**
@@ -123,7 +123,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastName');
         }
-        $this->LastName = (int)$val;
+        $this->LastName = (string)$val;
 	}
 
 	/**
@@ -135,7 +135,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = (int)$val;
+        $this->Phone = (string)$val;
 	}
 
 	/**
@@ -144,7 +144,7 @@ class AdFormatLeadType
 	 */
 	public function setSubmittedTime($val)
 	{
-        $this->SubmittedTime = (int)$val;
+        $this->SubmittedTime = (dateTime)$val;
 	}
 
 	/**
@@ -153,6 +153,6 @@ class AdFormatLeadType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

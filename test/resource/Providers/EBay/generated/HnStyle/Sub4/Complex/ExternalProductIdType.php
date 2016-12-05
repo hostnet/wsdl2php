@@ -40,7 +40,7 @@ class ExternalProductIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (int)$val;
+        $this->Value = (string)$val;
     }
 
     /**
@@ -49,7 +49,7 @@ class ExternalProductIdType
      */
     public function setReturnSearchResultOnDuplicates($val)
     {
-        $this->ReturnSearchResultOnDuplicates = (int)$val;
+        $this->ReturnSearchResultOnDuplicates = (boolean)$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class ExternalProductIdType
      */
     public function setType($val)
     {
-        $this->Type = (int)$val;
+        $this->Type = (ExternalProductCodeType)$val;
     }
 
     /**
@@ -67,6 +67,6 @@ class ExternalProductIdType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

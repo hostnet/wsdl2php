@@ -47,7 +47,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipFieldID');
         }
-        $this->ListingTipFieldID = (int)$val;
+        $this->ListingTipFieldID = (string)$val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FieldTip');
         }
-        $this->FieldTip = (int)$val;
+        $this->FieldTip = (string)$val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CurrentFieldText');
         }
-        $this->CurrentFieldText = (int)$val;
+        $this->CurrentFieldText = (string)$val;
 	}
 
 	/**
@@ -83,7 +83,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CurrentFieldValue');
         }
-        $this->CurrentFieldValue = (int)$val;
+        $this->CurrentFieldValue = (string)$val;
 	}
 
 	/**
@@ -92,6 +92,6 @@ class ListingTipFieldType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

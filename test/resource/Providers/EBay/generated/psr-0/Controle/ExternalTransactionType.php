@@ -40,7 +40,7 @@ class ExternalTransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalTransactionID');
         }
-        $this->ExternalTransactionID = (int)$val;
+        $this->ExternalTransactionID = (string)$val;
 	}
 
 	/**
@@ -49,7 +49,7 @@ class ExternalTransactionType
 	 */
 	public function setExternalTransactionTime($val)
 	{
-        $this->ExternalTransactionTime = (int)$val;
+        $this->ExternalTransactionTime = (dateTime)$val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class ExternalTransactionType
 	 */
 	public function setFeeOrCreditAmount($val)
 	{
-        $this->FeeOrCreditAmount = (int)$val;
+        $this->FeeOrCreditAmount = (AmountType)$val;
 	}
 
 	/**
@@ -67,7 +67,7 @@ class ExternalTransactionType
 	 */
 	public function setPaymentOrRefundAmount($val)
 	{
-        $this->PaymentOrRefundAmount = (int)$val;
+        $this->PaymentOrRefundAmount = (AmountType)$val;
 	}
 
 	/**
@@ -76,6 +76,6 @@ class ExternalTransactionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -28,7 +28,7 @@ class SiteDetailsType
      */
     public function setSite($val)
     {
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
     }
 
     /**
@@ -49,6 +49,6 @@ class SiteDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

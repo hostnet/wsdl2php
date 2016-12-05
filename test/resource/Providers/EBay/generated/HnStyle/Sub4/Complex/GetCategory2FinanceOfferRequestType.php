@@ -30,7 +30,7 @@ class GetCategory2FinanceOfferRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
     }
 
     /**
@@ -39,6 +39,6 @@ class GetCategory2FinanceOfferRequestType extends
      */
     public function setLastModifiedDate($val)
     {
-        $this->LastModifiedDate = (int)$val;
+        $this->LastModifiedDate = (dateTime)$val;
     }
 }

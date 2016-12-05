@@ -41,7 +41,7 @@ class MyeBayFavoriteSellerListType
 	 */
 	public function setFavoriteSeller($val)
 	{
-        $this->FavoriteSeller = (int)$val;
+        $this->FavoriteSeller = (MyeBayFavoriteSellerType)$val;
 	}
 
 	/**
@@ -50,6 +50,6 @@ class MyeBayFavoriteSellerListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
