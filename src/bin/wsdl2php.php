@@ -541,7 +541,7 @@ foreach($types as $index=>$type){
 		$ident_char . " */\n" .
 		$ident_char ."public function set%s(\$val)\n".$ident_char."{\n" .
 		"%s" .
-		$ident2 . "\$this->%s = (int)\$val;\n" .
+		$ident2 . "\$this->%s = (".$member['type'].")\$val;\n" .
 		$ident_char ."}\n", $member['type'], $codestylefunctionname, accessMethodCaster($member['type'], $member['member']), $member['member']);
 	}
 	rtrim($code);
