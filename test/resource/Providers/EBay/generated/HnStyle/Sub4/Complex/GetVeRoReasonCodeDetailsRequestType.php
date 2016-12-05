@@ -26,7 +26,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
      */
     public function setReasonCodeID($val)
     {
-        $this->ReasonCodeID = (long)$val;
+        $this->ReasonCodeID = ()$val;
     }
 
     /**
@@ -35,6 +35,6 @@ class GetVeRoReasonCodeDetailsRequestType extends
      */
     public function setReturnAllSites($val)
     {
-        $this->ReturnAllSites = (boolean)$val;
+        $this->ReturnAllSites = ()$val;
     }
 }

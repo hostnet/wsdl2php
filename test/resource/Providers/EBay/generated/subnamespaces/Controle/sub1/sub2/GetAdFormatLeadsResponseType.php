@@ -29,7 +29,7 @@ class GetAdFormatLeadsResponseType extends
 	 */
 	public function setAdFormatLead($val)
 	{
-        $this->AdFormatLead = (AdFormatLeadType)$val;
+        $this->AdFormatLead = ()$val;
 	}
 
 	/**
@@ -41,6 +41,6 @@ class GetAdFormatLeadsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AdFormatLeadCount = (int)$val;
+        $this->AdFormatLeadCount = ()$val;
 	}
 }

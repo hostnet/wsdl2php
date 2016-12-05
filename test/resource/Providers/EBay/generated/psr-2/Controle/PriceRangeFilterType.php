@@ -32,7 +32,7 @@ class PriceRangeFilterType
      */
     public function setMaxPrice($val)
     {
-        $this->MaxPrice = (AmountType)$val;
+        $this->MaxPrice = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class PriceRangeFilterType
      */
     public function setMinPrice($val)
     {
-        $this->MinPrice = (AmountType)$val;
+        $this->MinPrice = ()$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class PriceRangeFilterType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

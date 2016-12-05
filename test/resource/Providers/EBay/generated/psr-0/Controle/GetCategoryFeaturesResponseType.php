@@ -44,7 +44,7 @@ class GetCategoryFeaturesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (string)$val;
+        $this->CategoryVersion = ()$val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setUpdateTime($val)
 	{
-        $this->UpdateTime = (dateTime)$val;
+        $this->UpdateTime = ()$val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (CategoryFeatureType)$val;
+        $this->Category = ()$val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setSiteDefaults($val)
 	{
-        $this->SiteDefaults = (SiteDefaultsType)$val;
+        $this->SiteDefaults = ()$val;
 	}
 
 	/**
@@ -80,6 +80,6 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setFeatureDefinitions($val)
 	{
-        $this->FeatureDefinitions = (FeatureDefinitionsType)$val;
+        $this->FeatureDefinitions = ()$val;
 	}
 }

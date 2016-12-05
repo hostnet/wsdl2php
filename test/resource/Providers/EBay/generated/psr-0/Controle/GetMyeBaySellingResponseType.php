@@ -39,7 +39,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setSellingSummary($val)
 	{
-        $this->SellingSummary = (SellingSummaryType)$val;
+        $this->SellingSummary = ()$val;
 	}
 
 	/**
@@ -48,7 +48,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setScheduledList($val)
 	{
-        $this->ScheduledList = (PaginatedItemArrayType)$val;
+        $this->ScheduledList = ()$val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setActiveList($val)
 	{
-        $this->ActiveList = (PaginatedItemArrayType)$val;
+        $this->ActiveList = ()$val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setSoldList($val)
 	{
-        $this->SoldList = (PaginatedOrderTransactionArrayType)$val;
+        $this->SoldList = ()$val;
 	}
 
 	/**
@@ -75,6 +75,6 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setUnsoldList($val)
 	{
-        $this->UnsoldList = (PaginatedItemArrayType)$val;
+        $this->UnsoldList = ()$val;
 	}
 }

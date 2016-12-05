@@ -17,6 +17,6 @@ class UploadDocumentationResponse
      */
     public function setUploadDocumentationResult($val)
     {
-        $this->UploadDocumentationResult = (Response)$val;
+        $this->UploadDocumentationResult = ()$val;
     }
 }

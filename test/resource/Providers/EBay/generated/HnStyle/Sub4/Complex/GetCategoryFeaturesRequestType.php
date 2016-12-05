@@ -49,7 +49,7 @@ class GetCategoryFeaturesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (string)$val;
+        $this->CategoryID = ()$val;
     }
 
     /**
@@ -61,7 +61,7 @@ class GetCategoryFeaturesRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LevelLimit = (int)$val;
+        $this->LevelLimit = ()$val;
     }
 
     /**
@@ -70,7 +70,7 @@ class GetCategoryFeaturesRequestType extends
      */
     public function setViewAllNodes($val)
     {
-        $this->ViewAllNodes = (boolean)$val;
+        $this->ViewAllNodes = ()$val;
     }
 
     /**
@@ -79,6 +79,6 @@ class GetCategoryFeaturesRequestType extends
      */
     public function setFeatureID($val)
     {
-        $this->FeatureID = (FeatureIDCodeType)$val;
+        $this->FeatureID = ()$val;
     }
 }

@@ -17,6 +17,6 @@ class ReturnCodesResponse
 	 */
 	public function setReturnCodesResult($val)
 	{
-        $this->ReturnCodesResult = (ArrayOfAnyType)$val;
+        $this->ReturnCodesResult = ()$val;
 	}
 }

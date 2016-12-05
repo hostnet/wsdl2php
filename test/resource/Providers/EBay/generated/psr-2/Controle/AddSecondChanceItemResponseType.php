@@ -35,7 +35,7 @@ class AddSecondChanceItemResponseType extends
      */
     public function setFees($val)
     {
-        $this->Fees = (FeesType)$val;
+        $this->Fees = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class AddSecondChanceItemResponseType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -53,7 +53,7 @@ class AddSecondChanceItemResponseType extends
      */
     public function setStartTime($val)
     {
-        $this->StartTime = (dateTime)$val;
+        $this->StartTime = ()$val;
     }
 
     /**
@@ -62,6 +62,6 @@ class AddSecondChanceItemResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->EndTime = (dateTime)$val;
+        $this->EndTime = ()$val;
     }
 }

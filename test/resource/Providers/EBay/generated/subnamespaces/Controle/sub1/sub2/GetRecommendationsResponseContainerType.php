@@ -57,7 +57,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
-        $this->ListingAnalyzerRecommendations = (ListingAnalyzerRecommendationsType)$val;
+        $this->ListingAnalyzerRecommendations = ()$val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
-        $this->SIFFTASRecommendations = (SIFFTASRecommendationsType)$val;
+        $this->SIFFTASRecommendations = ()$val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setPricingRecommendations($val)
 	{
-        $this->PricingRecommendations = (PricingRecommendationsType)$val;
+        $this->PricingRecommendations = ()$val;
 	}
 
 	/**
@@ -84,7 +84,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setAttributeRecommendations($val)
 	{
-        $this->AttributeRecommendations = (AttributeRecommendationsType)$val;
+        $this->AttributeRecommendations = ()$val;
 	}
 
 	/**
@@ -93,7 +93,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setProductRecommendations($val)
 	{
-        $this->ProductRecommendations = (ProductRecommendationsType)$val;
+        $this->ProductRecommendations = ()$val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class GetRecommendationsResponseContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (string)$val;
+        $this->CorrelationID = ()$val;
 	}
 
 	/**
@@ -114,6 +114,6 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

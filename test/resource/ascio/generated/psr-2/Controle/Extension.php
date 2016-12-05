@@ -24,7 +24,7 @@ class Extension
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Key');
         }
-        $this->Key = (string)$val;
+        $this->Key = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class Extension
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (string)$val;
+        $this->Value = ()$val;
     }
 }

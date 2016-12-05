@@ -58,7 +58,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
 	}
 
 	/**
@@ -67,7 +67,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (FeesType)$val;
+        $this->Fees = ()$val;
 	}
 
 	/**
@@ -76,7 +76,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setExpressListing($val)
 	{
-        $this->ExpressListing = (boolean)$val;
+        $this->ExpressListing = ()$val;
 	}
 
 	/**
@@ -85,7 +85,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setExpressItemRequirements($val)
 	{
-        $this->ExpressItemRequirements = (ExpressItemRequirementsType)$val;
+        $this->ExpressItemRequirements = ()$val;
 	}
 
 	/**
@@ -97,7 +97,7 @@ class VerifyAddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (string)$val;
+        $this->CategoryID = ()$val;
 	}
 
 	/**
@@ -109,6 +109,6 @@ class VerifyAddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (string)$val;
+        $this->Category2ID = ()$val;
 	}
 }

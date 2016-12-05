@@ -21,7 +21,7 @@ class GetContactResponse
 	 */
 	public function setGetContactResult($val)
 	{
-        $this->GetContactResult = (Response)$val;
+        $this->GetContactResult = ()$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class GetContactResponse
 	 */
 	public function setContact($val)
 	{
-        $this->contact = (Contact)$val;
+        $this->contact = ()$val;
 	}
 }

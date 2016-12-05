@@ -36,7 +36,7 @@ class ErrorParameterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (string)$val;
+        $this->Value = ()$val;
     }
 
     /**
@@ -45,7 +45,7 @@ class ErrorParameterType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 
     /**
@@ -57,6 +57,6 @@ class ErrorParameterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ParamID');
         }
-        $this->ParamID = (string)$val;
+        $this->ParamID = ()$val;
     }
 }

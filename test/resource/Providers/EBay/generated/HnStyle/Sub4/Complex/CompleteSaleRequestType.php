@@ -55,7 +55,7 @@ class CompleteSaleRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -67,7 +67,7 @@ class CompleteSaleRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (string)$val;
+        $this->TransactionID = ()$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class CompleteSaleRequestType extends
      */
     public function setFeedbackInfo($val)
     {
-        $this->FeedbackInfo = (FeedbackInfoType)$val;
+        $this->FeedbackInfo = ()$val;
     }
 
     /**
@@ -85,7 +85,7 @@ class CompleteSaleRequestType extends
      */
     public function setShipped($val)
     {
-        $this->Shipped = (boolean)$val;
+        $this->Shipped = ()$val;
     }
 
     /**
@@ -94,7 +94,7 @@ class CompleteSaleRequestType extends
      */
     public function setPaid($val)
     {
-        $this->Paid = (boolean)$val;
+        $this->Paid = ()$val;
     }
 
     /**
@@ -103,6 +103,6 @@ class CompleteSaleRequestType extends
      */
     public function setListingType($val)
     {
-        $this->ListingType = (ListingTypeCodeType)$val;
+        $this->ListingType = ()$val;
     }
 }

@@ -29,7 +29,7 @@ class FlatRateInsuranceRangeCostType
      */
     public function setFlatRateInsuranceRange($val)
     {
-        $this->FlatRateInsuranceRange = (FlatRateInsuranceRangeCodeType)$val;
+        $this->FlatRateInsuranceRange = ()$val;
     }
 
     /**
@@ -38,7 +38,7 @@ class FlatRateInsuranceRangeCostType
      */
     public function setInsuranceCost($val)
     {
-        $this->InsuranceCost = (AmountType)$val;
+        $this->InsuranceCost = ()$val;
     }
 
     /**
@@ -47,6 +47,6 @@ class FlatRateInsuranceRangeCostType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -28,7 +28,7 @@ class ProximitySearchDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (string)$val;
+        $this->PostalCode = ()$val;
 	}
 
 	/**
@@ -37,6 +37,6 @@ class ProximitySearchDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

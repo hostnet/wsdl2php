@@ -25,6 +25,6 @@ class GetItemShippingResponseType extends
 	 */
 	public function setShippingDetails($val)
 	{
-        $this->ShippingDetails = (ShippingDetailsType)$val;
+        $this->ShippingDetails = ()$val;
 	}
 }

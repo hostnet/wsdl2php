@@ -55,7 +55,7 @@ class GetMyeBayResponseType extends
      */
     public function setBiddingItemArray($val)
     {
-        $this->BiddingItemArray = (ItemArrayType)$val;
+        $this->BiddingItemArray = ()$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class GetMyeBayResponseType extends
      */
     public function setLostItemArray($val)
     {
-        $this->LostItemArray = (ItemArrayType)$val;
+        $this->LostItemArray = ()$val;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetMyeBayResponseType extends
      */
     public function setWatchItemArray($val)
     {
-        $this->WatchItemArray = (ItemArrayType)$val;
+        $this->WatchItemArray = ()$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class GetMyeBayResponseType extends
      */
     public function setWonItemArray($val)
     {
-        $this->WonItemArray = (ItemArrayType)$val;
+        $this->WonItemArray = ()$val;
     }
 
     /**
@@ -91,7 +91,7 @@ class GetMyeBayResponseType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->FavoriteSearches = (MyeBayFavoriteSearchListType)$val;
+        $this->FavoriteSearches = ()$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class GetMyeBayResponseType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->FavoriteSellers = (MyeBayFavoriteSellerListType)$val;
+        $this->FavoriteSellers = ()$val;
     }
 
     /**
@@ -109,6 +109,6 @@ class GetMyeBayResponseType extends
      */
     public function setSecondChanceOffers($val)
     {
-        $this->SecondChanceOffers = (MyeBaySecondChanceOfferListType)$val;
+        $this->SecondChanceOffers = ()$val;
     }
 }

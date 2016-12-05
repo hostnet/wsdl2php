@@ -21,7 +21,7 @@ class CreateSupportOrderResponse
      */
     public function setCreateSupportOrderResult($val)
     {
-        $this->CreateSupportOrderResult = (Response)$val;
+        $this->CreateSupportOrderResult = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class CreateSupportOrderResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for orderId');
         }
-        $this->orderId = (string)$val;
+        $this->orderId = ()$val;
     }
 }

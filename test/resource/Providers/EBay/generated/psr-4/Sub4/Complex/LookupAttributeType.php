@@ -34,7 +34,7 @@ class LookupAttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (string)$val;
+        $this->Name = ()$val;
     }
 
     /**
@@ -46,7 +46,7 @@ class LookupAttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (string)$val;
+        $this->Value = ()$val;
     }
 
     /**
@@ -55,6 +55,6 @@ class LookupAttributeType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

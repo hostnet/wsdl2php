@@ -52,7 +52,7 @@ class RespondToFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = (string)$val;
+        $this->FeedbackID = ()$val;
     }
 
     /**
@@ -61,7 +61,7 @@ class RespondToFeedbackRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -73,7 +73,7 @@ class RespondToFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (string)$val;
+        $this->TransactionID = ()$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class RespondToFeedbackRequestType extends
      */
     public function setTargetUserID($val)
     {
-        $this->TargetUserID = (UserIDType)$val;
+        $this->TargetUserID = ()$val;
     }
 
     /**
@@ -91,7 +91,7 @@ class RespondToFeedbackRequestType extends
      */
     public function setResponseType($val)
     {
-        $this->ResponseType = (FeedbackResponseCodeType)$val;
+        $this->ResponseType = ()$val;
     }
 
     /**
@@ -103,6 +103,6 @@ class RespondToFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ResponseText');
         }
-        $this->ResponseText = (string)$val;
+        $this->ResponseText = ()$val;
     }
 }

@@ -28,7 +28,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AvgCustomerRating');
         }
-        $this->AvgCustomerRating = (string)$val;
+        $this->AvgCustomerRating = ()$val;
 	}
 
 	/**
@@ -40,7 +40,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
         }
-        $this->TotalCustomerReviews = (string)$val;
+        $this->TotalCustomerReviews = ()$val;
 	}
 
 	/**
@@ -49,6 +49,6 @@ class Reviews
 	 */
 	public function setCustomerReviews($val)
 	{
-        $this->CustomerReviews = (CustomerReviewArray)$val;
+        $this->CustomerReviews = ()$val;
 	}
 }

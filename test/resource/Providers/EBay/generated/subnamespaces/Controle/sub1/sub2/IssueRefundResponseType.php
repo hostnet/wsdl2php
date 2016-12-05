@@ -28,7 +28,7 @@ class IssueRefundResponseType extends
 	 */
 	public function setRefundFromSeller($val)
 	{
-        $this->RefundFromSeller = (AmountType)$val;
+        $this->RefundFromSeller = ()$val;
 	}
 
 	/**
@@ -37,6 +37,6 @@ class IssueRefundResponseType extends
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
-        $this->TotalRefundToBuyer = (AmountType)$val;
+        $this->TotalRefundToBuyer = ()$val;
 	}
 }

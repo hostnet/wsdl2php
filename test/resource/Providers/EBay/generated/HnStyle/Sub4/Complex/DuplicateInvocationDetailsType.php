@@ -35,7 +35,7 @@ class DuplicateInvocationDetailsType
      */
     public function setDuplicateInvocationID($val)
     {
-        $this->DuplicateInvocationID = (UUIDType)$val;
+        $this->DuplicateInvocationID = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class DuplicateInvocationDetailsType
      */
     public function setStatus($val)
     {
-        $this->Status = (InvocationStatusType)$val;
+        $this->Status = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class DuplicateInvocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InvocationTrackingID');
         }
-        $this->InvocationTrackingID = (string)$val;
+        $this->InvocationTrackingID = ()$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class DuplicateInvocationDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

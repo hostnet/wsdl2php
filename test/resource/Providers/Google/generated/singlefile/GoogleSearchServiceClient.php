@@ -55,7 +55,7 @@ class GoogleSearchResult
 	 */
 	public function setDocumentFiltering($val)
 	{
-        $this->documentFiltering = (boolean)$val;
+        $this->documentFiltering = ()$val;
 	}
 
 	/**
@@ -67,7 +67,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchComments');
         }
-        $this->searchComments = (string)$val;
+        $this->searchComments = ()$val;
 	}
 
 	/**
@@ -79,7 +79,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->estimatedTotalResultsCount = (int)$val;
+        $this->estimatedTotalResultsCount = ()$val;
 	}
 
 	/**
@@ -88,7 +88,7 @@ class GoogleSearchResult
 	 */
 	public function setEstimateIsExact($val)
 	{
-        $this->estimateIsExact = (boolean)$val;
+        $this->estimateIsExact = ()$val;
 	}
 
 	/**
@@ -97,7 +97,7 @@ class GoogleSearchResult
 	 */
 	public function setResultElements($val)
 	{
-        $this->resultElements = (ResultElementArray)$val;
+        $this->resultElements = ()$val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchQuery');
         }
-        $this->searchQuery = (string)$val;
+        $this->searchQuery = ()$val;
 	}
 
 	/**
@@ -121,7 +121,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->startIndex = (int)$val;
+        $this->startIndex = ()$val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class GoogleSearchResult
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->endIndex = (int)$val;
+        $this->endIndex = ()$val;
 	}
 
 	/**
@@ -145,7 +145,7 @@ class GoogleSearchResult
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for searchTips');
         }
-        $this->searchTips = (string)$val;
+        $this->searchTips = ()$val;
 	}
 
 	/**
@@ -154,7 +154,7 @@ class GoogleSearchResult
 	 */
 	public function setDirectoryCategories($val)
 	{
-        $this->directoryCategories = (DirectoryCategoryArray)$val;
+        $this->directoryCategories = ()$val;
 	}
 
 	/**
@@ -163,7 +163,7 @@ class GoogleSearchResult
 	 */
 	public function setSearchTime($val)
 	{
-        $this->searchTime = (double)$val;
+        $this->searchTime = ()$val;
 	}
 }
 
@@ -189,7 +189,7 @@ class DirectoryCategory
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for fullViewableName');
         }
-        $this->fullViewableName = (string)$val;
+        $this->fullViewableName = ()$val;
 	}
 
 	/**
@@ -201,7 +201,7 @@ class DirectoryCategory
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for specialEncoding');
         }
-        $this->specialEncoding = (string)$val;
+        $this->specialEncoding = ()$val;
 	}
 }
 

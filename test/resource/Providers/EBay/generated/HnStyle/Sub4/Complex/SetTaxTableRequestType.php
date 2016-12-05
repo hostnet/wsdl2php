@@ -23,6 +23,6 @@ class SetTaxTableRequestType extends
      */
     public function setTaxTable($val)
     {
-        $this->TaxTable = (TaxTableType)$val;
+        $this->TaxTable = ()$val;
     }
 }

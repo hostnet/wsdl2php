@@ -20,6 +20,6 @@ class GetByRunDepartmentResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
         }
-        $this->Journals_GetByRunDepartmentResult = (string)$val;
+        $this->Journals_GetByRunDepartmentResult = ()$val;
     }
 }

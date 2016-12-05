@@ -21,7 +21,7 @@ class CreateOrderResponse
 	 */
 	public function setCreateOrderResult($val)
 	{
-        $this->CreateOrderResult = (Response)$val;
+        $this->CreateOrderResult = ()$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class CreateOrderResponse
 	 */
 	public function setOrder($val)
 	{
-        $this->order = (Order)$val;
+        $this->order = ()$val;
 	}
 }

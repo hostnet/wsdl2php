@@ -27,6 +27,6 @@ class GetStoreCustomPageRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PageID');
         }
-        $this->PageID = (string)$val;
+        $this->PageID = ()$val;
     }
 }

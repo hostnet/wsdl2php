@@ -31,6 +31,6 @@ class FetchTokenRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SecretID');
         }
-        $this->SecretID = (string)$val;
+        $this->SecretID = ()$val;
     }
 }

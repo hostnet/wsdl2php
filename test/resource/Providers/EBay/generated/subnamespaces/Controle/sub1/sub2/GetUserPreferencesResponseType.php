@@ -73,7 +73,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setBidderNoticePreferences($val)
 	{
-        $this->BidderNoticePreferences = (BidderNoticePreferencesType)$val;
+        $this->BidderNoticePreferences = ()$val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setCombinedPaymentPreferences($val)
 	{
-        $this->CombinedPaymentPreferences = (CombinedPaymentPreferencesType)$val;
+        $this->CombinedPaymentPreferences = ()$val;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setCrossPromotionPreferences($val)
 	{
-        $this->CrossPromotionPreferences = (CrossPromotionPreferencesType)$val;
+        $this->CrossPromotionPreferences = ()$val;
 	}
 
 	/**
@@ -100,7 +100,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setSellerPaymentPreferences($val)
 	{
-        $this->SellerPaymentPreferences = (SellerPaymentPreferencesType)$val;
+        $this->SellerPaymentPreferences = ()$val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setSellerFavoriteItemPreferences($val)
 	{
-        $this->SellerFavoriteItemPreferences = (SellerFavoriteItemPreferencesType)$val;
+        $this->SellerFavoriteItemPreferences = ()$val;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setEndOfAuctionEmailPreferences($val)
 	{
-        $this->EndOfAuctionEmailPreferences = (EndOfAuctionEmailPreferencesType)$val;
+        $this->EndOfAuctionEmailPreferences = ()$val;
 	}
 
 	/**
@@ -127,7 +127,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setEBxOptInPreference($val)
 	{
-        $this->eBxOptInPreference = (eBxOptInPreferenceType)$val;
+        $this->eBxOptInPreference = ()$val;
 	}
 
 	/**
@@ -136,7 +136,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setExpressPreferences($val)
 	{
-        $this->ExpressPreferences = (ExpressPreferencesType)$val;
+        $this->ExpressPreferences = ()$val;
 	}
 
 	/**
@@ -145,6 +145,6 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setProStoresPreference($val)
 	{
-        $this->ProStoresPreference = (ProStoresCheckoutPreferenceType)$val;
+        $this->ProStoresPreference = ()$val;
 	}
 }

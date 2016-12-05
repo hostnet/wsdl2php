@@ -17,6 +17,6 @@ class ThirdPartyProductInfo
      */
     public function setThirdPartyProductDetails($val)
     {
-        $this->ThirdPartyProductDetails = (ThirdPartyProductDetailsArray)$val;
+        $this->ThirdPartyProductDetails = ()$val;
     }
 }

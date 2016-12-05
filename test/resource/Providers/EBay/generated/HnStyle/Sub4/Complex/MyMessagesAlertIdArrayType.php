@@ -17,6 +17,6 @@ class MyMessagesAlertIdArrayType
      */
     public function setAlertID($val)
     {
-        $this->AlertID = (MyMessagesAlertIDType)$val;
+        $this->AlertID = ()$val;
     }
 }

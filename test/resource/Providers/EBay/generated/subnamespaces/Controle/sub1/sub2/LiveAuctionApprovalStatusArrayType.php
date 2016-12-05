@@ -21,6 +21,6 @@ class LiveAuctionApprovalStatusArrayType
 	 */
 	public function setLiveAuctionStatus($val)
 	{
-        $this->LiveAuctionStatus = (LiveAuctionApprovalStatusType)$val;
+        $this->LiveAuctionStatus = ()$val;
 	}
 }

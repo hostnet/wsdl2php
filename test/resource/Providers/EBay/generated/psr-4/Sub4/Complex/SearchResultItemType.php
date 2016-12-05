@@ -48,7 +48,7 @@ class SearchResultItemType
      */
     public function setItem($val)
     {
-        $this->Item = (ItemType)$val;
+        $this->Item = ()$val;
     }
 
     /**
@@ -57,7 +57,7 @@ class SearchResultItemType
      */
     public function setItemSpecific($val)
     {
-        $this->ItemSpecific = (NameValueListArrayType)$val;
+        $this->ItemSpecific = ()$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class SearchResultItemType
      */
     public function setSearchResultValues($val)
     {
-        $this->SearchResultValues = (SearchResultValuesCodeType)$val;
+        $this->SearchResultValues = ()$val;
     }
 
     /**
@@ -75,6 +75,6 @@ class SearchResultItemType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

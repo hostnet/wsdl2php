@@ -21,7 +21,7 @@ class Attachment
 	 */
 	public function setData($val)
 	{
-        $this->Data = (base64Binary)$val;
+        $this->Data = ()$val;
 	}
 
 	/**
@@ -33,6 +33,6 @@ class Attachment
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = (string)$val;
+        $this->FileName = ()$val;
 	}
 }

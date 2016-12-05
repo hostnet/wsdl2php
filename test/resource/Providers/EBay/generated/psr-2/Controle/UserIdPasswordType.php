@@ -54,7 +54,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AppId');
         }
-        $this->AppId = (string)$val;
+        $this->AppId = ()$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DevId');
         }
-        $this->DevId = (string)$val;
+        $this->DevId = ()$val;
     }
 
     /**
@@ -78,7 +78,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AuthCert');
         }
-        $this->AuthCert = (string)$val;
+        $this->AuthCert = ()$val;
     }
 
     /**
@@ -90,7 +90,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Username');
         }
-        $this->Username = (string)$val;
+        $this->Username = ()$val;
     }
 
     /**
@@ -102,7 +102,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Password');
         }
-        $this->Password = (string)$val;
+        $this->Password = ()$val;
     }
 
     /**
@@ -111,6 +111,6 @@ class UserIdPasswordType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -119,7 +119,7 @@ class SellingStatusType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidCount = (int)$val;
+        $this->BidCount = ()$val;
     }
 
     /**
@@ -128,7 +128,7 @@ class SellingStatusType
      */
     public function setBidIncrement($val)
     {
-        $this->BidIncrement = (AmountType)$val;
+        $this->BidIncrement = ()$val;
     }
 
     /**
@@ -137,7 +137,7 @@ class SellingStatusType
      */
     public function setConvertedCurrentPrice($val)
     {
-        $this->ConvertedCurrentPrice = (AmountType)$val;
+        $this->ConvertedCurrentPrice = ()$val;
     }
 
     /**
@@ -146,7 +146,7 @@ class SellingStatusType
      */
     public function setCurrentPrice($val)
     {
-        $this->CurrentPrice = (AmountType)$val;
+        $this->CurrentPrice = ()$val;
     }
 
     /**
@@ -155,7 +155,7 @@ class SellingStatusType
      */
     public function setHighBidder($val)
     {
-        $this->HighBidder = (UserType)$val;
+        $this->HighBidder = ()$val;
     }
 
     /**
@@ -167,7 +167,7 @@ class SellingStatusType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LeadCount = (int)$val;
+        $this->LeadCount = ()$val;
     }
 
     /**
@@ -176,7 +176,7 @@ class SellingStatusType
      */
     public function setMinimumToBid($val)
     {
-        $this->MinimumToBid = (AmountType)$val;
+        $this->MinimumToBid = ()$val;
     }
 
     /**
@@ -188,7 +188,7 @@ class SellingStatusType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QuantitySold = (int)$val;
+        $this->QuantitySold = ()$val;
     }
 
     /**
@@ -197,7 +197,7 @@ class SellingStatusType
      */
     public function setReserveMet($val)
     {
-        $this->ReserveMet = (boolean)$val;
+        $this->ReserveMet = ()$val;
     }
 
     /**
@@ -206,7 +206,7 @@ class SellingStatusType
      */
     public function setSecondChanceEligible($val)
     {
-        $this->SecondChanceEligible = (boolean)$val;
+        $this->SecondChanceEligible = ()$val;
     }
 
     /**
@@ -215,7 +215,7 @@ class SellingStatusType
      */
     public function setBidderCount($val)
     {
-        $this->BidderCount = (long)$val;
+        $this->BidderCount = ()$val;
     }
 
     /**
@@ -224,7 +224,7 @@ class SellingStatusType
      */
     public function setListingStatus($val)
     {
-        $this->ListingStatus = (ListingStatusCodeType)$val;
+        $this->ListingStatus = ()$val;
     }
 
     /**
@@ -233,7 +233,7 @@ class SellingStatusType
      */
     public function setFinalValueFee($val)
     {
-        $this->FinalValueFee = (AmountType)$val;
+        $this->FinalValueFee = ()$val;
     }
 
     /**
@@ -242,6 +242,6 @@ class SellingStatusType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

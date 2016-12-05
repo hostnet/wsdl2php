@@ -44,7 +44,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BiddingCount = (int)$val;
+        $this->BiddingCount = ()$val;
 	}
 
 	/**
@@ -56,7 +56,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->WinningCount = (int)$val;
+        $this->WinningCount = ()$val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class BuyingSummaryType
 	 */
 	public function setTotalWinningCost($val)
 	{
-        $this->TotalWinningCost = (AmountType)$val;
+        $this->TotalWinningCost = ()$val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->WonCount = (int)$val;
+        $this->WonCount = ()$val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class BuyingSummaryType
 	 */
 	public function setTotalWonCost($val)
 	{
-        $this->TotalWonCost = (AmountType)$val;
+        $this->TotalWonCost = ()$val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->WonDurationInDays = (int)$val;
+        $this->WonDurationInDays = ()$val;
 	}
 
 	/**
@@ -110,6 +110,6 @@ class BuyingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BestOfferCount = (int)$val;
+        $this->BestOfferCount = ()$val;
 	}
 }

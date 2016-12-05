@@ -26,7 +26,7 @@ class CharityAffiliationsType
      */
     public function setCharityID($val)
     {
-        $this->CharityID = (CharityIDType)$val;
+        $this->CharityID = ()$val;
     }
 
     /**
@@ -35,6 +35,6 @@ class CharityAffiliationsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

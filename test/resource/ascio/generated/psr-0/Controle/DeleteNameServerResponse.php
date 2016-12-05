@@ -17,6 +17,6 @@ class DeleteNameServerResponse
 	 */
 	public function setDeleteNameServerResult($val)
 	{
-        $this->DeleteNameServerResult = (Response)$val;
+        $this->DeleteNameServerResult = ()$val;
 	}
 }

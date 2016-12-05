@@ -29,7 +29,7 @@ class RespondToWantItNowPostRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -38,6 +38,6 @@ class RespondToWantItNowPostRequestType extends
      */
     public function setPostID($val)
     {
-        $this->PostID = (ItemIDType)$val;
+        $this->PostID = ()$val;
     }
 }

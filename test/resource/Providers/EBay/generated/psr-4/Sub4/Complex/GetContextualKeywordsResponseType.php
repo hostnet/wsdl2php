@@ -22,6 +22,6 @@ class GetContextualKeywordsResponseType extends
      */
     public function setContextSearchAsset($val)
     {
-        $this->ContextSearchAsset = (ContextSearchAssetType)$val;
+        $this->ContextSearchAsset = ()$val;
     }
 }

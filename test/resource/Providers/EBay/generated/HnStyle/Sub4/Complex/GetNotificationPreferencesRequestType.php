@@ -26,6 +26,6 @@ class GetNotificationPreferencesRequestType extends
      */
     public function setPreferenceLevel($val)
     {
-        $this->PreferenceLevel = (NotificationRoleCodeType)$val;
+        $this->PreferenceLevel = ()$val;
     }
 }

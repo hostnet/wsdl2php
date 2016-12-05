@@ -32,7 +32,7 @@ class RunRequest
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = (int)$val;
+        $this->Period = ()$val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class RunRequest
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = (int)$val;
+        $this->Year = ()$val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class RunRequest
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (RunRequestStatus)$val;
+        $this->Status = ()$val;
 	}
 
 	/**
@@ -62,6 +62,6 @@ class RunRequest
 	 */
 	public function setHandledDate($val)
 	{
-        $this->HandledDate = (dateTime)$val;
+        $this->HandledDate = ()$val;
 	}
 }

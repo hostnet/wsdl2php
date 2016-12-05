@@ -28,7 +28,7 @@ class Clause
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Attribute');
         }
-        $this->Attribute = (string)$val;
+        $this->Attribute = ()$val;
 	}
 
 	/**
@@ -37,7 +37,7 @@ class Clause
 	 */
 	public function setOperator($val)
 	{
-        $this->Operator = (SearchOperatorType)$val;
+        $this->Operator = ()$val;
 	}
 
 	/**
@@ -49,6 +49,6 @@ class Clause
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (string)$val;
+        $this->Value = ()$val;
 	}
 }

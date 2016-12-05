@@ -17,6 +17,6 @@ class VeRoReportedItemDetailsType
      */
     public function setReportedItem($val)
     {
-        $this->ReportedItem = (VeROReportedItemType)$val;
+        $this->ReportedItem = ()$val;
     }
 }

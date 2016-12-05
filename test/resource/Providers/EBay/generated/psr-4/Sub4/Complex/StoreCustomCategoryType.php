@@ -46,7 +46,7 @@ class StoreCustomCategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = ()$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class StoreCustomCategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (string)$val;
+        $this->Name = ()$val;
     }
 
     /**
@@ -70,7 +70,7 @@ class StoreCustomCategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Order = (int)$val;
+        $this->Order = ()$val;
     }
 
     /**
@@ -79,7 +79,7 @@ class StoreCustomCategoryType
      */
     public function setChildrenCategories($val)
     {
-        $this->ChildrenCategories = (StoreCustomCategoryType)$val;
+        $this->ChildrenCategories = ()$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class StoreCustomCategoryType
      */
     public function setChildCategory($val)
     {
-        $this->ChildCategory = (StoreCustomCategoryType)$val;
+        $this->ChildCategory = ()$val;
     }
 
     /**
@@ -97,6 +97,6 @@ class StoreCustomCategoryType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

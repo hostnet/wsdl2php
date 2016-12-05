@@ -30,7 +30,7 @@ class GetTaxTableResponseType extends
 	 */
 	public function setLastUpdateTime($val)
 	{
-        $this->LastUpdateTime = (dateTime)$val;
+        $this->LastUpdateTime = ()$val;
 	}
 
 	/**
@@ -39,6 +39,6 @@ class GetTaxTableResponseType extends
 	 */
 	public function setTaxTable($val)
 	{
-        $this->TaxTable = (TaxTableType)$val;
+        $this->TaxTable = ()$val;
 	}
 }

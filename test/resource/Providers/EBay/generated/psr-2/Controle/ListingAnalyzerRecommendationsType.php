@@ -25,7 +25,7 @@ class ListingAnalyzerRecommendationsType
      */
     public function setListingTipArray($val)
     {
-        $this->ListingTipArray = (ListingTipArrayType)$val;
+        $this->ListingTipArray = ()$val;
     }
 
     /**
@@ -34,6 +34,6 @@ class ListingAnalyzerRecommendationsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -32,7 +32,7 @@ class CreateSupportOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (string)$val;
+        $this->sessionId = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class CreateSupportOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for subject');
         }
-        $this->subject = (string)$val;
+        $this->subject = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class CreateSupportOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for body');
         }
-        $this->body = (string)$val;
+        $this->body = ()$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class CreateSupportOrder
      */
     public function setAttachments($val)
     {
-        $this->attachments = (ArrayOfAttachment)$val;
+        $this->attachments = ()$val;
     }
 }

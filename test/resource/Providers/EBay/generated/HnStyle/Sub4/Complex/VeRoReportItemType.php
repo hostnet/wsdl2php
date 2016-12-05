@@ -35,7 +35,7 @@ class VeRoReportItemType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class VeRoReportItemType
      */
     public function setVeROReasonCodeID($val)
     {
-        $this->VeROReasonCodeID = (long)$val;
+        $this->VeROReasonCodeID = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class VeRoReportItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageToSeller');
         }
-        $this->MessageToSeller = (string)$val;
+        $this->MessageToSeller = ()$val;
     }
 
     /**
@@ -65,7 +65,7 @@ class VeRoReportItemType
      */
     public function setCopyEmailToRightsOwner($val)
     {
-        $this->CopyEmailToRightsOwner = (boolean)$val;
+        $this->CopyEmailToRightsOwner = ()$val;
     }
 
     /**
@@ -74,6 +74,6 @@ class VeRoReportItemType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -28,6 +28,6 @@ class GetRuNameResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RuName');
         }
-        $this->RuName = (string)$val;
+        $this->RuName = ()$val;
 	}
 }

@@ -533,6 +533,10 @@ foreach($types as $index=>$type){
 	   $code .= "\n".$ident_char."// @codingStandardsIgnoreEnd\n";
 	// add access method
 	foreach($type['members'] as $member) {
+	    $fixedparam='';
+	    if($member['type']===$primitive_types){
+	        $fixedparam = $member['type'];
+	    }
 	$codestylefunctionname = ucfirst(str_replace("_", "", $member['member']));
 		$code .= sprintf("\n" .
 		$ident_char . "/**\n".
@@ -541,7 +545,7 @@ foreach($types as $index=>$type){
 		$ident_char . " */\n" .
 		$ident_char ."public function set%s(\$val)\n".$ident_char."{\n" .
 		"%s" .
-		$ident2 . "\$this->%s = (".$member['type'].")\$val;\n" .
+		$ident2 . "\$this->%s = (".$fixedparam.")\$val;\n" .
 		$ident_char ."}\n", $member['type'], $codestylefunctionname, accessMethodCaster($member['type'], $member['member']), $member['member']);
 	}
 	rtrim($code);

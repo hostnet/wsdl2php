@@ -32,7 +32,7 @@ class DistanceType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DistanceMeasurement = (int)$val;
+        $this->DistanceMeasurement = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class DistanceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DistanceUnit');
         }
-        $this->DistanceUnit = (string)$val;
+        $this->DistanceUnit = ()$val;
     }
 
     /**
@@ -53,6 +53,6 @@ class DistanceType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -75,7 +75,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (PaginationResultType)$val;
+        $this->PaginationResult = ()$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setHasMorePayments($val)
     {
-        $this->HasMorePayments = (boolean)$val;
+        $this->HasMorePayments = ()$val;
     }
 
     /**
@@ -93,7 +93,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setSellerPayment($val)
     {
-        $this->SellerPayment = (SellerPaymentType)$val;
+        $this->SellerPayment = ()$val;
     }
 
     /**
@@ -105,7 +105,7 @@ class GetSellerPaymentsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PaymentsPerPage = (int)$val;
+        $this->PaymentsPerPage = ()$val;
     }
 
     /**
@@ -117,7 +117,7 @@ class GetSellerPaymentsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = (int)$val;
+        $this->PageNumber = ()$val;
     }
 
     /**
@@ -129,6 +129,6 @@ class GetSellerPaymentsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ReturnedPaymentCountActual = (int)$val;
+        $this->ReturnedPaymentCountActual = ()$val;
     }
 }

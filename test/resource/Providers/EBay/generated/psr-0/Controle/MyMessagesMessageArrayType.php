@@ -21,6 +21,6 @@ class MyMessagesMessageArrayType
 	 */
 	public function setMessage($val)
 	{
-        $this->Message = (MyMessagesMessageType)$val;
+        $this->Message = ()$val;
 	}
 }

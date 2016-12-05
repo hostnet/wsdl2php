@@ -36,7 +36,7 @@ class SalaryTableScale
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Scale');
         }
-        $this->Scale = (string)$val;
+        $this->Scale = ()$val;
     }
 
     /**
@@ -48,7 +48,7 @@ class SalaryTableScale
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SchaalDescription');
         }
-        $this->SchaalDescription = (string)$val;
+        $this->SchaalDescription = ()$val;
     }
 
     /**
@@ -57,7 +57,7 @@ class SalaryTableScale
      */
     public function setScaleValue($val)
     {
-        $this->ScaleValue = (decimal)$val;
+        $this->ScaleValue = ()$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class SalaryTableScale
      */
     public function setScalePercentageMax($val)
     {
-        $this->ScalePercentageMax = (decimal)$val;
+        $this->ScalePercentageMax = ()$val;
     }
 
     /**
@@ -75,6 +75,6 @@ class SalaryTableScale
      */
     public function setScalePercentageMin($val)
     {
-        $this->ScalePercentageMin = (decimal)$val;
+        $this->ScalePercentageMin = ()$val;
     }
 }

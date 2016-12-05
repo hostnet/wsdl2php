@@ -49,7 +49,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setBestOfferID($val)
     {
-        $this->BestOfferID = (BestOfferIDType)$val;
+        $this->BestOfferID = ()$val;
     }
 
     /**
@@ -67,7 +67,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setAction($val)
     {
-        $this->Action = (BestOfferActionCodeType)$val;
+        $this->Action = ()$val;
     }
 
     /**
@@ -79,7 +79,7 @@ class RespondToBestOfferRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerResponse');
         }
-        $this->SellerResponse = (string)$val;
+        $this->SellerResponse = ()$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class RespondToBestOfferRequestType extends
      */
     public function setCounterOfferPrice($val)
     {
-        $this->CounterOfferPrice = (AmountType)$val;
+        $this->CounterOfferPrice = ()$val;
     }
 
     /**
@@ -100,6 +100,6 @@ class RespondToBestOfferRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CounterOfferQuantity = (int)$val;
+        $this->CounterOfferQuantity = ()$val;
     }
 }

@@ -22,6 +22,6 @@ class BestOfferArrayType
 	 */
 	public function setBestOffer($val)
 	{
-        $this->BestOffer = (BestOfferType)$val;
+        $this->BestOffer = ()$val;
 	}
 }

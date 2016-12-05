@@ -29,7 +29,7 @@ class SoApStructStruct
      */
     public function setVarString($val)
     {
-        $this->varString = (anyType)$val;
+        $this->varString = ()$val;
     }
 
     /**
@@ -38,7 +38,7 @@ class SoApStructStruct
      */
     public function setVarInt($val)
     {
-        $this->varInt = (anyType)$val;
+        $this->varInt = ()$val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SoApStructStruct
      */
     public function setVarFloat($val)
     {
-        $this->varFloat = (anyType)$val;
+        $this->varFloat = ()$val;
     }
 
     /**
@@ -56,6 +56,6 @@ class SoApStructStruct
      */
     public function setVarStruct($val)
     {
-        $this->varStruct = (SOAPStruct)$val;
+        $this->varStruct = ()$val;
     }
 }

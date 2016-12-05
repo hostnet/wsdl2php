@@ -17,6 +17,6 @@ class GetResponse
      */
     public function setSalaryTableGetResult($val)
     {
-        $this->SalaryTable_GetResult = (SalaryTable)$val;
+        $this->SalaryTable_GetResult = ()$val;
     }
 }

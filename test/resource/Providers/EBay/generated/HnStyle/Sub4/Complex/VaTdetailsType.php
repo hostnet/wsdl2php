@@ -52,7 +52,7 @@ class VaTdetailsType
      */
     public function setBusinessSeller($val)
     {
-        $this->BusinessSeller = (boolean)$val;
+        $this->BusinessSeller = ()$val;
     }
 
     /**
@@ -61,7 +61,7 @@ class VaTdetailsType
      */
     public function setRestrictedToBusiness($val)
     {
-        $this->RestrictedToBusiness = (boolean)$val;
+        $this->RestrictedToBusiness = ()$val;
     }
 
     /**
@@ -70,7 +70,7 @@ class VaTdetailsType
      */
     public function setVATPercent($val)
     {
-        $this->VATPercent = (float)$val;
+        $this->VATPercent = ()$val;
     }
 
     /**
@@ -79,6 +79,6 @@ class VaTdetailsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

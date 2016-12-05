@@ -28,7 +28,7 @@ class RegistrantVerificationInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EmailAddress');
         }
-        $this->EmailAddress = (string)$val;
+        $this->EmailAddress = ()$val;
     }
 
     /**
@@ -37,7 +37,7 @@ class RegistrantVerificationInfo
      */
     public function setVerificationStatus($val)
     {
-        $this->VerificationStatus = (RegistrantVerificationStatus)$val;
+        $this->VerificationStatus = ()$val;
     }
 
     /**
@@ -46,6 +46,6 @@ class RegistrantVerificationInfo
      */
     public function setVerificationDetails($val)
     {
-        $this->VerificationDetails = (RegistrantVerificationDetails)$val;
+        $this->VerificationDetails = ()$val;
     }
 }

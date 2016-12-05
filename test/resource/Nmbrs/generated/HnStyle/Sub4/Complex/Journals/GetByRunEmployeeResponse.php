@@ -20,6 +20,6 @@ class GetByRunEmployeeResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunEmployeeResult');
         }
-        $this->Journals_GetByRunEmployeeResult = (string)$val;
+        $this->Journals_GetByRunEmployeeResult = ()$val;
     }
 }

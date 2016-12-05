@@ -66,7 +66,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AdditionalInformation');
         }
-        $this->AdditionalInformation = (string)$val;
+        $this->AdditionalInformation = ()$val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class AdFormatLeadType
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (AddressType)$val;
+        $this->Address = ()$val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BestTimeToCall');
         }
-        $this->BestTimeToCall = (string)$val;
+        $this->BestTimeToCall = ()$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (string)$val;
+        $this->Email = ()$val;
 	}
 
 	/**
@@ -111,7 +111,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FirstName');
         }
-        $this->FirstName = (string)$val;
+        $this->FirstName = ()$val;
 	}
 
 	/**
@@ -123,7 +123,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastName');
         }
-        $this->LastName = (string)$val;
+        $this->LastName = ()$val;
 	}
 
 	/**
@@ -135,7 +135,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = (string)$val;
+        $this->Phone = ()$val;
 	}
 
 	/**
@@ -144,7 +144,7 @@ class AdFormatLeadType
 	 */
 	public function setSubmittedTime($val)
 	{
-        $this->SubmittedTime = (dateTime)$val;
+        $this->SubmittedTime = ()$val;
 	}
 
 	/**
@@ -153,6 +153,6 @@ class AdFormatLeadType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

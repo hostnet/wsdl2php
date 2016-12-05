@@ -57,7 +57,7 @@ class ValType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ValueLiteral');
         }
-        $this->ValueLiteral = (string)$val;
+        $this->ValueLiteral = ()$val;
     }
 
     /**
@@ -69,7 +69,7 @@ class ValType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SuggestedValueLiteral');
         }
-        $this->SuggestedValueLiteral = (string)$val;
+        $this->SuggestedValueLiteral = ()$val;
     }
 
     /**
@@ -81,7 +81,7 @@ class ValType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ValueID = (int)$val;
+        $this->ValueID = ()$val;
     }
 
     /**
@@ -90,6 +90,6 @@ class ValType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

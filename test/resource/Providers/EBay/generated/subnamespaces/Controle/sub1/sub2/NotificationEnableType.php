@@ -28,7 +28,7 @@ class NotificationEnableType
 	 */
 	public function setEventType($val)
 	{
-        $this->EventType = (NotificationEventTypeCodeType)$val;
+        $this->EventType = ()$val;
 	}
 
 	/**
@@ -37,7 +37,7 @@ class NotificationEnableType
 	 */
 	public function setEventEnable($val)
 	{
-        $this->EventEnable = (EnableCodeType)$val;
+        $this->EventEnable = ()$val;
 	}
 
 	/**
@@ -46,6 +46,6 @@ class NotificationEnableType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

@@ -26,7 +26,7 @@ class AddToItemDescriptionRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -38,6 +38,6 @@ class AddToItemDescriptionRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (string)$val;
+        $this->Description = ()$val;
     }
 }

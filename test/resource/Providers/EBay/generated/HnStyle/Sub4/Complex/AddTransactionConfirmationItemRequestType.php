@@ -69,7 +69,7 @@ class AddTransactionConfirmationItemRequestType extends
      */
     public function setRecipientUserID($val)
     {
-        $this->RecipientUserID = (UserIDType)$val;
+        $this->RecipientUserID = ()$val;
     }
 
     /**
@@ -81,7 +81,7 @@ class AddTransactionConfirmationItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VerifyEligibilityOnly');
         }
-        $this->VerifyEligibilityOnly = (string)$val;
+        $this->VerifyEligibilityOnly = ()$val;
     }
 
     /**
@@ -93,7 +93,7 @@ class AddTransactionConfirmationItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientPostalCode');
         }
-        $this->RecipientPostalCode = (string)$val;
+        $this->RecipientPostalCode = ()$val;
     }
 
     /**
@@ -102,7 +102,7 @@ class AddTransactionConfirmationItemRequestType extends
      */
     public function setRecipientRelationType($val)
     {
-        $this->RecipientRelationType = (RecipientRelationCodeType)$val;
+        $this->RecipientRelationType = ()$val;
     }
 
     /**
@@ -111,7 +111,7 @@ class AddTransactionConfirmationItemRequestType extends
      */
     public function setNegotiatedPrice($val)
     {
-        $this->NegotiatedPrice = (AmountType)$val;
+        $this->NegotiatedPrice = ()$val;
     }
 
     /**
@@ -120,7 +120,7 @@ class AddTransactionConfirmationItemRequestType extends
      */
     public function setListingDuration($val)
     {
-        $this->ListingDuration = (SecondChanceOfferDurationCodeType)$val;
+        $this->ListingDuration = ()$val;
     }
 
     /**
@@ -129,7 +129,7 @@ class AddTransactionConfirmationItemRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -141,6 +141,6 @@ class AddTransactionConfirmationItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->Comments = (string)$val;
+        $this->Comments = ()$val;
     }
 }

@@ -24,7 +24,7 @@ class MarketplaceSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfOpenListings');
         }
-        $this->NumberOfOpenListings = (string)$val;
+        $this->NumberOfOpenListings = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class MarketplaceSearchDetails
      */
     public function setListingProductInfo($val)
     {
-        $this->ListingProductInfo = (ListingProductInfo)$val;
+        $this->ListingProductInfo = ()$val;
     }
 }

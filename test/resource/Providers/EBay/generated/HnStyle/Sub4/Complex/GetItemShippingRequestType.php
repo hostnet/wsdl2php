@@ -44,7 +44,7 @@ class GetItemShippingRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class GetItemShippingRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QuantitySold = (int)$val;
+        $this->QuantitySold = ()$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class GetItemShippingRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DestinationPostalCode');
         }
-        $this->DestinationPostalCode = (string)$val;
+        $this->DestinationPostalCode = ()$val;
     }
 
     /**
@@ -77,6 +77,6 @@ class GetItemShippingRequestType extends
      */
     public function setDestinationCountryCode($val)
     {
-        $this->DestinationCountryCode = (CountryCodeType)$val;
+        $this->DestinationCountryCode = ()$val;
     }
 }

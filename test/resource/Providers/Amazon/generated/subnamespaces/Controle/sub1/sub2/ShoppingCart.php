@@ -32,7 +32,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = (string)$val;
+        $this->CartId = ()$val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = (string)$val;
+        $this->HMAC = ()$val;
 	}
 
 	/**
@@ -56,7 +56,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PurchaseUrl');
         }
-        $this->PurchaseUrl = (string)$val;
+        $this->PurchaseUrl = ()$val;
 	}
 
 	/**
@@ -65,6 +65,6 @@ class ShoppingCart
 	 */
 	public function setItems($val)
 	{
-        $this->Items = (ItemArray)$val;
+        $this->Items = ()$val;
 	}
 }

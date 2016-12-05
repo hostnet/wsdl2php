@@ -32,7 +32,7 @@ class MyeBaySecondChanceOfferListType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalAvailable = (int)$val;
+        $this->TotalAvailable = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class MyeBaySecondChanceOfferListType
      */
     public function setSecondChanceOffer($val)
     {
-        $this->SecondChanceOffer = (ItemType)$val;
+        $this->SecondChanceOffer = ()$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class MyeBaySecondChanceOfferListType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

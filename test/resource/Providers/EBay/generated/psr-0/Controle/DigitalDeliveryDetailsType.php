@@ -57,7 +57,7 @@ class DigitalDeliveryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Requirements');
         }
-        $this->Requirements = (string)$val;
+        $this->Requirements = ()$val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class DigitalDeliveryDetailsType
 	 */
 	public function setMethod($val)
 	{
-        $this->Method = (DigitalDeliveryMethodCodeType)$val;
+        $this->Method = ()$val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class DigitalDeliveryDetailsType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (anyURI)$val;
+        $this->URL = ()$val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class DigitalDeliveryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Instructions');
         }
-        $this->Instructions = (string)$val;
+        $this->Instructions = ()$val;
 	}
 
 	/**
@@ -96,6 +96,6 @@ class DigitalDeliveryDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

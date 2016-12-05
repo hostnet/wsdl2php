@@ -31,7 +31,7 @@ class DisputeFilterCountType
 	 */
 	public function setDisputeFilterType($val)
 	{
-        $this->DisputeFilterType = (DisputeFilterTypeCodeType)$val;
+        $this->DisputeFilterType = ()$val;
 	}
 
 	/**
@@ -43,7 +43,7 @@ class DisputeFilterCountType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalAvailable = (int)$val;
+        $this->TotalAvailable = ()$val;
 	}
 
 	/**
@@ -52,6 +52,6 @@ class DisputeFilterCountType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

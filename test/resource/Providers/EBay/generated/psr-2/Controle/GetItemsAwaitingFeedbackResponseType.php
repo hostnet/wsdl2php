@@ -23,6 +23,6 @@ class GetItemsAwaitingFeedbackResponseType extends
      */
     public function setItemsAwaitingFeedback($val)
     {
-        $this->ItemsAwaitingFeedback = (PaginatedTransactionArrayType)$val;
+        $this->ItemsAwaitingFeedback = ()$val;
     }
 }

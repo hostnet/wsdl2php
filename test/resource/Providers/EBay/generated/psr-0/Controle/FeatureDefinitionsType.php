@@ -216,7 +216,7 @@ class FeatureDefinitionsType
 	 */
 	public function setListingDurations($val)
 	{
-        $this->ListingDurations = (ListingDurationDefinitionsType)$val;
+        $this->ListingDurations = ()$val;
 	}
 
 	/**
@@ -225,7 +225,7 @@ class FeatureDefinitionsType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = (ShippingTermRequiredDefinitionType)$val;
+        $this->ShippingTermsRequired = ()$val;
 	}
 
 	/**
@@ -234,7 +234,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (BestOfferEnabledDefinitionType)$val;
+        $this->BestOfferEnabled = ()$val;
 	}
 
 	/**
@@ -243,7 +243,7 @@ class FeatureDefinitionsType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = (DutchBINEnabledDefinitionType)$val;
+        $this->DutchBINEnabled = ()$val;
 	}
 
 	/**
@@ -252,7 +252,7 @@ class FeatureDefinitionsType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = (UserConsentRequiredDefinitionType)$val;
+        $this->UserConsentRequired = ()$val;
 	}
 
 	/**
@@ -261,7 +261,7 @@ class FeatureDefinitionsType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = (HomePageFeaturedEnabledDefinitionType)$val;
+        $this->HomePageFeaturedEnabled = ()$val;
 	}
 
 	/**
@@ -270,7 +270,7 @@ class FeatureDefinitionsType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = (ProPackEnabledDefinitionType)$val;
+        $this->ProPackEnabled = ()$val;
 	}
 
 	/**
@@ -279,7 +279,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = (BasicUpgradePackEnabledDefinitionType)$val;
+        $this->BasicUpgradePackEnabled = ()$val;
 	}
 
 	/**
@@ -288,7 +288,7 @@ class FeatureDefinitionsType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = (ValuePackEnabledDefinitionType)$val;
+        $this->ValuePackEnabled = ()$val;
 	}
 
 	/**
@@ -297,7 +297,7 @@ class FeatureDefinitionsType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = (ProPackPlusEnabledDefinitionType)$val;
+        $this->ProPackPlusEnabled = ()$val;
 	}
 
 	/**
@@ -306,7 +306,7 @@ class FeatureDefinitionsType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = (AdFormatEnabledDefinitionType)$val;
+        $this->AdFormatEnabled = ()$val;
 	}
 
 	/**
@@ -315,7 +315,7 @@ class FeatureDefinitionsType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = (DigitalDeliveryEnabledDefinitionType)$val;
+        $this->DigitalDeliveryEnabled = ()$val;
 	}
 
 	/**
@@ -324,7 +324,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = (BestOfferCounterEnabledDefinitionType)$val;
+        $this->BestOfferCounterEnabled = ()$val;
 	}
 
 	/**
@@ -333,7 +333,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = (BestOfferAutoDeclineEnabledDefinitionType)$val;
+        $this->BestOfferAutoDeclineEnabled = ()$val;
 	}
 
 	/**
@@ -342,7 +342,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = (LocalMarketSpecialitySubscriptionDefinitionType)$val;
+        $this->LocalMarketSpecialitySubscription = ()$val;
 	}
 
 	/**
@@ -351,7 +351,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = (LocalMarketRegularSubscriptionDefinitionType)$val;
+        $this->LocalMarketRegularSubscription = ()$val;
 	}
 
 	/**
@@ -360,7 +360,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = (LocalMarketPremiumSubscriptionDefinitionType)$val;
+        $this->LocalMarketPremiumSubscription = ()$val;
 	}
 
 	/**
@@ -369,7 +369,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = (LocalMarketNonSubscriptionDefinitionType)$val;
+        $this->LocalMarketNonSubscription = ()$val;
 	}
 
 	/**
@@ -378,7 +378,7 @@ class FeatureDefinitionsType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = (ExpressEnabledDefinitionType)$val;
+        $this->ExpressEnabled = ()$val;
 	}
 
 	/**
@@ -387,7 +387,7 @@ class FeatureDefinitionsType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = (ExpressPicturesRequiredDefinitionType)$val;
+        $this->ExpressPicturesRequired = ()$val;
 	}
 
 	/**
@@ -396,7 +396,7 @@ class FeatureDefinitionsType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = (ExpressConditionRequiredDefinitionType)$val;
+        $this->ExpressConditionRequired = ()$val;
 	}
 
 	/**
@@ -405,7 +405,7 @@ class FeatureDefinitionsType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (MinimumReservePriceDefinitionType)$val;
+        $this->MinimumReservePrice = ()$val;
 	}
 
 	/**
@@ -414,7 +414,7 @@ class FeatureDefinitionsType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = (TCREnabledDefinitionType)$val;
+        $this->TransactionConfirmationRequestEnabled = ()$val;
 	}
 
 	/**
@@ -423,7 +423,7 @@ class FeatureDefinitionsType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = (SellerContactDetailsEnabledDefinitionType)$val;
+        $this->SellerContactDetailsEnabled = ()$val;
 	}
 
 	/**
@@ -432,7 +432,7 @@ class FeatureDefinitionsType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = (StoreInventoryEnabledDefinitionType)$val;
+        $this->StoreInventoryEnabled = ()$val;
 	}
 
 	/**
@@ -441,7 +441,7 @@ class FeatureDefinitionsType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = (SkypeMeTransactionalEnabledDefinitionType)$val;
+        $this->SkypeMeTransactionalEnabled = ()$val;
 	}
 
 	/**
@@ -450,7 +450,7 @@ class FeatureDefinitionsType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = (SkypeMeNonTransactionalEnabledDefinitionType)$val;
+        $this->SkypeMeNonTransactionalEnabled = ()$val;
 	}
 
 	/**
@@ -459,7 +459,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalListingDistancesRegular($val)
 	{
-        $this->LocalListingDistancesRegular = (LocalListingDistancesRegularDefinitionType)$val;
+        $this->LocalListingDistancesRegular = ()$val;
 	}
 
 	/**
@@ -468,7 +468,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalListingDistancesSpecialty($val)
 	{
-        $this->LocalListingDistancesSpecialty = (LocalListingDistancesSpecialtyDefinitionType)$val;
+        $this->LocalListingDistancesSpecialty = ()$val;
 	}
 
 	/**
@@ -477,7 +477,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalListingDistancesNonSubscription($val)
 	{
-        $this->LocalListingDistancesNonSubscription = (LocalListingDistancesNonSubscriptionDefinitionType)$val;
+        $this->LocalListingDistancesNonSubscription = ()$val;
 	}
 
 	/**
@@ -486,6 +486,6 @@ class FeatureDefinitionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

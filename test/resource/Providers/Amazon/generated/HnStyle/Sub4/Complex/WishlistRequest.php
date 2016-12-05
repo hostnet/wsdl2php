@@ -40,7 +40,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for wishlist_id');
         }
-        $this->wishlist_id = (string)$val;
+        $this->wishlist_id = ()$val;
     }
 
     /**
@@ -52,7 +52,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (string)$val;
+        $this->page = ()$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (string)$val;
+        $this->tag = ()$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (string)$val;
+        $this->type = ()$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (string)$val;
+        $this->devtag = ()$val;
     }
 
     /**
@@ -100,6 +100,6 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (string)$val;
+        $this->locale = ()$val;
     }
 }

@@ -66,7 +66,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->ModTimeFrom = (dateTime)$val;
+        $this->ModTimeFrom = ()$val;
     }
 
     /**
@@ -75,7 +75,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->ModTimeTo = (dateTime)$val;
+        $this->ModTimeTo = ()$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (PaginationType)$val;
+        $this->Pagination = ()$val;
     }
 
     /**
@@ -93,7 +93,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setIncludeFinalValueFee($val)
     {
-        $this->IncludeFinalValueFee = (boolean)$val;
+        $this->IncludeFinalValueFee = ()$val;
     }
 
     /**
@@ -102,7 +102,7 @@ class GetSellerTransactionsRequestType extends
      */
     public function setIncludeContainingOrder($val)
     {
-        $this->IncludeContainingOrder = (boolean)$val;
+        $this->IncludeContainingOrder = ()$val;
     }
 
     /**
@@ -111,6 +111,6 @@ class GetSellerTransactionsRequestType extends
      */
     public function setSKUArray($val)
     {
-        $this->SKUArray = (SKUArrayType)$val;
+        $this->SKUArray = ()$val;
     }
 }

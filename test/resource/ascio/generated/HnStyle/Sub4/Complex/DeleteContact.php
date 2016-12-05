@@ -24,7 +24,7 @@ class DeleteContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (string)$val;
+        $this->sessionId = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class DeleteContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for contactHandle');
         }
-        $this->contactHandle = (string)$val;
+        $this->contactHandle = ()$val;
     }
 }

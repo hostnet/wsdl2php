@@ -65,7 +65,7 @@ class GetCategoryListingsResponseType extends
      */
     public function setItemArray($val)
     {
-        $this->ItemArray = (ItemArrayType)$val;
+        $this->ItemArray = ()$val;
     }
 
     /**
@@ -74,7 +74,7 @@ class GetCategoryListingsResponseType extends
      */
     public function setCategory($val)
     {
-        $this->Category = (CategoryType)$val;
+        $this->Category = ()$val;
     }
 
     /**
@@ -83,7 +83,7 @@ class GetCategoryListingsResponseType extends
      */
     public function setSubCategories($val)
     {
-        $this->SubCategories = (CategoryArrayType)$val;
+        $this->SubCategories = ()$val;
     }
 
     /**
@@ -95,7 +95,7 @@ class GetCategoryListingsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemsPerPage = (int)$val;
+        $this->ItemsPerPage = ()$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class GetCategoryListingsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = (int)$val;
+        $this->PageNumber = ()$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class GetCategoryListingsResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->HasMoreItems = (boolean)$val;
+        $this->HasMoreItems = ()$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class GetCategoryListingsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (PaginationResultType)$val;
+        $this->PaginationResult = ()$val;
     }
 
     /**
@@ -134,7 +134,7 @@ class GetCategoryListingsResponseType extends
      */
     public function setBuyingGuideDetails($val)
     {
-        $this->BuyingGuideDetails = (BuyingGuideDetailsType)$val;
+        $this->BuyingGuideDetails = ()$val;
     }
 
     /**
@@ -143,6 +143,6 @@ class GetCategoryListingsResponseType extends
      */
     public function setRelatedSearchKeywordArray($val)
     {
-        $this->RelatedSearchKeywordArray = (RelatedSearchKeywordArrayType)$val;
+        $this->RelatedSearchKeywordArray = ()$val;
     }
 }

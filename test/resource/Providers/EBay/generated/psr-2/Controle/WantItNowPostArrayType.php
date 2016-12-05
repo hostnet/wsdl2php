@@ -22,6 +22,6 @@ class WantItNowPostArrayType
      */
     public function setWantItNowPost($val)
     {
-        $this->WantItNowPost = (WantItNowPostType)$val;
+        $this->WantItNowPost = ()$val;
     }
 }

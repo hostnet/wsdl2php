@@ -76,7 +76,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for marketplace_search');
         }
-        $this->marketplace_search = (string)$val;
+        $this->marketplace_search = ()$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (string)$val;
+        $this->tag = ()$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (string)$val;
+        $this->type = ()$val;
     }
 
     /**
@@ -112,7 +112,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (string)$val;
+        $this->devtag = ()$val;
     }
 
     /**
@@ -124,7 +124,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (string)$val;
+        $this->page = ()$val;
     }
 
     /**
@@ -136,7 +136,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword');
         }
-        $this->keyword = (string)$val;
+        $this->keyword = ()$val;
     }
 
     /**
@@ -148,7 +148,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword_search');
         }
-        $this->keyword_search = (string)$val;
+        $this->keyword_search = ()$val;
     }
 
     /**
@@ -160,7 +160,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for browse_id');
         }
-        $this->browse_id = (string)$val;
+        $this->browse_id = ()$val;
     }
 
     /**
@@ -172,7 +172,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for zipcode');
         }
-        $this->zipcode = (string)$val;
+        $this->zipcode = ()$val;
     }
 
     /**
@@ -184,7 +184,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for area_id');
         }
-        $this->area_id = (string)$val;
+        $this->area_id = ()$val;
     }
 
     /**
@@ -196,7 +196,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for geo');
         }
-        $this->geo = (string)$val;
+        $this->geo = ()$val;
     }
 
     /**
@@ -208,7 +208,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = (string)$val;
+        $this->sort = ()$val;
     }
 
     /**
@@ -220,7 +220,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for listing_id');
         }
-        $this->listing_id = (string)$val;
+        $this->listing_id = ()$val;
     }
 
     /**
@@ -232,7 +232,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (string)$val;
+        $this->locale = ()$val;
     }
 
     /**
@@ -244,6 +244,6 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for index');
         }
-        $this->index = (string)$val;
+        $this->index = ()$val;
     }
 }

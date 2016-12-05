@@ -41,6 +41,6 @@ class AttributeArrayType
      */
     public function setAttribute($val)
     {
-        $this->Attribute = (AttributeType)$val;
+        $this->Attribute = ()$val;
     }
 }

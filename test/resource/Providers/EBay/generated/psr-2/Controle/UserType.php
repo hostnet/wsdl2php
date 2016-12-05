@@ -306,7 +306,7 @@ class UserType
      */
     public function setAboutMePage($val)
     {
-        $this->AboutMePage = (boolean)$val;
+        $this->AboutMePage = ()$val;
     }
 
     /**
@@ -318,7 +318,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->EIASToken = (string)$val;
+        $this->EIASToken = ()$val;
     }
 
     /**
@@ -330,7 +330,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RESTToken');
         }
-        $this->RESTToken = (string)$val;
+        $this->RESTToken = ()$val;
     }
 
     /**
@@ -342,7 +342,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (string)$val;
+        $this->Email = ()$val;
     }
 
     /**
@@ -354,7 +354,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackScore = (int)$val;
+        $this->FeedbackScore = ()$val;
     }
 
     /**
@@ -366,7 +366,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniqueNegativeFeedbackCount = (int)$val;
+        $this->UniqueNegativeFeedbackCount = ()$val;
     }
 
     /**
@@ -378,7 +378,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniquePositiveFeedbackCount = (int)$val;
+        $this->UniquePositiveFeedbackCount = ()$val;
     }
 
     /**
@@ -387,7 +387,7 @@ class UserType
      */
     public function setPositiveFeedbackPercent($val)
     {
-        $this->PositiveFeedbackPercent = (float)$val;
+        $this->PositiveFeedbackPercent = ()$val;
     }
 
     /**
@@ -396,7 +396,7 @@ class UserType
      */
     public function setFeedbackPrivate($val)
     {
-        $this->FeedbackPrivate = (boolean)$val;
+        $this->FeedbackPrivate = ()$val;
     }
 
     /**
@@ -405,7 +405,7 @@ class UserType
      */
     public function setFeedbackRatingStar($val)
     {
-        $this->FeedbackRatingStar = (FeedbackRatingStarCodeType)$val;
+        $this->FeedbackRatingStar = ()$val;
     }
 
     /**
@@ -414,7 +414,7 @@ class UserType
      */
     public function setIDVerified($val)
     {
-        $this->IDVerified = (boolean)$val;
+        $this->IDVerified = ()$val;
     }
 
     /**
@@ -423,7 +423,7 @@ class UserType
      */
     public function setEBayGoodStanding($val)
     {
-        $this->eBayGoodStanding = (boolean)$val;
+        $this->eBayGoodStanding = ()$val;
     }
 
     /**
@@ -432,7 +432,7 @@ class UserType
      */
     public function setNewUser($val)
     {
-        $this->NewUser = (boolean)$val;
+        $this->NewUser = ()$val;
     }
 
     /**
@@ -441,7 +441,7 @@ class UserType
      */
     public function setRegistrationAddress($val)
     {
-        $this->RegistrationAddress = (AddressType)$val;
+        $this->RegistrationAddress = ()$val;
     }
 
     /**
@@ -450,7 +450,7 @@ class UserType
      */
     public function setRegistrationDate($val)
     {
-        $this->RegistrationDate = (dateTime)$val;
+        $this->RegistrationDate = ()$val;
     }
 
     /**
@@ -459,7 +459,7 @@ class UserType
      */
     public function setSite($val)
     {
-        $this->Site = (SiteCodeType)$val;
+        $this->Site = ()$val;
     }
 
     /**
@@ -468,7 +468,7 @@ class UserType
      */
     public function setStatus($val)
     {
-        $this->Status = (UserStatusCodeType)$val;
+        $this->Status = ()$val;
     }
 
     /**
@@ -477,7 +477,7 @@ class UserType
      */
     public function setUserID($val)
     {
-        $this->UserID = (UserIDType)$val;
+        $this->UserID = ()$val;
     }
 
     /**
@@ -486,7 +486,7 @@ class UserType
      */
     public function setUserIDChanged($val)
     {
-        $this->UserIDChanged = (boolean)$val;
+        $this->UserIDChanged = ()$val;
     }
 
     /**
@@ -495,7 +495,7 @@ class UserType
      */
     public function setUserIDLastChanged($val)
     {
-        $this->UserIDLastChanged = (dateTime)$val;
+        $this->UserIDLastChanged = ()$val;
     }
 
     /**
@@ -504,7 +504,7 @@ class UserType
      */
     public function setVATStatus($val)
     {
-        $this->VATStatus = (VATStatusCodeType)$val;
+        $this->VATStatus = ()$val;
     }
 
     /**
@@ -513,7 +513,7 @@ class UserType
      */
     public function setBuyerInfo($val)
     {
-        $this->BuyerInfo = (BuyerType)$val;
+        $this->BuyerInfo = ()$val;
     }
 
     /**
@@ -522,7 +522,7 @@ class UserType
      */
     public function setSellerInfo($val)
     {
-        $this->SellerInfo = (SellerType)$val;
+        $this->SellerInfo = ()$val;
     }
 
     /**
@@ -531,7 +531,7 @@ class UserType
      */
     public function setCharityAffiliations($val)
     {
-        $this->CharityAffiliations = (CharityAffiliationsType)$val;
+        $this->CharityAffiliations = ()$val;
     }
 
     /**
@@ -540,7 +540,7 @@ class UserType
      */
     public function setCharitySeller($val)
     {
-        $this->CharitySeller = (CharitySellerType)$val;
+        $this->CharitySeller = ()$val;
     }
 
     /**
@@ -549,7 +549,7 @@ class UserType
      */
     public function setPayPalAccountLevel($val)
     {
-        $this->PayPalAccountLevel = (PayPalAccountLevelCodeType)$val;
+        $this->PayPalAccountLevel = ()$val;
     }
 
     /**
@@ -558,7 +558,7 @@ class UserType
      */
     public function setPayPalAccountType($val)
     {
-        $this->PayPalAccountType = (PayPalAccountTypeCodeType)$val;
+        $this->PayPalAccountType = ()$val;
     }
 
     /**
@@ -567,7 +567,7 @@ class UserType
      */
     public function setPayPalAccountStatus($val)
     {
-        $this->PayPalAccountStatus = (PayPalAccountStatusCodeType)$val;
+        $this->PayPalAccountStatus = ()$val;
     }
 
     /**
@@ -576,7 +576,7 @@ class UserType
      */
     public function setUserSubscription($val)
     {
-        $this->UserSubscription = (EBaySubscriptionTypeCodeType)$val;
+        $this->UserSubscription = ()$val;
     }
 
     /**
@@ -585,7 +585,7 @@ class UserType
      */
     public function setSiteVerified($val)
     {
-        $this->SiteVerified = (boolean)$val;
+        $this->SiteVerified = ()$val;
     }
 
     /**
@@ -597,7 +597,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->SkypeID = (string)$val;
+        $this->SkypeID = ()$val;
     }
 
     /**
@@ -606,7 +606,7 @@ class UserType
      */
     public function setEBayWikiReadOnly($val)
     {
-        $this->eBayWikiReadOnly = (boolean)$val;
+        $this->eBayWikiReadOnly = ()$val;
     }
 
     /**
@@ -618,7 +618,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TUVLevel = (int)$val;
+        $this->TUVLevel = ()$val;
     }
 
     /**
@@ -630,7 +630,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VATID');
         }
-        $this->VATID = (string)$val;
+        $this->VATID = ()$val;
     }
 
     /**
@@ -639,7 +639,7 @@ class UserType
      */
     public function setMotorsDealer($val)
     {
-        $this->MotorsDealer = (boolean)$val;
+        $this->MotorsDealer = ()$val;
     }
 
     /**
@@ -648,7 +648,7 @@ class UserType
      */
     public function setSellerPaymentMethod($val)
     {
-        $this->SellerPaymentMethod = (SellerPaymentMethodCodeType)$val;
+        $this->SellerPaymentMethod = ()$val;
     }
 
     /**
@@ -657,7 +657,7 @@ class UserType
      */
     public function setBiddingSummary($val)
     {
-        $this->BiddingSummary = (BiddingSummaryType)$val;
+        $this->BiddingSummary = ()$val;
     }
 
     /**
@@ -666,7 +666,7 @@ class UserType
      */
     public function setUserAnonymized($val)
     {
-        $this->UserAnonymized = (boolean)$val;
+        $this->UserAnonymized = ()$val;
     }
 
     /**
@@ -675,6 +675,6 @@ class UserType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

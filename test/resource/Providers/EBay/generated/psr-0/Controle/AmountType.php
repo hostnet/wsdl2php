@@ -29,7 +29,7 @@ class AmountType
 	 */
 	public function set($val)
 	{
-        $this->_ = (double)$val;
+        $this->_ = ()$val;
 	}
 
 	/**
@@ -38,6 +38,6 @@ class AmountType
 	 */
 	public function setCurrencyID($val)
 	{
-        $this->currencyID = (CurrencyCodeType)$val;
+        $this->currencyID = ()$val;
 	}
 }

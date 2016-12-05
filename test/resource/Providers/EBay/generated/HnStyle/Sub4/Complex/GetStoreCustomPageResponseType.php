@@ -22,6 +22,6 @@ class GetStoreCustomPageResponseType extends
      */
     public function setCustomPageArray($val)
     {
-        $this->CustomPageArray = (StoreCustomPageArrayType)$val;
+        $this->CustomPageArray = ()$val;
     }
 }

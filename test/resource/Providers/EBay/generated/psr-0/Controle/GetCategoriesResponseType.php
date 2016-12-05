@@ -90,7 +90,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->CategoryArray = (CategoryArrayType)$val;
+        $this->CategoryArray = ()$val;
 	}
 
 	/**
@@ -102,7 +102,7 @@ class GetCategoriesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CategoryCount = (int)$val;
+        $this->CategoryCount = ()$val;
 	}
 
 	/**
@@ -111,7 +111,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setUpdateTime($val)
 	{
-        $this->UpdateTime = (dateTime)$val;
+        $this->UpdateTime = ()$val;
 	}
 
 	/**
@@ -123,7 +123,7 @@ class GetCategoriesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (string)$val;
+        $this->CategoryVersion = ()$val;
 	}
 
 	/**
@@ -132,7 +132,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReservePriceInclusive($val)
 	{
-        $this->ReservePriceInclusive = (boolean)$val;
+        $this->ReservePriceInclusive = ()$val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReservePriceAllowed($val)
 	{
-        $this->ReservePriceAllowed = (boolean)$val;
+        $this->ReservePriceAllowed = ()$val;
 	}
 
 	/**
@@ -150,7 +150,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (double)$val;
+        $this->MinimumReservePrice = ()$val;
 	}
 
 	/**
@@ -159,7 +159,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (CurrencyCodeType)$val;
+        $this->Currency = ()$val;
 	}
 
 	/**
@@ -168,7 +168,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReduceReserveInclusive($val)
 	{
-        $this->ReduceReserveInclusive = (boolean)$val;
+        $this->ReduceReserveInclusive = ()$val;
 	}
 
 	/**
@@ -177,6 +177,6 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReduceReserveAllowed($val)
 	{
-        $this->ReduceReserveAllowed = (boolean)$val;
+        $this->ReduceReserveAllowed = ()$val;
 	}
 }

@@ -26,6 +26,6 @@ class GetItemResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (ItemType)$val;
+        $this->Item = ()$val;
 	}
 }

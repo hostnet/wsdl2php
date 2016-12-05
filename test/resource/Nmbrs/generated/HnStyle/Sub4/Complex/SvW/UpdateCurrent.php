@@ -24,7 +24,7 @@ class UpdateCurrent
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = ()$val;
     }
 
     /**
@@ -33,6 +33,6 @@ class UpdateCurrent
      */
     public function setSVW($val)
     {
-        $this->SVW = (SVW)$val;
+        $this->SVW = ()$val;
     }
 }

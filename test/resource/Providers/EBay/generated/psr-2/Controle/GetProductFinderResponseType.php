@@ -49,7 +49,7 @@ class GetProductFinderResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (string)$val;
+        $this->AttributeSystemVersion = ()$val;
     }
 
     /**
@@ -61,6 +61,6 @@ class GetProductFinderResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductFinderData');
         }
-        $this->ProductFinderData = (string)$val;
+        $this->ProductFinderData = ()$val;
     }
 }

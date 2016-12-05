@@ -65,7 +65,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (token)$val;
+        $this->ShippingService = ()$val;
 	}
 
 	/**
@@ -74,7 +74,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingServiceCost($val)
 	{
-        $this->ShippingServiceCost = (AmountType)$val;
+        $this->ShippingServiceCost = ()$val;
 	}
 
 	/**
@@ -83,7 +83,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
-        $this->ShippingServiceAdditionalCost = (AmountType)$val;
+        $this->ShippingServiceAdditionalCost = ()$val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class InternationalShippingServiceOptionsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingServicePriority = (int)$val;
+        $this->ShippingServicePriority = ()$val;
 	}
 
 	/**
@@ -107,7 +107,7 @@ class InternationalShippingServiceOptionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipToLocation');
         }
-        $this->ShipToLocation = (string)$val;
+        $this->ShipToLocation = ()$val;
 	}
 
 	/**
@@ -116,7 +116,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingInsuranceCost($val)
 	{
-        $this->ShippingInsuranceCost = (AmountType)$val;
+        $this->ShippingInsuranceCost = ()$val;
 	}
 
 	/**
@@ -125,6 +125,6 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

@@ -47,6 +47,6 @@ class GetProductSellingPagesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
         }
-        $this->ProductSellingPagesData = (string)$val;
+        $this->ProductSellingPagesData = ()$val;
     }
 }

@@ -24,6 +24,6 @@ class ExpressPicturesRequiredDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

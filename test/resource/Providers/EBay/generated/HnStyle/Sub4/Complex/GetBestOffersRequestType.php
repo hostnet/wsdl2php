@@ -33,7 +33,7 @@ class GetBestOffersRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -42,7 +42,7 @@ class GetBestOffersRequestType extends
      */
     public function setBestOfferID($val)
     {
-        $this->BestOfferID = (BestOfferIDType)$val;
+        $this->BestOfferID = ()$val;
     }
 
     /**
@@ -51,6 +51,6 @@ class GetBestOffersRequestType extends
      */
     public function setBestOfferStatus($val)
     {
-        $this->BestOfferStatus = (BestOfferStatusCodeType)$val;
+        $this->BestOfferStatus = ()$val;
     }
 }

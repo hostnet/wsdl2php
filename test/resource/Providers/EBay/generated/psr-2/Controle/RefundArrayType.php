@@ -21,6 +21,6 @@ class RefundArrayType
      */
     public function setRefund($val)
     {
-        $this->Refund = (RefundType)$val;
+        $this->Refund = ()$val;
     }
 }

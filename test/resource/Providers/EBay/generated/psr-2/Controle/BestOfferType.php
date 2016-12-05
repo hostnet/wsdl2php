@@ -68,7 +68,7 @@ class BestOfferType
      */
     public function setBestOfferID($val)
     {
-        $this->BestOfferID = (BestOfferIDType)$val;
+        $this->BestOfferID = ()$val;
     }
 
     /**
@@ -77,7 +77,7 @@ class BestOfferType
      */
     public function setExpirationTime($val)
     {
-        $this->ExpirationTime = (dateTime)$val;
+        $this->ExpirationTime = ()$val;
     }
 
     /**
@@ -86,7 +86,7 @@ class BestOfferType
      */
     public function setBuyer($val)
     {
-        $this->Buyer = (UserType)$val;
+        $this->Buyer = ()$val;
     }
 
     /**
@@ -95,7 +95,7 @@ class BestOfferType
      */
     public function setPrice($val)
     {
-        $this->Price = (AmountType)$val;
+        $this->Price = ()$val;
     }
 
     /**
@@ -104,7 +104,7 @@ class BestOfferType
      */
     public function setStatus($val)
     {
-        $this->Status = (BestOfferStatusCodeType)$val;
+        $this->Status = ()$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class BestOfferType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Quantity = (int)$val;
+        $this->Quantity = ()$val;
     }
 
     /**
@@ -128,7 +128,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->BuyerMessage = (string)$val;
+        $this->BuyerMessage = ()$val;
     }
 
     /**
@@ -140,7 +140,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (string)$val;
+        $this->SellerMessage = ()$val;
     }
 
     /**
@@ -149,7 +149,7 @@ class BestOfferType
      */
     public function setBestOfferCodeType($val)
     {
-        $this->BestOfferCodeType = (BestOfferTypeCodeType)$val;
+        $this->BestOfferCodeType = ()$val;
     }
 
     /**
@@ -161,7 +161,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallStatus');
         }
-        $this->CallStatus = (string)$val;
+        $this->CallStatus = ()$val;
     }
 
     /**
@@ -170,6 +170,6 @@ class BestOfferType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

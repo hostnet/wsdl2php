@@ -20,6 +20,6 @@ class GetCurrentPeriodResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Company_GetCurrentPeriodResult');
         }
-        $this->Company_GetCurrentPeriodResult = (string)$val;
+        $this->Company_GetCurrentPeriodResult = ()$val;
     }
 }

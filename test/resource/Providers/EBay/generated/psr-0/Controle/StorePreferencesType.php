@@ -21,6 +21,6 @@ class StorePreferencesType
 	 */
 	public function setVacationPreferences($val)
 	{
-        $this->VacationPreferences = (StoreVacationPreferencesType)$val;
+        $this->VacationPreferences = ()$val;
 	}
 }

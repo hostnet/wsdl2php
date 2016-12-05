@@ -51,7 +51,7 @@ class GetProductSellingPagesRequestType extends
      */
     public function setUseCase($val)
     {
-        $this->UseCase = (ProductUseCaseCodeType)$val;
+        $this->UseCase = ()$val;
     }
 
     /**
@@ -60,6 +60,6 @@ class GetProductSellingPagesRequestType extends
      */
     public function setProduct($val)
     {
-        $this->Product = (ProductType)$val;
+        $this->Product = ()$val;
     }
 }

@@ -32,7 +32,7 @@ class GetAllBiddersRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class GetAllBiddersRequestType extends
      */
     public function setCallMode($val)
     {
-        $this->CallMode = (GetAllBiddersModeCodeType)$val;
+        $this->CallMode = ()$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class GetAllBiddersRequestType extends
      */
     public function setIncludeBiddingSummary($val)
     {
-        $this->IncludeBiddingSummary = (boolean)$val;
+        $this->IncludeBiddingSummary = ()$val;
     }
 }

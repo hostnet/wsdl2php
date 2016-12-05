@@ -23,6 +23,6 @@ class EndItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (dateTime)$val;
+        $this->EndTime = ()$val;
 	}
 }

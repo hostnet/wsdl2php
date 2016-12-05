@@ -35,7 +35,7 @@ class GetSellerEventsResponseType extends
      */
     public function setTimeTo($val)
     {
-        $this->TimeTo = (dateTime)$val;
+        $this->TimeTo = ()$val;
     }
 
     /**
@@ -44,6 +44,6 @@ class GetSellerEventsResponseType extends
      */
     public function setItemArray($val)
     {
-        $this->ItemArray = (ItemArrayType)$val;
+        $this->ItemArray = ()$val;
     }
 }

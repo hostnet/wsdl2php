@@ -42,7 +42,7 @@ class MarkUpMarkDownEventType
      */
     public function setType($val)
     {
-        $this->Type = (MarkUpMarkDownEventTypeCodeType)$val;
+        $this->Type = ()$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class MarkUpMarkDownEventType
      */
     public function setTime($val)
     {
-        $this->Time = (dateTime)$val;
+        $this->Time = ()$val;
     }
 
     /**
@@ -63,7 +63,7 @@ class MarkUpMarkDownEventType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reason');
         }
-        $this->Reason = (string)$val;
+        $this->Reason = ()$val;
     }
 
     /**
@@ -72,6 +72,6 @@ class MarkUpMarkDownEventType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

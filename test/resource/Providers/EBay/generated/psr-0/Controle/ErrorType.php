@@ -60,7 +60,7 @@ class ErrorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->ShortMessage = (string)$val;
+        $this->ShortMessage = ()$val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class ErrorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->LongMessage = (string)$val;
+        $this->LongMessage = ()$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class ErrorType
 	 */
 	public function setErrorCode($val)
 	{
-        $this->ErrorCode = (token)$val;
+        $this->ErrorCode = ()$val;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class ErrorType
 	 */
 	public function setUserDisplayHint($val)
 	{
-        $this->UserDisplayHint = (boolean)$val;
+        $this->UserDisplayHint = ()$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class ErrorType
 	 */
 	public function setSeverityCode($val)
 	{
-        $this->SeverityCode = (SeverityCodeType)$val;
+        $this->SeverityCode = ()$val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class ErrorType
 	 */
 	public function setErrorParameters($val)
 	{
-        $this->ErrorParameters = (ErrorParameterType)$val;
+        $this->ErrorParameters = ()$val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class ErrorType
 	 */
 	public function setErrorClassification($val)
 	{
-        $this->ErrorClassification = (ErrorClassificationCodeType)$val;
+        $this->ErrorClassification = ()$val;
 	}
 
 	/**
@@ -126,6 +126,6 @@ class ErrorType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

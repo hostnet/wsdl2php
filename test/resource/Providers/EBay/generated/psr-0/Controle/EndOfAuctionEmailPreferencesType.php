@@ -54,7 +54,7 @@ class EndOfAuctionEmailPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TemplateText');
         }
-        $this->TemplateText = (string)$val;
+        $this->TemplateText = ()$val;
 	}
 
 	/**
@@ -63,7 +63,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setLogoURL($val)
 	{
-        $this->LogoURL = (anyURI)$val;
+        $this->LogoURL = ()$val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setLogoType($val)
 	{
-        $this->LogoType = (EndOfAuctionLogoTypeCodeType)$val;
+        $this->LogoType = ()$val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setEmailCustomized($val)
 	{
-        $this->EmailCustomized = (boolean)$val;
+        $this->EmailCustomized = ()$val;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setTextCustomized($val)
 	{
-        $this->TextCustomized = (boolean)$val;
+        $this->TextCustomized = ()$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setLogoCustomized($val)
 	{
-        $this->LogoCustomized = (boolean)$val;
+        $this->LogoCustomized = ()$val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setCopyEmail($val)
 	{
-        $this->CopyEmail = (boolean)$val;
+        $this->CopyEmail = ()$val;
 	}
 
 	/**
@@ -117,6 +117,6 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

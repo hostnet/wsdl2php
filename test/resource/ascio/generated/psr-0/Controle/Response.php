@@ -28,7 +28,7 @@ class Response
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->Message = (string)$val;
+        $this->Message = ()$val;
 	}
 
 	/**
@@ -37,7 +37,7 @@ class Response
 	 */
 	public function setResultCode($val)
 	{
-        $this->ResultCode = (short)$val;
+        $this->ResultCode = ()$val;
 	}
 
 	/**
@@ -46,6 +46,6 @@ class Response
 	 */
 	public function setValues($val)
 	{
-        $this->Values = (ArrayOfstring)$val;
+        $this->Values = ()$val;
 	}
 }

@@ -70,7 +70,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (PaginationResultType)$val;
+        $this->PaginationResult = ()$val;
 	}
 
 	/**
@@ -79,7 +79,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setHasMoreTransactions($val)
 	{
-        $this->HasMoreTransactions = (boolean)$val;
+        $this->HasMoreTransactions = ()$val;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class GetSellerTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TransactionsPerPage = (int)$val;
+        $this->TransactionsPerPage = ()$val;
 	}
 
 	/**
@@ -103,7 +103,7 @@ class GetSellerTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = (int)$val;
+        $this->PageNumber = ()$val;
 	}
 
 	/**
@@ -115,7 +115,7 @@ class GetSellerTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ReturnedTransactionCountActual = (int)$val;
+        $this->ReturnedTransactionCountActual = ()$val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = (UserType)$val;
+        $this->Seller = ()$val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (TransactionArrayType)$val;
+        $this->TransactionArray = ()$val;
 	}
 
 	/**
@@ -142,6 +142,6 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = (boolean)$val;
+        $this->PayPalPreferred = ()$val;
 	}
 }

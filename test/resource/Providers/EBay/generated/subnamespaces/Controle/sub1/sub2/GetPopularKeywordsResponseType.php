@@ -41,7 +41,7 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (PaginationResultType)$val;
+        $this->PaginationResult = ()$val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->CategoryArray = (CategoryArrayType)$val;
+        $this->CategoryArray = ()$val;
 	}
 
 	/**
@@ -59,6 +59,6 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setHasMore($val)
 	{
-        $this->HasMore = (boolean)$val;
+        $this->HasMore = ()$val;
 	}
 }

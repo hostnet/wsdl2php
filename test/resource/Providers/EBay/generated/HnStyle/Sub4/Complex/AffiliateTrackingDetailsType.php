@@ -49,7 +49,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackingID');
         }
-        $this->TrackingID = (string)$val;
+        $this->TrackingID = ()$val;
     }
 
     /**
@@ -61,7 +61,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackingPartnerCode');
         }
-        $this->TrackingPartnerCode = (string)$val;
+        $this->TrackingPartnerCode = ()$val;
     }
 
     /**
@@ -70,7 +70,7 @@ class AffiliateTrackingDetailsType
      */
     public function setApplicationDeviceType($val)
     {
-        $this->ApplicationDeviceType = (ApplicationDeviceTypeCodeType)$val;
+        $this->ApplicationDeviceType = ()$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AffiliateUserID');
         }
-        $this->AffiliateUserID = (string)$val;
+        $this->AffiliateUserID = ()$val;
     }
 
     /**
@@ -91,6 +91,6 @@ class AffiliateTrackingDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

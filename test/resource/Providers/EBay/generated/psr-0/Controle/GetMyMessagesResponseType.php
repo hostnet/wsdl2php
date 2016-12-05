@@ -39,7 +39,7 @@ class GetMyMessagesResponseType extends
 	 */
 	public function setSummary($val)
 	{
-        $this->Summary = (MyMessagesSummaryType)$val;
+        $this->Summary = ()$val;
 	}
 
 	/**
@@ -48,7 +48,7 @@ class GetMyMessagesResponseType extends
 	 */
 	public function setAlerts($val)
 	{
-        $this->Alerts = (MyMessagesAlertArrayType)$val;
+        $this->Alerts = ()$val;
 	}
 
 	/**
@@ -57,6 +57,6 @@ class GetMyMessagesResponseType extends
 	 */
 	public function setMessages($val)
 	{
-        $this->Messages = (MyMessagesMessageArrayType)$val;
+        $this->Messages = ()$val;
 	}
 }

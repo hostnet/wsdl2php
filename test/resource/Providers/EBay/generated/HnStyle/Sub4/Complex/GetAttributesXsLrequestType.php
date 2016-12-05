@@ -27,7 +27,7 @@ class GetAttributesXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = (string)$val;
+        $this->FileName = ()$val;
     }
 
     /**
@@ -39,6 +39,6 @@ class GetAttributesXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->FileVersion = (string)$val;
+        $this->FileVersion = ()$val;
     }
 }

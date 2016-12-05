@@ -39,7 +39,7 @@ class SpellingSuggestionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MatchingItemCount = (int)$val;
+        $this->MatchingItemCount = ()$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class SpellingSuggestionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = (string)$val;
+        $this->Text = ()$val;
     }
 
     /**
@@ -60,6 +60,6 @@ class SpellingSuggestionType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

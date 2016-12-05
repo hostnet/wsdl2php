@@ -37,7 +37,7 @@ class InsuranceDetailsType
      */
     public function setInsuranceFee($val)
     {
-        $this->InsuranceFee = (AmountType)$val;
+        $this->InsuranceFee = ()$val;
     }
 
     /**
@@ -46,7 +46,7 @@ class InsuranceDetailsType
      */
     public function setInsuranceOption($val)
     {
-        $this->InsuranceOption = (InsuranceOptionCodeType)$val;
+        $this->InsuranceOption = ()$val;
     }
 
     /**
@@ -55,6 +55,6 @@ class InsuranceDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -33,7 +33,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (PictureManagerSubscriptionLevelCodeType)$val;
+        $this->SubscriptionLevel = ()$val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (AmountType)$val;
+        $this->Fee = ()$val;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class PictureManagerSubscriptionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->StorageSize = (int)$val;
+        $this->StorageSize = ()$val;
 	}
 
 	/**
@@ -63,6 +63,6 @@ class PictureManagerSubscriptionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

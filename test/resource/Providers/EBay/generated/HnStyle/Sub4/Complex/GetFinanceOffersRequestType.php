@@ -30,7 +30,7 @@ class GetFinanceOffersRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (string)$val;
+        $this->FinanceOfferID = ()$val;
     }
 
     /**
@@ -39,6 +39,6 @@ class GetFinanceOffersRequestType extends
      */
     public function setLastModifiedDate($val)
     {
-        $this->LastModifiedDate = (dateTime)$val;
+        $this->LastModifiedDate = ()$val;
     }
 }

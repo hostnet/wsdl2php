@@ -32,7 +32,7 @@ class SummaryEventScheduleType
      */
     public function setEventType($val)
     {
-        $this->EventType = (NotificationEventTypeCodeType)$val;
+        $this->EventType = ()$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class SummaryEventScheduleType
      */
     public function setSummaryPeriod($val)
     {
-        $this->SummaryPeriod = (SummaryWindowPeriodCodeType)$val;
+        $this->SummaryPeriod = ()$val;
     }
 
     /**
@@ -50,7 +50,7 @@ class SummaryEventScheduleType
      */
     public function setFrequency($val)
     {
-        $this->Frequency = (SummaryFrequencyCodeType)$val;
+        $this->Frequency = ()$val;
     }
 
     /**
@@ -59,6 +59,6 @@ class SummaryEventScheduleType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -25,6 +25,6 @@ class MarkUpMarkDownHistoryType
 	 */
 	public function setMarkUpMarkDownEvent($val)
 	{
-        $this->MarkUpMarkDownEvent = (MarkUpMarkDownEventType)$val;
+        $this->MarkUpMarkDownEvent = ()$val;
 	}
 }

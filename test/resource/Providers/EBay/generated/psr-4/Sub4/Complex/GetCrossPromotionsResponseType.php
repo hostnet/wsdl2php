@@ -25,6 +25,6 @@ class GetCrossPromotionsResponseType extends
      */
     public function setCrossPromotion($val)
     {
-        $this->CrossPromotion = (CrossPromotionsType)$val;
+        $this->CrossPromotion = ()$val;
     }
 }

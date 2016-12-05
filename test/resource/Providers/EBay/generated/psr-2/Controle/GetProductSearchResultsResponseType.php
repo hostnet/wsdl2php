@@ -37,7 +37,7 @@ class GetProductSearchResultsResponseType extends
      */
     public function setDataElementSets($val)
     {
-        $this->DataElementSets = (DataElementSetType)$val;
+        $this->DataElementSets = ()$val;
     }
 
     /**
@@ -46,6 +46,6 @@ class GetProductSearchResultsResponseType extends
      */
     public function setProductSearchResult($val)
     {
-        $this->ProductSearchResult = (ProductSearchResultType)$val;
+        $this->ProductSearchResult = ()$val;
     }
 }

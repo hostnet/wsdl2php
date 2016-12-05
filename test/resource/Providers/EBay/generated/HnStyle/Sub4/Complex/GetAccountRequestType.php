@@ -71,7 +71,7 @@ class GetAccountRequestType extends
      */
     public function setAccountHistorySelection($val)
     {
-        $this->AccountHistorySelection = (AccountHistorySelectionCodeType)$val;
+        $this->AccountHistorySelection = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class GetAccountRequestType extends
      */
     public function setInvoiceDate($val)
     {
-        $this->InvoiceDate = (dateTime)$val;
+        $this->InvoiceDate = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class GetAccountRequestType extends
      */
     public function setBeginDate($val)
     {
-        $this->BeginDate = (dateTime)$val;
+        $this->BeginDate = ()$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetAccountRequestType extends
      */
     public function setEndDate($val)
     {
-        $this->EndDate = (dateTime)$val;
+        $this->EndDate = ()$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class GetAccountRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (PaginationType)$val;
+        $this->Pagination = ()$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class GetAccountRequestType extends
      */
     public function setExcludeBalance($val)
     {
-        $this->ExcludeBalance = (boolean)$val;
+        $this->ExcludeBalance = ()$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class GetAccountRequestType extends
      */
     public function setExcludeSummary($val)
     {
-        $this->ExcludeSummary = (boolean)$val;
+        $this->ExcludeSummary = ()$val;
     }
 
     /**
@@ -134,7 +134,7 @@ class GetAccountRequestType extends
      */
     public function setAccountEntrySortType($val)
     {
-        $this->AccountEntrySortType = (AccountEntrySortTypeCodeType)$val;
+        $this->AccountEntrySortType = ()$val;
     }
 
     /**
@@ -143,6 +143,6 @@ class GetAccountRequestType extends
      */
     public function setCurrency($val)
     {
-        $this->Currency = (CurrencyCodeType)$val;
+        $this->Currency = ()$val;
     }
 }

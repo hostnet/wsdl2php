@@ -37,7 +37,7 @@ class PictureManagerFolderType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FolderID = (int)$val;
+        $this->FolderID = ()$val;
 	}
 
 	/**
@@ -49,7 +49,7 @@ class PictureManagerFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (string)$val;
+        $this->Name = ()$val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class PictureManagerFolderType
 	 */
 	public function setPicture($val)
 	{
-        $this->Picture = (PictureManagerPictureType)$val;
+        $this->Picture = ()$val;
 	}
 
 	/**
@@ -67,6 +67,6 @@ class PictureManagerFolderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

@@ -59,7 +59,7 @@ class ProductSearchPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElements');
         }
-        $this->DataElements = (string)$val;
+        $this->DataElements = ()$val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class ProductSearchPageType
 	 */
 	public function setSearchCharacteristicsSet($val)
 	{
-        $this->SearchCharacteristicsSet = (CharacteristicsSetType)$val;
+        $this->SearchCharacteristicsSet = ()$val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class ProductSearchPageType
 	 */
 	public function setSearchType($val)
 	{
-        $this->SearchType = (CharacteristicsSearchCodeType)$val;
+        $this->SearchType = ()$val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class ProductSearchPageType
 	 */
 	public function setSortCharacteristics($val)
 	{
-        $this->SortCharacteristics = (CharacteristicType)$val;
+        $this->SortCharacteristics = ()$val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class ProductSearchPageType
 	 */
 	public function setDataElementSet($val)
 	{
-        $this->DataElementSet = (DataElementSetType)$val;
+        $this->DataElementSet = ()$val;
 	}
 
 	/**
@@ -104,6 +104,6 @@ class ProductSearchPageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

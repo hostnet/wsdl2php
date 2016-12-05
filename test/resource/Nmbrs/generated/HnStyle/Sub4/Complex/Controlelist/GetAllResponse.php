@@ -17,6 +17,6 @@ class GetAllResponse
      */
     public function setListGetAllResult($val)
     {
-        $this->List_GetAllResult = (ArrayOfCompany)$val;
+        $this->List_GetAllResult = ()$val;
     }
 }

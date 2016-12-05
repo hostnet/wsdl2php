@@ -52,7 +52,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword');
         }
-        $this->keyword = (string)$val;
+        $this->keyword = ()$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (string)$val;
+        $this->page = ()$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = (string)$val;
+        $this->mode = ()$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (string)$val;
+        $this->tag = ()$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (string)$val;
+        $this->type = ()$val;
     }
 
     /**
@@ -112,7 +112,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (string)$val;
+        $this->devtag = ()$val;
     }
 
     /**
@@ -124,7 +124,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = (string)$val;
+        $this->sort = ()$val;
     }
 
     /**
@@ -136,7 +136,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = (string)$val;
+        $this->variations = ()$val;
     }
 
     /**
@@ -148,6 +148,6 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (string)$val;
+        $this->locale = ()$val;
     }
 }

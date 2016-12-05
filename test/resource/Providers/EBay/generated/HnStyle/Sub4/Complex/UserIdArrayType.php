@@ -31,7 +31,7 @@ class UserIdArrayType
      */
     public function setUserID($val)
     {
-        $this->UserID = (UserIDType)$val;
+        $this->UserID = ()$val;
     }
 
     /**
@@ -40,6 +40,6 @@ class UserIdArrayType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

@@ -69,7 +69,7 @@ class ShippingServiceDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (string)$val;
+        $this->Description = ()$val;
 	}
 
 	/**
@@ -78,7 +78,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setExpeditedService($val)
 	{
-        $this->ExpeditedService = (boolean)$val;
+        $this->ExpeditedService = ()$val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setInternationalService($val)
 	{
-        $this->InternationalService = (boolean)$val;
+        $this->InternationalService = ()$val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (token)$val;
+        $this->ShippingService = ()$val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class ShippingServiceDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingServiceID = (int)$val;
+        $this->ShippingServiceID = ()$val;
 	}
 
 	/**
@@ -120,7 +120,7 @@ class ShippingServiceDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingTimeMax = (int)$val;
+        $this->ShippingTimeMax = ()$val;
 	}
 
 	/**
@@ -132,7 +132,7 @@ class ShippingServiceDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingTimeMin = (int)$val;
+        $this->ShippingTimeMin = ()$val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setShippingServiceCode($val)
 	{
-        $this->ShippingServiceCode = (ShippingServiceCodeType)$val;
+        $this->ShippingServiceCode = ()$val;
 	}
 
 	/**
@@ -150,6 +150,6 @@ class ShippingServiceDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

@@ -21,6 +21,6 @@ class OrderArrayType
      */
     public function setOrder($val)
     {
-        $this->Order = (OrderType)$val;
+        $this->Order = ()$val;
     }
 }

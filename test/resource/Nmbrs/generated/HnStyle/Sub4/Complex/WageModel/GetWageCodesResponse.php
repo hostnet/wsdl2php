@@ -17,6 +17,6 @@ class GetWageCodesResponse
      */
     public function setWageModelGetWageCodesResult($val)
     {
-        $this->WageModel_GetWageCodesResult = (ArrayOfWageCode)$val;
+        $this->WageModel_GetWageCodesResult = ()$val;
     }
 }

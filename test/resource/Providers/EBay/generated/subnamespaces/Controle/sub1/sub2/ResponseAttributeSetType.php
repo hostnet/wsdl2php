@@ -93,7 +93,7 @@ class ResponseAttributeSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ApproximatePages = (int)$val;
+        $this->ApproximatePages = ()$val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class ResponseAttributeSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeSetID = (int)$val;
+        $this->AttributeSetID = ()$val;
 	}
 
 	/**
@@ -114,7 +114,7 @@ class ResponseAttributeSetType
 	 */
 	public function setHasMore($val)
 	{
-        $this->HasMore = (boolean)$val;
+        $this->HasMore = ()$val;
 	}
 
 	/**
@@ -123,7 +123,7 @@ class ResponseAttributeSetType
 	 */
 	public function setProductFamilies($val)
 	{
-        $this->ProductFamilies = (ProductFamilyType)$val;
+        $this->ProductFamilies = ()$val;
 	}
 
 	/**
@@ -132,7 +132,7 @@ class ResponseAttributeSetType
 	 */
 	public function setProductFinderConstraints($val)
 	{
-        $this->ProductFinderConstraints = (ProductFinderConstraintType)$val;
+        $this->ProductFinderConstraints = ()$val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class ResponseAttributeSetType
 	 */
 	public function setTooManyMatchesFound($val)
 	{
-        $this->TooManyMatchesFound = (boolean)$val;
+        $this->TooManyMatchesFound = ()$val;
 	}
 
 	/**
@@ -153,7 +153,7 @@ class ResponseAttributeSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalProducts = (int)$val;
+        $this->TotalProducts = ()$val;
 	}
 
 	/**
@@ -162,6 +162,6 @@ class ResponseAttributeSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

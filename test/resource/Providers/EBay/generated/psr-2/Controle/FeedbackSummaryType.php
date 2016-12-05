@@ -71,7 +71,7 @@ class FeedbackSummaryType
      */
     public function setBidRetractionFeedbackPeriodArray($val)
     {
-        $this->BidRetractionFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
+        $this->BidRetractionFeedbackPeriodArray = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class FeedbackSummaryType
      */
     public function setNegativeFeedbackPeriodArray($val)
     {
-        $this->NegativeFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
+        $this->NegativeFeedbackPeriodArray = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class FeedbackSummaryType
      */
     public function setNeutralFeedbackPeriodArray($val)
     {
-        $this->NeutralFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
+        $this->NeutralFeedbackPeriodArray = ()$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class FeedbackSummaryType
      */
     public function setPositiveFeedbackPeriodArray($val)
     {
-        $this->PositiveFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
+        $this->PositiveFeedbackPeriodArray = ()$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class FeedbackSummaryType
      */
     public function setTotalFeedbackPeriodArray($val)
     {
-        $this->TotalFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
+        $this->TotalFeedbackPeriodArray = ()$val;
     }
 
     /**
@@ -119,7 +119,7 @@ class FeedbackSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NeutralCommentCountFromSuspendedUsers = (int)$val;
+        $this->NeutralCommentCountFromSuspendedUsers = ()$val;
     }
 
     /**
@@ -131,7 +131,7 @@ class FeedbackSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniqueNegativeFeedbackCount = (int)$val;
+        $this->UniqueNegativeFeedbackCount = ()$val;
     }
 
     /**
@@ -143,7 +143,7 @@ class FeedbackSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniquePositiveFeedbackCount = (int)$val;
+        $this->UniquePositiveFeedbackCount = ()$val;
     }
 
     /**
@@ -152,6 +152,6 @@ class FeedbackSummaryType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

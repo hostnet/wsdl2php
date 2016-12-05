@@ -22,6 +22,6 @@ class ValidateChallengeInputResponseType extends
 	 */
 	public function setValidToken($val)
 	{
-        $this->ValidToken = (boolean)$val;
+        $this->ValidToken = ()$val;
 	}
 }

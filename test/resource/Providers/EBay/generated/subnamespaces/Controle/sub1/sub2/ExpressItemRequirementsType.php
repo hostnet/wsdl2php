@@ -129,7 +129,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setSellerExpressEligible($val)
 	{
-        $this->SellerExpressEligible = (boolean)$val;
+        $this->SellerExpressEligible = ()$val;
 	}
 
 	/**
@@ -138,7 +138,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressOptOut($val)
 	{
-        $this->ExpressOptOut = (boolean)$val;
+        $this->ExpressOptOut = ()$val;
 	}
 
 	/**
@@ -147,7 +147,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressApproved($val)
 	{
-        $this->ExpressApproved = (boolean)$val;
+        $this->ExpressApproved = ()$val;
 	}
 
 	/**
@@ -156,7 +156,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressEligibleListingType($val)
 	{
-        $this->ExpressEligibleListingType = (boolean)$val;
+        $this->ExpressEligibleListingType = ()$val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressEnabledCategory($val)
 	{
-        $this->ExpressEnabledCategory = (boolean)$val;
+        $this->ExpressEnabledCategory = ()$val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
-        $this->EligiblePayPalAccount = (boolean)$val;
+        $this->EligiblePayPalAccount = ()$val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setDomesticShippingCost($val)
 	{
-        $this->DomesticShippingCost = (boolean)$val;
+        $this->DomesticShippingCost = ()$val;
 	}
 
 	/**
@@ -192,7 +192,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleReturnPolicy($val)
 	{
-        $this->EligibleReturnPolicy = (boolean)$val;
+        $this->EligibleReturnPolicy = ()$val;
 	}
 
 	/**
@@ -201,7 +201,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPicture($val)
 	{
-        $this->Picture = (boolean)$val;
+        $this->Picture = ()$val;
 	}
 
 	/**
@@ -210,7 +210,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleItemCondition($val)
 	{
-        $this->EligibleItemCondition = (boolean)$val;
+        $this->EligibleItemCondition = ()$val;
 	}
 
 	/**
@@ -219,7 +219,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPriceAboveMinimum($val)
 	{
-        $this->PriceAboveMinimum = (boolean)$val;
+        $this->PriceAboveMinimum = ()$val;
 	}
 
 	/**
@@ -228,7 +228,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPriceBelowMaximum($val)
 	{
-        $this->PriceBelowMaximum = (boolean)$val;
+        $this->PriceBelowMaximum = ()$val;
 	}
 
 	/**
@@ -237,7 +237,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleCheckout($val)
 	{
-        $this->EligibleCheckout = (boolean)$val;
+        $this->EligibleCheckout = ()$val;
 	}
 
 	/**
@@ -246,7 +246,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoPreapprovedBidderList($val)
 	{
-        $this->NoPreapprovedBidderList = (boolean)$val;
+        $this->NoPreapprovedBidderList = ()$val;
 	}
 
 	/**
@@ -255,7 +255,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoCharity($val)
 	{
-        $this->NoCharity = (boolean)$val;
+        $this->NoCharity = ()$val;
 	}
 
 	/**
@@ -264,7 +264,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoDigitalDelivery($val)
 	{
-        $this->NoDigitalDelivery = (boolean)$val;
+        $this->NoDigitalDelivery = ()$val;
 	}
 
 	/**
@@ -273,7 +273,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setCombinedShippingDiscount($val)
 	{
-        $this->CombinedShippingDiscount = (boolean)$val;
+        $this->CombinedShippingDiscount = ()$val;
 	}
 
 	/**
@@ -282,7 +282,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setShipFromEligibleCountry($val)
 	{
-        $this->ShipFromEligibleCountry = (boolean)$val;
+        $this->ShipFromEligibleCountry = ()$val;
 	}
 
 	/**
@@ -291,7 +291,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
-        $this->PayPalAccountAcceptsUnconfirmedAddress = (boolean)$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = ()$val;
 	}
 
 	/**
@@ -300,6 +300,6 @@ class ExpressItemRequirementsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

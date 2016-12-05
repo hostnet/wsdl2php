@@ -21,6 +21,6 @@ class TransactionArrayType
 	 */
 	public function setTransaction($val)
 	{
-        $this->Transaction = (TransactionType)$val;
+        $this->Transaction = ()$val;
 	}
 }

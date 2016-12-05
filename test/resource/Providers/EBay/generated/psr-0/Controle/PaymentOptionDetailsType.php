@@ -30,7 +30,7 @@ class PaymentOptionDetailsType
 	 */
 	public function setPaymentOption($val)
 	{
-        $this->PaymentOption = (BuyerPaymentMethodCodeType)$val;
+        $this->PaymentOption = ()$val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class PaymentOptionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (string)$val;
+        $this->Description = ()$val;
 	}
 
 	/**
@@ -51,6 +51,6 @@ class PaymentOptionDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

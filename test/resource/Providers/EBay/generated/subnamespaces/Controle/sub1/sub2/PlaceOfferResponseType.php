@@ -24,6 +24,6 @@ class PlaceOfferResponseType extends
 	 */
 	public function setSellingStatus($val)
 	{
-        $this->SellingStatus = (SellingStatusType)$val;
+        $this->SellingStatus = ()$val;
 	}
 }

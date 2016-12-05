@@ -19,6 +19,6 @@ class GetProductFinderXsLresponseType extends
      */
     public function setXSLFile($val)
     {
-        $this->XSLFile = (XSLFileType)$val;
+        $this->XSLFile = ()$val;
     }
 }

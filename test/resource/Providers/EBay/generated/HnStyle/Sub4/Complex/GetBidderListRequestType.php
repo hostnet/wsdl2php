@@ -57,7 +57,7 @@ class GetBidderListRequestType extends
      */
     public function setActiveItemsOnly($val)
     {
-        $this->ActiveItemsOnly = (boolean)$val;
+        $this->ActiveItemsOnly = ()$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class GetBidderListRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->EndTimeFrom = (dateTime)$val;
+        $this->EndTimeFrom = ()$val;
     }
 
     /**
@@ -75,7 +75,7 @@ class GetBidderListRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->EndTimeTo = (dateTime)$val;
+        $this->EndTimeTo = ()$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class GetBidderListRequestType extends
      */
     public function setUserID($val)
     {
-        $this->UserID = (UserIDType)$val;
+        $this->UserID = ()$val;
     }
 
     /**
@@ -93,6 +93,6 @@ class GetBidderListRequestType extends
      */
     public function setGranularityLevel($val)
     {
-        $this->GranularityLevel = (GranularityLevelCodeType)$val;
+        $this->GranularityLevel = ()$val;
     }
 }

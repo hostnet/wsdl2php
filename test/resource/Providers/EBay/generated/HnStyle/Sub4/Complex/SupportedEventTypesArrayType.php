@@ -20,6 +20,6 @@ class SupportedEventTypesArrayType
      */
     public function setEventType($val)
     {
-        $this->EventType = (NotificationEventTypeCodeType)$val;
+        $this->EventType = ()$val;
     }
 }

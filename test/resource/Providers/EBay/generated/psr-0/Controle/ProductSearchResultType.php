@@ -123,7 +123,7 @@ class ProductSearchResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ApproximatePages = (int)$val;
+        $this->ApproximatePages = ()$val;
 	}
 
 	/**
@@ -135,7 +135,7 @@ class ProductSearchResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeSetID = (int)$val;
+        $this->AttributeSetID = ()$val;
 	}
 
 	/**
@@ -144,7 +144,7 @@ class ProductSearchResultType
 	 */
 	public function setHasMore($val)
 	{
-        $this->HasMore = (boolean)$val;
+        $this->HasMore = ()$val;
 	}
 
 	/**
@@ -153,7 +153,7 @@ class ProductSearchResultType
 	 */
 	public function setProductFamilies($val)
 	{
-        $this->ProductFamilies = (ProductFamilyType)$val;
+        $this->ProductFamilies = ()$val;
 	}
 
 	/**
@@ -162,7 +162,7 @@ class ProductSearchResultType
 	 */
 	public function setProductFinderConstraints($val)
 	{
-        $this->ProductFinderConstraints = (ProductFinderConstraintType)$val;
+        $this->ProductFinderConstraints = ()$val;
 	}
 
 	/**
@@ -171,7 +171,7 @@ class ProductSearchResultType
 	 */
 	public function setTooManyMatchesFound($val)
 	{
-        $this->TooManyMatchesFound = (boolean)$val;
+        $this->TooManyMatchesFound = ()$val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class ProductSearchResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalProducts = (int)$val;
+        $this->TotalProducts = ()$val;
 	}
 
 	/**
@@ -195,7 +195,7 @@ class ProductSearchResultType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ID');
         }
-        $this->ID = (string)$val;
+        $this->ID = ()$val;
 	}
 
 	/**
@@ -207,7 +207,7 @@ class ProductSearchResultType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumProducts');
         }
-        $this->NumProducts = (string)$val;
+        $this->NumProducts = ()$val;
 	}
 
 	/**
@@ -216,7 +216,7 @@ class ProductSearchResultType
 	 */
 	public function setAttributeSet($val)
 	{
-        $this->AttributeSet = (ResponseAttributeSetType)$val;
+        $this->AttributeSet = ()$val;
 	}
 
 	/**
@@ -225,7 +225,7 @@ class ProductSearchResultType
 	 */
 	public function setDisplayStockPhotos($val)
 	{
-        $this->DisplayStockPhotos = (boolean)$val;
+        $this->DisplayStockPhotos = ()$val;
 	}
 
 	/**
@@ -234,6 +234,6 @@ class ProductSearchResultType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

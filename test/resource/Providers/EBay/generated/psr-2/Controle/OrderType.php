@@ -129,7 +129,7 @@ class OrderType
      */
     public function setOrderID($val)
     {
-        $this->OrderID = (OrderIDType)$val;
+        $this->OrderID = ()$val;
     }
 
     /**
@@ -138,7 +138,7 @@ class OrderType
      */
     public function setOrderStatus($val)
     {
-        $this->OrderStatus = (OrderStatusCodeType)$val;
+        $this->OrderStatus = ()$val;
     }
 
     /**
@@ -147,7 +147,7 @@ class OrderType
      */
     public function setAdjustmentAmount($val)
     {
-        $this->AdjustmentAmount = (AmountType)$val;
+        $this->AdjustmentAmount = ()$val;
     }
 
     /**
@@ -156,7 +156,7 @@ class OrderType
      */
     public function setAmountPaid($val)
     {
-        $this->AmountPaid = (AmountType)$val;
+        $this->AmountPaid = ()$val;
     }
 
     /**
@@ -165,7 +165,7 @@ class OrderType
      */
     public function setAmountSaved($val)
     {
-        $this->AmountSaved = (AmountType)$val;
+        $this->AmountSaved = ()$val;
     }
 
     /**
@@ -174,7 +174,7 @@ class OrderType
      */
     public function setCheckoutStatus($val)
     {
-        $this->CheckoutStatus = (CheckoutStatusType)$val;
+        $this->CheckoutStatus = ()$val;
     }
 
     /**
@@ -183,7 +183,7 @@ class OrderType
      */
     public function setShippingDetails($val)
     {
-        $this->ShippingDetails = (ShippingDetailsType)$val;
+        $this->ShippingDetails = ()$val;
     }
 
     /**
@@ -192,7 +192,7 @@ class OrderType
      */
     public function setCreatingUserRole($val)
     {
-        $this->CreatingUserRole = (TradingRoleCodeType)$val;
+        $this->CreatingUserRole = ()$val;
     }
 
     /**
@@ -201,7 +201,7 @@ class OrderType
      */
     public function setCreatedTime($val)
     {
-        $this->CreatedTime = (dateTime)$val;
+        $this->CreatedTime = ()$val;
     }
 
     /**
@@ -213,7 +213,7 @@ class OrderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (string)$val;
+        $this->FinanceOfferID = ()$val;
     }
 
     /**
@@ -222,7 +222,7 @@ class OrderType
      */
     public function setPaymentMethods($val)
     {
-        $this->PaymentMethods = (BuyerPaymentMethodCodeType)$val;
+        $this->PaymentMethods = ()$val;
     }
 
     /**
@@ -234,7 +234,7 @@ class OrderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerEmail');
         }
-        $this->SellerEmail = (string)$val;
+        $this->SellerEmail = ()$val;
     }
 
     /**
@@ -243,7 +243,7 @@ class OrderType
      */
     public function setShippingAddress($val)
     {
-        $this->ShippingAddress = (AddressType)$val;
+        $this->ShippingAddress = ()$val;
     }
 
     /**
@@ -252,7 +252,7 @@ class OrderType
      */
     public function setShippingServiceSelected($val)
     {
-        $this->ShippingServiceSelected = (ShippingServiceOptionsType)$val;
+        $this->ShippingServiceSelected = ()$val;
     }
 
     /**
@@ -261,7 +261,7 @@ class OrderType
      */
     public function setSubtotal($val)
     {
-        $this->Subtotal = (AmountType)$val;
+        $this->Subtotal = ()$val;
     }
 
     /**
@@ -270,7 +270,7 @@ class OrderType
      */
     public function setTotal($val)
     {
-        $this->Total = (AmountType)$val;
+        $this->Total = ()$val;
     }
 
     /**
@@ -279,7 +279,7 @@ class OrderType
      */
     public function setExternalTransaction($val)
     {
-        $this->ExternalTransaction = (ExternalTransactionType)$val;
+        $this->ExternalTransaction = ()$val;
     }
 
     /**
@@ -288,7 +288,7 @@ class OrderType
      */
     public function setDigitalDelivery($val)
     {
-        $this->DigitalDelivery = (boolean)$val;
+        $this->DigitalDelivery = ()$val;
     }
 
     /**
@@ -297,7 +297,7 @@ class OrderType
      */
     public function setTransactionArray($val)
     {
-        $this->TransactionArray = (TransactionArrayType)$val;
+        $this->TransactionArray = ()$val;
     }
 
     /**
@@ -306,7 +306,7 @@ class OrderType
      */
     public function setBuyerUserID($val)
     {
-        $this->BuyerUserID = (UserIDType)$val;
+        $this->BuyerUserID = ()$val;
     }
 
     /**
@@ -315,6 +315,6 @@ class OrderType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

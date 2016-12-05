@@ -26,7 +26,7 @@ class SoApStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varString = (string)$val;
+        $this->varString = ()$val;
 	}
 
 	/**
@@ -38,7 +38,7 @@ class SoApStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varInt = (int)$val;
+        $this->varInt = ()$val;
 	}
 
 	/**
@@ -47,7 +47,7 @@ class SoApStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varFloat = (float)$val;
+        $this->varFloat = ()$val;
 	}
 }
 
@@ -81,7 +81,7 @@ class SoApStructStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varString = (string)$val;
+        $this->varString = ()$val;
 	}
 
 	/**
@@ -93,7 +93,7 @@ class SoApStructStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varInt = (int)$val;
+        $this->varInt = ()$val;
 	}
 
 	/**
@@ -102,7 +102,7 @@ class SoApStructStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varFloat = (float)$val;
+        $this->varFloat = ()$val;
 	}
 
 	/**
@@ -111,7 +111,7 @@ class SoApStructStruct
 	 */
 	public function setVarStruct($val)
 	{
-        $this->varStruct = (SOAPStruct)$val;
+        $this->varStruct = ()$val;
 	}
 }
 
@@ -145,7 +145,7 @@ class SoApArrayStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varString = (string)$val;
+        $this->varString = ()$val;
 	}
 
 	/**
@@ -157,7 +157,7 @@ class SoApArrayStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varInt = (int)$val;
+        $this->varInt = ()$val;
 	}
 
 	/**
@@ -166,7 +166,7 @@ class SoApArrayStruct
 	 */
 	public function setVarFloat($val)
 	{
-        $this->varFloat = (float)$val;
+        $this->varFloat = ()$val;
 	}
 
 	/**
@@ -175,7 +175,7 @@ class SoApArrayStruct
 	 */
 	public function setVarArray($val)
 	{
-        $this->varArray = (ArrayOfstring)$val;
+        $this->varArray = ()$val;
 	}
 }
 

@@ -25,7 +25,7 @@ class SiteLocationType
 	 */
 	public function setSiteID($val)
 	{
-        $this->SiteID = (SiteIDFilterCodeType)$val;
+        $this->SiteID = ()$val;
 	}
 
 	/**
@@ -34,6 +34,6 @@ class SiteLocationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

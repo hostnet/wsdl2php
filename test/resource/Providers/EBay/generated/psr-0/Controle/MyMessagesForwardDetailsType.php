@@ -29,7 +29,7 @@ class MyMessagesForwardDetailsType
 	 */
 	public function setUserForwardDate($val)
 	{
-        $this->UserForwardDate = (dateTime)$val;
+        $this->UserForwardDate = ()$val;
 	}
 
 	/**
@@ -41,7 +41,7 @@ class MyMessagesForwardDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ForwardMessageEncoding');
         }
-        $this->ForwardMessageEncoding = (string)$val;
+        $this->ForwardMessageEncoding = ()$val;
 	}
 
 	/**
@@ -50,6 +50,6 @@ class MyMessagesForwardDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

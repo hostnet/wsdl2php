@@ -17,6 +17,6 @@ class DoRegistrantVerificationResponse
 	 */
 	public function setDoRegistrantVerificationResult($val)
 	{
-        $this->DoRegistrantVerificationResult = (Response)$val;
+        $this->DoRegistrantVerificationResult = ()$val;
 	}
 }

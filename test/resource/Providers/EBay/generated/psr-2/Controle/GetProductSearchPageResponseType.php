@@ -36,7 +36,7 @@ class GetProductSearchPageResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (string)$val;
+        $this->AttributeSystemVersion = ()$val;
     }
 
     /**
@@ -45,6 +45,6 @@ class GetProductSearchPageResponseType extends
      */
     public function setProductSearchPage($val)
     {
-        $this->ProductSearchPage = (ProductSearchPageType)$val;
+        $this->ProductSearchPage = ()$val;
     }
 }

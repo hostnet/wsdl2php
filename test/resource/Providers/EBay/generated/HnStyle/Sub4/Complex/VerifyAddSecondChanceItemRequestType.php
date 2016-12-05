@@ -72,7 +72,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setRecipientBidderUserID($val)
     {
-        $this->RecipientBidderUserID = (UserIDType)$val;
+        $this->RecipientBidderUserID = ()$val;
     }
 
     /**
@@ -81,7 +81,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setBuyItNowPrice($val)
     {
-        $this->BuyItNowPrice = (AmountType)$val;
+        $this->BuyItNowPrice = ()$val;
     }
 
     /**
@@ -90,7 +90,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setCopyEmailToSeller($val)
     {
-        $this->CopyEmailToSeller = (boolean)$val;
+        $this->CopyEmailToSeller = ()$val;
     }
 
     /**
@@ -99,7 +99,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setDuration($val)
     {
-        $this->Duration = (SecondChanceOfferDurationCodeType)$val;
+        $this->Duration = ()$val;
     }
 
     /**
@@ -108,7 +108,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -117,7 +117,7 @@ class VerifyAddSecondChanceItemRequestType extends
      */
     public function setSite($val)
     {
-        $this->Site = (SiteCodeType)$val;
+        $this->Site = ()$val;
     }
 
     /**
@@ -129,6 +129,6 @@ class VerifyAddSecondChanceItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (string)$val;
+        $this->SellerMessage = ()$val;
     }
 }

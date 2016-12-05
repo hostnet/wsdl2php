@@ -33,7 +33,7 @@ class RegionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->RegionID = (string)$val;
+        $this->RegionID = ()$val;
     }
 
     /**
@@ -45,7 +45,7 @@ class RegionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (string)$val;
+        $this->Description = ()$val;
     }
 
     /**
@@ -54,6 +54,6 @@ class RegionDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

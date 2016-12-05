@@ -83,7 +83,7 @@ class CharacteristicType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeID = (int)$val;
+        $this->AttributeID = ()$val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DateFormat');
         }
-        $this->DateFormat = (string)$val;
+        $this->DateFormat = ()$val;
 	}
 
 	/**
@@ -107,7 +107,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplaySequence');
         }
-        $this->DisplaySequence = (string)$val;
+        $this->DisplaySequence = ()$val;
 	}
 
 	/**
@@ -119,7 +119,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayUOM');
         }
-        $this->DisplayUOM = (string)$val;
+        $this->DisplayUOM = ()$val;
 	}
 
 	/**
@@ -128,7 +128,7 @@ class CharacteristicType
 	 */
 	public function setLabel($val)
 	{
-        $this->Label = (LabelType)$val;
+        $this->Label = ()$val;
 	}
 
 	/**
@@ -137,7 +137,7 @@ class CharacteristicType
 	 */
 	public function setSortOrder($val)
 	{
-        $this->SortOrder = (SortOrderCodeType)$val;
+        $this->SortOrder = ()$val;
 	}
 
 	/**
@@ -146,7 +146,7 @@ class CharacteristicType
 	 */
 	public function setValueList($val)
 	{
-        $this->ValueList = (ValType)$val;
+        $this->ValueList = ()$val;
 	}
 
 	/**
@@ -155,6 +155,6 @@ class CharacteristicType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

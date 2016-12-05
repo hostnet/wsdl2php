@@ -51,7 +51,7 @@ class SearchAttributesType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeID = (int)$val;
+        $this->AttributeID = ()$val;
 	}
 
 	/**
@@ -60,7 +60,7 @@ class SearchAttributesType
 	 */
 	public function setDateSpecifier($val)
 	{
-        $this->DateSpecifier = (DateSpecifierCodeType)$val;
+        $this->DateSpecifier = ()$val;
 	}
 
 	/**
@@ -69,7 +69,7 @@ class SearchAttributesType
 	 */
 	public function setRangeSpecifier($val)
 	{
-        $this->RangeSpecifier = (RangeCodeType)$val;
+        $this->RangeSpecifier = ()$val;
 	}
 
 	/**
@@ -78,7 +78,7 @@ class SearchAttributesType
 	 */
 	public function setValueList($val)
 	{
-        $this->ValueList = (ValType)$val;
+        $this->ValueList = ()$val;
 	}
 
 	/**
@@ -87,6 +87,6 @@ class SearchAttributesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

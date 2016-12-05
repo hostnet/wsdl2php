@@ -17,6 +17,6 @@ class UploadRegistrantVerificationMessageResponse
      */
     public function setUploadRegistrantVerificationMessageResult($val)
     {
-        $this->UploadRegistrantVerificationMessageResult = (Response)$val;
+        $this->UploadRegistrantVerificationMessageResult = ()$val;
     }
 }

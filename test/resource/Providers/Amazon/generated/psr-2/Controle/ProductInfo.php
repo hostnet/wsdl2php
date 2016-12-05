@@ -32,7 +32,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalResults');
         }
-        $this->TotalResults = (string)$val;
+        $this->TotalResults = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalPages');
         }
-        $this->TotalPages = (string)$val;
+        $this->TotalPages = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListName');
         }
-        $this->ListName = (string)$val;
+        $this->ListName = ()$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class ProductInfo
      */
     public function setDetails($val)
     {
-        $this->Details = (DetailsArray)$val;
+        $this->Details = ()$val;
     }
 }

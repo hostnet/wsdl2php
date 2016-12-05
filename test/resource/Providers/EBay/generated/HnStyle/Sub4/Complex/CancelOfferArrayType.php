@@ -28,7 +28,7 @@ class CancelOfferArrayType
      */
     public function setCancelOffer($val)
     {
-        $this->CancelOffer = (CancelOfferType)$val;
+        $this->CancelOffer = ()$val;
     }
 
     /**
@@ -37,6 +37,6 @@ class CancelOfferArrayType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

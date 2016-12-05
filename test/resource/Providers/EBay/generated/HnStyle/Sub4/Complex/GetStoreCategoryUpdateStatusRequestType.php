@@ -29,6 +29,6 @@ class GetStoreCategoryUpdateStatusRequestType extends
      */
     public function setTaskID($val)
     {
-        $this->TaskID = (long)$val;
+        $this->TaskID = ()$val;
     }
 }

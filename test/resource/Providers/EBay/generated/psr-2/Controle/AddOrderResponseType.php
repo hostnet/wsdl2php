@@ -28,7 +28,7 @@ class AddOrderResponseType extends
      */
     public function setOrderID($val)
     {
-        $this->OrderID = (OrderIDType)$val;
+        $this->OrderID = ()$val;
     }
 
     /**
@@ -37,6 +37,6 @@ class AddOrderResponseType extends
      */
     public function setCreatedTime($val)
     {
-        $this->CreatedTime = (dateTime)$val;
+        $this->CreatedTime = ()$val;
     }
 }

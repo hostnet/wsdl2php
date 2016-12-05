@@ -21,6 +21,6 @@ class CategoryArrayType
      */
     public function setCategory($val)
     {
-        $this->Category = (CategoryType)$val;
+        $this->Category = ()$val;
     }
 }

@@ -17,6 +17,6 @@ class GetCurrentResponse
      */
     public function setAddressGetCurrentResult($val)
     {
-        $this->Address_GetCurrentResult = (Address)$val;
+        $this->Address_GetCurrentResult = ()$val;
     }
 }

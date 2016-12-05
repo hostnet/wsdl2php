@@ -34,7 +34,7 @@ class ShippingLocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingLocation');
         }
-        $this->ShippingLocation = (string)$val;
+        $this->ShippingLocation = ()$val;
     }
 
     /**
@@ -46,7 +46,7 @@ class ShippingLocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (string)$val;
+        $this->Description = ()$val;
     }
 
     /**
@@ -55,6 +55,6 @@ class ShippingLocationDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

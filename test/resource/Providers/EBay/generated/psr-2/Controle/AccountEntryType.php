@@ -100,7 +100,7 @@ class AccountEntryType
      */
     public function setAccountDetailsEntryType($val)
     {
-        $this->AccountDetailsEntryType = (AccountDetailEntryCodeType)$val;
+        $this->AccountDetailsEntryType = ()$val;
     }
 
     /**
@@ -112,7 +112,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (string)$val;
+        $this->Description = ()$val;
     }
 
     /**
@@ -121,7 +121,7 @@ class AccountEntryType
      */
     public function setBalance($val)
     {
-        $this->Balance = (AmountType)$val;
+        $this->Balance = ()$val;
     }
 
     /**
@@ -130,7 +130,7 @@ class AccountEntryType
      */
     public function setCredit($val)
     {
-        $this->Credit = (AmountType)$val;
+        $this->Credit = ()$val;
     }
 
     /**
@@ -139,7 +139,7 @@ class AccountEntryType
      */
     public function setDate($val)
     {
-        $this->Date = (dateTime)$val;
+        $this->Date = ()$val;
     }
 
     /**
@@ -148,7 +148,7 @@ class AccountEntryType
      */
     public function setDebit($val)
     {
-        $this->Debit = (AmountType)$val;
+        $this->Debit = ()$val;
     }
 
     /**
@@ -157,7 +157,7 @@ class AccountEntryType
      */
     public function setGrossDetailAmount($val)
     {
-        $this->GrossDetailAmount = (AmountType)$val;
+        $this->GrossDetailAmount = ()$val;
     }
 
     /**
@@ -166,7 +166,7 @@ class AccountEntryType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -178,7 +178,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Memo');
         }
-        $this->Memo = (string)$val;
+        $this->Memo = ()$val;
     }
 
     /**
@@ -187,7 +187,7 @@ class AccountEntryType
      */
     public function setNetDetailAmount($val)
     {
-        $this->NetDetailAmount = (AmountType)$val;
+        $this->NetDetailAmount = ()$val;
     }
 
     /**
@@ -199,7 +199,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefNumber');
         }
-        $this->RefNumber = (string)$val;
+        $this->RefNumber = ()$val;
     }
 
     /**
@@ -208,7 +208,7 @@ class AccountEntryType
      */
     public function setVATPercent($val)
     {
-        $this->VATPercent = (decimal)$val;
+        $this->VATPercent = ()$val;
     }
 
     /**
@@ -220,7 +220,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (string)$val;
+        $this->Title = ()$val;
     }
 
     /**
@@ -229,6 +229,6 @@ class AccountEntryType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

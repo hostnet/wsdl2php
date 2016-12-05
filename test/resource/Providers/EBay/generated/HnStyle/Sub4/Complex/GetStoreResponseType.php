@@ -26,6 +26,6 @@ class GetStoreResponseType extends
      */
     public function setStore($val)
     {
-        $this->Store = (StoreType)$val;
+        $this->Store = ()$val;
     }
 }

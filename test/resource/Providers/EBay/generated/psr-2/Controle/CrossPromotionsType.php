@@ -59,7 +59,7 @@ class CrossPromotionsType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class CrossPromotionsType
      */
     public function setPrimaryScheme($val)
     {
-        $this->PrimaryScheme = (PromotionSchemeCodeType)$val;
+        $this->PrimaryScheme = ()$val;
     }
 
     /**
@@ -77,7 +77,7 @@ class CrossPromotionsType
      */
     public function setPromotionMethod($val)
     {
-        $this->PromotionMethod = (PromotionMethodCodeType)$val;
+        $this->PromotionMethod = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerID');
         }
-        $this->SellerID = (string)$val;
+        $this->SellerID = ()$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class CrossPromotionsType
      */
     public function setShippingDiscount($val)
     {
-        $this->ShippingDiscount = (boolean)$val;
+        $this->ShippingDiscount = ()$val;
     }
 
     /**
@@ -110,7 +110,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerKey');
         }
-        $this->SellerKey = (string)$val;
+        $this->SellerKey = ()$val;
     }
 
     /**
@@ -122,7 +122,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (string)$val;
+        $this->StoreName = ()$val;
     }
 
     /**
@@ -131,7 +131,7 @@ class CrossPromotionsType
      */
     public function setPromotedItem($val)
     {
-        $this->PromotedItem = (PromotedItemType)$val;
+        $this->PromotedItem = ()$val;
     }
 
     /**
@@ -140,6 +140,6 @@ class CrossPromotionsType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

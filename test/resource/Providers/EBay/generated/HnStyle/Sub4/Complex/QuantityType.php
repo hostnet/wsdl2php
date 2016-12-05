@@ -25,7 +25,7 @@ class QuantityType
      */
     public function set($val)
     {
-        $this->_ = (decimal)$val;
+        $this->_ = ()$val;
     }
 
     /**
@@ -34,6 +34,6 @@ class QuantityType
      */
     public function setUnit($val)
     {
-        $this->unit = (token)$val;
+        $this->unit = ()$val;
     }
 }

@@ -25,6 +25,6 @@ class FeedbackPeriodArrayType
 	 */
 	public function setFeedbackPeriod($val)
 	{
-        $this->FeedbackPeriod = (FeedbackPeriodType)$val;
+        $this->FeedbackPeriod = ()$val;
 	}
 }

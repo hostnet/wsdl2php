@@ -240,7 +240,7 @@ class TransactionType
      */
     public function setAmountPaid($val)
     {
-        $this->AmountPaid = (AmountType)$val;
+        $this->AmountPaid = ()$val;
     }
 
     /**
@@ -249,7 +249,7 @@ class TransactionType
      */
     public function setAdjustmentAmount($val)
     {
-        $this->AdjustmentAmount = (AmountType)$val;
+        $this->AdjustmentAmount = ()$val;
     }
 
     /**
@@ -258,7 +258,7 @@ class TransactionType
      */
     public function setConvertedAdjustmentAmount($val)
     {
-        $this->ConvertedAdjustmentAmount = (AmountType)$val;
+        $this->ConvertedAdjustmentAmount = ()$val;
     }
 
     /**
@@ -267,7 +267,7 @@ class TransactionType
      */
     public function setBuyer($val)
     {
-        $this->Buyer = (UserType)$val;
+        $this->Buyer = ()$val;
     }
 
     /**
@@ -276,7 +276,7 @@ class TransactionType
      */
     public function setShippingDetails($val)
     {
-        $this->ShippingDetails = (ShippingDetailsType)$val;
+        $this->ShippingDetails = ()$val;
     }
 
     /**
@@ -285,7 +285,7 @@ class TransactionType
      */
     public function setConvertedAmountPaid($val)
     {
-        $this->ConvertedAmountPaid = (AmountType)$val;
+        $this->ConvertedAmountPaid = ()$val;
     }
 
     /**
@@ -294,7 +294,7 @@ class TransactionType
      */
     public function setConvertedTransactionPrice($val)
     {
-        $this->ConvertedTransactionPrice = (AmountType)$val;
+        $this->ConvertedTransactionPrice = ()$val;
     }
 
     /**
@@ -303,7 +303,7 @@ class TransactionType
      */
     public function setCreatedDate($val)
     {
-        $this->CreatedDate = (dateTime)$val;
+        $this->CreatedDate = ()$val;
     }
 
     /**
@@ -312,7 +312,7 @@ class TransactionType
      */
     public function setDepositType($val)
     {
-        $this->DepositType = (DepositTypeCodeType)$val;
+        $this->DepositType = ()$val;
     }
 
     /**
@@ -321,7 +321,7 @@ class TransactionType
      */
     public function setItem($val)
     {
-        $this->Item = (ItemType)$val;
+        $this->Item = ()$val;
     }
 
     /**
@@ -333,7 +333,7 @@ class TransactionType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QuantityPurchased = (int)$val;
+        $this->QuantityPurchased = ()$val;
     }
 
     /**
@@ -342,7 +342,7 @@ class TransactionType
      */
     public function setStatus($val)
     {
-        $this->Status = (TransactionStatusType)$val;
+        $this->Status = ()$val;
     }
 
     /**
@@ -354,7 +354,7 @@ class TransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (string)$val;
+        $this->TransactionID = ()$val;
     }
 
     /**
@@ -363,7 +363,7 @@ class TransactionType
      */
     public function setTransactionPrice($val)
     {
-        $this->TransactionPrice = (AmountType)$val;
+        $this->TransactionPrice = ()$val;
     }
 
     /**
@@ -372,7 +372,7 @@ class TransactionType
      */
     public function setBestOfferSale($val)
     {
-        $this->BestOfferSale = (boolean)$val;
+        $this->BestOfferSale = ()$val;
     }
 
     /**
@@ -381,7 +381,7 @@ class TransactionType
      */
     public function setVATPercent($val)
     {
-        $this->VATPercent = (decimal)$val;
+        $this->VATPercent = ()$val;
     }
 
     /**
@@ -390,7 +390,7 @@ class TransactionType
      */
     public function setExternalTransaction($val)
     {
-        $this->ExternalTransaction = (ExternalTransactionType)$val;
+        $this->ExternalTransaction = ()$val;
     }
 
     /**
@@ -399,7 +399,7 @@ class TransactionType
      */
     public function setSellingManagerProductDetails($val)
     {
-        $this->SellingManagerProductDetails = (SellingManagerProductDetailsType)$val;
+        $this->SellingManagerProductDetails = ()$val;
     }
 
     /**
@@ -408,7 +408,7 @@ class TransactionType
      */
     public function setShippingServiceSelected($val)
     {
-        $this->ShippingServiceSelected = (ShippingServiceOptionsType)$val;
+        $this->ShippingServiceSelected = ()$val;
     }
 
     /**
@@ -420,7 +420,7 @@ class TransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->BuyerMessage = (string)$val;
+        $this->BuyerMessage = ()$val;
     }
 
     /**
@@ -429,7 +429,7 @@ class TransactionType
      */
     public function setDutchAuctionBid($val)
     {
-        $this->DutchAuctionBid = (AmountType)$val;
+        $this->DutchAuctionBid = ()$val;
     }
 
     /**
@@ -438,7 +438,7 @@ class TransactionType
      */
     public function setBuyerPaidStatus($val)
     {
-        $this->BuyerPaidStatus = (PaidStatusCodeType)$val;
+        $this->BuyerPaidStatus = ()$val;
     }
 
     /**
@@ -447,7 +447,7 @@ class TransactionType
      */
     public function setSellerPaidStatus($val)
     {
-        $this->SellerPaidStatus = (PaidStatusCodeType)$val;
+        $this->SellerPaidStatus = ()$val;
     }
 
     /**
@@ -456,7 +456,7 @@ class TransactionType
      */
     public function setPaidTime($val)
     {
-        $this->PaidTime = (dateTime)$val;
+        $this->PaidTime = ()$val;
     }
 
     /**
@@ -465,7 +465,7 @@ class TransactionType
      */
     public function setShippedTime($val)
     {
-        $this->ShippedTime = (dateTime)$val;
+        $this->ShippedTime = ()$val;
     }
 
     /**
@@ -474,7 +474,7 @@ class TransactionType
      */
     public function setTotalPrice($val)
     {
-        $this->TotalPrice = (AmountType)$val;
+        $this->TotalPrice = ()$val;
     }
 
     /**
@@ -483,7 +483,7 @@ class TransactionType
      */
     public function setFeedbackLeft($val)
     {
-        $this->FeedbackLeft = (FeedbackInfoType)$val;
+        $this->FeedbackLeft = ()$val;
     }
 
     /**
@@ -492,7 +492,7 @@ class TransactionType
      */
     public function setFeedbackReceived($val)
     {
-        $this->FeedbackReceived = (FeedbackInfoType)$val;
+        $this->FeedbackReceived = ()$val;
     }
 
     /**
@@ -501,7 +501,7 @@ class TransactionType
      */
     public function setContainingOrder($val)
     {
-        $this->ContainingOrder = (OrderType)$val;
+        $this->ContainingOrder = ()$val;
     }
 
     /**
@@ -510,7 +510,7 @@ class TransactionType
      */
     public function setFinalValueFee($val)
     {
-        $this->FinalValueFee = (AmountType)$val;
+        $this->FinalValueFee = ()$val;
     }
 
     /**
@@ -519,7 +519,7 @@ class TransactionType
      */
     public function setTransactionPlatform($val)
     {
-        $this->TransactionPlatform = (TransactionPlatformType)$val;
+        $this->TransactionPlatform = ()$val;
     }
 
     /**
@@ -528,7 +528,7 @@ class TransactionType
      */
     public function setListingCheckoutRedirectPreference($val)
     {
-        $this->ListingCheckoutRedirectPreference = (ListingCheckoutRedirectPreferenceType)$val;
+        $this->ListingCheckoutRedirectPreference = ()$val;
     }
 
     /**
@@ -537,7 +537,7 @@ class TransactionType
      */
     public function setRefundArray($val)
     {
-        $this->RefundArray = (RefundArrayType)$val;
+        $this->RefundArray = ()$val;
     }
 
     /**
@@ -546,6 +546,6 @@ class TransactionType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

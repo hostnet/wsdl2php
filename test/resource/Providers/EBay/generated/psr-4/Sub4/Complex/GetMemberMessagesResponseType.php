@@ -27,7 +27,7 @@ class GetMemberMessagesResponseType extends
      */
     public function setMemberMessage($val)
     {
-        $this->MemberMessage = (MemberMessageExchangeArrayType)$val;
+        $this->MemberMessage = ()$val;
     }
 
     /**
@@ -36,7 +36,7 @@ class GetMemberMessagesResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (PaginationResultType)$val;
+        $this->PaginationResult = ()$val;
     }
 
     /**
@@ -45,6 +45,6 @@ class GetMemberMessagesResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->HasMoreItems = (boolean)$val;
+        $this->HasMoreItems = ()$val;
     }
 }

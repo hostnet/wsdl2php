@@ -59,7 +59,7 @@ class StoreFontType
      */
     public function setNameFace($val)
     {
-        $this->NameFace = (StoreFontFaceCodeType)$val;
+        $this->NameFace = ()$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class StoreFontType
      */
     public function setNameSize($val)
     {
-        $this->NameSize = (StoreFontSizeCodeType)$val;
+        $this->NameSize = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NameColor');
         }
-        $this->NameColor = (string)$val;
+        $this->NameColor = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class StoreFontType
      */
     public function setTitleFace($val)
     {
-        $this->TitleFace = (StoreFontFaceCodeType)$val;
+        $this->TitleFace = ()$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class StoreFontType
      */
     public function setTitleSize($val)
     {
-        $this->TitleSize = (StoreFontSizeCodeType)$val;
+        $this->TitleSize = ()$val;
     }
 
     /**
@@ -110,7 +110,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TitleColor');
         }
-        $this->TitleColor = (string)$val;
+        $this->TitleColor = ()$val;
     }
 
     /**
@@ -119,7 +119,7 @@ class StoreFontType
      */
     public function setDescFace($val)
     {
-        $this->DescFace = (StoreFontFaceCodeType)$val;
+        $this->DescFace = ()$val;
     }
 
     /**
@@ -128,7 +128,7 @@ class StoreFontType
      */
     public function setDescSize($val)
     {
-        $this->DescSize = (StoreFontSizeCodeType)$val;
+        $this->DescSize = ()$val;
     }
 
     /**
@@ -140,7 +140,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DescColor');
         }
-        $this->DescColor = (string)$val;
+        $this->DescColor = ()$val;
     }
 
     /**
@@ -149,6 +149,6 @@ class StoreFontType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

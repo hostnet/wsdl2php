@@ -23,6 +23,6 @@ class CharacteristicSetIdsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ID');
         }
-        $this->ID = (string)$val;
+        $this->ID = ()$val;
     }
 }

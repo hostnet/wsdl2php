@@ -22,6 +22,6 @@ class MemberMessageExchangeArrayType
 	 */
 	public function setMemberMessageExchange($val)
 	{
-        $this->MemberMessageExchange = (MemberMessageExchangeType)$val;
+        $this->MemberMessageExchange = ()$val;
 	}
 }

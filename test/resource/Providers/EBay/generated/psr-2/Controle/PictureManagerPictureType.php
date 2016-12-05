@@ -50,7 +50,7 @@ class PictureManagerPictureType
      */
     public function setPictureURL($val)
     {
-        $this->PictureURL = (anyURI)$val;
+        $this->PictureURL = ()$val;
     }
 
     /**
@@ -62,7 +62,7 @@ class PictureManagerPictureType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (string)$val;
+        $this->Name = ()$val;
     }
 
     /**
@@ -71,7 +71,7 @@ class PictureManagerPictureType
      */
     public function setDate($val)
     {
-        $this->Date = (dateTime)$val;
+        $this->Date = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class PictureManagerPictureType
      */
     public function setDisplayFormat($val)
     {
-        $this->DisplayFormat = (PictureManagerPictureDisplayType)$val;
+        $this->DisplayFormat = ()$val;
     }
 
     /**
@@ -89,6 +89,6 @@ class PictureManagerPictureType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

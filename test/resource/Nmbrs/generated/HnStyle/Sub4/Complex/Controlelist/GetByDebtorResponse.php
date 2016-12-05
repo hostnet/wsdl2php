@@ -17,6 +17,6 @@ class GetByDebtorResponse
      */
     public function setListGetByDebtorResult($val)
     {
-        $this->List_GetByDebtorResult = (ArrayOfCompany)$val;
+        $this->List_GetByDebtorResult = ()$val;
     }
 }

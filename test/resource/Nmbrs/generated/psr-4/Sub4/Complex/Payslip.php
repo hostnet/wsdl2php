@@ -17,6 +17,6 @@ class Payslip
      */
     public function setPDF($val)
     {
-        $this->PDF = (base64Binary)$val;
+        $this->PDF = ()$val;
     }
 }

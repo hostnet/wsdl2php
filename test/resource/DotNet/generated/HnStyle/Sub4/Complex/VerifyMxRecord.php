@@ -24,7 +24,7 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = (string)$val;
+        $this->email = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = (string)$val;
+        $this->LicenseKey = ()$val;
     }
 }

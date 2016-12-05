@@ -35,7 +35,7 @@ class ExpressHistogramAisleType
      */
     public function setDomainDetails($val)
     {
-        $this->DomainDetails = (ExpressHistogramDomainDetailsType)$val;
+        $this->DomainDetails = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class ExpressHistogramAisleType
      */
     public function setProductType($val)
     {
-        $this->ProductType = (ExpressHistogramProductType)$val;
+        $this->ProductType = ()$val;
     }
 
     /**
@@ -53,6 +53,6 @@ class ExpressHistogramAisleType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

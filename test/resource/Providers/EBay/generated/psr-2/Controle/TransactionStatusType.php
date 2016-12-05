@@ -55,7 +55,7 @@ class TransactionStatusType
      */
     public function setEBayPaymentStatus($val)
     {
-        $this->eBayPaymentStatus = (PaymentStatusCodeType)$val;
+        $this->eBayPaymentStatus = ()$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class TransactionStatusType
      */
     public function setCheckoutStatus($val)
     {
-        $this->CheckoutStatus = (CheckoutStatusCodeType)$val;
+        $this->CheckoutStatus = ()$val;
     }
 
     /**
@@ -73,7 +73,7 @@ class TransactionStatusType
      */
     public function setLastTimeModified($val)
     {
-        $this->LastTimeModified = (dateTime)$val;
+        $this->LastTimeModified = ()$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class TransactionStatusType
      */
     public function setPaymentMethodUsed($val)
     {
-        $this->PaymentMethodUsed = (BuyerPaymentMethodCodeType)$val;
+        $this->PaymentMethodUsed = ()$val;
     }
 
     /**
@@ -91,7 +91,7 @@ class TransactionStatusType
      */
     public function setCompleteStatus($val)
     {
-        $this->CompleteStatus = (CompleteStatusCodeType)$val;
+        $this->CompleteStatus = ()$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class TransactionStatusType
      */
     public function setBuyerSelectedShipping($val)
     {
-        $this->BuyerSelectedShipping = (boolean)$val;
+        $this->BuyerSelectedShipping = ()$val;
     }
 
     /**
@@ -109,6 +109,6 @@ class TransactionStatusType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

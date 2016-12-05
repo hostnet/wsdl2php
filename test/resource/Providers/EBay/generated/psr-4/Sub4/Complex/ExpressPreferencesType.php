@@ -55,7 +55,7 @@ class ExpressPreferencesType
      */
     public function setExpressSellingPreference($val)
     {
-        $this->ExpressSellingPreference = (ExpressSellingPreferenceCodeType)$val;
+        $this->ExpressSellingPreference = ()$val;
     }
 
     /**
@@ -67,7 +67,7 @@ class ExpressPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
         }
-        $this->DefaultPayPalAccount = (string)$val;
+        $this->DefaultPayPalAccount = ()$val;
     }
 
     /**
@@ -76,6 +76,6 @@ class ExpressPreferencesType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

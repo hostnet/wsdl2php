@@ -17,6 +17,6 @@ class DeleteContactResponse
 	 */
 	public function setDeleteContactResult($val)
 	{
-        $this->DeleteContactResult = (Response)$val;
+        $this->DeleteContactResult = ()$val;
 	}
 }

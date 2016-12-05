@@ -21,7 +21,7 @@ class SearchContactResponse
 	 */
 	public function setSearchContactResult($val)
 	{
-        $this->SearchContactResult = (Response)$val;
+        $this->SearchContactResult = ()$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class SearchContactResponse
 	 */
 	public function setContacts($val)
 	{
-        $this->contacts = (ArrayOfContact)$val;
+        $this->contacts = ()$val;
 	}
 }

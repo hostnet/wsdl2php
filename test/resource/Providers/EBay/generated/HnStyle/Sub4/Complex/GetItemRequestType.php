@@ -50,7 +50,7 @@ class GetItemRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -59,7 +59,7 @@ class GetItemRequestType extends
      */
     public function setIncludeExpressRequirements($val)
     {
-        $this->IncludeExpressRequirements = (boolean)$val;
+        $this->IncludeExpressRequirements = ()$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class GetItemRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->IncludeWatchCount = (boolean)$val;
+        $this->IncludeWatchCount = ()$val;
     }
 
     /**
@@ -77,6 +77,6 @@ class GetItemRequestType extends
      */
     public function setIncludeCrossPromotion($val)
     {
-        $this->IncludeCrossPromotion = (boolean)$val;
+        $this->IncludeCrossPromotion = ()$val;
     }
 }

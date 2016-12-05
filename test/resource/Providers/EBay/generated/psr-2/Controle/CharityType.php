@@ -68,7 +68,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityName');
         }
-        $this->CharityName = (string)$val;
+        $this->CharityName = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class CharityType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CharityNumber = (int)$val;
+        $this->CharityNumber = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class CharityType
      */
     public function setDonationPercent($val)
     {
-        $this->DonationPercent = (float)$val;
+        $this->DonationPercent = ()$val;
     }
 
     /**
@@ -101,7 +101,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->CharityID = (string)$val;
+        $this->CharityID = ()$val;
     }
 
     /**
@@ -113,7 +113,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mission');
         }
-        $this->Mission = (string)$val;
+        $this->Mission = ()$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LogoURL');
         }
-        $this->LogoURL = (string)$val;
+        $this->LogoURL = ()$val;
     }
 
     /**
@@ -134,7 +134,7 @@ class CharityType
      */
     public function setStatus($val)
     {
-        $this->Status = (CharityStatusCodeType)$val;
+        $this->Status = ()$val;
     }
 
     /**
@@ -143,7 +143,7 @@ class CharityType
      */
     public function setCharityListing($val)
     {
-        $this->CharityListing = (boolean)$val;
+        $this->CharityListing = ()$val;
     }
 
     /**
@@ -152,6 +152,6 @@ class CharityType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

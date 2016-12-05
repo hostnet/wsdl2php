@@ -48,7 +48,7 @@ class BestOfferDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BestOfferCount = (int)$val;
+        $this->BestOfferCount = ()$val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (boolean)$val;
+        $this->BestOfferEnabled = ()$val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOffer($val)
 	{
-        $this->BestOffer = (AmountType)$val;
+        $this->BestOffer = ()$val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferStatus($val)
 	{
-        $this->BestOfferStatus = (BestOfferStatusCodeType)$val;
+        $this->BestOfferStatus = ()$val;
 	}
 
 	/**
@@ -84,7 +84,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferType($val)
 	{
-        $this->BestOfferType = (BestOfferTypeCodeType)$val;
+        $this->BestOfferType = ()$val;
 	}
 
 	/**
@@ -93,6 +93,6 @@ class BestOfferDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }

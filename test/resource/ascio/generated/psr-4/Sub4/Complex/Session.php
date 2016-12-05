@@ -24,7 +24,7 @@ class Session
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Account');
         }
-        $this->Account = (string)$val;
+        $this->Account = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class Session
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Password');
         }
-        $this->Password = (string)$val;
+        $this->Password = ()$val;
     }
 }

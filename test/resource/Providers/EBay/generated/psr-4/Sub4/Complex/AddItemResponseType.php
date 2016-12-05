@@ -47,7 +47,7 @@ class AddItemResponseType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (ItemIDType)$val;
+        $this->ItemID = ()$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class AddItemResponseType extends
      */
     public function setStartTime($val)
     {
-        $this->StartTime = (dateTime)$val;
+        $this->StartTime = ()$val;
     }
 
     /**
@@ -65,7 +65,7 @@ class AddItemResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->EndTime = (dateTime)$val;
+        $this->EndTime = ()$val;
     }
 
     /**
@@ -74,7 +74,7 @@ class AddItemResponseType extends
      */
     public function setFees($val)
     {
-        $this->Fees = (FeesType)$val;
+        $this->Fees = ()$val;
     }
 
     /**
@@ -86,7 +86,7 @@ class AddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (string)$val;
+        $this->CategoryID = ()$val;
     }
 
     /**
@@ -98,6 +98,6 @@ class AddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (string)$val;
+        $this->Category2ID = ()$val;
     }
 }

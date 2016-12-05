@@ -33,6 +33,6 @@ class AttributeSetArrayType
 	 */
 	public function setAttributeSet($val)
 	{
-        $this->AttributeSet = (AttributeSetType)$val;
+        $this->AttributeSet = ()$val;
 	}
 }

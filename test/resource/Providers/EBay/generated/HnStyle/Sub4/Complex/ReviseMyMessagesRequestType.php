@@ -45,7 +45,7 @@ class ReviseMyMessagesRequestType extends
      */
     public function setMessageIDs($val)
     {
-        $this->MessageIDs = (MyMessagesMessageIDArrayType)$val;
+        $this->MessageIDs = ()$val;
     }
 
     /**
@@ -54,7 +54,7 @@ class ReviseMyMessagesRequestType extends
      */
     public function setAlertIDs($val)
     {
-        $this->AlertIDs = (MyMessagesAlertIDArrayType)$val;
+        $this->AlertIDs = ()$val;
     }
 
     /**
@@ -63,7 +63,7 @@ class ReviseMyMessagesRequestType extends
      */
     public function setRead($val)
     {
-        $this->Read = (boolean)$val;
+        $this->Read = ()$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class ReviseMyMessagesRequestType extends
      */
     public function setFlagged($val)
     {
-        $this->Flagged = (boolean)$val;
+        $this->Flagged = ()$val;
     }
 
     /**
@@ -81,6 +81,6 @@ class ReviseMyMessagesRequestType extends
      */
     public function setFolderID($val)
     {
-        $this->FolderID = (long)$val;
+        $this->FolderID = ()$val;
     }
 }

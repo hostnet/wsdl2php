@@ -24,7 +24,7 @@ class ItemQuantity
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemId');
         }
-        $this->ItemId = (string)$val;
+        $this->ItemId = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class ItemQuantity
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Quantity');
         }
-        $this->Quantity = (string)$val;
+        $this->Quantity = ()$val;
     }
 }

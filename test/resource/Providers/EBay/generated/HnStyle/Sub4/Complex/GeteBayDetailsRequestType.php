@@ -31,6 +31,6 @@ class GeteBayDetailsRequestType extends
      */
     public function setDetailName($val)
     {
-        $this->DetailName = (DetailNameCodeType)$val;
+        $this->DetailName = ()$val;
     }
 }

@@ -22,6 +22,6 @@ class MyMessagesAlertArrayType
 	 */
 	public function setAlert($val)
 	{
-        $this->Alert = (MyMessagesAlertType)$val;
+        $this->Alert = ()$val;
 	}
 }

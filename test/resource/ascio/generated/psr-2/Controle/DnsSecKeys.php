@@ -33,7 +33,7 @@ class DnsSecKeys
      */
     public function setDnsSecKey1($val)
     {
-        $this->DnsSecKey1 = (DnsSecKey)$val;
+        $this->DnsSecKey1 = ()$val;
     }
 
     /**
@@ -42,7 +42,7 @@ class DnsSecKeys
      */
     public function setDnsSecKey2($val)
     {
-        $this->DnsSecKey2 = (DnsSecKey)$val;
+        $this->DnsSecKey2 = ()$val;
     }
 
     /**
@@ -51,7 +51,7 @@ class DnsSecKeys
      */
     public function setDnsSecKey3($val)
     {
-        $this->DnsSecKey3 = (DnsSecKey)$val;
+        $this->DnsSecKey3 = ()$val;
     }
 
     /**
@@ -60,7 +60,7 @@ class DnsSecKeys
      */
     public function setDnsSecKey4($val)
     {
-        $this->DnsSecKey4 = (DnsSecKey)$val;
+        $this->DnsSecKey4 = ()$val;
     }
 
     /**
@@ -69,6 +69,6 @@ class DnsSecKeys
      */
     public function setDnsSecKey5($val)
     {
-        $this->DnsSecKey5 = (DnsSecKey)$val;
+        $this->DnsSecKey5 = ()$val;
     }
 }

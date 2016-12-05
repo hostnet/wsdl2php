@@ -71,7 +71,7 @@ class ValidateTestUserRegistrationRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackScore = (int)$val;
+        $this->FeedbackScore = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setRegistrationDate($val)
     {
-        $this->RegistrationDate = (dateTime)$val;
+        $this->RegistrationDate = ()$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSA($val)
     {
-        $this->SubscribeSA = (boolean)$val;
+        $this->SubscribeSA = ()$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSAPro($val)
     {
-        $this->SubscribeSAPro = (boolean)$val;
+        $this->SubscribeSAPro = ()$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSM($val)
     {
-        $this->SubscribeSM = (boolean)$val;
+        $this->SubscribeSM = ()$val;
     }
 
     /**
@@ -116,6 +116,6 @@ class ValidateTestUserRegistrationRequestType extends
      */
     public function setSubscribeSMPro($val)
     {
-        $this->SubscribeSMPro = (boolean)$val;
+        $this->SubscribeSMPro = ()$val;
     }
 }

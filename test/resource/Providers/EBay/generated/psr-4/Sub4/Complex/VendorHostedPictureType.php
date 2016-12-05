@@ -98,7 +98,7 @@ class VendorHostedPictureType
      */
     public function setPictureURL($val)
     {
-        $this->PictureURL = (anyURI)$val;
+        $this->PictureURL = ()$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class VendorHostedPictureType
      */
     public function setSelfHostedURL($val)
     {
-        $this->SelfHostedURL = (anyURI)$val;
+        $this->SelfHostedURL = ()$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class VendorHostedPictureType
      */
     public function setPhotoDisplay($val)
     {
-        $this->PhotoDisplay = (PhotoDisplayCodeType)$val;
+        $this->PhotoDisplay = ()$val;
     }
 
     /**
@@ -125,7 +125,7 @@ class VendorHostedPictureType
      */
     public function setGalleryURL($val)
     {
-        $this->GalleryURL = (anyURI)$val;
+        $this->GalleryURL = ()$val;
     }
 
     /**
@@ -134,7 +134,7 @@ class VendorHostedPictureType
      */
     public function setGalleryType($val)
     {
-        $this->GalleryType = (GalleryTypeCodeType)$val;
+        $this->GalleryType = ()$val;
     }
 
     /**
@@ -143,6 +143,6 @@ class VendorHostedPictureType
      */
     public function setAny($val)
     {
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
     }
 }

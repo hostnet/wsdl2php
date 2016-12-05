@@ -27,7 +27,7 @@ class PaginatedTransactionArrayType
      */
     public function setTransactionArray($val)
     {
-        $this->TransactionArray = (TransactionArrayType)$val;
+        $this->TransactionArray = ()$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class PaginatedTransactionArrayType
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (PaginationResultType)$val;
+        $this->PaginationResult = ()$val;
     }
 }

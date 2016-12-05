@@ -47,7 +47,7 @@ class AddDisputeResponseRequestType extends
      */
     public function setDisputeID($val)
     {
-        $this->DisputeID = (DisputeIDType)$val;
+        $this->DisputeID = ()$val;
     }
 
     /**
@@ -59,7 +59,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->MessageText = (string)$val;
+        $this->MessageText = ()$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class AddDisputeResponseRequestType extends
      */
     public function setDisputeActivity($val)
     {
-        $this->DisputeActivity = (DisputeActivityCodeType)$val;
+        $this->DisputeActivity = ()$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingCarrierUsed');
         }
-        $this->ShippingCarrierUsed = (string)$val;
+        $this->ShippingCarrierUsed = ()$val;
     }
 
     /**
@@ -92,7 +92,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackNumber');
         }
-        $this->ShipmentTrackNumber = (string)$val;
+        $this->ShipmentTrackNumber = ()$val;
     }
 
     /**
@@ -101,6 +101,6 @@ class AddDisputeResponseRequestType extends
      */
     public function setShippingTime($val)
     {
-        $this->ShippingTime = (dateTime)$val;
+        $this->ShippingTime = ()$val;
     }
 }

@@ -25,7 +25,7 @@ class PollMessageResponse
 	 */
 	public function setPollMessageResult($val)
 	{
-        $this->PollMessageResult = (Response)$val;
+        $this->PollMessageResult = ()$val;
 	}
 
 	/**
@@ -37,7 +37,7 @@ class PollMessageResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->msgCount = (int)$val;
+        $this->msgCount = ()$val;
 	}
 
 	/**
@@ -46,6 +46,6 @@ class PollMessageResponse
 	 */
 	public function setItem($val)
 	{
-        $this->item = (QueueItem)$val;
+        $this->item = ()$val;
 	}
 }

@@ -17,6 +17,6 @@ class MarketplaceSearch
 	 */
 	public function setMarketplaceSearchDetails($val)
 	{
-        $this->MarketplaceSearchDetails = (MarketplaceSearchDetailsArray)$val;
+        $this->MarketplaceSearchDetails = ()$val;
 	}
 }

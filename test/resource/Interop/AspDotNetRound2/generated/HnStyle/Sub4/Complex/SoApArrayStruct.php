@@ -32,7 +32,7 @@ class SoApArrayStruct
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for varString');
         }
-        $this->varString = (string)$val;
+        $this->varString = ()$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class SoApArrayStruct
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->varInt = (int)$val;
+        $this->varInt = ()$val;
     }
 
     /**
@@ -53,7 +53,7 @@ class SoApArrayStruct
      */
     public function setVarFloat($val)
     {
-        $this->varFloat = (float)$val;
+        $this->varFloat = ()$val;
     }
 
     /**
@@ -62,6 +62,6 @@ class SoApArrayStruct
      */
     public function setVarArray($val)
     {
-        $this->varArray = (ArrayOfString)$val;
+        $this->varArray = ()$val;
     }
 }

@@ -37,7 +37,7 @@ class StoreThemeType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ThemeID = (int)$val;
+        $this->ThemeID = ()$val;
 	}
 
 	/**
@@ -49,7 +49,7 @@ class StoreThemeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (string)$val;
+        $this->Name = ()$val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class StoreThemeType
 	 */
 	public function setColorScheme($val)
 	{
-        $this->ColorScheme = (StoreColorSchemeType)$val;
+        $this->ColorScheme = ()$val;
 	}
 
 	/**
@@ -67,6 +67,6 @@ class StoreThemeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (<anyXML>)$val;
+        $this->any = ()$val;
 	}
 }
