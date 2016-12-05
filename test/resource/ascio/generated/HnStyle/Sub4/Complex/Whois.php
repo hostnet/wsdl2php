@@ -24,7 +24,7 @@ class Whois
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = (string)$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class Whois
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for domainName');
         }
-        $this->domainName = (int)$val;
+        $this->domainName = (string)$val;
     }
 }

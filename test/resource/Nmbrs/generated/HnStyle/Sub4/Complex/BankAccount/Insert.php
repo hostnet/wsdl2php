@@ -33,6 +33,6 @@ class Insert
      */
     public function setBankAccount($val)
     {
-        $this->BankAccount = (int)$val;
+        $this->BankAccount = (BankAccount)$val;
     }
 }

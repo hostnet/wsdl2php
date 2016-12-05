@@ -74,7 +74,7 @@ class LiveAuctionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LotNumber');
         }
-        $this->LotNumber = (int)$val;
+        $this->LotNumber = (string)$val;
     }
 
     /**
@@ -83,7 +83,7 @@ class LiveAuctionDetailsType
      */
     public function setHighEstimate($val)
     {
-        $this->HighEstimate = (int)$val;
+        $this->HighEstimate = (AmountType)$val;
     }
 
     /**
@@ -92,7 +92,7 @@ class LiveAuctionDetailsType
      */
     public function setLowEstimate($val)
     {
-        $this->LowEstimate = (int)$val;
+        $this->LowEstimate = (AmountType)$val;
     }
 
     /**
@@ -101,6 +101,6 @@ class LiveAuctionDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

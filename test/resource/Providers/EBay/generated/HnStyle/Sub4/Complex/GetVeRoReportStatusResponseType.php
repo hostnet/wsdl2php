@@ -51,7 +51,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
     }
 
     /**
@@ -60,7 +60,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
     }
 
     /**
@@ -93,7 +93,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setVeROReportPacketID($val)
     {
-        $this->VeROReportPacketID = (int)$val;
+        $this->VeROReportPacketID = (long)$val;
     }
 
     /**
@@ -102,7 +102,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setVeROReportPacketStatus($val)
     {
-        $this->VeROReportPacketStatus = (int)$val;
+        $this->VeROReportPacketStatus = (VeROReportPacketStatusCodeType)$val;
     }
 
     /**
@@ -111,6 +111,6 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setReportedItemDetails($val)
     {
-        $this->ReportedItemDetails = (int)$val;
+        $this->ReportedItemDetails = (VeROReportedItemDetailsType)$val;
     }
 }

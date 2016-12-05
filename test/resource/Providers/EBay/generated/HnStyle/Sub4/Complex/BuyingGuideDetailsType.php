@@ -40,7 +40,7 @@ class BuyingGuideDetailsType
      */
     public function setBuyingGuide($val)
     {
-        $this->BuyingGuide = (int)$val;
+        $this->BuyingGuide = (BuyingGuideType)$val;
     }
 
     /**
@@ -49,7 +49,7 @@ class BuyingGuideDetailsType
      */
     public function setBuyingGuideHub($val)
     {
-        $this->BuyingGuideHub = (int)$val;
+        $this->BuyingGuideHub = (anyURI)$val;
     }
 
     /**
@@ -58,6 +58,6 @@ class BuyingGuideDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

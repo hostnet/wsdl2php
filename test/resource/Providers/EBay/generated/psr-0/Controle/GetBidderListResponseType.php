@@ -26,7 +26,7 @@ class GetBidderListResponseType extends
 	 */
 	public function setBidder($val)
 	{
-        $this->Bidder = (int)$val;
+        $this->Bidder = (UserType)$val;
 	}
 
 	/**
@@ -35,6 +35,6 @@ class GetBidderListResponseType extends
 	 */
 	public function setBidItemArray($val)
 	{
-        $this->BidItemArray = (int)$val;
+        $this->BidItemArray = (ItemArrayType)$val;
 	}
 }

@@ -32,7 +32,7 @@ class UploadDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = (string)$val;
     }
 
     /**
@@ -44,7 +44,7 @@ class UploadDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for orderId');
         }
-        $this->orderId = (int)$val;
+        $this->orderId = (string)$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class UploadDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for fileName');
         }
-        $this->fileName = (int)$val;
+        $this->fileName = (string)$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class UploadDocumentation
      */
     public function setContent($val)
     {
-        $this->content = (int)$val;
+        $this->content = (base64Binary)$val;
     }
 }

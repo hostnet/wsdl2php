@@ -33,6 +33,6 @@ class Insert
      */
     public function setKostenplaats($val)
     {
-        $this->kostenplaats = (int)$val;
+        $this->kostenplaats = (CostCenter)$val;
     }
 }

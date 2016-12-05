@@ -21,6 +21,6 @@ class OrderTransactionArrayType
 	 */
 	public function setOrderTransaction($val)
 	{
-        $this->OrderTransaction = (int)$val;
+        $this->OrderTransaction = (OrderTransactionType)$val;
 	}
 }

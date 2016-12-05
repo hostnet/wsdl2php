@@ -126,7 +126,7 @@ class SellingStatusType
 	 */
 	public function setBidIncrement($val)
 	{
-        $this->BidIncrement = (int)$val;
+        $this->BidIncrement = (AmountType)$val;
 	}
 
 	/**
@@ -135,7 +135,7 @@ class SellingStatusType
 	 */
 	public function setConvertedCurrentPrice($val)
 	{
-        $this->ConvertedCurrentPrice = (int)$val;
+        $this->ConvertedCurrentPrice = (AmountType)$val;
 	}
 
 	/**
@@ -144,7 +144,7 @@ class SellingStatusType
 	 */
 	public function setCurrentPrice($val)
 	{
-        $this->CurrentPrice = (int)$val;
+        $this->CurrentPrice = (AmountType)$val;
 	}
 
 	/**
@@ -153,7 +153,7 @@ class SellingStatusType
 	 */
 	public function setHighBidder($val)
 	{
-        $this->HighBidder = (int)$val;
+        $this->HighBidder = (UserType)$val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class SellingStatusType
 	 */
 	public function setMinimumToBid($val)
 	{
-        $this->MinimumToBid = (int)$val;
+        $this->MinimumToBid = (AmountType)$val;
 	}
 
 	/**
@@ -195,7 +195,7 @@ class SellingStatusType
 	 */
 	public function setReserveMet($val)
 	{
-        $this->ReserveMet = (int)$val;
+        $this->ReserveMet = (boolean)$val;
 	}
 
 	/**
@@ -204,7 +204,7 @@ class SellingStatusType
 	 */
 	public function setSecondChanceEligible($val)
 	{
-        $this->SecondChanceEligible = (int)$val;
+        $this->SecondChanceEligible = (boolean)$val;
 	}
 
 	/**
@@ -213,7 +213,7 @@ class SellingStatusType
 	 */
 	public function setBidderCount($val)
 	{
-        $this->BidderCount = (int)$val;
+        $this->BidderCount = (long)$val;
 	}
 
 	/**
@@ -222,7 +222,7 @@ class SellingStatusType
 	 */
 	public function setListingStatus($val)
 	{
-        $this->ListingStatus = (int)$val;
+        $this->ListingStatus = (ListingStatusCodeType)$val;
 	}
 
 	/**
@@ -231,7 +231,7 @@ class SellingStatusType
 	 */
 	public function setFinalValueFee($val)
 	{
-        $this->FinalValueFee = (int)$val;
+        $this->FinalValueFee = (AmountType)$val;
 	}
 
 	/**
@@ -240,6 +240,6 @@ class SellingStatusType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

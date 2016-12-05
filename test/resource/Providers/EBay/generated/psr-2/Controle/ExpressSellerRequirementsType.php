@@ -113,7 +113,7 @@ class ExpressSellerRequirementsType
      */
     public function setExpressSellingPreference($val)
     {
-        $this->ExpressSellingPreference = (int)$val;
+        $this->ExpressSellingPreference = (boolean)$val;
     }
 
     /**
@@ -122,7 +122,7 @@ class ExpressSellerRequirementsType
      */
     public function setExpressApproved($val)
     {
-        $this->ExpressApproved = (int)$val;
+        $this->ExpressApproved = (boolean)$val;
     }
 
     /**
@@ -131,7 +131,7 @@ class ExpressSellerRequirementsType
      */
     public function setGoodStanding($val)
     {
-        $this->GoodStanding = (int)$val;
+        $this->GoodStanding = (boolean)$val;
     }
 
     /**
@@ -140,7 +140,7 @@ class ExpressSellerRequirementsType
      */
     public function setFeedbackScore($val)
     {
-        $this->FeedbackScore = (int)$val;
+        $this->FeedbackScore = (FeedbackRequirementsType)$val;
     }
 
     /**
@@ -149,7 +149,7 @@ class ExpressSellerRequirementsType
      */
     public function setPositiveFeedbackPercent($val)
     {
-        $this->PositiveFeedbackPercent = (int)$val;
+        $this->PositiveFeedbackPercent = (FeedbackRequirementsType)$val;
     }
 
     /**
@@ -158,7 +158,7 @@ class ExpressSellerRequirementsType
      */
     public function setFeedbackAsSellerScore($val)
     {
-        $this->FeedbackAsSellerScore = (int)$val;
+        $this->FeedbackAsSellerScore = (FeedbackRequirementsType)$val;
     }
 
     /**
@@ -167,7 +167,7 @@ class ExpressSellerRequirementsType
      */
     public function setPositiveFeedbackAsSellerPercent($val)
     {
-        $this->PositiveFeedbackAsSellerPercent = (int)$val;
+        $this->PositiveFeedbackAsSellerPercent = (FeedbackRequirementsType)$val;
     }
 
     /**
@@ -176,7 +176,7 @@ class ExpressSellerRequirementsType
      */
     public function setBusinessSeller($val)
     {
-        $this->BusinessSeller = (int)$val;
+        $this->BusinessSeller = (boolean)$val;
     }
 
     /**
@@ -185,7 +185,7 @@ class ExpressSellerRequirementsType
      */
     public function setEligiblePayPalAccount($val)
     {
-        $this->EligiblePayPalAccount = (int)$val;
+        $this->EligiblePayPalAccount = (boolean)$val;
     }
 
     /**
@@ -194,7 +194,7 @@ class ExpressSellerRequirementsType
      */
     public function setPayPalAccountAcceptsUnconfirmedAddress($val)
     {
-        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = (boolean)$val;
     }
 
     /**
@@ -203,7 +203,7 @@ class ExpressSellerRequirementsType
      */
     public function setCombinedPaymentsAccepted($val)
     {
-        $this->CombinedPaymentsAccepted = (int)$val;
+        $this->CombinedPaymentsAccepted = (boolean)$val;
     }
 
     /**
@@ -212,7 +212,7 @@ class ExpressSellerRequirementsType
      */
     public function setFeedbackPublic($val)
     {
-        $this->FeedbackPublic = (int)$val;
+        $this->FeedbackPublic = (boolean)$val;
     }
 
     /**
@@ -221,6 +221,6 @@ class ExpressSellerRequirementsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

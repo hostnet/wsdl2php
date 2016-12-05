@@ -94,7 +94,7 @@ class AbstractRequestType
 	 */
 	public function setDetailLevel($val)
 	{
-        $this->DetailLevel = (int)$val;
+        $this->DetailLevel = (DetailLevelCodeType)$val;
 	}
 
 	/**
@@ -106,7 +106,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorLanguage');
         }
-        $this->ErrorLanguage = (int)$val;
+        $this->ErrorLanguage = (string)$val;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageID');
         }
-        $this->MessageID = (int)$val;
+        $this->MessageID = (string)$val;
 	}
 
 	/**
@@ -130,7 +130,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Version');
         }
-        $this->Version = (int)$val;
+        $this->Version = (string)$val;
 	}
 
 	/**
@@ -139,7 +139,7 @@ class AbstractRequestType
 	 */
 	public function setErrorHandling($val)
 	{
-        $this->ErrorHandling = (int)$val;
+        $this->ErrorHandling = (ErrorHandlingCodeType)$val;
 	}
 
 	/**
@@ -148,7 +148,7 @@ class AbstractRequestType
 	 */
 	public function setInvocationID($val)
 	{
-        $this->InvocationID = (int)$val;
+        $this->InvocationID = (UUIDType)$val;
 	}
 
 	/**
@@ -157,7 +157,7 @@ class AbstractRequestType
 	 */
 	public function setWarningLevel($val)
 	{
-        $this->WarningLevel = (int)$val;
+        $this->WarningLevel = (WarningLevelCodeType)$val;
 	}
 
 	/**
@@ -166,7 +166,7 @@ class AbstractRequestType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -208,7 +208,7 @@ class AddDisputeRequestType extends
 	 */
 	public function setDisputeExplanation($val)
 	{
-        $this->DisputeExplanation = (int)$val;
+        $this->DisputeExplanation = (DisputeExplanationCodeType)$val;
 	}
 
 	/**
@@ -217,7 +217,7 @@ class AddDisputeRequestType extends
 	 */
 	public function setDisputeReason($val)
 	{
-        $this->DisputeReason = (int)$val;
+        $this->DisputeReason = (DisputeReasonCodeType)$val;
 	}
 
 	/**
@@ -226,7 +226,7 @@ class AddDisputeRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -238,7 +238,7 @@ class AddDisputeRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 }
 
@@ -340,7 +340,7 @@ class AbstractResponseType
 	 */
 	public function setTimestamp($val)
 	{
-        $this->Timestamp = (int)$val;
+        $this->Timestamp = (dateTime)$val;
 	}
 
 	/**
@@ -349,7 +349,7 @@ class AbstractResponseType
 	 */
 	public function setAck($val)
 	{
-        $this->Ack = (int)$val;
+        $this->Ack = (AckCodeType)$val;
 	}
 
 	/**
@@ -361,7 +361,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
 	}
 
 	/**
@@ -370,7 +370,7 @@ class AbstractResponseType
 	 */
 	public function setErrors($val)
 	{
-        $this->Errors = (int)$val;
+        $this->Errors = (ErrorType)$val;
 	}
 
 	/**
@@ -382,7 +382,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->Message = (int)$val;
+        $this->Message = (string)$val;
 	}
 
 	/**
@@ -394,7 +394,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Version');
         }
-        $this->Version = (int)$val;
+        $this->Version = (string)$val;
 	}
 
 	/**
@@ -406,7 +406,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Build');
         }
-        $this->Build = (int)$val;
+        $this->Build = (string)$val;
 	}
 
 	/**
@@ -418,7 +418,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationEventName');
         }
-        $this->NotificationEventName = (int)$val;
+        $this->NotificationEventName = (string)$val;
 	}
 
 	/**
@@ -427,7 +427,7 @@ class AbstractResponseType
 	 */
 	public function setDuplicateInvocationDetails($val)
 	{
-        $this->DuplicateInvocationDetails = (int)$val;
+        $this->DuplicateInvocationDetails = (DuplicateInvocationDetailsType)$val;
 	}
 
 	/**
@@ -439,7 +439,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->RecipientUserID = (int)$val;
+        $this->RecipientUserID = (string)$val;
 	}
 
 	/**
@@ -451,7 +451,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->EIASToken = (int)$val;
+        $this->EIASToken = (string)$val;
 	}
 
 	/**
@@ -463,7 +463,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationSignature');
         }
-        $this->NotificationSignature = (int)$val;
+        $this->NotificationSignature = (string)$val;
 	}
 
 	/**
@@ -475,7 +475,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HardExpirationWarning');
         }
-        $this->HardExpirationWarning = (int)$val;
+        $this->HardExpirationWarning = (string)$val;
 	}
 
 	/**
@@ -484,7 +484,7 @@ class AbstractResponseType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -509,7 +509,7 @@ class AddDisputeResponseType extends
 	 */
 	public function setDisputeID($val)
 	{
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
 	}
 }
 
@@ -558,7 +558,7 @@ class AddDisputeResponseRequestType extends
 	 */
 	public function setDisputeID($val)
 	{
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
 	}
 
 	/**
@@ -570,7 +570,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->MessageText = (int)$val;
+        $this->MessageText = (string)$val;
 	}
 
 	/**
@@ -579,7 +579,7 @@ class AddDisputeResponseRequestType extends
 	 */
 	public function setDisputeActivity($val)
 	{
-        $this->DisputeActivity = (int)$val;
+        $this->DisputeActivity = (DisputeActivityCodeType)$val;
 	}
 
 	/**
@@ -591,7 +591,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingCarrierUsed');
         }
-        $this->ShippingCarrierUsed = (int)$val;
+        $this->ShippingCarrierUsed = (string)$val;
 	}
 
 	/**
@@ -603,7 +603,7 @@ class AddDisputeResponseRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackNumber');
         }
-        $this->ShipmentTrackNumber = (int)$val;
+        $this->ShipmentTrackNumber = (string)$val;
 	}
 
 	/**
@@ -612,7 +612,7 @@ class AddDisputeResponseRequestType extends
 	 */
 	public function setShippingTime($val)
 	{
-        $this->ShippingTime = (int)$val;
+        $this->ShippingTime = (dateTime)$val;
 	}
 }
 
@@ -654,7 +654,7 @@ class AddItemRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -663,7 +663,7 @@ class AddItemRequestType extends
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 }
 
@@ -712,7 +712,7 @@ class AddItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -721,7 +721,7 @@ class AddItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -730,7 +730,7 @@ class AddItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 
 	/**
@@ -739,7 +739,7 @@ class AddItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -751,7 +751,7 @@ class AddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -763,7 +763,7 @@ class AddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = (string)$val;
 	}
 }
 
@@ -792,7 +792,7 @@ class AddLiveAuctionItemRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 }
 
@@ -832,7 +832,7 @@ class AddLiveAuctionItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -841,7 +841,7 @@ class AddLiveAuctionItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -853,7 +853,7 @@ class AddLiveAuctionItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -865,7 +865,7 @@ class AddLiveAuctionItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = (string)$val;
 	}
 }
 
@@ -894,7 +894,7 @@ class AddMemberMessageAaQtoPartnerRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -903,7 +903,7 @@ class AddMemberMessageAaQtoPartnerRequestType extends
 	 */
 	public function setMemberMessage($val)
 	{
-        $this->MemberMessage = (int)$val;
+        $this->MemberMessage = (MemberMessageType)$val;
 	}
 }
 
@@ -939,7 +939,7 @@ class AddMemberMessageRtQrequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -948,7 +948,7 @@ class AddMemberMessageRtQrequestType extends
 	 */
 	public function setMemberMessage($val)
 	{
-        $this->MemberMessage = (int)$val;
+        $this->MemberMessage = (MemberMessageType)$val;
 	}
 }
 
@@ -982,7 +982,7 @@ class AddMemberMessagesAaQtoBidderRequestType extends
 	 */
 	public function setAddMemberMessagesAAQToBidderRequestContainer($val)
 	{
-        $this->AddMemberMessagesAAQToBidderRequestContainer = (int)$val;
+        $this->AddMemberMessagesAAQToBidderRequestContainer = (AddMemberMessagesAAQToBidderRequestContainerType)$val;
 	}
 }
 
@@ -1006,7 +1006,7 @@ class AddMemberMessagesAaQtoBidderResponseType extends
 	 */
 	public function setAddMemberMessagesAAQToBidderResponseContainer($val)
 	{
-        $this->AddMemberMessagesAAQToBidderResponseContainer = (int)$val;
+        $this->AddMemberMessagesAAQToBidderResponseContainer = (AddMemberMessagesAAQToBidderResponseContainerType)$val;
 	}
 }
 
@@ -1033,7 +1033,7 @@ class AddOrderRequestType extends
 	 */
 	public function setOrder($val)
 	{
-        $this->Order = (int)$val;
+        $this->Order = (OrderType)$val;
 	}
 }
 
@@ -1063,7 +1063,7 @@ class AddOrderResponseType extends
 	 */
 	public function setOrderID($val)
 	{
-        $this->OrderID = (int)$val;
+        $this->OrderID = (OrderIDType)$val;
 	}
 
 	/**
@@ -1072,7 +1072,7 @@ class AddOrderResponseType extends
 	 */
 	public function setCreatedTime($val)
 	{
-        $this->CreatedTime = (int)$val;
+        $this->CreatedTime = (dateTime)$val;
 	}
 }
 
@@ -1146,7 +1146,7 @@ class AddSecondChanceItemRequestType extends
 	 */
 	public function setRecipientBidderUserID($val)
 	{
-        $this->RecipientBidderUserID = (int)$val;
+        $this->RecipientBidderUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -1155,7 +1155,7 @@ class AddSecondChanceItemRequestType extends
 	 */
 	public function setBuyItNowPrice($val)
 	{
-        $this->BuyItNowPrice = (int)$val;
+        $this->BuyItNowPrice = (AmountType)$val;
 	}
 
 	/**
@@ -1164,7 +1164,7 @@ class AddSecondChanceItemRequestType extends
 	 */
 	public function setCopyEmailToSeller($val)
 	{
-        $this->CopyEmailToSeller = (int)$val;
+        $this->CopyEmailToSeller = (boolean)$val;
 	}
 
 	/**
@@ -1173,7 +1173,7 @@ class AddSecondChanceItemRequestType extends
 	 */
 	public function setDuration($val)
 	{
-        $this->Duration = (int)$val;
+        $this->Duration = (SecondChanceOfferDurationCodeType)$val;
 	}
 
 	/**
@@ -1182,7 +1182,7 @@ class AddSecondChanceItemRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1191,7 +1191,7 @@ class AddSecondChanceItemRequestType extends
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -1203,7 +1203,7 @@ class AddSecondChanceItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (int)$val;
+        $this->SellerMessage = (string)$val;
 	}
 }
 
@@ -1240,7 +1240,7 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -1249,7 +1249,7 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1258,7 +1258,7 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -1267,7 +1267,7 @@ class AddSecondChanceItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 }
 
@@ -1295,7 +1295,7 @@ class AddToItemDescriptionRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1307,7 +1307,7 @@ class AddToItemDescriptionRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -1340,7 +1340,7 @@ class AddToWatchListRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 }
 
@@ -1452,7 +1452,7 @@ class AddTransactionConfirmationItemRequestType extends
 	 */
 	public function setRecipientUserID($val)
 	{
-        $this->RecipientUserID = (int)$val;
+        $this->RecipientUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -1464,7 +1464,7 @@ class AddTransactionConfirmationItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VerifyEligibilityOnly');
         }
-        $this->VerifyEligibilityOnly = (int)$val;
+        $this->VerifyEligibilityOnly = (string)$val;
 	}
 
 	/**
@@ -1476,7 +1476,7 @@ class AddTransactionConfirmationItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientPostalCode');
         }
-        $this->RecipientPostalCode = (int)$val;
+        $this->RecipientPostalCode = (string)$val;
 	}
 
 	/**
@@ -1485,7 +1485,7 @@ class AddTransactionConfirmationItemRequestType extends
 	 */
 	public function setRecipientRelationType($val)
 	{
-        $this->RecipientRelationType = (int)$val;
+        $this->RecipientRelationType = (RecipientRelationCodeType)$val;
 	}
 
 	/**
@@ -1494,7 +1494,7 @@ class AddTransactionConfirmationItemRequestType extends
 	 */
 	public function setNegotiatedPrice($val)
 	{
-        $this->NegotiatedPrice = (int)$val;
+        $this->NegotiatedPrice = (AmountType)$val;
 	}
 
 	/**
@@ -1503,7 +1503,7 @@ class AddTransactionConfirmationItemRequestType extends
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (SecondChanceOfferDurationCodeType)$val;
 	}
 
 	/**
@@ -1512,7 +1512,7 @@ class AddTransactionConfirmationItemRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1524,7 +1524,7 @@ class AddTransactionConfirmationItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->Comments = (int)$val;
+        $this->Comments = (string)$val;
 	}
 }
 
@@ -1557,7 +1557,7 @@ class AddTransactionConfirmationItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1566,7 +1566,7 @@ class AddTransactionConfirmationItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -1575,7 +1575,7 @@ class AddTransactionConfirmationItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 }
 
@@ -1629,7 +1629,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 	 */
 	public function setBidApproval($val)
 	{
-        $this->BidApproval = (int)$val;
+        $this->BidApproval = (BidApprovalArrayType)$val;
 	}
 
 	/**
@@ -1638,7 +1638,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 	 */
 	public function setApproveAllPending($val)
 	{
-        $this->ApproveAllPending = (int)$val;
+        $this->ApproveAllPending = (boolean)$val;
 	}
 
 	/**
@@ -1647,7 +1647,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 	 */
 	public function setAllApprovedBiddingLimit($val)
 	{
-        $this->AllApprovedBiddingLimit = (int)$val;
+        $this->AllApprovedBiddingLimit = (AmountType)$val;
 	}
 }
 
@@ -1673,7 +1673,7 @@ class ApproveLiveAuctionBiddersResponseType extends
 	 */
 	public function setBidderUpdateStatus($val)
 	{
-        $this->BidderUpdateStatus = (int)$val;
+        $this->BidderUpdateStatus = (LiveAuctionApprovalStatusArrayType)$val;
 	}
 }
 
@@ -1730,7 +1730,7 @@ class CompleteSaleRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1742,7 +1742,7 @@ class CompleteSaleRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -1751,7 +1751,7 @@ class CompleteSaleRequestType extends
 	 */
 	public function setFeedbackInfo($val)
 	{
-        $this->FeedbackInfo = (int)$val;
+        $this->FeedbackInfo = (FeedbackInfoType)$val;
 	}
 
 	/**
@@ -1760,7 +1760,7 @@ class CompleteSaleRequestType extends
 	 */
 	public function setShipped($val)
 	{
-        $this->Shipped = (int)$val;
+        $this->Shipped = (boolean)$val;
 	}
 
 	/**
@@ -1769,7 +1769,7 @@ class CompleteSaleRequestType extends
 	 */
 	public function setPaid($val)
 	{
-        $this->Paid = (int)$val;
+        $this->Paid = (boolean)$val;
 	}
 
 	/**
@@ -1778,7 +1778,7 @@ class CompleteSaleRequestType extends
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 }
 
@@ -1821,7 +1821,7 @@ class DeleteMyMessagesRequestType extends
 	 */
 	public function setAlertIDs($val)
 	{
-        $this->AlertIDs = (int)$val;
+        $this->AlertIDs = (MyMessagesAlertIDArrayType)$val;
 	}
 
 	/**
@@ -1830,7 +1830,7 @@ class DeleteMyMessagesRequestType extends
 	 */
 	public function setMessageIDs($val)
 	{
-        $this->MessageIDs = (int)$val;
+        $this->MessageIDs = (MyMessagesMessageIDArrayType)$val;
 	}
 }
 
@@ -1880,7 +1880,7 @@ class EndItemRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -1889,7 +1889,7 @@ class EndItemRequestType extends
 	 */
 	public function setEndingReason($val)
 	{
-        $this->EndingReason = (int)$val;
+        $this->EndingReason = (EndReasonCodeType)$val;
 	}
 
 	/**
@@ -1901,7 +1901,7 @@ class EndItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->SellerInventoryID = (int)$val;
+        $this->SellerInventoryID = (string)$val;
 	}
 }
 
@@ -1926,7 +1926,7 @@ class EndItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 }
 
@@ -1959,7 +1959,7 @@ class FetchTokenRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SecretID');
         }
-        $this->SecretID = (int)$val;
+        $this->SecretID = (string)$val;
 	}
 }
 
@@ -1997,7 +1997,7 @@ class FetchTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->eBayAuthToken = (int)$val;
+        $this->eBayAuthToken = (string)$val;
 	}
 
 	/**
@@ -2006,7 +2006,7 @@ class FetchTokenResponseType extends
 	 */
 	public function setHardExpirationTime($val)
 	{
-        $this->HardExpirationTime = (int)$val;
+        $this->HardExpirationTime = (dateTime)$val;
 	}
 }
 
@@ -2076,7 +2076,7 @@ class GetAccountRequestType extends
 	 */
 	public function setAccountHistorySelection($val)
 	{
-        $this->AccountHistorySelection = (int)$val;
+        $this->AccountHistorySelection = (AccountHistorySelectionCodeType)$val;
 	}
 
 	/**
@@ -2085,7 +2085,7 @@ class GetAccountRequestType extends
 	 */
 	public function setInvoiceDate($val)
 	{
-        $this->InvoiceDate = (int)$val;
+        $this->InvoiceDate = (dateTime)$val;
 	}
 
 	/**
@@ -2094,7 +2094,7 @@ class GetAccountRequestType extends
 	 */
 	public function setBeginDate($val)
 	{
-        $this->BeginDate = (int)$val;
+        $this->BeginDate = (dateTime)$val;
 	}
 
 	/**
@@ -2103,7 +2103,7 @@ class GetAccountRequestType extends
 	 */
 	public function setEndDate($val)
 	{
-        $this->EndDate = (int)$val;
+        $this->EndDate = (dateTime)$val;
 	}
 
 	/**
@@ -2112,7 +2112,7 @@ class GetAccountRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -2121,7 +2121,7 @@ class GetAccountRequestType extends
 	 */
 	public function setExcludeBalance($val)
 	{
-        $this->ExcludeBalance = (int)$val;
+        $this->ExcludeBalance = (boolean)$val;
 	}
 
 	/**
@@ -2130,7 +2130,7 @@ class GetAccountRequestType extends
 	 */
 	public function setExcludeSummary($val)
 	{
-        $this->ExcludeSummary = (int)$val;
+        $this->ExcludeSummary = (boolean)$val;
 	}
 
 	/**
@@ -2139,7 +2139,7 @@ class GetAccountRequestType extends
 	 */
 	public function setAccountEntrySortType($val)
 	{
-        $this->AccountEntrySortType = (int)$val;
+        $this->AccountEntrySortType = (AccountEntrySortTypeCodeType)$val;
 	}
 
 	/**
@@ -2148,7 +2148,7 @@ class GetAccountRequestType extends
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 }
 
@@ -2218,7 +2218,7 @@ class GetAccountResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountID');
         }
-        $this->AccountID = (int)$val;
+        $this->AccountID = (string)$val;
 	}
 
 	/**
@@ -2227,7 +2227,7 @@ class GetAccountResponseType extends
 	 */
 	public function setAccountSummary($val)
 	{
-        $this->AccountSummary = (int)$val;
+        $this->AccountSummary = (AccountSummaryType)$val;
 	}
 
 	/**
@@ -2236,7 +2236,7 @@ class GetAccountResponseType extends
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -2245,7 +2245,7 @@ class GetAccountResponseType extends
 	 */
 	public function setAccountEntries($val)
 	{
-        $this->AccountEntries = (int)$val;
+        $this->AccountEntries = (AccountEntriesType)$val;
 	}
 
 	/**
@@ -2254,7 +2254,7 @@ class GetAccountResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -2263,7 +2263,7 @@ class GetAccountResponseType extends
 	 */
 	public function setHasMoreEntries($val)
 	{
-        $this->HasMoreEntries = (int)$val;
+        $this->HasMoreEntries = (boolean)$val;
 	}
 
 	/**
@@ -2313,7 +2313,7 @@ class GetAdFormatLeadsRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 }
 
@@ -2344,7 +2344,7 @@ class GetAdFormatLeadsResponseType extends
 	 */
 	public function setAdFormatLead($val)
 	{
-        $this->AdFormatLead = (int)$val;
+        $this->AdFormatLead = (AdFormatLeadType)$val;
 	}
 
 	/**
@@ -2390,7 +2390,7 @@ class GetAllBiddersRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -2399,7 +2399,7 @@ class GetAllBiddersRequestType extends
 	 */
 	public function setCallMode($val)
 	{
-        $this->CallMode = (int)$val;
+        $this->CallMode = (GetAllBiddersModeCodeType)$val;
 	}
 
 	/**
@@ -2408,7 +2408,7 @@ class GetAllBiddersRequestType extends
 	 */
 	public function setIncludeBiddingSummary($val)
 	{
-        $this->IncludeBiddingSummary = (int)$val;
+        $this->IncludeBiddingSummary = (boolean)$val;
 	}
 }
 
@@ -2458,7 +2458,7 @@ class GetAllBiddersResponseType extends
 	 */
 	public function setBidArray($val)
 	{
-        $this->BidArray = (int)$val;
+        $this->BidArray = (OfferArrayType)$val;
 	}
 
 	/**
@@ -2467,7 +2467,7 @@ class GetAllBiddersResponseType extends
 	 */
 	public function setHighBidder($val)
 	{
-        $this->HighBidder = (int)$val;
+        $this->HighBidder = (UserIDType)$val;
 	}
 
 	/**
@@ -2476,7 +2476,7 @@ class GetAllBiddersResponseType extends
 	 */
 	public function setHighestBid($val)
 	{
-        $this->HighestBid = (int)$val;
+        $this->HighestBid = (AmountType)$val;
 	}
 
 	/**
@@ -2485,7 +2485,7 @@ class GetAllBiddersResponseType extends
 	 */
 	public function setListingStatus($val)
 	{
-        $this->ListingStatus = (int)$val;
+        $this->ListingStatus = (ListingStatusCodeType)$val;
 	}
 }
 
@@ -2518,7 +2518,7 @@ class GetApiAccessRulesResponseType extends
 	 */
 	public function setApiAccessRule($val)
 	{
-        $this->ApiAccessRule = (int)$val;
+        $this->ApiAccessRule = (ApiAccessRuleType)$val;
 	}
 }
 
@@ -2575,7 +2575,7 @@ class GetAttributesCsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -2596,7 +2596,7 @@ class GetAttributesCsRequestType extends
 	 */
 	public function setIncludeCategoryMappingDetails($val)
 	{
-        $this->IncludeCategoryMappingDetails = (int)$val;
+        $this->IncludeCategoryMappingDetails = (boolean)$val;
 	}
 
 	/**
@@ -2605,7 +2605,7 @@ class GetAttributesCsRequestType extends
 	 */
 	public function setDigitalDelivery($val)
 	{
-        $this->DigitalDelivery = (int)$val;
+        $this->DigitalDelivery = (boolean)$val;
 	}
 }
 
@@ -2650,7 +2650,7 @@ class GetAttributesCsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -2662,7 +2662,7 @@ class GetAttributesCsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeData');
         }
-        $this->AttributeData = (int)$val;
+        $this->AttributeData = (string)$val;
 	}
 }
 
@@ -2698,7 +2698,7 @@ class GetAttributesXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = (int)$val;
+        $this->FileName = (string)$val;
 	}
 
 	/**
@@ -2710,7 +2710,7 @@ class GetAttributesXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->FileVersion = (int)$val;
+        $this->FileVersion = (string)$val;
 	}
 }
 
@@ -2738,7 +2738,7 @@ class GetAttributesXsLresponseType extends
 	 */
 	public function setXSLFile($val)
 	{
-        $this->XSLFile = (int)$val;
+        $this->XSLFile = (XSLFileType)$val;
 	}
 }
 
@@ -2773,7 +2773,7 @@ class GetBestOffersRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -2782,7 +2782,7 @@ class GetBestOffersRequestType extends
 	 */
 	public function setBestOfferID($val)
 	{
-        $this->BestOfferID = (int)$val;
+        $this->BestOfferID = (BestOfferIDType)$val;
 	}
 
 	/**
@@ -2791,7 +2791,7 @@ class GetBestOffersRequestType extends
 	 */
 	public function setBestOfferStatus($val)
 	{
-        $this->BestOfferStatus = (int)$val;
+        $this->BestOfferStatus = (BestOfferStatusCodeType)$val;
 	}
 }
 
@@ -2826,7 +2826,7 @@ class GetBestOffersResponseType extends
 	 */
 	public function setBestOfferArray($val)
 	{
-        $this->BestOfferArray = (int)$val;
+        $this->BestOfferArray = (BestOfferArrayType)$val;
 	}
 
 	/**
@@ -2835,7 +2835,7 @@ class GetBestOffersResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 }
 
@@ -2894,7 +2894,7 @@ class GetBidderListRequestType extends
 	 */
 	public function setActiveItemsOnly($val)
 	{
-        $this->ActiveItemsOnly = (int)$val;
+        $this->ActiveItemsOnly = (boolean)$val;
 	}
 
 	/**
@@ -2903,7 +2903,7 @@ class GetBidderListRequestType extends
 	 */
 	public function setEndTimeFrom($val)
 	{
-        $this->EndTimeFrom = (int)$val;
+        $this->EndTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -2912,7 +2912,7 @@ class GetBidderListRequestType extends
 	 */
 	public function setEndTimeTo($val)
 	{
-        $this->EndTimeTo = (int)$val;
+        $this->EndTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -2921,7 +2921,7 @@ class GetBidderListRequestType extends
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -2930,7 +2930,7 @@ class GetBidderListRequestType extends
 	 */
 	public function setGranularityLevel($val)
 	{
-        $this->GranularityLevel = (int)$val;
+        $this->GranularityLevel = (GranularityLevelCodeType)$val;
 	}
 }
 
@@ -2958,7 +2958,7 @@ class GetBidderListResponseType extends
 	 */
 	public function setBidder($val)
 	{
-        $this->Bidder = (int)$val;
+        $this->Bidder = (UserType)$val;
 	}
 
 	/**
@@ -2967,7 +2967,7 @@ class GetBidderListResponseType extends
 	 */
 	public function setBidItemArray($val)
 	{
-        $this->BidItemArray = (int)$val;
+        $this->BidItemArray = (ItemArrayType)$val;
 	}
 }
 
@@ -3034,7 +3034,7 @@ class GetCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategorySiteID');
         }
-        $this->CategorySiteID = (int)$val;
+        $this->CategorySiteID = (string)$val;
 	}
 
 	/**
@@ -3046,7 +3046,7 @@ class GetCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParent');
         }
-        $this->CategoryParent = (int)$val;
+        $this->CategoryParent = (string)$val;
 	}
 
 	/**
@@ -3067,7 +3067,7 @@ class GetCategoriesRequestType extends
 	 */
 	public function setViewAllNodes($val)
 	{
-        $this->ViewAllNodes = (int)$val;
+        $this->ViewAllNodes = (boolean)$val;
 	}
 }
 
@@ -3159,7 +3159,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->CategoryArray = (int)$val;
+        $this->CategoryArray = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -3180,7 +3180,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setUpdateTime($val)
 	{
-        $this->UpdateTime = (int)$val;
+        $this->UpdateTime = (dateTime)$val;
 	}
 
 	/**
@@ -3192,7 +3192,7 @@ class GetCategoriesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (int)$val;
+        $this->CategoryVersion = (string)$val;
 	}
 
 	/**
@@ -3201,7 +3201,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReservePriceInclusive($val)
 	{
-        $this->ReservePriceInclusive = (int)$val;
+        $this->ReservePriceInclusive = (boolean)$val;
 	}
 
 	/**
@@ -3210,7 +3210,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReservePriceAllowed($val)
 	{
-        $this->ReservePriceAllowed = (int)$val;
+        $this->ReservePriceAllowed = (boolean)$val;
 	}
 
 	/**
@@ -3219,7 +3219,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = (double)$val;
 	}
 
 	/**
@@ -3228,7 +3228,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -3237,7 +3237,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReduceReserveInclusive($val)
 	{
-        $this->ReduceReserveInclusive = (int)$val;
+        $this->ReduceReserveInclusive = (boolean)$val;
 	}
 
 	/**
@@ -3246,7 +3246,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReduceReserveAllowed($val)
 	{
-        $this->ReduceReserveAllowed = (int)$val;
+        $this->ReduceReserveAllowed = (boolean)$val;
 	}
 }
 
@@ -3281,7 +3281,7 @@ class GetCategory2CsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -3293,7 +3293,7 @@ class GetCategory2CsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 }
 
@@ -3349,7 +3349,7 @@ class GetCategory2CsResponseType extends
 	 */
 	public function setMappedCategoryArray($val)
 	{
-        $this->MappedCategoryArray = (int)$val;
+        $this->MappedCategoryArray = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -3358,7 +3358,7 @@ class GetCategory2CsResponseType extends
 	 */
 	public function setUnmappedCategoryArray($val)
 	{
-        $this->UnmappedCategoryArray = (int)$val;
+        $this->UnmappedCategoryArray = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -3370,7 +3370,7 @@ class GetCategory2CsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -3379,7 +3379,7 @@ class GetCategory2CsResponseType extends
 	 */
 	public function setSiteWideCharacteristicSets($val)
 	{
-        $this->SiteWideCharacteristicSets = (int)$val;
+        $this->SiteWideCharacteristicSets = (SiteWideCharacteristicsType)$val;
 	}
 }
 
@@ -3411,7 +3411,7 @@ class GetCategory2FinanceOfferRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -3420,7 +3420,7 @@ class GetCategory2FinanceOfferRequestType extends
 	 */
 	public function setLastModifiedDate($val)
 	{
-        $this->LastModifiedDate = (int)$val;
+        $this->LastModifiedDate = (dateTime)$val;
 	}
 }
 
@@ -3457,7 +3457,7 @@ class GetCategory2FinanceOfferResponseType extends
 	 */
 	public function setCategoryFinanceOfferArray($val)
 	{
-        $this->CategoryFinanceOfferArray = (int)$val;
+        $this->CategoryFinanceOfferArray = (CategoryFinanceOfferArrayType)$val;
 	}
 }
 
@@ -3507,7 +3507,7 @@ class GetCategoryFeaturesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -3528,7 +3528,7 @@ class GetCategoryFeaturesRequestType extends
 	 */
 	public function setViewAllNodes($val)
 	{
-        $this->ViewAllNodes = (int)$val;
+        $this->ViewAllNodes = (boolean)$val;
 	}
 
 	/**
@@ -3537,7 +3537,7 @@ class GetCategoryFeaturesRequestType extends
 	 */
 	public function setFeatureID($val)
 	{
-        $this->FeatureID = (int)$val;
+        $this->FeatureID = (FeatureIDCodeType)$val;
 	}
 }
 
@@ -3583,7 +3583,7 @@ class GetCategoryFeaturesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (int)$val;
+        $this->CategoryVersion = (string)$val;
 	}
 
 	/**
@@ -3592,7 +3592,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setUpdateTime($val)
 	{
-        $this->UpdateTime = (int)$val;
+        $this->UpdateTime = (dateTime)$val;
 	}
 
 	/**
@@ -3601,7 +3601,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = (CategoryFeatureType)$val;
 	}
 
 	/**
@@ -3610,7 +3610,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setSiteDefaults($val)
 	{
-        $this->SiteDefaults = (int)$val;
+        $this->SiteDefaults = (SiteDefaultsType)$val;
 	}
 
 	/**
@@ -3619,7 +3619,7 @@ class GetCategoryFeaturesResponseType extends
 	 */
 	public function setFeatureDefinitions($val)
 	{
-        $this->FeatureDefinitions = (int)$val;
+        $this->FeatureDefinitions = (FeatureDefinitionsType)$val;
 	}
 }
 
@@ -3762,7 +3762,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setMotorsGermanySearchable($val)
 	{
-        $this->MotorsGermanySearchable = (int)$val;
+        $this->MotorsGermanySearchable = (boolean)$val;
 	}
 
 	/**
@@ -3774,7 +3774,7 @@ class GetCategoryListingsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -3783,7 +3783,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setAdFormat($val)
 	{
-        $this->AdFormat = (int)$val;
+        $this->AdFormat = (boolean)$val;
 	}
 
 	/**
@@ -3792,7 +3792,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setFreeShipping($val)
 	{
-        $this->FreeShipping = (int)$val;
+        $this->FreeShipping = (boolean)$val;
 	}
 
 	/**
@@ -3801,7 +3801,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -3810,7 +3810,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setItemTypeFilter($val)
 	{
-        $this->ItemTypeFilter = (int)$val;
+        $this->ItemTypeFilter = (ItemTypeFilterCodeType)$val;
 	}
 
 	/**
@@ -3819,7 +3819,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setStoresFixedPrice($val)
 	{
-        $this->StoresFixedPrice = (int)$val;
+        $this->StoresFixedPrice = (boolean)$val;
 	}
 
 	/**
@@ -3828,7 +3828,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setSearchType($val)
 	{
-        $this->SearchType = (int)$val;
+        $this->SearchType = (CategoryListingsSearchCodeType)$val;
 	}
 
 	/**
@@ -3837,7 +3837,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setOrderBy($val)
 	{
-        $this->OrderBy = (int)$val;
+        $this->OrderBy = (CategoryListingsOrderCodeType)$val;
 	}
 
 	/**
@@ -3846,7 +3846,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -3855,7 +3855,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setSearchLocation($val)
 	{
-        $this->SearchLocation = (int)$val;
+        $this->SearchLocation = (SearchLocationType)$val;
 	}
 
 	/**
@@ -3864,7 +3864,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setProximitySearch($val)
 	{
-        $this->ProximitySearch = (int)$val;
+        $this->ProximitySearch = (ProximitySearchType)$val;
 	}
 
 	/**
@@ -3873,7 +3873,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setIncludeGetItFastItems($val)
 	{
-        $this->IncludeGetItFastItems = (int)$val;
+        $this->IncludeGetItFastItems = (boolean)$val;
 	}
 
 	/**
@@ -3882,7 +3882,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (PaymentMethodSearchCodeType)$val;
 	}
 
 	/**
@@ -3891,7 +3891,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setIncludeCondition($val)
 	{
-        $this->IncludeCondition = (int)$val;
+        $this->IncludeCondition = (boolean)$val;
 	}
 
 	/**
@@ -3900,7 +3900,7 @@ class GetCategoryListingsRequestType extends
 	 */
 	public function setIncludeFeedback($val)
 	{
-        $this->IncludeFeedback = (int)$val;
+        $this->IncludeFeedback = (boolean)$val;
 	}
 
 	/**
@@ -3912,7 +3912,7 @@ class GetCategoryListingsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
-        $this->LocalSearchPostalCode = (int)$val;
+        $this->LocalSearchPostalCode = (string)$val;
 	}
 
 	/**
@@ -3990,7 +3990,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -3999,7 +3999,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = (CategoryType)$val;
 	}
 
 	/**
@@ -4008,7 +4008,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setSubCategories($val)
 	{
-        $this->SubCategories = (int)$val;
+        $this->SubCategories = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -4041,7 +4041,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -4050,7 +4050,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -4059,7 +4059,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setBuyingGuideDetails($val)
 	{
-        $this->BuyingGuideDetails = (int)$val;
+        $this->BuyingGuideDetails = (BuyingGuideDetailsType)$val;
 	}
 
 	/**
@@ -4068,7 +4068,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{
-        $this->RelatedSearchKeywordArray = (int)$val;
+        $this->RelatedSearchKeywordArray = (RelatedSearchKeywordArrayType)$val;
 	}
 }
 
@@ -4101,7 +4101,7 @@ class GetCategoryMappingsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (int)$val;
+        $this->CategoryVersion = (string)$val;
 	}
 }
 
@@ -4137,7 +4137,7 @@ class GetCategoryMappingsResponseType extends
 	 */
 	public function setCategoryMapping($val)
 	{
-        $this->CategoryMapping = (int)$val;
+        $this->CategoryMapping = (CategoryMappingType)$val;
 	}
 
 	/**
@@ -4149,7 +4149,7 @@ class GetCategoryMappingsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (int)$val;
+        $this->CategoryVersion = (string)$val;
 	}
 }
 
@@ -4199,7 +4199,7 @@ class GetChallengeTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ChallengeToken');
         }
-        $this->ChallengeToken = (int)$val;
+        $this->ChallengeToken = (string)$val;
 	}
 
 	/**
@@ -4211,7 +4211,7 @@ class GetChallengeTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ImageChallengeURL');
         }
-        $this->ImageChallengeURL = (int)$val;
+        $this->ImageChallengeURL = (string)$val;
 	}
 
 	/**
@@ -4223,7 +4223,7 @@ class GetChallengeTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AudioChallengeURL');
         }
-        $this->AudioChallengeURL = (int)$val;
+        $this->AudioChallengeURL = (string)$val;
 	}
 }
 
@@ -4286,7 +4286,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->CharityID = (int)$val;
+        $this->CharityID = (string)$val;
 	}
 
 	/**
@@ -4298,7 +4298,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityName');
         }
-        $this->CharityName = (int)$val;
+        $this->CharityName = (string)$val;
 	}
 
 	/**
@@ -4310,7 +4310,7 @@ class GetCharitiesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 
 	/**
@@ -4343,7 +4343,7 @@ class GetCharitiesRequestType extends
 	 */
 	public function setIncludeDescription($val)
 	{
-        $this->IncludeDescription = (int)$val;
+        $this->IncludeDescription = (boolean)$val;
 	}
 
 	/**
@@ -4352,7 +4352,7 @@ class GetCharitiesRequestType extends
 	 */
 	public function setMatchType($val)
 	{
-        $this->MatchType = (int)$val;
+        $this->MatchType = (StringMatchCodeType)$val;
 	}
 }
 
@@ -4384,7 +4384,7 @@ class GetCharitiesResponseType extends
 	 */
 	public function setCharity($val)
 	{
-        $this->Charity = (int)$val;
+        $this->Charity = (CharityInfoType)$val;
 	}
 }
 
@@ -4424,7 +4424,7 @@ class GetContextualKeywordsRequestType extends
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -4436,7 +4436,7 @@ class GetContextualKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Encoding');
         }
-        $this->Encoding = (int)$val;
+        $this->Encoding = (string)$val;
 	}
 
 	/**
@@ -4448,7 +4448,7 @@ class GetContextualKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 }
 
@@ -4472,7 +4472,7 @@ class GetContextualKeywordsResponseType extends
 	 */
 	public function setContextSearchAsset($val)
 	{
-        $this->ContextSearchAsset = (int)$val;
+        $this->ContextSearchAsset = (ContextSearchAssetType)$val;
 	}
 }
 
@@ -4506,7 +4506,7 @@ class GetCrossPromotionsRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -4515,7 +4515,7 @@ class GetCrossPromotionsRequestType extends
 	 */
 	public function setPromotionMethod($val)
 	{
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
 	}
 
 	/**
@@ -4524,7 +4524,7 @@ class GetCrossPromotionsRequestType extends
 	 */
 	public function setPromotionViewMode($val)
 	{
-        $this->PromotionViewMode = (int)$val;
+        $this->PromotionViewMode = (TradingRoleCodeType)$val;
 	}
 }
 
@@ -4551,7 +4551,7 @@ class GetCrossPromotionsResponseType extends
 	 */
 	public function setCrossPromotion($val)
 	{
-        $this->CrossPromotion = (int)$val;
+        $this->CrossPromotion = (CrossPromotionsType)$val;
 	}
 }
 
@@ -4589,7 +4589,7 @@ class GetDescriptionTemplatesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -4598,7 +4598,7 @@ class GetDescriptionTemplatesRequestType extends
 	 */
 	public function setLastModifiedTime($val)
 	{
-        $this->LastModifiedTime = (int)$val;
+        $this->LastModifiedTime = (dateTime)$val;
 	}
 
 	/**
@@ -4607,7 +4607,7 @@ class GetDescriptionTemplatesRequestType extends
 	 */
 	public function setMotorVehicles($val)
 	{
-        $this->MotorVehicles = (int)$val;
+        $this->MotorVehicles = (boolean)$val;
 	}
 }
 
@@ -4652,7 +4652,7 @@ class GetDescriptionTemplatesResponseType extends
 	 */
 	public function setDescriptionTemplate($val)
 	{
-        $this->DescriptionTemplate = (int)$val;
+        $this->DescriptionTemplate = (DescriptionTemplateType)$val;
 	}
 
 	/**
@@ -4697,7 +4697,7 @@ class GetDescriptionTemplatesResponseType extends
 	 */
 	public function setThemeGroup($val)
 	{
-        $this->ThemeGroup = (int)$val;
+        $this->ThemeGroup = (ThemeGroupType)$val;
 	}
 
 	/**
@@ -4735,7 +4735,7 @@ class GetDisputeRequestType extends
 	 */
 	public function setDisputeID($val)
 	{
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
 	}
 }
 
@@ -4762,7 +4762,7 @@ class GetDisputeResponseType extends
 	 */
 	public function setDispute($val)
 	{
-        $this->Dispute = (int)$val;
+        $this->Dispute = (DisputeType)$val;
 	}
 }
 
@@ -4809,7 +4809,7 @@ class GetFeedbackRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -4818,7 +4818,7 @@ class GetFeedbackRequestType extends
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -4830,7 +4830,7 @@ class GetFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = (int)$val;
+        $this->FeedbackID = (string)$val;
 	}
 }
 
@@ -4887,7 +4887,7 @@ class GetFeedbackResponseType extends
 	 */
 	public function setFeedbackDetailArray($val)
 	{
-        $this->FeedbackDetailArray = (int)$val;
+        $this->FeedbackDetailArray = (FeedbackDetailArrayType)$val;
 	}
 
 	/**
@@ -4908,7 +4908,7 @@ class GetFeedbackResponseType extends
 	 */
 	public function setFeedbackSummary($val)
 	{
-        $this->FeedbackSummary = (int)$val;
+        $this->FeedbackSummary = (FeedbackSummaryType)$val;
 	}
 
 	/**
@@ -4952,7 +4952,7 @@ class GetFinanceOffersRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
 	}
 
 	/**
@@ -4961,7 +4961,7 @@ class GetFinanceOffersRequestType extends
 	 */
 	public function setLastModifiedDate($val)
 	{
-        $this->LastModifiedDate = (int)$val;
+        $this->LastModifiedDate = (dateTime)$val;
 	}
 }
 
@@ -5004,7 +5004,7 @@ class GetFinanceOffersResponseType extends
 	 */
 	public function setFinanceOfferArray($val)
 	{
-        $this->FinanceOfferArray = (int)$val;
+        $this->FinanceOfferArray = (FinanceOfferArrayType)$val;
 	}
 }
 
@@ -5030,7 +5030,7 @@ class GetHighBiddersRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 }
 
@@ -5066,7 +5066,7 @@ class GetHighBiddersResponseType extends
 	 */
 	public function setBidArray($val)
 	{
-        $this->BidArray = (int)$val;
+        $this->BidArray = (OfferArrayType)$val;
 	}
 
 	/**
@@ -5075,7 +5075,7 @@ class GetHighBiddersResponseType extends
 	 */
 	public function setListingStatus($val)
 	{
-        $this->ListingStatus = (int)$val;
+        $this->ListingStatus = (ListingStatusCodeType)$val;
 	}
 }
 
@@ -5127,7 +5127,7 @@ class GetItemRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -5136,7 +5136,7 @@ class GetItemRequestType extends
 	 */
 	public function setIncludeExpressRequirements($val)
 	{
-        $this->IncludeExpressRequirements = (int)$val;
+        $this->IncludeExpressRequirements = (boolean)$val;
 	}
 
 	/**
@@ -5145,7 +5145,7 @@ class GetItemRequestType extends
 	 */
 	public function setIncludeWatchCount($val)
 	{
-        $this->IncludeWatchCount = (int)$val;
+        $this->IncludeWatchCount = (boolean)$val;
 	}
 
 	/**
@@ -5154,7 +5154,7 @@ class GetItemRequestType extends
 	 */
 	public function setIncludeCrossPromotion($val)
 	{
-        $this->IncludeCrossPromotion = (int)$val;
+        $this->IncludeCrossPromotion = (boolean)$val;
 	}
 }
 
@@ -5182,7 +5182,7 @@ class GetItemResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 }
 
@@ -5213,7 +5213,7 @@ class GetItemRecommendationsRequestType extends
 	 */
 	public function setGetRecommendationsRequestContainer($val)
 	{
-        $this->GetRecommendationsRequestContainer = (int)$val;
+        $this->GetRecommendationsRequestContainer = (GetRecommendationsRequestContainerType)$val;
 	}
 }
 
@@ -5242,7 +5242,7 @@ class GetItemRecommendationsResponseType extends
 	 */
 	public function setGetRecommendationsResponseContainer($val)
 	{
-        $this->GetRecommendationsResponseContainer = (int)$val;
+        $this->GetRecommendationsResponseContainer = (GetRecommendationsResponseContainerType)$val;
 	}
 }
 
@@ -5288,7 +5288,7 @@ class GetItemShippingRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -5312,7 +5312,7 @@ class GetItemShippingRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DestinationPostalCode');
         }
-        $this->DestinationPostalCode = (int)$val;
+        $this->DestinationPostalCode = (string)$val;
 	}
 
 	/**
@@ -5321,7 +5321,7 @@ class GetItemShippingRequestType extends
 	 */
 	public function setDestinationCountryCode($val)
 	{
-        $this->DestinationCountryCode = (int)$val;
+        $this->DestinationCountryCode = (CountryCodeType)$val;
 	}
 }
 
@@ -5348,7 +5348,7 @@ class GetItemShippingResponseType extends
 	 */
 	public function setShippingDetails($val)
 	{
-        $this->ShippingDetails = (int)$val;
+        $this->ShippingDetails = (ShippingDetailsType)$val;
 	}
 }
 
@@ -5418,7 +5418,7 @@ class GetItemTransactionsRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -5427,7 +5427,7 @@ class GetItemTransactionsRequestType extends
 	 */
 	public function setModTimeFrom($val)
 	{
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -5436,7 +5436,7 @@ class GetItemTransactionsRequestType extends
 	 */
 	public function setModTimeTo($val)
 	{
-        $this->ModTimeTo = (int)$val;
+        $this->ModTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -5448,7 +5448,7 @@ class GetItemTransactionsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -5457,7 +5457,7 @@ class GetItemTransactionsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -5466,7 +5466,7 @@ class GetItemTransactionsRequestType extends
 	 */
 	public function setIncludeFinalValueFee($val)
 	{
-        $this->IncludeFinalValueFee = (int)$val;
+        $this->IncludeFinalValueFee = (boolean)$val;
 	}
 
 	/**
@@ -5475,7 +5475,7 @@ class GetItemTransactionsRequestType extends
 	 */
 	public function setIncludeContainingOrder($val)
 	{
-        $this->IncludeContainingOrder = (int)$val;
+        $this->IncludeContainingOrder = (boolean)$val;
 	}
 }
 
@@ -5548,7 +5548,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -5557,7 +5557,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setHasMoreTransactions($val)
 	{
-        $this->HasMoreTransactions = (int)$val;
+        $this->HasMoreTransactions = (boolean)$val;
 	}
 
 	/**
@@ -5602,7 +5602,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -5611,7 +5611,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (int)$val;
+        $this->TransactionArray = (TransactionArrayType)$val;
 	}
 
 	/**
@@ -5620,7 +5620,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = (int)$val;
+        $this->PayPalPreferred = (boolean)$val;
 	}
 }
 
@@ -5651,7 +5651,7 @@ class GetItemsAwaitingFeedbackRequestType extends
 	 */
 	public function setSort($val)
 	{
-        $this->Sort = (int)$val;
+        $this->Sort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -5660,7 +5660,7 @@ class GetItemsAwaitingFeedbackRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -5685,7 +5685,7 @@ class GetItemsAwaitingFeedbackResponseType extends
 	 */
 	public function setItemsAwaitingFeedback($val)
 	{
-        $this->ItemsAwaitingFeedback = (int)$val;
+        $this->ItemsAwaitingFeedback = (PaginatedTransactionArrayType)$val;
 	}
 }
 
@@ -5733,7 +5733,7 @@ class GetLiveAuctionBiddersRequestType extends
 	 */
 	public function setBidderStatus($val)
 	{
-        $this->BidderStatus = (int)$val;
+        $this->BidderStatus = (BidderStatusCodeType)$val;
 	}
 
 	/**
@@ -5742,7 +5742,7 @@ class GetLiveAuctionBiddersRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -5792,7 +5792,7 @@ class GetLiveAuctionBiddersResponseType extends
 	 */
 	public function setBidderDetails($val)
 	{
-        $this->BidderDetails = (int)$val;
+        $this->BidderDetails = (BidderDetailArrayType)$val;
 	}
 
 	/**
@@ -5849,7 +5849,7 @@ class GetLiveAuctionBiddersResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }
 
@@ -5889,7 +5889,7 @@ class GetLiveAuctionCatalogDetailsResponseType extends
 	 */
 	public function setLiveAuctionCatalog($val)
 	{
-        $this->LiveAuctionCatalog = (int)$val;
+        $this->LiveAuctionCatalog = (LiveAuctionCatalogType)$val;
 	}
 }
 
@@ -5944,7 +5944,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -5953,7 +5953,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setMailMessageType($val)
 	{
-        $this->MailMessageType = (int)$val;
+        $this->MailMessageType = (MessageTypeCodeType)$val;
 	}
 
 	/**
@@ -5962,7 +5962,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setMessageStatus($val)
 	{
-        $this->MessageStatus = (int)$val;
+        $this->MessageStatus = (MessageStatusTypeCodeType)$val;
 	}
 
 	/**
@@ -5971,7 +5971,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setDisplayToPublic($val)
 	{
-        $this->DisplayToPublic = (int)$val;
+        $this->DisplayToPublic = (boolean)$val;
 	}
 
 	/**
@@ -5980,7 +5980,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setStartCreationTime($val)
 	{
-        $this->StartCreationTime = (int)$val;
+        $this->StartCreationTime = (dateTime)$val;
 	}
 
 	/**
@@ -5989,7 +5989,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setEndCreationTime($val)
 	{
-        $this->EndCreationTime = (int)$val;
+        $this->EndCreationTime = (dateTime)$val;
 	}
 
 	/**
@@ -5998,7 +5998,7 @@ class GetMemberMessagesRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -6010,7 +6010,7 @@ class GetMemberMessagesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MemberMessageID');
         }
-        $this->MemberMessageID = (int)$val;
+        $this->MemberMessageID = (string)$val;
 	}
 }
 
@@ -6039,7 +6039,7 @@ class GetMemberMessagesResponseType extends
 	 */
 	public function setMemberMessage($val)
 	{
-        $this->MemberMessage = (int)$val;
+        $this->MemberMessage = (MemberMessageExchangeArrayType)$val;
 	}
 
 	/**
@@ -6048,7 +6048,7 @@ class GetMemberMessagesResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -6057,7 +6057,7 @@ class GetMemberMessagesResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 }
 
@@ -6099,7 +6099,7 @@ class GetMyMessagesRequestType extends
 	 */
 	public function setAlertIDs($val)
 	{
-        $this->AlertIDs = (int)$val;
+        $this->AlertIDs = (MyMessagesAlertIDArrayType)$val;
 	}
 
 	/**
@@ -6108,7 +6108,7 @@ class GetMyMessagesRequestType extends
 	 */
 	public function setMessageIDs($val)
 	{
-        $this->MessageIDs = (int)$val;
+        $this->MessageIDs = (MyMessagesMessageIDArrayType)$val;
 	}
 
 	/**
@@ -6117,7 +6117,7 @@ class GetMyMessagesRequestType extends
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = (int)$val;
+        $this->FolderID = (long)$val;
 	}
 }
 
@@ -6158,7 +6158,7 @@ class GetMyMessagesResponseType extends
 	 */
 	public function setSummary($val)
 	{
-        $this->Summary = (int)$val;
+        $this->Summary = (MyMessagesSummaryType)$val;
 	}
 
 	/**
@@ -6167,7 +6167,7 @@ class GetMyMessagesResponseType extends
 	 */
 	public function setAlerts($val)
 	{
-        $this->Alerts = (int)$val;
+        $this->Alerts = (MyMessagesAlertArrayType)$val;
 	}
 
 	/**
@@ -6176,7 +6176,7 @@ class GetMyMessagesResponseType extends
 	 */
 	public function setMessages($val)
 	{
-        $this->Messages = (int)$val;
+        $this->Messages = (MyMessagesMessageArrayType)$val;
 	}
 }
 
@@ -6250,7 +6250,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setBiddingSort($val)
 	{
-        $this->BiddingSort = (int)$val;
+        $this->BiddingSort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -6259,7 +6259,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setLostSort($val)
 	{
-        $this->LostSort = (int)$val;
+        $this->LostSort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -6292,7 +6292,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setWatchSort($val)
 	{
-        $this->WatchSort = (int)$val;
+        $this->WatchSort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -6301,7 +6301,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setWonSort($val)
 	{
-        $this->WonSort = (int)$val;
+        $this->WonSort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -6310,7 +6310,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setFavoriteSearches($val)
 	{
-        $this->FavoriteSearches = (int)$val;
+        $this->FavoriteSearches = (MyeBaySelectionType)$val;
 	}
 
 	/**
@@ -6319,7 +6319,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setFavoriteSellers($val)
 	{
-        $this->FavoriteSellers = (int)$val;
+        $this->FavoriteSellers = (MyeBaySelectionType)$val;
 	}
 
 	/**
@@ -6328,7 +6328,7 @@ class GetMyeBayRequestType extends
 	 */
 	public function setSecondChanceOffers($val)
 	{
-        $this->SecondChanceOffers = (int)$val;
+        $this->SecondChanceOffers = (MyeBaySelectionType)$val;
 	}
 }
 
@@ -6385,7 +6385,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setBiddingItemArray($val)
 	{
-        $this->BiddingItemArray = (int)$val;
+        $this->BiddingItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -6394,7 +6394,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setLostItemArray($val)
 	{
-        $this->LostItemArray = (int)$val;
+        $this->LostItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -6403,7 +6403,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setWatchItemArray($val)
 	{
-        $this->WatchItemArray = (int)$val;
+        $this->WatchItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -6412,7 +6412,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setWonItemArray($val)
 	{
-        $this->WonItemArray = (int)$val;
+        $this->WonItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -6421,7 +6421,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setFavoriteSearches($val)
 	{
-        $this->FavoriteSearches = (int)$val;
+        $this->FavoriteSearches = (MyeBayFavoriteSearchListType)$val;
 	}
 
 	/**
@@ -6430,7 +6430,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setFavoriteSellers($val)
 	{
-        $this->FavoriteSellers = (int)$val;
+        $this->FavoriteSellers = (MyeBayFavoriteSellerListType)$val;
 	}
 
 	/**
@@ -6439,7 +6439,7 @@ class GetMyeBayResponseType extends
 	 */
 	public function setSecondChanceOffers($val)
 	{
-        $this->SecondChanceOffers = (int)$val;
+        $this->SecondChanceOffers = (MyeBaySecondChanceOfferListType)$val;
 	}
 }
 
@@ -6502,7 +6502,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setWatchList($val)
 	{
-        $this->WatchList = (int)$val;
+        $this->WatchList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6511,7 +6511,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setBidList($val)
 	{
-        $this->BidList = (int)$val;
+        $this->BidList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6520,7 +6520,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setBestOfferList($val)
 	{
-        $this->BestOfferList = (int)$val;
+        $this->BestOfferList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6529,7 +6529,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setWonList($val)
 	{
-        $this->WonList = (int)$val;
+        $this->WonList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6538,7 +6538,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setLostList($val)
 	{
-        $this->LostList = (int)$val;
+        $this->LostList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6547,7 +6547,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setFavoriteSearches($val)
 	{
-        $this->FavoriteSearches = (int)$val;
+        $this->FavoriteSearches = (MyeBaySelectionType)$val;
 	}
 
 	/**
@@ -6556,7 +6556,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setFavoriteSellers($val)
 	{
-        $this->FavoriteSellers = (int)$val;
+        $this->FavoriteSellers = (MyeBaySelectionType)$val;
 	}
 
 	/**
@@ -6565,7 +6565,7 @@ class GetMyeBayBuyingRequestType extends
 	 */
 	public function setSecondChanceOffer($val)
 	{
-        $this->SecondChanceOffer = (int)$val;
+        $this->SecondChanceOffer = (MyeBaySelectionType)$val;
 	}
 }
 
@@ -6628,7 +6628,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setBuyingSummary($val)
 	{
-        $this->BuyingSummary = (int)$val;
+        $this->BuyingSummary = (BuyingSummaryType)$val;
 	}
 
 	/**
@@ -6637,7 +6637,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setWatchList($val)
 	{
-        $this->WatchList = (int)$val;
+        $this->WatchList = (PaginatedItemArrayType)$val;
 	}
 
 	/**
@@ -6646,7 +6646,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setBidList($val)
 	{
-        $this->BidList = (int)$val;
+        $this->BidList = (PaginatedItemArrayType)$val;
 	}
 
 	/**
@@ -6655,7 +6655,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setBestOfferList($val)
 	{
-        $this->BestOfferList = (int)$val;
+        $this->BestOfferList = (PaginatedItemArrayType)$val;
 	}
 
 	/**
@@ -6664,7 +6664,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setWonList($val)
 	{
-        $this->WonList = (int)$val;
+        $this->WonList = (PaginatedOrderTransactionArrayType)$val;
 	}
 
 	/**
@@ -6673,7 +6673,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setLostList($val)
 	{
-        $this->LostList = (int)$val;
+        $this->LostList = (PaginatedItemArrayType)$val;
 	}
 
 	/**
@@ -6682,7 +6682,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setFavoriteSearches($val)
 	{
-        $this->FavoriteSearches = (int)$val;
+        $this->FavoriteSearches = (MyeBayFavoriteSearchListType)$val;
 	}
 
 	/**
@@ -6691,7 +6691,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setFavoriteSellers($val)
 	{
-        $this->FavoriteSellers = (int)$val;
+        $this->FavoriteSellers = (MyeBayFavoriteSellerListType)$val;
 	}
 
 	/**
@@ -6700,7 +6700,7 @@ class GetMyeBayBuyingResponseType extends
 	 */
 	public function setSecondChanceOffer($val)
 	{
-        $this->SecondChanceOffer = (int)$val;
+        $this->SecondChanceOffer = (ItemType)$val;
 	}
 }
 
@@ -6728,7 +6728,7 @@ class GetMyeBayRemindersRequestType extends
 	 */
 	public function setBuyingReminders($val)
 	{
-        $this->BuyingReminders = (int)$val;
+        $this->BuyingReminders = (ReminderCustomizationType)$val;
 	}
 
 	/**
@@ -6737,7 +6737,7 @@ class GetMyeBayRemindersRequestType extends
 	 */
 	public function setSellingReminders($val)
 	{
-        $this->SellingReminders = (int)$val;
+        $this->SellingReminders = (ReminderCustomizationType)$val;
 	}
 }
 
@@ -6765,7 +6765,7 @@ class GetMyeBayRemindersResponseType extends
 	 */
 	public function setBuyingReminders($val)
 	{
-        $this->BuyingReminders = (int)$val;
+        $this->BuyingReminders = (RemindersType)$val;
 	}
 
 	/**
@@ -6774,7 +6774,7 @@ class GetMyeBayRemindersResponseType extends
 	 */
 	public function setSellingReminders($val)
 	{
-        $this->SellingReminders = (int)$val;
+        $this->SellingReminders = (RemindersType)$val;
 	}
 }
 
@@ -6818,7 +6818,7 @@ class GetMyeBaySellingRequestType extends
 	 */
 	public function setScheduledList($val)
 	{
-        $this->ScheduledList = (int)$val;
+        $this->ScheduledList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6827,7 +6827,7 @@ class GetMyeBaySellingRequestType extends
 	 */
 	public function setActiveList($val)
 	{
-        $this->ActiveList = (int)$val;
+        $this->ActiveList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6836,7 +6836,7 @@ class GetMyeBaySellingRequestType extends
 	 */
 	public function setSoldList($val)
 	{
-        $this->SoldList = (int)$val;
+        $this->SoldList = (ItemListCustomizationType)$val;
 	}
 
 	/**
@@ -6845,7 +6845,7 @@ class GetMyeBaySellingRequestType extends
 	 */
 	public function setUnsoldList($val)
 	{
-        $this->UnsoldList = (int)$val;
+        $this->UnsoldList = (ItemListCustomizationType)$val;
 	}
 }
 
@@ -6886,7 +6886,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setSellingSummary($val)
 	{
-        $this->SellingSummary = (int)$val;
+        $this->SellingSummary = (SellingSummaryType)$val;
 	}
 
 	/**
@@ -6895,7 +6895,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setScheduledList($val)
 	{
-        $this->ScheduledList = (int)$val;
+        $this->ScheduledList = (PaginatedItemArrayType)$val;
 	}
 
 	/**
@@ -6904,7 +6904,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setActiveList($val)
 	{
-        $this->ActiveList = (int)$val;
+        $this->ActiveList = (PaginatedItemArrayType)$val;
 	}
 
 	/**
@@ -6913,7 +6913,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setSoldList($val)
 	{
-        $this->SoldList = (int)$val;
+        $this->SoldList = (PaginatedOrderTransactionArrayType)$val;
 	}
 
 	/**
@@ -6922,7 +6922,7 @@ class GetMyeBaySellingResponseType extends
 	 */
 	public function setUnsoldList($val)
 	{
-        $this->UnsoldList = (int)$val;
+        $this->UnsoldList = (PaginatedItemArrayType)$val;
 	}
 }
 
@@ -6950,7 +6950,7 @@ class GetNotificationPreferencesRequestType extends
 	 */
 	public function setPreferenceLevel($val)
 	{
-        $this->PreferenceLevel = (int)$val;
+        $this->PreferenceLevel = (NotificationRoleCodeType)$val;
 	}
 }
 
@@ -6992,7 +6992,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setApplicationDeliveryPreferences($val)
 	{
-        $this->ApplicationDeliveryPreferences = (int)$val;
+        $this->ApplicationDeliveryPreferences = (ApplicationDeliveryPreferencesType)$val;
 	}
 
 	/**
@@ -7001,7 +7001,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setUserDeliveryPreferenceArray($val)
 	{
-        $this->UserDeliveryPreferenceArray = (int)$val;
+        $this->UserDeliveryPreferenceArray = (NotificationEnableArrayType)$val;
 	}
 
 	/**
@@ -7010,7 +7010,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setUserData($val)
 	{
-        $this->UserData = (int)$val;
+        $this->UserData = (NotificationUserDataType)$val;
 	}
 
 	/**
@@ -7019,7 +7019,7 @@ class GetNotificationPreferencesResponseType extends
 	 */
 	public function setEventProperty($val)
 	{
-        $this->EventProperty = (int)$val;
+        $this->EventProperty = (NotificationEventPropertyType)$val;
 	}
 }
 
@@ -7054,7 +7054,7 @@ class GetNotificationsUsageRequestType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -7063,7 +7063,7 @@ class GetNotificationsUsageRequestType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 
 	/**
@@ -7072,7 +7072,7 @@ class GetNotificationsUsageRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 }
 
@@ -7127,7 +7127,7 @@ class GetNotificationsUsageResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -7136,7 +7136,7 @@ class GetNotificationsUsageResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 
 	/**
@@ -7145,7 +7145,7 @@ class GetNotificationsUsageResponseType extends
 	 */
 	public function setNotificationDetailsArray($val)
 	{
-        $this->NotificationDetailsArray = (int)$val;
+        $this->NotificationDetailsArray = (NotificationDetailsArrayType)$val;
 	}
 
 	/**
@@ -7154,7 +7154,7 @@ class GetNotificationsUsageResponseType extends
 	 */
 	public function setMarkUpMarkDownHistory($val)
 	{
-        $this->MarkUpMarkDownHistory = (int)$val;
+        $this->MarkUpMarkDownHistory = (MarkUpMarkDownHistoryType)$val;
 	}
 
 	/**
@@ -7163,7 +7163,7 @@ class GetNotificationsUsageResponseType extends
 	 */
 	public function setNotificationStatistics($val)
 	{
-        $this->NotificationStatistics = (int)$val;
+        $this->NotificationStatistics = (NotificationStatisticsType)$val;
 	}
 }
 
@@ -7195,7 +7195,7 @@ class GetOrderTransactionsRequestType extends
 	 */
 	public function setItemTransactionIDArray($val)
 	{
-        $this->ItemTransactionIDArray = (int)$val;
+        $this->ItemTransactionIDArray = (ItemTransactionIDArrayType)$val;
 	}
 
 	/**
@@ -7204,7 +7204,7 @@ class GetOrderTransactionsRequestType extends
 	 */
 	public function setOrderIDArray($val)
 	{
-        $this->OrderIDArray = (int)$val;
+        $this->OrderIDArray = (OrderIDArrayType)$val;
 	}
 }
 
@@ -7229,7 +7229,7 @@ class GetOrderTransactionsResponseType extends
 	 */
 	public function setOrderArray($val)
 	{
-        $this->OrderArray = (int)$val;
+        $this->OrderArray = (OrderArrayType)$val;
 	}
 }
 
@@ -7291,7 +7291,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setOrderIDArray($val)
 	{
-        $this->OrderIDArray = (int)$val;
+        $this->OrderIDArray = (OrderIDArrayType)$val;
 	}
 
 	/**
@@ -7300,7 +7300,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setCreateTimeFrom($val)
 	{
-        $this->CreateTimeFrom = (int)$val;
+        $this->CreateTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -7309,7 +7309,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setCreateTimeTo($val)
 	{
-        $this->CreateTimeTo = (int)$val;
+        $this->CreateTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -7318,7 +7318,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setOrderRole($val)
 	{
-        $this->OrderRole = (int)$val;
+        $this->OrderRole = (TradingRoleCodeType)$val;
 	}
 
 	/**
@@ -7327,7 +7327,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setOrderStatus($val)
 	{
-        $this->OrderStatus = (int)$val;
+        $this->OrderStatus = (OrderStatusCodeType)$val;
 	}
 
 	/**
@@ -7336,7 +7336,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 
 	/**
@@ -7345,7 +7345,7 @@ class GetOrdersRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -7401,7 +7401,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -7410,7 +7410,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setHasMoreOrders($val)
 	{
-        $this->HasMoreOrders = (int)$val;
+        $this->HasMoreOrders = (boolean)$val;
 	}
 
 	/**
@@ -7419,7 +7419,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setOrderArray($val)
 	{
-        $this->OrderArray = (int)$val;
+        $this->OrderArray = (OrderArrayType)$val;
 	}
 
 	/**
@@ -7518,7 +7518,7 @@ class GetPictureManagerDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (string)$val;
 	}
 
 	/**
@@ -7527,7 +7527,7 @@ class GetPictureManagerDetailsRequestType extends
 	 */
 	public function setPictureManagerDetailLevel($val)
 	{
-        $this->PictureManagerDetailLevel = (int)$val;
+        $this->PictureManagerDetailLevel = (PictureManagerDetailLevelCodeType)$val;
 	}
 }
 
@@ -7553,7 +7553,7 @@ class GetPictureManagerDetailsResponseType extends
 	 */
 	public function setPictureManagerDetails($val)
 	{
-        $this->PictureManagerDetails = (int)$val;
+        $this->PictureManagerDetails = (PictureManagerDetailsType)$val;
 	}
 }
 
@@ -7590,7 +7590,7 @@ class GetPictureManagerOptionsResponseType extends
 	 */
 	public function setSubscription($val)
 	{
-        $this->Subscription = (int)$val;
+        $this->Subscription = (PictureManagerSubscriptionType)$val;
 	}
 
 	/**
@@ -7599,7 +7599,7 @@ class GetPictureManagerOptionsResponseType extends
 	 */
 	public function setPictureType($val)
 	{
-        $this->PictureType = (int)$val;
+        $this->PictureType = (PictureManagerPictureDisplayType)$val;
 	}
 }
 
@@ -7645,7 +7645,7 @@ class GetPopularKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -7654,7 +7654,7 @@ class GetPopularKeywordsRequestType extends
 	 */
 	public function setIncludeChildCategories($val)
 	{
-        $this->IncludeChildCategories = (int)$val;
+        $this->IncludeChildCategories = (boolean)$val;
 	}
 
 	/**
@@ -7675,7 +7675,7 @@ class GetPopularKeywordsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -7718,7 +7718,7 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -7727,7 +7727,7 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->CategoryArray = (int)$val;
+        $this->CategoryArray = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -7736,7 +7736,7 @@ class GetPopularKeywordsResponseType extends
 	 */
 	public function setHasMore($val)
 	{
-        $this->HasMore = (int)$val;
+        $this->HasMore = (boolean)$val;
 	}
 }
 
@@ -7784,7 +7784,7 @@ class GetProductFamilyMembersRequestType extends
 	 */
 	public function setProductSearch($val)
 	{
-        $this->ProductSearch = (int)$val;
+        $this->ProductSearch = (ProductSearchType)$val;
 	}
 }
 
@@ -7825,7 +7825,7 @@ class GetProductFamilyMembersResponseType extends
 	 */
 	public function setDataElementSets($val)
 	{
-        $this->DataElementSets = (int)$val;
+        $this->DataElementSets = (DataElementSetType)$val;
 	}
 
 	/**
@@ -7834,7 +7834,7 @@ class GetProductFamilyMembersResponseType extends
 	 */
 	public function setProductSearchResult($val)
 	{
-        $this->ProductSearchResult = (int)$val;
+        $this->ProductSearchResult = (ProductSearchResultType)$val;
 	}
 }
 
@@ -7886,7 +7886,7 @@ class GetProductFinderRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -7949,7 +7949,7 @@ class GetProductFinderResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -7961,7 +7961,7 @@ class GetProductFinderResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductFinderData');
         }
-        $this->ProductFinderData = (int)$val;
+        $this->ProductFinderData = (string)$val;
 	}
 }
 
@@ -7997,7 +7997,7 @@ class GetProductFinderXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = (int)$val;
+        $this->FileName = (string)$val;
 	}
 
 	/**
@@ -8009,7 +8009,7 @@ class GetProductFinderXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->FileVersion = (int)$val;
+        $this->FileVersion = (string)$val;
 	}
 }
 
@@ -8037,7 +8037,7 @@ class GetProductFinderXsLresponseType extends
 	 */
 	public function setXSLFile($val)
 	{
-        $this->XSLFile = (int)$val;
+        $this->XSLFile = (XSLFileType)$val;
 	}
 }
 
@@ -8082,7 +8082,7 @@ class GetProductSearchPageRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -8132,7 +8132,7 @@ class GetProductSearchPageResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
 	}
 
 	/**
@@ -8141,7 +8141,7 @@ class GetProductSearchPageResponseType extends
 	 */
 	public function setProductSearchPage($val)
 	{
-        $this->ProductSearchPage = (int)$val;
+        $this->ProductSearchPage = (ProductSearchPageType)$val;
 	}
 }
 
@@ -8215,7 +8215,7 @@ class GetProductSearchResultsRequestType extends
 	 */
 	public function setProductSearch($val)
 	{
-        $this->ProductSearch = (int)$val;
+        $this->ProductSearch = (ProductSearchType)$val;
 	}
 }
 
@@ -8254,7 +8254,7 @@ class GetProductSearchResultsResponseType extends
 	 */
 	public function setDataElementSets($val)
 	{
-        $this->DataElementSets = (int)$val;
+        $this->DataElementSets = (DataElementSetType)$val;
 	}
 
 	/**
@@ -8263,7 +8263,7 @@ class GetProductSearchResultsResponseType extends
 	 */
 	public function setProductSearchResult($val)
 	{
-        $this->ProductSearchResult = (int)$val;
+        $this->ProductSearchResult = (ProductSearchResultType)$val;
 	}
 }
 
@@ -8316,7 +8316,7 @@ class GetProductSellingPagesRequestType extends
 	 */
 	public function setUseCase($val)
 	{
-        $this->UseCase = (int)$val;
+        $this->UseCase = (ProductUseCaseCodeType)$val;
 	}
 
 	/**
@@ -8325,7 +8325,7 @@ class GetProductSellingPagesRequestType extends
 	 */
 	public function setProduct($val)
 	{
-        $this->Product = (int)$val;
+        $this->Product = (ProductType)$val;
 	}
 }
 
@@ -8373,7 +8373,7 @@ class GetProductSellingPagesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
         }
-        $this->ProductSellingPagesData = (int)$val;
+        $this->ProductSellingPagesData = (string)$val;
 	}
 }
 
@@ -8411,7 +8411,7 @@ class GetPromotionRulesRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -8432,7 +8432,7 @@ class GetPromotionRulesRequestType extends
 	 */
 	public function setPromotionMethod($val)
 	{
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
 	}
 }
 
@@ -8457,7 +8457,7 @@ class GetPromotionRulesResponseType extends
 	 */
 	public function setPromotionRuleArray($val)
 	{
-        $this->PromotionRuleArray = (int)$val;
+        $this->PromotionRuleArray = (PromotionRuleArrayType)$val;
 	}
 }
 
@@ -8518,7 +8518,7 @@ class GetRecommendationsRequestType extends
 	 */
 	public function setListingFlow($val)
 	{
-        $this->ListingFlow = (int)$val;
+        $this->ListingFlow = (ListingFlowCodeType)$val;
 	}
 
 	/**
@@ -8527,7 +8527,7 @@ class GetRecommendationsRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -8536,7 +8536,7 @@ class GetRecommendationsRequestType extends
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 
 	/**
@@ -8545,7 +8545,7 @@ class GetRecommendationsRequestType extends
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
 	}
 
 	/**
@@ -8554,7 +8554,7 @@ class GetRecommendationsRequestType extends
 	 */
 	public function setRecommendationEngine($val)
 	{
-        $this->RecommendationEngine = (int)$val;
+        $this->RecommendationEngine = (RecommendationEngineCodeType)$val;
 	}
 
 	/**
@@ -8566,7 +8566,7 @@ class GetRecommendationsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 }
 
@@ -8617,7 +8617,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
-        $this->ListingAnalyzerRecommendations = (int)$val;
+        $this->ListingAnalyzerRecommendations = (ListingAnalyzerRecommendationsType)$val;
 	}
 
 	/**
@@ -8626,7 +8626,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
-        $this->SIFFTASRecommendations = (int)$val;
+        $this->SIFFTASRecommendations = (SIFFTASRecommendationsType)$val;
 	}
 
 	/**
@@ -8635,7 +8635,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setPricingRecommendations($val)
 	{
-        $this->PricingRecommendations = (int)$val;
+        $this->PricingRecommendations = (PricingRecommendationsType)$val;
 	}
 
 	/**
@@ -8644,7 +8644,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setAttributeRecommendations($val)
 	{
-        $this->AttributeRecommendations = (int)$val;
+        $this->AttributeRecommendations = (AttributeRecommendationsType)$val;
 	}
 
 	/**
@@ -8653,7 +8653,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setProductRecommendations($val)
 	{
-        $this->ProductRecommendations = (int)$val;
+        $this->ProductRecommendations = (ProductRecommendationsType)$val;
 	}
 }
 
@@ -8697,7 +8697,7 @@ class GetReturnUrLresponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
-        $this->ApplicationDisplayName = (int)$val;
+        $this->ApplicationDisplayName = (string)$val;
 	}
 
 	/**
@@ -8706,7 +8706,7 @@ class GetReturnUrLresponseType extends
 	 */
 	public function setAuthenticationEntryArray($val)
 	{
-        $this->AuthenticationEntryArray = (int)$val;
+        $this->AuthenticationEntryArray = (AuthenticationEntryArrayType)$val;
 	}
 }
 
@@ -8735,7 +8735,7 @@ class GetRuNameRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ClientUseCase');
         }
-        $this->ClientUseCase = (int)$val;
+        $this->ClientUseCase = (string)$val;
 	}
 }
 
@@ -8765,7 +8765,7 @@ class GetRuNameResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RuName');
         }
-        $this->RuName = (int)$val;
+        $this->RuName = (string)$val;
 	}
 }
 
@@ -9074,7 +9074,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setMotorsGermanySearchable($val)
 	{
-        $this->MotorsGermanySearchable = (int)$val;
+        $this->MotorsGermanySearchable = (boolean)$val;
 	}
 
 	/**
@@ -9086,7 +9086,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 
 	/**
@@ -9098,7 +9098,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -9107,7 +9107,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setSearchFlags($val)
 	{
-        $this->SearchFlags = (int)$val;
+        $this->SearchFlags = (SearchFlagsCodeType)$val;
 	}
 
 	/**
@@ -9116,7 +9116,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setPriceRangeFilter($val)
 	{
-        $this->PriceRangeFilter = (int)$val;
+        $this->PriceRangeFilter = (PriceRangeFilterType)$val;
 	}
 
 	/**
@@ -9125,7 +9125,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setProximitySearch($val)
 	{
-        $this->ProximitySearch = (int)$val;
+        $this->ProximitySearch = (ProximitySearchType)$val;
 	}
 
 	/**
@@ -9134,7 +9134,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setItemTypeFilter($val)
 	{
-        $this->ItemTypeFilter = (int)$val;
+        $this->ItemTypeFilter = (ItemTypeFilterCodeType)$val;
 	}
 
 	/**
@@ -9143,7 +9143,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setSearchType($val)
 	{
-        $this->SearchType = (int)$val;
+        $this->SearchType = (SearchTypeCodeType)$val;
 	}
 
 	/**
@@ -9152,7 +9152,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setUserIdFilter($val)
 	{
-        $this->UserIdFilter = (int)$val;
+        $this->UserIdFilter = (UserIdFilterType)$val;
 	}
 
 	/**
@@ -9161,7 +9161,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setSearchLocationFilter($val)
 	{
-        $this->SearchLocationFilter = (int)$val;
+        $this->SearchLocationFilter = (SearchLocationFilterType)$val;
 	}
 
 	/**
@@ -9170,7 +9170,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setStoreSearchFilter($val)
 	{
-        $this->StoreSearchFilter = (int)$val;
+        $this->StoreSearchFilter = (SearchStoreFilterType)$val;
 	}
 
 	/**
@@ -9179,7 +9179,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setOrder($val)
 	{
-        $this->Order = (int)$val;
+        $this->Order = (SearchSortOrderCodeType)$val;
 	}
 
 	/**
@@ -9188,7 +9188,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -9197,7 +9197,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setSearchRequest($val)
 	{
-        $this->SearchRequest = (int)$val;
+        $this->SearchRequest = (SearchRequestType)$val;
 	}
 
 	/**
@@ -9209,7 +9209,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->ProductID = (int)$val;
+        $this->ProductID = (string)$val;
 	}
 
 	/**
@@ -9218,7 +9218,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 
 	/**
@@ -9227,7 +9227,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setCategories($val)
 	{
-        $this->Categories = (int)$val;
+        $this->Categories = (RequestCategoriesType)$val;
 	}
 
 	/**
@@ -9236,7 +9236,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setTotalOnly($val)
 	{
-        $this->TotalOnly = (int)$val;
+        $this->TotalOnly = (boolean)$val;
 	}
 
 	/**
@@ -9245,7 +9245,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setEndTimeFrom($val)
 	{
-        $this->EndTimeFrom = (int)$val;
+        $this->EndTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -9254,7 +9254,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setEndTimeTo($val)
 	{
-        $this->EndTimeTo = (int)$val;
+        $this->EndTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -9263,7 +9263,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setModTimeFrom($val)
 	{
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -9272,7 +9272,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setIncludeGetItFastItems($val)
 	{
-        $this->IncludeGetItFastItems = (int)$val;
+        $this->IncludeGetItFastItems = (boolean)$val;
 	}
 
 	/**
@@ -9281,7 +9281,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setStoresFixedPrice($val)
 	{
-        $this->StoresFixedPrice = (int)$val;
+        $this->StoresFixedPrice = (boolean)$val;
 	}
 
 	/**
@@ -9290,7 +9290,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (PaymentMethodSearchCodeType)$val;
 	}
 
 	/**
@@ -9299,7 +9299,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setGranularityLevel($val)
 	{
-        $this->GranularityLevel = (int)$val;
+        $this->GranularityLevel = (GranularityLevelCodeType)$val;
 	}
 
 	/**
@@ -9308,7 +9308,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setExpandSearch($val)
 	{
-        $this->ExpandSearch = (int)$val;
+        $this->ExpandSearch = (boolean)$val;
 	}
 
 	/**
@@ -9317,7 +9317,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setLot($val)
 	{
-        $this->Lot = (int)$val;
+        $this->Lot = (boolean)$val;
 	}
 
 	/**
@@ -9326,7 +9326,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setAdFormat($val)
 	{
-        $this->AdFormat = (int)$val;
+        $this->AdFormat = (boolean)$val;
 	}
 
 	/**
@@ -9335,7 +9335,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setFreeShipping($val)
 	{
-        $this->FreeShipping = (int)$val;
+        $this->FreeShipping = (boolean)$val;
 	}
 
 	/**
@@ -9356,7 +9356,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setQuantityOperator($val)
 	{
-        $this->QuantityOperator = (int)$val;
+        $this->QuantityOperator = (QuantityOperatorCodeType)$val;
 	}
 
 	/**
@@ -9365,7 +9365,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setSellerBusinessType($val)
 	{
-        $this->SellerBusinessType = (int)$val;
+        $this->SellerBusinessType = (SellerBusinessCodeType)$val;
 	}
 
 	/**
@@ -9374,7 +9374,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setDigitalDelivery($val)
 	{
-        $this->DigitalDelivery = (int)$val;
+        $this->DigitalDelivery = (boolean)$val;
 	}
 
 	/**
@@ -9383,7 +9383,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setIncludeCondition($val)
 	{
-        $this->IncludeCondition = (int)$val;
+        $this->IncludeCondition = (boolean)$val;
 	}
 
 	/**
@@ -9392,7 +9392,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setIncludeFeedback($val)
 	{
-        $this->IncludeFeedback = (int)$val;
+        $this->IncludeFeedback = (boolean)$val;
 	}
 
 	/**
@@ -9416,7 +9416,7 @@ class GetSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
-        $this->LocalSearchPostalCode = (int)$val;
+        $this->LocalSearchPostalCode = (string)$val;
 	}
 
 	/**
@@ -9437,7 +9437,7 @@ class GetSearchResultsRequestType extends
 	 */
 	public function setAffiliateTrackingDetails($val)
 	{
-        $this->AffiliateTrackingDetails = (int)$val;
+        $this->AffiliateTrackingDetails = (AffiliateTrackingDetailsType)$val;
 	}
 }
 
@@ -9552,7 +9552,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setSearchResultItemArray($val)
 	{
-        $this->SearchResultItemArray = (int)$val;
+        $this->SearchResultItemArray = (SearchResultItemArrayType)$val;
 	}
 
 	/**
@@ -9585,7 +9585,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -9594,7 +9594,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -9603,7 +9603,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->CategoryArray = (int)$val;
+        $this->CategoryArray = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -9612,7 +9612,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setBuyingGuideDetails($val)
 	{
-        $this->BuyingGuideDetails = (int)$val;
+        $this->BuyingGuideDetails = (BuyingGuideDetailsType)$val;
 	}
 
 	/**
@@ -9621,7 +9621,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setStoreExpansionArray($val)
 	{
-        $this->StoreExpansionArray = (int)$val;
+        $this->StoreExpansionArray = (ExpansionArrayType)$val;
 	}
 
 	/**
@@ -9630,7 +9630,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setInternationalExpansionArray($val)
 	{
-        $this->InternationalExpansionArray = (int)$val;
+        $this->InternationalExpansionArray = (ExpansionArrayType)$val;
 	}
 
 	/**
@@ -9639,7 +9639,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setFilterRemovedExpansionArray($val)
 	{
-        $this->FilterRemovedExpansionArray = (int)$val;
+        $this->FilterRemovedExpansionArray = (ExpansionArrayType)$val;
 	}
 
 	/**
@@ -9648,7 +9648,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setAllCategoriesExpansionArray($val)
 	{
-        $this->AllCategoriesExpansionArray = (int)$val;
+        $this->AllCategoriesExpansionArray = (ExpansionArrayType)$val;
 	}
 
 	/**
@@ -9657,7 +9657,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setSpellingSuggestion($val)
 	{
-        $this->SpellingSuggestion = (int)$val;
+        $this->SpellingSuggestion = (SpellingSuggestionType)$val;
 	}
 
 	/**
@@ -9666,7 +9666,7 @@ class GetSearchResultsResponseType extends
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{
-        $this->RelatedSearchKeywordArray = (int)$val;
+        $this->RelatedSearchKeywordArray = (RelatedSearchKeywordArrayType)$val;
 	}
 }
 
@@ -9959,7 +9959,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 
 	/**
@@ -9968,7 +9968,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setExternalProductIDType($val)
 	{
-        $this->ExternalProductIDType = (int)$val;
+        $this->ExternalProductIDType = (ExternalProductCodeType)$val;
 	}
 
 	/**
@@ -9980,7 +9980,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalProductIDValue');
         }
-        $this->ExternalProductIDValue = (int)$val;
+        $this->ExternalProductIDValue = (string)$val;
 	}
 
 	/**
@@ -9989,7 +9989,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setProductReferenceID($val)
 	{
-        $this->ProductReferenceID = (int)$val;
+        $this->ProductReferenceID = (long)$val;
 	}
 
 	/**
@@ -10001,7 +10001,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DepartmentName');
         }
-        $this->DepartmentName = (int)$val;
+        $this->DepartmentName = (string)$val;
 	}
 
 	/**
@@ -10013,7 +10013,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AisleName');
         }
-        $this->AisleName = (int)$val;
+        $this->AisleName = (string)$val;
 	}
 
 	/**
@@ -10025,7 +10025,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductTypeName');
         }
-        $this->ProductTypeName = (int)$val;
+        $this->ProductTypeName = (string)$val;
 	}
 
 	/**
@@ -10034,7 +10034,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setHistogramSort($val)
 	{
-        $this->HistogramSort = (int)$val;
+        $this->HistogramSort = (ExpressHistogramSortCodeType)$val;
 	}
 
 	/**
@@ -10043,7 +10043,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setItemSort($val)
 	{
-        $this->ItemSort = (int)$val;
+        $this->ItemSort = (ExpressItemSortCodeType)$val;
 	}
 
 	/**
@@ -10052,7 +10052,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setProductSort($val)
 	{
-        $this->ProductSort = (int)$val;
+        $this->ProductSort = (ExpressProductSortCodeType)$val;
 	}
 
 	/**
@@ -10061,7 +10061,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setHighestPrice($val)
 	{
-        $this->HighestPrice = (int)$val;
+        $this->HighestPrice = (AmountType)$val;
 	}
 
 	/**
@@ -10070,7 +10070,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setLowestPrice($val)
 	{
-        $this->LowestPrice = (int)$val;
+        $this->LowestPrice = (AmountType)$val;
 	}
 
 	/**
@@ -10079,7 +10079,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setCondition($val)
 	{
-        $this->Condition = (int)$val;
+        $this->Condition = (ConditionSelectionCodeType)$val;
 	}
 
 	/**
@@ -10088,7 +10088,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setSellerID($val)
 	{
-        $this->SellerID = (int)$val;
+        $this->SellerID = (UserIDType)$val;
 	}
 
 	/**
@@ -10100,7 +10100,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -10109,7 +10109,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setHistogramDetails($val)
 	{
-        $this->HistogramDetails = (int)$val;
+        $this->HistogramDetails = (ExpressDetailLevelCodeType)$val;
 	}
 
 	/**
@@ -10118,7 +10118,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setProductDetails($val)
 	{
-        $this->ProductDetails = (int)$val;
+        $this->ProductDetails = (ExpressDetailLevelCodeType)$val;
 	}
 
 	/**
@@ -10127,7 +10127,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setItemDetails($val)
 	{
-        $this->ItemDetails = (int)$val;
+        $this->ItemDetails = (ExpressDetailLevelCodeType)$val;
 	}
 
 	/**
@@ -10160,7 +10160,7 @@ class GetSearchResultsExpressRequestType extends
 	 */
 	public function setAffiliateTrackingDetails($val)
 	{
-        $this->AffiliateTrackingDetails = (int)$val;
+        $this->AffiliateTrackingDetails = (AffiliateTrackingDetailsType)$val;
 	}
 }
 
@@ -10230,7 +10230,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setHistogram($val)
 	{
-        $this->Histogram = (int)$val;
+        $this->Histogram = (DomainHistogramType)$val;
 	}
 
 	/**
@@ -10239,7 +10239,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -10248,7 +10248,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setProductArray($val)
 	{
-        $this->ProductArray = (int)$val;
+        $this->ProductArray = (ProductArrayType)$val;
 	}
 
 	/**
@@ -10281,7 +10281,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setHasMoreEntries($val)
 	{
-        $this->HasMoreEntries = (int)$val;
+        $this->HasMoreEntries = (boolean)$val;
 	}
 }
 
@@ -10367,7 +10367,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -10376,7 +10376,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setStartTimeFrom($val)
 	{
-        $this->StartTimeFrom = (int)$val;
+        $this->StartTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -10385,7 +10385,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setStartTimeTo($val)
 	{
-        $this->StartTimeTo = (int)$val;
+        $this->StartTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10394,7 +10394,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setEndTimeFrom($val)
 	{
-        $this->EndTimeFrom = (int)$val;
+        $this->EndTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -10403,7 +10403,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setEndTimeTo($val)
 	{
-        $this->EndTimeTo = (int)$val;
+        $this->EndTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10412,7 +10412,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setModTimeFrom($val)
 	{
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -10421,7 +10421,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setModTimeTo($val)
 	{
-        $this->ModTimeTo = (int)$val;
+        $this->ModTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10430,7 +10430,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setNewItemFilter($val)
 	{
-        $this->NewItemFilter = (int)$val;
+        $this->NewItemFilter = (boolean)$val;
 	}
 
 	/**
@@ -10439,7 +10439,7 @@ class GetSellerEventsRequestType extends
 	 */
 	public function setIncludeWatchCount($val)
 	{
-        $this->IncludeWatchCount = (int)$val;
+        $this->IncludeWatchCount = (boolean)$val;
 	}
 }
 
@@ -10476,7 +10476,7 @@ class GetSellerEventsResponseType extends
 	 */
 	public function setTimeTo($val)
 	{
-        $this->TimeTo = (int)$val;
+        $this->TimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10485,7 +10485,7 @@ class GetSellerEventsResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 }
 
@@ -10575,7 +10575,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -10584,7 +10584,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setMotorsDealerUsers($val)
 	{
-        $this->MotorsDealerUsers = (int)$val;
+        $this->MotorsDealerUsers = (UserIDArrayType)$val;
 	}
 
 	/**
@@ -10593,7 +10593,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setEndTimeFrom($val)
 	{
-        $this->EndTimeFrom = (int)$val;
+        $this->EndTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -10602,7 +10602,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setEndTimeTo($val)
 	{
-        $this->EndTimeTo = (int)$val;
+        $this->EndTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10623,7 +10623,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setStartTimeFrom($val)
 	{
-        $this->StartTimeFrom = (int)$val;
+        $this->StartTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -10632,7 +10632,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setStartTimeTo($val)
 	{
-        $this->StartTimeTo = (int)$val;
+        $this->StartTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10641,7 +10641,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -10650,7 +10650,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setGranularityLevel($val)
 	{
-        $this->GranularityLevel = (int)$val;
+        $this->GranularityLevel = (GranularityLevelCodeType)$val;
 	}
 
 	/**
@@ -10659,7 +10659,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setSKUArray($val)
 	{
-        $this->SKUArray = (int)$val;
+        $this->SKUArray = (SKUArrayType)$val;
 	}
 
 	/**
@@ -10668,7 +10668,7 @@ class GetSellerListRequestType extends
 	 */
 	public function setIncludeWatchCount($val)
 	{
-        $this->IncludeWatchCount = (int)$val;
+        $this->IncludeWatchCount = (boolean)$val;
 	}
 }
 
@@ -10726,7 +10726,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -10735,7 +10735,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -10744,7 +10744,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -10789,7 +10789,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = (int)$val;
+        $this->Seller = (UserType)$val;
 	}
 }
 
@@ -10862,7 +10862,7 @@ class GetSellerPaymentsRequestType extends
 	 */
 	public function setPaymentStatus($val)
 	{
-        $this->PaymentStatus = (int)$val;
+        $this->PaymentStatus = (RCSPaymentStatusCodeType)$val;
 	}
 
 	/**
@@ -10871,7 +10871,7 @@ class GetSellerPaymentsRequestType extends
 	 */
 	public function setPaymentTimeFrom($val)
 	{
-        $this->PaymentTimeFrom = (int)$val;
+        $this->PaymentTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -10880,7 +10880,7 @@ class GetSellerPaymentsRequestType extends
 	 */
 	public function setPaymentTimeTo($val)
 	{
-        $this->PaymentTimeTo = (int)$val;
+        $this->PaymentTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -10889,7 +10889,7 @@ class GetSellerPaymentsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -10964,7 +10964,7 @@ class GetSellerPaymentsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -10973,7 +10973,7 @@ class GetSellerPaymentsResponseType extends
 	 */
 	public function setHasMorePayments($val)
 	{
-        $this->HasMorePayments = (int)$val;
+        $this->HasMorePayments = (boolean)$val;
 	}
 
 	/**
@@ -10982,7 +10982,7 @@ class GetSellerPaymentsResponseType extends
 	 */
 	public function setSellerPayment($val)
 	{
-        $this->SellerPayment = (int)$val;
+        $this->SellerPayment = (SellerPaymentType)$val;
 	}
 
 	/**
@@ -11084,7 +11084,7 @@ class GetSellerTransactionsRequestType extends
 	 */
 	public function setModTimeFrom($val)
 	{
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -11093,7 +11093,7 @@ class GetSellerTransactionsRequestType extends
 	 */
 	public function setModTimeTo($val)
 	{
-        $this->ModTimeTo = (int)$val;
+        $this->ModTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -11102,7 +11102,7 @@ class GetSellerTransactionsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -11111,7 +11111,7 @@ class GetSellerTransactionsRequestType extends
 	 */
 	public function setIncludeFinalValueFee($val)
 	{
-        $this->IncludeFinalValueFee = (int)$val;
+        $this->IncludeFinalValueFee = (boolean)$val;
 	}
 
 	/**
@@ -11120,7 +11120,7 @@ class GetSellerTransactionsRequestType extends
 	 */
 	public function setIncludeContainingOrder($val)
 	{
-        $this->IncludeContainingOrder = (int)$val;
+        $this->IncludeContainingOrder = (boolean)$val;
 	}
 
 	/**
@@ -11129,7 +11129,7 @@ class GetSellerTransactionsRequestType extends
 	 */
 	public function setSKUArray($val)
 	{
-        $this->SKUArray = (int)$val;
+        $this->SKUArray = (SKUArrayType)$val;
 	}
 }
 
@@ -11201,7 +11201,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -11210,7 +11210,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setHasMoreTransactions($val)
 	{
-        $this->HasMoreTransactions = (int)$val;
+        $this->HasMoreTransactions = (boolean)$val;
 	}
 
 	/**
@@ -11255,7 +11255,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = (int)$val;
+        $this->Seller = (UserType)$val;
 	}
 
 	/**
@@ -11264,7 +11264,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (int)$val;
+        $this->TransactionArray = (TransactionArrayType)$val;
 	}
 
 	/**
@@ -11273,7 +11273,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = (int)$val;
+        $this->PayPalPreferred = (boolean)$val;
 	}
 }
 
@@ -11316,7 +11316,7 @@ class GetStoreRequestType extends
 	 */
 	public function setCategoryStructureOnly($val)
 	{
-        $this->CategoryStructureOnly = (int)$val;
+        $this->CategoryStructureOnly = (boolean)$val;
 	}
 
 	/**
@@ -11368,7 +11368,7 @@ class GetStoreResponseType extends
 	 */
 	public function setStore($val)
 	{
-        $this->Store = (int)$val;
+        $this->Store = (StoreType)$val;
 	}
 }
 
@@ -11399,7 +11399,7 @@ class GetStoreCategoryUpdateStatusRequestType extends
 	 */
 	public function setTaskID($val)
 	{
-        $this->TaskID = (int)$val;
+        $this->TaskID = (long)$val;
 	}
 }
 
@@ -11428,7 +11428,7 @@ class GetStoreCategoryUpdateStatusResponseType extends
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (TaskStatusCodeType)$val;
 	}
 }
 
@@ -11457,7 +11457,7 @@ class GetStoreCustomPageRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PageID');
         }
-        $this->PageID = (int)$val;
+        $this->PageID = (string)$val;
 	}
 }
 
@@ -11481,7 +11481,7 @@ class GetStoreCustomPageResponseType extends
 	 */
 	public function setCustomPageArray($val)
 	{
-        $this->CustomPageArray = (int)$val;
+        $this->CustomPageArray = (StoreCustomPageArrayType)$val;
 	}
 }
 
@@ -11536,7 +11536,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setBasicThemeArray($val)
 	{
-        $this->BasicThemeArray = (int)$val;
+        $this->BasicThemeArray = (StoreThemeArrayType)$val;
 	}
 
 	/**
@@ -11545,7 +11545,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setAdvancedThemeArray($val)
 	{
-        $this->AdvancedThemeArray = (int)$val;
+        $this->AdvancedThemeArray = (StoreThemeArrayType)$val;
 	}
 
 	/**
@@ -11554,7 +11554,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setLogoArray($val)
 	{
-        $this->LogoArray = (int)$val;
+        $this->LogoArray = (StoreLogoArrayType)$val;
 	}
 
 	/**
@@ -11563,7 +11563,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setSubscriptionArray($val)
 	{
-        $this->SubscriptionArray = (int)$val;
+        $this->SubscriptionArray = (StoreSubscriptionArrayType)$val;
 	}
 
 	/**
@@ -11619,7 +11619,7 @@ class GetStorePreferencesResponseType extends
 	 */
 	public function setStorePreferences($val)
 	{
-        $this->StorePreferences = (int)$val;
+        $this->StorePreferences = (StorePreferencesType)$val;
 	}
 }
 
@@ -11650,7 +11650,7 @@ class GetSuggestedCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 }
 
@@ -11681,7 +11681,7 @@ class GetSuggestedCategoriesResponseType extends
 	 */
 	public function setSuggestedCategoryArray($val)
 	{
-        $this->SuggestedCategoryArray = (int)$val;
+        $this->SuggestedCategoryArray = (SuggestedCategoryArrayType)$val;
 	}
 
 	/**
@@ -11734,7 +11734,7 @@ class GetTaxTableResponseType extends
 	 */
 	public function setLastUpdateTime($val)
 	{
-        $this->LastUpdateTime = (int)$val;
+        $this->LastUpdateTime = (dateTime)$val;
 	}
 
 	/**
@@ -11743,7 +11743,7 @@ class GetTaxTableResponseType extends
 	 */
 	public function setTaxTable($val)
 	{
-        $this->TaxTable = (int)$val;
+        $this->TaxTable = (TaxTableType)$val;
 	}
 }
 
@@ -11791,7 +11791,7 @@ class GetUserRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -11803,7 +11803,7 @@ class GetUserRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->UserID = (int)$val;
+        $this->UserID = (string)$val;
 	}
 
 	/**
@@ -11812,7 +11812,7 @@ class GetUserRequestType extends
 	 */
 	public function setIncludeExpressRequirements($val)
 	{
-        $this->IncludeExpressRequirements = (int)$val;
+        $this->IncludeExpressRequirements = (boolean)$val;
 	}
 }
 
@@ -11837,7 +11837,7 @@ class GetUserResponseType extends
 	 */
 	public function setUser($val)
 	{
-        $this->User = (int)$val;
+        $this->User = (UserType)$val;
 	}
 }
 
@@ -11883,7 +11883,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemID');
         }
-        $this->ItemID = (int)$val;
+        $this->ItemID = (string)$val;
 	}
 
 	/**
@@ -11895,7 +11895,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContactID');
         }
-        $this->ContactID = (int)$val;
+        $this->ContactID = (string)$val;
 	}
 
 	/**
@@ -11907,7 +11907,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RequesterID');
         }
-        $this->RequesterID = (int)$val;
+        $this->RequesterID = (string)$val;
 	}
 }
 
@@ -11955,7 +11955,7 @@ class GetUserContactDetailsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->UserID = (int)$val;
+        $this->UserID = (string)$val;
 	}
 
 	/**
@@ -11964,7 +11964,7 @@ class GetUserContactDetailsResponseType extends
 	 */
 	public function setContactAddress($val)
 	{
-        $this->ContactAddress = (int)$val;
+        $this->ContactAddress = (AddressType)$val;
 	}
 
 	/**
@@ -11973,7 +11973,7 @@ class GetUserContactDetailsResponseType extends
 	 */
 	public function setRegistrationDate($val)
 	{
-        $this->RegistrationDate = (int)$val;
+        $this->RegistrationDate = (dateTime)$val;
 	}
 }
 
@@ -12031,7 +12031,7 @@ class GetUserDisputesRequestType extends
 	 */
 	public function setDisputeFilterType($val)
 	{
-        $this->DisputeFilterType = (int)$val;
+        $this->DisputeFilterType = (DisputeFilterTypeCodeType)$val;
 	}
 
 	/**
@@ -12040,7 +12040,7 @@ class GetUserDisputesRequestType extends
 	 */
 	public function setDisputeSortType($val)
 	{
-        $this->DisputeSortType = (int)$val;
+        $this->DisputeSortType = (DisputeSortTypeCodeType)$val;
 	}
 
 	/**
@@ -12049,7 +12049,7 @@ class GetUserDisputesRequestType extends
 	 */
 	public function setModTimeFrom($val)
 	{
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -12058,7 +12058,7 @@ class GetUserDisputesRequestType extends
 	 */
 	public function setModTimeTo($val)
 	{
-        $this->ModTimeTo = (int)$val;
+        $this->ModTimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -12067,7 +12067,7 @@ class GetUserDisputesRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -12130,7 +12130,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setStartingDisputeID($val)
 	{
-        $this->StartingDisputeID = (int)$val;
+        $this->StartingDisputeID = (DisputeIDType)$val;
 	}
 
 	/**
@@ -12139,7 +12139,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setEndingDisputeID($val)
 	{
-        $this->EndingDisputeID = (int)$val;
+        $this->EndingDisputeID = (DisputeIDType)$val;
 	}
 
 	/**
@@ -12148,7 +12148,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setDisputeArray($val)
 	{
-        $this->DisputeArray = (int)$val;
+        $this->DisputeArray = (DisputeArrayType)$val;
 	}
 
 	/**
@@ -12181,7 +12181,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setDisputeFilterCount($val)
 	{
-        $this->DisputeFilterCount = (int)$val;
+        $this->DisputeFilterCount = (DisputeFilterCountType)$val;
 	}
 
 	/**
@@ -12190,7 +12190,7 @@ class GetUserDisputesResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }
 
@@ -12251,7 +12251,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowBidderNoticePreferences($val)
 	{
-        $this->ShowBidderNoticePreferences = (int)$val;
+        $this->ShowBidderNoticePreferences = (boolean)$val;
 	}
 
 	/**
@@ -12260,7 +12260,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowCombinedPaymentPreferences($val)
 	{
-        $this->ShowCombinedPaymentPreferences = (int)$val;
+        $this->ShowCombinedPaymentPreferences = (boolean)$val;
 	}
 
 	/**
@@ -12269,7 +12269,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowCrossPromotionPreferences($val)
 	{
-        $this->ShowCrossPromotionPreferences = (int)$val;
+        $this->ShowCrossPromotionPreferences = (boolean)$val;
 	}
 
 	/**
@@ -12278,7 +12278,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowSellerPaymentPreferences($val)
 	{
-        $this->ShowSellerPaymentPreferences = (int)$val;
+        $this->ShowSellerPaymentPreferences = (boolean)$val;
 	}
 
 	/**
@@ -12287,7 +12287,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowEndOfAuctionEmailPreferences($val)
 	{
-        $this->ShowEndOfAuctionEmailPreferences = (int)$val;
+        $this->ShowEndOfAuctionEmailPreferences = (boolean)$val;
 	}
 
 	/**
@@ -12296,7 +12296,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowSellerFavoriteItemPreferences($val)
 	{
-        $this->ShowSellerFavoriteItemPreferences = (int)$val;
+        $this->ShowSellerFavoriteItemPreferences = (boolean)$val;
 	}
 
 	/**
@@ -12305,7 +12305,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShoweBxOptInPreference($val)
 	{
-        $this->ShoweBxOptInPreference = (int)$val;
+        $this->ShoweBxOptInPreference = (boolean)$val;
 	}
 
 	/**
@@ -12314,7 +12314,7 @@ class GetUserPreferencesRequestType extends
 	 */
 	public function setShowProStoresPreferences($val)
 	{
-        $this->ShowProStoresPreferences = (int)$val;
+        $this->ShowProStoresPreferences = (boolean)$val;
 	}
 }
 
@@ -12389,7 +12389,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setBidderNoticePreferences($val)
 	{
-        $this->BidderNoticePreferences = (int)$val;
+        $this->BidderNoticePreferences = (BidderNoticePreferencesType)$val;
 	}
 
 	/**
@@ -12398,7 +12398,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setCombinedPaymentPreferences($val)
 	{
-        $this->CombinedPaymentPreferences = (int)$val;
+        $this->CombinedPaymentPreferences = (CombinedPaymentPreferencesType)$val;
 	}
 
 	/**
@@ -12407,7 +12407,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setCrossPromotionPreferences($val)
 	{
-        $this->CrossPromotionPreferences = (int)$val;
+        $this->CrossPromotionPreferences = (CrossPromotionPreferencesType)$val;
 	}
 
 	/**
@@ -12416,7 +12416,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setSellerPaymentPreferences($val)
 	{
-        $this->SellerPaymentPreferences = (int)$val;
+        $this->SellerPaymentPreferences = (SellerPaymentPreferencesType)$val;
 	}
 
 	/**
@@ -12425,7 +12425,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setSellerFavoriteItemPreferences($val)
 	{
-        $this->SellerFavoriteItemPreferences = (int)$val;
+        $this->SellerFavoriteItemPreferences = (SellerFavoriteItemPreferencesType)$val;
 	}
 
 	/**
@@ -12434,7 +12434,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setEndOfAuctionEmailPreferences($val)
 	{
-        $this->EndOfAuctionEmailPreferences = (int)$val;
+        $this->EndOfAuctionEmailPreferences = (EndOfAuctionEmailPreferencesType)$val;
 	}
 
 	/**
@@ -12443,7 +12443,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setEBxOptInPreference($val)
 	{
-        $this->eBxOptInPreference = (int)$val;
+        $this->eBxOptInPreference = (eBxOptInPreferenceType)$val;
 	}
 
 	/**
@@ -12452,7 +12452,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setExpressPreferences($val)
 	{
-        $this->ExpressPreferences = (int)$val;
+        $this->ExpressPreferences = (ExpressPreferencesType)$val;
 	}
 
 	/**
@@ -12461,7 +12461,7 @@ class GetUserPreferencesResponseType extends
 	 */
 	public function setProStoresPreference($val)
 	{
-        $this->ProStoresPreference = (int)$val;
+        $this->ProStoresPreference = (ProStoresCheckoutPreferenceType)$val;
 	}
 }
 
@@ -12497,7 +12497,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
 	 */
 	public function setReasonCodeID($val)
 	{
-        $this->ReasonCodeID = (int)$val;
+        $this->ReasonCodeID = (long)$val;
 	}
 
 	/**
@@ -12506,7 +12506,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
 	 */
 	public function setReturnAllSites($val)
 	{
-        $this->ReturnAllSites = (int)$val;
+        $this->ReturnAllSites = (boolean)$val;
 	}
 }
 
@@ -12530,7 +12530,7 @@ class GetVeRoReasonCodeDetailsResponseType extends
 	 */
 	public function setVeROReasonCodeDetails($val)
 	{
-        $this->VeROReasonCodeDetails = (int)$val;
+        $this->VeROReasonCodeDetails = (VeROReasonCodeDetailsType)$val;
 	}
 }
 
@@ -12594,7 +12594,7 @@ class GetVeRoReportStatusRequestType extends
 	 */
 	public function setVeROReportPacketID($val)
 	{
-        $this->VeROReportPacketID = (int)$val;
+        $this->VeROReportPacketID = (long)$val;
 	}
 
 	/**
@@ -12603,7 +12603,7 @@ class GetVeRoReportStatusRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -12612,7 +12612,7 @@ class GetVeRoReportStatusRequestType extends
 	 */
 	public function setIncludeReportedItemDetails($val)
 	{
-        $this->IncludeReportedItemDetails = (int)$val;
+        $this->IncludeReportedItemDetails = (boolean)$val;
 	}
 
 	/**
@@ -12621,7 +12621,7 @@ class GetVeRoReportStatusRequestType extends
 	 */
 	public function setTimeFrom($val)
 	{
-        $this->TimeFrom = (int)$val;
+        $this->TimeFrom = (dateTime)$val;
 	}
 
 	/**
@@ -12630,7 +12630,7 @@ class GetVeRoReportStatusRequestType extends
 	 */
 	public function setTimeTo($val)
 	{
-        $this->TimeTo = (int)$val;
+        $this->TimeTo = (dateTime)$val;
 	}
 
 	/**
@@ -12639,7 +12639,7 @@ class GetVeRoReportStatusRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -12695,7 +12695,7 @@ class GetVeRoReportStatusResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -12704,7 +12704,7 @@ class GetVeRoReportStatusResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -12737,7 +12737,7 @@ class GetVeRoReportStatusResponseType extends
 	 */
 	public function setVeROReportPacketID($val)
 	{
-        $this->VeROReportPacketID = (int)$val;
+        $this->VeROReportPacketID = (long)$val;
 	}
 
 	/**
@@ -12746,7 +12746,7 @@ class GetVeRoReportStatusResponseType extends
 	 */
 	public function setVeROReportPacketStatus($val)
 	{
-        $this->VeROReportPacketStatus = (int)$val;
+        $this->VeROReportPacketStatus = (VeROReportPacketStatusCodeType)$val;
 	}
 
 	/**
@@ -12755,7 +12755,7 @@ class GetVeRoReportStatusResponseType extends
 	 */
 	public function setReportedItemDetails($val)
 	{
-        $this->ReportedItemDetails = (int)$val;
+        $this->ReportedItemDetails = (VeROReportedItemDetailsType)$val;
 	}
 }
 
@@ -12782,7 +12782,7 @@ class GetWantItNowPostRequestType extends
 	 */
 	public function setPostID($val)
 	{
-        $this->PostID = (int)$val;
+        $this->PostID = (ItemIDType)$val;
 	}
 }
 
@@ -12807,7 +12807,7 @@ class GetWantItNowPostResponseType extends
 	 */
 	public function setWantItNowPost($val)
 	{
-        $this->WantItNowPost = (int)$val;
+        $this->WantItNowPost = (WantItNowPostType)$val;
 	}
 }
 
@@ -12862,7 +12862,7 @@ class GetWantItNowSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -12874,7 +12874,7 @@ class GetWantItNowSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 
 	/**
@@ -12883,7 +12883,7 @@ class GetWantItNowSearchResultsRequestType extends
 	 */
 	public function setSearchInDescription($val)
 	{
-        $this->SearchInDescription = (int)$val;
+        $this->SearchInDescription = (boolean)$val;
 	}
 
 	/**
@@ -12892,7 +12892,7 @@ class GetWantItNowSearchResultsRequestType extends
 	 */
 	public function setSearchWorldwide($val)
 	{
-        $this->SearchWorldwide = (int)$val;
+        $this->SearchWorldwide = (boolean)$val;
 	}
 
 	/**
@@ -12901,7 +12901,7 @@ class GetWantItNowSearchResultsRequestType extends
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 }
 
@@ -12950,7 +12950,7 @@ class GetWantItNowSearchResultsResponseType extends
 	 */
 	public function setWantItNowPostArray($val)
 	{
-        $this->WantItNowPostArray = (int)$val;
+        $this->WantItNowPostArray = (WantItNowPostArrayType)$val;
 	}
 
 	/**
@@ -12959,7 +12959,7 @@ class GetWantItNowSearchResultsResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -12992,7 +12992,7 @@ class GetWantItNowSearchResultsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }
 
@@ -13025,7 +13025,7 @@ class GeteBayDetailsRequestType extends
 	 */
 	public function setDetailName($val)
 	{
-        $this->DetailName = (int)$val;
+        $this->DetailName = (DetailNameCodeType)$val;
 	}
 }
 
@@ -13105,7 +13105,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setCountryDetails($val)
 	{
-        $this->CountryDetails = (int)$val;
+        $this->CountryDetails = (CountryDetailsType)$val;
 	}
 
 	/**
@@ -13114,7 +13114,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setCurrencyDetails($val)
 	{
-        $this->CurrencyDetails = (int)$val;
+        $this->CurrencyDetails = (CurrencyDetailsType)$val;
 	}
 
 	/**
@@ -13123,7 +13123,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setDispatchTimeMaxDetails($val)
 	{
-        $this->DispatchTimeMaxDetails = (int)$val;
+        $this->DispatchTimeMaxDetails = (DispatchTimeMaxDetailsType)$val;
 	}
 
 	/**
@@ -13132,7 +13132,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setPaymentOptionDetails($val)
 	{
-        $this->PaymentOptionDetails = (int)$val;
+        $this->PaymentOptionDetails = (PaymentOptionDetailsType)$val;
 	}
 
 	/**
@@ -13141,7 +13141,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setRegionDetails($val)
 	{
-        $this->RegionDetails = (int)$val;
+        $this->RegionDetails = (RegionDetailsType)$val;
 	}
 
 	/**
@@ -13150,7 +13150,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setShippingLocationDetails($val)
 	{
-        $this->ShippingLocationDetails = (int)$val;
+        $this->ShippingLocationDetails = (ShippingLocationDetailsType)$val;
 	}
 
 	/**
@@ -13159,7 +13159,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setShippingServiceDetails($val)
 	{
-        $this->ShippingServiceDetails = (int)$val;
+        $this->ShippingServiceDetails = (ShippingServiceDetailsType)$val;
 	}
 
 	/**
@@ -13168,7 +13168,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setSiteDetails($val)
 	{
-        $this->SiteDetails = (int)$val;
+        $this->SiteDetails = (SiteDetailsType)$val;
 	}
 
 	/**
@@ -13177,7 +13177,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setTaxJurisdiction($val)
 	{
-        $this->TaxJurisdiction = (int)$val;
+        $this->TaxJurisdiction = (TaxJurisdictionType)$val;
 	}
 
 	/**
@@ -13186,7 +13186,7 @@ class GeteBayDetailsResponseType extends
 	 */
 	public function setURLDetails($val)
 	{
-        $this->URLDetails = (int)$val;
+        $this->URLDetails = (URLDetailsType)$val;
 	}
 }
 
@@ -13262,7 +13262,7 @@ class IssueRefundRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -13274,7 +13274,7 @@ class IssueRefundRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -13283,7 +13283,7 @@ class IssueRefundRequestType extends
 	 */
 	public function setRefundReason($val)
 	{
-        $this->RefundReason = (int)$val;
+        $this->RefundReason = (RefundReasonCodeType)$val;
 	}
 
 	/**
@@ -13292,7 +13292,7 @@ class IssueRefundRequestType extends
 	 */
 	public function setRefundType($val)
 	{
-        $this->RefundType = (int)$val;
+        $this->RefundType = (RefundTypeCodeType)$val;
 	}
 
 	/**
@@ -13301,7 +13301,7 @@ class IssueRefundRequestType extends
 	 */
 	public function setRefundAmount($val)
 	{
-        $this->RefundAmount = (int)$val;
+        $this->RefundAmount = (AmountType)$val;
 	}
 
 	/**
@@ -13313,7 +13313,7 @@ class IssueRefundRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefundMessage');
         }
-        $this->RefundMessage = (int)$val;
+        $this->RefundMessage = (string)$val;
 	}
 }
 
@@ -13343,7 +13343,7 @@ class IssueRefundResponseType extends
 	 */
 	public function setRefundFromSeller($val)
 	{
-        $this->RefundFromSeller = (int)$val;
+        $this->RefundFromSeller = (AmountType)$val;
 	}
 
 	/**
@@ -13352,7 +13352,7 @@ class IssueRefundResponseType extends
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
-        $this->TotalRefundToBuyer = (int)$val;
+        $this->TotalRefundToBuyer = (AmountType)$val;
 	}
 }
 
@@ -13399,7 +13399,7 @@ class LeaveFeedbackRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -13411,7 +13411,7 @@ class LeaveFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->CommentText = (int)$val;
+        $this->CommentText = (string)$val;
 	}
 
 	/**
@@ -13420,7 +13420,7 @@ class LeaveFeedbackRequestType extends
 	 */
 	public function setCommentType($val)
 	{
-        $this->CommentType = (int)$val;
+        $this->CommentType = (CommentTypeCodeType)$val;
 	}
 
 	/**
@@ -13432,7 +13432,7 @@ class LeaveFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -13441,7 +13441,7 @@ class LeaveFeedbackRequestType extends
 	 */
 	public function setTargetUser($val)
 	{
-        $this->TargetUser = (int)$val;
+        $this->TargetUser = (UserIDType)$val;
 	}
 }
 
@@ -13470,7 +13470,7 @@ class LeaveFeedbackResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = (int)$val;
+        $this->FeedbackID = (string)$val;
 	}
 }
 
@@ -13511,7 +13511,7 @@ class PlaceOfferRequestType extends
 	 */
 	public function setOffer($val)
 	{
-        $this->Offer = (int)$val;
+        $this->Offer = (OfferType)$val;
 	}
 
 	/**
@@ -13520,7 +13520,7 @@ class PlaceOfferRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -13529,7 +13529,7 @@ class PlaceOfferRequestType extends
 	 */
 	public function setBlockOnWarning($val)
 	{
-        $this->BlockOnWarning = (int)$val;
+        $this->BlockOnWarning = (boolean)$val;
 	}
 }
 
@@ -13555,7 +13555,7 @@ class PlaceOfferResponseType extends
 	 */
 	public function setSellingStatus($val)
 	{
-        $this->SellingStatus = (int)$val;
+        $this->SellingStatus = (SellingStatusType)$val;
 	}
 }
 
@@ -13606,7 +13606,7 @@ class RelistItemRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -13615,7 +13615,7 @@ class RelistItemRequestType extends
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
 	}
 
 	/**
@@ -13627,7 +13627,7 @@ class RelistItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = (string)$val;
 	}
 }
 
@@ -13675,7 +13675,7 @@ class RelistItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -13684,7 +13684,7 @@ class RelistItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -13693,7 +13693,7 @@ class RelistItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -13702,7 +13702,7 @@ class RelistItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 
 	/**
@@ -13714,7 +13714,7 @@ class RelistItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -13726,7 +13726,7 @@ class RelistItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = (string)$val;
 	}
 }
 
@@ -13755,7 +13755,7 @@ class RemoveFromWatchListRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -13764,7 +13764,7 @@ class RemoveFromWatchListRequestType extends
 	 */
 	public function setRemoveAllItems($val)
 	{
-        $this->RemoveAllItems = (int)$val;
+        $this->RemoveAllItems = (boolean)$val;
 	}
 }
 
@@ -13860,7 +13860,7 @@ class RespondToBestOfferRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -13869,7 +13869,7 @@ class RespondToBestOfferRequestType extends
 	 */
 	public function setBestOfferID($val)
 	{
-        $this->BestOfferID = (int)$val;
+        $this->BestOfferID = (BestOfferIDType)$val;
 	}
 
 	/**
@@ -13878,7 +13878,7 @@ class RespondToBestOfferRequestType extends
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (BestOfferActionCodeType)$val;
 	}
 
 	/**
@@ -13890,7 +13890,7 @@ class RespondToBestOfferRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerResponse');
         }
-        $this->SellerResponse = (int)$val;
+        $this->SellerResponse = (string)$val;
 	}
 
 	/**
@@ -13899,7 +13899,7 @@ class RespondToBestOfferRequestType extends
 	 */
 	public function setCounterOfferPrice($val)
 	{
-        $this->CounterOfferPrice = (int)$val;
+        $this->CounterOfferPrice = (AmountType)$val;
 	}
 
 	/**
@@ -13935,7 +13935,7 @@ class RespondToBestOfferResponseType extends
 	 */
 	public function setRespondToBestOffer($val)
 	{
-        $this->RespondToBestOffer = (int)$val;
+        $this->RespondToBestOffer = (BestOfferArrayType)$val;
 	}
 }
 
@@ -13989,7 +13989,7 @@ class RespondToFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = (int)$val;
+        $this->FeedbackID = (string)$val;
 	}
 
 	/**
@@ -13998,7 +13998,7 @@ class RespondToFeedbackRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -14010,7 +14010,7 @@ class RespondToFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -14019,7 +14019,7 @@ class RespondToFeedbackRequestType extends
 	 */
 	public function setTargetUserID($val)
 	{
-        $this->TargetUserID = (int)$val;
+        $this->TargetUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -14028,7 +14028,7 @@ class RespondToFeedbackRequestType extends
 	 */
 	public function setResponseType($val)
 	{
-        $this->ResponseType = (int)$val;
+        $this->ResponseType = (FeedbackResponseCodeType)$val;
 	}
 
 	/**
@@ -14040,7 +14040,7 @@ class RespondToFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ResponseText');
         }
-        $this->ResponseText = (int)$val;
+        $this->ResponseText = (string)$val;
 	}
 }
 
@@ -14081,7 +14081,7 @@ class RespondToWantItNowPostRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -14090,7 +14090,7 @@ class RespondToWantItNowPostRequestType extends
 	 */
 	public function setPostID($val)
 	{
-        $this->PostID = (int)$val;
+        $this->PostID = (ItemIDType)$val;
 	}
 }
 
@@ -14230,7 +14230,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -14242,7 +14242,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -14254,7 +14254,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderID');
         }
-        $this->OrderID = (int)$val;
+        $this->OrderID = (string)$val;
 	}
 
 	/**
@@ -14263,7 +14263,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setAmountPaid($val)
 	{
-        $this->AmountPaid = (int)$val;
+        $this->AmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -14272,7 +14272,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setPaymentMethodUsed($val)
 	{
-        $this->PaymentMethodUsed = (int)$val;
+        $this->PaymentMethodUsed = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -14281,7 +14281,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setCheckoutStatus($val)
 	{
-        $this->CheckoutStatus = (int)$val;
+        $this->CheckoutStatus = (CompleteStatusCodeType)$val;
 	}
 
 	/**
@@ -14290,7 +14290,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
 	}
 
 	/**
@@ -14299,7 +14299,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setShippingIncludedInTax($val)
 	{
-        $this->ShippingIncludedInTax = (int)$val;
+        $this->ShippingIncludedInTax = (boolean)$val;
 	}
 
 	/**
@@ -14308,7 +14308,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setCheckoutMethod($val)
 	{
-        $this->CheckoutMethod = (int)$val;
+        $this->CheckoutMethod = (CheckoutMethodCodeType)$val;
 	}
 
 	/**
@@ -14317,7 +14317,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setInsuranceType($val)
 	{
-        $this->InsuranceType = (int)$val;
+        $this->InsuranceType = (InsuranceSelectedCodeType)$val;
 	}
 
 	/**
@@ -14326,7 +14326,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setPaymentStatus($val)
 	{
-        $this->PaymentStatus = (int)$val;
+        $this->PaymentStatus = (RCSPaymentStatusCodeType)$val;
 	}
 
 	/**
@@ -14335,7 +14335,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setAdjustmentAmount($val)
 	{
-        $this->AdjustmentAmount = (int)$val;
+        $this->AdjustmentAmount = (AmountType)$val;
 	}
 
 	/**
@@ -14344,7 +14344,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setShippingAddress($val)
 	{
-        $this->ShippingAddress = (int)$val;
+        $this->ShippingAddress = (AddressType)$val;
 	}
 
 	/**
@@ -14356,7 +14356,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerID');
         }
-        $this->BuyerID = (int)$val;
+        $this->BuyerID = (string)$val;
 	}
 
 	/**
@@ -14365,7 +14365,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setShippingInsuranceCost($val)
 	{
-        $this->ShippingInsuranceCost = (int)$val;
+        $this->ShippingInsuranceCost = (AmountType)$val;
 	}
 
 	/**
@@ -14374,7 +14374,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setSalesTax($val)
 	{
-        $this->SalesTax = (int)$val;
+        $this->SalesTax = (AmountType)$val;
 	}
 
 	/**
@@ -14383,7 +14383,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setShippingCost($val)
 	{
-        $this->ShippingCost = (int)$val;
+        $this->ShippingCost = (AmountType)$val;
 	}
 
 	/**
@@ -14395,7 +14395,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EncryptedID');
         }
-        $this->EncryptedID = (int)$val;
+        $this->EncryptedID = (string)$val;
 	}
 
 	/**
@@ -14404,7 +14404,7 @@ class ReviseCheckoutStatusRequestType extends
 	 */
 	public function setExternalTransaction($val)
 	{
-        $this->ExternalTransaction = (int)$val;
+        $this->ExternalTransaction = (ExternalTransactionType)$val;
 	}
 
 	/**
@@ -14416,7 +14416,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MultipleSellerPaymentID');
         }
-        $this->MultipleSellerPaymentID = (int)$val;
+        $this->MultipleSellerPaymentID = (string)$val;
 	}
 }
 
@@ -14471,7 +14471,7 @@ class ReviseItemRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -14480,7 +14480,7 @@ class ReviseItemRequestType extends
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
 	}
 
 	/**
@@ -14492,7 +14492,7 @@ class ReviseItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = (string)$val;
 	}
 }
 
@@ -14540,7 +14540,7 @@ class ReviseItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -14549,7 +14549,7 @@ class ReviseItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -14558,7 +14558,7 @@ class ReviseItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 
 	/**
@@ -14567,7 +14567,7 @@ class ReviseItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -14579,7 +14579,7 @@ class ReviseItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -14591,7 +14591,7 @@ class ReviseItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = (string)$val;
 	}
 }
 
@@ -14637,7 +14637,7 @@ class ReviseLiveAuctionItemRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -14646,7 +14646,7 @@ class ReviseLiveAuctionItemRequestType extends
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
 	}
 
 	/**
@@ -14658,7 +14658,7 @@ class ReviseLiveAuctionItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = (string)$val;
 	}
 }
 
@@ -14697,7 +14697,7 @@ class ReviseLiveAuctionItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -14706,7 +14706,7 @@ class ReviseLiveAuctionItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -14718,7 +14718,7 @@ class ReviseLiveAuctionItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -14730,7 +14730,7 @@ class ReviseLiveAuctionItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = (string)$val;
 	}
 }
 
@@ -14777,7 +14777,7 @@ class ReviseMyMessagesRequestType extends
 	 */
 	public function setMessageIDs($val)
 	{
-        $this->MessageIDs = (int)$val;
+        $this->MessageIDs = (MyMessagesMessageIDArrayType)$val;
 	}
 
 	/**
@@ -14786,7 +14786,7 @@ class ReviseMyMessagesRequestType extends
 	 */
 	public function setAlertIDs($val)
 	{
-        $this->AlertIDs = (int)$val;
+        $this->AlertIDs = (MyMessagesAlertIDArrayType)$val;
 	}
 
 	/**
@@ -14795,7 +14795,7 @@ class ReviseMyMessagesRequestType extends
 	 */
 	public function setRead($val)
 	{
-        $this->Read = (int)$val;
+        $this->Read = (boolean)$val;
 	}
 
 	/**
@@ -14804,7 +14804,7 @@ class ReviseMyMessagesRequestType extends
 	 */
 	public function setFlagged($val)
 	{
-        $this->Flagged = (int)$val;
+        $this->Flagged = (boolean)$val;
 	}
 
 	/**
@@ -14813,7 +14813,7 @@ class ReviseMyMessagesRequestType extends
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = (int)$val;
+        $this->FolderID = (long)$val;
 	}
 }
 
@@ -14856,7 +14856,7 @@ class ReviseMyMessagesFoldersRequestType extends
 	 */
 	public function setOperation($val)
 	{
-        $this->Operation = (int)$val;
+        $this->Operation = (MyMessagesFolderOperationCodeType)$val;
 	}
 
 	/**
@@ -14865,7 +14865,7 @@ class ReviseMyMessagesFoldersRequestType extends
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = (int)$val;
+        $this->FolderID = (long)$val;
 	}
 
 	/**
@@ -14877,7 +14877,7 @@ class ReviseMyMessagesFoldersRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->FolderName = (int)$val;
+        $this->FolderName = (string)$val;
 	}
 }
 
@@ -14917,7 +14917,7 @@ class SellerReverseDisputeRequestType extends
 	 */
 	public function setDisputeID($val)
 	{
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
 	}
 
 	/**
@@ -14926,7 +14926,7 @@ class SellerReverseDisputeRequestType extends
 	 */
 	public function setDisputeResolutionReason($val)
 	{
-        $this->DisputeResolutionReason = (int)$val;
+        $this->DisputeResolutionReason = (DisputeResolutionReasonCodeType)$val;
 	}
 }
 
@@ -15054,7 +15054,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -15066,7 +15066,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -15075,7 +15075,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setOrderID($val)
 	{
-        $this->OrderID = (int)$val;
+        $this->OrderID = (OrderIDType)$val;
 	}
 
 	/**
@@ -15084,7 +15084,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setInternationalShippingServiceOptions($val)
 	{
-        $this->InternationalShippingServiceOptions = (int)$val;
+        $this->InternationalShippingServiceOptions = (InternationalShippingServiceOptionsType)$val;
 	}
 
 	/**
@@ -15093,7 +15093,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setShippingServiceOptions($val)
 	{
-        $this->ShippingServiceOptions = (int)$val;
+        $this->ShippingServiceOptions = (ShippingServiceOptionsType)$val;
 	}
 
 	/**
@@ -15102,7 +15102,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setSalesTax($val)
 	{
-        $this->SalesTax = (int)$val;
+        $this->SalesTax = (SalesTaxType)$val;
 	}
 
 	/**
@@ -15111,7 +15111,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = (int)$val;
+        $this->InsuranceOption = (InsuranceOptionCodeType)$val;
 	}
 
 	/**
@@ -15120,7 +15120,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setInsuranceFee($val)
 	{
-        $this->InsuranceFee = (int)$val;
+        $this->InsuranceFee = (AmountType)$val;
 	}
 
 	/**
@@ -15129,7 +15129,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setPaymentMethods($val)
 	{
-        $this->PaymentMethods = (int)$val;
+        $this->PaymentMethods = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -15141,7 +15141,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
-        $this->PayPalEmailAddress = (int)$val;
+        $this->PayPalEmailAddress = (string)$val;
 	}
 
 	/**
@@ -15153,7 +15153,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CheckoutInstructions');
         }
-        $this->CheckoutInstructions = (int)$val;
+        $this->CheckoutInstructions = (string)$val;
 	}
 
 	/**
@@ -15162,7 +15162,7 @@ class SendInvoiceRequestType extends
 	 */
 	public function setEmailCopyToSeller($val)
 	{
-        $this->EmailCopyToSeller = (int)$val;
+        $this->EmailCopyToSeller = (boolean)$val;
 	}
 }
 
@@ -15211,7 +15211,7 @@ class SetNotificationPreferencesRequestType extends
 	 */
 	public function setApplicationDeliveryPreferences($val)
 	{
-        $this->ApplicationDeliveryPreferences = (int)$val;
+        $this->ApplicationDeliveryPreferences = (ApplicationDeliveryPreferencesType)$val;
 	}
 
 	/**
@@ -15220,7 +15220,7 @@ class SetNotificationPreferencesRequestType extends
 	 */
 	public function setUserDeliveryPreferenceArray($val)
 	{
-        $this->UserDeliveryPreferenceArray = (int)$val;
+        $this->UserDeliveryPreferenceArray = (NotificationEnableArrayType)$val;
 	}
 
 	/**
@@ -15229,7 +15229,7 @@ class SetNotificationPreferencesRequestType extends
 	 */
 	public function setUserData($val)
 	{
-        $this->UserData = (int)$val;
+        $this->UserData = (NotificationUserDataType)$val;
 	}
 
 	/**
@@ -15238,7 +15238,7 @@ class SetNotificationPreferencesRequestType extends
 	 */
 	public function setEventProperty($val)
 	{
-        $this->EventProperty = (int)$val;
+        $this->EventProperty = (NotificationEventPropertyType)$val;
 	}
 }
 
@@ -15277,7 +15277,7 @@ class SetPictureManagerDetailsRequestType extends
 	 */
 	public function setPictureManagerDetails($val)
 	{
-        $this->PictureManagerDetails = (int)$val;
+        $this->PictureManagerDetails = (PictureManagerDetailsType)$val;
 	}
 
 	/**
@@ -15286,7 +15286,7 @@ class SetPictureManagerDetailsRequestType extends
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (PictureManagerActionCodeType)$val;
 	}
 }
 
@@ -15325,7 +15325,7 @@ class SetPromotionRulesRequestType extends
 	 */
 	public function setOperationType($val)
 	{
-        $this->OperationType = (int)$val;
+        $this->OperationType = (OperationTypeCodeType)$val;
 	}
 
 	/**
@@ -15334,7 +15334,7 @@ class SetPromotionRulesRequestType extends
 	 */
 	public function setPromotionRuleArray($val)
 	{
-        $this->PromotionRuleArray = (int)$val;
+        $this->PromotionRuleArray = (PromotionRuleArrayType)$val;
 	}
 }
 
@@ -15381,7 +15381,7 @@ class SetReturnUrLrequestType extends
 	 */
 	public function setAuthenticationEntry($val)
 	{
-        $this->AuthenticationEntry = (int)$val;
+        $this->AuthenticationEntry = (AuthenticationEntryType)$val;
 	}
 
 	/**
@@ -15393,7 +15393,7 @@ class SetReturnUrLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
-        $this->ApplicationDisplayName = (int)$val;
+        $this->ApplicationDisplayName = (string)$val;
 	}
 
 	/**
@@ -15402,7 +15402,7 @@ class SetReturnUrLrequestType extends
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (ModifyActionCodeType)$val;
 	}
 }
 
@@ -15435,7 +15435,7 @@ class SetStoreRequestType extends
 	 */
 	public function setStore($val)
 	{
-        $this->Store = (int)$val;
+        $this->Store = (StoreType)$val;
 	}
 }
 
@@ -15486,7 +15486,7 @@ class SetStoreCategoriesRequestType extends
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (StoreCategoryUpdateActionCodeType)$val;
 	}
 
 	/**
@@ -15519,7 +15519,7 @@ class SetStoreCategoriesRequestType extends
 	 */
 	public function setStoreCategories($val)
 	{
-        $this->StoreCategories = (int)$val;
+        $this->StoreCategories = (StoreCustomCategoryArrayType)$val;
 	}
 }
 
@@ -15553,7 +15553,7 @@ class SetStoreCategoriesResponseType extends
 	 */
 	public function setTaskID($val)
 	{
-        $this->TaskID = (int)$val;
+        $this->TaskID = (long)$val;
 	}
 
 	/**
@@ -15562,7 +15562,7 @@ class SetStoreCategoriesResponseType extends
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (TaskStatusCodeType)$val;
 	}
 }
 
@@ -15587,7 +15587,7 @@ class SetStoreCustomPageRequestType extends
 	 */
 	public function setCustomPage($val)
 	{
-        $this->CustomPage = (int)$val;
+        $this->CustomPage = (StoreCustomPageType)$val;
 	}
 }
 
@@ -15612,7 +15612,7 @@ class SetStoreCustomPageResponseType extends
 	 */
 	public function setCustomPage($val)
 	{
-        $this->CustomPage = (int)$val;
+        $this->CustomPage = (StoreCustomPageType)$val;
 	}
 }
 
@@ -15637,7 +15637,7 @@ class SetStorePreferencesRequestType extends
 	 */
 	public function setStorePreferences($val)
 	{
-        $this->StorePreferences = (int)$val;
+        $this->StorePreferences = (StorePreferencesType)$val;
 	}
 }
 
@@ -15671,7 +15671,7 @@ class SetTaxTableRequestType extends
 	 */
 	public function setTaxTable($val)
 	{
-        $this->TaxTable = (int)$val;
+        $this->TaxTable = (TaxTableType)$val;
 	}
 }
 
@@ -15714,7 +15714,7 @@ class SetUserNotesRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -15723,7 +15723,7 @@ class SetUserNotesRequestType extends
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (SetUserNotesActionCodeType)$val;
 	}
 
 	/**
@@ -15735,7 +15735,7 @@ class SetUserNotesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NoteText');
         }
-        $this->NoteText = (int)$val;
+        $this->NoteText = (string)$val;
 	}
 }
 
@@ -15818,7 +15818,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setBidderNoticePreferences($val)
 	{
-        $this->BidderNoticePreferences = (int)$val;
+        $this->BidderNoticePreferences = (BidderNoticePreferencesType)$val;
 	}
 
 	/**
@@ -15827,7 +15827,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setCombinedPaymentPreferences($val)
 	{
-        $this->CombinedPaymentPreferences = (int)$val;
+        $this->CombinedPaymentPreferences = (CombinedPaymentPreferencesType)$val;
 	}
 
 	/**
@@ -15836,7 +15836,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setCrossPromotionPreferences($val)
 	{
-        $this->CrossPromotionPreferences = (int)$val;
+        $this->CrossPromotionPreferences = (CrossPromotionPreferencesType)$val;
 	}
 
 	/**
@@ -15845,7 +15845,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setSellerPaymentPreferences($val)
 	{
-        $this->SellerPaymentPreferences = (int)$val;
+        $this->SellerPaymentPreferences = (SellerPaymentPreferencesType)$val;
 	}
 
 	/**
@@ -15854,7 +15854,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setSellerFavoriteItemPreferences($val)
 	{
-        $this->SellerFavoriteItemPreferences = (int)$val;
+        $this->SellerFavoriteItemPreferences = (SellerFavoriteItemPreferencesType)$val;
 	}
 
 	/**
@@ -15863,7 +15863,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setEndOfAuctionEmailPreferences($val)
 	{
-        $this->EndOfAuctionEmailPreferences = (int)$val;
+        $this->EndOfAuctionEmailPreferences = (EndOfAuctionEmailPreferencesType)$val;
 	}
 
 	/**
@@ -15872,7 +15872,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setEBxOptInPreference($val)
 	{
-        $this->eBxOptInPreference = (int)$val;
+        $this->eBxOptInPreference = (eBxOptInPreferenceType)$val;
 	}
 
 	/**
@@ -15881,7 +15881,7 @@ class SetUserPreferencesRequestType extends
 	 */
 	public function setExpressPreferences($val)
 	{
-        $this->ExpressPreferences = (int)$val;
+        $this->ExpressPreferences = (ExpressPreferencesType)$val;
 	}
 }
 
@@ -15924,7 +15924,7 @@ class ValidateChallengeInputRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ChallengeToken');
         }
-        $this->ChallengeToken = (int)$val;
+        $this->ChallengeToken = (string)$val;
 	}
 
 	/**
@@ -15936,7 +15936,7 @@ class ValidateChallengeInputRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserInput');
         }
-        $this->UserInput = (int)$val;
+        $this->UserInput = (string)$val;
 	}
 
 	/**
@@ -15945,7 +15945,7 @@ class ValidateChallengeInputRequestType extends
 	 */
 	public function setKeepTokenValid($val)
 	{
-        $this->KeepTokenValid = (int)$val;
+        $this->KeepTokenValid = (boolean)$val;
 	}
 }
 
@@ -15969,7 +15969,7 @@ class ValidateChallengeInputResponseType extends
 	 */
 	public function setValidToken($val)
 	{
-        $this->ValidToken = (int)$val;
+        $this->ValidToken = (boolean)$val;
 	}
 }
 
@@ -16050,7 +16050,7 @@ class ValidateTestUserRegistrationRequestType extends
 	 */
 	public function setRegistrationDate($val)
 	{
-        $this->RegistrationDate = (int)$val;
+        $this->RegistrationDate = (dateTime)$val;
 	}
 
 	/**
@@ -16059,7 +16059,7 @@ class ValidateTestUserRegistrationRequestType extends
 	 */
 	public function setSubscribeSA($val)
 	{
-        $this->SubscribeSA = (int)$val;
+        $this->SubscribeSA = (boolean)$val;
 	}
 
 	/**
@@ -16068,7 +16068,7 @@ class ValidateTestUserRegistrationRequestType extends
 	 */
 	public function setSubscribeSAPro($val)
 	{
-        $this->SubscribeSAPro = (int)$val;
+        $this->SubscribeSAPro = (boolean)$val;
 	}
 
 	/**
@@ -16077,7 +16077,7 @@ class ValidateTestUserRegistrationRequestType extends
 	 */
 	public function setSubscribeSM($val)
 	{
-        $this->SubscribeSM = (int)$val;
+        $this->SubscribeSM = (boolean)$val;
 	}
 
 	/**
@@ -16086,7 +16086,7 @@ class ValidateTestUserRegistrationRequestType extends
 	 */
 	public function setSubscribeSMPro($val)
 	{
-        $this->SubscribeSMPro = (int)$val;
+        $this->SubscribeSMPro = (boolean)$val;
 	}
 }
 
@@ -16125,7 +16125,7 @@ class VeRoReportItemsRequestType extends
 	 */
 	public function setRightsOwnerID($val)
 	{
-        $this->RightsOwnerID = (int)$val;
+        $this->RightsOwnerID = (UserIDType)$val;
 	}
 
 	/**
@@ -16134,7 +16134,7 @@ class VeRoReportItemsRequestType extends
 	 */
 	public function setReportItems($val)
 	{
-        $this->ReportItems = (int)$val;
+        $this->ReportItems = (VeROReportItemsType)$val;
 	}
 }
 
@@ -16162,7 +16162,7 @@ class VeRoReportItemsResponseType extends
 	 */
 	public function setVeROReportPacketID($val)
 	{
-        $this->VeROReportPacketID = (int)$val;
+        $this->VeROReportPacketID = (long)$val;
 	}
 
 	/**
@@ -16171,7 +16171,7 @@ class VeRoReportItemsResponseType extends
 	 */
 	public function setVeROReportPacketStatus($val)
 	{
-        $this->VeROReportPacketStatus = (int)$val;
+        $this->VeROReportPacketStatus = (VeROReportPacketStatusCodeType)$val;
 	}
 }
 
@@ -16214,7 +16214,7 @@ class VerifyAddItemRequestType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -16223,7 +16223,7 @@ class VerifyAddItemRequestType extends
 	 */
 	public function setIncludeExpressRequirements($val)
 	{
-        $this->IncludeExpressRequirements = (int)$val;
+        $this->IncludeExpressRequirements = (boolean)$val;
 	}
 
 	/**
@@ -16232,7 +16232,7 @@ class VerifyAddItemRequestType extends
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 }
 
@@ -16292,7 +16292,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -16301,7 +16301,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -16310,7 +16310,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setExpressListing($val)
 	{
-        $this->ExpressListing = (int)$val;
+        $this->ExpressListing = (boolean)$val;
 	}
 
 	/**
@@ -16319,7 +16319,7 @@ class VerifyAddItemResponseType extends
 	 */
 	public function setExpressItemRequirements($val)
 	{
-        $this->ExpressItemRequirements = (int)$val;
+        $this->ExpressItemRequirements = (ExpressItemRequirementsType)$val;
 	}
 
 	/**
@@ -16331,7 +16331,7 @@ class VerifyAddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -16343,7 +16343,7 @@ class VerifyAddItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = (string)$val;
 	}
 }
 
@@ -16417,7 +16417,7 @@ class VerifyAddSecondChanceItemRequestType extends
 	 */
 	public function setRecipientBidderUserID($val)
 	{
-        $this->RecipientBidderUserID = (int)$val;
+        $this->RecipientBidderUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -16426,7 +16426,7 @@ class VerifyAddSecondChanceItemRequestType extends
 	 */
 	public function setBuyItNowPrice($val)
 	{
-        $this->BuyItNowPrice = (int)$val;
+        $this->BuyItNowPrice = (AmountType)$val;
 	}
 
 	/**
@@ -16435,7 +16435,7 @@ class VerifyAddSecondChanceItemRequestType extends
 	 */
 	public function setCopyEmailToSeller($val)
 	{
-        $this->CopyEmailToSeller = (int)$val;
+        $this->CopyEmailToSeller = (boolean)$val;
 	}
 
 	/**
@@ -16444,7 +16444,7 @@ class VerifyAddSecondChanceItemRequestType extends
 	 */
 	public function setDuration($val)
 	{
-        $this->Duration = (int)$val;
+        $this->Duration = (SecondChanceOfferDurationCodeType)$val;
 	}
 
 	/**
@@ -16453,7 +16453,7 @@ class VerifyAddSecondChanceItemRequestType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -16462,7 +16462,7 @@ class VerifyAddSecondChanceItemRequestType extends
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -16474,7 +16474,7 @@ class VerifyAddSecondChanceItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (int)$val;
+        $this->SellerMessage = (string)$val;
 	}
 }
 
@@ -16508,7 +16508,7 @@ class VerifyAddSecondChanceItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = (FeesType)$val;
 	}
 
 	/**
@@ -16517,7 +16517,7 @@ class VerifyAddSecondChanceItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -16526,7 +16526,7 @@ class VerifyAddSecondChanceItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 }
 
@@ -16646,7 +16646,7 @@ class DisputeFilterCountType
 	 */
 	public function setDisputeFilterType($val)
 	{
-        $this->DisputeFilterType = (int)$val;
+        $this->DisputeFilterType = (DisputeFilterTypeCodeType)$val;
 	}
 
 	/**
@@ -16667,7 +16667,7 @@ class DisputeFilterCountType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -16744,7 +16744,7 @@ class DisputeMessageType
 	 */
 	public function setMessageSource($val)
 	{
-        $this->MessageSource = (int)$val;
+        $this->MessageSource = (DisputeMessageSourceCodeType)$val;
 	}
 
 	/**
@@ -16753,7 +16753,7 @@ class DisputeMessageType
 	 */
 	public function setMessageCreationTime($val)
 	{
-        $this->MessageCreationTime = (int)$val;
+        $this->MessageCreationTime = (dateTime)$val;
 	}
 
 	/**
@@ -16765,7 +16765,7 @@ class DisputeMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->MessageText = (int)$val;
+        $this->MessageText = (string)$val;
 	}
 
 	/**
@@ -16774,7 +16774,7 @@ class DisputeMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -16864,7 +16864,7 @@ class DisputeResolutionType
 	 */
 	public function setDisputeResolutionRecordType($val)
 	{
-        $this->DisputeResolutionRecordType = (int)$val;
+        $this->DisputeResolutionRecordType = (DisputeResolutionRecordTypeCodeType)$val;
 	}
 
 	/**
@@ -16873,7 +16873,7 @@ class DisputeResolutionType
 	 */
 	public function setDisputeResolutionReason($val)
 	{
-        $this->DisputeResolutionReason = (int)$val;
+        $this->DisputeResolutionReason = (DisputeResolutionReasonCodeType)$val;
 	}
 
 	/**
@@ -16882,7 +16882,7 @@ class DisputeResolutionType
 	 */
 	public function setResolutionTime($val)
 	{
-        $this->ResolutionTime = (int)$val;
+        $this->ResolutionTime = (dateTime)$val;
 	}
 
 	/**
@@ -16891,7 +16891,7 @@ class DisputeResolutionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -16994,7 +16994,7 @@ class DuplicateInvocationDetailsType
 	 */
 	public function setDuplicateInvocationID($val)
 	{
-        $this->DuplicateInvocationID = (int)$val;
+        $this->DuplicateInvocationID = (UUIDType)$val;
 	}
 
 	/**
@@ -17003,7 +17003,7 @@ class DuplicateInvocationDetailsType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (InvocationStatusType)$val;
 	}
 
 	/**
@@ -17015,7 +17015,7 @@ class DuplicateInvocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InvocationTrackingID');
         }
-        $this->InvocationTrackingID = (int)$val;
+        $this->InvocationTrackingID = (string)$val;
 	}
 
 	/**
@@ -17024,7 +17024,7 @@ class DuplicateInvocationDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -17077,7 +17077,7 @@ class ErrorParameterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (int)$val;
+        $this->Value = (string)$val;
 	}
 
 	/**
@@ -17086,7 +17086,7 @@ class ErrorParameterType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -17098,7 +17098,7 @@ class ErrorParameterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ParamID');
         }
-        $this->ParamID = (int)$val;
+        $this->ParamID = (string)$val;
 	}
 }
 
@@ -17160,7 +17160,7 @@ class ErrorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->ShortMessage = (int)$val;
+        $this->ShortMessage = (string)$val;
 	}
 
 	/**
@@ -17172,7 +17172,7 @@ class ErrorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->LongMessage = (int)$val;
+        $this->LongMessage = (string)$val;
 	}
 
 	/**
@@ -17181,7 +17181,7 @@ class ErrorType
 	 */
 	public function setErrorCode($val)
 	{
-        $this->ErrorCode = (int)$val;
+        $this->ErrorCode = (token)$val;
 	}
 
 	/**
@@ -17190,7 +17190,7 @@ class ErrorType
 	 */
 	public function setUserDisplayHint($val)
 	{
-        $this->UserDisplayHint = (int)$val;
+        $this->UserDisplayHint = (boolean)$val;
 	}
 
 	/**
@@ -17199,7 +17199,7 @@ class ErrorType
 	 */
 	public function setSeverityCode($val)
 	{
-        $this->SeverityCode = (int)$val;
+        $this->SeverityCode = (SeverityCodeType)$val;
 	}
 
 	/**
@@ -17208,7 +17208,7 @@ class ErrorType
 	 */
 	public function setErrorParameters($val)
 	{
-        $this->ErrorParameters = (int)$val;
+        $this->ErrorParameters = (ErrorParameterType)$val;
 	}
 
 	/**
@@ -17217,7 +17217,7 @@ class ErrorType
 	 */
 	public function setErrorClassification($val)
 	{
-        $this->ErrorClassification = (int)$val;
+        $this->ErrorClassification = (ErrorClassificationCodeType)$val;
 	}
 
 	/**
@@ -17226,7 +17226,7 @@ class ErrorType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -17269,7 +17269,7 @@ class MeasureType
 	 */
 	public function set($val)
 	{
-        $this->_ = (int)$val;
+        $this->_ = (decimal)$val;
 	}
 
 	/**
@@ -17278,7 +17278,7 @@ class MeasureType
 	 */
 	public function setUnit($val)
 	{
-        $this->unit = (int)$val;
+        $this->unit = (token)$val;
 	}
 
 	/**
@@ -17287,7 +17287,7 @@ class MeasureType
 	 */
 	public function setMeasurementSystem($val)
 	{
-        $this->measurementSystem = (int)$val;
+        $this->measurementSystem = (MeasurementSystemCodeType)$val;
 	}
 }
 
@@ -17359,7 +17359,7 @@ class PaginationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -17425,7 +17425,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AppId');
         }
-        $this->AppId = (int)$val;
+        $this->AppId = (string)$val;
 	}
 
 	/**
@@ -17437,7 +17437,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DevId');
         }
-        $this->DevId = (int)$val;
+        $this->DevId = (string)$val;
 	}
 
 	/**
@@ -17449,7 +17449,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AuthCert');
         }
-        $this->AuthCert = (int)$val;
+        $this->AuthCert = (string)$val;
 	}
 
 	/**
@@ -17461,7 +17461,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Username');
         }
-        $this->Username = (int)$val;
+        $this->Username = (string)$val;
 	}
 
 	/**
@@ -17473,7 +17473,7 @@ class UserIdPasswordType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Password');
         }
-        $this->Password = (int)$val;
+        $this->Password = (string)$val;
 	}
 
 	/**
@@ -17482,7 +17482,7 @@ class UserIdPasswordType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -17794,7 +17794,7 @@ class AccountEntriesType
 	 */
 	public function setAccountEntry($val)
 	{
-        $this->AccountEntry = (int)$val;
+        $this->AccountEntry = (AccountEntryType)$val;
 	}
 
 	/**
@@ -17803,7 +17803,7 @@ class AccountEntriesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -17917,7 +17917,7 @@ class AccountEntryType
 	 */
 	public function setAccountDetailsEntryType($val)
 	{
-        $this->AccountDetailsEntryType = (int)$val;
+        $this->AccountDetailsEntryType = (AccountDetailEntryCodeType)$val;
 	}
 
 	/**
@@ -17929,7 +17929,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -17938,7 +17938,7 @@ class AccountEntryType
 	 */
 	public function setBalance($val)
 	{
-        $this->Balance = (int)$val;
+        $this->Balance = (AmountType)$val;
 	}
 
 	/**
@@ -17947,7 +17947,7 @@ class AccountEntryType
 	 */
 	public function setCredit($val)
 	{
-        $this->Credit = (int)$val;
+        $this->Credit = (AmountType)$val;
 	}
 
 	/**
@@ -17956,7 +17956,7 @@ class AccountEntryType
 	 */
 	public function setDate($val)
 	{
-        $this->Date = (int)$val;
+        $this->Date = (dateTime)$val;
 	}
 
 	/**
@@ -17965,7 +17965,7 @@ class AccountEntryType
 	 */
 	public function setDebit($val)
 	{
-        $this->Debit = (int)$val;
+        $this->Debit = (AmountType)$val;
 	}
 
 	/**
@@ -17974,7 +17974,7 @@ class AccountEntryType
 	 */
 	public function setGrossDetailAmount($val)
 	{
-        $this->GrossDetailAmount = (int)$val;
+        $this->GrossDetailAmount = (AmountType)$val;
 	}
 
 	/**
@@ -17983,7 +17983,7 @@ class AccountEntryType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -17995,7 +17995,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Memo');
         }
-        $this->Memo = (int)$val;
+        $this->Memo = (string)$val;
 	}
 
 	/**
@@ -18004,7 +18004,7 @@ class AccountEntryType
 	 */
 	public function setNetDetailAmount($val)
 	{
-        $this->NetDetailAmount = (int)$val;
+        $this->NetDetailAmount = (AmountType)$val;
 	}
 
 	/**
@@ -18016,7 +18016,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefNumber');
         }
-        $this->RefNumber = (int)$val;
+        $this->RefNumber = (string)$val;
 	}
 
 	/**
@@ -18025,7 +18025,7 @@ class AccountEntryType
 	 */
 	public function setVATPercent($val)
 	{
-        $this->VATPercent = (int)$val;
+        $this->VATPercent = (decimal)$val;
 	}
 
 	/**
@@ -18037,7 +18037,7 @@ class AccountEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 
 	/**
@@ -18046,7 +18046,7 @@ class AccountEntryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -18211,7 +18211,7 @@ class AccountSummaryType
 	 */
 	public function setAccountState($val)
 	{
-        $this->AccountState = (int)$val;
+        $this->AccountState = (AccountStateCodeType)$val;
 	}
 
 	/**
@@ -18220,7 +18220,7 @@ class AccountSummaryType
 	 */
 	public function setInvoicePayment($val)
 	{
-        $this->InvoicePayment = (int)$val;
+        $this->InvoicePayment = (AmountType)$val;
 	}
 
 	/**
@@ -18229,7 +18229,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceCredit($val)
 	{
-        $this->InvoiceCredit = (int)$val;
+        $this->InvoiceCredit = (AmountType)$val;
 	}
 
 	/**
@@ -18238,7 +18238,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceNewFee($val)
 	{
-        $this->InvoiceNewFee = (int)$val;
+        $this->InvoiceNewFee = (AmountType)$val;
 	}
 
 	/**
@@ -18247,7 +18247,7 @@ class AccountSummaryType
 	 */
 	public function setAdditionalAccount($val)
 	{
-        $this->AdditionalAccount = (int)$val;
+        $this->AdditionalAccount = (AdditionalAccountType)$val;
 	}
 
 	/**
@@ -18256,7 +18256,7 @@ class AccountSummaryType
 	 */
 	public function setAmountPastDue($val)
 	{
-        $this->AmountPastDue = (int)$val;
+        $this->AmountPastDue = (AmountType)$val;
 	}
 
 	/**
@@ -18268,7 +18268,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BankAccountInfo');
         }
-        $this->BankAccountInfo = (int)$val;
+        $this->BankAccountInfo = (string)$val;
 	}
 
 	/**
@@ -18277,7 +18277,7 @@ class AccountSummaryType
 	 */
 	public function setBankModifyDate($val)
 	{
-        $this->BankModifyDate = (int)$val;
+        $this->BankModifyDate = (dateTime)$val;
 	}
 
 	/**
@@ -18298,7 +18298,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardExpiration($val)
 	{
-        $this->CreditCardExpiration = (int)$val;
+        $this->CreditCardExpiration = (dateTime)$val;
 	}
 
 	/**
@@ -18310,7 +18310,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CreditCardInfo');
         }
-        $this->CreditCardInfo = (int)$val;
+        $this->CreditCardInfo = (string)$val;
 	}
 
 	/**
@@ -18319,7 +18319,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardModifyDate($val)
 	{
-        $this->CreditCardModifyDate = (int)$val;
+        $this->CreditCardModifyDate = (dateTime)$val;
 	}
 
 	/**
@@ -18328,7 +18328,7 @@ class AccountSummaryType
 	 */
 	public function setCurrentBalance($val)
 	{
-        $this->CurrentBalance = (int)$val;
+        $this->CurrentBalance = (AmountType)$val;
 	}
 
 	/**
@@ -18340,7 +18340,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -18349,7 +18349,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceBalance($val)
 	{
-        $this->InvoiceBalance = (int)$val;
+        $this->InvoiceBalance = (AmountType)$val;
 	}
 
 	/**
@@ -18358,7 +18358,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceDate($val)
 	{
-        $this->InvoiceDate = (int)$val;
+        $this->InvoiceDate = (dateTime)$val;
 	}
 
 	/**
@@ -18367,7 +18367,7 @@ class AccountSummaryType
 	 */
 	public function setLastAmountPaid($val)
 	{
-        $this->LastAmountPaid = (int)$val;
+        $this->LastAmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -18376,7 +18376,7 @@ class AccountSummaryType
 	 */
 	public function setLastPaymentDate($val)
 	{
-        $this->LastPaymentDate = (int)$val;
+        $this->LastPaymentDate = (dateTime)$val;
 	}
 
 	/**
@@ -18385,7 +18385,7 @@ class AccountSummaryType
 	 */
 	public function setPastDue($val)
 	{
-        $this->PastDue = (int)$val;
+        $this->PastDue = (boolean)$val;
 	}
 
 	/**
@@ -18394,7 +18394,7 @@ class AccountSummaryType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (SellerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -18403,7 +18403,7 @@ class AccountSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -18437,7 +18437,7 @@ class AdFormatEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -18505,7 +18505,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AdditionalInformation');
         }
-        $this->AdditionalInformation = (int)$val;
+        $this->AdditionalInformation = (string)$val;
 	}
 
 	/**
@@ -18514,7 +18514,7 @@ class AdFormatLeadType
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (int)$val;
+        $this->Address = (AddressType)$val;
 	}
 
 	/**
@@ -18526,7 +18526,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BestTimeToCall');
         }
-        $this->BestTimeToCall = (int)$val;
+        $this->BestTimeToCall = (string)$val;
 	}
 
 	/**
@@ -18538,7 +18538,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -18550,7 +18550,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FirstName');
         }
-        $this->FirstName = (int)$val;
+        $this->FirstName = (string)$val;
 	}
 
 	/**
@@ -18562,7 +18562,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastName');
         }
-        $this->LastName = (int)$val;
+        $this->LastName = (string)$val;
 	}
 
 	/**
@@ -18574,7 +18574,7 @@ class AdFormatLeadType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = (int)$val;
+        $this->Phone = (string)$val;
 	}
 
 	/**
@@ -18583,7 +18583,7 @@ class AdFormatLeadType
 	 */
 	public function setSubmittedTime($val)
 	{
-        $this->SubmittedTime = (int)$val;
+        $this->SubmittedTime = (dateTime)$val;
 	}
 
 	/**
@@ -18592,7 +18592,7 @@ class AdFormatLeadType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -18627,7 +18627,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
 	}
 
 	/**
@@ -18639,7 +18639,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemID');
         }
-        $this->ItemID = (int)$val;
+        $this->ItemID = (string)$val;
 	}
 
 	/**
@@ -18648,7 +18648,7 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
 	 */
 	public function setMemberMessage($val)
 	{
-        $this->MemberMessage = (int)$val;
+        $this->MemberMessage = (MemberMessageType)$val;
 	}
 }
 
@@ -18679,7 +18679,7 @@ class AddMemberMessagesAaQtoBidderResponseContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
 	}
 
 	/**
@@ -18688,7 +18688,7 @@ class AddMemberMessagesAaQtoBidderResponseContainerType
 	 */
 	public function setAck($val)
 	{
-        $this->Ack = (int)$val;
+        $this->Ack = (AckCodeType)$val;
 	}
 }
 
@@ -18727,7 +18727,7 @@ class AdditionalAccountType
 	 */
 	public function setBalance($val)
 	{
-        $this->Balance = (int)$val;
+        $this->Balance = (AmountType)$val;
 	}
 
 	/**
@@ -18736,7 +18736,7 @@ class AdditionalAccountType
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -18748,7 +18748,7 @@ class AdditionalAccountType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountCode');
         }
-        $this->AccountCode = (int)$val;
+        $this->AccountCode = (string)$val;
 	}
 
 	/**
@@ -18757,7 +18757,7 @@ class AdditionalAccountType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -18944,7 +18944,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -18956,7 +18956,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street');
         }
-        $this->Street = (int)$val;
+        $this->Street = (string)$val;
 	}
 
 	/**
@@ -18968,7 +18968,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street1');
         }
-        $this->Street1 = (int)$val;
+        $this->Street1 = (string)$val;
 	}
 
 	/**
@@ -18980,7 +18980,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street2');
         }
-        $this->Street2 = (int)$val;
+        $this->Street2 = (string)$val;
 	}
 
 	/**
@@ -18992,7 +18992,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CityName');
         }
-        $this->CityName = (int)$val;
+        $this->CityName = (string)$val;
 	}
 
 	/**
@@ -19004,7 +19004,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for County');
         }
-        $this->County = (int)$val;
+        $this->County = (string)$val;
 	}
 
 	/**
@@ -19016,7 +19016,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StateOrProvince');
         }
-        $this->StateOrProvince = (int)$val;
+        $this->StateOrProvince = (string)$val;
 	}
 
 	/**
@@ -19025,7 +19025,7 @@ class AddressType
 	 */
 	public function setCountry($val)
 	{
-        $this->Country = (int)$val;
+        $this->Country = (CountryCodeType)$val;
 	}
 
 	/**
@@ -19037,7 +19037,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryName');
         }
-        $this->CountryName = (int)$val;
+        $this->CountryName = (string)$val;
 	}
 
 	/**
@@ -19049,7 +19049,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = (int)$val;
+        $this->Phone = (string)$val;
 	}
 
 	/**
@@ -19058,7 +19058,7 @@ class AddressType
 	 */
 	public function setPhoneCountryCode($val)
 	{
-        $this->PhoneCountryCode = (int)$val;
+        $this->PhoneCountryCode = (CountryCodeType)$val;
 	}
 
 	/**
@@ -19070,7 +19070,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneCountryPrefix');
         }
-        $this->PhoneCountryPrefix = (int)$val;
+        $this->PhoneCountryPrefix = (string)$val;
 	}
 
 	/**
@@ -19082,7 +19082,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneAreaOrCityCode');
         }
-        $this->PhoneAreaOrCityCode = (int)$val;
+        $this->PhoneAreaOrCityCode = (string)$val;
 	}
 
 	/**
@@ -19094,7 +19094,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneLocalNumber');
         }
-        $this->PhoneLocalNumber = (int)$val;
+        $this->PhoneLocalNumber = (string)$val;
 	}
 
 	/**
@@ -19103,7 +19103,7 @@ class AddressType
 	 */
 	public function setPhone2CountryCode($val)
 	{
-        $this->Phone2CountryCode = (int)$val;
+        $this->Phone2CountryCode = (CountryCodeType)$val;
 	}
 
 	/**
@@ -19115,7 +19115,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2CountryPrefix');
         }
-        $this->Phone2CountryPrefix = (int)$val;
+        $this->Phone2CountryPrefix = (string)$val;
 	}
 
 	/**
@@ -19127,7 +19127,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2AreaOrCityCode');
         }
-        $this->Phone2AreaOrCityCode = (int)$val;
+        $this->Phone2AreaOrCityCode = (string)$val;
 	}
 
 	/**
@@ -19139,7 +19139,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone2LocalNumber');
         }
-        $this->Phone2LocalNumber = (int)$val;
+        $this->Phone2LocalNumber = (string)$val;
 	}
 
 	/**
@@ -19151,7 +19151,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -19163,7 +19163,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AddressID');
         }
-        $this->AddressID = (int)$val;
+        $this->AddressID = (string)$val;
 	}
 
 	/**
@@ -19172,7 +19172,7 @@ class AddressType
 	 */
 	public function setAddressOwner($val)
 	{
-        $this->AddressOwner = (int)$val;
+        $this->AddressOwner = (AddressOwnerCodeType)$val;
 	}
 
 	/**
@@ -19181,7 +19181,7 @@ class AddressType
 	 */
 	public function setAddressStatus($val)
 	{
-        $this->AddressStatus = (int)$val;
+        $this->AddressStatus = (AddressStatusCodeType)$val;
 	}
 
 	/**
@@ -19193,7 +19193,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAddressID');
         }
-        $this->ExternalAddressID = (int)$val;
+        $this->ExternalAddressID = (string)$val;
 	}
 
 	/**
@@ -19205,7 +19205,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalName');
         }
-        $this->InternationalName = (int)$val;
+        $this->InternationalName = (string)$val;
 	}
 
 	/**
@@ -19217,7 +19217,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalStateAndCity');
         }
-        $this->InternationalStateAndCity = (int)$val;
+        $this->InternationalStateAndCity = (string)$val;
 	}
 
 	/**
@@ -19229,7 +19229,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for InternationalStreet');
         }
-        $this->InternationalStreet = (int)$val;
+        $this->InternationalStreet = (string)$val;
 	}
 
 	/**
@@ -19241,7 +19241,7 @@ class AddressType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CompanyName');
         }
-        $this->CompanyName = (int)$val;
+        $this->CompanyName = (string)$val;
 	}
 
 	/**
@@ -19250,7 +19250,7 @@ class AddressType
 	 */
 	public function setAddressRecordType($val)
 	{
-        $this->AddressRecordType = (int)$val;
+        $this->AddressRecordType = (AddressRecordTypeCodeType)$val;
 	}
 
 	/**
@@ -19259,7 +19259,7 @@ class AddressType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -19310,7 +19310,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackingID');
         }
-        $this->TrackingID = (int)$val;
+        $this->TrackingID = (string)$val;
 	}
 
 	/**
@@ -19322,7 +19322,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackingPartnerCode');
         }
-        $this->TrackingPartnerCode = (int)$val;
+        $this->TrackingPartnerCode = (string)$val;
 	}
 
 	/**
@@ -19331,7 +19331,7 @@ class AffiliateTrackingDetailsType
 	 */
 	public function setApplicationDeviceType($val)
 	{
-        $this->ApplicationDeviceType = (int)$val;
+        $this->ApplicationDeviceType = (ApplicationDeviceTypeCodeType)$val;
 	}
 
 	/**
@@ -19343,7 +19343,7 @@ class AffiliateTrackingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AffiliateUserID');
         }
-        $this->AffiliateUserID = (int)$val;
+        $this->AffiliateUserID = (string)$val;
 	}
 
 	/**
@@ -19352,7 +19352,7 @@ class AffiliateTrackingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -19383,7 +19383,7 @@ class AmountType
 	 */
 	public function set($val)
 	{
-        $this->_ = (int)$val;
+        $this->_ = (double)$val;
 	}
 
 	/**
@@ -19392,7 +19392,7 @@ class AmountType
 	 */
 	public function setCurrencyID($val)
 	{
-        $this->currencyID = (int)$val;
+        $this->currencyID = (CurrencyCodeType)$val;
 	}
 }
 
@@ -19506,7 +19506,7 @@ class ApiAccessRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallName');
         }
-        $this->CallName = (int)$val;
+        $this->CallName = (string)$val;
 	}
 
 	/**
@@ -19515,7 +19515,7 @@ class ApiAccessRuleType
 	 */
 	public function setCountsTowardAggregate($val)
 	{
-        $this->CountsTowardAggregate = (int)$val;
+        $this->CountsTowardAggregate = (boolean)$val;
 	}
 
 	/**
@@ -19524,7 +19524,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailyHardLimit($val)
 	{
-        $this->DailyHardLimit = (int)$val;
+        $this->DailyHardLimit = (long)$val;
 	}
 
 	/**
@@ -19533,7 +19533,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailySoftLimit($val)
 	{
-        $this->DailySoftLimit = (int)$val;
+        $this->DailySoftLimit = (long)$val;
 	}
 
 	/**
@@ -19542,7 +19542,7 @@ class ApiAccessRuleType
 	 */
 	public function setDailyUsage($val)
 	{
-        $this->DailyUsage = (int)$val;
+        $this->DailyUsage = (long)$val;
 	}
 
 	/**
@@ -19551,7 +19551,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlyHardLimit($val)
 	{
-        $this->HourlyHardLimit = (int)$val;
+        $this->HourlyHardLimit = (long)$val;
 	}
 
 	/**
@@ -19560,7 +19560,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlySoftLimit($val)
 	{
-        $this->HourlySoftLimit = (int)$val;
+        $this->HourlySoftLimit = (long)$val;
 	}
 
 	/**
@@ -19569,7 +19569,7 @@ class ApiAccessRuleType
 	 */
 	public function setHourlyUsage($val)
 	{
-        $this->HourlyUsage = (int)$val;
+        $this->HourlyUsage = (long)$val;
 	}
 
 	/**
@@ -19590,7 +19590,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicHardLimit($val)
 	{
-        $this->PeriodicHardLimit = (int)$val;
+        $this->PeriodicHardLimit = (long)$val;
 	}
 
 	/**
@@ -19599,7 +19599,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicSoftLimit($val)
 	{
-        $this->PeriodicSoftLimit = (int)$val;
+        $this->PeriodicSoftLimit = (long)$val;
 	}
 
 	/**
@@ -19608,7 +19608,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicUsage($val)
 	{
-        $this->PeriodicUsage = (int)$val;
+        $this->PeriodicUsage = (long)$val;
 	}
 
 	/**
@@ -19617,7 +19617,7 @@ class ApiAccessRuleType
 	 */
 	public function setPeriodicStartDate($val)
 	{
-        $this->PeriodicStartDate = (int)$val;
+        $this->PeriodicStartDate = (dateTime)$val;
 	}
 
 	/**
@@ -19626,7 +19626,7 @@ class ApiAccessRuleType
 	 */
 	public function setModTime($val)
 	{
-        $this->ModTime = (int)$val;
+        $this->ModTime = (dateTime)$val;
 	}
 
 	/**
@@ -19635,7 +19635,7 @@ class ApiAccessRuleType
 	 */
 	public function setRuleCurrentStatus($val)
 	{
-        $this->RuleCurrentStatus = (int)$val;
+        $this->RuleCurrentStatus = (AccessRuleCurrentStatusCodeType)$val;
 	}
 
 	/**
@@ -19644,7 +19644,7 @@ class ApiAccessRuleType
 	 */
 	public function setRuleStatus($val)
 	{
-        $this->RuleStatus = (int)$val;
+        $this->RuleStatus = (AccessRuleStatusCodeType)$val;
 	}
 
 	/**
@@ -19653,7 +19653,7 @@ class ApiAccessRuleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -19711,7 +19711,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setApplicationURL($val)
 	{
-        $this->ApplicationURL = (int)$val;
+        $this->ApplicationURL = (anyURI)$val;
 	}
 
 	/**
@@ -19720,7 +19720,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setApplicationEnable($val)
 	{
-        $this->ApplicationEnable = (int)$val;
+        $this->ApplicationEnable = (EnableCodeType)$val;
 	}
 
 	/**
@@ -19729,7 +19729,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setAlertEmail($val)
 	{
-        $this->AlertEmail = (int)$val;
+        $this->AlertEmail = (anyURI)$val;
 	}
 
 	/**
@@ -19738,7 +19738,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setAlertEnable($val)
 	{
-        $this->AlertEnable = (int)$val;
+        $this->AlertEnable = (EnableCodeType)$val;
 	}
 
 	/**
@@ -19747,7 +19747,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setNotificationPayloadType($val)
 	{
-        $this->NotificationPayloadType = (int)$val;
+        $this->NotificationPayloadType = (NotificationPayloadTypeCodeType)$val;
 	}
 
 	/**
@@ -19756,7 +19756,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setDeviceType($val)
 	{
-        $this->DeviceType = (int)$val;
+        $this->DeviceType = (DeviceTypeCodeType)$val;
 	}
 
 	/**
@@ -19765,7 +19765,7 @@ class ApplicationDeliveryPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -19817,7 +19817,7 @@ class AttributeArrayType
 	 */
 	public function setAttribute($val)
 	{
-        $this->Attribute = (int)$val;
+        $this->Attribute = (AttributeType)$val;
 	}
 }
 
@@ -19844,7 +19844,7 @@ class AttributeRecommendationsType
 	 */
 	public function setAttributeSetArray($val)
 	{
-        $this->AttributeSetArray = (int)$val;
+        $this->AttributeSetArray = (AttributeSetArrayType)$val;
 	}
 
 	/**
@@ -19853,7 +19853,7 @@ class AttributeRecommendationsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -19888,7 +19888,7 @@ class AttributeSetArrayType
 	 */
 	public function setAttributeSet($val)
 	{
-        $this->AttributeSet = (int)$val;
+        $this->AttributeSet = (AttributeSetType)$val;
 	}
 }
 
@@ -19947,7 +19947,7 @@ class AttributeSetType
 	 */
 	public function setAttribute($val)
 	{
-        $this->Attribute = (int)$val;
+        $this->Attribute = (AttributeType)$val;
 	}
 
 	/**
@@ -19956,7 +19956,7 @@ class AttributeSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -19980,7 +19980,7 @@ class AttributeSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for attributeSetVersion');
         }
-        $this->attributeSetVersion = (int)$val;
+        $this->attributeSetVersion = (string)$val;
 	}
 }
 
@@ -20017,7 +20017,7 @@ class AttributeType
 	 */
 	public function setValue($val)
 	{
-        $this->Value = (int)$val;
+        $this->Value = (ValType)$val;
 	}
 
 	/**
@@ -20026,7 +20026,7 @@ class AttributeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -20050,7 +20050,7 @@ class AttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for attributeLabel');
         }
-        $this->attributeLabel = (int)$val;
+        $this->attributeLabel = (string)$val;
 	}
 }
 
@@ -20075,7 +20075,7 @@ class AuthenticationEntryArrayType
 	 */
 	public function setAuthenticationEntry($val)
 	{
-        $this->AuthenticationEntry = (int)$val;
+        $this->AuthenticationEntry = (AuthenticationEntryType)$val;
 	}
 }
 
@@ -20132,7 +20132,7 @@ class AuthenticationEntryType
 	 */
 	public function setAcceptURL($val)
 	{
-        $this->AcceptURL = (int)$val;
+        $this->AcceptURL = (anyURI)$val;
 	}
 
 	/**
@@ -20141,7 +20141,7 @@ class AuthenticationEntryType
 	 */
 	public function setPrivacyPolicyURL($val)
 	{
-        $this->PrivacyPolicyURL = (int)$val;
+        $this->PrivacyPolicyURL = (anyURI)$val;
 	}
 
 	/**
@@ -20150,7 +20150,7 @@ class AuthenticationEntryType
 	 */
 	public function setRejectURL($val)
 	{
-        $this->RejectURL = (int)$val;
+        $this->RejectURL = (anyURI)$val;
 	}
 
 	/**
@@ -20162,7 +20162,7 @@ class AuthenticationEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RuName');
         }
-        $this->RuName = (int)$val;
+        $this->RuName = (string)$val;
 	}
 
 	/**
@@ -20171,7 +20171,7 @@ class AuthenticationEntryType
 	 */
 	public function setTokenReturnMethod($val)
 	{
-        $this->TokenReturnMethod = (int)$val;
+        $this->TokenReturnMethod = (TokenReturnMethodCodeType)$val;
 	}
 
 	/**
@@ -20180,7 +20180,7 @@ class AuthenticationEntryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20205,7 +20205,7 @@ class BasicUpgradePackEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20237,7 +20237,7 @@ class BestOfferArrayType
 	 */
 	public function setBestOffer($val)
 	{
-        $this->BestOffer = (int)$val;
+        $this->BestOffer = (BestOfferType)$val;
 	}
 }
 
@@ -20262,7 +20262,7 @@ class BestOfferAutoDeclineEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20287,7 +20287,7 @@ class BestOfferCounterEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20346,7 +20346,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -20355,7 +20355,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOffer($val)
 	{
-        $this->BestOffer = (int)$val;
+        $this->BestOffer = (AmountType)$val;
 	}
 
 	/**
@@ -20364,7 +20364,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferStatus($val)
 	{
-        $this->BestOfferStatus = (int)$val;
+        $this->BestOfferStatus = (BestOfferStatusCodeType)$val;
 	}
 
 	/**
@@ -20373,7 +20373,7 @@ class BestOfferDetailsType
 	 */
 	public function setBestOfferType($val)
 	{
-        $this->BestOfferType = (int)$val;
+        $this->BestOfferType = (BestOfferTypeCodeType)$val;
 	}
 
 	/**
@@ -20382,7 +20382,7 @@ class BestOfferDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20407,7 +20407,7 @@ class BestOfferEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20494,7 +20494,7 @@ class BestOfferType
 	 */
 	public function setBestOfferID($val)
 	{
-        $this->BestOfferID = (int)$val;
+        $this->BestOfferID = (BestOfferIDType)$val;
 	}
 
 	/**
@@ -20503,7 +20503,7 @@ class BestOfferType
 	 */
 	public function setExpirationTime($val)
 	{
-        $this->ExpirationTime = (int)$val;
+        $this->ExpirationTime = (dateTime)$val;
 	}
 
 	/**
@@ -20512,7 +20512,7 @@ class BestOfferType
 	 */
 	public function setBuyer($val)
 	{
-        $this->Buyer = (int)$val;
+        $this->Buyer = (UserType)$val;
 	}
 
 	/**
@@ -20521,7 +20521,7 @@ class BestOfferType
 	 */
 	public function setPrice($val)
 	{
-        $this->Price = (int)$val;
+        $this->Price = (AmountType)$val;
 	}
 
 	/**
@@ -20530,7 +20530,7 @@ class BestOfferType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (BestOfferStatusCodeType)$val;
 	}
 
 	/**
@@ -20554,7 +20554,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->BuyerMessage = (int)$val;
+        $this->BuyerMessage = (string)$val;
 	}
 
 	/**
@@ -20566,7 +20566,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (int)$val;
+        $this->SellerMessage = (string)$val;
 	}
 
 	/**
@@ -20575,7 +20575,7 @@ class BestOfferType
 	 */
 	public function setBestOfferCodeType($val)
 	{
-        $this->BestOfferCodeType = (int)$val;
+        $this->BestOfferCodeType = (BestOfferTypeCodeType)$val;
 	}
 
 	/**
@@ -20587,7 +20587,7 @@ class BestOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CallStatus');
         }
-        $this->CallStatus = (int)$val;
+        $this->CallStatus = (string)$val;
 	}
 
 	/**
@@ -20596,7 +20596,7 @@ class BestOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20646,7 +20646,7 @@ class BidApprovalArrayType
 	 */
 	public function setLiveAuctionBid($val)
 	{
-        $this->LiveAuctionBid = (int)$val;
+        $this->LiveAuctionBid = (BidApprovalType)$val;
 	}
 
 	/**
@@ -20655,7 +20655,7 @@ class BidApprovalArrayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20707,7 +20707,7 @@ class BidApprovalType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -20716,7 +20716,7 @@ class BidApprovalType
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
-        $this->ApprovedBiddingLimit = (int)$val;
+        $this->ApprovedBiddingLimit = (AmountType)$val;
 	}
 
 	/**
@@ -20728,7 +20728,7 @@ class BidApprovalType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeclinedComment');
         }
-        $this->DeclinedComment = (int)$val;
+        $this->DeclinedComment = (string)$val;
 	}
 
 	/**
@@ -20737,7 +20737,7 @@ class BidApprovalType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (BidderStatusCodeType)$val;
 	}
 
 	/**
@@ -20746,7 +20746,7 @@ class BidApprovalType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20769,7 +20769,7 @@ class BidderDetailArrayType
 	 */
 	public function setBidderDetail($val)
 	{
-        $this->BidderDetail = (int)$val;
+        $this->BidderDetail = (BidderDetailType)$val;
 	}
 }
 
@@ -20858,7 +20858,7 @@ class BidderDetailType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -20870,7 +20870,7 @@ class BidderDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -20915,7 +20915,7 @@ class BidderDetailType
 	 */
 	public function setLiveAuctionBidResult($val)
 	{
-        $this->LiveAuctionBidResult = (int)$val;
+        $this->LiveAuctionBidResult = (LiveAuctionBidType)$val;
 	}
 
 	/**
@@ -20924,7 +20924,7 @@ class BidderDetailType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -20952,7 +20952,7 @@ class BidderNoticePreferencesType
 	 */
 	public function setUnsuccessfulBidderNoticeIncludeMyItems($val)
 	{
-        $this->UnsuccessfulBidderNoticeIncludeMyItems = (int)$val;
+        $this->UnsuccessfulBidderNoticeIncludeMyItems = (boolean)$val;
 	}
 
 	/**
@@ -20961,7 +20961,7 @@ class BidderNoticePreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21027,7 +21027,7 @@ class BiddingDetailsType
 	 */
 	public function setConvertedMaxBid($val)
 	{
-        $this->ConvertedMaxBid = (int)$val;
+        $this->ConvertedMaxBid = (AmountType)$val;
 	}
 
 	/**
@@ -21036,7 +21036,7 @@ class BiddingDetailsType
 	 */
 	public function setMaxBid($val)
 	{
-        $this->MaxBid = (int)$val;
+        $this->MaxBid = (AmountType)$val;
 	}
 
 	/**
@@ -21069,7 +21069,7 @@ class BiddingDetailsType
 	 */
 	public function setWinning($val)
 	{
-        $this->Winning = (int)$val;
+        $this->Winning = (boolean)$val;
 	}
 
 	/**
@@ -21078,7 +21078,7 @@ class BiddingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21203,7 +21203,7 @@ class BiddingSummaryType
 	 */
 	public function setItemBidDetails($val)
 	{
-        $this->ItemBidDetails = (int)$val;
+        $this->ItemBidDetails = (ItemBidDetailsType)$val;
 	}
 
 	/**
@@ -21212,7 +21212,7 @@ class BiddingSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21279,7 +21279,7 @@ class BuyerRequirementsType
 	 */
 	public function setShipToRegistrationCountry($val)
 	{
-        $this->ShipToRegistrationCountry = (int)$val;
+        $this->ShipToRegistrationCountry = (boolean)$val;
 	}
 
 	/**
@@ -21288,7 +21288,7 @@ class BuyerRequirementsType
 	 */
 	public function setZeroFeedbackScore($val)
 	{
-        $this->ZeroFeedbackScore = (int)$val;
+        $this->ZeroFeedbackScore = (boolean)$val;
 	}
 
 	/**
@@ -21309,7 +21309,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumUnpaidItemStrikes($val)
 	{
-        $this->MaximumUnpaidItemStrikes = (int)$val;
+        $this->MaximumUnpaidItemStrikes = (boolean)$val;
 	}
 
 	/**
@@ -21318,7 +21318,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumItemRequirements($val)
 	{
-        $this->MaximumItemRequirements = (int)$val;
+        $this->MaximumItemRequirements = (MaximumItemRequirementsType)$val;
 	}
 
 	/**
@@ -21327,7 +21327,7 @@ class BuyerRequirementsType
 	 */
 	public function setLinkedPayPalAccount($val)
 	{
-        $this->LinkedPayPalAccount = (int)$val;
+        $this->LinkedPayPalAccount = (boolean)$val;
 	}
 
 	/**
@@ -21336,7 +21336,7 @@ class BuyerRequirementsType
 	 */
 	public function setVerifiedUserRequirements($val)
 	{
-        $this->VerifiedUserRequirements = (int)$val;
+        $this->VerifiedUserRequirements = (VerifiedUserRequirementsType)$val;
 	}
 }
 
@@ -21363,7 +21363,7 @@ class BuyerType
 	 */
 	public function setShippingAddress($val)
 	{
-        $this->ShippingAddress = (int)$val;
+        $this->ShippingAddress = (AddressType)$val;
 	}
 
 	/**
@@ -21372,7 +21372,7 @@ class BuyerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21414,7 +21414,7 @@ class BuyingGuideDetailsType
 	 */
 	public function setBuyingGuide($val)
 	{
-        $this->BuyingGuide = (int)$val;
+        $this->BuyingGuide = (BuyingGuideType)$val;
 	}
 
 	/**
@@ -21423,7 +21423,7 @@ class BuyingGuideDetailsType
 	 */
 	public function setBuyingGuideHub($val)
 	{
-        $this->BuyingGuideHub = (int)$val;
+        $this->BuyingGuideHub = (anyURI)$val;
 	}
 
 	/**
@@ -21432,7 +21432,7 @@ class BuyingGuideDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21489,7 +21489,7 @@ class BuyingGuideType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -21498,7 +21498,7 @@ class BuyingGuideType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -21510,7 +21510,7 @@ class BuyingGuideType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -21531,7 +21531,7 @@ class BuyingGuideType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21598,7 +21598,7 @@ class BuyingSummaryType
 	 */
 	public function setTotalWinningCost($val)
 	{
-        $this->TotalWinningCost = (int)$val;
+        $this->TotalWinningCost = (AmountType)$val;
 	}
 
 	/**
@@ -21619,7 +21619,7 @@ class BuyingSummaryType
 	 */
 	public function setTotalWonCost($val)
 	{
-        $this->TotalWonCost = (int)$val;
+        $this->TotalWonCost = (AmountType)$val;
 	}
 
 	/**
@@ -21693,7 +21693,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setCalculatedShippingAmountForEntireOrder($val)
 	{
-        $this->CalculatedShippingAmountForEntireOrder = (int)$val;
+        $this->CalculatedShippingAmountForEntireOrder = (AmountType)$val;
 	}
 
 	/**
@@ -21702,7 +21702,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setCalculatedShippingChargeOption($val)
 	{
-        $this->CalculatedShippingChargeOption = (int)$val;
+        $this->CalculatedShippingChargeOption = (CalculatedShippingChargeOptionCodeType)$val;
 	}
 
 	/**
@@ -21711,7 +21711,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setCalculatedShippingRateOption($val)
 	{
-        $this->CalculatedShippingRateOption = (int)$val;
+        $this->CalculatedShippingRateOption = (CalculatedShippingRateOptionCodeType)$val;
 	}
 
 	/**
@@ -21720,7 +21720,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = (int)$val;
+        $this->InsuranceOption = (InsuranceOptionCodeType)$val;
 	}
 
 	/**
@@ -21729,7 +21729,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21820,7 +21820,7 @@ class CalculatedShippingRateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OriginatingPostalCode');
         }
-        $this->OriginatingPostalCode = (int)$val;
+        $this->OriginatingPostalCode = (string)$val;
 	}
 
 	/**
@@ -21829,7 +21829,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageDepth($val)
 	{
-        $this->PackageDepth = (int)$val;
+        $this->PackageDepth = (MeasureType)$val;
 	}
 
 	/**
@@ -21838,7 +21838,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageLength($val)
 	{
-        $this->PackageLength = (int)$val;
+        $this->PackageLength = (MeasureType)$val;
 	}
 
 	/**
@@ -21847,7 +21847,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageWidth($val)
 	{
-        $this->PackageWidth = (int)$val;
+        $this->PackageWidth = (MeasureType)$val;
 	}
 
 	/**
@@ -21856,7 +21856,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackagingHandlingCosts($val)
 	{
-        $this->PackagingHandlingCosts = (int)$val;
+        $this->PackagingHandlingCosts = (AmountType)$val;
 	}
 
 	/**
@@ -21865,7 +21865,7 @@ class CalculatedShippingRateType
 	 */
 	public function setShippingIrregular($val)
 	{
-        $this->ShippingIrregular = (int)$val;
+        $this->ShippingIrregular = (boolean)$val;
 	}
 
 	/**
@@ -21874,7 +21874,7 @@ class CalculatedShippingRateType
 	 */
 	public function setShippingPackage($val)
 	{
-        $this->ShippingPackage = (int)$val;
+        $this->ShippingPackage = (ShippingPackageCodeType)$val;
 	}
 
 	/**
@@ -21883,7 +21883,7 @@ class CalculatedShippingRateType
 	 */
 	public function setWeightMajor($val)
 	{
-        $this->WeightMajor = (int)$val;
+        $this->WeightMajor = (MeasureType)$val;
 	}
 
 	/**
@@ -21892,7 +21892,7 @@ class CalculatedShippingRateType
 	 */
 	public function setWeightMinor($val)
 	{
-        $this->WeightMinor = (int)$val;
+        $this->WeightMinor = (MeasureType)$val;
 	}
 
 	/**
@@ -21901,7 +21901,7 @@ class CalculatedShippingRateType
 	 */
 	public function setInternationalPackagingHandlingCosts($val)
 	{
-        $this->InternationalPackagingHandlingCosts = (int)$val;
+        $this->InternationalPackagingHandlingCosts = (AmountType)$val;
 	}
 
 	/**
@@ -21910,7 +21910,7 @@ class CalculatedShippingRateType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21943,7 +21943,7 @@ class CancelOfferType
 	 */
 	public function setOffer($val)
 	{
-        $this->Offer = (int)$val;
+        $this->Offer = (OfferType)$val;
 	}
 
 	/**
@@ -21955,7 +21955,7 @@ class CancelOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Explanation');
         }
-        $this->Explanation = (int)$val;
+        $this->Explanation = (string)$val;
 	}
 
 	/**
@@ -21964,7 +21964,7 @@ class CancelOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -21987,7 +21987,7 @@ class CategoryArrayType
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = (CategoryType)$val;
 	}
 }
 
@@ -22197,7 +22197,7 @@ class CategoryFeatureType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -22206,7 +22206,7 @@ class CategoryFeatureType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (ListingDurationReferenceType)$val;
 	}
 
 	/**
@@ -22215,7 +22215,7 @@ class CategoryFeatureType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = (int)$val;
+        $this->ShippingTermsRequired = (boolean)$val;
 	}
 
 	/**
@@ -22224,7 +22224,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22233,7 +22233,7 @@ class CategoryFeatureType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = (int)$val;
+        $this->DutchBINEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22242,7 +22242,7 @@ class CategoryFeatureType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = (int)$val;
+        $this->UserConsentRequired = (boolean)$val;
 	}
 
 	/**
@@ -22251,7 +22251,7 @@ class CategoryFeatureType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = (int)$val;
+        $this->HomePageFeaturedEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22260,7 +22260,7 @@ class CategoryFeatureType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = (int)$val;
+        $this->ProPackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22269,7 +22269,7 @@ class CategoryFeatureType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = (int)$val;
+        $this->BasicUpgradePackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22278,7 +22278,7 @@ class CategoryFeatureType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = (int)$val;
+        $this->ValuePackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22287,7 +22287,7 @@ class CategoryFeatureType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = (int)$val;
+        $this->ProPackPlusEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22296,7 +22296,7 @@ class CategoryFeatureType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = (int)$val;
+        $this->AdFormatEnabled = (AdFormatEnabledCodeType)$val;
 	}
 
 	/**
@@ -22305,7 +22305,7 @@ class CategoryFeatureType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = (int)$val;
+        $this->DigitalDeliveryEnabled = (DigitalDeliveryEnabledCodeType)$val;
 	}
 
 	/**
@@ -22314,7 +22314,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = (int)$val;
+        $this->BestOfferCounterEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22323,7 +22323,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22332,7 +22332,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = (boolean)$val;
 	}
 
 	/**
@@ -22341,7 +22341,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = (boolean)$val;
 	}
 
 	/**
@@ -22350,7 +22350,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = (boolean)$val;
 	}
 
 	/**
@@ -22359,7 +22359,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = (int)$val;
+        $this->LocalMarketNonSubscription = (boolean)$val;
 	}
 
 	/**
@@ -22368,7 +22368,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = (int)$val;
+        $this->ExpressEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22377,7 +22377,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = (int)$val;
+        $this->ExpressPicturesRequired = (boolean)$val;
 	}
 
 	/**
@@ -22386,7 +22386,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = (int)$val;
+        $this->ExpressConditionRequired = (boolean)$val;
 	}
 
 	/**
@@ -22395,7 +22395,7 @@ class CategoryFeatureType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = (double)$val;
 	}
 
 	/**
@@ -22404,7 +22404,7 @@ class CategoryFeatureType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = (int)$val;
+        $this->SellerContactDetailsEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22413,7 +22413,7 @@ class CategoryFeatureType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22422,7 +22422,7 @@ class CategoryFeatureType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = (int)$val;
+        $this->StoreInventoryEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22431,7 +22431,7 @@ class CategoryFeatureType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22440,7 +22440,7 @@ class CategoryFeatureType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22449,7 +22449,7 @@ class CategoryFeatureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -22472,7 +22472,7 @@ class CategoryFinanceOfferArrayType
 	 */
 	public function setCategoryFinanceOffer($val)
 	{
-        $this->CategoryFinanceOffer = (int)$val;
+        $this->CategoryFinanceOffer = (CategoryFinanceOfferType)$val;
 	}
 }
 
@@ -22506,7 +22506,7 @@ class CategoryFinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
 	}
 
 	/**
@@ -22518,7 +22518,7 @@ class CategoryFinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -22527,7 +22527,7 @@ class CategoryFinanceOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -22578,7 +22578,7 @@ class CategoryMappingType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -22590,7 +22590,7 @@ class CategoryMappingType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for oldID');
         }
-        $this->oldID = (int)$val;
+        $this->oldID = (string)$val;
 	}
 
 	/**
@@ -22602,7 +22602,7 @@ class CategoryMappingType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for id');
         }
-        $this->id = (int)$val;
+        $this->id = (string)$val;
 	}
 }
 
@@ -22794,7 +22794,7 @@ class CategoryType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22803,7 +22803,7 @@ class CategoryType
 	 */
 	public function setAutoPayEnabled($val)
 	{
-        $this->AutoPayEnabled = (int)$val;
+        $this->AutoPayEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22812,7 +22812,7 @@ class CategoryType
 	 */
 	public function setB2BVATEnabled($val)
 	{
-        $this->B2BVATEnabled = (int)$val;
+        $this->B2BVATEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22821,7 +22821,7 @@ class CategoryType
 	 */
 	public function setCatalogEnabled($val)
 	{
-        $this->CatalogEnabled = (int)$val;
+        $this->CatalogEnabled = (boolean)$val;
 	}
 
 	/**
@@ -22833,7 +22833,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -22857,7 +22857,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryName');
         }
-        $this->CategoryName = (int)$val;
+        $this->CategoryName = (string)$val;
 	}
 
 	/**
@@ -22869,7 +22869,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentID');
         }
-        $this->CategoryParentID = (int)$val;
+        $this->CategoryParentID = (string)$val;
 	}
 
 	/**
@@ -22881,7 +22881,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentName');
         }
-        $this->CategoryParentName = (int)$val;
+        $this->CategoryParentName = (string)$val;
 	}
 
 	/**
@@ -22902,7 +22902,7 @@ class CategoryType
 	 */
 	public function setProductSearchPageAvailable($val)
 	{
-        $this->ProductSearchPageAvailable = (int)$val;
+        $this->ProductSearchPageAvailable = (boolean)$val;
 	}
 
 	/**
@@ -22911,7 +22911,7 @@ class CategoryType
 	 */
 	public function setProductFinderAvailable($val)
 	{
-        $this->ProductFinderAvailable = (int)$val;
+        $this->ProductFinderAvailable = (boolean)$val;
 	}
 
 	/**
@@ -22920,7 +22920,7 @@ class CategoryType
 	 */
 	public function setProductFinderIDs($val)
 	{
-        $this->ProductFinderIDs = (int)$val;
+        $this->ProductFinderIDs = (ExtendedProductFinderIDType)$val;
 	}
 
 	/**
@@ -22929,7 +22929,7 @@ class CategoryType
 	 */
 	public function setCharacteristicsSets($val)
 	{
-        $this->CharacteristicsSets = (int)$val;
+        $this->CharacteristicsSets = (CharacteristicsSetType)$val;
 	}
 
 	/**
@@ -22938,7 +22938,7 @@ class CategoryType
 	 */
 	public function setExpired($val)
 	{
-        $this->Expired = (int)$val;
+        $this->Expired = (boolean)$val;
 	}
 
 	/**
@@ -22947,7 +22947,7 @@ class CategoryType
 	 */
 	public function setIntlAutosFixedCat($val)
 	{
-        $this->IntlAutosFixedCat = (int)$val;
+        $this->IntlAutosFixedCat = (boolean)$val;
 	}
 
 	/**
@@ -22956,7 +22956,7 @@ class CategoryType
 	 */
 	public function setLeafCategory($val)
 	{
-        $this->LeafCategory = (int)$val;
+        $this->LeafCategory = (boolean)$val;
 	}
 
 	/**
@@ -22965,7 +22965,7 @@ class CategoryType
 	 */
 	public function setVirtual($val)
 	{
-        $this->Virtual = (int)$val;
+        $this->Virtual = (boolean)$val;
 	}
 
 	/**
@@ -22986,7 +22986,7 @@ class CategoryType
 	 */
 	public function setSellerGuaranteeEligible($val)
 	{
-        $this->SellerGuaranteeEligible = (int)$val;
+        $this->SellerGuaranteeEligible = (boolean)$val;
 	}
 
 	/**
@@ -22995,7 +22995,7 @@ class CategoryType
 	 */
 	public function setORPA($val)
 	{
-        $this->ORPA = (int)$val;
+        $this->ORPA = (boolean)$val;
 	}
 
 	/**
@@ -23004,7 +23004,7 @@ class CategoryType
 	 */
 	public function setORRA($val)
 	{
-        $this->ORRA = (int)$val;
+        $this->ORRA = (boolean)$val;
 	}
 
 	/**
@@ -23013,7 +23013,7 @@ class CategoryType
 	 */
 	public function setLSD($val)
 	{
-        $this->LSD = (int)$val;
+        $this->LSD = (boolean)$val;
 	}
 
 	/**
@@ -23025,7 +23025,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keywords');
         }
-        $this->Keywords = (int)$val;
+        $this->Keywords = (string)$val;
 	}
 
 	/**
@@ -23034,7 +23034,7 @@ class CategoryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -23065,7 +23065,7 @@ class CharacteristicSetIdsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ID');
         }
-        $this->ID = (int)$val;
+        $this->ID = (string)$val;
 	}
 }
 
@@ -23162,7 +23162,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DateFormat');
         }
-        $this->DateFormat = (int)$val;
+        $this->DateFormat = (string)$val;
 	}
 
 	/**
@@ -23174,7 +23174,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplaySequence');
         }
-        $this->DisplaySequence = (int)$val;
+        $this->DisplaySequence = (string)$val;
 	}
 
 	/**
@@ -23186,7 +23186,7 @@ class CharacteristicType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayUOM');
         }
-        $this->DisplayUOM = (int)$val;
+        $this->DisplayUOM = (string)$val;
 	}
 
 	/**
@@ -23195,7 +23195,7 @@ class CharacteristicType
 	 */
 	public function setLabel($val)
 	{
-        $this->Label = (int)$val;
+        $this->Label = (LabelType)$val;
 	}
 
 	/**
@@ -23204,7 +23204,7 @@ class CharacteristicType
 	 */
 	public function setSortOrder($val)
 	{
-        $this->SortOrder = (int)$val;
+        $this->SortOrder = (SortOrderCodeType)$val;
 	}
 
 	/**
@@ -23213,7 +23213,7 @@ class CharacteristicType
 	 */
 	public function setValueList($val)
 	{
-        $this->ValueList = (int)$val;
+        $this->ValueList = (ValType)$val;
 	}
 
 	/**
@@ -23222,7 +23222,7 @@ class CharacteristicType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -23286,7 +23286,7 @@ class CharacteristicsSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -23310,7 +23310,7 @@ class CharacteristicsSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSetVersion');
         }
-        $this->AttributeSetVersion = (int)$val;
+        $this->AttributeSetVersion = (string)$val;
 	}
 
 	/**
@@ -23319,7 +23319,7 @@ class CharacteristicsSetType
 	 */
 	public function setCharacteristics($val)
 	{
-        $this->Characteristics = (int)$val;
+        $this->Characteristics = (CharacteristicType)$val;
 	}
 
 	/**
@@ -23328,7 +23328,7 @@ class CharacteristicsSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -23360,7 +23360,7 @@ class CharityAffiliationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -23372,7 +23372,7 @@ class CharityAffiliationType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for id');
         }
-        $this->id = (int)$val;
+        $this->id = (string)$val;
 	}
 
 	/**
@@ -23381,7 +23381,7 @@ class CharityAffiliationType
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->type = (CharityAffiliationTypeCodeType)$val;
 	}
 }
 
@@ -23417,7 +23417,7 @@ class CharityAffiliationsType
 	 */
 	public function setCharityID($val)
 	{
-        $this->CharityID = (int)$val;
+        $this->CharityID = (CharityIDType)$val;
 	}
 
 	/**
@@ -23426,7 +23426,7 @@ class CharityAffiliationsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -23457,7 +23457,7 @@ class CharityIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for _');
         }
-        $this->_ = (int)$val;
+        $this->_ = (string)$val;
 	}
 
 	/**
@@ -23466,7 +23466,7 @@ class CharityIdType
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->type = (CharityAffiliationTypeCodeType)$val;
 	}
 }
 
@@ -23537,7 +23537,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -23549,7 +23549,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mission');
         }
-        $this->Mission = (int)$val;
+        $this->Mission = (string)$val;
 	}
 
 	/**
@@ -23558,7 +23558,7 @@ class CharityInfoType
 	 */
 	public function setLogoURL($val)
 	{
-        $this->LogoURL = (int)$val;
+        $this->LogoURL = (anyURI)$val;
 	}
 
 	/**
@@ -23567,7 +23567,7 @@ class CharityInfoType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (CharityStatusCodeType)$val;
 	}
 
 	/**
@@ -23579,7 +23579,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchableString');
         }
-        $this->SearchableString = (int)$val;
+        $this->SearchableString = (string)$val;
 	}
 
 	/**
@@ -23615,7 +23615,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->CharityID = (int)$val;
+        $this->CharityID = (string)$val;
 	}
 
 	/**
@@ -23624,7 +23624,7 @@ class CharityInfoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -23636,7 +23636,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for id');
         }
-        $this->id = (int)$val;
+        $this->id = (string)$val;
 	}
 }
 
@@ -23682,7 +23682,7 @@ class CharitySellerType
 	 */
 	public function setCharitySellerStatus($val)
 	{
-        $this->CharitySellerStatus = (int)$val;
+        $this->CharitySellerStatus = (CharitySellerStatusCodeType)$val;
 	}
 
 	/**
@@ -23691,7 +23691,7 @@ class CharitySellerType
 	 */
 	public function setCharityAffiliation($val)
 	{
-        $this->CharityAffiliation = (int)$val;
+        $this->CharityAffiliation = (CharityAffiliationType)$val;
 	}
 
 	/**
@@ -23700,7 +23700,7 @@ class CharitySellerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -23777,7 +23777,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityName');
         }
-        $this->CharityName = (int)$val;
+        $this->CharityName = (string)$val;
 	}
 
 	/**
@@ -23798,7 +23798,7 @@ class CharityType
 	 */
 	public function setDonationPercent($val)
 	{
-        $this->DonationPercent = (int)$val;
+        $this->DonationPercent = (float)$val;
 	}
 
 	/**
@@ -23810,7 +23810,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->CharityID = (int)$val;
+        $this->CharityID = (string)$val;
 	}
 
 	/**
@@ -23822,7 +23822,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mission');
         }
-        $this->Mission = (int)$val;
+        $this->Mission = (string)$val;
 	}
 
 	/**
@@ -23834,7 +23834,7 @@ class CharityType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LogoURL');
         }
-        $this->LogoURL = (int)$val;
+        $this->LogoURL = (string)$val;
 	}
 
 	/**
@@ -23843,7 +23843,7 @@ class CharityType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (CharityStatusCodeType)$val;
 	}
 
 	/**
@@ -23852,7 +23852,7 @@ class CharityType
 	 */
 	public function setCharityListing($val)
 	{
-        $this->CharityListing = (int)$val;
+        $this->CharityListing = (boolean)$val;
 	}
 
 	/**
@@ -23861,7 +23861,7 @@ class CharityType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -23914,7 +23914,7 @@ class CheckoutStatusType
 	 */
 	public function setEBayPaymentStatus($val)
 	{
-        $this->eBayPaymentStatus = (int)$val;
+        $this->eBayPaymentStatus = (PaymentStatusCodeType)$val;
 	}
 
 	/**
@@ -23923,7 +23923,7 @@ class CheckoutStatusType
 	 */
 	public function setLastModifiedTime($val)
 	{
-        $this->LastModifiedTime = (int)$val;
+        $this->LastModifiedTime = (dateTime)$val;
 	}
 
 	/**
@@ -23932,7 +23932,7 @@ class CheckoutStatusType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -23941,7 +23941,7 @@ class CheckoutStatusType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (CompleteStatusCodeType)$val;
 	}
 
 	/**
@@ -23950,7 +23950,7 @@ class CheckoutStatusType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -24010,7 +24010,7 @@ class CombinedPaymentPreferencesType
 	 */
 	public function setCalculatedShippingPreferences($val)
 	{
-        $this->CalculatedShippingPreferences = (int)$val;
+        $this->CalculatedShippingPreferences = (CalculatedShippingPreferencesType)$val;
 	}
 
 	/**
@@ -24019,7 +24019,7 @@ class CombinedPaymentPreferencesType
 	 */
 	public function setCombinedPaymentOption($val)
 	{
-        $this->CombinedPaymentOption = (int)$val;
+        $this->CombinedPaymentOption = (CombinedPaymentOptionCodeType)$val;
 	}
 
 	/**
@@ -24028,7 +24028,7 @@ class CombinedPaymentPreferencesType
 	 */
 	public function setCombinedPaymentPeriod($val)
 	{
-        $this->CombinedPaymentPeriod = (int)$val;
+        $this->CombinedPaymentPeriod = (CombinedPaymentPeriodCodeType)$val;
 	}
 
 	/**
@@ -24037,7 +24037,7 @@ class CombinedPaymentPreferencesType
 	 */
 	public function setFlatShippingPreferences($val)
 	{
-        $this->FlatShippingPreferences = (int)$val;
+        $this->FlatShippingPreferences = (FlatShippingPreferencesType)$val;
 	}
 
 	/**
@@ -24046,7 +24046,7 @@ class CombinedPaymentPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -24106,7 +24106,7 @@ class ContextSearchAssetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keyword');
         }
-        $this->Keyword = (int)$val;
+        $this->Keyword = (string)$val;
 	}
 
 	/**
@@ -24115,7 +24115,7 @@ class ContextSearchAssetType
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = (CategoryType)$val;
 	}
 
 	/**
@@ -24410,7 +24410,7 @@ class CountryDetailsType
 	 */
 	public function setCountry($val)
 	{
-        $this->Country = (int)$val;
+        $this->Country = (CountryCodeType)$val;
 	}
 
 	/**
@@ -24422,7 +24422,7 @@ class CountryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -24431,7 +24431,7 @@ class CountryDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -24488,7 +24488,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossPromotionEnabled($val)
 	{
-        $this->CrossPromotionEnabled = (int)$val;
+        $this->CrossPromotionEnabled = (boolean)$val;
 	}
 
 	/**
@@ -24497,7 +24497,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossSellItemFormatSortFilter($val)
 	{
-        $this->CrossSellItemFormatSortFilter = (int)$val;
+        $this->CrossSellItemFormatSortFilter = (ItemFormatSortFilterCodeType)$val;
 	}
 
 	/**
@@ -24506,7 +24506,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossSellGallerySortFilter($val)
 	{
-        $this->CrossSellGallerySortFilter = (int)$val;
+        $this->CrossSellGallerySortFilter = (GallerySortFilterCodeType)$val;
 	}
 
 	/**
@@ -24515,7 +24515,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setCrossSellItemSortFilter($val)
 	{
-        $this->CrossSellItemSortFilter = (int)$val;
+        $this->CrossSellItemSortFilter = (ItemSortFilterCodeType)$val;
 	}
 
 	/**
@@ -24524,7 +24524,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setUpSellItemFormatSortFilter($val)
 	{
-        $this->UpSellItemFormatSortFilter = (int)$val;
+        $this->UpSellItemFormatSortFilter = (ItemFormatSortFilterCodeType)$val;
 	}
 
 	/**
@@ -24533,7 +24533,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setUpSellGallerySortFilter($val)
 	{
-        $this->UpSellGallerySortFilter = (int)$val;
+        $this->UpSellGallerySortFilter = (GallerySortFilterCodeType)$val;
 	}
 
 	/**
@@ -24542,7 +24542,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setUpSellItemSortFilter($val)
 	{
-        $this->UpSellItemSortFilter = (int)$val;
+        $this->UpSellItemSortFilter = (ItemSortFilterCodeType)$val;
 	}
 
 	/**
@@ -24551,7 +24551,7 @@ class CrossPromotionPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -24610,7 +24610,7 @@ class CrossPromotionsType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -24619,7 +24619,7 @@ class CrossPromotionsType
 	 */
 	public function setPrimaryScheme($val)
 	{
-        $this->PrimaryScheme = (int)$val;
+        $this->PrimaryScheme = (PromotionSchemeCodeType)$val;
 	}
 
 	/**
@@ -24628,7 +24628,7 @@ class CrossPromotionsType
 	 */
 	public function setPromotionMethod($val)
 	{
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
 	}
 
 	/**
@@ -24640,7 +24640,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerID');
         }
-        $this->SellerID = (int)$val;
+        $this->SellerID = (string)$val;
 	}
 
 	/**
@@ -24649,7 +24649,7 @@ class CrossPromotionsType
 	 */
 	public function setShippingDiscount($val)
 	{
-        $this->ShippingDiscount = (int)$val;
+        $this->ShippingDiscount = (boolean)$val;
 	}
 
 	/**
@@ -24661,7 +24661,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerKey');
         }
-        $this->SellerKey = (int)$val;
+        $this->SellerKey = (string)$val;
 	}
 
 	/**
@@ -24673,7 +24673,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
 	}
 
 	/**
@@ -24682,7 +24682,7 @@ class CrossPromotionsType
 	 */
 	public function setPromotedItem($val)
 	{
-        $this->PromotedItem = (int)$val;
+        $this->PromotedItem = (PromotedItemType)$val;
 	}
 
 	/**
@@ -24691,7 +24691,7 @@ class CrossPromotionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -24901,7 +24901,7 @@ class CurrencyDetailsType
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -24913,7 +24913,7 @@ class CurrencyDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -24922,7 +24922,7 @@ class CurrencyDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -24974,7 +24974,7 @@ class DataElementSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElement');
         }
-        $this->DataElement = (int)$val;
+        $this->DataElement = (string)$val;
 	}
 
 	/**
@@ -24995,7 +24995,7 @@ class DataElementSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -25117,7 +25117,7 @@ class DescriptionTemplateType
 	 */
 	public function setImageURL($val)
 	{
-        $this->ImageURL = (int)$val;
+        $this->ImageURL = (anyURI)$val;
 	}
 
 	/**
@@ -25129,7 +25129,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -25141,7 +25141,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TemplateXML');
         }
-        $this->TemplateXML = (int)$val;
+        $this->TemplateXML = (string)$val;
 	}
 
 	/**
@@ -25150,7 +25150,7 @@ class DescriptionTemplateType
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = (DescriptionTemplateCodeType)$val;
 	}
 
 	/**
@@ -25159,7 +25159,7 @@ class DescriptionTemplateType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25240,7 +25240,7 @@ class DigitalDeliveryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Requirements');
         }
-        $this->Requirements = (int)$val;
+        $this->Requirements = (string)$val;
 	}
 
 	/**
@@ -25249,7 +25249,7 @@ class DigitalDeliveryDetailsType
 	 */
 	public function setMethod($val)
 	{
-        $this->Method = (int)$val;
+        $this->Method = (DigitalDeliveryMethodCodeType)$val;
 	}
 
 	/**
@@ -25258,7 +25258,7 @@ class DigitalDeliveryDetailsType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -25270,7 +25270,7 @@ class DigitalDeliveryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Instructions');
         }
-        $this->Instructions = (int)$val;
+        $this->Instructions = (string)$val;
 	}
 
 	/**
@@ -25279,7 +25279,7 @@ class DigitalDeliveryDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25311,7 +25311,7 @@ class DigitalDeliveryEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25371,7 +25371,7 @@ class DispatchTimeMaxDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -25380,7 +25380,7 @@ class DispatchTimeMaxDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25413,7 +25413,7 @@ class DisputeArrayType
 	 */
 	public function setDispute($val)
 	{
-        $this->Dispute = (int)$val;
+        $this->Dispute = (DisputeType)$val;
 	}
 }
 
@@ -25534,7 +25534,7 @@ class DisputeType
 	 */
 	public function setDisputeID($val)
 	{
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
 	}
 
 	/**
@@ -25543,7 +25543,7 @@ class DisputeType
 	 */
 	public function setDisputeRecordType($val)
 	{
-        $this->DisputeRecordType = (int)$val;
+        $this->DisputeRecordType = (DisputeRecordTypeCodeType)$val;
 	}
 
 	/**
@@ -25552,7 +25552,7 @@ class DisputeType
 	 */
 	public function setDisputeState($val)
 	{
-        $this->DisputeState = (int)$val;
+        $this->DisputeState = (DisputeStateCodeType)$val;
 	}
 
 	/**
@@ -25561,7 +25561,7 @@ class DisputeType
 	 */
 	public function setDisputeStatus($val)
 	{
-        $this->DisputeStatus = (int)$val;
+        $this->DisputeStatus = (DisputeStatusCodeType)$val;
 	}
 
 	/**
@@ -25570,7 +25570,7 @@ class DisputeType
 	 */
 	public function setOtherPartyRole($val)
 	{
-        $this->OtherPartyRole = (int)$val;
+        $this->OtherPartyRole = (TradingRoleCodeType)$val;
 	}
 
 	/**
@@ -25582,7 +25582,7 @@ class DisputeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OtherPartyName');
         }
-        $this->OtherPartyName = (int)$val;
+        $this->OtherPartyName = (string)$val;
 	}
 
 	/**
@@ -25591,7 +25591,7 @@ class DisputeType
 	 */
 	public function setUserRole($val)
 	{
-        $this->UserRole = (int)$val;
+        $this->UserRole = (TradingRoleCodeType)$val;
 	}
 
 	/**
@@ -25600,7 +25600,7 @@ class DisputeType
 	 */
 	public function setBuyerUserID($val)
 	{
-        $this->BuyerUserID = (int)$val;
+        $this->BuyerUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -25609,7 +25609,7 @@ class DisputeType
 	 */
 	public function setSellerUserID($val)
 	{
-        $this->SellerUserID = (int)$val;
+        $this->SellerUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -25621,7 +25621,7 @@ class DisputeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -25630,7 +25630,7 @@ class DisputeType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -25639,7 +25639,7 @@ class DisputeType
 	 */
 	public function setDisputeReason($val)
 	{
-        $this->DisputeReason = (int)$val;
+        $this->DisputeReason = (DisputeReasonCodeType)$val;
 	}
 
 	/**
@@ -25648,7 +25648,7 @@ class DisputeType
 	 */
 	public function setDisputeExplanation($val)
 	{
-        $this->DisputeExplanation = (int)$val;
+        $this->DisputeExplanation = (DisputeExplanationCodeType)$val;
 	}
 
 	/**
@@ -25657,7 +25657,7 @@ class DisputeType
 	 */
 	public function setDisputeCreditEligibility($val)
 	{
-        $this->DisputeCreditEligibility = (int)$val;
+        $this->DisputeCreditEligibility = (DisputeCreditEligibilityCodeType)$val;
 	}
 
 	/**
@@ -25666,7 +25666,7 @@ class DisputeType
 	 */
 	public function setDisputeCreatedTime($val)
 	{
-        $this->DisputeCreatedTime = (int)$val;
+        $this->DisputeCreatedTime = (dateTime)$val;
 	}
 
 	/**
@@ -25675,7 +25675,7 @@ class DisputeType
 	 */
 	public function setDisputeModifiedTime($val)
 	{
-        $this->DisputeModifiedTime = (int)$val;
+        $this->DisputeModifiedTime = (dateTime)$val;
 	}
 
 	/**
@@ -25684,7 +25684,7 @@ class DisputeType
 	 */
 	public function setDisputeResolution($val)
 	{
-        $this->DisputeResolution = (int)$val;
+        $this->DisputeResolution = (DisputeResolutionType)$val;
 	}
 
 	/**
@@ -25693,7 +25693,7 @@ class DisputeType
 	 */
 	public function setDisputeMessage($val)
 	{
-        $this->DisputeMessage = (int)$val;
+        $this->DisputeMessage = (DisputeMessageType)$val;
 	}
 
 	/**
@@ -25702,7 +25702,7 @@ class DisputeType
 	 */
 	public function setEscalation($val)
 	{
-        $this->Escalation = (int)$val;
+        $this->Escalation = (boolean)$val;
 	}
 
 	/**
@@ -25711,7 +25711,7 @@ class DisputeType
 	 */
 	public function setPurchaseProtection($val)
 	{
-        $this->PurchaseProtection = (int)$val;
+        $this->PurchaseProtection = (boolean)$val;
 	}
 
 	/**
@@ -25720,7 +25720,7 @@ class DisputeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25766,7 +25766,7 @@ class DistanceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DistanceUnit');
         }
-        $this->DistanceUnit = (int)$val;
+        $this->DistanceUnit = (string)$val;
 	}
 
 	/**
@@ -25775,7 +25775,7 @@ class DistanceType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25805,7 +25805,7 @@ class DomainHistogramType
 	 */
 	public function setDepartment($val)
 	{
-        $this->Department = (int)$val;
+        $this->Department = (ExpressHistogramDepartmentType)$val;
 	}
 
 	/**
@@ -25814,7 +25814,7 @@ class DomainHistogramType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25839,7 +25839,7 @@ class DutchBiNenabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -25927,7 +25927,7 @@ class EndOfAuctionEmailPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TemplateText');
         }
-        $this->TemplateText = (int)$val;
+        $this->TemplateText = (string)$val;
 	}
 
 	/**
@@ -25936,7 +25936,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setLogoURL($val)
 	{
-        $this->LogoURL = (int)$val;
+        $this->LogoURL = (anyURI)$val;
 	}
 
 	/**
@@ -25945,7 +25945,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setLogoType($val)
 	{
-        $this->LogoType = (int)$val;
+        $this->LogoType = (EndOfAuctionLogoTypeCodeType)$val;
 	}
 
 	/**
@@ -25954,7 +25954,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setEmailCustomized($val)
 	{
-        $this->EmailCustomized = (int)$val;
+        $this->EmailCustomized = (boolean)$val;
 	}
 
 	/**
@@ -25963,7 +25963,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setTextCustomized($val)
 	{
-        $this->TextCustomized = (int)$val;
+        $this->TextCustomized = (boolean)$val;
 	}
 
 	/**
@@ -25972,7 +25972,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setLogoCustomized($val)
 	{
-        $this->LogoCustomized = (int)$val;
+        $this->LogoCustomized = (boolean)$val;
 	}
 
 	/**
@@ -25981,7 +25981,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setCopyEmail($val)
 	{
-        $this->CopyEmail = (int)$val;
+        $this->CopyEmail = (boolean)$val;
 	}
 
 	/**
@@ -25990,7 +25990,7 @@ class EndOfAuctionEmailPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26045,7 +26045,7 @@ class ExpansionArrayType
 	 */
 	public function setExpansionItem($val)
 	{
-        $this->ExpansionItem = (int)$val;
+        $this->ExpansionItem = (SearchResultItemType)$val;
 	}
 
 	/**
@@ -26083,7 +26083,7 @@ class ExpressConditionRequiredDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26144,7 +26144,7 @@ class ExpressDetailsType
 	 */
 	public function setExpressLargeImage($val)
 	{
-        $this->ExpressLargeImage = (int)$val;
+        $this->ExpressLargeImage = (anyURI)$val;
 	}
 
 	/**
@@ -26153,7 +26153,7 @@ class ExpressDetailsType
 	 */
 	public function setExpressSmallImage($val)
 	{
-        $this->ExpressSmallImage = (int)$val;
+        $this->ExpressSmallImage = (anyURI)$val;
 	}
 
 	/**
@@ -26165,7 +26165,7 @@ class ExpressDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Condition');
         }
-        $this->Condition = (int)$val;
+        $this->Condition = (string)$val;
 	}
 
 	/**
@@ -26174,7 +26174,7 @@ class ExpressDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26200,7 +26200,7 @@ class ExpressEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26237,7 +26237,7 @@ class ExpressHistogramAisleType
 	 */
 	public function setDomainDetails($val)
 	{
-        $this->DomainDetails = (int)$val;
+        $this->DomainDetails = (ExpressHistogramDomainDetailsType)$val;
 	}
 
 	/**
@@ -26246,7 +26246,7 @@ class ExpressHistogramAisleType
 	 */
 	public function setProductType($val)
 	{
-        $this->ProductType = (int)$val;
+        $this->ProductType = (ExpressHistogramProductType)$val;
 	}
 
 	/**
@@ -26255,7 +26255,7 @@ class ExpressHistogramAisleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26292,7 +26292,7 @@ class ExpressHistogramDepartmentType
 	 */
 	public function setDomainDetails($val)
 	{
-        $this->DomainDetails = (int)$val;
+        $this->DomainDetails = (ExpressHistogramDomainDetailsType)$val;
 	}
 
 	/**
@@ -26301,7 +26301,7 @@ class ExpressHistogramDepartmentType
 	 */
 	public function setAisle($val)
 	{
-        $this->Aisle = (int)$val;
+        $this->Aisle = (ExpressHistogramAisleType)$val;
 	}
 
 	/**
@@ -26310,7 +26310,7 @@ class ExpressHistogramDepartmentType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26366,7 +26366,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -26378,7 +26378,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BreadCrumb');
         }
-        $this->BreadCrumb = (int)$val;
+        $this->BreadCrumb = (string)$val;
 	}
 
 	/**
@@ -26411,7 +26411,7 @@ class ExpressHistogramDomainDetailsType
 	 */
 	public function setImageURL($val)
 	{
-        $this->ImageURL = (int)$val;
+        $this->ImageURL = (anyURI)$val;
 	}
 
 	/**
@@ -26420,7 +26420,7 @@ class ExpressHistogramDomainDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26451,7 +26451,7 @@ class ExpressHistogramProductType
 	 */
 	public function setDomainDetails($val)
 	{
-        $this->DomainDetails = (int)$val;
+        $this->DomainDetails = (ExpressHistogramDomainDetailsType)$val;
 	}
 
 	/**
@@ -26460,7 +26460,7 @@ class ExpressHistogramProductType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26599,7 +26599,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setSellerExpressEligible($val)
 	{
-        $this->SellerExpressEligible = (int)$val;
+        $this->SellerExpressEligible = (boolean)$val;
 	}
 
 	/**
@@ -26608,7 +26608,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressOptOut($val)
 	{
-        $this->ExpressOptOut = (int)$val;
+        $this->ExpressOptOut = (boolean)$val;
 	}
 
 	/**
@@ -26617,7 +26617,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressApproved($val)
 	{
-        $this->ExpressApproved = (int)$val;
+        $this->ExpressApproved = (boolean)$val;
 	}
 
 	/**
@@ -26626,7 +26626,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressEligibleListingType($val)
 	{
-        $this->ExpressEligibleListingType = (int)$val;
+        $this->ExpressEligibleListingType = (boolean)$val;
 	}
 
 	/**
@@ -26635,7 +26635,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressEnabledCategory($val)
 	{
-        $this->ExpressEnabledCategory = (int)$val;
+        $this->ExpressEnabledCategory = (boolean)$val;
 	}
 
 	/**
@@ -26644,7 +26644,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
-        $this->EligiblePayPalAccount = (int)$val;
+        $this->EligiblePayPalAccount = (boolean)$val;
 	}
 
 	/**
@@ -26653,7 +26653,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setDomesticShippingCost($val)
 	{
-        $this->DomesticShippingCost = (int)$val;
+        $this->DomesticShippingCost = (boolean)$val;
 	}
 
 	/**
@@ -26662,7 +26662,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleReturnPolicy($val)
 	{
-        $this->EligibleReturnPolicy = (int)$val;
+        $this->EligibleReturnPolicy = (boolean)$val;
 	}
 
 	/**
@@ -26671,7 +26671,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPicture($val)
 	{
-        $this->Picture = (int)$val;
+        $this->Picture = (boolean)$val;
 	}
 
 	/**
@@ -26680,7 +26680,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleItemCondition($val)
 	{
-        $this->EligibleItemCondition = (int)$val;
+        $this->EligibleItemCondition = (boolean)$val;
 	}
 
 	/**
@@ -26689,7 +26689,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPriceAboveMinimum($val)
 	{
-        $this->PriceAboveMinimum = (int)$val;
+        $this->PriceAboveMinimum = (boolean)$val;
 	}
 
 	/**
@@ -26698,7 +26698,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPriceBelowMaximum($val)
 	{
-        $this->PriceBelowMaximum = (int)$val;
+        $this->PriceBelowMaximum = (boolean)$val;
 	}
 
 	/**
@@ -26707,7 +26707,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleCheckout($val)
 	{
-        $this->EligibleCheckout = (int)$val;
+        $this->EligibleCheckout = (boolean)$val;
 	}
 
 	/**
@@ -26716,7 +26716,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoPreapprovedBidderList($val)
 	{
-        $this->NoPreapprovedBidderList = (int)$val;
+        $this->NoPreapprovedBidderList = (boolean)$val;
 	}
 
 	/**
@@ -26725,7 +26725,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoCharity($val)
 	{
-        $this->NoCharity = (int)$val;
+        $this->NoCharity = (boolean)$val;
 	}
 
 	/**
@@ -26734,7 +26734,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoDigitalDelivery($val)
 	{
-        $this->NoDigitalDelivery = (int)$val;
+        $this->NoDigitalDelivery = (boolean)$val;
 	}
 
 	/**
@@ -26743,7 +26743,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setCombinedShippingDiscount($val)
 	{
-        $this->CombinedShippingDiscount = (int)$val;
+        $this->CombinedShippingDiscount = (boolean)$val;
 	}
 
 	/**
@@ -26752,7 +26752,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setShipFromEligibleCountry($val)
 	{
-        $this->ShipFromEligibleCountry = (int)$val;
+        $this->ShipFromEligibleCountry = (boolean)$val;
 	}
 
 	/**
@@ -26761,7 +26761,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
-        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = (boolean)$val;
 	}
 
 	/**
@@ -26770,7 +26770,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26804,7 +26804,7 @@ class ExpressPicturesRequiredDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26859,7 +26859,7 @@ class ExpressPreferencesType
 	 */
 	public function setExpressSellingPreference($val)
 	{
-        $this->ExpressSellingPreference = (int)$val;
+        $this->ExpressSellingPreference = (ExpressSellingPreferenceCodeType)$val;
 	}
 
 	/**
@@ -26871,7 +26871,7 @@ class ExpressPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
         }
-        $this->DefaultPayPalAccount = (int)$val;
+        $this->DefaultPayPalAccount = (string)$val;
 	}
 
 	/**
@@ -26880,7 +26880,7 @@ class ExpressPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -26961,7 +26961,7 @@ class ExpressProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 
 	/**
@@ -26970,7 +26970,7 @@ class ExpressProductType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->MinPrice = (int)$val;
+        $this->MinPrice = (AmountType)$val;
 	}
 
 	/**
@@ -26979,7 +26979,7 @@ class ExpressProductType
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->MaxPrice = (int)$val;
+        $this->MaxPrice = (AmountType)$val;
 	}
 
 	/**
@@ -26988,7 +26988,7 @@ class ExpressProductType
 	 */
 	public function setStockPhotoURL($val)
 	{
-        $this->StockPhotoURL = (int)$val;
+        $this->StockPhotoURL = (anyURI)$val;
 	}
 
 	/**
@@ -27009,7 +27009,7 @@ class ExpressProductType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 
 	/**
@@ -27018,7 +27018,7 @@ class ExpressProductType
 	 */
 	public function setProductReferenceID($val)
 	{
-        $this->ProductReferenceID = (int)$val;
+        $this->ProductReferenceID = (long)$val;
 	}
 
 	/**
@@ -27027,7 +27027,7 @@ class ExpressProductType
 	 */
 	public function setItemSpecifics($val)
 	{
-        $this->ItemSpecifics = (int)$val;
+        $this->ItemSpecifics = (NameValueListArrayType)$val;
 	}
 
 	/**
@@ -27036,7 +27036,7 @@ class ExpressProductType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -27149,7 +27149,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setExpressSellingPreference($val)
 	{
-        $this->ExpressSellingPreference = (int)$val;
+        $this->ExpressSellingPreference = (boolean)$val;
 	}
 
 	/**
@@ -27158,7 +27158,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setExpressApproved($val)
 	{
-        $this->ExpressApproved = (int)$val;
+        $this->ExpressApproved = (boolean)$val;
 	}
 
 	/**
@@ -27167,7 +27167,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setGoodStanding($val)
 	{
-        $this->GoodStanding = (int)$val;
+        $this->GoodStanding = (boolean)$val;
 	}
 
 	/**
@@ -27176,7 +27176,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackScore($val)
 	{
-        $this->FeedbackScore = (int)$val;
+        $this->FeedbackScore = (FeedbackRequirementsType)$val;
 	}
 
 	/**
@@ -27185,7 +27185,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
-        $this->PositiveFeedbackPercent = (int)$val;
+        $this->PositiveFeedbackPercent = (FeedbackRequirementsType)$val;
 	}
 
 	/**
@@ -27194,7 +27194,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackAsSellerScore($val)
 	{
-        $this->FeedbackAsSellerScore = (int)$val;
+        $this->FeedbackAsSellerScore = (FeedbackRequirementsType)$val;
 	}
 
 	/**
@@ -27203,7 +27203,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPositiveFeedbackAsSellerPercent($val)
 	{
-        $this->PositiveFeedbackAsSellerPercent = (int)$val;
+        $this->PositiveFeedbackAsSellerPercent = (FeedbackRequirementsType)$val;
 	}
 
 	/**
@@ -27212,7 +27212,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setBusinessSeller($val)
 	{
-        $this->BusinessSeller = (int)$val;
+        $this->BusinessSeller = (boolean)$val;
 	}
 
 	/**
@@ -27221,7 +27221,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
-        $this->EligiblePayPalAccount = (int)$val;
+        $this->EligiblePayPalAccount = (boolean)$val;
 	}
 
 	/**
@@ -27230,7 +27230,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
-        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = (boolean)$val;
 	}
 
 	/**
@@ -27239,7 +27239,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setCombinedPaymentsAccepted($val)
 	{
-        $this->CombinedPaymentsAccepted = (int)$val;
+        $this->CombinedPaymentsAccepted = (boolean)$val;
 	}
 
 	/**
@@ -27248,7 +27248,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackPublic($val)
 	{
-        $this->FeedbackPublic = (int)$val;
+        $this->FeedbackPublic = (boolean)$val;
 	}
 
 	/**
@@ -27257,7 +27257,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -27311,7 +27311,7 @@ class ExtendedProductFinderIdType
 	 */
 	public function setProductFinderBuySide($val)
 	{
-        $this->ProductFinderBuySide = (int)$val;
+        $this->ProductFinderBuySide = (boolean)$val;
 	}
 }
 
@@ -27375,7 +27375,7 @@ class ExternalProductIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (int)$val;
+        $this->Value = (string)$val;
 	}
 
 	/**
@@ -27384,7 +27384,7 @@ class ExternalProductIdType
 	 */
 	public function setReturnSearchResultOnDuplicates($val)
 	{
-        $this->ReturnSearchResultOnDuplicates = (int)$val;
+        $this->ReturnSearchResultOnDuplicates = (boolean)$val;
 	}
 
 	/**
@@ -27393,7 +27393,7 @@ class ExternalProductIdType
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = (ExternalProductCodeType)$val;
 	}
 
 	/**
@@ -27402,7 +27402,7 @@ class ExternalProductIdType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -27444,7 +27444,7 @@ class ExternalTransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalTransactionID');
         }
-        $this->ExternalTransactionID = (int)$val;
+        $this->ExternalTransactionID = (string)$val;
 	}
 
 	/**
@@ -27453,7 +27453,7 @@ class ExternalTransactionType
 	 */
 	public function setExternalTransactionTime($val)
 	{
-        $this->ExternalTransactionTime = (int)$val;
+        $this->ExternalTransactionTime = (dateTime)$val;
 	}
 
 	/**
@@ -27462,7 +27462,7 @@ class ExternalTransactionType
 	 */
 	public function setFeeOrCreditAmount($val)
 	{
-        $this->FeeOrCreditAmount = (int)$val;
+        $this->FeeOrCreditAmount = (AmountType)$val;
 	}
 
 	/**
@@ -27471,7 +27471,7 @@ class ExternalTransactionType
 	 */
 	public function setPaymentOrRefundAmount($val)
 	{
-        $this->PaymentOrRefundAmount = (int)$val;
+        $this->PaymentOrRefundAmount = (AmountType)$val;
 	}
 
 	/**
@@ -27480,7 +27480,7 @@ class ExternalTransactionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -27698,7 +27698,7 @@ class FeatureDefinitionsType
 	 */
 	public function setListingDurations($val)
 	{
-        $this->ListingDurations = (int)$val;
+        $this->ListingDurations = (ListingDurationDefinitionsType)$val;
 	}
 
 	/**
@@ -27707,7 +27707,7 @@ class FeatureDefinitionsType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = (int)$val;
+        $this->ShippingTermsRequired = (ShippingTermRequiredDefinitionType)$val;
 	}
 
 	/**
@@ -27716,7 +27716,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (BestOfferEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27725,7 +27725,7 @@ class FeatureDefinitionsType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = (int)$val;
+        $this->DutchBINEnabled = (DutchBINEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27734,7 +27734,7 @@ class FeatureDefinitionsType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = (int)$val;
+        $this->UserConsentRequired = (UserConsentRequiredDefinitionType)$val;
 	}
 
 	/**
@@ -27743,7 +27743,7 @@ class FeatureDefinitionsType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = (int)$val;
+        $this->HomePageFeaturedEnabled = (HomePageFeaturedEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27752,7 +27752,7 @@ class FeatureDefinitionsType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = (int)$val;
+        $this->ProPackEnabled = (ProPackEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27761,7 +27761,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = (int)$val;
+        $this->BasicUpgradePackEnabled = (BasicUpgradePackEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27770,7 +27770,7 @@ class FeatureDefinitionsType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = (int)$val;
+        $this->ValuePackEnabled = (ValuePackEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27779,7 +27779,7 @@ class FeatureDefinitionsType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = (int)$val;
+        $this->ProPackPlusEnabled = (ProPackPlusEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27788,7 +27788,7 @@ class FeatureDefinitionsType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = (int)$val;
+        $this->AdFormatEnabled = (AdFormatEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27797,7 +27797,7 @@ class FeatureDefinitionsType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = (int)$val;
+        $this->DigitalDeliveryEnabled = (DigitalDeliveryEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27806,7 +27806,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = (int)$val;
+        $this->BestOfferCounterEnabled = (BestOfferCounterEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27815,7 +27815,7 @@ class FeatureDefinitionsType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = (BestOfferAutoDeclineEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27824,7 +27824,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = (LocalMarketSpecialitySubscriptionDefinitionType)$val;
 	}
 
 	/**
@@ -27833,7 +27833,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = (LocalMarketRegularSubscriptionDefinitionType)$val;
 	}
 
 	/**
@@ -27842,7 +27842,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = (LocalMarketPremiumSubscriptionDefinitionType)$val;
 	}
 
 	/**
@@ -27851,7 +27851,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = (int)$val;
+        $this->LocalMarketNonSubscription = (LocalMarketNonSubscriptionDefinitionType)$val;
 	}
 
 	/**
@@ -27860,7 +27860,7 @@ class FeatureDefinitionsType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = (int)$val;
+        $this->ExpressEnabled = (ExpressEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27869,7 +27869,7 @@ class FeatureDefinitionsType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = (int)$val;
+        $this->ExpressPicturesRequired = (ExpressPicturesRequiredDefinitionType)$val;
 	}
 
 	/**
@@ -27878,7 +27878,7 @@ class FeatureDefinitionsType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = (int)$val;
+        $this->ExpressConditionRequired = (ExpressConditionRequiredDefinitionType)$val;
 	}
 
 	/**
@@ -27887,7 +27887,7 @@ class FeatureDefinitionsType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = (MinimumReservePriceDefinitionType)$val;
 	}
 
 	/**
@@ -27896,7 +27896,7 @@ class FeatureDefinitionsType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = (TCREnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27905,7 +27905,7 @@ class FeatureDefinitionsType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = (int)$val;
+        $this->SellerContactDetailsEnabled = (SellerContactDetailsEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27914,7 +27914,7 @@ class FeatureDefinitionsType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = (int)$val;
+        $this->StoreInventoryEnabled = (StoreInventoryEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27923,7 +27923,7 @@ class FeatureDefinitionsType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = (SkypeMeTransactionalEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27932,7 +27932,7 @@ class FeatureDefinitionsType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = (SkypeMeNonTransactionalEnabledDefinitionType)$val;
 	}
 
 	/**
@@ -27941,7 +27941,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalListingDistancesRegular($val)
 	{
-        $this->LocalListingDistancesRegular = (int)$val;
+        $this->LocalListingDistancesRegular = (LocalListingDistancesRegularDefinitionType)$val;
 	}
 
 	/**
@@ -27950,7 +27950,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalListingDistancesSpecialty($val)
 	{
-        $this->LocalListingDistancesSpecialty = (int)$val;
+        $this->LocalListingDistancesSpecialty = (LocalListingDistancesSpecialtyDefinitionType)$val;
 	}
 
 	/**
@@ -27959,7 +27959,7 @@ class FeatureDefinitionsType
 	 */
 	public function setLocalListingDistancesNonSubscription($val)
 	{
-        $this->LocalListingDistancesNonSubscription = (int)$val;
+        $this->LocalListingDistancesNonSubscription = (LocalListingDistancesNonSubscriptionDefinitionType)$val;
 	}
 
 	/**
@@ -27968,7 +27968,7 @@ class FeatureDefinitionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28038,7 +28038,7 @@ class FeeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -28047,7 +28047,7 @@ class FeeType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (int)$val;
+        $this->Fee = (AmountType)$val;
 	}
 
 	/**
@@ -28056,7 +28056,7 @@ class FeeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28079,7 +28079,7 @@ class FeedbackDetailArrayType
 	 */
 	public function setFeedbackDetail($val)
 	{
-        $this->FeedbackDetail = (int)$val;
+        $this->FeedbackDetail = (FeedbackDetailType)$val;
 	}
 }
 
@@ -28196,7 +28196,7 @@ class FeedbackDetailType
 	 */
 	public function setCommentingUser($val)
 	{
-        $this->CommentingUser = (int)$val;
+        $this->CommentingUser = (UserIDType)$val;
 	}
 
 	/**
@@ -28220,7 +28220,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->CommentText = (int)$val;
+        $this->CommentText = (string)$val;
 	}
 
 	/**
@@ -28229,7 +28229,7 @@ class FeedbackDetailType
 	 */
 	public function setCommentTime($val)
 	{
-        $this->CommentTime = (int)$val;
+        $this->CommentTime = (dateTime)$val;
 	}
 
 	/**
@@ -28238,7 +28238,7 @@ class FeedbackDetailType
 	 */
 	public function setCommentType($val)
 	{
-        $this->CommentType = (int)$val;
+        $this->CommentType = (CommentTypeCodeType)$val;
 	}
 
 	/**
@@ -28250,7 +28250,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackResponse');
         }
-        $this->FeedbackResponse = (int)$val;
+        $this->FeedbackResponse = (string)$val;
 	}
 
 	/**
@@ -28262,7 +28262,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Followup');
         }
-        $this->Followup = (int)$val;
+        $this->Followup = (string)$val;
 	}
 
 	/**
@@ -28271,7 +28271,7 @@ class FeedbackDetailType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -28280,7 +28280,7 @@ class FeedbackDetailType
 	 */
 	public function setRole($val)
 	{
-        $this->Role = (int)$val;
+        $this->Role = (TradingRoleCodeType)$val;
 	}
 
 	/**
@@ -28292,7 +28292,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemTitle');
         }
-        $this->ItemTitle = (int)$val;
+        $this->ItemTitle = (string)$val;
 	}
 
 	/**
@@ -28301,7 +28301,7 @@ class FeedbackDetailType
 	 */
 	public function setItemPrice($val)
 	{
-        $this->ItemPrice = (int)$val;
+        $this->ItemPrice = (AmountType)$val;
 	}
 
 	/**
@@ -28313,7 +28313,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = (int)$val;
+        $this->FeedbackID = (string)$val;
 	}
 
 	/**
@@ -28325,7 +28325,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -28334,7 +28334,7 @@ class FeedbackDetailType
 	 */
 	public function setCommentReplaced($val)
 	{
-        $this->CommentReplaced = (int)$val;
+        $this->CommentReplaced = (boolean)$val;
 	}
 
 	/**
@@ -28343,7 +28343,7 @@ class FeedbackDetailType
 	 */
 	public function setResponseReplaced($val)
 	{
-        $this->ResponseReplaced = (int)$val;
+        $this->ResponseReplaced = (boolean)$val;
 	}
 
 	/**
@@ -28352,7 +28352,7 @@ class FeedbackDetailType
 	 */
 	public function setFollowUpReplaced($val)
 	{
-        $this->FollowUpReplaced = (int)$val;
+        $this->FollowUpReplaced = (boolean)$val;
 	}
 
 	/**
@@ -28361,7 +28361,7 @@ class FeedbackDetailType
 	 */
 	public function setCountable($val)
 	{
-        $this->Countable = (int)$val;
+        $this->Countable = (boolean)$val;
 	}
 
 	/**
@@ -28370,7 +28370,7 @@ class FeedbackDetailType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28409,7 +28409,7 @@ class FeedbackInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->CommentText = (int)$val;
+        $this->CommentText = (string)$val;
 	}
 
 	/**
@@ -28418,7 +28418,7 @@ class FeedbackInfoType
 	 */
 	public function setCommentType($val)
 	{
-        $this->CommentType = (int)$val;
+        $this->CommentType = (CommentTypeCodeType)$val;
 	}
 
 	/**
@@ -28427,7 +28427,7 @@ class FeedbackInfoType
 	 */
 	public function setTargetUser($val)
 	{
-        $this->TargetUser = (int)$val;
+        $this->TargetUser = (UserIDType)$val;
 	}
 
 	/**
@@ -28436,7 +28436,7 @@ class FeedbackInfoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28463,7 +28463,7 @@ class FeedbackPeriodArrayType
 	 */
 	public function setFeedbackPeriod($val)
 	{
-        $this->FeedbackPeriod = (int)$val;
+        $this->FeedbackPeriod = (FeedbackPeriodType)$val;
 	}
 }
 
@@ -28523,7 +28523,7 @@ class FeedbackPeriodType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28562,7 +28562,7 @@ class FeedbackRequirementsType
 	 */
 	public function set($val)
 	{
-        $this->_ = (int)$val;
+        $this->_ = (boolean)$val;
 	}
 
 	/**
@@ -28574,7 +28574,7 @@ class FeedbackRequirementsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for minimum');
         }
-        $this->minimum = (int)$val;
+        $this->minimum = (string)$val;
 	}
 }
 
@@ -28652,7 +28652,7 @@ class FeedbackSummaryType
 	 */
 	public function setBidRetractionFeedbackPeriodArray($val)
 	{
-        $this->BidRetractionFeedbackPeriodArray = (int)$val;
+        $this->BidRetractionFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
 	}
 
 	/**
@@ -28661,7 +28661,7 @@ class FeedbackSummaryType
 	 */
 	public function setNegativeFeedbackPeriodArray($val)
 	{
-        $this->NegativeFeedbackPeriodArray = (int)$val;
+        $this->NegativeFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
 	}
 
 	/**
@@ -28670,7 +28670,7 @@ class FeedbackSummaryType
 	 */
 	public function setNeutralFeedbackPeriodArray($val)
 	{
-        $this->NeutralFeedbackPeriodArray = (int)$val;
+        $this->NeutralFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
 	}
 
 	/**
@@ -28679,7 +28679,7 @@ class FeedbackSummaryType
 	 */
 	public function setPositiveFeedbackPeriodArray($val)
 	{
-        $this->PositiveFeedbackPeriodArray = (int)$val;
+        $this->PositiveFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
 	}
 
 	/**
@@ -28688,7 +28688,7 @@ class FeedbackSummaryType
 	 */
 	public function setTotalFeedbackPeriodArray($val)
 	{
-        $this->TotalFeedbackPeriodArray = (int)$val;
+        $this->TotalFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
 	}
 
 	/**
@@ -28733,7 +28733,7 @@ class FeedbackSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28757,7 +28757,7 @@ class FeesType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (int)$val;
+        $this->Fee = (FeeType)$val;
 	}
 }
 
@@ -28780,7 +28780,7 @@ class FinanceOfferArrayType
 	 */
 	public function setFinanceOffer($val)
 	{
-        $this->FinanceOffer = (int)$val;
+        $this->FinanceOffer = (FinanceOfferType)$val;
 	}
 }
 
@@ -28838,7 +28838,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
 	}
 
 	/**
@@ -28850,7 +28850,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerTerms');
         }
-        $this->BuyerTerms = (int)$val;
+        $this->BuyerTerms = (string)$val;
 	}
 
 	/**
@@ -28862,7 +28862,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerTerms');
         }
-        $this->SellerTerms = (int)$val;
+        $this->SellerTerms = (string)$val;
 	}
 
 	/**
@@ -28871,7 +28871,7 @@ class FinanceOfferType
 	 */
 	public function setStartDate($val)
 	{
-        $this->StartDate = (int)$val;
+        $this->StartDate = (dateTime)$val;
 	}
 
 	/**
@@ -28880,7 +28880,7 @@ class FinanceOfferType
 	 */
 	public function setLastModifiedDate($val)
 	{
-        $this->LastModifiedDate = (int)$val;
+        $this->LastModifiedDate = (dateTime)$val;
 	}
 
 	/**
@@ -28889,7 +28889,7 @@ class FinanceOfferType
 	 */
 	public function setMinimumAmount($val)
 	{
-        $this->MinimumAmount = (int)$val;
+        $this->MinimumAmount = (AmountType)$val;
 	}
 
 	/**
@@ -28898,7 +28898,7 @@ class FinanceOfferType
 	 */
 	public function setRateFactor($val)
 	{
-        $this->RateFactor = (int)$val;
+        $this->RateFactor = (double)$val;
 	}
 
 	/**
@@ -28919,7 +28919,7 @@ class FinanceOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -28961,7 +28961,7 @@ class FlatRateInsuranceRangeCostType
 	 */
 	public function setFlatRateInsuranceRange($val)
 	{
-        $this->FlatRateInsuranceRange = (int)$val;
+        $this->FlatRateInsuranceRange = (FlatRateInsuranceRangeCodeType)$val;
 	}
 
 	/**
@@ -28970,7 +28970,7 @@ class FlatRateInsuranceRangeCostType
 	 */
 	public function setInsuranceCost($val)
 	{
-        $this->InsuranceCost = (int)$val;
+        $this->InsuranceCost = (AmountType)$val;
 	}
 
 	/**
@@ -28979,7 +28979,7 @@ class FlatRateInsuranceRangeCostType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29028,7 +29028,7 @@ class FlatShippingPreferencesType
 	 */
 	public function setAmountPerAdditionalItem($val)
 	{
-        $this->AmountPerAdditionalItem = (int)$val;
+        $this->AmountPerAdditionalItem = (AmountType)$val;
 	}
 
 	/**
@@ -29037,7 +29037,7 @@ class FlatShippingPreferencesType
 	 */
 	public function setDeductionAmountPerAdditionalItem($val)
 	{
-        $this->DeductionAmountPerAdditionalItem = (int)$val;
+        $this->DeductionAmountPerAdditionalItem = (AmountType)$val;
 	}
 
 	/**
@@ -29046,7 +29046,7 @@ class FlatShippingPreferencesType
 	 */
 	public function setFlatRateInsuranceRangeCost($val)
 	{
-        $this->FlatRateInsuranceRangeCost = (int)$val;
+        $this->FlatRateInsuranceRangeCost = (FlatRateInsuranceRangeCostType)$val;
 	}
 
 	/**
@@ -29055,7 +29055,7 @@ class FlatShippingPreferencesType
 	 */
 	public function setFlatShippingRateOption($val)
 	{
-        $this->FlatShippingRateOption = (int)$val;
+        $this->FlatShippingRateOption = (FlatShippingRateOptionCodeType)$val;
 	}
 
 	/**
@@ -29064,7 +29064,7 @@ class FlatShippingPreferencesType
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = (int)$val;
+        $this->InsuranceOption = (InsuranceOptionCodeType)$val;
 	}
 
 	/**
@@ -29073,7 +29073,7 @@ class FlatShippingPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29185,7 +29185,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setListingFlow($val)
 	{
-        $this->ListingFlow = (int)$val;
+        $this->ListingFlow = (ListingFlowCodeType)$val;
 	}
 
 	/**
@@ -29194,7 +29194,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -29203,7 +29203,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 
 	/**
@@ -29212,7 +29212,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->ModifiedFields = (int)$val;
+        $this->ModifiedFields = (ModifiedFieldType)$val;
 	}
 
 	/**
@@ -29221,7 +29221,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setRecommendationEngine($val)
 	{
-        $this->RecommendationEngine = (int)$val;
+        $this->RecommendationEngine = (RecommendationEngineCodeType)$val;
 	}
 
 	/**
@@ -29233,7 +29233,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
 	}
 
 	/**
@@ -29245,7 +29245,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
 	}
 
 	/**
@@ -29257,7 +29257,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = (int)$val;
+        $this->DeletedField = (string)$val;
 	}
 
 	/**
@@ -29266,7 +29266,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29325,7 +29325,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
-        $this->ListingAnalyzerRecommendations = (int)$val;
+        $this->ListingAnalyzerRecommendations = (ListingAnalyzerRecommendationsType)$val;
 	}
 
 	/**
@@ -29334,7 +29334,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
-        $this->SIFFTASRecommendations = (int)$val;
+        $this->SIFFTASRecommendations = (SIFFTASRecommendationsType)$val;
 	}
 
 	/**
@@ -29343,7 +29343,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setPricingRecommendations($val)
 	{
-        $this->PricingRecommendations = (int)$val;
+        $this->PricingRecommendations = (PricingRecommendationsType)$val;
 	}
 
 	/**
@@ -29352,7 +29352,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setAttributeRecommendations($val)
 	{
-        $this->AttributeRecommendations = (int)$val;
+        $this->AttributeRecommendations = (AttributeRecommendationsType)$val;
 	}
 
 	/**
@@ -29361,7 +29361,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setProductRecommendations($val)
 	{
-        $this->ProductRecommendations = (int)$val;
+        $this->ProductRecommendations = (ProductRecommendationsType)$val;
 	}
 
 	/**
@@ -29373,7 +29373,7 @@ class GetRecommendationsResponseContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
 	}
 
 	/**
@@ -29382,7 +29382,7 @@ class GetRecommendationsResponseContainerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29432,7 +29432,7 @@ class HomePageFeaturedEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29470,7 +29470,7 @@ class InsuranceDetailsType
 	 */
 	public function setInsuranceFee($val)
 	{
-        $this->InsuranceFee = (int)$val;
+        $this->InsuranceFee = (AmountType)$val;
 	}
 
 	/**
@@ -29479,7 +29479,7 @@ class InsuranceDetailsType
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = (int)$val;
+        $this->InsuranceOption = (InsuranceOptionCodeType)$val;
 	}
 
 	/**
@@ -29488,7 +29488,7 @@ class InsuranceDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29575,7 +29575,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
 	}
 
 	/**
@@ -29584,7 +29584,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingServiceCost($val)
 	{
-        $this->ShippingServiceCost = (int)$val;
+        $this->ShippingServiceCost = (AmountType)$val;
 	}
 
 	/**
@@ -29593,7 +29593,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
-        $this->ShippingServiceAdditionalCost = (int)$val;
+        $this->ShippingServiceAdditionalCost = (AmountType)$val;
 	}
 
 	/**
@@ -29617,7 +29617,7 @@ class InternationalShippingServiceOptionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipToLocation');
         }
-        $this->ShipToLocation = (int)$val;
+        $this->ShipToLocation = (string)$val;
 	}
 
 	/**
@@ -29626,7 +29626,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setShippingInsuranceCost($val)
 	{
-        $this->ShippingInsuranceCost = (int)$val;
+        $this->ShippingInsuranceCost = (AmountType)$val;
 	}
 
 	/**
@@ -29635,7 +29635,7 @@ class InternationalShippingServiceOptionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29662,7 +29662,7 @@ class ItemArrayType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 }
 
@@ -29710,7 +29710,7 @@ class ItemBidDetailsType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -29722,7 +29722,7 @@ class ItemBidDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -29743,7 +29743,7 @@ class ItemBidDetailsType
 	 */
 	public function setSellerID($val)
 	{
-        $this->SellerID = (int)$val;
+        $this->SellerID = (UserIDType)$val;
 	}
 
 	/**
@@ -29752,7 +29752,7 @@ class ItemBidDetailsType
 	 */
 	public function setLastBidTime($val)
 	{
-        $this->LastBidTime = (int)$val;
+        $this->LastBidTime = (dateTime)$val;
 	}
 
 	/**
@@ -29761,7 +29761,7 @@ class ItemBidDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29825,7 +29825,7 @@ class ItemListCustomizationType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = (int)$val;
+        $this->Include = (boolean)$val;
 	}
 
 	/**
@@ -29834,7 +29834,7 @@ class ItemListCustomizationType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 
 	/**
@@ -29843,7 +29843,7 @@ class ItemListCustomizationType
 	 */
 	public function setSort($val)
 	{
-        $this->Sort = (int)$val;
+        $this->Sort = (ItemSortTypeCodeType)$val;
 	}
 
 	/**
@@ -29864,7 +29864,7 @@ class ItemListCustomizationType
 	 */
 	public function setIncludeNotes($val)
 	{
-        $this->IncludeNotes = (int)$val;
+        $this->IncludeNotes = (boolean)$val;
 	}
 
 	/**
@@ -29873,7 +29873,7 @@ class ItemListCustomizationType
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -29882,7 +29882,7 @@ class ItemListCustomizationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -29997,7 +29997,7 @@ class ItemTransactionIdArrayType
 	 */
 	public function setItemTransactionID($val)
 	{
-        $this->ItemTransactionID = (int)$val;
+        $this->ItemTransactionID = (ItemTransactionIDType)$val;
 	}
 }
 
@@ -30031,7 +30031,7 @@ class ItemTransactionIdType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -30043,7 +30043,7 @@ class ItemTransactionIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -30052,7 +30052,7 @@ class ItemTransactionIdType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -31006,7 +31006,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationData');
         }
-        $this->ApplicationData = (int)$val;
+        $this->ApplicationData = (string)$val;
 	}
 
 	/**
@@ -31015,7 +31015,7 @@ class ItemType
 	 */
 	public function setAttributeSetArray($val)
 	{
-        $this->AttributeSetArray = (int)$val;
+        $this->AttributeSetArray = (AttributeSetArrayType)$val;
 	}
 
 	/**
@@ -31024,7 +31024,7 @@ class ItemType
 	 */
 	public function setAttributeArray($val)
 	{
-        $this->AttributeArray = (int)$val;
+        $this->AttributeArray = (AttributeArrayType)$val;
 	}
 
 	/**
@@ -31033,7 +31033,7 @@ class ItemType
 	 */
 	public function setLookupAttributeArray($val)
 	{
-        $this->LookupAttributeArray = (int)$val;
+        $this->LookupAttributeArray = (LookupAttributeArrayType)$val;
 	}
 
 	/**
@@ -31042,7 +31042,7 @@ class ItemType
 	 */
 	public function setApplyShippingDiscount($val)
 	{
-        $this->ApplyShippingDiscount = (int)$val;
+        $this->ApplyShippingDiscount = (boolean)$val;
 	}
 
 	/**
@@ -31051,7 +31051,7 @@ class ItemType
 	 */
 	public function setAutoPay($val)
 	{
-        $this->AutoPay = (int)$val;
+        $this->AutoPay = (boolean)$val;
 	}
 
 	/**
@@ -31060,7 +31060,7 @@ class ItemType
 	 */
 	public function setPaymentDetails($val)
 	{
-        $this->PaymentDetails = (int)$val;
+        $this->PaymentDetails = (PaymentDetailsType)$val;
 	}
 
 	/**
@@ -31069,7 +31069,7 @@ class ItemType
 	 */
 	public function setBiddingDetails($val)
 	{
-        $this->BiddingDetails = (int)$val;
+        $this->BiddingDetails = (BiddingDetailsType)$val;
 	}
 
 	/**
@@ -31078,7 +31078,7 @@ class ItemType
 	 */
 	public function setMotorsGermanySearchable($val)
 	{
-        $this->MotorsGermanySearchable = (int)$val;
+        $this->MotorsGermanySearchable = (boolean)$val;
 	}
 
 	/**
@@ -31087,7 +31087,7 @@ class ItemType
 	 */
 	public function setBuyerProtection($val)
 	{
-        $this->BuyerProtection = (int)$val;
+        $this->BuyerProtection = (BuyerProtectionCodeType)$val;
 	}
 
 	/**
@@ -31096,7 +31096,7 @@ class ItemType
 	 */
 	public function setBuyItNowPrice($val)
 	{
-        $this->BuyItNowPrice = (int)$val;
+        $this->BuyItNowPrice = (AmountType)$val;
 	}
 
 	/**
@@ -31105,7 +31105,7 @@ class ItemType
 	 */
 	public function setCategoryMappingAllowed($val)
 	{
-        $this->CategoryMappingAllowed = (int)$val;
+        $this->CategoryMappingAllowed = (boolean)$val;
 	}
 
 	/**
@@ -31114,7 +31114,7 @@ class ItemType
 	 */
 	public function setCharity($val)
 	{
-        $this->Charity = (int)$val;
+        $this->Charity = (CharityType)$val;
 	}
 
 	/**
@@ -31123,7 +31123,7 @@ class ItemType
 	 */
 	public function setCountry($val)
 	{
-        $this->Country = (int)$val;
+        $this->Country = (CountryCodeType)$val;
 	}
 
 	/**
@@ -31132,7 +31132,7 @@ class ItemType
 	 */
 	public function setCrossPromotion($val)
 	{
-        $this->CrossPromotion = (int)$val;
+        $this->CrossPromotion = (CrossPromotionsType)$val;
 	}
 
 	/**
@@ -31141,7 +31141,7 @@ class ItemType
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -31153,7 +31153,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -31162,7 +31162,7 @@ class ItemType
 	 */
 	public function setDescriptionReviseMode($val)
 	{
-        $this->DescriptionReviseMode = (int)$val;
+        $this->DescriptionReviseMode = (DescriptionReviseModeCodeType)$val;
 	}
 
 	/**
@@ -31171,7 +31171,7 @@ class ItemType
 	 */
 	public function setDistance($val)
 	{
-        $this->Distance = (int)$val;
+        $this->Distance = (DistanceType)$val;
 	}
 
 	/**
@@ -31183,7 +31183,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
 	}
 
 	/**
@@ -31204,7 +31204,7 @@ class ItemType
 	 */
 	public function setGiftServices($val)
 	{
-        $this->GiftServices = (int)$val;
+        $this->GiftServices = (GiftServicesCodeType)$val;
 	}
 
 	/**
@@ -31213,7 +31213,7 @@ class ItemType
 	 */
 	public function setHitCounter($val)
 	{
-        $this->HitCounter = (int)$val;
+        $this->HitCounter = (HitCounterCodeType)$val;
 	}
 
 	/**
@@ -31222,7 +31222,7 @@ class ItemType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -31231,7 +31231,7 @@ class ItemType
 	 */
 	public function setListingDetails($val)
 	{
-        $this->ListingDetails = (int)$val;
+        $this->ListingDetails = (ListingDetailsType)$val;
 	}
 
 	/**
@@ -31240,7 +31240,7 @@ class ItemType
 	 */
 	public function setListingDesigner($val)
 	{
-        $this->ListingDesigner = (int)$val;
+        $this->ListingDesigner = (ListingDesignerType)$val;
 	}
 
 	/**
@@ -31249,7 +31249,7 @@ class ItemType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (token)$val;
 	}
 
 	/**
@@ -31258,7 +31258,7 @@ class ItemType
 	 */
 	public function setListingEnhancement($val)
 	{
-        $this->ListingEnhancement = (int)$val;
+        $this->ListingEnhancement = (ListingEnhancementsCodeType)$val;
 	}
 
 	/**
@@ -31267,7 +31267,7 @@ class ItemType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 
 	/**
@@ -31276,7 +31276,7 @@ class ItemType
 	 */
 	public function setListingSubtype($val)
 	{
-        $this->ListingSubtype = (int)$val;
+        $this->ListingSubtype = (ListingSubtypeEnum)$val;
 	}
 
 	/**
@@ -31288,7 +31288,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Location');
         }
-        $this->Location = (int)$val;
+        $this->Location = (string)$val;
 	}
 
 	/**
@@ -31309,7 +31309,7 @@ class ItemType
 	 */
 	public function setNowAndNew($val)
 	{
-        $this->NowAndNew = (int)$val;
+        $this->NowAndNew = (boolean)$val;
 	}
 
 	/**
@@ -31321,7 +31321,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PartnerCode');
         }
-        $this->PartnerCode = (int)$val;
+        $this->PartnerCode = (string)$val;
 	}
 
 	/**
@@ -31333,7 +31333,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PartnerName');
         }
-        $this->PartnerName = (int)$val;
+        $this->PartnerName = (string)$val;
 	}
 
 	/**
@@ -31342,7 +31342,7 @@ class ItemType
 	 */
 	public function setPaymentMethods($val)
 	{
-        $this->PaymentMethods = (int)$val;
+        $this->PaymentMethods = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -31354,7 +31354,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
-        $this->PayPalEmailAddress = (int)$val;
+        $this->PayPalEmailAddress = (string)$val;
 	}
 
 	/**
@@ -31363,7 +31363,7 @@ class ItemType
 	 */
 	public function setPrimaryCategory($val)
 	{
-        $this->PrimaryCategory = (int)$val;
+        $this->PrimaryCategory = (CategoryType)$val;
 	}
 
 	/**
@@ -31372,7 +31372,7 @@ class ItemType
 	 */
 	public function setPrivateListing($val)
 	{
-        $this->PrivateListing = (int)$val;
+        $this->PrivateListing = (boolean)$val;
 	}
 
 	/**
@@ -31381,7 +31381,7 @@ class ItemType
 	 */
 	public function setProductListingDetails($val)
 	{
-        $this->ProductListingDetails = (int)$val;
+        $this->ProductListingDetails = (ProductListingDetailsType)$val;
 	}
 
 	/**
@@ -31390,7 +31390,7 @@ class ItemType
 	 */
 	public function setProximitySearchDetails($val)
 	{
-        $this->ProximitySearchDetails = (int)$val;
+        $this->ProximitySearchDetails = (ProximitySearchDetailsType)$val;
 	}
 
 	/**
@@ -31414,7 +31414,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PrivateNotes');
         }
-        $this->PrivateNotes = (int)$val;
+        $this->PrivateNotes = (string)$val;
 	}
 
 	/**
@@ -31426,7 +31426,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->RegionID = (int)$val;
+        $this->RegionID = (string)$val;
 	}
 
 	/**
@@ -31435,7 +31435,7 @@ class ItemType
 	 */
 	public function setRelistLink($val)
 	{
-        $this->RelistLink = (int)$val;
+        $this->RelistLink = (boolean)$val;
 	}
 
 	/**
@@ -31444,7 +31444,7 @@ class ItemType
 	 */
 	public function setReservePrice($val)
 	{
-        $this->ReservePrice = (int)$val;
+        $this->ReservePrice = (AmountType)$val;
 	}
 
 	/**
@@ -31453,7 +31453,7 @@ class ItemType
 	 */
 	public function setReviseStatus($val)
 	{
-        $this->ReviseStatus = (int)$val;
+        $this->ReviseStatus = (ReviseStatusType)$val;
 	}
 
 	/**
@@ -31462,7 +31462,7 @@ class ItemType
 	 */
 	public function setScheduleTime($val)
 	{
-        $this->ScheduleTime = (int)$val;
+        $this->ScheduleTime = (dateTime)$val;
 	}
 
 	/**
@@ -31471,7 +31471,7 @@ class ItemType
 	 */
 	public function setSecondaryCategory($val)
 	{
-        $this->SecondaryCategory = (int)$val;
+        $this->SecondaryCategory = (CategoryType)$val;
 	}
 
 	/**
@@ -31480,7 +31480,7 @@ class ItemType
 	 */
 	public function setFreeAddedCategory($val)
 	{
-        $this->FreeAddedCategory = (int)$val;
+        $this->FreeAddedCategory = (CategoryType)$val;
 	}
 
 	/**
@@ -31489,7 +31489,7 @@ class ItemType
 	 */
 	public function setSiteHostedPicture($val)
 	{
-        $this->SiteHostedPicture = (int)$val;
+        $this->SiteHostedPicture = (SiteHostedPictureType)$val;
 	}
 
 	/**
@@ -31498,7 +31498,7 @@ class ItemType
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = (int)$val;
+        $this->Seller = (UserType)$val;
 	}
 
 	/**
@@ -31507,7 +31507,7 @@ class ItemType
 	 */
 	public function setSellingStatus($val)
 	{
-        $this->SellingStatus = (int)$val;
+        $this->SellingStatus = (SellingStatusType)$val;
 	}
 
 	/**
@@ -31516,7 +31516,7 @@ class ItemType
 	 */
 	public function setShippingOption($val)
 	{
-        $this->ShippingOption = (int)$val;
+        $this->ShippingOption = (ShippingOptionCodeType)$val;
 	}
 
 	/**
@@ -31525,7 +31525,7 @@ class ItemType
 	 */
 	public function setShippingDetails($val)
 	{
-        $this->ShippingDetails = (int)$val;
+        $this->ShippingDetails = (ShippingDetailsType)$val;
 	}
 
 	/**
@@ -31534,7 +31534,7 @@ class ItemType
 	 */
 	public function setShippingRegions($val)
 	{
-        $this->ShippingRegions = (int)$val;
+        $this->ShippingRegions = (ShippingRegionCodeType)$val;
 	}
 
 	/**
@@ -31543,7 +31543,7 @@ class ItemType
 	 */
 	public function setShippingTerms($val)
 	{
-        $this->ShippingTerms = (int)$val;
+        $this->ShippingTerms = (ShippingTermsCodeType)$val;
 	}
 
 	/**
@@ -31555,7 +31555,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipToLocations');
         }
-        $this->ShipToLocations = (int)$val;
+        $this->ShipToLocations = (string)$val;
 	}
 
 	/**
@@ -31564,7 +31564,7 @@ class ItemType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -31573,7 +31573,7 @@ class ItemType
 	 */
 	public function setStartPrice($val)
 	{
-        $this->StartPrice = (int)$val;
+        $this->StartPrice = (AmountType)$val;
 	}
 
 	/**
@@ -31582,7 +31582,7 @@ class ItemType
 	 */
 	public function setStorefront($val)
 	{
-        $this->Storefront = (int)$val;
+        $this->Storefront = (StorefrontType)$val;
 	}
 
 	/**
@@ -31594,7 +31594,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SubTitle');
         }
-        $this->SubTitle = (int)$val;
+        $this->SubTitle = (string)$val;
 	}
 
 	/**
@@ -31603,7 +31603,7 @@ class ItemType
 	 */
 	public function setTimeLeft($val)
 	{
-        $this->TimeLeft = (int)$val;
+        $this->TimeLeft = (duration)$val;
 	}
 
 	/**
@@ -31615,7 +31615,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 
 	/**
@@ -31624,7 +31624,7 @@ class ItemType
 	 */
 	public function setUUID($val)
 	{
-        $this->UUID = (int)$val;
+        $this->UUID = (UUIDType)$val;
 	}
 
 	/**
@@ -31633,7 +31633,7 @@ class ItemType
 	 */
 	public function setVATDetails($val)
 	{
-        $this->VATDetails = (int)$val;
+        $this->VATDetails = (VATDetailsType)$val;
 	}
 
 	/**
@@ -31642,7 +31642,7 @@ class ItemType
 	 */
 	public function setVendorHostedPicture($val)
 	{
-        $this->VendorHostedPicture = (int)$val;
+        $this->VendorHostedPicture = (VendorHostedPictureType)$val;
 	}
 
 	/**
@@ -31654,7 +31654,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerVacationNote');
         }
-        $this->SellerVacationNote = (int)$val;
+        $this->SellerVacationNote = (string)$val;
 	}
 
 	/**
@@ -31663,7 +31663,7 @@ class ItemType
 	 */
 	public function setWatchCount($val)
 	{
-        $this->WatchCount = (int)$val;
+        $this->WatchCount = (long)$val;
 	}
 
 	/**
@@ -31672,7 +31672,7 @@ class ItemType
 	 */
 	public function setHitCount($val)
 	{
-        $this->HitCount = (int)$val;
+        $this->HitCount = (long)$val;
 	}
 
 	/**
@@ -31681,7 +31681,7 @@ class ItemType
 	 */
 	public function setDisableBuyerRequirements($val)
 	{
-        $this->DisableBuyerRequirements = (int)$val;
+        $this->DisableBuyerRequirements = (boolean)$val;
 	}
 
 	/**
@@ -31690,7 +31690,7 @@ class ItemType
 	 */
 	public function setBuyerRequirements($val)
 	{
-        $this->BuyerRequirements = (int)$val;
+        $this->BuyerRequirements = (BuyerRequirementsType)$val;
 	}
 
 	/**
@@ -31699,7 +31699,7 @@ class ItemType
 	 */
 	public function setBestOfferDetails($val)
 	{
-        $this->BestOfferDetails = (int)$val;
+        $this->BestOfferDetails = (BestOfferDetailsType)$val;
 	}
 
 	/**
@@ -31708,7 +31708,7 @@ class ItemType
 	 */
 	public function setAnythingPoints($val)
 	{
-        $this->AnythingPoints = (int)$val;
+        $this->AnythingPoints = (boolean)$val;
 	}
 
 	/**
@@ -31717,7 +31717,7 @@ class ItemType
 	 */
 	public function setLiveAuctionDetails($val)
 	{
-        $this->LiveAuctionDetails = (int)$val;
+        $this->LiveAuctionDetails = (LiveAuctionDetailsType)$val;
 	}
 
 	/**
@@ -31726,7 +31726,7 @@ class ItemType
 	 */
 	public function setLocationDefaulted($val)
 	{
-        $this->LocationDefaulted = (int)$val;
+        $this->LocationDefaulted = (boolean)$val;
 	}
 
 	/**
@@ -31735,7 +31735,7 @@ class ItemType
 	 */
 	public function setThirdPartyCheckout($val)
 	{
-        $this->ThirdPartyCheckout = (int)$val;
+        $this->ThirdPartyCheckout = (boolean)$val;
 	}
 
 	/**
@@ -31744,7 +31744,7 @@ class ItemType
 	 */
 	public function setUseTaxTable($val)
 	{
-        $this->UseTaxTable = (int)$val;
+        $this->UseTaxTable = (boolean)$val;
 	}
 
 	/**
@@ -31753,7 +31753,7 @@ class ItemType
 	 */
 	public function setGetItFast($val)
 	{
-        $this->GetItFast = (int)$val;
+        $this->GetItFast = (boolean)$val;
 	}
 
 	/**
@@ -31762,7 +31762,7 @@ class ItemType
 	 */
 	public function setBuyerResponsibleForShipping($val)
 	{
-        $this->BuyerResponsibleForShipping = (int)$val;
+        $this->BuyerResponsibleForShipping = (boolean)$val;
 	}
 
 	/**
@@ -31771,7 +31771,7 @@ class ItemType
 	 */
 	public function setLimitedWarrantyEligible($val)
 	{
-        $this->LimitedWarrantyEligible = (int)$val;
+        $this->LimitedWarrantyEligible = (boolean)$val;
 	}
 
 	/**
@@ -31783,7 +31783,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayNotes');
         }
-        $this->eBayNotes = (int)$val;
+        $this->eBayNotes = (string)$val;
 	}
 
 	/**
@@ -31792,7 +31792,7 @@ class ItemType
 	 */
 	public function setQuestionCount($val)
 	{
-        $this->QuestionCount = (int)$val;
+        $this->QuestionCount = (long)$val;
 	}
 
 	/**
@@ -31801,7 +31801,7 @@ class ItemType
 	 */
 	public function setRelisted($val)
 	{
-        $this->Relisted = (int)$val;
+        $this->Relisted = (boolean)$val;
 	}
 
 	/**
@@ -31822,7 +31822,7 @@ class ItemType
 	 */
 	public function setSKU($val)
 	{
-        $this->SKU = (int)$val;
+        $this->SKU = (SKUType)$val;
 	}
 
 	/**
@@ -31831,7 +31831,7 @@ class ItemType
 	 */
 	public function setCategoryBasedAttributesPrefill($val)
 	{
-        $this->CategoryBasedAttributesPrefill = (int)$val;
+        $this->CategoryBasedAttributesPrefill = (boolean)$val;
 	}
 
 	/**
@@ -31840,7 +31840,7 @@ class ItemType
 	 */
 	public function setSearchDetails($val)
 	{
-        $this->SearchDetails = (int)$val;
+        $this->SearchDetails = (SearchDetailsType)$val;
 	}
 
 	/**
@@ -31852,7 +31852,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -31861,7 +31861,7 @@ class ItemType
 	 */
 	public function setShippingTermsInDescription($val)
 	{
-        $this->ShippingTermsInDescription = (int)$val;
+        $this->ShippingTermsInDescription = (boolean)$val;
 	}
 
 	/**
@@ -31870,7 +31870,7 @@ class ItemType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 
 	/**
@@ -31882,7 +31882,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->SellerInventoryID = (int)$val;
+        $this->SellerInventoryID = (string)$val;
 	}
 
 	/**
@@ -31891,7 +31891,7 @@ class ItemType
 	 */
 	public function setPictureDetails($val)
 	{
-        $this->PictureDetails = (int)$val;
+        $this->PictureDetails = (PictureDetailsType)$val;
 	}
 
 	/**
@@ -31900,7 +31900,7 @@ class ItemType
 	 */
 	public function setDigitalDeliveryDetails($val)
 	{
-        $this->DigitalDeliveryDetails = (int)$val;
+        $this->DigitalDeliveryDetails = (DigitalDeliveryDetailsType)$val;
 	}
 
 	/**
@@ -31921,7 +31921,7 @@ class ItemType
 	 */
 	public function setSkypeEnabled($val)
 	{
-        $this->SkypeEnabled = (int)$val;
+        $this->SkypeEnabled = (boolean)$val;
 	}
 
 	/**
@@ -31933,7 +31933,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->SkypeID = (int)$val;
+        $this->SkypeID = (string)$val;
 	}
 
 	/**
@@ -31942,7 +31942,7 @@ class ItemType
 	 */
 	public function setSkypeOption($val)
 	{
-        $this->SkypeOption = (int)$val;
+        $this->SkypeOption = (SkypeOptionCodeType)$val;
 	}
 
 	/**
@@ -31951,7 +31951,7 @@ class ItemType
 	 */
 	public function setSkypeContactOption($val)
 	{
-        $this->SkypeContactOption = (int)$val;
+        $this->SkypeContactOption = (SkypeContactOptionCodeType)$val;
 	}
 
 	/**
@@ -31960,7 +31960,7 @@ class ItemType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -31969,7 +31969,7 @@ class ItemType
 	 */
 	public function setLocalListing($val)
 	{
-        $this->LocalListing = (int)$val;
+        $this->LocalListing = (boolean)$val;
 	}
 
 	/**
@@ -31978,7 +31978,7 @@ class ItemType
 	 */
 	public function setThirdPartyCheckoutIntegration($val)
 	{
-        $this->ThirdPartyCheckoutIntegration = (int)$val;
+        $this->ThirdPartyCheckoutIntegration = (boolean)$val;
 	}
 
 	/**
@@ -31987,7 +31987,7 @@ class ItemType
 	 */
 	public function setExpressOptOut($val)
 	{
-        $this->ExpressOptOut = (int)$val;
+        $this->ExpressOptOut = (boolean)$val;
 	}
 
 	/**
@@ -31996,7 +31996,7 @@ class ItemType
 	 */
 	public function setListingCheckoutRedirectPreference($val)
 	{
-        $this->ListingCheckoutRedirectPreference = (int)$val;
+        $this->ListingCheckoutRedirectPreference = (ListingCheckoutRedirectPreferenceType)$val;
 	}
 
 	/**
@@ -32005,7 +32005,7 @@ class ItemType
 	 */
 	public function setExpressDetails($val)
 	{
-        $this->ExpressDetails = (int)$val;
+        $this->ExpressDetails = (ExpressDetailsType)$val;
 	}
 
 	/**
@@ -32014,7 +32014,7 @@ class ItemType
 	 */
 	public function setSellerContactDetails($val)
 	{
-        $this->SellerContactDetails = (int)$val;
+        $this->SellerContactDetails = (AddressType)$val;
 	}
 
 	/**
@@ -32023,7 +32023,7 @@ class ItemType
 	 */
 	public function setTotalQuestionCount($val)
 	{
-        $this->TotalQuestionCount = (int)$val;
+        $this->TotalQuestionCount = (long)$val;
 	}
 
 	/**
@@ -32032,7 +32032,7 @@ class ItemType
 	 */
 	public function setProxyItem($val)
 	{
-        $this->ProxyItem = (int)$val;
+        $this->ProxyItem = (boolean)$val;
 	}
 
 	/**
@@ -32041,7 +32041,7 @@ class ItemType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -32091,7 +32091,7 @@ class LabelType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -32100,7 +32100,7 @@ class LabelType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -32109,7 +32109,7 @@ class LabelType
 	 */
 	public function setVisible($val)
 	{
-        $this->visible = (int)$val;
+        $this->visible = (boolean)$val;
 	}
 }
 
@@ -32136,7 +32136,7 @@ class ListingAnalyzerRecommendationsType
 	 */
 	public function setListingTipArray($val)
 	{
-        $this->ListingTipArray = (int)$val;
+        $this->ListingTipArray = (ListingTipArrayType)$val;
 	}
 
 	/**
@@ -32145,7 +32145,7 @@ class ListingAnalyzerRecommendationsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -32180,7 +32180,7 @@ class ListingCheckoutRedirectPreferenceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProStoresStoreName');
         }
-        $this->ProStoresStoreName = (int)$val;
+        $this->ProStoresStoreName = (string)$val;
 	}
 
 	/**
@@ -32192,7 +32192,7 @@ class ListingCheckoutRedirectPreferenceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
-        $this->SellerThirdPartyUsername = (int)$val;
+        $this->SellerThirdPartyUsername = (string)$val;
 	}
 
 	/**
@@ -32201,7 +32201,7 @@ class ListingCheckoutRedirectPreferenceType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -32260,7 +32260,7 @@ class ListingDesignerType
 	 */
 	public function setOptimalPictureSize($val)
 	{
-        $this->OptimalPictureSize = (int)$val;
+        $this->OptimalPictureSize = (boolean)$val;
 	}
 
 	/**
@@ -32281,7 +32281,7 @@ class ListingDesignerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -32467,7 +32467,7 @@ class ListingDetailsType
 	 */
 	public function setAdult($val)
 	{
-        $this->Adult = (int)$val;
+        $this->Adult = (boolean)$val;
 	}
 
 	/**
@@ -32476,7 +32476,7 @@ class ListingDetailsType
 	 */
 	public function setBindingAuction($val)
 	{
-        $this->BindingAuction = (int)$val;
+        $this->BindingAuction = (boolean)$val;
 	}
 
 	/**
@@ -32485,7 +32485,7 @@ class ListingDetailsType
 	 */
 	public function setCheckoutEnabled($val)
 	{
-        $this->CheckoutEnabled = (int)$val;
+        $this->CheckoutEnabled = (boolean)$val;
 	}
 
 	/**
@@ -32494,7 +32494,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedBuyItNowPrice($val)
 	{
-        $this->ConvertedBuyItNowPrice = (int)$val;
+        $this->ConvertedBuyItNowPrice = (AmountType)$val;
 	}
 
 	/**
@@ -32503,7 +32503,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedStartPrice($val)
 	{
-        $this->ConvertedStartPrice = (int)$val;
+        $this->ConvertedStartPrice = (AmountType)$val;
 	}
 
 	/**
@@ -32512,7 +32512,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedReservePrice($val)
 	{
-        $this->ConvertedReservePrice = (int)$val;
+        $this->ConvertedReservePrice = (AmountType)$val;
 	}
 
 	/**
@@ -32521,7 +32521,7 @@ class ListingDetailsType
 	 */
 	public function setHasReservePrice($val)
 	{
-        $this->HasReservePrice = (int)$val;
+        $this->HasReservePrice = (boolean)$val;
 	}
 
 	/**
@@ -32533,7 +32533,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionName');
         }
-        $this->RegionName = (int)$val;
+        $this->RegionName = (string)$val;
 	}
 
 	/**
@@ -32542,7 +32542,7 @@ class ListingDetailsType
 	 */
 	public function setRelistedItemID($val)
 	{
-        $this->RelistedItemID = (int)$val;
+        $this->RelistedItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -32551,7 +32551,7 @@ class ListingDetailsType
 	 */
 	public function setSecondChanceOriginalItemID($val)
 	{
-        $this->SecondChanceOriginalItemID = (int)$val;
+        $this->SecondChanceOriginalItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -32560,7 +32560,7 @@ class ListingDetailsType
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -32569,7 +32569,7 @@ class ListingDetailsType
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = (int)$val;
+        $this->EndTime = (dateTime)$val;
 	}
 
 	/**
@@ -32578,7 +32578,7 @@ class ListingDetailsType
 	 */
 	public function setViewItemURL($val)
 	{
-        $this->ViewItemURL = (int)$val;
+        $this->ViewItemURL = (anyURI)$val;
 	}
 
 	/**
@@ -32587,7 +32587,7 @@ class ListingDetailsType
 	 */
 	public function setHasUnansweredQuestions($val)
 	{
-        $this->HasUnansweredQuestions = (int)$val;
+        $this->HasUnansweredQuestions = (boolean)$val;
 	}
 
 	/**
@@ -32596,7 +32596,7 @@ class ListingDetailsType
 	 */
 	public function setHasPublicMessages($val)
 	{
-        $this->HasPublicMessages = (int)$val;
+        $this->HasPublicMessages = (boolean)$val;
 	}
 
 	/**
@@ -32605,7 +32605,7 @@ class ListingDetailsType
 	 */
 	public function setBuyItNowAvailable($val)
 	{
-        $this->BuyItNowAvailable = (int)$val;
+        $this->BuyItNowAvailable = (boolean)$val;
 	}
 
 	/**
@@ -32614,7 +32614,7 @@ class ListingDetailsType
 	 */
 	public function setSellerBusinessType($val)
 	{
-        $this->SellerBusinessType = (int)$val;
+        $this->SellerBusinessType = (SellerBusinessCodeType)$val;
 	}
 
 	/**
@@ -32623,7 +32623,7 @@ class ListingDetailsType
 	 */
 	public function setMinimumBestOfferPrice($val)
 	{
-        $this->MinimumBestOfferPrice = (int)$val;
+        $this->MinimumBestOfferPrice = (AmountType)$val;
 	}
 
 	/**
@@ -32635,7 +32635,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MinimumBestOfferMessage');
         }
-        $this->MinimumBestOfferMessage = (int)$val;
+        $this->MinimumBestOfferMessage = (string)$val;
 	}
 
 	/**
@@ -32647,7 +32647,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistance');
         }
-        $this->LocalListingDistance = (int)$val;
+        $this->LocalListingDistance = (string)$val;
 	}
 
 	/**
@@ -32656,7 +32656,7 @@ class ListingDetailsType
 	 */
 	public function setExpressListing($val)
 	{
-        $this->ExpressListing = (int)$val;
+        $this->ExpressListing = (boolean)$val;
 	}
 
 	/**
@@ -32665,7 +32665,7 @@ class ListingDetailsType
 	 */
 	public function setExpressItemRequirements($val)
 	{
-        $this->ExpressItemRequirements = (int)$val;
+        $this->ExpressItemRequirements = (ExpressItemRequirementsType)$val;
 	}
 
 	/**
@@ -32674,7 +32674,7 @@ class ListingDetailsType
 	 */
 	public function setTCROriginalItemID($val)
 	{
-        $this->TCROriginalItemID = (int)$val;
+        $this->TCROriginalItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -32683,7 +32683,7 @@ class ListingDetailsType
 	 */
 	public function setViewItemURLForNaturalSearch($val)
 	{
-        $this->ViewItemURLForNaturalSearch = (int)$val;
+        $this->ViewItemURLForNaturalSearch = (anyURI)$val;
 	}
 
 	/**
@@ -32692,7 +32692,7 @@ class ListingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -32724,7 +32724,7 @@ class ListingDurationDefinitionType
 	 */
 	public function setDuration($val)
 	{
-        $this->Duration = (int)$val;
+        $this->Duration = (token)$val;
 	}
 
 	/**
@@ -32733,7 +32733,7 @@ class ListingDurationDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -32778,7 +32778,7 @@ class ListingDurationDefinitionsType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (ListingDurationDefinitionType)$val;
 	}
 
 	/**
@@ -32829,7 +32829,7 @@ class ListingDurationReferenceType
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->type = (ListingTypeCodeType)$val;
 	}
 }
 
@@ -32888,7 +32888,7 @@ class ListingTipArrayType
 	 */
 	public function setListingTip($val)
 	{
-        $this->ListingTip = (int)$val;
+        $this->ListingTip = (ListingTipType)$val;
 	}
 }
 
@@ -32937,7 +32937,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipFieldID');
         }
-        $this->ListingTipFieldID = (int)$val;
+        $this->ListingTipFieldID = (string)$val;
 	}
 
 	/**
@@ -32949,7 +32949,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FieldTip');
         }
-        $this->FieldTip = (int)$val;
+        $this->FieldTip = (string)$val;
 	}
 
 	/**
@@ -32961,7 +32961,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CurrentFieldText');
         }
-        $this->CurrentFieldText = (int)$val;
+        $this->CurrentFieldText = (string)$val;
 	}
 
 	/**
@@ -32973,7 +32973,7 @@ class ListingTipFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CurrentFieldValue');
         }
-        $this->CurrentFieldValue = (int)$val;
+        $this->CurrentFieldValue = (string)$val;
 	}
 
 	/**
@@ -32982,7 +32982,7 @@ class ListingTipFieldType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33029,7 +33029,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipMessageID');
         }
-        $this->ListingTipMessageID = (int)$val;
+        $this->ListingTipMessageID = (string)$val;
 	}
 
 	/**
@@ -33041,7 +33041,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->ShortMessage = (int)$val;
+        $this->ShortMessage = (string)$val;
 	}
 
 	/**
@@ -33053,7 +33053,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->LongMessage = (int)$val;
+        $this->LongMessage = (string)$val;
 	}
 
 	/**
@@ -33065,7 +33065,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HelpURLPath');
         }
-        $this->HelpURLPath = (int)$val;
+        $this->HelpURLPath = (string)$val;
 	}
 
 	/**
@@ -33074,7 +33074,7 @@ class ListingTipMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33120,7 +33120,7 @@ class ListingTipType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipID');
         }
-        $this->ListingTipID = (int)$val;
+        $this->ListingTipID = (string)$val;
 	}
 
 	/**
@@ -33141,7 +33141,7 @@ class ListingTipType
 	 */
 	public function setMessage($val)
 	{
-        $this->Message = (int)$val;
+        $this->Message = (ListingTipMessageType)$val;
 	}
 
 	/**
@@ -33150,7 +33150,7 @@ class ListingTipType
 	 */
 	public function setField($val)
 	{
-        $this->Field = (int)$val;
+        $this->Field = (ListingTipFieldType)$val;
 	}
 
 	/**
@@ -33159,7 +33159,7 @@ class ListingTipType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33199,7 +33199,7 @@ class LiveAuctionApprovalStatusArrayType
 	 */
 	public function setLiveAuctionStatus($val)
 	{
-        $this->LiveAuctionStatus = (int)$val;
+        $this->LiveAuctionStatus = (LiveAuctionApprovalStatusType)$val;
 	}
 }
 
@@ -33237,7 +33237,7 @@ class LiveAuctionApprovalStatusType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -33249,7 +33249,7 @@ class LiveAuctionApprovalStatusType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = (string)$val;
 	}
 }
 
@@ -33290,7 +33290,7 @@ class LiveAuctionBidType
 	 */
 	public function setRequestedBiddingLimit($val)
 	{
-        $this->RequestedBiddingLimit = (int)$val;
+        $this->RequestedBiddingLimit = (AmountType)$val;
 	}
 
 	/**
@@ -33299,7 +33299,7 @@ class LiveAuctionBidType
 	 */
 	public function setBidderStatus($val)
 	{
-        $this->BidderStatus = (int)$val;
+        $this->BidderStatus = (BidderStatusCodeType)$val;
 	}
 
 	/**
@@ -33308,7 +33308,7 @@ class LiveAuctionBidType
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
-        $this->ApprovedBiddingLimit = (int)$val;
+        $this->ApprovedBiddingLimit = (AmountType)$val;
 	}
 
 	/**
@@ -33320,7 +33320,7 @@ class LiveAuctionBidType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeclinedComment');
         }
-        $this->DeclinedComment = (int)$val;
+        $this->DeclinedComment = (string)$val;
 	}
 
 	/**
@@ -33329,7 +33329,7 @@ class LiveAuctionBidType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33390,7 +33390,7 @@ class LiveAuctionCatalogType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CatalogName');
         }
-        $this->CatalogName = (int)$val;
+        $this->CatalogName = (string)$val;
 	}
 
 	/**
@@ -33399,7 +33399,7 @@ class LiveAuctionCatalogType
 	 */
 	public function setSchedule($val)
 	{
-        $this->Schedule = (int)$val;
+        $this->Schedule = (ScheduleType)$val;
 	}
 
 	/**
@@ -33408,7 +33408,7 @@ class LiveAuctionCatalogType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33484,7 +33484,7 @@ class LiveAuctionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LotNumber');
         }
-        $this->LotNumber = (int)$val;
+        $this->LotNumber = (string)$val;
 	}
 
 	/**
@@ -33493,7 +33493,7 @@ class LiveAuctionDetailsType
 	 */
 	public function setHighEstimate($val)
 	{
-        $this->HighEstimate = (int)$val;
+        $this->HighEstimate = (AmountType)$val;
 	}
 
 	/**
@@ -33502,7 +33502,7 @@ class LiveAuctionDetailsType
 	 */
 	public function setLowEstimate($val)
 	{
-        $this->LowEstimate = (int)$val;
+        $this->LowEstimate = (AmountType)$val;
 	}
 
 	/**
@@ -33511,7 +33511,7 @@ class LiveAuctionDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33536,7 +33536,7 @@ class LocalListingDistancesNonSubscriptionDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33560,7 +33560,7 @@ class LocalListingDistancesRegularDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33585,7 +33585,7 @@ class LocalListingDistancesSpecialtyDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33610,7 +33610,7 @@ class LocalMarketNonSubscriptionDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33635,7 +33635,7 @@ class LocalMarketPremiumSubscriptionDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33660,7 +33660,7 @@ class LocalMarketRegularSubscriptionDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33685,7 +33685,7 @@ class LocalMarketSpecialitySubscriptionDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33711,7 +33711,7 @@ class LookupAttributeArrayType
 	 */
 	public function setLookupAttribute($val)
 	{
-        $this->LookupAttribute = (int)$val;
+        $this->LookupAttribute = (LookupAttributeType)$val;
 	}
 }
 
@@ -33747,7 +33747,7 @@ class LookupAttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -33759,7 +33759,7 @@ class LookupAttributeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (int)$val;
+        $this->Value = (string)$val;
 	}
 
 	/**
@@ -33768,7 +33768,7 @@ class LookupAttributeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33812,7 +33812,7 @@ class MarkUpMarkDownEventType
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = (MarkUpMarkDownEventTypeCodeType)$val;
 	}
 
 	/**
@@ -33821,7 +33821,7 @@ class MarkUpMarkDownEventType
 	 */
 	public function setTime($val)
 	{
-        $this->Time = (int)$val;
+        $this->Time = (dateTime)$val;
 	}
 
 	/**
@@ -33833,7 +33833,7 @@ class MarkUpMarkDownEventType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reason');
         }
-        $this->Reason = (int)$val;
+        $this->Reason = (string)$val;
 	}
 
 	/**
@@ -33842,7 +33842,7 @@ class MarkUpMarkDownEventType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -33876,7 +33876,7 @@ class MarkUpMarkDownHistoryType
 	 */
 	public function setMarkUpMarkDownEvent($val)
 	{
-        $this->MarkUpMarkDownEvent = (int)$val;
+        $this->MarkUpMarkDownEvent = (MarkUpMarkDownEventType)$val;
 	}
 }
 
@@ -33946,7 +33946,7 @@ class MemberMessageExchangeArrayType
 	 */
 	public function setMemberMessageExchange($val)
 	{
-        $this->MemberMessageExchange = (int)$val;
+        $this->MemberMessageExchange = (MemberMessageExchangeType)$val;
 	}
 }
 
@@ -33997,7 +33997,7 @@ class MemberMessageExchangeType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -34006,7 +34006,7 @@ class MemberMessageExchangeType
 	 */
 	public function setQuestion($val)
 	{
-        $this->Question = (int)$val;
+        $this->Question = (MemberMessageType)$val;
 	}
 
 	/**
@@ -34018,7 +34018,7 @@ class MemberMessageExchangeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Response');
         }
-        $this->Response = (int)$val;
+        $this->Response = (string)$val;
 	}
 
 	/**
@@ -34027,7 +34027,7 @@ class MemberMessageExchangeType
 	 */
 	public function setMessageStatus($val)
 	{
-        $this->MessageStatus = (int)$val;
+        $this->MessageStatus = (MessageStatusTypeCodeType)$val;
 	}
 
 	/**
@@ -34036,7 +34036,7 @@ class MemberMessageExchangeType
 	 */
 	public function setCreationDate($val)
 	{
-        $this->CreationDate = (int)$val;
+        $this->CreationDate = (dateTime)$val;
 	}
 
 	/**
@@ -34045,7 +34045,7 @@ class MemberMessageExchangeType
 	 */
 	public function setLastModifiedDate($val)
 	{
-        $this->LastModifiedDate = (int)$val;
+        $this->LastModifiedDate = (dateTime)$val;
 	}
 
 	/**
@@ -34054,7 +34054,7 @@ class MemberMessageExchangeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34133,7 +34133,7 @@ class MemberMessageType
 	 */
 	public function setMessageType($val)
 	{
-        $this->MessageType = (int)$val;
+        $this->MessageType = (MessageTypeCodeType)$val;
 	}
 
 	/**
@@ -34142,7 +34142,7 @@ class MemberMessageType
 	 */
 	public function setQuestionType($val)
 	{
-        $this->QuestionType = (int)$val;
+        $this->QuestionType = (QuestionTypeCodeType)$val;
 	}
 
 	/**
@@ -34151,7 +34151,7 @@ class MemberMessageType
 	 */
 	public function setEmailCopyToSender($val)
 	{
-        $this->EmailCopyToSender = (int)$val;
+        $this->EmailCopyToSender = (boolean)$val;
 	}
 
 	/**
@@ -34160,7 +34160,7 @@ class MemberMessageType
 	 */
 	public function setHideSendersEmailAddress($val)
 	{
-        $this->HideSendersEmailAddress = (int)$val;
+        $this->HideSendersEmailAddress = (boolean)$val;
 	}
 
 	/**
@@ -34169,7 +34169,7 @@ class MemberMessageType
 	 */
 	public function setDisplayToPublic($val)
 	{
-        $this->DisplayToPublic = (int)$val;
+        $this->DisplayToPublic = (boolean)$val;
 	}
 
 	/**
@@ -34181,7 +34181,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SenderID');
         }
-        $this->SenderID = (int)$val;
+        $this->SenderID = (string)$val;
 	}
 
 	/**
@@ -34193,7 +34193,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SenderEmail');
         }
-        $this->SenderEmail = (int)$val;
+        $this->SenderEmail = (string)$val;
 	}
 
 	/**
@@ -34205,7 +34205,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientID');
         }
-        $this->RecipientID = (int)$val;
+        $this->RecipientID = (string)$val;
 	}
 
 	/**
@@ -34217,7 +34217,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = (int)$val;
+        $this->Subject = (string)$val;
 	}
 
 	/**
@@ -34229,7 +34229,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Body');
         }
-        $this->Body = (int)$val;
+        $this->Body = (string)$val;
 	}
 
 	/**
@@ -34241,7 +34241,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageID');
         }
-        $this->MessageID = (int)$val;
+        $this->MessageID = (string)$val;
 	}
 
 	/**
@@ -34253,7 +34253,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ParentMessageID');
         }
-        $this->ParentMessageID = (int)$val;
+        $this->ParentMessageID = (string)$val;
 	}
 
 	/**
@@ -34262,7 +34262,7 @@ class MemberMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34319,7 +34319,7 @@ class MinimumReservePriceDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34360,7 +34360,7 @@ class ModifiedFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Field');
         }
-        $this->Field = (int)$val;
+        $this->Field = (string)$val;
 	}
 
 	/**
@@ -34369,7 +34369,7 @@ class ModifiedFieldType
 	 */
 	public function setModifyType($val)
 	{
-        $this->ModifyType = (int)$val;
+        $this->ModifyType = (ModifyCodeType)$val;
 	}
 
 	/**
@@ -34378,7 +34378,7 @@ class ModifiedFieldType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34417,7 +34417,7 @@ class MyMessagesAlertArrayType
 	 */
 	public function setAlert($val)
 	{
-        $this->Alert = (int)$val;
+        $this->Alert = (MyMessagesAlertType)$val;
 	}
 }
 
@@ -34440,7 +34440,7 @@ class MyMessagesAlertIdArrayType
 	 */
 	public function setAlertID($val)
 	{
-        $this->AlertID = (int)$val;
+        $this->AlertID = (MyMessagesAlertIDType)$val;
 	}
 }
 
@@ -34568,7 +34568,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Sender');
         }
-        $this->Sender = (int)$val;
+        $this->Sender = (string)$val;
 	}
 
 	/**
@@ -34580,7 +34580,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->RecipientUserID = (int)$val;
+        $this->RecipientUserID = (string)$val;
 	}
 
 	/**
@@ -34592,7 +34592,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = (int)$val;
+        $this->Subject = (string)$val;
 	}
 
 	/**
@@ -34604,7 +34604,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Priority');
         }
-        $this->Priority = (int)$val;
+        $this->Priority = (string)$val;
 	}
 
 	/**
@@ -34613,7 +34613,7 @@ class MyMessagesAlertType
 	 */
 	public function setAlertID($val)
 	{
-        $this->AlertID = (int)$val;
+        $this->AlertID = (MyMessagesAlertIDType)$val;
 	}
 
 	/**
@@ -34625,7 +34625,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAlertID');
         }
-        $this->ExternalAlertID = (int)$val;
+        $this->ExternalAlertID = (string)$val;
 	}
 
 	/**
@@ -34637,7 +34637,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContentType');
         }
-        $this->ContentType = (int)$val;
+        $this->ContentType = (string)$val;
 	}
 
 	/**
@@ -34649,7 +34649,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = (int)$val;
+        $this->Text = (string)$val;
 	}
 
 	/**
@@ -34658,7 +34658,7 @@ class MyMessagesAlertType
 	 */
 	public function setResolutionStatus($val)
 	{
-        $this->ResolutionStatus = (int)$val;
+        $this->ResolutionStatus = (MyMessagesAlertResolutionStatusCode)$val;
 	}
 
 	/**
@@ -34667,7 +34667,7 @@ class MyMessagesAlertType
 	 */
 	public function setRead($val)
 	{
-        $this->Read = (int)$val;
+        $this->Read = (boolean)$val;
 	}
 
 	/**
@@ -34676,7 +34676,7 @@ class MyMessagesAlertType
 	 */
 	public function setCreationDate($val)
 	{
-        $this->CreationDate = (int)$val;
+        $this->CreationDate = (dateTime)$val;
 	}
 
 	/**
@@ -34685,7 +34685,7 @@ class MyMessagesAlertType
 	 */
 	public function setReceiveDate($val)
 	{
-        $this->ReceiveDate = (int)$val;
+        $this->ReceiveDate = (dateTime)$val;
 	}
 
 	/**
@@ -34694,7 +34694,7 @@ class MyMessagesAlertType
 	 */
 	public function setExpirationDate($val)
 	{
-        $this->ExpirationDate = (int)$val;
+        $this->ExpirationDate = (dateTime)$val;
 	}
 
 	/**
@@ -34703,7 +34703,7 @@ class MyMessagesAlertType
 	 */
 	public function setResolutionDate($val)
 	{
-        $this->ResolutionDate = (int)$val;
+        $this->ResolutionDate = (dateTime)$val;
 	}
 
 	/**
@@ -34712,7 +34712,7 @@ class MyMessagesAlertType
 	 */
 	public function setLastReadDate($val)
 	{
-        $this->LastReadDate = (int)$val;
+        $this->LastReadDate = (dateTime)$val;
 	}
 
 	/**
@@ -34721,7 +34721,7 @@ class MyMessagesAlertType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -34730,7 +34730,7 @@ class MyMessagesAlertType
 	 */
 	public function setIsTimedResolution($val)
 	{
-        $this->IsTimedResolution = (int)$val;
+        $this->IsTimedResolution = (boolean)$val;
 	}
 
 	/**
@@ -34742,7 +34742,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ActionURL');
         }
-        $this->ActionURL = (int)$val;
+        $this->ActionURL = (string)$val;
 	}
 
 	/**
@@ -34751,7 +34751,7 @@ class MyMessagesAlertType
 	 */
 	public function setResponseDetails($val)
 	{
-        $this->ResponseDetails = (int)$val;
+        $this->ResponseDetails = (MyMessagesResponseDetailsType)$val;
 	}
 
 	/**
@@ -34760,7 +34760,7 @@ class MyMessagesAlertType
 	 */
 	public function setForwardDetails($val)
 	{
-        $this->ForwardDetails = (int)$val;
+        $this->ForwardDetails = (MyMessagesForwardDetailsType)$val;
 	}
 
 	/**
@@ -34769,7 +34769,7 @@ class MyMessagesAlertType
 	 */
 	public function setFolder($val)
 	{
-        $this->Folder = (int)$val;
+        $this->Folder = (MyMessagesFolderType)$val;
 	}
 
 	/**
@@ -34778,7 +34778,7 @@ class MyMessagesAlertType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34833,7 +34833,7 @@ class MyMessagesFolderSummaryType
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = (int)$val;
+        $this->FolderID = (long)$val;
 	}
 
 	/**
@@ -34845,7 +34845,7 @@ class MyMessagesFolderSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->FolderName = (int)$val;
+        $this->FolderName = (string)$val;
 	}
 
 	/**
@@ -34902,7 +34902,7 @@ class MyMessagesFolderSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34933,7 +34933,7 @@ class MyMessagesFolderType
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = (int)$val;
+        $this->FolderID = (long)$val;
 	}
 
 	/**
@@ -34945,7 +34945,7 @@ class MyMessagesFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->FolderName = (int)$val;
+        $this->FolderName = (string)$val;
 	}
 
 	/**
@@ -34954,7 +34954,7 @@ class MyMessagesFolderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -34985,7 +34985,7 @@ class MyMessagesForwardDetailsType
 	 */
 	public function setUserForwardDate($val)
 	{
-        $this->UserForwardDate = (int)$val;
+        $this->UserForwardDate = (dateTime)$val;
 	}
 
 	/**
@@ -34997,7 +34997,7 @@ class MyMessagesForwardDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ForwardMessageEncoding');
         }
-        $this->ForwardMessageEncoding = (int)$val;
+        $this->ForwardMessageEncoding = (string)$val;
 	}
 
 	/**
@@ -35006,7 +35006,7 @@ class MyMessagesForwardDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35029,7 +35029,7 @@ class MyMessagesMessageArrayType
 	 */
 	public function setMessage($val)
 	{
-        $this->Message = (int)$val;
+        $this->Message = (MyMessagesMessageType)$val;
 	}
 }
 
@@ -35054,7 +35054,7 @@ class MyMessagesMessageIdArrayType
 	 */
 	public function setMessageID($val)
 	{
-        $this->MessageID = (int)$val;
+        $this->MessageID = (MyMessagesMessageIDType)$val;
 	}
 }
 
@@ -35163,7 +35163,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Sender');
         }
-        $this->Sender = (int)$val;
+        $this->Sender = (string)$val;
 	}
 
 	/**
@@ -35175,7 +35175,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->RecipientUserID = (int)$val;
+        $this->RecipientUserID = (string)$val;
 	}
 
 	/**
@@ -35187,7 +35187,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SendToName');
         }
-        $this->SendToName = (int)$val;
+        $this->SendToName = (string)$val;
 	}
 
 	/**
@@ -35199,7 +35199,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = (int)$val;
+        $this->Subject = (string)$val;
 	}
 
 	/**
@@ -35208,7 +35208,7 @@ class MyMessagesMessageType
 	 */
 	public function setMessageID($val)
 	{
-        $this->MessageID = (int)$val;
+        $this->MessageID = (MyMessagesMessageIDType)$val;
 	}
 
 	/**
@@ -35220,7 +35220,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalMessageID');
         }
-        $this->ExternalMessageID = (int)$val;
+        $this->ExternalMessageID = (string)$val;
 	}
 
 	/**
@@ -35232,7 +35232,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContentType');
         }
-        $this->ContentType = (int)$val;
+        $this->ContentType = (string)$val;
 	}
 
 	/**
@@ -35244,7 +35244,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = (int)$val;
+        $this->Text = (string)$val;
 	}
 
 	/**
@@ -35253,7 +35253,7 @@ class MyMessagesMessageType
 	 */
 	public function setFlagged($val)
 	{
-        $this->Flagged = (int)$val;
+        $this->Flagged = (boolean)$val;
 	}
 
 	/**
@@ -35262,7 +35262,7 @@ class MyMessagesMessageType
 	 */
 	public function setRead($val)
 	{
-        $this->Read = (int)$val;
+        $this->Read = (boolean)$val;
 	}
 
 	/**
@@ -35271,7 +35271,7 @@ class MyMessagesMessageType
 	 */
 	public function setCreationDate($val)
 	{
-        $this->CreationDate = (int)$val;
+        $this->CreationDate = (dateTime)$val;
 	}
 
 	/**
@@ -35280,7 +35280,7 @@ class MyMessagesMessageType
 	 */
 	public function setReceiveDate($val)
 	{
-        $this->ReceiveDate = (int)$val;
+        $this->ReceiveDate = (dateTime)$val;
 	}
 
 	/**
@@ -35289,7 +35289,7 @@ class MyMessagesMessageType
 	 */
 	public function setExpirationDate($val)
 	{
-        $this->ExpirationDate = (int)$val;
+        $this->ExpirationDate = (dateTime)$val;
 	}
 
 	/**
@@ -35298,7 +35298,7 @@ class MyMessagesMessageType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -35307,7 +35307,7 @@ class MyMessagesMessageType
 	 */
 	public function setResponseDetails($val)
 	{
-        $this->ResponseDetails = (int)$val;
+        $this->ResponseDetails = (MyMessagesResponseDetailsType)$val;
 	}
 
 	/**
@@ -35316,7 +35316,7 @@ class MyMessagesMessageType
 	 */
 	public function setForwardDetails($val)
 	{
-        $this->ForwardDetails = (int)$val;
+        $this->ForwardDetails = (MyMessagesForwardDetailsType)$val;
 	}
 
 	/**
@@ -35325,7 +35325,7 @@ class MyMessagesMessageType
 	 */
 	public function setFolder($val)
 	{
-        $this->Folder = (int)$val;
+        $this->Folder = (MyMessagesFolderType)$val;
 	}
 
 	/**
@@ -35334,7 +35334,7 @@ class MyMessagesMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35372,7 +35372,7 @@ class MyMessagesResponseDetailsType
 	 */
 	public function setResponseEnabled($val)
 	{
-        $this->ResponseEnabled = (int)$val;
+        $this->ResponseEnabled = (boolean)$val;
 	}
 
 	/**
@@ -35381,7 +35381,7 @@ class MyMessagesResponseDetailsType
 	 */
 	public function setResponseURL($val)
 	{
-        $this->ResponseURL = (int)$val;
+        $this->ResponseURL = (anyURI)$val;
 	}
 
 	/**
@@ -35390,7 +35390,7 @@ class MyMessagesResponseDetailsType
 	 */
 	public function setUserResponseDate($val)
 	{
-        $this->UserResponseDate = (int)$val;
+        $this->UserResponseDate = (dateTime)$val;
 	}
 
 	/**
@@ -35399,7 +35399,7 @@ class MyMessagesResponseDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35447,7 +35447,7 @@ class MyMessagesSummaryType
 	 */
 	public function setFolderSummary($val)
 	{
-        $this->FolderSummary = (int)$val;
+        $this->FolderSummary = (MyMessagesFolderSummaryType)$val;
 	}
 
 	/**
@@ -35562,7 +35562,7 @@ class MyeBayFavoriteSearchListType
 	 */
 	public function setFavoriteSearch($val)
 	{
-        $this->FavoriteSearch = (int)$val;
+        $this->FavoriteSearch = (MyeBayFavoriteSearchType)$val;
 	}
 
 	/**
@@ -35571,7 +35571,7 @@ class MyeBayFavoriteSearchListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35605,7 +35605,7 @@ class MyeBayFavoriteSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchName');
         }
-        $this->SearchName = (int)$val;
+        $this->SearchName = (string)$val;
 	}
 
 	/**
@@ -35617,7 +35617,7 @@ class MyeBayFavoriteSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchQuery');
         }
-        $this->SearchQuery = (int)$val;
+        $this->SearchQuery = (string)$val;
 	}
 
 	/**
@@ -35626,7 +35626,7 @@ class MyeBayFavoriteSearchType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35669,7 +35669,7 @@ class MyeBayFavoriteSellerListType
 	 */
 	public function setFavoriteSeller($val)
 	{
-        $this->FavoriteSeller = (int)$val;
+        $this->FavoriteSeller = (MyeBayFavoriteSellerType)$val;
 	}
 
 	/**
@@ -35678,7 +35678,7 @@ class MyeBayFavoriteSellerListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35722,7 +35722,7 @@ class MyeBayFavoriteSellerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->UserID = (int)$val;
+        $this->UserID = (string)$val;
 	}
 
 	/**
@@ -35734,7 +35734,7 @@ class MyeBayFavoriteSellerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
 	}
 
 	/**
@@ -35743,7 +35743,7 @@ class MyeBayFavoriteSellerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35786,7 +35786,7 @@ class MyeBaySecondChanceOfferListType
 	 */
 	public function setSecondChanceOffer($val)
 	{
-        $this->SecondChanceOffer = (int)$val;
+        $this->SecondChanceOffer = (ItemType)$val;
 	}
 
 	/**
@@ -35795,7 +35795,7 @@ class MyeBaySecondChanceOfferListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35833,7 +35833,7 @@ class MyeBaySelectionType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = (int)$val;
+        $this->Include = (boolean)$val;
 	}
 
 	/**
@@ -35842,7 +35842,7 @@ class MyeBaySelectionType
 	 */
 	public function setSort($val)
 	{
-        $this->Sort = (int)$val;
+        $this->Sort = (SortOrderCodeType)$val;
 	}
 
 	/**
@@ -35863,7 +35863,7 @@ class MyeBaySelectionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35890,7 +35890,7 @@ class NameValueListArrayType
 	 */
 	public function setNameValueList($val)
 	{
-        $this->NameValueList = (int)$val;
+        $this->NameValueList = (NameValueListType)$val;
 	}
 }
 
@@ -35924,7 +35924,7 @@ class NameValueListType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -35936,7 +35936,7 @@ class NameValueListType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (int)$val;
+        $this->Value = (string)$val;
 	}
 
 	/**
@@ -35945,7 +35945,7 @@ class NameValueListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -35969,7 +35969,7 @@ class NotificationDetailsArrayType
 	 */
 	public function setNotificationDetails($val)
 	{
-        $this->NotificationDetails = (int)$val;
+        $this->NotificationDetails = (NotificationDetailsType)$val;
 	}
 }
 
@@ -36035,7 +36035,7 @@ class NotificationDetailsType
 	 */
 	public function setDeliveryURL($val)
 	{
-        $this->DeliveryURL = (int)$val;
+        $this->DeliveryURL = (anyURI)$val;
 	}
 
 	/**
@@ -36047,7 +36047,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReferenceID');
         }
-        $this->ReferenceID = (int)$val;
+        $this->ReferenceID = (string)$val;
 	}
 
 	/**
@@ -36056,7 +36056,7 @@ class NotificationDetailsType
 	 */
 	public function setExpirationTime($val)
 	{
-        $this->ExpirationTime = (int)$val;
+        $this->ExpirationTime = (dateTime)$val;
 	}
 
 	/**
@@ -36065,7 +36065,7 @@ class NotificationDetailsType
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = (NotificationEventTypeCodeType)$val;
 	}
 
 	/**
@@ -36086,7 +36086,7 @@ class NotificationDetailsType
 	 */
 	public function setDeliveryStatus($val)
 	{
-        $this->DeliveryStatus = (int)$val;
+        $this->DeliveryStatus = (NotificationEventStateCodeType)$val;
 	}
 
 	/**
@@ -36095,7 +36095,7 @@ class NotificationDetailsType
 	 */
 	public function setNextRetryTime($val)
 	{
-        $this->NextRetryTime = (int)$val;
+        $this->NextRetryTime = (dateTime)$val;
 	}
 
 	/**
@@ -36104,7 +36104,7 @@ class NotificationDetailsType
 	 */
 	public function setDeliveryTime($val)
 	{
-        $this->DeliveryTime = (int)$val;
+        $this->DeliveryTime = (dateTime)$val;
 	}
 
 	/**
@@ -36116,7 +36116,7 @@ class NotificationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorMessage');
         }
-        $this->ErrorMessage = (int)$val;
+        $this->ErrorMessage = (string)$val;
 	}
 
 	/**
@@ -36125,7 +36125,7 @@ class NotificationDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -36150,7 +36150,7 @@ class NotificationEnableArrayType
 	 */
 	public function setNotificationEnable($val)
 	{
-        $this->NotificationEnable = (int)$val;
+        $this->NotificationEnable = (NotificationEnableType)$val;
 	}
 }
 
@@ -36180,7 +36180,7 @@ class NotificationEnableType
 	 */
 	public function setEventType($val)
 	{
-        $this->EventType = (int)$val;
+        $this->EventType = (NotificationEventTypeCodeType)$val;
 	}
 
 	/**
@@ -36189,7 +36189,7 @@ class NotificationEnableType
 	 */
 	public function setEventEnable($val)
 	{
-        $this->EventEnable = (int)$val;
+        $this->EventEnable = (EnableCodeType)$val;
 	}
 
 	/**
@@ -36198,7 +36198,7 @@ class NotificationEnableType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -36238,7 +36238,7 @@ class NotificationEventPropertyType
 	 */
 	public function setEventType($val)
 	{
-        $this->EventType = (int)$val;
+        $this->EventType = (NotificationEventTypeCodeType)$val;
 	}
 
 	/**
@@ -36247,7 +36247,7 @@ class NotificationEventPropertyType
 	 */
 	public function setName($val)
 	{
-        $this->Name = (int)$val;
+        $this->Name = (NotificationEventPropertyNameCodeType)$val;
 	}
 
 	/**
@@ -36259,7 +36259,7 @@ class NotificationEventPropertyType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = (int)$val;
+        $this->Value = (string)$val;
 	}
 
 	/**
@@ -36268,7 +36268,7 @@ class NotificationEventPropertyType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -36449,7 +36449,7 @@ class NotificationStatisticsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -36482,7 +36482,7 @@ class NotificationUserDataType
 	 */
 	public function setSMSSubscription($val)
 	{
-        $this->SMSSubscription = (int)$val;
+        $this->SMSSubscription = (SMSSubscriptionType)$val;
 	}
 
 	/**
@@ -36491,7 +36491,7 @@ class NotificationUserDataType
 	 */
 	public function setSummarySchedule($val)
 	{
-        $this->SummarySchedule = (int)$val;
+        $this->SummarySchedule = (SummaryEventScheduleType)$val;
 	}
 
 	/**
@@ -36500,7 +36500,7 @@ class NotificationUserDataType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -36526,7 +36526,7 @@ class OfferArrayType
 	 */
 	public function setOffer($val)
 	{
-        $this->Offer = (int)$val;
+        $this->Offer = (OfferType)$val;
 	}
 }
 
@@ -36626,7 +36626,7 @@ class OfferType
 	 */
 	public function setAction($val)
 	{
-        $this->Action = (int)$val;
+        $this->Action = (BidActionCodeType)$val;
 	}
 
 	/**
@@ -36635,7 +36635,7 @@ class OfferType
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -36644,7 +36644,7 @@ class OfferType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -36653,7 +36653,7 @@ class OfferType
 	 */
 	public function setMaxBid($val)
 	{
-        $this->MaxBid = (int)$val;
+        $this->MaxBid = (AmountType)$val;
 	}
 
 	/**
@@ -36674,7 +36674,7 @@ class OfferType
 	 */
 	public function setSecondChanceEnabled($val)
 	{
-        $this->SecondChanceEnabled = (int)$val;
+        $this->SecondChanceEnabled = (boolean)$val;
 	}
 
 	/**
@@ -36683,7 +36683,7 @@ class OfferType
 	 */
 	public function setSiteCurrency($val)
 	{
-        $this->SiteCurrency = (int)$val;
+        $this->SiteCurrency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -36692,7 +36692,7 @@ class OfferType
 	 */
 	public function setTimeBid($val)
 	{
-        $this->TimeBid = (int)$val;
+        $this->TimeBid = (dateTime)$val;
 	}
 
 	/**
@@ -36701,7 +36701,7 @@ class OfferType
 	 */
 	public function setHighestBid($val)
 	{
-        $this->HighestBid = (int)$val;
+        $this->HighestBid = (AmountType)$val;
 	}
 
 	/**
@@ -36710,7 +36710,7 @@ class OfferType
 	 */
 	public function setConvertedPrice($val)
 	{
-        $this->ConvertedPrice = (int)$val;
+        $this->ConvertedPrice = (AmountType)$val;
 	}
 
 	/**
@@ -36722,7 +36722,7 @@ class OfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -36731,7 +36731,7 @@ class OfferType
 	 */
 	public function setUser($val)
 	{
-        $this->User = (int)$val;
+        $this->User = (UserType)$val;
 	}
 
 	/**
@@ -36740,7 +36740,7 @@ class OfferType
 	 */
 	public function setUserConsent($val)
 	{
-        $this->UserConsent = (int)$val;
+        $this->UserConsent = (boolean)$val;
 	}
 
 	/**
@@ -36761,7 +36761,7 @@ class OfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -36791,7 +36791,7 @@ class OrderArrayType
 	 */
 	public function setOrder($val)
 	{
-        $this->Order = (int)$val;
+        $this->Order = (OrderType)$val;
 	}
 }
 
@@ -36815,7 +36815,7 @@ class OrderIdArrayType
 	 */
 	public function setOrderID($val)
 	{
-        $this->OrderID = (int)$val;
+        $this->OrderID = (OrderIDType)$val;
 	}
 }
 
@@ -36851,7 +36851,7 @@ class OrderTransactionArrayType
 	 */
 	public function setOrderTransaction($val)
 	{
-        $this->OrderTransaction = (int)$val;
+        $this->OrderTransaction = (OrderTransactionType)$val;
 	}
 }
 
@@ -36884,7 +36884,7 @@ class OrderTransactionType
 	 */
 	public function setOrder($val)
 	{
-        $this->Order = (int)$val;
+        $this->Order = (OrderType)$val;
 	}
 
 	/**
@@ -36893,7 +36893,7 @@ class OrderTransactionType
 	 */
 	public function setTransaction($val)
 	{
-        $this->Transaction = (int)$val;
+        $this->Transaction = (TransactionType)$val;
 	}
 
 	/**
@@ -36902,7 +36902,7 @@ class OrderTransactionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37031,7 +37031,7 @@ class OrderType
 	 */
 	public function setOrderID($val)
 	{
-        $this->OrderID = (int)$val;
+        $this->OrderID = (OrderIDType)$val;
 	}
 
 	/**
@@ -37040,7 +37040,7 @@ class OrderType
 	 */
 	public function setOrderStatus($val)
 	{
-        $this->OrderStatus = (int)$val;
+        $this->OrderStatus = (OrderStatusCodeType)$val;
 	}
 
 	/**
@@ -37049,7 +37049,7 @@ class OrderType
 	 */
 	public function setAdjustmentAmount($val)
 	{
-        $this->AdjustmentAmount = (int)$val;
+        $this->AdjustmentAmount = (AmountType)$val;
 	}
 
 	/**
@@ -37058,7 +37058,7 @@ class OrderType
 	 */
 	public function setAmountPaid($val)
 	{
-        $this->AmountPaid = (int)$val;
+        $this->AmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -37067,7 +37067,7 @@ class OrderType
 	 */
 	public function setAmountSaved($val)
 	{
-        $this->AmountSaved = (int)$val;
+        $this->AmountSaved = (AmountType)$val;
 	}
 
 	/**
@@ -37076,7 +37076,7 @@ class OrderType
 	 */
 	public function setCheckoutStatus($val)
 	{
-        $this->CheckoutStatus = (int)$val;
+        $this->CheckoutStatus = (CheckoutStatusType)$val;
 	}
 
 	/**
@@ -37085,7 +37085,7 @@ class OrderType
 	 */
 	public function setShippingDetails($val)
 	{
-        $this->ShippingDetails = (int)$val;
+        $this->ShippingDetails = (ShippingDetailsType)$val;
 	}
 
 	/**
@@ -37094,7 +37094,7 @@ class OrderType
 	 */
 	public function setCreatingUserRole($val)
 	{
-        $this->CreatingUserRole = (int)$val;
+        $this->CreatingUserRole = (TradingRoleCodeType)$val;
 	}
 
 	/**
@@ -37103,7 +37103,7 @@ class OrderType
 	 */
 	public function setCreatedTime($val)
 	{
-        $this->CreatedTime = (int)$val;
+        $this->CreatedTime = (dateTime)$val;
 	}
 
 	/**
@@ -37115,7 +37115,7 @@ class OrderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
 	}
 
 	/**
@@ -37124,7 +37124,7 @@ class OrderType
 	 */
 	public function setPaymentMethods($val)
 	{
-        $this->PaymentMethods = (int)$val;
+        $this->PaymentMethods = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -37136,7 +37136,7 @@ class OrderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerEmail');
         }
-        $this->SellerEmail = (int)$val;
+        $this->SellerEmail = (string)$val;
 	}
 
 	/**
@@ -37145,7 +37145,7 @@ class OrderType
 	 */
 	public function setShippingAddress($val)
 	{
-        $this->ShippingAddress = (int)$val;
+        $this->ShippingAddress = (AddressType)$val;
 	}
 
 	/**
@@ -37154,7 +37154,7 @@ class OrderType
 	 */
 	public function setShippingServiceSelected($val)
 	{
-        $this->ShippingServiceSelected = (int)$val;
+        $this->ShippingServiceSelected = (ShippingServiceOptionsType)$val;
 	}
 
 	/**
@@ -37163,7 +37163,7 @@ class OrderType
 	 */
 	public function setSubtotal($val)
 	{
-        $this->Subtotal = (int)$val;
+        $this->Subtotal = (AmountType)$val;
 	}
 
 	/**
@@ -37172,7 +37172,7 @@ class OrderType
 	 */
 	public function setTotal($val)
 	{
-        $this->Total = (int)$val;
+        $this->Total = (AmountType)$val;
 	}
 
 	/**
@@ -37181,7 +37181,7 @@ class OrderType
 	 */
 	public function setExternalTransaction($val)
 	{
-        $this->ExternalTransaction = (int)$val;
+        $this->ExternalTransaction = (ExternalTransactionType)$val;
 	}
 
 	/**
@@ -37190,7 +37190,7 @@ class OrderType
 	 */
 	public function setDigitalDelivery($val)
 	{
-        $this->DigitalDelivery = (int)$val;
+        $this->DigitalDelivery = (boolean)$val;
 	}
 
 	/**
@@ -37199,7 +37199,7 @@ class OrderType
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (int)$val;
+        $this->TransactionArray = (TransactionArrayType)$val;
 	}
 
 	/**
@@ -37208,7 +37208,7 @@ class OrderType
 	 */
 	public function setBuyerUserID($val)
 	{
-        $this->BuyerUserID = (int)$val;
+        $this->BuyerUserID = (UserIDType)$val;
 	}
 
 	/**
@@ -37217,7 +37217,7 @@ class OrderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37245,7 +37245,7 @@ class PaginatedItemArrayType
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -37254,7 +37254,7 @@ class PaginatedItemArrayType
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }
 
@@ -37282,7 +37282,7 @@ class PaginatedOrderTransactionArrayType
 	 */
 	public function setOrderTransactionArray($val)
 	{
-        $this->OrderTransactionArray = (int)$val;
+        $this->OrderTransactionArray = (OrderTransactionArrayType)$val;
 	}
 
 	/**
@@ -37291,7 +37291,7 @@ class PaginatedOrderTransactionArrayType
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }
 
@@ -37320,7 +37320,7 @@ class PaginatedTransactionArrayType
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (int)$val;
+        $this->TransactionArray = (TransactionArrayType)$val;
 	}
 
 	/**
@@ -37329,7 +37329,7 @@ class PaginatedTransactionArrayType
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 }
 
@@ -37390,7 +37390,7 @@ class PaginationResultType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37506,7 +37506,7 @@ class PaymentDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37545,7 +37545,7 @@ class PaymentOptionDetailsType
 	 */
 	public function setPaymentOption($val)
 	{
-        $this->PaymentOption = (int)$val;
+        $this->PaymentOption = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -37557,7 +37557,7 @@ class PaymentOptionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -37566,7 +37566,7 @@ class PaymentOptionDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37688,7 +37688,7 @@ class PictureDetailsType
 	 */
 	public function setGalleryType($val)
 	{
-        $this->GalleryType = (int)$val;
+        $this->GalleryType = (GalleryTypeCodeType)$val;
 	}
 
 	/**
@@ -37697,7 +37697,7 @@ class PictureDetailsType
 	 */
 	public function setGalleryURL($val)
 	{
-        $this->GalleryURL = (int)$val;
+        $this->GalleryURL = (anyURI)$val;
 	}
 
 	/**
@@ -37706,7 +37706,7 @@ class PictureDetailsType
 	 */
 	public function setPhotoDisplay($val)
 	{
-        $this->PhotoDisplay = (int)$val;
+        $this->PhotoDisplay = (PhotoDisplayCodeType)$val;
 	}
 
 	/**
@@ -37715,7 +37715,7 @@ class PictureDetailsType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (anyURI)$val;
 	}
 
 	/**
@@ -37724,7 +37724,7 @@ class PictureDetailsType
 	 */
 	public function setPictureSource($val)
 	{
-        $this->PictureSource = (int)$val;
+        $this->PictureSource = (PictureSourceCodeType)$val;
 	}
 
 	/**
@@ -37733,7 +37733,7 @@ class PictureDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37801,7 +37801,7 @@ class PictureManagerDetailsType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (int)$val;
+        $this->SubscriptionLevel = (PictureManagerSubscriptionLevelCodeType)$val;
 	}
 
 	/**
@@ -37834,7 +37834,7 @@ class PictureManagerDetailsType
 	 */
 	public function setKeepOriginal($val)
 	{
-        $this->KeepOriginal = (int)$val;
+        $this->KeepOriginal = (boolean)$val;
 	}
 
 	/**
@@ -37843,7 +37843,7 @@ class PictureManagerDetailsType
 	 */
 	public function setWatermarkEPS($val)
 	{
-        $this->WatermarkEPS = (int)$val;
+        $this->WatermarkEPS = (boolean)$val;
 	}
 
 	/**
@@ -37852,7 +37852,7 @@ class PictureManagerDetailsType
 	 */
 	public function setWatermarkUserID($val)
 	{
-        $this->WatermarkUserID = (int)$val;
+        $this->WatermarkUserID = (boolean)$val;
 	}
 
 	/**
@@ -37861,7 +37861,7 @@ class PictureManagerDetailsType
 	 */
 	public function setFolder($val)
 	{
-        $this->Folder = (int)$val;
+        $this->Folder = (PictureManagerFolderType)$val;
 	}
 
 	/**
@@ -37870,7 +37870,7 @@ class PictureManagerDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37921,7 +37921,7 @@ class PictureManagerFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -37930,7 +37930,7 @@ class PictureManagerFolderType
 	 */
 	public function setPicture($val)
 	{
-        $this->Picture = (int)$val;
+        $this->Picture = (PictureManagerPictureType)$val;
 	}
 
 	/**
@@ -37939,7 +37939,7 @@ class PictureManagerFolderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -37987,7 +37987,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setDisplayType($val)
 	{
-        $this->DisplayType = (int)$val;
+        $this->DisplayType = (PictureManagerPictureDisplayTypeCodeType)$val;
 	}
 
 	/**
@@ -37996,7 +37996,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -38041,7 +38041,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38104,7 +38104,7 @@ class PictureManagerPictureType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (anyURI)$val;
 	}
 
 	/**
@@ -38116,7 +38116,7 @@ class PictureManagerPictureType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -38125,7 +38125,7 @@ class PictureManagerPictureType
 	 */
 	public function setDate($val)
 	{
-        $this->Date = (int)$val;
+        $this->Date = (dateTime)$val;
 	}
 
 	/**
@@ -38134,7 +38134,7 @@ class PictureManagerPictureType
 	 */
 	public function setDisplayFormat($val)
 	{
-        $this->DisplayFormat = (int)$val;
+        $this->DisplayFormat = (PictureManagerPictureDisplayType)$val;
 	}
 
 	/**
@@ -38143,7 +38143,7 @@ class PictureManagerPictureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38188,7 +38188,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (int)$val;
+        $this->SubscriptionLevel = (PictureManagerSubscriptionLevelCodeType)$val;
 	}
 
 	/**
@@ -38197,7 +38197,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (int)$val;
+        $this->Fee = (AmountType)$val;
 	}
 
 	/**
@@ -38218,7 +38218,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38260,7 +38260,7 @@ class PriceRangeFilterType
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->MaxPrice = (int)$val;
+        $this->MaxPrice = (AmountType)$val;
 	}
 
 	/**
@@ -38269,7 +38269,7 @@ class PriceRangeFilterType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->MinPrice = (int)$val;
+        $this->MinPrice = (AmountType)$val;
 	}
 
 	/**
@@ -38278,7 +38278,7 @@ class PriceRangeFilterType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38301,7 +38301,7 @@ class PricingRecommendationsType
 	 */
 	public function setProductInfo($val)
 	{
-        $this->ProductInfo = (int)$val;
+        $this->ProductInfo = (ProductInfoType)$val;
 	}
 }
 
@@ -38326,7 +38326,7 @@ class ProPackEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38351,7 +38351,7 @@ class ProPackPlusEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38383,7 +38383,7 @@ class ProStoresCheckoutPreferenceType
 	 */
 	public function setCheckoutRedirectProStores($val)
 	{
-        $this->CheckoutRedirectProStores = (int)$val;
+        $this->CheckoutRedirectProStores = (boolean)$val;
 	}
 
 	/**
@@ -38392,7 +38392,7 @@ class ProStoresCheckoutPreferenceType
 	 */
 	public function setProStoresDetails($val)
 	{
-        $this->ProStoresDetails = (int)$val;
+        $this->ProStoresDetails = (ProStoresDetailsType)$val;
 	}
 
 	/**
@@ -38401,7 +38401,7 @@ class ProStoresCheckoutPreferenceType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38440,7 +38440,7 @@ class ProStoresDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
-        $this->SellerThirdPartyUsername = (int)$val;
+        $this->SellerThirdPartyUsername = (string)$val;
 	}
 
 	/**
@@ -38452,7 +38452,7 @@ class ProStoresDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
 	}
 
 	/**
@@ -38461,7 +38461,7 @@ class ProStoresDetailsType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (EnableCodeType)$val;
 	}
 
 	/**
@@ -38470,7 +38470,7 @@ class ProStoresDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38496,7 +38496,7 @@ class ProductArrayType
 	 */
 	public function setProduct($val)
 	{
-        $this->Product = (int)$val;
+        $this->Product = (ExpressProductType)$val;
 	}
 }
 
@@ -38536,7 +38536,7 @@ class ProductFamilyType
 	 */
 	public function setParentProduct($val)
 	{
-        $this->ParentProduct = (int)$val;
+        $this->ParentProduct = (ProductType)$val;
 	}
 
 	/**
@@ -38545,7 +38545,7 @@ class ProductFamilyType
 	 */
 	public function setFamilyMembers($val)
 	{
-        $this->FamilyMembers = (int)$val;
+        $this->FamilyMembers = (ProductType)$val;
 	}
 
 	/**
@@ -38554,7 +38554,7 @@ class ProductFamilyType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -38563,7 +38563,7 @@ class ProductFamilyType
 	 */
 	public function setHasMoreChildren($val)
 	{
-        $this->hasMoreChildren = (int)$val;
+        $this->hasMoreChildren = (boolean)$val;
 	}
 }
 
@@ -38600,7 +38600,7 @@ class ProductFinderConstraintType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayName');
         }
-        $this->DisplayName = (int)$val;
+        $this->DisplayName = (string)$val;
 	}
 
 	/**
@@ -38612,7 +38612,7 @@ class ProductFinderConstraintType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayValue');
         }
-        $this->DisplayValue = (int)$val;
+        $this->DisplayValue = (string)$val;
 	}
 
 	/**
@@ -38621,7 +38621,7 @@ class ProductFinderConstraintType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38654,7 +38654,7 @@ class ProductInfoType
 	 */
 	public function setAverageStartPrice($val)
 	{
-        $this->AverageStartPrice = (int)$val;
+        $this->AverageStartPrice = (AmountType)$val;
 	}
 
 	/**
@@ -38663,7 +38663,7 @@ class ProductInfoType
 	 */
 	public function setAverageSoldPrice($val)
 	{
-        $this->AverageSoldPrice = (int)$val;
+        $this->AverageSoldPrice = (AmountType)$val;
 	}
 
 	/**
@@ -38675,7 +38675,7 @@ class ProductInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 
 	/**
@@ -38687,7 +38687,7 @@ class ProductInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for productInfoID');
         }
-        $this->productInfoID = (int)$val;
+        $this->productInfoID = (string)$val;
 	}
 }
 
@@ -38766,7 +38766,7 @@ class ProductListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->ProductID = (int)$val;
+        $this->ProductID = (string)$val;
 	}
 
 	/**
@@ -38775,7 +38775,7 @@ class ProductListingDetailsType
 	 */
 	public function setIncludeStockPhotoURL($val)
 	{
-        $this->IncludeStockPhotoURL = (int)$val;
+        $this->IncludeStockPhotoURL = (boolean)$val;
 	}
 
 	/**
@@ -38784,7 +38784,7 @@ class ProductListingDetailsType
 	 */
 	public function setIncludePrefilledItemInformation($val)
 	{
-        $this->IncludePrefilledItemInformation = (int)$val;
+        $this->IncludePrefilledItemInformation = (boolean)$val;
 	}
 
 	/**
@@ -38793,7 +38793,7 @@ class ProductListingDetailsType
 	 */
 	public function setUseStockPhotoURLAsGallery($val)
 	{
-        $this->UseStockPhotoURLAsGallery = (int)$val;
+        $this->UseStockPhotoURLAsGallery = (boolean)$val;
 	}
 
 	/**
@@ -38802,7 +38802,7 @@ class ProductListingDetailsType
 	 */
 	public function setStockPhotoURL($val)
 	{
-        $this->StockPhotoURL = (int)$val;
+        $this->StockPhotoURL = (anyURI)$val;
 	}
 
 	/**
@@ -38814,7 +38814,7 @@ class ProductListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Copyright');
         }
-        $this->Copyright = (int)$val;
+        $this->Copyright = (string)$val;
 	}
 
 	/**
@@ -38823,7 +38823,7 @@ class ProductListingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -38848,7 +38848,7 @@ class ProductRecommendationsType
 	 */
 	public function setProduct($val)
 	{
-        $this->Product = (int)$val;
+        $this->Product = (ProductInfoType)$val;
 	}
 }
 
@@ -38909,7 +38909,7 @@ class ProductSearchPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElements');
         }
-        $this->DataElements = (int)$val;
+        $this->DataElements = (string)$val;
 	}
 
 	/**
@@ -38918,7 +38918,7 @@ class ProductSearchPageType
 	 */
 	public function setSearchCharacteristicsSet($val)
 	{
-        $this->SearchCharacteristicsSet = (int)$val;
+        $this->SearchCharacteristicsSet = (CharacteristicsSetType)$val;
 	}
 
 	/**
@@ -38927,7 +38927,7 @@ class ProductSearchPageType
 	 */
 	public function setSearchType($val)
 	{
-        $this->SearchType = (int)$val;
+        $this->SearchType = (CharacteristicsSearchCodeType)$val;
 	}
 
 	/**
@@ -38936,7 +38936,7 @@ class ProductSearchPageType
 	 */
 	public function setSortCharacteristics($val)
 	{
-        $this->SortCharacteristics = (int)$val;
+        $this->SortCharacteristics = (CharacteristicType)$val;
 	}
 
 	/**
@@ -38945,7 +38945,7 @@ class ProductSearchPageType
 	 */
 	public function setDataElementSet($val)
 	{
-        $this->DataElementSet = (int)$val;
+        $this->DataElementSet = (DataElementSetType)$val;
 	}
 
 	/**
@@ -38954,7 +38954,7 @@ class ProductSearchPageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -39100,7 +39100,7 @@ class ProductSearchResultType
 	 */
 	public function setHasMore($val)
 	{
-        $this->HasMore = (int)$val;
+        $this->HasMore = (boolean)$val;
 	}
 
 	/**
@@ -39109,7 +39109,7 @@ class ProductSearchResultType
 	 */
 	public function setProductFamilies($val)
 	{
-        $this->ProductFamilies = (int)$val;
+        $this->ProductFamilies = (ProductFamilyType)$val;
 	}
 
 	/**
@@ -39118,7 +39118,7 @@ class ProductSearchResultType
 	 */
 	public function setProductFinderConstraints($val)
 	{
-        $this->ProductFinderConstraints = (int)$val;
+        $this->ProductFinderConstraints = (ProductFinderConstraintType)$val;
 	}
 
 	/**
@@ -39127,7 +39127,7 @@ class ProductSearchResultType
 	 */
 	public function setTooManyMatchesFound($val)
 	{
-        $this->TooManyMatchesFound = (int)$val;
+        $this->TooManyMatchesFound = (boolean)$val;
 	}
 
 	/**
@@ -39151,7 +39151,7 @@ class ProductSearchResultType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ID');
         }
-        $this->ID = (int)$val;
+        $this->ID = (string)$val;
 	}
 
 	/**
@@ -39163,7 +39163,7 @@ class ProductSearchResultType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumProducts');
         }
-        $this->NumProducts = (int)$val;
+        $this->NumProducts = (string)$val;
 	}
 
 	/**
@@ -39172,7 +39172,7 @@ class ProductSearchResultType
 	 */
 	public function setAttributeSet($val)
 	{
-        $this->AttributeSet = (int)$val;
+        $this->AttributeSet = (ResponseAttributeSetType)$val;
 	}
 
 	/**
@@ -39181,7 +39181,7 @@ class ProductSearchResultType
 	 */
 	public function setDisplayStockPhotos($val)
 	{
-        $this->DisplayStockPhotos = (int)$val;
+        $this->DisplayStockPhotos = (boolean)$val;
 	}
 
 	/**
@@ -39190,7 +39190,7 @@ class ProductSearchResultType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -39305,7 +39305,7 @@ class ProductSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductSearchID');
         }
-        $this->ProductSearchID = (int)$val;
+        $this->ProductSearchID = (string)$val;
 	}
 
 	/**
@@ -39341,7 +39341,7 @@ class ProductSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->ProductID = (int)$val;
+        $this->ProductID = (string)$val;
 	}
 
 	/**
@@ -39374,7 +39374,7 @@ class ProductSearchType
 	 */
 	public function setSearchAttributes($val)
 	{
-        $this->SearchAttributes = (int)$val;
+        $this->SearchAttributes = (SearchAttributesType)$val;
 	}
 
 	/**
@@ -39383,7 +39383,7 @@ class ProductSearchType
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -39392,7 +39392,7 @@ class ProductSearchType
 	 */
 	public function setAvailableItemsOnly($val)
 	{
-        $this->AvailableItemsOnly = (int)$val;
+        $this->AvailableItemsOnly = (boolean)$val;
 	}
 
 	/**
@@ -39404,7 +39404,7 @@ class ProductSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for QueryKeywords');
         }
-        $this->QueryKeywords = (int)$val;
+        $this->QueryKeywords = (string)$val;
 	}
 
 	/**
@@ -39413,7 +39413,7 @@ class ProductSearchType
 	 */
 	public function setCharacteristicSetIDs($val)
 	{
-        $this->CharacteristicSetIDs = (int)$val;
+        $this->CharacteristicSetIDs = (CharacteristicSetIDsType)$val;
 	}
 
 	/**
@@ -39422,7 +39422,7 @@ class ProductSearchType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -39483,7 +39483,7 @@ class ProductType
 	 */
 	public function setCharacteristicsSet($val)
 	{
-        $this->CharacteristicsSet = (int)$val;
+        $this->CharacteristicsSet = (CharacteristicsSetType)$val;
 	}
 
 	/**
@@ -39492,7 +39492,7 @@ class ProductType
 	 */
 	public function setDetailsURL($val)
 	{
-        $this->DetailsURL = (int)$val;
+        $this->DetailsURL = (anyURI)$val;
 	}
 
 	/**
@@ -39513,7 +39513,7 @@ class ProductType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->MinPrice = (int)$val;
+        $this->MinPrice = (AmountType)$val;
 	}
 
 	/**
@@ -39522,7 +39522,7 @@ class ProductType
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->MaxPrice = (int)$val;
+        $this->MaxPrice = (AmountType)$val;
 	}
 
 	/**
@@ -39531,7 +39531,7 @@ class ProductType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -39543,7 +39543,7 @@ class ProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for productID');
         }
-        $this->productID = (int)$val;
+        $this->productID = (string)$val;
 	}
 
 	/**
@@ -39552,7 +39552,7 @@ class ProductType
 	 */
 	public function setStockPhotoURL($val)
 	{
-        $this->stockPhotoURL = (int)$val;
+        $this->stockPhotoURL = (anyURI)$val;
 	}
 
 	/**
@@ -39564,7 +39564,7 @@ class ProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for title');
         }
-        $this->title = (int)$val;
+        $this->title = (string)$val;
 	}
 }
 
@@ -39671,7 +39671,7 @@ class PromotedItemType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -39683,7 +39683,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (string)$val;
 	}
 
 	/**
@@ -39695,7 +39695,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SelfHostedURL');
         }
-        $this->SelfHostedURL = (int)$val;
+        $this->SelfHostedURL = (string)$val;
 	}
 
 	/**
@@ -39716,7 +39716,7 @@ class PromotedItemType
 	 */
 	public function setPromotionPrice($val)
 	{
-        $this->PromotionPrice = (int)$val;
+        $this->PromotionPrice = (AmountType)$val;
 	}
 
 	/**
@@ -39725,7 +39725,7 @@ class PromotedItemType
 	 */
 	public function setPromotionPriceType($val)
 	{
-        $this->PromotionPriceType = (int)$val;
+        $this->PromotionPriceType = (PromotionItemPriceTypeCodeType)$val;
 	}
 
 	/**
@@ -39734,7 +39734,7 @@ class PromotedItemType
 	 */
 	public function setSelectionType($val)
 	{
-        $this->SelectionType = (int)$val;
+        $this->SelectionType = (PromotionItemSelectionCodeType)$val;
 	}
 
 	/**
@@ -39746,7 +39746,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 
 	/**
@@ -39755,7 +39755,7 @@ class PromotedItemType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 
 	/**
@@ -39764,7 +39764,7 @@ class PromotedItemType
 	 */
 	public function setPromotionDetails($val)
 	{
-        $this->PromotionDetails = (int)$val;
+        $this->PromotionDetails = (PromotionDetailsType)$val;
 	}
 
 	/**
@@ -39773,7 +39773,7 @@ class PromotedItemType
 	 */
 	public function setTimeLeft($val)
 	{
-        $this->TimeLeft = (int)$val;
+        $this->TimeLeft = (duration)$val;
 	}
 
 	/**
@@ -39782,7 +39782,7 @@ class PromotedItemType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -39826,7 +39826,7 @@ class PromotionDetailsType
 	 */
 	public function setPromotionPrice($val)
 	{
-        $this->PromotionPrice = (int)$val;
+        $this->PromotionPrice = (AmountType)$val;
 	}
 
 	/**
@@ -39835,7 +39835,7 @@ class PromotionDetailsType
 	 */
 	public function setPromotionPriceType($val)
 	{
-        $this->PromotionPriceType = (int)$val;
+        $this->PromotionPriceType = (PromotionItemPriceTypeCodeType)$val;
 	}
 
 	/**
@@ -39856,7 +39856,7 @@ class PromotionDetailsType
 	 */
 	public function setConvertedPromotionPrice($val)
 	{
-        $this->ConvertedPromotionPrice = (int)$val;
+        $this->ConvertedPromotionPrice = (AmountType)$val;
 	}
 
 	/**
@@ -39865,7 +39865,7 @@ class PromotionDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -39911,7 +39911,7 @@ class PromotionRuleArrayType
 	 */
 	public function setPromotionRule($val)
 	{
-        $this->PromotionRule = (int)$val;
+        $this->PromotionRule = (PromotionRuleType)$val;
 	}
 }
 
@@ -39987,7 +39987,7 @@ class PromotionRuleType
 	 */
 	public function setPromotedItem($val)
 	{
-        $this->PromotedItem = (int)$val;
+        $this->PromotedItem = (PromotedItemType)$val;
 	}
 
 	/**
@@ -39996,7 +39996,7 @@ class PromotionRuleType
 	 */
 	public function setSiteID($val)
 	{
-        $this->SiteID = (int)$val;
+        $this->SiteID = (SiteCodeType)$val;
 	}
 
 	/**
@@ -40020,7 +40020,7 @@ class PromotionRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PromotedeBayCategoryID');
         }
-        $this->PromotedeBayCategoryID = (int)$val;
+        $this->PromotedeBayCategoryID = (string)$val;
 	}
 
 	/**
@@ -40032,7 +40032,7 @@ class PromotionRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PromotedKeywords');
         }
-        $this->PromotedKeywords = (int)$val;
+        $this->PromotedKeywords = (string)$val;
 	}
 
 	/**
@@ -40041,7 +40041,7 @@ class PromotionRuleType
 	 */
 	public function setReferringItemID($val)
 	{
-        $this->ReferringItemID = (int)$val;
+        $this->ReferringItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -40065,7 +40065,7 @@ class PromotionRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReferringeBayCategoryID');
         }
-        $this->ReferringeBayCategoryID = (int)$val;
+        $this->ReferringeBayCategoryID = (string)$val;
 	}
 
 	/**
@@ -40077,7 +40077,7 @@ class PromotionRuleType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReferringKeywords');
         }
-        $this->ReferringKeywords = (int)$val;
+        $this->ReferringKeywords = (string)$val;
 	}
 
 	/**
@@ -40086,7 +40086,7 @@ class PromotionRuleType
 	 */
 	public function setPromotionScheme($val)
 	{
-        $this->PromotionScheme = (int)$val;
+        $this->PromotionScheme = (PromotionSchemeCodeType)$val;
 	}
 
 	/**
@@ -40095,7 +40095,7 @@ class PromotionRuleType
 	 */
 	public function setPromotionMethod($val)
 	{
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
 	}
 
 	/**
@@ -40104,7 +40104,7 @@ class PromotionRuleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -40148,7 +40148,7 @@ class ProximitySearchDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -40157,7 +40157,7 @@ class ProximitySearchDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -40203,7 +40203,7 @@ class ProximitySearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -40212,7 +40212,7 @@ class ProximitySearchType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -40284,7 +40284,7 @@ class ReasonCodeDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BriefText');
         }
-        $this->BriefText = (int)$val;
+        $this->BriefText = (string)$val;
 	}
 
 	/**
@@ -40296,7 +40296,7 @@ class ReasonCodeDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DetailedText');
         }
-        $this->DetailedText = (int)$val;
+        $this->DetailedText = (string)$val;
 	}
 
 	/**
@@ -40305,7 +40305,7 @@ class ReasonCodeDetailType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 
 	/**
@@ -40314,7 +40314,7 @@ class ReasonCodeDetailType
 	 */
 	public function setCodeID($val)
 	{
-        $this->codeID = (int)$val;
+        $this->codeID = (long)$val;
 	}
 }
 
@@ -40355,7 +40355,7 @@ class RefundArrayType
 	 */
 	public function setRefund($val)
 	{
-        $this->Refund = (int)$val;
+        $this->Refund = (RefundType)$val;
 	}
 }
 
@@ -40404,7 +40404,7 @@ class RefundType
 	 */
 	public function setRefundFromSeller($val)
 	{
-        $this->RefundFromSeller = (int)$val;
+        $this->RefundFromSeller = (AmountType)$val;
 	}
 
 	/**
@@ -40413,7 +40413,7 @@ class RefundType
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
-        $this->TotalRefundToBuyer = (int)$val;
+        $this->TotalRefundToBuyer = (AmountType)$val;
 	}
 
 	/**
@@ -40422,7 +40422,7 @@ class RefundType
 	 */
 	public function setRefundTime($val)
 	{
-        $this->RefundTime = (int)$val;
+        $this->RefundTime = (dateTime)$val;
 	}
 
 	/**
@@ -40431,7 +40431,7 @@ class RefundType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -40474,7 +40474,7 @@ class RegionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->RegionID = (int)$val;
+        $this->RegionID = (string)$val;
 	}
 
 	/**
@@ -40486,7 +40486,7 @@ class RegionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -40495,7 +40495,7 @@ class RegionDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -40521,7 +40521,7 @@ class RelatedSearchKeywordArrayType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keyword');
         }
-        $this->Keyword = (int)$val;
+        $this->Keyword = (string)$val;
 	}
 }
 
@@ -40562,7 +40562,7 @@ class ReminderCustomizationType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = (int)$val;
+        $this->Include = (boolean)$val;
 	}
 }
 
@@ -40749,7 +40749,7 @@ class RequestCategoriesType
 	 */
 	public function setCategoriesOnly($val)
 	{
-        $this->CategoriesOnly = (int)$val;
+        $this->CategoriesOnly = (boolean)$val;
 	}
 
 	/**
@@ -40901,7 +40901,7 @@ class ResponseAttributeSetType
 	 */
 	public function setHasMore($val)
 	{
-        $this->HasMore = (int)$val;
+        $this->HasMore = (boolean)$val;
 	}
 
 	/**
@@ -40910,7 +40910,7 @@ class ResponseAttributeSetType
 	 */
 	public function setProductFamilies($val)
 	{
-        $this->ProductFamilies = (int)$val;
+        $this->ProductFamilies = (ProductFamilyType)$val;
 	}
 
 	/**
@@ -40919,7 +40919,7 @@ class ResponseAttributeSetType
 	 */
 	public function setProductFinderConstraints($val)
 	{
-        $this->ProductFinderConstraints = (int)$val;
+        $this->ProductFinderConstraints = (ProductFinderConstraintType)$val;
 	}
 
 	/**
@@ -40928,7 +40928,7 @@ class ResponseAttributeSetType
 	 */
 	public function setTooManyMatchesFound($val)
 	{
-        $this->TooManyMatchesFound = (int)$val;
+        $this->TooManyMatchesFound = (boolean)$val;
 	}
 
 	/**
@@ -40949,7 +40949,7 @@ class ResponseAttributeSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -40999,7 +40999,7 @@ class ReviseStatusType
 	 */
 	public function setItemRevised($val)
 	{
-        $this->ItemRevised = (int)$val;
+        $this->ItemRevised = (boolean)$val;
 	}
 
 	/**
@@ -41008,7 +41008,7 @@ class ReviseStatusType
 	 */
 	public function setBuyItNowAdded($val)
 	{
-        $this->BuyItNowAdded = (int)$val;
+        $this->BuyItNowAdded = (boolean)$val;
 	}
 
 	/**
@@ -41017,7 +41017,7 @@ class ReviseStatusType
 	 */
 	public function setBuyItNowLowered($val)
 	{
-        $this->BuyItNowLowered = (int)$val;
+        $this->BuyItNowLowered = (boolean)$val;
 	}
 
 	/**
@@ -41026,7 +41026,7 @@ class ReviseStatusType
 	 */
 	public function setReserveLowered($val)
 	{
-        $this->ReserveLowered = (int)$val;
+        $this->ReserveLowered = (boolean)$val;
 	}
 
 	/**
@@ -41035,7 +41035,7 @@ class ReviseStatusType
 	 */
 	public function setReserveRemoved($val)
 	{
-        $this->ReserveRemoved = (int)$val;
+        $this->ReserveRemoved = (boolean)$val;
 	}
 
 	/**
@@ -41044,7 +41044,7 @@ class ReviseStatusType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41071,7 +41071,7 @@ class SiFfTaSrecommendationsType
 	 */
 	public function setAttributeSetArray($val)
 	{
-        $this->AttributeSetArray = (int)$val;
+        $this->AttributeSetArray = (AttributeSetArrayType)$val;
 	}
 
 	/**
@@ -41080,7 +41080,7 @@ class SiFfTaSrecommendationsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41107,7 +41107,7 @@ class SkUarrayType
 	 */
 	public function setSKU($val)
 	{
-        $this->SKU = (int)$val;
+        $this->SKU = (SKUType)$val;
 	}
 }
 
@@ -41167,7 +41167,7 @@ class SmSsubscriptionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SMSPhone');
         }
-        $this->SMSPhone = (int)$val;
+        $this->SMSPhone = (string)$val;
 	}
 
 	/**
@@ -41176,7 +41176,7 @@ class SmSsubscriptionType
 	 */
 	public function setUserStatus($val)
 	{
-        $this->UserStatus = (int)$val;
+        $this->UserStatus = (SMSSubscriptionUserStatusCodeType)$val;
 	}
 
 	/**
@@ -41185,7 +41185,7 @@ class SmSsubscriptionType
 	 */
 	public function setCarrierID($val)
 	{
-        $this->CarrierID = (int)$val;
+        $this->CarrierID = (WirelessCarrierIDCodeType)$val;
 	}
 
 	/**
@@ -41194,7 +41194,7 @@ class SmSsubscriptionType
 	 */
 	public function setErrorCode($val)
 	{
-        $this->ErrorCode = (int)$val;
+        $this->ErrorCode = (SMSSubscriptionErrorCodeCodeType)$val;
 	}
 
 	/**
@@ -41203,7 +41203,7 @@ class SmSsubscriptionType
 	 */
 	public function setItemToUnsubscribe($val)
 	{
-        $this->ItemToUnsubscribe = (int)$val;
+        $this->ItemToUnsubscribe = (ItemIDType)$val;
 	}
 
 	/**
@@ -41212,7 +41212,7 @@ class SmSsubscriptionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41264,7 +41264,7 @@ class SalesTaxType
 	 */
 	public function setSalesTaxPercent($val)
 	{
-        $this->SalesTaxPercent = (int)$val;
+        $this->SalesTaxPercent = (float)$val;
 	}
 
 	/**
@@ -41276,7 +41276,7 @@ class SalesTaxType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SalesTaxState');
         }
-        $this->SalesTaxState = (int)$val;
+        $this->SalesTaxState = (string)$val;
 	}
 
 	/**
@@ -41285,7 +41285,7 @@ class SalesTaxType
 	 */
 	public function setShippingIncludedInTax($val)
 	{
-        $this->ShippingIncludedInTax = (int)$val;
+        $this->ShippingIncludedInTax = (boolean)$val;
 	}
 
 	/**
@@ -41294,7 +41294,7 @@ class SalesTaxType
 	 */
 	public function setSalesTaxAmount($val)
 	{
-        $this->SalesTaxAmount = (int)$val;
+        $this->SalesTaxAmount = (AmountType)$val;
 	}
 
 	/**
@@ -41303,7 +41303,7 @@ class SalesTaxType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41348,7 +41348,7 @@ class ScheduleType
 	 */
 	public function setScheduleTime($val)
 	{
-        $this->ScheduleTime = (int)$val;
+        $this->ScheduleTime = (dateTime)$val;
 	}
 
 	/**
@@ -41357,7 +41357,7 @@ class ScheduleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41430,7 +41430,7 @@ class SchedulingInfoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41492,7 +41492,7 @@ class SearchAttributesType
 	 */
 	public function setDateSpecifier($val)
 	{
-        $this->DateSpecifier = (int)$val;
+        $this->DateSpecifier = (DateSpecifierCodeType)$val;
 	}
 
 	/**
@@ -41501,7 +41501,7 @@ class SearchAttributesType
 	 */
 	public function setRangeSpecifier($val)
 	{
-        $this->RangeSpecifier = (int)$val;
+        $this->RangeSpecifier = (RangeCodeType)$val;
 	}
 
 	/**
@@ -41510,7 +41510,7 @@ class SearchAttributesType
 	 */
 	public function setValueList($val)
 	{
-        $this->ValueList = (int)$val;
+        $this->ValueList = (ValType)$val;
 	}
 
 	/**
@@ -41519,7 +41519,7 @@ class SearchAttributesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41550,7 +41550,7 @@ class SearchDetailsType
 	 */
 	public function setBuyItNowEnabled($val)
 	{
-        $this->BuyItNowEnabled = (int)$val;
+        $this->BuyItNowEnabled = (boolean)$val;
 	}
 
 	/**
@@ -41559,7 +41559,7 @@ class SearchDetailsType
 	 */
 	public function setPicture($val)
 	{
-        $this->Picture = (int)$val;
+        $this->Picture = (boolean)$val;
 	}
 
 	/**
@@ -41568,7 +41568,7 @@ class SearchDetailsType
 	 */
 	public function setRecentListing($val)
 	{
-        $this->RecentListing = (int)$val;
+        $this->RecentListing = (boolean)$val;
 	}
 
 	/**
@@ -41577,7 +41577,7 @@ class SearchDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41629,7 +41629,7 @@ class SearchLocationFilterType
 	 */
 	public function setCountryCode($val)
 	{
-        $this->CountryCode = (int)$val;
+        $this->CountryCode = (CountryCodeType)$val;
 	}
 
 	/**
@@ -41638,7 +41638,7 @@ class SearchLocationFilterType
 	 */
 	public function setItemLocation($val)
 	{
-        $this->ItemLocation = (int)$val;
+        $this->ItemLocation = (ItemLocationCodeType)$val;
 	}
 
 	/**
@@ -41647,7 +41647,7 @@ class SearchLocationFilterType
 	 */
 	public function setSearchLocation($val)
 	{
-        $this->SearchLocation = (int)$val;
+        $this->SearchLocation = (SearchLocationType)$val;
 	}
 
 	/**
@@ -41656,7 +41656,7 @@ class SearchLocationFilterType
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -41665,7 +41665,7 @@ class SearchLocationFilterType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41705,7 +41705,7 @@ class SearchLocationType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->RegionID = (int)$val;
+        $this->RegionID = (string)$val;
 	}
 
 	/**
@@ -41714,7 +41714,7 @@ class SearchLocationType
 	 */
 	public function setSiteLocation($val)
 	{
-        $this->SiteLocation = (int)$val;
+        $this->SiteLocation = (SiteLocationType)$val;
 	}
 
 	/**
@@ -41723,7 +41723,7 @@ class SearchLocationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41796,7 +41796,7 @@ class SearchRequestType
 	 */
 	public function setSearchAttributes($val)
 	{
-        $this->SearchAttributes = (int)$val;
+        $this->SearchAttributes = (SearchAttributesType)$val;
 	}
 
 	/**
@@ -41805,7 +41805,7 @@ class SearchRequestType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41830,7 +41830,7 @@ class SearchResultItemArrayType
 	 */
 	public function setSearchResultItem($val)
 	{
-        $this->SearchResultItem = (int)$val;
+        $this->SearchResultItem = (SearchResultItemType)$val;
 	}
 }
 
@@ -41880,7 +41880,7 @@ class SearchResultItemType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -41889,7 +41889,7 @@ class SearchResultItemType
 	 */
 	public function setItemSpecific($val)
 	{
-        $this->ItemSpecific = (int)$val;
+        $this->ItemSpecific = (NameValueListArrayType)$val;
 	}
 
 	/**
@@ -41898,7 +41898,7 @@ class SearchResultItemType
 	 */
 	public function setSearchResultValues($val)
 	{
-        $this->SearchResultValues = (int)$val;
+        $this->SearchResultValues = (SearchResultValuesCodeType)$val;
 	}
 
 	/**
@@ -41907,7 +41907,7 @@ class SearchResultItemType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -41975,7 +41975,7 @@ class SearchStoreFilterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
 	}
 
 	/**
@@ -41984,7 +41984,7 @@ class SearchStoreFilterType
 	 */
 	public function setStoreSearch($val)
 	{
-        $this->StoreSearch = (int)$val;
+        $this->StoreSearch = (StoreSearchCodeType)$val;
 	}
 
 	/**
@@ -41993,7 +41993,7 @@ class SearchStoreFilterType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -42041,7 +42041,7 @@ class SellerContactDetailsEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -42101,7 +42101,7 @@ class SellerFavoriteItemPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchKeywords');
         }
-        $this->SearchKeywords = (int)$val;
+        $this->SearchKeywords = (string)$val;
 	}
 
 	/**
@@ -42122,7 +42122,7 @@ class SellerFavoriteItemPreferencesType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
 	}
 
 	/**
@@ -42131,7 +42131,7 @@ class SellerFavoriteItemPreferencesType
 	 */
 	public function setSearchSortOrder($val)
 	{
-        $this->SearchSortOrder = (int)$val;
+        $this->SearchSortOrder = (StoreItemListSortOrderCodeType)$val;
 	}
 
 	/**
@@ -42140,7 +42140,7 @@ class SellerFavoriteItemPreferencesType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->MinPrice = (int)$val;
+        $this->MinPrice = (AmountType)$val;
 	}
 
 	/**
@@ -42149,7 +42149,7 @@ class SellerFavoriteItemPreferencesType
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->MaxPrice = (int)$val;
+        $this->MaxPrice = (AmountType)$val;
 	}
 
 	/**
@@ -42158,7 +42158,7 @@ class SellerFavoriteItemPreferencesType
 	 */
 	public function setFavoriteItemID($val)
 	{
-        $this->FavoriteItemID = (int)$val;
+        $this->FavoriteItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -42167,7 +42167,7 @@ class SellerFavoriteItemPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -42249,7 +42249,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setAlwaysUseThisPaymentAddress($val)
 	{
-        $this->AlwaysUseThisPaymentAddress = (int)$val;
+        $this->AlwaysUseThisPaymentAddress = (boolean)$val;
 	}
 
 	/**
@@ -42258,7 +42258,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setDisplayPayNowButton($val)
 	{
-        $this->DisplayPayNowButton = (int)$val;
+        $this->DisplayPayNowButton = (DisplayPayNowButtonCodeType)$val;
 	}
 
 	/**
@@ -42267,7 +42267,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = (int)$val;
+        $this->PayPalPreferred = (boolean)$val;
 	}
 
 	/**
@@ -42279,7 +42279,7 @@ class SellerPaymentPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
         }
-        $this->DefaultPayPalEmailAddress = (int)$val;
+        $this->DefaultPayPalEmailAddress = (string)$val;
 	}
 
 	/**
@@ -42288,7 +42288,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setPayPalAlwaysOn($val)
 	{
-        $this->PayPalAlwaysOn = (int)$val;
+        $this->PayPalAlwaysOn = (boolean)$val;
 	}
 
 	/**
@@ -42297,7 +42297,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setSellerPaymentAddress($val)
 	{
-        $this->SellerPaymentAddress = (int)$val;
+        $this->SellerPaymentAddress = (AddressType)$val;
 	}
 
 	/**
@@ -42306,7 +42306,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setUPSRateOption($val)
 	{
-        $this->UPSRateOption = (int)$val;
+        $this->UPSRateOption = (UPSRateOptionCodeType)$val;
 	}
 
 	/**
@@ -42315,7 +42315,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -42420,7 +42420,7 @@ class SellerPaymentType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -42432,7 +42432,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -42441,7 +42441,7 @@ class SellerPaymentType
 	 */
 	public function setOrderID($val)
 	{
-        $this->OrderID = (int)$val;
+        $this->OrderID = (OrderIDType)$val;
 	}
 
 	/**
@@ -42453,7 +42453,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->SellerInventoryID = (int)$val;
+        $this->SellerInventoryID = (string)$val;
 	}
 
 	/**
@@ -42465,7 +42465,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PrivateNotes');
         }
-        $this->PrivateNotes = (int)$val;
+        $this->PrivateNotes = (string)$val;
 	}
 
 	/**
@@ -42474,7 +42474,7 @@ class SellerPaymentType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
 	}
 
 	/**
@@ -42486,7 +42486,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 
 	/**
@@ -42495,7 +42495,7 @@ class SellerPaymentType
 	 */
 	public function setPaymentType($val)
 	{
-        $this->PaymentType = (int)$val;
+        $this->PaymentType = (PaymentTypeCodeType)$val;
 	}
 
 	/**
@@ -42504,7 +42504,7 @@ class SellerPaymentType
 	 */
 	public function setTransactionPrice($val)
 	{
-        $this->TransactionPrice = (int)$val;
+        $this->TransactionPrice = (AmountType)$val;
 	}
 
 	/**
@@ -42513,7 +42513,7 @@ class SellerPaymentType
 	 */
 	public function setShippingReimbursement($val)
 	{
-        $this->ShippingReimbursement = (int)$val;
+        $this->ShippingReimbursement = (AmountType)$val;
 	}
 
 	/**
@@ -42522,7 +42522,7 @@ class SellerPaymentType
 	 */
 	public function setCommission($val)
 	{
-        $this->Commission = (int)$val;
+        $this->Commission = (AmountType)$val;
 	}
 
 	/**
@@ -42531,7 +42531,7 @@ class SellerPaymentType
 	 */
 	public function setAmountPaid($val)
 	{
-        $this->AmountPaid = (int)$val;
+        $this->AmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -42540,7 +42540,7 @@ class SellerPaymentType
 	 */
 	public function setPaidTime($val)
 	{
-        $this->PaidTime = (int)$val;
+        $this->PaidTime = (dateTime)$val;
 	}
 
 	/**
@@ -42549,7 +42549,7 @@ class SellerPaymentType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -42716,7 +42716,7 @@ class SellerType
 	 */
 	public function setAllowPaymentEdit($val)
 	{
-        $this->AllowPaymentEdit = (int)$val;
+        $this->AllowPaymentEdit = (boolean)$val;
 	}
 
 	/**
@@ -42725,7 +42725,7 @@ class SellerType
 	 */
 	public function setBillingCurrency($val)
 	{
-        $this->BillingCurrency = (int)$val;
+        $this->BillingCurrency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -42734,7 +42734,7 @@ class SellerType
 	 */
 	public function setCheckoutEnabled($val)
 	{
-        $this->CheckoutEnabled = (int)$val;
+        $this->CheckoutEnabled = (boolean)$val;
 	}
 
 	/**
@@ -42743,7 +42743,7 @@ class SellerType
 	 */
 	public function setCIPBankAccountStored($val)
 	{
-        $this->CIPBankAccountStored = (int)$val;
+        $this->CIPBankAccountStored = (boolean)$val;
 	}
 
 	/**
@@ -42752,7 +42752,7 @@ class SellerType
 	 */
 	public function setGoodStanding($val)
 	{
-        $this->GoodStanding = (int)$val;
+        $this->GoodStanding = (boolean)$val;
 	}
 
 	/**
@@ -42761,7 +42761,7 @@ class SellerType
 	 */
 	public function setLiveAuctionAuthorized($val)
 	{
-        $this->LiveAuctionAuthorized = (int)$val;
+        $this->LiveAuctionAuthorized = (boolean)$val;
 	}
 
 	/**
@@ -42770,7 +42770,7 @@ class SellerType
 	 */
 	public function setMerchandizingPref($val)
 	{
-        $this->MerchandizingPref = (int)$val;
+        $this->MerchandizingPref = (MerchandizingPrefCodeType)$val;
 	}
 
 	/**
@@ -42779,7 +42779,7 @@ class SellerType
 	 */
 	public function setQualifiesForB2BVAT($val)
 	{
-        $this->QualifiesForB2BVAT = (int)$val;
+        $this->QualifiesForB2BVAT = (boolean)$val;
 	}
 
 	/**
@@ -42788,7 +42788,7 @@ class SellerType
 	 */
 	public function setSellerGuaranteeLevel($val)
 	{
-        $this->SellerGuaranteeLevel = (int)$val;
+        $this->SellerGuaranteeLevel = (SellerGuaranteeLevelCodeType)$val;
 	}
 
 	/**
@@ -42797,7 +42797,7 @@ class SellerType
 	 */
 	public function setSellerLevel($val)
 	{
-        $this->SellerLevel = (int)$val;
+        $this->SellerLevel = (SellerLevelCodeType)$val;
 	}
 
 	/**
@@ -42806,7 +42806,7 @@ class SellerType
 	 */
 	public function setSellerPaymentAddress($val)
 	{
-        $this->SellerPaymentAddress = (int)$val;
+        $this->SellerPaymentAddress = (AddressType)$val;
 	}
 
 	/**
@@ -42815,7 +42815,7 @@ class SellerType
 	 */
 	public function setSchedulingInfo($val)
 	{
-        $this->SchedulingInfo = (int)$val;
+        $this->SchedulingInfo = (SchedulingInfoType)$val;
 	}
 
 	/**
@@ -42824,7 +42824,7 @@ class SellerType
 	 */
 	public function setStoreOwner($val)
 	{
-        $this->StoreOwner = (int)$val;
+        $this->StoreOwner = (boolean)$val;
 	}
 
 	/**
@@ -42833,7 +42833,7 @@ class SellerType
 	 */
 	public function setStoreURL($val)
 	{
-        $this->StoreURL = (int)$val;
+        $this->StoreURL = (anyURI)$val;
 	}
 
 	/**
@@ -42842,7 +42842,7 @@ class SellerType
 	 */
 	public function setSellerBusinessType($val)
 	{
-        $this->SellerBusinessType = (int)$val;
+        $this->SellerBusinessType = (SellerBusinessCodeType)$val;
 	}
 
 	/**
@@ -42851,7 +42851,7 @@ class SellerType
 	 */
 	public function setRegisteredBusinessSeller($val)
 	{
-        $this->RegisteredBusinessSeller = (int)$val;
+        $this->RegisteredBusinessSeller = (boolean)$val;
 	}
 
 	/**
@@ -42860,7 +42860,7 @@ class SellerType
 	 */
 	public function setExpressEligible($val)
 	{
-        $this->ExpressEligible = (int)$val;
+        $this->ExpressEligible = (boolean)$val;
 	}
 
 	/**
@@ -42869,7 +42869,7 @@ class SellerType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (SellerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -42878,7 +42878,7 @@ class SellerType
 	 */
 	public function setProStoresPreference($val)
 	{
-        $this->ProStoresPreference = (int)$val;
+        $this->ProStoresPreference = (ProStoresCheckoutPreferenceType)$val;
 	}
 
 	/**
@@ -42887,7 +42887,7 @@ class SellerType
 	 */
 	public function setExpressWallet($val)
 	{
-        $this->ExpressWallet = (int)$val;
+        $this->ExpressWallet = (boolean)$val;
 	}
 
 	/**
@@ -42896,7 +42896,7 @@ class SellerType
 	 */
 	public function setExpressSellerRequirements($val)
 	{
-        $this->ExpressSellerRequirements = (int)$val;
+        $this->ExpressSellerRequirements = (ExpressSellerRequirementsType)$val;
 	}
 
 	/**
@@ -42905,7 +42905,7 @@ class SellerType
 	 */
 	public function setCharityRegistered($val)
 	{
-        $this->CharityRegistered = (int)$val;
+        $this->CharityRegistered = (boolean)$val;
 	}
 
 	/**
@@ -42914,7 +42914,7 @@ class SellerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -42952,7 +42952,7 @@ class SellingManagerProductDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductName');
         }
-        $this->ProductName = (int)$val;
+        $this->ProductName = (string)$val;
 	}
 
 	/**
@@ -42976,7 +42976,7 @@ class SellingManagerProductDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductPartNumber');
         }
-        $this->ProductPartNumber = (int)$val;
+        $this->ProductPartNumber = (string)$val;
 	}
 
 	/**
@@ -42985,7 +42985,7 @@ class SellingManagerProductDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -43113,7 +43113,7 @@ class SellingStatusType
 	 */
 	public function setBidIncrement($val)
 	{
-        $this->BidIncrement = (int)$val;
+        $this->BidIncrement = (AmountType)$val;
 	}
 
 	/**
@@ -43122,7 +43122,7 @@ class SellingStatusType
 	 */
 	public function setConvertedCurrentPrice($val)
 	{
-        $this->ConvertedCurrentPrice = (int)$val;
+        $this->ConvertedCurrentPrice = (AmountType)$val;
 	}
 
 	/**
@@ -43131,7 +43131,7 @@ class SellingStatusType
 	 */
 	public function setCurrentPrice($val)
 	{
-        $this->CurrentPrice = (int)$val;
+        $this->CurrentPrice = (AmountType)$val;
 	}
 
 	/**
@@ -43140,7 +43140,7 @@ class SellingStatusType
 	 */
 	public function setHighBidder($val)
 	{
-        $this->HighBidder = (int)$val;
+        $this->HighBidder = (UserType)$val;
 	}
 
 	/**
@@ -43161,7 +43161,7 @@ class SellingStatusType
 	 */
 	public function setMinimumToBid($val)
 	{
-        $this->MinimumToBid = (int)$val;
+        $this->MinimumToBid = (AmountType)$val;
 	}
 
 	/**
@@ -43182,7 +43182,7 @@ class SellingStatusType
 	 */
 	public function setReserveMet($val)
 	{
-        $this->ReserveMet = (int)$val;
+        $this->ReserveMet = (boolean)$val;
 	}
 
 	/**
@@ -43191,7 +43191,7 @@ class SellingStatusType
 	 */
 	public function setSecondChanceEligible($val)
 	{
-        $this->SecondChanceEligible = (int)$val;
+        $this->SecondChanceEligible = (boolean)$val;
 	}
 
 	/**
@@ -43200,7 +43200,7 @@ class SellingStatusType
 	 */
 	public function setBidderCount($val)
 	{
-        $this->BidderCount = (int)$val;
+        $this->BidderCount = (long)$val;
 	}
 
 	/**
@@ -43209,7 +43209,7 @@ class SellingStatusType
 	 */
 	public function setListingStatus($val)
 	{
-        $this->ListingStatus = (int)$val;
+        $this->ListingStatus = (ListingStatusCodeType)$val;
 	}
 
 	/**
@@ -43218,7 +43218,7 @@ class SellingStatusType
 	 */
 	public function setFinalValueFee($val)
 	{
-        $this->FinalValueFee = (int)$val;
+        $this->FinalValueFee = (AmountType)$val;
 	}
 
 	/**
@@ -43227,7 +43227,7 @@ class SellingStatusType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -43313,7 +43313,7 @@ class SellingSummaryType
 	 */
 	public function setTotalAuctionSellingValue($val)
 	{
-        $this->TotalAuctionSellingValue = (int)$val;
+        $this->TotalAuctionSellingValue = (AmountType)$val;
 	}
 
 	/**
@@ -43334,7 +43334,7 @@ class SellingSummaryType
 	 */
 	public function setTotalSoldValue($val)
 	{
-        $this->TotalSoldValue = (int)$val;
+        $this->TotalSoldValue = (AmountType)$val;
 	}
 
 	/**
@@ -43599,7 +43599,7 @@ class ShippingDetailsType
 	 */
 	public function setAllowPaymentEdit($val)
 	{
-        $this->AllowPaymentEdit = (int)$val;
+        $this->AllowPaymentEdit = (boolean)$val;
 	}
 
 	/**
@@ -43608,7 +43608,7 @@ class ShippingDetailsType
 	 */
 	public function setApplyShippingDiscount($val)
 	{
-        $this->ApplyShippingDiscount = (int)$val;
+        $this->ApplyShippingDiscount = (boolean)$val;
 	}
 
 	/**
@@ -43617,7 +43617,7 @@ class ShippingDetailsType
 	 */
 	public function setCalculatedShippingRate($val)
 	{
-        $this->CalculatedShippingRate = (int)$val;
+        $this->CalculatedShippingRate = (CalculatedShippingRateType)$val;
 	}
 
 	/**
@@ -43626,7 +43626,7 @@ class ShippingDetailsType
 	 */
 	public function setChangePaymentInstructions($val)
 	{
-        $this->ChangePaymentInstructions = (int)$val;
+        $this->ChangePaymentInstructions = (boolean)$val;
 	}
 
 	/**
@@ -43635,7 +43635,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceFee($val)
 	{
-        $this->InsuranceFee = (int)$val;
+        $this->InsuranceFee = (AmountType)$val;
 	}
 
 	/**
@@ -43644,7 +43644,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = (int)$val;
+        $this->InsuranceOption = (InsuranceOptionCodeType)$val;
 	}
 
 	/**
@@ -43653,7 +43653,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceWanted($val)
 	{
-        $this->InsuranceWanted = (int)$val;
+        $this->InsuranceWanted = (boolean)$val;
 	}
 
 	/**
@@ -43662,7 +43662,7 @@ class ShippingDetailsType
 	 */
 	public function setPaymentEdited($val)
 	{
-        $this->PaymentEdited = (int)$val;
+        $this->PaymentEdited = (boolean)$val;
 	}
 
 	/**
@@ -43674,7 +43674,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PaymentInstructions');
         }
-        $this->PaymentInstructions = (int)$val;
+        $this->PaymentInstructions = (string)$val;
 	}
 
 	/**
@@ -43683,7 +43683,7 @@ class ShippingDetailsType
 	 */
 	public function setSalesTax($val)
 	{
-        $this->SalesTax = (int)$val;
+        $this->SalesTax = (SalesTaxType)$val;
 	}
 
 	/**
@@ -43695,7 +43695,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerPostalCode');
         }
-        $this->SellerPostalCode = (int)$val;
+        $this->SellerPostalCode = (string)$val;
 	}
 
 	/**
@@ -43707,7 +43707,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingRateErrorMessage');
         }
-        $this->ShippingRateErrorMessage = (int)$val;
+        $this->ShippingRateErrorMessage = (string)$val;
 	}
 
 	/**
@@ -43716,7 +43716,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingRateType($val)
 	{
-        $this->ShippingRateType = (int)$val;
+        $this->ShippingRateType = (ShippingRateTypeCodeType)$val;
 	}
 
 	/**
@@ -43725,7 +43725,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingServiceOptions($val)
 	{
-        $this->ShippingServiceOptions = (int)$val;
+        $this->ShippingServiceOptions = (ShippingServiceOptionsType)$val;
 	}
 
 	/**
@@ -43734,7 +43734,7 @@ class ShippingDetailsType
 	 */
 	public function setInternationalShippingServiceOption($val)
 	{
-        $this->InternationalShippingServiceOption = (int)$val;
+        $this->InternationalShippingServiceOption = (InternationalShippingServiceOptionsType)$val;
 	}
 
 	/**
@@ -43743,7 +43743,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingType($val)
 	{
-        $this->ShippingType = (int)$val;
+        $this->ShippingType = (ShippingTypeCodeType)$val;
 	}
 
 	/**
@@ -43764,7 +43764,7 @@ class ShippingDetailsType
 	 */
 	public function setThirdPartyCheckout($val)
 	{
-        $this->ThirdPartyCheckout = (int)$val;
+        $this->ThirdPartyCheckout = (boolean)$val;
 	}
 
 	/**
@@ -43773,7 +43773,7 @@ class ShippingDetailsType
 	 */
 	public function setTaxTable($val)
 	{
-        $this->TaxTable = (int)$val;
+        $this->TaxTable = (TaxTableType)$val;
 	}
 
 	/**
@@ -43782,7 +43782,7 @@ class ShippingDetailsType
 	 */
 	public function setGetItFast($val)
 	{
-        $this->GetItFast = (int)$val;
+        $this->GetItFast = (boolean)$val;
 	}
 
 	/**
@@ -43794,7 +43794,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
-        $this->ShipmentTrackingNumber = (int)$val;
+        $this->ShipmentTrackingNumber = (string)$val;
 	}
 
 	/**
@@ -43803,7 +43803,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingServiceUsed($val)
 	{
-        $this->ShippingServiceUsed = (int)$val;
+        $this->ShippingServiceUsed = (token)$val;
 	}
 
 	/**
@@ -43812,7 +43812,7 @@ class ShippingDetailsType
 	 */
 	public function setDefaultShippingCost($val)
 	{
-        $this->DefaultShippingCost = (int)$val;
+        $this->DefaultShippingCost = (AmountType)$val;
 	}
 
 	/**
@@ -43821,7 +43821,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceDetails($val)
 	{
-        $this->InsuranceDetails = (int)$val;
+        $this->InsuranceDetails = (InsuranceDetailsType)$val;
 	}
 
 	/**
@@ -43830,7 +43830,7 @@ class ShippingDetailsType
 	 */
 	public function setInternationalInsuranceDetails($val)
 	{
-        $this->InternationalInsuranceDetails = (int)$val;
+        $this->InternationalInsuranceDetails = (InsuranceDetailsType)$val;
 	}
 
 	/**
@@ -43839,7 +43839,7 @@ class ShippingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -43885,7 +43885,7 @@ class ShippingLocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingLocation');
         }
-        $this->ShippingLocation = (int)$val;
+        $this->ShippingLocation = (string)$val;
 	}
 
 	/**
@@ -43897,7 +43897,7 @@ class ShippingLocationDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -43906,7 +43906,7 @@ class ShippingLocationDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -44465,7 +44465,7 @@ class ShippingServiceDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -44474,7 +44474,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setExpeditedService($val)
 	{
-        $this->ExpeditedService = (int)$val;
+        $this->ExpeditedService = (boolean)$val;
 	}
 
 	/**
@@ -44483,7 +44483,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setInternationalService($val)
 	{
-        $this->InternationalService = (int)$val;
+        $this->InternationalService = (boolean)$val;
 	}
 
 	/**
@@ -44492,7 +44492,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
 	}
 
 	/**
@@ -44537,7 +44537,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setShippingServiceCode($val)
 	{
-        $this->ShippingServiceCode = (int)$val;
+        $this->ShippingServiceCode = (ShippingServiceCodeType)$val;
 	}
 
 	/**
@@ -44546,7 +44546,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -44626,7 +44626,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingInsuranceCost($val)
 	{
-        $this->ShippingInsuranceCost = (int)$val;
+        $this->ShippingInsuranceCost = (AmountType)$val;
 	}
 
 	/**
@@ -44635,7 +44635,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
 	}
 
 	/**
@@ -44644,7 +44644,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingServiceCost($val)
 	{
-        $this->ShippingServiceCost = (int)$val;
+        $this->ShippingServiceCost = (AmountType)$val;
 	}
 
 	/**
@@ -44653,7 +44653,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
-        $this->ShippingServiceAdditionalCost = (int)$val;
+        $this->ShippingServiceAdditionalCost = (AmountType)$val;
 	}
 
 	/**
@@ -44674,7 +44674,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setExpeditedService($val)
 	{
-        $this->ExpeditedService = (int)$val;
+        $this->ExpeditedService = (boolean)$val;
 	}
 
 	/**
@@ -44707,7 +44707,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingSurcharge($val)
 	{
-        $this->ShippingSurcharge = (int)$val;
+        $this->ShippingSurcharge = (AmountType)$val;
 	}
 
 	/**
@@ -44716,7 +44716,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -44740,7 +44740,7 @@ class ShippingTermRequiredDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45004,7 +45004,7 @@ class SiteDefaultsType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (ListingDurationReferenceType)$val;
 	}
 
 	/**
@@ -45013,7 +45013,7 @@ class SiteDefaultsType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = (int)$val;
+        $this->ShippingTermsRequired = (boolean)$val;
 	}
 
 	/**
@@ -45022,7 +45022,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45031,7 +45031,7 @@ class SiteDefaultsType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = (int)$val;
+        $this->DutchBINEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45040,7 +45040,7 @@ class SiteDefaultsType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = (int)$val;
+        $this->UserConsentRequired = (boolean)$val;
 	}
 
 	/**
@@ -45049,7 +45049,7 @@ class SiteDefaultsType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = (int)$val;
+        $this->HomePageFeaturedEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45058,7 +45058,7 @@ class SiteDefaultsType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = (int)$val;
+        $this->ProPackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45067,7 +45067,7 @@ class SiteDefaultsType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = (int)$val;
+        $this->BasicUpgradePackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45076,7 +45076,7 @@ class SiteDefaultsType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = (int)$val;
+        $this->ValuePackEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45085,7 +45085,7 @@ class SiteDefaultsType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = (int)$val;
+        $this->ProPackPlusEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45094,7 +45094,7 @@ class SiteDefaultsType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = (int)$val;
+        $this->AdFormatEnabled = (AdFormatEnabledCodeType)$val;
 	}
 
 	/**
@@ -45103,7 +45103,7 @@ class SiteDefaultsType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = (int)$val;
+        $this->DigitalDeliveryEnabled = (DigitalDeliveryEnabledCodeType)$val;
 	}
 
 	/**
@@ -45112,7 +45112,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = (int)$val;
+        $this->BestOfferCounterEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45121,7 +45121,7 @@ class SiteDefaultsType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = (int)$val;
+        $this->BestOfferAutoDeclineEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45130,7 +45130,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = (int)$val;
+        $this->LocalMarketSpecialitySubscription = (boolean)$val;
 	}
 
 	/**
@@ -45139,7 +45139,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = (int)$val;
+        $this->LocalMarketRegularSubscription = (boolean)$val;
 	}
 
 	/**
@@ -45148,7 +45148,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = (int)$val;
+        $this->LocalMarketPremiumSubscription = (boolean)$val;
 	}
 
 	/**
@@ -45157,7 +45157,7 @@ class SiteDefaultsType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = (int)$val;
+        $this->LocalMarketNonSubscription = (boolean)$val;
 	}
 
 	/**
@@ -45166,7 +45166,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = (int)$val;
+        $this->ExpressEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45175,7 +45175,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = (int)$val;
+        $this->ExpressPicturesRequired = (boolean)$val;
 	}
 
 	/**
@@ -45184,7 +45184,7 @@ class SiteDefaultsType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = (int)$val;
+        $this->ExpressConditionRequired = (boolean)$val;
 	}
 
 	/**
@@ -45193,7 +45193,7 @@ class SiteDefaultsType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = (double)$val;
 	}
 
 	/**
@@ -45202,7 +45202,7 @@ class SiteDefaultsType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = (int)$val;
+        $this->SellerContactDetailsEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45211,7 +45211,7 @@ class SiteDefaultsType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = (int)$val;
+        $this->TransactionConfirmationRequestEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45220,7 +45220,7 @@ class SiteDefaultsType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = (int)$val;
+        $this->StoreInventoryEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45229,7 +45229,7 @@ class SiteDefaultsType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = (int)$val;
+        $this->SkypeMeTransactionalEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45238,7 +45238,7 @@ class SiteDefaultsType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = (int)$val;
+        $this->SkypeMeNonTransactionalEnabled = (boolean)$val;
 	}
 
 	/**
@@ -45250,7 +45250,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
         }
-        $this->LocalListingDistancesRegular = (int)$val;
+        $this->LocalListingDistancesRegular = (string)$val;
 	}
 
 	/**
@@ -45262,7 +45262,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
         }
-        $this->LocalListingDistancesSpecialty = (int)$val;
+        $this->LocalListingDistancesSpecialty = (string)$val;
 	}
 
 	/**
@@ -45274,7 +45274,7 @@ class SiteDefaultsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
         }
-        $this->LocalListingDistancesNonSubscription = (int)$val;
+        $this->LocalListingDistancesNonSubscription = (string)$val;
 	}
 
 	/**
@@ -45283,7 +45283,7 @@ class SiteDefaultsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45313,7 +45313,7 @@ class SiteDetailsType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -45334,7 +45334,7 @@ class SiteDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45424,7 +45424,7 @@ class SiteHostedPictureType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (anyURI)$val;
 	}
 
 	/**
@@ -45433,7 +45433,7 @@ class SiteHostedPictureType
 	 */
 	public function setPhotoDisplay($val)
 	{
-        $this->PhotoDisplay = (int)$val;
+        $this->PhotoDisplay = (PhotoDisplayCodeType)$val;
 	}
 
 	/**
@@ -45442,7 +45442,7 @@ class SiteHostedPictureType
 	 */
 	public function setGalleryType($val)
 	{
-        $this->GalleryType = (int)$val;
+        $this->GalleryType = (GalleryTypeCodeType)$val;
 	}
 
 	/**
@@ -45451,7 +45451,7 @@ class SiteHostedPictureType
 	 */
 	public function setGalleryURL($val)
 	{
-        $this->GalleryURL = (int)$val;
+        $this->GalleryURL = (anyURI)$val;
 	}
 
 	/**
@@ -45460,7 +45460,7 @@ class SiteHostedPictureType
 	 */
 	public function setPictureSource($val)
 	{
-        $this->PictureSource = (int)$val;
+        $this->PictureSource = (PictureSourceCodeType)$val;
 	}
 
 	/**
@@ -45469,7 +45469,7 @@ class SiteHostedPictureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45506,7 +45506,7 @@ class SiteLocationType
 	 */
 	public function setSiteID($val)
 	{
-        $this->SiteID = (int)$val;
+        $this->SiteID = (SiteIDFilterCodeType)$val;
 	}
 
 	/**
@@ -45515,7 +45515,7 @@ class SiteLocationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45548,7 +45548,7 @@ class SiteWideCharacteristicsType
 	 */
 	public function setCharacteristicsSet($val)
 	{
-        $this->CharacteristicsSet = (int)$val;
+        $this->CharacteristicsSet = (CharacteristicsSetType)$val;
 	}
 
 	/**
@@ -45560,7 +45560,7 @@ class SiteWideCharacteristicsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExcludeCategoryID');
         }
-        $this->ExcludeCategoryID = (int)$val;
+        $this->ExcludeCategoryID = (string)$val;
 	}
 
 	/**
@@ -45569,7 +45569,7 @@ class SiteWideCharacteristicsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45601,7 +45601,7 @@ class SkypeMeNonTransactionalEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45627,7 +45627,7 @@ class SkypeMeTransactionalEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45692,7 +45692,7 @@ class SpellingSuggestionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = (int)$val;
+        $this->Text = (string)$val;
 	}
 
 	/**
@@ -45701,7 +45701,7 @@ class SpellingSuggestionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45733,7 +45733,7 @@ class StoreColorSchemeArrayType
 	 */
 	public function setColorScheme($val)
 	{
-        $this->ColorScheme = (int)$val;
+        $this->ColorScheme = (StoreColorSchemeType)$val;
 	}
 }
 
@@ -45788,7 +45788,7 @@ class StoreColorSchemeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -45797,7 +45797,7 @@ class StoreColorSchemeType
 	 */
 	public function setColor($val)
 	{
-        $this->Color = (int)$val;
+        $this->Color = (StoreColorType)$val;
 	}
 
 	/**
@@ -45806,7 +45806,7 @@ class StoreColorSchemeType
 	 */
 	public function setFont($val)
 	{
-        $this->Font = (int)$val;
+        $this->Font = (StoreFontType)$val;
 	}
 
 	/**
@@ -45815,7 +45815,7 @@ class StoreColorSchemeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45853,7 +45853,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Primary');
         }
-        $this->Primary = (int)$val;
+        $this->Primary = (string)$val;
 	}
 
 	/**
@@ -45865,7 +45865,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Secondary');
         }
-        $this->Secondary = (int)$val;
+        $this->Secondary = (string)$val;
 	}
 
 	/**
@@ -45877,7 +45877,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Accent');
         }
-        $this->Accent = (int)$val;
+        $this->Accent = (string)$val;
 	}
 
 	/**
@@ -45886,7 +45886,7 @@ class StoreColorType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -45909,7 +45909,7 @@ class StoreCustomCategoryArrayType
 	 */
 	public function setCustomCategory($val)
 	{
-        $this->CustomCategory = (int)$val;
+        $this->CustomCategory = (StoreCustomCategoryType)$val;
 	}
 }
 
@@ -45969,7 +45969,7 @@ class StoreCustomCategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -45990,7 +45990,7 @@ class StoreCustomCategoryType
 	 */
 	public function setChildrenCategories($val)
 	{
-        $this->ChildrenCategories = (int)$val;
+        $this->ChildrenCategories = (StoreCustomCategoryType)$val;
 	}
 
 	/**
@@ -45999,7 +45999,7 @@ class StoreCustomCategoryType
 	 */
 	public function setChildCategory($val)
 	{
-        $this->ChildCategory = (int)$val;
+        $this->ChildCategory = (StoreCustomCategoryType)$val;
 	}
 
 	/**
@@ -46008,7 +46008,7 @@ class StoreCustomCategoryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46093,7 +46093,7 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setLinkType($val)
 	{
-        $this->LinkType = (int)$val;
+        $this->LinkType = (StoreCustomListingHeaderLinkCodeType)$val;
 	}
 
 	/**
@@ -46102,7 +46102,7 @@ class StoreCustomListingHeaderLinkType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46153,7 +46153,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setDisplayType($val)
 	{
-        $this->DisplayType = (int)$val;
+        $this->DisplayType = (StoreCustomListingHeaderDisplayCodeType)$val;
 	}
 
 	/**
@@ -46162,7 +46162,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setLogo($val)
 	{
-        $this->Logo = (int)$val;
+        $this->Logo = (boolean)$val;
 	}
 
 	/**
@@ -46171,7 +46171,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setSearchBox($val)
 	{
-        $this->SearchBox = (int)$val;
+        $this->SearchBox = (boolean)$val;
 	}
 
 	/**
@@ -46180,7 +46180,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setLinkToInclude($val)
 	{
-        $this->LinkToInclude = (int)$val;
+        $this->LinkToInclude = (StoreCustomListingHeaderLinkType)$val;
 	}
 
 	/**
@@ -46189,7 +46189,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setAddToFavoriteStores($val)
 	{
-        $this->AddToFavoriteStores = (int)$val;
+        $this->AddToFavoriteStores = (boolean)$val;
 	}
 
 	/**
@@ -46198,7 +46198,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setSignUpForStoreNewsletter($val)
 	{
-        $this->SignUpForStoreNewsletter = (int)$val;
+        $this->SignUpForStoreNewsletter = (boolean)$val;
 	}
 
 	/**
@@ -46207,7 +46207,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setBreadCrumb($val)
 	{
-        $this->BreadCrumb = (int)$val;
+        $this->BreadCrumb = (boolean)$val;
 	}
 
 	/**
@@ -46216,7 +46216,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46239,7 +46239,7 @@ class StoreCustomPageArrayType
 	 */
 	public function setCustomPage($val)
 	{
-        $this->CustomPage = (int)$val;
+        $this->CustomPage = (StoreCustomPageType)$val;
 	}
 }
 
@@ -46319,7 +46319,7 @@ class StoreCustomPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -46343,7 +46343,7 @@ class StoreCustomPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URLPath');
         }
-        $this->URLPath = (int)$val;
+        $this->URLPath = (string)$val;
 	}
 
 	/**
@@ -46352,7 +46352,7 @@ class StoreCustomPageType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -46361,7 +46361,7 @@ class StoreCustomPageType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (StoreCustomPageStatusCodeType)$val;
 	}
 
 	/**
@@ -46373,7 +46373,7 @@ class StoreCustomPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Content');
         }
-        $this->Content = (int)$val;
+        $this->Content = (string)$val;
 	}
 
 	/**
@@ -46382,7 +46382,7 @@ class StoreCustomPageType
 	 */
 	public function setLeftNav($val)
 	{
-        $this->LeftNav = (int)$val;
+        $this->LeftNav = (boolean)$val;
 	}
 
 	/**
@@ -46391,7 +46391,7 @@ class StoreCustomPageType
 	 */
 	public function setPreviewEnabled($val)
 	{
-        $this->PreviewEnabled = (int)$val;
+        $this->PreviewEnabled = (boolean)$val;
 	}
 
 	/**
@@ -46412,7 +46412,7 @@ class StoreCustomPageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46492,7 +46492,7 @@ class StoreFontType
 	 */
 	public function setNameFace($val)
 	{
-        $this->NameFace = (int)$val;
+        $this->NameFace = (StoreFontFaceCodeType)$val;
 	}
 
 	/**
@@ -46501,7 +46501,7 @@ class StoreFontType
 	 */
 	public function setNameSize($val)
 	{
-        $this->NameSize = (int)$val;
+        $this->NameSize = (StoreFontSizeCodeType)$val;
 	}
 
 	/**
@@ -46513,7 +46513,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NameColor');
         }
-        $this->NameColor = (int)$val;
+        $this->NameColor = (string)$val;
 	}
 
 	/**
@@ -46522,7 +46522,7 @@ class StoreFontType
 	 */
 	public function setTitleFace($val)
 	{
-        $this->TitleFace = (int)$val;
+        $this->TitleFace = (StoreFontFaceCodeType)$val;
 	}
 
 	/**
@@ -46531,7 +46531,7 @@ class StoreFontType
 	 */
 	public function setTitleSize($val)
 	{
-        $this->TitleSize = (int)$val;
+        $this->TitleSize = (StoreFontSizeCodeType)$val;
 	}
 
 	/**
@@ -46543,7 +46543,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TitleColor');
         }
-        $this->TitleColor = (int)$val;
+        $this->TitleColor = (string)$val;
 	}
 
 	/**
@@ -46552,7 +46552,7 @@ class StoreFontType
 	 */
 	public function setDescFace($val)
 	{
-        $this->DescFace = (int)$val;
+        $this->DescFace = (StoreFontFaceCodeType)$val;
 	}
 
 	/**
@@ -46561,7 +46561,7 @@ class StoreFontType
 	 */
 	public function setDescSize($val)
 	{
-        $this->DescSize = (int)$val;
+        $this->DescSize = (StoreFontSizeCodeType)$val;
 	}
 
 	/**
@@ -46573,7 +46573,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DescColor');
         }
-        $this->DescColor = (int)$val;
+        $this->DescColor = (string)$val;
 	}
 
 	/**
@@ -46582,7 +46582,7 @@ class StoreFontType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46614,7 +46614,7 @@ class StoreInventoryEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46653,7 +46653,7 @@ class StoreLogoArrayType
 	 */
 	public function setLogo($val)
 	{
-        $this->Logo = (int)$val;
+        $this->Logo = (StoreLogoType)$val;
 	}
 }
 
@@ -46706,7 +46706,7 @@ class StoreLogoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -46715,7 +46715,7 @@ class StoreLogoType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -46724,7 +46724,7 @@ class StoreLogoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46747,7 +46747,7 @@ class StorePreferencesType
 	 */
 	public function setVacationPreferences($val)
 	{
-        $this->VacationPreferences = (int)$val;
+        $this->VacationPreferences = (StoreVacationPreferencesType)$val;
 	}
 }
 
@@ -46779,7 +46779,7 @@ class StoreSubscriptionArrayType
 	 */
 	public function setSubscription($val)
 	{
-        $this->Subscription = (int)$val;
+        $this->Subscription = (StoreSubscriptionType)$val;
 	}
 }
 
@@ -46815,7 +46815,7 @@ class StoreSubscriptionType
 	 */
 	public function setLevel($val)
 	{
-        $this->Level = (int)$val;
+        $this->Level = (StoreSubscriptionLevelCodeType)$val;
 	}
 
 	/**
@@ -46824,7 +46824,7 @@ class StoreSubscriptionType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (int)$val;
+        $this->Fee = (AmountType)$val;
 	}
 
 	/**
@@ -46833,7 +46833,7 @@ class StoreSubscriptionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46865,7 +46865,7 @@ class StoreThemeArrayType
 	 */
 	public function setTheme($val)
 	{
-        $this->Theme = (int)$val;
+        $this->Theme = (StoreThemeType)$val;
 	}
 
 	/**
@@ -46874,7 +46874,7 @@ class StoreThemeArrayType
 	 */
 	public function setGenericColorSchemeArray($val)
 	{
-        $this->GenericColorSchemeArray = (int)$val;
+        $this->GenericColorSchemeArray = (StoreColorSchemeArrayType)$val;
 	}
 
 	/**
@@ -46883,7 +46883,7 @@ class StoreThemeArrayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -46934,7 +46934,7 @@ class StoreThemeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -46943,7 +46943,7 @@ class StoreThemeType
 	 */
 	public function setColorScheme($val)
 	{
-        $this->ColorScheme = (int)$val;
+        $this->ColorScheme = (StoreColorSchemeType)$val;
 	}
 
 	/**
@@ -46952,7 +46952,7 @@ class StoreThemeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47061,7 +47061,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -47073,7 +47073,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URLPath');
         }
-        $this->URLPath = (int)$val;
+        $this->URLPath = (string)$val;
 	}
 
 	/**
@@ -47082,7 +47082,7 @@ class StoreType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -47091,7 +47091,7 @@ class StoreType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (int)$val;
+        $this->SubscriptionLevel = (StoreSubscriptionLevelCodeType)$val;
 	}
 
 	/**
@@ -47103,7 +47103,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -47112,7 +47112,7 @@ class StoreType
 	 */
 	public function setLogo($val)
 	{
-        $this->Logo = (int)$val;
+        $this->Logo = (StoreLogoType)$val;
 	}
 
 	/**
@@ -47121,7 +47121,7 @@ class StoreType
 	 */
 	public function setTheme($val)
 	{
-        $this->Theme = (int)$val;
+        $this->Theme = (StoreThemeType)$val;
 	}
 
 	/**
@@ -47130,7 +47130,7 @@ class StoreType
 	 */
 	public function setHeaderStyle($val)
 	{
-        $this->HeaderStyle = (int)$val;
+        $this->HeaderStyle = (StoreHeaderStyleCodeType)$val;
 	}
 
 	/**
@@ -47151,7 +47151,7 @@ class StoreType
 	 */
 	public function setItemListLayout($val)
 	{
-        $this->ItemListLayout = (int)$val;
+        $this->ItemListLayout = (StoreItemListLayoutCodeType)$val;
 	}
 
 	/**
@@ -47160,7 +47160,7 @@ class StoreType
 	 */
 	public function setItemListSortOrder($val)
 	{
-        $this->ItemListSortOrder = (int)$val;
+        $this->ItemListSortOrder = (StoreItemListSortOrderCodeType)$val;
 	}
 
 	/**
@@ -47169,7 +47169,7 @@ class StoreType
 	 */
 	public function setCustomHeaderLayout($val)
 	{
-        $this->CustomHeaderLayout = (int)$val;
+        $this->CustomHeaderLayout = (StoreCustomHeaderLayoutCodeType)$val;
 	}
 
 	/**
@@ -47181,7 +47181,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CustomHeader');
         }
-        $this->CustomHeader = (int)$val;
+        $this->CustomHeader = (string)$val;
 	}
 
 	/**
@@ -47190,7 +47190,7 @@ class StoreType
 	 */
 	public function setExportListings($val)
 	{
-        $this->ExportListings = (int)$val;
+        $this->ExportListings = (boolean)$val;
 	}
 
 	/**
@@ -47199,7 +47199,7 @@ class StoreType
 	 */
 	public function setCustomCategories($val)
 	{
-        $this->CustomCategories = (int)$val;
+        $this->CustomCategories = (StoreCustomCategoryArrayType)$val;
 	}
 
 	/**
@@ -47208,7 +47208,7 @@ class StoreType
 	 */
 	public function setCustomListingHeader($val)
 	{
-        $this->CustomListingHeader = (int)$val;
+        $this->CustomListingHeader = (StoreCustomListingHeaderType)$val;
 	}
 
 	/**
@@ -47217,7 +47217,7 @@ class StoreType
 	 */
 	public function setMerchDisplay($val)
 	{
-        $this->MerchDisplay = (int)$val;
+        $this->MerchDisplay = (MerchDisplayCodeType)$val;
 	}
 
 	/**
@@ -47226,7 +47226,7 @@ class StoreType
 	 */
 	public function setLastOpenedTime($val)
 	{
-        $this->LastOpenedTime = (int)$val;
+        $this->LastOpenedTime = (dateTime)$val;
 	}
 
 	/**
@@ -47235,7 +47235,7 @@ class StoreType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47288,7 +47288,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setOnVacation($val)
 	{
-        $this->OnVacation = (int)$val;
+        $this->OnVacation = (boolean)$val;
 	}
 
 	/**
@@ -47297,7 +47297,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setReturnDate($val)
 	{
-        $this->ReturnDate = (int)$val;
+        $this->ReturnDate = (dateTime)$val;
 	}
 
 	/**
@@ -47306,7 +47306,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setHideFixedPriceStoreItems($val)
 	{
-        $this->HideFixedPriceStoreItems = (int)$val;
+        $this->HideFixedPriceStoreItems = (boolean)$val;
 	}
 
 	/**
@@ -47315,7 +47315,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setMessageItem($val)
 	{
-        $this->MessageItem = (int)$val;
+        $this->MessageItem = (boolean)$val;
 	}
 
 	/**
@@ -47324,7 +47324,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setMessageStore($val)
 	{
-        $this->MessageStore = (int)$val;
+        $this->MessageStore = (boolean)$val;
 	}
 
 	/**
@@ -47333,7 +47333,7 @@ class StoreVacationPreferencesType
 	 */
 	public function setDisplayMessageStoreCustomText($val)
 	{
-        $this->DisplayMessageStoreCustomText = (int)$val;
+        $this->DisplayMessageStoreCustomText = (boolean)$val;
 	}
 
 	/**
@@ -47345,7 +47345,7 @@ class StoreVacationPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageStoreCustomText');
         }
-        $this->MessageStoreCustomText = (int)$val;
+        $this->MessageStoreCustomText = (string)$val;
 	}
 }
 
@@ -47424,7 +47424,7 @@ class StorefrontType
 	 */
 	public function setStoreURL($val)
 	{
-        $this->StoreURL = (int)$val;
+        $this->StoreURL = (anyURI)$val;
 	}
 
 	/**
@@ -47436,7 +47436,7 @@ class StorefrontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
 	}
 
 	/**
@@ -47445,7 +47445,7 @@ class StorefrontType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47481,7 +47481,7 @@ class SuggestedCategoryArrayType
 	 */
 	public function setSuggestedCategory($val)
 	{
-        $this->SuggestedCategory = (int)$val;
+        $this->SuggestedCategory = (SuggestedCategoryType)$val;
 	}
 
 	/**
@@ -47490,7 +47490,7 @@ class SuggestedCategoryArrayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47524,7 +47524,7 @@ class SuggestedCategoryType
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = (CategoryType)$val;
 	}
 
 	/**
@@ -47545,7 +47545,7 @@ class SuggestedCategoryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47579,7 +47579,7 @@ class SummaryEventScheduleType
 	 */
 	public function setEventType($val)
 	{
-        $this->EventType = (int)$val;
+        $this->EventType = (NotificationEventTypeCodeType)$val;
 	}
 
 	/**
@@ -47588,7 +47588,7 @@ class SummaryEventScheduleType
 	 */
 	public function setSummaryPeriod($val)
 	{
-        $this->SummaryPeriod = (int)$val;
+        $this->SummaryPeriod = (SummaryWindowPeriodCodeType)$val;
 	}
 
 	/**
@@ -47597,7 +47597,7 @@ class SummaryEventScheduleType
 	 */
 	public function setFrequency($val)
 	{
-        $this->Frequency = (int)$val;
+        $this->Frequency = (SummaryFrequencyCodeType)$val;
 	}
 
 	/**
@@ -47606,7 +47606,7 @@ class SummaryEventScheduleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47687,7 +47687,7 @@ class TcRenabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47742,7 +47742,7 @@ class TaxJurisdictionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for JurisdictionID');
         }
-        $this->JurisdictionID = (int)$val;
+        $this->JurisdictionID = (string)$val;
 	}
 
 	/**
@@ -47751,7 +47751,7 @@ class TaxJurisdictionType
 	 */
 	public function setSalesTaxPercent($val)
 	{
-        $this->SalesTaxPercent = (int)$val;
+        $this->SalesTaxPercent = (float)$val;
 	}
 
 	/**
@@ -47760,7 +47760,7 @@ class TaxJurisdictionType
 	 */
 	public function setShippingIncludedInTax($val)
 	{
-        $this->ShippingIncludedInTax = (int)$val;
+        $this->ShippingIncludedInTax = (boolean)$val;
 	}
 
 	/**
@@ -47772,7 +47772,7 @@ class TaxJurisdictionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for JurisdictionName');
         }
-        $this->JurisdictionName = (int)$val;
+        $this->JurisdictionName = (string)$val;
 	}
 
 	/**
@@ -47781,7 +47781,7 @@ class TaxJurisdictionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47808,7 +47808,7 @@ class TaxTableType
 	 */
 	public function setTaxJurisdiction($val)
 	{
-        $this->TaxJurisdiction = (int)$val;
+        $this->TaxJurisdiction = (TaxJurisdictionType)$val;
 	}
 }
 
@@ -47863,7 +47863,7 @@ class ThemeGroupType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for GroupName');
         }
-        $this->GroupName = (int)$val;
+        $this->GroupName = (string)$val;
 	}
 
 	/**
@@ -47896,7 +47896,7 @@ class ThemeGroupType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -47933,7 +47933,7 @@ class TransactionArrayType
 	 */
 	public function setTransaction($val)
 	{
-        $this->Transaction = (int)$val;
+        $this->Transaction = (TransactionType)$val;
 	}
 }
 
@@ -47996,7 +47996,7 @@ class TransactionStatusType
 	 */
 	public function setEBayPaymentStatus($val)
 	{
-        $this->eBayPaymentStatus = (int)$val;
+        $this->eBayPaymentStatus = (PaymentStatusCodeType)$val;
 	}
 
 	/**
@@ -48005,7 +48005,7 @@ class TransactionStatusType
 	 */
 	public function setCheckoutStatus($val)
 	{
-        $this->CheckoutStatus = (int)$val;
+        $this->CheckoutStatus = (CheckoutStatusCodeType)$val;
 	}
 
 	/**
@@ -48014,7 +48014,7 @@ class TransactionStatusType
 	 */
 	public function setLastTimeModified($val)
 	{
-        $this->LastTimeModified = (int)$val;
+        $this->LastTimeModified = (dateTime)$val;
 	}
 
 	/**
@@ -48023,7 +48023,7 @@ class TransactionStatusType
 	 */
 	public function setPaymentMethodUsed($val)
 	{
-        $this->PaymentMethodUsed = (int)$val;
+        $this->PaymentMethodUsed = (BuyerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -48032,7 +48032,7 @@ class TransactionStatusType
 	 */
 	public function setCompleteStatus($val)
 	{
-        $this->CompleteStatus = (int)$val;
+        $this->CompleteStatus = (CompleteStatusCodeType)$val;
 	}
 
 	/**
@@ -48041,7 +48041,7 @@ class TransactionStatusType
 	 */
 	public function setBuyerSelectedShipping($val)
 	{
-        $this->BuyerSelectedShipping = (int)$val;
+        $this->BuyerSelectedShipping = (boolean)$val;
 	}
 
 	/**
@@ -48050,7 +48050,7 @@ class TransactionStatusType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -48286,7 +48286,7 @@ class TransactionType
 	 */
 	public function setAmountPaid($val)
 	{
-        $this->AmountPaid = (int)$val;
+        $this->AmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -48295,7 +48295,7 @@ class TransactionType
 	 */
 	public function setAdjustmentAmount($val)
 	{
-        $this->AdjustmentAmount = (int)$val;
+        $this->AdjustmentAmount = (AmountType)$val;
 	}
 
 	/**
@@ -48304,7 +48304,7 @@ class TransactionType
 	 */
 	public function setConvertedAdjustmentAmount($val)
 	{
-        $this->ConvertedAdjustmentAmount = (int)$val;
+        $this->ConvertedAdjustmentAmount = (AmountType)$val;
 	}
 
 	/**
@@ -48313,7 +48313,7 @@ class TransactionType
 	 */
 	public function setBuyer($val)
 	{
-        $this->Buyer = (int)$val;
+        $this->Buyer = (UserType)$val;
 	}
 
 	/**
@@ -48322,7 +48322,7 @@ class TransactionType
 	 */
 	public function setShippingDetails($val)
 	{
-        $this->ShippingDetails = (int)$val;
+        $this->ShippingDetails = (ShippingDetailsType)$val;
 	}
 
 	/**
@@ -48331,7 +48331,7 @@ class TransactionType
 	 */
 	public function setConvertedAmountPaid($val)
 	{
-        $this->ConvertedAmountPaid = (int)$val;
+        $this->ConvertedAmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -48340,7 +48340,7 @@ class TransactionType
 	 */
 	public function setConvertedTransactionPrice($val)
 	{
-        $this->ConvertedTransactionPrice = (int)$val;
+        $this->ConvertedTransactionPrice = (AmountType)$val;
 	}
 
 	/**
@@ -48349,7 +48349,7 @@ class TransactionType
 	 */
 	public function setCreatedDate($val)
 	{
-        $this->CreatedDate = (int)$val;
+        $this->CreatedDate = (dateTime)$val;
 	}
 
 	/**
@@ -48358,7 +48358,7 @@ class TransactionType
 	 */
 	public function setDepositType($val)
 	{
-        $this->DepositType = (int)$val;
+        $this->DepositType = (DepositTypeCodeType)$val;
 	}
 
 	/**
@@ -48367,7 +48367,7 @@ class TransactionType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
 	}
 
 	/**
@@ -48388,7 +48388,7 @@ class TransactionType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (TransactionStatusType)$val;
 	}
 
 	/**
@@ -48400,7 +48400,7 @@ class TransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
 	}
 
 	/**
@@ -48409,7 +48409,7 @@ class TransactionType
 	 */
 	public function setTransactionPrice($val)
 	{
-        $this->TransactionPrice = (int)$val;
+        $this->TransactionPrice = (AmountType)$val;
 	}
 
 	/**
@@ -48418,7 +48418,7 @@ class TransactionType
 	 */
 	public function setBestOfferSale($val)
 	{
-        $this->BestOfferSale = (int)$val;
+        $this->BestOfferSale = (boolean)$val;
 	}
 
 	/**
@@ -48427,7 +48427,7 @@ class TransactionType
 	 */
 	public function setVATPercent($val)
 	{
-        $this->VATPercent = (int)$val;
+        $this->VATPercent = (decimal)$val;
 	}
 
 	/**
@@ -48436,7 +48436,7 @@ class TransactionType
 	 */
 	public function setExternalTransaction($val)
 	{
-        $this->ExternalTransaction = (int)$val;
+        $this->ExternalTransaction = (ExternalTransactionType)$val;
 	}
 
 	/**
@@ -48445,7 +48445,7 @@ class TransactionType
 	 */
 	public function setSellingManagerProductDetails($val)
 	{
-        $this->SellingManagerProductDetails = (int)$val;
+        $this->SellingManagerProductDetails = (SellingManagerProductDetailsType)$val;
 	}
 
 	/**
@@ -48454,7 +48454,7 @@ class TransactionType
 	 */
 	public function setShippingServiceSelected($val)
 	{
-        $this->ShippingServiceSelected = (int)$val;
+        $this->ShippingServiceSelected = (ShippingServiceOptionsType)$val;
 	}
 
 	/**
@@ -48466,7 +48466,7 @@ class TransactionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerMessage');
         }
-        $this->BuyerMessage = (int)$val;
+        $this->BuyerMessage = (string)$val;
 	}
 
 	/**
@@ -48475,7 +48475,7 @@ class TransactionType
 	 */
 	public function setDutchAuctionBid($val)
 	{
-        $this->DutchAuctionBid = (int)$val;
+        $this->DutchAuctionBid = (AmountType)$val;
 	}
 
 	/**
@@ -48484,7 +48484,7 @@ class TransactionType
 	 */
 	public function setBuyerPaidStatus($val)
 	{
-        $this->BuyerPaidStatus = (int)$val;
+        $this->BuyerPaidStatus = (PaidStatusCodeType)$val;
 	}
 
 	/**
@@ -48493,7 +48493,7 @@ class TransactionType
 	 */
 	public function setSellerPaidStatus($val)
 	{
-        $this->SellerPaidStatus = (int)$val;
+        $this->SellerPaidStatus = (PaidStatusCodeType)$val;
 	}
 
 	/**
@@ -48502,7 +48502,7 @@ class TransactionType
 	 */
 	public function setPaidTime($val)
 	{
-        $this->PaidTime = (int)$val;
+        $this->PaidTime = (dateTime)$val;
 	}
 
 	/**
@@ -48511,7 +48511,7 @@ class TransactionType
 	 */
 	public function setShippedTime($val)
 	{
-        $this->ShippedTime = (int)$val;
+        $this->ShippedTime = (dateTime)$val;
 	}
 
 	/**
@@ -48520,7 +48520,7 @@ class TransactionType
 	 */
 	public function setTotalPrice($val)
 	{
-        $this->TotalPrice = (int)$val;
+        $this->TotalPrice = (AmountType)$val;
 	}
 
 	/**
@@ -48529,7 +48529,7 @@ class TransactionType
 	 */
 	public function setFeedbackLeft($val)
 	{
-        $this->FeedbackLeft = (int)$val;
+        $this->FeedbackLeft = (FeedbackInfoType)$val;
 	}
 
 	/**
@@ -48538,7 +48538,7 @@ class TransactionType
 	 */
 	public function setFeedbackReceived($val)
 	{
-        $this->FeedbackReceived = (int)$val;
+        $this->FeedbackReceived = (FeedbackInfoType)$val;
 	}
 
 	/**
@@ -48547,7 +48547,7 @@ class TransactionType
 	 */
 	public function setContainingOrder($val)
 	{
-        $this->ContainingOrder = (int)$val;
+        $this->ContainingOrder = (OrderType)$val;
 	}
 
 	/**
@@ -48556,7 +48556,7 @@ class TransactionType
 	 */
 	public function setFinalValueFee($val)
 	{
-        $this->FinalValueFee = (int)$val;
+        $this->FinalValueFee = (AmountType)$val;
 	}
 
 	/**
@@ -48565,7 +48565,7 @@ class TransactionType
 	 */
 	public function setTransactionPlatform($val)
 	{
-        $this->TransactionPlatform = (int)$val;
+        $this->TransactionPlatform = (TransactionPlatformType)$val;
 	}
 
 	/**
@@ -48574,7 +48574,7 @@ class TransactionType
 	 */
 	public function setListingCheckoutRedirectPreference($val)
 	{
-        $this->ListingCheckoutRedirectPreference = (int)$val;
+        $this->ListingCheckoutRedirectPreference = (ListingCheckoutRedirectPreferenceType)$val;
 	}
 
 	/**
@@ -48583,7 +48583,7 @@ class TransactionType
 	 */
 	public function setRefundArray($val)
 	{
-        $this->RefundArray = (int)$val;
+        $this->RefundArray = (RefundArrayType)$val;
 	}
 
 	/**
@@ -48592,7 +48592,7 @@ class TransactionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -48633,7 +48633,7 @@ class UrLdetailsType
 	 */
 	public function setURLType($val)
 	{
-        $this->URLType = (int)$val;
+        $this->URLType = (URLTypeCodeType)$val;
 	}
 
 	/**
@@ -48642,7 +48642,7 @@ class UrLdetailsType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -48651,7 +48651,7 @@ class UrLdetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -48692,7 +48692,7 @@ class UserConsentRequiredDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -48729,7 +48729,7 @@ class UserIdArrayType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -48738,7 +48738,7 @@ class UserIdArrayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -48779,7 +48779,7 @@ class UserIdFilterType
 	 */
 	public function setExcludeSellers($val)
 	{
-        $this->ExcludeSellers = (int)$val;
+        $this->ExcludeSellers = (UserIDType)$val;
 	}
 
 	/**
@@ -48788,7 +48788,7 @@ class UserIdFilterType
 	 */
 	public function setIncludeSellers($val)
 	{
-        $this->IncludeSellers = (int)$val;
+        $this->IncludeSellers = (UserIDType)$val;
 	}
 
 	/**
@@ -48797,7 +48797,7 @@ class UserIdFilterType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49124,7 +49124,7 @@ class UserType
 	 */
 	public function setAboutMePage($val)
 	{
-        $this->AboutMePage = (int)$val;
+        $this->AboutMePage = (boolean)$val;
 	}
 
 	/**
@@ -49136,7 +49136,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->EIASToken = (int)$val;
+        $this->EIASToken = (string)$val;
 	}
 
 	/**
@@ -49148,7 +49148,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RESTToken');
         }
-        $this->RESTToken = (int)$val;
+        $this->RESTToken = (string)$val;
 	}
 
 	/**
@@ -49160,7 +49160,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -49205,7 +49205,7 @@ class UserType
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
-        $this->PositiveFeedbackPercent = (int)$val;
+        $this->PositiveFeedbackPercent = (float)$val;
 	}
 
 	/**
@@ -49214,7 +49214,7 @@ class UserType
 	 */
 	public function setFeedbackPrivate($val)
 	{
-        $this->FeedbackPrivate = (int)$val;
+        $this->FeedbackPrivate = (boolean)$val;
 	}
 
 	/**
@@ -49223,7 +49223,7 @@ class UserType
 	 */
 	public function setFeedbackRatingStar($val)
 	{
-        $this->FeedbackRatingStar = (int)$val;
+        $this->FeedbackRatingStar = (FeedbackRatingStarCodeType)$val;
 	}
 
 	/**
@@ -49232,7 +49232,7 @@ class UserType
 	 */
 	public function setIDVerified($val)
 	{
-        $this->IDVerified = (int)$val;
+        $this->IDVerified = (boolean)$val;
 	}
 
 	/**
@@ -49241,7 +49241,7 @@ class UserType
 	 */
 	public function setEBayGoodStanding($val)
 	{
-        $this->eBayGoodStanding = (int)$val;
+        $this->eBayGoodStanding = (boolean)$val;
 	}
 
 	/**
@@ -49250,7 +49250,7 @@ class UserType
 	 */
 	public function setNewUser($val)
 	{
-        $this->NewUser = (int)$val;
+        $this->NewUser = (boolean)$val;
 	}
 
 	/**
@@ -49259,7 +49259,7 @@ class UserType
 	 */
 	public function setRegistrationAddress($val)
 	{
-        $this->RegistrationAddress = (int)$val;
+        $this->RegistrationAddress = (AddressType)$val;
 	}
 
 	/**
@@ -49268,7 +49268,7 @@ class UserType
 	 */
 	public function setRegistrationDate($val)
 	{
-        $this->RegistrationDate = (int)$val;
+        $this->RegistrationDate = (dateTime)$val;
 	}
 
 	/**
@@ -49277,7 +49277,7 @@ class UserType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -49286,7 +49286,7 @@ class UserType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (UserStatusCodeType)$val;
 	}
 
 	/**
@@ -49295,7 +49295,7 @@ class UserType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = (int)$val;
+        $this->UserID = (UserIDType)$val;
 	}
 
 	/**
@@ -49304,7 +49304,7 @@ class UserType
 	 */
 	public function setUserIDChanged($val)
 	{
-        $this->UserIDChanged = (int)$val;
+        $this->UserIDChanged = (boolean)$val;
 	}
 
 	/**
@@ -49313,7 +49313,7 @@ class UserType
 	 */
 	public function setUserIDLastChanged($val)
 	{
-        $this->UserIDLastChanged = (int)$val;
+        $this->UserIDLastChanged = (dateTime)$val;
 	}
 
 	/**
@@ -49322,7 +49322,7 @@ class UserType
 	 */
 	public function setVATStatus($val)
 	{
-        $this->VATStatus = (int)$val;
+        $this->VATStatus = (VATStatusCodeType)$val;
 	}
 
 	/**
@@ -49331,7 +49331,7 @@ class UserType
 	 */
 	public function setBuyerInfo($val)
 	{
-        $this->BuyerInfo = (int)$val;
+        $this->BuyerInfo = (BuyerType)$val;
 	}
 
 	/**
@@ -49340,7 +49340,7 @@ class UserType
 	 */
 	public function setSellerInfo($val)
 	{
-        $this->SellerInfo = (int)$val;
+        $this->SellerInfo = (SellerType)$val;
 	}
 
 	/**
@@ -49349,7 +49349,7 @@ class UserType
 	 */
 	public function setCharityAffiliations($val)
 	{
-        $this->CharityAffiliations = (int)$val;
+        $this->CharityAffiliations = (CharityAffiliationsType)$val;
 	}
 
 	/**
@@ -49358,7 +49358,7 @@ class UserType
 	 */
 	public function setCharitySeller($val)
 	{
-        $this->CharitySeller = (int)$val;
+        $this->CharitySeller = (CharitySellerType)$val;
 	}
 
 	/**
@@ -49367,7 +49367,7 @@ class UserType
 	 */
 	public function setPayPalAccountLevel($val)
 	{
-        $this->PayPalAccountLevel = (int)$val;
+        $this->PayPalAccountLevel = (PayPalAccountLevelCodeType)$val;
 	}
 
 	/**
@@ -49376,7 +49376,7 @@ class UserType
 	 */
 	public function setPayPalAccountType($val)
 	{
-        $this->PayPalAccountType = (int)$val;
+        $this->PayPalAccountType = (PayPalAccountTypeCodeType)$val;
 	}
 
 	/**
@@ -49385,7 +49385,7 @@ class UserType
 	 */
 	public function setPayPalAccountStatus($val)
 	{
-        $this->PayPalAccountStatus = (int)$val;
+        $this->PayPalAccountStatus = (PayPalAccountStatusCodeType)$val;
 	}
 
 	/**
@@ -49394,7 +49394,7 @@ class UserType
 	 */
 	public function setUserSubscription($val)
 	{
-        $this->UserSubscription = (int)$val;
+        $this->UserSubscription = (EBaySubscriptionTypeCodeType)$val;
 	}
 
 	/**
@@ -49403,7 +49403,7 @@ class UserType
 	 */
 	public function setSiteVerified($val)
 	{
-        $this->SiteVerified = (int)$val;
+        $this->SiteVerified = (boolean)$val;
 	}
 
 	/**
@@ -49415,7 +49415,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->SkypeID = (int)$val;
+        $this->SkypeID = (string)$val;
 	}
 
 	/**
@@ -49424,7 +49424,7 @@ class UserType
 	 */
 	public function setEBayWikiReadOnly($val)
 	{
-        $this->eBayWikiReadOnly = (int)$val;
+        $this->eBayWikiReadOnly = (boolean)$val;
 	}
 
 	/**
@@ -49448,7 +49448,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VATID');
         }
-        $this->VATID = (int)$val;
+        $this->VATID = (string)$val;
 	}
 
 	/**
@@ -49457,7 +49457,7 @@ class UserType
 	 */
 	public function setMotorsDealer($val)
 	{
-        $this->MotorsDealer = (int)$val;
+        $this->MotorsDealer = (boolean)$val;
 	}
 
 	/**
@@ -49466,7 +49466,7 @@ class UserType
 	 */
 	public function setSellerPaymentMethod($val)
 	{
-        $this->SellerPaymentMethod = (int)$val;
+        $this->SellerPaymentMethod = (SellerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -49475,7 +49475,7 @@ class UserType
 	 */
 	public function setBiddingSummary($val)
 	{
-        $this->BiddingSummary = (int)$val;
+        $this->BiddingSummary = (BiddingSummaryType)$val;
 	}
 
 	/**
@@ -49484,7 +49484,7 @@ class UserType
 	 */
 	public function setUserAnonymized($val)
 	{
-        $this->UserAnonymized = (int)$val;
+        $this->UserAnonymized = (boolean)$val;
 	}
 
 	/**
@@ -49493,7 +49493,7 @@ class UserType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49554,7 +49554,7 @@ class VaTdetailsType
 	 */
 	public function setBusinessSeller($val)
 	{
-        $this->BusinessSeller = (int)$val;
+        $this->BusinessSeller = (boolean)$val;
 	}
 
 	/**
@@ -49563,7 +49563,7 @@ class VaTdetailsType
 	 */
 	public function setRestrictedToBusiness($val)
 	{
-        $this->RestrictedToBusiness = (int)$val;
+        $this->RestrictedToBusiness = (boolean)$val;
 	}
 
 	/**
@@ -49572,7 +49572,7 @@ class VaTdetailsType
 	 */
 	public function setVATPercent($val)
 	{
-        $this->VATPercent = (int)$val;
+        $this->VATPercent = (float)$val;
 	}
 
 	/**
@@ -49581,7 +49581,7 @@ class VaTdetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49646,7 +49646,7 @@ class ValType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ValueLiteral');
         }
-        $this->ValueLiteral = (int)$val;
+        $this->ValueLiteral = (string)$val;
 	}
 
 	/**
@@ -49658,7 +49658,7 @@ class ValType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SuggestedValueLiteral');
         }
-        $this->SuggestedValueLiteral = (int)$val;
+        $this->SuggestedValueLiteral = (string)$val;
 	}
 
 	/**
@@ -49679,7 +49679,7 @@ class ValType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49704,7 +49704,7 @@ class ValuePackEnabledDefinitionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49737,7 +49737,7 @@ class VeRoReasonCodeDetailsType
 	 */
 	public function setVeROSiteDetail($val)
 	{
-        $this->VeROSiteDetail = (int)$val;
+        $this->VeROSiteDetail = (VeROSiteDetailType)$val;
 	}
 }
 
@@ -49778,7 +49778,7 @@ class VeRoReportItemType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -49787,7 +49787,7 @@ class VeRoReportItemType
 	 */
 	public function setVeROReasonCodeID($val)
 	{
-        $this->VeROReasonCodeID = (int)$val;
+        $this->VeROReasonCodeID = (long)$val;
 	}
 
 	/**
@@ -49799,7 +49799,7 @@ class VeRoReportItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageToSeller');
         }
-        $this->MessageToSeller = (int)$val;
+        $this->MessageToSeller = (string)$val;
 	}
 
 	/**
@@ -49808,7 +49808,7 @@ class VeRoReportItemType
 	 */
 	public function setCopyEmailToRightsOwner($val)
 	{
-        $this->CopyEmailToRightsOwner = (int)$val;
+        $this->CopyEmailToRightsOwner = (boolean)$val;
 	}
 
 	/**
@@ -49817,7 +49817,7 @@ class VeRoReportItemType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49841,7 +49841,7 @@ class VeRoReportItemsType
 	 */
 	public function setReportItem($val)
 	{
-        $this->ReportItem = (int)$val;
+        $this->ReportItem = (VeROReportItemType)$val;
 	}
 }
 
@@ -49873,7 +49873,7 @@ class VeRoReportedItemDetailsType
 	 */
 	public function setReportedItem($val)
 	{
-        $this->ReportedItem = (int)$val;
+        $this->ReportedItem = (VeROReportedItemType)$val;
 	}
 }
 
@@ -49909,7 +49909,7 @@ class VeRoReportedItemType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
 	}
 
 	/**
@@ -49918,7 +49918,7 @@ class VeRoReportedItemType
 	 */
 	public function setItemStatus($val)
 	{
-        $this->ItemStatus = (int)$val;
+        $this->ItemStatus = (VeROItemStatusCodeType)$val;
 	}
 
 	/**
@@ -49930,7 +49930,7 @@ class VeRoReportedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemReasonForFailure');
         }
-        $this->ItemReasonForFailure = (int)$val;
+        $this->ItemReasonForFailure = (string)$val;
 	}
 
 	/**
@@ -49939,7 +49939,7 @@ class VeRoReportedItemType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -49970,7 +49970,7 @@ class VeRoSiteDetailType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -49979,7 +49979,7 @@ class VeRoSiteDetailType
 	 */
 	public function setReasonCodeDetail($val)
 	{
-        $this->ReasonCodeDetail = (int)$val;
+        $this->ReasonCodeDetail = (ReasonCodeDetailType)$val;
 	}
 
 	/**
@@ -49988,7 +49988,7 @@ class VeRoSiteDetailType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -50087,7 +50087,7 @@ class VendorHostedPictureType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (anyURI)$val;
 	}
 
 	/**
@@ -50096,7 +50096,7 @@ class VendorHostedPictureType
 	 */
 	public function setSelfHostedURL($val)
 	{
-        $this->SelfHostedURL = (int)$val;
+        $this->SelfHostedURL = (anyURI)$val;
 	}
 
 	/**
@@ -50105,7 +50105,7 @@ class VendorHostedPictureType
 	 */
 	public function setPhotoDisplay($val)
 	{
-        $this->PhotoDisplay = (int)$val;
+        $this->PhotoDisplay = (PhotoDisplayCodeType)$val;
 	}
 
 	/**
@@ -50114,7 +50114,7 @@ class VendorHostedPictureType
 	 */
 	public function setGalleryURL($val)
 	{
-        $this->GalleryURL = (int)$val;
+        $this->GalleryURL = (anyURI)$val;
 	}
 
 	/**
@@ -50123,7 +50123,7 @@ class VendorHostedPictureType
 	 */
 	public function setGalleryType($val)
 	{
-        $this->GalleryType = (int)$val;
+        $this->GalleryType = (GalleryTypeCodeType)$val;
 	}
 
 	/**
@@ -50132,7 +50132,7 @@ class VendorHostedPictureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -50163,7 +50163,7 @@ class VerifiedUserRequirementsType
 	 */
 	public function setVerifiedUser($val)
 	{
-        $this->VerifiedUser = (int)$val;
+        $this->VerifiedUser = (boolean)$val;
 	}
 
 	/**
@@ -50199,7 +50199,7 @@ class WantItNowPostArrayType
 	 */
 	public function setWantItNowPost($val)
 	{
-        $this->WantItNowPost = (int)$val;
+        $this->WantItNowPost = (WantItNowPostType)$val;
 	}
 }
 
@@ -50251,7 +50251,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -50263,7 +50263,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -50272,7 +50272,7 @@ class WantItNowPostType
 	 */
 	public function setPostID($val)
 	{
-        $this->PostID = (int)$val;
+        $this->PostID = (ItemIDType)$val;
 	}
 
 	/**
@@ -50281,7 +50281,7 @@ class WantItNowPostType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
 	}
 
 	/**
@@ -50290,7 +50290,7 @@ class WantItNowPostType
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = (int)$val;
+        $this->StartTime = (dateTime)$val;
 	}
 
 	/**
@@ -50314,7 +50314,7 @@ class WantItNowPostType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
 	}
 }
 
@@ -50376,7 +50376,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = (int)$val;
+        $this->FileName = (string)$val;
 	}
 
 	/**
@@ -50388,7 +50388,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->FileVersion = (int)$val;
+        $this->FileVersion = (string)$val;
 	}
 
 	/**
@@ -50400,7 +50400,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileContent');
         }
-        $this->FileContent = (int)$val;
+        $this->FileContent = (string)$val;
 	}
 
 	/**
@@ -50409,7 +50409,7 @@ class XsLfileType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 
@@ -50440,7 +50440,7 @@ class eBxOptInPreferenceType
 	 */
 	public function setEBxOptInPreference($val)
 	{
-        $this->eBxOptInPreference = (int)$val;
+        $this->eBxOptInPreference = (boolean)$val;
 	}
 
 	/**
@@ -50449,7 +50449,7 @@ class eBxOptInPreferenceType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }
 

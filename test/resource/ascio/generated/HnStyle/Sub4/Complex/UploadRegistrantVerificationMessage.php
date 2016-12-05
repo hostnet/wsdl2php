@@ -28,7 +28,7 @@ class UploadRegistrantVerificationMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = (string)$val;
     }
 
     /**
@@ -40,7 +40,7 @@ class UploadRegistrantVerificationMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for value');
         }
-        $this->value = (int)$val;
+        $this->value = (string)$val;
     }
 
     /**
@@ -49,6 +49,6 @@ class UploadRegistrantVerificationMessage
      */
     public function setDetails($val)
     {
-        $this->details = (int)$val;
+        $this->details = (RegistrantVerificationDetails)$val;
     }
 }

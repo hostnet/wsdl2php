@@ -190,7 +190,7 @@ class CategoryType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
 	}
 
 	/**
@@ -199,7 +199,7 @@ class CategoryType
 	 */
 	public function setAutoPayEnabled($val)
 	{
-        $this->AutoPayEnabled = (int)$val;
+        $this->AutoPayEnabled = (boolean)$val;
 	}
 
 	/**
@@ -208,7 +208,7 @@ class CategoryType
 	 */
 	public function setB2BVATEnabled($val)
 	{
-        $this->B2BVATEnabled = (int)$val;
+        $this->B2BVATEnabled = (boolean)$val;
 	}
 
 	/**
@@ -217,7 +217,7 @@ class CategoryType
 	 */
 	public function setCatalogEnabled($val)
 	{
-        $this->CatalogEnabled = (int)$val;
+        $this->CatalogEnabled = (boolean)$val;
 	}
 
 	/**
@@ -229,7 +229,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
 	}
 
 	/**
@@ -253,7 +253,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryName');
         }
-        $this->CategoryName = (int)$val;
+        $this->CategoryName = (string)$val;
 	}
 
 	/**
@@ -265,7 +265,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentID');
         }
-        $this->CategoryParentID = (int)$val;
+        $this->CategoryParentID = (string)$val;
 	}
 
 	/**
@@ -277,7 +277,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentName');
         }
-        $this->CategoryParentName = (int)$val;
+        $this->CategoryParentName = (string)$val;
 	}
 
 	/**
@@ -298,7 +298,7 @@ class CategoryType
 	 */
 	public function setProductSearchPageAvailable($val)
 	{
-        $this->ProductSearchPageAvailable = (int)$val;
+        $this->ProductSearchPageAvailable = (boolean)$val;
 	}
 
 	/**
@@ -307,7 +307,7 @@ class CategoryType
 	 */
 	public function setProductFinderAvailable($val)
 	{
-        $this->ProductFinderAvailable = (int)$val;
+        $this->ProductFinderAvailable = (boolean)$val;
 	}
 
 	/**
@@ -316,7 +316,7 @@ class CategoryType
 	 */
 	public function setProductFinderIDs($val)
 	{
-        $this->ProductFinderIDs = (int)$val;
+        $this->ProductFinderIDs = (ExtendedProductFinderIDType)$val;
 	}
 
 	/**
@@ -325,7 +325,7 @@ class CategoryType
 	 */
 	public function setCharacteristicsSets($val)
 	{
-        $this->CharacteristicsSets = (int)$val;
+        $this->CharacteristicsSets = (CharacteristicsSetType)$val;
 	}
 
 	/**
@@ -334,7 +334,7 @@ class CategoryType
 	 */
 	public function setExpired($val)
 	{
-        $this->Expired = (int)$val;
+        $this->Expired = (boolean)$val;
 	}
 
 	/**
@@ -343,7 +343,7 @@ class CategoryType
 	 */
 	public function setIntlAutosFixedCat($val)
 	{
-        $this->IntlAutosFixedCat = (int)$val;
+        $this->IntlAutosFixedCat = (boolean)$val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class CategoryType
 	 */
 	public function setLeafCategory($val)
 	{
-        $this->LeafCategory = (int)$val;
+        $this->LeafCategory = (boolean)$val;
 	}
 
 	/**
@@ -361,7 +361,7 @@ class CategoryType
 	 */
 	public function setVirtual($val)
 	{
-        $this->Virtual = (int)$val;
+        $this->Virtual = (boolean)$val;
 	}
 
 	/**
@@ -382,7 +382,7 @@ class CategoryType
 	 */
 	public function setSellerGuaranteeEligible($val)
 	{
-        $this->SellerGuaranteeEligible = (int)$val;
+        $this->SellerGuaranteeEligible = (boolean)$val;
 	}
 
 	/**
@@ -391,7 +391,7 @@ class CategoryType
 	 */
 	public function setORPA($val)
 	{
-        $this->ORPA = (int)$val;
+        $this->ORPA = (boolean)$val;
 	}
 
 	/**
@@ -400,7 +400,7 @@ class CategoryType
 	 */
 	public function setORRA($val)
 	{
-        $this->ORRA = (int)$val;
+        $this->ORRA = (boolean)$val;
 	}
 
 	/**
@@ -409,7 +409,7 @@ class CategoryType
 	 */
 	public function setLSD($val)
 	{
-        $this->LSD = (int)$val;
+        $this->LSD = (boolean)$val;
 	}
 
 	/**
@@ -421,7 +421,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keywords');
         }
-        $this->Keywords = (int)$val;
+        $this->Keywords = (string)$val;
 	}
 
 	/**
@@ -430,6 +430,6 @@ class CategoryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

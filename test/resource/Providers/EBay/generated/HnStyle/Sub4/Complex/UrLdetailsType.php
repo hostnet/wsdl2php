@@ -28,7 +28,7 @@ class UrLdetailsType
      */
     public function setURLType($val)
     {
-        $this->URLType = (int)$val;
+        $this->URLType = (URLTypeCodeType)$val;
     }
 
     /**
@@ -37,7 +37,7 @@ class UrLdetailsType
      */
     public function setURL($val)
     {
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
     }
 
     /**
@@ -46,6 +46,6 @@ class UrLdetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

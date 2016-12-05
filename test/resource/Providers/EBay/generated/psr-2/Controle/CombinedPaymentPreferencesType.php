@@ -40,7 +40,7 @@ class CombinedPaymentPreferencesType
      */
     public function setCalculatedShippingPreferences($val)
     {
-        $this->CalculatedShippingPreferences = (int)$val;
+        $this->CalculatedShippingPreferences = (CalculatedShippingPreferencesType)$val;
     }
 
     /**
@@ -49,7 +49,7 @@ class CombinedPaymentPreferencesType
      */
     public function setCombinedPaymentOption($val)
     {
-        $this->CombinedPaymentOption = (int)$val;
+        $this->CombinedPaymentOption = (CombinedPaymentOptionCodeType)$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class CombinedPaymentPreferencesType
      */
     public function setCombinedPaymentPeriod($val)
     {
-        $this->CombinedPaymentPeriod = (int)$val;
+        $this->CombinedPaymentPeriod = (CombinedPaymentPeriodCodeType)$val;
     }
 
     /**
@@ -67,7 +67,7 @@ class CombinedPaymentPreferencesType
      */
     public function setFlatShippingPreferences($val)
     {
-        $this->FlatShippingPreferences = (int)$val;
+        $this->FlatShippingPreferences = (FlatShippingPreferencesType)$val;
     }
 
     /**
@@ -76,6 +76,6 @@ class CombinedPaymentPreferencesType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

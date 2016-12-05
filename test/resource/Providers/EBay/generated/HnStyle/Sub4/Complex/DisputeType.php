@@ -120,7 +120,7 @@ class DisputeType
      */
     public function setDisputeID($val)
     {
-        $this->DisputeID = (int)$val;
+        $this->DisputeID = (DisputeIDType)$val;
     }
 
     /**
@@ -129,7 +129,7 @@ class DisputeType
      */
     public function setDisputeRecordType($val)
     {
-        $this->DisputeRecordType = (int)$val;
+        $this->DisputeRecordType = (DisputeRecordTypeCodeType)$val;
     }
 
     /**
@@ -138,7 +138,7 @@ class DisputeType
      */
     public function setDisputeState($val)
     {
-        $this->DisputeState = (int)$val;
+        $this->DisputeState = (DisputeStateCodeType)$val;
     }
 
     /**
@@ -147,7 +147,7 @@ class DisputeType
      */
     public function setDisputeStatus($val)
     {
-        $this->DisputeStatus = (int)$val;
+        $this->DisputeStatus = (DisputeStatusCodeType)$val;
     }
 
     /**
@@ -156,7 +156,7 @@ class DisputeType
      */
     public function setOtherPartyRole($val)
     {
-        $this->OtherPartyRole = (int)$val;
+        $this->OtherPartyRole = (TradingRoleCodeType)$val;
     }
 
     /**
@@ -168,7 +168,7 @@ class DisputeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OtherPartyName');
         }
-        $this->OtherPartyName = (int)$val;
+        $this->OtherPartyName = (string)$val;
     }
 
     /**
@@ -177,7 +177,7 @@ class DisputeType
      */
     public function setUserRole($val)
     {
-        $this->UserRole = (int)$val;
+        $this->UserRole = (TradingRoleCodeType)$val;
     }
 
     /**
@@ -186,7 +186,7 @@ class DisputeType
      */
     public function setBuyerUserID($val)
     {
-        $this->BuyerUserID = (int)$val;
+        $this->BuyerUserID = (UserIDType)$val;
     }
 
     /**
@@ -195,7 +195,7 @@ class DisputeType
      */
     public function setSellerUserID($val)
     {
-        $this->SellerUserID = (int)$val;
+        $this->SellerUserID = (UserIDType)$val;
     }
 
     /**
@@ -207,7 +207,7 @@ class DisputeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
     }
 
     /**
@@ -216,7 +216,7 @@ class DisputeType
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
     }
 
     /**
@@ -225,7 +225,7 @@ class DisputeType
      */
     public function setDisputeReason($val)
     {
-        $this->DisputeReason = (int)$val;
+        $this->DisputeReason = (DisputeReasonCodeType)$val;
     }
 
     /**
@@ -234,7 +234,7 @@ class DisputeType
      */
     public function setDisputeExplanation($val)
     {
-        $this->DisputeExplanation = (int)$val;
+        $this->DisputeExplanation = (DisputeExplanationCodeType)$val;
     }
 
     /**
@@ -243,7 +243,7 @@ class DisputeType
      */
     public function setDisputeCreditEligibility($val)
     {
-        $this->DisputeCreditEligibility = (int)$val;
+        $this->DisputeCreditEligibility = (DisputeCreditEligibilityCodeType)$val;
     }
 
     /**
@@ -252,7 +252,7 @@ class DisputeType
      */
     public function setDisputeCreatedTime($val)
     {
-        $this->DisputeCreatedTime = (int)$val;
+        $this->DisputeCreatedTime = (dateTime)$val;
     }
 
     /**
@@ -261,7 +261,7 @@ class DisputeType
      */
     public function setDisputeModifiedTime($val)
     {
-        $this->DisputeModifiedTime = (int)$val;
+        $this->DisputeModifiedTime = (dateTime)$val;
     }
 
     /**
@@ -270,7 +270,7 @@ class DisputeType
      */
     public function setDisputeResolution($val)
     {
-        $this->DisputeResolution = (int)$val;
+        $this->DisputeResolution = (DisputeResolutionType)$val;
     }
 
     /**
@@ -279,7 +279,7 @@ class DisputeType
      */
     public function setDisputeMessage($val)
     {
-        $this->DisputeMessage = (int)$val;
+        $this->DisputeMessage = (DisputeMessageType)$val;
     }
 
     /**
@@ -288,7 +288,7 @@ class DisputeType
      */
     public function setEscalation($val)
     {
-        $this->Escalation = (int)$val;
+        $this->Escalation = (boolean)$val;
     }
 
     /**
@@ -297,7 +297,7 @@ class DisputeType
      */
     public function setPurchaseProtection($val)
     {
-        $this->PurchaseProtection = (int)$val;
+        $this->PurchaseProtection = (boolean)$val;
     }
 
     /**
@@ -306,6 +306,6 @@ class DisputeType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

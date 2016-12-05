@@ -22,6 +22,6 @@ class AddToWatchListRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 }

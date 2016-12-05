@@ -46,7 +46,7 @@ class ItemBidDetailsType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class ItemBidDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
     }
 
     /**
@@ -79,7 +79,7 @@ class ItemBidDetailsType
      */
     public function setSellerID($val)
     {
-        $this->SellerID = (int)$val;
+        $this->SellerID = (UserIDType)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class ItemBidDetailsType
      */
     public function setLastBidTime($val)
     {
-        $this->LastBidTime = (int)$val;
+        $this->LastBidTime = (dateTime)$val;
     }
 
     /**
@@ -97,6 +97,6 @@ class ItemBidDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

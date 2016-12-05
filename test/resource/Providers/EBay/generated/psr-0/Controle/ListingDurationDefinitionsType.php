@@ -31,7 +31,7 @@ class ListingDurationDefinitionsType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (ListingDurationDefinitionType)$val;
 	}
 
 	/**

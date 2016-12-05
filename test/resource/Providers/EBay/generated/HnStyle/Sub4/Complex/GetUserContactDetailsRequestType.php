@@ -44,7 +44,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemID');
         }
-        $this->ItemID = (int)$val;
+        $this->ItemID = (string)$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContactID');
         }
-        $this->ContactID = (int)$val;
+        $this->ContactID = (string)$val;
     }
 
     /**
@@ -68,6 +68,6 @@ class GetUserContactDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RequesterID');
         }
-        $this->RequesterID = (int)$val;
+        $this->RequesterID = (string)$val;
     }
 }

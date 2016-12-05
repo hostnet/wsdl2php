@@ -971,7 +971,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ApplicationData');
         }
-        $this->ApplicationData = (int)$val;
+        $this->ApplicationData = (string)$val;
     }
 
     /**
@@ -980,7 +980,7 @@ class ItemType
      */
     public function setAttributeSetArray($val)
     {
-        $this->AttributeSetArray = (int)$val;
+        $this->AttributeSetArray = (AttributeSetArrayType)$val;
     }
 
     /**
@@ -989,7 +989,7 @@ class ItemType
      */
     public function setAttributeArray($val)
     {
-        $this->AttributeArray = (int)$val;
+        $this->AttributeArray = (AttributeArrayType)$val;
     }
 
     /**
@@ -998,7 +998,7 @@ class ItemType
      */
     public function setLookupAttributeArray($val)
     {
-        $this->LookupAttributeArray = (int)$val;
+        $this->LookupAttributeArray = (LookupAttributeArrayType)$val;
     }
 
     /**
@@ -1007,7 +1007,7 @@ class ItemType
      */
     public function setApplyShippingDiscount($val)
     {
-        $this->ApplyShippingDiscount = (int)$val;
+        $this->ApplyShippingDiscount = (boolean)$val;
     }
 
     /**
@@ -1016,7 +1016,7 @@ class ItemType
      */
     public function setAutoPay($val)
     {
-        $this->AutoPay = (int)$val;
+        $this->AutoPay = (boolean)$val;
     }
 
     /**
@@ -1025,7 +1025,7 @@ class ItemType
      */
     public function setPaymentDetails($val)
     {
-        $this->PaymentDetails = (int)$val;
+        $this->PaymentDetails = (PaymentDetailsType)$val;
     }
 
     /**
@@ -1034,7 +1034,7 @@ class ItemType
      */
     public function setBiddingDetails($val)
     {
-        $this->BiddingDetails = (int)$val;
+        $this->BiddingDetails = (BiddingDetailsType)$val;
     }
 
     /**
@@ -1043,7 +1043,7 @@ class ItemType
      */
     public function setMotorsGermanySearchable($val)
     {
-        $this->MotorsGermanySearchable = (int)$val;
+        $this->MotorsGermanySearchable = (boolean)$val;
     }
 
     /**
@@ -1052,7 +1052,7 @@ class ItemType
      */
     public function setBuyerProtection($val)
     {
-        $this->BuyerProtection = (int)$val;
+        $this->BuyerProtection = (BuyerProtectionCodeType)$val;
     }
 
     /**
@@ -1061,7 +1061,7 @@ class ItemType
      */
     public function setBuyItNowPrice($val)
     {
-        $this->BuyItNowPrice = (int)$val;
+        $this->BuyItNowPrice = (AmountType)$val;
     }
 
     /**
@@ -1070,7 +1070,7 @@ class ItemType
      */
     public function setCategoryMappingAllowed($val)
     {
-        $this->CategoryMappingAllowed = (int)$val;
+        $this->CategoryMappingAllowed = (boolean)$val;
     }
 
     /**
@@ -1079,7 +1079,7 @@ class ItemType
      */
     public function setCharity($val)
     {
-        $this->Charity = (int)$val;
+        $this->Charity = (CharityType)$val;
     }
 
     /**
@@ -1088,7 +1088,7 @@ class ItemType
      */
     public function setCountry($val)
     {
-        $this->Country = (int)$val;
+        $this->Country = (CountryCodeType)$val;
     }
 
     /**
@@ -1097,7 +1097,7 @@ class ItemType
      */
     public function setCrossPromotion($val)
     {
-        $this->CrossPromotion = (int)$val;
+        $this->CrossPromotion = (CrossPromotionsType)$val;
     }
 
     /**
@@ -1106,7 +1106,7 @@ class ItemType
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
     }
 
     /**
@@ -1118,7 +1118,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
     }
 
     /**
@@ -1127,7 +1127,7 @@ class ItemType
      */
     public function setDescriptionReviseMode($val)
     {
-        $this->DescriptionReviseMode = (int)$val;
+        $this->DescriptionReviseMode = (DescriptionReviseModeCodeType)$val;
     }
 
     /**
@@ -1136,7 +1136,7 @@ class ItemType
      */
     public function setDistance($val)
     {
-        $this->Distance = (int)$val;
+        $this->Distance = (DistanceType)$val;
     }
 
     /**
@@ -1148,7 +1148,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
     }
 
     /**
@@ -1169,7 +1169,7 @@ class ItemType
      */
     public function setGiftServices($val)
     {
-        $this->GiftServices = (int)$val;
+        $this->GiftServices = (GiftServicesCodeType)$val;
     }
 
     /**
@@ -1178,7 +1178,7 @@ class ItemType
      */
     public function setHitCounter($val)
     {
-        $this->HitCounter = (int)$val;
+        $this->HitCounter = (HitCounterCodeType)$val;
     }
 
     /**
@@ -1187,7 +1187,7 @@ class ItemType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -1196,7 +1196,7 @@ class ItemType
      */
     public function setListingDetails($val)
     {
-        $this->ListingDetails = (int)$val;
+        $this->ListingDetails = (ListingDetailsType)$val;
     }
 
     /**
@@ -1205,7 +1205,7 @@ class ItemType
      */
     public function setListingDesigner($val)
     {
-        $this->ListingDesigner = (int)$val;
+        $this->ListingDesigner = (ListingDesignerType)$val;
     }
 
     /**
@@ -1214,7 +1214,7 @@ class ItemType
      */
     public function setListingDuration($val)
     {
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = (token)$val;
     }
 
     /**
@@ -1223,7 +1223,7 @@ class ItemType
      */
     public function setListingEnhancement($val)
     {
-        $this->ListingEnhancement = (int)$val;
+        $this->ListingEnhancement = (ListingEnhancementsCodeType)$val;
     }
 
     /**
@@ -1232,7 +1232,7 @@ class ItemType
      */
     public function setListingType($val)
     {
-        $this->ListingType = (int)$val;
+        $this->ListingType = (ListingTypeCodeType)$val;
     }
 
     /**
@@ -1241,7 +1241,7 @@ class ItemType
      */
     public function setListingSubtype($val)
     {
-        $this->ListingSubtype = (int)$val;
+        $this->ListingSubtype = (ListingSubtypeEnum)$val;
     }
 
     /**
@@ -1253,7 +1253,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Location');
         }
-        $this->Location = (int)$val;
+        $this->Location = (string)$val;
     }
 
     /**
@@ -1274,7 +1274,7 @@ class ItemType
      */
     public function setNowAndNew($val)
     {
-        $this->NowAndNew = (int)$val;
+        $this->NowAndNew = (boolean)$val;
     }
 
     /**
@@ -1286,7 +1286,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PartnerCode');
         }
-        $this->PartnerCode = (int)$val;
+        $this->PartnerCode = (string)$val;
     }
 
     /**
@@ -1298,7 +1298,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PartnerName');
         }
-        $this->PartnerName = (int)$val;
+        $this->PartnerName = (string)$val;
     }
 
     /**
@@ -1307,7 +1307,7 @@ class ItemType
      */
     public function setPaymentMethods($val)
     {
-        $this->PaymentMethods = (int)$val;
+        $this->PaymentMethods = (BuyerPaymentMethodCodeType)$val;
     }
 
     /**
@@ -1319,7 +1319,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
-        $this->PayPalEmailAddress = (int)$val;
+        $this->PayPalEmailAddress = (string)$val;
     }
 
     /**
@@ -1328,7 +1328,7 @@ class ItemType
      */
     public function setPrimaryCategory($val)
     {
-        $this->PrimaryCategory = (int)$val;
+        $this->PrimaryCategory = (CategoryType)$val;
     }
 
     /**
@@ -1337,7 +1337,7 @@ class ItemType
      */
     public function setPrivateListing($val)
     {
-        $this->PrivateListing = (int)$val;
+        $this->PrivateListing = (boolean)$val;
     }
 
     /**
@@ -1346,7 +1346,7 @@ class ItemType
      */
     public function setProductListingDetails($val)
     {
-        $this->ProductListingDetails = (int)$val;
+        $this->ProductListingDetails = (ProductListingDetailsType)$val;
     }
 
     /**
@@ -1355,7 +1355,7 @@ class ItemType
      */
     public function setProximitySearchDetails($val)
     {
-        $this->ProximitySearchDetails = (int)$val;
+        $this->ProximitySearchDetails = (ProximitySearchDetailsType)$val;
     }
 
     /**
@@ -1379,7 +1379,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PrivateNotes');
         }
-        $this->PrivateNotes = (int)$val;
+        $this->PrivateNotes = (string)$val;
     }
 
     /**
@@ -1391,7 +1391,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->RegionID = (int)$val;
+        $this->RegionID = (string)$val;
     }
 
     /**
@@ -1400,7 +1400,7 @@ class ItemType
      */
     public function setRelistLink($val)
     {
-        $this->RelistLink = (int)$val;
+        $this->RelistLink = (boolean)$val;
     }
 
     /**
@@ -1409,7 +1409,7 @@ class ItemType
      */
     public function setReservePrice($val)
     {
-        $this->ReservePrice = (int)$val;
+        $this->ReservePrice = (AmountType)$val;
     }
 
     /**
@@ -1418,7 +1418,7 @@ class ItemType
      */
     public function setReviseStatus($val)
     {
-        $this->ReviseStatus = (int)$val;
+        $this->ReviseStatus = (ReviseStatusType)$val;
     }
 
     /**
@@ -1427,7 +1427,7 @@ class ItemType
      */
     public function setScheduleTime($val)
     {
-        $this->ScheduleTime = (int)$val;
+        $this->ScheduleTime = (dateTime)$val;
     }
 
     /**
@@ -1436,7 +1436,7 @@ class ItemType
      */
     public function setSecondaryCategory($val)
     {
-        $this->SecondaryCategory = (int)$val;
+        $this->SecondaryCategory = (CategoryType)$val;
     }
 
     /**
@@ -1445,7 +1445,7 @@ class ItemType
      */
     public function setFreeAddedCategory($val)
     {
-        $this->FreeAddedCategory = (int)$val;
+        $this->FreeAddedCategory = (CategoryType)$val;
     }
 
     /**
@@ -1454,7 +1454,7 @@ class ItemType
      */
     public function setSiteHostedPicture($val)
     {
-        $this->SiteHostedPicture = (int)$val;
+        $this->SiteHostedPicture = (SiteHostedPictureType)$val;
     }
 
     /**
@@ -1463,7 +1463,7 @@ class ItemType
      */
     public function setSeller($val)
     {
-        $this->Seller = (int)$val;
+        $this->Seller = (UserType)$val;
     }
 
     /**
@@ -1472,7 +1472,7 @@ class ItemType
      */
     public function setSellingStatus($val)
     {
-        $this->SellingStatus = (int)$val;
+        $this->SellingStatus = (SellingStatusType)$val;
     }
 
     /**
@@ -1481,7 +1481,7 @@ class ItemType
      */
     public function setShippingOption($val)
     {
-        $this->ShippingOption = (int)$val;
+        $this->ShippingOption = (ShippingOptionCodeType)$val;
     }
 
     /**
@@ -1490,7 +1490,7 @@ class ItemType
      */
     public function setShippingDetails($val)
     {
-        $this->ShippingDetails = (int)$val;
+        $this->ShippingDetails = (ShippingDetailsType)$val;
     }
 
     /**
@@ -1499,7 +1499,7 @@ class ItemType
      */
     public function setShippingRegions($val)
     {
-        $this->ShippingRegions = (int)$val;
+        $this->ShippingRegions = (ShippingRegionCodeType)$val;
     }
 
     /**
@@ -1508,7 +1508,7 @@ class ItemType
      */
     public function setShippingTerms($val)
     {
-        $this->ShippingTerms = (int)$val;
+        $this->ShippingTerms = (ShippingTermsCodeType)$val;
     }
 
     /**
@@ -1520,7 +1520,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipToLocations');
         }
-        $this->ShipToLocations = (int)$val;
+        $this->ShipToLocations = (string)$val;
     }
 
     /**
@@ -1529,7 +1529,7 @@ class ItemType
      */
     public function setSite($val)
     {
-        $this->Site = (int)$val;
+        $this->Site = (SiteCodeType)$val;
     }
 
     /**
@@ -1538,7 +1538,7 @@ class ItemType
      */
     public function setStartPrice($val)
     {
-        $this->StartPrice = (int)$val;
+        $this->StartPrice = (AmountType)$val;
     }
 
     /**
@@ -1547,7 +1547,7 @@ class ItemType
      */
     public function setStorefront($val)
     {
-        $this->Storefront = (int)$val;
+        $this->Storefront = (StorefrontType)$val;
     }
 
     /**
@@ -1559,7 +1559,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SubTitle');
         }
-        $this->SubTitle = (int)$val;
+        $this->SubTitle = (string)$val;
     }
 
     /**
@@ -1568,7 +1568,7 @@ class ItemType
      */
     public function setTimeLeft($val)
     {
-        $this->TimeLeft = (int)$val;
+        $this->TimeLeft = (duration)$val;
     }
 
     /**
@@ -1580,7 +1580,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = (string)$val;
     }
 
     /**
@@ -1589,7 +1589,7 @@ class ItemType
      */
     public function setUUID($val)
     {
-        $this->UUID = (int)$val;
+        $this->UUID = (UUIDType)$val;
     }
 
     /**
@@ -1598,7 +1598,7 @@ class ItemType
      */
     public function setVATDetails($val)
     {
-        $this->VATDetails = (int)$val;
+        $this->VATDetails = (VATDetailsType)$val;
     }
 
     /**
@@ -1607,7 +1607,7 @@ class ItemType
      */
     public function setVendorHostedPicture($val)
     {
-        $this->VendorHostedPicture = (int)$val;
+        $this->VendorHostedPicture = (VendorHostedPictureType)$val;
     }
 
     /**
@@ -1619,7 +1619,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerVacationNote');
         }
-        $this->SellerVacationNote = (int)$val;
+        $this->SellerVacationNote = (string)$val;
     }
 
     /**
@@ -1628,7 +1628,7 @@ class ItemType
      */
     public function setWatchCount($val)
     {
-        $this->WatchCount = (int)$val;
+        $this->WatchCount = (long)$val;
     }
 
     /**
@@ -1637,7 +1637,7 @@ class ItemType
      */
     public function setHitCount($val)
     {
-        $this->HitCount = (int)$val;
+        $this->HitCount = (long)$val;
     }
 
     /**
@@ -1646,7 +1646,7 @@ class ItemType
      */
     public function setDisableBuyerRequirements($val)
     {
-        $this->DisableBuyerRequirements = (int)$val;
+        $this->DisableBuyerRequirements = (boolean)$val;
     }
 
     /**
@@ -1655,7 +1655,7 @@ class ItemType
      */
     public function setBuyerRequirements($val)
     {
-        $this->BuyerRequirements = (int)$val;
+        $this->BuyerRequirements = (BuyerRequirementsType)$val;
     }
 
     /**
@@ -1664,7 +1664,7 @@ class ItemType
      */
     public function setBestOfferDetails($val)
     {
-        $this->BestOfferDetails = (int)$val;
+        $this->BestOfferDetails = (BestOfferDetailsType)$val;
     }
 
     /**
@@ -1673,7 +1673,7 @@ class ItemType
      */
     public function setAnythingPoints($val)
     {
-        $this->AnythingPoints = (int)$val;
+        $this->AnythingPoints = (boolean)$val;
     }
 
     /**
@@ -1682,7 +1682,7 @@ class ItemType
      */
     public function setLiveAuctionDetails($val)
     {
-        $this->LiveAuctionDetails = (int)$val;
+        $this->LiveAuctionDetails = (LiveAuctionDetailsType)$val;
     }
 
     /**
@@ -1691,7 +1691,7 @@ class ItemType
      */
     public function setLocationDefaulted($val)
     {
-        $this->LocationDefaulted = (int)$val;
+        $this->LocationDefaulted = (boolean)$val;
     }
 
     /**
@@ -1700,7 +1700,7 @@ class ItemType
      */
     public function setThirdPartyCheckout($val)
     {
-        $this->ThirdPartyCheckout = (int)$val;
+        $this->ThirdPartyCheckout = (boolean)$val;
     }
 
     /**
@@ -1709,7 +1709,7 @@ class ItemType
      */
     public function setUseTaxTable($val)
     {
-        $this->UseTaxTable = (int)$val;
+        $this->UseTaxTable = (boolean)$val;
     }
 
     /**
@@ -1718,7 +1718,7 @@ class ItemType
      */
     public function setGetItFast($val)
     {
-        $this->GetItFast = (int)$val;
+        $this->GetItFast = (boolean)$val;
     }
 
     /**
@@ -1727,7 +1727,7 @@ class ItemType
      */
     public function setBuyerResponsibleForShipping($val)
     {
-        $this->BuyerResponsibleForShipping = (int)$val;
+        $this->BuyerResponsibleForShipping = (boolean)$val;
     }
 
     /**
@@ -1736,7 +1736,7 @@ class ItemType
      */
     public function setLimitedWarrantyEligible($val)
     {
-        $this->LimitedWarrantyEligible = (int)$val;
+        $this->LimitedWarrantyEligible = (boolean)$val;
     }
 
     /**
@@ -1748,7 +1748,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayNotes');
         }
-        $this->eBayNotes = (int)$val;
+        $this->eBayNotes = (string)$val;
     }
 
     /**
@@ -1757,7 +1757,7 @@ class ItemType
      */
     public function setQuestionCount($val)
     {
-        $this->QuestionCount = (int)$val;
+        $this->QuestionCount = (long)$val;
     }
 
     /**
@@ -1766,7 +1766,7 @@ class ItemType
      */
     public function setRelisted($val)
     {
-        $this->Relisted = (int)$val;
+        $this->Relisted = (boolean)$val;
     }
 
     /**
@@ -1787,7 +1787,7 @@ class ItemType
      */
     public function setSKU($val)
     {
-        $this->SKU = (int)$val;
+        $this->SKU = (SKUType)$val;
     }
 
     /**
@@ -1796,7 +1796,7 @@ class ItemType
      */
     public function setCategoryBasedAttributesPrefill($val)
     {
-        $this->CategoryBasedAttributesPrefill = (int)$val;
+        $this->CategoryBasedAttributesPrefill = (boolean)$val;
     }
 
     /**
@@ -1805,7 +1805,7 @@ class ItemType
      */
     public function setSearchDetails($val)
     {
-        $this->SearchDetails = (int)$val;
+        $this->SearchDetails = (SearchDetailsType)$val;
     }
 
     /**
@@ -1817,7 +1817,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
     }
 
     /**
@@ -1826,7 +1826,7 @@ class ItemType
      */
     public function setShippingTermsInDescription($val)
     {
-        $this->ShippingTermsInDescription = (int)$val;
+        $this->ShippingTermsInDescription = (boolean)$val;
     }
 
     /**
@@ -1835,7 +1835,7 @@ class ItemType
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
     }
 
     /**
@@ -1847,7 +1847,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->SellerInventoryID = (int)$val;
+        $this->SellerInventoryID = (string)$val;
     }
 
     /**
@@ -1856,7 +1856,7 @@ class ItemType
      */
     public function setPictureDetails($val)
     {
-        $this->PictureDetails = (int)$val;
+        $this->PictureDetails = (PictureDetailsType)$val;
     }
 
     /**
@@ -1865,7 +1865,7 @@ class ItemType
      */
     public function setDigitalDeliveryDetails($val)
     {
-        $this->DigitalDeliveryDetails = (int)$val;
+        $this->DigitalDeliveryDetails = (DigitalDeliveryDetailsType)$val;
     }
 
     /**
@@ -1886,7 +1886,7 @@ class ItemType
      */
     public function setSkypeEnabled($val)
     {
-        $this->SkypeEnabled = (int)$val;
+        $this->SkypeEnabled = (boolean)$val;
     }
 
     /**
@@ -1898,7 +1898,7 @@ class ItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->SkypeID = (int)$val;
+        $this->SkypeID = (string)$val;
     }
 
     /**
@@ -1907,7 +1907,7 @@ class ItemType
      */
     public function setSkypeOption($val)
     {
-        $this->SkypeOption = (int)$val;
+        $this->SkypeOption = (SkypeOptionCodeType)$val;
     }
 
     /**
@@ -1916,7 +1916,7 @@ class ItemType
      */
     public function setSkypeContactOption($val)
     {
-        $this->SkypeContactOption = (int)$val;
+        $this->SkypeContactOption = (SkypeContactOptionCodeType)$val;
     }
 
     /**
@@ -1925,7 +1925,7 @@ class ItemType
      */
     public function setBestOfferEnabled($val)
     {
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = (boolean)$val;
     }
 
     /**
@@ -1934,7 +1934,7 @@ class ItemType
      */
     public function setLocalListing($val)
     {
-        $this->LocalListing = (int)$val;
+        $this->LocalListing = (boolean)$val;
     }
 
     /**
@@ -1943,7 +1943,7 @@ class ItemType
      */
     public function setThirdPartyCheckoutIntegration($val)
     {
-        $this->ThirdPartyCheckoutIntegration = (int)$val;
+        $this->ThirdPartyCheckoutIntegration = (boolean)$val;
     }
 
     /**
@@ -1952,7 +1952,7 @@ class ItemType
      */
     public function setExpressOptOut($val)
     {
-        $this->ExpressOptOut = (int)$val;
+        $this->ExpressOptOut = (boolean)$val;
     }
 
     /**
@@ -1961,7 +1961,7 @@ class ItemType
      */
     public function setListingCheckoutRedirectPreference($val)
     {
-        $this->ListingCheckoutRedirectPreference = (int)$val;
+        $this->ListingCheckoutRedirectPreference = (ListingCheckoutRedirectPreferenceType)$val;
     }
 
     /**
@@ -1970,7 +1970,7 @@ class ItemType
      */
     public function setExpressDetails($val)
     {
-        $this->ExpressDetails = (int)$val;
+        $this->ExpressDetails = (ExpressDetailsType)$val;
     }
 
     /**
@@ -1979,7 +1979,7 @@ class ItemType
      */
     public function setSellerContactDetails($val)
     {
-        $this->SellerContactDetails = (int)$val;
+        $this->SellerContactDetails = (AddressType)$val;
     }
 
     /**
@@ -1988,7 +1988,7 @@ class ItemType
      */
     public function setTotalQuestionCount($val)
     {
-        $this->TotalQuestionCount = (int)$val;
+        $this->TotalQuestionCount = (long)$val;
     }
 
     /**
@@ -1997,7 +1997,7 @@ class ItemType
      */
     public function setProxyItem($val)
     {
-        $this->ProxyItem = (int)$val;
+        $this->ProxyItem = (boolean)$val;
     }
 
     /**
@@ -2006,6 +2006,6 @@ class ItemType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

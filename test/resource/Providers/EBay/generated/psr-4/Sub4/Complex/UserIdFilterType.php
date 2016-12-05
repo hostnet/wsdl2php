@@ -37,7 +37,7 @@ class UserIdFilterType
      */
     public function setExcludeSellers($val)
     {
-        $this->ExcludeSellers = (int)$val;
+        $this->ExcludeSellers = (UserIDType)$val;
     }
 
     /**
@@ -46,7 +46,7 @@ class UserIdFilterType
      */
     public function setIncludeSellers($val)
     {
-        $this->IncludeSellers = (int)$val;
+        $this->IncludeSellers = (UserIDType)$val;
     }
 
     /**
@@ -55,6 +55,6 @@ class UserIdFilterType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

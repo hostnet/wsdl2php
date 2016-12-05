@@ -43,7 +43,7 @@ class GetCategory2CsResponseType extends
      */
     public function setMappedCategoryArray($val)
     {
-        $this->MappedCategoryArray = (int)$val;
+        $this->MappedCategoryArray = (CategoryArrayType)$val;
     }
 
     /**
@@ -52,7 +52,7 @@ class GetCategory2CsResponseType extends
      */
     public function setUnmappedCategoryArray($val)
     {
-        $this->UnmappedCategoryArray = (int)$val;
+        $this->UnmappedCategoryArray = (CategoryArrayType)$val;
     }
 
     /**
@@ -64,7 +64,7 @@ class GetCategory2CsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
     }
 
     /**
@@ -73,6 +73,6 @@ class GetCategory2CsResponseType extends
      */
     public function setSiteWideCharacteristicSets($val)
     {
-        $this->SiteWideCharacteristicSets = (int)$val;
+        $this->SiteWideCharacteristicSets = (SiteWideCharacteristicsType)$val;
     }
 }

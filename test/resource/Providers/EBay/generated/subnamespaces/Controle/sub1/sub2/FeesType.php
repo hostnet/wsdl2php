@@ -22,6 +22,6 @@ class FeesType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (int)$val;
+        $this->Fee = (FeeType)$val;
 	}
 }

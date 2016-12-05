@@ -41,7 +41,7 @@ class NameServer
 	 */
 	public function setCreDate($val)
 	{
-        $this->CreDate = (int)$val;
+        $this->CreDate = (dateTime)$val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Handle');
         }
-        $this->Handle = (int)$val;
+        $this->Handle = (string)$val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HostName');
         }
-        $this->HostName = (int)$val;
+        $this->HostName = (string)$val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IpAddress');
         }
-        $this->IpAddress = (int)$val;
+        $this->IpAddress = (string)$val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = (string)$val;
 	}
 
 	/**
@@ -101,7 +101,7 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IpV6Address');
         }
-        $this->IpV6Address = (int)$val;
+        $this->IpV6Address = (string)$val;
 	}
 
 	/**
@@ -113,6 +113,6 @@ class NameServer
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Details');
         }
-        $this->Details = (int)$val;
+        $this->Details = (string)$val;
 	}
 }

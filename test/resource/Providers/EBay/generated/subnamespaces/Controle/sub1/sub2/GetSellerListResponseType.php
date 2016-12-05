@@ -56,7 +56,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -74,7 +74,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -119,6 +119,6 @@ class GetSellerListResponseType extends
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = (int)$val;
+        $this->Seller = (UserType)$val;
 	}
 }

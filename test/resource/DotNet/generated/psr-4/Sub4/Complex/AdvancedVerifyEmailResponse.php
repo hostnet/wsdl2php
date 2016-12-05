@@ -17,6 +17,6 @@ class AdvancedVerifyEmailResponse
      */
     public function setAdvancedVerifyEmailResult($val)
     {
-        $this->AdvancedVerifyEmailResult = (int)$val;
+        $this->AdvancedVerifyEmailResult = (ReturnIndicator)$val;
     }
 }

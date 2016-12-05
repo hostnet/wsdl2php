@@ -295,7 +295,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
     }
 
     /**
@@ -304,7 +304,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setExternalProductIDType($val)
     {
-        $this->ExternalProductIDType = (int)$val;
+        $this->ExternalProductIDType = (ExternalProductCodeType)$val;
     }
 
     /**
@@ -316,7 +316,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalProductIDValue');
         }
-        $this->ExternalProductIDValue = (int)$val;
+        $this->ExternalProductIDValue = (string)$val;
     }
 
     /**
@@ -325,7 +325,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setProductReferenceID($val)
     {
-        $this->ProductReferenceID = (int)$val;
+        $this->ProductReferenceID = (long)$val;
     }
 
     /**
@@ -337,7 +337,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DepartmentName');
         }
-        $this->DepartmentName = (int)$val;
+        $this->DepartmentName = (string)$val;
     }
 
     /**
@@ -349,7 +349,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AisleName');
         }
-        $this->AisleName = (int)$val;
+        $this->AisleName = (string)$val;
     }
 
     /**
@@ -361,7 +361,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductTypeName');
         }
-        $this->ProductTypeName = (int)$val;
+        $this->ProductTypeName = (string)$val;
     }
 
     /**
@@ -370,7 +370,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setHistogramSort($val)
     {
-        $this->HistogramSort = (int)$val;
+        $this->HistogramSort = (ExpressHistogramSortCodeType)$val;
     }
 
     /**
@@ -379,7 +379,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setItemSort($val)
     {
-        $this->ItemSort = (int)$val;
+        $this->ItemSort = (ExpressItemSortCodeType)$val;
     }
 
     /**
@@ -388,7 +388,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setProductSort($val)
     {
-        $this->ProductSort = (int)$val;
+        $this->ProductSort = (ExpressProductSortCodeType)$val;
     }
 
     /**
@@ -397,7 +397,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setHighestPrice($val)
     {
-        $this->HighestPrice = (int)$val;
+        $this->HighestPrice = (AmountType)$val;
     }
 
     /**
@@ -406,7 +406,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setLowestPrice($val)
     {
-        $this->LowestPrice = (int)$val;
+        $this->LowestPrice = (AmountType)$val;
     }
 
     /**
@@ -415,7 +415,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setCondition($val)
     {
-        $this->Condition = (int)$val;
+        $this->Condition = (ConditionSelectionCodeType)$val;
     }
 
     /**
@@ -424,7 +424,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setSellerID($val)
     {
-        $this->SellerID = (int)$val;
+        $this->SellerID = (UserIDType)$val;
     }
 
     /**
@@ -436,7 +436,7 @@ class GetSearchResultsExpressRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
     }
 
     /**
@@ -445,7 +445,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setHistogramDetails($val)
     {
-        $this->HistogramDetails = (int)$val;
+        $this->HistogramDetails = (ExpressDetailLevelCodeType)$val;
     }
 
     /**
@@ -454,7 +454,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setProductDetails($val)
     {
-        $this->ProductDetails = (int)$val;
+        $this->ProductDetails = (ExpressDetailLevelCodeType)$val;
     }
 
     /**
@@ -463,7 +463,7 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setItemDetails($val)
     {
-        $this->ItemDetails = (int)$val;
+        $this->ItemDetails = (ExpressDetailLevelCodeType)$val;
     }
 
     /**
@@ -496,6 +496,6 @@ class GetSearchResultsExpressRequestType extends
      */
     public function setAffiliateTrackingDetails($val)
     {
-        $this->AffiliateTrackingDetails = (int)$val;
+        $this->AffiliateTrackingDetails = (AffiliateTrackingDetailsType)$val;
     }
 }

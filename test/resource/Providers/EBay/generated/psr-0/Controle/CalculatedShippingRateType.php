@@ -82,7 +82,7 @@ class CalculatedShippingRateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OriginatingPostalCode');
         }
-        $this->OriginatingPostalCode = (int)$val;
+        $this->OriginatingPostalCode = (string)$val;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageDepth($val)
 	{
-        $this->PackageDepth = (int)$val;
+        $this->PackageDepth = (MeasureType)$val;
 	}
 
 	/**
@@ -100,7 +100,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageLength($val)
 	{
-        $this->PackageLength = (int)$val;
+        $this->PackageLength = (MeasureType)$val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackageWidth($val)
 	{
-        $this->PackageWidth = (int)$val;
+        $this->PackageWidth = (MeasureType)$val;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class CalculatedShippingRateType
 	 */
 	public function setPackagingHandlingCosts($val)
 	{
-        $this->PackagingHandlingCosts = (int)$val;
+        $this->PackagingHandlingCosts = (AmountType)$val;
 	}
 
 	/**
@@ -127,7 +127,7 @@ class CalculatedShippingRateType
 	 */
 	public function setShippingIrregular($val)
 	{
-        $this->ShippingIrregular = (int)$val;
+        $this->ShippingIrregular = (boolean)$val;
 	}
 
 	/**
@@ -136,7 +136,7 @@ class CalculatedShippingRateType
 	 */
 	public function setShippingPackage($val)
 	{
-        $this->ShippingPackage = (int)$val;
+        $this->ShippingPackage = (ShippingPackageCodeType)$val;
 	}
 
 	/**
@@ -145,7 +145,7 @@ class CalculatedShippingRateType
 	 */
 	public function setWeightMajor($val)
 	{
-        $this->WeightMajor = (int)$val;
+        $this->WeightMajor = (MeasureType)$val;
 	}
 
 	/**
@@ -154,7 +154,7 @@ class CalculatedShippingRateType
 	 */
 	public function setWeightMinor($val)
 	{
-        $this->WeightMinor = (int)$val;
+        $this->WeightMinor = (MeasureType)$val;
 	}
 
 	/**
@@ -163,7 +163,7 @@ class CalculatedShippingRateType
 	 */
 	public function setInternationalPackagingHandlingCosts($val)
 	{
-        $this->InternationalPackagingHandlingCosts = (int)$val;
+        $this->InternationalPackagingHandlingCosts = (AmountType)$val;
 	}
 
 	/**
@@ -172,6 +172,6 @@ class CalculatedShippingRateType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

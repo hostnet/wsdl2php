@@ -17,6 +17,6 @@ class SellerProfile
      */
     public function setSellerProfileDetails($val)
     {
-        $this->SellerProfileDetails = (int)$val;
+        $this->SellerProfileDetails = (SellerProfileDetailsArray)$val;
     }
 }

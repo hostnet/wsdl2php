@@ -24,6 +24,6 @@ class RelatedSearchKeywordArrayType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keyword');
         }
-        $this->Keyword = (int)$val;
+        $this->Keyword = (string)$val;
 	}
 }

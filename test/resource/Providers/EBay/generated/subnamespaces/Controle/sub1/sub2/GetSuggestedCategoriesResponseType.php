@@ -29,7 +29,7 @@ class GetSuggestedCategoriesResponseType extends
 	 */
 	public function setSuggestedCategoryArray($val)
 	{
-        $this->SuggestedCategoryArray = (int)$val;
+        $this->SuggestedCategoryArray = (SuggestedCategoryArrayType)$val;
 	}
 
 	/**

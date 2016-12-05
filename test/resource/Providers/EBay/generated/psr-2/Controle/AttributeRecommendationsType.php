@@ -25,7 +25,7 @@ class AttributeRecommendationsType
      */
     public function setAttributeSetArray($val)
     {
-        $this->AttributeSetArray = (int)$val;
+        $this->AttributeSetArray = (AttributeSetArrayType)$val;
     }
 
     /**
@@ -34,6 +34,6 @@ class AttributeRecommendationsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

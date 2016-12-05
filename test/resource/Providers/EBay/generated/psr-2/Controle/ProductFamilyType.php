@@ -39,7 +39,7 @@ class ProductFamilyType
      */
     public function setParentProduct($val)
     {
-        $this->ParentProduct = (int)$val;
+        $this->ParentProduct = (ProductType)$val;
     }
 
     /**
@@ -48,7 +48,7 @@ class ProductFamilyType
      */
     public function setFamilyMembers($val)
     {
-        $this->FamilyMembers = (int)$val;
+        $this->FamilyMembers = (ProductType)$val;
     }
 
     /**
@@ -57,7 +57,7 @@ class ProductFamilyType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 
     /**
@@ -66,6 +66,6 @@ class ProductFamilyType
      */
     public function setHasMoreChildren($val)
     {
-        $this->hasMoreChildren = (int)$val;
+        $this->hasMoreChildren = (boolean)$val;
     }
 }

@@ -55,7 +55,7 @@ class GetFeedbackResponseType extends
      */
     public function setFeedbackDetailArray($val)
     {
-        $this->FeedbackDetailArray = (int)$val;
+        $this->FeedbackDetailArray = (FeedbackDetailArrayType)$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class GetFeedbackResponseType extends
      */
     public function setFeedbackSummary($val)
     {
-        $this->FeedbackSummary = (int)$val;
+        $this->FeedbackSummary = (FeedbackSummaryType)$val;
     }
 
     /**

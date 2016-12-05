@@ -37,7 +37,7 @@ class GetPromotionRulesRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -58,6 +58,6 @@ class GetPromotionRulesRequestType extends
      */
     public function setPromotionMethod($val)
     {
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
     }
 }

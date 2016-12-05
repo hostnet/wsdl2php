@@ -58,7 +58,7 @@ class StoreCustomCategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -79,7 +79,7 @@ class StoreCustomCategoryType
 	 */
 	public function setChildrenCategories($val)
 	{
-        $this->ChildrenCategories = (int)$val;
+        $this->ChildrenCategories = (StoreCustomCategoryType)$val;
 	}
 
 	/**
@@ -88,7 +88,7 @@ class StoreCustomCategoryType
 	 */
 	public function setChildCategory($val)
 	{
-        $this->ChildCategory = (int)$val;
+        $this->ChildCategory = (StoreCustomCategoryType)$val;
 	}
 
 	/**
@@ -97,6 +97,6 @@ class StoreCustomCategoryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

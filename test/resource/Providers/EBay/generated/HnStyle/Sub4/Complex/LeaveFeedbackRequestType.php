@@ -45,7 +45,7 @@ class LeaveFeedbackRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -57,7 +57,7 @@ class LeaveFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->CommentText = (int)$val;
+        $this->CommentText = (string)$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class LeaveFeedbackRequestType extends
      */
     public function setCommentType($val)
     {
-        $this->CommentType = (int)$val;
+        $this->CommentType = (CommentTypeCodeType)$val;
     }
 
     /**
@@ -78,7 +78,7 @@ class LeaveFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
     }
 
     /**
@@ -87,6 +87,6 @@ class LeaveFeedbackRequestType extends
      */
     public function setTargetUser($val)
     {
-        $this->TargetUser = (int)$val;
+        $this->TargetUser = (UserIDType)$val;
     }
 }

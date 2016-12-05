@@ -43,7 +43,7 @@ class ScheduleType
      */
     public function setScheduleTime($val)
     {
-        $this->ScheduleTime = (int)$val;
+        $this->ScheduleTime = (dateTime)$val;
     }
 
     /**
@@ -52,6 +52,6 @@ class ScheduleType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

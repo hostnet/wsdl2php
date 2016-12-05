@@ -17,6 +17,6 @@ class AckMessageResponse
      */
     public function setAckMessageResult($val)
     {
-        $this->AckMessageResult = (int)$val;
+        $this->AckMessageResult = (Response)$val;
     }
 }

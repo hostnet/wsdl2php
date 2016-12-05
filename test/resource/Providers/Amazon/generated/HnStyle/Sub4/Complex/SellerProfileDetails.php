@@ -48,7 +48,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerNickname');
         }
-        $this->SellerNickname = (int)$val;
+        $this->SellerNickname = (string)$val;
     }
 
     /**
@@ -60,7 +60,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OverallFeedbackRating');
         }
-        $this->OverallFeedbackRating = (int)$val;
+        $this->OverallFeedbackRating = (string)$val;
     }
 
     /**
@@ -72,7 +72,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfFeedback');
         }
-        $this->NumberOfFeedback = (int)$val;
+        $this->NumberOfFeedback = (string)$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfCanceledBids');
         }
-        $this->NumberOfCanceledBids = (int)$val;
+        $this->NumberOfCanceledBids = (string)$val;
     }
 
     /**
@@ -96,7 +96,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfCanceledAuctions');
         }
-        $this->NumberOfCanceledAuctions = (int)$val;
+        $this->NumberOfCanceledAuctions = (string)$val;
     }
 
     /**
@@ -108,7 +108,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreId');
         }
-        $this->StoreId = (int)$val;
+        $this->StoreId = (string)$val;
     }
 
     /**
@@ -120,7 +120,7 @@ class SellerProfileDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
     }
 
     /**
@@ -129,6 +129,6 @@ class SellerProfileDetails
      */
     public function setSellerFeedback($val)
     {
-        $this->SellerFeedback = (int)$val;
+        $this->SellerFeedback = (SellerFeedback)$val;
     }
 }

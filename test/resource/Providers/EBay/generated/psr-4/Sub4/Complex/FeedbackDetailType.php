@@ -117,7 +117,7 @@ class FeedbackDetailType
      */
     public function setCommentingUser($val)
     {
-        $this->CommentingUser = (int)$val;
+        $this->CommentingUser = (UserIDType)$val;
     }
 
     /**
@@ -141,7 +141,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->CommentText = (int)$val;
+        $this->CommentText = (string)$val;
     }
 
     /**
@@ -150,7 +150,7 @@ class FeedbackDetailType
      */
     public function setCommentTime($val)
     {
-        $this->CommentTime = (int)$val;
+        $this->CommentTime = (dateTime)$val;
     }
 
     /**
@@ -159,7 +159,7 @@ class FeedbackDetailType
      */
     public function setCommentType($val)
     {
-        $this->CommentType = (int)$val;
+        $this->CommentType = (CommentTypeCodeType)$val;
     }
 
     /**
@@ -171,7 +171,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackResponse');
         }
-        $this->FeedbackResponse = (int)$val;
+        $this->FeedbackResponse = (string)$val;
     }
 
     /**
@@ -183,7 +183,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Followup');
         }
-        $this->Followup = (int)$val;
+        $this->Followup = (string)$val;
     }
 
     /**
@@ -192,7 +192,7 @@ class FeedbackDetailType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -201,7 +201,7 @@ class FeedbackDetailType
      */
     public function setRole($val)
     {
-        $this->Role = (int)$val;
+        $this->Role = (TradingRoleCodeType)$val;
     }
 
     /**
@@ -213,7 +213,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ItemTitle');
         }
-        $this->ItemTitle = (int)$val;
+        $this->ItemTitle = (string)$val;
     }
 
     /**
@@ -222,7 +222,7 @@ class FeedbackDetailType
      */
     public function setItemPrice($val)
     {
-        $this->ItemPrice = (int)$val;
+        $this->ItemPrice = (AmountType)$val;
     }
 
     /**
@@ -234,7 +234,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = (int)$val;
+        $this->FeedbackID = (string)$val;
     }
 
     /**
@@ -246,7 +246,7 @@ class FeedbackDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
     }
 
     /**
@@ -255,7 +255,7 @@ class FeedbackDetailType
      */
     public function setCommentReplaced($val)
     {
-        $this->CommentReplaced = (int)$val;
+        $this->CommentReplaced = (boolean)$val;
     }
 
     /**
@@ -264,7 +264,7 @@ class FeedbackDetailType
      */
     public function setResponseReplaced($val)
     {
-        $this->ResponseReplaced = (int)$val;
+        $this->ResponseReplaced = (boolean)$val;
     }
 
     /**
@@ -273,7 +273,7 @@ class FeedbackDetailType
      */
     public function setFollowUpReplaced($val)
     {
-        $this->FollowUpReplaced = (int)$val;
+        $this->FollowUpReplaced = (boolean)$val;
     }
 
     /**
@@ -282,7 +282,7 @@ class FeedbackDetailType
      */
     public function setCountable($val)
     {
-        $this->Countable = (int)$val;
+        $this->Countable = (boolean)$val;
     }
 
     /**
@@ -291,6 +291,6 @@ class FeedbackDetailType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

@@ -123,7 +123,7 @@ class BiddingSummaryType
 	 */
 	public function setItemBidDetails($val)
 	{
-        $this->ItemBidDetails = (int)$val;
+        $this->ItemBidDetails = (ItemBidDetailsType)$val;
 	}
 
 	/**
@@ -132,6 +132,6 @@ class BiddingSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

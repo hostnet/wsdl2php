@@ -21,7 +21,7 @@ class GetDomainResponse
 	 */
 	public function setGetDomainResult($val)
 	{
-        $this->GetDomainResult = (int)$val;
+        $this->GetDomainResult = (Response)$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class GetDomainResponse
 	 */
 	public function setDomain($val)
 	{
-        $this->domain = (int)$val;
+        $this->domain = (Domain)$val;
 	}
 }

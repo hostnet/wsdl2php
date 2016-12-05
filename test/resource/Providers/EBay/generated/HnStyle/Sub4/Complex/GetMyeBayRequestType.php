@@ -73,7 +73,7 @@ class GetMyeBayRequestType extends
      */
     public function setBiddingSort($val)
     {
-        $this->BiddingSort = (int)$val;
+        $this->BiddingSort = (ItemSortTypeCodeType)$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class GetMyeBayRequestType extends
      */
     public function setLostSort($val)
     {
-        $this->LostSort = (int)$val;
+        $this->LostSort = (ItemSortTypeCodeType)$val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetMyeBayRequestType extends
      */
     public function setWatchSort($val)
     {
-        $this->WatchSort = (int)$val;
+        $this->WatchSort = (ItemSortTypeCodeType)$val;
     }
 
     /**
@@ -124,7 +124,7 @@ class GetMyeBayRequestType extends
      */
     public function setWonSort($val)
     {
-        $this->WonSort = (int)$val;
+        $this->WonSort = (ItemSortTypeCodeType)$val;
     }
 
     /**
@@ -133,7 +133,7 @@ class GetMyeBayRequestType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->FavoriteSearches = (int)$val;
+        $this->FavoriteSearches = (MyeBaySelectionType)$val;
     }
 
     /**
@@ -142,7 +142,7 @@ class GetMyeBayRequestType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->FavoriteSellers = (int)$val;
+        $this->FavoriteSellers = (MyeBaySelectionType)$val;
     }
 
     /**
@@ -151,6 +151,6 @@ class GetMyeBayRequestType extends
      */
     public function setSecondChanceOffers($val)
     {
-        $this->SecondChanceOffers = (int)$val;
+        $this->SecondChanceOffers = (MyeBaySelectionType)$val;
     }
 }

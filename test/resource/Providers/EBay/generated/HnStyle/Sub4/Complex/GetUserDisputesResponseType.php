@@ -64,7 +64,7 @@ class GetUserDisputesResponseType extends
      */
     public function setStartingDisputeID($val)
     {
-        $this->StartingDisputeID = (int)$val;
+        $this->StartingDisputeID = (DisputeIDType)$val;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetUserDisputesResponseType extends
      */
     public function setEndingDisputeID($val)
     {
-        $this->EndingDisputeID = (int)$val;
+        $this->EndingDisputeID = (DisputeIDType)$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class GetUserDisputesResponseType extends
      */
     public function setDisputeArray($val)
     {
-        $this->DisputeArray = (int)$val;
+        $this->DisputeArray = (DisputeArrayType)$val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetUserDisputesResponseType extends
      */
     public function setDisputeFilterCount($val)
     {
-        $this->DisputeFilterCount = (int)$val;
+        $this->DisputeFilterCount = (DisputeFilterCountType)$val;
     }
 
     /**
@@ -124,6 +124,6 @@ class GetUserDisputesResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
     }
 }

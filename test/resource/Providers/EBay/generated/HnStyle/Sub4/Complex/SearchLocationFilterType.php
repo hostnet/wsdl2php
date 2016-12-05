@@ -41,7 +41,7 @@ class SearchLocationFilterType
      */
     public function setCountryCode($val)
     {
-        $this->CountryCode = (int)$val;
+        $this->CountryCode = (CountryCodeType)$val;
     }
 
     /**
@@ -50,7 +50,7 @@ class SearchLocationFilterType
      */
     public function setItemLocation($val)
     {
-        $this->ItemLocation = (int)$val;
+        $this->ItemLocation = (ItemLocationCodeType)$val;
     }
 
     /**
@@ -59,7 +59,7 @@ class SearchLocationFilterType
      */
     public function setSearchLocation($val)
     {
-        $this->SearchLocation = (int)$val;
+        $this->SearchLocation = (SearchLocationType)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class SearchLocationFilterType
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
     }
 
     /**
@@ -77,6 +77,6 @@ class SearchLocationFilterType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

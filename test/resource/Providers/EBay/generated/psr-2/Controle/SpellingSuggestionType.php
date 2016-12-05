@@ -51,7 +51,7 @@ class SpellingSuggestionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = (int)$val;
+        $this->Text = (string)$val;
     }
 
     /**
@@ -60,6 +60,6 @@ class SpellingSuggestionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

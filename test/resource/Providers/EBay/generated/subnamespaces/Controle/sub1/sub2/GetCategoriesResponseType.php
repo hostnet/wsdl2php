@@ -90,7 +90,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setCategoryArray($val)
 	{
-        $this->CategoryArray = (int)$val;
+        $this->CategoryArray = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -111,7 +111,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setUpdateTime($val)
 	{
-        $this->UpdateTime = (int)$val;
+        $this->UpdateTime = (dateTime)$val;
 	}
 
 	/**
@@ -123,7 +123,7 @@ class GetCategoriesResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = (int)$val;
+        $this->CategoryVersion = (string)$val;
 	}
 
 	/**
@@ -132,7 +132,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReservePriceInclusive($val)
 	{
-        $this->ReservePriceInclusive = (int)$val;
+        $this->ReservePriceInclusive = (boolean)$val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReservePriceAllowed($val)
 	{
-        $this->ReservePriceAllowed = (int)$val;
+        $this->ReservePriceAllowed = (boolean)$val;
 	}
 
 	/**
@@ -150,7 +150,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = (int)$val;
+        $this->MinimumReservePrice = (double)$val;
 	}
 
 	/**
@@ -159,7 +159,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setCurrency($val)
 	{
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
 	}
 
 	/**
@@ -168,7 +168,7 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReduceReserveInclusive($val)
 	{
-        $this->ReduceReserveInclusive = (int)$val;
+        $this->ReduceReserveInclusive = (boolean)$val;
 	}
 
 	/**
@@ -177,6 +177,6 @@ class GetCategoriesResponseType extends
 	 */
 	public function setReduceReserveAllowed($val)
 	{
-        $this->ReduceReserveAllowed = (int)$val;
+        $this->ReduceReserveAllowed = (boolean)$val;
 	}
 }

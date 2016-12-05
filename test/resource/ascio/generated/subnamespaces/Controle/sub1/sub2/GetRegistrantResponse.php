@@ -21,7 +21,7 @@ class GetRegistrantResponse
 	 */
 	public function setGetRegistrantResult($val)
 	{
-        $this->GetRegistrantResult = (int)$val;
+        $this->GetRegistrantResult = (Response)$val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class GetRegistrantResponse
 	 */
 	public function setRegistrant($val)
 	{
-        $this->registrant = (int)$val;
+        $this->registrant = (Registrant)$val;
 	}
 }

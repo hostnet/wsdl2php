@@ -69,7 +69,7 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompanyResponse
 	 */
 	public function setSalaryDocumentsGetEmployeePayslipsPDFByRunCompanyResult($val)
 	{
-        $this->SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult = (int)$val;
+        $this->SalaryDocuments_GetEmployeePayslipsPDFByRunCompanyResult = (ArrayOfPayslip)$val;
 	}
 }
 
@@ -88,7 +88,7 @@ class Payslip
 	 */
 	public function setPDF($val)
 	{
-        $this->PDF = (int)$val;
+        $this->PDF = (base64Binary)$val;
 	}
 }
 
@@ -145,7 +145,7 @@ class SalaryDocuments_GetAllPayslipsPdFbyRunCompanyResponse
 	 */
 	public function setSalaryDocumentsGetAllPayslipsPDFByRunCompanyResult($val)
 	{
-        $this->SalaryDocuments_GetAllPayslipsPDFByRunCompanyResult = (int)$val;
+        $this->SalaryDocuments_GetAllPayslipsPDFByRunCompanyResult = (Payslip)$val;
 	}
 }
 
@@ -189,7 +189,7 @@ class Company_GetCurrentPeriodResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Company_GetCurrentPeriodResult');
         }
-        $this->Company_GetCurrentPeriodResult = (int)$val;
+        $this->Company_GetCurrentPeriodResult = (string)$val;
 	}
 }
 
@@ -230,7 +230,7 @@ class BankAccount_GetCurrentResponse
 	 */
 	public function setBankAccountGetCurrentResult($val)
 	{
-        $this->BankAccount_GetCurrentResult = (int)$val;
+        $this->BankAccount_GetCurrentResult = (BankAccount)$val;
 	}
 }
 
@@ -292,7 +292,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Number');
         }
-        $this->Number = (int)$val;
+        $this->Number = (string)$val;
 	}
 
 	/**
@@ -304,7 +304,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -316,7 +316,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IBAN');
         }
-        $this->IBAN = (int)$val;
+        $this->IBAN = (string)$val;
 	}
 
 	/**
@@ -328,7 +328,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BIC');
         }
-        $this->BIC = (int)$val;
+        $this->BIC = (string)$val;
 	}
 
 	/**
@@ -340,7 +340,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = (int)$val;
+        $this->City = (string)$val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -361,7 +361,7 @@ class BankAccount
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = (BankAccountType)$val;
 	}
 }
 
@@ -409,7 +409,7 @@ class BankAccount_Update
 	 */
 	public function setBankAccount($val)
 	{
-        $this->BankAccount = (int)$val;
+        $this->BankAccount = (BankAccount)$val;
 	}
 }
 
@@ -447,7 +447,7 @@ class BankAccount_Insert
 	 */
 	public function setBankAccount($val)
 	{
-        $this->BankAccount = (int)$val;
+        $this->BankAccount = (BankAccount)$val;
 	}
 }
 
@@ -515,7 +515,7 @@ class FileExplorer_UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentName');
         }
-        $this->StrDocumentName = (int)$val;
+        $this->StrDocumentName = (string)$val;
 	}
 
 	/**
@@ -527,7 +527,7 @@ class FileExplorer_UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentSubFolder');
         }
-        $this->StrDocumentSubFolder = (int)$val;
+        $this->StrDocumentSubFolder = (string)$val;
 	}
 
 	/**
@@ -536,7 +536,7 @@ class FileExplorer_UploadFile
 	 */
 	public function setBody($val)
 	{
-        $this->Body = (int)$val;
+        $this->Body = (base64Binary)$val;
 	}
 }
 
@@ -599,7 +599,7 @@ class Reports_GetPayslipByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
         }
-        $this->Reports_GetPayslipByRunCompanyResult = (int)$val;
+        $this->Reports_GetPayslipByRunCompanyResult = (string)$val;
 	}
 }
 
@@ -659,7 +659,7 @@ class Reports_GetWageCodesByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
         }
-        $this->Reports_GetWageCodesByRunCompanyResult = (int)$val;
+        $this->Reports_GetWageCodesByRunCompanyResult = (string)$val;
 	}
 }
 
@@ -719,7 +719,7 @@ class Reports_GetWageCodesByYearResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
         }
-        $this->Reports_GetWageCodesByYearResult = (int)$val;
+        $this->Reports_GetWageCodesByYearResult = (string)$val;
 	}
 }
 
@@ -779,7 +779,7 @@ class Journals_GetByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
         }
-        $this->Journals_GetByRunCompanyResult = (int)$val;
+        $this->Journals_GetByRunCompanyResult = (string)$val;
 	}
 }
 
@@ -839,7 +839,7 @@ class Journals_GetByRunEmployeeResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunEmployeeResult');
         }
-        $this->Journals_GetByRunEmployeeResult = (int)$val;
+        $this->Journals_GetByRunEmployeeResult = (string)$val;
 	}
 }
 
@@ -899,7 +899,7 @@ class Journals_GetByRunCostCenterResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunCostCenterResult');
         }
-        $this->Journals_GetByRunCostCenterResult = (int)$val;
+        $this->Journals_GetByRunCostCenterResult = (string)$val;
 	}
 }
 
@@ -959,7 +959,7 @@ class Journals_GetByRunDepartmentResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
         }
-        $this->Journals_GetByRunDepartmentResult = (int)$val;
+        $this->Journals_GetByRunDepartmentResult = (string)$val;
 	}
 }
 
@@ -1016,7 +1016,7 @@ class Run_GetListResponse
 	 */
 	public function setRunGetListResult($val)
 	{
-        $this->Run_GetListResult = (int)$val;
+        $this->Run_GetListResult = (ArrayOfRunInfo)$val;
 	}
 }
 
@@ -1126,7 +1126,7 @@ class RunInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -1135,7 +1135,7 @@ class RunInfo
 	 */
 	public function setRunAt($val)
 	{
-        $this->RunAt = (int)$val;
+        $this->RunAt = (dateTime)$val;
 	}
 
 	/**
@@ -1144,7 +1144,7 @@ class RunInfo
 	 */
 	public function setIsLocked($val)
 	{
-        $this->IsLocked = (int)$val;
+        $this->IsLocked = (boolean)$val;
 	}
 }
 
@@ -1185,7 +1185,7 @@ class SvW_GetCurrentResponse
 	 */
 	public function setSVWGetCurrentResult($val)
 	{
-        $this->SVW_GetCurrentResult = (int)$val;
+        $this->SVW_GetCurrentResult = (SVW)$val;
 	}
 }
 
@@ -1216,7 +1216,7 @@ class SvW
 	 */
 	public function setSVWSettings($val)
 	{
-        $this->SVWSettings = (int)$val;
+        $this->SVWSettings = (CompanySVWSettings)$val;
 	}
 
 	/**
@@ -1225,7 +1225,7 @@ class SvW
 	 */
 	public function setSector($val)
 	{
-        $this->Sector = (int)$val;
+        $this->Sector = (Sector)$val;
 	}
 
 	/**
@@ -1234,7 +1234,7 @@ class SvW
 	 */
 	public function setRisicogroep($val)
 	{
-        $this->Risicogroep = (int)$val;
+        $this->Risicogroep = (Risicogroep)$val;
 	}
 
 	/**
@@ -1243,7 +1243,7 @@ class SvW
 	 */
 	public function setCAO($val)
 	{
-        $this->CAO = (int)$val;
+        $this->CAO = (CAO)$val;
 	}
 }
 
@@ -1302,7 +1302,7 @@ class CompanySvWsettings
 	 */
 	public function setEigenrisicodragerGediffWGA($val)
 	{
-        $this->EigenrisicodragerGediffWGA = (int)$val;
+        $this->EigenrisicodragerGediffWGA = (boolean)$val;
 	}
 
 	/**
@@ -1311,7 +1311,7 @@ class CompanySvWsettings
 	 */
 	public function setEigenrisicodragerUniformeWAO($val)
 	{
-        $this->EigenrisicodragerUniformeWAO = (int)$val;
+        $this->EigenrisicodragerUniformeWAO = (boolean)$val;
 	}
 
 	/**
@@ -1320,7 +1320,7 @@ class CompanySvWsettings
 	 */
 	public function setEigenrisicodragerZiektewet($val)
 	{
-        $this->EigenrisicodragerZiektewet = (int)$val;
+        $this->EigenrisicodragerZiektewet = (boolean)$val;
 	}
 
 	/**
@@ -1341,7 +1341,7 @@ class CompanySvWsettings
 	 */
 	public function setGediffWGAwn($val)
 	{
-        $this->Gediff_WGA_wn = (int)$val;
+        $this->Gediff_WGA_wn = (decimal)$val;
 	}
 
 	/**
@@ -1350,7 +1350,7 @@ class CompanySvWsettings
 	 */
 	public function setGediffWGAwg($val)
 	{
-        $this->Gediff_WGA_wg = (int)$val;
+        $this->Gediff_WGA_wg = (decimal)$val;
 	}
 
 	/**
@@ -1400,7 +1400,7 @@ class Sector
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -1438,7 +1438,7 @@ class Risicogroep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -1476,7 +1476,7 @@ class CaO
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -1511,7 +1511,7 @@ class SvW_UpdateCurrent
 	 */
 	public function setSVW($val)
 	{
-        $this->SVW = (int)$val;
+        $this->SVW = (SVW)$val;
 	}
 }
 
@@ -1587,7 +1587,7 @@ class SalaryTable_GetScalesResponse
 	 */
 	public function setSalaryTableGetScalesResult($val)
 	{
-        $this->SalaryTable_GetScalesResult = (int)$val;
+        $this->SalaryTable_GetScalesResult = (ArrayOfSalaryTableScale)$val;
 	}
 }
 
@@ -1625,7 +1625,7 @@ class SalaryTableScale
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Scale');
         }
-        $this->Scale = (int)$val;
+        $this->Scale = (string)$val;
 	}
 
 	/**
@@ -1637,7 +1637,7 @@ class SalaryTableScale
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SchaalDescription');
         }
-        $this->SchaalDescription = (int)$val;
+        $this->SchaalDescription = (string)$val;
 	}
 
 	/**
@@ -1646,7 +1646,7 @@ class SalaryTableScale
 	 */
 	public function setScaleValue($val)
 	{
-        $this->ScaleValue = (int)$val;
+        $this->ScaleValue = (decimal)$val;
 	}
 
 	/**
@@ -1655,7 +1655,7 @@ class SalaryTableScale
 	 */
 	public function setScalePercentageMax($val)
 	{
-        $this->ScalePercentageMax = (int)$val;
+        $this->ScalePercentageMax = (decimal)$val;
 	}
 
 	/**
@@ -1664,7 +1664,7 @@ class SalaryTableScale
 	 */
 	public function setScalePercentageMin($val)
 	{
-        $this->ScalePercentageMin = (int)$val;
+        $this->ScalePercentageMin = (decimal)$val;
 	}
 }
 
@@ -1707,7 +1707,7 @@ class SalaryTable_GetSteps
 	 */
 	public function setScale($val)
 	{
-        $this->Scale = (int)$val;
+        $this->Scale = (SalaryTableScale)$val;
 	}
 
 	/**
@@ -1750,7 +1750,7 @@ class SalaryTable_GetStepsResponse
 	 */
 	public function setSalaryTableGetStepsResult($val)
 	{
-        $this->SalaryTable_GetStepsResult = (int)$val;
+        $this->SalaryTable_GetStepsResult = (ArrayOfSalaryTableStep)$val;
 	}
 }
 
@@ -1780,7 +1780,7 @@ class SalaryTableStep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Step');
         }
-        $this->Step = (int)$val;
+        $this->Step = (string)$val;
 	}
 
 	/**
@@ -1792,7 +1792,7 @@ class SalaryTableStep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StepDescription');
         }
-        $this->StepDescription = (int)$val;
+        $this->StepDescription = (string)$val;
 	}
 
 	/**
@@ -1801,7 +1801,7 @@ class SalaryTableStep
 	 */
 	public function setStepValue($val)
 	{
-        $this->StepValue = (int)$val;
+        $this->StepValue = (decimal)$val;
 	}
 }
 
@@ -1874,7 +1874,7 @@ class SalaryTable_GetResponse
 	 */
 	public function setSalaryTableGetResult($val)
 	{
-        $this->SalaryTable_GetResult = (int)$val;
+        $this->SalaryTable_GetResult = (SalaryTable)$val;
 	}
 }
 
@@ -1912,7 +1912,7 @@ class SalaryTable
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -1953,7 +1953,7 @@ class CostCenter_GetListResponse
 	 */
 	public function setCostCenterGetListResult($val)
 	{
-        $this->CostCenter_GetListResult = (int)$val;
+        $this->CostCenter_GetListResult = (ArrayOfCostCenter)$val;
 	}
 }
 
@@ -1991,7 +1991,7 @@ class CostCenter
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -2026,7 +2026,7 @@ class CostCenter_Insert
 	 */
 	public function setKostenplaats($val)
 	{
-        $this->kostenplaats = (int)$val;
+        $this->kostenplaats = (CostCenter)$val;
 	}
 }
 
@@ -2089,7 +2089,7 @@ class Address_GetCurrentResponse
 	 */
 	public function setAddressGetCurrentResult($val)
 	{
-        $this->Address_GetCurrentResult = (int)$val;
+        $this->Address_GetCurrentResult = (Address)$val;
 	}
 }
 
@@ -2152,7 +2152,7 @@ class Address
 	 */
 	public function setDefault($val)
 	{
-        $this->Default = (int)$val;
+        $this->Default = (boolean)$val;
 	}
 
 	/**
@@ -2164,7 +2164,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street');
         }
-        $this->Street = (int)$val;
+        $this->Street = (string)$val;
 	}
 
 	/**
@@ -2176,7 +2176,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HouseNumber');
         }
-        $this->HouseNumber = (int)$val;
+        $this->HouseNumber = (string)$val;
 	}
 
 	/**
@@ -2188,7 +2188,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HouseNumberAddition');
         }
-        $this->HouseNumberAddition = (int)$val;
+        $this->HouseNumberAddition = (string)$val;
 	}
 
 	/**
@@ -2200,7 +2200,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = (int)$val;
+        $this->PostalCode = (string)$val;
 	}
 
 	/**
@@ -2212,7 +2212,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = (int)$val;
+        $this->City = (string)$val;
 	}
 
 	/**
@@ -2224,7 +2224,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StateProvince');
         }
-        $this->StateProvince = (int)$val;
+        $this->StateProvince = (string)$val;
 	}
 
 	/**
@@ -2236,7 +2236,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryISOCode');
         }
-        $this->CountryISOCode = (int)$val;
+        $this->CountryISOCode = (string)$val;
 	}
 }
 
@@ -2271,7 +2271,7 @@ class Address_Update
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (int)$val;
+        $this->Address = (Address)$val;
 	}
 }
 
@@ -2309,7 +2309,7 @@ class Address_Insert
 	 */
 	public function setAddress($val)
 	{
-        $this->Address = (int)$val;
+        $this->Address = (Address)$val;
 	}
 }
 
@@ -2413,7 +2413,7 @@ class RunRequest_GetListResponse
 	 */
 	public function setRunRequestGetListResult($val)
 	{
-        $this->RunRequest_GetListResult = (int)$val;
+        $this->RunRequest_GetListResult = (ArrayOfRunRequest)$val;
 	}
 }
 
@@ -2468,7 +2468,7 @@ class RunRequest
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (RunRequestStatus)$val;
 	}
 
 	/**
@@ -2477,7 +2477,7 @@ class RunRequest
 	 */
 	public function setHandledDate($val)
 	{
-        $this->HandledDate = (int)$val;
+        $this->HandledDate = (dateTime)$val;
 	}
 }
 
@@ -2527,7 +2527,7 @@ class Schedule_GetCurrentResponse
 	 */
 	public function setScheduleGetCurrentResult($val)
 	{
-        $this->Schedule_GetCurrentResult = (int)$val;
+        $this->Schedule_GetCurrentResult = (BedrijfFulltimeSchedule)$val;
 	}
 }
 
@@ -2550,7 +2550,7 @@ class BedrijfFulltimeSchedule
 	 */
 	public function setFulltimeScheduleOne($val)
 	{
-        $this->FulltimeScheduleOne = (int)$val;
+        $this->FulltimeScheduleOne = (FulltimeSchedule)$val;
 	}
 
 	/**
@@ -2559,7 +2559,7 @@ class BedrijfFulltimeSchedule
 	 */
 	public function setFulltimeScheduleTwo($val)
 	{
-        $this->FulltimeScheduleTwo = (int)$val;
+        $this->FulltimeScheduleTwo = (FulltimeSchedule)$val;
 	}
 }
 
@@ -2634,7 +2634,7 @@ class FulltimeSchedule
 	 */
 	public function setScheduleCalcMethod($val)
 	{
-        $this->ScheduleCalcMethod = (int)$val;
+        $this->ScheduleCalcMethod = (ScheduleCalcMethod)$val;
 	}
 
 	/**
@@ -2643,7 +2643,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursMonday($val)
 	{
-        $this->HoursMonday = (int)$val;
+        $this->HoursMonday = (decimal)$val;
 	}
 
 	/**
@@ -2652,7 +2652,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursTuesday($val)
 	{
-        $this->HoursTuesday = (int)$val;
+        $this->HoursTuesday = (decimal)$val;
 	}
 
 	/**
@@ -2661,7 +2661,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursWednesday($val)
 	{
-        $this->HoursWednesday = (int)$val;
+        $this->HoursWednesday = (decimal)$val;
 	}
 
 	/**
@@ -2670,7 +2670,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursThursday($val)
 	{
-        $this->HoursThursday = (int)$val;
+        $this->HoursThursday = (decimal)$val;
 	}
 
 	/**
@@ -2679,7 +2679,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursFriday($val)
 	{
-        $this->HoursFriday = (int)$val;
+        $this->HoursFriday = (decimal)$val;
 	}
 
 	/**
@@ -2688,7 +2688,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSaturday($val)
 	{
-        $this->HoursSaturday = (int)$val;
+        $this->HoursSaturday = (decimal)$val;
 	}
 
 	/**
@@ -2697,7 +2697,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSunday($val)
 	{
-        $this->HoursSunday = (int)$val;
+        $this->HoursSunday = (decimal)$val;
 	}
 
 	/**
@@ -2706,7 +2706,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursMonday2($val)
 	{
-        $this->HoursMonday2 = (int)$val;
+        $this->HoursMonday2 = (decimal)$val;
 	}
 
 	/**
@@ -2715,7 +2715,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursTuesday2($val)
 	{
-        $this->HoursTuesday2 = (int)$val;
+        $this->HoursTuesday2 = (decimal)$val;
 	}
 
 	/**
@@ -2724,7 +2724,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursWednesday2($val)
 	{
-        $this->HoursWednesday2 = (int)$val;
+        $this->HoursWednesday2 = (decimal)$val;
 	}
 
 	/**
@@ -2733,7 +2733,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursThursday2($val)
 	{
-        $this->HoursThursday2 = (int)$val;
+        $this->HoursThursday2 = (decimal)$val;
 	}
 
 	/**
@@ -2742,7 +2742,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursFriday2($val)
 	{
-        $this->HoursFriday2 = (int)$val;
+        $this->HoursFriday2 = (decimal)$val;
 	}
 
 	/**
@@ -2751,7 +2751,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSaturday2($val)
 	{
-        $this->HoursSaturday2 = (int)$val;
+        $this->HoursSaturday2 = (decimal)$val;
 	}
 
 	/**
@@ -2760,7 +2760,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSunday2($val)
 	{
-        $this->HoursSunday2 = (int)$val;
+        $this->HoursSunday2 = (decimal)$val;
 	}
 }
 
@@ -2807,7 +2807,7 @@ class HourModel_GetHourCodesResponse
 	 */
 	public function setHourModelGetHourCodesResult($val)
 	{
-        $this->HourModel_GetHourCodesResult = (int)$val;
+        $this->HourModel_GetHourCodesResult = (ArrayOfHourCode)$val;
 	}
 }
 
@@ -2845,7 +2845,7 @@ class HourCode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -2886,7 +2886,7 @@ class WageModel_GetWageCodesResponse
 	 */
 	public function setWageModelGetWageCodesResult($val)
 	{
-        $this->WageModel_GetWageCodesResult = (int)$val;
+        $this->WageModel_GetWageCodesResult = (ArrayOfWageCode)$val;
 	}
 }
 
@@ -2924,7 +2924,7 @@ class WageCode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 }
 
@@ -2946,7 +2946,7 @@ class List_GetAllResponse
 	 */
 	public function setListGetAllResult($val)
 	{
-        $this->List_GetAllResult = (int)$val;
+        $this->List_GetAllResult = (ArrayOfCompany)$val;
 	}
 }
 
@@ -3020,7 +3020,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -3032,7 +3032,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PhoneNumber');
         }
-        $this->PhoneNumber = (int)$val;
+        $this->PhoneNumber = (string)$val;
 	}
 
 	/**
@@ -3044,7 +3044,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FaxNumber');
         }
-        $this->FaxNumber = (int)$val;
+        $this->FaxNumber = (string)$val;
 	}
 
 	/**
@@ -3056,7 +3056,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -3068,7 +3068,7 @@ class Company
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Website');
         }
-        $this->Website = (int)$val;
+        $this->Website = (string)$val;
 	}
 
 	/**
@@ -3077,7 +3077,7 @@ class Company
 	 */
 	public function setLoonaangifteTijdvak($val)
 	{
-        $this->LoonaangifteTijdvak = (int)$val;
+        $this->LoonaangifteTijdvak = (LoonaangifteTijdvak)$val;
 	}
 }
 
@@ -3127,7 +3127,7 @@ class List_GetByDebtorResponse
 	 */
 	public function setListGetByDebtorResult($val)
 	{
-        $this->List_GetByDebtorResult = (int)$val;
+        $this->List_GetByDebtorResult = (ArrayOfCompany)$val;
 	}
 }
 

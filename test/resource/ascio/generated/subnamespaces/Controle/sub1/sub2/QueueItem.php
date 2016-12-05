@@ -49,7 +49,7 @@ class QueueItem
 	 */
 	public function setAttachments($val)
 	{
-        $this->Attachments = (int)$val;
+        $this->Attachments = (ArrayOfAttachment)$val;
 	}
 
 	/**
@@ -61,7 +61,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainHandle');
         }
-        $this->DomainHandle = (int)$val;
+        $this->DomainHandle = (string)$val;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->DomainName = (int)$val;
+        $this->DomainName = (string)$val;
 	}
 
 	/**
@@ -85,7 +85,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Msg');
         }
-        $this->Msg = (int)$val;
+        $this->Msg = (string)$val;
 	}
 
 	/**
@@ -106,7 +106,7 @@ class QueueItem
 	 */
 	public function setMsgType($val)
 	{
-        $this->MsgType = (int)$val;
+        $this->MsgType = (MessageType)$val;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class QueueItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderId');
         }
-        $this->OrderId = (int)$val;
+        $this->OrderId = (string)$val;
 	}
 
 	/**
@@ -127,7 +127,7 @@ class QueueItem
 	 */
 	public function setOrderStatus($val)
 	{
-        $this->OrderStatus = (int)$val;
+        $this->OrderStatus = (OrderStatusType)$val;
 	}
 
 	/**
@@ -136,6 +136,6 @@ class QueueItem
 	 */
 	public function setStatusList($val)
 	{
-        $this->StatusList = (int)$val;
+        $this->StatusList = (ArrayOfCallbackStatus)$val;
 	}
 }

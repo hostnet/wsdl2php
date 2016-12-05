@@ -147,7 +147,7 @@ class AccountSummaryType
 	 */
 	public function setAccountState($val)
 	{
-        $this->AccountState = (int)$val;
+        $this->AccountState = (AccountStateCodeType)$val;
 	}
 
 	/**
@@ -156,7 +156,7 @@ class AccountSummaryType
 	 */
 	public function setInvoicePayment($val)
 	{
-        $this->InvoicePayment = (int)$val;
+        $this->InvoicePayment = (AmountType)$val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceCredit($val)
 	{
-        $this->InvoiceCredit = (int)$val;
+        $this->InvoiceCredit = (AmountType)$val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceNewFee($val)
 	{
-        $this->InvoiceNewFee = (int)$val;
+        $this->InvoiceNewFee = (AmountType)$val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class AccountSummaryType
 	 */
 	public function setAdditionalAccount($val)
 	{
-        $this->AdditionalAccount = (int)$val;
+        $this->AdditionalAccount = (AdditionalAccountType)$val;
 	}
 
 	/**
@@ -192,7 +192,7 @@ class AccountSummaryType
 	 */
 	public function setAmountPastDue($val)
 	{
-        $this->AmountPastDue = (int)$val;
+        $this->AmountPastDue = (AmountType)$val;
 	}
 
 	/**
@@ -204,7 +204,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BankAccountInfo');
         }
-        $this->BankAccountInfo = (int)$val;
+        $this->BankAccountInfo = (string)$val;
 	}
 
 	/**
@@ -213,7 +213,7 @@ class AccountSummaryType
 	 */
 	public function setBankModifyDate($val)
 	{
-        $this->BankModifyDate = (int)$val;
+        $this->BankModifyDate = (dateTime)$val;
 	}
 
 	/**
@@ -234,7 +234,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardExpiration($val)
 	{
-        $this->CreditCardExpiration = (int)$val;
+        $this->CreditCardExpiration = (dateTime)$val;
 	}
 
 	/**
@@ -246,7 +246,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CreditCardInfo');
         }
-        $this->CreditCardInfo = (int)$val;
+        $this->CreditCardInfo = (string)$val;
 	}
 
 	/**
@@ -255,7 +255,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardModifyDate($val)
 	{
-        $this->CreditCardModifyDate = (int)$val;
+        $this->CreditCardModifyDate = (dateTime)$val;
 	}
 
 	/**
@@ -264,7 +264,7 @@ class AccountSummaryType
 	 */
 	public function setCurrentBalance($val)
 	{
-        $this->CurrentBalance = (int)$val;
+        $this->CurrentBalance = (AmountType)$val;
 	}
 
 	/**
@@ -276,7 +276,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = (int)$val;
+        $this->Email = (string)$val;
 	}
 
 	/**
@@ -285,7 +285,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceBalance($val)
 	{
-        $this->InvoiceBalance = (int)$val;
+        $this->InvoiceBalance = (AmountType)$val;
 	}
 
 	/**
@@ -294,7 +294,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceDate($val)
 	{
-        $this->InvoiceDate = (int)$val;
+        $this->InvoiceDate = (dateTime)$val;
 	}
 
 	/**
@@ -303,7 +303,7 @@ class AccountSummaryType
 	 */
 	public function setLastAmountPaid($val)
 	{
-        $this->LastAmountPaid = (int)$val;
+        $this->LastAmountPaid = (AmountType)$val;
 	}
 
 	/**
@@ -312,7 +312,7 @@ class AccountSummaryType
 	 */
 	public function setLastPaymentDate($val)
 	{
-        $this->LastPaymentDate = (int)$val;
+        $this->LastPaymentDate = (dateTime)$val;
 	}
 
 	/**
@@ -321,7 +321,7 @@ class AccountSummaryType
 	 */
 	public function setPastDue($val)
 	{
-        $this->PastDue = (int)$val;
+        $this->PastDue = (boolean)$val;
 	}
 
 	/**
@@ -330,7 +330,7 @@ class AccountSummaryType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = (int)$val;
+        $this->PaymentMethod = (SellerPaymentMethodCodeType)$val;
 	}
 
 	/**
@@ -339,6 +339,6 @@ class AccountSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

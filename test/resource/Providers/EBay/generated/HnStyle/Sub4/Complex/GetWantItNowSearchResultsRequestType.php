@@ -55,7 +55,7 @@ class GetWantItNowSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = (string)$val;
     }
 
     /**
@@ -67,7 +67,7 @@ class GetWantItNowSearchResultsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = (string)$val;
     }
 
     /**
@@ -76,7 +76,7 @@ class GetWantItNowSearchResultsRequestType extends
      */
     public function setSearchInDescription($val)
     {
-        $this->SearchInDescription = (int)$val;
+        $this->SearchInDescription = (boolean)$val;
     }
 
     /**
@@ -85,7 +85,7 @@ class GetWantItNowSearchResultsRequestType extends
      */
     public function setSearchWorldwide($val)
     {
-        $this->SearchWorldwide = (int)$val;
+        $this->SearchWorldwide = (boolean)$val;
     }
 
     /**
@@ -94,6 +94,6 @@ class GetWantItNowSearchResultsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
     }
 }

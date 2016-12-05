@@ -33,7 +33,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = (int)$val;
+        $this->SubscriptionLevel = (PictureManagerSubscriptionLevelCodeType)$val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class PictureManagerSubscriptionType
 	 */
 	public function setFee($val)
 	{
-        $this->Fee = (int)$val;
+        $this->Fee = (AmountType)$val;
 	}
 
 	/**
@@ -63,6 +63,6 @@ class PictureManagerSubscriptionType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

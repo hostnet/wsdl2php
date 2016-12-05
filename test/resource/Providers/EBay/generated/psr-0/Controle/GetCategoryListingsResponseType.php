@@ -64,7 +64,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = (CategoryType)$val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setSubCategories($val)
 	{
-        $this->SubCategories = (int)$val;
+        $this->SubCategories = (CategoryArrayType)$val;
 	}
 
 	/**
@@ -115,7 +115,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setBuyingGuideDetails($val)
 	{
-        $this->BuyingGuideDetails = (int)$val;
+        $this->BuyingGuideDetails = (BuyingGuideDetailsType)$val;
 	}
 
 	/**
@@ -142,6 +142,6 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{
-        $this->RelatedSearchKeywordArray = (int)$val;
+        $this->RelatedSearchKeywordArray = (RelatedSearchKeywordArrayType)$val;
 	}
 }

@@ -61,7 +61,7 @@ class GetPictureManagerDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = (string)$val;
     }
 
     /**
@@ -70,6 +70,6 @@ class GetPictureManagerDetailsRequestType extends
      */
     public function setPictureManagerDetailLevel($val)
     {
-        $this->PictureManagerDetailLevel = (int)$val;
+        $this->PictureManagerDetailLevel = (PictureManagerDetailLevelCodeType)$val;
     }
 }

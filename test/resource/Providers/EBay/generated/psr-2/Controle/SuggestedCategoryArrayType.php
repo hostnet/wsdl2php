@@ -27,7 +27,7 @@ class SuggestedCategoryArrayType
      */
     public function setSuggestedCategory($val)
     {
-        $this->SuggestedCategory = (int)$val;
+        $this->SuggestedCategory = (SuggestedCategoryType)$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class SuggestedCategoryArrayType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

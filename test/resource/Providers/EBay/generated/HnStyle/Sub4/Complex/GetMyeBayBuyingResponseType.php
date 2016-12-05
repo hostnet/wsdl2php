@@ -61,7 +61,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setBuyingSummary($val)
     {
-        $this->BuyingSummary = (int)$val;
+        $this->BuyingSummary = (BuyingSummaryType)$val;
     }
 
     /**
@@ -70,7 +70,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setWatchList($val)
     {
-        $this->WatchList = (int)$val;
+        $this->WatchList = (PaginatedItemArrayType)$val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setBidList($val)
     {
-        $this->BidList = (int)$val;
+        $this->BidList = (PaginatedItemArrayType)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setBestOfferList($val)
     {
-        $this->BestOfferList = (int)$val;
+        $this->BestOfferList = (PaginatedItemArrayType)$val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setWonList($val)
     {
-        $this->WonList = (int)$val;
+        $this->WonList = (PaginatedOrderTransactionArrayType)$val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setLostList($val)
     {
-        $this->LostList = (int)$val;
+        $this->LostList = (PaginatedItemArrayType)$val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->FavoriteSearches = (int)$val;
+        $this->FavoriteSearches = (MyeBayFavoriteSearchListType)$val;
     }
 
     /**
@@ -124,7 +124,7 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->FavoriteSellers = (int)$val;
+        $this->FavoriteSellers = (MyeBayFavoriteSellerListType)$val;
     }
 
     /**
@@ -133,6 +133,6 @@ class GetMyeBayBuyingResponseType extends
      */
     public function setSecondChanceOffer($val)
     {
-        $this->SecondChanceOffer = (int)$val;
+        $this->SecondChanceOffer = (ItemType)$val;
     }
 }

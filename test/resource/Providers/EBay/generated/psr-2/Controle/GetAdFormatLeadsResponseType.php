@@ -29,7 +29,7 @@ class GetAdFormatLeadsResponseType extends
      */
     public function setAdFormatLead($val)
     {
-        $this->AdFormatLead = (int)$val;
+        $this->AdFormatLead = (AdFormatLeadType)$val;
     }
 
     /**

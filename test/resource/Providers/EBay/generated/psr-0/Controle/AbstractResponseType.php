@@ -100,7 +100,7 @@ class AbstractResponseType
 	 */
 	public function setTimestamp($val)
 	{
-        $this->Timestamp = (int)$val;
+        $this->Timestamp = (dateTime)$val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class AbstractResponseType
 	 */
 	public function setAck($val)
 	{
-        $this->Ack = (int)$val;
+        $this->Ack = (AckCodeType)$val;
 	}
 
 	/**
@@ -121,7 +121,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = (string)$val;
 	}
 
 	/**
@@ -130,7 +130,7 @@ class AbstractResponseType
 	 */
 	public function setErrors($val)
 	{
-        $this->Errors = (int)$val;
+        $this->Errors = (ErrorType)$val;
 	}
 
 	/**
@@ -142,7 +142,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->Message = (int)$val;
+        $this->Message = (string)$val;
 	}
 
 	/**
@@ -154,7 +154,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Version');
         }
-        $this->Version = (int)$val;
+        $this->Version = (string)$val;
 	}
 
 	/**
@@ -166,7 +166,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Build');
         }
-        $this->Build = (int)$val;
+        $this->Build = (string)$val;
 	}
 
 	/**
@@ -178,7 +178,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationEventName');
         }
-        $this->NotificationEventName = (int)$val;
+        $this->NotificationEventName = (string)$val;
 	}
 
 	/**
@@ -187,7 +187,7 @@ class AbstractResponseType
 	 */
 	public function setDuplicateInvocationDetails($val)
 	{
-        $this->DuplicateInvocationDetails = (int)$val;
+        $this->DuplicateInvocationDetails = (DuplicateInvocationDetailsType)$val;
 	}
 
 	/**
@@ -199,7 +199,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->RecipientUserID = (int)$val;
+        $this->RecipientUserID = (string)$val;
 	}
 
 	/**
@@ -211,7 +211,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->EIASToken = (int)$val;
+        $this->EIASToken = (string)$val;
 	}
 
 	/**
@@ -223,7 +223,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationSignature');
         }
-        $this->NotificationSignature = (int)$val;
+        $this->NotificationSignature = (string)$val;
 	}
 
 	/**
@@ -235,7 +235,7 @@ class AbstractResponseType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HardExpirationWarning');
         }
-        $this->HardExpirationWarning = (int)$val;
+        $this->HardExpirationWarning = (string)$val;
 	}
 
 	/**
@@ -244,6 +244,6 @@ class AbstractResponseType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

@@ -69,7 +69,7 @@ class GetSearchResultsExpressResponseType extends
      */
     public function setHistogram($val)
     {
-        $this->Histogram = (int)$val;
+        $this->Histogram = (DomainHistogramType)$val;
     }
 
     /**
@@ -78,7 +78,7 @@ class GetSearchResultsExpressResponseType extends
      */
     public function setItemArray($val)
     {
-        $this->ItemArray = (int)$val;
+        $this->ItemArray = (ItemArrayType)$val;
     }
 
     /**
@@ -87,7 +87,7 @@ class GetSearchResultsExpressResponseType extends
      */
     public function setProductArray($val)
     {
-        $this->ProductArray = (int)$val;
+        $this->ProductArray = (ProductArrayType)$val;
     }
 
     /**
@@ -120,6 +120,6 @@ class GetSearchResultsExpressResponseType extends
      */
     public function setHasMoreEntries($val)
     {
-        $this->HasMoreEntries = (int)$val;
+        $this->HasMoreEntries = (boolean)$val;
     }
 }

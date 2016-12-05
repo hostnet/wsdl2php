@@ -37,7 +37,7 @@ class ProStoresDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
-        $this->SellerThirdPartyUsername = (int)$val;
+        $this->SellerThirdPartyUsername = (string)$val;
 	}
 
 	/**
@@ -49,7 +49,7 @@ class ProStoresDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class ProStoresDetailsType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = (EnableCodeType)$val;
 	}
 
 	/**
@@ -67,6 +67,6 @@ class ProStoresDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

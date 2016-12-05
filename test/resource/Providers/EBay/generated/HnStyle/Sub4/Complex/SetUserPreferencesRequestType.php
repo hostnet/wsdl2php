@@ -73,7 +73,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setBidderNoticePreferences($val)
     {
-        $this->BidderNoticePreferences = (int)$val;
+        $this->BidderNoticePreferences = (BidderNoticePreferencesType)$val;
     }
 
     /**
@@ -82,7 +82,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setCombinedPaymentPreferences($val)
     {
-        $this->CombinedPaymentPreferences = (int)$val;
+        $this->CombinedPaymentPreferences = (CombinedPaymentPreferencesType)$val;
     }
 
     /**
@@ -91,7 +91,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setCrossPromotionPreferences($val)
     {
-        $this->CrossPromotionPreferences = (int)$val;
+        $this->CrossPromotionPreferences = (CrossPromotionPreferencesType)$val;
     }
 
     /**
@@ -100,7 +100,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setSellerPaymentPreferences($val)
     {
-        $this->SellerPaymentPreferences = (int)$val;
+        $this->SellerPaymentPreferences = (SellerPaymentPreferencesType)$val;
     }
 
     /**
@@ -109,7 +109,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setSellerFavoriteItemPreferences($val)
     {
-        $this->SellerFavoriteItemPreferences = (int)$val;
+        $this->SellerFavoriteItemPreferences = (SellerFavoriteItemPreferencesType)$val;
     }
 
     /**
@@ -118,7 +118,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setEndOfAuctionEmailPreferences($val)
     {
-        $this->EndOfAuctionEmailPreferences = (int)$val;
+        $this->EndOfAuctionEmailPreferences = (EndOfAuctionEmailPreferencesType)$val;
     }
 
     /**
@@ -127,7 +127,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setEBxOptInPreference($val)
     {
-        $this->eBxOptInPreference = (int)$val;
+        $this->eBxOptInPreference = (eBxOptInPreferenceType)$val;
     }
 
     /**
@@ -136,6 +136,6 @@ class SetUserPreferencesRequestType extends
      */
     public function setExpressPreferences($val)
     {
-        $this->ExpressPreferences = (int)$val;
+        $this->ExpressPreferences = (ExpressPreferencesType)$val;
     }
 }

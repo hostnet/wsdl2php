@@ -29,7 +29,7 @@ class VerifiedUserRequirementsType
      */
     public function setVerifiedUser($val)
     {
-        $this->VerifiedUser = (int)$val;
+        $this->VerifiedUser = (boolean)$val;
     }
 
     /**

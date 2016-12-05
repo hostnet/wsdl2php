@@ -131,7 +131,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -143,7 +143,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = (string)$val;
     }
 
     /**
@@ -155,7 +155,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderID');
         }
-        $this->OrderID = (int)$val;
+        $this->OrderID = (string)$val;
     }
 
     /**
@@ -164,7 +164,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setAmountPaid($val)
     {
-        $this->AmountPaid = (int)$val;
+        $this->AmountPaid = (AmountType)$val;
     }
 
     /**
@@ -173,7 +173,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setPaymentMethodUsed($val)
     {
-        $this->PaymentMethodUsed = (int)$val;
+        $this->PaymentMethodUsed = (BuyerPaymentMethodCodeType)$val;
     }
 
     /**
@@ -182,7 +182,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setCheckoutStatus($val)
     {
-        $this->CheckoutStatus = (int)$val;
+        $this->CheckoutStatus = (CompleteStatusCodeType)$val;
     }
 
     /**
@@ -191,7 +191,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingService($val)
     {
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
     }
 
     /**
@@ -200,7 +200,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingIncludedInTax($val)
     {
-        $this->ShippingIncludedInTax = (int)$val;
+        $this->ShippingIncludedInTax = (boolean)$val;
     }
 
     /**
@@ -209,7 +209,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setCheckoutMethod($val)
     {
-        $this->CheckoutMethod = (int)$val;
+        $this->CheckoutMethod = (CheckoutMethodCodeType)$val;
     }
 
     /**
@@ -218,7 +218,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setInsuranceType($val)
     {
-        $this->InsuranceType = (int)$val;
+        $this->InsuranceType = (InsuranceSelectedCodeType)$val;
     }
 
     /**
@@ -227,7 +227,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setPaymentStatus($val)
     {
-        $this->PaymentStatus = (int)$val;
+        $this->PaymentStatus = (RCSPaymentStatusCodeType)$val;
     }
 
     /**
@@ -236,7 +236,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setAdjustmentAmount($val)
     {
-        $this->AdjustmentAmount = (int)$val;
+        $this->AdjustmentAmount = (AmountType)$val;
     }
 
     /**
@@ -245,7 +245,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingAddress($val)
     {
-        $this->ShippingAddress = (int)$val;
+        $this->ShippingAddress = (AddressType)$val;
     }
 
     /**
@@ -257,7 +257,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerID');
         }
-        $this->BuyerID = (int)$val;
+        $this->BuyerID = (string)$val;
     }
 
     /**
@@ -266,7 +266,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingInsuranceCost($val)
     {
-        $this->ShippingInsuranceCost = (int)$val;
+        $this->ShippingInsuranceCost = (AmountType)$val;
     }
 
     /**
@@ -275,7 +275,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setSalesTax($val)
     {
-        $this->SalesTax = (int)$val;
+        $this->SalesTax = (AmountType)$val;
     }
 
     /**
@@ -284,7 +284,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setShippingCost($val)
     {
-        $this->ShippingCost = (int)$val;
+        $this->ShippingCost = (AmountType)$val;
     }
 
     /**
@@ -296,7 +296,7 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EncryptedID');
         }
-        $this->EncryptedID = (int)$val;
+        $this->EncryptedID = (string)$val;
     }
 
     /**
@@ -305,7 +305,7 @@ class ReviseCheckoutStatusRequestType extends
      */
     public function setExternalTransaction($val)
     {
-        $this->ExternalTransaction = (int)$val;
+        $this->ExternalTransaction = (ExternalTransactionType)$val;
     }
 
     /**
@@ -317,6 +317,6 @@ class ReviseCheckoutStatusRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MultipleSellerPaymentID');
         }
-        $this->MultipleSellerPaymentID = (int)$val;
+        $this->MultipleSellerPaymentID = (string)$val;
     }
 }

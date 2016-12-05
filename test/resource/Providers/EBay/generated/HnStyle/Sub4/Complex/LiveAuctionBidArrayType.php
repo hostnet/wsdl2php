@@ -23,6 +23,6 @@ class LiveAuctionBidArrayType
      */
     public function setLiveAuctionBid($val)
     {
-        $this->LiveAuctionBid = (int)$val;
+        $this->LiveAuctionBid = (LiveAuctionBidType)$val;
     }
 }

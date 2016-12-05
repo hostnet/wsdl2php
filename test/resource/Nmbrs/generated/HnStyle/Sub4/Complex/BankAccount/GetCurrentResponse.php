@@ -17,6 +17,6 @@ class GetCurrentResponse
      */
     public function setBankAccountGetCurrentResult($val)
     {
-        $this->BankAccount_GetCurrentResult = (int)$val;
+        $this->BankAccount_GetCurrentResult = (BankAccount)$val;
     }
 }

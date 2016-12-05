@@ -41,7 +41,7 @@ class GetAttributesCsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
     }
 
     /**
@@ -62,7 +62,7 @@ class GetAttributesCsRequestType extends
      */
     public function setIncludeCategoryMappingDetails($val)
     {
-        $this->IncludeCategoryMappingDetails = (int)$val;
+        $this->IncludeCategoryMappingDetails = (boolean)$val;
     }
 
     /**
@@ -71,6 +71,6 @@ class GetAttributesCsRequestType extends
      */
     public function setDigitalDelivery($val)
     {
-        $this->DigitalDelivery = (int)$val;
+        $this->DigitalDelivery = (boolean)$val;
     }
 }

@@ -53,7 +53,7 @@ class StoreColorSchemeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class StoreColorSchemeType
 	 */
 	public function setColor($val)
 	{
-        $this->Color = (int)$val;
+        $this->Color = (StoreColorType)$val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class StoreColorSchemeType
 	 */
 	public function setFont($val)
 	{
-        $this->Font = (int)$val;
+        $this->Font = (StoreFontType)$val;
 	}
 
 	/**
@@ -80,6 +80,6 @@ class StoreColorSchemeType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

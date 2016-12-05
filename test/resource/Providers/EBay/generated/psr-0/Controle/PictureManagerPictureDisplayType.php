@@ -46,7 +46,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setDisplayType($val)
 	{
-        $this->DisplayType = (int)$val;
+        $this->DisplayType = (PictureManagerPictureDisplayTypeCodeType)$val;
 	}
 
 	/**
@@ -55,7 +55,7 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = (int)$val;
+        $this->URL = (anyURI)$val;
 	}
 
 	/**
@@ -100,6 +100,6 @@ class PictureManagerPictureDisplayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

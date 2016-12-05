@@ -116,7 +116,7 @@ class GetSearchResultsResponseType extends
      */
     public function setSearchResultItemArray($val)
     {
-        $this->SearchResultItemArray = (int)$val;
+        $this->SearchResultItemArray = (SearchResultItemArrayType)$val;
     }
 
     /**
@@ -149,7 +149,7 @@ class GetSearchResultsResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = (boolean)$val;
     }
 
     /**
@@ -158,7 +158,7 @@ class GetSearchResultsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
     }
 
     /**
@@ -167,7 +167,7 @@ class GetSearchResultsResponseType extends
      */
     public function setCategoryArray($val)
     {
-        $this->CategoryArray = (int)$val;
+        $this->CategoryArray = (CategoryArrayType)$val;
     }
 
     /**
@@ -176,7 +176,7 @@ class GetSearchResultsResponseType extends
      */
     public function setBuyingGuideDetails($val)
     {
-        $this->BuyingGuideDetails = (int)$val;
+        $this->BuyingGuideDetails = (BuyingGuideDetailsType)$val;
     }
 
     /**
@@ -185,7 +185,7 @@ class GetSearchResultsResponseType extends
      */
     public function setStoreExpansionArray($val)
     {
-        $this->StoreExpansionArray = (int)$val;
+        $this->StoreExpansionArray = (ExpansionArrayType)$val;
     }
 
     /**
@@ -194,7 +194,7 @@ class GetSearchResultsResponseType extends
      */
     public function setInternationalExpansionArray($val)
     {
-        $this->InternationalExpansionArray = (int)$val;
+        $this->InternationalExpansionArray = (ExpansionArrayType)$val;
     }
 
     /**
@@ -203,7 +203,7 @@ class GetSearchResultsResponseType extends
      */
     public function setFilterRemovedExpansionArray($val)
     {
-        $this->FilterRemovedExpansionArray = (int)$val;
+        $this->FilterRemovedExpansionArray = (ExpansionArrayType)$val;
     }
 
     /**
@@ -212,7 +212,7 @@ class GetSearchResultsResponseType extends
      */
     public function setAllCategoriesExpansionArray($val)
     {
-        $this->AllCategoriesExpansionArray = (int)$val;
+        $this->AllCategoriesExpansionArray = (ExpansionArrayType)$val;
     }
 
     /**
@@ -221,7 +221,7 @@ class GetSearchResultsResponseType extends
      */
     public function setSpellingSuggestion($val)
     {
-        $this->SpellingSuggestion = (int)$val;
+        $this->SpellingSuggestion = (SpellingSuggestionType)$val;
     }
 
     /**
@@ -230,6 +230,6 @@ class GetSearchResultsResponseType extends
      */
     public function setRelatedSearchKeywordArray($val)
     {
-        $this->RelatedSearchKeywordArray = (int)$val;
+        $this->RelatedSearchKeywordArray = (RelatedSearchKeywordArrayType)$val;
     }
 }

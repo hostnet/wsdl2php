@@ -240,7 +240,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Url');
         }
-        $this->Url = (int)$val;
+        $this->Url = (string)$val;
     }
 
     /**
@@ -252,7 +252,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Asin');
         }
-        $this->Asin = (int)$val;
+        $this->Asin = (string)$val;
     }
 
     /**
@@ -264,7 +264,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductName');
         }
-        $this->ProductName = (int)$val;
+        $this->ProductName = (string)$val;
     }
 
     /**
@@ -276,7 +276,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Catalog');
         }
-        $this->Catalog = (int)$val;
+        $this->Catalog = (string)$val;
     }
 
     /**
@@ -285,7 +285,7 @@ class Details
      */
     public function setKeyPhrases($val)
     {
-        $this->KeyPhrases = (int)$val;
+        $this->KeyPhrases = (KeyPhraseArray)$val;
     }
 
     /**
@@ -294,7 +294,7 @@ class Details
      */
     public function setArtists($val)
     {
-        $this->Artists = (int)$val;
+        $this->Artists = (ArtistArray)$val;
     }
 
     /**
@@ -303,7 +303,7 @@ class Details
      */
     public function setAuthors($val)
     {
-        $this->Authors = (int)$val;
+        $this->Authors = (AuthorArray)$val;
     }
 
     /**
@@ -315,7 +315,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mpn');
         }
-        $this->Mpn = (int)$val;
+        $this->Mpn = (string)$val;
     }
 
     /**
@@ -324,7 +324,7 @@ class Details
      */
     public function setStarring($val)
     {
-        $this->Starring = (int)$val;
+        $this->Starring = (StarringArray)$val;
     }
 
     /**
@@ -333,7 +333,7 @@ class Details
      */
     public function setDirectors($val)
     {
-        $this->Directors = (int)$val;
+        $this->Directors = (DirectorArray)$val;
     }
 
     /**
@@ -345,7 +345,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TheatricalReleaseDate');
         }
-        $this->TheatricalReleaseDate = (int)$val;
+        $this->TheatricalReleaseDate = (string)$val;
     }
 
     /**
@@ -357,7 +357,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReleaseDate');
         }
-        $this->ReleaseDate = (int)$val;
+        $this->ReleaseDate = (string)$val;
     }
 
     /**
@@ -369,7 +369,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Manufacturer');
         }
-        $this->Manufacturer = (int)$val;
+        $this->Manufacturer = (string)$val;
     }
 
     /**
@@ -381,7 +381,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Distributor');
         }
-        $this->Distributor = (int)$val;
+        $this->Distributor = (string)$val;
     }
 
     /**
@@ -393,7 +393,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ImageUrlSmall');
         }
-        $this->ImageUrlSmall = (int)$val;
+        $this->ImageUrlSmall = (string)$val;
     }
 
     /**
@@ -405,7 +405,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ImageUrlMedium');
         }
-        $this->ImageUrlMedium = (int)$val;
+        $this->ImageUrlMedium = (string)$val;
     }
 
     /**
@@ -417,7 +417,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ImageUrlLarge');
         }
-        $this->ImageUrlLarge = (int)$val;
+        $this->ImageUrlLarge = (string)$val;
     }
 
     /**
@@ -429,7 +429,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListPrice');
         }
-        $this->ListPrice = (int)$val;
+        $this->ListPrice = (string)$val;
     }
 
     /**
@@ -441,7 +441,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OurPrice');
         }
-        $this->OurPrice = (int)$val;
+        $this->OurPrice = (string)$val;
     }
 
     /**
@@ -453,7 +453,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UsedPrice');
         }
-        $this->UsedPrice = (int)$val;
+        $this->UsedPrice = (string)$val;
     }
 
     /**
@@ -465,7 +465,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefurbishedPrice');
         }
-        $this->RefurbishedPrice = (int)$val;
+        $this->RefurbishedPrice = (string)$val;
     }
 
     /**
@@ -477,7 +477,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CollectiblePrice');
         }
-        $this->CollectiblePrice = (int)$val;
+        $this->CollectiblePrice = (string)$val;
     }
 
     /**
@@ -489,7 +489,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ThirdPartyNewPrice');
         }
-        $this->ThirdPartyNewPrice = (int)$val;
+        $this->ThirdPartyNewPrice = (string)$val;
     }
 
     /**
@@ -501,7 +501,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfOfferings');
         }
-        $this->NumberOfOfferings = (int)$val;
+        $this->NumberOfOfferings = (string)$val;
     }
 
     /**
@@ -513,7 +513,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ThirdPartyNewCount');
         }
-        $this->ThirdPartyNewCount = (int)$val;
+        $this->ThirdPartyNewCount = (string)$val;
     }
 
     /**
@@ -525,7 +525,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UsedCount');
         }
-        $this->UsedCount = (int)$val;
+        $this->UsedCount = (string)$val;
     }
 
     /**
@@ -537,7 +537,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CollectibleCount');
         }
-        $this->CollectibleCount = (int)$val;
+        $this->CollectibleCount = (string)$val;
     }
 
     /**
@@ -549,7 +549,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RefurbishedCount');
         }
-        $this->RefurbishedCount = (int)$val;
+        $this->RefurbishedCount = (string)$val;
     }
 
     /**
@@ -558,7 +558,7 @@ class Details
      */
     public function setThirdPartyProductInfo($val)
     {
-        $this->ThirdPartyProductInfo = (int)$val;
+        $this->ThirdPartyProductInfo = (ThirdPartyProductInfo)$val;
     }
 
     /**
@@ -570,7 +570,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SalesRank');
         }
-        $this->SalesRank = (int)$val;
+        $this->SalesRank = (string)$val;
     }
 
     /**
@@ -579,7 +579,7 @@ class Details
      */
     public function setBrowseList($val)
     {
-        $this->BrowseList = (int)$val;
+        $this->BrowseList = (BrowseNodeArray)$val;
     }
 
     /**
@@ -591,7 +591,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Media');
         }
-        $this->Media = (int)$val;
+        $this->Media = (string)$val;
     }
 
     /**
@@ -603,7 +603,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ReadingLevel');
         }
-        $this->ReadingLevel = (int)$val;
+        $this->ReadingLevel = (string)$val;
     }
 
     /**
@@ -615,7 +615,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfPages');
         }
-        $this->NumberOfPages = (int)$val;
+        $this->NumberOfPages = (string)$val;
     }
 
     /**
@@ -627,7 +627,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfIssues');
         }
-        $this->NumberOfIssues = (int)$val;
+        $this->NumberOfIssues = (string)$val;
     }
 
     /**
@@ -639,7 +639,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IssuesPerYear');
         }
-        $this->IssuesPerYear = (int)$val;
+        $this->IssuesPerYear = (string)$val;
     }
 
     /**
@@ -651,7 +651,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SubscriptionLength');
         }
-        $this->SubscriptionLength = (int)$val;
+        $this->SubscriptionLength = (string)$val;
     }
 
     /**
@@ -663,7 +663,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeweyNumber');
         }
-        $this->DeweyNumber = (int)$val;
+        $this->DeweyNumber = (string)$val;
     }
 
     /**
@@ -675,7 +675,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RunningTime');
         }
-        $this->RunningTime = (int)$val;
+        $this->RunningTime = (string)$val;
     }
 
     /**
@@ -687,7 +687,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Publisher');
         }
-        $this->Publisher = (int)$val;
+        $this->Publisher = (string)$val;
     }
 
     /**
@@ -699,7 +699,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumMedia');
         }
-        $this->NumMedia = (int)$val;
+        $this->NumMedia = (string)$val;
     }
 
     /**
@@ -711,7 +711,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Isbn');
         }
-        $this->Isbn = (int)$val;
+        $this->Isbn = (string)$val;
     }
 
     /**
@@ -720,7 +720,7 @@ class Details
      */
     public function setFeatures($val)
     {
-        $this->Features = (int)$val;
+        $this->Features = (FeaturesArray)$val;
     }
 
     /**
@@ -732,7 +732,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MpaaRating');
         }
-        $this->MpaaRating = (int)$val;
+        $this->MpaaRating = (string)$val;
     }
 
     /**
@@ -744,7 +744,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EsrbRating');
         }
-        $this->EsrbRating = (int)$val;
+        $this->EsrbRating = (string)$val;
     }
 
     /**
@@ -756,7 +756,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AgeGroup');
         }
-        $this->AgeGroup = (int)$val;
+        $this->AgeGroup = (string)$val;
     }
 
     /**
@@ -768,7 +768,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Availability');
         }
-        $this->Availability = (int)$val;
+        $this->Availability = (string)$val;
     }
 
     /**
@@ -780,7 +780,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Upc');
         }
-        $this->Upc = (int)$val;
+        $this->Upc = (string)$val;
     }
 
     /**
@@ -789,7 +789,7 @@ class Details
      */
     public function setTracks($val)
     {
-        $this->Tracks = (int)$val;
+        $this->Tracks = (TrackArray)$val;
     }
 
     /**
@@ -798,7 +798,7 @@ class Details
      */
     public function setAccessories($val)
     {
-        $this->Accessories = (int)$val;
+        $this->Accessories = (AccessoryArray)$val;
     }
 
     /**
@@ -807,7 +807,7 @@ class Details
      */
     public function setPlatforms($val)
     {
-        $this->Platforms = (int)$val;
+        $this->Platforms = (PlatformArray)$val;
     }
 
     /**
@@ -819,7 +819,7 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Encoding');
         }
-        $this->Encoding = (int)$val;
+        $this->Encoding = (string)$val;
     }
 
     /**
@@ -828,7 +828,7 @@ class Details
      */
     public function setReviews($val)
     {
-        $this->Reviews = (int)$val;
+        $this->Reviews = (Reviews)$val;
     }
 
     /**
@@ -837,7 +837,7 @@ class Details
      */
     public function setSimilarProducts($val)
     {
-        $this->SimilarProducts = (int)$val;
+        $this->SimilarProducts = (SimilarProductsArray)$val;
     }
 
     /**
@@ -846,7 +846,7 @@ class Details
      */
     public function setLists($val)
     {
-        $this->Lists = (int)$val;
+        $this->Lists = (ListArray)$val;
     }
 
     /**
@@ -858,6 +858,6 @@ class Details
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = (string)$val;
     }
 }

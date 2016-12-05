@@ -22,6 +22,6 @@ class GetStorePreferencesResponseType extends
      */
     public function setStorePreferences($val)
     {
-        $this->StorePreferences = (int)$val;
+        $this->StorePreferences = (StorePreferencesType)$val;
     }
 }

@@ -29,7 +29,7 @@ class CurrencyDetailsType
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
     }
 
     /**
@@ -41,7 +41,7 @@ class CurrencyDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class CurrencyDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

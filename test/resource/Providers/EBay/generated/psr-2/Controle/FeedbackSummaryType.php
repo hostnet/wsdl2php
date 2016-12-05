@@ -71,7 +71,7 @@ class FeedbackSummaryType
      */
     public function setBidRetractionFeedbackPeriodArray($val)
     {
-        $this->BidRetractionFeedbackPeriodArray = (int)$val;
+        $this->BidRetractionFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class FeedbackSummaryType
      */
     public function setNegativeFeedbackPeriodArray($val)
     {
-        $this->NegativeFeedbackPeriodArray = (int)$val;
+        $this->NegativeFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class FeedbackSummaryType
      */
     public function setNeutralFeedbackPeriodArray($val)
     {
-        $this->NeutralFeedbackPeriodArray = (int)$val;
+        $this->NeutralFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class FeedbackSummaryType
      */
     public function setPositiveFeedbackPeriodArray($val)
     {
-        $this->PositiveFeedbackPeriodArray = (int)$val;
+        $this->PositiveFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class FeedbackSummaryType
      */
     public function setTotalFeedbackPeriodArray($val)
     {
-        $this->TotalFeedbackPeriodArray = (int)$val;
+        $this->TotalFeedbackPeriodArray = (FeedbackPeriodArrayType)$val;
     }
 
     /**
@@ -152,6 +152,6 @@ class FeedbackSummaryType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

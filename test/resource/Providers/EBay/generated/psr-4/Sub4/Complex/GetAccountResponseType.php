@@ -70,7 +70,7 @@ class GetAccountResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountID');
         }
-        $this->AccountID = (int)$val;
+        $this->AccountID = (string)$val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetAccountResponseType extends
      */
     public function setAccountSummary($val)
     {
-        $this->AccountSummary = (int)$val;
+        $this->AccountSummary = (AccountSummaryType)$val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetAccountResponseType extends
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetAccountResponseType extends
      */
     public function setAccountEntries($val)
     {
-        $this->AccountEntries = (int)$val;
+        $this->AccountEntries = (AccountEntriesType)$val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetAccountResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetAccountResponseType extends
      */
     public function setHasMoreEntries($val)
     {
-        $this->HasMoreEntries = (int)$val;
+        $this->HasMoreEntries = (boolean)$val;
     }
 
     /**

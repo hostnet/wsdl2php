@@ -39,6 +39,6 @@ class ReminderCustomizationType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = (int)$val;
+        $this->Include = (boolean)$val;
 	}
 }

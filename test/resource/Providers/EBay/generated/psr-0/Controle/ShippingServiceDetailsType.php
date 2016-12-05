@@ -69,7 +69,7 @@ class ShippingServiceDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = (int)$val;
+        $this->Description = (string)$val;
 	}
 
 	/**
@@ -78,7 +78,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setExpeditedService($val)
 	{
-        $this->ExpeditedService = (int)$val;
+        $this->ExpeditedService = (boolean)$val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setInternationalService($val)
 	{
-        $this->InternationalService = (int)$val;
+        $this->InternationalService = (boolean)$val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = (int)$val;
+        $this->ShippingService = (token)$val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class ShippingServiceDetailsType
 	 */
 	public function setShippingServiceCode($val)
 	{
-        $this->ShippingServiceCode = (int)$val;
+        $this->ShippingServiceCode = (ShippingServiceCodeType)$val;
 	}
 
 	/**
@@ -150,6 +150,6 @@ class ShippingServiceDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

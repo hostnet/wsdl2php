@@ -56,7 +56,7 @@ class AuthenticationEntryType
      */
     public function setAcceptURL($val)
     {
-        $this->AcceptURL = (int)$val;
+        $this->AcceptURL = (anyURI)$val;
     }
 
     /**
@@ -65,7 +65,7 @@ class AuthenticationEntryType
      */
     public function setPrivacyPolicyURL($val)
     {
-        $this->PrivacyPolicyURL = (int)$val;
+        $this->PrivacyPolicyURL = (anyURI)$val;
     }
 
     /**
@@ -74,7 +74,7 @@ class AuthenticationEntryType
      */
     public function setRejectURL($val)
     {
-        $this->RejectURL = (int)$val;
+        $this->RejectURL = (anyURI)$val;
     }
 
     /**
@@ -86,7 +86,7 @@ class AuthenticationEntryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RuName');
         }
-        $this->RuName = (int)$val;
+        $this->RuName = (string)$val;
     }
 
     /**
@@ -95,7 +95,7 @@ class AuthenticationEntryType
      */
     public function setTokenReturnMethod($val)
     {
-        $this->TokenReturnMethod = (int)$val;
+        $this->TokenReturnMethod = (TokenReturnMethodCodeType)$val;
     }
 
     /**
@@ -104,6 +104,6 @@ class AuthenticationEntryType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

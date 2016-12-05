@@ -33,6 +33,6 @@ class Insert
      */
     public function setAddress($val)
     {
-        $this->Address = (int)$val;
+        $this->Address = (Address)$val;
     }
 }

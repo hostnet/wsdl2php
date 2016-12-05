@@ -75,7 +75,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
     }
 
     /**
@@ -84,7 +84,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setHasMorePayments($val)
     {
-        $this->HasMorePayments = (int)$val;
+        $this->HasMorePayments = (boolean)$val;
     }
 
     /**
@@ -93,7 +93,7 @@ class GetSellerPaymentsResponseType extends
      */
     public function setSellerPayment($val)
     {
-        $this->SellerPayment = (int)$val;
+        $this->SellerPayment = (SellerPaymentType)$val;
     }
 
     /**

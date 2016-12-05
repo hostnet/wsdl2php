@@ -22,7 +22,7 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = (int)$val;
+        $this->email = (string)$val;
 	}
 
 	/**
@@ -34,7 +34,7 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = (int)$val;
+        $this->LicenseKey = (string)$val;
 	}
 }
 
@@ -86,7 +86,7 @@ class AdvancedVerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = (int)$val;
+        $this->email = (string)$val;
 	}
 
 	/**
@@ -110,7 +110,7 @@ class AdvancedVerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = (int)$val;
+        $this->LicenseKey = (string)$val;
 	}
 }
 
@@ -129,7 +129,7 @@ class AdvancedVerifyEmailResponse
 	 */
 	public function setAdvancedVerifyEmailResult($val)
 	{
-        $this->AdvancedVerifyEmailResult = (int)$val;
+        $this->AdvancedVerifyEmailResult = (ReturnIndicator)$val;
 	}
 }
 
@@ -163,7 +163,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ResponseText');
         }
-        $this->ResponseText = (int)$val;
+        $this->ResponseText = (string)$val;
 	}
 
 	/**
@@ -187,7 +187,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastMailServer');
         }
-        $this->LastMailServer = (int)$val;
+        $this->LastMailServer = (string)$val;
 	}
 
 	/**
@@ -196,7 +196,7 @@ class ReturnIndicator
 	 */
 	public function setGoodEmail($val)
 	{
-        $this->GoodEmail = (int)$val;
+        $this->GoodEmail = (boolean)$val;
 	}
 }
 
@@ -222,7 +222,7 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = (int)$val;
+        $this->email = (string)$val;
 	}
 
 	/**
@@ -234,7 +234,7 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = (int)$val;
+        $this->LicenseKey = (string)$val;
 	}
 }
 
@@ -253,7 +253,7 @@ class VerifyEmailResponse
 	 */
 	public function setVerifyEmailResult($val)
 	{
-        $this->VerifyEmailResult = (int)$val;
+        $this->VerifyEmailResult = (ReturnIndicator)$val;
 	}
 }
 
@@ -275,7 +275,7 @@ class ReturnCodesResponse
 	 */
 	public function setReturnCodesResult($val)
 	{
-        $this->ReturnCodesResult = (int)$val;
+        $this->ReturnCodesResult = (ArrayOfAnyType)$val;
 	}
 }
 

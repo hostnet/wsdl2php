@@ -56,7 +56,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = (string)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BuyerTerms');
         }
-        $this->BuyerTerms = (int)$val;
+        $this->BuyerTerms = (string)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class FinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerTerms');
         }
-        $this->SellerTerms = (int)$val;
+        $this->SellerTerms = (string)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class FinanceOfferType
      */
     public function setStartDate($val)
     {
-        $this->StartDate = (int)$val;
+        $this->StartDate = (dateTime)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class FinanceOfferType
      */
     public function setLastModifiedDate($val)
     {
-        $this->LastModifiedDate = (int)$val;
+        $this->LastModifiedDate = (dateTime)$val;
     }
 
     /**
@@ -107,7 +107,7 @@ class FinanceOfferType
      */
     public function setMinimumAmount($val)
     {
-        $this->MinimumAmount = (int)$val;
+        $this->MinimumAmount = (AmountType)$val;
     }
 
     /**
@@ -116,7 +116,7 @@ class FinanceOfferType
      */
     public function setRateFactor($val)
     {
-        $this->RateFactor = (int)$val;
+        $this->RateFactor = (double)$val;
     }
 
     /**
@@ -137,6 +137,6 @@ class FinanceOfferType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

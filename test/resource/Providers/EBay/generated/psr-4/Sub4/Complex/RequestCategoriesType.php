@@ -47,7 +47,7 @@ class RequestCategoriesType
      */
     public function setCategoriesOnly($val)
     {
-        $this->CategoriesOnly = (int)$val;
+        $this->CategoriesOnly = (boolean)$val;
     }
 
     /**

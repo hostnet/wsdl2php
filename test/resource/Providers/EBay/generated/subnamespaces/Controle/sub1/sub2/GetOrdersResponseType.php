@@ -54,7 +54,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -63,7 +63,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setHasMoreOrders($val)
 	{
-        $this->HasMoreOrders = (int)$val;
+        $this->HasMoreOrders = (boolean)$val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class GetOrdersResponseType extends
 	 */
 	public function setOrderArray($val)
 	{
-        $this->OrderArray = (int)$val;
+        $this->OrderArray = (OrderArrayType)$val;
 	}
 
 	/**

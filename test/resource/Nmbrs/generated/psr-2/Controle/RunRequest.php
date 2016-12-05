@@ -53,7 +53,7 @@ class RunRequest
      */
     public function setStatus($val)
     {
-        $this->Status = (int)$val;
+        $this->Status = (RunRequestStatus)$val;
     }
 
     /**
@@ -62,6 +62,6 @@ class RunRequest
      */
     public function setHandledDate($val)
     {
-        $this->HandledDate = (int)$val;
+        $this->HandledDate = (dateTime)$val;
     }
 }

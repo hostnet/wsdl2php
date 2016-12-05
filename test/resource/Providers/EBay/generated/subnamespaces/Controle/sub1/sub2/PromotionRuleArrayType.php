@@ -21,6 +21,6 @@ class PromotionRuleArrayType
 	 */
 	public function setPromotionRule($val)
 	{
-        $this->PromotionRule = (int)$val;
+        $this->PromotionRule = (PromotionRuleType)$val;
 	}
 }

@@ -41,7 +41,7 @@ class VerifyAddItemRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
     }
 
     /**
@@ -50,7 +50,7 @@ class VerifyAddItemRequestType extends
      */
     public function setIncludeExpressRequirements($val)
     {
-        $this->IncludeExpressRequirements = (int)$val;
+        $this->IncludeExpressRequirements = (boolean)$val;
     }
 
     /**
@@ -59,6 +59,6 @@ class VerifyAddItemRequestType extends
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
     }
 }

@@ -59,7 +59,7 @@ class CrossPromotionsType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = (ItemIDType)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class CrossPromotionsType
      */
     public function setPrimaryScheme($val)
     {
-        $this->PrimaryScheme = (int)$val;
+        $this->PrimaryScheme = (PromotionSchemeCodeType)$val;
     }
 
     /**
@@ -77,7 +77,7 @@ class CrossPromotionsType
      */
     public function setPromotionMethod($val)
     {
-        $this->PromotionMethod = (int)$val;
+        $this->PromotionMethod = (PromotionMethodCodeType)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerID');
         }
-        $this->SellerID = (int)$val;
+        $this->SellerID = (string)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class CrossPromotionsType
      */
     public function setShippingDiscount($val)
     {
-        $this->ShippingDiscount = (int)$val;
+        $this->ShippingDiscount = (boolean)$val;
     }
 
     /**
@@ -110,7 +110,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerKey');
         }
-        $this->SellerKey = (int)$val;
+        $this->SellerKey = (string)$val;
     }
 
     /**
@@ -122,7 +122,7 @@ class CrossPromotionsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = (string)$val;
     }
 
     /**
@@ -131,7 +131,7 @@ class CrossPromotionsType
      */
     public function setPromotedItem($val)
     {
-        $this->PromotedItem = (int)$val;
+        $this->PromotedItem = (PromotedItemType)$val;
     }
 
     /**
@@ -140,6 +140,6 @@ class CrossPromotionsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

@@ -36,7 +36,7 @@ class GetAttributesCsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = (int)$val;
+        $this->AttributeSystemVersion = (string)$val;
     }
 
     /**
@@ -48,6 +48,6 @@ class GetAttributesCsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeData');
         }
-        $this->AttributeData = (int)$val;
+        $this->AttributeData = (string)$val;
     }
 }

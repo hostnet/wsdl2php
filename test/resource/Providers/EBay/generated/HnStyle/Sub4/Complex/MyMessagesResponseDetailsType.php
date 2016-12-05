@@ -36,7 +36,7 @@ class MyMessagesResponseDetailsType
      */
     public function setResponseEnabled($val)
     {
-        $this->ResponseEnabled = (int)$val;
+        $this->ResponseEnabled = (boolean)$val;
     }
 
     /**
@@ -45,7 +45,7 @@ class MyMessagesResponseDetailsType
      */
     public function setResponseURL($val)
     {
-        $this->ResponseURL = (int)$val;
+        $this->ResponseURL = (anyURI)$val;
     }
 
     /**
@@ -54,7 +54,7 @@ class MyMessagesResponseDetailsType
      */
     public function setUserResponseDate($val)
     {
-        $this->UserResponseDate = (int)$val;
+        $this->UserResponseDate = (dateTime)$val;
     }
 
     /**
@@ -63,6 +63,6 @@ class MyMessagesResponseDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

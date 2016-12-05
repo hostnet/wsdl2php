@@ -29,7 +29,7 @@ class SearchCriteria
      */
     public function setClauses($val)
     {
-        $this->Clauses = (int)$val;
+        $this->Clauses = (ArrayOfClause)$val;
     }
 
     /**
@@ -38,7 +38,7 @@ class SearchCriteria
      */
     public function setMode($val)
     {
-        $this->Mode = (int)$val;
+        $this->Mode = (SearchModeType)$val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SearchCriteria
      */
     public function setWithoutstates($val)
     {
-        $this->Withoutstates = (int)$val;
+        $this->Withoutstates = (ArrayOfstring)$val;
     }
 
     /**
@@ -56,6 +56,6 @@ class SearchCriteria
      */
     public function setWithstates($val)
     {
-        $this->Withstates = (int)$val;
+        $this->Withstates = (ArrayOfstring)$val;
     }
 }

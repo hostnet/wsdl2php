@@ -72,6 +72,6 @@ class GetProductSearchResultsRequestType extends
      */
     public function setProductSearch($val)
     {
-        $this->ProductSearch = (int)$val;
+        $this->ProductSearch = (ProductSearchType)$val;
     }
 }

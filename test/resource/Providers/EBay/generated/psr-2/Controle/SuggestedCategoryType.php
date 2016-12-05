@@ -32,7 +32,7 @@ class SuggestedCategoryType
      */
     public function setCategory($val)
     {
-        $this->Category = (int)$val;
+        $this->Category = (CategoryType)$val;
     }
 
     /**
@@ -53,6 +53,6 @@ class SuggestedCategoryType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

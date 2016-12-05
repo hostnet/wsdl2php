@@ -37,6 +37,6 @@ class ListingDurationReferenceType
 	 */
 	public function setType($val)
 	{
-        $this->type = (int)$val;
+        $this->type = (ListingTypeCodeType)$val;
 	}
 }

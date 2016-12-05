@@ -27,6 +27,6 @@ class GetLiveAuctionCatalogDetailsResponseType extends
      */
     public function setLiveAuctionCatalog($val)
     {
-        $this->LiveAuctionCatalog = (int)$val;
+        $this->LiveAuctionCatalog = (LiveAuctionCatalogType)$val;
     }
 }

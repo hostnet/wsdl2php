@@ -33,7 +33,7 @@ class MeasureType
 	 */
 	public function set($val)
 	{
-        $this->_ = (int)$val;
+        $this->_ = (decimal)$val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class MeasureType
 	 */
 	public function setUnit($val)
 	{
-        $this->unit = (int)$val;
+        $this->unit = (token)$val;
 	}
 
 	/**
@@ -51,6 +51,6 @@ class MeasureType
 	 */
 	public function setMeasurementSystem($val)
 	{
-        $this->measurementSystem = (int)$val;
+        $this->measurementSystem = (MeasurementSystemCodeType)$val;
 	}
 }

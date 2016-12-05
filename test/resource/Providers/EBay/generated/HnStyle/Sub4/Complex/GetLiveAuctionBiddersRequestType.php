@@ -48,7 +48,7 @@ class GetLiveAuctionBiddersRequestType extends
      */
     public function setBidderStatus($val)
     {
-        $this->BidderStatus = (int)$val;
+        $this->BidderStatus = (BidderStatusCodeType)$val;
     }
 
     /**
@@ -57,6 +57,6 @@ class GetLiveAuctionBiddersRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
     }
 }

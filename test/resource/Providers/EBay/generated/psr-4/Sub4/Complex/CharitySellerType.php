@@ -30,7 +30,7 @@ class CharitySellerType
      */
     public function setCharitySellerStatus($val)
     {
-        $this->CharitySellerStatus = (int)$val;
+        $this->CharitySellerStatus = (CharitySellerStatusCodeType)$val;
     }
 
     /**
@@ -39,7 +39,7 @@ class CharitySellerType
      */
     public function setCharityAffiliation($val)
     {
-        $this->CharityAffiliation = (int)$val;
+        $this->CharityAffiliation = (CharityAffiliationType)$val;
     }
 
     /**
@@ -48,6 +48,6 @@ class CharitySellerType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

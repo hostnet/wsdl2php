@@ -44,7 +44,7 @@ class UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentName');
         }
-        $this->StrDocumentName = (int)$val;
+        $this->StrDocumentName = (string)$val;
     }
 
     /**
@@ -56,7 +56,7 @@ class UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentSubFolder');
         }
-        $this->StrDocumentSubFolder = (int)$val;
+        $this->StrDocumentSubFolder = (string)$val;
     }
 
     /**
@@ -65,6 +65,6 @@ class UploadFile
      */
     public function setBody($val)
     {
-        $this->Body = (int)$val;
+        $this->Body = (base64Binary)$val;
     }
 }

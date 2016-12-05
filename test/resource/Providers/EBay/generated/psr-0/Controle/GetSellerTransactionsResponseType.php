@@ -70,7 +70,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = (PaginationResultType)$val;
 	}
 
 	/**
@@ -79,7 +79,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setHasMoreTransactions($val)
 	{
-        $this->HasMoreTransactions = (int)$val;
+        $this->HasMoreTransactions = (boolean)$val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = (int)$val;
+        $this->Seller = (UserType)$val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = (int)$val;
+        $this->TransactionArray = (TransactionArrayType)$val;
 	}
 
 	/**
@@ -142,6 +142,6 @@ class GetSellerTransactionsResponseType extends
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = (int)$val;
+        $this->PayPalPreferred = (boolean)$val;
 	}
 }

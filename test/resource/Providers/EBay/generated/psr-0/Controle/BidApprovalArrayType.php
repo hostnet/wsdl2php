@@ -25,7 +25,7 @@ class BidApprovalArrayType
 	 */
 	public function setLiveAuctionBid($val)
 	{
-        $this->LiveAuctionBid = (int)$val;
+        $this->LiveAuctionBid = (BidApprovalType)$val;
 	}
 
 	/**
@@ -34,6 +34,6 @@ class BidApprovalArrayType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

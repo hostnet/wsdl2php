@@ -113,7 +113,7 @@ class ProductSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductSearchID');
         }
-        $this->ProductSearchID = (int)$val;
+        $this->ProductSearchID = (string)$val;
 	}
 
 	/**
@@ -149,7 +149,7 @@ class ProductSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->ProductID = (int)$val;
+        $this->ProductID = (string)$val;
 	}
 
 	/**
@@ -182,7 +182,7 @@ class ProductSearchType
 	 */
 	public function setSearchAttributes($val)
 	{
-        $this->SearchAttributes = (int)$val;
+        $this->SearchAttributes = (SearchAttributesType)$val;
 	}
 
 	/**
@@ -191,7 +191,7 @@ class ProductSearchType
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = (int)$val;
+        $this->Pagination = (PaginationType)$val;
 	}
 
 	/**
@@ -200,7 +200,7 @@ class ProductSearchType
 	 */
 	public function setAvailableItemsOnly($val)
 	{
-        $this->AvailableItemsOnly = (int)$val;
+        $this->AvailableItemsOnly = (boolean)$val;
 	}
 
 	/**
@@ -212,7 +212,7 @@ class ProductSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for QueryKeywords');
         }
-        $this->QueryKeywords = (int)$val;
+        $this->QueryKeywords = (string)$val;
 	}
 
 	/**
@@ -221,7 +221,7 @@ class ProductSearchType
 	 */
 	public function setCharacteristicSetIDs($val)
 	{
-        $this->CharacteristicSetIDs = (int)$val;
+        $this->CharacteristicSetIDs = (CharacteristicSetIDsType)$val;
 	}
 
 	/**
@@ -230,6 +230,6 @@ class ProductSearchType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

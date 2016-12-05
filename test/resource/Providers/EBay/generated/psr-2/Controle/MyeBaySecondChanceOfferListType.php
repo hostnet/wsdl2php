@@ -41,7 +41,7 @@ class MyeBaySecondChanceOfferListType
      */
     public function setSecondChanceOffer($val)
     {
-        $this->SecondChanceOffer = (int)$val;
+        $this->SecondChanceOffer = (ItemType)$val;
     }
 
     /**
@@ -50,6 +50,6 @@ class MyeBaySecondChanceOfferListType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

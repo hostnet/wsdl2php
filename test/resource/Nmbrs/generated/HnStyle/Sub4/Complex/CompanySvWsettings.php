@@ -57,7 +57,7 @@ class CompanySvWsettings
      */
     public function setEigenrisicodragerGediffWGA($val)
     {
-        $this->EigenrisicodragerGediffWGA = (int)$val;
+        $this->EigenrisicodragerGediffWGA = (boolean)$val;
     }
 
     /**
@@ -66,7 +66,7 @@ class CompanySvWsettings
      */
     public function setEigenrisicodragerUniformeWAO($val)
     {
-        $this->EigenrisicodragerUniformeWAO = (int)$val;
+        $this->EigenrisicodragerUniformeWAO = (boolean)$val;
     }
 
     /**
@@ -75,7 +75,7 @@ class CompanySvWsettings
      */
     public function setEigenrisicodragerZiektewet($val)
     {
-        $this->EigenrisicodragerZiektewet = (int)$val;
+        $this->EigenrisicodragerZiektewet = (boolean)$val;
     }
 
     /**
@@ -96,7 +96,7 @@ class CompanySvWsettings
      */
     public function setGediffWGAwn($val)
     {
-        $this->Gediff_WGA_wn = (int)$val;
+        $this->Gediff_WGA_wn = (decimal)$val;
     }
 
     /**
@@ -105,7 +105,7 @@ class CompanySvWsettings
      */
     public function setGediffWGAwg($val)
     {
-        $this->Gediff_WGA_wg = (int)$val;
+        $this->Gediff_WGA_wg = (decimal)$val;
     }
 
     /**

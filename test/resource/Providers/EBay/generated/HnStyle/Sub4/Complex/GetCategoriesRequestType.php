@@ -66,7 +66,7 @@ class GetCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategorySiteID');
         }
-        $this->CategorySiteID = (int)$val;
+        $this->CategorySiteID = (string)$val;
     }
 
     /**
@@ -78,7 +78,7 @@ class GetCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParent');
         }
-        $this->CategoryParent = (int)$val;
+        $this->CategoryParent = (string)$val;
     }
 
     /**
@@ -99,6 +99,6 @@ class GetCategoriesRequestType extends
      */
     public function setViewAllNodes($val)
     {
-        $this->ViewAllNodes = (int)$val;
+        $this->ViewAllNodes = (boolean)$val;
     }
 }

@@ -31,7 +31,7 @@ class AddItemRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = (int)$val;
+        $this->Item = (ItemType)$val;
     }
 
     /**
@@ -40,6 +40,6 @@ class AddItemRequestType extends
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = (ExternalProductIDType)$val;
     }
 }

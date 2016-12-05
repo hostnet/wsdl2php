@@ -37,7 +37,7 @@ class AdditionalAccountType
      */
     public function setBalance($val)
     {
-        $this->Balance = (int)$val;
+        $this->Balance = (AmountType)$val;
     }
 
     /**
@@ -46,7 +46,7 @@ class AdditionalAccountType
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = (CurrencyCodeType)$val;
     }
 
     /**
@@ -58,7 +58,7 @@ class AdditionalAccountType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountCode');
         }
-        $this->AccountCode = (int)$val;
+        $this->AccountCode = (string)$val;
     }
 
     /**
@@ -67,6 +67,6 @@ class AdditionalAccountType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

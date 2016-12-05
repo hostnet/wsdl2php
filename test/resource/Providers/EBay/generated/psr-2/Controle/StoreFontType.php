@@ -59,7 +59,7 @@ class StoreFontType
      */
     public function setNameFace($val)
     {
-        $this->NameFace = (int)$val;
+        $this->NameFace = (StoreFontFaceCodeType)$val;
     }
 
     /**
@@ -68,7 +68,7 @@ class StoreFontType
      */
     public function setNameSize($val)
     {
-        $this->NameSize = (int)$val;
+        $this->NameSize = (StoreFontSizeCodeType)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NameColor');
         }
-        $this->NameColor = (int)$val;
+        $this->NameColor = (string)$val;
     }
 
     /**
@@ -89,7 +89,7 @@ class StoreFontType
      */
     public function setTitleFace($val)
     {
-        $this->TitleFace = (int)$val;
+        $this->TitleFace = (StoreFontFaceCodeType)$val;
     }
 
     /**
@@ -98,7 +98,7 @@ class StoreFontType
      */
     public function setTitleSize($val)
     {
-        $this->TitleSize = (int)$val;
+        $this->TitleSize = (StoreFontSizeCodeType)$val;
     }
 
     /**
@@ -110,7 +110,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TitleColor');
         }
-        $this->TitleColor = (int)$val;
+        $this->TitleColor = (string)$val;
     }
 
     /**
@@ -119,7 +119,7 @@ class StoreFontType
      */
     public function setDescFace($val)
     {
-        $this->DescFace = (int)$val;
+        $this->DescFace = (StoreFontFaceCodeType)$val;
     }
 
     /**
@@ -128,7 +128,7 @@ class StoreFontType
      */
     public function setDescSize($val)
     {
-        $this->DescSize = (int)$val;
+        $this->DescSize = (StoreFontSizeCodeType)$val;
     }
 
     /**
@@ -140,7 +140,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DescColor');
         }
-        $this->DescColor = (int)$val;
+        $this->DescColor = (string)$val;
     }
 
     /**
@@ -149,6 +149,6 @@ class StoreFontType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

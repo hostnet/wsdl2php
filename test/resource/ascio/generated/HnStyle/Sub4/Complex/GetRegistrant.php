@@ -24,7 +24,7 @@ class GetRegistrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = (string)$val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetRegistrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for registrantHandle');
         }
-        $this->registrantHandle = (int)$val;
+        $this->registrantHandle = (string)$val;
     }
 }

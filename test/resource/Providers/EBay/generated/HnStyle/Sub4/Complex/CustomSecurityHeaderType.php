@@ -59,7 +59,7 @@ class CustomSecurityHeaderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->eBayAuthToken = (int)$val;
+        $this->eBayAuthToken = (string)$val;
     }
 
     /**
@@ -71,7 +71,7 @@ class CustomSecurityHeaderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HardExpirationWarning');
         }
-        $this->HardExpirationWarning = (int)$val;
+        $this->HardExpirationWarning = (string)$val;
     }
 
     /**
@@ -80,7 +80,7 @@ class CustomSecurityHeaderType
      */
     public function setCredentials($val)
     {
-        $this->Credentials = (int)$val;
+        $this->Credentials = (UserIdPasswordType)$val;
     }
 
     /**
@@ -92,7 +92,7 @@ class CustomSecurityHeaderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NotificationSignature');
         }
-        $this->NotificationSignature = (int)$val;
+        $this->NotificationSignature = (string)$val;
     }
 
     /**
@@ -101,6 +101,6 @@ class CustomSecurityHeaderType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

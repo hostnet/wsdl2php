@@ -31,7 +31,7 @@ class CancelOfferType
      */
     public function setOffer($val)
     {
-        $this->Offer = (int)$val;
+        $this->Offer = (OfferType)$val;
     }
 
     /**
@@ -43,7 +43,7 @@ class CancelOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Explanation');
         }
-        $this->Explanation = (int)$val;
+        $this->Explanation = (string)$val;
     }
 
     /**
@@ -52,6 +52,6 @@ class CancelOfferType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

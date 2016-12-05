@@ -32,7 +32,7 @@ class DisputeFilterCountType
      */
     public function setDisputeFilterType($val)
     {
-        $this->DisputeFilterType = (int)$val;
+        $this->DisputeFilterType = (DisputeFilterTypeCodeType)$val;
     }
 
     /**
@@ -53,6 +53,6 @@ class DisputeFilterCountType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
     }
 }

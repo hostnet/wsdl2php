@@ -54,7 +54,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = (string)$val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BreadCrumb');
         }
-        $this->BreadCrumb = (int)$val;
+        $this->BreadCrumb = (string)$val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class ExpressHistogramDomainDetailsType
 	 */
 	public function setImageURL($val)
 	{
-        $this->ImageURL = (int)$val;
+        $this->ImageURL = (anyURI)$val;
 	}
 
 	/**
@@ -108,6 +108,6 @@ class ExpressHistogramDomainDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = (<anyXML>)$val;
 	}
 }

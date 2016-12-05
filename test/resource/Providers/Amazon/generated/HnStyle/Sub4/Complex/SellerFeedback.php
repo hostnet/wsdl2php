@@ -17,6 +17,6 @@ class SellerFeedback
      */
     public function setFeedback($val)
     {
-        $this->Feedback = (int)$val;
+        $this->Feedback = (FeedbackArray)$val;
     }
 }
