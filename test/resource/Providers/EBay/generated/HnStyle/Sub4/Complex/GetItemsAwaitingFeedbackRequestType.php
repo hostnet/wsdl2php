@@ -30,7 +30,7 @@ class GetItemsAwaitingFeedbackRequestType extends
      */
     public function setSort($val)
     {
-        $this->Sort = (int)$val;
+        $this->Sort = $val;
     }
 
     /**
@@ -39,6 +39,6 @@ class GetItemsAwaitingFeedbackRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = $val;
     }
 }

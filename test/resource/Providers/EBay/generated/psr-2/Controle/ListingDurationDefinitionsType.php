@@ -31,7 +31,7 @@ class ListingDurationDefinitionsType
      */
     public function setListingDuration($val)
     {
-        $this->ListingDuration = (int)$val;
+        $this->ListingDuration = $val;
     }
 
     /**
@@ -43,6 +43,6 @@ class ListingDurationDefinitionsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Version = (int)$val;
+        $this->Version = $val;
     }
 }

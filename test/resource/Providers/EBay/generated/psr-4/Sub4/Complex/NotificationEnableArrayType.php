@@ -23,6 +23,6 @@ class NotificationEnableArrayType
      */
     public function setNotificationEnable($val)
     {
-        $this->NotificationEnable = (int)$val;
+        $this->NotificationEnable = $val;
     }
 }

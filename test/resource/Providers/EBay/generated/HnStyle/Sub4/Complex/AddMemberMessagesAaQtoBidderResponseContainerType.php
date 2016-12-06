@@ -25,7 +25,7 @@ class AddMemberMessagesAaQtoBidderResponseContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = (int)$val;
+        $this->CorrelationID = $val;
     }
 
     /**
@@ -34,6 +34,6 @@ class AddMemberMessagesAaQtoBidderResponseContainerType
      */
     public function setAck($val)
     {
-        $this->Ack = (int)$val;
+        $this->Ack = $val;
     }
 }

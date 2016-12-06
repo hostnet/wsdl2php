@@ -41,7 +41,7 @@ class Message
 	 */
 	public function setAttachments($val)
 	{
-        $this->Attachments = (int)$val;
+        $this->Attachments = $val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Body');
         }
-        $this->Body = (int)$val;
+        $this->Body = $val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class Message
 	 */
 	public function setCreated($val)
 	{
-        $this->Created = (int)$val;
+        $this->Created = $val;
 	}
 
 	/**
@@ -74,7 +74,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FromAddress');
         }
-        $this->FromAddress = (int)$val;
+        $this->FromAddress = $val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = (int)$val;
+        $this->Subject = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class Message
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ToAddress');
         }
-        $this->ToAddress = (int)$val;
+        $this->ToAddress = $val;
 	}
 
 	/**
@@ -107,6 +107,6 @@ class Message
 	 */
 	public function setType($val)
 	{
-        $this->Type = (int)$val;
+        $this->Type = $val;
 	}
 }

@@ -24,7 +24,7 @@ class CallbackStatus
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Message');
         }
-        $this->Message = (int)$val;
+        $this->Message = $val;
 	}
 
 	/**
@@ -36,6 +36,6 @@ class CallbackStatus
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = (int)$val;
+        $this->Status = $val;
 	}
 }

@@ -78,7 +78,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setCountryDetails($val)
     {
-        $this->CountryDetails = (int)$val;
+        $this->CountryDetails = $val;
     }
 
     /**
@@ -87,7 +87,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setCurrencyDetails($val)
     {
-        $this->CurrencyDetails = (int)$val;
+        $this->CurrencyDetails = $val;
     }
 
     /**
@@ -96,7 +96,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setDispatchTimeMaxDetails($val)
     {
-        $this->DispatchTimeMaxDetails = (int)$val;
+        $this->DispatchTimeMaxDetails = $val;
     }
 
     /**
@@ -105,7 +105,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setPaymentOptionDetails($val)
     {
-        $this->PaymentOptionDetails = (int)$val;
+        $this->PaymentOptionDetails = $val;
     }
 
     /**
@@ -114,7 +114,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setRegionDetails($val)
     {
-        $this->RegionDetails = (int)$val;
+        $this->RegionDetails = $val;
     }
 
     /**
@@ -123,7 +123,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setShippingLocationDetails($val)
     {
-        $this->ShippingLocationDetails = (int)$val;
+        $this->ShippingLocationDetails = $val;
     }
 
     /**
@@ -132,7 +132,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setShippingServiceDetails($val)
     {
-        $this->ShippingServiceDetails = (int)$val;
+        $this->ShippingServiceDetails = $val;
     }
 
     /**
@@ -141,7 +141,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setSiteDetails($val)
     {
-        $this->SiteDetails = (int)$val;
+        $this->SiteDetails = $val;
     }
 
     /**
@@ -150,7 +150,7 @@ class GeteBayDetailsResponseType extends
      */
     public function setTaxJurisdiction($val)
     {
-        $this->TaxJurisdiction = (int)$val;
+        $this->TaxJurisdiction = $val;
     }
 
     /**
@@ -159,6 +159,6 @@ class GeteBayDetailsResponseType extends
      */
     public function setURLDetails($val)
     {
-        $this->URLDetails = (int)$val;
+        $this->URLDetails = $val;
     }
 }

@@ -24,7 +24,7 @@ class SearchOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class SearchOrder
      */
     public function setOrderRequest($val)
     {
-        $this->orderRequest = (int)$val;
+        $this->orderRequest = $val;
     }
 }

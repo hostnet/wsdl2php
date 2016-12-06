@@ -33,7 +33,7 @@ class ValidateChallengeInputRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ChallengeToken');
         }
-        $this->ChallengeToken = (int)$val;
+        $this->ChallengeToken = $val;
     }
 
     /**
@@ -45,7 +45,7 @@ class ValidateChallengeInputRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserInput');
         }
-        $this->UserInput = (int)$val;
+        $this->UserInput = $val;
     }
 
     /**
@@ -54,6 +54,6 @@ class ValidateChallengeInputRequestType extends
      */
     public function setKeepTokenValid($val)
     {
-        $this->KeepTokenValid = (int)$val;
+        $this->KeepTokenValid = $val;
     }
 }

@@ -21,6 +21,6 @@ class FeedbackDetailArrayType
      */
     public function setFeedbackDetail($val)
     {
-        $this->FeedbackDetail = (int)$val;
+        $this->FeedbackDetail = $val;
     }
 }

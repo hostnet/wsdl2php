@@ -49,7 +49,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setDisplayType($val)
 	{
-        $this->DisplayType = (int)$val;
+        $this->DisplayType = $val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setLogo($val)
 	{
-        $this->Logo = (int)$val;
+        $this->Logo = $val;
 	}
 
 	/**
@@ -67,7 +67,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setSearchBox($val)
 	{
-        $this->SearchBox = (int)$val;
+        $this->SearchBox = $val;
 	}
 
 	/**
@@ -76,7 +76,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setLinkToInclude($val)
 	{
-        $this->LinkToInclude = (int)$val;
+        $this->LinkToInclude = $val;
 	}
 
 	/**
@@ -85,7 +85,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setAddToFavoriteStores($val)
 	{
-        $this->AddToFavoriteStores = (int)$val;
+        $this->AddToFavoriteStores = $val;
 	}
 
 	/**
@@ -94,7 +94,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setSignUpForStoreNewsletter($val)
 	{
-        $this->SignUpForStoreNewsletter = (int)$val;
+        $this->SignUpForStoreNewsletter = $val;
 	}
 
 	/**
@@ -103,7 +103,7 @@ class StoreCustomListingHeaderType
 	 */
 	public function setBreadCrumb($val)
 	{
-        $this->BreadCrumb = (int)$val;
+        $this->BreadCrumb = $val;
 	}
 
 	/**
@@ -112,6 +112,6 @@ class StoreCustomListingHeaderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

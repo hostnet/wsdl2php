@@ -30,6 +30,6 @@ class GetSuggestedCategoriesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = (int)$val;
+        $this->Query = $val;
     }
 }

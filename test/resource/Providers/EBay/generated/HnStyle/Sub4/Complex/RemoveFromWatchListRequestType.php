@@ -27,7 +27,7 @@ class RemoveFromWatchListRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class RemoveFromWatchListRequestType extends
      */
     public function setRemoveAllItems($val)
     {
-        $this->RemoveAllItems = (int)$val;
+        $this->RemoveAllItems = $val;
     }
 }

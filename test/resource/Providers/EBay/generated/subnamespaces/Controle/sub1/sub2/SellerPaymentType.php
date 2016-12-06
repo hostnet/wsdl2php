@@ -103,7 +103,7 @@ class SellerPaymentType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
 	}
 
 	/**
@@ -115,7 +115,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = $val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class SellerPaymentType
 	 */
 	public function setOrderID($val)
 	{
-        $this->OrderID = (int)$val;
+        $this->OrderID = $val;
 	}
 
 	/**
@@ -136,7 +136,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerInventoryID');
         }
-        $this->SellerInventoryID = (int)$val;
+        $this->SellerInventoryID = $val;
 	}
 
 	/**
@@ -148,7 +148,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PrivateNotes');
         }
-        $this->PrivateNotes = (int)$val;
+        $this->PrivateNotes = $val;
 	}
 
 	/**
@@ -157,7 +157,7 @@ class SellerPaymentType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = (int)$val;
+        $this->ExternalProductID = $val;
 	}
 
 	/**
@@ -169,7 +169,7 @@ class SellerPaymentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = $val;
 	}
 
 	/**
@@ -178,7 +178,7 @@ class SellerPaymentType
 	 */
 	public function setPaymentType($val)
 	{
-        $this->PaymentType = (int)$val;
+        $this->PaymentType = $val;
 	}
 
 	/**
@@ -187,7 +187,7 @@ class SellerPaymentType
 	 */
 	public function setTransactionPrice($val)
 	{
-        $this->TransactionPrice = (int)$val;
+        $this->TransactionPrice = $val;
 	}
 
 	/**
@@ -196,7 +196,7 @@ class SellerPaymentType
 	 */
 	public function setShippingReimbursement($val)
 	{
-        $this->ShippingReimbursement = (int)$val;
+        $this->ShippingReimbursement = $val;
 	}
 
 	/**
@@ -205,7 +205,7 @@ class SellerPaymentType
 	 */
 	public function setCommission($val)
 	{
-        $this->Commission = (int)$val;
+        $this->Commission = $val;
 	}
 
 	/**
@@ -214,7 +214,7 @@ class SellerPaymentType
 	 */
 	public function setAmountPaid($val)
 	{
-        $this->AmountPaid = (int)$val;
+        $this->AmountPaid = $val;
 	}
 
 	/**
@@ -223,7 +223,7 @@ class SellerPaymentType
 	 */
 	public function setPaidTime($val)
 	{
-        $this->PaidTime = (int)$val;
+        $this->PaidTime = $val;
 	}
 
 	/**
@@ -232,6 +232,6 @@ class SellerPaymentType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

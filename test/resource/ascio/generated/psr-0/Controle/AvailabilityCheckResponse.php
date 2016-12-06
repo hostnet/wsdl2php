@@ -21,7 +21,7 @@ class AvailabilityCheckResponse
 	 */
 	public function setAvailabilityCheckResult($val)
 	{
-        $this->AvailabilityCheckResult = (int)$val;
+        $this->AvailabilityCheckResult = $val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class AvailabilityCheckResponse
 	 */
 	public function setResults($val)
 	{
-        $this->results = (int)$val;
+        $this->results = $val;
 	}
 }

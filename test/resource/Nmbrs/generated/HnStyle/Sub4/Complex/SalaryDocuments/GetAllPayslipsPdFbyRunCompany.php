@@ -24,7 +24,7 @@ class GetAllPayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetAllPayslipsPdFbyRunCompany
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunID = (int)$val;
+        $this->RunID = $val;
     }
 }

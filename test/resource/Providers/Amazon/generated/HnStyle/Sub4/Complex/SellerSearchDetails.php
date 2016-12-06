@@ -36,7 +36,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerNickname');
         }
-        $this->SellerNickname = (int)$val;
+        $this->SellerNickname = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreId');
         }
-        $this->StoreId = (int)$val;
+        $this->StoreId = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = (int)$val;
+        $this->StoreName = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class SellerSearchDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NumberOfOpenListings');
         }
-        $this->NumberOfOpenListings = (int)$val;
+        $this->NumberOfOpenListings = $val;
     }
 
     /**
@@ -81,6 +81,6 @@ class SellerSearchDetails
      */
     public function setListingProductInfo($val)
     {
-        $this->ListingProductInfo = (int)$val;
+        $this->ListingProductInfo = $val;
     }
 }

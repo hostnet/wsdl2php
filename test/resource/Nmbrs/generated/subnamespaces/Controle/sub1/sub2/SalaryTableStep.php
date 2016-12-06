@@ -28,7 +28,7 @@ class SalaryTableStep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Step');
         }
-        $this->Step = (int)$val;
+        $this->Step = $val;
 	}
 
 	/**
@@ -40,7 +40,7 @@ class SalaryTableStep
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StepDescription');
         }
-        $this->StepDescription = (int)$val;
+        $this->StepDescription = $val;
 	}
 
 	/**
@@ -49,6 +49,6 @@ class SalaryTableStep
 	 */
 	public function setStepValue($val)
 	{
-        $this->StepValue = (int)$val;
+        $this->StepValue = $val;
 	}
 }

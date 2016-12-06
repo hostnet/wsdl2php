@@ -23,6 +23,6 @@ class GetItemsAwaitingFeedbackResponseType extends
 	 */
 	public function setItemsAwaitingFeedback($val)
 	{
-        $this->ItemsAwaitingFeedback = (int)$val;
+        $this->ItemsAwaitingFeedback = $val;
 	}
 }

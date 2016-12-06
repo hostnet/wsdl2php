@@ -70,7 +70,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->ModTimeFrom = (int)$val;
+        $this->ModTimeFrom = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->ModTimeTo = (int)$val;
+        $this->ModTimeTo = $val;
     }
 
     /**
@@ -100,7 +100,7 @@ class GetItemTransactionsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = $val;
     }
 
     /**
@@ -109,7 +109,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = $val;
     }
 
     /**
@@ -118,7 +118,7 @@ class GetItemTransactionsRequestType extends
      */
     public function setIncludeFinalValueFee($val)
     {
-        $this->IncludeFinalValueFee = (int)$val;
+        $this->IncludeFinalValueFee = $val;
     }
 
     /**
@@ -127,6 +127,6 @@ class GetItemTransactionsRequestType extends
      */
     public function setIncludeContainingOrder($val)
     {
-        $this->IncludeContainingOrder = (int)$val;
+        $this->IncludeContainingOrder = $val;
     }
 }

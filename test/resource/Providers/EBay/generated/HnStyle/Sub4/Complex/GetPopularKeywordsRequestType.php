@@ -45,7 +45,7 @@ class GetPopularKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = $val;
     }
 
     /**
@@ -54,7 +54,7 @@ class GetPopularKeywordsRequestType extends
      */
     public function setIncludeChildCategories($val)
     {
-        $this->IncludeChildCategories = (int)$val;
+        $this->IncludeChildCategories = $val;
     }
 
     /**
@@ -66,7 +66,7 @@ class GetPopularKeywordsRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxKeywordsRetrieved = (int)$val;
+        $this->MaxKeywordsRetrieved = $val;
     }
 
     /**
@@ -75,6 +75,6 @@ class GetPopularKeywordsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = $val;
     }
 }

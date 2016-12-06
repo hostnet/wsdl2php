@@ -17,6 +17,6 @@ class GetHourCodesResponse
      */
     public function setHourModelGetHourCodesResult($val)
     {
-        $this->HourModel_GetHourCodesResult = (int)$val;
+        $this->HourModel_GetHourCodesResult = $val;
     }
 }

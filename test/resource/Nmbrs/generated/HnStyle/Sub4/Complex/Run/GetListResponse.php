@@ -17,6 +17,6 @@ class GetListResponse
      */
     public function setRunGetListResult($val)
     {
-        $this->Run_GetListResult = (int)$val;
+        $this->Run_GetListResult = $val;
     }
 }

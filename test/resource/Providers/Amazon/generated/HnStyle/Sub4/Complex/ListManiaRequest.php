@@ -40,7 +40,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for lm_id');
         }
-        $this->lm_id = (int)$val;
+        $this->lm_id = $val;
     }
 
     /**
@@ -52,7 +52,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (int)$val;
+        $this->page = $val;
     }
 
     /**
@@ -64,7 +64,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (int)$val;
+        $this->tag = $val;
     }
 
     /**
@@ -76,7 +76,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (int)$val;
+        $this->type = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (int)$val;
+        $this->devtag = $val;
     }
 
     /**
@@ -100,6 +100,6 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (int)$val;
+        $this->locale = $val;
     }
 }

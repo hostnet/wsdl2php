@@ -18,6 +18,6 @@ class GetVeRoReasonCodeDetailsResponseType extends
      */
     public function setVeROReasonCodeDetails($val)
     {
-        $this->VeROReasonCodeDetails = (int)$val;
+        $this->VeROReasonCodeDetails = $val;
     }
 }

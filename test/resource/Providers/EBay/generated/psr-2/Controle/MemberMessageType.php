@@ -77,7 +77,7 @@ class MemberMessageType
      */
     public function setMessageType($val)
     {
-        $this->MessageType = (int)$val;
+        $this->MessageType = $val;
     }
 
     /**
@@ -86,7 +86,7 @@ class MemberMessageType
      */
     public function setQuestionType($val)
     {
-        $this->QuestionType = (int)$val;
+        $this->QuestionType = $val;
     }
 
     /**
@@ -95,7 +95,7 @@ class MemberMessageType
      */
     public function setEmailCopyToSender($val)
     {
-        $this->EmailCopyToSender = (int)$val;
+        $this->EmailCopyToSender = $val;
     }
 
     /**
@@ -104,7 +104,7 @@ class MemberMessageType
      */
     public function setHideSendersEmailAddress($val)
     {
-        $this->HideSendersEmailAddress = (int)$val;
+        $this->HideSendersEmailAddress = $val;
     }
 
     /**
@@ -113,7 +113,7 @@ class MemberMessageType
      */
     public function setDisplayToPublic($val)
     {
-        $this->DisplayToPublic = (int)$val;
+        $this->DisplayToPublic = $val;
     }
 
     /**
@@ -125,7 +125,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SenderID');
         }
-        $this->SenderID = (int)$val;
+        $this->SenderID = $val;
     }
 
     /**
@@ -137,7 +137,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SenderEmail');
         }
-        $this->SenderEmail = (int)$val;
+        $this->SenderEmail = $val;
     }
 
     /**
@@ -149,7 +149,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientID');
         }
-        $this->RecipientID = (int)$val;
+        $this->RecipientID = $val;
     }
 
     /**
@@ -161,7 +161,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = (int)$val;
+        $this->Subject = $val;
     }
 
     /**
@@ -173,7 +173,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Body');
         }
-        $this->Body = (int)$val;
+        $this->Body = $val;
     }
 
     /**
@@ -185,7 +185,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageID');
         }
-        $this->MessageID = (int)$val;
+        $this->MessageID = $val;
     }
 
     /**
@@ -197,7 +197,7 @@ class MemberMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ParentMessageID');
         }
-        $this->ParentMessageID = (int)$val;
+        $this->ParentMessageID = $val;
     }
 
     /**
@@ -206,6 +206,6 @@ class MemberMessageType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

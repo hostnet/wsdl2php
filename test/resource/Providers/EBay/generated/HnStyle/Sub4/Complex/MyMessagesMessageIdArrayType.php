@@ -19,6 +19,6 @@ class MyMessagesMessageIdArrayType
      */
     public function setMessageID($val)
     {
-        $this->MessageID = (int)$val;
+        $this->MessageID = $val;
     }
 }

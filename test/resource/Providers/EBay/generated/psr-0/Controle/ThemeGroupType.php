@@ -41,7 +41,7 @@ class ThemeGroupType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->GroupID = (int)$val;
+        $this->GroupID = $val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class ThemeGroupType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for GroupName');
         }
-        $this->GroupName = (int)$val;
+        $this->GroupName = $val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class ThemeGroupType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ThemeID = (int)$val;
+        $this->ThemeID = $val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class ThemeGroupType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ThemeTotal = (int)$val;
+        $this->ThemeTotal = $val;
 	}
 
 	/**
@@ -86,6 +86,6 @@ class ThemeGroupType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

@@ -48,7 +48,7 @@ class ListingDesignerType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LayoutID = (int)$val;
+        $this->LayoutID = $val;
     }
 
     /**
@@ -57,7 +57,7 @@ class ListingDesignerType
      */
     public function setOptimalPictureSize($val)
     {
-        $this->OptimalPictureSize = (int)$val;
+        $this->OptimalPictureSize = $val;
     }
 
     /**
@@ -69,7 +69,7 @@ class ListingDesignerType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ThemeID = (int)$val;
+        $this->ThemeID = $val;
     }
 
     /**
@@ -78,6 +78,6 @@ class ListingDesignerType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

@@ -32,7 +32,7 @@ class CategoryFinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FinanceOfferID');
         }
-        $this->FinanceOfferID = (int)$val;
+        $this->FinanceOfferID = $val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class CategoryFinanceOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = $val;
 	}
 
 	/**
@@ -53,6 +53,6 @@ class CategoryFinanceOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

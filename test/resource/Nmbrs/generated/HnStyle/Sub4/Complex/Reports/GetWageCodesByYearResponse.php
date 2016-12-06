@@ -20,6 +20,6 @@ class GetWageCodesByYearResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
         }
-        $this->Reports_GetWageCodesByYearResult = (int)$val;
+        $this->Reports_GetWageCodesByYearResult = $val;
     }
 }

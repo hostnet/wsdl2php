@@ -20,6 +20,6 @@ class SupportedEventTypesArrayType
      */
     public function setEventType($val)
     {
-        $this->EventType = (int)$val;
+        $this->EventType = $val;
     }
 }

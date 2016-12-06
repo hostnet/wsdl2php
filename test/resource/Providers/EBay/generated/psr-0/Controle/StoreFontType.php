@@ -57,7 +57,7 @@ class StoreFontType
 	 */
 	public function setNameFace($val)
 	{
-        $this->NameFace = (int)$val;
+        $this->NameFace = $val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class StoreFontType
 	 */
 	public function setNameSize($val)
 	{
-        $this->NameSize = (int)$val;
+        $this->NameSize = $val;
 	}
 
 	/**
@@ -78,7 +78,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NameColor');
         }
-        $this->NameColor = (int)$val;
+        $this->NameColor = $val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class StoreFontType
 	 */
 	public function setTitleFace($val)
 	{
-        $this->TitleFace = (int)$val;
+        $this->TitleFace = $val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class StoreFontType
 	 */
 	public function setTitleSize($val)
 	{
-        $this->TitleSize = (int)$val;
+        $this->TitleSize = $val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TitleColor');
         }
-        $this->TitleColor = (int)$val;
+        $this->TitleColor = $val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class StoreFontType
 	 */
 	public function setDescFace($val)
 	{
-        $this->DescFace = (int)$val;
+        $this->DescFace = $val;
 	}
 
 	/**
@@ -126,7 +126,7 @@ class StoreFontType
 	 */
 	public function setDescSize($val)
 	{
-        $this->DescSize = (int)$val;
+        $this->DescSize = $val;
 	}
 
 	/**
@@ -138,7 +138,7 @@ class StoreFontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DescColor');
         }
-        $this->DescColor = (int)$val;
+        $this->DescColor = $val;
 	}
 
 	/**
@@ -147,6 +147,6 @@ class StoreFontType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

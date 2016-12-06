@@ -34,7 +34,7 @@ class ScheduleType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ScheduleID = (int)$val;
+        $this->ScheduleID = $val;
 	}
 
 	/**
@@ -43,7 +43,7 @@ class ScheduleType
 	 */
 	public function setScheduleTime($val)
 	{
-        $this->ScheduleTime = (int)$val;
+        $this->ScheduleTime = $val;
 	}
 
 	/**
@@ -52,6 +52,6 @@ class ScheduleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

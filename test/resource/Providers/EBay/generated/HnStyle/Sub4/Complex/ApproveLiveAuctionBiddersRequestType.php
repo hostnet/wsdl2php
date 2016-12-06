@@ -44,7 +44,7 @@ class ApproveLiveAuctionBiddersRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UserCatalogID = (int)$val;
+        $this->UserCatalogID = $val;
     }
 
     /**
@@ -53,7 +53,7 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setBidApproval($val)
     {
-        $this->BidApproval = (int)$val;
+        $this->BidApproval = $val;
     }
 
     /**
@@ -62,7 +62,7 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setApproveAllPending($val)
     {
-        $this->ApproveAllPending = (int)$val;
+        $this->ApproveAllPending = $val;
     }
 
     /**
@@ -71,6 +71,6 @@ class ApproveLiveAuctionBiddersRequestType extends
      */
     public function setAllApprovedBiddingLimit($val)
     {
-        $this->AllApprovedBiddingLimit = (int)$val;
+        $this->AllApprovedBiddingLimit = $val;
     }
 }

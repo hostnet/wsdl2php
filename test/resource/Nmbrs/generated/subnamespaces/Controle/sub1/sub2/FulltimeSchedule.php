@@ -73,7 +73,7 @@ class FulltimeSchedule
 	 */
 	public function setScheduleCalcMethod($val)
 	{
-        $this->ScheduleCalcMethod = (int)$val;
+        $this->ScheduleCalcMethod = $val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursMonday($val)
 	{
-        $this->HoursMonday = (int)$val;
+        $this->HoursMonday = $val;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursTuesday($val)
 	{
-        $this->HoursTuesday = (int)$val;
+        $this->HoursTuesday = $val;
 	}
 
 	/**
@@ -100,7 +100,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursWednesday($val)
 	{
-        $this->HoursWednesday = (int)$val;
+        $this->HoursWednesday = $val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursThursday($val)
 	{
-        $this->HoursThursday = (int)$val;
+        $this->HoursThursday = $val;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursFriday($val)
 	{
-        $this->HoursFriday = (int)$val;
+        $this->HoursFriday = $val;
 	}
 
 	/**
@@ -127,7 +127,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSaturday($val)
 	{
-        $this->HoursSaturday = (int)$val;
+        $this->HoursSaturday = $val;
 	}
 
 	/**
@@ -136,7 +136,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSunday($val)
 	{
-        $this->HoursSunday = (int)$val;
+        $this->HoursSunday = $val;
 	}
 
 	/**
@@ -145,7 +145,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursMonday2($val)
 	{
-        $this->HoursMonday2 = (int)$val;
+        $this->HoursMonday2 = $val;
 	}
 
 	/**
@@ -154,7 +154,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursTuesday2($val)
 	{
-        $this->HoursTuesday2 = (int)$val;
+        $this->HoursTuesday2 = $val;
 	}
 
 	/**
@@ -163,7 +163,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursWednesday2($val)
 	{
-        $this->HoursWednesday2 = (int)$val;
+        $this->HoursWednesday2 = $val;
 	}
 
 	/**
@@ -172,7 +172,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursThursday2($val)
 	{
-        $this->HoursThursday2 = (int)$val;
+        $this->HoursThursday2 = $val;
 	}
 
 	/**
@@ -181,7 +181,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursFriday2($val)
 	{
-        $this->HoursFriday2 = (int)$val;
+        $this->HoursFriday2 = $val;
 	}
 
 	/**
@@ -190,7 +190,7 @@ class FulltimeSchedule
 	 */
 	public function setHoursSaturday2($val)
 	{
-        $this->HoursSaturday2 = (int)$val;
+        $this->HoursSaturday2 = $val;
 	}
 
 	/**
@@ -199,6 +199,6 @@ class FulltimeSchedule
 	 */
 	public function setHoursSunday2($val)
 	{
-        $this->HoursSunday2 = (int)$val;
+        $this->HoursSunday2 = $val;
 	}
 }

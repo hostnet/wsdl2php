@@ -1,4 +1,9 @@
 <?php
+use phpDocumentor\Reflection\Types\Integer;
+use phpDocumentor\Reflection\Types\Boolean;
+use phpDocumentor\Reflection\Types\Float_;
+use phpDocumentor\Reflection\Types\String_;
+
 // +------------------------------------------------------------------------+
 // | wsdl2php                                                               |
 // +------------------------------------------------------------------------+
@@ -532,7 +537,9 @@ foreach($types as $index=>$type){
 	if(count($type['members'])>0)
 	   $code .= "\n".$ident_char."// @codingStandardsIgnoreEnd\n";
 	// add access method
+
 	foreach($type['members'] as $member) {
+
 	$codestylefunctionname = ucfirst(str_replace("_", "", $member['member']));
 		$code .= sprintf("\n" .
 		$ident_char . "/**\n".
@@ -541,7 +548,7 @@ foreach($types as $index=>$type){
 		$ident_char . " */\n" .
 		$ident_char ."public function set%s(\$val)\n".$ident_char."{\n" .
 		"%s" .
-		$ident2 . "\$this->%s = (int)\$val;\n" .
+		$ident2 . "\$this->%s = \$val;\n" .
 		$ident_char ."}\n", $member['type'], $codestylefunctionname, accessMethodCaster($member['type'], $member['member']), $member['member']);
 	}
 	rtrim($code);

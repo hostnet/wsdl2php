@@ -38,7 +38,7 @@ class SubscriptionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->EIASToken = (int)$val;
+        $this->EIASToken = $val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SubscriptionType
      */
     public function setSiteID($val)
     {
-        $this->SiteID = (int)$val;
+        $this->SiteID = $val;
     }
 
     /**
@@ -56,7 +56,7 @@ class SubscriptionType
      */
     public function setActive($val)
     {
-        $this->Active = (int)$val;
+        $this->Active = $val;
     }
 
     /**
@@ -65,6 +65,6 @@ class SubscriptionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

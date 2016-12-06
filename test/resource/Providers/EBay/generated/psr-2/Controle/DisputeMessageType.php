@@ -43,7 +43,7 @@ class DisputeMessageType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MessageID = (int)$val;
+        $this->MessageID = $val;
     }
 
     /**
@@ -52,7 +52,7 @@ class DisputeMessageType
      */
     public function setMessageSource($val)
     {
-        $this->MessageSource = (int)$val;
+        $this->MessageSource = $val;
     }
 
     /**
@@ -61,7 +61,7 @@ class DisputeMessageType
      */
     public function setMessageCreationTime($val)
     {
-        $this->MessageCreationTime = (int)$val;
+        $this->MessageCreationTime = $val;
     }
 
     /**
@@ -73,7 +73,7 @@ class DisputeMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageText');
         }
-        $this->MessageText = (int)$val;
+        $this->MessageText = $val;
     }
 
     /**
@@ -82,6 +82,6 @@ class DisputeMessageType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

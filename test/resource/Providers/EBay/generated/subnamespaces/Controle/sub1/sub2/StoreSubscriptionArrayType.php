@@ -21,6 +21,6 @@ class StoreSubscriptionArrayType
 	 */
 	public function setSubscription($val)
 	{
-        $this->Subscription = (int)$val;
+        $this->Subscription = $val;
 	}
 }

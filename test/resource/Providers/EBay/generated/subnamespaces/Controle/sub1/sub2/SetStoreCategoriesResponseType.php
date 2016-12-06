@@ -32,7 +32,7 @@ class SetStoreCategoriesResponseType extends
 	 */
 	public function setTaskID($val)
 	{
-        $this->TaskID = (int)$val;
+        $this->TaskID = $val;
 	}
 
 	/**
@@ -41,6 +41,6 @@ class SetStoreCategoriesResponseType extends
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = $val;
 	}
 }

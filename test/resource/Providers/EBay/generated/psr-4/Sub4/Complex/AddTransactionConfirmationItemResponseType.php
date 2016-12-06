@@ -31,7 +31,7 @@ class AddTransactionConfirmationItemResponseType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class AddTransactionConfirmationItemResponseType extends
      */
     public function setStartTime($val)
     {
-        $this->StartTime = (int)$val;
+        $this->StartTime = $val;
     }
 
     /**
@@ -49,6 +49,6 @@ class AddTransactionConfirmationItemResponseType extends
      */
     public function setEndTime($val)
     {
-        $this->EndTime = (int)$val;
+        $this->EndTime = $val;
     }
 }

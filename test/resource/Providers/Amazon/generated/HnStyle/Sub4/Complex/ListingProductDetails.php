@@ -100,7 +100,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->ExchangeId = (int)$val;
+        $this->ExchangeId = $val;
     }
 
     /**
@@ -112,7 +112,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingId');
         }
-        $this->ListingId = (int)$val;
+        $this->ListingId = $val;
     }
 
     /**
@@ -124,7 +124,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeTitle');
         }
-        $this->ExchangeTitle = (int)$val;
+        $this->ExchangeTitle = $val;
     }
 
     /**
@@ -136,7 +136,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangePrice');
         }
-        $this->ExchangePrice = (int)$val;
+        $this->ExchangePrice = $val;
     }
 
     /**
@@ -148,7 +148,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAsin');
         }
-        $this->ExchangeAsin = (int)$val;
+        $this->ExchangeAsin = $val;
     }
 
     /**
@@ -160,7 +160,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeEndDate');
         }
-        $this->ExchangeEndDate = (int)$val;
+        $this->ExchangeEndDate = $val;
     }
 
     /**
@@ -172,7 +172,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
         }
-        $this->ExchangeTinyImage = (int)$val;
+        $this->ExchangeTinyImage = $val;
     }
 
     /**
@@ -184,7 +184,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerId');
         }
-        $this->ExchangeSellerId = (int)$val;
+        $this->ExchangeSellerId = $val;
     }
 
     /**
@@ -196,7 +196,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
         }
-        $this->ExchangeSellerNickname = (int)$val;
+        $this->ExchangeSellerNickname = $val;
     }
 
     /**
@@ -208,7 +208,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeStartDate');
         }
-        $this->ExchangeStartDate = (int)$val;
+        $this->ExchangeStartDate = $val;
     }
 
     /**
@@ -220,7 +220,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeStatus');
         }
-        $this->ExchangeStatus = (int)$val;
+        $this->ExchangeStatus = $val;
     }
 
     /**
@@ -232,7 +232,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeQuantity');
         }
-        $this->ExchangeQuantity = (int)$val;
+        $this->ExchangeQuantity = $val;
     }
 
     /**
@@ -244,7 +244,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
         }
-        $this->ExchangeQuantityAllocated = (int)$val;
+        $this->ExchangeQuantityAllocated = $val;
     }
 
     /**
@@ -256,7 +256,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
         }
-        $this->ExchangeFeaturedCategory = (int)$val;
+        $this->ExchangeFeaturedCategory = $val;
     }
 
     /**
@@ -268,7 +268,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeCondition');
         }
-        $this->ExchangeCondition = (int)$val;
+        $this->ExchangeCondition = $val;
     }
 
     /**
@@ -280,7 +280,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeConditionType');
         }
-        $this->ExchangeConditionType = (int)$val;
+        $this->ExchangeConditionType = $val;
     }
 
     /**
@@ -292,7 +292,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAvailability');
         }
-        $this->ExchangeAvailability = (int)$val;
+        $this->ExchangeAvailability = $val;
     }
 
     /**
@@ -304,7 +304,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
         }
-        $this->ExchangeOfferingType = (int)$val;
+        $this->ExchangeOfferingType = $val;
     }
 
     /**
@@ -316,7 +316,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerState');
         }
-        $this->ExchangeSellerState = (int)$val;
+        $this->ExchangeSellerState = $val;
     }
 
     /**
@@ -328,7 +328,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
         }
-        $this->ExchangeSellerCountry = (int)$val;
+        $this->ExchangeSellerCountry = $val;
     }
 
     /**
@@ -340,6 +340,6 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
         }
-        $this->ExchangeSellerRating = (int)$val;
+        $this->ExchangeSellerRating = $val;
     }
 }

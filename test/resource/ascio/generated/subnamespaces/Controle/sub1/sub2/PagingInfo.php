@@ -24,7 +24,7 @@ class PagingInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageIndex = (int)$val;
+        $this->PageIndex = $val;
 	}
 
 	/**
@@ -36,6 +36,6 @@ class PagingInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageSize = (int)$val;
+        $this->PageSize = $val;
 	}
 }

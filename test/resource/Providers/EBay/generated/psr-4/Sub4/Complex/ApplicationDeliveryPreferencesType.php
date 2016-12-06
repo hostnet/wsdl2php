@@ -56,7 +56,7 @@ class ApplicationDeliveryPreferencesType
      */
     public function setApplicationURL($val)
     {
-        $this->ApplicationURL = (int)$val;
+        $this->ApplicationURL = $val;
     }
 
     /**
@@ -65,7 +65,7 @@ class ApplicationDeliveryPreferencesType
      */
     public function setApplicationEnable($val)
     {
-        $this->ApplicationEnable = (int)$val;
+        $this->ApplicationEnable = $val;
     }
 
     /**
@@ -74,7 +74,7 @@ class ApplicationDeliveryPreferencesType
      */
     public function setAlertEmail($val)
     {
-        $this->AlertEmail = (int)$val;
+        $this->AlertEmail = $val;
     }
 
     /**
@@ -83,7 +83,7 @@ class ApplicationDeliveryPreferencesType
      */
     public function setAlertEnable($val)
     {
-        $this->AlertEnable = (int)$val;
+        $this->AlertEnable = $val;
     }
 
     /**
@@ -92,7 +92,7 @@ class ApplicationDeliveryPreferencesType
      */
     public function setNotificationPayloadType($val)
     {
-        $this->NotificationPayloadType = (int)$val;
+        $this->NotificationPayloadType = $val;
     }
 
     /**
@@ -101,7 +101,7 @@ class ApplicationDeliveryPreferencesType
      */
     public function setDeviceType($val)
     {
-        $this->DeviceType = (int)$val;
+        $this->DeviceType = $val;
     }
 
     /**
@@ -110,6 +110,6 @@ class ApplicationDeliveryPreferencesType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

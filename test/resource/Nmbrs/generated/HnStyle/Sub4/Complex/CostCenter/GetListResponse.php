@@ -17,6 +17,6 @@ class GetListResponse
      */
     public function setCostCenterGetListResult($val)
     {
-        $this->CostCenter_GetListResult = (int)$val;
+        $this->CostCenter_GetListResult = $val;
     }
 }

@@ -54,7 +54,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setVeROReportPacketID($val)
     {
-        $this->VeROReportPacketID = (int)$val;
+        $this->VeROReportPacketID = $val;
     }
 
     /**
@@ -63,7 +63,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setIncludeReportedItemDetails($val)
     {
-        $this->IncludeReportedItemDetails = (int)$val;
+        $this->IncludeReportedItemDetails = $val;
     }
 
     /**
@@ -81,7 +81,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setTimeFrom($val)
     {
-        $this->TimeFrom = (int)$val;
+        $this->TimeFrom = $val;
     }
 
     /**
@@ -90,7 +90,7 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setTimeTo($val)
     {
-        $this->TimeTo = (int)$val;
+        $this->TimeTo = $val;
     }
 
     /**
@@ -99,6 +99,6 @@ class GetVeRoReportStatusRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = $val;
     }
 }

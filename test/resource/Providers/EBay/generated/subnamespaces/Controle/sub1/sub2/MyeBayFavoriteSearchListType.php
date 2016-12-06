@@ -32,7 +32,7 @@ class MyeBayFavoriteSearchListType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalAvailable = (int)$val;
+        $this->TotalAvailable = $val;
 	}
 
 	/**
@@ -41,7 +41,7 @@ class MyeBayFavoriteSearchListType
 	 */
 	public function setFavoriteSearch($val)
 	{
-        $this->FavoriteSearch = (int)$val;
+        $this->FavoriteSearch = $val;
 	}
 
 	/**
@@ -50,6 +50,6 @@ class MyeBayFavoriteSearchListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

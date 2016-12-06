@@ -32,7 +32,7 @@ class UploadFile
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -44,7 +44,7 @@ class UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentName');
         }
-        $this->StrDocumentName = (int)$val;
+        $this->StrDocumentName = $val;
     }
 
     /**
@@ -56,7 +56,7 @@ class UploadFile
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StrDocumentSubFolder');
         }
-        $this->StrDocumentSubFolder = (int)$val;
+        $this->StrDocumentSubFolder = $val;
     }
 
     /**
@@ -65,6 +65,6 @@ class UploadFile
      */
     public function setBody($val)
     {
-        $this->Body = (int)$val;
+        $this->Body = $val;
     }
 }

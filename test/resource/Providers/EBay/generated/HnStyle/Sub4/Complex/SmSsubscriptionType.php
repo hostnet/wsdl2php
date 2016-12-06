@@ -41,7 +41,7 @@ class SmSsubscriptionType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SMSPhone');
         }
-        $this->SMSPhone = (int)$val;
+        $this->SMSPhone = $val;
     }
 
     /**
@@ -50,7 +50,7 @@ class SmSsubscriptionType
      */
     public function setUserStatus($val)
     {
-        $this->UserStatus = (int)$val;
+        $this->UserStatus = $val;
     }
 
     /**
@@ -59,7 +59,7 @@ class SmSsubscriptionType
      */
     public function setCarrierID($val)
     {
-        $this->CarrierID = (int)$val;
+        $this->CarrierID = $val;
     }
 
     /**
@@ -68,7 +68,7 @@ class SmSsubscriptionType
      */
     public function setErrorCode($val)
     {
-        $this->ErrorCode = (int)$val;
+        $this->ErrorCode = $val;
     }
 
     /**
@@ -77,7 +77,7 @@ class SmSsubscriptionType
      */
     public function setItemToUnsubscribe($val)
     {
-        $this->ItemToUnsubscribe = (int)$val;
+        $this->ItemToUnsubscribe = $val;
     }
 
     /**
@@ -86,6 +86,6 @@ class SmSsubscriptionType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

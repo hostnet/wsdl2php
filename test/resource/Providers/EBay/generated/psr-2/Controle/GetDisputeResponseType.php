@@ -25,6 +25,6 @@ class GetDisputeResponseType extends
      */
     public function setDispute($val)
     {
-        $this->Dispute = (int)$val;
+        $this->Dispute = $val;
     }
 }

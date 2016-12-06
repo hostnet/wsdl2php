@@ -46,7 +46,7 @@ class MyMessagesSummaryType
 	 */
 	public function setFolderSummary($val)
 	{
-        $this->FolderSummary = (int)$val;
+        $this->FolderSummary = $val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class MyMessagesSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NewAlertCount = (int)$val;
+        $this->NewAlertCount = $val;
 	}
 
 	/**
@@ -70,7 +70,7 @@ class MyMessagesSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NewMessageCount = (int)$val;
+        $this->NewMessageCount = $val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class MyMessagesSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UnresolvedAlertCount = (int)$val;
+        $this->UnresolvedAlertCount = $val;
 	}
 
 	/**
@@ -94,7 +94,7 @@ class MyMessagesSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FlaggedMessageCount = (int)$val;
+        $this->FlaggedMessageCount = $val;
 	}
 
 	/**
@@ -106,7 +106,7 @@ class MyMessagesSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalAlertCount = (int)$val;
+        $this->TotalAlertCount = $val;
 	}
 
 	/**
@@ -118,6 +118,6 @@ class MyMessagesSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalMessageCount = (int)$val;
+        $this->TotalMessageCount = $val;
 	}
 }

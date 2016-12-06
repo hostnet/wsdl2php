@@ -32,7 +32,7 @@ class SummaryEventScheduleType
 	 */
 	public function setEventType($val)
 	{
-        $this->EventType = (int)$val;
+        $this->EventType = $val;
 	}
 
 	/**
@@ -41,7 +41,7 @@ class SummaryEventScheduleType
 	 */
 	public function setSummaryPeriod($val)
 	{
-        $this->SummaryPeriod = (int)$val;
+        $this->SummaryPeriod = $val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class SummaryEventScheduleType
 	 */
 	public function setFrequency($val)
 	{
-        $this->Frequency = (int)$val;
+        $this->Frequency = $val;
 	}
 
 	/**
@@ -59,6 +59,6 @@ class SummaryEventScheduleType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

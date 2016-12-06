@@ -39,7 +39,7 @@ class GetLiveAuctionBiddersRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UserCatalogID = (int)$val;
+        $this->UserCatalogID = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetLiveAuctionBiddersRequestType extends
      */
     public function setBidderStatus($val)
     {
-        $this->BidderStatus = (int)$val;
+        $this->BidderStatus = $val;
     }
 
     /**
@@ -57,6 +57,6 @@ class GetLiveAuctionBiddersRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = $val;
     }
 }

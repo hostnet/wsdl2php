@@ -21,7 +21,7 @@ class WhoisResponse
 	 */
 	public function setWhoisResult($val)
 	{
-        $this->WhoisResult = (int)$val;
+        $this->WhoisResult = $val;
 	}
 
 	/**
@@ -33,6 +33,6 @@ class WhoisResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for whoisData');
         }
-        $this->whoisData = (int)$val;
+        $this->whoisData = $val;
 	}
 }

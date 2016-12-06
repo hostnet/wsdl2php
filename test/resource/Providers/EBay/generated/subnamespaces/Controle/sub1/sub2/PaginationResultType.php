@@ -38,7 +38,7 @@ class PaginationResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalNumberOfPages = (int)$val;
+        $this->TotalNumberOfPages = $val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class PaginationResultType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalNumberOfEntries = (int)$val;
+        $this->TotalNumberOfEntries = $val;
 	}
 
 	/**
@@ -59,6 +59,6 @@ class PaginationResultType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

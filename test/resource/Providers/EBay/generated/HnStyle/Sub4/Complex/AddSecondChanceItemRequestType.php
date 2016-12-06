@@ -72,7 +72,7 @@ class AddSecondChanceItemRequestType extends
      */
     public function setRecipientBidderUserID($val)
     {
-        $this->RecipientBidderUserID = (int)$val;
+        $this->RecipientBidderUserID = $val;
     }
 
     /**
@@ -81,7 +81,7 @@ class AddSecondChanceItemRequestType extends
      */
     public function setBuyItNowPrice($val)
     {
-        $this->BuyItNowPrice = (int)$val;
+        $this->BuyItNowPrice = $val;
     }
 
     /**
@@ -90,7 +90,7 @@ class AddSecondChanceItemRequestType extends
      */
     public function setCopyEmailToSeller($val)
     {
-        $this->CopyEmailToSeller = (int)$val;
+        $this->CopyEmailToSeller = $val;
     }
 
     /**
@@ -99,7 +99,7 @@ class AddSecondChanceItemRequestType extends
      */
     public function setDuration($val)
     {
-        $this->Duration = (int)$val;
+        $this->Duration = $val;
     }
 
     /**
@@ -108,7 +108,7 @@ class AddSecondChanceItemRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -117,7 +117,7 @@ class AddSecondChanceItemRequestType extends
      */
     public function setSite($val)
     {
-        $this->Site = (int)$val;
+        $this->Site = $val;
     }
 
     /**
@@ -129,6 +129,6 @@ class AddSecondChanceItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerMessage');
         }
-        $this->SellerMessage = (int)$val;
+        $this->SellerMessage = $val;
     }
 }

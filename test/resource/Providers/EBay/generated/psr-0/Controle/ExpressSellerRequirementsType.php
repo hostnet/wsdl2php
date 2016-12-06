@@ -111,7 +111,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setExpressSellingPreference($val)
 	{
-        $this->ExpressSellingPreference = (int)$val;
+        $this->ExpressSellingPreference = $val;
 	}
 
 	/**
@@ -120,7 +120,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setExpressApproved($val)
 	{
-        $this->ExpressApproved = (int)$val;
+        $this->ExpressApproved = $val;
 	}
 
 	/**
@@ -129,7 +129,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setGoodStanding($val)
 	{
-        $this->GoodStanding = (int)$val;
+        $this->GoodStanding = $val;
 	}
 
 	/**
@@ -138,7 +138,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackScore($val)
 	{
-        $this->FeedbackScore = (int)$val;
+        $this->FeedbackScore = $val;
 	}
 
 	/**
@@ -147,7 +147,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
-        $this->PositiveFeedbackPercent = (int)$val;
+        $this->PositiveFeedbackPercent = $val;
 	}
 
 	/**
@@ -156,7 +156,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackAsSellerScore($val)
 	{
-        $this->FeedbackAsSellerScore = (int)$val;
+        $this->FeedbackAsSellerScore = $val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPositiveFeedbackAsSellerPercent($val)
 	{
-        $this->PositiveFeedbackAsSellerPercent = (int)$val;
+        $this->PositiveFeedbackAsSellerPercent = $val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setBusinessSeller($val)
 	{
-        $this->BusinessSeller = (int)$val;
+        $this->BusinessSeller = $val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
-        $this->EligiblePayPalAccount = (int)$val;
+        $this->EligiblePayPalAccount = $val;
 	}
 
 	/**
@@ -192,7 +192,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
-        $this->PayPalAccountAcceptsUnconfirmedAddress = (int)$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = $val;
 	}
 
 	/**
@@ -201,7 +201,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setCombinedPaymentsAccepted($val)
 	{
-        $this->CombinedPaymentsAccepted = (int)$val;
+        $this->CombinedPaymentsAccepted = $val;
 	}
 
 	/**
@@ -210,7 +210,7 @@ class ExpressSellerRequirementsType
 	 */
 	public function setFeedbackPublic($val)
 	{
-        $this->FeedbackPublic = (int)$val;
+        $this->FeedbackPublic = $val;
 	}
 
 	/**
@@ -219,6 +219,6 @@ class ExpressSellerRequirementsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

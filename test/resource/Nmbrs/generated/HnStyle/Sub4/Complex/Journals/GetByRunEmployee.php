@@ -24,7 +24,7 @@ class GetByRunEmployee
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetByRunEmployee
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RunId = (int)$val;
+        $this->RunId = $val;
     }
 }

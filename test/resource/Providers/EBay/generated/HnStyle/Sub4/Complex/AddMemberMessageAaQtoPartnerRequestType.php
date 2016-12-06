@@ -22,7 +22,7 @@ class AddMemberMessageAaQtoPartnerRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -31,6 +31,6 @@ class AddMemberMessageAaQtoPartnerRequestType extends
      */
     public function setMemberMessage($val)
     {
-        $this->MemberMessage = (int)$val;
+        $this->MemberMessage = $val;
     }
 }

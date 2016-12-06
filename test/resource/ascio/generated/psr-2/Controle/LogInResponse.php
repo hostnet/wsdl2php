@@ -21,7 +21,7 @@ class LogInResponse
      */
     public function setLogInResult($val)
     {
-        $this->LogInResult = (int)$val;
+        $this->LogInResult = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class LogInResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = (int)$val;
+        $this->sessionId = $val;
     }
 }

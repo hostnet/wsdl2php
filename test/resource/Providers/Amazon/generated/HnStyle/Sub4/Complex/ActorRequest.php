@@ -52,7 +52,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for actor');
         }
-        $this->actor = (int)$val;
+        $this->actor = $val;
     }
 
     /**
@@ -64,7 +64,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (int)$val;
+        $this->page = $val;
     }
 
     /**
@@ -76,7 +76,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = (int)$val;
+        $this->mode = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (int)$val;
+        $this->tag = $val;
     }
 
     /**
@@ -100,7 +100,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (int)$val;
+        $this->type = $val;
     }
 
     /**
@@ -112,7 +112,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (int)$val;
+        $this->devtag = $val;
     }
 
     /**
@@ -124,7 +124,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = (int)$val;
+        $this->sort = $val;
     }
 
     /**
@@ -136,7 +136,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = (int)$val;
+        $this->variations = $val;
     }
 
     /**
@@ -148,6 +148,6 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (int)$val;
+        $this->locale = $val;
     }
 }

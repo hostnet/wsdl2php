@@ -38,7 +38,7 @@ class AddLiveAuctionItemResponseType extends
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
 	}
 
 	/**
@@ -47,7 +47,7 @@ class AddLiveAuctionItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = (int)$val;
+        $this->Fees = $val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class AddLiveAuctionItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = $val;
 	}
 
 	/**
@@ -71,6 +71,6 @@ class AddLiveAuctionItemResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Category2ID');
         }
-        $this->Category2ID = (int)$val;
+        $this->Category2ID = $val;
 	}
 }

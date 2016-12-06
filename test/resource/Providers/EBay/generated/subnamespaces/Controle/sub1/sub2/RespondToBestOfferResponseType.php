@@ -22,6 +22,6 @@ class RespondToBestOfferResponseType extends
 	 */
 	public function setRespondToBestOffer($val)
 	{
-        $this->RespondToBestOffer = (int)$val;
+        $this->RespondToBestOffer = $val;
 	}
 }

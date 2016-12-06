@@ -21,6 +21,6 @@ class SkUarrayType
      */
     public function setSKU($val)
     {
-        $this->SKU = (int)$val;
+        $this->SKU = $val;
     }
 }

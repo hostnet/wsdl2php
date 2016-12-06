@@ -24,7 +24,7 @@ class Update
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = (int)$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class Update
      */
     public function setBankAccount($val)
     {
-        $this->BankAccount = (int)$val;
+        $this->BankAccount = $val;
     }
 }

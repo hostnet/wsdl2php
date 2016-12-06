@@ -70,7 +70,7 @@ class GetAccountResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountID');
         }
-        $this->AccountID = (int)$val;
+        $this->AccountID = $val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetAccountResponseType extends
      */
     public function setAccountSummary($val)
     {
-        $this->AccountSummary = (int)$val;
+        $this->AccountSummary = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetAccountResponseType extends
      */
     public function setCurrency($val)
     {
-        $this->Currency = (int)$val;
+        $this->Currency = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetAccountResponseType extends
      */
     public function setAccountEntries($val)
     {
-        $this->AccountEntries = (int)$val;
+        $this->AccountEntries = $val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetAccountResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = $val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetAccountResponseType extends
      */
     public function setHasMoreEntries($val)
     {
-        $this->HasMoreEntries = (int)$val;
+        $this->HasMoreEntries = $val;
     }
 
     /**
@@ -127,7 +127,7 @@ class GetAccountResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->EntriesPerPage = (int)$val;
+        $this->EntriesPerPage = $val;
     }
 
     /**
@@ -139,6 +139,6 @@ class GetAccountResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = (int)$val;
+        $this->PageNumber = $val;
     }
 }

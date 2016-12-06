@@ -56,7 +56,7 @@ class BuyingGuideType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = (int)$val;
+        $this->Name = $val;
     }
 
     /**
@@ -65,7 +65,7 @@ class BuyingGuideType
      */
     public function setURL($val)
     {
-        $this->URL = (int)$val;
+        $this->URL = $val;
     }
 
     /**
@@ -77,7 +77,7 @@ class BuyingGuideType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = $val;
     }
 
     /**
@@ -89,7 +89,7 @@ class BuyingGuideType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ProductFinderID = (int)$val;
+        $this->ProductFinderID = $val;
     }
 
     /**
@@ -98,6 +98,6 @@ class BuyingGuideType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

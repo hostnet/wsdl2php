@@ -30,7 +30,7 @@ class ReminderCustomizationType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DurationInDays = (int)$val;
+        $this->DurationInDays = $val;
     }
 
     /**
@@ -39,6 +39,6 @@ class ReminderCustomizationType
      */
     public function setInclude($val)
     {
-        $this->Include = (int)$val;
+        $this->Include = $val;
     }
 }

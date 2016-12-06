@@ -47,7 +47,7 @@ class LiveAuctionCatalogType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UserCatalogID = (int)$val;
+        $this->UserCatalogID = $val;
     }
 
     /**
@@ -59,7 +59,7 @@ class LiveAuctionCatalogType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CatalogName');
         }
-        $this->CatalogName = (int)$val;
+        $this->CatalogName = $val;
     }
 
     /**
@@ -68,7 +68,7 @@ class LiveAuctionCatalogType
      */
     public function setSchedule($val)
     {
-        $this->Schedule = (int)$val;
+        $this->Schedule = $val;
     }
 
     /**
@@ -77,6 +77,6 @@ class LiveAuctionCatalogType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

@@ -48,7 +48,7 @@ class GetWantItNowSearchResultsResponseType extends
      */
     public function setWantItNowPostArray($val)
     {
-        $this->WantItNowPostArray = (int)$val;
+        $this->WantItNowPostArray = $val;
     }
 
     /**
@@ -57,7 +57,7 @@ class GetWantItNowSearchResultsResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->HasMoreItems = (int)$val;
+        $this->HasMoreItems = $val;
     }
 
     /**
@@ -69,7 +69,7 @@ class GetWantItNowSearchResultsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemsPerPage = (int)$val;
+        $this->ItemsPerPage = $val;
     }
 
     /**
@@ -81,7 +81,7 @@ class GetWantItNowSearchResultsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = (int)$val;
+        $this->PageNumber = $val;
     }
 
     /**
@@ -90,6 +90,6 @@ class GetWantItNowSearchResultsResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = (int)$val;
+        $this->PaginationResult = $val;
     }
 }

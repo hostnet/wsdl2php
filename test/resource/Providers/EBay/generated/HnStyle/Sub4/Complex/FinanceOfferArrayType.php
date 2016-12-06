@@ -21,6 +21,6 @@ class FinanceOfferArrayType
      */
     public function setFinanceOffer($val)
     {
-        $this->FinanceOffer = (int)$val;
+        $this->FinanceOffer = $val;
     }
 }

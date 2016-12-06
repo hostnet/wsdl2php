@@ -27,6 +27,6 @@ class GetStoreCategoryUpdateStatusResponseType extends
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = (int)$val;
+        $this->Status = $val;
 	}
 }

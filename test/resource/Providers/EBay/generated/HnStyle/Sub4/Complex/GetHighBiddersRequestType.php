@@ -24,6 +24,6 @@ class GetHighBiddersRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 }

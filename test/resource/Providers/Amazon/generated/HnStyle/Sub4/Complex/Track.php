@@ -24,7 +24,7 @@ class Track
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TrackName');
         }
-        $this->TrackName = (int)$val;
+        $this->TrackName = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class Track
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ByArtist');
         }
-        $this->ByArtist = (int)$val;
+        $this->ByArtist = $val;
     }
 }

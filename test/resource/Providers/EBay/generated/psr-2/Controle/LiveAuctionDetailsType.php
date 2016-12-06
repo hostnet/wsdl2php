@@ -50,7 +50,7 @@ class LiveAuctionDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UserCatalogID = (int)$val;
+        $this->UserCatalogID = $val;
     }
 
     /**
@@ -62,7 +62,7 @@ class LiveAuctionDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ScheduleID = (int)$val;
+        $this->ScheduleID = $val;
     }
 
     /**
@@ -74,7 +74,7 @@ class LiveAuctionDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LotNumber');
         }
-        $this->LotNumber = (int)$val;
+        $this->LotNumber = $val;
     }
 
     /**
@@ -83,7 +83,7 @@ class LiveAuctionDetailsType
      */
     public function setHighEstimate($val)
     {
-        $this->HighEstimate = (int)$val;
+        $this->HighEstimate = $val;
     }
 
     /**
@@ -92,7 +92,7 @@ class LiveAuctionDetailsType
      */
     public function setLowEstimate($val)
     {
-        $this->LowEstimate = (int)$val;
+        $this->LowEstimate = $val;
     }
 
     /**
@@ -101,6 +101,6 @@ class LiveAuctionDetailsType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

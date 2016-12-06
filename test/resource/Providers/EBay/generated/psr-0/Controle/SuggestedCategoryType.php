@@ -32,7 +32,7 @@ class SuggestedCategoryType
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = $val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class SuggestedCategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PercentItemFound = (int)$val;
+        $this->PercentItemFound = $val;
 	}
 
 	/**
@@ -53,6 +53,6 @@ class SuggestedCategoryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

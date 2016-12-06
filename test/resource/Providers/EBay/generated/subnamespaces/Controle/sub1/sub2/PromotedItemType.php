@@ -97,7 +97,7 @@ class PromotedItemType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
 	}
 
 	/**
@@ -109,7 +109,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = $val;
 	}
 
 	/**
@@ -121,7 +121,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SelfHostedURL');
         }
-        $this->SelfHostedURL = (int)$val;
+        $this->SelfHostedURL = $val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class PromotedItemType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Position = (int)$val;
+        $this->Position = $val;
 	}
 
 	/**
@@ -142,7 +142,7 @@ class PromotedItemType
 	 */
 	public function setPromotionPrice($val)
 	{
-        $this->PromotionPrice = (int)$val;
+        $this->PromotionPrice = $val;
 	}
 
 	/**
@@ -151,7 +151,7 @@ class PromotedItemType
 	 */
 	public function setPromotionPriceType($val)
 	{
-        $this->PromotionPriceType = (int)$val;
+        $this->PromotionPriceType = $val;
 	}
 
 	/**
@@ -160,7 +160,7 @@ class PromotedItemType
 	 */
 	public function setSelectionType($val)
 	{
-        $this->SelectionType = (int)$val;
+        $this->SelectionType = $val;
 	}
 
 	/**
@@ -172,7 +172,7 @@ class PromotedItemType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = (int)$val;
+        $this->Title = $val;
 	}
 
 	/**
@@ -181,7 +181,7 @@ class PromotedItemType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = (int)$val;
+        $this->ListingType = $val;
 	}
 
 	/**
@@ -190,7 +190,7 @@ class PromotedItemType
 	 */
 	public function setPromotionDetails($val)
 	{
-        $this->PromotionDetails = (int)$val;
+        $this->PromotionDetails = $val;
 	}
 
 	/**
@@ -199,7 +199,7 @@ class PromotedItemType
 	 */
 	public function setTimeLeft($val)
 	{
-        $this->TimeLeft = (int)$val;
+        $this->TimeLeft = $val;
 	}
 
 	/**
@@ -208,6 +208,6 @@ class PromotedItemType
 	 */
 	public function setAny($val)
 	{
-        $this->any = (int)$val;
+        $this->any = $val;
 	}
 }

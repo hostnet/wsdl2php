@@ -30,6 +30,6 @@ class GetCharitiesResponseType extends
 	 */
 	public function setCharity($val)
 	{
-        $this->Charity = (int)$val;
+        $this->Charity = $val;
 	}
 }

@@ -20,6 +20,6 @@ class GetByDebtor
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DebtorId = (int)$val;
+        $this->DebtorId = $val;
     }
 }

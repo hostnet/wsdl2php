@@ -72,7 +72,7 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPaymentStatus($val)
     {
-        $this->PaymentStatus = (int)$val;
+        $this->PaymentStatus = $val;
     }
 
     /**
@@ -81,7 +81,7 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPaymentTimeFrom($val)
     {
-        $this->PaymentTimeFrom = (int)$val;
+        $this->PaymentTimeFrom = $val;
     }
 
     /**
@@ -90,7 +90,7 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPaymentTimeTo($val)
     {
-        $this->PaymentTimeTo = (int)$val;
+        $this->PaymentTimeTo = $val;
     }
 
     /**
@@ -99,6 +99,6 @@ class GetSellerPaymentsRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = (int)$val;
+        $this->Pagination = $val;
     }
 }

@@ -49,7 +49,7 @@ class GetPictureManagerDetailsRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FolderID = (int)$val;
+        $this->FolderID = $val;
     }
 
     /**
@@ -61,7 +61,7 @@ class GetPictureManagerDetailsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PictureURL');
         }
-        $this->PictureURL = (int)$val;
+        $this->PictureURL = $val;
     }
 
     /**
@@ -70,6 +70,6 @@ class GetPictureManagerDetailsRequestType extends
      */
     public function setPictureManagerDetailLevel($val)
     {
-        $this->PictureManagerDetailLevel = (int)$val;
+        $this->PictureManagerDetailLevel = $val;
     }
 }

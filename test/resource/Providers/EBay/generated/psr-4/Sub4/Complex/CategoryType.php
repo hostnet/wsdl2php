@@ -194,7 +194,7 @@ class CategoryType
      */
     public function setBestOfferEnabled($val)
     {
-        $this->BestOfferEnabled = (int)$val;
+        $this->BestOfferEnabled = $val;
     }
 
     /**
@@ -203,7 +203,7 @@ class CategoryType
      */
     public function setAutoPayEnabled($val)
     {
-        $this->AutoPayEnabled = (int)$val;
+        $this->AutoPayEnabled = $val;
     }
 
     /**
@@ -212,7 +212,7 @@ class CategoryType
      */
     public function setB2BVATEnabled($val)
     {
-        $this->B2BVATEnabled = (int)$val;
+        $this->B2BVATEnabled = $val;
     }
 
     /**
@@ -221,7 +221,7 @@ class CategoryType
      */
     public function setCatalogEnabled($val)
     {
-        $this->CatalogEnabled = (int)$val;
+        $this->CatalogEnabled = $val;
     }
 
     /**
@@ -233,7 +233,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = (int)$val;
+        $this->CategoryID = $val;
     }
 
     /**
@@ -245,7 +245,7 @@ class CategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CategoryLevel = (int)$val;
+        $this->CategoryLevel = $val;
     }
 
     /**
@@ -257,7 +257,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryName');
         }
-        $this->CategoryName = (int)$val;
+        $this->CategoryName = $val;
     }
 
     /**
@@ -269,7 +269,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentID');
         }
-        $this->CategoryParentID = (int)$val;
+        $this->CategoryParentID = $val;
     }
 
     /**
@@ -281,7 +281,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryParentName');
         }
-        $this->CategoryParentName = (int)$val;
+        $this->CategoryParentName = $val;
     }
 
     /**
@@ -293,7 +293,7 @@ class CategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ProductFinderID = (int)$val;
+        $this->ProductFinderID = $val;
     }
 
     /**
@@ -302,7 +302,7 @@ class CategoryType
      */
     public function setProductSearchPageAvailable($val)
     {
-        $this->ProductSearchPageAvailable = (int)$val;
+        $this->ProductSearchPageAvailable = $val;
     }
 
     /**
@@ -311,7 +311,7 @@ class CategoryType
      */
     public function setProductFinderAvailable($val)
     {
-        $this->ProductFinderAvailable = (int)$val;
+        $this->ProductFinderAvailable = $val;
     }
 
     /**
@@ -320,7 +320,7 @@ class CategoryType
      */
     public function setProductFinderIDs($val)
     {
-        $this->ProductFinderIDs = (int)$val;
+        $this->ProductFinderIDs = $val;
     }
 
     /**
@@ -329,7 +329,7 @@ class CategoryType
      */
     public function setCharacteristicsSets($val)
     {
-        $this->CharacteristicsSets = (int)$val;
+        $this->CharacteristicsSets = $val;
     }
 
     /**
@@ -338,7 +338,7 @@ class CategoryType
      */
     public function setExpired($val)
     {
-        $this->Expired = (int)$val;
+        $this->Expired = $val;
     }
 
     /**
@@ -347,7 +347,7 @@ class CategoryType
      */
     public function setIntlAutosFixedCat($val)
     {
-        $this->IntlAutosFixedCat = (int)$val;
+        $this->IntlAutosFixedCat = $val;
     }
 
     /**
@@ -356,7 +356,7 @@ class CategoryType
      */
     public function setLeafCategory($val)
     {
-        $this->LeafCategory = (int)$val;
+        $this->LeafCategory = $val;
     }
 
     /**
@@ -365,7 +365,7 @@ class CategoryType
      */
     public function setVirtual($val)
     {
-        $this->Virtual = (int)$val;
+        $this->Virtual = $val;
     }
 
     /**
@@ -377,7 +377,7 @@ class CategoryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NumOfItems = (int)$val;
+        $this->NumOfItems = $val;
     }
 
     /**
@@ -386,7 +386,7 @@ class CategoryType
      */
     public function setSellerGuaranteeEligible($val)
     {
-        $this->SellerGuaranteeEligible = (int)$val;
+        $this->SellerGuaranteeEligible = $val;
     }
 
     /**
@@ -395,7 +395,7 @@ class CategoryType
      */
     public function setORPA($val)
     {
-        $this->ORPA = (int)$val;
+        $this->ORPA = $val;
     }
 
     /**
@@ -404,7 +404,7 @@ class CategoryType
      */
     public function setORRA($val)
     {
-        $this->ORRA = (int)$val;
+        $this->ORRA = $val;
     }
 
     /**
@@ -413,7 +413,7 @@ class CategoryType
      */
     public function setLSD($val)
     {
-        $this->LSD = (int)$val;
+        $this->LSD = $val;
     }
 
     /**
@@ -425,7 +425,7 @@ class CategoryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keywords');
         }
-        $this->Keywords = (int)$val;
+        $this->Keywords = $val;
     }
 
     /**
@@ -434,6 +434,6 @@ class CategoryType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

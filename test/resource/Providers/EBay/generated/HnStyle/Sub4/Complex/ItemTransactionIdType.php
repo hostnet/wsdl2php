@@ -28,7 +28,7 @@ class ItemTransactionIdType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class ItemTransactionIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = (int)$val;
+        $this->TransactionID = $val;
     }
 
     /**
@@ -49,6 +49,6 @@ class ItemTransactionIdType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

@@ -24,7 +24,7 @@ class AuthHeader
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Username');
         }
-        $this->Username = (int)$val;
+        $this->Username = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class AuthHeader
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Token');
         }
-        $this->Token = (int)$val;
+        $this->Token = $val;
     }
 }

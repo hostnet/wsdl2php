@@ -17,6 +17,6 @@ class GetCurrentResponse
      */
     public function setSVWGetCurrentResult($val)
     {
-        $this->SVW_GetCurrentResult = (int)$val;
+        $this->SVW_GetCurrentResult = $val;
     }
 }

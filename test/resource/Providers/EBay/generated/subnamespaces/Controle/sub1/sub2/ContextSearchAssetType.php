@@ -33,7 +33,7 @@ class ContextSearchAssetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Keyword');
         }
-        $this->Keyword = (int)$val;
+        $this->Keyword = $val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class ContextSearchAssetType
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = (int)$val;
+        $this->Category = $val;
 	}
 
 	/**
@@ -54,6 +54,6 @@ class ContextSearchAssetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Ranking = (int)$val;
+        $this->Ranking = $val;
 	}
 }

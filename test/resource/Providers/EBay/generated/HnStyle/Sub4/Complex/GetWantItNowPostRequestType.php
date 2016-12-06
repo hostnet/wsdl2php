@@ -25,6 +25,6 @@ class GetWantItNowPostRequestType extends
      */
     public function setPostID($val)
     {
-        $this->PostID = (int)$val;
+        $this->PostID = $val;
     }
 }

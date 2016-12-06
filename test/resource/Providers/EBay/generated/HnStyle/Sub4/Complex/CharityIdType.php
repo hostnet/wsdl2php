@@ -24,7 +24,7 @@ class CharityIdType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for _');
         }
-        $this->_ = (int)$val;
+        $this->_ = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class CharityIdType
      */
     public function setType($val)
     {
-        $this->type = (int)$val;
+        $this->type = $val;
     }
 }

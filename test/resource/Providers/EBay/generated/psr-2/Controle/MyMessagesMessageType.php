@@ -105,7 +105,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Sender');
         }
-        $this->Sender = (int)$val;
+        $this->Sender = $val;
     }
 
     /**
@@ -117,7 +117,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->RecipientUserID = (int)$val;
+        $this->RecipientUserID = $val;
     }
 
     /**
@@ -129,7 +129,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SendToName');
         }
-        $this->SendToName = (int)$val;
+        $this->SendToName = $val;
     }
 
     /**
@@ -141,7 +141,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = (int)$val;
+        $this->Subject = $val;
     }
 
     /**
@@ -150,7 +150,7 @@ class MyMessagesMessageType
      */
     public function setMessageID($val)
     {
-        $this->MessageID = (int)$val;
+        $this->MessageID = $val;
     }
 
     /**
@@ -162,7 +162,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalMessageID');
         }
-        $this->ExternalMessageID = (int)$val;
+        $this->ExternalMessageID = $val;
     }
 
     /**
@@ -174,7 +174,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContentType');
         }
-        $this->ContentType = (int)$val;
+        $this->ContentType = $val;
     }
 
     /**
@@ -186,7 +186,7 @@ class MyMessagesMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = (int)$val;
+        $this->Text = $val;
     }
 
     /**
@@ -195,7 +195,7 @@ class MyMessagesMessageType
      */
     public function setFlagged($val)
     {
-        $this->Flagged = (int)$val;
+        $this->Flagged = $val;
     }
 
     /**
@@ -204,7 +204,7 @@ class MyMessagesMessageType
      */
     public function setRead($val)
     {
-        $this->Read = (int)$val;
+        $this->Read = $val;
     }
 
     /**
@@ -213,7 +213,7 @@ class MyMessagesMessageType
      */
     public function setCreationDate($val)
     {
-        $this->CreationDate = (int)$val;
+        $this->CreationDate = $val;
     }
 
     /**
@@ -222,7 +222,7 @@ class MyMessagesMessageType
      */
     public function setReceiveDate($val)
     {
-        $this->ReceiveDate = (int)$val;
+        $this->ReceiveDate = $val;
     }
 
     /**
@@ -231,7 +231,7 @@ class MyMessagesMessageType
      */
     public function setExpirationDate($val)
     {
-        $this->ExpirationDate = (int)$val;
+        $this->ExpirationDate = $val;
     }
 
     /**
@@ -240,7 +240,7 @@ class MyMessagesMessageType
      */
     public function setItemID($val)
     {
-        $this->ItemID = (int)$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -249,7 +249,7 @@ class MyMessagesMessageType
      */
     public function setResponseDetails($val)
     {
-        $this->ResponseDetails = (int)$val;
+        $this->ResponseDetails = $val;
     }
 
     /**
@@ -258,7 +258,7 @@ class MyMessagesMessageType
      */
     public function setForwardDetails($val)
     {
-        $this->ForwardDetails = (int)$val;
+        $this->ForwardDetails = $val;
     }
 
     /**
@@ -267,7 +267,7 @@ class MyMessagesMessageType
      */
     public function setFolder($val)
     {
-        $this->Folder = (int)$val;
+        $this->Folder = $val;
     }
 
     /**
@@ -276,6 +276,6 @@ class MyMessagesMessageType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

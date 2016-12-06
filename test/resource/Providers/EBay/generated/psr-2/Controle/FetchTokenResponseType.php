@@ -36,7 +36,7 @@ class FetchTokenResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->eBayAuthToken = (int)$val;
+        $this->eBayAuthToken = $val;
     }
 
     /**
@@ -45,6 +45,6 @@ class FetchTokenResponseType extends
      */
     public function setHardExpirationTime($val)
     {
-        $this->HardExpirationTime = (int)$val;
+        $this->HardExpirationTime = $val;
     }
 }

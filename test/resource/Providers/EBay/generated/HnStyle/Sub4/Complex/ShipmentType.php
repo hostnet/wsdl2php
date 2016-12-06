@@ -116,7 +116,7 @@ class ShipmentType
      */
     public function setEstimatedDeliveryDate($val)
     {
-        $this->EstimatedDeliveryDate = (int)$val;
+        $this->EstimatedDeliveryDate = $val;
     }
 
     /**
@@ -125,7 +125,7 @@ class ShipmentType
      */
     public function setInsuredValue($val)
     {
-        $this->InsuredValue = (int)$val;
+        $this->InsuredValue = $val;
     }
 
     /**
@@ -134,7 +134,7 @@ class ShipmentType
      */
     public function setPackageDepth($val)
     {
-        $this->PackageDepth = (int)$val;
+        $this->PackageDepth = $val;
     }
 
     /**
@@ -143,7 +143,7 @@ class ShipmentType
      */
     public function setPackageLength($val)
     {
-        $this->PackageLength = (int)$val;
+        $this->PackageLength = $val;
     }
 
     /**
@@ -152,7 +152,7 @@ class ShipmentType
      */
     public function setPackageWidth($val)
     {
-        $this->PackageWidth = (int)$val;
+        $this->PackageWidth = $val;
     }
 
     /**
@@ -164,7 +164,7 @@ class ShipmentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalShipmentID');
         }
-        $this->PayPalShipmentID = (int)$val;
+        $this->PayPalShipmentID = $val;
     }
 
     /**
@@ -173,7 +173,7 @@ class ShipmentType
      */
     public function setShipmentID($val)
     {
-        $this->ShipmentID = (int)$val;
+        $this->ShipmentID = $val;
     }
 
     /**
@@ -182,7 +182,7 @@ class ShipmentType
      */
     public function setPostageTotal($val)
     {
-        $this->PostageTotal = (int)$val;
+        $this->PostageTotal = $val;
     }
 
     /**
@@ -191,7 +191,7 @@ class ShipmentType
      */
     public function setPrintedTime($val)
     {
-        $this->PrintedTime = (int)$val;
+        $this->PrintedTime = $val;
     }
 
     /**
@@ -200,7 +200,7 @@ class ShipmentType
      */
     public function setShipFromAddress($val)
     {
-        $this->ShipFromAddress = (int)$val;
+        $this->ShipFromAddress = $val;
     }
 
     /**
@@ -209,7 +209,7 @@ class ShipmentType
      */
     public function setShippingAddress($val)
     {
-        $this->ShippingAddress = (int)$val;
+        $this->ShippingAddress = $val;
     }
 
     /**
@@ -218,7 +218,7 @@ class ShipmentType
      */
     public function setShippingCarrierUsed($val)
     {
-        $this->ShippingCarrierUsed = (int)$val;
+        $this->ShippingCarrierUsed = $val;
     }
 
     /**
@@ -227,7 +227,7 @@ class ShipmentType
      */
     public function setShippingFeature($val)
     {
-        $this->ShippingFeature = (int)$val;
+        $this->ShippingFeature = $val;
     }
 
     /**
@@ -236,7 +236,7 @@ class ShipmentType
      */
     public function setShippingPackage($val)
     {
-        $this->ShippingPackage = (int)$val;
+        $this->ShippingPackage = $val;
     }
 
     /**
@@ -245,7 +245,7 @@ class ShipmentType
      */
     public function setShippingServiceUsed($val)
     {
-        $this->ShippingServiceUsed = (int)$val;
+        $this->ShippingServiceUsed = $val;
     }
 
     /**
@@ -257,7 +257,7 @@ class ShipmentType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
-        $this->ShipmentTrackingNumber = (int)$val;
+        $this->ShipmentTrackingNumber = $val;
     }
 
     /**
@@ -266,7 +266,7 @@ class ShipmentType
      */
     public function setWeightMajor($val)
     {
-        $this->WeightMajor = (int)$val;
+        $this->WeightMajor = $val;
     }
 
     /**
@@ -275,7 +275,7 @@ class ShipmentType
      */
     public function setWeightMinor($val)
     {
-        $this->WeightMinor = (int)$val;
+        $this->WeightMinor = $val;
     }
 
     /**
@@ -284,7 +284,7 @@ class ShipmentType
      */
     public function setItemTransactionID($val)
     {
-        $this->ItemTransactionID = (int)$val;
+        $this->ItemTransactionID = $val;
     }
 
     /**
@@ -293,7 +293,7 @@ class ShipmentType
      */
     public function setDeliveryDate($val)
     {
-        $this->DeliveryDate = (int)$val;
+        $this->DeliveryDate = $val;
     }
 
     /**
@@ -302,7 +302,7 @@ class ShipmentType
      */
     public function setDeliveryStatus($val)
     {
-        $this->DeliveryStatus = (int)$val;
+        $this->DeliveryStatus = $val;
     }
 
     /**
@@ -311,7 +311,7 @@ class ShipmentType
      */
     public function setRefundGrantedTime($val)
     {
-        $this->RefundGrantedTime = (int)$val;
+        $this->RefundGrantedTime = $val;
     }
 
     /**
@@ -320,7 +320,7 @@ class ShipmentType
      */
     public function setRefundRequestedTime($val)
     {
-        $this->RefundRequestedTime = (int)$val;
+        $this->RefundRequestedTime = $val;
     }
 
     /**
@@ -329,7 +329,7 @@ class ShipmentType
      */
     public function setStatus($val)
     {
-        $this->Status = (int)$val;
+        $this->Status = $val;
     }
 
     /**
@@ -338,6 +338,6 @@ class ShipmentType
      */
     public function setAny($val)
     {
-        $this->any = (int)$val;
+        $this->any = $val;
     }
 }

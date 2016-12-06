@@ -43,7 +43,7 @@ class GetMyeBaySellingRequestType extends
      */
     public function setScheduledList($val)
     {
-        $this->ScheduledList = (int)$val;
+        $this->ScheduledList = $val;
     }
 
     /**
@@ -52,7 +52,7 @@ class GetMyeBaySellingRequestType extends
      */
     public function setActiveList($val)
     {
-        $this->ActiveList = (int)$val;
+        $this->ActiveList = $val;
     }
 
     /**
@@ -61,7 +61,7 @@ class GetMyeBaySellingRequestType extends
      */
     public function setSoldList($val)
     {
-        $this->SoldList = (int)$val;
+        $this->SoldList = $val;
     }
 
     /**
@@ -70,6 +70,6 @@ class GetMyeBaySellingRequestType extends
      */
     public function setUnsoldList($val)
     {
-        $this->UnsoldList = (int)$val;
+        $this->UnsoldList = $val;
     }
 }

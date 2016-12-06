@@ -40,7 +40,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for seller_id');
         }
-        $this->seller_id = (int)$val;
+        $this->seller_id = $val;
     }
 
     /**
@@ -52,7 +52,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = (int)$val;
+        $this->tag = $val;
     }
 
     /**
@@ -64,7 +64,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = (int)$val;
+        $this->type = $val;
     }
 
     /**
@@ -76,7 +76,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = (int)$val;
+        $this->devtag = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = (int)$val;
+        $this->page = $val;
     }
 
     /**
@@ -100,6 +100,6 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = (int)$val;
+        $this->locale = $val;
     }
 }

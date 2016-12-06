@@ -24,6 +24,6 @@ class ProductArrayType
      */
     public function setProduct($val)
     {
-        $this->Product = (int)$val;
+        $this->Product = $val;
     }
 }
