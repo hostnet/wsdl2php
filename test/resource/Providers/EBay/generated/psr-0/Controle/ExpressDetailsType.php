@@ -51,7 +51,7 @@ class ExpressDetailsType
 	 */
 	public function setExpressLargeImage($val)
 	{
-        $this->ExpressLargeImage = ()$val;
+        $this->ExpressLargeImage = $val;
 	}
 
 	/**
@@ -60,7 +60,7 @@ class ExpressDetailsType
 	 */
 	public function setExpressSmallImage($val)
 	{
-        $this->ExpressSmallImage = ()$val;
+        $this->ExpressSmallImage = $val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class ExpressDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Condition');
         }
-        $this->Condition = ()$val;
+        $this->Condition = $val;
 	}
 
 	/**
@@ -81,6 +81,6 @@ class ExpressDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

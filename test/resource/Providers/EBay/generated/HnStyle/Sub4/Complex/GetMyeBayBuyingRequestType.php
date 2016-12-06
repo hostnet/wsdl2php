@@ -61,7 +61,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setWatchList($val)
     {
-        $this->WatchList = ()$val;
+        $this->WatchList = $val;
     }
 
     /**
@@ -70,7 +70,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setBidList($val)
     {
-        $this->BidList = ()$val;
+        $this->BidList = $val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setBestOfferList($val)
     {
-        $this->BestOfferList = ()$val;
+        $this->BestOfferList = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setWonList($val)
     {
-        $this->WonList = ()$val;
+        $this->WonList = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setLostList($val)
     {
-        $this->LostList = ()$val;
+        $this->LostList = $val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->FavoriteSearches = ()$val;
+        $this->FavoriteSearches = $val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->FavoriteSellers = ()$val;
+        $this->FavoriteSellers = $val;
     }
 
     /**
@@ -124,6 +124,6 @@ class GetMyeBayBuyingRequestType extends
      */
     public function setSecondChanceOffer($val)
     {
-        $this->SecondChanceOffer = ()$val;
+        $this->SecondChanceOffer = $val;
     }
 }

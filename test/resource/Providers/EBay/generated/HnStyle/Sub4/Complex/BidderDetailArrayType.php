@@ -22,6 +22,6 @@ class BidderDetailArrayType
      */
     public function setBidderDetail($val)
     {
-        $this->BidderDetail = ()$val;
+        $this->BidderDetail = $val;
     }
 }

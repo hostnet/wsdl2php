@@ -39,7 +39,7 @@ class StoreLogoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LogoID = ()$val;
+        $this->LogoID = $val;
 	}
 
 	/**
@@ -51,7 +51,7 @@ class StoreLogoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -60,7 +60,7 @@ class StoreLogoType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = ()$val;
+        $this->URL = $val;
 	}
 
 	/**
@@ -69,6 +69,6 @@ class StoreLogoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

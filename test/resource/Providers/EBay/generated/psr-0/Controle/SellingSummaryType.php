@@ -51,7 +51,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ActiveAuctionCount = ()$val;
+        $this->ActiveAuctionCount = $val;
 	}
 
 	/**
@@ -63,7 +63,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AuctionSellingCount = ()$val;
+        $this->AuctionSellingCount = $val;
 	}
 
 	/**
@@ -75,7 +75,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AuctionBidCount = ()$val;
+        $this->AuctionBidCount = $val;
 	}
 
 	/**
@@ -84,7 +84,7 @@ class SellingSummaryType
 	 */
 	public function setTotalAuctionSellingValue($val)
 	{
-        $this->TotalAuctionSellingValue = ()$val;
+        $this->TotalAuctionSellingValue = $val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalSoldCount = ()$val;
+        $this->TotalSoldCount = $val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class SellingSummaryType
 	 */
 	public function setTotalSoldValue($val)
 	{
-        $this->TotalSoldValue = ()$val;
+        $this->TotalSoldValue = $val;
 	}
 
 	/**
@@ -117,6 +117,6 @@ class SellingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->SoldDurationInDays = ()$val;
+        $this->SoldDurationInDays = $val;
 	}
 }

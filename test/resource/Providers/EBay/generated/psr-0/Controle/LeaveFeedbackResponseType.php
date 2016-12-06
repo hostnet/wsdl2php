@@ -27,6 +27,6 @@ class LeaveFeedbackResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = ()$val;
+        $this->FeedbackID = $val;
 	}
 }

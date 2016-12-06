@@ -45,7 +45,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingTipMessageID');
         }
-        $this->ListingTipMessageID = ()$val;
+        $this->ListingTipMessageID = $val;
 	}
 
 	/**
@@ -57,7 +57,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShortMessage');
         }
-        $this->ShortMessage = ()$val;
+        $this->ShortMessage = $val;
 	}
 
 	/**
@@ -69,7 +69,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LongMessage');
         }
-        $this->LongMessage = ()$val;
+        $this->LongMessage = $val;
 	}
 
 	/**
@@ -81,7 +81,7 @@ class ListingTipMessageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HelpURLPath');
         }
-        $this->HelpURLPath = ()$val;
+        $this->HelpURLPath = $val;
 	}
 
 	/**
@@ -90,6 +90,6 @@ class ListingTipMessageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

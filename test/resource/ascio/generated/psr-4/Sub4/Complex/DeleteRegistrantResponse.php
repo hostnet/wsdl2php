@@ -17,6 +17,6 @@ class DeleteRegistrantResponse
      */
     public function setDeleteRegistrantResult($val)
     {
-        $this->DeleteRegistrantResult = ()$val;
+        $this->DeleteRegistrantResult = $val;
     }
 }

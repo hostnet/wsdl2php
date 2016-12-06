@@ -21,7 +21,7 @@ class CreateNameServerResponse
 	 */
 	public function setCreateNameServerResult($val)
 	{
-        $this->CreateNameServerResult = ()$val;
+        $this->CreateNameServerResult = $val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class CreateNameServerResponse
 	 */
 	public function setNameServer($val)
 	{
-        $this->nameServer = ()$val;
+        $this->nameServer = $val;
 	}
 }

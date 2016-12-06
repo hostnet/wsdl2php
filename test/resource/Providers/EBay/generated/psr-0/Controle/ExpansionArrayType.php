@@ -34,7 +34,7 @@ class ExpansionArrayType
 	 */
 	public function setExpansionItem($val)
 	{
-        $this->ExpansionItem = ()$val;
+        $this->ExpansionItem = $val;
 	}
 
 	/**
@@ -46,6 +46,6 @@ class ExpansionArrayType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalAvailable = ()$val;
+        $this->TotalAvailable = $val;
 	}
 }

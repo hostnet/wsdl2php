@@ -21,6 +21,6 @@ class PricingRecommendationsType
 	 */
 	public function setProductInfo($val)
 	{
-        $this->ProductInfo = ()$val;
+        $this->ProductInfo = $val;
 	}
 }

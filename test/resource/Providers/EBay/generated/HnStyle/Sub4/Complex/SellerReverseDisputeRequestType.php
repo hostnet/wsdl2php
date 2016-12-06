@@ -34,7 +34,7 @@ class SellerReverseDisputeRequestType extends
      */
     public function setDisputeID($val)
     {
-        $this->DisputeID = ()$val;
+        $this->DisputeID = $val;
     }
 
     /**
@@ -43,6 +43,6 @@ class SellerReverseDisputeRequestType extends
      */
     public function setDisputeResolutionReason($val)
     {
-        $this->DisputeResolutionReason = ()$val;
+        $this->DisputeResolutionReason = $val;
     }
 }

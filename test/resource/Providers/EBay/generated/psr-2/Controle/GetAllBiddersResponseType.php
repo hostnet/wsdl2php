@@ -49,7 +49,7 @@ class GetAllBiddersResponseType extends
      */
     public function setBidArray($val)
     {
-        $this->BidArray = ()$val;
+        $this->BidArray = $val;
     }
 
     /**
@@ -58,7 +58,7 @@ class GetAllBiddersResponseType extends
      */
     public function setHighBidder($val)
     {
-        $this->HighBidder = ()$val;
+        $this->HighBidder = $val;
     }
 
     /**
@@ -67,7 +67,7 @@ class GetAllBiddersResponseType extends
      */
     public function setHighestBid($val)
     {
-        $this->HighestBid = ()$val;
+        $this->HighestBid = $val;
     }
 
     /**
@@ -76,6 +76,6 @@ class GetAllBiddersResponseType extends
      */
     public function setListingStatus($val)
     {
-        $this->ListingStatus = ()$val;
+        $this->ListingStatus = $val;
     }
 }

@@ -37,7 +37,7 @@ class FeedbackInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CommentText');
         }
-        $this->CommentText = ()$val;
+        $this->CommentText = $val;
 	}
 
 	/**
@@ -46,7 +46,7 @@ class FeedbackInfoType
 	 */
 	public function setCommentType($val)
 	{
-        $this->CommentType = ()$val;
+        $this->CommentType = $val;
 	}
 
 	/**
@@ -55,7 +55,7 @@ class FeedbackInfoType
 	 */
 	public function setTargetUser($val)
 	{
-        $this->TargetUser = ()$val;
+        $this->TargetUser = $val;
 	}
 
 	/**
@@ -64,6 +64,6 @@ class FeedbackInfoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

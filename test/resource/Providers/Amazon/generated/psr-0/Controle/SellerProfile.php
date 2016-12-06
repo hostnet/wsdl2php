@@ -17,6 +17,6 @@ class SellerProfile
 	 */
 	public function setSellerProfileDetails($val)
 	{
-        $this->SellerProfileDetails = ()$val;
+        $this->SellerProfileDetails = $val;
 	}
 }

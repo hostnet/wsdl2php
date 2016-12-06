@@ -54,7 +54,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = ()$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -63,7 +63,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setMailMessageType($val)
     {
-        $this->MailMessageType = ()$val;
+        $this->MailMessageType = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setMessageStatus($val)
     {
-        $this->MessageStatus = ()$val;
+        $this->MessageStatus = $val;
     }
 
     /**
@@ -81,7 +81,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setDisplayToPublic($val)
     {
-        $this->DisplayToPublic = ()$val;
+        $this->DisplayToPublic = $val;
     }
 
     /**
@@ -90,7 +90,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setStartCreationTime($val)
     {
-        $this->StartCreationTime = ()$val;
+        $this->StartCreationTime = $val;
     }
 
     /**
@@ -99,7 +99,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setEndCreationTime($val)
     {
-        $this->EndCreationTime = ()$val;
+        $this->EndCreationTime = $val;
     }
 
     /**
@@ -108,7 +108,7 @@ class GetMemberMessagesRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = ()$val;
+        $this->Pagination = $val;
     }
 
     /**
@@ -120,6 +120,6 @@ class GetMemberMessagesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MemberMessageID');
         }
-        $this->MemberMessageID = ()$val;
+        $this->MemberMessageID = $val;
     }
 }

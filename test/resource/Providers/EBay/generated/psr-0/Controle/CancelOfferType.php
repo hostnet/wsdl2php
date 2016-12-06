@@ -31,7 +31,7 @@ class CancelOfferType
 	 */
 	public function setOffer($val)
 	{
-        $this->Offer = ()$val;
+        $this->Offer = $val;
 	}
 
 	/**
@@ -43,7 +43,7 @@ class CancelOfferType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Explanation');
         }
-        $this->Explanation = ()$val;
+        $this->Explanation = $val;
 	}
 
 	/**
@@ -52,6 +52,6 @@ class CancelOfferType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

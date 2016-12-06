@@ -28,7 +28,7 @@ class CustomerReview
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Rating');
         }
-        $this->Rating = ()$val;
+        $this->Rating = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class CustomerReview
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Summary');
         }
-        $this->Summary = ()$val;
+        $this->Summary = $val;
     }
 
     /**
@@ -52,6 +52,6 @@ class CustomerReview
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comment');
         }
-        $this->Comment = ()$val;
+        $this->Comment = $val;
     }
 }

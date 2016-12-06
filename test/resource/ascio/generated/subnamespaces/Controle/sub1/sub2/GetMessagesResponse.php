@@ -21,7 +21,7 @@ class GetMessagesResponse
 	 */
 	public function setGetMessagesResult($val)
 	{
-        $this->GetMessagesResult = ()$val;
+        $this->GetMessagesResult = $val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class GetMessagesResponse
 	 */
 	public function setMessages($val)
 	{
-        $this->messages = ()$val;
+        $this->messages = $val;
 	}
 }

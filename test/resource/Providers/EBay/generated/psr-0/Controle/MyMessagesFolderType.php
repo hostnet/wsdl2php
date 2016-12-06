@@ -29,7 +29,7 @@ class MyMessagesFolderType
 	 */
 	public function setFolderID($val)
 	{
-        $this->FolderID = ()$val;
+        $this->FolderID = $val;
 	}
 
 	/**
@@ -41,7 +41,7 @@ class MyMessagesFolderType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FolderName');
         }
-        $this->FolderName = ()$val;
+        $this->FolderName = $val;
 	}
 
 	/**
@@ -50,6 +50,6 @@ class MyMessagesFolderType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

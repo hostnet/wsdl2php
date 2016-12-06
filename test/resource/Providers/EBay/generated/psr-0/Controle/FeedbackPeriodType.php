@@ -37,7 +37,7 @@ class FeedbackPeriodType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PeriodInDays = ()$val;
+        $this->PeriodInDays = $val;
 	}
 
 	/**
@@ -49,7 +49,7 @@ class FeedbackPeriodType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Count = ()$val;
+        $this->Count = $val;
 	}
 
 	/**
@@ -58,6 +58,6 @@ class FeedbackPeriodType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

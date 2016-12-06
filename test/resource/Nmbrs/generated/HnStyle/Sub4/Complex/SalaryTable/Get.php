@@ -28,7 +28,7 @@ class Get
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = ()$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class Get
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = ()$val;
+        $this->Period = $val;
     }
 
     /**
@@ -52,6 +52,6 @@ class Get
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = ()$val;
+        $this->Year = $val;
     }
 }

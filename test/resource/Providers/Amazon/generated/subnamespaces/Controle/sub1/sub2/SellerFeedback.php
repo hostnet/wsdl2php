@@ -17,6 +17,6 @@ class SellerFeedback
 	 */
 	public function setFeedback($val)
 	{
-        $this->Feedback = ()$val;
+        $this->Feedback = $val;
 	}
 }

@@ -21,6 +21,6 @@ class StoreColorSchemeArrayType
      */
     public function setColorScheme($val)
     {
-        $this->ColorScheme = ()$val;
+        $this->ColorScheme = $val;
     }
 }

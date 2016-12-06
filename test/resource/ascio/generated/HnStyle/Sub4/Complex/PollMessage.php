@@ -24,7 +24,7 @@ class PollMessage
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class PollMessage
      */
     public function setMsgType($val)
     {
-        $this->msgType = ()$val;
+        $this->msgType = $val;
     }
 }

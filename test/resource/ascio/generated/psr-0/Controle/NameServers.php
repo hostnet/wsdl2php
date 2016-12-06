@@ -65,7 +65,7 @@ class NameServers
 	 */
 	public function setNameServer1($val)
 	{
-        $this->NameServer1 = ()$val;
+        $this->NameServer1 = $val;
 	}
 
 	/**
@@ -74,7 +74,7 @@ class NameServers
 	 */
 	public function setNameServer2($val)
 	{
-        $this->NameServer2 = ()$val;
+        $this->NameServer2 = $val;
 	}
 
 	/**
@@ -83,7 +83,7 @@ class NameServers
 	 */
 	public function setNameServer3($val)
 	{
-        $this->NameServer3 = ()$val;
+        $this->NameServer3 = $val;
 	}
 
 	/**
@@ -92,7 +92,7 @@ class NameServers
 	 */
 	public function setNameServer4($val)
 	{
-        $this->NameServer4 = ()$val;
+        $this->NameServer4 = $val;
 	}
 
 	/**
@@ -101,7 +101,7 @@ class NameServers
 	 */
 	public function setNameServer5($val)
 	{
-        $this->NameServer5 = ()$val;
+        $this->NameServer5 = $val;
 	}
 
 	/**
@@ -110,7 +110,7 @@ class NameServers
 	 */
 	public function setNameServer6($val)
 	{
-        $this->NameServer6 = ()$val;
+        $this->NameServer6 = $val;
 	}
 
 	/**
@@ -119,7 +119,7 @@ class NameServers
 	 */
 	public function setNameServer7($val)
 	{
-        $this->NameServer7 = ()$val;
+        $this->NameServer7 = $val;
 	}
 
 	/**
@@ -128,7 +128,7 @@ class NameServers
 	 */
 	public function setNameServer8($val)
 	{
-        $this->NameServer8 = ()$val;
+        $this->NameServer8 = $val;
 	}
 
 	/**
@@ -137,7 +137,7 @@ class NameServers
 	 */
 	public function setNameServer9($val)
 	{
-        $this->NameServer9 = ()$val;
+        $this->NameServer9 = $val;
 	}
 
 	/**
@@ -146,7 +146,7 @@ class NameServers
 	 */
 	public function setNameServer10($val)
 	{
-        $this->NameServer10 = ()$val;
+        $this->NameServer10 = $val;
 	}
 
 	/**
@@ -155,7 +155,7 @@ class NameServers
 	 */
 	public function setNameServer11($val)
 	{
-        $this->NameServer11 = ()$val;
+        $this->NameServer11 = $val;
 	}
 
 	/**
@@ -164,7 +164,7 @@ class NameServers
 	 */
 	public function setNameServer12($val)
 	{
-        $this->NameServer12 = ()$val;
+        $this->NameServer12 = $val;
 	}
 
 	/**
@@ -173,6 +173,6 @@ class NameServers
 	 */
 	public function setNameServer13($val)
 	{
-        $this->NameServer13 = ()$val;
+        $this->NameServer13 = $val;
 	}
 }

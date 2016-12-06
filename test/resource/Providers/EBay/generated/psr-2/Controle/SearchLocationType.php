@@ -38,7 +38,7 @@ class SearchLocationType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionID');
         }
-        $this->RegionID = ()$val;
+        $this->RegionID = $val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SearchLocationType
      */
     public function setSiteLocation($val)
     {
-        $this->SiteLocation = ()$val;
+        $this->SiteLocation = $val;
     }
 
     /**
@@ -56,6 +56,6 @@ class SearchLocationType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

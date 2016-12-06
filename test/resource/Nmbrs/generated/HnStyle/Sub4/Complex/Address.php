@@ -52,7 +52,7 @@ class Address
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Id = ()$val;
+        $this->Id = $val;
     }
 
     /**
@@ -61,7 +61,7 @@ class Address
      */
     public function setDefault($val)
     {
-        $this->Default = ()$val;
+        $this->Default = $val;
     }
 
     /**
@@ -73,7 +73,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Street');
         }
-        $this->Street = ()$val;
+        $this->Street = $val;
     }
 
     /**
@@ -85,7 +85,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HouseNumber');
         }
-        $this->HouseNumber = ()$val;
+        $this->HouseNumber = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HouseNumberAddition');
         }
-        $this->HouseNumberAddition = ()$val;
+        $this->HouseNumberAddition = $val;
     }
 
     /**
@@ -109,7 +109,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = ()$val;
+        $this->PostalCode = $val;
     }
 
     /**
@@ -121,7 +121,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = ()$val;
+        $this->City = $val;
     }
 
     /**
@@ -133,7 +133,7 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StateProvince');
         }
-        $this->StateProvince = ()$val;
+        $this->StateProvince = $val;
     }
 
     /**
@@ -145,6 +145,6 @@ class Address
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryISOCode');
         }
-        $this->CountryISOCode = ()$val;
+        $this->CountryISOCode = $val;
     }
 }

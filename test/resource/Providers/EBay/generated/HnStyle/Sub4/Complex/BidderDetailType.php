@@ -88,7 +88,7 @@ class BidderDetailType
      */
     public function setUserID($val)
     {
-        $this->UserID = ()$val;
+        $this->UserID = $val;
     }
 
     /**
@@ -100,7 +100,7 @@ class BidderDetailType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = ()$val;
+        $this->Email = $val;
     }
 
     /**
@@ -112,7 +112,7 @@ class BidderDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackScore = ()$val;
+        $this->FeedbackScore = $val;
     }
 
     /**
@@ -124,7 +124,7 @@ class BidderDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniqueNegativeFeedbackCount = ()$val;
+        $this->UniqueNegativeFeedbackCount = $val;
     }
 
     /**
@@ -136,7 +136,7 @@ class BidderDetailType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniquePositiveFeedbackCount = ()$val;
+        $this->UniquePositiveFeedbackCount = $val;
     }
 
     /**
@@ -145,7 +145,7 @@ class BidderDetailType
      */
     public function setLiveAuctionBidResult($val)
     {
-        $this->LiveAuctionBidResult = ()$val;
+        $this->LiveAuctionBidResult = $val;
     }
 
     /**
@@ -154,6 +154,6 @@ class BidderDetailType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

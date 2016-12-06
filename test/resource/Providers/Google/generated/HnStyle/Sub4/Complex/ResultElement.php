@@ -52,7 +52,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for summary');
         }
-        $this->summary = ()$val;
+        $this->summary = $val;
     }
 
     /**
@@ -64,7 +64,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URL');
         }
-        $this->URL = ()$val;
+        $this->URL = $val;
     }
 
     /**
@@ -76,7 +76,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for snippet');
         }
-        $this->snippet = ()$val;
+        $this->snippet = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for title');
         }
-        $this->title = ()$val;
+        $this->title = $val;
     }
 
     /**
@@ -100,7 +100,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for cachedSize');
         }
-        $this->cachedSize = ()$val;
+        $this->cachedSize = $val;
     }
 
     /**
@@ -109,7 +109,7 @@ class ResultElement
      */
     public function setRelatedInformationPresent($val)
     {
-        $this->relatedInformationPresent = ()$val;
+        $this->relatedInformationPresent = $val;
     }
 
     /**
@@ -121,7 +121,7 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for hostName');
         }
-        $this->hostName = ()$val;
+        $this->hostName = $val;
     }
 
     /**
@@ -130,7 +130,7 @@ class ResultElement
      */
     public function setDirectoryCategory($val)
     {
-        $this->directoryCategory = ()$val;
+        $this->directoryCategory = $val;
     }
 
     /**
@@ -142,6 +142,6 @@ class ResultElement
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for directoryTitle');
         }
-        $this->directoryTitle = ()$val;
+        $this->directoryTitle = $val;
     }
 }

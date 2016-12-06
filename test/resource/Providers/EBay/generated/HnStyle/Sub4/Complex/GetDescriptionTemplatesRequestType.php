@@ -36,7 +36,7 @@ class GetDescriptionTemplatesRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = ()$val;
+        $this->CategoryID = $val;
     }
 
     /**
@@ -45,7 +45,7 @@ class GetDescriptionTemplatesRequestType extends
      */
     public function setLastModifiedTime($val)
     {
-        $this->LastModifiedTime = ()$val;
+        $this->LastModifiedTime = $val;
     }
 
     /**
@@ -54,6 +54,6 @@ class GetDescriptionTemplatesRequestType extends
      */
     public function setMotorVehicles($val)
     {
-        $this->MotorVehicles = ()$val;
+        $this->MotorVehicles = $val;
     }
 }

@@ -59,7 +59,7 @@ class ProductType
 	 */
 	public function setCharacteristicsSet($val)
 	{
-        $this->CharacteristicsSet = ()$val;
+        $this->CharacteristicsSet = $val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class ProductType
 	 */
 	public function setDetailsURL($val)
 	{
-        $this->DetailsURL = ()$val;
+        $this->DetailsURL = $val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class ProductType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->NumItems = ()$val;
+        $this->NumItems = $val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class ProductType
 	 */
 	public function setMinPrice($val)
 	{
-        $this->MinPrice = ()$val;
+        $this->MinPrice = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class ProductType
 	 */
 	public function setMaxPrice($val)
 	{
-        $this->MaxPrice = ()$val;
+        $this->MaxPrice = $val;
 	}
 
 	/**
@@ -107,7 +107,7 @@ class ProductType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 
 	/**
@@ -119,7 +119,7 @@ class ProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for productID');
         }
-        $this->productID = ()$val;
+        $this->productID = $val;
 	}
 
 	/**
@@ -128,7 +128,7 @@ class ProductType
 	 */
 	public function setStockPhotoURL($val)
 	{
-        $this->stockPhotoURL = ()$val;
+        $this->stockPhotoURL = $val;
 	}
 
 	/**
@@ -140,6 +140,6 @@ class ProductType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for title');
         }
-        $this->title = ()$val;
+        $this->title = $val;
 	}
 }

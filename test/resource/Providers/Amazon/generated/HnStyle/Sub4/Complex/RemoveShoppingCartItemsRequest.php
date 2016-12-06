@@ -40,7 +40,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
     }
 
     /**
@@ -52,7 +52,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
     }
 
     /**
@@ -64,7 +64,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
     }
 
     /**
@@ -76,7 +76,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
     }
 
     /**
@@ -85,7 +85,7 @@ class RemoveShoppingCartItemsRequest
      */
     public function setItems($val)
     {
-        $this->Items = ()$val;
+        $this->Items = $val;
     }
 
     /**
@@ -97,6 +97,6 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
     }
 }

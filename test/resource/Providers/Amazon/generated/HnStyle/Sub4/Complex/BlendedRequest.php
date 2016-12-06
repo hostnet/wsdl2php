@@ -36,7 +36,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for blended');
         }
-        $this->blended = ()$val;
+        $this->blended = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
     }
 
     /**
@@ -84,6 +84,6 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
     }
 }

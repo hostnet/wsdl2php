@@ -46,7 +46,7 @@ class ReviseItemRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = ()$val;
+        $this->Item = $val;
     }
 
     /**
@@ -55,7 +55,7 @@ class ReviseItemRequestType extends
      */
     public function setModifiedFields($val)
     {
-        $this->ModifiedFields = ()$val;
+        $this->ModifiedFields = $val;
     }
 
     /**
@@ -67,6 +67,6 @@ class ReviseItemRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = ()$val;
+        $this->DeletedField = $val;
     }
 }

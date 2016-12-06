@@ -23,6 +23,6 @@ class GetWantItNowPostResponseType extends
 	 */
 	public function setWantItNowPost($val)
 	{
-        $this->WantItNowPost = ()$val;
+        $this->WantItNowPost = $val;
 	}
 }

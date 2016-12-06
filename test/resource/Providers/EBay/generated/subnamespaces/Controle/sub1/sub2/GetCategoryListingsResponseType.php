@@ -64,7 +64,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = ()$val;
+        $this->ItemArray = $val;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setCategory($val)
 	{
-        $this->Category = ()$val;
+        $this->Category = $val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setSubCategories($val)
 	{
-        $this->SubCategories = ()$val;
+        $this->SubCategories = $val;
 	}
 
 	/**
@@ -94,7 +94,7 @@ class GetCategoryListingsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemsPerPage = ()$val;
+        $this->ItemsPerPage = $val;
 	}
 
 	/**
@@ -106,7 +106,7 @@ class GetCategoryListingsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
 	}
 
 	/**
@@ -115,7 +115,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = ()$val;
+        $this->HasMoreItems = $val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = ()$val;
+        $this->PaginationResult = $val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setBuyingGuideDetails($val)
 	{
-        $this->BuyingGuideDetails = ()$val;
+        $this->BuyingGuideDetails = $val;
 	}
 
 	/**
@@ -142,6 +142,6 @@ class GetCategoryListingsResponseType extends
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{
-        $this->RelatedSearchKeywordArray = ()$val;
+        $this->RelatedSearchKeywordArray = $val;
 	}
 }

@@ -48,7 +48,7 @@ class ReviseStatusType
      */
     public function setItemRevised($val)
     {
-        $this->ItemRevised = ()$val;
+        $this->ItemRevised = $val;
     }
 
     /**
@@ -57,7 +57,7 @@ class ReviseStatusType
      */
     public function setBuyItNowAdded($val)
     {
-        $this->BuyItNowAdded = ()$val;
+        $this->BuyItNowAdded = $val;
     }
 
     /**
@@ -66,7 +66,7 @@ class ReviseStatusType
      */
     public function setBuyItNowLowered($val)
     {
-        $this->BuyItNowLowered = ()$val;
+        $this->BuyItNowLowered = $val;
     }
 
     /**
@@ -75,7 +75,7 @@ class ReviseStatusType
      */
     public function setReserveLowered($val)
     {
-        $this->ReserveLowered = ()$val;
+        $this->ReserveLowered = $val;
     }
 
     /**
@@ -84,7 +84,7 @@ class ReviseStatusType
      */
     public function setReserveRemoved($val)
     {
-        $this->ReserveRemoved = ()$val;
+        $this->ReserveRemoved = $val;
     }
 
     /**
@@ -93,6 +93,6 @@ class ReviseStatusType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

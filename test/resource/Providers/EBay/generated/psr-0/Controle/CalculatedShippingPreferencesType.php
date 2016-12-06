@@ -41,7 +41,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setCalculatedShippingAmountForEntireOrder($val)
 	{
-        $this->CalculatedShippingAmountForEntireOrder = ()$val;
+        $this->CalculatedShippingAmountForEntireOrder = $val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setCalculatedShippingChargeOption($val)
 	{
-        $this->CalculatedShippingChargeOption = ()$val;
+        $this->CalculatedShippingChargeOption = $val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setCalculatedShippingRateOption($val)
 	{
-        $this->CalculatedShippingRateOption = ()$val;
+        $this->CalculatedShippingRateOption = $val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = ()$val;
+        $this->InsuranceOption = $val;
 	}
 
 	/**
@@ -77,6 +77,6 @@ class CalculatedShippingPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -23,6 +23,6 @@ class GetUserResponseType extends
 	 */
 	public function setUser($val)
 	{
-        $this->User = ()$val;
+        $this->User = $val;
 	}
 }

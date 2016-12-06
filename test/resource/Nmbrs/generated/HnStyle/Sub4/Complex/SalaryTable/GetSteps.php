@@ -32,7 +32,7 @@ class GetSteps
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = ()$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -41,7 +41,7 @@ class GetSteps
      */
     public function setScale($val)
     {
-        $this->Scale = ()$val;
+        $this->Scale = $val;
     }
 
     /**
@@ -53,7 +53,7 @@ class GetSteps
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Period = ()$val;
+        $this->Period = $val;
     }
 
     /**
@@ -65,6 +65,6 @@ class GetSteps
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = ()$val;
+        $this->Year = $val;
     }
 }

@@ -29,7 +29,7 @@ class SoApArrayStruct
      */
     public function setVarString($val)
     {
-        $this->varString = ()$val;
+        $this->varString = $val;
     }
 
     /**
@@ -38,7 +38,7 @@ class SoApArrayStruct
      */
     public function setVarInt($val)
     {
-        $this->varInt = ()$val;
+        $this->varInt = $val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SoApArrayStruct
      */
     public function setVarFloat($val)
     {
-        $this->varFloat = ()$val;
+        $this->varFloat = $val;
     }
 
     /**
@@ -56,6 +56,6 @@ class SoApArrayStruct
      */
     public function setVarArray($val)
     {
-        $this->varArray = ()$val;
+        $this->varArray = $val;
     }
 }

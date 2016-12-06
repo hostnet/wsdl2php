@@ -25,6 +25,6 @@ class ItemArrayType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = ()$val;
+        $this->Item = $val;
 	}
 }

@@ -21,7 +21,7 @@ class SearchDomainResponse
 	 */
 	public function setSearchDomainResult($val)
 	{
-        $this->SearchDomainResult = ()$val;
+        $this->SearchDomainResult = $val;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class SearchDomainResponse
 	 */
 	public function setDomains($val)
 	{
-        $this->domains = ()$val;
+        $this->domains = $val;
 	}
 }

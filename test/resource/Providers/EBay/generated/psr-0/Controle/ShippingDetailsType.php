@@ -214,7 +214,7 @@ class ShippingDetailsType
 	 */
 	public function setAllowPaymentEdit($val)
 	{
-        $this->AllowPaymentEdit = ()$val;
+        $this->AllowPaymentEdit = $val;
 	}
 
 	/**
@@ -223,7 +223,7 @@ class ShippingDetailsType
 	 */
 	public function setApplyShippingDiscount($val)
 	{
-        $this->ApplyShippingDiscount = ()$val;
+        $this->ApplyShippingDiscount = $val;
 	}
 
 	/**
@@ -232,7 +232,7 @@ class ShippingDetailsType
 	 */
 	public function setCalculatedShippingRate($val)
 	{
-        $this->CalculatedShippingRate = ()$val;
+        $this->CalculatedShippingRate = $val;
 	}
 
 	/**
@@ -241,7 +241,7 @@ class ShippingDetailsType
 	 */
 	public function setChangePaymentInstructions($val)
 	{
-        $this->ChangePaymentInstructions = ()$val;
+        $this->ChangePaymentInstructions = $val;
 	}
 
 	/**
@@ -250,7 +250,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceFee($val)
 	{
-        $this->InsuranceFee = ()$val;
+        $this->InsuranceFee = $val;
 	}
 
 	/**
@@ -259,7 +259,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceOption($val)
 	{
-        $this->InsuranceOption = ()$val;
+        $this->InsuranceOption = $val;
 	}
 
 	/**
@@ -268,7 +268,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceWanted($val)
 	{
-        $this->InsuranceWanted = ()$val;
+        $this->InsuranceWanted = $val;
 	}
 
 	/**
@@ -277,7 +277,7 @@ class ShippingDetailsType
 	 */
 	public function setPaymentEdited($val)
 	{
-        $this->PaymentEdited = ()$val;
+        $this->PaymentEdited = $val;
 	}
 
 	/**
@@ -289,7 +289,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PaymentInstructions');
         }
-        $this->PaymentInstructions = ()$val;
+        $this->PaymentInstructions = $val;
 	}
 
 	/**
@@ -298,7 +298,7 @@ class ShippingDetailsType
 	 */
 	public function setSalesTax($val)
 	{
-        $this->SalesTax = ()$val;
+        $this->SalesTax = $val;
 	}
 
 	/**
@@ -310,7 +310,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerPostalCode');
         }
-        $this->SellerPostalCode = ()$val;
+        $this->SellerPostalCode = $val;
 	}
 
 	/**
@@ -322,7 +322,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShippingRateErrorMessage');
         }
-        $this->ShippingRateErrorMessage = ()$val;
+        $this->ShippingRateErrorMessage = $val;
 	}
 
 	/**
@@ -331,7 +331,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingRateType($val)
 	{
-        $this->ShippingRateType = ()$val;
+        $this->ShippingRateType = $val;
 	}
 
 	/**
@@ -340,7 +340,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingServiceOptions($val)
 	{
-        $this->ShippingServiceOptions = ()$val;
+        $this->ShippingServiceOptions = $val;
 	}
 
 	/**
@@ -349,7 +349,7 @@ class ShippingDetailsType
 	 */
 	public function setInternationalShippingServiceOption($val)
 	{
-        $this->InternationalShippingServiceOption = ()$val;
+        $this->InternationalShippingServiceOption = $val;
 	}
 
 	/**
@@ -358,7 +358,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingType($val)
 	{
-        $this->ShippingType = ()$val;
+        $this->ShippingType = $val;
 	}
 
 	/**
@@ -370,7 +370,7 @@ class ShippingDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->SellingManagerSalesRecordNumber = ()$val;
+        $this->SellingManagerSalesRecordNumber = $val;
 	}
 
 	/**
@@ -379,7 +379,7 @@ class ShippingDetailsType
 	 */
 	public function setThirdPartyCheckout($val)
 	{
-        $this->ThirdPartyCheckout = ()$val;
+        $this->ThirdPartyCheckout = $val;
 	}
 
 	/**
@@ -388,7 +388,7 @@ class ShippingDetailsType
 	 */
 	public function setTaxTable($val)
 	{
-        $this->TaxTable = ()$val;
+        $this->TaxTable = $val;
 	}
 
 	/**
@@ -397,7 +397,7 @@ class ShippingDetailsType
 	 */
 	public function setGetItFast($val)
 	{
-        $this->GetItFast = ()$val;
+        $this->GetItFast = $val;
 	}
 
 	/**
@@ -409,7 +409,7 @@ class ShippingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
-        $this->ShipmentTrackingNumber = ()$val;
+        $this->ShipmentTrackingNumber = $val;
 	}
 
 	/**
@@ -418,7 +418,7 @@ class ShippingDetailsType
 	 */
 	public function setShippingServiceUsed($val)
 	{
-        $this->ShippingServiceUsed = ()$val;
+        $this->ShippingServiceUsed = $val;
 	}
 
 	/**
@@ -427,7 +427,7 @@ class ShippingDetailsType
 	 */
 	public function setDefaultShippingCost($val)
 	{
-        $this->DefaultShippingCost = ()$val;
+        $this->DefaultShippingCost = $val;
 	}
 
 	/**
@@ -436,7 +436,7 @@ class ShippingDetailsType
 	 */
 	public function setInsuranceDetails($val)
 	{
-        $this->InsuranceDetails = ()$val;
+        $this->InsuranceDetails = $val;
 	}
 
 	/**
@@ -445,7 +445,7 @@ class ShippingDetailsType
 	 */
 	public function setInternationalInsuranceDetails($val)
 	{
-        $this->InternationalInsuranceDetails = ()$val;
+        $this->InternationalInsuranceDetails = $val;
 	}
 
 	/**
@@ -454,6 +454,6 @@ class ShippingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

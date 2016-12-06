@@ -40,7 +40,7 @@ class AddDisputeRequestType extends
      */
     public function setDisputeExplanation($val)
     {
-        $this->DisputeExplanation = ()$val;
+        $this->DisputeExplanation = $val;
     }
 
     /**
@@ -49,7 +49,7 @@ class AddDisputeRequestType extends
      */
     public function setDisputeReason($val)
     {
-        $this->DisputeReason = ()$val;
+        $this->DisputeReason = $val;
     }
 
     /**
@@ -58,7 +58,7 @@ class AddDisputeRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = ()$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -70,6 +70,6 @@ class AddDisputeRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = ()$val;
+        $this->TransactionID = $val;
     }
 }

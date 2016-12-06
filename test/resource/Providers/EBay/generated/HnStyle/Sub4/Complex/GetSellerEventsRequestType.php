@@ -85,7 +85,7 @@ class GetSellerEventsRequestType extends
      */
     public function setUserID($val)
     {
-        $this->UserID = ()$val;
+        $this->UserID = $val;
     }
 
     /**
@@ -94,7 +94,7 @@ class GetSellerEventsRequestType extends
      */
     public function setStartTimeFrom($val)
     {
-        $this->StartTimeFrom = ()$val;
+        $this->StartTimeFrom = $val;
     }
 
     /**
@@ -103,7 +103,7 @@ class GetSellerEventsRequestType extends
      */
     public function setStartTimeTo($val)
     {
-        $this->StartTimeTo = ()$val;
+        $this->StartTimeTo = $val;
     }
 
     /**
@@ -112,7 +112,7 @@ class GetSellerEventsRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->EndTimeFrom = ()$val;
+        $this->EndTimeFrom = $val;
     }
 
     /**
@@ -121,7 +121,7 @@ class GetSellerEventsRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->EndTimeTo = ()$val;
+        $this->EndTimeTo = $val;
     }
 
     /**
@@ -130,7 +130,7 @@ class GetSellerEventsRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->ModTimeFrom = ()$val;
+        $this->ModTimeFrom = $val;
     }
 
     /**
@@ -139,7 +139,7 @@ class GetSellerEventsRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->ModTimeTo = ()$val;
+        $this->ModTimeTo = $val;
     }
 
     /**
@@ -148,7 +148,7 @@ class GetSellerEventsRequestType extends
      */
     public function setNewItemFilter($val)
     {
-        $this->NewItemFilter = ()$val;
+        $this->NewItemFilter = $val;
     }
 
     /**
@@ -157,6 +157,6 @@ class GetSellerEventsRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->IncludeWatchCount = ()$val;
+        $this->IncludeWatchCount = $val;
     }
 }

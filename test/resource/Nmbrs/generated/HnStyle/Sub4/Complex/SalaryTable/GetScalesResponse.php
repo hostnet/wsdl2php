@@ -17,6 +17,6 @@ class GetScalesResponse
      */
     public function setSalaryTableGetScalesResult($val)
     {
-        $this->SalaryTable_GetScalesResult = ()$val;
+        $this->SalaryTable_GetScalesResult = $val;
     }
 }

@@ -53,7 +53,7 @@ class SearchOrderRequest
 	 */
 	public function setOrderTypes($val)
 	{
-        $this->OrderTypes = ()$val;
+        $this->OrderTypes = $val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class SearchOrderRequest
 	 */
 	public function setOrderStatusTypes($val)
 	{
-        $this->OrderStatusTypes = ()$val;
+        $this->OrderStatusTypes = $val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class SearchOrderRequest
 	 */
 	public function setFromDate($val)
 	{
-        $this->FromDate = ()$val;
+        $this->FromDate = $val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class SearchOrderRequest
 	 */
 	public function setToDate($val)
 	{
-        $this->ToDate = ()$val;
+        $this->ToDate = $val;
 	}
 
 	/**
@@ -92,7 +92,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DomainName');
         }
-        $this->DomainName = ()$val;
+        $this->DomainName = $val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionComment');
         }
-        $this->TransactionComment = ()$val;
+        $this->TransactionComment = $val;
 	}
 
 	/**
@@ -116,7 +116,7 @@ class SearchOrderRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->Comments = ()$val;
+        $this->Comments = $val;
 	}
 
 	/**
@@ -125,7 +125,7 @@ class SearchOrderRequest
 	 */
 	public function setIncludeDomainDetails($val)
 	{
-        $this->IncludeDomainDetails = ()$val;
+        $this->IncludeDomainDetails = $val;
 	}
 
 	/**
@@ -134,7 +134,7 @@ class SearchOrderRequest
 	 */
 	public function setPageInfo($val)
 	{
-        $this->PageInfo = ()$val;
+        $this->PageInfo = $val;
 	}
 
 	/**
@@ -143,6 +143,6 @@ class SearchOrderRequest
 	 */
 	public function setOrderSort($val)
 	{
-        $this->OrderSort = ()$val;
+        $this->OrderSort = $val;
 	}
 }

@@ -129,7 +129,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setSellerExpressEligible($val)
 	{
-        $this->SellerExpressEligible = ()$val;
+        $this->SellerExpressEligible = $val;
 	}
 
 	/**
@@ -138,7 +138,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressOptOut($val)
 	{
-        $this->ExpressOptOut = ()$val;
+        $this->ExpressOptOut = $val;
 	}
 
 	/**
@@ -147,7 +147,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressApproved($val)
 	{
-        $this->ExpressApproved = ()$val;
+        $this->ExpressApproved = $val;
 	}
 
 	/**
@@ -156,7 +156,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressEligibleListingType($val)
 	{
-        $this->ExpressEligibleListingType = ()$val;
+        $this->ExpressEligibleListingType = $val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setExpressEnabledCategory($val)
 	{
-        $this->ExpressEnabledCategory = ()$val;
+        $this->ExpressEnabledCategory = $val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
-        $this->EligiblePayPalAccount = ()$val;
+        $this->EligiblePayPalAccount = $val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setDomesticShippingCost($val)
 	{
-        $this->DomesticShippingCost = ()$val;
+        $this->DomesticShippingCost = $val;
 	}
 
 	/**
@@ -192,7 +192,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleReturnPolicy($val)
 	{
-        $this->EligibleReturnPolicy = ()$val;
+        $this->EligibleReturnPolicy = $val;
 	}
 
 	/**
@@ -201,7 +201,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPicture($val)
 	{
-        $this->Picture = ()$val;
+        $this->Picture = $val;
 	}
 
 	/**
@@ -210,7 +210,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleItemCondition($val)
 	{
-        $this->EligibleItemCondition = ()$val;
+        $this->EligibleItemCondition = $val;
 	}
 
 	/**
@@ -219,7 +219,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPriceAboveMinimum($val)
 	{
-        $this->PriceAboveMinimum = ()$val;
+        $this->PriceAboveMinimum = $val;
 	}
 
 	/**
@@ -228,7 +228,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPriceBelowMaximum($val)
 	{
-        $this->PriceBelowMaximum = ()$val;
+        $this->PriceBelowMaximum = $val;
 	}
 
 	/**
@@ -237,7 +237,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setEligibleCheckout($val)
 	{
-        $this->EligibleCheckout = ()$val;
+        $this->EligibleCheckout = $val;
 	}
 
 	/**
@@ -246,7 +246,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoPreapprovedBidderList($val)
 	{
-        $this->NoPreapprovedBidderList = ()$val;
+        $this->NoPreapprovedBidderList = $val;
 	}
 
 	/**
@@ -255,7 +255,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoCharity($val)
 	{
-        $this->NoCharity = ()$val;
+        $this->NoCharity = $val;
 	}
 
 	/**
@@ -264,7 +264,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setNoDigitalDelivery($val)
 	{
-        $this->NoDigitalDelivery = ()$val;
+        $this->NoDigitalDelivery = $val;
 	}
 
 	/**
@@ -273,7 +273,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setCombinedShippingDiscount($val)
 	{
-        $this->CombinedShippingDiscount = ()$val;
+        $this->CombinedShippingDiscount = $val;
 	}
 
 	/**
@@ -282,7 +282,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setShipFromEligibleCountry($val)
 	{
-        $this->ShipFromEligibleCountry = ()$val;
+        $this->ShipFromEligibleCountry = $val;
 	}
 
 	/**
@@ -291,7 +291,7 @@ class ExpressItemRequirementsType
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
-        $this->PayPalAccountAcceptsUnconfirmedAddress = ()$val;
+        $this->PayPalAccountAcceptsUnconfirmedAddress = $val;
 	}
 
 	/**
@@ -300,6 +300,6 @@ class ExpressItemRequirementsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

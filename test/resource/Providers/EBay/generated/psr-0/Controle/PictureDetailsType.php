@@ -87,7 +87,7 @@ class PictureDetailsType
 	 */
 	public function setGalleryType($val)
 	{
-        $this->GalleryType = ()$val;
+        $this->GalleryType = $val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class PictureDetailsType
 	 */
 	public function setGalleryURL($val)
 	{
-        $this->GalleryURL = ()$val;
+        $this->GalleryURL = $val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class PictureDetailsType
 	 */
 	public function setPhotoDisplay($val)
 	{
-        $this->PhotoDisplay = ()$val;
+        $this->PhotoDisplay = $val;
 	}
 
 	/**
@@ -114,7 +114,7 @@ class PictureDetailsType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->PictureURL = ()$val;
+        $this->PictureURL = $val;
 	}
 
 	/**
@@ -123,7 +123,7 @@ class PictureDetailsType
 	 */
 	public function setPictureSource($val)
 	{
-        $this->PictureSource = ()$val;
+        $this->PictureSource = $val;
 	}
 
 	/**
@@ -132,6 +132,6 @@ class PictureDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -59,7 +59,7 @@ class GetUserDisputesRequestType extends
      */
     public function setDisputeFilterType($val)
     {
-        $this->DisputeFilterType = ()$val;
+        $this->DisputeFilterType = $val;
     }
 
     /**
@@ -68,7 +68,7 @@ class GetUserDisputesRequestType extends
      */
     public function setDisputeSortType($val)
     {
-        $this->DisputeSortType = ()$val;
+        $this->DisputeSortType = $val;
     }
 
     /**
@@ -77,7 +77,7 @@ class GetUserDisputesRequestType extends
      */
     public function setModTimeFrom($val)
     {
-        $this->ModTimeFrom = ()$val;
+        $this->ModTimeFrom = $val;
     }
 
     /**
@@ -86,7 +86,7 @@ class GetUserDisputesRequestType extends
      */
     public function setModTimeTo($val)
     {
-        $this->ModTimeTo = ()$val;
+        $this->ModTimeTo = $val;
     }
 
     /**
@@ -95,6 +95,6 @@ class GetUserDisputesRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = ()$val;
+        $this->Pagination = $val;
     }
 }

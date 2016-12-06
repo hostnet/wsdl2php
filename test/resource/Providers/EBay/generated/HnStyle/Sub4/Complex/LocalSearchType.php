@@ -32,7 +32,7 @@ class LocalSearchType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxDistance = ()$val;
+        $this->MaxDistance = $val;
     }
 
     /**
@@ -44,7 +44,7 @@ class LocalSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = ()$val;
+        $this->PostalCode = $val;
     }
 
     /**
@@ -53,6 +53,6 @@ class LocalSearchType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

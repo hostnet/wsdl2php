@@ -51,7 +51,7 @@ class SearchRequestType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeSetID = ()$val;
+        $this->AttributeSetID = $val;
     }
 
     /**
@@ -63,7 +63,7 @@ class SearchRequestType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ProductFinderID = ()$val;
+        $this->ProductFinderID = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class SearchRequestType
      */
     public function setSearchAttributes($val)
     {
-        $this->SearchAttributes = ()$val;
+        $this->SearchAttributes = $val;
     }
 
     /**
@@ -81,6 +81,6 @@ class SearchRequestType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

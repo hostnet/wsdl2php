@@ -17,6 +17,6 @@ class UploadMessageResponse
      */
     public function setUploadMessageResult($val)
     {
-        $this->UploadMessageResult = ()$val;
+        $this->UploadMessageResult = $val;
     }
 }

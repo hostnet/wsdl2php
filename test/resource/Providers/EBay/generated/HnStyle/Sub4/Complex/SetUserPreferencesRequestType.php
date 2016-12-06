@@ -73,7 +73,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setBidderNoticePreferences($val)
     {
-        $this->BidderNoticePreferences = ()$val;
+        $this->BidderNoticePreferences = $val;
     }
 
     /**
@@ -82,7 +82,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setCombinedPaymentPreferences($val)
     {
-        $this->CombinedPaymentPreferences = ()$val;
+        $this->CombinedPaymentPreferences = $val;
     }
 
     /**
@@ -91,7 +91,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setCrossPromotionPreferences($val)
     {
-        $this->CrossPromotionPreferences = ()$val;
+        $this->CrossPromotionPreferences = $val;
     }
 
     /**
@@ -100,7 +100,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setSellerPaymentPreferences($val)
     {
-        $this->SellerPaymentPreferences = ()$val;
+        $this->SellerPaymentPreferences = $val;
     }
 
     /**
@@ -109,7 +109,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setSellerFavoriteItemPreferences($val)
     {
-        $this->SellerFavoriteItemPreferences = ()$val;
+        $this->SellerFavoriteItemPreferences = $val;
     }
 
     /**
@@ -118,7 +118,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setEndOfAuctionEmailPreferences($val)
     {
-        $this->EndOfAuctionEmailPreferences = ()$val;
+        $this->EndOfAuctionEmailPreferences = $val;
     }
 
     /**
@@ -127,7 +127,7 @@ class SetUserPreferencesRequestType extends
      */
     public function setEBxOptInPreference($val)
     {
-        $this->eBxOptInPreference = ()$val;
+        $this->eBxOptInPreference = $val;
     }
 
     /**
@@ -136,6 +136,6 @@ class SetUserPreferencesRequestType extends
      */
     public function setExpressPreferences($val)
     {
-        $this->ExpressPreferences = ()$val;
+        $this->ExpressPreferences = $val;
     }
 }

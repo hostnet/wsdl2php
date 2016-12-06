@@ -184,7 +184,7 @@ class ListingDetailsType
 	 */
 	public function setAdult($val)
 	{
-        $this->Adult = ()$val;
+        $this->Adult = $val;
 	}
 
 	/**
@@ -193,7 +193,7 @@ class ListingDetailsType
 	 */
 	public function setBindingAuction($val)
 	{
-        $this->BindingAuction = ()$val;
+        $this->BindingAuction = $val;
 	}
 
 	/**
@@ -202,7 +202,7 @@ class ListingDetailsType
 	 */
 	public function setCheckoutEnabled($val)
 	{
-        $this->CheckoutEnabled = ()$val;
+        $this->CheckoutEnabled = $val;
 	}
 
 	/**
@@ -211,7 +211,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedBuyItNowPrice($val)
 	{
-        $this->ConvertedBuyItNowPrice = ()$val;
+        $this->ConvertedBuyItNowPrice = $val;
 	}
 
 	/**
@@ -220,7 +220,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedStartPrice($val)
 	{
-        $this->ConvertedStartPrice = ()$val;
+        $this->ConvertedStartPrice = $val;
 	}
 
 	/**
@@ -229,7 +229,7 @@ class ListingDetailsType
 	 */
 	public function setConvertedReservePrice($val)
 	{
-        $this->ConvertedReservePrice = ()$val;
+        $this->ConvertedReservePrice = $val;
 	}
 
 	/**
@@ -238,7 +238,7 @@ class ListingDetailsType
 	 */
 	public function setHasReservePrice($val)
 	{
-        $this->HasReservePrice = ()$val;
+        $this->HasReservePrice = $val;
 	}
 
 	/**
@@ -250,7 +250,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegionName');
         }
-        $this->RegionName = ()$val;
+        $this->RegionName = $val;
 	}
 
 	/**
@@ -259,7 +259,7 @@ class ListingDetailsType
 	 */
 	public function setRelistedItemID($val)
 	{
-        $this->RelistedItemID = ()$val;
+        $this->RelistedItemID = $val;
 	}
 
 	/**
@@ -268,7 +268,7 @@ class ListingDetailsType
 	 */
 	public function setSecondChanceOriginalItemID($val)
 	{
-        $this->SecondChanceOriginalItemID = ()$val;
+        $this->SecondChanceOriginalItemID = $val;
 	}
 
 	/**
@@ -277,7 +277,7 @@ class ListingDetailsType
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = ()$val;
+        $this->StartTime = $val;
 	}
 
 	/**
@@ -286,7 +286,7 @@ class ListingDetailsType
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = ()$val;
+        $this->EndTime = $val;
 	}
 
 	/**
@@ -295,7 +295,7 @@ class ListingDetailsType
 	 */
 	public function setViewItemURL($val)
 	{
-        $this->ViewItemURL = ()$val;
+        $this->ViewItemURL = $val;
 	}
 
 	/**
@@ -304,7 +304,7 @@ class ListingDetailsType
 	 */
 	public function setHasUnansweredQuestions($val)
 	{
-        $this->HasUnansweredQuestions = ()$val;
+        $this->HasUnansweredQuestions = $val;
 	}
 
 	/**
@@ -313,7 +313,7 @@ class ListingDetailsType
 	 */
 	public function setHasPublicMessages($val)
 	{
-        $this->HasPublicMessages = ()$val;
+        $this->HasPublicMessages = $val;
 	}
 
 	/**
@@ -322,7 +322,7 @@ class ListingDetailsType
 	 */
 	public function setBuyItNowAvailable($val)
 	{
-        $this->BuyItNowAvailable = ()$val;
+        $this->BuyItNowAvailable = $val;
 	}
 
 	/**
@@ -331,7 +331,7 @@ class ListingDetailsType
 	 */
 	public function setSellerBusinessType($val)
 	{
-        $this->SellerBusinessType = ()$val;
+        $this->SellerBusinessType = $val;
 	}
 
 	/**
@@ -340,7 +340,7 @@ class ListingDetailsType
 	 */
 	public function setMinimumBestOfferPrice($val)
 	{
-        $this->MinimumBestOfferPrice = ()$val;
+        $this->MinimumBestOfferPrice = $val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MinimumBestOfferMessage');
         }
-        $this->MinimumBestOfferMessage = ()$val;
+        $this->MinimumBestOfferMessage = $val;
 	}
 
 	/**
@@ -364,7 +364,7 @@ class ListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalListingDistance');
         }
-        $this->LocalListingDistance = ()$val;
+        $this->LocalListingDistance = $val;
 	}
 
 	/**
@@ -373,7 +373,7 @@ class ListingDetailsType
 	 */
 	public function setExpressListing($val)
 	{
-        $this->ExpressListing = ()$val;
+        $this->ExpressListing = $val;
 	}
 
 	/**
@@ -382,7 +382,7 @@ class ListingDetailsType
 	 */
 	public function setExpressItemRequirements($val)
 	{
-        $this->ExpressItemRequirements = ()$val;
+        $this->ExpressItemRequirements = $val;
 	}
 
 	/**
@@ -391,7 +391,7 @@ class ListingDetailsType
 	 */
 	public function setTCROriginalItemID($val)
 	{
-        $this->TCROriginalItemID = ()$val;
+        $this->TCROriginalItemID = $val;
 	}
 
 	/**
@@ -400,7 +400,7 @@ class ListingDetailsType
 	 */
 	public function setViewItemURLForNaturalSearch($val)
 	{
-        $this->ViewItemURLForNaturalSearch = ()$val;
+        $this->ViewItemURLForNaturalSearch = $val;
 	}
 
 	/**
@@ -409,6 +409,6 @@ class ListingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

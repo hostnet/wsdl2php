@@ -24,7 +24,7 @@ class GetWageCodesByYear
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CompanyId = ()$val;
+        $this->CompanyId = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetWageCodesByYear
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = ()$val;
+        $this->Year = $val;
     }
 }

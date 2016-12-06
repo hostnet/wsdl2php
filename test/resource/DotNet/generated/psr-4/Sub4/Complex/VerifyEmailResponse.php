@@ -17,6 +17,6 @@ class VerifyEmailResponse
      */
     public function setVerifyEmailResult($val)
     {
-        $this->VerifyEmailResult = ()$val;
+        $this->VerifyEmailResult = $val;
     }
 }

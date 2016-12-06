@@ -27,7 +27,7 @@ class GetProductFinderXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = ()$val;
+        $this->FileName = $val;
     }
 
     /**
@@ -39,6 +39,6 @@ class GetProductFinderXsLrequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->FileVersion = ()$val;
+        $this->FileVersion = $val;
     }
 }

@@ -28,6 +28,6 @@ class GetItemRecommendationsResponseType extends
      */
     public function setGetRecommendationsResponseContainer($val)
     {
-        $this->GetRecommendationsResponseContainer = ()$val;
+        $this->GetRecommendationsResponseContainer = $val;
     }
 }

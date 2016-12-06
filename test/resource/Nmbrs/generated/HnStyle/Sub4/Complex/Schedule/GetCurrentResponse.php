@@ -17,6 +17,6 @@ class GetCurrentResponse
      */
     public function setScheduleGetCurrentResult($val)
     {
-        $this->Schedule_GetCurrentResult = ()$val;
+        $this->Schedule_GetCurrentResult = $val;
     }
 }

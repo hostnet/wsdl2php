@@ -41,7 +41,7 @@ class GetStoreRequestType extends
      */
     public function setCategoryStructureOnly($val)
     {
-        $this->CategoryStructureOnly = ()$val;
+        $this->CategoryStructureOnly = $val;
     }
 
     /**
@@ -53,7 +53,7 @@ class GetStoreRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->RootCategoryID = ()$val;
+        $this->RootCategoryID = $val;
     }
 
     /**
@@ -65,6 +65,6 @@ class GetStoreRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LevelLimit = ()$val;
+        $this->LevelLimit = $val;
     }
 }

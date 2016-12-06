@@ -46,6 +46,6 @@ class GetProductFamilyMembersRequestType extends
      */
     public function setProductSearch($val)
     {
-        $this->ProductSearch = ()$val;
+        $this->ProductSearch = $val;
     }
 }

@@ -71,7 +71,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = ()$val;
+        $this->PaginationResult = $val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setHasMoreTransactions($val)
 	{
-        $this->HasMoreTransactions = ()$val;
+        $this->HasMoreTransactions = $val;
 	}
 
 	/**
@@ -92,7 +92,7 @@ class GetItemTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TransactionsPerPage = ()$val;
+        $this->TransactionsPerPage = $val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class GetItemTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
 	}
 
 	/**
@@ -116,7 +116,7 @@ class GetItemTransactionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ReturnedTransactionCountActual = ()$val;
+        $this->ReturnedTransactionCountActual = $val;
 	}
 
 	/**
@@ -125,7 +125,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = ()$val;
+        $this->Item = $val;
 	}
 
 	/**
@@ -134,7 +134,7 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setTransactionArray($val)
 	{
-        $this->TransactionArray = ()$val;
+        $this->TransactionArray = $val;
 	}
 
 	/**
@@ -143,6 +143,6 @@ class GetItemTransactionsResponseType extends
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = ()$val;
+        $this->PayPalPreferred = $val;
 	}
 }

@@ -64,7 +64,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderId');
         }
-        $this->OrderId = ()$val;
+        $this->OrderId = $val;
     }
 
     /**
@@ -73,7 +73,7 @@ class Order
      */
     public function setType($val)
     {
-        $this->Type = ()$val;
+        $this->Type = $val;
     }
 
     /**
@@ -85,7 +85,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AccountReference');
         }
-        $this->AccountReference = ()$val;
+        $this->AccountReference = $val;
     }
 
     /**
@@ -94,7 +94,7 @@ class Order
      */
     public function setStatus($val)
     {
-        $this->Status = ()$val;
+        $this->Status = $val;
     }
 
     /**
@@ -106,7 +106,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionComment');
         }
-        $this->TransactionComment = ()$val;
+        $this->TransactionComment = $val;
     }
 
     /**
@@ -118,7 +118,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Comments');
         }
-        $this->Comments = ()$val;
+        $this->Comments = $val;
     }
 
     /**
@@ -130,7 +130,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Options');
         }
-        $this->Options = ()$val;
+        $this->Options = $val;
     }
 
     /**
@@ -142,7 +142,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LocalPresence');
         }
-        $this->LocalPresence = ()$val;
+        $this->LocalPresence = $val;
     }
 
     /**
@@ -154,7 +154,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Batch');
         }
-        $this->Batch = ()$val;
+        $this->Batch = $val;
     }
 
     /**
@@ -166,7 +166,7 @@ class Order
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Documentation');
         }
-        $this->Documentation = ()$val;
+        $this->Documentation = $val;
     }
 
     /**
@@ -175,7 +175,7 @@ class Order
      */
     public function setDomain($val)
     {
-        $this->Domain = ()$val;
+        $this->Domain = $val;
     }
 
     /**
@@ -184,6 +184,6 @@ class Order
      */
     public function setCreDate($val)
     {
-        $this->CreDate = ()$val;
+        $this->CreDate = $val;
     }
 }

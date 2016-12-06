@@ -24,7 +24,7 @@ class CreateContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class CreateContact
      */
     public function setContact($val)
     {
-        $this->contact = ()$val;
+        $this->contact = $val;
     }
 }

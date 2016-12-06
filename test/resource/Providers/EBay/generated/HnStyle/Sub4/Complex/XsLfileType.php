@@ -36,7 +36,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileName');
         }
-        $this->FileName = ()$val;
+        $this->FileName = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileVersion');
         }
-        $this->FileVersion = ()$val;
+        $this->FileVersion = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class XsLfileType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FileContent');
         }
-        $this->FileContent = ()$val;
+        $this->FileContent = $val;
     }
 
     /**
@@ -69,6 +69,6 @@ class XsLfileType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

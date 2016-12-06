@@ -89,7 +89,7 @@ class GetSellerListRequestType extends
      */
     public function setUserID($val)
     {
-        $this->UserID = ()$val;
+        $this->UserID = $val;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetSellerListRequestType extends
      */
     public function setMotorsDealerUsers($val)
     {
-        $this->MotorsDealerUsers = ()$val;
+        $this->MotorsDealerUsers = $val;
     }
 
     /**
@@ -107,7 +107,7 @@ class GetSellerListRequestType extends
      */
     public function setEndTimeFrom($val)
     {
-        $this->EndTimeFrom = ()$val;
+        $this->EndTimeFrom = $val;
     }
 
     /**
@@ -116,7 +116,7 @@ class GetSellerListRequestType extends
      */
     public function setEndTimeTo($val)
     {
-        $this->EndTimeTo = ()$val;
+        $this->EndTimeTo = $val;
     }
 
     /**
@@ -128,7 +128,7 @@ class GetSellerListRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Sort = ()$val;
+        $this->Sort = $val;
     }
 
     /**
@@ -137,7 +137,7 @@ class GetSellerListRequestType extends
      */
     public function setStartTimeFrom($val)
     {
-        $this->StartTimeFrom = ()$val;
+        $this->StartTimeFrom = $val;
     }
 
     /**
@@ -146,7 +146,7 @@ class GetSellerListRequestType extends
      */
     public function setStartTimeTo($val)
     {
-        $this->StartTimeTo = ()$val;
+        $this->StartTimeTo = $val;
     }
 
     /**
@@ -155,7 +155,7 @@ class GetSellerListRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = ()$val;
+        $this->Pagination = $val;
     }
 
     /**
@@ -164,7 +164,7 @@ class GetSellerListRequestType extends
      */
     public function setGranularityLevel($val)
     {
-        $this->GranularityLevel = ()$val;
+        $this->GranularityLevel = $val;
     }
 
     /**
@@ -173,7 +173,7 @@ class GetSellerListRequestType extends
      */
     public function setSKUArray($val)
     {
-        $this->SKUArray = ()$val;
+        $this->SKUArray = $val;
     }
 
     /**
@@ -182,6 +182,6 @@ class GetSellerListRequestType extends
      */
     public function setIncludeWatchCount($val)
     {
-        $this->IncludeWatchCount = ()$val;
+        $this->IncludeWatchCount = $val;
     }
 }

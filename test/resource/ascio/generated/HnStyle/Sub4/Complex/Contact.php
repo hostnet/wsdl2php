@@ -85,7 +85,7 @@ class Contact
      */
     public function setCreDate($val)
     {
-        $this->CreDate = ()$val;
+        $this->CreDate = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = ()$val;
+        $this->Status = $val;
     }
 
     /**
@@ -109,7 +109,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Handle');
         }
-        $this->Handle = ()$val;
+        $this->Handle = $val;
     }
 
     /**
@@ -121,7 +121,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FirstName');
         }
-        $this->FirstName = ()$val;
+        $this->FirstName = $val;
     }
 
     /**
@@ -133,7 +133,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastName');
         }
-        $this->LastName = ()$val;
+        $this->LastName = $val;
     }
 
     /**
@@ -145,7 +145,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrgName');
         }
-        $this->OrgName = ()$val;
+        $this->OrgName = $val;
     }
 
     /**
@@ -157,7 +157,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Address1');
         }
-        $this->Address1 = ()$val;
+        $this->Address1 = $val;
     }
 
     /**
@@ -169,7 +169,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Address2');
         }
-        $this->Address2 = ()$val;
+        $this->Address2 = $val;
     }
 
     /**
@@ -181,7 +181,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = ()$val;
+        $this->PostalCode = $val;
     }
 
     /**
@@ -193,7 +193,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = ()$val;
+        $this->City = $val;
     }
 
     /**
@@ -205,7 +205,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for State');
         }
-        $this->State = ()$val;
+        $this->State = $val;
     }
 
     /**
@@ -217,7 +217,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryCode');
         }
-        $this->CountryCode = ()$val;
+        $this->CountryCode = $val;
     }
 
     /**
@@ -229,7 +229,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = ()$val;
+        $this->Email = $val;
     }
 
     /**
@@ -241,7 +241,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = ()$val;
+        $this->Phone = $val;
     }
 
     /**
@@ -253,7 +253,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Fax');
         }
-        $this->Fax = ()$val;
+        $this->Fax = $val;
     }
 
     /**
@@ -265,7 +265,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Type');
         }
-        $this->Type = ()$val;
+        $this->Type = $val;
     }
 
     /**
@@ -277,7 +277,7 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Details');
         }
-        $this->Details = ()$val;
+        $this->Details = $val;
     }
 
     /**
@@ -289,6 +289,6 @@ class Contact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrganisationNumber');
         }
-        $this->OrganisationNumber = ()$val;
+        $this->OrganisationNumber = $val;
     }
 }

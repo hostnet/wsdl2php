@@ -54,7 +54,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BreadCrumb');
         }
-        $this->BreadCrumb = ()$val;
+        $this->BreadCrumb = $val;
 	}
 
 	/**
@@ -78,7 +78,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemCount = ()$val;
+        $this->ItemCount = $val;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class ExpressHistogramDomainDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ProductCount = ()$val;
+        $this->ProductCount = $val;
 	}
 
 	/**
@@ -99,7 +99,7 @@ class ExpressHistogramDomainDetailsType
 	 */
 	public function setImageURL($val)
 	{
-        $this->ImageURL = ()$val;
+        $this->ImageURL = $val;
 	}
 
 	/**
@@ -108,6 +108,6 @@ class ExpressHistogramDomainDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

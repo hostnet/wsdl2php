@@ -38,7 +38,7 @@ class SchedulingInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxScheduledMinutes = ()$val;
+        $this->MaxScheduledMinutes = $val;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class SchedulingInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MinScheduledMinutes = ()$val;
+        $this->MinScheduledMinutes = $val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class SchedulingInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxScheduledItems = ()$val;
+        $this->MaxScheduledItems = $val;
 	}
 
 	/**
@@ -71,6 +71,6 @@ class SchedulingInfoType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

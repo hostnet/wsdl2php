@@ -21,7 +21,7 @@ class SiFfTaSrecommendationsType
      */
     public function setAttributeSetArray($val)
     {
-        $this->AttributeSetArray = ()$val;
+        $this->AttributeSetArray = $val;
     }
 
     /**
@@ -30,6 +30,6 @@ class SiFfTaSrecommendationsType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

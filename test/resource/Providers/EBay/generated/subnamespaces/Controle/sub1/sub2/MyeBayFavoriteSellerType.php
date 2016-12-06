@@ -42,7 +42,7 @@ class MyeBayFavoriteSellerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for UserID');
         }
-        $this->UserID = ()$val;
+        $this->UserID = $val;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class MyeBayFavoriteSellerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = ()$val;
+        $this->StoreName = $val;
 	}
 
 	/**
@@ -63,6 +63,6 @@ class MyeBayFavoriteSellerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

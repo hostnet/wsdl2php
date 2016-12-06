@@ -17,6 +17,6 @@ class Payslip
 	 */
 	public function setPDF($val)
 	{
-        $this->PDF = ()$val;
+        $this->PDF = $val;
 	}
 }

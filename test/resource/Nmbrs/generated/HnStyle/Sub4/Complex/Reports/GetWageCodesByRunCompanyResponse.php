@@ -20,6 +20,6 @@ class GetWageCodesByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
         }
-        $this->Reports_GetWageCodesByRunCompanyResult = ()$val;
+        $this->Reports_GetWageCodesByRunCompanyResult = $val;
     }
 }

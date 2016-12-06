@@ -17,6 +17,6 @@ class GetStepsResponse
      */
     public function setSalaryTableGetStepsResult($val)
     {
-        $this->SalaryTable_GetStepsResult = ()$val;
+        $this->SalaryTable_GetStepsResult = $val;
     }
 }

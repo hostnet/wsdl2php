@@ -25,7 +25,7 @@ class StoreSubscriptionType
      */
     public function setLevel($val)
     {
-        $this->Level = ()$val;
+        $this->Level = $val;
     }
 
     /**
@@ -34,7 +34,7 @@ class StoreSubscriptionType
      */
     public function setFee($val)
     {
-        $this->Fee = ()$val;
+        $this->Fee = $val;
     }
 
     /**
@@ -43,6 +43,6 @@ class StoreSubscriptionType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

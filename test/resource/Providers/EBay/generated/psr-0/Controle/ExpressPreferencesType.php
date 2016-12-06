@@ -53,7 +53,7 @@ class ExpressPreferencesType
 	 */
 	public function setExpressSellingPreference($val)
 	{
-        $this->ExpressSellingPreference = ()$val;
+        $this->ExpressSellingPreference = $val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class ExpressPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
         }
-        $this->DefaultPayPalAccount = ()$val;
+        $this->DefaultPayPalAccount = $val;
 	}
 
 	/**
@@ -74,6 +74,6 @@ class ExpressPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

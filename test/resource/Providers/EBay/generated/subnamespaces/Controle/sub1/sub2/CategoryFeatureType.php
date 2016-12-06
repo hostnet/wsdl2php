@@ -208,7 +208,7 @@ class CategoryFeatureType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = ()$val;
+        $this->CategoryID = $val;
 	}
 
 	/**
@@ -217,7 +217,7 @@ class CategoryFeatureType
 	 */
 	public function setListingDuration($val)
 	{
-        $this->ListingDuration = ()$val;
+        $this->ListingDuration = $val;
 	}
 
 	/**
@@ -226,7 +226,7 @@ class CategoryFeatureType
 	 */
 	public function setShippingTermsRequired($val)
 	{
-        $this->ShippingTermsRequired = ()$val;
+        $this->ShippingTermsRequired = $val;
 	}
 
 	/**
@@ -235,7 +235,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferEnabled($val)
 	{
-        $this->BestOfferEnabled = ()$val;
+        $this->BestOfferEnabled = $val;
 	}
 
 	/**
@@ -244,7 +244,7 @@ class CategoryFeatureType
 	 */
 	public function setDutchBINEnabled($val)
 	{
-        $this->DutchBINEnabled = ()$val;
+        $this->DutchBINEnabled = $val;
 	}
 
 	/**
@@ -253,7 +253,7 @@ class CategoryFeatureType
 	 */
 	public function setUserConsentRequired($val)
 	{
-        $this->UserConsentRequired = ()$val;
+        $this->UserConsentRequired = $val;
 	}
 
 	/**
@@ -262,7 +262,7 @@ class CategoryFeatureType
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
-        $this->HomePageFeaturedEnabled = ()$val;
+        $this->HomePageFeaturedEnabled = $val;
 	}
 
 	/**
@@ -271,7 +271,7 @@ class CategoryFeatureType
 	 */
 	public function setProPackEnabled($val)
 	{
-        $this->ProPackEnabled = ()$val;
+        $this->ProPackEnabled = $val;
 	}
 
 	/**
@@ -280,7 +280,7 @@ class CategoryFeatureType
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
-        $this->BasicUpgradePackEnabled = ()$val;
+        $this->BasicUpgradePackEnabled = $val;
 	}
 
 	/**
@@ -289,7 +289,7 @@ class CategoryFeatureType
 	 */
 	public function setValuePackEnabled($val)
 	{
-        $this->ValuePackEnabled = ()$val;
+        $this->ValuePackEnabled = $val;
 	}
 
 	/**
@@ -298,7 +298,7 @@ class CategoryFeatureType
 	 */
 	public function setProPackPlusEnabled($val)
 	{
-        $this->ProPackPlusEnabled = ()$val;
+        $this->ProPackPlusEnabled = $val;
 	}
 
 	/**
@@ -307,7 +307,7 @@ class CategoryFeatureType
 	 */
 	public function setAdFormatEnabled($val)
 	{
-        $this->AdFormatEnabled = ()$val;
+        $this->AdFormatEnabled = $val;
 	}
 
 	/**
@@ -316,7 +316,7 @@ class CategoryFeatureType
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
-        $this->DigitalDeliveryEnabled = ()$val;
+        $this->DigitalDeliveryEnabled = $val;
 	}
 
 	/**
@@ -325,7 +325,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
-        $this->BestOfferCounterEnabled = ()$val;
+        $this->BestOfferCounterEnabled = $val;
 	}
 
 	/**
@@ -334,7 +334,7 @@ class CategoryFeatureType
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
-        $this->BestOfferAutoDeclineEnabled = ()$val;
+        $this->BestOfferAutoDeclineEnabled = $val;
 	}
 
 	/**
@@ -343,7 +343,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
-        $this->LocalMarketSpecialitySubscription = ()$val;
+        $this->LocalMarketSpecialitySubscription = $val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
-        $this->LocalMarketRegularSubscription = ()$val;
+        $this->LocalMarketRegularSubscription = $val;
 	}
 
 	/**
@@ -361,7 +361,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
-        $this->LocalMarketPremiumSubscription = ()$val;
+        $this->LocalMarketPremiumSubscription = $val;
 	}
 
 	/**
@@ -370,7 +370,7 @@ class CategoryFeatureType
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
-        $this->LocalMarketNonSubscription = ()$val;
+        $this->LocalMarketNonSubscription = $val;
 	}
 
 	/**
@@ -379,7 +379,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressEnabled($val)
 	{
-        $this->ExpressEnabled = ()$val;
+        $this->ExpressEnabled = $val;
 	}
 
 	/**
@@ -388,7 +388,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressPicturesRequired($val)
 	{
-        $this->ExpressPicturesRequired = ()$val;
+        $this->ExpressPicturesRequired = $val;
 	}
 
 	/**
@@ -397,7 +397,7 @@ class CategoryFeatureType
 	 */
 	public function setExpressConditionRequired($val)
 	{
-        $this->ExpressConditionRequired = ()$val;
+        $this->ExpressConditionRequired = $val;
 	}
 
 	/**
@@ -406,7 +406,7 @@ class CategoryFeatureType
 	 */
 	public function setMinimumReservePrice($val)
 	{
-        $this->MinimumReservePrice = ()$val;
+        $this->MinimumReservePrice = $val;
 	}
 
 	/**
@@ -415,7 +415,7 @@ class CategoryFeatureType
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
-        $this->SellerContactDetailsEnabled = ()$val;
+        $this->SellerContactDetailsEnabled = $val;
 	}
 
 	/**
@@ -424,7 +424,7 @@ class CategoryFeatureType
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
-        $this->TransactionConfirmationRequestEnabled = ()$val;
+        $this->TransactionConfirmationRequestEnabled = $val;
 	}
 
 	/**
@@ -433,7 +433,7 @@ class CategoryFeatureType
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
-        $this->StoreInventoryEnabled = ()$val;
+        $this->StoreInventoryEnabled = $val;
 	}
 
 	/**
@@ -442,7 +442,7 @@ class CategoryFeatureType
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
-        $this->SkypeMeTransactionalEnabled = ()$val;
+        $this->SkypeMeTransactionalEnabled = $val;
 	}
 
 	/**
@@ -451,7 +451,7 @@ class CategoryFeatureType
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
-        $this->SkypeMeNonTransactionalEnabled = ()$val;
+        $this->SkypeMeNonTransactionalEnabled = $val;
 	}
 
 	/**
@@ -460,6 +460,6 @@ class CategoryFeatureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

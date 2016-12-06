@@ -56,7 +56,7 @@ class StorefrontType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->StoreCategoryID = ()$val;
+        $this->StoreCategoryID = $val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class StorefrontType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->StoreCategory2ID = ()$val;
+        $this->StoreCategory2ID = $val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class StorefrontType
 	 */
 	public function setStoreURL($val)
 	{
-        $this->StoreURL = ()$val;
+        $this->StoreURL = $val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class StorefrontType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = ()$val;
+        $this->StoreName = $val;
 	}
 
 	/**
@@ -98,6 +98,6 @@ class StorefrontType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

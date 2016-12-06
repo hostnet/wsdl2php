@@ -28,7 +28,7 @@ class ListingDurationReferenceType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->_ = ()$val;
+        $this->_ = $val;
     }
 
     /**
@@ -37,6 +37,6 @@ class ListingDurationReferenceType
      */
     public function setType($val)
     {
-        $this->type = ()$val;
+        $this->type = $val;
     }
 }

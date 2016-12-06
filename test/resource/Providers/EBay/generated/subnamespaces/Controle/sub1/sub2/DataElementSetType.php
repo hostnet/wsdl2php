@@ -50,7 +50,7 @@ class DataElementSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DataElement');
         }
-        $this->DataElement = ()$val;
+        $this->DataElement = $val;
 	}
 
 	/**
@@ -62,7 +62,7 @@ class DataElementSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DataElementID = ()$val;
+        $this->DataElementID = $val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class DataElementSetType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 
 	/**
@@ -83,6 +83,6 @@ class DataElementSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributeSetID = ()$val;
+        $this->attributeSetID = $val;
 	}
 }

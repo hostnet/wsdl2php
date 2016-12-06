@@ -49,7 +49,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
-        $this->ListingAnalyzerRecommendations = ()$val;
+        $this->ListingAnalyzerRecommendations = $val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
-        $this->SIFFTASRecommendations = ()$val;
+        $this->SIFFTASRecommendations = $val;
 	}
 
 	/**
@@ -67,7 +67,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setPricingRecommendations($val)
 	{
-        $this->PricingRecommendations = ()$val;
+        $this->PricingRecommendations = $val;
 	}
 
 	/**
@@ -76,7 +76,7 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setAttributeRecommendations($val)
 	{
-        $this->AttributeRecommendations = ()$val;
+        $this->AttributeRecommendations = $val;
 	}
 
 	/**
@@ -85,6 +85,6 @@ class GetRecommendationsResponseType extends
 	 */
 	public function setProductRecommendations($val)
 	{
-        $this->ProductRecommendations = ()$val;
+        $this->ProductRecommendations = $val;
 	}
 }

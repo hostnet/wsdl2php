@@ -55,7 +55,7 @@ class GetOrdersResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = ()$val;
+        $this->PaginationResult = $val;
     }
 
     /**
@@ -64,7 +64,7 @@ class GetOrdersResponseType extends
      */
     public function setHasMoreOrders($val)
     {
-        $this->HasMoreOrders = ()$val;
+        $this->HasMoreOrders = $val;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetOrdersResponseType extends
      */
     public function setOrderArray($val)
     {
-        $this->OrderArray = ()$val;
+        $this->OrderArray = $val;
     }
 
     /**
@@ -85,7 +85,7 @@ class GetOrdersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->OrdersPerPage = ()$val;
+        $this->OrdersPerPage = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetOrdersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
     }
 
     /**
@@ -109,6 +109,6 @@ class GetOrdersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ReturnedOrderCountActual = ()$val;
+        $this->ReturnedOrderCountActual = $val;
     }
 }

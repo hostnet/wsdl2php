@@ -39,7 +39,7 @@ class PlaceOfferRequestType extends
      */
     public function setOffer($val)
     {
-        $this->Offer = ()$val;
+        $this->Offer = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class PlaceOfferRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = ()$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -57,6 +57,6 @@ class PlaceOfferRequestType extends
      */
     public function setBlockOnWarning($val)
     {
-        $this->BlockOnWarning = ()$val;
+        $this->BlockOnWarning = $val;
     }
 }

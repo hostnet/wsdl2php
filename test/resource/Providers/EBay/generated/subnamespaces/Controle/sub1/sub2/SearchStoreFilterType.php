@@ -35,7 +35,7 @@ class SearchStoreFilterType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for StoreName');
         }
-        $this->StoreName = ()$val;
+        $this->StoreName = $val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class SearchStoreFilterType
 	 */
 	public function setStoreSearch($val)
 	{
-        $this->StoreSearch = ()$val;
+        $this->StoreSearch = $val;
 	}
 
 	/**
@@ -53,6 +53,6 @@ class SearchStoreFilterType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

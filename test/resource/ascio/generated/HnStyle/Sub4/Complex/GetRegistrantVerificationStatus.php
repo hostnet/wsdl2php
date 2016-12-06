@@ -24,7 +24,7 @@ class GetRegistrantVerificationStatus
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetRegistrantVerificationStatus
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for value');
         }
-        $this->value = ()$val;
+        $this->value = $val;
     }
 }

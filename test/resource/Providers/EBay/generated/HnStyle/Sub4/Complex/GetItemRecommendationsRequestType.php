@@ -29,6 +29,6 @@ class GetItemRecommendationsRequestType extends
      */
     public function setGetRecommendationsRequestContainer($val)
     {
-        $this->GetRecommendationsRequestContainer = ()$val;
+        $this->GetRecommendationsRequestContainer = $val;
     }
 }

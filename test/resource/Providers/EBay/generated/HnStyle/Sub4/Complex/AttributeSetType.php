@@ -57,7 +57,7 @@ class AttributeSetType
      */
     public function setAttribute($val)
     {
-        $this->Attribute = ()$val;
+        $this->Attribute = $val;
     }
 
     /**
@@ -66,7 +66,7 @@ class AttributeSetType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 
     /**
@@ -78,7 +78,7 @@ class AttributeSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->attributeSetID = ()$val;
+        $this->attributeSetID = $val;
     }
 
     /**
@@ -90,6 +90,6 @@ class AttributeSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for attributeSetVersion');
         }
-        $this->attributeSetVersion = ()$val;
+        $this->attributeSetVersion = $val;
     }
 }

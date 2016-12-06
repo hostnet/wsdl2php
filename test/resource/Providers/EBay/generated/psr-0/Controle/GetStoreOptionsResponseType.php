@@ -45,7 +45,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setBasicThemeArray($val)
 	{
-        $this->BasicThemeArray = ()$val;
+        $this->BasicThemeArray = $val;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setAdvancedThemeArray($val)
 	{
-        $this->AdvancedThemeArray = ()$val;
+        $this->AdvancedThemeArray = $val;
 	}
 
 	/**
@@ -63,7 +63,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setLogoArray($val)
 	{
-        $this->LogoArray = ()$val;
+        $this->LogoArray = $val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class GetStoreOptionsResponseType extends
 	 */
 	public function setSubscriptionArray($val)
 	{
-        $this->SubscriptionArray = ()$val;
+        $this->SubscriptionArray = $val;
 	}
 
 	/**
@@ -84,7 +84,7 @@ class GetStoreOptionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxCategories = ()$val;
+        $this->MaxCategories = $val;
 	}
 
 	/**
@@ -96,6 +96,6 @@ class GetStoreOptionsResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxCategoryLevels = ()$val;
+        $this->MaxCategoryLevels = $val;
 	}
 }

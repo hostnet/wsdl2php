@@ -98,7 +98,7 @@ class AbstractRequestType
      */
     public function setDetailLevel($val)
     {
-        $this->DetailLevel = ()$val;
+        $this->DetailLevel = $val;
     }
 
     /**
@@ -110,7 +110,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ErrorLanguage');
         }
-        $this->ErrorLanguage = ()$val;
+        $this->ErrorLanguage = $val;
     }
 
     /**
@@ -122,7 +122,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageID');
         }
-        $this->MessageID = ()$val;
+        $this->MessageID = $val;
     }
 
     /**
@@ -134,7 +134,7 @@ class AbstractRequestType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Version');
         }
-        $this->Version = ()$val;
+        $this->Version = $val;
     }
 
     /**
@@ -143,7 +143,7 @@ class AbstractRequestType
      */
     public function setErrorHandling($val)
     {
-        $this->ErrorHandling = ()$val;
+        $this->ErrorHandling = $val;
     }
 
     /**
@@ -152,7 +152,7 @@ class AbstractRequestType
      */
     public function setInvocationID($val)
     {
-        $this->InvocationID = ()$val;
+        $this->InvocationID = $val;
     }
 
     /**
@@ -161,7 +161,7 @@ class AbstractRequestType
      */
     public function setWarningLevel($val)
     {
-        $this->WarningLevel = ()$val;
+        $this->WarningLevel = $val;
     }
 
     /**
@@ -170,6 +170,6 @@ class AbstractRequestType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

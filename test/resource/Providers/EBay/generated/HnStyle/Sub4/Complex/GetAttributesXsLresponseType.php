@@ -19,6 +19,6 @@ class GetAttributesXsLresponseType extends
      */
     public function setXSLFile($val)
     {
-        $this->XSLFile = ()$val;
+        $this->XSLFile = $val;
     }
 }

@@ -24,7 +24,7 @@ class GetContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for contactHandle');
         }
-        $this->contactHandle = ()$val;
+        $this->contactHandle = $val;
     }
 }

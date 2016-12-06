@@ -24,7 +24,7 @@ class CreateDnsSecKey
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class CreateDnsSecKey
      */
     public function setDnsSecKey($val)
     {
-        $this->dnsSecKey = ()$val;
+        $this->dnsSecKey = $val;
     }
 }

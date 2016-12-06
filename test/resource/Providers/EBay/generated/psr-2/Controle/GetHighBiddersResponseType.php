@@ -34,7 +34,7 @@ class GetHighBiddersResponseType extends
      */
     public function setBidArray($val)
     {
-        $this->BidArray = ()$val;
+        $this->BidArray = $val;
     }
 
     /**
@@ -43,6 +43,6 @@ class GetHighBiddersResponseType extends
      */
     public function setListingStatus($val)
     {
-        $this->ListingStatus = ()$val;
+        $this->ListingStatus = $val;
     }
 }

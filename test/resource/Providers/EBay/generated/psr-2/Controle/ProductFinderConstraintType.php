@@ -35,7 +35,7 @@ class ProductFinderConstraintType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayName');
         }
-        $this->DisplayName = ()$val;
+        $this->DisplayName = $val;
     }
 
     /**
@@ -47,7 +47,7 @@ class ProductFinderConstraintType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DisplayValue');
         }
-        $this->DisplayValue = ()$val;
+        $this->DisplayValue = $val;
     }
 
     /**
@@ -56,6 +56,6 @@ class ProductFinderConstraintType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

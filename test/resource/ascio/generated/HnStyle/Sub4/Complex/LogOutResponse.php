@@ -17,6 +17,6 @@ class LogOutResponse
      */
     public function setLogOutResult($val)
     {
-        $this->LogOutResult = ()$val;
+        $this->LogOutResult = $val;
     }
 }

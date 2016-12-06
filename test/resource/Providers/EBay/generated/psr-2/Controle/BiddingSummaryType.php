@@ -54,7 +54,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->SummaryDays = ()$val;
+        $this->SummaryDays = $val;
     }
 
     /**
@@ -66,7 +66,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TotalBids = ()$val;
+        $this->TotalBids = $val;
     }
 
     /**
@@ -78,7 +78,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidActivityWithSeller = ()$val;
+        $this->BidActivityWithSeller = $val;
     }
 
     /**
@@ -90,7 +90,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidsToUniqueSellers = ()$val;
+        $this->BidsToUniqueSellers = $val;
     }
 
     /**
@@ -102,7 +102,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidsToUniqueCategories = ()$val;
+        $this->BidsToUniqueCategories = $val;
     }
 
     /**
@@ -114,7 +114,7 @@ class BiddingSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BidRetractions = ()$val;
+        $this->BidRetractions = $val;
     }
 
     /**
@@ -123,7 +123,7 @@ class BiddingSummaryType
      */
     public function setItemBidDetails($val)
     {
-        $this->ItemBidDetails = ()$val;
+        $this->ItemBidDetails = $val;
     }
 
     /**
@@ -132,6 +132,6 @@ class BiddingSummaryType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

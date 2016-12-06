@@ -24,6 +24,6 @@ class GetPictureManagerDetailsResponseType extends
      */
     public function setPictureManagerDetails($val)
     {
-        $this->PictureManagerDetails = ()$val;
+        $this->PictureManagerDetails = $val;
     }
 }

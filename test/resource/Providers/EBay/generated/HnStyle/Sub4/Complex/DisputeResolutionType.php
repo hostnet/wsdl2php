@@ -36,7 +36,7 @@ class DisputeResolutionType
      */
     public function setDisputeResolutionRecordType($val)
     {
-        $this->DisputeResolutionRecordType = ()$val;
+        $this->DisputeResolutionRecordType = $val;
     }
 
     /**
@@ -45,7 +45,7 @@ class DisputeResolutionType
      */
     public function setDisputeResolutionReason($val)
     {
-        $this->DisputeResolutionReason = ()$val;
+        $this->DisputeResolutionReason = $val;
     }
 
     /**
@@ -54,7 +54,7 @@ class DisputeResolutionType
      */
     public function setResolutionTime($val)
     {
-        $this->ResolutionTime = ()$val;
+        $this->ResolutionTime = $val;
     }
 
     /**
@@ -63,6 +63,6 @@ class DisputeResolutionType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

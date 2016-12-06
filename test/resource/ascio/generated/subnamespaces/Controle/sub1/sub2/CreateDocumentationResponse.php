@@ -21,7 +21,7 @@ class CreateDocumentationResponse
 	 */
 	public function setCreateDocumentationResult($val)
 	{
-        $this->CreateDocumentationResult = ()$val;
+        $this->CreateDocumentationResult = $val;
 	}
 
 	/**
@@ -33,6 +33,6 @@ class CreateDocumentationResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->documentationId = ()$val;
+        $this->documentationId = $val;
 	}
 }

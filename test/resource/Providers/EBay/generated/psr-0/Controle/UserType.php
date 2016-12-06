@@ -303,7 +303,7 @@ class UserType
 	 */
 	public function setAboutMePage($val)
 	{
-        $this->AboutMePage = ()$val;
+        $this->AboutMePage = $val;
 	}
 
 	/**
@@ -315,7 +315,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIASToken');
         }
-        $this->EIASToken = ()$val;
+        $this->EIASToken = $val;
 	}
 
 	/**
@@ -327,7 +327,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RESTToken');
         }
-        $this->RESTToken = ()$val;
+        $this->RESTToken = $val;
 	}
 
 	/**
@@ -339,7 +339,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = ()$val;
+        $this->Email = $val;
 	}
 
 	/**
@@ -351,7 +351,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->FeedbackScore = ()$val;
+        $this->FeedbackScore = $val;
 	}
 
 	/**
@@ -363,7 +363,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniqueNegativeFeedbackCount = ()$val;
+        $this->UniqueNegativeFeedbackCount = $val;
 	}
 
 	/**
@@ -375,7 +375,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->UniquePositiveFeedbackCount = ()$val;
+        $this->UniquePositiveFeedbackCount = $val;
 	}
 
 	/**
@@ -384,7 +384,7 @@ class UserType
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
-        $this->PositiveFeedbackPercent = ()$val;
+        $this->PositiveFeedbackPercent = $val;
 	}
 
 	/**
@@ -393,7 +393,7 @@ class UserType
 	 */
 	public function setFeedbackPrivate($val)
 	{
-        $this->FeedbackPrivate = ()$val;
+        $this->FeedbackPrivate = $val;
 	}
 
 	/**
@@ -402,7 +402,7 @@ class UserType
 	 */
 	public function setFeedbackRatingStar($val)
 	{
-        $this->FeedbackRatingStar = ()$val;
+        $this->FeedbackRatingStar = $val;
 	}
 
 	/**
@@ -411,7 +411,7 @@ class UserType
 	 */
 	public function setIDVerified($val)
 	{
-        $this->IDVerified = ()$val;
+        $this->IDVerified = $val;
 	}
 
 	/**
@@ -420,7 +420,7 @@ class UserType
 	 */
 	public function setEBayGoodStanding($val)
 	{
-        $this->eBayGoodStanding = ()$val;
+        $this->eBayGoodStanding = $val;
 	}
 
 	/**
@@ -429,7 +429,7 @@ class UserType
 	 */
 	public function setNewUser($val)
 	{
-        $this->NewUser = ()$val;
+        $this->NewUser = $val;
 	}
 
 	/**
@@ -438,7 +438,7 @@ class UserType
 	 */
 	public function setRegistrationAddress($val)
 	{
-        $this->RegistrationAddress = ()$val;
+        $this->RegistrationAddress = $val;
 	}
 
 	/**
@@ -447,7 +447,7 @@ class UserType
 	 */
 	public function setRegistrationDate($val)
 	{
-        $this->RegistrationDate = ()$val;
+        $this->RegistrationDate = $val;
 	}
 
 	/**
@@ -456,7 +456,7 @@ class UserType
 	 */
 	public function setSite($val)
 	{
-        $this->Site = ()$val;
+        $this->Site = $val;
 	}
 
 	/**
@@ -465,7 +465,7 @@ class UserType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = ()$val;
+        $this->Status = $val;
 	}
 
 	/**
@@ -474,7 +474,7 @@ class UserType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = ()$val;
+        $this->UserID = $val;
 	}
 
 	/**
@@ -483,7 +483,7 @@ class UserType
 	 */
 	public function setUserIDChanged($val)
 	{
-        $this->UserIDChanged = ()$val;
+        $this->UserIDChanged = $val;
 	}
 
 	/**
@@ -492,7 +492,7 @@ class UserType
 	 */
 	public function setUserIDLastChanged($val)
 	{
-        $this->UserIDLastChanged = ()$val;
+        $this->UserIDLastChanged = $val;
 	}
 
 	/**
@@ -501,7 +501,7 @@ class UserType
 	 */
 	public function setVATStatus($val)
 	{
-        $this->VATStatus = ()$val;
+        $this->VATStatus = $val;
 	}
 
 	/**
@@ -510,7 +510,7 @@ class UserType
 	 */
 	public function setBuyerInfo($val)
 	{
-        $this->BuyerInfo = ()$val;
+        $this->BuyerInfo = $val;
 	}
 
 	/**
@@ -519,7 +519,7 @@ class UserType
 	 */
 	public function setSellerInfo($val)
 	{
-        $this->SellerInfo = ()$val;
+        $this->SellerInfo = $val;
 	}
 
 	/**
@@ -528,7 +528,7 @@ class UserType
 	 */
 	public function setCharityAffiliations($val)
 	{
-        $this->CharityAffiliations = ()$val;
+        $this->CharityAffiliations = $val;
 	}
 
 	/**
@@ -537,7 +537,7 @@ class UserType
 	 */
 	public function setCharitySeller($val)
 	{
-        $this->CharitySeller = ()$val;
+        $this->CharitySeller = $val;
 	}
 
 	/**
@@ -546,7 +546,7 @@ class UserType
 	 */
 	public function setPayPalAccountLevel($val)
 	{
-        $this->PayPalAccountLevel = ()$val;
+        $this->PayPalAccountLevel = $val;
 	}
 
 	/**
@@ -555,7 +555,7 @@ class UserType
 	 */
 	public function setPayPalAccountType($val)
 	{
-        $this->PayPalAccountType = ()$val;
+        $this->PayPalAccountType = $val;
 	}
 
 	/**
@@ -564,7 +564,7 @@ class UserType
 	 */
 	public function setPayPalAccountStatus($val)
 	{
-        $this->PayPalAccountStatus = ()$val;
+        $this->PayPalAccountStatus = $val;
 	}
 
 	/**
@@ -573,7 +573,7 @@ class UserType
 	 */
 	public function setUserSubscription($val)
 	{
-        $this->UserSubscription = ()$val;
+        $this->UserSubscription = $val;
 	}
 
 	/**
@@ -582,7 +582,7 @@ class UserType
 	 */
 	public function setSiteVerified($val)
 	{
-        $this->SiteVerified = ()$val;
+        $this->SiteVerified = $val;
 	}
 
 	/**
@@ -594,7 +594,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SkypeID');
         }
-        $this->SkypeID = ()$val;
+        $this->SkypeID = $val;
 	}
 
 	/**
@@ -603,7 +603,7 @@ class UserType
 	 */
 	public function setEBayWikiReadOnly($val)
 	{
-        $this->eBayWikiReadOnly = ()$val;
+        $this->eBayWikiReadOnly = $val;
 	}
 
 	/**
@@ -615,7 +615,7 @@ class UserType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->TUVLevel = ()$val;
+        $this->TUVLevel = $val;
 	}
 
 	/**
@@ -627,7 +627,7 @@ class UserType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VATID');
         }
-        $this->VATID = ()$val;
+        $this->VATID = $val;
 	}
 
 	/**
@@ -636,7 +636,7 @@ class UserType
 	 */
 	public function setMotorsDealer($val)
 	{
-        $this->MotorsDealer = ()$val;
+        $this->MotorsDealer = $val;
 	}
 
 	/**
@@ -645,7 +645,7 @@ class UserType
 	 */
 	public function setSellerPaymentMethod($val)
 	{
-        $this->SellerPaymentMethod = ()$val;
+        $this->SellerPaymentMethod = $val;
 	}
 
 	/**
@@ -654,7 +654,7 @@ class UserType
 	 */
 	public function setBiddingSummary($val)
 	{
-        $this->BiddingSummary = ()$val;
+        $this->BiddingSummary = $val;
 	}
 
 	/**
@@ -663,7 +663,7 @@ class UserType
 	 */
 	public function setUserAnonymized($val)
 	{
-        $this->UserAnonymized = ()$val;
+        $this->UserAnonymized = $val;
 	}
 
 	/**
@@ -672,6 +672,6 @@ class UserType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

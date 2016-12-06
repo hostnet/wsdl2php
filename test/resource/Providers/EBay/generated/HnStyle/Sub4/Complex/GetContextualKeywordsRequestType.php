@@ -38,7 +38,7 @@ class GetContextualKeywordsRequestType extends
      */
     public function setURL($val)
     {
-        $this->URL = ()$val;
+        $this->URL = $val;
     }
 
     /**
@@ -50,7 +50,7 @@ class GetContextualKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Encoding');
         }
-        $this->Encoding = ()$val;
+        $this->Encoding = $val;
     }
 
     /**
@@ -62,6 +62,6 @@ class GetContextualKeywordsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = ()$val;
+        $this->CategoryID = $val;
     }
 }

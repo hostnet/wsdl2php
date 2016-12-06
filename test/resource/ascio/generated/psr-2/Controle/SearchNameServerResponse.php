@@ -21,7 +21,7 @@ class SearchNameServerResponse
      */
     public function setSearchNameServerResult($val)
     {
-        $this->SearchNameServerResult = ()$val;
+        $this->SearchNameServerResult = $val;
     }
 
     /**
@@ -30,6 +30,6 @@ class SearchNameServerResponse
      */
     public function setNameServers($val)
     {
-        $this->nameServers = ()$val;
+        $this->nameServers = $val;
     }
 }

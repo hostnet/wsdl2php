@@ -56,7 +56,7 @@ class BiddingDetailsType
 	 */
 	public function setConvertedMaxBid($val)
 	{
-        $this->ConvertedMaxBid = ()$val;
+        $this->ConvertedMaxBid = $val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class BiddingDetailsType
 	 */
 	public function setMaxBid($val)
 	{
-        $this->MaxBid = ()$val;
+        $this->MaxBid = $val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class BiddingDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QuantityBid = ()$val;
+        $this->QuantityBid = $val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class BiddingDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QuantityWon = ()$val;
+        $this->QuantityWon = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class BiddingDetailsType
 	 */
 	public function setWinning($val)
 	{
-        $this->Winning = ()$val;
+        $this->Winning = $val;
 	}
 
 	/**
@@ -107,6 +107,6 @@ class BiddingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -24,7 +24,7 @@ class BrowseNode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BrowseId');
         }
-        $this->BrowseId = ()$val;
+        $this->BrowseId = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class BrowseNode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BrowseName');
         }
-        $this->BrowseName = ()$val;
+        $this->BrowseName = $val;
     }
 }

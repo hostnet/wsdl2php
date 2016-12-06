@@ -24,6 +24,6 @@ class ExpressConditionRequiredDefinitionType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

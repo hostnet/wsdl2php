@@ -31,7 +31,7 @@ class NotificationUserDataType
 	 */
 	public function setSMSSubscription($val)
 	{
-        $this->SMSSubscription = ()$val;
+        $this->SMSSubscription = $val;
 	}
 
 	/**
@@ -40,7 +40,7 @@ class NotificationUserDataType
 	 */
 	public function setSummarySchedule($val)
 	{
-        $this->SummarySchedule = ()$val;
+        $this->SummarySchedule = $val;
 	}
 
 	/**
@@ -49,6 +49,6 @@ class NotificationUserDataType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

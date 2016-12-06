@@ -56,7 +56,7 @@ class DescriptionTemplateType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->GroupID = ()$val;
+        $this->GroupID = $val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class DescriptionTemplateType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ID = ()$val;
+        $this->ID = $val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class DescriptionTemplateType
 	 */
 	public function setImageURL($val)
 	{
-        $this->ImageURL = ()$val;
+        $this->ImageURL = $val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -101,7 +101,7 @@ class DescriptionTemplateType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TemplateXML');
         }
-        $this->TemplateXML = ()$val;
+        $this->TemplateXML = $val;
 	}
 
 	/**
@@ -110,7 +110,7 @@ class DescriptionTemplateType
 	 */
 	public function setType($val)
 	{
-        $this->Type = ()$val;
+        $this->Type = $val;
 	}
 
 	/**
@@ -119,6 +119,6 @@ class DescriptionTemplateType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -23,6 +23,6 @@ class ProductRecommendationsType
      */
     public function setProduct($val)
     {
-        $this->Product = ()$val;
+        $this->Product = $val;
     }
 }

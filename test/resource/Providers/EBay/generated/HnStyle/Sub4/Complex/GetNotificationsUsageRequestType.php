@@ -33,7 +33,7 @@ class GetNotificationsUsageRequestType extends
      */
     public function setStartTime($val)
     {
-        $this->StartTime = ()$val;
+        $this->StartTime = $val;
     }
 
     /**
@@ -42,7 +42,7 @@ class GetNotificationsUsageRequestType extends
      */
     public function setEndTime($val)
     {
-        $this->EndTime = ()$val;
+        $this->EndTime = $val;
     }
 
     /**
@@ -51,6 +51,6 @@ class GetNotificationsUsageRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = ()$val;
+        $this->ItemID = $val;
     }
 }

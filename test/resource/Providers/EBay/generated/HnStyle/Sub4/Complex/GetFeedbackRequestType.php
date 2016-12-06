@@ -46,7 +46,7 @@ class GetFeedbackRequestType extends
      */
     public function setPagination($val)
     {
-        $this->Pagination = ()$val;
+        $this->Pagination = $val;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetFeedbackRequestType extends
      */
     public function setUserID($val)
     {
-        $this->UserID = ()$val;
+        $this->UserID = $val;
     }
 
     /**
@@ -67,6 +67,6 @@ class GetFeedbackRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackID');
         }
-        $this->FeedbackID = ()$val;
+        $this->FeedbackID = $val;
     }
 }

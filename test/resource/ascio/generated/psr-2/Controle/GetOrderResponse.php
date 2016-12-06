@@ -21,7 +21,7 @@ class GetOrderResponse
      */
     public function setGetOrderResult($val)
     {
-        $this->GetOrderResult = ()$val;
+        $this->GetOrderResult = $val;
     }
 
     /**
@@ -30,6 +30,6 @@ class GetOrderResponse
      */
     public function setOrder($val)
     {
-        $this->order = ()$val;
+        $this->order = $val;
     }
 }

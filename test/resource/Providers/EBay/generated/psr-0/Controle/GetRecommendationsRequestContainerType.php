@@ -77,7 +77,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setListingFlow($val)
 	{
-        $this->ListingFlow = ()$val;
+        $this->ListingFlow = $val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setItem($val)
 	{
-        $this->Item = ()$val;
+        $this->Item = $val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setExternalProductID($val)
 	{
-        $this->ExternalProductID = ()$val;
+        $this->ExternalProductID = $val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setModifiedFields($val)
 	{
-        $this->ModifiedFields = ()$val;
+        $this->ModifiedFields = $val;
 	}
 
 	/**
@@ -113,7 +113,7 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setRecommendationEngine($val)
 	{
-        $this->RecommendationEngine = ()$val;
+        $this->RecommendationEngine = $val;
 	}
 
 	/**
@@ -125,7 +125,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = ()$val;
+        $this->Query = $val;
 	}
 
 	/**
@@ -137,7 +137,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CorrelationID');
         }
-        $this->CorrelationID = ()$val;
+        $this->CorrelationID = $val;
 	}
 
 	/**
@@ -149,7 +149,7 @@ class GetRecommendationsRequestContainerType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeletedField');
         }
-        $this->DeletedField = ()$val;
+        $this->DeletedField = $val;
 	}
 
 	/**
@@ -158,6 +158,6 @@ class GetRecommendationsRequestContainerType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -77,7 +77,7 @@ class ProductListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProductID');
         }
-        $this->ProductID = ()$val;
+        $this->ProductID = $val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class ProductListingDetailsType
 	 */
 	public function setIncludeStockPhotoURL($val)
 	{
-        $this->IncludeStockPhotoURL = ()$val;
+        $this->IncludeStockPhotoURL = $val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class ProductListingDetailsType
 	 */
 	public function setIncludePrefilledItemInformation($val)
 	{
-        $this->IncludePrefilledItemInformation = ()$val;
+        $this->IncludePrefilledItemInformation = $val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class ProductListingDetailsType
 	 */
 	public function setUseStockPhotoURLAsGallery($val)
 	{
-        $this->UseStockPhotoURLAsGallery = ()$val;
+        $this->UseStockPhotoURLAsGallery = $val;
 	}
 
 	/**
@@ -113,7 +113,7 @@ class ProductListingDetailsType
 	 */
 	public function setStockPhotoURL($val)
 	{
-        $this->StockPhotoURL = ()$val;
+        $this->StockPhotoURL = $val;
 	}
 
 	/**
@@ -125,7 +125,7 @@ class ProductListingDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Copyright');
         }
-        $this->Copyright = ()$val;
+        $this->Copyright = $val;
 	}
 
 	/**
@@ -134,6 +134,6 @@ class ProductListingDetailsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

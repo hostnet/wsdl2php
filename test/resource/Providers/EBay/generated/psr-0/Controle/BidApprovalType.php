@@ -50,7 +50,7 @@ class BidApprovalType
 	 */
 	public function setUserID($val)
 	{
-        $this->UserID = ()$val;
+        $this->UserID = $val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class BidApprovalType
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
-        $this->ApprovedBiddingLimit = ()$val;
+        $this->ApprovedBiddingLimit = $val;
 	}
 
 	/**
@@ -71,7 +71,7 @@ class BidApprovalType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DeclinedComment');
         }
-        $this->DeclinedComment = ()$val;
+        $this->DeclinedComment = $val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class BidApprovalType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = ()$val;
+        $this->Status = $val;
 	}
 
 	/**
@@ -89,6 +89,6 @@ class BidApprovalType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

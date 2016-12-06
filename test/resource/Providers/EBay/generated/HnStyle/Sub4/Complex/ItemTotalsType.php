@@ -25,7 +25,7 @@ class ItemTotalsType
      */
     public function setTotalQuantity($val)
     {
-        $this->TotalQuantity = ()$val;
+        $this->TotalQuantity = $val;
     }
 
     /**
@@ -34,6 +34,6 @@ class ItemTotalsType
      */
     public function setTotalValue($val)
     {
-        $this->TotalValue = ()$val;
+        $this->TotalValue = $val;
     }
 }

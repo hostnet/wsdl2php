@@ -70,7 +70,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
     }
 
     /**
@@ -82,7 +82,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Mission');
         }
-        $this->Mission = ()$val;
+        $this->Mission = $val;
     }
 
     /**
@@ -91,7 +91,7 @@ class CharityInfoType
      */
     public function setLogoURL($val)
     {
-        $this->LogoURL = ()$val;
+        $this->LogoURL = $val;
     }
 
     /**
@@ -100,7 +100,7 @@ class CharityInfoType
      */
     public function setStatus($val)
     {
-        $this->Status = ()$val;
+        $this->Status = $val;
     }
 
     /**
@@ -112,7 +112,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchableString');
         }
-        $this->SearchableString = ()$val;
+        $this->SearchableString = $val;
     }
 
     /**
@@ -124,7 +124,7 @@ class CharityInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CharityRegion = ()$val;
+        $this->CharityRegion = $val;
     }
 
     /**
@@ -136,7 +136,7 @@ class CharityInfoType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CharityDomain = ()$val;
+        $this->CharityDomain = $val;
     }
 
     /**
@@ -148,7 +148,7 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CharityID');
         }
-        $this->CharityID = ()$val;
+        $this->CharityID = $val;
     }
 
     /**
@@ -157,7 +157,7 @@ class CharityInfoType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 
     /**
@@ -169,6 +169,6 @@ class CharityInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for id');
         }
-        $this->id = ()$val;
+        $this->id = $val;
     }
 }

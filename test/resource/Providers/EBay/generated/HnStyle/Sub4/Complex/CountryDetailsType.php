@@ -32,7 +32,7 @@ class CountryDetailsType
      */
     public function setCountry($val)
     {
-        $this->Country = ()$val;
+        $this->Country = $val;
     }
 
     /**
@@ -44,7 +44,7 @@ class CountryDetailsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = ()$val;
+        $this->Description = $val;
     }
 
     /**
@@ -53,6 +53,6 @@ class CountryDetailsType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

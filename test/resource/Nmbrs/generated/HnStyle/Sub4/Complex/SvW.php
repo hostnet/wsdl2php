@@ -29,7 +29,7 @@ class SvW
      */
     public function setSVWSettings($val)
     {
-        $this->SVWSettings = ()$val;
+        $this->SVWSettings = $val;
     }
 
     /**
@@ -38,7 +38,7 @@ class SvW
      */
     public function setSector($val)
     {
-        $this->Sector = ()$val;
+        $this->Sector = $val;
     }
 
     /**
@@ -47,7 +47,7 @@ class SvW
      */
     public function setRisicogroep($val)
     {
-        $this->Risicogroep = ()$val;
+        $this->Risicogroep = $val;
     }
 
     /**
@@ -56,6 +56,6 @@ class SvW
      */
     public function setCAO($val)
     {
-        $this->CAO = ()$val;
+        $this->CAO = $val;
     }
 }

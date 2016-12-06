@@ -22,7 +22,7 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = ()$val;
+        $this->email = $val;
 	}
 
 	/**
@@ -34,7 +34,7 @@ class VerifyMxRecord
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = ()$val;
+        $this->LicenseKey = $val;
 	}
 }
 
@@ -56,7 +56,7 @@ class VerifyMxRecordResponse
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->VerifyMXRecordResult = ()$val;
+        $this->VerifyMXRecordResult = $val;
 	}
 }
 
@@ -86,7 +86,7 @@ class AdvancedVerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = ()$val;
+        $this->email = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class AdvancedVerifyEmail
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->timeout = ()$val;
+        $this->timeout = $val;
 	}
 
 	/**
@@ -110,7 +110,7 @@ class AdvancedVerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = ()$val;
+        $this->LicenseKey = $val;
 	}
 }
 
@@ -129,7 +129,7 @@ class AdvancedVerifyEmailResponse
 	 */
 	public function setAdvancedVerifyEmailResult($val)
 	{
-        $this->AdvancedVerifyEmailResult = ()$val;
+        $this->AdvancedVerifyEmailResult = $val;
 	}
 }
 
@@ -163,7 +163,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ResponseText');
         }
-        $this->ResponseText = ()$val;
+        $this->ResponseText = $val;
 	}
 
 	/**
@@ -175,7 +175,7 @@ class ReturnIndicator
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ResponseCode = ()$val;
+        $this->ResponseCode = $val;
 	}
 
 	/**
@@ -187,7 +187,7 @@ class ReturnIndicator
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LastMailServer');
         }
-        $this->LastMailServer = ()$val;
+        $this->LastMailServer = $val;
 	}
 
 	/**
@@ -196,7 +196,7 @@ class ReturnIndicator
 	 */
 	public function setGoodEmail($val)
 	{
-        $this->GoodEmail = ()$val;
+        $this->GoodEmail = $val;
 	}
 }
 
@@ -222,7 +222,7 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = ()$val;
+        $this->email = $val;
 	}
 
 	/**
@@ -234,7 +234,7 @@ class VerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = ()$val;
+        $this->LicenseKey = $val;
 	}
 }
 
@@ -253,7 +253,7 @@ class VerifyEmailResponse
 	 */
 	public function setVerifyEmailResult($val)
 	{
-        $this->VerifyEmailResult = ()$val;
+        $this->VerifyEmailResult = $val;
 	}
 }
 
@@ -275,7 +275,7 @@ class ReturnCodesResponse
 	 */
 	public function setReturnCodesResult($val)
 	{
-        $this->ReturnCodesResult = ()$val;
+        $this->ReturnCodesResult = $val;
 	}
 }
 

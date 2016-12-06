@@ -26,7 +26,7 @@ class GetPictureManagerOptionsResponseType extends
 	 */
 	public function setSubscription($val)
 	{
-        $this->Subscription = ()$val;
+        $this->Subscription = $val;
 	}
 
 	/**
@@ -35,6 +35,6 @@ class GetPictureManagerOptionsResponseType extends
 	 */
 	public function setPictureType($val)
 	{
-        $this->PictureType = ()$val;
+        $this->PictureType = $val;
 	}
 }

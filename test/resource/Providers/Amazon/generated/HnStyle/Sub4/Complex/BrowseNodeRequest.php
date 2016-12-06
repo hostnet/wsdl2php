@@ -48,7 +48,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for browse_node');
         }
-        $this->browse_node = ()$val;
+        $this->browse_node = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
     }
 
     /**
@@ -84,7 +84,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
     }
 
     /**
@@ -96,7 +96,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
     }
 
     /**
@@ -108,7 +108,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
     }
 
     /**
@@ -120,7 +120,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
     }
 
     /**
@@ -132,6 +132,6 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
     }
 }

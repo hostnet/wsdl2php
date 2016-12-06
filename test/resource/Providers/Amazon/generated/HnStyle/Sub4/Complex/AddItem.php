@@ -28,7 +28,7 @@ class AddItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Asin');
         }
-        $this->Asin = ()$val;
+        $this->Asin = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class AddItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->ExchangeId = ()$val;
+        $this->ExchangeId = $val;
     }
 
     /**
@@ -52,6 +52,6 @@ class AddItem
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Quantity');
         }
-        $this->Quantity = ()$val;
+        $this->Quantity = $val;
     }
 }

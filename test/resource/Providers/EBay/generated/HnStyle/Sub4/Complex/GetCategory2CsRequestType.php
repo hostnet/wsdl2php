@@ -28,7 +28,7 @@ class GetCategory2CsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryID');
         }
-        $this->CategoryID = ()$val;
+        $this->CategoryID = $val;
     }
 
     /**
@@ -40,6 +40,6 @@ class GetCategory2CsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
-        $this->AttributeSystemVersion = ()$val;
+        $this->AttributeSystemVersion = $val;
     }
 }

@@ -93,7 +93,7 @@ class Registrant
 	 */
 	public function setCreDate($val)
 	{
-        $this->CreDate = ()$val;
+        $this->CreDate = $val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Status');
         }
-        $this->Status = ()$val;
+        $this->Status = $val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Handle');
         }
-        $this->Handle = ()$val;
+        $this->Handle = $val;
 	}
 
 	/**
@@ -129,7 +129,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -141,7 +141,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrgName');
         }
-        $this->OrgName = ()$val;
+        $this->OrgName = $val;
 	}
 
 	/**
@@ -153,7 +153,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Address1');
         }
-        $this->Address1 = ()$val;
+        $this->Address1 = $val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Address2');
         }
-        $this->Address2 = ()$val;
+        $this->Address2 = $val;
 	}
 
 	/**
@@ -177,7 +177,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = ()$val;
+        $this->City = $val;
 	}
 
 	/**
@@ -189,7 +189,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for State');
         }
-        $this->State = ()$val;
+        $this->State = $val;
 	}
 
 	/**
@@ -201,7 +201,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PostalCode');
         }
-        $this->PostalCode = ()$val;
+        $this->PostalCode = $val;
 	}
 
 	/**
@@ -213,7 +213,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CountryCode');
         }
-        $this->CountryCode = ()$val;
+        $this->CountryCode = $val;
 	}
 
 	/**
@@ -225,7 +225,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = ()$val;
+        $this->Email = $val;
 	}
 
 	/**
@@ -237,7 +237,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Phone');
         }
-        $this->Phone = ()$val;
+        $this->Phone = $val;
 	}
 
 	/**
@@ -249,7 +249,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Fax');
         }
-        $this->Fax = ()$val;
+        $this->Fax = $val;
 	}
 
 	/**
@@ -261,7 +261,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegistrantType');
         }
-        $this->RegistrantType = ()$val;
+        $this->RegistrantType = $val;
 	}
 
 	/**
@@ -273,7 +273,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for VatNumber');
         }
-        $this->VatNumber = ()$val;
+        $this->VatNumber = $val;
 	}
 
 	/**
@@ -285,7 +285,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegistrantDate');
         }
-        $this->RegistrantDate = ()$val;
+        $this->RegistrantDate = $val;
 	}
 
 	/**
@@ -297,7 +297,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for NexusCategory');
         }
-        $this->NexusCategory = ()$val;
+        $this->NexusCategory = $val;
 	}
 
 	/**
@@ -309,7 +309,7 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RegistrantNumber');
         }
-        $this->RegistrantNumber = ()$val;
+        $this->RegistrantNumber = $val;
 	}
 
 	/**
@@ -321,6 +321,6 @@ class Registrant
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Details');
         }
-        $this->Details = ()$val;
+        $this->Details = $val;
 	}
 }

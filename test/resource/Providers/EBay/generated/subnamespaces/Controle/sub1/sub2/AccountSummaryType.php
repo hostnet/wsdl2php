@@ -147,7 +147,7 @@ class AccountSummaryType
 	 */
 	public function setAccountState($val)
 	{
-        $this->AccountState = ()$val;
+        $this->AccountState = $val;
 	}
 
 	/**
@@ -156,7 +156,7 @@ class AccountSummaryType
 	 */
 	public function setInvoicePayment($val)
 	{
-        $this->InvoicePayment = ()$val;
+        $this->InvoicePayment = $val;
 	}
 
 	/**
@@ -165,7 +165,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceCredit($val)
 	{
-        $this->InvoiceCredit = ()$val;
+        $this->InvoiceCredit = $val;
 	}
 
 	/**
@@ -174,7 +174,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceNewFee($val)
 	{
-        $this->InvoiceNewFee = ()$val;
+        $this->InvoiceNewFee = $val;
 	}
 
 	/**
@@ -183,7 +183,7 @@ class AccountSummaryType
 	 */
 	public function setAdditionalAccount($val)
 	{
-        $this->AdditionalAccount = ()$val;
+        $this->AdditionalAccount = $val;
 	}
 
 	/**
@@ -192,7 +192,7 @@ class AccountSummaryType
 	 */
 	public function setAmountPastDue($val)
 	{
-        $this->AmountPastDue = ()$val;
+        $this->AmountPastDue = $val;
 	}
 
 	/**
@@ -204,7 +204,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BankAccountInfo');
         }
-        $this->BankAccountInfo = ()$val;
+        $this->BankAccountInfo = $val;
 	}
 
 	/**
@@ -213,7 +213,7 @@ class AccountSummaryType
 	 */
 	public function setBankModifyDate($val)
 	{
-        $this->BankModifyDate = ()$val;
+        $this->BankModifyDate = $val;
 	}
 
 	/**
@@ -225,7 +225,7 @@ class AccountSummaryType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->BillingCycleDate = ()$val;
+        $this->BillingCycleDate = $val;
 	}
 
 	/**
@@ -234,7 +234,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardExpiration($val)
 	{
-        $this->CreditCardExpiration = ()$val;
+        $this->CreditCardExpiration = $val;
 	}
 
 	/**
@@ -246,7 +246,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CreditCardInfo');
         }
-        $this->CreditCardInfo = ()$val;
+        $this->CreditCardInfo = $val;
 	}
 
 	/**
@@ -255,7 +255,7 @@ class AccountSummaryType
 	 */
 	public function setCreditCardModifyDate($val)
 	{
-        $this->CreditCardModifyDate = ()$val;
+        $this->CreditCardModifyDate = $val;
 	}
 
 	/**
@@ -264,7 +264,7 @@ class AccountSummaryType
 	 */
 	public function setCurrentBalance($val)
 	{
-        $this->CurrentBalance = ()$val;
+        $this->CurrentBalance = $val;
 	}
 
 	/**
@@ -276,7 +276,7 @@ class AccountSummaryType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Email');
         }
-        $this->Email = ()$val;
+        $this->Email = $val;
 	}
 
 	/**
@@ -285,7 +285,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceBalance($val)
 	{
-        $this->InvoiceBalance = ()$val;
+        $this->InvoiceBalance = $val;
 	}
 
 	/**
@@ -294,7 +294,7 @@ class AccountSummaryType
 	 */
 	public function setInvoiceDate($val)
 	{
-        $this->InvoiceDate = ()$val;
+        $this->InvoiceDate = $val;
 	}
 
 	/**
@@ -303,7 +303,7 @@ class AccountSummaryType
 	 */
 	public function setLastAmountPaid($val)
 	{
-        $this->LastAmountPaid = ()$val;
+        $this->LastAmountPaid = $val;
 	}
 
 	/**
@@ -312,7 +312,7 @@ class AccountSummaryType
 	 */
 	public function setLastPaymentDate($val)
 	{
-        $this->LastPaymentDate = ()$val;
+        $this->LastPaymentDate = $val;
 	}
 
 	/**
@@ -321,7 +321,7 @@ class AccountSummaryType
 	 */
 	public function setPastDue($val)
 	{
-        $this->PastDue = ()$val;
+        $this->PastDue = $val;
 	}
 
 	/**
@@ -330,7 +330,7 @@ class AccountSummaryType
 	 */
 	public function setPaymentMethod($val)
 	{
-        $this->PaymentMethod = ()$val;
+        $this->PaymentMethod = $val;
 	}
 
 	/**
@@ -339,6 +339,6 @@ class AccountSummaryType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -49,7 +49,7 @@ class MemberMessageExchangeType
      */
     public function setItem($val)
     {
-        $this->Item = ()$val;
+        $this->Item = $val;
     }
 
     /**
@@ -58,7 +58,7 @@ class MemberMessageExchangeType
      */
     public function setQuestion($val)
     {
-        $this->Question = ()$val;
+        $this->Question = $val;
     }
 
     /**
@@ -70,7 +70,7 @@ class MemberMessageExchangeType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Response');
         }
-        $this->Response = ()$val;
+        $this->Response = $val;
     }
 
     /**
@@ -79,7 +79,7 @@ class MemberMessageExchangeType
      */
     public function setMessageStatus($val)
     {
-        $this->MessageStatus = ()$val;
+        $this->MessageStatus = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class MemberMessageExchangeType
      */
     public function setCreationDate($val)
     {
-        $this->CreationDate = ()$val;
+        $this->CreationDate = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class MemberMessageExchangeType
      */
     public function setLastModifiedDate($val)
     {
-        $this->LastModifiedDate = ()$val;
+        $this->LastModifiedDate = $val;
     }
 
     /**
@@ -106,6 +106,6 @@ class MemberMessageExchangeType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

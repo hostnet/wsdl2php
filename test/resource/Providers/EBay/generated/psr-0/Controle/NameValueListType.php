@@ -32,7 +32,7 @@ class NameValueListType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class NameValueListType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = ()$val;
+        $this->Value = $val;
 	}
 
 	/**
@@ -53,6 +53,6 @@ class NameValueListType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

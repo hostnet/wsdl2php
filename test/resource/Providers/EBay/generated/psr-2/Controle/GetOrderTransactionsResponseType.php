@@ -23,6 +23,6 @@ class GetOrderTransactionsResponseType extends
      */
     public function setOrderArray($val)
     {
-        $this->OrderArray = ()$val;
+        $this->OrderArray = $val;
     }
 }

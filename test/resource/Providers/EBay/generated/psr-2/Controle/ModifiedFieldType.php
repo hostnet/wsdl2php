@@ -39,7 +39,7 @@ class ModifiedFieldType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Field');
         }
-        $this->Field = ()$val;
+        $this->Field = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class ModifiedFieldType
      */
     public function setModifyType($val)
     {
-        $this->ModifyType = ()$val;
+        $this->ModifyType = $val;
     }
 
     /**
@@ -57,6 +57,6 @@ class ModifiedFieldType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

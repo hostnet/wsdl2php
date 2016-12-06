@@ -51,7 +51,7 @@ class StoreVacationPreferencesType
      */
     public function setOnVacation($val)
     {
-        $this->OnVacation = ()$val;
+        $this->OnVacation = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class StoreVacationPreferencesType
      */
     public function setReturnDate($val)
     {
-        $this->ReturnDate = ()$val;
+        $this->ReturnDate = $val;
     }
 
     /**
@@ -69,7 +69,7 @@ class StoreVacationPreferencesType
      */
     public function setHideFixedPriceStoreItems($val)
     {
-        $this->HideFixedPriceStoreItems = ()$val;
+        $this->HideFixedPriceStoreItems = $val;
     }
 
     /**
@@ -78,7 +78,7 @@ class StoreVacationPreferencesType
      */
     public function setMessageItem($val)
     {
-        $this->MessageItem = ()$val;
+        $this->MessageItem = $val;
     }
 
     /**
@@ -87,7 +87,7 @@ class StoreVacationPreferencesType
      */
     public function setMessageStore($val)
     {
-        $this->MessageStore = ()$val;
+        $this->MessageStore = $val;
     }
 
     /**
@@ -96,7 +96,7 @@ class StoreVacationPreferencesType
      */
     public function setDisplayMessageStoreCustomText($val)
     {
-        $this->DisplayMessageStoreCustomText = ()$val;
+        $this->DisplayMessageStoreCustomText = $val;
     }
 
     /**
@@ -108,6 +108,6 @@ class StoreVacationPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageStoreCustomText');
         }
-        $this->MessageStoreCustomText = ()$val;
+        $this->MessageStoreCustomText = $val;
     }
 }

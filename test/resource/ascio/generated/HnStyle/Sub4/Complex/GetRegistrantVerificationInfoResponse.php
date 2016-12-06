@@ -21,7 +21,7 @@ class GetRegistrantVerificationInfoResponse
      */
     public function setGetRegistrantVerificationInfoResult($val)
     {
-        $this->GetRegistrantVerificationInfoResult = ()$val;
+        $this->GetRegistrantVerificationInfoResult = $val;
     }
 
     /**
@@ -30,6 +30,6 @@ class GetRegistrantVerificationInfoResponse
      */
     public function setVerificationInfo($val)
     {
-        $this->verificationInfo = ()$val;
+        $this->verificationInfo = $val;
     }
 }

@@ -29,7 +29,7 @@ class SetPictureManagerDetailsRequestType extends
      */
     public function setPictureManagerDetails($val)
     {
-        $this->PictureManagerDetails = ()$val;
+        $this->PictureManagerDetails = $val;
     }
 
     /**
@@ -38,6 +38,6 @@ class SetPictureManagerDetailsRequestType extends
      */
     public function setAction($val)
     {
-        $this->Action = ()$val;
+        $this->Action = $val;
     }
 }

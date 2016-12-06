@@ -33,7 +33,7 @@ class ListingCheckoutRedirectPreferenceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ProStoresStoreName');
         }
-        $this->ProStoresStoreName = ()$val;
+        $this->ProStoresStoreName = $val;
     }
 
     /**
@@ -45,7 +45,7 @@ class ListingCheckoutRedirectPreferenceType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
-        $this->SellerThirdPartyUsername = ()$val;
+        $this->SellerThirdPartyUsername = $val;
     }
 
     /**
@@ -54,6 +54,6 @@ class ListingCheckoutRedirectPreferenceType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

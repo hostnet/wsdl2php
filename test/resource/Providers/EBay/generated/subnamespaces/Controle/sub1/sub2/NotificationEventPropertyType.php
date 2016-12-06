@@ -32,7 +32,7 @@ class NotificationEventPropertyType
 	 */
 	public function setEventType($val)
 	{
-        $this->EventType = ()$val;
+        $this->EventType = $val;
 	}
 
 	/**
@@ -41,7 +41,7 @@ class NotificationEventPropertyType
 	 */
 	public function setName($val)
 	{
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class NotificationEventPropertyType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Value');
         }
-        $this->Value = ()$val;
+        $this->Value = $val;
 	}
 
 	/**
@@ -62,6 +62,6 @@ class NotificationEventPropertyType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

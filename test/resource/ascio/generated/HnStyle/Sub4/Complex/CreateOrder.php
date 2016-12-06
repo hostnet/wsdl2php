@@ -24,7 +24,7 @@ class CreateOrder
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class CreateOrder
      */
     public function setOrder($val)
     {
-        $this->order = ()$val;
+        $this->order = $val;
     }
 }

@@ -40,7 +40,7 @@ class GetMyMessagesRequestType extends
      */
     public function setAlertIDs($val)
     {
-        $this->AlertIDs = ()$val;
+        $this->AlertIDs = $val;
     }
 
     /**
@@ -49,7 +49,7 @@ class GetMyMessagesRequestType extends
      */
     public function setMessageIDs($val)
     {
-        $this->MessageIDs = ()$val;
+        $this->MessageIDs = $val;
     }
 
     /**
@@ -58,6 +58,6 @@ class GetMyMessagesRequestType extends
      */
     public function setFolderID($val)
     {
-        $this->FolderID = ()$val;
+        $this->FolderID = $val;
     }
 }

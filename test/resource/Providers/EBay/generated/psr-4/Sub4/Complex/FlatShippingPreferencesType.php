@@ -47,7 +47,7 @@ class FlatShippingPreferencesType
      */
     public function setAmountPerAdditionalItem($val)
     {
-        $this->AmountPerAdditionalItem = ()$val;
+        $this->AmountPerAdditionalItem = $val;
     }
 
     /**
@@ -56,7 +56,7 @@ class FlatShippingPreferencesType
      */
     public function setDeductionAmountPerAdditionalItem($val)
     {
-        $this->DeductionAmountPerAdditionalItem = ()$val;
+        $this->DeductionAmountPerAdditionalItem = $val;
     }
 
     /**
@@ -65,7 +65,7 @@ class FlatShippingPreferencesType
      */
     public function setFlatRateInsuranceRangeCost($val)
     {
-        $this->FlatRateInsuranceRangeCost = ()$val;
+        $this->FlatRateInsuranceRangeCost = $val;
     }
 
     /**
@@ -74,7 +74,7 @@ class FlatShippingPreferencesType
      */
     public function setFlatShippingRateOption($val)
     {
-        $this->FlatShippingRateOption = ()$val;
+        $this->FlatShippingRateOption = $val;
     }
 
     /**
@@ -83,7 +83,7 @@ class FlatShippingPreferencesType
      */
     public function setInsuranceOption($val)
     {
-        $this->InsuranceOption = ()$val;
+        $this->InsuranceOption = $val;
     }
 
     /**
@@ -92,6 +92,6 @@ class FlatShippingPreferencesType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

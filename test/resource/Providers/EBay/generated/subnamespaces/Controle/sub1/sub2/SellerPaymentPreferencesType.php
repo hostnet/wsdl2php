@@ -50,7 +50,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setAlwaysUseThisPaymentAddress($val)
 	{
-        $this->AlwaysUseThisPaymentAddress = ()$val;
+        $this->AlwaysUseThisPaymentAddress = $val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setDisplayPayNowButton($val)
 	{
-        $this->DisplayPayNowButton = ()$val;
+        $this->DisplayPayNowButton = $val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setPayPalPreferred($val)
 	{
-        $this->PayPalPreferred = ()$val;
+        $this->PayPalPreferred = $val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class SellerPaymentPreferencesType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
         }
-        $this->DefaultPayPalEmailAddress = ()$val;
+        $this->DefaultPayPalEmailAddress = $val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setPayPalAlwaysOn($val)
 	{
-        $this->PayPalAlwaysOn = ()$val;
+        $this->PayPalAlwaysOn = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setSellerPaymentAddress($val)
 	{
-        $this->SellerPaymentAddress = ()$val;
+        $this->SellerPaymentAddress = $val;
 	}
 
 	/**
@@ -107,7 +107,7 @@ class SellerPaymentPreferencesType
 	 */
 	public function setUPSRateOption($val)
 	{
-        $this->UPSRateOption = ()$val;
+        $this->UPSRateOption = $val;
 	}
 
 	/**
@@ -116,6 +116,6 @@ class SellerPaymentPreferencesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

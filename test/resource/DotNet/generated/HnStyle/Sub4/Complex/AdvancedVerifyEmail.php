@@ -28,7 +28,7 @@ class AdvancedVerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for email');
         }
-        $this->email = ()$val;
+        $this->email = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class AdvancedVerifyEmail
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->timeout = ()$val;
+        $this->timeout = $val;
     }
 
     /**
@@ -52,6 +52,6 @@ class AdvancedVerifyEmail
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for LicenseKey');
         }
-        $this->LicenseKey = ()$val;
+        $this->LicenseKey = $val;
     }
 }

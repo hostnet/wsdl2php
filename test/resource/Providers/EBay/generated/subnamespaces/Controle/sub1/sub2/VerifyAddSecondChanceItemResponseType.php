@@ -32,7 +32,7 @@ class VerifyAddSecondChanceItemResponseType extends
 	 */
 	public function setFees($val)
 	{
-        $this->Fees = ()$val;
+        $this->Fees = $val;
 	}
 
 	/**
@@ -41,7 +41,7 @@ class VerifyAddSecondChanceItemResponseType extends
 	 */
 	public function setStartTime($val)
 	{
-        $this->StartTime = ()$val;
+        $this->StartTime = $val;
 	}
 
 	/**
@@ -50,6 +50,6 @@ class VerifyAddSecondChanceItemResponseType extends
 	 */
 	public function setEndTime($val)
 	{
-        $this->EndTime = ()$val;
+        $this->EndTime = $val;
 	}
 }

@@ -23,6 +23,6 @@ class AuthenticationEntryArrayType
      */
     public function setAuthenticationEntry($val)
     {
-        $this->AuthenticationEntry = ()$val;
+        $this->AuthenticationEntry = $val;
     }
 }

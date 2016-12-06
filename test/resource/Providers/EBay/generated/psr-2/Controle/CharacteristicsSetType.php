@@ -56,7 +56,7 @@ class CharacteristicsSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
     }
 
     /**
@@ -68,7 +68,7 @@ class CharacteristicsSetType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->AttributeSetID = ()$val;
+        $this->AttributeSetID = $val;
     }
 
     /**
@@ -80,7 +80,7 @@ class CharacteristicsSetType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AttributeSetVersion');
         }
-        $this->AttributeSetVersion = ()$val;
+        $this->AttributeSetVersion = $val;
     }
 
     /**
@@ -89,7 +89,7 @@ class CharacteristicsSetType
      */
     public function setCharacteristics($val)
     {
-        $this->Characteristics = ()$val;
+        $this->Characteristics = $val;
     }
 
     /**
@@ -98,6 +98,6 @@ class CharacteristicsSetType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

@@ -30,7 +30,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalResults');
         }
-        $this->TotalResults = ()$val;
+        $this->TotalResults = $val;
 	}
 
 	/**
@@ -42,7 +42,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalPages');
         }
-        $this->TotalPages = ()$val;
+        $this->TotalPages = $val;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class ProductInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListName');
         }
-        $this->ListName = ()$val;
+        $this->ListName = $val;
 	}
 
 	/**
@@ -63,7 +63,7 @@ class ProductInfo
 	 */
 	public function setDetails($val)
 	{
-        $this->Details = ()$val;
+        $this->Details = $val;
 	}
 }
 
@@ -93,7 +93,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for AvgCustomerRating');
         }
-        $this->AvgCustomerRating = ()$val;
+        $this->AvgCustomerRating = $val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class Reviews
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
         }
-        $this->TotalCustomerReviews = ()$val;
+        $this->TotalCustomerReviews = $val;
 	}
 
 	/**
@@ -114,7 +114,7 @@ class Reviews
 	 */
 	public function setCustomerReviews($val)
 	{
-        $this->CustomerReviews = ()$val;
+        $this->CustomerReviews = $val;
 	}
 }
 
@@ -133,7 +133,7 @@ class MarketplaceSearch
 	 */
 	public function setMarketplaceSearchDetails($val)
 	{
-        $this->MarketplaceSearchDetails = ()$val;
+        $this->MarketplaceSearchDetails = $val;
 	}
 }
 
@@ -152,7 +152,7 @@ class SellerProfile
 	 */
 	public function setSellerProfileDetails($val)
 	{
-        $this->SellerProfileDetails = ()$val;
+        $this->SellerProfileDetails = $val;
 	}
 }
 
@@ -171,7 +171,7 @@ class SellerSearch
 	 */
 	public function setSellerSearchDetails($val)
 	{
-        $this->SellerSearchDetails = ()$val;
+        $this->SellerSearchDetails = $val;
 	}
 }
 
@@ -190,7 +190,7 @@ class ListingProductInfo
 	 */
 	public function setListingProductDetails($val)
 	{
-        $this->ListingProductDetails = ()$val;
+        $this->ListingProductDetails = $val;
 	}
 }
 
@@ -292,7 +292,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeId');
         }
-        $this->ExchangeId = ()$val;
+        $this->ExchangeId = $val;
 	}
 
 	/**
@@ -304,7 +304,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ListingId');
         }
-        $this->ListingId = ()$val;
+        $this->ListingId = $val;
 	}
 
 	/**
@@ -316,7 +316,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeTitle');
         }
-        $this->ExchangeTitle = ()$val;
+        $this->ExchangeTitle = $val;
 	}
 
 	/**
@@ -328,7 +328,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangePrice');
         }
-        $this->ExchangePrice = ()$val;
+        $this->ExchangePrice = $val;
 	}
 
 	/**
@@ -340,7 +340,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAsin');
         }
-        $this->ExchangeAsin = ()$val;
+        $this->ExchangeAsin = $val;
 	}
 
 	/**
@@ -352,7 +352,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeEndDate');
         }
-        $this->ExchangeEndDate = ()$val;
+        $this->ExchangeEndDate = $val;
 	}
 
 	/**
@@ -364,7 +364,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeTinyImage');
         }
-        $this->ExchangeTinyImage = ()$val;
+        $this->ExchangeTinyImage = $val;
 	}
 
 	/**
@@ -376,7 +376,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerId');
         }
-        $this->ExchangeSellerId = ()$val;
+        $this->ExchangeSellerId = $val;
 	}
 
 	/**
@@ -388,7 +388,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerNickname');
         }
-        $this->ExchangeSellerNickname = ()$val;
+        $this->ExchangeSellerNickname = $val;
 	}
 
 	/**
@@ -400,7 +400,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeStartDate');
         }
-        $this->ExchangeStartDate = ()$val;
+        $this->ExchangeStartDate = $val;
 	}
 
 	/**
@@ -412,7 +412,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeStatus');
         }
-        $this->ExchangeStatus = ()$val;
+        $this->ExchangeStatus = $val;
 	}
 
 	/**
@@ -424,7 +424,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeQuantity');
         }
-        $this->ExchangeQuantity = ()$val;
+        $this->ExchangeQuantity = $val;
 	}
 
 	/**
@@ -436,7 +436,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeQuantityAllocated');
         }
-        $this->ExchangeQuantityAllocated = ()$val;
+        $this->ExchangeQuantityAllocated = $val;
 	}
 
 	/**
@@ -448,7 +448,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeFeaturedCategory');
         }
-        $this->ExchangeFeaturedCategory = ()$val;
+        $this->ExchangeFeaturedCategory = $val;
 	}
 
 	/**
@@ -460,7 +460,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeCondition');
         }
-        $this->ExchangeCondition = ()$val;
+        $this->ExchangeCondition = $val;
 	}
 
 	/**
@@ -472,7 +472,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeConditionType');
         }
-        $this->ExchangeConditionType = ()$val;
+        $this->ExchangeConditionType = $val;
 	}
 
 	/**
@@ -484,7 +484,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeAvailability');
         }
-        $this->ExchangeAvailability = ()$val;
+        $this->ExchangeAvailability = $val;
 	}
 
 	/**
@@ -496,7 +496,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeOfferingType');
         }
-        $this->ExchangeOfferingType = ()$val;
+        $this->ExchangeOfferingType = $val;
 	}
 
 	/**
@@ -508,7 +508,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerState');
         }
-        $this->ExchangeSellerState = ()$val;
+        $this->ExchangeSellerState = $val;
 	}
 
 	/**
@@ -520,7 +520,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerCountry');
         }
-        $this->ExchangeSellerCountry = ()$val;
+        $this->ExchangeSellerCountry = $val;
 	}
 
 	/**
@@ -532,7 +532,7 @@ class ListingProductDetails
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExchangeSellerRating');
         }
-        $this->ExchangeSellerRating = ()$val;
+        $this->ExchangeSellerRating = $val;
 	}
 }
 
@@ -551,7 +551,7 @@ class SellerFeedback
 	 */
 	public function setFeedback($val)
 	{
-        $this->Feedback = ()$val;
+        $this->Feedback = $val;
 	}
 }
 
@@ -570,7 +570,7 @@ class ThirdPartyProductInfo
 	 */
 	public function setThirdPartyProductDetails($val)
 	{
-        $this->ThirdPartyProductDetails = ()$val;
+        $this->ThirdPartyProductDetails = $val;
 	}
 }
 
@@ -624,7 +624,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword');
         }
-        $this->keyword = ()$val;
+        $this->keyword = $val;
 	}
 
 	/**
@@ -636,7 +636,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -648,7 +648,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -660,7 +660,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -672,7 +672,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -684,7 +684,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -696,7 +696,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -708,7 +708,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -720,7 +720,7 @@ class KeywordRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -774,7 +774,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for power');
         }
-        $this->power = ()$val;
+        $this->power = $val;
 	}
 
 	/**
@@ -786,7 +786,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -798,7 +798,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -810,7 +810,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -822,7 +822,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -834,7 +834,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -846,7 +846,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -858,7 +858,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -870,7 +870,7 @@ class PowerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -920,7 +920,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for browse_node');
         }
-        $this->browse_node = ()$val;
+        $this->browse_node = $val;
 	}
 
 	/**
@@ -932,7 +932,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -944,7 +944,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -956,7 +956,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -968,7 +968,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -980,7 +980,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -992,7 +992,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -1004,7 +1004,7 @@ class BrowseNodeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1050,7 +1050,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for asin');
         }
-        $this->asin = ()$val;
+        $this->asin = $val;
 	}
 
 	/**
@@ -1062,7 +1062,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1074,7 +1074,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1086,7 +1086,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1098,7 +1098,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for offer');
         }
-        $this->offer = ()$val;
+        $this->offer = $val;
 	}
 
 	/**
@@ -1110,7 +1110,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for offerpage');
         }
-        $this->offerpage = ()$val;
+        $this->offerpage = $val;
 	}
 
 	/**
@@ -1122,7 +1122,7 @@ class AsinRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1160,7 +1160,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for blended');
         }
-        $this->blended = ()$val;
+        $this->blended = $val;
 	}
 
 	/**
@@ -1172,7 +1172,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1184,7 +1184,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1196,7 +1196,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1208,7 +1208,7 @@ class BlendedRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1258,7 +1258,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for upc');
         }
-        $this->upc = ()$val;
+        $this->upc = $val;
 	}
 
 	/**
@@ -1270,7 +1270,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -1282,7 +1282,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1294,7 +1294,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1306,7 +1306,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1318,7 +1318,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -1330,7 +1330,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -1342,7 +1342,7 @@ class UpcRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1396,7 +1396,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for artist');
         }
-        $this->artist = ()$val;
+        $this->artist = $val;
 	}
 
 	/**
@@ -1408,7 +1408,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -1420,7 +1420,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -1432,7 +1432,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1444,7 +1444,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1456,7 +1456,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1468,7 +1468,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -1480,7 +1480,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -1492,7 +1492,7 @@ class ArtistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1546,7 +1546,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for author');
         }
-        $this->author = ()$val;
+        $this->author = $val;
 	}
 
 	/**
@@ -1558,7 +1558,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -1570,7 +1570,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -1582,7 +1582,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1594,7 +1594,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1606,7 +1606,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1618,7 +1618,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -1630,7 +1630,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -1642,7 +1642,7 @@ class AuthorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1696,7 +1696,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for actor');
         }
-        $this->actor = ()$val;
+        $this->actor = $val;
 	}
 
 	/**
@@ -1708,7 +1708,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -1720,7 +1720,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -1732,7 +1732,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1744,7 +1744,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1756,7 +1756,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1768,7 +1768,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -1780,7 +1780,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -1792,7 +1792,7 @@ class ActorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1846,7 +1846,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for director');
         }
-        $this->director = ()$val;
+        $this->director = $val;
 	}
 
 	/**
@@ -1858,7 +1858,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -1870,7 +1870,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -1882,7 +1882,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -1894,7 +1894,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -1906,7 +1906,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -1918,7 +1918,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -1930,7 +1930,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -1942,7 +1942,7 @@ class DirectorRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -1980,7 +1980,7 @@ class ExchangeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for exchange_id');
         }
-        $this->exchange_id = ()$val;
+        $this->exchange_id = $val;
 	}
 
 	/**
@@ -1992,7 +1992,7 @@ class ExchangeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2004,7 +2004,7 @@ class ExchangeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2016,7 +2016,7 @@ class ExchangeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2028,7 +2028,7 @@ class ExchangeRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -2082,7 +2082,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for manufacturer');
         }
-        $this->manufacturer = ()$val;
+        $this->manufacturer = $val;
 	}
 
 	/**
@@ -2094,7 +2094,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -2106,7 +2106,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for mode');
         }
-        $this->mode = ()$val;
+        $this->mode = $val;
 	}
 
 	/**
@@ -2118,7 +2118,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2130,7 +2130,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2142,7 +2142,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2154,7 +2154,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -2166,7 +2166,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for variations');
         }
-        $this->variations = ()$val;
+        $this->variations = $val;
 	}
 
 	/**
@@ -2178,7 +2178,7 @@ class ManufacturerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -2220,7 +2220,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for lm_id');
         }
-        $this->lm_id = ()$val;
+        $this->lm_id = $val;
 	}
 
 	/**
@@ -2232,7 +2232,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -2244,7 +2244,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2256,7 +2256,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2268,7 +2268,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2280,7 +2280,7 @@ class ListManiaRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -2322,7 +2322,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for wishlist_id');
         }
-        $this->wishlist_id = ()$val;
+        $this->wishlist_id = $val;
 	}
 
 	/**
@@ -2334,7 +2334,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -2346,7 +2346,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2358,7 +2358,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2370,7 +2370,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2382,7 +2382,7 @@ class WishlistRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -2460,7 +2460,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for marketplace_search');
         }
-        $this->marketplace_search = ()$val;
+        $this->marketplace_search = $val;
 	}
 
 	/**
@@ -2472,7 +2472,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2484,7 +2484,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2496,7 +2496,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2508,7 +2508,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -2520,7 +2520,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword');
         }
-        $this->keyword = ()$val;
+        $this->keyword = $val;
 	}
 
 	/**
@@ -2532,7 +2532,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword_search');
         }
-        $this->keyword_search = ()$val;
+        $this->keyword_search = $val;
 	}
 
 	/**
@@ -2544,7 +2544,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for browse_id');
         }
-        $this->browse_id = ()$val;
+        $this->browse_id = $val;
 	}
 
 	/**
@@ -2556,7 +2556,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for zipcode');
         }
-        $this->zipcode = ()$val;
+        $this->zipcode = $val;
 	}
 
 	/**
@@ -2568,7 +2568,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for area_id');
         }
-        $this->area_id = ()$val;
+        $this->area_id = $val;
 	}
 
 	/**
@@ -2580,7 +2580,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for geo');
         }
-        $this->geo = ()$val;
+        $this->geo = $val;
 	}
 
 	/**
@@ -2592,7 +2592,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sort');
         }
-        $this->sort = ()$val;
+        $this->sort = $val;
 	}
 
 	/**
@@ -2604,7 +2604,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for listing_id');
         }
-        $this->listing_id = ()$val;
+        $this->listing_id = $val;
 	}
 
 	/**
@@ -2616,7 +2616,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 
 	/**
@@ -2628,7 +2628,7 @@ class MarketplaceRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for index');
         }
-        $this->index = ()$val;
+        $this->index = $val;
 	}
 }
 
@@ -2670,7 +2670,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for seller_id');
         }
-        $this->seller_id = ()$val;
+        $this->seller_id = $val;
 	}
 
 	/**
@@ -2682,7 +2682,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2694,7 +2694,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2706,7 +2706,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2718,7 +2718,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -2730,7 +2730,7 @@ class SellerProfileRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -2788,7 +2788,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for seller_id');
         }
-        $this->seller_id = ()$val;
+        $this->seller_id = $val;
 	}
 
 	/**
@@ -2800,7 +2800,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2812,7 +2812,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2824,7 +2824,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2836,7 +2836,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for offerstatus');
         }
-        $this->offerstatus = ()$val;
+        $this->offerstatus = $val;
 	}
 
 	/**
@@ -2848,7 +2848,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for page');
         }
-        $this->page = ()$val;
+        $this->page = $val;
 	}
 
 	/**
@@ -2860,7 +2860,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for seller_browse_id');
         }
-        $this->seller_browse_id = ()$val;
+        $this->seller_browse_id = $val;
 	}
 
 	/**
@@ -2872,7 +2872,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for keyword');
         }
-        $this->keyword = ()$val;
+        $this->keyword = $val;
 	}
 
 	/**
@@ -2884,7 +2884,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 
 	/**
@@ -2896,7 +2896,7 @@ class SellerRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for index');
         }
-        $this->index = ()$val;
+        $this->index = $val;
 	}
 }
 
@@ -2934,7 +2934,7 @@ class SimilarityRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for asin');
         }
-        $this->asin = ()$val;
+        $this->asin = $val;
 	}
 
 	/**
@@ -2946,7 +2946,7 @@ class SimilarityRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -2958,7 +2958,7 @@ class SimilarityRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for type');
         }
-        $this->type = ()$val;
+        $this->type = $val;
 	}
 
 	/**
@@ -2970,7 +2970,7 @@ class SimilarityRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -2982,7 +2982,7 @@ class SimilarityRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -3016,7 +3016,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
 	}
 
 	/**
@@ -3028,7 +3028,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
 	}
 
 	/**
@@ -3040,7 +3040,7 @@ class ShoppingCart
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PurchaseUrl');
         }
-        $this->PurchaseUrl = ()$val;
+        $this->PurchaseUrl = $val;
 	}
 
 	/**
@@ -3049,7 +3049,7 @@ class ShoppingCart
 	 */
 	public function setItems($val)
 	{
-        $this->Items = ()$val;
+        $this->Items = $val;
 	}
 }
 
@@ -3087,7 +3087,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -3099,7 +3099,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -3111,7 +3111,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
 	}
 
 	/**
@@ -3123,7 +3123,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
 	}
 
 	/**
@@ -3135,7 +3135,7 @@ class GetShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -3173,7 +3173,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -3185,7 +3185,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -3197,7 +3197,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
 	}
 
 	/**
@@ -3209,7 +3209,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
 	}
 
 	/**
@@ -3221,7 +3221,7 @@ class ClearShoppingCartRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -3263,7 +3263,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -3275,7 +3275,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -3287,7 +3287,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
 	}
 
 	/**
@@ -3299,7 +3299,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
 	}
 
 	/**
@@ -3308,7 +3308,7 @@ class AddShoppingCartItemsRequest
 	 */
 	public function setItems($val)
 	{
-        $this->Items = ()$val;
+        $this->Items = $val;
 	}
 
 	/**
@@ -3320,7 +3320,7 @@ class AddShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -3362,7 +3362,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -3374,7 +3374,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -3386,7 +3386,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
 	}
 
 	/**
@@ -3398,7 +3398,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
 	}
 
 	/**
@@ -3407,7 +3407,7 @@ class RemoveShoppingCartItemsRequest
 	 */
 	public function setItems($val)
 	{
-        $this->Items = ()$val;
+        $this->Items = $val;
 	}
 
 	/**
@@ -3419,7 +3419,7 @@ class RemoveShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 
@@ -3461,7 +3461,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for tag');
         }
-        $this->tag = ()$val;
+        $this->tag = $val;
 	}
 
 	/**
@@ -3473,7 +3473,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for devtag');
         }
-        $this->devtag = ()$val;
+        $this->devtag = $val;
 	}
 
 	/**
@@ -3485,7 +3485,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CartId');
         }
-        $this->CartId = ()$val;
+        $this->CartId = $val;
 	}
 
 	/**
@@ -3497,7 +3497,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for HMAC');
         }
-        $this->HMAC = ()$val;
+        $this->HMAC = $val;
 	}
 
 	/**
@@ -3506,7 +3506,7 @@ class ModifyShoppingCartItemsRequest
 	 */
 	public function setItems($val)
 	{
-        $this->Items = ()$val;
+        $this->Items = $val;
 	}
 
 	/**
@@ -3518,7 +3518,7 @@ class ModifyShoppingCartItemsRequest
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for locale');
         }
-        $this->locale = ()$val;
+        $this->locale = $val;
 	}
 }
 

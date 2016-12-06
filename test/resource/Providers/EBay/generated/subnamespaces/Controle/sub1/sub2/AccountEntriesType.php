@@ -32,7 +32,7 @@ class AccountEntriesType
 	 */
 	public function setAccountEntry($val)
 	{
-        $this->AccountEntry = ()$val;
+        $this->AccountEntry = $val;
 	}
 
 	/**
@@ -41,6 +41,6 @@ class AccountEntriesType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

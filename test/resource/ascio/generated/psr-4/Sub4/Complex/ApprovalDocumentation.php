@@ -33,7 +33,7 @@ class ApprovalDocumentation
      */
     public function setType($val)
     {
-        $this->Type = ()$val;
+        $this->Type = $val;
     }
 
     /**
@@ -42,7 +42,7 @@ class ApprovalDocumentation
      */
     public function setObjectNames($val)
     {
-        $this->ObjectNames = ()$val;
+        $this->ObjectNames = $val;
     }
 
     /**
@@ -54,7 +54,7 @@ class ApprovalDocumentation
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for OrderId');
         }
-        $this->OrderId = ()$val;
+        $this->OrderId = $val;
     }
 
     /**
@@ -63,7 +63,7 @@ class ApprovalDocumentation
      */
     public function setAttachments($val)
     {
-        $this->Attachments = ()$val;
+        $this->Attachments = $val;
     }
 
     /**
@@ -72,6 +72,6 @@ class ApprovalDocumentation
      */
     public function setExtensions($val)
     {
-        $this->Extensions = ()$val;
+        $this->Extensions = $val;
     }
 }

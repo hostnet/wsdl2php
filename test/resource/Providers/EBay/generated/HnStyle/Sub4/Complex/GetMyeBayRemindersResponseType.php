@@ -27,7 +27,7 @@ class GetMyeBayRemindersResponseType extends
      */
     public function setBuyingReminders($val)
     {
-        $this->BuyingReminders = ()$val;
+        $this->BuyingReminders = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class GetMyeBayRemindersResponseType extends
      */
     public function setSellingReminders($val)
     {
-        $this->SellingReminders = ()$val;
+        $this->SellingReminders = $val;
     }
 }

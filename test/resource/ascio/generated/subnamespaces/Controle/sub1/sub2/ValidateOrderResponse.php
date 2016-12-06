@@ -17,6 +17,6 @@ class ValidateOrderResponse
 	 */
 	public function setValidateOrderResult($val)
 	{
-        $this->ValidateOrderResult = ()$val;
+        $this->ValidateOrderResult = $val;
 	}
 }

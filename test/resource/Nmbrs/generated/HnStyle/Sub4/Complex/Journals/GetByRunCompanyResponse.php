@@ -20,6 +20,6 @@ class GetByRunCompanyResponse
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
         }
-        $this->Journals_GetByRunCompanyResult = ()$val;
+        $this->Journals_GetByRunCompanyResult = $val;
     }
 }

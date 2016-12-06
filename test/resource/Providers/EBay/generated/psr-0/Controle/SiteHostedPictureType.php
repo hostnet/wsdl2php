@@ -88,7 +88,7 @@ class SiteHostedPictureType
 	 */
 	public function setPictureURL($val)
 	{
-        $this->PictureURL = ()$val;
+        $this->PictureURL = $val;
 	}
 
 	/**
@@ -97,7 +97,7 @@ class SiteHostedPictureType
 	 */
 	public function setPhotoDisplay($val)
 	{
-        $this->PhotoDisplay = ()$val;
+        $this->PhotoDisplay = $val;
 	}
 
 	/**
@@ -106,7 +106,7 @@ class SiteHostedPictureType
 	 */
 	public function setGalleryType($val)
 	{
-        $this->GalleryType = ()$val;
+        $this->GalleryType = $val;
 	}
 
 	/**
@@ -115,7 +115,7 @@ class SiteHostedPictureType
 	 */
 	public function setGalleryURL($val)
 	{
-        $this->GalleryURL = ()$val;
+        $this->GalleryURL = $val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class SiteHostedPictureType
 	 */
 	public function setPictureSource($val)
 	{
-        $this->PictureSource = ()$val;
+        $this->PictureSource = $val;
 	}
 
 	/**
@@ -133,6 +133,6 @@ class SiteHostedPictureType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

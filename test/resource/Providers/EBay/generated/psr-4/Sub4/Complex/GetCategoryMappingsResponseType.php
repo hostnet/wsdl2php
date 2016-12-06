@@ -34,7 +34,7 @@ class GetCategoryMappingsResponseType extends
      */
     public function setCategoryMapping($val)
     {
-        $this->CategoryMapping = ()$val;
+        $this->CategoryMapping = $val;
     }
 
     /**
@@ -46,6 +46,6 @@ class GetCategoryMappingsResponseType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CategoryVersion');
         }
-        $this->CategoryVersion = ()$val;
+        $this->CategoryVersion = $val;
     }
 }

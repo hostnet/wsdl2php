@@ -28,7 +28,7 @@ class DomainHistogramType
 	 */
 	public function setDepartment($val)
 	{
-        $this->Department = ()$val;
+        $this->Department = $val;
 	}
 
 	/**
@@ -37,6 +37,6 @@ class DomainHistogramType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

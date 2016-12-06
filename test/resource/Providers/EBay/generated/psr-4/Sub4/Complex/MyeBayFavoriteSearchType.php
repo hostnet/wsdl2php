@@ -32,7 +32,7 @@ class MyeBayFavoriteSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchName');
         }
-        $this->SearchName = ()$val;
+        $this->SearchName = $val;
     }
 
     /**
@@ -44,7 +44,7 @@ class MyeBayFavoriteSearchType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for SearchQuery');
         }
-        $this->SearchQuery = ()$val;
+        $this->SearchQuery = $val;
     }
 
     /**
@@ -53,6 +53,6 @@ class MyeBayFavoriteSearchType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

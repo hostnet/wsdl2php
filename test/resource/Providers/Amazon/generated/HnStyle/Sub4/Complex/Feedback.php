@@ -32,7 +32,7 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackRating');
         }
-        $this->FeedbackRating = ()$val;
+        $this->FeedbackRating = $val;
     }
 
     /**
@@ -44,7 +44,7 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackComments');
         }
-        $this->FeedbackComments = ()$val;
+        $this->FeedbackComments = $val;
     }
 
     /**
@@ -56,7 +56,7 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackDate');
         }
-        $this->FeedbackDate = ()$val;
+        $this->FeedbackDate = $val;
     }
 
     /**
@@ -68,6 +68,6 @@ class Feedback
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for FeedbackRater');
         }
-        $this->FeedbackRater = ()$val;
+        $this->FeedbackRater = $val;
     }
 }

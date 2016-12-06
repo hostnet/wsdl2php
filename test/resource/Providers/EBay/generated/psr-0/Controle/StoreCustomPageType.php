@@ -70,7 +70,7 @@ class StoreCustomPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class StoreCustomPageType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageID = ()$val;
+        $this->PageID = $val;
 	}
 
 	/**
@@ -94,7 +94,7 @@ class StoreCustomPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URLPath');
         }
-        $this->URLPath = ()$val;
+        $this->URLPath = $val;
 	}
 
 	/**
@@ -103,7 +103,7 @@ class StoreCustomPageType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = ()$val;
+        $this->URL = $val;
 	}
 
 	/**
@@ -112,7 +112,7 @@ class StoreCustomPageType
 	 */
 	public function setStatus($val)
 	{
-        $this->Status = ()$val;
+        $this->Status = $val;
 	}
 
 	/**
@@ -124,7 +124,7 @@ class StoreCustomPageType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Content');
         }
-        $this->Content = ()$val;
+        $this->Content = $val;
 	}
 
 	/**
@@ -133,7 +133,7 @@ class StoreCustomPageType
 	 */
 	public function setLeftNav($val)
 	{
-        $this->LeftNav = ()$val;
+        $this->LeftNav = $val;
 	}
 
 	/**
@@ -142,7 +142,7 @@ class StoreCustomPageType
 	 */
 	public function setPreviewEnabled($val)
 	{
-        $this->PreviewEnabled = ()$val;
+        $this->PreviewEnabled = $val;
 	}
 
 	/**
@@ -154,7 +154,7 @@ class StoreCustomPageType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Order = ()$val;
+        $this->Order = $val;
 	}
 
 	/**
@@ -163,6 +163,6 @@ class StoreCustomPageType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

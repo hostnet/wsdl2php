@@ -29,7 +29,7 @@ class NotificationMessageType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for MessageBody');
         }
-        $this->MessageBody = ()$val;
+        $this->MessageBody = $val;
     }
 
     /**
@@ -41,6 +41,6 @@ class NotificationMessageType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for EIAS');
         }
-        $this->EIAS = ()$val;
+        $this->EIAS = $val;
     }
 }

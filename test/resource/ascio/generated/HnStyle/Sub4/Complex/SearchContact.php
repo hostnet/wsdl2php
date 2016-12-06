@@ -24,7 +24,7 @@ class SearchContact
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for sessionId');
         }
-        $this->sessionId = ()$val;
+        $this->sessionId = $val;
     }
 
     /**
@@ -33,6 +33,6 @@ class SearchContact
      */
     public function setCriteria($val)
     {
-        $this->criteria = ()$val;
+        $this->criteria = $val;
     }
 }

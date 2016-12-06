@@ -33,7 +33,7 @@ class MeasureType
      */
     public function set($val)
     {
-        $this->_ = ()$val;
+        $this->_ = $val;
     }
 
     /**
@@ -42,7 +42,7 @@ class MeasureType
      */
     public function setUnit($val)
     {
-        $this->unit = ()$val;
+        $this->unit = $val;
     }
 
     /**
@@ -51,6 +51,6 @@ class MeasureType
      */
     public function setMeasurementSystem($val)
     {
-        $this->measurementSystem = ()$val;
+        $this->measurementSystem = $val;
     }
 }

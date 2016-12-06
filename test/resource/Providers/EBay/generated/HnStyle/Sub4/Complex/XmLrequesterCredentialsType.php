@@ -39,7 +39,7 @@ class XmLrequesterCredentialsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Username');
         }
-        $this->Username = ()$val;
+        $this->Username = $val;
     }
 
     /**
@@ -51,7 +51,7 @@ class XmLrequesterCredentialsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Password');
         }
-        $this->Password = ()$val;
+        $this->Password = $val;
     }
 
     /**
@@ -63,7 +63,7 @@ class XmLrequesterCredentialsType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for eBayAuthToken');
         }
-        $this->eBayAuthToken = ()$val;
+        $this->eBayAuthToken = $val;
     }
 
     /**
@@ -72,6 +72,6 @@ class XmLrequesterCredentialsType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

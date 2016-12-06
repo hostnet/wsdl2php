@@ -24,6 +24,6 @@ class DisputeArrayType
 	 */
 	public function setDispute($val)
 	{
-        $this->Dispute = ()$val;
+        $this->Dispute = $val;
 	}
 }

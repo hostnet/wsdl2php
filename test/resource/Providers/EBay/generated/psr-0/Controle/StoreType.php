@@ -107,7 +107,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
 	}
 
 	/**
@@ -119,7 +119,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for URLPath');
         }
-        $this->URLPath = ()$val;
+        $this->URLPath = $val;
 	}
 
 	/**
@@ -128,7 +128,7 @@ class StoreType
 	 */
 	public function setURL($val)
 	{
-        $this->URL = ()$val;
+        $this->URL = $val;
 	}
 
 	/**
@@ -137,7 +137,7 @@ class StoreType
 	 */
 	public function setSubscriptionLevel($val)
 	{
-        $this->SubscriptionLevel = ()$val;
+        $this->SubscriptionLevel = $val;
 	}
 
 	/**
@@ -149,7 +149,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = ()$val;
+        $this->Description = $val;
 	}
 
 	/**
@@ -158,7 +158,7 @@ class StoreType
 	 */
 	public function setLogo($val)
 	{
-        $this->Logo = ()$val;
+        $this->Logo = $val;
 	}
 
 	/**
@@ -167,7 +167,7 @@ class StoreType
 	 */
 	public function setTheme($val)
 	{
-        $this->Theme = ()$val;
+        $this->Theme = $val;
 	}
 
 	/**
@@ -176,7 +176,7 @@ class StoreType
 	 */
 	public function setHeaderStyle($val)
 	{
-        $this->HeaderStyle = ()$val;
+        $this->HeaderStyle = $val;
 	}
 
 	/**
@@ -188,7 +188,7 @@ class StoreType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->HomePage = ()$val;
+        $this->HomePage = $val;
 	}
 
 	/**
@@ -197,7 +197,7 @@ class StoreType
 	 */
 	public function setItemListLayout($val)
 	{
-        $this->ItemListLayout = ()$val;
+        $this->ItemListLayout = $val;
 	}
 
 	/**
@@ -206,7 +206,7 @@ class StoreType
 	 */
 	public function setItemListSortOrder($val)
 	{
-        $this->ItemListSortOrder = ()$val;
+        $this->ItemListSortOrder = $val;
 	}
 
 	/**
@@ -215,7 +215,7 @@ class StoreType
 	 */
 	public function setCustomHeaderLayout($val)
 	{
-        $this->CustomHeaderLayout = ()$val;
+        $this->CustomHeaderLayout = $val;
 	}
 
 	/**
@@ -227,7 +227,7 @@ class StoreType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CustomHeader');
         }
-        $this->CustomHeader = ()$val;
+        $this->CustomHeader = $val;
 	}
 
 	/**
@@ -236,7 +236,7 @@ class StoreType
 	 */
 	public function setExportListings($val)
 	{
-        $this->ExportListings = ()$val;
+        $this->ExportListings = $val;
 	}
 
 	/**
@@ -245,7 +245,7 @@ class StoreType
 	 */
 	public function setCustomCategories($val)
 	{
-        $this->CustomCategories = ()$val;
+        $this->CustomCategories = $val;
 	}
 
 	/**
@@ -254,7 +254,7 @@ class StoreType
 	 */
 	public function setCustomListingHeader($val)
 	{
-        $this->CustomListingHeader = ()$val;
+        $this->CustomListingHeader = $val;
 	}
 
 	/**
@@ -263,7 +263,7 @@ class StoreType
 	 */
 	public function setMerchDisplay($val)
 	{
-        $this->MerchDisplay = ()$val;
+        $this->MerchDisplay = $val;
 	}
 
 	/**
@@ -272,7 +272,7 @@ class StoreType
 	 */
 	public function setLastOpenedTime($val)
 	{
-        $this->LastOpenedTime = ()$val;
+        $this->LastOpenedTime = $val;
 	}
 
 	/**
@@ -281,6 +281,6 @@ class StoreType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

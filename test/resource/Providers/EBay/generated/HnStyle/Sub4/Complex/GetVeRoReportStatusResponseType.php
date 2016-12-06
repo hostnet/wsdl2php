@@ -51,7 +51,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = ()$val;
+        $this->PaginationResult = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setHasMoreItems($val)
     {
-        $this->HasMoreItems = ()$val;
+        $this->HasMoreItems = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class GetVeRoReportStatusResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemsPerPage = ()$val;
+        $this->ItemsPerPage = $val;
     }
 
     /**
@@ -84,7 +84,7 @@ class GetVeRoReportStatusResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
     }
 
     /**
@@ -93,7 +93,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setVeROReportPacketID($val)
     {
-        $this->VeROReportPacketID = ()$val;
+        $this->VeROReportPacketID = $val;
     }
 
     /**
@@ -102,7 +102,7 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setVeROReportPacketStatus($val)
     {
-        $this->VeROReportPacketStatus = ()$val;
+        $this->VeROReportPacketStatus = $val;
     }
 
     /**
@@ -111,6 +111,6 @@ class GetVeRoReportStatusResponseType extends
      */
     public function setReportedItemDetails($val)
     {
-        $this->ReportedItemDetails = ()$val;
+        $this->ReportedItemDetails = $val;
     }
 }

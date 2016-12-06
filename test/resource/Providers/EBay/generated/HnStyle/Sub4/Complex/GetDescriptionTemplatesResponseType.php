@@ -43,7 +43,7 @@ class GetDescriptionTemplatesResponseType extends
      */
     public function setDescriptionTemplate($val)
     {
-        $this->DescriptionTemplate = ()$val;
+        $this->DescriptionTemplate = $val;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->LayoutTotal = ()$val;
+        $this->LayoutTotal = $val;
     }
 
     /**
@@ -67,7 +67,7 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ObsoleteLayoutID = ()$val;
+        $this->ObsoleteLayoutID = $val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ObsoleteThemeID = ()$val;
+        $this->ObsoleteThemeID = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetDescriptionTemplatesResponseType extends
      */
     public function setThemeGroup($val)
     {
-        $this->ThemeGroup = ()$val;
+        $this->ThemeGroup = $val;
     }
 
     /**
@@ -100,6 +100,6 @@ class GetDescriptionTemplatesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ThemeTotal = ()$val;
+        $this->ThemeTotal = $val;
     }
 }

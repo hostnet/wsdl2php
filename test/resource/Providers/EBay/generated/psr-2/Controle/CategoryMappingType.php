@@ -29,7 +29,7 @@ class CategoryMappingType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 
     /**
@@ -41,7 +41,7 @@ class CategoryMappingType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for oldID');
         }
-        $this->oldID = ()$val;
+        $this->oldID = $val;
     }
 
     /**
@@ -53,6 +53,6 @@ class CategoryMappingType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for id');
         }
-        $this->id = ()$val;
+        $this->id = $val;
     }
 }

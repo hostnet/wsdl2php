@@ -33,7 +33,7 @@ class MaximumItemRequirementsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaximumItemCount = ()$val;
+        $this->MaximumItemCount = $val;
     }
 
     /**
@@ -45,6 +45,6 @@ class MaximumItemRequirementsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MinimumFeedbackScore = ()$val;
+        $this->MinimumFeedbackScore = $val;
     }
 }

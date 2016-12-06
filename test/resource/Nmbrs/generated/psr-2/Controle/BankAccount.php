@@ -48,7 +48,7 @@ class BankAccount
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Id = ()$val;
+        $this->Id = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Number');
         }
-        $this->Number = ()$val;
+        $this->Number = $val;
     }
 
     /**
@@ -72,7 +72,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = ()$val;
+        $this->Description = $val;
     }
 
     /**
@@ -84,7 +84,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for IBAN');
         }
-        $this->IBAN = ()$val;
+        $this->IBAN = $val;
     }
 
     /**
@@ -96,7 +96,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for BIC');
         }
-        $this->BIC = ()$val;
+        $this->BIC = $val;
     }
 
     /**
@@ -108,7 +108,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for City');
         }
-        $this->City = ()$val;
+        $this->City = $val;
     }
 
     /**
@@ -120,7 +120,7 @@ class BankAccount
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Name');
         }
-        $this->Name = ()$val;
+        $this->Name = $val;
     }
 
     /**
@@ -129,6 +129,6 @@ class BankAccount
      */
     public function setType($val)
     {
-        $this->Type = ()$val;
+        $this->Type = $val;
     }
 }

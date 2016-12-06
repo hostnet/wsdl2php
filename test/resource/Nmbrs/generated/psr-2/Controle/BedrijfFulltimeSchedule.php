@@ -21,7 +21,7 @@ class BedrijfFulltimeSchedule
      */
     public function setFulltimeScheduleOne($val)
     {
-        $this->FulltimeScheduleOne = ()$val;
+        $this->FulltimeScheduleOne = $val;
     }
 
     /**
@@ -30,6 +30,6 @@ class BedrijfFulltimeSchedule
      */
     public function setFulltimeScheduleTwo($val)
     {
-        $this->FulltimeScheduleTwo = ()$val;
+        $this->FulltimeScheduleTwo = $val;
     }
 }

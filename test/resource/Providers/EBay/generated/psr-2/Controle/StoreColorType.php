@@ -36,7 +36,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Primary');
         }
-        $this->Primary = ()$val;
+        $this->Primary = $val;
     }
 
     /**
@@ -48,7 +48,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Secondary');
         }
-        $this->Secondary = ()$val;
+        $this->Secondary = $val;
     }
 
     /**
@@ -60,7 +60,7 @@ class StoreColorType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Accent');
         }
-        $this->Accent = ()$val;
+        $this->Accent = $val;
     }
 
     /**
@@ -69,6 +69,6 @@ class StoreColorType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

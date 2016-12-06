@@ -31,7 +31,7 @@ class ProductInfoType
 	 */
 	public function setAverageStartPrice($val)
 	{
-        $this->AverageStartPrice = ()$val;
+        $this->AverageStartPrice = $val;
 	}
 
 	/**
@@ -40,7 +40,7 @@ class ProductInfoType
 	 */
 	public function setAverageSoldPrice($val)
 	{
-        $this->AverageSoldPrice = ()$val;
+        $this->AverageSoldPrice = $val;
 	}
 
 	/**
@@ -52,7 +52,7 @@ class ProductInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Title');
         }
-        $this->Title = ()$val;
+        $this->Title = $val;
 	}
 
 	/**
@@ -64,6 +64,6 @@ class ProductInfoType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for productInfoID');
         }
-        $this->productInfoID = ()$val;
+        $this->productInfoID = $val;
 	}
 }

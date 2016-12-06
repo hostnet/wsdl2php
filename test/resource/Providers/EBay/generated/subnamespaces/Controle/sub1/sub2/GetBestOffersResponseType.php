@@ -33,7 +33,7 @@ class GetBestOffersResponseType extends
 	 */
 	public function setBestOfferArray($val)
 	{
-        $this->BestOfferArray = ()$val;
+        $this->BestOfferArray = $val;
 	}
 
 	/**
@@ -42,6 +42,6 @@ class GetBestOffersResponseType extends
 	 */
 	public function setItem($val)
 	{
-        $this->Item = ()$val;
+        $this->Item = $val;
 	}
 }

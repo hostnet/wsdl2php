@@ -24,7 +24,7 @@ class WageCode
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Code = ()$val;
+        $this->Code = $val;
     }
 
     /**
@@ -36,6 +36,6 @@ class WageCode
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = ()$val;
+        $this->Description = $val;
     }
 }

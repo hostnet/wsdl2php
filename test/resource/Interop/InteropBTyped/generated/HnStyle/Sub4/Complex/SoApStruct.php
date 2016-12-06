@@ -25,7 +25,7 @@ class SoApStruct
      */
     public function setVarString($val)
     {
-        $this->varString = ()$val;
+        $this->varString = $val;
     }
 
     /**
@@ -34,7 +34,7 @@ class SoApStruct
      */
     public function setVarInt($val)
     {
-        $this->varInt = ()$val;
+        $this->varInt = $val;
     }
 
     /**
@@ -43,6 +43,6 @@ class SoApStruct
      */
     public function setVarFloat($val)
     {
-        $this->varFloat = ()$val;
+        $this->varFloat = $val;
     }
 }

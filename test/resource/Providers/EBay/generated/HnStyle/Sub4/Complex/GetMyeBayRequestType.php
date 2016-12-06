@@ -73,7 +73,7 @@ class GetMyeBayRequestType extends
      */
     public function setBiddingSort($val)
     {
-        $this->BiddingSort = ()$val;
+        $this->BiddingSort = $val;
     }
 
     /**
@@ -82,7 +82,7 @@ class GetMyeBayRequestType extends
      */
     public function setLostSort($val)
     {
-        $this->LostSort = ()$val;
+        $this->LostSort = $val;
     }
 
     /**
@@ -94,7 +94,7 @@ class GetMyeBayRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxItemsPerList = ()$val;
+        $this->MaxItemsPerList = $val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetMyeBayRequestType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MaxItemAgeInDays = ()$val;
+        $this->MaxItemAgeInDays = $val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetMyeBayRequestType extends
      */
     public function setWatchSort($val)
     {
-        $this->WatchSort = ()$val;
+        $this->WatchSort = $val;
     }
 
     /**
@@ -124,7 +124,7 @@ class GetMyeBayRequestType extends
      */
     public function setWonSort($val)
     {
-        $this->WonSort = ()$val;
+        $this->WonSort = $val;
     }
 
     /**
@@ -133,7 +133,7 @@ class GetMyeBayRequestType extends
      */
     public function setFavoriteSearches($val)
     {
-        $this->FavoriteSearches = ()$val;
+        $this->FavoriteSearches = $val;
     }
 
     /**
@@ -142,7 +142,7 @@ class GetMyeBayRequestType extends
      */
     public function setFavoriteSellers($val)
     {
-        $this->FavoriteSellers = ()$val;
+        $this->FavoriteSellers = $val;
     }
 
     /**
@@ -151,6 +151,6 @@ class GetMyeBayRequestType extends
      */
     public function setSecondChanceOffers($val)
     {
-        $this->SecondChanceOffers = ()$val;
+        $this->SecondChanceOffers = $val;
     }
 }

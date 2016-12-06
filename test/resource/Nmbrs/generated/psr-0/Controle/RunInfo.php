@@ -48,7 +48,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ID = ()$val;
+        $this->ID = $val;
 	}
 
 	/**
@@ -60,7 +60,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Number = ()$val;
+        $this->Number = $val;
 	}
 
 	/**
@@ -72,7 +72,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Year = ()$val;
+        $this->Year = $val;
 	}
 
 	/**
@@ -84,7 +84,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PeriodStart = ()$val;
+        $this->PeriodStart = $val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class RunInfo
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PeriodEnd = ()$val;
+        $this->PeriodEnd = $val;
 	}
 
 	/**
@@ -108,7 +108,7 @@ class RunInfo
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Description');
         }
-        $this->Description = ()$val;
+        $this->Description = $val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class RunInfo
 	 */
 	public function setRunAt($val)
 	{
-        $this->RunAt = ()$val;
+        $this->RunAt = $val;
 	}
 
 	/**
@@ -126,6 +126,6 @@ class RunInfo
 	 */
 	public function setIsLocked($val)
 	{
-        $this->IsLocked = ()$val;
+        $this->IsLocked = $val;
 	}
 }

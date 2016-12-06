@@ -28,7 +28,7 @@ class SiteDetailsType
      */
     public function setSite($val)
     {
-        $this->Site = ()$val;
+        $this->Site = $val;
     }
 
     /**
@@ -40,7 +40,7 @@ class SiteDetailsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->SiteID = ()$val;
+        $this->SiteID = $val;
     }
 
     /**
@@ -49,6 +49,6 @@ class SiteDetailsType
      */
     public function setAny($val)
     {
-        $this->any = ()$val;
+        $this->any = $val;
     }
 }

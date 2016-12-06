@@ -32,7 +32,7 @@ class GetFinanceOffersResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->Count = ()$val;
+        $this->Count = $val;
     }
 
     /**
@@ -41,6 +41,6 @@ class GetFinanceOffersResponseType extends
      */
     public function setFinanceOfferArray($val)
     {
-        $this->FinanceOfferArray = ()$val;
+        $this->FinanceOfferArray = $val;
     }
 }

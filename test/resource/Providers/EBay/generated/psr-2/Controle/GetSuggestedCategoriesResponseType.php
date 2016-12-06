@@ -29,7 +29,7 @@ class GetSuggestedCategoriesResponseType extends
      */
     public function setSuggestedCategoryArray($val)
     {
-        $this->SuggestedCategoryArray = ()$val;
+        $this->SuggestedCategoryArray = $val;
     }
 
     /**
@@ -41,6 +41,6 @@ class GetSuggestedCategoriesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->CategoryCount = ()$val;
+        $this->CategoryCount = $val;
     }
 }

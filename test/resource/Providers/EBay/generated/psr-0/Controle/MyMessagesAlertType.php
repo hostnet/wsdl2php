@@ -116,7 +116,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Sender');
         }
-        $this->Sender = ()$val;
+        $this->Sender = $val;
 	}
 
 	/**
@@ -128,7 +128,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for RecipientUserID');
         }
-        $this->RecipientUserID = ()$val;
+        $this->RecipientUserID = $val;
 	}
 
 	/**
@@ -140,7 +140,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Subject');
         }
-        $this->Subject = ()$val;
+        $this->Subject = $val;
 	}
 
 	/**
@@ -152,7 +152,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Priority');
         }
-        $this->Priority = ()$val;
+        $this->Priority = $val;
 	}
 
 	/**
@@ -161,7 +161,7 @@ class MyMessagesAlertType
 	 */
 	public function setAlertID($val)
 	{
-        $this->AlertID = ()$val;
+        $this->AlertID = $val;
 	}
 
 	/**
@@ -173,7 +173,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ExternalAlertID');
         }
-        $this->ExternalAlertID = ()$val;
+        $this->ExternalAlertID = $val;
 	}
 
 	/**
@@ -185,7 +185,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ContentType');
         }
-        $this->ContentType = ()$val;
+        $this->ContentType = $val;
 	}
 
 	/**
@@ -197,7 +197,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Text');
         }
-        $this->Text = ()$val;
+        $this->Text = $val;
 	}
 
 	/**
@@ -206,7 +206,7 @@ class MyMessagesAlertType
 	 */
 	public function setResolutionStatus($val)
 	{
-        $this->ResolutionStatus = ()$val;
+        $this->ResolutionStatus = $val;
 	}
 
 	/**
@@ -215,7 +215,7 @@ class MyMessagesAlertType
 	 */
 	public function setRead($val)
 	{
-        $this->Read = ()$val;
+        $this->Read = $val;
 	}
 
 	/**
@@ -224,7 +224,7 @@ class MyMessagesAlertType
 	 */
 	public function setCreationDate($val)
 	{
-        $this->CreationDate = ()$val;
+        $this->CreationDate = $val;
 	}
 
 	/**
@@ -233,7 +233,7 @@ class MyMessagesAlertType
 	 */
 	public function setReceiveDate($val)
 	{
-        $this->ReceiveDate = ()$val;
+        $this->ReceiveDate = $val;
 	}
 
 	/**
@@ -242,7 +242,7 @@ class MyMessagesAlertType
 	 */
 	public function setExpirationDate($val)
 	{
-        $this->ExpirationDate = ()$val;
+        $this->ExpirationDate = $val;
 	}
 
 	/**
@@ -251,7 +251,7 @@ class MyMessagesAlertType
 	 */
 	public function setResolutionDate($val)
 	{
-        $this->ResolutionDate = ()$val;
+        $this->ResolutionDate = $val;
 	}
 
 	/**
@@ -260,7 +260,7 @@ class MyMessagesAlertType
 	 */
 	public function setLastReadDate($val)
 	{
-        $this->LastReadDate = ()$val;
+        $this->LastReadDate = $val;
 	}
 
 	/**
@@ -269,7 +269,7 @@ class MyMessagesAlertType
 	 */
 	public function setItemID($val)
 	{
-        $this->ItemID = ()$val;
+        $this->ItemID = $val;
 	}
 
 	/**
@@ -278,7 +278,7 @@ class MyMessagesAlertType
 	 */
 	public function setIsTimedResolution($val)
 	{
-        $this->IsTimedResolution = ()$val;
+        $this->IsTimedResolution = $val;
 	}
 
 	/**
@@ -290,7 +290,7 @@ class MyMessagesAlertType
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for ActionURL');
         }
-        $this->ActionURL = ()$val;
+        $this->ActionURL = $val;
 	}
 
 	/**
@@ -299,7 +299,7 @@ class MyMessagesAlertType
 	 */
 	public function setResponseDetails($val)
 	{
-        $this->ResponseDetails = ()$val;
+        $this->ResponseDetails = $val;
 	}
 
 	/**
@@ -308,7 +308,7 @@ class MyMessagesAlertType
 	 */
 	public function setForwardDetails($val)
 	{
-        $this->ForwardDetails = ()$val;
+        $this->ForwardDetails = $val;
 	}
 
 	/**
@@ -317,7 +317,7 @@ class MyMessagesAlertType
 	 */
 	public function setFolder($val)
 	{
-        $this->Folder = ()$val;
+        $this->Folder = $val;
 	}
 
 	/**
@@ -326,6 +326,6 @@ class MyMessagesAlertType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

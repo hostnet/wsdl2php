@@ -23,6 +23,6 @@ class SetStoreCustomPageRequestType extends
      */
     public function setCustomPage($val)
     {
-        $this->CustomPage = ()$val;
+        $this->CustomPage = $val;
     }
 }

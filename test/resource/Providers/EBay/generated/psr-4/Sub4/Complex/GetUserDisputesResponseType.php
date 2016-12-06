@@ -64,7 +64,7 @@ class GetUserDisputesResponseType extends
      */
     public function setStartingDisputeID($val)
     {
-        $this->StartingDisputeID = ()$val;
+        $this->StartingDisputeID = $val;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetUserDisputesResponseType extends
      */
     public function setEndingDisputeID($val)
     {
-        $this->EndingDisputeID = ()$val;
+        $this->EndingDisputeID = $val;
     }
 
     /**
@@ -82,7 +82,7 @@ class GetUserDisputesResponseType extends
      */
     public function setDisputeArray($val)
     {
-        $this->DisputeArray = ()$val;
+        $this->DisputeArray = $val;
     }
 
     /**
@@ -94,7 +94,7 @@ class GetUserDisputesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemsPerPage = ()$val;
+        $this->ItemsPerPage = $val;
     }
 
     /**
@@ -106,7 +106,7 @@ class GetUserDisputesResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
     }
 
     /**
@@ -115,7 +115,7 @@ class GetUserDisputesResponseType extends
      */
     public function setDisputeFilterCount($val)
     {
-        $this->DisputeFilterCount = ()$val;
+        $this->DisputeFilterCount = $val;
     }
 
     /**
@@ -124,6 +124,6 @@ class GetUserDisputesResponseType extends
      */
     public function setPaginationResult($val)
     {
-        $this->PaginationResult = ()$val;
+        $this->PaginationResult = $val;
     }
 }

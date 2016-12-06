@@ -56,7 +56,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setPaginationResult($val)
 	{
-        $this->PaginationResult = ()$val;
+        $this->PaginationResult = $val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setHasMoreItems($val)
 	{
-        $this->HasMoreItems = ()$val;
+        $this->HasMoreItems = $val;
 	}
 
 	/**
@@ -74,7 +74,7 @@ class GetSellerListResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = ()$val;
+        $this->ItemArray = $val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class GetSellerListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ItemsPerPage = ()$val;
+        $this->ItemsPerPage = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class GetSellerListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
 	}
 
 	/**
@@ -110,7 +110,7 @@ class GetSellerListResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ReturnedItemCountActual = ()$val;
+        $this->ReturnedItemCountActual = $val;
 	}
 
 	/**
@@ -119,6 +119,6 @@ class GetSellerListResponseType extends
 	 */
 	public function setSeller($val)
 	{
-        $this->Seller = ()$val;
+        $this->Seller = $val;
 	}
 }

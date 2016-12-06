@@ -56,7 +56,7 @@ class BuyerRequirementsType
 	 */
 	public function setShipToRegistrationCountry($val)
 	{
-        $this->ShipToRegistrationCountry = ()$val;
+        $this->ShipToRegistrationCountry = $val;
 	}
 
 	/**
@@ -65,7 +65,7 @@ class BuyerRequirementsType
 	 */
 	public function setZeroFeedbackScore($val)
 	{
-        $this->ZeroFeedbackScore = ()$val;
+        $this->ZeroFeedbackScore = $val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class BuyerRequirementsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MinimumFeedbackScore = ()$val;
+        $this->MinimumFeedbackScore = $val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumUnpaidItemStrikes($val)
 	{
-        $this->MaximumUnpaidItemStrikes = ()$val;
+        $this->MaximumUnpaidItemStrikes = $val;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class BuyerRequirementsType
 	 */
 	public function setMaximumItemRequirements($val)
 	{
-        $this->MaximumItemRequirements = ()$val;
+        $this->MaximumItemRequirements = $val;
 	}
 
 	/**
@@ -104,7 +104,7 @@ class BuyerRequirementsType
 	 */
 	public function setLinkedPayPalAccount($val)
 	{
-        $this->LinkedPayPalAccount = ()$val;
+        $this->LinkedPayPalAccount = $val;
 	}
 
 	/**
@@ -113,6 +113,6 @@ class BuyerRequirementsType
 	 */
 	public function setVerifiedUserRequirements($val)
 	{
-        $this->VerifiedUserRequirements = ()$val;
+        $this->VerifiedUserRequirements = $val;
 	}
 }

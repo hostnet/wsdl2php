@@ -61,7 +61,7 @@ class GetRecommendationsRequestType extends
      */
     public function setListingFlow($val)
     {
-        $this->ListingFlow = ()$val;
+        $this->ListingFlow = $val;
     }
 
     /**
@@ -70,7 +70,7 @@ class GetRecommendationsRequestType extends
      */
     public function setItem($val)
     {
-        $this->Item = ()$val;
+        $this->Item = $val;
     }
 
     /**
@@ -79,7 +79,7 @@ class GetRecommendationsRequestType extends
      */
     public function setExternalProductID($val)
     {
-        $this->ExternalProductID = ()$val;
+        $this->ExternalProductID = $val;
     }
 
     /**
@@ -88,7 +88,7 @@ class GetRecommendationsRequestType extends
      */
     public function setModifiedFields($val)
     {
-        $this->ModifiedFields = ()$val;
+        $this->ModifiedFields = $val;
     }
 
     /**
@@ -97,7 +97,7 @@ class GetRecommendationsRequestType extends
      */
     public function setRecommendationEngine($val)
     {
-        $this->RecommendationEngine = ()$val;
+        $this->RecommendationEngine = $val;
     }
 
     /**
@@ -109,6 +109,6 @@ class GetRecommendationsRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for Query');
         }
-        $this->Query = ()$val;
+        $this->Query = $val;
     }
 }

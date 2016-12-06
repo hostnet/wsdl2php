@@ -29,7 +29,7 @@ class VerifiedUserRequirementsType
      */
     public function setVerifiedUser($val)
     {
-        $this->VerifiedUser = ()$val;
+        $this->VerifiedUser = $val;
     }
 
     /**
@@ -41,6 +41,6 @@ class VerifiedUserRequirementsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->MinimumFeedbackScore = ()$val;
+        $this->MinimumFeedbackScore = $val;
     }
 }

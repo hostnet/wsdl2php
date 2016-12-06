@@ -50,7 +50,7 @@ class ItemListCustomizationType
 	 */
 	public function setInclude($val)
 	{
-        $this->Include = ()$val;
+        $this->Include = $val;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class ItemListCustomizationType
 	 */
 	public function setListingType($val)
 	{
-        $this->ListingType = ()$val;
+        $this->ListingType = $val;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class ItemListCustomizationType
 	 */
 	public function setSort($val)
 	{
-        $this->Sort = ()$val;
+        $this->Sort = $val;
 	}
 
 	/**
@@ -80,7 +80,7 @@ class ItemListCustomizationType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DurationInDays = ()$val;
+        $this->DurationInDays = $val;
 	}
 
 	/**
@@ -89,7 +89,7 @@ class ItemListCustomizationType
 	 */
 	public function setIncludeNotes($val)
 	{
-        $this->IncludeNotes = ()$val;
+        $this->IncludeNotes = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class ItemListCustomizationType
 	 */
 	public function setPagination($val)
 	{
-        $this->Pagination = ()$val;
+        $this->Pagination = $val;
 	}
 
 	/**
@@ -107,6 +107,6 @@ class ItemListCustomizationType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

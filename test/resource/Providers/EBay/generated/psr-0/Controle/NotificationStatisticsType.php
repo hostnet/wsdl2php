@@ -46,7 +46,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->DeliveredCount = ()$val;
+        $this->DeliveredCount = $val;
 	}
 
 	/**
@@ -58,7 +58,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QueuedNewCount = ()$val;
+        $this->QueuedNewCount = $val;
 	}
 
 	/**
@@ -70,7 +70,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->QueuedPendingCount = ()$val;
+        $this->QueuedPendingCount = $val;
 	}
 
 	/**
@@ -82,7 +82,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ExpiredCount = ()$val;
+        $this->ExpiredCount = $val;
 	}
 
 	/**
@@ -94,7 +94,7 @@ class NotificationStatisticsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ErrorCount = ()$val;
+        $this->ErrorCount = $val;
 	}
 
 	/**
@@ -103,6 +103,6 @@ class NotificationStatisticsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

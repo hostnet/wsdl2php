@@ -36,7 +36,7 @@ class RefundType
 	 */
 	public function setRefundFromSeller($val)
 	{
-        $this->RefundFromSeller = ()$val;
+        $this->RefundFromSeller = $val;
 	}
 
 	/**
@@ -45,7 +45,7 @@ class RefundType
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
-        $this->TotalRefundToBuyer = ()$val;
+        $this->TotalRefundToBuyer = $val;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class RefundType
 	 */
 	public function setRefundTime($val)
 	{
-        $this->RefundTime = ()$val;
+        $this->RefundTime = $val;
 	}
 
 	/**
@@ -63,6 +63,6 @@ class RefundType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

@@ -36,7 +36,7 @@ class ExtendedProductFinderIdType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ProductFinderID = ()$val;
+        $this->ProductFinderID = $val;
     }
 
     /**
@@ -45,6 +45,6 @@ class ExtendedProductFinderIdType
      */
     public function setProductFinderBuySide($val)
     {
-        $this->ProductFinderBuySide = ()$val;
+        $this->ProductFinderBuySide = $val;
     }
 }

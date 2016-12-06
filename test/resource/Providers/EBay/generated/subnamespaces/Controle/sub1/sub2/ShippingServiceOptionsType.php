@@ -78,7 +78,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingInsuranceCost($val)
 	{
-        $this->ShippingInsuranceCost = ()$val;
+        $this->ShippingInsuranceCost = $val;
 	}
 
 	/**
@@ -87,7 +87,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingService($val)
 	{
-        $this->ShippingService = ()$val;
+        $this->ShippingService = $val;
 	}
 
 	/**
@@ -96,7 +96,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingServiceCost($val)
 	{
-        $this->ShippingServiceCost = ()$val;
+        $this->ShippingServiceCost = $val;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
-        $this->ShippingServiceAdditionalCost = ()$val;
+        $this->ShippingServiceAdditionalCost = $val;
 	}
 
 	/**
@@ -117,7 +117,7 @@ class ShippingServiceOptionsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingServicePriority = ()$val;
+        $this->ShippingServicePriority = $val;
 	}
 
 	/**
@@ -126,7 +126,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setExpeditedService($val)
 	{
-        $this->ExpeditedService = ()$val;
+        $this->ExpeditedService = $val;
 	}
 
 	/**
@@ -138,7 +138,7 @@ class ShippingServiceOptionsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingTimeMin = ()$val;
+        $this->ShippingTimeMin = $val;
 	}
 
 	/**
@@ -150,7 +150,7 @@ class ShippingServiceOptionsType
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->ShippingTimeMax = ()$val;
+        $this->ShippingTimeMax = $val;
 	}
 
 	/**
@@ -159,7 +159,7 @@ class ShippingServiceOptionsType
 	 */
 	public function setShippingSurcharge($val)
 	{
-        $this->ShippingSurcharge = ()$val;
+        $this->ShippingSurcharge = $val;
 	}
 
 	/**
@@ -168,6 +168,6 @@ class ShippingServiceOptionsType
 	 */
 	public function setAny($val)
 	{
-        $this->any = ()$val;
+        $this->any = $val;
 	}
 }

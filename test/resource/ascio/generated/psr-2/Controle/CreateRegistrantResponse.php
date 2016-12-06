@@ -21,7 +21,7 @@ class CreateRegistrantResponse
      */
     public function setCreateRegistrantResult($val)
     {
-        $this->CreateRegistrantResult = ()$val;
+        $this->CreateRegistrantResult = $val;
     }
 
     /**
@@ -30,6 +30,6 @@ class CreateRegistrantResponse
      */
     public function setRegistrant($val)
     {
-        $this->registrant = ()$val;
+        $this->registrant = $val;
     }
 }

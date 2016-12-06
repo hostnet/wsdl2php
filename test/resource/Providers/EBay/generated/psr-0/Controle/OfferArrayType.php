@@ -24,6 +24,6 @@ class OfferArrayType
 	 */
 	public function setOffer($val)
 	{
-        $this->Offer = ()$val;
+        $this->Offer = $val;
 	}
 }

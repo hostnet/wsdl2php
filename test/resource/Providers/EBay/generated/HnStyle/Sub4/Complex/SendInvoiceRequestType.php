@@ -118,7 +118,7 @@ class SendInvoiceRequestType extends
      */
     public function setItemID($val)
     {
-        $this->ItemID = ()$val;
+        $this->ItemID = $val;
     }
 
     /**
@@ -130,7 +130,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for TransactionID');
         }
-        $this->TransactionID = ()$val;
+        $this->TransactionID = $val;
     }
 
     /**
@@ -139,7 +139,7 @@ class SendInvoiceRequestType extends
      */
     public function setOrderID($val)
     {
-        $this->OrderID = ()$val;
+        $this->OrderID = $val;
     }
 
     /**
@@ -148,7 +148,7 @@ class SendInvoiceRequestType extends
      */
     public function setInternationalShippingServiceOptions($val)
     {
-        $this->InternationalShippingServiceOptions = ()$val;
+        $this->InternationalShippingServiceOptions = $val;
     }
 
     /**
@@ -157,7 +157,7 @@ class SendInvoiceRequestType extends
      */
     public function setShippingServiceOptions($val)
     {
-        $this->ShippingServiceOptions = ()$val;
+        $this->ShippingServiceOptions = $val;
     }
 
     /**
@@ -166,7 +166,7 @@ class SendInvoiceRequestType extends
      */
     public function setSalesTax($val)
     {
-        $this->SalesTax = ()$val;
+        $this->SalesTax = $val;
     }
 
     /**
@@ -175,7 +175,7 @@ class SendInvoiceRequestType extends
      */
     public function setInsuranceOption($val)
     {
-        $this->InsuranceOption = ()$val;
+        $this->InsuranceOption = $val;
     }
 
     /**
@@ -184,7 +184,7 @@ class SendInvoiceRequestType extends
      */
     public function setInsuranceFee($val)
     {
-        $this->InsuranceFee = ()$val;
+        $this->InsuranceFee = $val;
     }
 
     /**
@@ -193,7 +193,7 @@ class SendInvoiceRequestType extends
      */
     public function setPaymentMethods($val)
     {
-        $this->PaymentMethods = ()$val;
+        $this->PaymentMethods = $val;
     }
 
     /**
@@ -205,7 +205,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
-        $this->PayPalEmailAddress = ()$val;
+        $this->PayPalEmailAddress = $val;
     }
 
     /**
@@ -217,7 +217,7 @@ class SendInvoiceRequestType extends
         if (!is_string($val)) {
             throw new Exception('POJO Proxy need a string for CheckoutInstructions');
         }
-        $this->CheckoutInstructions = ()$val;
+        $this->CheckoutInstructions = $val;
     }
 
     /**
@@ -226,6 +226,6 @@ class SendInvoiceRequestType extends
      */
     public function setEmailCopyToSeller($val)
     {
-        $this->EmailCopyToSeller = ()$val;
+        $this->EmailCopyToSeller = $val;
     }
 }

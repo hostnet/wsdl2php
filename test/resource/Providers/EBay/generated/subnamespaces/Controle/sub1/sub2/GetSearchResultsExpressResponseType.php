@@ -68,7 +68,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setHistogram($val)
 	{
-        $this->Histogram = ()$val;
+        $this->Histogram = $val;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setItemArray($val)
 	{
-        $this->ItemArray = ()$val;
+        $this->ItemArray = $val;
 	}
 
 	/**
@@ -86,7 +86,7 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setProductArray($val)
 	{
-        $this->ProductArray = ()$val;
+        $this->ProductArray = $val;
 	}
 
 	/**
@@ -98,7 +98,7 @@ class GetSearchResultsExpressResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->EntriesPerPage = ()$val;
+        $this->EntriesPerPage = $val;
 	}
 
 	/**
@@ -110,7 +110,7 @@ class GetSearchResultsExpressResponseType extends
         if (!is_int($val)) {
             throw new Exception('POJO Proxy need a integer');
         }
-        $this->PageNumber = ()$val;
+        $this->PageNumber = $val;
 	}
 
 	/**
@@ -119,6 +119,6 @@ class GetSearchResultsExpressResponseType extends
 	 */
 	public function setHasMoreEntries($val)
 	{
-        $this->HasMoreEntries = ()$val;
+        $this->HasMoreEntries = $val;
 	}
 }
