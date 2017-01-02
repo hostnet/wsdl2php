@@ -11,7 +11,7 @@ class TemperatureConvertServiceClient extends SoapClient {
         (isset($options['headers'])) {
             $this->__setSoapHeaders($options['headers']);
         }
-        parent::__construct($wsdl ? $wsdl : self::WSDL_FILE, $options);
+        parent::__construct($wsdl ? $wsdl : __DIR__ . '/' . self::WSDL_FILE, $options);
 	}
 
 	/**

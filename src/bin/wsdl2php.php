@@ -539,7 +539,6 @@ foreach($types as $index=>$type){
 	// add access method
 
 	foreach($type['members'] as $member) {
-
 	$codestylefunctionname = ucfirst(str_replace("_", "", $member['member']));
 		$code .= sprintf("\n" .
 		$ident_char . "/**\n".
@@ -627,7 +626,7 @@ if(!$server){
 	$code .= $ident2 . "}\n";
 }
 
-$code .= $ident2 . "parent::__construct(\$wsdl ? \$wsdl : self::WSDL_FILE, \$options);\n";
+$code .= $ident2 . "parent::__construct(\$wsdl ? \$wsdl : __DIR__ . '/' . self::WSDL_FILE, \$options);\n";
 
 if($server)
 	$code .= $ident2 . "\$this->setClass('".$service['class']."', null, null, true);\n";
