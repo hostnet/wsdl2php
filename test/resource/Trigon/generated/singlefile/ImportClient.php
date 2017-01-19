@@ -821,9 +821,9 @@ class CreateRespondentResponse
 }
 
 /**
- * importClient
+ * ImportClient
  */
-class importClient extends SoapClient {
+class ImportClient extends SoapClient {
 
 	const WSDL_FILE = "Trigon.wsdl";
 	private $classmap = array(

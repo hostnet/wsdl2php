@@ -3,9 +3,9 @@
 namespace Controle;
 
 /**
- * interopLabClient
+ * InteropLabClient
  */
-class interopLabClient extends \SoapClient {
+class InteropLabClient extends \SoapClient {
 
     const WSDL_FILE = "SoapLiteRound1Test.wsdl";
 

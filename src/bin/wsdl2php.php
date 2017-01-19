@@ -154,7 +154,7 @@ $service = array(
 print("[OK]\n");
 
 //ensure legal class name (I don't think using . and whitespace is allowed in terms of the SOAP standard, should check this out...)
-$service['class'] = str_replace(array(' ','.','-'), '_', $service['class']);
+$service['class'] = ucfirst(str_replace(array(' ','.','-'), '_', $service['class']));
 
 if(in_array(strtolower($service['class']), $keywords))
 	$service['class'] .= 'Service';
