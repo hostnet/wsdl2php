@@ -1,0 +1,129 @@
+<?php
+
+namespace Controle\sub1\sub2;
+
+class Leave
+{
+	// @codingStandardsIgnoreStart
+	/**
+	 * @var string
+	 */
+	public $Description;
+	/**
+	 * @var decimal
+	 */
+	public $Hours;
+	/**
+	 * @var \Controle\sub1\sub2\LeaveUsageType
+	 */
+	public $UsageType;
+	/**
+	 * @var dateTime
+	 */
+	public $Start;
+	/**
+	 * @var dateTime
+	 */
+	public $End;
+	/**
+	 * @var decimal
+	 */
+	public $StartHours;
+	/**
+	 * @var decimal
+	 */
+	public $EndHours;
+	/**
+	 * @var \Controle\sub1\sub2\LeaveType
+	 */
+	public $Type;
+	/**
+	 * @var \Controle\sub1\sub2\LeaveStatus
+	 */
+	public $Status;
+	// @codingStandardsIgnoreEnd
+
+	/**
+	 * @param string $val
+	 * @throws \Exception
+	 */
+	public function setDescription($val)
+	{
+        if (!is_string($val)) {
+            throw new \Exception('POJO Proxy need a string for Description');
+        }
+        $this->Description = $val;
+	}
+
+	/**
+	 * @param decimal $val
+	 * @throws \Exception
+	 */
+	public function setHours($val)
+	{
+        $this->Hours = $val;
+	}
+
+	/**
+	 * @param LeaveUsageType $val
+	 * @throws \Exception
+	 */
+	public function setUsageType($val)
+	{
+        $this->UsageType = $val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws \Exception
+	 */
+	public function setStart($val)
+	{
+        $this->Start = $val;
+	}
+
+	/**
+	 * @param dateTime $val
+	 * @throws \Exception
+	 */
+	public function setEnd($val)
+	{
+        $this->End = $val;
+	}
+
+	/**
+	 * @param decimal $val
+	 * @throws \Exception
+	 */
+	public function setStartHours($val)
+	{
+        $this->StartHours = $val;
+	}
+
+	/**
+	 * @param decimal $val
+	 * @throws \Exception
+	 */
+	public function setEndHours($val)
+	{
+        $this->EndHours = $val;
+	}
+
+	/**
+	 * @param LeaveType $val
+	 * @throws \Exception
+	 */
+	public function setType($val)
+	{
+        $this->Type = $val;
+	}
+
+	/**
+	 * @param LeaveStatus $val
+	 * @throws \Exception
+	 */
+	public function setStatus($val)
+	{
+        $this->Status = $val;
+	}
+}

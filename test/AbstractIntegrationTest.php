@@ -86,8 +86,23 @@ abstract class AbstractIntegrationTest extends TestCase{
                 __DIR__ . '/resource/Interop/MiscrosoftSoapToolkit/MicrosoftSoapToolkitV3RoundBTypedTest.wsdl'
             ],
             [
+                __DIR__ . '/resource/Nmbrs/Company/CompanyService.wsdl'
+            ],
+            [
+                __DIR__ . '/resource/Nmbrs/Debtor/DebtorService.wsdl'
+            ],
+            [
+                __DIR__ . '/resource/Nmbrs/Employee/EmployeeService.wsdl'
+            ],
+            [
+                __DIR__ . '/resource/Nmbrs/SingleSignOn/SingleSignOn.wsdl'
+            ],
+            [
                 __DIR__ . '/resource/Interop/SoapLiteRound1/SoapLiteRound1Test.wsdl'
-            ]
+            ],
+            [
+                __DIR__ . '/resource/Trigon/Trigon.wsdl'
+            ],
         ];
     }
 
