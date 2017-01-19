@@ -27,7 +27,7 @@ class UserIdArrayType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserID($val)
     {
@@ -36,7 +36,7 @@ class UserIdArrayType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

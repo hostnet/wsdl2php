@@ -43,7 +43,7 @@ class FlatShippingPreferencesType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAmountPerAdditionalItem($val)
     {
@@ -52,7 +52,7 @@ class FlatShippingPreferencesType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeductionAmountPerAdditionalItem($val)
     {
@@ -61,7 +61,7 @@ class FlatShippingPreferencesType
 
     /**
      * @param FlatRateInsuranceRangeCostType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFlatRateInsuranceRangeCost($val)
     {
@@ -70,7 +70,7 @@ class FlatShippingPreferencesType
 
     /**
      * @param FlatShippingRateOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFlatShippingRateOption($val)
     {
@@ -79,7 +79,7 @@ class FlatShippingPreferencesType
 
     /**
      * @param InsuranceOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceOption($val)
     {
@@ -88,7 +88,7 @@ class FlatShippingPreferencesType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

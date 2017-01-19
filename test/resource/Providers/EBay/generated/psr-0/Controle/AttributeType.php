@@ -31,7 +31,7 @@ class AttributeType
 
 	/**
 	 * @param ValType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
@@ -40,7 +40,7 @@ class AttributeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49,24 +49,24 @@ class AttributeType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->attributeID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeLabel($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for attributeLabel');
+            throw new \Exception('POJO Proxy need a string for attributeLabel');
         }
         $this->attributeLabel = $val;
 	}

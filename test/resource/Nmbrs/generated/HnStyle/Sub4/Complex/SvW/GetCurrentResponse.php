@@ -13,7 +13,7 @@ class GetCurrentResponse
 
     /**
      * @param SVW $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSVWGetCurrentResult($val)
     {

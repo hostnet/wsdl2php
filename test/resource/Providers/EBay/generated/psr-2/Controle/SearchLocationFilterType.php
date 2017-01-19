@@ -37,7 +37,7 @@ class SearchLocationFilterType
 
     /**
      * @param CountryCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCountryCode($val)
     {
@@ -46,7 +46,7 @@ class SearchLocationFilterType
 
     /**
      * @param ItemLocationCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemLocation($val)
     {
@@ -55,7 +55,7 @@ class SearchLocationFilterType
 
     /**
      * @param SearchLocationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchLocation($val)
     {
@@ -64,7 +64,7 @@ class SearchLocationFilterType
 
     /**
      * @param CurrencyCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCurrency($val)
     {
@@ -73,7 +73,7 @@ class SearchLocationFilterType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

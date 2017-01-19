@@ -288,19 +288,19 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuery($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
     }
 
     /**
      * @param ExternalProductCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalProductIDType($val)
     {
@@ -309,19 +309,19 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalProductIDValue($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalProductIDValue');
+            throw new \Exception('POJO Proxy need a string for ExternalProductIDValue');
         }
         $this->ExternalProductIDValue = $val;
     }
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductReferenceID($val)
     {
@@ -330,43 +330,43 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDepartmentName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DepartmentName');
+            throw new \Exception('POJO Proxy need a string for DepartmentName');
         }
         $this->DepartmentName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAisleName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AisleName');
+            throw new \Exception('POJO Proxy need a string for AisleName');
         }
         $this->AisleName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductTypeName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductTypeName');
+            throw new \Exception('POJO Proxy need a string for ProductTypeName');
         }
         $this->ProductTypeName = $val;
     }
 
     /**
      * @param ExpressHistogramSortCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHistogramSort($val)
     {
@@ -375,7 +375,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param ExpressItemSortCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemSort($val)
     {
@@ -384,7 +384,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param ExpressProductSortCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductSort($val)
     {
@@ -393,7 +393,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHighestPrice($val)
     {
@@ -402,7 +402,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLowestPrice($val)
     {
@@ -411,7 +411,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param ConditionSelectionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCondition($val)
     {
@@ -420,7 +420,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerID($val)
     {
@@ -429,19 +429,19 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPostalCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
     }
 
     /**
      * @param ExpressDetailLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHistogramDetails($val)
     {
@@ -450,7 +450,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param ExpressDetailLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductDetails($val)
     {
@@ -459,7 +459,7 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param ExpressDetailLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemDetails($val)
     {
@@ -468,31 +468,31 @@ class GetSearchResultsExpressRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEntriesPerPage($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPageNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
     }
 
     /**
      * @param AffiliateTrackingDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAffiliateTrackingDetails($val)
     {

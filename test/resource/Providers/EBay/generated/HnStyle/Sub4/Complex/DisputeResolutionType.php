@@ -32,7 +32,7 @@ class DisputeResolutionType
 
     /**
      * @param DisputeResolutionRecordTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeResolutionRecordType($val)
     {
@@ -41,7 +41,7 @@ class DisputeResolutionType
 
     /**
      * @param DisputeResolutionReasonCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeResolutionReason($val)
     {
@@ -50,7 +50,7 @@ class DisputeResolutionType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResolutionTime($val)
     {
@@ -59,7 +59,7 @@ class DisputeResolutionType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

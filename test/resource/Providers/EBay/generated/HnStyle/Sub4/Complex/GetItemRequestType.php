@@ -46,7 +46,7 @@ class GetItemRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -55,7 +55,7 @@ class GetItemRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeExpressRequirements($val)
     {
@@ -64,7 +64,7 @@ class GetItemRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeWatchCount($val)
     {
@@ -73,7 +73,7 @@ class GetItemRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeCrossPromotion($val)
     {

@@ -96,7 +96,7 @@ class AccountEntryType
 
     /**
      * @param AccountDetailEntryCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountDetailsEntryType($val)
     {
@@ -105,19 +105,19 @@ class AccountEntryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDescription($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBalance($val)
     {
@@ -126,7 +126,7 @@ class AccountEntryType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCredit($val)
     {
@@ -135,7 +135,7 @@ class AccountEntryType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDate($val)
     {
@@ -144,7 +144,7 @@ class AccountEntryType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDebit($val)
     {
@@ -153,7 +153,7 @@ class AccountEntryType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGrossDetailAmount($val)
     {
@@ -162,7 +162,7 @@ class AccountEntryType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -171,19 +171,19 @@ class AccountEntryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMemo($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Memo');
+            throw new \Exception('POJO Proxy need a string for Memo');
         }
         $this->Memo = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNetDetailAmount($val)
     {
@@ -192,19 +192,19 @@ class AccountEntryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefNumber($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RefNumber');
+            throw new \Exception('POJO Proxy need a string for RefNumber');
         }
         $this->RefNumber = $val;
     }
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVATPercent($val)
     {
@@ -213,19 +213,19 @@ class AccountEntryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

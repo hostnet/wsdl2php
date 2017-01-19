@@ -13,7 +13,7 @@ class SellerSearch
 
     /**
      * @param SellerSearchDetailsArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerSearchDetails($val)
     {

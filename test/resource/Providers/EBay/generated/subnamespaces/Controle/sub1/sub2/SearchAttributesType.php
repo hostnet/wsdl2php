@@ -44,19 +44,19 @@ class SearchAttributesType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeID = $val;
 	}
 
 	/**
 	 * @param DateSpecifierCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDateSpecifier($val)
 	{
@@ -65,7 +65,7 @@ class SearchAttributesType
 
 	/**
 	 * @param RangeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRangeSpecifier($val)
 	{
@@ -74,7 +74,7 @@ class SearchAttributesType
 
 	/**
 	 * @param ValType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValueList($val)
 	{
@@ -83,7 +83,7 @@ class SearchAttributesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

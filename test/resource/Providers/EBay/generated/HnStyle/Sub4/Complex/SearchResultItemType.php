@@ -44,7 +44,7 @@ class SearchResultItemType
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -53,7 +53,7 @@ class SearchResultItemType
 
     /**
      * @param NameValueListArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemSpecific($val)
     {
@@ -62,7 +62,7 @@ class SearchResultItemType
 
     /**
      * @param SearchResultValuesCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchResultValues($val)
     {
@@ -71,7 +71,7 @@ class SearchResultItemType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

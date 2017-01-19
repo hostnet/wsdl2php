@@ -17,24 +17,24 @@ class KeyPhrase
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setKeyPhrase($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for KeyPhrase');
+            throw new \Exception('POJO Proxy need a string for KeyPhrase');
         }
         $this->KeyPhrase = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Type');
+            throw new \Exception('POJO Proxy need a string for Type');
         }
         $this->Type = $val;
     }

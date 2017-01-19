@@ -21,7 +21,7 @@ class MarkUpMarkDownHistoryType
 
 	/**
 	 * @param MarkUpMarkDownEventType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMarkUpMarkDownEvent($val)
 	{

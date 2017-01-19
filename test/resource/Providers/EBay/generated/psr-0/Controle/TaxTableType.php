@@ -21,7 +21,7 @@ class TaxTableType
 
 	/**
 	 * @param TaxJurisdictionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaxJurisdiction($val)
 	{

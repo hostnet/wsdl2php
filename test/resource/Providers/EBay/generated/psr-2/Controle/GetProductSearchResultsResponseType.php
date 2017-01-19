@@ -33,7 +33,7 @@ class GetProductSearchResultsResponseType extends
 
     /**
      * @param DataElementSetType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDataElementSets($val)
     {
@@ -42,7 +42,7 @@ class GetProductSearchResultsResponseType extends
 
     /**
      * @param ProductSearchResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductSearchResult($val)
     {

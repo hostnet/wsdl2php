@@ -41,7 +41,7 @@ class MyMessagesFolderSummaryType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFolderID($val)
     {
@@ -50,67 +50,67 @@ class MyMessagesFolderSummaryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFolderName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FolderName');
+            throw new \Exception('POJO Proxy need a string for FolderName');
         }
         $this->FolderName = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNewAlertCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NewAlertCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNewMessageCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NewMessageCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalAlertCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAlertCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalMessageCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalMessageCount = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

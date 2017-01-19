@@ -13,7 +13,7 @@ class ThirdPartyProductInfo
 
 	/**
 	 * @param ThirdPartyProductDetailsArray $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThirdPartyProductDetails($val)
 	{

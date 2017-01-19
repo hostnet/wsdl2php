@@ -15,7 +15,7 @@ class MyMessagesMessageIdArrayType
 
     /**
      * @param MyMessagesMessageIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageID($val)
     {

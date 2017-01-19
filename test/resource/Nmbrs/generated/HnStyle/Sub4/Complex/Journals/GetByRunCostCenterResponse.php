@@ -13,12 +13,12 @@ class GetByRunCostCenterResponse
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setJournalsGetByRunCostCenterResult($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunCostCenterResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunCostCenterResult');
         }
         $this->Journals_GetByRunCostCenterResult = $val;
     }

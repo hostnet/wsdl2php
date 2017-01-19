@@ -29,43 +29,43 @@ class SellingManagerProductDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductName');
+            throw new \Exception('POJO Proxy need a string for ProductName');
         }
         $this->ProductName = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPartNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PartNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductPartNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductPartNumber');
+            throw new \Exception('POJO Proxy need a string for ProductPartNumber');
         }
         $this->ProductPartNumber = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

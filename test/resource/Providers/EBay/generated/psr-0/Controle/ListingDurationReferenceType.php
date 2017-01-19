@@ -21,19 +21,19 @@ class ListingDurationReferenceType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->_ = $val;
 	}
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{

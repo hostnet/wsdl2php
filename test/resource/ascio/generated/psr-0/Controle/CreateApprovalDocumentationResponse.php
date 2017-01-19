@@ -17,7 +17,7 @@ class CreateApprovalDocumentationResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreateApprovalDocumentationResult($val)
 	{
@@ -26,12 +26,12 @@ class CreateApprovalDocumentationResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDocumentationId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for documentationId');
+            throw new \Exception('POJO Proxy need a string for documentationId');
         }
         $this->documentationId = $val;
 	}

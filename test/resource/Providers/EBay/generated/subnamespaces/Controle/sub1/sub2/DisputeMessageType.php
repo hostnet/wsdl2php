@@ -36,19 +36,19 @@ class DisputeMessageType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MessageID = $val;
 	}
 
 	/**
 	 * @param DisputeMessageSourceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageSource($val)
 	{
@@ -57,7 +57,7 @@ class DisputeMessageType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageCreationTime($val)
 	{
@@ -66,19 +66,19 @@ class DisputeMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageText');
+            throw new \Exception('POJO Proxy need a string for MessageText');
         }
         $this->MessageText = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

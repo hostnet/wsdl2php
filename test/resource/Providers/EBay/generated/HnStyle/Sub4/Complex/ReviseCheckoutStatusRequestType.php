@@ -127,7 +127,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -136,31 +136,31 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OrderID');
+            throw new \Exception('POJO Proxy need a string for OrderID');
         }
         $this->OrderID = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAmountPaid($val)
     {
@@ -169,7 +169,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param BuyerPaymentMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentMethodUsed($val)
     {
@@ -178,7 +178,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param CompleteStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCheckoutStatus($val)
     {
@@ -187,7 +187,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param token $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingService($val)
     {
@@ -196,7 +196,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingIncludedInTax($val)
     {
@@ -205,7 +205,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param CheckoutMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCheckoutMethod($val)
     {
@@ -214,7 +214,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param InsuranceSelectedCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceType($val)
     {
@@ -223,7 +223,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param RCSPaymentStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentStatus($val)
     {
@@ -232,7 +232,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdjustmentAmount($val)
     {
@@ -241,7 +241,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param AddressType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingAddress($val)
     {
@@ -250,19 +250,19 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyerID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerID');
+            throw new \Exception('POJO Proxy need a string for BuyerID');
         }
         $this->BuyerID = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingInsuranceCost($val)
     {
@@ -271,7 +271,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTax($val)
     {
@@ -280,7 +280,7 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingCost($val)
     {
@@ -289,19 +289,19 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEncryptedID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EncryptedID');
+            throw new \Exception('POJO Proxy need a string for EncryptedID');
         }
         $this->EncryptedID = $val;
     }
 
     /**
      * @param ExternalTransactionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalTransaction($val)
     {
@@ -310,12 +310,12 @@ class ReviseCheckoutStatusRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMultipleSellerPaymentID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MultipleSellerPaymentID');
+            throw new \Exception('POJO Proxy need a string for MultipleSellerPaymentID');
         }
         $this->MultipleSellerPaymentID = $val;
     }

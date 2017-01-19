@@ -101,7 +101,7 @@ class SellerPaymentType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -110,19 +110,19 @@ class SellerPaymentType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param OrderIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderID($val)
     {
@@ -131,31 +131,31 @@ class SellerPaymentType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerInventoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerInventoryID');
+            throw new \Exception('POJO Proxy need a string for SellerInventoryID');
         }
         $this->SellerInventoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPrivateNotes($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PrivateNotes');
+            throw new \Exception('POJO Proxy need a string for PrivateNotes');
         }
         $this->PrivateNotes = $val;
     }
 
     /**
      * @param ExternalProductIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalProductID($val)
     {
@@ -164,19 +164,19 @@ class SellerPaymentType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
     }
 
     /**
      * @param PaymentTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentType($val)
     {
@@ -185,7 +185,7 @@ class SellerPaymentType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionPrice($val)
     {
@@ -194,7 +194,7 @@ class SellerPaymentType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingReimbursement($val)
     {
@@ -203,7 +203,7 @@ class SellerPaymentType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommission($val)
     {
@@ -212,7 +212,7 @@ class SellerPaymentType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAmountPaid($val)
     {
@@ -221,7 +221,7 @@ class SellerPaymentType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaidTime($val)
     {
@@ -230,7 +230,7 @@ class SellerPaymentType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

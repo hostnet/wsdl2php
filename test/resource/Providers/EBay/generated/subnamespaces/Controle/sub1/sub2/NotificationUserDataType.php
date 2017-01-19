@@ -27,7 +27,7 @@ class NotificationUserDataType
 
 	/**
 	 * @param SMSSubscriptionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSMSSubscription($val)
 	{
@@ -36,7 +36,7 @@ class NotificationUserDataType
 
 	/**
 	 * @param SummaryEventScheduleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSummarySchedule($val)
 	{
@@ -45,7 +45,7 @@ class NotificationUserDataType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

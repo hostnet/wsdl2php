@@ -33,7 +33,7 @@ class GetPromotionRulesRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -42,19 +42,19 @@ class GetPromotionRulesRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreCategoryID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StoreCategoryID = $val;
     }
 
     /**
      * @param PromotionMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionMethod($val)
     {

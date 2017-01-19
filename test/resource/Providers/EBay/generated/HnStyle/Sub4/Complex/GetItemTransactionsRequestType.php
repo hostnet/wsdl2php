@@ -66,7 +66,7 @@ class GetItemTransactionsRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -75,7 +75,7 @@ class GetItemTransactionsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeFrom($val)
     {
@@ -84,7 +84,7 @@ class GetItemTransactionsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeTo($val)
     {
@@ -93,19 +93,19 @@ class GetItemTransactionsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -114,7 +114,7 @@ class GetItemTransactionsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeFinalValueFee($val)
     {
@@ -123,7 +123,7 @@ class GetItemTransactionsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeContainingOrder($val)
     {

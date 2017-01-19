@@ -47,67 +47,67 @@ class UserIdPasswordType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAppId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AppId');
+            throw new \Exception('POJO Proxy need a string for AppId');
         }
         $this->AppId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDevId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DevId');
+            throw new \Exception('POJO Proxy need a string for DevId');
         }
         $this->DevId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAuthCert($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AuthCert');
+            throw new \Exception('POJO Proxy need a string for AuthCert');
         }
         $this->AuthCert = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUsername($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Username');
+            throw new \Exception('POJO Proxy need a string for Username');
         }
         $this->Username = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPassword($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Password');
+            throw new \Exception('POJO Proxy need a string for Password');
         }
         $this->Password = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

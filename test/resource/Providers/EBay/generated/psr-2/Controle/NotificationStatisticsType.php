@@ -39,67 +39,67 @@ class NotificationStatisticsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeliveredCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DeliveredCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQueuedNewCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QueuedNewCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQueuedPendingCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QueuedPendingCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpiredCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ExpiredCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrorCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ErrorCount = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

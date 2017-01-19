@@ -45,43 +45,43 @@ class SellingSummaryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setActiveAuctionCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ActiveAuctionCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAuctionSellingCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AuctionSellingCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAuctionBidCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AuctionBidCount = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalAuctionSellingValue($val)
     {
@@ -90,19 +90,19 @@ class SellingSummaryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalSoldCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalSoldCount = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalSoldValue($val)
     {
@@ -111,12 +111,12 @@ class SellingSummaryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSoldDurationInDays($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SoldDurationInDays = $val;
     }

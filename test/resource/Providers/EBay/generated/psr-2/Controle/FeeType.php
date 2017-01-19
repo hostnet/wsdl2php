@@ -28,19 +28,19 @@ class FeeType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFee($val)
     {
@@ -49,7 +49,7 @@ class FeeType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

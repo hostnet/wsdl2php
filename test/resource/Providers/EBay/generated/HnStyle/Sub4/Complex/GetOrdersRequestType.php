@@ -57,7 +57,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param OrderIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderIDArray($val)
     {
@@ -66,7 +66,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreateTimeFrom($val)
     {
@@ -75,7 +75,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreateTimeTo($val)
     {
@@ -84,7 +84,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param TradingRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderRole($val)
     {
@@ -93,7 +93,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param OrderStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderStatus($val)
     {
@@ -102,7 +102,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param ListingTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingType($val)
     {
@@ -111,7 +111,7 @@ class GetOrdersRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {

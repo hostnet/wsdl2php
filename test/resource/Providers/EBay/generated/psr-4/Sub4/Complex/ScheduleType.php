@@ -27,19 +27,19 @@ class ScheduleType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setScheduleID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ScheduleID = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setScheduleTime($val)
     {
@@ -48,7 +48,7 @@ class ScheduleType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

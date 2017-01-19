@@ -48,55 +48,55 @@ class ExpressHistogramDomainDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBreadCrumb($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BreadCrumb');
+            throw new \Exception('POJO Proxy need a string for BreadCrumb');
         }
         $this->BreadCrumb = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductCount = $val;
     }
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setImageURL($val)
     {
@@ -105,7 +105,7 @@ class ExpressHistogramDomainDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -21,19 +21,19 @@ class Clause
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttribute($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Attribute');
+            throw new \Exception('POJO Proxy need a string for Attribute');
         }
         $this->Attribute = $val;
     }
 
     /**
      * @param SearchOperatorType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOperator($val)
     {
@@ -42,12 +42,12 @@ class Clause
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValue($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
     }

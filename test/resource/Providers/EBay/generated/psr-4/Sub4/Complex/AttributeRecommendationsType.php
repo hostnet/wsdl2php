@@ -21,7 +21,7 @@ class AttributeRecommendationsType
 
     /**
      * @param AttributeSetArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetArray($val)
     {
@@ -30,7 +30,7 @@ class AttributeRecommendationsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

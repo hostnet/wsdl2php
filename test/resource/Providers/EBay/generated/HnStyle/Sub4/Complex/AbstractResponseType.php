@@ -96,7 +96,7 @@ class AbstractResponseType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTimestamp($val)
     {
@@ -105,7 +105,7 @@ class AbstractResponseType
 
     /**
      * @param AckCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAck($val)
     {
@@ -114,19 +114,19 @@ class AbstractResponseType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCorrelationID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
     }
 
     /**
      * @param ErrorType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrors($val)
     {
@@ -135,55 +135,55 @@ class AbstractResponseType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Message');
+            throw new \Exception('POJO Proxy need a string for Message');
         }
         $this->Message = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Version');
+            throw new \Exception('POJO Proxy need a string for Version');
         }
         $this->Version = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuild($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Build');
+            throw new \Exception('POJO Proxy need a string for Build');
         }
         $this->Build = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationEventName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NotificationEventName');
+            throw new \Exception('POJO Proxy need a string for NotificationEventName');
         }
         $this->NotificationEventName = $val;
     }
 
     /**
      * @param DuplicateInvocationDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDuplicateInvocationDetails($val)
     {
@@ -192,55 +192,55 @@ class AbstractResponseType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRecipientUserID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientUserID');
+            throw new \Exception('POJO Proxy need a string for RecipientUserID');
         }
         $this->RecipientUserID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEIASToken($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EIASToken');
+            throw new \Exception('POJO Proxy need a string for EIASToken');
         }
         $this->EIASToken = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationSignature($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NotificationSignature');
+            throw new \Exception('POJO Proxy need a string for NotificationSignature');
         }
         $this->NotificationSignature = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHardExpirationWarning($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HardExpirationWarning');
+            throw new \Exception('POJO Proxy need a string for HardExpirationWarning');
         }
         $this->HardExpirationWarning = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

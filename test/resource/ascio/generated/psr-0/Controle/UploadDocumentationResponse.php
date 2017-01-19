@@ -13,7 +13,7 @@ class UploadDocumentationResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUploadDocumentationResult($val)
 	{

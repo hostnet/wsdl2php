@@ -19,7 +19,7 @@ class AddDisputeResponseType extends
 
     /**
      * @param DisputeIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeID($val)
     {

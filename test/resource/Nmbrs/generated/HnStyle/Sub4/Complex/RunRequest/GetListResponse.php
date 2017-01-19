@@ -13,7 +13,7 @@ class GetListResponse
 
     /**
      * @param ArrayOfRunRequest $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRunRequestGetListResult($val)
     {

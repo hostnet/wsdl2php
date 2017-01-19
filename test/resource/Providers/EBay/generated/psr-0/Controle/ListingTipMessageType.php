@@ -38,55 +38,55 @@ class ListingTipMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTipMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListingTipMessageID');
+            throw new \Exception('POJO Proxy need a string for ListingTipMessageID');
         }
         $this->ListingTipMessageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShortMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShortMessage');
+            throw new \Exception('POJO Proxy need a string for ShortMessage');
         }
         $this->ShortMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLongMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LongMessage');
+            throw new \Exception('POJO Proxy need a string for LongMessage');
         }
         $this->LongMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHelpURLPath($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HelpURLPath');
+            throw new \Exception('POJO Proxy need a string for HelpURLPath');
         }
         $this->HelpURLPath = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

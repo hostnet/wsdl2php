@@ -49,7 +49,7 @@ class SearchOrderRequest
 
     /**
      * @param ArrayOfOrderType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderTypes($val)
     {
@@ -58,7 +58,7 @@ class SearchOrderRequest
 
     /**
      * @param ArrayOfOrderStatusType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderStatusTypes($val)
     {
@@ -67,7 +67,7 @@ class SearchOrderRequest
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFromDate($val)
     {
@@ -76,7 +76,7 @@ class SearchOrderRequest
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setToDate($val)
     {
@@ -85,43 +85,43 @@ class SearchOrderRequest
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomainName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainName');
+            throw new \Exception('POJO Proxy need a string for DomainName');
         }
         $this->DomainName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionComment($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionComment');
+            throw new \Exception('POJO Proxy need a string for TransactionComment');
         }
         $this->TransactionComment = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setComments($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Comments');
+            throw new \Exception('POJO Proxy need a string for Comments');
         }
         $this->Comments = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeDomainDetails($val)
     {
@@ -130,7 +130,7 @@ class SearchOrderRequest
 
     /**
      * @param PagingInfo $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPageInfo($val)
     {
@@ -139,7 +139,7 @@ class SearchOrderRequest
 
     /**
      * @param SearchOrderSortType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderSort($val)
     {

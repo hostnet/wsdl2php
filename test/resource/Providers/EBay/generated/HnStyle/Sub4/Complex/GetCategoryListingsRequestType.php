@@ -140,7 +140,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMotorsGermanySearchable($val)
     {
@@ -149,19 +149,19 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdFormat($val)
     {
@@ -170,7 +170,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFreeShipping($val)
     {
@@ -179,7 +179,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param CurrencyCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCurrency($val)
     {
@@ -188,7 +188,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param ItemTypeFilterCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemTypeFilter($val)
     {
@@ -197,7 +197,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoresFixedPrice($val)
     {
@@ -206,7 +206,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param CategoryListingsSearchCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchType($val)
     {
@@ -215,7 +215,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param CategoryListingsOrderCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderBy($val)
     {
@@ -224,7 +224,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -233,7 +233,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param SearchLocationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchLocation($val)
     {
@@ -242,7 +242,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param ProximitySearchType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProximitySearch($val)
     {
@@ -251,7 +251,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeGetItFastItems($val)
     {
@@ -260,7 +260,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param PaymentMethodSearchCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentMethod($val)
     {
@@ -269,7 +269,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeCondition($val)
     {
@@ -278,7 +278,7 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeFeedback($val)
     {
@@ -287,24 +287,24 @@ class GetCategoryListingsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalSearchPostalCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
+            throw new \Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
         $this->LocalSearchPostalCode = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxRelatedSearchKeywords($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxRelatedSearchKeywords = $val;
     }

@@ -55,7 +55,7 @@ class GetUserDisputesRequestType extends
 
     /**
      * @param DisputeFilterTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeFilterType($val)
     {
@@ -64,7 +64,7 @@ class GetUserDisputesRequestType extends
 
     /**
      * @param DisputeSortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeSortType($val)
     {
@@ -73,7 +73,7 @@ class GetUserDisputesRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeFrom($val)
     {
@@ -82,7 +82,7 @@ class GetUserDisputesRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeTo($val)
     {
@@ -91,7 +91,7 @@ class GetUserDisputesRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {

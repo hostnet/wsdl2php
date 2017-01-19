@@ -55,7 +55,7 @@ class GetRecommendationsResponseContainerType
 
     /**
      * @param ListingAnalyzerRecommendationsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingAnalyzerRecommendations($val)
     {
@@ -64,7 +64,7 @@ class GetRecommendationsResponseContainerType
 
     /**
      * @param SIFFTASRecommendationsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSIFFTASRecommendations($val)
     {
@@ -73,7 +73,7 @@ class GetRecommendationsResponseContainerType
 
     /**
      * @param PricingRecommendationsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPricingRecommendations($val)
     {
@@ -82,7 +82,7 @@ class GetRecommendationsResponseContainerType
 
     /**
      * @param AttributeRecommendationsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeRecommendations($val)
     {
@@ -91,7 +91,7 @@ class GetRecommendationsResponseContainerType
 
     /**
      * @param ProductRecommendationsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductRecommendations($val)
     {
@@ -100,19 +100,19 @@ class GetRecommendationsResponseContainerType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCorrelationID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

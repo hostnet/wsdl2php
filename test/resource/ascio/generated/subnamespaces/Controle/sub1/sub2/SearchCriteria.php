@@ -25,7 +25,7 @@ class SearchCriteria
 
 	/**
 	 * @param ArrayOfClause $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setClauses($val)
 	{
@@ -34,7 +34,7 @@ class SearchCriteria
 
 	/**
 	 * @param SearchModeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMode($val)
 	{
@@ -43,7 +43,7 @@ class SearchCriteria
 
 	/**
 	 * @param ArrayOfstring $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWithoutstates($val)
 	{
@@ -52,7 +52,7 @@ class SearchCriteria
 
 	/**
 	 * @param ArrayOfstring $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWithstates($val)
 	{

@@ -75,19 +75,19 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOriginatingPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OriginatingPostalCode');
+            throw new \Exception('POJO Proxy need a string for OriginatingPostalCode');
         }
         $this->OriginatingPostalCode = $val;
 	}
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackageDepth($val)
 	{
@@ -96,7 +96,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackageLength($val)
 	{
@@ -105,7 +105,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackageWidth($val)
 	{
@@ -114,7 +114,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackagingHandlingCosts($val)
 	{
@@ -123,7 +123,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingIrregular($val)
 	{
@@ -132,7 +132,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param ShippingPackageCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingPackage($val)
 	{
@@ -141,7 +141,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWeightMajor($val)
 	{
@@ -150,7 +150,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWeightMinor($val)
 	{
@@ -159,7 +159,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalPackagingHandlingCosts($val)
 	{
@@ -168,7 +168,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

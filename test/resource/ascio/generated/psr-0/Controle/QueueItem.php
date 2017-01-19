@@ -45,7 +45,7 @@ class QueueItem
 
 	/**
 	 * @param ArrayOfAttachment $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttachments($val)
 	{
@@ -54,55 +54,55 @@ class QueueItem
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainHandle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainHandle');
+            throw new \Exception('POJO Proxy need a string for DomainHandle');
         }
         $this->DomainHandle = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainName');
+            throw new \Exception('POJO Proxy need a string for DomainName');
         }
         $this->DomainName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMsg($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Msg');
+            throw new \Exception('POJO Proxy need a string for Msg');
         }
         $this->Msg = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMsgId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MsgId = $val;
 	}
 
 	/**
 	 * @param MessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMsgType($val)
 	{
@@ -111,19 +111,19 @@ class QueueItem
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OrderId');
+            throw new \Exception('POJO Proxy need a string for OrderId');
         }
         $this->OrderId = $val;
 	}
 
 	/**
 	 * @param OrderStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderStatus($val)
 	{
@@ -132,7 +132,7 @@ class QueueItem
 
 	/**
 	 * @param ArrayOfCallbackStatus $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatusList($val)
 	{

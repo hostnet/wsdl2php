@@ -94,7 +94,7 @@ class VendorHostedPictureType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureURL($val)
     {
@@ -103,7 +103,7 @@ class VendorHostedPictureType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSelfHostedURL($val)
     {
@@ -112,7 +112,7 @@ class VendorHostedPictureType
 
     /**
      * @param PhotoDisplayCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPhotoDisplay($val)
     {
@@ -121,7 +121,7 @@ class VendorHostedPictureType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGalleryURL($val)
     {
@@ -130,7 +130,7 @@ class VendorHostedPictureType
 
     /**
      * @param GalleryTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGalleryType($val)
     {
@@ -139,7 +139,7 @@ class VendorHostedPictureType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

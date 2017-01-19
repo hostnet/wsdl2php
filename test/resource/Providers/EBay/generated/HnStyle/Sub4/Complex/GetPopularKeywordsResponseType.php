@@ -37,7 +37,7 @@ class GetPopularKeywordsResponseType extends
 
     /**
      * @param PaginationResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaginationResult($val)
     {
@@ -46,7 +46,7 @@ class GetPopularKeywordsResponseType extends
 
     /**
      * @param CategoryArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryArray($val)
     {
@@ -55,7 +55,7 @@ class GetPopularKeywordsResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMore($val)
     {

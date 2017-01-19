@@ -20,7 +20,7 @@ class PlaceOfferResponseType extends
 
 	/**
 	 * @param SellingStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingStatus($val)
 	{

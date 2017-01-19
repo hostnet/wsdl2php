@@ -68,7 +68,7 @@ class GetItemTransactionsResponseType extends
 
     /**
      * @param PaginationResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaginationResult($val)
     {
@@ -77,7 +77,7 @@ class GetItemTransactionsResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMoreTransactions($val)
     {
@@ -86,43 +86,43 @@ class GetItemTransactionsResponseType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionsPerPage($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TransactionsPerPage = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPageNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReturnedTransactionCountActual($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedTransactionCountActual = $val;
     }
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -131,7 +131,7 @@ class GetItemTransactionsResponseType extends
 
     /**
      * @param TransactionArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionArray($val)
     {
@@ -140,7 +140,7 @@ class GetItemTransactionsResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPayPalPreferred($val)
     {

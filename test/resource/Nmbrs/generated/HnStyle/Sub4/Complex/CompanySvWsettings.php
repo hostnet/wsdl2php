@@ -41,19 +41,19 @@ class CompanySvWsettings
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCodeCao($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CodeCao = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEigenrisicodragerGediffWGA($val)
     {
@@ -62,7 +62,7 @@ class CompanySvWsettings
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEigenrisicodragerUniformeWAO($val)
     {
@@ -71,7 +71,7 @@ class CompanySvWsettings
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEigenrisicodragerZiektewet($val)
     {
@@ -80,19 +80,19 @@ class CompanySvWsettings
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRisicoGroep($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RisicoGroep = $val;
     }
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGediffWGAwn($val)
     {
@@ -101,7 +101,7 @@ class CompanySvWsettings
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGediffWGAwg($val)
     {
@@ -110,12 +110,12 @@ class CompanySvWsettings
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSector($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Sector = $val;
     }

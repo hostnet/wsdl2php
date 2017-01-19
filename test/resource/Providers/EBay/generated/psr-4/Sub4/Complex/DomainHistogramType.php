@@ -24,7 +24,7 @@ class DomainHistogramType
 
     /**
      * @param ExpressHistogramDepartmentType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDepartment($val)
     {
@@ -33,7 +33,7 @@ class DomainHistogramType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

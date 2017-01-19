@@ -21,7 +21,7 @@ class GetDisputeResponseType extends
 
     /**
      * @param DisputeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDispute($val)
     {

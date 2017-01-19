@@ -29,55 +29,55 @@ class SellerSearchDetails
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerNickname($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerNickname');
+            throw new \Exception('POJO Proxy need a string for SellerNickname');
         }
         $this->SellerNickname = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreId');
+            throw new \Exception('POJO Proxy need a string for StoreId');
         }
         $this->StoreId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfOpenListings($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfOpenListings');
+            throw new \Exception('POJO Proxy need a string for NumberOfOpenListings');
         }
         $this->NumberOfOpenListings = $val;
     }
 
     /**
      * @param ListingProductInfo $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingProductInfo($val)
     {

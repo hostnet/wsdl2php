@@ -36,7 +36,7 @@ class GetMyMessagesRequestType extends
 
     /**
      * @param MyMessagesAlertIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlertIDs($val)
     {
@@ -45,7 +45,7 @@ class GetMyMessagesRequestType extends
 
     /**
      * @param MyMessagesMessageIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageIDs($val)
     {
@@ -54,7 +54,7 @@ class GetMyMessagesRequestType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFolderID($val)
     {

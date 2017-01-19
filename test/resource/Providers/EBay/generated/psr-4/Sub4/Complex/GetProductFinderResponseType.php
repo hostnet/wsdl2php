@@ -42,24 +42,24 @@ class GetProductFinderResponseType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSystemVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderData($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductFinderData');
+            throw new \Exception('POJO Proxy need a string for ProductFinderData');
         }
         $this->ProductFinderData = $val;
     }

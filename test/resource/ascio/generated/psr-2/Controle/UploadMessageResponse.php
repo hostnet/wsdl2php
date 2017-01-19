@@ -13,7 +13,7 @@ class UploadMessageResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUploadMessageResult($val)
     {

@@ -85,7 +85,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserID($val)
     {
@@ -94,7 +94,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param UserIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMotorsDealerUsers($val)
     {
@@ -103,7 +103,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeFrom($val)
     {
@@ -112,7 +112,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeTo($val)
     {
@@ -121,19 +121,19 @@ class GetSellerListRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSort($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Sort = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTimeFrom($val)
     {
@@ -142,7 +142,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTimeTo($val)
     {
@@ -151,7 +151,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -160,7 +160,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param GranularityLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGranularityLevel($val)
     {
@@ -169,7 +169,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param SKUArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSKUArray($val)
     {
@@ -178,7 +178,7 @@ class GetSellerListRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeWatchCount($val)
     {

@@ -28,31 +28,31 @@ class ProductFinderConstraintType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisplayName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplayName');
+            throw new \Exception('POJO Proxy need a string for DisplayName');
         }
         $this->DisplayName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisplayValue($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplayValue');
+            throw new \Exception('POJO Proxy need a string for DisplayValue');
         }
         $this->DisplayValue = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

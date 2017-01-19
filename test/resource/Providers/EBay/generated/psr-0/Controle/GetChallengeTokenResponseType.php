@@ -27,36 +27,36 @@ class GetChallengeTokenResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setChallengeToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ChallengeToken');
+            throw new \Exception('POJO Proxy need a string for ChallengeToken');
         }
         $this->ChallengeToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setImageChallengeURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ImageChallengeURL');
+            throw new \Exception('POJO Proxy need a string for ImageChallengeURL');
         }
         $this->ImageChallengeURL = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAudioChallengeURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AudioChallengeURL');
+            throw new \Exception('POJO Proxy need a string for AudioChallengeURL');
         }
         $this->AudioChallengeURL = $val;
 	}

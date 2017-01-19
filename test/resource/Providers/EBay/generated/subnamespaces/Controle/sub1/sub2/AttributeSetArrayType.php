@@ -29,7 +29,7 @@ class AttributeSetArrayType
 
 	/**
 	 * @param AttributeSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSet($val)
 	{

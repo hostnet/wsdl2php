@@ -35,7 +35,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param SellingSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingSummary($val)
 	{
@@ -44,7 +44,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduledList($val)
 	{
@@ -53,7 +53,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActiveList($val)
 	{
@@ -62,7 +62,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedOrderTransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSoldList($val)
 	{
@@ -71,7 +71,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnsoldList($val)
 	{

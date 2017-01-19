@@ -30,19 +30,19 @@ class FeedbackInfoType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CommentText');
+            throw new \Exception('POJO Proxy need a string for CommentText');
         }
         $this->CommentText = $val;
     }
 
     /**
      * @param CommentTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentType($val)
     {
@@ -51,7 +51,7 @@ class FeedbackInfoType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTargetUser($val)
     {
@@ -60,7 +60,7 @@ class FeedbackInfoType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

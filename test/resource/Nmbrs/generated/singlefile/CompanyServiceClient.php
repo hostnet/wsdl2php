@@ -19,36 +19,36 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompany
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmployeeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EmployeeID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunID = $val;
 	}
@@ -65,7 +65,7 @@ class SalaryDocuments_GetEmployeePayslipsPdFbyRunCompanyResponse
 
 	/**
 	 * @param ArrayOfPayslip $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalaryDocumentsGetEmployeePayslipsPDFByRunCompanyResult($val)
 	{
@@ -84,7 +84,7 @@ class Payslip
 
 	/**
 	 * @param base64Binary $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPDF($val)
 	{
@@ -107,24 +107,24 @@ class SalaryDocuments_GetAllPayslipsPdFbyRunCompany
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunID = $val;
 	}
@@ -141,7 +141,7 @@ class SalaryDocuments_GetAllPayslipsPdFbyRunCompanyResponse
 
 	/**
 	 * @param Payslip $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalaryDocumentsGetAllPayslipsPDFByRunCompanyResult($val)
 	{
@@ -160,12 +160,12 @@ class Company_GetCurrentPeriod
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -182,12 +182,12 @@ class Company_GetCurrentPeriodResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyGetCurrentPeriodResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Company_GetCurrentPeriodResult');
+            throw new \Exception('POJO Proxy need a string for Company_GetCurrentPeriodResult');
         }
         $this->Company_GetCurrentPeriodResult = $val;
 	}
@@ -204,12 +204,12 @@ class BankAccount_GetCurrent
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -226,7 +226,7 @@ class BankAccount_GetCurrentResponse
 
 	/**
 	 * @param BankAccount $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankAccountGetCurrentResult($val)
 	{
@@ -273,91 +273,91 @@ class BankAccount
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Id = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Number');
+            throw new \Exception('POJO Proxy need a string for Number');
         }
         $this->Number = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIBAN($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for IBAN');
+            throw new \Exception('POJO Proxy need a string for IBAN');
         }
         $this->IBAN = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBIC($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BIC');
+            throw new \Exception('POJO Proxy need a string for BIC');
         }
         $this->BIC = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCity($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for City');
+            throw new \Exception('POJO Proxy need a string for City');
         }
         $this->City = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param BankAccountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -393,19 +393,19 @@ class BankAccount_Update
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param BankAccount $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankAccount($val)
 	{
@@ -431,19 +431,19 @@ class BankAccount_Insert
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param BankAccount $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankAccount($val)
 	{
@@ -462,12 +462,12 @@ class BankAccount_InsertResponse
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankAccountInsertResult($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BankAccount_InsertResult = $val;
 	}
@@ -496,43 +496,43 @@ class FileExplorer_UploadFile
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStrDocumentName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StrDocumentName');
+            throw new \Exception('POJO Proxy need a string for StrDocumentName');
         }
         $this->StrDocumentName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStrDocumentSubFolder($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StrDocumentSubFolder');
+            throw new \Exception('POJO Proxy need a string for StrDocumentSubFolder');
         }
         $this->StrDocumentSubFolder = $val;
 	}
 
 	/**
 	 * @param base64Binary $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBody($val)
 	{
@@ -558,24 +558,24 @@ class Reports_GetPayslipByRunCompany
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunId = $val;
 	}
@@ -592,12 +592,12 @@ class Reports_GetPayslipByRunCompanyResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportsGetPayslipByRunCompanyResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
+            throw new \Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
         }
         $this->Reports_GetPayslipByRunCompanyResult = $val;
 	}
@@ -618,24 +618,24 @@ class Reports_GetWageCodesByRunCompany
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunId = $val;
 	}
@@ -652,12 +652,12 @@ class Reports_GetWageCodesByRunCompanyResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportsGetWageCodesByRunCompanyResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
+            throw new \Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
         }
         $this->Reports_GetWageCodesByRunCompanyResult = $val;
 	}
@@ -678,24 +678,24 @@ class Reports_GetWageCodesByYear
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
@@ -712,12 +712,12 @@ class Reports_GetWageCodesByYearResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportsGetWageCodesByYearResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
+            throw new \Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
         }
         $this->Reports_GetWageCodesByYearResult = $val;
 	}
@@ -738,24 +738,24 @@ class Journals_GetByRunCompany
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunId = $val;
 	}
@@ -772,12 +772,12 @@ class Journals_GetByRunCompanyResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setJournalsGetByRunCompanyResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
         }
         $this->Journals_GetByRunCompanyResult = $val;
 	}
@@ -798,24 +798,24 @@ class Journals_GetByRunEmployee
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunId = $val;
 	}
@@ -832,12 +832,12 @@ class Journals_GetByRunEmployeeResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setJournalsGetByRunEmployeeResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunEmployeeResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunEmployeeResult');
         }
         $this->Journals_GetByRunEmployeeResult = $val;
 	}
@@ -858,24 +858,24 @@ class Journals_GetByRunCostCenter
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunId = $val;
 	}
@@ -892,12 +892,12 @@ class Journals_GetByRunCostCenterResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setJournalsGetByRunCostCenterResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunCostCenterResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunCostCenterResult');
         }
         $this->Journals_GetByRunCostCenterResult = $val;
 	}
@@ -918,24 +918,24 @@ class Journals_GetByRunDepartment
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RunId = $val;
 	}
@@ -952,12 +952,12 @@ class Journals_GetByRunDepartmentResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setJournalsGetByRunDepartmentResult($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
         }
         $this->Journals_GetByRunDepartmentResult = $val;
 	}
@@ -978,24 +978,24 @@ class Run_GetList
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
@@ -1012,7 +1012,7 @@ class Run_GetListResponse
 
 	/**
 	 * @param ArrayOfRunInfo $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunGetListResult($val)
 	{
@@ -1059,79 +1059,79 @@ class RunInfo
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Number = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodStart($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PeriodStart = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodEnd($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PeriodEnd = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunAt($val)
 	{
@@ -1140,7 +1140,7 @@ class RunInfo
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIsLocked($val)
 	{
@@ -1159,12 +1159,12 @@ class SvW_GetCurrent
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -1181,7 +1181,7 @@ class SvW_GetCurrentResponse
 
 	/**
 	 * @param SVW $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSVWGetCurrentResult($val)
 	{
@@ -1212,7 +1212,7 @@ class SvW
 
 	/**
 	 * @param CompanySVWSettings $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSVWSettings($val)
 	{
@@ -1221,7 +1221,7 @@ class SvW
 
 	/**
 	 * @param Sector $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSector($val)
 	{
@@ -1230,7 +1230,7 @@ class SvW
 
 	/**
 	 * @param Risicogroep $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRisicogroep($val)
 	{
@@ -1239,7 +1239,7 @@ class SvW
 
 	/**
 	 * @param CAO $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCAO($val)
 	{
@@ -1286,19 +1286,19 @@ class CompanySvWsettings
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCodeCao($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CodeCao = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEigenrisicodragerGediffWGA($val)
 	{
@@ -1307,7 +1307,7 @@ class CompanySvWsettings
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEigenrisicodragerUniformeWAO($val)
 	{
@@ -1316,7 +1316,7 @@ class CompanySvWsettings
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEigenrisicodragerZiektewet($val)
 	{
@@ -1325,19 +1325,19 @@ class CompanySvWsettings
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRisicoGroep($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RisicoGroep = $val;
 	}
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGediffWGAwn($val)
 	{
@@ -1346,7 +1346,7 @@ class CompanySvWsettings
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGediffWGAwg($val)
 	{
@@ -1355,12 +1355,12 @@ class CompanySvWsettings
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSector($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Sector = $val;
 	}
@@ -1381,24 +1381,24 @@ class Sector
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -1419,24 +1419,24 @@ class Risicogroep
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -1457,24 +1457,24 @@ class CaO
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -1495,19 +1495,19 @@ class SvW_UpdateCurrent
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param SVW $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSVW($val)
 	{
@@ -1537,36 +1537,36 @@ class SalaryTable_GetScales
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriod($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Period = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
@@ -1583,7 +1583,7 @@ class SalaryTable_GetScalesResponse
 
 	/**
 	 * @param ArrayOfSalaryTableScale $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalaryTableGetScalesResult($val)
 	{
@@ -1618,31 +1618,31 @@ class SalaryTableScale
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScale($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Scale');
+            throw new \Exception('POJO Proxy need a string for Scale');
         }
         $this->Scale = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSchaalDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SchaalDescription');
+            throw new \Exception('POJO Proxy need a string for SchaalDescription');
         }
         $this->SchaalDescription = $val;
 	}
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScaleValue($val)
 	{
@@ -1651,7 +1651,7 @@ class SalaryTableScale
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScalePercentageMax($val)
 	{
@@ -1660,7 +1660,7 @@ class SalaryTableScale
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScalePercentageMin($val)
 	{
@@ -1691,19 +1691,19 @@ class SalaryTable_GetSteps
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param SalaryTableScale $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScale($val)
 	{
@@ -1712,24 +1712,24 @@ class SalaryTable_GetSteps
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriod($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Period = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
@@ -1746,7 +1746,7 @@ class SalaryTable_GetStepsResponse
 
 	/**
 	 * @param ArrayOfSalaryTableStep $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalaryTableGetStepsResult($val)
 	{
@@ -1773,31 +1773,31 @@ class SalaryTableStep
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStep($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Step');
+            throw new \Exception('POJO Proxy need a string for Step');
         }
         $this->Step = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStepDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StepDescription');
+            throw new \Exception('POJO Proxy need a string for StepDescription');
         }
         $this->StepDescription = $val;
 	}
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStepValue($val)
 	{
@@ -1824,36 +1824,36 @@ class SalaryTable_Get
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriod($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Period = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
@@ -1870,7 +1870,7 @@ class SalaryTable_GetResponse
 
 	/**
 	 * @param SalaryTable $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalaryTableGetResult($val)
 	{
@@ -1893,24 +1893,24 @@ class SalaryTable
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -1927,12 +1927,12 @@ class CostCenter_GetList
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -1949,7 +1949,7 @@ class CostCenter_GetListResponse
 
 	/**
 	 * @param ArrayOfCostCenter $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCostCenterGetListResult($val)
 	{
@@ -1972,24 +1972,24 @@ class CostCenter
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -2010,19 +2010,19 @@ class CostCenter_Insert
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param CostCenter $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKostenplaats($val)
 	{
@@ -2041,12 +2041,12 @@ class CostCenter_InsertResponse
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCostCenterInsertResult($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CostCenter_InsertResult = $val;
 	}
@@ -2063,12 +2063,12 @@ class Address_GetCurrent
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -2085,7 +2085,7 @@ class Address_GetCurrentResponse
 
 	/**
 	 * @param Address $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddressGetCurrentResult($val)
 	{
@@ -2136,19 +2136,19 @@ class Address
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Id = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDefault($val)
 	{
@@ -2157,84 +2157,84 @@ class Address
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStreet($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Street');
+            throw new \Exception('POJO Proxy need a string for Street');
         }
         $this->Street = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHouseNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HouseNumber');
+            throw new \Exception('POJO Proxy need a string for HouseNumber');
         }
         $this->HouseNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHouseNumberAddition($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HouseNumberAddition');
+            throw new \Exception('POJO Proxy need a string for HouseNumberAddition');
         }
         $this->HouseNumberAddition = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCity($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for City');
+            throw new \Exception('POJO Proxy need a string for City');
         }
         $this->City = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStateProvince($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StateProvince');
+            throw new \Exception('POJO Proxy need a string for StateProvince');
         }
         $this->StateProvince = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountryISOCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CountryISOCode');
+            throw new \Exception('POJO Proxy need a string for CountryISOCode');
         }
         $this->CountryISOCode = $val;
 	}
@@ -2255,19 +2255,19 @@ class Address_Update
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param Address $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddress($val)
 	{
@@ -2293,19 +2293,19 @@ class Address_Insert
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param Address $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddress($val)
 	{
@@ -2324,12 +2324,12 @@ class Address_InsertResponse
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddressInsertResult($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Address_InsertResult = $val;
 	}
@@ -2346,12 +2346,12 @@ class RunRequest_Insert
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -2375,24 +2375,24 @@ class RunRequest_GetList
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
@@ -2409,7 +2409,7 @@ class RunRequest_GetListResponse
 
 	/**
 	 * @param ArrayOfRunRequest $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRunRequestGetListResult($val)
 	{
@@ -2440,31 +2440,31 @@ class RunRequest
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriod($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Period = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setYear($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Year = $val;
 	}
 
 	/**
 	 * @param RunRequestStatus $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -2473,7 +2473,7 @@ class RunRequest
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHandledDate($val)
 	{
@@ -2501,12 +2501,12 @@ class Schedule_GetCurrent
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -2523,7 +2523,7 @@ class Schedule_GetCurrentResponse
 
 	/**
 	 * @param BedrijfFulltimeSchedule $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduleGetCurrentResult($val)
 	{
@@ -2546,7 +2546,7 @@ class BedrijfFulltimeSchedule
 
 	/**
 	 * @param FulltimeSchedule $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFulltimeScheduleOne($val)
 	{
@@ -2555,7 +2555,7 @@ class BedrijfFulltimeSchedule
 
 	/**
 	 * @param FulltimeSchedule $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFulltimeScheduleTwo($val)
 	{
@@ -2630,7 +2630,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param ScheduleCalcMethod $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduleCalcMethod($val)
 	{
@@ -2639,7 +2639,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursMonday($val)
 	{
@@ -2648,7 +2648,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursTuesday($val)
 	{
@@ -2657,7 +2657,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursWednesday($val)
 	{
@@ -2666,7 +2666,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursThursday($val)
 	{
@@ -2675,7 +2675,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursFriday($val)
 	{
@@ -2684,7 +2684,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursSaturday($val)
 	{
@@ -2693,7 +2693,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursSunday($val)
 	{
@@ -2702,7 +2702,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursMonday2($val)
 	{
@@ -2711,7 +2711,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursTuesday2($val)
 	{
@@ -2720,7 +2720,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursWednesday2($val)
 	{
@@ -2729,7 +2729,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursThursday2($val)
 	{
@@ -2738,7 +2738,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursFriday2($val)
 	{
@@ -2747,7 +2747,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursSaturday2($val)
 	{
@@ -2756,7 +2756,7 @@ class FulltimeSchedule
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursSunday2($val)
 	{
@@ -2781,12 +2781,12 @@ class HourModel_GetHourCodes
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -2803,7 +2803,7 @@ class HourModel_GetHourCodesResponse
 
 	/**
 	 * @param ArrayOfHourCode $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHourModelGetHourCodesResult($val)
 	{
@@ -2826,24 +2826,24 @@ class HourCode
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -2860,12 +2860,12 @@ class WageModel_GetWageCodes
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
 	}
@@ -2882,7 +2882,7 @@ class WageModel_GetWageCodesResponse
 
 	/**
 	 * @param ArrayOfWageCode $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWageModelGetWageCodesResult($val)
 	{
@@ -2905,24 +2905,24 @@ class WageCode
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Code = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -2942,7 +2942,7 @@ class List_GetAllResponse
 
 	/**
 	 * @param ArrayOfCompany $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListGetAllResult($val)
 	{
@@ -2989,91 +2989,91 @@ class Company
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Number = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhoneNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PhoneNumber');
+            throw new \Exception('POJO Proxy need a string for PhoneNumber');
         }
         $this->PhoneNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFaxNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FaxNumber');
+            throw new \Exception('POJO Proxy need a string for FaxNumber');
         }
         $this->FaxNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWebsite($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Website');
+            throw new \Exception('POJO Proxy need a string for Website');
         }
         $this->Website = $val;
 	}
 
 	/**
 	 * @param LoonaangifteTijdvak $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLoonaangifteTijdvak($val)
 	{
@@ -3101,12 +3101,12 @@ class List_GetByDebtor
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDebtorId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DebtorId = $val;
 	}
@@ -3123,7 +3123,7 @@ class List_GetByDebtorResponse
 
 	/**
 	 * @param ArrayOfCompany $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListGetByDebtorResult($val)
 	{

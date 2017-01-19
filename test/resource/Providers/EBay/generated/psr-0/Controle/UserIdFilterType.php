@@ -32,7 +32,7 @@ class UserIdFilterType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExcludeSellers($val)
 	{
@@ -41,7 +41,7 @@ class UserIdFilterType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeSellers($val)
 	{
@@ -50,7 +50,7 @@ class UserIdFilterType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

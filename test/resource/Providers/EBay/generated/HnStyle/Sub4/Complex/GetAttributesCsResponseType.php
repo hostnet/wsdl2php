@@ -29,24 +29,24 @@ class GetAttributesCsResponseType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSystemVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeData($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeData');
+            throw new \Exception('POJO Proxy need a string for AttributeData');
         }
         $this->AttributeData = $val;
     }

@@ -31,7 +31,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -40,7 +40,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -49,7 +49,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -58,7 +58,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{

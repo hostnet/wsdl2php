@@ -310,7 +310,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMotorsGermanySearchable($val)
     {
@@ -319,31 +319,31 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuery($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param SearchFlagsCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchFlags($val)
     {
@@ -352,7 +352,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param PriceRangeFilterType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPriceRangeFilter($val)
     {
@@ -361,7 +361,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param ProximitySearchType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProximitySearch($val)
     {
@@ -370,7 +370,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param ItemTypeFilterCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemTypeFilter($val)
     {
@@ -379,7 +379,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param SearchTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchType($val)
     {
@@ -388,7 +388,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param UserIdFilterType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserIdFilter($val)
     {
@@ -397,7 +397,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param SearchLocationFilterType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchLocationFilter($val)
     {
@@ -406,7 +406,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param SearchStoreFilterType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreSearchFilter($val)
     {
@@ -415,7 +415,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param SearchSortOrderCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrder($val)
     {
@@ -424,7 +424,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -433,7 +433,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param SearchRequestType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchRequest($val)
     {
@@ -442,19 +442,19 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductID');
+            throw new \Exception('POJO Proxy need a string for ProductID');
         }
         $this->ProductID = $val;
     }
 
     /**
      * @param ExternalProductIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalProductID($val)
     {
@@ -463,7 +463,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param RequestCategoriesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategories($val)
     {
@@ -472,7 +472,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalOnly($val)
     {
@@ -481,7 +481,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeFrom($val)
     {
@@ -490,7 +490,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeTo($val)
     {
@@ -499,7 +499,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeFrom($val)
     {
@@ -508,7 +508,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeGetItFastItems($val)
     {
@@ -517,7 +517,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoresFixedPrice($val)
     {
@@ -526,7 +526,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param PaymentMethodSearchCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentMethod($val)
     {
@@ -535,7 +535,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param GranularityLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGranularityLevel($val)
     {
@@ -544,7 +544,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpandSearch($val)
     {
@@ -553,7 +553,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLot($val)
     {
@@ -562,7 +562,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdFormat($val)
     {
@@ -571,7 +571,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFreeShipping($val)
     {
@@ -580,19 +580,19 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuantity($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Quantity = $val;
     }
 
     /**
      * @param QuantityOperatorCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuantityOperator($val)
     {
@@ -601,7 +601,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param SellerBusinessCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerBusinessType($val)
     {
@@ -610,7 +610,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDigitalDelivery($val)
     {
@@ -619,7 +619,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeCondition($val)
     {
@@ -628,7 +628,7 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeFeedback($val)
     {
@@ -637,43 +637,43 @@ class GetSearchResultsRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalSearchPostalCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
+            throw new \Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
         $this->LocalSearchPostalCode = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxRelatedSearchKeywords($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxRelatedSearchKeywords = $val;
     }
 
     /**
      * @param AffiliateTrackingDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAffiliateTrackingDetails($val)
     {

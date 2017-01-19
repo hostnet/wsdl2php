@@ -17,7 +17,7 @@ class FeedbackDetailArrayType
 
     /**
      * @param FeedbackDetailType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackDetail($val)
     {

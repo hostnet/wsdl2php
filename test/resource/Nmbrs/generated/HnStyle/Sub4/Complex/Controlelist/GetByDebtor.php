@@ -13,12 +13,12 @@ class GetByDebtor
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDebtorId($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DebtorId = $val;
     }

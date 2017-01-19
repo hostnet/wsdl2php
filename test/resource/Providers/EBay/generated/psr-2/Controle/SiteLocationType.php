@@ -21,7 +21,7 @@ class SiteLocationType
 
     /**
      * @param SiteIDFilterCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSiteID($val)
     {
@@ -30,7 +30,7 @@ class SiteLocationType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

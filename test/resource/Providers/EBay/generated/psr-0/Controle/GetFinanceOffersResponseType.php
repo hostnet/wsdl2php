@@ -25,19 +25,19 @@ class GetFinanceOffersResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Count = $val;
 	}
 
 	/**
 	 * @param FinanceOfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferArray($val)
 	{

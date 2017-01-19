@@ -21,7 +21,7 @@ class GetWantItNowPostRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPostID($val)
     {

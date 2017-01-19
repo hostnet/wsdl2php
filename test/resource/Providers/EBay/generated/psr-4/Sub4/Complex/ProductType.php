@@ -55,7 +55,7 @@ class ProductType
 
     /**
      * @param CharacteristicsSetType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharacteristicsSet($val)
     {
@@ -64,7 +64,7 @@ class ProductType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDetailsURL($val)
     {
@@ -73,19 +73,19 @@ class ProductType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumItems($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NumItems = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinPrice($val)
     {
@@ -94,7 +94,7 @@ class ProductType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxPrice($val)
     {
@@ -103,7 +103,7 @@ class ProductType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -112,19 +112,19 @@ class ProductType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for productID');
+            throw new \Exception('POJO Proxy need a string for productID');
         }
         $this->productID = $val;
     }
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStockPhotoURL($val)
     {
@@ -133,12 +133,12 @@ class ProductType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for title');
+            throw new \Exception('POJO Proxy need a string for title');
         }
         $this->title = $val;
     }

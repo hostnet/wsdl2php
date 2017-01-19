@@ -53,7 +53,7 @@ class GoogleSearchResult
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDocumentFiltering($val)
     {
@@ -62,31 +62,31 @@ class GoogleSearchResult
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchComments($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for searchComments');
+            throw new \Exception('POJO Proxy need a string for searchComments');
         }
         $this->searchComments = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEstimatedTotalResultsCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->estimatedTotalResultsCount = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEstimateIsExact($val)
     {
@@ -95,7 +95,7 @@ class GoogleSearchResult
 
     /**
      * @param ResultElementArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResultElements($val)
     {
@@ -104,55 +104,55 @@ class GoogleSearchResult
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchQuery($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for searchQuery');
+            throw new \Exception('POJO Proxy need a string for searchQuery');
         }
         $this->searchQuery = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartIndex($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->startIndex = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndIndex($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->endIndex = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchTips($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for searchTips');
+            throw new \Exception('POJO Proxy need a string for searchTips');
         }
         $this->searchTips = $val;
     }
 
     /**
      * @param DirectoryCategoryArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDirectoryCategories($val)
     {
@@ -161,7 +161,7 @@ class GoogleSearchResult
 
     /**
      * @param double $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchTime($val)
     {

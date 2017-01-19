@@ -183,7 +183,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdult($val)
     {
@@ -192,7 +192,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBindingAuction($val)
     {
@@ -201,7 +201,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCheckoutEnabled($val)
     {
@@ -210,7 +210,7 @@ class ListingDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setConvertedBuyItNowPrice($val)
     {
@@ -219,7 +219,7 @@ class ListingDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setConvertedStartPrice($val)
     {
@@ -228,7 +228,7 @@ class ListingDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setConvertedReservePrice($val)
     {
@@ -237,7 +237,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasReservePrice($val)
     {
@@ -246,19 +246,19 @@ class ListingDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegionName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RegionName');
+            throw new \Exception('POJO Proxy need a string for RegionName');
         }
         $this->RegionName = $val;
     }
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRelistedItemID($val)
     {
@@ -267,7 +267,7 @@ class ListingDetailsType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSecondChanceOriginalItemID($val)
     {
@@ -276,7 +276,7 @@ class ListingDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTime($val)
     {
@@ -285,7 +285,7 @@ class ListingDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTime($val)
     {
@@ -294,7 +294,7 @@ class ListingDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setViewItemURL($val)
     {
@@ -303,7 +303,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasUnansweredQuestions($val)
     {
@@ -312,7 +312,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasPublicMessages($val)
     {
@@ -321,7 +321,7 @@ class ListingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyItNowAvailable($val)
     {
@@ -330,7 +330,7 @@ class ListingDetailsType
 
     /**
      * @param SellerBusinessCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerBusinessType($val)
     {
@@ -339,7 +339,7 @@ class ListingDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinimumBestOfferPrice($val)
     {
@@ -348,31 +348,31 @@ class ListingDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinimumBestOfferMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MinimumBestOfferMessage');
+            throw new \Exception('POJO Proxy need a string for MinimumBestOfferMessage');
         }
         $this->MinimumBestOfferMessage = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalListingDistance($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalListingDistance');
+            throw new \Exception('POJO Proxy need a string for LocalListingDistance');
         }
         $this->LocalListingDistance = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressListing($val)
     {
@@ -381,7 +381,7 @@ class ListingDetailsType
 
     /**
      * @param ExpressItemRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressItemRequirements($val)
     {
@@ -390,7 +390,7 @@ class ListingDetailsType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTCROriginalItemID($val)
     {
@@ -399,7 +399,7 @@ class ListingDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setViewItemURLForNaturalSearch($val)
     {
@@ -408,7 +408,7 @@ class ListingDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

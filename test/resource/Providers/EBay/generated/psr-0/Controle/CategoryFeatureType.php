@@ -201,19 +201,19 @@ class CategoryFeatureType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param ListingDurationReferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDuration($val)
 	{
@@ -222,7 +222,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTermsRequired($val)
 	{
@@ -231,7 +231,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -240,7 +240,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDutchBINEnabled($val)
 	{
@@ -249,7 +249,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserConsentRequired($val)
 	{
@@ -258,7 +258,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
@@ -267,7 +267,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackEnabled($val)
 	{
@@ -276,7 +276,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
@@ -285,7 +285,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValuePackEnabled($val)
 	{
@@ -294,7 +294,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackPlusEnabled($val)
 	{
@@ -303,7 +303,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param AdFormatEnabledCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormatEnabled($val)
 	{
@@ -312,7 +312,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param DigitalDeliveryEnabledCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
@@ -321,7 +321,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
@@ -330,7 +330,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
@@ -339,7 +339,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
@@ -348,7 +348,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
@@ -357,7 +357,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
@@ -366,7 +366,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
@@ -375,7 +375,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEnabled($val)
 	{
@@ -384,7 +384,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressPicturesRequired($val)
 	{
@@ -393,7 +393,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressConditionRequired($val)
 	{
@@ -402,7 +402,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumReservePrice($val)
 	{
@@ -411,7 +411,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
@@ -420,7 +420,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
@@ -429,7 +429,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
@@ -438,7 +438,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
@@ -447,7 +447,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
@@ -456,7 +456,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

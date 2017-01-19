@@ -49,43 +49,43 @@ class CharacteristicsSetType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSetVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSetVersion');
         }
         $this->AttributeSetVersion = $val;
     }
 
     /**
      * @param CharacteristicType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharacteristics($val)
     {
@@ -94,7 +94,7 @@ class CharacteristicsSetType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -23,7 +23,7 @@ class GetStoreCategoryUpdateStatusResponseType extends
 
     /**
      * @param TaskStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {

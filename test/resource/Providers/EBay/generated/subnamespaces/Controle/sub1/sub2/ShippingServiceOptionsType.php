@@ -74,7 +74,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingInsuranceCost($val)
 	{
@@ -83,7 +83,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingService($val)
 	{
@@ -92,7 +92,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceCost($val)
 	{
@@ -101,7 +101,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
@@ -110,19 +110,19 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServicePriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingServicePriority = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpeditedService($val)
 	{
@@ -131,31 +131,31 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTimeMin($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMin = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTimeMax($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMax = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingSurcharge($val)
 	{
@@ -164,7 +164,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

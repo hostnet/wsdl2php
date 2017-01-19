@@ -24,12 +24,12 @@ class FetchTokenRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSecretID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SecretID');
+            throw new \Exception('POJO Proxy need a string for SecretID');
         }
         $this->SecretID = $val;
     }

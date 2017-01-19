@@ -13,7 +13,7 @@ class LogOutResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogOutResult($val)
 	{

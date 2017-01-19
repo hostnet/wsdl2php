@@ -64,7 +64,7 @@ class BestOfferType
 
 	/**
 	 * @param BestOfferIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferID($val)
 	{
@@ -73,7 +73,7 @@ class BestOfferType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpirationTime($val)
 	{
@@ -82,7 +82,7 @@ class BestOfferType
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyer($val)
 	{
@@ -91,7 +91,7 @@ class BestOfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrice($val)
 	{
@@ -100,7 +100,7 @@ class BestOfferType
 
 	/**
 	 * @param BestOfferStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -109,43 +109,43 @@ class BestOfferType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantity($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Quantity = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerMessage');
+            throw new \Exception('POJO Proxy need a string for BuyerMessage');
         }
         $this->BuyerMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerMessage');
+            throw new \Exception('POJO Proxy need a string for SellerMessage');
         }
         $this->SellerMessage = $val;
 	}
 
 	/**
 	 * @param BestOfferTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCodeType($val)
 	{
@@ -154,19 +154,19 @@ class BestOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCallStatus($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CallStatus');
+            throw new \Exception('POJO Proxy need a string for CallStatus');
         }
         $this->CallStatus = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

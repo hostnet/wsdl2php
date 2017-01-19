@@ -110,19 +110,19 @@ class SellingStatusType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidIncrement($val)
 	{
@@ -131,7 +131,7 @@ class SellingStatusType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedCurrentPrice($val)
 	{
@@ -140,7 +140,7 @@ class SellingStatusType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentPrice($val)
 	{
@@ -149,7 +149,7 @@ class SellingStatusType
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighBidder($val)
 	{
@@ -158,19 +158,19 @@ class SellingStatusType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLeadCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LeadCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumToBid($val)
 	{
@@ -179,19 +179,19 @@ class SellingStatusType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantitySold($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantitySold = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReserveMet($val)
 	{
@@ -200,7 +200,7 @@ class SellingStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceEligible($val)
 	{
@@ -209,7 +209,7 @@ class SellingStatusType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderCount($val)
 	{
@@ -218,7 +218,7 @@ class SellingStatusType
 
 	/**
 	 * @param ListingStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingStatus($val)
 	{
@@ -227,7 +227,7 @@ class SellingStatusType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinalValueFee($val)
 	{
@@ -236,7 +236,7 @@ class SellingStatusType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

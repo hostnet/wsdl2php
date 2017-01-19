@@ -31,7 +31,7 @@ class VeRoReportItemType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -40,7 +40,7 @@ class VeRoReportItemType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReasonCodeID($val)
     {
@@ -49,19 +49,19 @@ class VeRoReportItemType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageToSeller($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageToSeller');
+            throw new \Exception('POJO Proxy need a string for MessageToSeller');
         }
         $this->MessageToSeller = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCopyEmailToRightsOwner($val)
     {
@@ -70,7 +70,7 @@ class VeRoReportItemType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

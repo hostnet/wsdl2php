@@ -69,7 +69,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param BidderNoticePreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidderNoticePreferences($val)
     {
@@ -78,7 +78,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param CombinedPaymentPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCombinedPaymentPreferences($val)
     {
@@ -87,7 +87,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param CrossPromotionPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCrossPromotionPreferences($val)
     {
@@ -96,7 +96,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param SellerPaymentPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerPaymentPreferences($val)
     {
@@ -105,7 +105,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param SellerFavoriteItemPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerFavoriteItemPreferences($val)
     {
@@ -114,7 +114,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param EndOfAuctionEmailPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndOfAuctionEmailPreferences($val)
     {
@@ -123,7 +123,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param eBxOptInPreferenceType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEBxOptInPreference($val)
     {
@@ -132,7 +132,7 @@ class SetUserPreferencesRequestType extends
 
     /**
      * @param ExpressPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressPreferences($val)
     {

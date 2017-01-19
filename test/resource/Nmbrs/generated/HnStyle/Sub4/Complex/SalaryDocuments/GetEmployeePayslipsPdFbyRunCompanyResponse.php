@@ -13,7 +13,7 @@ class GetEmployeePayslipsPdFbyRunCompanyResponse
 
     /**
      * @param ArrayOfPayslip $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalaryDocumentsGetEmployeePayslipsPDFByRunCompanyResult($val)
     {

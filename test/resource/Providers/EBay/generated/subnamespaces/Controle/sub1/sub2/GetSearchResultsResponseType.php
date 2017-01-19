@@ -109,7 +109,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param SearchResultItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchResultItemArray($val)
 	{
@@ -118,31 +118,31 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -151,7 +151,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -160,7 +160,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryArray($val)
 	{
@@ -169,7 +169,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param BuyingGuideDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuideDetails($val)
 	{
@@ -178,7 +178,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreExpansionArray($val)
 	{
@@ -187,7 +187,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalExpansionArray($val)
 	{
@@ -196,7 +196,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFilterRemovedExpansionArray($val)
 	{
@@ -205,7 +205,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAllCategoriesExpansionArray($val)
 	{
@@ -214,7 +214,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param SpellingSuggestionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSpellingSuggestion($val)
 	{
@@ -223,7 +223,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param RelatedSearchKeywordArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{

@@ -21,7 +21,7 @@ class ItemTotalsType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalQuantity($val)
     {
@@ -30,7 +30,7 @@ class ItemTotalsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalValue($val)
     {

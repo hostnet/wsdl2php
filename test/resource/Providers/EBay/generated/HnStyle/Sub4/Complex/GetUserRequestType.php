@@ -42,7 +42,7 @@ class GetUserRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -51,19 +51,19 @@ class GetUserRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserID');
+            throw new \Exception('POJO Proxy need a string for UserID');
         }
         $this->UserID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeExpressRequirements($val)
     {

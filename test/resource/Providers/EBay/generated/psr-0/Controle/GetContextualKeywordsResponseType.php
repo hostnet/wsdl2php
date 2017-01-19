@@ -18,7 +18,7 @@ class GetContextualKeywordsResponseType extends
 
 	/**
 	 * @param ContextSearchAssetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContextSearchAsset($val)
 	{

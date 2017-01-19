@@ -25,7 +25,7 @@ class FlatRateInsuranceRangeCostType
 
 	/**
 	 * @param FlatRateInsuranceRangeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlatRateInsuranceRange($val)
 	{
@@ -34,7 +34,7 @@ class FlatRateInsuranceRangeCostType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceCost($val)
 	{
@@ -43,7 +43,7 @@ class FlatRateInsuranceRangeCostType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

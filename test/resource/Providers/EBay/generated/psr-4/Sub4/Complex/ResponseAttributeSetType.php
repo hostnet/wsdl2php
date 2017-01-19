@@ -88,31 +88,31 @@ class ResponseAttributeSetType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApproximatePages($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ApproximatePages = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMore($val)
     {
@@ -121,7 +121,7 @@ class ResponseAttributeSetType
 
     /**
      * @param ProductFamilyType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFamilies($val)
     {
@@ -130,7 +130,7 @@ class ResponseAttributeSetType
 
     /**
      * @param ProductFinderConstraintType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderConstraints($val)
     {
@@ -139,7 +139,7 @@ class ResponseAttributeSetType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTooManyMatchesFound($val)
     {
@@ -148,19 +148,19 @@ class ResponseAttributeSetType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalProducts($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalProducts = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

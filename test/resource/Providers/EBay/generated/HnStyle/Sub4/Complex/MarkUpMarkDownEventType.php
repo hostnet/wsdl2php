@@ -38,7 +38,7 @@ class MarkUpMarkDownEventType
 
     /**
      * @param MarkUpMarkDownEventTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
@@ -47,7 +47,7 @@ class MarkUpMarkDownEventType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTime($val)
     {
@@ -56,19 +56,19 @@ class MarkUpMarkDownEventType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReason($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reason');
+            throw new \Exception('POJO Proxy need a string for Reason');
         }
         $this->Reason = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

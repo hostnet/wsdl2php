@@ -14,7 +14,7 @@ class GetVeRoReasonCodeDetailsResponseType extends
 
     /**
      * @param VeROReasonCodeDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReasonCodeDetails($val)
     {

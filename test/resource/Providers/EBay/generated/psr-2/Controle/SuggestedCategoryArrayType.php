@@ -23,7 +23,7 @@ class SuggestedCategoryArrayType
 
     /**
      * @param SuggestedCategoryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSuggestedCategory($val)
     {
@@ -32,7 +32,7 @@ class SuggestedCategoryArrayType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -18,7 +18,7 @@ class RespondToBestOfferResponseType extends
 
 	/**
 	 * @param BestOfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRespondToBestOffer($val)
 	{

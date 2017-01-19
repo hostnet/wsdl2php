@@ -25,43 +25,43 @@ class ProductInfo
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalResults($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TotalResults');
+            throw new \Exception('POJO Proxy need a string for TotalResults');
         }
         $this->TotalResults = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalPages($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TotalPages');
+            throw new \Exception('POJO Proxy need a string for TotalPages');
         }
         $this->TotalPages = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListName');
+            throw new \Exception('POJO Proxy need a string for ListName');
         }
         $this->ListName = $val;
     }
 
     /**
      * @param DetailsArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDetails($val)
     {

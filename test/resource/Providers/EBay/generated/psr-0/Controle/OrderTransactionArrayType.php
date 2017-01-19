@@ -17,7 +17,7 @@ class OrderTransactionArrayType
 
 	/**
 	 * @param OrderTransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderTransaction($val)
 	{

@@ -52,7 +52,7 @@ class IssueRefundRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -61,19 +61,19 @@ class IssueRefundRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param RefundReasonCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundReason($val)
     {
@@ -82,7 +82,7 @@ class IssueRefundRequestType extends
 
     /**
      * @param RefundTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundType($val)
     {
@@ -91,7 +91,7 @@ class IssueRefundRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundAmount($val)
     {
@@ -100,12 +100,12 @@ class IssueRefundRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RefundMessage');
+            throw new \Exception('POJO Proxy need a string for RefundMessage');
         }
         $this->RefundMessage = $val;
     }

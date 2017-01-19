@@ -46,7 +46,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlwaysUseThisPaymentAddress($val)
 	{
@@ -55,7 +55,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param DisplayPayNowButtonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayPayNowButton($val)
 	{
@@ -64,7 +64,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalPreferred($val)
 	{
@@ -73,19 +73,19 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDefaultPayPalEmailAddress($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
+            throw new \Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
         }
         $this->DefaultPayPalEmailAddress = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAlwaysOn($val)
 	{
@@ -94,7 +94,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentAddress($val)
 	{
@@ -103,7 +103,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param UPSRateOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUPSRateOption($val)
 	{
@@ -112,7 +112,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

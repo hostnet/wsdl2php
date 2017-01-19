@@ -50,43 +50,43 @@ class ValType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValueLiteral($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ValueLiteral');
+            throw new \Exception('POJO Proxy need a string for ValueLiteral');
         }
         $this->ValueLiteral = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSuggestedValueLiteral($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SuggestedValueLiteral');
+            throw new \Exception('POJO Proxy need a string for SuggestedValueLiteral');
         }
         $this->SuggestedValueLiteral = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValueID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ValueID = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -26,7 +26,7 @@ class PaymentOptionDetailsType
 
     /**
      * @param BuyerPaymentMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentOption($val)
     {
@@ -35,19 +35,19 @@ class PaymentOptionDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDescription($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

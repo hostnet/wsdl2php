@@ -29,19 +29,19 @@ class FetchTokenResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayAuthToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for eBayAuthToken');
+            throw new \Exception('POJO Proxy need a string for eBayAuthToken');
         }
         $this->eBayAuthToken = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHardExpirationTime($val)
 	{

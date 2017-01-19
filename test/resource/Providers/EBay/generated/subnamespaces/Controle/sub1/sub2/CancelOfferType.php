@@ -27,7 +27,7 @@ class CancelOfferType
 
 	/**
 	 * @param OfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOffer($val)
 	{
@@ -36,19 +36,19 @@ class CancelOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExplanation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Explanation');
+            throw new \Exception('POJO Proxy need a string for Explanation');
         }
         $this->Explanation = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

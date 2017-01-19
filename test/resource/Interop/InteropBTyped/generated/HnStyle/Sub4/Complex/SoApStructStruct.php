@@ -25,7 +25,7 @@ class SoApStructStruct
 
     /**
      * @param anyType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVarString($val)
     {
@@ -34,7 +34,7 @@ class SoApStructStruct
 
     /**
      * @param anyType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVarInt($val)
     {
@@ -43,7 +43,7 @@ class SoApStructStruct
 
     /**
      * @param anyType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVarFloat($val)
     {
@@ -52,7 +52,7 @@ class SoApStructStruct
 
     /**
      * @param SOAPStruct $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVarStruct($val)
     {

@@ -105,79 +105,79 @@ class Domain
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomainName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainName');
+            throw new \Exception('POJO Proxy need a string for DomainName');
         }
         $this->DomainName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomainHandle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainHandle');
+            throw new \Exception('POJO Proxy need a string for DomainHandle');
         }
         $this->DomainHandle = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegPeriod($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RegPeriod = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRenewPeriod($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RenewPeriod = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Status');
+            throw new \Exception('POJO Proxy need a string for Status');
         }
         $this->Status = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAuthInfo($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AuthInfo');
+            throw new \Exception('POJO Proxy need a string for AuthInfo');
         }
         $this->AuthInfo = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreDate($val)
     {
@@ -186,7 +186,7 @@ class Domain
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpDate($val)
     {
@@ -195,91 +195,91 @@ class Domain
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEncodingType($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EncodingType');
+            throw new \Exception('POJO Proxy need a string for EncodingType');
         }
         $this->EncodingType = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomainPurpose($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainPurpose');
+            throw new \Exception('POJO Proxy need a string for DomainPurpose');
         }
         $this->DomainPurpose = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setComment($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Comment');
+            throw new \Exception('POJO Proxy need a string for Comment');
         }
         $this->Comment = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransferLock($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransferLock');
+            throw new \Exception('POJO Proxy need a string for TransferLock');
         }
         $this->TransferLock = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeleteLock($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeleteLock');
+            throw new \Exception('POJO Proxy need a string for DeleteLock');
         }
         $this->DeleteLock = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUpdateLock($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UpdateLock');
+            throw new \Exception('POJO Proxy need a string for UpdateLock');
         }
         $this->UpdateLock = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQueueType($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for QueueType');
+            throw new \Exception('POJO Proxy need a string for QueueType');
         }
         $this->QueueType = $val;
     }
 
     /**
      * @param Registrant $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegistrant($val)
     {
@@ -288,7 +288,7 @@ class Domain
 
     /**
      * @param Contact $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdminContact($val)
     {
@@ -297,7 +297,7 @@ class Domain
 
     /**
      * @param Contact $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTechContact($val)
     {
@@ -306,7 +306,7 @@ class Domain
 
     /**
      * @param Contact $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBillingContact($val)
     {
@@ -315,7 +315,7 @@ class Domain
 
     /**
      * @param Contact $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResellerContact($val)
     {
@@ -324,7 +324,7 @@ class Domain
 
     /**
      * @param NameServers $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNameServers($val)
     {
@@ -333,7 +333,7 @@ class Domain
 
     /**
      * @param TradeMark $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTrademark($val)
     {
@@ -342,7 +342,7 @@ class Domain
 
     /**
      * @param DnsSecKeys $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDnsSecKeys($val)
     {
@@ -351,7 +351,7 @@ class Domain
 
     /**
      * @param PrivacyProxy $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPrivacyProxy($val)
     {

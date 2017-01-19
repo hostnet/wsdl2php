@@ -19,7 +19,7 @@ class GetWantItNowPostResponseType extends
 
 	/**
 	 * @param WantItNowPostType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWantItNowPost($val)
 	{

@@ -41,91 +41,91 @@ class SellerProfileDetails
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerNickname($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerNickname');
+            throw new \Exception('POJO Proxy need a string for SellerNickname');
         }
         $this->SellerNickname = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOverallFeedbackRating($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OverallFeedbackRating');
+            throw new \Exception('POJO Proxy need a string for OverallFeedbackRating');
         }
         $this->OverallFeedbackRating = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfFeedback($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfFeedback');
+            throw new \Exception('POJO Proxy need a string for NumberOfFeedback');
         }
         $this->NumberOfFeedback = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfCanceledBids($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfCanceledBids');
+            throw new \Exception('POJO Proxy need a string for NumberOfCanceledBids');
         }
         $this->NumberOfCanceledBids = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfCanceledAuctions($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfCanceledAuctions');
+            throw new \Exception('POJO Proxy need a string for NumberOfCanceledAuctions');
         }
         $this->NumberOfCanceledAuctions = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreId');
+            throw new \Exception('POJO Proxy need a string for StoreId');
         }
         $this->StoreId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
     }
 
     /**
      * @param SellerFeedback $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerFeedback($val)
     {

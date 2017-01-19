@@ -17,7 +17,7 @@ class SiFfTaSrecommendationsType
 
     /**
      * @param AttributeSetArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetArray($val)
     {
@@ -26,7 +26,7 @@ class SiFfTaSrecommendationsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

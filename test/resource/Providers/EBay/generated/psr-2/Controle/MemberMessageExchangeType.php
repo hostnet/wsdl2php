@@ -45,7 +45,7 @@ class MemberMessageExchangeType
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -54,7 +54,7 @@ class MemberMessageExchangeType
 
     /**
      * @param MemberMessageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuestion($val)
     {
@@ -63,19 +63,19 @@ class MemberMessageExchangeType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResponse($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Response');
+            throw new \Exception('POJO Proxy need a string for Response');
         }
         $this->Response = $val;
     }
 
     /**
      * @param MessageStatusTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageStatus($val)
     {
@@ -84,7 +84,7 @@ class MemberMessageExchangeType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreationDate($val)
     {
@@ -93,7 +93,7 @@ class MemberMessageExchangeType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLastModifiedDate($val)
     {
@@ -102,7 +102,7 @@ class MemberMessageExchangeType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

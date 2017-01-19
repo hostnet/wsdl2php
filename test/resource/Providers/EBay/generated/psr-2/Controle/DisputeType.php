@@ -116,7 +116,7 @@ class DisputeType
 
     /**
      * @param DisputeIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeID($val)
     {
@@ -125,7 +125,7 @@ class DisputeType
 
     /**
      * @param DisputeRecordTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeRecordType($val)
     {
@@ -134,7 +134,7 @@ class DisputeType
 
     /**
      * @param DisputeStateCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeState($val)
     {
@@ -143,7 +143,7 @@ class DisputeType
 
     /**
      * @param DisputeStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeStatus($val)
     {
@@ -152,7 +152,7 @@ class DisputeType
 
     /**
      * @param TradingRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOtherPartyRole($val)
     {
@@ -161,19 +161,19 @@ class DisputeType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOtherPartyName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OtherPartyName');
+            throw new \Exception('POJO Proxy need a string for OtherPartyName');
         }
         $this->OtherPartyName = $val;
     }
 
     /**
      * @param TradingRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserRole($val)
     {
@@ -182,7 +182,7 @@ class DisputeType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyerUserID($val)
     {
@@ -191,7 +191,7 @@ class DisputeType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerUserID($val)
     {
@@ -200,19 +200,19 @@ class DisputeType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -221,7 +221,7 @@ class DisputeType
 
     /**
      * @param DisputeReasonCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeReason($val)
     {
@@ -230,7 +230,7 @@ class DisputeType
 
     /**
      * @param DisputeExplanationCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeExplanation($val)
     {
@@ -239,7 +239,7 @@ class DisputeType
 
     /**
      * @param DisputeCreditEligibilityCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeCreditEligibility($val)
     {
@@ -248,7 +248,7 @@ class DisputeType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeCreatedTime($val)
     {
@@ -257,7 +257,7 @@ class DisputeType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeModifiedTime($val)
     {
@@ -266,7 +266,7 @@ class DisputeType
 
     /**
      * @param DisputeResolutionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeResolution($val)
     {
@@ -275,7 +275,7 @@ class DisputeType
 
     /**
      * @param DisputeMessageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeMessage($val)
     {
@@ -284,7 +284,7 @@ class DisputeType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEscalation($val)
     {
@@ -293,7 +293,7 @@ class DisputeType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPurchaseProtection($val)
     {
@@ -302,7 +302,7 @@ class DisputeType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

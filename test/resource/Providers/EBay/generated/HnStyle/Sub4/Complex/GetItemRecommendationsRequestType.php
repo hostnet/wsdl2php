@@ -25,7 +25,7 @@ class GetItemRecommendationsRequestType extends
 
     /**
      * @param GetRecommendationsRequestContainerType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetRecommendationsRequestContainer($val)
     {

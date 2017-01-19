@@ -57,7 +57,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartingDisputeID($val)
 	{
@@ -66,7 +66,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndingDisputeID($val)
 	{
@@ -75,7 +75,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param DisputeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeArray($val)
 	{
@@ -84,31 +84,31 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param DisputeFilterCountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeFilterCount($val)
 	{
@@ -117,7 +117,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{

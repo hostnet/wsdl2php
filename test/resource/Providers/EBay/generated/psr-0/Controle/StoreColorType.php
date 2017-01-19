@@ -29,43 +29,43 @@ class StoreColorType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrimary($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Primary');
+            throw new \Exception('POJO Proxy need a string for Primary');
         }
         $this->Primary = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondary($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Secondary');
+            throw new \Exception('POJO Proxy need a string for Secondary');
         }
         $this->Secondary = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccent($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Accent');
+            throw new \Exception('POJO Proxy need a string for Accent');
         }
         $this->Accent = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

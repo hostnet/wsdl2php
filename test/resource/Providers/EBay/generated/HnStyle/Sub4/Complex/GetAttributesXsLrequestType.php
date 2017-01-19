@@ -20,24 +20,24 @@ class GetAttributesXsLrequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileName');
+            throw new \Exception('POJO Proxy need a string for FileName');
         }
         $this->FileName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileVersion');
+            throw new \Exception('POJO Proxy need a string for FileVersion');
         }
         $this->FileVersion = $val;
     }

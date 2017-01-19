@@ -112,7 +112,7 @@ class ShipmentType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEstimatedDeliveryDate($val)
     {
@@ -121,7 +121,7 @@ class ShipmentType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuredValue($val)
     {
@@ -130,7 +130,7 @@ class ShipmentType
 
     /**
      * @param MeasureType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPackageDepth($val)
     {
@@ -139,7 +139,7 @@ class ShipmentType
 
     /**
      * @param MeasureType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPackageLength($val)
     {
@@ -148,7 +148,7 @@ class ShipmentType
 
     /**
      * @param MeasureType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPackageWidth($val)
     {
@@ -157,19 +157,19 @@ class ShipmentType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPayPalShipmentID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PayPalShipmentID');
+            throw new \Exception('POJO Proxy need a string for PayPalShipmentID');
         }
         $this->PayPalShipmentID = $val;
     }
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipmentID($val)
     {
@@ -178,7 +178,7 @@ class ShipmentType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPostageTotal($val)
     {
@@ -187,7 +187,7 @@ class ShipmentType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPrintedTime($val)
     {
@@ -196,7 +196,7 @@ class ShipmentType
 
     /**
      * @param AddressType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipFromAddress($val)
     {
@@ -205,7 +205,7 @@ class ShipmentType
 
     /**
      * @param AddressType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingAddress($val)
     {
@@ -214,7 +214,7 @@ class ShipmentType
 
     /**
      * @param ShippingCarrierCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingCarrierUsed($val)
     {
@@ -223,7 +223,7 @@ class ShipmentType
 
     /**
      * @param ShippingFeatureCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingFeature($val)
     {
@@ -232,7 +232,7 @@ class ShipmentType
 
     /**
      * @param ShippingPackageCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingPackage($val)
     {
@@ -241,7 +241,7 @@ class ShipmentType
 
     /**
      * @param token $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceUsed($val)
     {
@@ -250,19 +250,19 @@ class ShipmentType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipmentTrackingNumber($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
+            throw new \Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
         $this->ShipmentTrackingNumber = $val;
     }
 
     /**
      * @param MeasureType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWeightMajor($val)
     {
@@ -271,7 +271,7 @@ class ShipmentType
 
     /**
      * @param MeasureType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWeightMinor($val)
     {
@@ -280,7 +280,7 @@ class ShipmentType
 
     /**
      * @param ItemTransactionIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemTransactionID($val)
     {
@@ -289,7 +289,7 @@ class ShipmentType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeliveryDate($val)
     {
@@ -298,7 +298,7 @@ class ShipmentType
 
     /**
      * @param ShipmentDeliveryStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeliveryStatus($val)
     {
@@ -307,7 +307,7 @@ class ShipmentType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundGrantedTime($val)
     {
@@ -316,7 +316,7 @@ class ShipmentType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundRequestedTime($val)
     {
@@ -325,7 +325,7 @@ class ShipmentType
 
     /**
      * @param ShipmentStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
@@ -334,7 +334,7 @@ class ShipmentType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

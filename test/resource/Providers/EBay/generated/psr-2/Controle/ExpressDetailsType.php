@@ -47,7 +47,7 @@ class ExpressDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressLargeImage($val)
     {
@@ -56,7 +56,7 @@ class ExpressDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressSmallImage($val)
     {
@@ -65,19 +65,19 @@ class ExpressDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCondition($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Condition');
+            throw new \Exception('POJO Proxy need a string for Condition');
         }
         $this->Condition = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

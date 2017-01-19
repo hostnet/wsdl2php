@@ -17,7 +17,7 @@ class LiveAuctionApprovalStatusArrayType
 
 	/**
 	 * @param LiveAuctionApprovalStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionStatus($val)
 	{

@@ -17,7 +17,7 @@ class SearchDomainResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchDomainResult($val)
     {
@@ -26,7 +26,7 @@ class SearchDomainResponse
 
     /**
      * @param ArrayOfDomain $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomains($val)
     {

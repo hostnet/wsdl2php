@@ -42,7 +42,7 @@ class ItemBidDetailsType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -51,31 +51,31 @@ class ItemBidDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
     }
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerID($val)
     {
@@ -84,7 +84,7 @@ class ItemBidDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLastBidTime($val)
     {
@@ -93,7 +93,7 @@ class ItemBidDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

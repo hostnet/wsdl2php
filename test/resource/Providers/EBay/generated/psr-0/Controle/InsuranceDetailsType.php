@@ -32,7 +32,7 @@ class InsuranceDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceFee($val)
 	{
@@ -41,7 +41,7 @@ class InsuranceDetailsType
 
 	/**
 	 * @param InsuranceOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceOption($val)
 	{
@@ -50,7 +50,7 @@ class InsuranceDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

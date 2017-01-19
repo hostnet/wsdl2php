@@ -26,7 +26,7 @@ class GetOrderTransactionsRequestType extends
 
     /**
      * @param ItemTransactionIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemTransactionIDArray($val)
     {
@@ -35,7 +35,7 @@ class GetOrderTransactionsRequestType extends
 
     /**
      * @param OrderIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderIDArray($val)
     {

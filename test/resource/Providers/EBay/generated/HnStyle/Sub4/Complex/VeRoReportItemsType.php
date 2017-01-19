@@ -13,7 +13,7 @@ class VeRoReportItemsType
 
     /**
      * @param VeROReportItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReportItem($val)
     {

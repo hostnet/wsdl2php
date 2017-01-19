@@ -19,7 +19,7 @@ class GetPromotionRulesResponseType extends
 
 	/**
 	 * @param PromotionRuleArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionRuleArray($val)
 	{

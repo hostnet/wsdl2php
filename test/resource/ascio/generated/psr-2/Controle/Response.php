@@ -21,19 +21,19 @@ class Response
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Message');
+            throw new \Exception('POJO Proxy need a string for Message');
         }
         $this->Message = $val;
     }
 
     /**
      * @param short $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResultCode($val)
     {
@@ -42,7 +42,7 @@ class Response
 
     /**
      * @param ArrayOfstring $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValues($val)
     {

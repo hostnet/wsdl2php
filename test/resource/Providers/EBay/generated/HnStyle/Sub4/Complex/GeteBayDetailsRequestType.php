@@ -27,7 +27,7 @@ class GeteBayDetailsRequestType extends
 
     /**
      * @param DetailNameCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDetailName($val)
     {

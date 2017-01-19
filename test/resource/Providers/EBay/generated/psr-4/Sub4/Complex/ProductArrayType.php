@@ -20,7 +20,7 @@ class ProductArrayType
 
     /**
      * @param ExpressProductType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProduct($val)
     {

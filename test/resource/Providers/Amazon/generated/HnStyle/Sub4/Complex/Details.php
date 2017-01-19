@@ -233,55 +233,55 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUrl($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Url');
+            throw new \Exception('POJO Proxy need a string for Url');
         }
         $this->Url = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAsin($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Asin');
+            throw new \Exception('POJO Proxy need a string for Asin');
         }
         $this->Asin = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductName');
+            throw new \Exception('POJO Proxy need a string for ProductName');
         }
         $this->ProductName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCatalog($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Catalog');
+            throw new \Exception('POJO Proxy need a string for Catalog');
         }
         $this->Catalog = $val;
     }
 
     /**
      * @param KeyPhraseArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setKeyPhrases($val)
     {
@@ -290,7 +290,7 @@ class Details
 
     /**
      * @param ArtistArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setArtists($val)
     {
@@ -299,7 +299,7 @@ class Details
 
     /**
      * @param AuthorArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAuthors($val)
     {
@@ -308,19 +308,19 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMpn($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Mpn');
+            throw new \Exception('POJO Proxy need a string for Mpn');
         }
         $this->Mpn = $val;
     }
 
     /**
      * @param StarringArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStarring($val)
     {
@@ -329,7 +329,7 @@ class Details
 
     /**
      * @param DirectorArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDirectors($val)
     {
@@ -338,223 +338,223 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTheatricalReleaseDate($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TheatricalReleaseDate');
+            throw new \Exception('POJO Proxy need a string for TheatricalReleaseDate');
         }
         $this->TheatricalReleaseDate = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReleaseDate($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReleaseDate');
+            throw new \Exception('POJO Proxy need a string for ReleaseDate');
         }
         $this->ReleaseDate = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setManufacturer($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Manufacturer');
+            throw new \Exception('POJO Proxy need a string for Manufacturer');
         }
         $this->Manufacturer = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDistributor($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Distributor');
+            throw new \Exception('POJO Proxy need a string for Distributor');
         }
         $this->Distributor = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setImageUrlSmall($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ImageUrlSmall');
+            throw new \Exception('POJO Proxy need a string for ImageUrlSmall');
         }
         $this->ImageUrlSmall = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setImageUrlMedium($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ImageUrlMedium');
+            throw new \Exception('POJO Proxy need a string for ImageUrlMedium');
         }
         $this->ImageUrlMedium = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setImageUrlLarge($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ImageUrlLarge');
+            throw new \Exception('POJO Proxy need a string for ImageUrlLarge');
         }
         $this->ImageUrlLarge = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListPrice($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListPrice');
+            throw new \Exception('POJO Proxy need a string for ListPrice');
         }
         $this->ListPrice = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOurPrice($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OurPrice');
+            throw new \Exception('POJO Proxy need a string for OurPrice');
         }
         $this->OurPrice = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUsedPrice($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UsedPrice');
+            throw new \Exception('POJO Proxy need a string for UsedPrice');
         }
         $this->UsedPrice = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefurbishedPrice($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RefurbishedPrice');
+            throw new \Exception('POJO Proxy need a string for RefurbishedPrice');
         }
         $this->RefurbishedPrice = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCollectiblePrice($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CollectiblePrice');
+            throw new \Exception('POJO Proxy need a string for CollectiblePrice');
         }
         $this->CollectiblePrice = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setThirdPartyNewPrice($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ThirdPartyNewPrice');
+            throw new \Exception('POJO Proxy need a string for ThirdPartyNewPrice');
         }
         $this->ThirdPartyNewPrice = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfOfferings($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfOfferings');
+            throw new \Exception('POJO Proxy need a string for NumberOfOfferings');
         }
         $this->NumberOfOfferings = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setThirdPartyNewCount($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ThirdPartyNewCount');
+            throw new \Exception('POJO Proxy need a string for ThirdPartyNewCount');
         }
         $this->ThirdPartyNewCount = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUsedCount($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UsedCount');
+            throw new \Exception('POJO Proxy need a string for UsedCount');
         }
         $this->UsedCount = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCollectibleCount($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CollectibleCount');
+            throw new \Exception('POJO Proxy need a string for CollectibleCount');
         }
         $this->CollectibleCount = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefurbishedCount($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RefurbishedCount');
+            throw new \Exception('POJO Proxy need a string for RefurbishedCount');
         }
         $this->RefurbishedCount = $val;
     }
 
     /**
      * @param ThirdPartyProductInfo $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setThirdPartyProductInfo($val)
     {
@@ -563,19 +563,19 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesRank($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SalesRank');
+            throw new \Exception('POJO Proxy need a string for SalesRank');
         }
         $this->SalesRank = $val;
     }
 
     /**
      * @param BrowseNodeArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBrowseList($val)
     {
@@ -584,139 +584,139 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMedia($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Media');
+            throw new \Exception('POJO Proxy need a string for Media');
         }
         $this->Media = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReadingLevel($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReadingLevel');
+            throw new \Exception('POJO Proxy need a string for ReadingLevel');
         }
         $this->ReadingLevel = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfPages($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfPages');
+            throw new \Exception('POJO Proxy need a string for NumberOfPages');
         }
         $this->NumberOfPages = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfIssues($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfIssues');
+            throw new \Exception('POJO Proxy need a string for NumberOfIssues');
         }
         $this->NumberOfIssues = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIssuesPerYear($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for IssuesPerYear');
+            throw new \Exception('POJO Proxy need a string for IssuesPerYear');
         }
         $this->IssuesPerYear = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscriptionLength($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SubscriptionLength');
+            throw new \Exception('POJO Proxy need a string for SubscriptionLength');
         }
         $this->SubscriptionLength = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeweyNumber($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeweyNumber');
+            throw new \Exception('POJO Proxy need a string for DeweyNumber');
         }
         $this->DeweyNumber = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRunningTime($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RunningTime');
+            throw new \Exception('POJO Proxy need a string for RunningTime');
         }
         $this->RunningTime = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPublisher($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Publisher');
+            throw new \Exception('POJO Proxy need a string for Publisher');
         }
         $this->Publisher = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumMedia($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumMedia');
+            throw new \Exception('POJO Proxy need a string for NumMedia');
         }
         $this->NumMedia = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIsbn($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Isbn');
+            throw new \Exception('POJO Proxy need a string for Isbn');
         }
         $this->Isbn = $val;
     }
 
     /**
      * @param FeaturesArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeatures($val)
     {
@@ -725,67 +725,67 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMpaaRating($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MpaaRating');
+            throw new \Exception('POJO Proxy need a string for MpaaRating');
         }
         $this->MpaaRating = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEsrbRating($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EsrbRating');
+            throw new \Exception('POJO Proxy need a string for EsrbRating');
         }
         $this->EsrbRating = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAgeGroup($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AgeGroup');
+            throw new \Exception('POJO Proxy need a string for AgeGroup');
         }
         $this->AgeGroup = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAvailability($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Availability');
+            throw new \Exception('POJO Proxy need a string for Availability');
         }
         $this->Availability = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUpc($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Upc');
+            throw new \Exception('POJO Proxy need a string for Upc');
         }
         $this->Upc = $val;
     }
 
     /**
      * @param TrackArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTracks($val)
     {
@@ -794,7 +794,7 @@ class Details
 
     /**
      * @param AccessoryArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccessories($val)
     {
@@ -803,7 +803,7 @@ class Details
 
     /**
      * @param PlatformArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPlatforms($val)
     {
@@ -812,19 +812,19 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEncoding($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Encoding');
+            throw new \Exception('POJO Proxy need a string for Encoding');
         }
         $this->Encoding = $val;
     }
 
     /**
      * @param Reviews $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReviews($val)
     {
@@ -833,7 +833,7 @@ class Details
 
     /**
      * @param SimilarProductsArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSimilarProducts($val)
     {
@@ -842,7 +842,7 @@ class Details
 
     /**
      * @param ListArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLists($val)
     {
@@ -851,12 +851,12 @@ class Details
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Status');
+            throw new \Exception('POJO Proxy need a string for Status');
         }
         $this->Status = $val;
     }

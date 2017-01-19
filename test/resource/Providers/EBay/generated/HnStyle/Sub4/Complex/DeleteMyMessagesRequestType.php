@@ -28,7 +28,7 @@ class DeleteMyMessagesRequestType extends
 
     /**
      * @param MyMessagesAlertIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlertIDs($val)
     {
@@ -37,7 +37,7 @@ class DeleteMyMessagesRequestType extends
 
     /**
      * @param MyMessagesMessageIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageIDs($val)
     {

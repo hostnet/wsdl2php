@@ -25,43 +25,43 @@ class UploadDocumentation
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSessionId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for sessionId');
+            throw new \Exception('POJO Proxy need a string for sessionId');
         }
         $this->sessionId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for orderId');
+            throw new \Exception('POJO Proxy need a string for orderId');
         }
         $this->orderId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for fileName');
+            throw new \Exception('POJO Proxy need a string for fileName');
         }
         $this->fileName = $val;
     }
 
     /**
      * @param base64Binary $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setContent($val)
     {

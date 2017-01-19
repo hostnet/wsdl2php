@@ -31,19 +31,19 @@ class SubscriptionType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEIASToken($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EIASToken');
+            throw new \Exception('POJO Proxy need a string for EIASToken');
         }
         $this->EIASToken = $val;
     }
 
     /**
      * @param SiteCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSiteID($val)
     {
@@ -52,7 +52,7 @@ class SubscriptionType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setActive($val)
     {
@@ -61,7 +61,7 @@ class SubscriptionType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

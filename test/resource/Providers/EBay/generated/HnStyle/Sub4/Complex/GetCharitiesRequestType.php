@@ -57,67 +57,67 @@ class GetCharitiesRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityID');
+            throw new \Exception('POJO Proxy need a string for CharityID');
         }
         $this->CharityID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityName');
+            throw new \Exception('POJO Proxy need a string for CharityName');
         }
         $this->CharityName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuery($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityRegion($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityRegion = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityDomain($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityDomain = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeDescription($val)
     {
@@ -126,7 +126,7 @@ class GetCharitiesRequestType extends
 
     /**
      * @param StringMatchCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMatchType($val)
     {

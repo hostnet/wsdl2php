@@ -17,24 +17,24 @@ class Track
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTrackName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TrackName');
+            throw new \Exception('POJO Proxy need a string for TrackName');
         }
         $this->TrackName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setByArtist($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ByArtist');
+            throw new \Exception('POJO Proxy need a string for ByArtist');
         }
         $this->ByArtist = $val;
     }

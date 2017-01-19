@@ -43,7 +43,7 @@ class AddDisputeResponseRequestType extends
 
     /**
      * @param DisputeIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeID($val)
     {
@@ -52,19 +52,19 @@ class AddDisputeResponseRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageText');
+            throw new \Exception('POJO Proxy need a string for MessageText');
         }
         $this->MessageText = $val;
     }
 
     /**
      * @param DisputeActivityCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeActivity($val)
     {
@@ -73,31 +73,31 @@ class AddDisputeResponseRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingCarrierUsed($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShippingCarrierUsed');
+            throw new \Exception('POJO Proxy need a string for ShippingCarrierUsed');
         }
         $this->ShippingCarrierUsed = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipmentTrackNumber($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipmentTrackNumber');
+            throw new \Exception('POJO Proxy need a string for ShipmentTrackNumber');
         }
         $this->ShipmentTrackNumber = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingTime($val)
     {

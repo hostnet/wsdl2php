@@ -30,7 +30,7 @@ class PictureManagerSubscriptionType
 
     /**
      * @param PictureManagerSubscriptionLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscriptionLevel($val)
     {
@@ -39,7 +39,7 @@ class PictureManagerSubscriptionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFee($val)
     {
@@ -48,19 +48,19 @@ class PictureManagerSubscriptionType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStorageSize($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StorageSize = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

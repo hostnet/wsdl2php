@@ -236,7 +236,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAmountPaid($val)
     {
@@ -245,7 +245,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdjustmentAmount($val)
     {
@@ -254,7 +254,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setConvertedAdjustmentAmount($val)
     {
@@ -263,7 +263,7 @@ class TransactionType
 
     /**
      * @param UserType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyer($val)
     {
@@ -272,7 +272,7 @@ class TransactionType
 
     /**
      * @param ShippingDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingDetails($val)
     {
@@ -281,7 +281,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setConvertedAmountPaid($val)
     {
@@ -290,7 +290,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setConvertedTransactionPrice($val)
     {
@@ -299,7 +299,7 @@ class TransactionType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreatedDate($val)
     {
@@ -308,7 +308,7 @@ class TransactionType
 
     /**
      * @param DepositTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDepositType($val)
     {
@@ -317,7 +317,7 @@ class TransactionType
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -326,19 +326,19 @@ class TransactionType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuantityPurchased($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantityPurchased = $val;
     }
 
     /**
      * @param TransactionStatusType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
@@ -347,19 +347,19 @@ class TransactionType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionPrice($val)
     {
@@ -368,7 +368,7 @@ class TransactionType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferSale($val)
     {
@@ -377,7 +377,7 @@ class TransactionType
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVATPercent($val)
     {
@@ -386,7 +386,7 @@ class TransactionType
 
     /**
      * @param ExternalTransactionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalTransaction($val)
     {
@@ -395,7 +395,7 @@ class TransactionType
 
     /**
      * @param SellingManagerProductDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellingManagerProductDetails($val)
     {
@@ -404,7 +404,7 @@ class TransactionType
 
     /**
      * @param ShippingServiceOptionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceSelected($val)
     {
@@ -413,19 +413,19 @@ class TransactionType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyerMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerMessage');
+            throw new \Exception('POJO Proxy need a string for BuyerMessage');
         }
         $this->BuyerMessage = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDutchAuctionBid($val)
     {
@@ -434,7 +434,7 @@ class TransactionType
 
     /**
      * @param PaidStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyerPaidStatus($val)
     {
@@ -443,7 +443,7 @@ class TransactionType
 
     /**
      * @param PaidStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerPaidStatus($val)
     {
@@ -452,7 +452,7 @@ class TransactionType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaidTime($val)
     {
@@ -461,7 +461,7 @@ class TransactionType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippedTime($val)
     {
@@ -470,7 +470,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalPrice($val)
     {
@@ -479,7 +479,7 @@ class TransactionType
 
     /**
      * @param FeedbackInfoType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackLeft($val)
     {
@@ -488,7 +488,7 @@ class TransactionType
 
     /**
      * @param FeedbackInfoType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackReceived($val)
     {
@@ -497,7 +497,7 @@ class TransactionType
 
     /**
      * @param OrderType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setContainingOrder($val)
     {
@@ -506,7 +506,7 @@ class TransactionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFinalValueFee($val)
     {
@@ -515,7 +515,7 @@ class TransactionType
 
     /**
      * @param TransactionPlatformType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionPlatform($val)
     {
@@ -524,7 +524,7 @@ class TransactionType
 
     /**
      * @param ListingCheckoutRedirectPreferenceType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingCheckoutRedirectPreference($val)
     {
@@ -533,7 +533,7 @@ class TransactionType
 
     /**
      * @param RefundArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundArray($val)
     {
@@ -542,7 +542,7 @@ class TransactionType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

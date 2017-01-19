@@ -47,19 +47,19 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTemplateText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TemplateText');
+            throw new \Exception('POJO Proxy need a string for TemplateText');
         }
         $this->TemplateText = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoURL($val)
 	{
@@ -68,7 +68,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param EndOfAuctionLogoTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoType($val)
 	{
@@ -77,7 +77,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmailCustomized($val)
 	{
@@ -86,7 +86,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTextCustomized($val)
 	{
@@ -95,7 +95,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoCustomized($val)
 	{
@@ -104,7 +104,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyEmail($val)
 	{
@@ -113,7 +113,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

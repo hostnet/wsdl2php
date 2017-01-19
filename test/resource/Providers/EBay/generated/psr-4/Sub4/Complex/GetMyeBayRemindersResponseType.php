@@ -23,7 +23,7 @@ class GetMyeBayRemindersResponseType extends
 
     /**
      * @param RemindersType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyingReminders($val)
     {
@@ -32,7 +32,7 @@ class GetMyeBayRemindersResponseType extends
 
     /**
      * @param RemindersType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellingReminders($val)
     {

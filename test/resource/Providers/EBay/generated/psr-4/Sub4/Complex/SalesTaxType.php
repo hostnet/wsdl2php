@@ -37,7 +37,7 @@ class SalesTaxType
 
     /**
      * @param float $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTaxPercent($val)
     {
@@ -46,19 +46,19 @@ class SalesTaxType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTaxState($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SalesTaxState');
+            throw new \Exception('POJO Proxy need a string for SalesTaxState');
         }
         $this->SalesTaxState = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingIncludedInTax($val)
     {
@@ -67,7 +67,7 @@ class SalesTaxType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTaxAmount($val)
     {
@@ -76,7 +76,7 @@ class SalesTaxType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

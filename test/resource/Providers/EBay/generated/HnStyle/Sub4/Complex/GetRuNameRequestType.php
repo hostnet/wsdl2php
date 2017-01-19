@@ -20,12 +20,12 @@ class GetRuNameRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setClientUseCase($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ClientUseCase');
+            throw new \Exception('POJO Proxy need a string for ClientUseCase');
         }
         $this->ClientUseCase = $val;
     }

@@ -23,7 +23,7 @@ class GetLiveAuctionCatalogDetailsResponseType extends
 
     /**
      * @param LiveAuctionCatalogType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLiveAuctionCatalog($val)
     {

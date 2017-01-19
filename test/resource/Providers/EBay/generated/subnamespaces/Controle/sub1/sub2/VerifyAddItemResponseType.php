@@ -54,7 +54,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -63,7 +63,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -72,7 +72,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressListing($val)
 	{
@@ -81,7 +81,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param ExpressItemRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressItemRequirements($val)
 	{
@@ -90,24 +90,24 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}

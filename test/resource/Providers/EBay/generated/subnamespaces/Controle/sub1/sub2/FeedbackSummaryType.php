@@ -66,7 +66,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidRetractionFeedbackPeriodArray($val)
 	{
@@ -75,7 +75,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNegativeFeedbackPeriodArray($val)
 	{
@@ -84,7 +84,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNeutralFeedbackPeriodArray($val)
 	{
@@ -93,7 +93,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPositiveFeedbackPeriodArray($val)
 	{
@@ -102,7 +102,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalFeedbackPeriodArray($val)
 	{
@@ -111,43 +111,43 @@ class FeedbackSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNeutralCommentCountFromSuspendedUsers($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NeutralCommentCountFromSuspendedUsers = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniqueNegativeFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniqueNegativeFeedbackCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniquePositiveFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniquePositiveFeedbackCount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

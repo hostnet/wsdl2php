@@ -32,43 +32,43 @@ class XmLrequesterCredentialsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUsername($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Username');
+            throw new \Exception('POJO Proxy need a string for Username');
         }
         $this->Username = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPassword($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Password');
+            throw new \Exception('POJO Proxy need a string for Password');
         }
         $this->Password = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEBayAuthToken($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for eBayAuthToken');
+            throw new \Exception('POJO Proxy need a string for eBayAuthToken');
         }
         $this->eBayAuthToken = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

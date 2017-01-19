@@ -16,7 +16,7 @@ class SupportedEventTypesArrayType
 
     /**
      * @param NotificationEventTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEventType($val)
     {

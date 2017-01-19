@@ -21,7 +21,7 @@ class VeRoSiteDetailType
 
     /**
      * @param SiteCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSite($val)
     {
@@ -30,7 +30,7 @@ class VeRoSiteDetailType
 
     /**
      * @param ReasonCodeDetailType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReasonCodeDetail($val)
     {
@@ -39,7 +39,7 @@ class VeRoSiteDetailType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

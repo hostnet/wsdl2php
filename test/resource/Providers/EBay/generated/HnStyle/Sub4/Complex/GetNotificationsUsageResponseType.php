@@ -50,7 +50,7 @@ class GetNotificationsUsageResponseType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTime($val)
     {
@@ -59,7 +59,7 @@ class GetNotificationsUsageResponseType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTime($val)
     {
@@ -68,7 +68,7 @@ class GetNotificationsUsageResponseType extends
 
     /**
      * @param NotificationDetailsArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationDetailsArray($val)
     {
@@ -77,7 +77,7 @@ class GetNotificationsUsageResponseType extends
 
     /**
      * @param MarkUpMarkDownHistoryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMarkUpMarkDownHistory($val)
     {
@@ -86,7 +86,7 @@ class GetNotificationsUsageResponseType extends
 
     /**
      * @param NotificationStatisticsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationStatistics($val)
     {

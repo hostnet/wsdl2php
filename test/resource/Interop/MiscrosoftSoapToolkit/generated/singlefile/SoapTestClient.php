@@ -19,31 +19,31 @@ class SoApStruct
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarString($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for varString');
+            throw new \Exception('POJO Proxy need a string for varString');
         }
         $this->varString = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarInt($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->varInt = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarFloat($val)
 	{
@@ -74,31 +74,31 @@ class SoApStructStruct
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarString($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for varString');
+            throw new \Exception('POJO Proxy need a string for varString');
         }
         $this->varString = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarInt($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->varInt = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarFloat($val)
 	{
@@ -107,7 +107,7 @@ class SoApStructStruct
 
 	/**
 	 * @param SOAPStruct $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarStruct($val)
 	{
@@ -138,31 +138,31 @@ class SoApArrayStruct
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarString($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for varString');
+            throw new \Exception('POJO Proxy need a string for varString');
         }
         $this->varString = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarInt($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->varInt = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarFloat($val)
 	{
@@ -171,7 +171,7 @@ class SoApArrayStruct
 
 	/**
 	 * @param ArrayOfstring $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarArray($val)
 	{

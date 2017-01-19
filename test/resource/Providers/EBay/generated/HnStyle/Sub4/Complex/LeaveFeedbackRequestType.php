@@ -41,7 +41,7 @@ class LeaveFeedbackRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -50,19 +50,19 @@ class LeaveFeedbackRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CommentText');
+            throw new \Exception('POJO Proxy need a string for CommentText');
         }
         $this->CommentText = $val;
     }
 
     /**
      * @param CommentTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentType($val)
     {
@@ -71,19 +71,19 @@ class LeaveFeedbackRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTargetUser($val)
     {

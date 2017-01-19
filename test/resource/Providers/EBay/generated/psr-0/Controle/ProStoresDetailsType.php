@@ -30,31 +30,31 @@ class ProStoresDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerThirdPartyUsername($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
+            throw new \Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
         $this->SellerThirdPartyUsername = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param EnableCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -63,7 +63,7 @@ class ProStoresDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

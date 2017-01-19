@@ -81,7 +81,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserID($val)
     {
@@ -90,7 +90,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTimeFrom($val)
     {
@@ -99,7 +99,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTimeTo($val)
     {
@@ -108,7 +108,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeFrom($val)
     {
@@ -117,7 +117,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeTo($val)
     {
@@ -126,7 +126,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeFrom($val)
     {
@@ -135,7 +135,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeTo($val)
     {
@@ -144,7 +144,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNewItemFilter($val)
     {
@@ -153,7 +153,7 @@ class GetSellerEventsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeWatchCount($val)
     {

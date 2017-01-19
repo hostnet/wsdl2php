@@ -50,7 +50,7 @@ class GetVeRoReportStatusRequestType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReportPacketID($val)
     {
@@ -59,7 +59,7 @@ class GetVeRoReportStatusRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -68,7 +68,7 @@ class GetVeRoReportStatusRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeReportedItemDetails($val)
     {
@@ -77,7 +77,7 @@ class GetVeRoReportStatusRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTimeFrom($val)
     {
@@ -86,7 +86,7 @@ class GetVeRoReportStatusRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTimeTo($val)
     {
@@ -95,7 +95,7 @@ class GetVeRoReportStatusRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {

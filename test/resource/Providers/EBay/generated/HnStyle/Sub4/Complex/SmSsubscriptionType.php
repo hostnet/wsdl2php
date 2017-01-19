@@ -34,19 +34,19 @@ class SmSsubscriptionType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSMSPhone($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SMSPhone');
+            throw new \Exception('POJO Proxy need a string for SMSPhone');
         }
         $this->SMSPhone = $val;
     }
 
     /**
      * @param SMSSubscriptionUserStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserStatus($val)
     {
@@ -55,7 +55,7 @@ class SmSsubscriptionType
 
     /**
      * @param WirelessCarrierIDCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCarrierID($val)
     {
@@ -64,7 +64,7 @@ class SmSsubscriptionType
 
     /**
      * @param SMSSubscriptionErrorCodeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrorCode($val)
     {
@@ -73,7 +73,7 @@ class SmSsubscriptionType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemToUnsubscribe($val)
     {
@@ -82,7 +82,7 @@ class SmSsubscriptionType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

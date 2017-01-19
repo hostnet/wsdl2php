@@ -27,7 +27,7 @@ class OrderTransactionType
 
 	/**
 	 * @param OrderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
@@ -36,7 +36,7 @@ class OrderTransactionType
 
 	/**
 	 * @param TransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransaction($val)
 	{
@@ -45,7 +45,7 @@ class OrderTransactionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

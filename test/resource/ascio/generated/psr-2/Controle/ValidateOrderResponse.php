@@ -13,7 +13,7 @@ class ValidateOrderResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValidateOrderResult($val)
     {

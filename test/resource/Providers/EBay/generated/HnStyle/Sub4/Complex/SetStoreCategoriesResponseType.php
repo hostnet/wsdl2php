@@ -28,7 +28,7 @@ class SetStoreCategoriesResponseType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTaskID($val)
     {
@@ -37,7 +37,7 @@ class SetStoreCategoriesResponseType extends
 
     /**
      * @param TaskStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {

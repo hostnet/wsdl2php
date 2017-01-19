@@ -18,7 +18,7 @@ class GetStorePreferencesResponseType extends
 
     /**
      * @param StorePreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStorePreferences($val)
     {

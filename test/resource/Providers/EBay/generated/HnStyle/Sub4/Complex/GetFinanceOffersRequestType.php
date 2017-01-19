@@ -23,19 +23,19 @@ class GetFinanceOffersRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFinanceOfferID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLastModifiedDate($val)
     {

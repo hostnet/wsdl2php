@@ -46,7 +46,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInclude($val)
 	{
@@ -55,7 +55,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -64,7 +64,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSort($val)
 	{
@@ -73,19 +73,19 @@ class ItemListCustomizationType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDurationInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DurationInDays = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeNotes($val)
 	{
@@ -94,7 +94,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -103,7 +103,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

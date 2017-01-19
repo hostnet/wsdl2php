@@ -17,7 +17,7 @@ class GetMessageQueueResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetMessageQueueResult($val)
     {
@@ -26,7 +26,7 @@ class GetMessageQueueResponse
 
     /**
      * @param QueueItem $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {

@@ -52,7 +52,7 @@ class BuyerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipToRegistrationCountry($val)
     {
@@ -61,7 +61,7 @@ class BuyerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setZeroFeedbackScore($val)
     {
@@ -70,19 +70,19 @@ class BuyerRequirementsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinimumFeedbackScore($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MinimumFeedbackScore = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaximumUnpaidItemStrikes($val)
     {
@@ -91,7 +91,7 @@ class BuyerRequirementsType
 
     /**
      * @param MaximumItemRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaximumItemRequirements($val)
     {
@@ -100,7 +100,7 @@ class BuyerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLinkedPayPalAccount($val)
     {
@@ -109,7 +109,7 @@ class BuyerRequirementsType
 
     /**
      * @param VerifiedUserRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVerifiedUserRequirements($val)
     {

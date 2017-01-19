@@ -13,7 +13,7 @@ class UploadRegistrantVerificationMessageResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUploadRegistrantVerificationMessageResult($val)
     {

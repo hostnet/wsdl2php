@@ -36,7 +36,7 @@ class GetMyMessagesResponseType extends
 
     /**
      * @param MyMessagesSummaryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSummary($val)
     {
@@ -45,7 +45,7 @@ class GetMyMessagesResponseType extends
 
     /**
      * @param MyMessagesAlertArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlerts($val)
     {
@@ -54,7 +54,7 @@ class GetMyMessagesResponseType extends
 
     /**
      * @param MyMessagesMessageArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessages($val)
     {

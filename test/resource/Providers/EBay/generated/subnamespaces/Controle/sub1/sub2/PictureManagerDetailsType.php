@@ -44,7 +44,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param PictureManagerSubscriptionLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionLevel($val)
 	{
@@ -53,31 +53,31 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStorageUsed($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StorageUsed = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalStorageAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalStorageAvailable = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeepOriginal($val)
 	{
@@ -86,7 +86,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatermarkEPS($val)
 	{
@@ -95,7 +95,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatermarkUserID($val)
 	{
@@ -104,7 +104,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param PictureManagerFolderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolder($val)
 	{
@@ -113,7 +113,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

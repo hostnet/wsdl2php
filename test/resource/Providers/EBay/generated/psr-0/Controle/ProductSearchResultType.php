@@ -116,31 +116,31 @@ class ProductSearchResultType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApproximatePages($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ApproximatePages = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMore($val)
 	{
@@ -149,7 +149,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param ProductFamilyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFamilies($val)
 	{
@@ -158,7 +158,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param ProductFinderConstraintType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderConstraints($val)
 	{
@@ -167,7 +167,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTooManyMatchesFound($val)
 	{
@@ -176,43 +176,43 @@ class ProductSearchResultType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalProducts($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalProducts = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ID');
+            throw new \Exception('POJO Proxy need a string for ID');
         }
         $this->ID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumProducts($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumProducts');
+            throw new \Exception('POJO Proxy need a string for NumProducts');
         }
         $this->NumProducts = $val;
 	}
 
 	/**
 	 * @param ResponseAttributeSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSet($val)
 	{
@@ -221,7 +221,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayStockPhotos($val)
 	{
@@ -230,7 +230,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

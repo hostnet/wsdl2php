@@ -57,7 +57,7 @@ class GetRecommendationsRequestType extends
 
     /**
      * @param ListingFlowCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingFlow($val)
     {
@@ -66,7 +66,7 @@ class GetRecommendationsRequestType extends
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -75,7 +75,7 @@ class GetRecommendationsRequestType extends
 
     /**
      * @param ExternalProductIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalProductID($val)
     {
@@ -84,7 +84,7 @@ class GetRecommendationsRequestType extends
 
     /**
      * @param ModifiedFieldType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModifiedFields($val)
     {
@@ -93,7 +93,7 @@ class GetRecommendationsRequestType extends
 
     /**
      * @param RecommendationEngineCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRecommendationEngine($val)
     {
@@ -102,12 +102,12 @@ class GetRecommendationsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuery($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
     }

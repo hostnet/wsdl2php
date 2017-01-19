@@ -60,7 +60,7 @@ class NotificationDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeliveryURL($val)
     {
@@ -69,19 +69,19 @@ class NotificationDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReferenceID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReferenceID');
+            throw new \Exception('POJO Proxy need a string for ReferenceID');
         }
         $this->ReferenceID = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpirationTime($val)
     {
@@ -90,7 +90,7 @@ class NotificationDetailsType
 
     /**
      * @param NotificationEventTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
@@ -99,19 +99,19 @@ class NotificationDetailsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRetries($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Retries = $val;
     }
 
     /**
      * @param NotificationEventStateCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeliveryStatus($val)
     {
@@ -120,7 +120,7 @@ class NotificationDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNextRetryTime($val)
     {
@@ -129,7 +129,7 @@ class NotificationDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeliveryTime($val)
     {
@@ -138,19 +138,19 @@ class NotificationDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrorMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ErrorMessage');
+            throw new \Exception('POJO Proxy need a string for ErrorMessage');
         }
         $this->ErrorMessage = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -37,19 +37,19 @@ class TaxJurisdictionType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setJurisdictionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for JurisdictionID');
+            throw new \Exception('POJO Proxy need a string for JurisdictionID');
         }
         $this->JurisdictionID = $val;
     }
 
     /**
      * @param float $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTaxPercent($val)
     {
@@ -58,7 +58,7 @@ class TaxJurisdictionType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingIncludedInTax($val)
     {
@@ -67,19 +67,19 @@ class TaxJurisdictionType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setJurisdictionName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for JurisdictionName');
+            throw new \Exception('POJO Proxy need a string for JurisdictionName');
         }
         $this->JurisdictionName = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

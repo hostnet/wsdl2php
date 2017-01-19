@@ -20,7 +20,7 @@ class DisputeArrayType
 
 	/**
 	 * @param DisputeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDispute($val)
 	{

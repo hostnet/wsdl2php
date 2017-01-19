@@ -40,7 +40,7 @@ class GetItemShippingRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -49,31 +49,31 @@ class GetItemShippingRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuantitySold($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantitySold = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDestinationPostalCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DestinationPostalCode');
+            throw new \Exception('POJO Proxy need a string for DestinationPostalCode');
         }
         $this->DestinationPostalCode = $val;
     }
 
     /**
      * @param CountryCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDestinationCountryCode($val)
     {

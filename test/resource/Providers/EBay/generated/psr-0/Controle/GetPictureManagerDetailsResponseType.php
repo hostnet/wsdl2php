@@ -20,7 +20,7 @@ class GetPictureManagerDetailsResponseType extends
 
 	/**
 	 * @param PictureManagerDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureManagerDetails($val)
 	{

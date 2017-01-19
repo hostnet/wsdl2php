@@ -30,7 +30,7 @@ class ExpansionArrayType
 
     /**
      * @param SearchResultItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpansionItem($val)
     {
@@ -39,12 +39,12 @@ class ExpansionArrayType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalAvailable($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAvailable = $val;
     }

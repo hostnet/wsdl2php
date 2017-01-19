@@ -25,31 +25,31 @@ class ProximitySearchType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxDistance($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxDistance = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

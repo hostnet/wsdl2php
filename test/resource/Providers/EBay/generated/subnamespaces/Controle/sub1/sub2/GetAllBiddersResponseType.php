@@ -44,7 +44,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param OfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidArray($val)
 	{
@@ -53,7 +53,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighBidder($val)
 	{
@@ -62,7 +62,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighestBid($val)
 	{
@@ -71,7 +71,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param ListingStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingStatus($val)
 	{

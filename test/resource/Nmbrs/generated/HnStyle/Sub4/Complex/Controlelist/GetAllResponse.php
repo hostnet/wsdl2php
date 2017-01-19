@@ -13,7 +13,7 @@ class GetAllResponse
 
     /**
      * @param ArrayOfCompany $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListGetAllResult($val)
     {

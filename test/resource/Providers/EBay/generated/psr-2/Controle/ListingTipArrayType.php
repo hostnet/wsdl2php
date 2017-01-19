@@ -17,7 +17,7 @@ class ListingTipArrayType
 
     /**
      * @param ListingTipType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingTip($val)
     {

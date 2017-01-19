@@ -36,7 +36,7 @@ class LiveAuctionBidType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRequestedBiddingLimit($val)
     {
@@ -45,7 +45,7 @@ class LiveAuctionBidType
 
     /**
      * @param BidderStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidderStatus($val)
     {
@@ -54,7 +54,7 @@ class LiveAuctionBidType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApprovedBiddingLimit($val)
     {
@@ -63,19 +63,19 @@ class LiveAuctionBidType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeclinedComment($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeclinedComment');
+            throw new \Exception('POJO Proxy need a string for DeclinedComment');
         }
         $this->DeclinedComment = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

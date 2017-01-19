@@ -13,7 +13,7 @@ class DeleteNameServerResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeleteNameServerResult($val)
 	{

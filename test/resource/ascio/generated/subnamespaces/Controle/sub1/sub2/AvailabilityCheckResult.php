@@ -25,19 +25,19 @@ class AvailabilityCheckResult
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DomainName');
+            throw new \Exception('POJO Proxy need a string for DomainName');
         }
         $this->DomainName = $val;
 	}
 
 	/**
 	 * @param QualityType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuality($val)
 	{
@@ -46,24 +46,24 @@ class AvailabilityCheckResult
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatusCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StatusCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatusMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StatusMessage');
+            throw new \Exception('POJO Proxy need a string for StatusMessage');
         }
         $this->StatusMessage = $val;
 	}

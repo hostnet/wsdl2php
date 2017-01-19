@@ -13,7 +13,7 @@ class GetCurrentResponse
 
     /**
      * @param BedrijfFulltimeSchedule $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setScheduleGetCurrentResult($val)
     {

@@ -21,7 +21,7 @@ class BuyerType
 
     /**
      * @param AddressType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingAddress($val)
     {
@@ -30,7 +30,7 @@ class BuyerType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

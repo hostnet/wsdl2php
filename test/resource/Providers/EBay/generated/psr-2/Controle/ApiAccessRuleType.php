@@ -106,19 +106,19 @@ class ApiAccessRuleType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCallName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CallName');
+            throw new \Exception('POJO Proxy need a string for CallName');
         }
         $this->CallName = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCountsTowardAggregate($val)
     {
@@ -127,7 +127,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDailyHardLimit($val)
     {
@@ -136,7 +136,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDailySoftLimit($val)
     {
@@ -145,7 +145,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDailyUsage($val)
     {
@@ -154,7 +154,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHourlyHardLimit($val)
     {
@@ -163,7 +163,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHourlySoftLimit($val)
     {
@@ -172,7 +172,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHourlyUsage($val)
     {
@@ -181,19 +181,19 @@ class ApiAccessRuleType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPeriod($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Period = $val;
     }
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPeriodicHardLimit($val)
     {
@@ -202,7 +202,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPeriodicSoftLimit($val)
     {
@@ -211,7 +211,7 @@ class ApiAccessRuleType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPeriodicUsage($val)
     {
@@ -220,7 +220,7 @@ class ApiAccessRuleType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPeriodicStartDate($val)
     {
@@ -229,7 +229,7 @@ class ApiAccessRuleType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTime($val)
     {
@@ -238,7 +238,7 @@ class ApiAccessRuleType
 
     /**
      * @param AccessRuleCurrentStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRuleCurrentStatus($val)
     {
@@ -247,7 +247,7 @@ class ApiAccessRuleType
 
     /**
      * @param AccessRuleStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRuleStatus($val)
     {
@@ -256,7 +256,7 @@ class ApiAccessRuleType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

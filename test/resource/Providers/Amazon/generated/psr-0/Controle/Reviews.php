@@ -21,31 +21,31 @@ class Reviews
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAvgCustomerRating($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AvgCustomerRating');
+            throw new \Exception('POJO Proxy need a string for AvgCustomerRating');
         }
         $this->AvgCustomerRating = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalCustomerReviews($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TotalCustomerReviews');
+            throw new \Exception('POJO Proxy need a string for TotalCustomerReviews');
         }
         $this->TotalCustomerReviews = $val;
 	}
 
 	/**
 	 * @param CustomerReviewArray $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomerReviews($val)
 	{

@@ -25,31 +25,31 @@ class CategoryFinanceOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

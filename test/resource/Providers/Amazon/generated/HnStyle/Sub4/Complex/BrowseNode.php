@@ -17,24 +17,24 @@ class BrowseNode
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBrowseId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BrowseId');
+            throw new \Exception('POJO Proxy need a string for BrowseId');
         }
         $this->BrowseId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBrowseName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BrowseName');
+            throw new \Exception('POJO Proxy need a string for BrowseName');
         }
         $this->BrowseName = $val;
     }

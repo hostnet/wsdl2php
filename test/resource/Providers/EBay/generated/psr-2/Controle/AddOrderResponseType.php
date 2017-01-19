@@ -24,7 +24,7 @@ class AddOrderResponseType extends
 
     /**
      * @param OrderIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderID($val)
     {
@@ -33,7 +33,7 @@ class AddOrderResponseType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreatedTime($val)
     {

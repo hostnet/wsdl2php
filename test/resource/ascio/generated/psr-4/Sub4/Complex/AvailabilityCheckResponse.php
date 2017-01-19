@@ -17,7 +17,7 @@ class AvailabilityCheckResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAvailabilityCheckResult($val)
     {
@@ -26,7 +26,7 @@ class AvailabilityCheckResponse
 
     /**
      * @param ArrayOfAvailabilityCheckResult $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResults($val)
     {

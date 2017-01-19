@@ -29,7 +29,7 @@ class MeasureType
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function set($val)
     {
@@ -38,7 +38,7 @@ class MeasureType
 
     /**
      * @param token $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUnit($val)
     {
@@ -47,7 +47,7 @@ class MeasureType
 
     /**
      * @param MeasurementSystemCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMeasurementSystem($val)
     {

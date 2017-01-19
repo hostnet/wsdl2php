@@ -37,7 +37,7 @@ class SetStoreCategoriesRequestType extends
 
     /**
      * @param StoreCategoryUpdateActionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAction($val)
     {
@@ -46,31 +46,31 @@ class SetStoreCategoriesRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemDestinationCategoryID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemDestinationCategoryID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDestinationParentCategoryID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DestinationParentCategoryID = $val;
     }
 
     /**
      * @param StoreCustomCategoryArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreCategories($val)
     {

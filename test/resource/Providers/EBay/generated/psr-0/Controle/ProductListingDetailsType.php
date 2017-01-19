@@ -70,19 +70,19 @@ class ProductListingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductID');
+            throw new \Exception('POJO Proxy need a string for ProductID');
         }
         $this->ProductID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeStockPhotoURL($val)
 	{
@@ -91,7 +91,7 @@ class ProductListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludePrefilledItemInformation($val)
 	{
@@ -100,7 +100,7 @@ class ProductListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUseStockPhotoURLAsGallery($val)
 	{
@@ -109,7 +109,7 @@ class ProductListingDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStockPhotoURL($val)
 	{
@@ -118,19 +118,19 @@ class ProductListingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyright($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Copyright');
+            throw new \Exception('POJO Proxy need a string for Copyright');
         }
         $this->Copyright = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

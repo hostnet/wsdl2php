@@ -29,7 +29,7 @@ class GetBestOffersRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -38,7 +38,7 @@ class GetBestOffersRequestType extends
 
     /**
      * @param BestOfferIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferID($val)
     {
@@ -47,7 +47,7 @@ class GetBestOffersRequestType extends
 
     /**
      * @param BestOfferStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferStatus($val)
     {

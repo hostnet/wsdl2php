@@ -28,7 +28,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param NotificationEventTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventType($val)
 	{
@@ -37,7 +37,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param SummaryWindowPeriodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSummaryPeriod($val)
 	{
@@ -46,7 +46,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param SummaryFrequencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFrequency($val)
 	{
@@ -55,7 +55,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

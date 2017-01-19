@@ -17,7 +17,7 @@ class CategoryFinanceOfferArrayType
 
 	/**
 	 * @param CategoryFinanceOfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryFinanceOffer($val)
 	{

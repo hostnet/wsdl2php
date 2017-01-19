@@ -36,7 +36,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param CalculatedShippingPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCalculatedShippingPreferences($val)
 	{
@@ -45,7 +45,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param CombinedPaymentOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentOption($val)
 	{
@@ -54,7 +54,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param CombinedPaymentPeriodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentPeriod($val)
 	{
@@ -63,7 +63,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param FlatShippingPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlatShippingPreferences($val)
 	{
@@ -72,7 +72,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

@@ -25,19 +25,19 @@ class AvailabilityCheck
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSessionId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for sessionId');
+            throw new \Exception('POJO Proxy need a string for sessionId');
         }
         $this->sessionId = $val;
     }
 
     /**
      * @param ArrayOfString $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomains($val)
     {
@@ -46,7 +46,7 @@ class AvailabilityCheck
 
     /**
      * @param ArrayOfString $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTlds($val)
     {
@@ -55,7 +55,7 @@ class AvailabilityCheck
 
     /**
      * @param QualityType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuality($val)
     {

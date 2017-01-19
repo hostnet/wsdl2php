@@ -18,7 +18,7 @@ class WantItNowPostArrayType
 
 	/**
 	 * @param WantItNowPostType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWantItNowPost($val)
 	{

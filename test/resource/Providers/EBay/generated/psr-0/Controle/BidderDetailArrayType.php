@@ -17,7 +17,7 @@ class BidderDetailArrayType
 
 	/**
 	 * @param BidderDetailType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderDetail($val)
 	{

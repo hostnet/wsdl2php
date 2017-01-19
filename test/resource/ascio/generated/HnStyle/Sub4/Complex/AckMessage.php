@@ -17,24 +17,24 @@ class AckMessage
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSessionId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for sessionId');
+            throw new \Exception('POJO Proxy need a string for sessionId');
         }
         $this->sessionId = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMsgId($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->msgId = $val;
     }

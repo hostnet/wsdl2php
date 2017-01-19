@@ -51,7 +51,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param ItemArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBiddingItemArray($val)
     {
@@ -60,7 +60,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param ItemArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLostItemArray($val)
     {
@@ -69,7 +69,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param ItemArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWatchItemArray($val)
     {
@@ -78,7 +78,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param ItemArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWonItemArray($val)
     {
@@ -87,7 +87,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param MyeBayFavoriteSearchListType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteSearches($val)
     {
@@ -96,7 +96,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param MyeBayFavoriteSellerListType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteSellers($val)
     {
@@ -105,7 +105,7 @@ class GetMyeBayResponseType extends
 
     /**
      * @param MyeBaySecondChanceOfferListType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSecondChanceOffers($val)
     {

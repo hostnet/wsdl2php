@@ -44,7 +44,7 @@ class ReviseStatusType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemRevised($val)
     {
@@ -53,7 +53,7 @@ class ReviseStatusType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyItNowAdded($val)
     {
@@ -62,7 +62,7 @@ class ReviseStatusType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyItNowLowered($val)
     {
@@ -71,7 +71,7 @@ class ReviseStatusType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReserveLowered($val)
     {
@@ -80,7 +80,7 @@ class ReviseStatusType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReserveRemoved($val)
     {
@@ -89,7 +89,7 @@ class ReviseStatusType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

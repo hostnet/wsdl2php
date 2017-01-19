@@ -36,7 +36,7 @@ class EndItemRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -45,7 +45,7 @@ class EndItemRequestType extends
 
     /**
      * @param EndReasonCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndingReason($val)
     {
@@ -54,12 +54,12 @@ class EndItemRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerInventoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerInventoryID');
+            throw new \Exception('POJO Proxy need a string for SellerInventoryID');
         }
         $this->SellerInventoryID = $val;
     }

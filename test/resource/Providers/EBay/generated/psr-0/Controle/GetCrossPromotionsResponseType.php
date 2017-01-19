@@ -21,7 +21,7 @@ class GetCrossPromotionsResponseType extends
 
 	/**
 	 * @param CrossPromotionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotion($val)
 	{

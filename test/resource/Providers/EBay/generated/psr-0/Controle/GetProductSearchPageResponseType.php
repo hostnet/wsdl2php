@@ -29,19 +29,19 @@ class GetProductSearchPageResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param ProductSearchPageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearchPage($val)
 	{

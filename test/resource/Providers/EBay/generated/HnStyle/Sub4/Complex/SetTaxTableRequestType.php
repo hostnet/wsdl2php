@@ -19,7 +19,7 @@ class SetTaxTableRequestType extends
 
     /**
      * @param TaxTableType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTaxTable($val)
     {

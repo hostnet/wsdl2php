@@ -84,7 +84,7 @@ class PictureDetailsType
 
     /**
      * @param GalleryTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGalleryType($val)
     {
@@ -93,7 +93,7 @@ class PictureDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGalleryURL($val)
     {
@@ -102,7 +102,7 @@ class PictureDetailsType
 
     /**
      * @param PhotoDisplayCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPhotoDisplay($val)
     {
@@ -111,7 +111,7 @@ class PictureDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureURL($val)
     {
@@ -120,7 +120,7 @@ class PictureDetailsType
 
     /**
      * @param PictureSourceCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureSource($val)
     {
@@ -129,7 +129,7 @@ class PictureDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

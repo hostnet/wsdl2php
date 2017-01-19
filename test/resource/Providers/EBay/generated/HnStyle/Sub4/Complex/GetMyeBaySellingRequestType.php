@@ -39,7 +39,7 @@ class GetMyeBaySellingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setScheduledList($val)
     {
@@ -48,7 +48,7 @@ class GetMyeBaySellingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setActiveList($val)
     {
@@ -57,7 +57,7 @@ class GetMyeBaySellingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSoldList($val)
     {
@@ -66,7 +66,7 @@ class GetMyeBaySellingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUnsoldList($val)
     {

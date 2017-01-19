@@ -190,7 +190,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferEnabled($val)
     {
@@ -199,7 +199,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAutoPayEnabled($val)
     {
@@ -208,7 +208,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setB2BVATEnabled($val)
     {
@@ -217,7 +217,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCatalogEnabled($val)
     {
@@ -226,79 +226,79 @@ class CategoryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryLevel($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryLevel = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryName');
+            throw new \Exception('POJO Proxy need a string for CategoryName');
         }
         $this->CategoryName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryParentID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryParentID');
+            throw new \Exception('POJO Proxy need a string for CategoryParentID');
         }
         $this->CategoryParentID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryParentName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryParentName');
+            throw new \Exception('POJO Proxy need a string for CategoryParentName');
         }
         $this->CategoryParentName = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductSearchPageAvailable($val)
     {
@@ -307,7 +307,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderAvailable($val)
     {
@@ -316,7 +316,7 @@ class CategoryType
 
     /**
      * @param ExtendedProductFinderIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderIDs($val)
     {
@@ -325,7 +325,7 @@ class CategoryType
 
     /**
      * @param CharacteristicsSetType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharacteristicsSets($val)
     {
@@ -334,7 +334,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpired($val)
     {
@@ -343,7 +343,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIntlAutosFixedCat($val)
     {
@@ -352,7 +352,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLeafCategory($val)
     {
@@ -361,7 +361,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVirtual($val)
     {
@@ -370,19 +370,19 @@ class CategoryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumOfItems($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NumOfItems = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerGuaranteeEligible($val)
     {
@@ -391,7 +391,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setORPA($val)
     {
@@ -400,7 +400,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setORRA($val)
     {
@@ -409,7 +409,7 @@ class CategoryType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLSD($val)
     {
@@ -418,19 +418,19 @@ class CategoryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setKeywords($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Keywords');
+            throw new \Exception('POJO Proxy need a string for Keywords');
         }
         $this->Keywords = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

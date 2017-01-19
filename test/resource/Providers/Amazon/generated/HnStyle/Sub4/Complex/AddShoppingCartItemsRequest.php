@@ -33,55 +33,55 @@ class AddShoppingCartItemsRequest
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTag($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for tag');
+            throw new \Exception('POJO Proxy need a string for tag');
         }
         $this->tag = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDevtag($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for devtag');
+            throw new \Exception('POJO Proxy need a string for devtag');
         }
         $this->devtag = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCartId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CartId');
+            throw new \Exception('POJO Proxy need a string for CartId');
         }
         $this->CartId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHMAC($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HMAC');
+            throw new \Exception('POJO Proxy need a string for HMAC');
         }
         $this->HMAC = $val;
     }
 
     /**
      * @param AddItemArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItems($val)
     {
@@ -90,12 +90,12 @@ class AddShoppingCartItemsRequest
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocale($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for locale');
+            throw new \Exception('POJO Proxy need a string for locale');
         }
         $this->locale = $val;
     }

@@ -48,31 +48,31 @@ class GetWantItNowSearchResultsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQuery($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchInDescription($val)
     {
@@ -81,7 +81,7 @@ class GetWantItNowSearchResultsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchWorldwide($val)
     {
@@ -90,7 +90,7 @@ class GetWantItNowSearchResultsRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {

@@ -42,31 +42,31 @@ class GetCategoryFeaturesRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLevelLimit($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LevelLimit = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setViewAllNodes($val)
     {
@@ -75,7 +75,7 @@ class GetCategoryFeaturesRequestType extends
 
     /**
      * @param FeatureIDCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeatureID($val)
     {

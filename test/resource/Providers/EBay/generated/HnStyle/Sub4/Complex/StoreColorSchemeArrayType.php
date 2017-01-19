@@ -17,7 +17,7 @@ class StoreColorSchemeArrayType
 
     /**
      * @param StoreColorSchemeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setColorScheme($val)
     {

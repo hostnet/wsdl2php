@@ -17,24 +17,24 @@ class CallbackStatus
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Message');
+            throw new \Exception('POJO Proxy need a string for Message');
         }
         $this->Message = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Status');
+            throw new \Exception('POJO Proxy need a string for Status');
         }
         $this->Status = $val;
 	}

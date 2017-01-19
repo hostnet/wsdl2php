@@ -68,7 +68,7 @@ class GetProductSearchResultsRequestType extends
 
     /**
      * @param ProductSearchType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductSearch($val)
     {

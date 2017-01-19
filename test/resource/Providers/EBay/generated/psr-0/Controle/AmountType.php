@@ -25,7 +25,7 @@ class AmountType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
@@ -34,7 +34,7 @@ class AmountType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrencyID($val)
 	{

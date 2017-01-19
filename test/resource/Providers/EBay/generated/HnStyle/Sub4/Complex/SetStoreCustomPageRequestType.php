@@ -19,7 +19,7 @@ class SetStoreCustomPageRequestType extends
 
     /**
      * @param StoreCustomPageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCustomPage($val)
     {

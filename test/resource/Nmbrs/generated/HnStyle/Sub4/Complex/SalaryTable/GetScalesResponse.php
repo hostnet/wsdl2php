@@ -13,7 +13,7 @@ class GetScalesResponse
 
     /**
      * @param ArrayOfSalaryTableScale $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalaryTableGetScalesResult($val)
     {

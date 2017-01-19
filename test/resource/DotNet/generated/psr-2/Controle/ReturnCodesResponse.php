@@ -13,7 +13,7 @@ class ReturnCodesResponse
 
     /**
      * @param ArrayOfAnyType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReturnCodesResult($val)
     {

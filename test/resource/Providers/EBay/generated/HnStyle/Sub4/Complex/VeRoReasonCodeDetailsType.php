@@ -13,7 +13,7 @@ class VeRoReasonCodeDetailsType
 
     /**
      * @param VeROSiteDetailType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROSiteDetail($val)
     {

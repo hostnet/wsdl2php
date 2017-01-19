@@ -55,7 +55,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowBidderNoticePreferences($val)
     {
@@ -64,7 +64,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowCombinedPaymentPreferences($val)
     {
@@ -73,7 +73,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowCrossPromotionPreferences($val)
     {
@@ -82,7 +82,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowSellerPaymentPreferences($val)
     {
@@ -91,7 +91,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowEndOfAuctionEmailPreferences($val)
     {
@@ -100,7 +100,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowSellerFavoriteItemPreferences($val)
     {
@@ -109,7 +109,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShoweBxOptInPreference($val)
     {
@@ -118,7 +118,7 @@ class GetUserPreferencesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShowProStoresPreferences($val)
     {

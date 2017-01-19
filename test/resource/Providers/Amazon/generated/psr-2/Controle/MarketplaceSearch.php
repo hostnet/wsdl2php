@@ -13,7 +13,7 @@ class MarketplaceSearch
 
     /**
      * @param MarketplaceSearchDetailsArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMarketplaceSearchDetails($val)
     {

@@ -26,7 +26,7 @@ class VeRoReportedItemType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -35,7 +35,7 @@ class VeRoReportedItemType
 
     /**
      * @param VeROItemStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemStatus($val)
     {
@@ -44,19 +44,19 @@ class VeRoReportedItemType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemReasonForFailure($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemReasonForFailure');
+            throw new \Exception('POJO Proxy need a string for ItemReasonForFailure');
         }
         $this->ItemReasonForFailure = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

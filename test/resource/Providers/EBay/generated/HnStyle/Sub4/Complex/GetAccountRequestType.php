@@ -67,7 +67,7 @@ class GetAccountRequestType extends
 
     /**
      * @param AccountHistorySelectionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountHistorySelection($val)
     {
@@ -76,7 +76,7 @@ class GetAccountRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInvoiceDate($val)
     {
@@ -85,7 +85,7 @@ class GetAccountRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBeginDate($val)
     {
@@ -94,7 +94,7 @@ class GetAccountRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndDate($val)
     {
@@ -103,7 +103,7 @@ class GetAccountRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -112,7 +112,7 @@ class GetAccountRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExcludeBalance($val)
     {
@@ -121,7 +121,7 @@ class GetAccountRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExcludeSummary($val)
     {
@@ -130,7 +130,7 @@ class GetAccountRequestType extends
 
     /**
      * @param AccountEntrySortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountEntrySortType($val)
     {
@@ -139,7 +139,7 @@ class GetAccountRequestType extends
 
     /**
      * @param CurrencyCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCurrency($val)
     {

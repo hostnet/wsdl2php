@@ -114,7 +114,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -123,19 +123,19 @@ class SendInvoiceRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param OrderIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderID($val)
     {
@@ -144,7 +144,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param InternationalShippingServiceOptionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInternationalShippingServiceOptions($val)
     {
@@ -153,7 +153,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param ShippingServiceOptionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceOptions($val)
     {
@@ -162,7 +162,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param SalesTaxType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTax($val)
     {
@@ -171,7 +171,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param InsuranceOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceOption($val)
     {
@@ -180,7 +180,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceFee($val)
     {
@@ -189,7 +189,7 @@ class SendInvoiceRequestType extends
 
     /**
      * @param BuyerPaymentMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentMethods($val)
     {
@@ -198,31 +198,31 @@ class SendInvoiceRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPayPalEmailAddress($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
+            throw new \Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
         $this->PayPalEmailAddress = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCheckoutInstructions($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CheckoutInstructions');
+            throw new \Exception('POJO Proxy need a string for CheckoutInstructions');
         }
         $this->CheckoutInstructions = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEmailCopyToSeller($val)
     {

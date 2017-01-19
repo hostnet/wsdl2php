@@ -216,7 +216,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ListingDurationDefinitionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingDurations($val)
     {
@@ -225,7 +225,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ShippingTermRequiredDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingTermsRequired($val)
     {
@@ -234,7 +234,7 @@ class FeatureDefinitionsType
 
     /**
      * @param BestOfferEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferEnabled($val)
     {
@@ -243,7 +243,7 @@ class FeatureDefinitionsType
 
     /**
      * @param DutchBINEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDutchBINEnabled($val)
     {
@@ -252,7 +252,7 @@ class FeatureDefinitionsType
 
     /**
      * @param UserConsentRequiredDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserConsentRequired($val)
     {
@@ -261,7 +261,7 @@ class FeatureDefinitionsType
 
     /**
      * @param HomePageFeaturedEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHomePageFeaturedEnabled($val)
     {
@@ -270,7 +270,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ProPackEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProPackEnabled($val)
     {
@@ -279,7 +279,7 @@ class FeatureDefinitionsType
 
     /**
      * @param BasicUpgradePackEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBasicUpgradePackEnabled($val)
     {
@@ -288,7 +288,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ValuePackEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValuePackEnabled($val)
     {
@@ -297,7 +297,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ProPackPlusEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProPackPlusEnabled($val)
     {
@@ -306,7 +306,7 @@ class FeatureDefinitionsType
 
     /**
      * @param AdFormatEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdFormatEnabled($val)
     {
@@ -315,7 +315,7 @@ class FeatureDefinitionsType
 
     /**
      * @param DigitalDeliveryEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDigitalDeliveryEnabled($val)
     {
@@ -324,7 +324,7 @@ class FeatureDefinitionsType
 
     /**
      * @param BestOfferCounterEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferCounterEnabled($val)
     {
@@ -333,7 +333,7 @@ class FeatureDefinitionsType
 
     /**
      * @param BestOfferAutoDeclineEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferAutoDeclineEnabled($val)
     {
@@ -342,7 +342,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalMarketSpecialitySubscriptionDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalMarketSpecialitySubscription($val)
     {
@@ -351,7 +351,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalMarketRegularSubscriptionDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalMarketRegularSubscription($val)
     {
@@ -360,7 +360,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalMarketPremiumSubscriptionDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalMarketPremiumSubscription($val)
     {
@@ -369,7 +369,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalMarketNonSubscriptionDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalMarketNonSubscription($val)
     {
@@ -378,7 +378,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ExpressEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressEnabled($val)
     {
@@ -387,7 +387,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ExpressPicturesRequiredDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressPicturesRequired($val)
     {
@@ -396,7 +396,7 @@ class FeatureDefinitionsType
 
     /**
      * @param ExpressConditionRequiredDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressConditionRequired($val)
     {
@@ -405,7 +405,7 @@ class FeatureDefinitionsType
 
     /**
      * @param MinimumReservePriceDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinimumReservePrice($val)
     {
@@ -414,7 +414,7 @@ class FeatureDefinitionsType
 
     /**
      * @param TCREnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionConfirmationRequestEnabled($val)
     {
@@ -423,7 +423,7 @@ class FeatureDefinitionsType
 
     /**
      * @param SellerContactDetailsEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerContactDetailsEnabled($val)
     {
@@ -432,7 +432,7 @@ class FeatureDefinitionsType
 
     /**
      * @param StoreInventoryEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreInventoryEnabled($val)
     {
@@ -441,7 +441,7 @@ class FeatureDefinitionsType
 
     /**
      * @param SkypeMeTransactionalEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSkypeMeTransactionalEnabled($val)
     {
@@ -450,7 +450,7 @@ class FeatureDefinitionsType
 
     /**
      * @param SkypeMeNonTransactionalEnabledDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSkypeMeNonTransactionalEnabled($val)
     {
@@ -459,7 +459,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalListingDistancesRegularDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalListingDistancesRegular($val)
     {
@@ -468,7 +468,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalListingDistancesSpecialtyDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalListingDistancesSpecialty($val)
     {
@@ -477,7 +477,7 @@ class FeatureDefinitionsType
 
     /**
      * @param LocalListingDistancesNonSubscriptionDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocalListingDistancesNonSubscription($val)
     {
@@ -486,7 +486,7 @@ class FeatureDefinitionsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

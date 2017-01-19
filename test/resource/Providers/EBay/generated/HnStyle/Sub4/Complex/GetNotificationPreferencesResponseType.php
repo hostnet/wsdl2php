@@ -36,7 +36,7 @@ class GetNotificationPreferencesResponseType extends
 
     /**
      * @param ApplicationDeliveryPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApplicationDeliveryPreferences($val)
     {
@@ -45,7 +45,7 @@ class GetNotificationPreferencesResponseType extends
 
     /**
      * @param NotificationEnableArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserDeliveryPreferenceArray($val)
     {
@@ -54,7 +54,7 @@ class GetNotificationPreferencesResponseType extends
 
     /**
      * @param NotificationUserDataType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserData($val)
     {
@@ -63,7 +63,7 @@ class GetNotificationPreferencesResponseType extends
 
     /**
      * @param NotificationEventPropertyType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEventProperty($val)
     {

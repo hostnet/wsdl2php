@@ -18,7 +18,7 @@ class ValidateChallengeInputResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValidToken($val)
     {

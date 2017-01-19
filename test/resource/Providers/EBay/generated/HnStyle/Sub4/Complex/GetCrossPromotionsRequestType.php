@@ -28,7 +28,7 @@ class GetCrossPromotionsRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -37,7 +37,7 @@ class GetCrossPromotionsRequestType extends
 
     /**
      * @param PromotionMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionMethod($val)
     {
@@ -46,7 +46,7 @@ class GetCrossPromotionsRequestType extends
 
     /**
      * @param TradingRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionViewMode($val)
     {

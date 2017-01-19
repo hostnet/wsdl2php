@@ -90,7 +90,7 @@ class AbstractRequestType
 
 	/**
 	 * @param DetailLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDetailLevel($val)
 	{
@@ -99,43 +99,43 @@ class AbstractRequestType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorLanguage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ErrorLanguage');
+            throw new \Exception('POJO Proxy need a string for ErrorLanguage');
         }
         $this->ErrorLanguage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageID');
+            throw new \Exception('POJO Proxy need a string for MessageID');
         }
         $this->MessageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Version');
+            throw new \Exception('POJO Proxy need a string for Version');
         }
         $this->Version = $val;
 	}
 
 	/**
 	 * @param ErrorHandlingCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorHandling($val)
 	{
@@ -144,7 +144,7 @@ class AbstractRequestType
 
 	/**
 	 * @param UUIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvocationID($val)
 	{
@@ -153,7 +153,7 @@ class AbstractRequestType
 
 	/**
 	 * @param WarningLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWarningLevel($val)
 	{
@@ -162,7 +162,7 @@ class AbstractRequestType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -204,7 +204,7 @@ class AddDisputeRequestType extends
 
 	/**
 	 * @param DisputeExplanationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeExplanation($val)
 	{
@@ -213,7 +213,7 @@ class AddDisputeRequestType extends
 
 	/**
 	 * @param DisputeReasonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeReason($val)
 	{
@@ -222,7 +222,7 @@ class AddDisputeRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -231,12 +231,12 @@ class AddDisputeRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
@@ -336,7 +336,7 @@ class AbstractResponseType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimestamp($val)
 	{
@@ -345,7 +345,7 @@ class AbstractResponseType
 
 	/**
 	 * @param AckCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAck($val)
 	{
@@ -354,19 +354,19 @@ class AbstractResponseType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCorrelationID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
 	}
 
 	/**
 	 * @param ErrorType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrors($val)
 	{
@@ -375,55 +375,55 @@ class AbstractResponseType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Message');
+            throw new \Exception('POJO Proxy need a string for Message');
         }
         $this->Message = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Version');
+            throw new \Exception('POJO Proxy need a string for Version');
         }
         $this->Version = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuild($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Build');
+            throw new \Exception('POJO Proxy need a string for Build');
         }
         $this->Build = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationEventName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NotificationEventName');
+            throw new \Exception('POJO Proxy need a string for NotificationEventName');
         }
         $this->NotificationEventName = $val;
 	}
 
 	/**
 	 * @param DuplicateInvocationDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDuplicateInvocationDetails($val)
 	{
@@ -432,55 +432,55 @@ class AbstractResponseType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientUserID');
+            throw new \Exception('POJO Proxy need a string for RecipientUserID');
         }
         $this->RecipientUserID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEIASToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EIASToken');
+            throw new \Exception('POJO Proxy need a string for EIASToken');
         }
         $this->EIASToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationSignature($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NotificationSignature');
+            throw new \Exception('POJO Proxy need a string for NotificationSignature');
         }
         $this->NotificationSignature = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHardExpirationWarning($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HardExpirationWarning');
+            throw new \Exception('POJO Proxy need a string for HardExpirationWarning');
         }
         $this->HardExpirationWarning = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -505,7 +505,7 @@ class AddDisputeResponseType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeID($val)
 	{
@@ -554,7 +554,7 @@ class AddDisputeResponseRequestType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeID($val)
 	{
@@ -563,19 +563,19 @@ class AddDisputeResponseRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageText');
+            throw new \Exception('POJO Proxy need a string for MessageText');
         }
         $this->MessageText = $val;
 	}
 
 	/**
 	 * @param DisputeActivityCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeActivity($val)
 	{
@@ -584,31 +584,31 @@ class AddDisputeResponseRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingCarrierUsed($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShippingCarrierUsed');
+            throw new \Exception('POJO Proxy need a string for ShippingCarrierUsed');
         }
         $this->ShippingCarrierUsed = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipmentTrackNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipmentTrackNumber');
+            throw new \Exception('POJO Proxy need a string for ShipmentTrackNumber');
         }
         $this->ShipmentTrackNumber = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTime($val)
 	{
@@ -650,7 +650,7 @@ class AddItemRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -659,7 +659,7 @@ class AddItemRequestType extends
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -708,7 +708,7 @@ class AddItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -717,7 +717,7 @@ class AddItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -726,7 +726,7 @@ class AddItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -735,7 +735,7 @@ class AddItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -744,24 +744,24 @@ class AddItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}
@@ -788,7 +788,7 @@ class AddLiveAuctionItemRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -828,7 +828,7 @@ class AddLiveAuctionItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -837,7 +837,7 @@ class AddLiveAuctionItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -846,24 +846,24 @@ class AddLiveAuctionItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}
@@ -890,7 +890,7 @@ class AddMemberMessageAaQtoPartnerRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -899,7 +899,7 @@ class AddMemberMessageAaQtoPartnerRequestType extends
 
 	/**
 	 * @param MemberMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessage($val)
 	{
@@ -935,7 +935,7 @@ class AddMemberMessageRtQrequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -944,7 +944,7 @@ class AddMemberMessageRtQrequestType extends
 
 	/**
 	 * @param MemberMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessage($val)
 	{
@@ -978,7 +978,7 @@ class AddMemberMessagesAaQtoBidderRequestType extends
 
 	/**
 	 * @param AddMemberMessagesAAQToBidderRequestContainerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddMemberMessagesAAQToBidderRequestContainer($val)
 	{
@@ -1002,7 +1002,7 @@ class AddMemberMessagesAaQtoBidderResponseType extends
 
 	/**
 	 * @param AddMemberMessagesAAQToBidderResponseContainerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddMemberMessagesAAQToBidderResponseContainer($val)
 	{
@@ -1029,7 +1029,7 @@ class AddOrderRequestType extends
 
 	/**
 	 * @param OrderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
@@ -1059,7 +1059,7 @@ class AddOrderResponseType extends
 
 	/**
 	 * @param OrderIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderID($val)
 	{
@@ -1068,7 +1068,7 @@ class AddOrderResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreatedTime($val)
 	{
@@ -1142,7 +1142,7 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientBidderUserID($val)
 	{
@@ -1151,7 +1151,7 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowPrice($val)
 	{
@@ -1160,7 +1160,7 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyEmailToSeller($val)
 	{
@@ -1169,7 +1169,7 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param SecondChanceOfferDurationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDuration($val)
 	{
@@ -1178,7 +1178,7 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1187,7 +1187,7 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -1196,12 +1196,12 @@ class AddSecondChanceItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerMessage');
+            throw new \Exception('POJO Proxy need a string for SellerMessage');
         }
         $this->SellerMessage = $val;
 	}
@@ -1236,7 +1236,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -1245,7 +1245,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1254,7 +1254,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -1263,7 +1263,7 @@ class AddSecondChanceItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -1291,7 +1291,7 @@ class AddToItemDescriptionRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1300,12 +1300,12 @@ class AddToItemDescriptionRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
@@ -1336,7 +1336,7 @@ class AddToWatchListRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1362,24 +1362,24 @@ class AddToWatchListResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchListCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WatchListCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchListMaximum($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WatchListMaximum = $val;
 	}
@@ -1448,7 +1448,7 @@ class AddTransactionConfirmationItemRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientUserID($val)
 	{
@@ -1457,31 +1457,31 @@ class AddTransactionConfirmationItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVerifyEligibilityOnly($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for VerifyEligibilityOnly');
+            throw new \Exception('POJO Proxy need a string for VerifyEligibilityOnly');
         }
         $this->VerifyEligibilityOnly = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientPostalCode');
+            throw new \Exception('POJO Proxy need a string for RecipientPostalCode');
         }
         $this->RecipientPostalCode = $val;
 	}
 
 	/**
 	 * @param RecipientRelationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientRelationType($val)
 	{
@@ -1490,7 +1490,7 @@ class AddTransactionConfirmationItemRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNegotiatedPrice($val)
 	{
@@ -1499,7 +1499,7 @@ class AddTransactionConfirmationItemRequestType extends
 
 	/**
 	 * @param SecondChanceOfferDurationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDuration($val)
 	{
@@ -1508,7 +1508,7 @@ class AddTransactionConfirmationItemRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1517,12 +1517,12 @@ class AddTransactionConfirmationItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setComments($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Comments');
+            throw new \Exception('POJO Proxy need a string for Comments');
         }
         $this->Comments = $val;
 	}
@@ -1553,7 +1553,7 @@ class AddTransactionConfirmationItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1562,7 +1562,7 @@ class AddTransactionConfirmationItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -1571,7 +1571,7 @@ class AddTransactionConfirmationItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -1613,19 +1613,19 @@ class ApproveLiveAuctionBiddersRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserCatalogID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
 	}
 
 	/**
 	 * @param BidApprovalArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidApproval($val)
 	{
@@ -1634,7 +1634,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApproveAllPending($val)
 	{
@@ -1643,7 +1643,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAllApprovedBiddingLimit($val)
 	{
@@ -1669,7 +1669,7 @@ class ApproveLiveAuctionBiddersResponseType extends
 
 	/**
 	 * @param LiveAuctionApprovalStatusArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderUpdateStatus($val)
 	{
@@ -1726,7 +1726,7 @@ class CompleteSaleRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1735,19 +1735,19 @@ class CompleteSaleRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param FeedbackInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackInfo($val)
 	{
@@ -1756,7 +1756,7 @@ class CompleteSaleRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipped($val)
 	{
@@ -1765,7 +1765,7 @@ class CompleteSaleRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaid($val)
 	{
@@ -1774,7 +1774,7 @@ class CompleteSaleRequestType extends
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -1817,7 +1817,7 @@ class DeleteMyMessagesRequestType extends
 
 	/**
 	 * @param MyMessagesAlertIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertIDs($val)
 	{
@@ -1826,7 +1826,7 @@ class DeleteMyMessagesRequestType extends
 
 	/**
 	 * @param MyMessagesMessageIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageIDs($val)
 	{
@@ -1876,7 +1876,7 @@ class EndItemRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -1885,7 +1885,7 @@ class EndItemRequestType extends
 
 	/**
 	 * @param EndReasonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndingReason($val)
 	{
@@ -1894,12 +1894,12 @@ class EndItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerInventoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerInventoryID');
+            throw new \Exception('POJO Proxy need a string for SellerInventoryID');
         }
         $this->SellerInventoryID = $val;
 	}
@@ -1922,7 +1922,7 @@ class EndItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -1952,12 +1952,12 @@ class FetchTokenRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecretID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SecretID');
+            throw new \Exception('POJO Proxy need a string for SecretID');
         }
         $this->SecretID = $val;
 	}
@@ -1990,19 +1990,19 @@ class FetchTokenResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayAuthToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for eBayAuthToken');
+            throw new \Exception('POJO Proxy need a string for eBayAuthToken');
         }
         $this->eBayAuthToken = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHardExpirationTime($val)
 	{
@@ -2072,7 +2072,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param AccountHistorySelectionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountHistorySelection($val)
 	{
@@ -2081,7 +2081,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceDate($val)
 	{
@@ -2090,7 +2090,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBeginDate($val)
 	{
@@ -2099,7 +2099,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndDate($val)
 	{
@@ -2108,7 +2108,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -2117,7 +2117,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExcludeBalance($val)
 	{
@@ -2126,7 +2126,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExcludeSummary($val)
 	{
@@ -2135,7 +2135,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param AccountEntrySortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountEntrySortType($val)
 	{
@@ -2144,7 +2144,7 @@ class GetAccountRequestType extends
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -2211,19 +2211,19 @@ class GetAccountResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AccountID');
+            throw new \Exception('POJO Proxy need a string for AccountID');
         }
         $this->AccountID = $val;
 	}
 
 	/**
 	 * @param AccountSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountSummary($val)
 	{
@@ -2232,7 +2232,7 @@ class GetAccountResponseType extends
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -2241,7 +2241,7 @@ class GetAccountResponseType extends
 
 	/**
 	 * @param AccountEntriesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountEntries($val)
 	{
@@ -2250,7 +2250,7 @@ class GetAccountResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -2259,7 +2259,7 @@ class GetAccountResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreEntries($val)
 	{
@@ -2268,24 +2268,24 @@ class GetAccountResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEntriesPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
@@ -2309,7 +2309,7 @@ class GetAdFormatLeadsRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -2340,7 +2340,7 @@ class GetAdFormatLeadsResponseType extends
 
 	/**
 	 * @param AdFormatLeadType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormatLead($val)
 	{
@@ -2349,12 +2349,12 @@ class GetAdFormatLeadsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormatLeadCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AdFormatLeadCount = $val;
 	}
@@ -2386,7 +2386,7 @@ class GetAllBiddersRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -2395,7 +2395,7 @@ class GetAllBiddersRequestType extends
 
 	/**
 	 * @param GetAllBiddersModeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCallMode($val)
 	{
@@ -2404,7 +2404,7 @@ class GetAllBiddersRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeBiddingSummary($val)
 	{
@@ -2454,7 +2454,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param OfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidArray($val)
 	{
@@ -2463,7 +2463,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighBidder($val)
 	{
@@ -2472,7 +2472,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighestBid($val)
 	{
@@ -2481,7 +2481,7 @@ class GetAllBiddersResponseType extends
 
 	/**
 	 * @param ListingStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingStatus($val)
 	{
@@ -2514,7 +2514,7 @@ class GetApiAccessRulesResponseType extends
 
 	/**
 	 * @param ApiAccessRuleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApiAccessRule($val)
 	{
@@ -2568,31 +2568,31 @@ class GetAttributesCsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeCategoryMappingDetails($val)
 	{
@@ -2601,7 +2601,7 @@ class GetAttributesCsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDelivery($val)
 	{
@@ -2643,24 +2643,24 @@ class GetAttributesCsResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeData($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeData');
+            throw new \Exception('POJO Proxy need a string for AttributeData');
         }
         $this->AttributeData = $val;
 	}
@@ -2691,24 +2691,24 @@ class GetAttributesXsLrequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileName');
+            throw new \Exception('POJO Proxy need a string for FileName');
         }
         $this->FileName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileVersion');
+            throw new \Exception('POJO Proxy need a string for FileVersion');
         }
         $this->FileVersion = $val;
 	}
@@ -2734,7 +2734,7 @@ class GetAttributesXsLresponseType extends
 
 	/**
 	 * @param XSLFileType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setXSLFile($val)
 	{
@@ -2769,7 +2769,7 @@ class GetBestOffersRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -2778,7 +2778,7 @@ class GetBestOffersRequestType extends
 
 	/**
 	 * @param BestOfferIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferID($val)
 	{
@@ -2787,7 +2787,7 @@ class GetBestOffersRequestType extends
 
 	/**
 	 * @param BestOfferStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferStatus($val)
 	{
@@ -2822,7 +2822,7 @@ class GetBestOffersResponseType extends
 
 	/**
 	 * @param BestOfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferArray($val)
 	{
@@ -2831,7 +2831,7 @@ class GetBestOffersResponseType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -2890,7 +2890,7 @@ class GetBidderListRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActiveItemsOnly($val)
 	{
@@ -2899,7 +2899,7 @@ class GetBidderListRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeFrom($val)
 	{
@@ -2908,7 +2908,7 @@ class GetBidderListRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeTo($val)
 	{
@@ -2917,7 +2917,7 @@ class GetBidderListRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -2926,7 +2926,7 @@ class GetBidderListRequestType extends
 
 	/**
 	 * @param GranularityLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGranularityLevel($val)
 	{
@@ -2954,7 +2954,7 @@ class GetBidderListResponseType extends
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidder($val)
 	{
@@ -2963,7 +2963,7 @@ class GetBidderListResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidItemArray($val)
 	{
@@ -3027,43 +3027,43 @@ class GetCategoriesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategorySiteID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategorySiteID');
+            throw new \Exception('POJO Proxy need a string for CategorySiteID');
         }
         $this->CategorySiteID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryParent($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryParent');
+            throw new \Exception('POJO Proxy need a string for CategoryParent');
         }
         $this->CategoryParent = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLevelLimit($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LevelLimit = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setViewAllNodes($val)
 	{
@@ -3155,7 +3155,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryArray($val)
 	{
@@ -3164,19 +3164,19 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryCount = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpdateTime($val)
 	{
@@ -3185,19 +3185,19 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryVersion');
+            throw new \Exception('POJO Proxy need a string for CategoryVersion');
         }
         $this->CategoryVersion = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReservePriceInclusive($val)
 	{
@@ -3206,7 +3206,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReservePriceAllowed($val)
 	{
@@ -3215,7 +3215,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumReservePrice($val)
 	{
@@ -3224,7 +3224,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -3233,7 +3233,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReduceReserveInclusive($val)
 	{
@@ -3242,7 +3242,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReduceReserveAllowed($val)
 	{
@@ -3274,24 +3274,24 @@ class GetCategory2CsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
@@ -3345,7 +3345,7 @@ class GetCategory2CsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMappedCategoryArray($val)
 	{
@@ -3354,7 +3354,7 @@ class GetCategory2CsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnmappedCategoryArray($val)
 	{
@@ -3363,19 +3363,19 @@ class GetCategory2CsResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param SiteWideCharacteristicsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteWideCharacteristicSets($val)
 	{
@@ -3404,19 +3404,19 @@ class GetCategory2FinanceOfferRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedDate($val)
 	{
@@ -3441,19 +3441,19 @@ class GetCategory2FinanceOfferResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Count = $val;
 	}
 
 	/**
 	 * @param CategoryFinanceOfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryFinanceOfferArray($val)
 	{
@@ -3500,31 +3500,31 @@ class GetCategoryFeaturesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLevelLimit($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LevelLimit = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setViewAllNodes($val)
 	{
@@ -3533,7 +3533,7 @@ class GetCategoryFeaturesRequestType extends
 
 	/**
 	 * @param FeatureIDCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeatureID($val)
 	{
@@ -3576,19 +3576,19 @@ class GetCategoryFeaturesResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryVersion');
+            throw new \Exception('POJO Proxy need a string for CategoryVersion');
         }
         $this->CategoryVersion = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpdateTime($val)
 	{
@@ -3597,7 +3597,7 @@ class GetCategoryFeaturesResponseType extends
 
 	/**
 	 * @param CategoryFeatureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -3606,7 +3606,7 @@ class GetCategoryFeaturesResponseType extends
 
 	/**
 	 * @param SiteDefaultsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteDefaults($val)
 	{
@@ -3615,7 +3615,7 @@ class GetCategoryFeaturesResponseType extends
 
 	/**
 	 * @param FeatureDefinitionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeatureDefinitions($val)
 	{
@@ -3758,7 +3758,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorsGermanySearchable($val)
 	{
@@ -3767,19 +3767,19 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormat($val)
 	{
@@ -3788,7 +3788,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFreeShipping($val)
 	{
@@ -3797,7 +3797,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -3806,7 +3806,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param ItemTypeFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemTypeFilter($val)
 	{
@@ -3815,7 +3815,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoresFixedPrice($val)
 	{
@@ -3824,7 +3824,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param CategoryListingsSearchCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchType($val)
 	{
@@ -3833,7 +3833,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param CategoryListingsOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderBy($val)
 	{
@@ -3842,7 +3842,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -3851,7 +3851,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param SearchLocationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchLocation($val)
 	{
@@ -3860,7 +3860,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param ProximitySearchType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProximitySearch($val)
 	{
@@ -3869,7 +3869,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeGetItFastItems($val)
 	{
@@ -3878,7 +3878,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param PaymentMethodSearchCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -3887,7 +3887,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeCondition($val)
 	{
@@ -3896,7 +3896,7 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeFeedback($val)
 	{
@@ -3905,24 +3905,24 @@ class GetCategoryListingsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalSearchPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
+            throw new \Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
         $this->LocalSearchPostalCode = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxRelatedSearchKeywords($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxRelatedSearchKeywords = $val;
 	}
@@ -3986,7 +3986,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -3995,7 +3995,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -4004,7 +4004,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubCategories($val)
 	{
@@ -4013,31 +4013,31 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -4046,7 +4046,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -4055,7 +4055,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param BuyingGuideDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuideDetails($val)
 	{
@@ -4064,7 +4064,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param RelatedSearchKeywordArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{
@@ -4094,12 +4094,12 @@ class GetCategoryMappingsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryVersion');
+            throw new \Exception('POJO Proxy need a string for CategoryVersion');
         }
         $this->CategoryVersion = $val;
 	}
@@ -4133,7 +4133,7 @@ class GetCategoryMappingsResponseType extends
 
 	/**
 	 * @param CategoryMappingType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryMapping($val)
 	{
@@ -4142,12 +4142,12 @@ class GetCategoryMappingsResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryVersion');
+            throw new \Exception('POJO Proxy need a string for CategoryVersion');
         }
         $this->CategoryVersion = $val;
 	}
@@ -4192,36 +4192,36 @@ class GetChallengeTokenResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setChallengeToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ChallengeToken');
+            throw new \Exception('POJO Proxy need a string for ChallengeToken');
         }
         $this->ChallengeToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setImageChallengeURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ImageChallengeURL');
+            throw new \Exception('POJO Proxy need a string for ImageChallengeURL');
         }
         $this->ImageChallengeURL = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAudioChallengeURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AudioChallengeURL');
+            throw new \Exception('POJO Proxy need a string for AudioChallengeURL');
         }
         $this->AudioChallengeURL = $val;
 	}
@@ -4279,67 +4279,67 @@ class GetCharitiesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityID');
+            throw new \Exception('POJO Proxy need a string for CharityID');
         }
         $this->CharityID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityName');
+            throw new \Exception('POJO Proxy need a string for CharityName');
         }
         $this->CharityName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityRegion($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityRegion = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityDomain($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityDomain = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeDescription($val)
 	{
@@ -4348,7 +4348,7 @@ class GetCharitiesRequestType extends
 
 	/**
 	 * @param StringMatchCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMatchType($val)
 	{
@@ -4380,7 +4380,7 @@ class GetCharitiesResponseType extends
 
 	/**
 	 * @param CharityInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharity($val)
 	{
@@ -4420,7 +4420,7 @@ class GetContextualKeywordsRequestType extends
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -4429,24 +4429,24 @@ class GetContextualKeywordsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEncoding($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Encoding');
+            throw new \Exception('POJO Proxy need a string for Encoding');
         }
         $this->Encoding = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
@@ -4468,7 +4468,7 @@ class GetContextualKeywordsResponseType extends
 
 	/**
 	 * @param ContextSearchAssetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContextSearchAsset($val)
 	{
@@ -4502,7 +4502,7 @@ class GetCrossPromotionsRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -4511,7 +4511,7 @@ class GetCrossPromotionsRequestType extends
 
 	/**
 	 * @param PromotionMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionMethod($val)
 	{
@@ -4520,7 +4520,7 @@ class GetCrossPromotionsRequestType extends
 
 	/**
 	 * @param TradingRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionViewMode($val)
 	{
@@ -4547,7 +4547,7 @@ class GetCrossPromotionsResponseType extends
 
 	/**
 	 * @param CrossPromotionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotion($val)
 	{
@@ -4582,19 +4582,19 @@ class GetDescriptionTemplatesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedTime($val)
 	{
@@ -4603,7 +4603,7 @@ class GetDescriptionTemplatesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorVehicles($val)
 	{
@@ -4648,7 +4648,7 @@ class GetDescriptionTemplatesResponseType extends
 
 	/**
 	 * @param DescriptionTemplateType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescriptionTemplate($val)
 	{
@@ -4657,43 +4657,43 @@ class GetDescriptionTemplatesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLayoutTotal($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LayoutTotal = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setObsoleteLayoutID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ObsoleteLayoutID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setObsoleteThemeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ObsoleteThemeID = $val;
 	}
 
 	/**
 	 * @param ThemeGroupType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeGroup($val)
 	{
@@ -4702,12 +4702,12 @@ class GetDescriptionTemplatesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeTotal($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeTotal = $val;
 	}
@@ -4731,7 +4731,7 @@ class GetDisputeRequestType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeID($val)
 	{
@@ -4758,7 +4758,7 @@ class GetDisputeResponseType extends
 
 	/**
 	 * @param DisputeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDispute($val)
 	{
@@ -4805,7 +4805,7 @@ class GetFeedbackRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -4814,7 +4814,7 @@ class GetFeedbackRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -4823,12 +4823,12 @@ class GetFeedbackRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackID');
+            throw new \Exception('POJO Proxy need a string for FeedbackID');
         }
         $this->FeedbackID = $val;
 	}
@@ -4883,7 +4883,7 @@ class GetFeedbackResponseType extends
 
 	/**
 	 * @param FeedbackDetailArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackDetailArray($val)
 	{
@@ -4892,19 +4892,19 @@ class GetFeedbackResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackDetailItemTotal($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackDetailItemTotal = $val;
 	}
 
 	/**
 	 * @param FeedbackSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackSummary($val)
 	{
@@ -4913,12 +4913,12 @@ class GetFeedbackResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackScore = $val;
 	}
@@ -4945,19 +4945,19 @@ class GetFinanceOffersRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedDate($val)
 	{
@@ -4988,19 +4988,19 @@ class GetFinanceOffersResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Count = $val;
 	}
 
 	/**
 	 * @param FinanceOfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferArray($val)
 	{
@@ -5026,7 +5026,7 @@ class GetHighBiddersRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -5062,7 +5062,7 @@ class GetHighBiddersResponseType extends
 
 	/**
 	 * @param OfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidArray($val)
 	{
@@ -5071,7 +5071,7 @@ class GetHighBiddersResponseType extends
 
 	/**
 	 * @param ListingStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingStatus($val)
 	{
@@ -5123,7 +5123,7 @@ class GetItemRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -5132,7 +5132,7 @@ class GetItemRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeExpressRequirements($val)
 	{
@@ -5141,7 +5141,7 @@ class GetItemRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeWatchCount($val)
 	{
@@ -5150,7 +5150,7 @@ class GetItemRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeCrossPromotion($val)
 	{
@@ -5178,7 +5178,7 @@ class GetItemResponseType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -5209,7 +5209,7 @@ class GetItemRecommendationsRequestType extends
 
 	/**
 	 * @param GetRecommendationsRequestContainerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetRecommendationsRequestContainer($val)
 	{
@@ -5238,7 +5238,7 @@ class GetItemRecommendationsResponseType extends
 
 	/**
 	 * @param GetRecommendationsResponseContainerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetRecommendationsResponseContainer($val)
 	{
@@ -5284,7 +5284,7 @@ class GetItemShippingRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -5293,31 +5293,31 @@ class GetItemShippingRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantitySold($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantitySold = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDestinationPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DestinationPostalCode');
+            throw new \Exception('POJO Proxy need a string for DestinationPostalCode');
         }
         $this->DestinationPostalCode = $val;
 	}
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDestinationCountryCode($val)
 	{
@@ -5344,7 +5344,7 @@ class GetItemShippingResponseType extends
 
 	/**
 	 * @param ShippingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingDetails($val)
 	{
@@ -5414,7 +5414,7 @@ class GetItemTransactionsRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -5423,7 +5423,7 @@ class GetItemTransactionsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeFrom($val)
 	{
@@ -5432,7 +5432,7 @@ class GetItemTransactionsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeTo($val)
 	{
@@ -5441,19 +5441,19 @@ class GetItemTransactionsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -5462,7 +5462,7 @@ class GetItemTransactionsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeFinalValueFee($val)
 	{
@@ -5471,7 +5471,7 @@ class GetItemTransactionsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeContainingOrder($val)
 	{
@@ -5544,7 +5544,7 @@ class GetItemTransactionsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -5553,7 +5553,7 @@ class GetItemTransactionsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreTransactions($val)
 	{
@@ -5562,43 +5562,43 @@ class GetItemTransactionsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TransactionsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedTransactionCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedTransactionCountActual = $val;
 	}
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -5607,7 +5607,7 @@ class GetItemTransactionsResponseType extends
 
 	/**
 	 * @param TransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionArray($val)
 	{
@@ -5616,7 +5616,7 @@ class GetItemTransactionsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalPreferred($val)
 	{
@@ -5647,7 +5647,7 @@ class GetItemsAwaitingFeedbackRequestType extends
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSort($val)
 	{
@@ -5656,7 +5656,7 @@ class GetItemsAwaitingFeedbackRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -5681,7 +5681,7 @@ class GetItemsAwaitingFeedbackResponseType extends
 
 	/**
 	 * @param PaginatedTransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsAwaitingFeedback($val)
 	{
@@ -5717,19 +5717,19 @@ class GetLiveAuctionBiddersRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserCatalogID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
 	}
 
 	/**
 	 * @param BidderStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderStatus($val)
 	{
@@ -5738,7 +5738,7 @@ class GetLiveAuctionBiddersRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -5788,7 +5788,7 @@ class GetLiveAuctionBiddersResponseType extends
 
 	/**
 	 * @param BidderDetailArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderDetails($val)
 	{
@@ -5797,55 +5797,55 @@ class GetLiveAuctionBiddersResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalPending($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalPending = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalApproved($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalApproved = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalDenied($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalDenied = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -5885,7 +5885,7 @@ class GetLiveAuctionCatalogDetailsResponseType extends
 
 	/**
 	 * @param LiveAuctionCatalogType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionCatalog($val)
 	{
@@ -5940,7 +5940,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -5949,7 +5949,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param MessageTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMailMessageType($val)
 	{
@@ -5958,7 +5958,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param MessageStatusTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageStatus($val)
 	{
@@ -5967,7 +5967,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayToPublic($val)
 	{
@@ -5976,7 +5976,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartCreationTime($val)
 	{
@@ -5985,7 +5985,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndCreationTime($val)
 	{
@@ -5994,7 +5994,7 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -6003,12 +6003,12 @@ class GetMemberMessagesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MemberMessageID');
+            throw new \Exception('POJO Proxy need a string for MemberMessageID');
         }
         $this->MemberMessageID = $val;
 	}
@@ -6035,7 +6035,7 @@ class GetMemberMessagesResponseType extends
 
 	/**
 	 * @param MemberMessageExchangeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessage($val)
 	{
@@ -6044,7 +6044,7 @@ class GetMemberMessagesResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -6053,7 +6053,7 @@ class GetMemberMessagesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -6095,7 +6095,7 @@ class GetMyMessagesRequestType extends
 
 	/**
 	 * @param MyMessagesAlertIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertIDs($val)
 	{
@@ -6104,7 +6104,7 @@ class GetMyMessagesRequestType extends
 
 	/**
 	 * @param MyMessagesMessageIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageIDs($val)
 	{
@@ -6113,7 +6113,7 @@ class GetMyMessagesRequestType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
@@ -6154,7 +6154,7 @@ class GetMyMessagesResponseType extends
 
 	/**
 	 * @param MyMessagesSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSummary($val)
 	{
@@ -6163,7 +6163,7 @@ class GetMyMessagesResponseType extends
 
 	/**
 	 * @param MyMessagesAlertArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlerts($val)
 	{
@@ -6172,7 +6172,7 @@ class GetMyMessagesResponseType extends
 
 	/**
 	 * @param MyMessagesMessageArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessages($val)
 	{
@@ -6246,7 +6246,7 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBiddingSort($val)
 	{
@@ -6255,7 +6255,7 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLostSort($val)
 	{
@@ -6264,31 +6264,31 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxItemsPerList($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxItemsPerList = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxItemAgeInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxItemAgeInDays = $val;
 	}
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchSort($val)
 	{
@@ -6297,7 +6297,7 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWonSort($val)
 	{
@@ -6306,7 +6306,7 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param MyeBaySelectionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSearches($val)
 	{
@@ -6315,7 +6315,7 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param MyeBaySelectionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSellers($val)
 	{
@@ -6324,7 +6324,7 @@ class GetMyeBayRequestType extends
 
 	/**
 	 * @param MyeBaySelectionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOffers($val)
 	{
@@ -6381,7 +6381,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBiddingItemArray($val)
 	{
@@ -6390,7 +6390,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLostItemArray($val)
 	{
@@ -6399,7 +6399,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchItemArray($val)
 	{
@@ -6408,7 +6408,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWonItemArray($val)
 	{
@@ -6417,7 +6417,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param MyeBayFavoriteSearchListType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSearches($val)
 	{
@@ -6426,7 +6426,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param MyeBayFavoriteSellerListType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSellers($val)
 	{
@@ -6435,7 +6435,7 @@ class GetMyeBayResponseType extends
 
 	/**
 	 * @param MyeBaySecondChanceOfferListType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOffers($val)
 	{
@@ -6498,7 +6498,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchList($val)
 	{
@@ -6507,7 +6507,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidList($val)
 	{
@@ -6516,7 +6516,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferList($val)
 	{
@@ -6525,7 +6525,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWonList($val)
 	{
@@ -6534,7 +6534,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLostList($val)
 	{
@@ -6543,7 +6543,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param MyeBaySelectionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSearches($val)
 	{
@@ -6552,7 +6552,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param MyeBaySelectionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSellers($val)
 	{
@@ -6561,7 +6561,7 @@ class GetMyeBayBuyingRequestType extends
 
 	/**
 	 * @param MyeBaySelectionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOffer($val)
 	{
@@ -6624,7 +6624,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param BuyingSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingSummary($val)
 	{
@@ -6633,7 +6633,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchList($val)
 	{
@@ -6642,7 +6642,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidList($val)
 	{
@@ -6651,7 +6651,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferList($val)
 	{
@@ -6660,7 +6660,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param PaginatedOrderTransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWonList($val)
 	{
@@ -6669,7 +6669,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLostList($val)
 	{
@@ -6678,7 +6678,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param MyeBayFavoriteSearchListType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSearches($val)
 	{
@@ -6687,7 +6687,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param MyeBayFavoriteSellerListType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSellers($val)
 	{
@@ -6696,7 +6696,7 @@ class GetMyeBayBuyingResponseType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOffer($val)
 	{
@@ -6724,7 +6724,7 @@ class GetMyeBayRemindersRequestType extends
 
 	/**
 	 * @param ReminderCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingReminders($val)
 	{
@@ -6733,7 +6733,7 @@ class GetMyeBayRemindersRequestType extends
 
 	/**
 	 * @param ReminderCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingReminders($val)
 	{
@@ -6761,7 +6761,7 @@ class GetMyeBayRemindersResponseType extends
 
 	/**
 	 * @param RemindersType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingReminders($val)
 	{
@@ -6770,7 +6770,7 @@ class GetMyeBayRemindersResponseType extends
 
 	/**
 	 * @param RemindersType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingReminders($val)
 	{
@@ -6814,7 +6814,7 @@ class GetMyeBaySellingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduledList($val)
 	{
@@ -6823,7 +6823,7 @@ class GetMyeBaySellingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActiveList($val)
 	{
@@ -6832,7 +6832,7 @@ class GetMyeBaySellingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSoldList($val)
 	{
@@ -6841,7 +6841,7 @@ class GetMyeBaySellingRequestType extends
 
 	/**
 	 * @param ItemListCustomizationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnsoldList($val)
 	{
@@ -6882,7 +6882,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param SellingSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingSummary($val)
 	{
@@ -6891,7 +6891,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduledList($val)
 	{
@@ -6900,7 +6900,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActiveList($val)
 	{
@@ -6909,7 +6909,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedOrderTransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSoldList($val)
 	{
@@ -6918,7 +6918,7 @@ class GetMyeBaySellingResponseType extends
 
 	/**
 	 * @param PaginatedItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnsoldList($val)
 	{
@@ -6946,7 +6946,7 @@ class GetNotificationPreferencesRequestType extends
 
 	/**
 	 * @param NotificationRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPreferenceLevel($val)
 	{
@@ -6988,7 +6988,7 @@ class GetNotificationPreferencesResponseType extends
 
 	/**
 	 * @param ApplicationDeliveryPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationDeliveryPreferences($val)
 	{
@@ -6997,7 +6997,7 @@ class GetNotificationPreferencesResponseType extends
 
 	/**
 	 * @param NotificationEnableArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserDeliveryPreferenceArray($val)
 	{
@@ -7006,7 +7006,7 @@ class GetNotificationPreferencesResponseType extends
 
 	/**
 	 * @param NotificationUserDataType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserData($val)
 	{
@@ -7015,7 +7015,7 @@ class GetNotificationPreferencesResponseType extends
 
 	/**
 	 * @param NotificationEventPropertyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventProperty($val)
 	{
@@ -7050,7 +7050,7 @@ class GetNotificationsUsageRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -7059,7 +7059,7 @@ class GetNotificationsUsageRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -7068,7 +7068,7 @@ class GetNotificationsUsageRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -7123,7 +7123,7 @@ class GetNotificationsUsageResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -7132,7 +7132,7 @@ class GetNotificationsUsageResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -7141,7 +7141,7 @@ class GetNotificationsUsageResponseType extends
 
 	/**
 	 * @param NotificationDetailsArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationDetailsArray($val)
 	{
@@ -7150,7 +7150,7 @@ class GetNotificationsUsageResponseType extends
 
 	/**
 	 * @param MarkUpMarkDownHistoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMarkUpMarkDownHistory($val)
 	{
@@ -7159,7 +7159,7 @@ class GetNotificationsUsageResponseType extends
 
 	/**
 	 * @param NotificationStatisticsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationStatistics($val)
 	{
@@ -7191,7 +7191,7 @@ class GetOrderTransactionsRequestType extends
 
 	/**
 	 * @param ItemTransactionIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemTransactionIDArray($val)
 	{
@@ -7200,7 +7200,7 @@ class GetOrderTransactionsRequestType extends
 
 	/**
 	 * @param OrderIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderIDArray($val)
 	{
@@ -7225,7 +7225,7 @@ class GetOrderTransactionsResponseType extends
 
 	/**
 	 * @param OrderArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderArray($val)
 	{
@@ -7287,7 +7287,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param OrderIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderIDArray($val)
 	{
@@ -7296,7 +7296,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreateTimeFrom($val)
 	{
@@ -7305,7 +7305,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreateTimeTo($val)
 	{
@@ -7314,7 +7314,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param TradingRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderRole($val)
 	{
@@ -7323,7 +7323,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param OrderStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderStatus($val)
 	{
@@ -7332,7 +7332,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -7341,7 +7341,7 @@ class GetOrdersRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -7397,7 +7397,7 @@ class GetOrdersResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -7406,7 +7406,7 @@ class GetOrdersResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreOrders($val)
 	{
@@ -7415,7 +7415,7 @@ class GetOrdersResponseType extends
 
 	/**
 	 * @param OrderArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderArray($val)
 	{
@@ -7424,36 +7424,36 @@ class GetOrdersResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrdersPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->OrdersPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedOrderCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedOrderCountActual = $val;
 	}
@@ -7499,31 +7499,31 @@ class GetPictureManagerDetailsRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FolderID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PictureURL');
+            throw new \Exception('POJO Proxy need a string for PictureURL');
         }
         $this->PictureURL = $val;
 	}
 
 	/**
 	 * @param PictureManagerDetailLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureManagerDetailLevel($val)
 	{
@@ -7549,7 +7549,7 @@ class GetPictureManagerDetailsResponseType extends
 
 	/**
 	 * @param PictureManagerDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureManagerDetails($val)
 	{
@@ -7586,7 +7586,7 @@ class GetPictureManagerOptionsResponseType extends
 
 	/**
 	 * @param PictureManagerSubscriptionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscription($val)
 	{
@@ -7595,7 +7595,7 @@ class GetPictureManagerOptionsResponseType extends
 
 	/**
 	 * @param PictureManagerPictureDisplayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureType($val)
 	{
@@ -7638,19 +7638,19 @@ class GetPopularKeywordsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeChildCategories($val)
 	{
@@ -7659,19 +7659,19 @@ class GetPopularKeywordsRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxKeywordsRetrieved($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxKeywordsRetrieved = $val;
 	}
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -7714,7 +7714,7 @@ class GetPopularKeywordsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -7723,7 +7723,7 @@ class GetPopularKeywordsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryArray($val)
 	{
@@ -7732,7 +7732,7 @@ class GetPopularKeywordsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMore($val)
 	{
@@ -7780,7 +7780,7 @@ class GetProductFamilyMembersRequestType extends
 
 	/**
 	 * @param ProductSearchType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearch($val)
 	{
@@ -7821,7 +7821,7 @@ class GetProductFamilyMembersResponseType extends
 
 	/**
 	 * @param DataElementSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDataElementSets($val)
 	{
@@ -7830,7 +7830,7 @@ class GetProductFamilyMembersResponseType extends
 
 	/**
 	 * @param ProductSearchResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearchResult($val)
 	{
@@ -7879,24 +7879,24 @@ class GetProductFinderRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
 	}
@@ -7942,24 +7942,24 @@ class GetProductFinderResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderData($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductFinderData');
+            throw new \Exception('POJO Proxy need a string for ProductFinderData');
         }
         $this->ProductFinderData = $val;
 	}
@@ -7990,24 +7990,24 @@ class GetProductFinderXsLrequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileName');
+            throw new \Exception('POJO Proxy need a string for FileName');
         }
         $this->FileName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileVersion');
+            throw new \Exception('POJO Proxy need a string for FileVersion');
         }
         $this->FileVersion = $val;
 	}
@@ -8033,7 +8033,7 @@ class GetProductFinderXsLresponseType extends
 
 	/**
 	 * @param XSLFileType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setXSLFile($val)
 	{
@@ -8075,24 +8075,24 @@ class GetProductSearchPageRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
@@ -8125,19 +8125,19 @@ class GetProductSearchPageResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSystemVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
 	}
 
 	/**
 	 * @param ProductSearchPageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearchPage($val)
 	{
@@ -8211,7 +8211,7 @@ class GetProductSearchResultsRequestType extends
 
 	/**
 	 * @param ProductSearchType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearch($val)
 	{
@@ -8250,7 +8250,7 @@ class GetProductSearchResultsResponseType extends
 
 	/**
 	 * @param DataElementSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDataElementSets($val)
 	{
@@ -8259,7 +8259,7 @@ class GetProductSearchResultsResponseType extends
 
 	/**
 	 * @param ProductSearchResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearchResult($val)
 	{
@@ -8312,7 +8312,7 @@ class GetProductSellingPagesRequestType extends
 
 	/**
 	 * @param ProductUseCaseCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUseCase($val)
 	{
@@ -8321,7 +8321,7 @@ class GetProductSellingPagesRequestType extends
 
 	/**
 	 * @param ProductType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProduct($val)
 	{
@@ -8366,12 +8366,12 @@ class GetProductSellingPagesResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSellingPagesData($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
+            throw new \Exception('POJO Proxy need a string for ProductSellingPagesData');
         }
         $this->ProductSellingPagesData = $val;
 	}
@@ -8407,7 +8407,7 @@ class GetPromotionRulesRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -8416,19 +8416,19 @@ class GetPromotionRulesRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StoreCategoryID = $val;
 	}
 
 	/**
 	 * @param PromotionMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionMethod($val)
 	{
@@ -8453,7 +8453,7 @@ class GetPromotionRulesResponseType extends
 
 	/**
 	 * @param PromotionRuleArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionRuleArray($val)
 	{
@@ -8514,7 +8514,7 @@ class GetRecommendationsRequestType extends
 
 	/**
 	 * @param ListingFlowCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingFlow($val)
 	{
@@ -8523,7 +8523,7 @@ class GetRecommendationsRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -8532,7 +8532,7 @@ class GetRecommendationsRequestType extends
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -8541,7 +8541,7 @@ class GetRecommendationsRequestType extends
 
 	/**
 	 * @param ModifiedFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifiedFields($val)
 	{
@@ -8550,7 +8550,7 @@ class GetRecommendationsRequestType extends
 
 	/**
 	 * @param RecommendationEngineCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecommendationEngine($val)
 	{
@@ -8559,12 +8559,12 @@ class GetRecommendationsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
@@ -8613,7 +8613,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param ListingAnalyzerRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
@@ -8622,7 +8622,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param SIFFTASRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
@@ -8631,7 +8631,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param PricingRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPricingRecommendations($val)
 	{
@@ -8640,7 +8640,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param AttributeRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeRecommendations($val)
 	{
@@ -8649,7 +8649,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param ProductRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductRecommendations($val)
 	{
@@ -8690,19 +8690,19 @@ class GetReturnUrLresponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationDisplayName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
+            throw new \Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
         $this->ApplicationDisplayName = $val;
 	}
 
 	/**
 	 * @param AuthenticationEntryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuthenticationEntryArray($val)
 	{
@@ -8728,12 +8728,12 @@ class GetRuNameRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setClientUseCase($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ClientUseCase');
+            throw new \Exception('POJO Proxy need a string for ClientUseCase');
         }
         $this->ClientUseCase = $val;
 	}
@@ -8758,12 +8758,12 @@ class GetRuNameResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRuName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RuName');
+            throw new \Exception('POJO Proxy need a string for RuName');
         }
         $this->RuName = $val;
 	}
@@ -9070,7 +9070,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorsGermanySearchable($val)
 	{
@@ -9079,31 +9079,31 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param SearchFlagsCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchFlags($val)
 	{
@@ -9112,7 +9112,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param PriceRangeFilterType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriceRangeFilter($val)
 	{
@@ -9121,7 +9121,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param ProximitySearchType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProximitySearch($val)
 	{
@@ -9130,7 +9130,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param ItemTypeFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemTypeFilter($val)
 	{
@@ -9139,7 +9139,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param SearchTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchType($val)
 	{
@@ -9148,7 +9148,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param UserIdFilterType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserIdFilter($val)
 	{
@@ -9157,7 +9157,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param SearchLocationFilterType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchLocationFilter($val)
 	{
@@ -9166,7 +9166,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param SearchStoreFilterType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreSearchFilter($val)
 	{
@@ -9175,7 +9175,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param SearchSortOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
@@ -9184,7 +9184,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -9193,7 +9193,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param SearchRequestType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchRequest($val)
 	{
@@ -9202,19 +9202,19 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductID');
+            throw new \Exception('POJO Proxy need a string for ProductID');
         }
         $this->ProductID = $val;
 	}
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -9223,7 +9223,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param RequestCategoriesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategories($val)
 	{
@@ -9232,7 +9232,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalOnly($val)
 	{
@@ -9241,7 +9241,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeFrom($val)
 	{
@@ -9250,7 +9250,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeTo($val)
 	{
@@ -9259,7 +9259,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeFrom($val)
 	{
@@ -9268,7 +9268,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeGetItFastItems($val)
 	{
@@ -9277,7 +9277,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoresFixedPrice($val)
 	{
@@ -9286,7 +9286,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param PaymentMethodSearchCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -9295,7 +9295,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param GranularityLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGranularityLevel($val)
 	{
@@ -9304,7 +9304,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpandSearch($val)
 	{
@@ -9313,7 +9313,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLot($val)
 	{
@@ -9322,7 +9322,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormat($val)
 	{
@@ -9331,7 +9331,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFreeShipping($val)
 	{
@@ -9340,19 +9340,19 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantity($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Quantity = $val;
 	}
 
 	/**
 	 * @param QuantityOperatorCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantityOperator($val)
 	{
@@ -9361,7 +9361,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param SellerBusinessCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerBusinessType($val)
 	{
@@ -9370,7 +9370,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDelivery($val)
 	{
@@ -9379,7 +9379,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeCondition($val)
 	{
@@ -9388,7 +9388,7 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeFeedback($val)
 	{
@@ -9397,43 +9397,43 @@ class GetSearchResultsRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalSearchPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalSearchPostalCode');
+            throw new \Exception('POJO Proxy need a string for LocalSearchPostalCode');
         }
         $this->LocalSearchPostalCode = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxRelatedSearchKeywords($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxRelatedSearchKeywords = $val;
 	}
 
 	/**
 	 * @param AffiliateTrackingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAffiliateTrackingDetails($val)
 	{
@@ -9548,7 +9548,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param SearchResultItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchResultItemArray($val)
 	{
@@ -9557,31 +9557,31 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -9590,7 +9590,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -9599,7 +9599,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryArray($val)
 	{
@@ -9608,7 +9608,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param BuyingGuideDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuideDetails($val)
 	{
@@ -9617,7 +9617,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreExpansionArray($val)
 	{
@@ -9626,7 +9626,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalExpansionArray($val)
 	{
@@ -9635,7 +9635,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFilterRemovedExpansionArray($val)
 	{
@@ -9644,7 +9644,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param ExpansionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAllCategoriesExpansionArray($val)
 	{
@@ -9653,7 +9653,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param SpellingSuggestionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSpellingSuggestion($val)
 	{
@@ -9662,7 +9662,7 @@ class GetSearchResultsResponseType extends
 
 	/**
 	 * @param RelatedSearchKeywordArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{
@@ -9952,19 +9952,19 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
 
 	/**
 	 * @param ExternalProductCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductIDType($val)
 	{
@@ -9973,19 +9973,19 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductIDValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalProductIDValue');
+            throw new \Exception('POJO Proxy need a string for ExternalProductIDValue');
         }
         $this->ExternalProductIDValue = $val;
 	}
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductReferenceID($val)
 	{
@@ -9994,43 +9994,43 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDepartmentName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DepartmentName');
+            throw new \Exception('POJO Proxy need a string for DepartmentName');
         }
         $this->DepartmentName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAisleName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AisleName');
+            throw new \Exception('POJO Proxy need a string for AisleName');
         }
         $this->AisleName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductTypeName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductTypeName');
+            throw new \Exception('POJO Proxy need a string for ProductTypeName');
         }
         $this->ProductTypeName = $val;
 	}
 
 	/**
 	 * @param ExpressHistogramSortCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHistogramSort($val)
 	{
@@ -10039,7 +10039,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param ExpressItemSortCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemSort($val)
 	{
@@ -10048,7 +10048,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param ExpressProductSortCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSort($val)
 	{
@@ -10057,7 +10057,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighestPrice($val)
 	{
@@ -10066,7 +10066,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLowestPrice($val)
 	{
@@ -10075,7 +10075,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param ConditionSelectionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCondition($val)
 	{
@@ -10084,7 +10084,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerID($val)
 	{
@@ -10093,19 +10093,19 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param ExpressDetailLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHistogramDetails($val)
 	{
@@ -10114,7 +10114,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param ExpressDetailLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductDetails($val)
 	{
@@ -10123,7 +10123,7 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param ExpressDetailLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemDetails($val)
 	{
@@ -10132,31 +10132,31 @@ class GetSearchResultsExpressRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEntriesPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param AffiliateTrackingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAffiliateTrackingDetails($val)
 	{
@@ -10226,7 +10226,7 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param DomainHistogramType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHistogram($val)
 	{
@@ -10235,7 +10235,7 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -10244,7 +10244,7 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param ProductArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductArray($val)
 	{
@@ -10253,31 +10253,31 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEntriesPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreEntries($val)
 	{
@@ -10363,7 +10363,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -10372,7 +10372,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTimeFrom($val)
 	{
@@ -10381,7 +10381,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTimeTo($val)
 	{
@@ -10390,7 +10390,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeFrom($val)
 	{
@@ -10399,7 +10399,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeTo($val)
 	{
@@ -10408,7 +10408,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeFrom($val)
 	{
@@ -10417,7 +10417,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeTo($val)
 	{
@@ -10426,7 +10426,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewItemFilter($val)
 	{
@@ -10435,7 +10435,7 @@ class GetSellerEventsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeWatchCount($val)
 	{
@@ -10472,7 +10472,7 @@ class GetSellerEventsResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeTo($val)
 	{
@@ -10481,7 +10481,7 @@ class GetSellerEventsResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -10571,7 +10571,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -10580,7 +10580,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param UserIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorsDealerUsers($val)
 	{
@@ -10589,7 +10589,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeFrom($val)
 	{
@@ -10598,7 +10598,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTimeTo($val)
 	{
@@ -10607,19 +10607,19 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSort($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Sort = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTimeFrom($val)
 	{
@@ -10628,7 +10628,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTimeTo($val)
 	{
@@ -10637,7 +10637,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -10646,7 +10646,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param GranularityLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGranularityLevel($val)
 	{
@@ -10655,7 +10655,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param SKUArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSKUArray($val)
 	{
@@ -10664,7 +10664,7 @@ class GetSellerListRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeWatchCount($val)
 	{
@@ -10722,7 +10722,7 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -10731,7 +10731,7 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -10740,7 +10740,7 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -10749,43 +10749,43 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedItemCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedItemCountActual = $val;
 	}
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSeller($val)
 	{
@@ -10858,7 +10858,7 @@ class GetSellerPaymentsRequestType extends
 
 	/**
 	 * @param RCSPaymentStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentStatus($val)
 	{
@@ -10867,7 +10867,7 @@ class GetSellerPaymentsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentTimeFrom($val)
 	{
@@ -10876,7 +10876,7 @@ class GetSellerPaymentsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentTimeTo($val)
 	{
@@ -10885,7 +10885,7 @@ class GetSellerPaymentsRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -10960,7 +10960,7 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -10969,7 +10969,7 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMorePayments($val)
 	{
@@ -10978,7 +10978,7 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param SellerPaymentType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPayment($val)
 	{
@@ -10987,36 +10987,36 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PaymentsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedPaymentCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedPaymentCountActual = $val;
 	}
@@ -11080,7 +11080,7 @@ class GetSellerTransactionsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeFrom($val)
 	{
@@ -11089,7 +11089,7 @@ class GetSellerTransactionsRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeTo($val)
 	{
@@ -11098,7 +11098,7 @@ class GetSellerTransactionsRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -11107,7 +11107,7 @@ class GetSellerTransactionsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeFinalValueFee($val)
 	{
@@ -11116,7 +11116,7 @@ class GetSellerTransactionsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeContainingOrder($val)
 	{
@@ -11125,7 +11125,7 @@ class GetSellerTransactionsRequestType extends
 
 	/**
 	 * @param SKUArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSKUArray($val)
 	{
@@ -11197,7 +11197,7 @@ class GetSellerTransactionsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -11206,7 +11206,7 @@ class GetSellerTransactionsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreTransactions($val)
 	{
@@ -11215,43 +11215,43 @@ class GetSellerTransactionsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TransactionsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedTransactionCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedTransactionCountActual = $val;
 	}
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSeller($val)
 	{
@@ -11260,7 +11260,7 @@ class GetSellerTransactionsResponseType extends
 
 	/**
 	 * @param TransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionArray($val)
 	{
@@ -11269,7 +11269,7 @@ class GetSellerTransactionsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalPreferred($val)
 	{
@@ -11312,7 +11312,7 @@ class GetStoreRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryStructureOnly($val)
 	{
@@ -11321,24 +11321,24 @@ class GetStoreRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRootCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RootCategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLevelLimit($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LevelLimit = $val;
 	}
@@ -11364,7 +11364,7 @@ class GetStoreResponseType extends
 
 	/**
 	 * @param StoreType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStore($val)
 	{
@@ -11395,7 +11395,7 @@ class GetStoreCategoryUpdateStatusRequestType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaskID($val)
 	{
@@ -11424,7 +11424,7 @@ class GetStoreCategoryUpdateStatusResponseType extends
 
 	/**
 	 * @param TaskStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -11450,12 +11450,12 @@ class GetStoreCustomPageRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PageID');
+            throw new \Exception('POJO Proxy need a string for PageID');
         }
         $this->PageID = $val;
 	}
@@ -11477,7 +11477,7 @@ class GetStoreCustomPageResponseType extends
 
 	/**
 	 * @param StoreCustomPageArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomPageArray($val)
 	{
@@ -11532,7 +11532,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreThemeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBasicThemeArray($val)
 	{
@@ -11541,7 +11541,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreThemeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdvancedThemeArray($val)
 	{
@@ -11550,7 +11550,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreLogoArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoArray($val)
 	{
@@ -11559,7 +11559,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreSubscriptionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionArray($val)
 	{
@@ -11568,24 +11568,24 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxCategories($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxCategories = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxCategoryLevels($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxCategoryLevels = $val;
 	}
@@ -11615,7 +11615,7 @@ class GetStorePreferencesResponseType extends
 
 	/**
 	 * @param StorePreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStorePreferences($val)
 	{
@@ -11643,12 +11643,12 @@ class GetSuggestedCategoriesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
@@ -11677,7 +11677,7 @@ class GetSuggestedCategoriesResponseType extends
 
 	/**
 	 * @param SuggestedCategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSuggestedCategoryArray($val)
 	{
@@ -11686,12 +11686,12 @@ class GetSuggestedCategoriesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryCount = $val;
 	}
@@ -11730,7 +11730,7 @@ class GetTaxTableResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastUpdateTime($val)
 	{
@@ -11739,7 +11739,7 @@ class GetTaxTableResponseType extends
 
 	/**
 	 * @param TaxTableType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaxTable($val)
 	{
@@ -11787,7 +11787,7 @@ class GetUserRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -11796,19 +11796,19 @@ class GetUserRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserID');
+            throw new \Exception('POJO Proxy need a string for UserID');
         }
         $this->UserID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeExpressRequirements($val)
 	{
@@ -11833,7 +11833,7 @@ class GetUserResponseType extends
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUser($val)
 	{
@@ -11876,36 +11876,36 @@ class GetUserContactDetailsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemID');
+            throw new \Exception('POJO Proxy need a string for ItemID');
         }
         $this->ItemID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContactID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ContactID');
+            throw new \Exception('POJO Proxy need a string for ContactID');
         }
         $this->ContactID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRequesterID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RequesterID');
+            throw new \Exception('POJO Proxy need a string for RequesterID');
         }
         $this->RequesterID = $val;
 	}
@@ -11948,19 +11948,19 @@ class GetUserContactDetailsResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserID');
+            throw new \Exception('POJO Proxy need a string for UserID');
         }
         $this->UserID = $val;
 	}
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContactAddress($val)
 	{
@@ -11969,7 +11969,7 @@ class GetUserContactDetailsResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationDate($val)
 	{
@@ -12027,7 +12027,7 @@ class GetUserDisputesRequestType extends
 
 	/**
 	 * @param DisputeFilterTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeFilterType($val)
 	{
@@ -12036,7 +12036,7 @@ class GetUserDisputesRequestType extends
 
 	/**
 	 * @param DisputeSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeSortType($val)
 	{
@@ -12045,7 +12045,7 @@ class GetUserDisputesRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeFrom($val)
 	{
@@ -12054,7 +12054,7 @@ class GetUserDisputesRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTimeTo($val)
 	{
@@ -12063,7 +12063,7 @@ class GetUserDisputesRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -12126,7 +12126,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartingDisputeID($val)
 	{
@@ -12135,7 +12135,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndingDisputeID($val)
 	{
@@ -12144,7 +12144,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param DisputeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeArray($val)
 	{
@@ -12153,31 +12153,31 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param DisputeFilterCountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeFilterCount($val)
 	{
@@ -12186,7 +12186,7 @@ class GetUserDisputesResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -12247,7 +12247,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowBidderNoticePreferences($val)
 	{
@@ -12256,7 +12256,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowCombinedPaymentPreferences($val)
 	{
@@ -12265,7 +12265,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowCrossPromotionPreferences($val)
 	{
@@ -12274,7 +12274,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowSellerPaymentPreferences($val)
 	{
@@ -12283,7 +12283,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowEndOfAuctionEmailPreferences($val)
 	{
@@ -12292,7 +12292,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowSellerFavoriteItemPreferences($val)
 	{
@@ -12301,7 +12301,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShoweBxOptInPreference($val)
 	{
@@ -12310,7 +12310,7 @@ class GetUserPreferencesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShowProStoresPreferences($val)
 	{
@@ -12385,7 +12385,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param BidderNoticePreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderNoticePreferences($val)
 	{
@@ -12394,7 +12394,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param CombinedPaymentPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentPreferences($val)
 	{
@@ -12403,7 +12403,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param CrossPromotionPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotionPreferences($val)
 	{
@@ -12412,7 +12412,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param SellerPaymentPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentPreferences($val)
 	{
@@ -12421,7 +12421,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param SellerFavoriteItemPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerFavoriteItemPreferences($val)
 	{
@@ -12430,7 +12430,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param EndOfAuctionEmailPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndOfAuctionEmailPreferences($val)
 	{
@@ -12439,7 +12439,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param eBxOptInPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBxOptInPreference($val)
 	{
@@ -12448,7 +12448,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param ExpressPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressPreferences($val)
 	{
@@ -12457,7 +12457,7 @@ class GetUserPreferencesResponseType extends
 
 	/**
 	 * @param ProStoresCheckoutPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProStoresPreference($val)
 	{
@@ -12493,7 +12493,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReasonCodeID($val)
 	{
@@ -12502,7 +12502,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnAllSites($val)
 	{
@@ -12526,7 +12526,7 @@ class GetVeRoReasonCodeDetailsResponseType extends
 
 	/**
 	 * @param VeROReasonCodeDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReasonCodeDetails($val)
 	{
@@ -12590,7 +12590,7 @@ class GetVeRoReportStatusRequestType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReportPacketID($val)
 	{
@@ -12599,7 +12599,7 @@ class GetVeRoReportStatusRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -12608,7 +12608,7 @@ class GetVeRoReportStatusRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeReportedItemDetails($val)
 	{
@@ -12617,7 +12617,7 @@ class GetVeRoReportStatusRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeFrom($val)
 	{
@@ -12626,7 +12626,7 @@ class GetVeRoReportStatusRequestType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeTo($val)
 	{
@@ -12635,7 +12635,7 @@ class GetVeRoReportStatusRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -12691,7 +12691,7 @@ class GetVeRoReportStatusResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -12700,7 +12700,7 @@ class GetVeRoReportStatusResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -12709,31 +12709,31 @@ class GetVeRoReportStatusResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReportPacketID($val)
 	{
@@ -12742,7 +12742,7 @@ class GetVeRoReportStatusResponseType extends
 
 	/**
 	 * @param VeROReportPacketStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReportPacketStatus($val)
 	{
@@ -12751,7 +12751,7 @@ class GetVeRoReportStatusResponseType extends
 
 	/**
 	 * @param VeROReportedItemDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportedItemDetails($val)
 	{
@@ -12778,7 +12778,7 @@ class GetWantItNowPostRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostID($val)
 	{
@@ -12803,7 +12803,7 @@ class GetWantItNowPostResponseType extends
 
 	/**
 	 * @param WantItNowPostType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWantItNowPost($val)
 	{
@@ -12855,31 +12855,31 @@ class GetWantItNowSearchResultsRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchInDescription($val)
 	{
@@ -12888,7 +12888,7 @@ class GetWantItNowSearchResultsRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchWorldwide($val)
 	{
@@ -12897,7 +12897,7 @@ class GetWantItNowSearchResultsRequestType extends
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -12946,7 +12946,7 @@ class GetWantItNowSearchResultsResponseType extends
 
 	/**
 	 * @param WantItNowPostArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWantItNowPostArray($val)
 	{
@@ -12955,7 +12955,7 @@ class GetWantItNowSearchResultsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -12964,31 +12964,31 @@ class GetWantItNowSearchResultsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -13021,7 +13021,7 @@ class GeteBayDetailsRequestType extends
 
 	/**
 	 * @param DetailNameCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDetailName($val)
 	{
@@ -13101,7 +13101,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param CountryDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountryDetails($val)
 	{
@@ -13110,7 +13110,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param CurrencyDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrencyDetails($val)
 	{
@@ -13119,7 +13119,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param DispatchTimeMaxDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDispatchTimeMaxDetails($val)
 	{
@@ -13128,7 +13128,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param PaymentOptionDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentOptionDetails($val)
 	{
@@ -13137,7 +13137,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param RegionDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegionDetails($val)
 	{
@@ -13146,7 +13146,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param ShippingLocationDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingLocationDetails($val)
 	{
@@ -13155,7 +13155,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param ShippingServiceDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceDetails($val)
 	{
@@ -13164,7 +13164,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param SiteDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteDetails($val)
 	{
@@ -13173,7 +13173,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param TaxJurisdictionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaxJurisdiction($val)
 	{
@@ -13182,7 +13182,7 @@ class GeteBayDetailsResponseType extends
 
 	/**
 	 * @param URLDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURLDetails($val)
 	{
@@ -13258,7 +13258,7 @@ class IssueRefundRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -13267,19 +13267,19 @@ class IssueRefundRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param RefundReasonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundReason($val)
 	{
@@ -13288,7 +13288,7 @@ class IssueRefundRequestType extends
 
 	/**
 	 * @param RefundTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundType($val)
 	{
@@ -13297,7 +13297,7 @@ class IssueRefundRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundAmount($val)
 	{
@@ -13306,12 +13306,12 @@ class IssueRefundRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RefundMessage');
+            throw new \Exception('POJO Proxy need a string for RefundMessage');
         }
         $this->RefundMessage = $val;
 	}
@@ -13339,7 +13339,7 @@ class IssueRefundResponseType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundFromSeller($val)
 	{
@@ -13348,7 +13348,7 @@ class IssueRefundResponseType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
@@ -13395,7 +13395,7 @@ class LeaveFeedbackRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -13404,19 +13404,19 @@ class LeaveFeedbackRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CommentText');
+            throw new \Exception('POJO Proxy need a string for CommentText');
         }
         $this->CommentText = $val;
 	}
 
 	/**
 	 * @param CommentTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentType($val)
 	{
@@ -13425,19 +13425,19 @@ class LeaveFeedbackRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTargetUser($val)
 	{
@@ -13463,12 +13463,12 @@ class LeaveFeedbackResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackID');
+            throw new \Exception('POJO Proxy need a string for FeedbackID');
         }
         $this->FeedbackID = $val;
 	}
@@ -13507,7 +13507,7 @@ class PlaceOfferRequestType extends
 
 	/**
 	 * @param OfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOffer($val)
 	{
@@ -13516,7 +13516,7 @@ class PlaceOfferRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -13525,7 +13525,7 @@ class PlaceOfferRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBlockOnWarning($val)
 	{
@@ -13551,7 +13551,7 @@ class PlaceOfferResponseType extends
 
 	/**
 	 * @param SellingStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingStatus($val)
 	{
@@ -13602,7 +13602,7 @@ class RelistItemRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -13611,7 +13611,7 @@ class RelistItemRequestType extends
 
 	/**
 	 * @param ModifiedFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifiedFields($val)
 	{
@@ -13620,12 +13620,12 @@ class RelistItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeletedField($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeletedField');
+            throw new \Exception('POJO Proxy need a string for DeletedField');
         }
         $this->DeletedField = $val;
 	}
@@ -13671,7 +13671,7 @@ class RelistItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -13680,7 +13680,7 @@ class RelistItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -13689,7 +13689,7 @@ class RelistItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -13698,7 +13698,7 @@ class RelistItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -13707,24 +13707,24 @@ class RelistItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}
@@ -13751,7 +13751,7 @@ class RemoveFromWatchListRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -13760,7 +13760,7 @@ class RemoveFromWatchListRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRemoveAllItems($val)
 	{
@@ -13790,24 +13790,24 @@ class RemoveFromWatchListResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchListCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WatchListCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchListMaximum($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WatchListMaximum = $val;
 	}
@@ -13856,7 +13856,7 @@ class RespondToBestOfferRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -13865,7 +13865,7 @@ class RespondToBestOfferRequestType extends
 
 	/**
 	 * @param BestOfferIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferID($val)
 	{
@@ -13874,7 +13874,7 @@ class RespondToBestOfferRequestType extends
 
 	/**
 	 * @param BestOfferActionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAction($val)
 	{
@@ -13883,19 +13883,19 @@ class RespondToBestOfferRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerResponse($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerResponse');
+            throw new \Exception('POJO Proxy need a string for SellerResponse');
         }
         $this->SellerResponse = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCounterOfferPrice($val)
 	{
@@ -13904,12 +13904,12 @@ class RespondToBestOfferRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCounterOfferQuantity($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CounterOfferQuantity = $val;
 	}
@@ -13931,7 +13931,7 @@ class RespondToBestOfferResponseType extends
 
 	/**
 	 * @param BestOfferArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRespondToBestOffer($val)
 	{
@@ -13982,19 +13982,19 @@ class RespondToFeedbackRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackID');
+            throw new \Exception('POJO Proxy need a string for FeedbackID');
         }
         $this->FeedbackID = $val;
 	}
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -14003,19 +14003,19 @@ class RespondToFeedbackRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTargetUserID($val)
 	{
@@ -14024,7 +14024,7 @@ class RespondToFeedbackRequestType extends
 
 	/**
 	 * @param FeedbackResponseCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseType($val)
 	{
@@ -14033,12 +14033,12 @@ class RespondToFeedbackRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ResponseText');
+            throw new \Exception('POJO Proxy need a string for ResponseText');
         }
         $this->ResponseText = $val;
 	}
@@ -14077,7 +14077,7 @@ class RespondToWantItNowPostRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -14086,7 +14086,7 @@ class RespondToWantItNowPostRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostID($val)
 	{
@@ -14226,7 +14226,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -14235,31 +14235,31 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OrderID');
+            throw new \Exception('POJO Proxy need a string for OrderID');
         }
         $this->OrderID = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPaid($val)
 	{
@@ -14268,7 +14268,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethodUsed($val)
 	{
@@ -14277,7 +14277,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param CompleteStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutStatus($val)
 	{
@@ -14286,7 +14286,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingService($val)
 	{
@@ -14295,7 +14295,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingIncludedInTax($val)
 	{
@@ -14304,7 +14304,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param CheckoutMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutMethod($val)
 	{
@@ -14313,7 +14313,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param InsuranceSelectedCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceType($val)
 	{
@@ -14322,7 +14322,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param RCSPaymentStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentStatus($val)
 	{
@@ -14331,7 +14331,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdjustmentAmount($val)
 	{
@@ -14340,7 +14340,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingAddress($val)
 	{
@@ -14349,19 +14349,19 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerID');
+            throw new \Exception('POJO Proxy need a string for BuyerID');
         }
         $this->BuyerID = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingInsuranceCost($val)
 	{
@@ -14370,7 +14370,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTax($val)
 	{
@@ -14379,7 +14379,7 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingCost($val)
 	{
@@ -14388,19 +14388,19 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEncryptedID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EncryptedID');
+            throw new \Exception('POJO Proxy need a string for EncryptedID');
         }
         $this->EncryptedID = $val;
 	}
 
 	/**
 	 * @param ExternalTransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalTransaction($val)
 	{
@@ -14409,12 +14409,12 @@ class ReviseCheckoutStatusRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMultipleSellerPaymentID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MultipleSellerPaymentID');
+            throw new \Exception('POJO Proxy need a string for MultipleSellerPaymentID');
         }
         $this->MultipleSellerPaymentID = $val;
 	}
@@ -14467,7 +14467,7 @@ class ReviseItemRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -14476,7 +14476,7 @@ class ReviseItemRequestType extends
 
 	/**
 	 * @param ModifiedFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifiedFields($val)
 	{
@@ -14485,12 +14485,12 @@ class ReviseItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeletedField($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeletedField');
+            throw new \Exception('POJO Proxy need a string for DeletedField');
         }
         $this->DeletedField = $val;
 	}
@@ -14536,7 +14536,7 @@ class ReviseItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -14545,7 +14545,7 @@ class ReviseItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -14554,7 +14554,7 @@ class ReviseItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -14563,7 +14563,7 @@ class ReviseItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -14572,24 +14572,24 @@ class ReviseItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}
@@ -14633,7 +14633,7 @@ class ReviseLiveAuctionItemRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -14642,7 +14642,7 @@ class ReviseLiveAuctionItemRequestType extends
 
 	/**
 	 * @param ModifiedFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifiedFields($val)
 	{
@@ -14651,12 +14651,12 @@ class ReviseLiveAuctionItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeletedField($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeletedField');
+            throw new \Exception('POJO Proxy need a string for DeletedField');
         }
         $this->DeletedField = $val;
 	}
@@ -14693,7 +14693,7 @@ class ReviseLiveAuctionItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -14702,7 +14702,7 @@ class ReviseLiveAuctionItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -14711,24 +14711,24 @@ class ReviseLiveAuctionItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}
@@ -14773,7 +14773,7 @@ class ReviseMyMessagesRequestType extends
 
 	/**
 	 * @param MyMessagesMessageIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageIDs($val)
 	{
@@ -14782,7 +14782,7 @@ class ReviseMyMessagesRequestType extends
 
 	/**
 	 * @param MyMessagesAlertIDArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertIDs($val)
 	{
@@ -14791,7 +14791,7 @@ class ReviseMyMessagesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRead($val)
 	{
@@ -14800,7 +14800,7 @@ class ReviseMyMessagesRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlagged($val)
 	{
@@ -14809,7 +14809,7 @@ class ReviseMyMessagesRequestType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
@@ -14852,7 +14852,7 @@ class ReviseMyMessagesFoldersRequestType extends
 
 	/**
 	 * @param MyMessagesFolderOperationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOperation($val)
 	{
@@ -14861,7 +14861,7 @@ class ReviseMyMessagesFoldersRequestType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
@@ -14870,12 +14870,12 @@ class ReviseMyMessagesFoldersRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FolderName');
+            throw new \Exception('POJO Proxy need a string for FolderName');
         }
         $this->FolderName = $val;
 	}
@@ -14913,7 +14913,7 @@ class SellerReverseDisputeRequestType extends
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeID($val)
 	{
@@ -14922,7 +14922,7 @@ class SellerReverseDisputeRequestType extends
 
 	/**
 	 * @param DisputeResolutionReasonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeResolutionReason($val)
 	{
@@ -15050,7 +15050,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -15059,19 +15059,19 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param OrderIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderID($val)
 	{
@@ -15080,7 +15080,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param InternationalShippingServiceOptionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalShippingServiceOptions($val)
 	{
@@ -15089,7 +15089,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param ShippingServiceOptionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceOptions($val)
 	{
@@ -15098,7 +15098,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param SalesTaxType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTax($val)
 	{
@@ -15107,7 +15107,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param InsuranceOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceOption($val)
 	{
@@ -15116,7 +15116,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceFee($val)
 	{
@@ -15125,7 +15125,7 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethods($val)
 	{
@@ -15134,31 +15134,31 @@ class SendInvoiceRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalEmailAddress($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
+            throw new \Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
         $this->PayPalEmailAddress = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutInstructions($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CheckoutInstructions');
+            throw new \Exception('POJO Proxy need a string for CheckoutInstructions');
         }
         $this->CheckoutInstructions = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmailCopyToSeller($val)
 	{
@@ -15207,7 +15207,7 @@ class SetNotificationPreferencesRequestType extends
 
 	/**
 	 * @param ApplicationDeliveryPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationDeliveryPreferences($val)
 	{
@@ -15216,7 +15216,7 @@ class SetNotificationPreferencesRequestType extends
 
 	/**
 	 * @param NotificationEnableArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserDeliveryPreferenceArray($val)
 	{
@@ -15225,7 +15225,7 @@ class SetNotificationPreferencesRequestType extends
 
 	/**
 	 * @param NotificationUserDataType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserData($val)
 	{
@@ -15234,7 +15234,7 @@ class SetNotificationPreferencesRequestType extends
 
 	/**
 	 * @param NotificationEventPropertyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventProperty($val)
 	{
@@ -15273,7 +15273,7 @@ class SetPictureManagerDetailsRequestType extends
 
 	/**
 	 * @param PictureManagerDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureManagerDetails($val)
 	{
@@ -15282,7 +15282,7 @@ class SetPictureManagerDetailsRequestType extends
 
 	/**
 	 * @param PictureManagerActionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAction($val)
 	{
@@ -15321,7 +15321,7 @@ class SetPromotionRulesRequestType extends
 
 	/**
 	 * @param OperationTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOperationType($val)
 	{
@@ -15330,7 +15330,7 @@ class SetPromotionRulesRequestType extends
 
 	/**
 	 * @param PromotionRuleArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionRuleArray($val)
 	{
@@ -15377,7 +15377,7 @@ class SetReturnUrLrequestType extends
 
 	/**
 	 * @param AuthenticationEntryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuthenticationEntry($val)
 	{
@@ -15386,19 +15386,19 @@ class SetReturnUrLrequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationDisplayName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
+            throw new \Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
         $this->ApplicationDisplayName = $val;
 	}
 
 	/**
 	 * @param ModifyActionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAction($val)
 	{
@@ -15431,7 +15431,7 @@ class SetStoreRequestType extends
 
 	/**
 	 * @param StoreType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStore($val)
 	{
@@ -15482,7 +15482,7 @@ class SetStoreCategoriesRequestType extends
 
 	/**
 	 * @param StoreCategoryUpdateActionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAction($val)
 	{
@@ -15491,31 +15491,31 @@ class SetStoreCategoriesRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemDestinationCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemDestinationCategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDestinationParentCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DestinationParentCategoryID = $val;
 	}
 
 	/**
 	 * @param StoreCustomCategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreCategories($val)
 	{
@@ -15549,7 +15549,7 @@ class SetStoreCategoriesResponseType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaskID($val)
 	{
@@ -15558,7 +15558,7 @@ class SetStoreCategoriesResponseType extends
 
 	/**
 	 * @param TaskStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -15583,7 +15583,7 @@ class SetStoreCustomPageRequestType extends
 
 	/**
 	 * @param StoreCustomPageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomPage($val)
 	{
@@ -15608,7 +15608,7 @@ class SetStoreCustomPageResponseType extends
 
 	/**
 	 * @param StoreCustomPageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomPage($val)
 	{
@@ -15633,7 +15633,7 @@ class SetStorePreferencesRequestType extends
 
 	/**
 	 * @param StorePreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStorePreferences($val)
 	{
@@ -15667,7 +15667,7 @@ class SetTaxTableRequestType extends
 
 	/**
 	 * @param TaxTableType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaxTable($val)
 	{
@@ -15710,7 +15710,7 @@ class SetUserNotesRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -15719,7 +15719,7 @@ class SetUserNotesRequestType extends
 
 	/**
 	 * @param SetUserNotesActionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAction($val)
 	{
@@ -15728,12 +15728,12 @@ class SetUserNotesRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNoteText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NoteText');
+            throw new \Exception('POJO Proxy need a string for NoteText');
         }
         $this->NoteText = $val;
 	}
@@ -15814,7 +15814,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param BidderNoticePreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderNoticePreferences($val)
 	{
@@ -15823,7 +15823,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param CombinedPaymentPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentPreferences($val)
 	{
@@ -15832,7 +15832,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param CrossPromotionPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotionPreferences($val)
 	{
@@ -15841,7 +15841,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param SellerPaymentPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentPreferences($val)
 	{
@@ -15850,7 +15850,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param SellerFavoriteItemPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerFavoriteItemPreferences($val)
 	{
@@ -15859,7 +15859,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param EndOfAuctionEmailPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndOfAuctionEmailPreferences($val)
 	{
@@ -15868,7 +15868,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param eBxOptInPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBxOptInPreference($val)
 	{
@@ -15877,7 +15877,7 @@ class SetUserPreferencesRequestType extends
 
 	/**
 	 * @param ExpressPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressPreferences($val)
 	{
@@ -15917,31 +15917,31 @@ class ValidateChallengeInputRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setChallengeToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ChallengeToken');
+            throw new \Exception('POJO Proxy need a string for ChallengeToken');
         }
         $this->ChallengeToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserInput($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserInput');
+            throw new \Exception('POJO Proxy need a string for UserInput');
         }
         $this->UserInput = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeepTokenValid($val)
 	{
@@ -15965,7 +15965,7 @@ class ValidateChallengeInputResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValidToken($val)
 	{
@@ -16034,19 +16034,19 @@ class ValidateTestUserRegistrationRequestType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackScore = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationDate($val)
 	{
@@ -16055,7 +16055,7 @@ class ValidateTestUserRegistrationRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscribeSA($val)
 	{
@@ -16064,7 +16064,7 @@ class ValidateTestUserRegistrationRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscribeSAPro($val)
 	{
@@ -16073,7 +16073,7 @@ class ValidateTestUserRegistrationRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscribeSM($val)
 	{
@@ -16082,7 +16082,7 @@ class ValidateTestUserRegistrationRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscribeSMPro($val)
 	{
@@ -16121,7 +16121,7 @@ class VeRoReportItemsRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRightsOwnerID($val)
 	{
@@ -16130,7 +16130,7 @@ class VeRoReportItemsRequestType extends
 
 	/**
 	 * @param VeROReportItemsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportItems($val)
 	{
@@ -16158,7 +16158,7 @@ class VeRoReportItemsResponseType extends
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReportPacketID($val)
 	{
@@ -16167,7 +16167,7 @@ class VeRoReportItemsResponseType extends
 
 	/**
 	 * @param VeROReportPacketStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReportPacketStatus($val)
 	{
@@ -16210,7 +16210,7 @@ class VerifyAddItemRequestType extends
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -16219,7 +16219,7 @@ class VerifyAddItemRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeExpressRequirements($val)
 	{
@@ -16228,7 +16228,7 @@ class VerifyAddItemRequestType extends
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -16288,7 +16288,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -16297,7 +16297,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -16306,7 +16306,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressListing($val)
 	{
@@ -16315,7 +16315,7 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param ExpressItemRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressItemRequirements($val)
 	{
@@ -16324,24 +16324,24 @@ class VerifyAddItemResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory2ID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Category2ID');
+            throw new \Exception('POJO Proxy need a string for Category2ID');
         }
         $this->Category2ID = $val;
 	}
@@ -16413,7 +16413,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientBidderUserID($val)
 	{
@@ -16422,7 +16422,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowPrice($val)
 	{
@@ -16431,7 +16431,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyEmailToSeller($val)
 	{
@@ -16440,7 +16440,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param SecondChanceOfferDurationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDuration($val)
 	{
@@ -16449,7 +16449,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -16458,7 +16458,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -16467,12 +16467,12 @@ class VerifyAddSecondChanceItemRequestType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerMessage');
+            throw new \Exception('POJO Proxy need a string for SellerMessage');
         }
         $this->SellerMessage = $val;
 	}
@@ -16504,7 +16504,7 @@ class VerifyAddSecondChanceItemResponseType extends
 
 	/**
 	 * @param FeesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFees($val)
 	{
@@ -16513,7 +16513,7 @@ class VerifyAddSecondChanceItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -16522,7 +16522,7 @@ class VerifyAddSecondChanceItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -16642,7 +16642,7 @@ class DisputeFilterCountType
 
 	/**
 	 * @param DisputeFilterTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeFilterType($val)
 	{
@@ -16651,19 +16651,19 @@ class DisputeFilterCountType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAvailable = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -16728,19 +16728,19 @@ class DisputeMessageType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MessageID = $val;
 	}
 
 	/**
 	 * @param DisputeMessageSourceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageSource($val)
 	{
@@ -16749,7 +16749,7 @@ class DisputeMessageType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageCreationTime($val)
 	{
@@ -16758,19 +16758,19 @@ class DisputeMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageText');
+            throw new \Exception('POJO Proxy need a string for MessageText');
         }
         $this->MessageText = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -16860,7 +16860,7 @@ class DisputeResolutionType
 
 	/**
 	 * @param DisputeResolutionRecordTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeResolutionRecordType($val)
 	{
@@ -16869,7 +16869,7 @@ class DisputeResolutionType
 
 	/**
 	 * @param DisputeResolutionReasonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeResolutionReason($val)
 	{
@@ -16878,7 +16878,7 @@ class DisputeResolutionType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResolutionTime($val)
 	{
@@ -16887,7 +16887,7 @@ class DisputeResolutionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -16990,7 +16990,7 @@ class DuplicateInvocationDetailsType
 
 	/**
 	 * @param UUIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDuplicateInvocationID($val)
 	{
@@ -16999,7 +16999,7 @@ class DuplicateInvocationDetailsType
 
 	/**
 	 * @param InvocationStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -17008,19 +17008,19 @@ class DuplicateInvocationDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvocationTrackingID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for InvocationTrackingID');
+            throw new \Exception('POJO Proxy need a string for InvocationTrackingID');
         }
         $this->InvocationTrackingID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -17070,19 +17070,19 @@ class ErrorParameterType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -17091,12 +17091,12 @@ class ErrorParameterType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setParamID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ParamID');
+            throw new \Exception('POJO Proxy need a string for ParamID');
         }
         $this->ParamID = $val;
 	}
@@ -17153,31 +17153,31 @@ class ErrorType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShortMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShortMessage');
+            throw new \Exception('POJO Proxy need a string for ShortMessage');
         }
         $this->ShortMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLongMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LongMessage');
+            throw new \Exception('POJO Proxy need a string for LongMessage');
         }
         $this->LongMessage = $val;
 	}
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorCode($val)
 	{
@@ -17186,7 +17186,7 @@ class ErrorType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserDisplayHint($val)
 	{
@@ -17195,7 +17195,7 @@ class ErrorType
 
 	/**
 	 * @param SeverityCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSeverityCode($val)
 	{
@@ -17204,7 +17204,7 @@ class ErrorType
 
 	/**
 	 * @param ErrorParameterType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorParameters($val)
 	{
@@ -17213,7 +17213,7 @@ class ErrorType
 
 	/**
 	 * @param ErrorClassificationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorClassification($val)
 	{
@@ -17222,7 +17222,7 @@ class ErrorType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -17265,7 +17265,7 @@ class MeasureType
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
@@ -17274,7 +17274,7 @@ class MeasureType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnit($val)
 	{
@@ -17283,7 +17283,7 @@ class MeasureType
 
 	/**
 	 * @param MeasurementSystemCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMeasurementSystem($val)
 	{
@@ -17331,31 +17331,31 @@ class PaginationType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEntriesPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -17418,67 +17418,67 @@ class UserIdPasswordType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAppId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AppId');
+            throw new \Exception('POJO Proxy need a string for AppId');
         }
         $this->AppId = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDevId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DevId');
+            throw new \Exception('POJO Proxy need a string for DevId');
         }
         $this->DevId = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuthCert($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AuthCert');
+            throw new \Exception('POJO Proxy need a string for AuthCert');
         }
         $this->AuthCert = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUsername($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Username');
+            throw new \Exception('POJO Proxy need a string for Username');
         }
         $this->Username = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPassword($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Password');
+            throw new \Exception('POJO Proxy need a string for Password');
         }
         $this->Password = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -17790,7 +17790,7 @@ class AccountEntriesType
 
 	/**
 	 * @param AccountEntryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountEntry($val)
 	{
@@ -17799,7 +17799,7 @@ class AccountEntriesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -17913,7 +17913,7 @@ class AccountEntryType
 
 	/**
 	 * @param AccountDetailEntryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountDetailsEntryType($val)
 	{
@@ -17922,19 +17922,19 @@ class AccountEntryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBalance($val)
 	{
@@ -17943,7 +17943,7 @@ class AccountEntryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCredit($val)
 	{
@@ -17952,7 +17952,7 @@ class AccountEntryType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDate($val)
 	{
@@ -17961,7 +17961,7 @@ class AccountEntryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDebit($val)
 	{
@@ -17970,7 +17970,7 @@ class AccountEntryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGrossDetailAmount($val)
 	{
@@ -17979,7 +17979,7 @@ class AccountEntryType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -17988,19 +17988,19 @@ class AccountEntryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemo($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Memo');
+            throw new \Exception('POJO Proxy need a string for Memo');
         }
         $this->Memo = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNetDetailAmount($val)
 	{
@@ -18009,19 +18009,19 @@ class AccountEntryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RefNumber');
+            throw new \Exception('POJO Proxy need a string for RefNumber');
         }
         $this->RefNumber = $val;
 	}
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATPercent($val)
 	{
@@ -18030,19 +18030,19 @@ class AccountEntryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -18207,7 +18207,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AccountStateCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountState($val)
 	{
@@ -18216,7 +18216,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoicePayment($val)
 	{
@@ -18225,7 +18225,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceCredit($val)
 	{
@@ -18234,7 +18234,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceNewFee($val)
 	{
@@ -18243,7 +18243,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AdditionalAccountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdditionalAccount($val)
 	{
@@ -18252,7 +18252,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPastDue($val)
 	{
@@ -18261,19 +18261,19 @@ class AccountSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankAccountInfo($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BankAccountInfo');
+            throw new \Exception('POJO Proxy need a string for BankAccountInfo');
         }
         $this->BankAccountInfo = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankModifyDate($val)
 	{
@@ -18282,19 +18282,19 @@ class AccountSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBillingCycleDate($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BillingCycleDate = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreditCardExpiration($val)
 	{
@@ -18303,19 +18303,19 @@ class AccountSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreditCardInfo($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CreditCardInfo');
+            throw new \Exception('POJO Proxy need a string for CreditCardInfo');
         }
         $this->CreditCardInfo = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreditCardModifyDate($val)
 	{
@@ -18324,7 +18324,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentBalance($val)
 	{
@@ -18333,19 +18333,19 @@ class AccountSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceBalance($val)
 	{
@@ -18354,7 +18354,7 @@ class AccountSummaryType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceDate($val)
 	{
@@ -18363,7 +18363,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastAmountPaid($val)
 	{
@@ -18372,7 +18372,7 @@ class AccountSummaryType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastPaymentDate($val)
 	{
@@ -18381,7 +18381,7 @@ class AccountSummaryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPastDue($val)
 	{
@@ -18390,7 +18390,7 @@ class AccountSummaryType
 
 	/**
 	 * @param SellerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -18399,7 +18399,7 @@ class AccountSummaryType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -18433,7 +18433,7 @@ class AdFormatEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -18498,19 +18498,19 @@ class AdFormatLeadType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdditionalInformation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AdditionalInformation');
+            throw new \Exception('POJO Proxy need a string for AdditionalInformation');
         }
         $this->AdditionalInformation = $val;
 	}
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddress($val)
 	{
@@ -18519,67 +18519,67 @@ class AdFormatLeadType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestTimeToCall($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BestTimeToCall');
+            throw new \Exception('POJO Proxy need a string for BestTimeToCall');
         }
         $this->BestTimeToCall = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFirstName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FirstName');
+            throw new \Exception('POJO Proxy need a string for FirstName');
         }
         $this->FirstName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LastName');
+            throw new \Exception('POJO Proxy need a string for LastName');
         }
         $this->LastName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Phone');
+            throw new \Exception('POJO Proxy need a string for Phone');
         }
         $this->Phone = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubmittedTime($val)
 	{
@@ -18588,7 +18588,7 @@ class AdFormatLeadType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -18620,31 +18620,31 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCorrelationID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemID');
+            throw new \Exception('POJO Proxy need a string for ItemID');
         }
         $this->ItemID = $val;
 	}
 
 	/**
 	 * @param MemberMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessage($val)
 	{
@@ -18672,19 +18672,19 @@ class AddMemberMessagesAaQtoBidderResponseContainerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCorrelationID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
 	}
 
 	/**
 	 * @param AckCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAck($val)
 	{
@@ -18723,7 +18723,7 @@ class AdditionalAccountType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBalance($val)
 	{
@@ -18732,7 +18732,7 @@ class AdditionalAccountType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -18741,19 +18741,19 @@ class AdditionalAccountType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AccountCode');
+            throw new \Exception('POJO Proxy need a string for AccountCode');
         }
         $this->AccountCode = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -18937,91 +18937,91 @@ class AddressType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStreet($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Street');
+            throw new \Exception('POJO Proxy need a string for Street');
         }
         $this->Street = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStreet1($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Street1');
+            throw new \Exception('POJO Proxy need a string for Street1');
         }
         $this->Street1 = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStreet2($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Street2');
+            throw new \Exception('POJO Proxy need a string for Street2');
         }
         $this->Street2 = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCityName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CityName');
+            throw new \Exception('POJO Proxy need a string for CityName');
         }
         $this->CityName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCounty($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for County');
+            throw new \Exception('POJO Proxy need a string for County');
         }
         $this->County = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStateOrProvince($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StateOrProvince');
+            throw new \Exception('POJO Proxy need a string for StateOrProvince');
         }
         $this->StateOrProvince = $val;
 	}
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountry($val)
 	{
@@ -19030,31 +19030,31 @@ class AddressType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountryName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CountryName');
+            throw new \Exception('POJO Proxy need a string for CountryName');
         }
         $this->CountryName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Phone');
+            throw new \Exception('POJO Proxy need a string for Phone');
         }
         $this->Phone = $val;
 	}
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhoneCountryCode($val)
 	{
@@ -19063,43 +19063,43 @@ class AddressType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhoneCountryPrefix($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PhoneCountryPrefix');
+            throw new \Exception('POJO Proxy need a string for PhoneCountryPrefix');
         }
         $this->PhoneCountryPrefix = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhoneAreaOrCityCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PhoneAreaOrCityCode');
+            throw new \Exception('POJO Proxy need a string for PhoneAreaOrCityCode');
         }
         $this->PhoneAreaOrCityCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhoneLocalNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PhoneLocalNumber');
+            throw new \Exception('POJO Proxy need a string for PhoneLocalNumber');
         }
         $this->PhoneLocalNumber = $val;
 	}
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone2CountryCode($val)
 	{
@@ -19108,67 +19108,67 @@ class AddressType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone2CountryPrefix($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Phone2CountryPrefix');
+            throw new \Exception('POJO Proxy need a string for Phone2CountryPrefix');
         }
         $this->Phone2CountryPrefix = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone2AreaOrCityCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Phone2AreaOrCityCode');
+            throw new \Exception('POJO Proxy need a string for Phone2AreaOrCityCode');
         }
         $this->Phone2AreaOrCityCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone2LocalNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Phone2LocalNumber');
+            throw new \Exception('POJO Proxy need a string for Phone2LocalNumber');
         }
         $this->Phone2LocalNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddressID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AddressID');
+            throw new \Exception('POJO Proxy need a string for AddressID');
         }
         $this->AddressID = $val;
 	}
 
 	/**
 	 * @param AddressOwnerCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddressOwner($val)
 	{
@@ -19177,7 +19177,7 @@ class AddressType
 
 	/**
 	 * @param AddressStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddressStatus($val)
 	{
@@ -19186,67 +19186,67 @@ class AddressType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalAddressID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalAddressID');
+            throw new \Exception('POJO Proxy need a string for ExternalAddressID');
         }
         $this->ExternalAddressID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for InternationalName');
+            throw new \Exception('POJO Proxy need a string for InternationalName');
         }
         $this->InternationalName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalStateAndCity($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for InternationalStateAndCity');
+            throw new \Exception('POJO Proxy need a string for InternationalStateAndCity');
         }
         $this->InternationalStateAndCity = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalStreet($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for InternationalStreet');
+            throw new \Exception('POJO Proxy need a string for InternationalStreet');
         }
         $this->InternationalStreet = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompanyName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CompanyName');
+            throw new \Exception('POJO Proxy need a string for CompanyName');
         }
         $this->CompanyName = $val;
 	}
 
 	/**
 	 * @param AddressRecordTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddressRecordType($val)
 	{
@@ -19255,7 +19255,7 @@ class AddressType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -19303,31 +19303,31 @@ class AffiliateTrackingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTrackingID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TrackingID');
+            throw new \Exception('POJO Proxy need a string for TrackingID');
         }
         $this->TrackingID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTrackingPartnerCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TrackingPartnerCode');
+            throw new \Exception('POJO Proxy need a string for TrackingPartnerCode');
         }
         $this->TrackingPartnerCode = $val;
 	}
 
 	/**
 	 * @param ApplicationDeviceTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationDeviceType($val)
 	{
@@ -19336,19 +19336,19 @@ class AffiliateTrackingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAffiliateUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AffiliateUserID');
+            throw new \Exception('POJO Proxy need a string for AffiliateUserID');
         }
         $this->AffiliateUserID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -19379,7 +19379,7 @@ class AmountType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
@@ -19388,7 +19388,7 @@ class AmountType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrencyID($val)
 	{
@@ -19499,19 +19499,19 @@ class ApiAccessRuleType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCallName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CallName');
+            throw new \Exception('POJO Proxy need a string for CallName');
         }
         $this->CallName = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountsTowardAggregate($val)
 	{
@@ -19520,7 +19520,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDailyHardLimit($val)
 	{
@@ -19529,7 +19529,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDailySoftLimit($val)
 	{
@@ -19538,7 +19538,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDailyUsage($val)
 	{
@@ -19547,7 +19547,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHourlyHardLimit($val)
 	{
@@ -19556,7 +19556,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHourlySoftLimit($val)
 	{
@@ -19565,7 +19565,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHourlyUsage($val)
 	{
@@ -19574,19 +19574,19 @@ class ApiAccessRuleType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriod($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Period = $val;
 	}
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodicHardLimit($val)
 	{
@@ -19595,7 +19595,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodicSoftLimit($val)
 	{
@@ -19604,7 +19604,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodicUsage($val)
 	{
@@ -19613,7 +19613,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodicStartDate($val)
 	{
@@ -19622,7 +19622,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModTime($val)
 	{
@@ -19631,7 +19631,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param AccessRuleCurrentStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRuleCurrentStatus($val)
 	{
@@ -19640,7 +19640,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param AccessRuleStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRuleStatus($val)
 	{
@@ -19649,7 +19649,7 @@ class ApiAccessRuleType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -19707,7 +19707,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationURL($val)
 	{
@@ -19716,7 +19716,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param EnableCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationEnable($val)
 	{
@@ -19725,7 +19725,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertEmail($val)
 	{
@@ -19734,7 +19734,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param EnableCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertEnable($val)
 	{
@@ -19743,7 +19743,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param NotificationPayloadTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationPayloadType($val)
 	{
@@ -19752,7 +19752,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param DeviceTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeviceType($val)
 	{
@@ -19761,7 +19761,7 @@ class ApplicationDeliveryPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -19813,7 +19813,7 @@ class AttributeArrayType
 
 	/**
 	 * @param AttributeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttribute($val)
 	{
@@ -19840,7 +19840,7 @@ class AttributeRecommendationsType
 
 	/**
 	 * @param AttributeSetArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetArray($val)
 	{
@@ -19849,7 +19849,7 @@ class AttributeRecommendationsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -19884,7 +19884,7 @@ class AttributeSetArrayType
 
 	/**
 	 * @param AttributeSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSet($val)
 	{
@@ -19943,7 +19943,7 @@ class AttributeSetType
 
 	/**
 	 * @param AttributeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttribute($val)
 	{
@@ -19952,7 +19952,7 @@ class AttributeSetType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -19961,24 +19961,24 @@ class AttributeSetType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->attributeSetID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for attributeSetVersion');
+            throw new \Exception('POJO Proxy need a string for attributeSetVersion');
         }
         $this->attributeSetVersion = $val;
 	}
@@ -20013,7 +20013,7 @@ class AttributeType
 
 	/**
 	 * @param ValType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
@@ -20022,7 +20022,7 @@ class AttributeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20031,24 +20031,24 @@ class AttributeType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->attributeID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeLabel($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for attributeLabel');
+            throw new \Exception('POJO Proxy need a string for attributeLabel');
         }
         $this->attributeLabel = $val;
 	}
@@ -20071,7 +20071,7 @@ class AuthenticationEntryArrayType
 
 	/**
 	 * @param AuthenticationEntryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuthenticationEntry($val)
 	{
@@ -20128,7 +20128,7 @@ class AuthenticationEntryType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAcceptURL($val)
 	{
@@ -20137,7 +20137,7 @@ class AuthenticationEntryType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivacyPolicyURL($val)
 	{
@@ -20146,7 +20146,7 @@ class AuthenticationEntryType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRejectURL($val)
 	{
@@ -20155,19 +20155,19 @@ class AuthenticationEntryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRuName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RuName');
+            throw new \Exception('POJO Proxy need a string for RuName');
         }
         $this->RuName = $val;
 	}
 
 	/**
 	 * @param TokenReturnMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTokenReturnMethod($val)
 	{
@@ -20176,7 +20176,7 @@ class AuthenticationEntryType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20201,7 +20201,7 @@ class BasicUpgradePackEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20233,7 +20233,7 @@ class BestOfferArrayType
 
 	/**
 	 * @param BestOfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOffer($val)
 	{
@@ -20258,7 +20258,7 @@ class BestOfferAutoDeclineEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20283,7 +20283,7 @@ class BestOfferCounterEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20330,19 +20330,19 @@ class BestOfferDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BestOfferCount = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -20351,7 +20351,7 @@ class BestOfferDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOffer($val)
 	{
@@ -20360,7 +20360,7 @@ class BestOfferDetailsType
 
 	/**
 	 * @param BestOfferStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferStatus($val)
 	{
@@ -20369,7 +20369,7 @@ class BestOfferDetailsType
 
 	/**
 	 * @param BestOfferTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferType($val)
 	{
@@ -20378,7 +20378,7 @@ class BestOfferDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20403,7 +20403,7 @@ class BestOfferEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20490,7 +20490,7 @@ class BestOfferType
 
 	/**
 	 * @param BestOfferIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferID($val)
 	{
@@ -20499,7 +20499,7 @@ class BestOfferType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpirationTime($val)
 	{
@@ -20508,7 +20508,7 @@ class BestOfferType
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyer($val)
 	{
@@ -20517,7 +20517,7 @@ class BestOfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrice($val)
 	{
@@ -20526,7 +20526,7 @@ class BestOfferType
 
 	/**
 	 * @param BestOfferStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -20535,43 +20535,43 @@ class BestOfferType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantity($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Quantity = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerMessage');
+            throw new \Exception('POJO Proxy need a string for BuyerMessage');
         }
         $this->BuyerMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerMessage');
+            throw new \Exception('POJO Proxy need a string for SellerMessage');
         }
         $this->SellerMessage = $val;
 	}
 
 	/**
 	 * @param BestOfferTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCodeType($val)
 	{
@@ -20580,19 +20580,19 @@ class BestOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCallStatus($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CallStatus');
+            throw new \Exception('POJO Proxy need a string for CallStatus');
         }
         $this->CallStatus = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20642,7 +20642,7 @@ class BidApprovalArrayType
 
 	/**
 	 * @param BidApprovalType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionBid($val)
 	{
@@ -20651,7 +20651,7 @@ class BidApprovalArrayType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20703,7 +20703,7 @@ class BidApprovalType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -20712,7 +20712,7 @@ class BidApprovalType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
@@ -20721,19 +20721,19 @@ class BidApprovalType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeclinedComment($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeclinedComment');
+            throw new \Exception('POJO Proxy need a string for DeclinedComment');
         }
         $this->DeclinedComment = $val;
 	}
 
 	/**
 	 * @param BidderStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -20742,7 +20742,7 @@ class BidApprovalType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20765,7 +20765,7 @@ class BidderDetailArrayType
 
 	/**
 	 * @param BidderDetailType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderDetail($val)
 	{
@@ -20854,7 +20854,7 @@ class BidderDetailType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -20863,55 +20863,55 @@ class BidderDetailType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackScore = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniqueNegativeFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniqueNegativeFeedbackCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniquePositiveFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniquePositiveFeedbackCount = $val;
 	}
 
 	/**
 	 * @param LiveAuctionBidType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionBidResult($val)
 	{
@@ -20920,7 +20920,7 @@ class BidderDetailType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -20948,7 +20948,7 @@ class BidderNoticePreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnsuccessfulBidderNoticeIncludeMyItems($val)
 	{
@@ -20957,7 +20957,7 @@ class BidderNoticePreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21023,7 +21023,7 @@ class BiddingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedMaxBid($val)
 	{
@@ -21032,7 +21032,7 @@ class BiddingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxBid($val)
 	{
@@ -21041,31 +21041,31 @@ class BiddingDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantityBid($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantityBid = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantityWon($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantityWon = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWinning($val)
 	{
@@ -21074,7 +21074,7 @@ class BiddingDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21127,79 +21127,79 @@ class BiddingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSummaryDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SummaryDays = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalBids($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalBids = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidActivityWithSeller($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidActivityWithSeller = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidsToUniqueSellers($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidsToUniqueSellers = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidsToUniqueCategories($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidsToUniqueCategories = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidRetractions($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidRetractions = $val;
 	}
 
 	/**
 	 * @param ItemBidDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemBidDetails($val)
 	{
@@ -21208,7 +21208,7 @@ class BiddingSummaryType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21275,7 +21275,7 @@ class BuyerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipToRegistrationCountry($val)
 	{
@@ -21284,7 +21284,7 @@ class BuyerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setZeroFeedbackScore($val)
 	{
@@ -21293,19 +21293,19 @@ class BuyerRequirementsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MinimumFeedbackScore = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaximumUnpaidItemStrikes($val)
 	{
@@ -21314,7 +21314,7 @@ class BuyerRequirementsType
 
 	/**
 	 * @param MaximumItemRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaximumItemRequirements($val)
 	{
@@ -21323,7 +21323,7 @@ class BuyerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLinkedPayPalAccount($val)
 	{
@@ -21332,7 +21332,7 @@ class BuyerRequirementsType
 
 	/**
 	 * @param VerifiedUserRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVerifiedUserRequirements($val)
 	{
@@ -21359,7 +21359,7 @@ class BuyerType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingAddress($val)
 	{
@@ -21368,7 +21368,7 @@ class BuyerType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21410,7 +21410,7 @@ class BuyingGuideDetailsType
 
 	/**
 	 * @param BuyingGuideType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuide($val)
 	{
@@ -21419,7 +21419,7 @@ class BuyingGuideDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuideHub($val)
 	{
@@ -21428,7 +21428,7 @@ class BuyingGuideDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21482,19 +21482,19 @@ class BuyingGuideType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -21503,31 +21503,31 @@ class BuyingGuideType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21570,31 +21570,31 @@ class BuyingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBiddingCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BiddingCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWinningCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WinningCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalWinningCost($val)
 	{
@@ -21603,19 +21603,19 @@ class BuyingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWonCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WonCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalWonCost($val)
 	{
@@ -21624,24 +21624,24 @@ class BuyingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWonDurationInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WonDurationInDays = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BestOfferCount = $val;
 	}
@@ -21689,7 +21689,7 @@ class CalculatedShippingPreferencesType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCalculatedShippingAmountForEntireOrder($val)
 	{
@@ -21698,7 +21698,7 @@ class CalculatedShippingPreferencesType
 
 	/**
 	 * @param CalculatedShippingChargeOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCalculatedShippingChargeOption($val)
 	{
@@ -21707,7 +21707,7 @@ class CalculatedShippingPreferencesType
 
 	/**
 	 * @param CalculatedShippingRateOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCalculatedShippingRateOption($val)
 	{
@@ -21716,7 +21716,7 @@ class CalculatedShippingPreferencesType
 
 	/**
 	 * @param InsuranceOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceOption($val)
 	{
@@ -21725,7 +21725,7 @@ class CalculatedShippingPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21813,19 +21813,19 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOriginatingPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OriginatingPostalCode');
+            throw new \Exception('POJO Proxy need a string for OriginatingPostalCode');
         }
         $this->OriginatingPostalCode = $val;
 	}
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackageDepth($val)
 	{
@@ -21834,7 +21834,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackageLength($val)
 	{
@@ -21843,7 +21843,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackageWidth($val)
 	{
@@ -21852,7 +21852,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPackagingHandlingCosts($val)
 	{
@@ -21861,7 +21861,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingIrregular($val)
 	{
@@ -21870,7 +21870,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param ShippingPackageCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingPackage($val)
 	{
@@ -21879,7 +21879,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWeightMajor($val)
 	{
@@ -21888,7 +21888,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param MeasureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWeightMinor($val)
 	{
@@ -21897,7 +21897,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalPackagingHandlingCosts($val)
 	{
@@ -21906,7 +21906,7 @@ class CalculatedShippingRateType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21939,7 +21939,7 @@ class CancelOfferType
 
 	/**
 	 * @param OfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOffer($val)
 	{
@@ -21948,19 +21948,19 @@ class CancelOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExplanation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Explanation');
+            throw new \Exception('POJO Proxy need a string for Explanation');
         }
         $this->Explanation = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -21983,7 +21983,7 @@ class CategoryArrayType
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -22190,19 +22190,19 @@ class CategoryFeatureType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param ListingDurationReferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDuration($val)
 	{
@@ -22211,7 +22211,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTermsRequired($val)
 	{
@@ -22220,7 +22220,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -22229,7 +22229,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDutchBINEnabled($val)
 	{
@@ -22238,7 +22238,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserConsentRequired($val)
 	{
@@ -22247,7 +22247,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
@@ -22256,7 +22256,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackEnabled($val)
 	{
@@ -22265,7 +22265,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
@@ -22274,7 +22274,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValuePackEnabled($val)
 	{
@@ -22283,7 +22283,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackPlusEnabled($val)
 	{
@@ -22292,7 +22292,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param AdFormatEnabledCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormatEnabled($val)
 	{
@@ -22301,7 +22301,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param DigitalDeliveryEnabledCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
@@ -22310,7 +22310,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
@@ -22319,7 +22319,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
@@ -22328,7 +22328,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
@@ -22337,7 +22337,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
@@ -22346,7 +22346,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
@@ -22355,7 +22355,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
@@ -22364,7 +22364,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEnabled($val)
 	{
@@ -22373,7 +22373,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressPicturesRequired($val)
 	{
@@ -22382,7 +22382,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressConditionRequired($val)
 	{
@@ -22391,7 +22391,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumReservePrice($val)
 	{
@@ -22400,7 +22400,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
@@ -22409,7 +22409,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
@@ -22418,7 +22418,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
@@ -22427,7 +22427,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
@@ -22436,7 +22436,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
@@ -22445,7 +22445,7 @@ class CategoryFeatureType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -22468,7 +22468,7 @@ class CategoryFinanceOfferArrayType
 
 	/**
 	 * @param CategoryFinanceOfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryFinanceOffer($val)
 	{
@@ -22499,31 +22499,31 @@ class CategoryFinanceOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -22574,7 +22574,7 @@ class CategoryMappingType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -22583,24 +22583,24 @@ class CategoryMappingType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOldID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for oldID');
+            throw new \Exception('POJO Proxy need a string for oldID');
         }
         $this->oldID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for id');
+            throw new \Exception('POJO Proxy need a string for id');
         }
         $this->id = $val;
 	}
@@ -22790,7 +22790,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -22799,7 +22799,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAutoPayEnabled($val)
 	{
@@ -22808,7 +22808,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setB2BVATEnabled($val)
 	{
@@ -22817,7 +22817,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCatalogEnabled($val)
 	{
@@ -22826,79 +22826,79 @@ class CategoryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryLevel($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryLevel = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryName');
+            throw new \Exception('POJO Proxy need a string for CategoryName');
         }
         $this->CategoryName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryParentID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryParentID');
+            throw new \Exception('POJO Proxy need a string for CategoryParentID');
         }
         $this->CategoryParentID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryParentName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryParentName');
+            throw new \Exception('POJO Proxy need a string for CategoryParentName');
         }
         $this->CategoryParentName = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearchPageAvailable($val)
 	{
@@ -22907,7 +22907,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderAvailable($val)
 	{
@@ -22916,7 +22916,7 @@ class CategoryType
 
 	/**
 	 * @param ExtendedProductFinderIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderIDs($val)
 	{
@@ -22925,7 +22925,7 @@ class CategoryType
 
 	/**
 	 * @param CharacteristicsSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharacteristicsSets($val)
 	{
@@ -22934,7 +22934,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpired($val)
 	{
@@ -22943,7 +22943,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIntlAutosFixedCat($val)
 	{
@@ -22952,7 +22952,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLeafCategory($val)
 	{
@@ -22961,7 +22961,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVirtual($val)
 	{
@@ -22970,19 +22970,19 @@ class CategoryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumOfItems($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NumOfItems = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerGuaranteeEligible($val)
 	{
@@ -22991,7 +22991,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setORPA($val)
 	{
@@ -23000,7 +23000,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setORRA($val)
 	{
@@ -23009,7 +23009,7 @@ class CategoryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLSD($val)
 	{
@@ -23018,19 +23018,19 @@ class CategoryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeywords($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Keywords');
+            throw new \Exception('POJO Proxy need a string for Keywords');
         }
         $this->Keywords = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23058,12 +23058,12 @@ class CharacteristicSetIdsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ID');
+            throw new \Exception('POJO Proxy need a string for ID');
         }
         $this->ID = $val;
 	}
@@ -23143,55 +23143,55 @@ class CharacteristicType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDateFormat($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DateFormat');
+            throw new \Exception('POJO Proxy need a string for DateFormat');
         }
         $this->DateFormat = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplaySequence($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplaySequence');
+            throw new \Exception('POJO Proxy need a string for DisplaySequence');
         }
         $this->DisplaySequence = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayUOM($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplayUOM');
+            throw new \Exception('POJO Proxy need a string for DisplayUOM');
         }
         $this->DisplayUOM = $val;
 	}
 
 	/**
 	 * @param LabelType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLabel($val)
 	{
@@ -23200,7 +23200,7 @@ class CharacteristicType
 
 	/**
 	 * @param SortOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSortOrder($val)
 	{
@@ -23209,7 +23209,7 @@ class CharacteristicType
 
 	/**
 	 * @param ValType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValueList($val)
 	{
@@ -23218,7 +23218,7 @@ class CharacteristicType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23279,43 +23279,43 @@ class CharacteristicsSetType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSetVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSetVersion');
         }
         $this->AttributeSetVersion = $val;
 	}
 
 	/**
 	 * @param CharacteristicType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharacteristics($val)
 	{
@@ -23324,7 +23324,7 @@ class CharacteristicsSetType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23356,7 +23356,7 @@ class CharityAffiliationType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23365,19 +23365,19 @@ class CharityAffiliationType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for id');
+            throw new \Exception('POJO Proxy need a string for id');
         }
         $this->id = $val;
 	}
 
 	/**
 	 * @param CharityAffiliationTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -23413,7 +23413,7 @@ class CharityAffiliationsType
 
 	/**
 	 * @param CharityIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityID($val)
 	{
@@ -23422,7 +23422,7 @@ class CharityAffiliationsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23450,19 +23450,19 @@ class CharityIdType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for _');
+            throw new \Exception('POJO Proxy need a string for _');
         }
         $this->_ = $val;
 	}
 
 	/**
 	 * @param CharityAffiliationTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -23530,31 +23530,31 @@ class CharityInfoType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMission($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Mission');
+            throw new \Exception('POJO Proxy need a string for Mission');
         }
         $this->Mission = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoURL($val)
 	{
@@ -23563,7 +23563,7 @@ class CharityInfoType
 
 	/**
 	 * @param CharityStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -23572,55 +23572,55 @@ class CharityInfoType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchableString($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SearchableString');
+            throw new \Exception('POJO Proxy need a string for SearchableString');
         }
         $this->SearchableString = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityRegion($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityRegion = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityDomain($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityDomain = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityID');
+            throw new \Exception('POJO Proxy need a string for CharityID');
         }
         $this->CharityID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23629,12 +23629,12 @@ class CharityInfoType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for id');
+            throw new \Exception('POJO Proxy need a string for id');
         }
         $this->id = $val;
 	}
@@ -23678,7 +23678,7 @@ class CharitySellerType
 
 	/**
 	 * @param CharitySellerStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharitySellerStatus($val)
 	{
@@ -23687,7 +23687,7 @@ class CharitySellerType
 
 	/**
 	 * @param CharityAffiliationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityAffiliation($val)
 	{
@@ -23696,7 +23696,7 @@ class CharitySellerType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23770,31 +23770,31 @@ class CharityType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityName');
+            throw new \Exception('POJO Proxy need a string for CharityName');
         }
         $this->CharityName = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityNumber = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDonationPercent($val)
 	{
@@ -23803,43 +23803,43 @@ class CharityType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityID');
+            throw new \Exception('POJO Proxy need a string for CharityID');
         }
         $this->CharityID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMission($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Mission');
+            throw new \Exception('POJO Proxy need a string for Mission');
         }
         $this->Mission = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LogoURL');
+            throw new \Exception('POJO Proxy need a string for LogoURL');
         }
         $this->LogoURL = $val;
 	}
 
 	/**
 	 * @param CharityStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -23848,7 +23848,7 @@ class CharityType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityListing($val)
 	{
@@ -23857,7 +23857,7 @@ class CharityType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -23910,7 +23910,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param PaymentStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayPaymentStatus($val)
 	{
@@ -23919,7 +23919,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedTime($val)
 	{
@@ -23928,7 +23928,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -23937,7 +23937,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param CompleteStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -23946,7 +23946,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -24006,7 +24006,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param CalculatedShippingPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCalculatedShippingPreferences($val)
 	{
@@ -24015,7 +24015,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param CombinedPaymentOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentOption($val)
 	{
@@ -24024,7 +24024,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param CombinedPaymentPeriodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentPeriod($val)
 	{
@@ -24033,7 +24033,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param FlatShippingPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlatShippingPreferences($val)
 	{
@@ -24042,7 +24042,7 @@ class CombinedPaymentPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -24099,19 +24099,19 @@ class ContextSearchAssetType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeyword($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Keyword');
+            throw new \Exception('POJO Proxy need a string for Keyword');
         }
         $this->Keyword = $val;
 	}
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -24120,12 +24120,12 @@ class ContextSearchAssetType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRanking($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Ranking = $val;
 	}
@@ -24406,7 +24406,7 @@ class CountryDetailsType
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountry($val)
 	{
@@ -24415,19 +24415,19 @@ class CountryDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -24484,7 +24484,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotionEnabled($val)
 	{
@@ -24493,7 +24493,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemFormatSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossSellItemFormatSortFilter($val)
 	{
@@ -24502,7 +24502,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param GallerySortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossSellGallerySortFilter($val)
 	{
@@ -24511,7 +24511,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossSellItemSortFilter($val)
 	{
@@ -24520,7 +24520,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemFormatSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpSellItemFormatSortFilter($val)
 	{
@@ -24529,7 +24529,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param GallerySortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpSellGallerySortFilter($val)
 	{
@@ -24538,7 +24538,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpSellItemSortFilter($val)
 	{
@@ -24547,7 +24547,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -24606,7 +24606,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -24615,7 +24615,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param PromotionSchemeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrimaryScheme($val)
 	{
@@ -24624,7 +24624,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param PromotionMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionMethod($val)
 	{
@@ -24633,19 +24633,19 @@ class CrossPromotionsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerID');
+            throw new \Exception('POJO Proxy need a string for SellerID');
         }
         $this->SellerID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingDiscount($val)
 	{
@@ -24654,31 +24654,31 @@ class CrossPromotionsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerKey($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerKey');
+            throw new \Exception('POJO Proxy need a string for SellerKey');
         }
         $this->SellerKey = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param PromotedItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotedItem($val)
 	{
@@ -24687,7 +24687,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -24897,7 +24897,7 @@ class CurrencyDetailsType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -24906,19 +24906,19 @@ class CurrencyDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -24967,31 +24967,31 @@ class DataElementSetType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDataElement($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DataElement');
+            throw new \Exception('POJO Proxy need a string for DataElement');
         }
         $this->DataElement = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDataElementID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DataElementID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25000,12 +25000,12 @@ class DataElementSetType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->attributeSetID = $val;
 	}
@@ -25089,31 +25089,31 @@ class DescriptionTemplateType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGroupID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->GroupID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ID = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setImageURL($val)
 	{
@@ -25122,31 +25122,31 @@ class DescriptionTemplateType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTemplateXML($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TemplateXML');
+            throw new \Exception('POJO Proxy need a string for TemplateXML');
         }
         $this->TemplateXML = $val;
 	}
 
 	/**
 	 * @param DescriptionTemplateCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -25155,7 +25155,7 @@ class DescriptionTemplateType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25233,19 +25233,19 @@ class DigitalDeliveryDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRequirements($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Requirements');
+            throw new \Exception('POJO Proxy need a string for Requirements');
         }
         $this->Requirements = $val;
 	}
 
 	/**
 	 * @param DigitalDeliveryMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMethod($val)
 	{
@@ -25254,7 +25254,7 @@ class DigitalDeliveryDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -25263,19 +25263,19 @@ class DigitalDeliveryDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInstructions($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Instructions');
+            throw new \Exception('POJO Proxy need a string for Instructions');
         }
         $this->Instructions = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25307,7 +25307,7 @@ class DigitalDeliveryEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25352,31 +25352,31 @@ class DispatchTimeMaxDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDispatchTimeMax($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DispatchTimeMax = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25409,7 +25409,7 @@ class DisputeArrayType
 
 	/**
 	 * @param DisputeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDispute($val)
 	{
@@ -25530,7 +25530,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeID($val)
 	{
@@ -25539,7 +25539,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeRecordTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeRecordType($val)
 	{
@@ -25548,7 +25548,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeStateCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeState($val)
 	{
@@ -25557,7 +25557,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeStatus($val)
 	{
@@ -25566,7 +25566,7 @@ class DisputeType
 
 	/**
 	 * @param TradingRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOtherPartyRole($val)
 	{
@@ -25575,19 +25575,19 @@ class DisputeType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOtherPartyName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OtherPartyName');
+            throw new \Exception('POJO Proxy need a string for OtherPartyName');
         }
         $this->OtherPartyName = $val;
 	}
 
 	/**
 	 * @param TradingRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserRole($val)
 	{
@@ -25596,7 +25596,7 @@ class DisputeType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerUserID($val)
 	{
@@ -25605,7 +25605,7 @@ class DisputeType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerUserID($val)
 	{
@@ -25614,19 +25614,19 @@ class DisputeType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -25635,7 +25635,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeReasonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeReason($val)
 	{
@@ -25644,7 +25644,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeExplanationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeExplanation($val)
 	{
@@ -25653,7 +25653,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeCreditEligibilityCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeCreditEligibility($val)
 	{
@@ -25662,7 +25662,7 @@ class DisputeType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeCreatedTime($val)
 	{
@@ -25671,7 +25671,7 @@ class DisputeType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeModifiedTime($val)
 	{
@@ -25680,7 +25680,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeResolutionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeResolution($val)
 	{
@@ -25689,7 +25689,7 @@ class DisputeType
 
 	/**
 	 * @param DisputeMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisputeMessage($val)
 	{
@@ -25698,7 +25698,7 @@ class DisputeType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEscalation($val)
 	{
@@ -25707,7 +25707,7 @@ class DisputeType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPurchaseProtection($val)
 	{
@@ -25716,7 +25716,7 @@ class DisputeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25747,31 +25747,31 @@ class DistanceType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDistanceMeasurement($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DistanceMeasurement = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDistanceUnit($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DistanceUnit');
+            throw new \Exception('POJO Proxy need a string for DistanceUnit');
         }
         $this->DistanceUnit = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25801,7 +25801,7 @@ class DomainHistogramType
 
 	/**
 	 * @param ExpressHistogramDepartmentType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDepartment($val)
 	{
@@ -25810,7 +25810,7 @@ class DomainHistogramType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25835,7 +25835,7 @@ class DutchBiNenabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -25920,19 +25920,19 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTemplateText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TemplateText');
+            throw new \Exception('POJO Proxy need a string for TemplateText');
         }
         $this->TemplateText = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoURL($val)
 	{
@@ -25941,7 +25941,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param EndOfAuctionLogoTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoType($val)
 	{
@@ -25950,7 +25950,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmailCustomized($val)
 	{
@@ -25959,7 +25959,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTextCustomized($val)
 	{
@@ -25968,7 +25968,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoCustomized($val)
 	{
@@ -25977,7 +25977,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyEmail($val)
 	{
@@ -25986,7 +25986,7 @@ class EndOfAuctionEmailPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26041,7 +26041,7 @@ class ExpansionArrayType
 
 	/**
 	 * @param SearchResultItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpansionItem($val)
 	{
@@ -26050,12 +26050,12 @@ class ExpansionArrayType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAvailable = $val;
 	}
@@ -26079,7 +26079,7 @@ class ExpressConditionRequiredDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26140,7 +26140,7 @@ class ExpressDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressLargeImage($val)
 	{
@@ -26149,7 +26149,7 @@ class ExpressDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressSmallImage($val)
 	{
@@ -26158,19 +26158,19 @@ class ExpressDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCondition($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Condition');
+            throw new \Exception('POJO Proxy need a string for Condition');
         }
         $this->Condition = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26196,7 +26196,7 @@ class ExpressEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26233,7 +26233,7 @@ class ExpressHistogramAisleType
 
 	/**
 	 * @param ExpressHistogramDomainDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainDetails($val)
 	{
@@ -26242,7 +26242,7 @@ class ExpressHistogramAisleType
 
 	/**
 	 * @param ExpressHistogramProductType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductType($val)
 	{
@@ -26251,7 +26251,7 @@ class ExpressHistogramAisleType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26288,7 +26288,7 @@ class ExpressHistogramDepartmentType
 
 	/**
 	 * @param ExpressHistogramDomainDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainDetails($val)
 	{
@@ -26297,7 +26297,7 @@ class ExpressHistogramDepartmentType
 
 	/**
 	 * @param ExpressHistogramAisleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAisle($val)
 	{
@@ -26306,7 +26306,7 @@ class ExpressHistogramDepartmentType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26359,55 +26359,55 @@ class ExpressHistogramDomainDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBreadCrumb($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BreadCrumb');
+            throw new \Exception('POJO Proxy need a string for BreadCrumb');
         }
         $this->BreadCrumb = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductCount = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setImageURL($val)
 	{
@@ -26416,7 +26416,7 @@ class ExpressHistogramDomainDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26447,7 +26447,7 @@ class ExpressHistogramProductType
 
 	/**
 	 * @param ExpressHistogramDomainDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainDetails($val)
 	{
@@ -26456,7 +26456,7 @@ class ExpressHistogramProductType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26595,7 +26595,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerExpressEligible($val)
 	{
@@ -26604,7 +26604,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressOptOut($val)
 	{
@@ -26613,7 +26613,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressApproved($val)
 	{
@@ -26622,7 +26622,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEligibleListingType($val)
 	{
@@ -26631,7 +26631,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEnabledCategory($val)
 	{
@@ -26640,7 +26640,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
@@ -26649,7 +26649,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomesticShippingCost($val)
 	{
@@ -26658,7 +26658,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEligibleReturnPolicy($val)
 	{
@@ -26667,7 +26667,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPicture($val)
 	{
@@ -26676,7 +26676,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEligibleItemCondition($val)
 	{
@@ -26685,7 +26685,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriceAboveMinimum($val)
 	{
@@ -26694,7 +26694,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriceBelowMaximum($val)
 	{
@@ -26703,7 +26703,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEligibleCheckout($val)
 	{
@@ -26712,7 +26712,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNoPreapprovedBidderList($val)
 	{
@@ -26721,7 +26721,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNoCharity($val)
 	{
@@ -26730,7 +26730,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNoDigitalDelivery($val)
 	{
@@ -26739,7 +26739,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedShippingDiscount($val)
 	{
@@ -26748,7 +26748,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipFromEligibleCountry($val)
 	{
@@ -26757,7 +26757,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
@@ -26766,7 +26766,7 @@ class ExpressItemRequirementsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26800,7 +26800,7 @@ class ExpressPicturesRequiredDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26855,7 +26855,7 @@ class ExpressPreferencesType
 
 	/**
 	 * @param ExpressSellingPreferenceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressSellingPreference($val)
 	{
@@ -26864,19 +26864,19 @@ class ExpressPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDefaultPayPalAccount($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
+            throw new \Exception('POJO Proxy need a string for DefaultPayPalAccount');
         }
         $this->DefaultPayPalAccount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -26954,19 +26954,19 @@ class ExpressProductType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinPrice($val)
 	{
@@ -26975,7 +26975,7 @@ class ExpressProductType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxPrice($val)
 	{
@@ -26984,7 +26984,7 @@ class ExpressProductType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStockPhotoURL($val)
 	{
@@ -26993,19 +26993,19 @@ class ExpressProductType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemCount = $val;
 	}
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -27014,7 +27014,7 @@ class ExpressProductType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductReferenceID($val)
 	{
@@ -27023,7 +27023,7 @@ class ExpressProductType
 
 	/**
 	 * @param NameValueListArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemSpecifics($val)
 	{
@@ -27032,7 +27032,7 @@ class ExpressProductType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -27145,7 +27145,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressSellingPreference($val)
 	{
@@ -27154,7 +27154,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressApproved($val)
 	{
@@ -27163,7 +27163,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGoodStanding($val)
 	{
@@ -27172,7 +27172,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param FeedbackRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackScore($val)
 	{
@@ -27181,7 +27181,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param FeedbackRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
@@ -27190,7 +27190,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param FeedbackRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackAsSellerScore($val)
 	{
@@ -27199,7 +27199,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param FeedbackRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPositiveFeedbackAsSellerPercent($val)
 	{
@@ -27208,7 +27208,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBusinessSeller($val)
 	{
@@ -27217,7 +27217,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEligiblePayPalAccount($val)
 	{
@@ -27226,7 +27226,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountAcceptsUnconfirmedAddress($val)
 	{
@@ -27235,7 +27235,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCombinedPaymentsAccepted($val)
 	{
@@ -27244,7 +27244,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackPublic($val)
 	{
@@ -27253,7 +27253,7 @@ class ExpressSellerRequirementsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -27295,19 +27295,19 @@ class ExtendedProductFinderIdType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderBuySide($val)
 	{
@@ -27368,19 +27368,19 @@ class ExternalProductIdType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnSearchResultOnDuplicates($val)
 	{
@@ -27389,7 +27389,7 @@ class ExternalProductIdType
 
 	/**
 	 * @param ExternalProductCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -27398,7 +27398,7 @@ class ExternalProductIdType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -27437,19 +27437,19 @@ class ExternalTransactionType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalTransactionID');
+            throw new \Exception('POJO Proxy need a string for ExternalTransactionID');
         }
         $this->ExternalTransactionID = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalTransactionTime($val)
 	{
@@ -27458,7 +27458,7 @@ class ExternalTransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeeOrCreditAmount($val)
 	{
@@ -27467,7 +27467,7 @@ class ExternalTransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentOrRefundAmount($val)
 	{
@@ -27476,7 +27476,7 @@ class ExternalTransactionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -27694,7 +27694,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ListingDurationDefinitionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDurations($val)
 	{
@@ -27703,7 +27703,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ShippingTermRequiredDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTermsRequired($val)
 	{
@@ -27712,7 +27712,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param BestOfferEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -27721,7 +27721,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param DutchBINEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDutchBINEnabled($val)
 	{
@@ -27730,7 +27730,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param UserConsentRequiredDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserConsentRequired($val)
 	{
@@ -27739,7 +27739,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param HomePageFeaturedEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
@@ -27748,7 +27748,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ProPackEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackEnabled($val)
 	{
@@ -27757,7 +27757,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param BasicUpgradePackEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
@@ -27766,7 +27766,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ValuePackEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValuePackEnabled($val)
 	{
@@ -27775,7 +27775,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ProPackPlusEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackPlusEnabled($val)
 	{
@@ -27784,7 +27784,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param AdFormatEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormatEnabled($val)
 	{
@@ -27793,7 +27793,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param DigitalDeliveryEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
@@ -27802,7 +27802,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param BestOfferCounterEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
@@ -27811,7 +27811,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param BestOfferAutoDeclineEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
@@ -27820,7 +27820,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalMarketSpecialitySubscriptionDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
@@ -27829,7 +27829,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalMarketRegularSubscriptionDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
@@ -27838,7 +27838,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalMarketPremiumSubscriptionDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
@@ -27847,7 +27847,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalMarketNonSubscriptionDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
@@ -27856,7 +27856,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ExpressEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEnabled($val)
 	{
@@ -27865,7 +27865,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ExpressPicturesRequiredDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressPicturesRequired($val)
 	{
@@ -27874,7 +27874,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param ExpressConditionRequiredDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressConditionRequired($val)
 	{
@@ -27883,7 +27883,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param MinimumReservePriceDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumReservePrice($val)
 	{
@@ -27892,7 +27892,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param TCREnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
@@ -27901,7 +27901,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param SellerContactDetailsEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
@@ -27910,7 +27910,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param StoreInventoryEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
@@ -27919,7 +27919,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param SkypeMeTransactionalEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
@@ -27928,7 +27928,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param SkypeMeNonTransactionalEnabledDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
@@ -27937,7 +27937,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalListingDistancesRegularDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistancesRegular($val)
 	{
@@ -27946,7 +27946,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalListingDistancesSpecialtyDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistancesSpecialty($val)
 	{
@@ -27955,7 +27955,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param LocalListingDistancesNonSubscriptionDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistancesNonSubscription($val)
 	{
@@ -27964,7 +27964,7 @@ class FeatureDefinitionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28031,19 +28031,19 @@ class FeeType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFee($val)
 	{
@@ -28052,7 +28052,7 @@ class FeeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28075,7 +28075,7 @@ class FeedbackDetailArrayType
 
 	/**
 	 * @param FeedbackDetailType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackDetail($val)
 	{
@@ -28192,7 +28192,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentingUser($val)
 	{
@@ -28201,31 +28201,31 @@ class FeedbackDetailType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentingUserScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CommentingUserScore = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CommentText');
+            throw new \Exception('POJO Proxy need a string for CommentText');
         }
         $this->CommentText = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentTime($val)
 	{
@@ -28234,7 +28234,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param CommentTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentType($val)
 	{
@@ -28243,31 +28243,31 @@ class FeedbackDetailType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackResponse($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackResponse');
+            throw new \Exception('POJO Proxy need a string for FeedbackResponse');
         }
         $this->FeedbackResponse = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFollowup($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Followup');
+            throw new \Exception('POJO Proxy need a string for Followup');
         }
         $this->Followup = $val;
 	}
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -28276,7 +28276,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param TradingRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRole($val)
 	{
@@ -28285,19 +28285,19 @@ class FeedbackDetailType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemTitle');
+            throw new \Exception('POJO Proxy need a string for ItemTitle');
         }
         $this->ItemTitle = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemPrice($val)
 	{
@@ -28306,31 +28306,31 @@ class FeedbackDetailType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackID');
+            throw new \Exception('POJO Proxy need a string for FeedbackID');
         }
         $this->FeedbackID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentReplaced($val)
 	{
@@ -28339,7 +28339,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseReplaced($val)
 	{
@@ -28348,7 +28348,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFollowUpReplaced($val)
 	{
@@ -28357,7 +28357,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountable($val)
 	{
@@ -28366,7 +28366,7 @@ class FeedbackDetailType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28402,19 +28402,19 @@ class FeedbackInfoType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CommentText');
+            throw new \Exception('POJO Proxy need a string for CommentText');
         }
         $this->CommentText = $val;
 	}
 
 	/**
 	 * @param CommentTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommentType($val)
 	{
@@ -28423,7 +28423,7 @@ class FeedbackInfoType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTargetUser($val)
 	{
@@ -28432,7 +28432,7 @@ class FeedbackInfoType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28459,7 +28459,7 @@ class FeedbackPeriodArrayType
 
 	/**
 	 * @param FeedbackPeriodType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackPeriod($val)
 	{
@@ -28495,31 +28495,31 @@ class FeedbackPeriodType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPeriodInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PeriodInDays = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Count = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28558,7 +28558,7 @@ class FeedbackRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
@@ -28567,12 +28567,12 @@ class FeedbackRequirementsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimum($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for minimum');
+            throw new \Exception('POJO Proxy need a string for minimum');
         }
         $this->minimum = $val;
 	}
@@ -28648,7 +28648,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidRetractionFeedbackPeriodArray($val)
 	{
@@ -28657,7 +28657,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNegativeFeedbackPeriodArray($val)
 	{
@@ -28666,7 +28666,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNeutralFeedbackPeriodArray($val)
 	{
@@ -28675,7 +28675,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPositiveFeedbackPeriodArray($val)
 	{
@@ -28684,7 +28684,7 @@ class FeedbackSummaryType
 
 	/**
 	 * @param FeedbackPeriodArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalFeedbackPeriodArray($val)
 	{
@@ -28693,43 +28693,43 @@ class FeedbackSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNeutralCommentCountFromSuspendedUsers($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NeutralCommentCountFromSuspendedUsers = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniqueNegativeFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniqueNegativeFeedbackCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniquePositiveFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniquePositiveFeedbackCount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28753,7 +28753,7 @@ class FeesType
 
 	/**
 	 * @param FeeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFee($val)
 	{
@@ -28776,7 +28776,7 @@ class FinanceOfferArrayType
 
 	/**
 	 * @param FinanceOfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOffer($val)
 	{
@@ -28831,43 +28831,43 @@ class FinanceOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerTerms($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerTerms');
+            throw new \Exception('POJO Proxy need a string for BuyerTerms');
         }
         $this->BuyerTerms = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerTerms($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerTerms');
+            throw new \Exception('POJO Proxy need a string for SellerTerms');
         }
         $this->SellerTerms = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartDate($val)
 	{
@@ -28876,7 +28876,7 @@ class FinanceOfferType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedDate($val)
 	{
@@ -28885,7 +28885,7 @@ class FinanceOfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumAmount($val)
 	{
@@ -28894,7 +28894,7 @@ class FinanceOfferType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRateFactor($val)
 	{
@@ -28903,19 +28903,19 @@ class FinanceOfferType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Priority = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -28957,7 +28957,7 @@ class FlatRateInsuranceRangeCostType
 
 	/**
 	 * @param FlatRateInsuranceRangeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlatRateInsuranceRange($val)
 	{
@@ -28966,7 +28966,7 @@ class FlatRateInsuranceRangeCostType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceCost($val)
 	{
@@ -28975,7 +28975,7 @@ class FlatRateInsuranceRangeCostType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29024,7 +29024,7 @@ class FlatShippingPreferencesType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPerAdditionalItem($val)
 	{
@@ -29033,7 +29033,7 @@ class FlatShippingPreferencesType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeductionAmountPerAdditionalItem($val)
 	{
@@ -29042,7 +29042,7 @@ class FlatShippingPreferencesType
 
 	/**
 	 * @param FlatRateInsuranceRangeCostType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlatRateInsuranceRangeCost($val)
 	{
@@ -29051,7 +29051,7 @@ class FlatShippingPreferencesType
 
 	/**
 	 * @param FlatShippingRateOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlatShippingRateOption($val)
 	{
@@ -29060,7 +29060,7 @@ class FlatShippingPreferencesType
 
 	/**
 	 * @param InsuranceOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceOption($val)
 	{
@@ -29069,7 +29069,7 @@ class FlatShippingPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29181,7 +29181,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ListingFlowCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingFlow($val)
 	{
@@ -29190,7 +29190,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -29199,7 +29199,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -29208,7 +29208,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ModifiedFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifiedFields($val)
 	{
@@ -29217,7 +29217,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param RecommendationEngineCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecommendationEngine($val)
 	{
@@ -29226,43 +29226,43 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCorrelationID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeletedField($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeletedField');
+            throw new \Exception('POJO Proxy need a string for DeletedField');
         }
         $this->DeletedField = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29321,7 +29321,7 @@ class GetRecommendationsResponseContainerType
 
 	/**
 	 * @param ListingAnalyzerRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
@@ -29330,7 +29330,7 @@ class GetRecommendationsResponseContainerType
 
 	/**
 	 * @param SIFFTASRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
@@ -29339,7 +29339,7 @@ class GetRecommendationsResponseContainerType
 
 	/**
 	 * @param PricingRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPricingRecommendations($val)
 	{
@@ -29348,7 +29348,7 @@ class GetRecommendationsResponseContainerType
 
 	/**
 	 * @param AttributeRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeRecommendations($val)
 	{
@@ -29357,7 +29357,7 @@ class GetRecommendationsResponseContainerType
 
 	/**
 	 * @param ProductRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductRecommendations($val)
 	{
@@ -29366,19 +29366,19 @@ class GetRecommendationsResponseContainerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCorrelationID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29428,7 +29428,7 @@ class HomePageFeaturedEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29466,7 +29466,7 @@ class InsuranceDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceFee($val)
 	{
@@ -29475,7 +29475,7 @@ class InsuranceDetailsType
 
 	/**
 	 * @param InsuranceOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceOption($val)
 	{
@@ -29484,7 +29484,7 @@ class InsuranceDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29571,7 +29571,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingService($val)
 	{
@@ -29580,7 +29580,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceCost($val)
 	{
@@ -29589,7 +29589,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
@@ -29598,31 +29598,31 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServicePriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingServicePriority = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipToLocation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipToLocation');
+            throw new \Exception('POJO Proxy need a string for ShipToLocation');
         }
         $this->ShipToLocation = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingInsuranceCost($val)
 	{
@@ -29631,7 +29631,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29658,7 +29658,7 @@ class ItemArrayType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -29706,7 +29706,7 @@ class ItemBidDetailsType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -29715,31 +29715,31 @@ class ItemBidDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
 	}
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerID($val)
 	{
@@ -29748,7 +29748,7 @@ class ItemBidDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastBidTime($val)
 	{
@@ -29757,7 +29757,7 @@ class ItemBidDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29821,7 +29821,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInclude($val)
 	{
@@ -29830,7 +29830,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -29839,7 +29839,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param ItemSortTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSort($val)
 	{
@@ -29848,19 +29848,19 @@ class ItemListCustomizationType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDurationInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DurationInDays = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeNotes($val)
 	{
@@ -29869,7 +29869,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -29878,7 +29878,7 @@ class ItemListCustomizationType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -29993,7 +29993,7 @@ class ItemTransactionIdArrayType
 
 	/**
 	 * @param ItemTransactionIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemTransactionID($val)
 	{
@@ -30027,7 +30027,7 @@ class ItemTransactionIdType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -30036,19 +30036,19 @@ class ItemTransactionIdType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -30999,19 +30999,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplicationData($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ApplicationData');
+            throw new \Exception('POJO Proxy need a string for ApplicationData');
         }
         $this->ApplicationData = $val;
 	}
 
 	/**
 	 * @param AttributeSetArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetArray($val)
 	{
@@ -31020,7 +31020,7 @@ class ItemType
 
 	/**
 	 * @param AttributeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeArray($val)
 	{
@@ -31029,7 +31029,7 @@ class ItemType
 
 	/**
 	 * @param LookupAttributeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLookupAttributeArray($val)
 	{
@@ -31038,7 +31038,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplyShippingDiscount($val)
 	{
@@ -31047,7 +31047,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAutoPay($val)
 	{
@@ -31056,7 +31056,7 @@ class ItemType
 
 	/**
 	 * @param PaymentDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentDetails($val)
 	{
@@ -31065,7 +31065,7 @@ class ItemType
 
 	/**
 	 * @param BiddingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBiddingDetails($val)
 	{
@@ -31074,7 +31074,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorsGermanySearchable($val)
 	{
@@ -31083,7 +31083,7 @@ class ItemType
 
 	/**
 	 * @param BuyerProtectionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerProtection($val)
 	{
@@ -31092,7 +31092,7 @@ class ItemType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowPrice($val)
 	{
@@ -31101,7 +31101,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryMappingAllowed($val)
 	{
@@ -31110,7 +31110,7 @@ class ItemType
 
 	/**
 	 * @param CharityType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharity($val)
 	{
@@ -31119,7 +31119,7 @@ class ItemType
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountry($val)
 	{
@@ -31128,7 +31128,7 @@ class ItemType
 
 	/**
 	 * @param CrossPromotionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotion($val)
 	{
@@ -31137,7 +31137,7 @@ class ItemType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -31146,19 +31146,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param DescriptionReviseModeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescriptionReviseMode($val)
 	{
@@ -31167,7 +31167,7 @@ class ItemType
 
 	/**
 	 * @param DistanceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDistance($val)
 	{
@@ -31176,31 +31176,31 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGiftIcon($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->GiftIcon = $val;
 	}
 
 	/**
 	 * @param GiftServicesCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGiftServices($val)
 	{
@@ -31209,7 +31209,7 @@ class ItemType
 
 	/**
 	 * @param HitCounterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHitCounter($val)
 	{
@@ -31218,7 +31218,7 @@ class ItemType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -31227,7 +31227,7 @@ class ItemType
 
 	/**
 	 * @param ListingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDetails($val)
 	{
@@ -31236,7 +31236,7 @@ class ItemType
 
 	/**
 	 * @param ListingDesignerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDesigner($val)
 	{
@@ -31245,7 +31245,7 @@ class ItemType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDuration($val)
 	{
@@ -31254,7 +31254,7 @@ class ItemType
 
 	/**
 	 * @param ListingEnhancementsCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingEnhancement($val)
 	{
@@ -31263,7 +31263,7 @@ class ItemType
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -31272,7 +31272,7 @@ class ItemType
 
 	/**
 	 * @param ListingSubtypeEnum $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingSubtype($val)
 	{
@@ -31281,31 +31281,31 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Location');
+            throw new \Exception('POJO Proxy need a string for Location');
         }
         $this->Location = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLotSize($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LotSize = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNowAndNew($val)
 	{
@@ -31314,31 +31314,31 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPartnerCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PartnerCode');
+            throw new \Exception('POJO Proxy need a string for PartnerCode');
         }
         $this->PartnerCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPartnerName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PartnerName');
+            throw new \Exception('POJO Proxy need a string for PartnerName');
         }
         $this->PartnerName = $val;
 	}
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethods($val)
 	{
@@ -31347,19 +31347,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalEmailAddress($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PayPalEmailAddress');
+            throw new \Exception('POJO Proxy need a string for PayPalEmailAddress');
         }
         $this->PayPalEmailAddress = $val;
 	}
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrimaryCategory($val)
 	{
@@ -31368,7 +31368,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivateListing($val)
 	{
@@ -31377,7 +31377,7 @@ class ItemType
 
 	/**
 	 * @param ProductListingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductListingDetails($val)
 	{
@@ -31386,7 +31386,7 @@ class ItemType
 
 	/**
 	 * @param ProximitySearchDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProximitySearchDetails($val)
 	{
@@ -31395,43 +31395,43 @@ class ItemType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantity($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Quantity = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivateNotes($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PrivateNotes');
+            throw new \Exception('POJO Proxy need a string for PrivateNotes');
         }
         $this->PrivateNotes = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RegionID');
+            throw new \Exception('POJO Proxy need a string for RegionID');
         }
         $this->RegionID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelistLink($val)
 	{
@@ -31440,7 +31440,7 @@ class ItemType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReservePrice($val)
 	{
@@ -31449,7 +31449,7 @@ class ItemType
 
 	/**
 	 * @param ReviseStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReviseStatus($val)
 	{
@@ -31458,7 +31458,7 @@ class ItemType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduleTime($val)
 	{
@@ -31467,7 +31467,7 @@ class ItemType
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondaryCategory($val)
 	{
@@ -31476,7 +31476,7 @@ class ItemType
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFreeAddedCategory($val)
 	{
@@ -31485,7 +31485,7 @@ class ItemType
 
 	/**
 	 * @param SiteHostedPictureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteHostedPicture($val)
 	{
@@ -31494,7 +31494,7 @@ class ItemType
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSeller($val)
 	{
@@ -31503,7 +31503,7 @@ class ItemType
 
 	/**
 	 * @param SellingStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingStatus($val)
 	{
@@ -31512,7 +31512,7 @@ class ItemType
 
 	/**
 	 * @param ShippingOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingOption($val)
 	{
@@ -31521,7 +31521,7 @@ class ItemType
 
 	/**
 	 * @param ShippingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingDetails($val)
 	{
@@ -31530,7 +31530,7 @@ class ItemType
 
 	/**
 	 * @param ShippingRegionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingRegions($val)
 	{
@@ -31539,7 +31539,7 @@ class ItemType
 
 	/**
 	 * @param ShippingTermsCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTerms($val)
 	{
@@ -31548,19 +31548,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipToLocations($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipToLocations');
+            throw new \Exception('POJO Proxy need a string for ShipToLocations');
         }
         $this->ShipToLocations = $val;
 	}
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -31569,7 +31569,7 @@ class ItemType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartPrice($val)
 	{
@@ -31578,7 +31578,7 @@ class ItemType
 
 	/**
 	 * @param StorefrontType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStorefront($val)
 	{
@@ -31587,19 +31587,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SubTitle');
+            throw new \Exception('POJO Proxy need a string for SubTitle');
         }
         $this->SubTitle = $val;
 	}
 
 	/**
 	 * @param duration $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeLeft($val)
 	{
@@ -31608,19 +31608,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param UUIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUUID($val)
 	{
@@ -31629,7 +31629,7 @@ class ItemType
 
 	/**
 	 * @param VATDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATDetails($val)
 	{
@@ -31638,7 +31638,7 @@ class ItemType
 
 	/**
 	 * @param VendorHostedPictureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVendorHostedPicture($val)
 	{
@@ -31647,19 +31647,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerVacationNote($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerVacationNote');
+            throw new \Exception('POJO Proxy need a string for SellerVacationNote');
         }
         $this->SellerVacationNote = $val;
 	}
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatchCount($val)
 	{
@@ -31668,7 +31668,7 @@ class ItemType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHitCount($val)
 	{
@@ -31677,7 +31677,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisableBuyerRequirements($val)
 	{
@@ -31686,7 +31686,7 @@ class ItemType
 
 	/**
 	 * @param BuyerRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerRequirements($val)
 	{
@@ -31695,7 +31695,7 @@ class ItemType
 
 	/**
 	 * @param BestOfferDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferDetails($val)
 	{
@@ -31704,7 +31704,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAnythingPoints($val)
 	{
@@ -31713,7 +31713,7 @@ class ItemType
 
 	/**
 	 * @param LiveAuctionDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionDetails($val)
 	{
@@ -31722,7 +31722,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocationDefaulted($val)
 	{
@@ -31731,7 +31731,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThirdPartyCheckout($val)
 	{
@@ -31740,7 +31740,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUseTaxTable($val)
 	{
@@ -31749,7 +31749,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetItFast($val)
 	{
@@ -31758,7 +31758,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerResponsibleForShipping($val)
 	{
@@ -31767,7 +31767,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLimitedWarrantyEligible($val)
 	{
@@ -31776,19 +31776,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayNotes($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for eBayNotes');
+            throw new \Exception('POJO Proxy need a string for eBayNotes');
         }
         $this->eBayNotes = $val;
 	}
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuestionCount($val)
 	{
@@ -31797,7 +31797,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelisted($val)
 	{
@@ -31806,19 +31806,19 @@ class ItemType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantityAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantityAvailable = $val;
 	}
 
 	/**
 	 * @param SKUType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSKU($val)
 	{
@@ -31827,7 +31827,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryBasedAttributesPrefill($val)
 	{
@@ -31836,7 +31836,7 @@ class ItemType
 
 	/**
 	 * @param SearchDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchDetails($val)
 	{
@@ -31845,19 +31845,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTermsInDescription($val)
 	{
@@ -31866,7 +31866,7 @@ class ItemType
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -31875,19 +31875,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerInventoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerInventoryID');
+            throw new \Exception('POJO Proxy need a string for SellerInventoryID');
         }
         $this->SellerInventoryID = $val;
 	}
 
 	/**
 	 * @param PictureDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureDetails($val)
 	{
@@ -31896,7 +31896,7 @@ class ItemType
 
 	/**
 	 * @param DigitalDeliveryDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDeliveryDetails($val)
 	{
@@ -31905,19 +31905,19 @@ class ItemType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDispatchTimeMax($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DispatchTimeMax = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeEnabled($val)
 	{
@@ -31926,19 +31926,19 @@ class ItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SkypeID');
+            throw new \Exception('POJO Proxy need a string for SkypeID');
         }
         $this->SkypeID = $val;
 	}
 
 	/**
 	 * @param SkypeOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeOption($val)
 	{
@@ -31947,7 +31947,7 @@ class ItemType
 
 	/**
 	 * @param SkypeContactOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeContactOption($val)
 	{
@@ -31956,7 +31956,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -31965,7 +31965,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListing($val)
 	{
@@ -31974,7 +31974,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThirdPartyCheckoutIntegration($val)
 	{
@@ -31983,7 +31983,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressOptOut($val)
 	{
@@ -31992,7 +31992,7 @@ class ItemType
 
 	/**
 	 * @param ListingCheckoutRedirectPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingCheckoutRedirectPreference($val)
 	{
@@ -32001,7 +32001,7 @@ class ItemType
 
 	/**
 	 * @param ExpressDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressDetails($val)
 	{
@@ -32010,7 +32010,7 @@ class ItemType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerContactDetails($val)
 	{
@@ -32019,7 +32019,7 @@ class ItemType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalQuestionCount($val)
 	{
@@ -32028,7 +32028,7 @@ class ItemType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProxyItem($val)
 	{
@@ -32037,7 +32037,7 @@ class ItemType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32084,19 +32084,19 @@ class LabelType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32105,7 +32105,7 @@ class LabelType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVisible($val)
 	{
@@ -32132,7 +32132,7 @@ class ListingAnalyzerRecommendationsType
 
 	/**
 	 * @param ListingTipArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTipArray($val)
 	{
@@ -32141,7 +32141,7 @@ class ListingAnalyzerRecommendationsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32173,31 +32173,31 @@ class ListingCheckoutRedirectPreferenceType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProStoresStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProStoresStoreName');
+            throw new \Exception('POJO Proxy need a string for ProStoresStoreName');
         }
         $this->ProStoresStoreName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerThirdPartyUsername($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
+            throw new \Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
         $this->SellerThirdPartyUsername = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32244,19 +32244,19 @@ class ListingDesignerType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLayoutID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LayoutID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOptimalPictureSize($val)
 	{
@@ -32265,19 +32265,19 @@ class ListingDesignerType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32463,7 +32463,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdult($val)
 	{
@@ -32472,7 +32472,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBindingAuction($val)
 	{
@@ -32481,7 +32481,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutEnabled($val)
 	{
@@ -32490,7 +32490,7 @@ class ListingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedBuyItNowPrice($val)
 	{
@@ -32499,7 +32499,7 @@ class ListingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedStartPrice($val)
 	{
@@ -32508,7 +32508,7 @@ class ListingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedReservePrice($val)
 	{
@@ -32517,7 +32517,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasReservePrice($val)
 	{
@@ -32526,19 +32526,19 @@ class ListingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegionName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RegionName');
+            throw new \Exception('POJO Proxy need a string for RegionName');
         }
         $this->RegionName = $val;
 	}
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelistedItemID($val)
 	{
@@ -32547,7 +32547,7 @@ class ListingDetailsType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOriginalItemID($val)
 	{
@@ -32556,7 +32556,7 @@ class ListingDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -32565,7 +32565,7 @@ class ListingDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{
@@ -32574,7 +32574,7 @@ class ListingDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setViewItemURL($val)
 	{
@@ -32583,7 +32583,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasUnansweredQuestions($val)
 	{
@@ -32592,7 +32592,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasPublicMessages($val)
 	{
@@ -32601,7 +32601,7 @@ class ListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowAvailable($val)
 	{
@@ -32610,7 +32610,7 @@ class ListingDetailsType
 
 	/**
 	 * @param SellerBusinessCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerBusinessType($val)
 	{
@@ -32619,7 +32619,7 @@ class ListingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumBestOfferPrice($val)
 	{
@@ -32628,31 +32628,31 @@ class ListingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumBestOfferMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MinimumBestOfferMessage');
+            throw new \Exception('POJO Proxy need a string for MinimumBestOfferMessage');
         }
         $this->MinimumBestOfferMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistance($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalListingDistance');
+            throw new \Exception('POJO Proxy need a string for LocalListingDistance');
         }
         $this->LocalListingDistance = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressListing($val)
 	{
@@ -32661,7 +32661,7 @@ class ListingDetailsType
 
 	/**
 	 * @param ExpressItemRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressItemRequirements($val)
 	{
@@ -32670,7 +32670,7 @@ class ListingDetailsType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTCROriginalItemID($val)
 	{
@@ -32679,7 +32679,7 @@ class ListingDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setViewItemURLForNaturalSearch($val)
 	{
@@ -32688,7 +32688,7 @@ class ListingDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32720,7 +32720,7 @@ class ListingDurationDefinitionType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDuration($val)
 	{
@@ -32729,7 +32729,7 @@ class ListingDurationDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -32738,12 +32738,12 @@ class ListingDurationDefinitionType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDurationSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->durationSetID = $val;
 	}
@@ -32774,7 +32774,7 @@ class ListingDurationDefinitionsType
 
 	/**
 	 * @param ListingDurationDefinitionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDuration($val)
 	{
@@ -32783,12 +32783,12 @@ class ListingDurationDefinitionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVersion($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Version = $val;
 	}
@@ -32813,19 +32813,19 @@ class ListingDurationReferenceType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function set($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->_ = $val;
 	}
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -32884,7 +32884,7 @@ class ListingTipArrayType
 
 	/**
 	 * @param ListingTipType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTip($val)
 	{
@@ -32930,55 +32930,55 @@ class ListingTipFieldType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTipFieldID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListingTipFieldID');
+            throw new \Exception('POJO Proxy need a string for ListingTipFieldID');
         }
         $this->ListingTipFieldID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFieldTip($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FieldTip');
+            throw new \Exception('POJO Proxy need a string for FieldTip');
         }
         $this->FieldTip = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentFieldText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CurrentFieldText');
+            throw new \Exception('POJO Proxy need a string for CurrentFieldText');
         }
         $this->CurrentFieldText = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentFieldValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CurrentFieldValue');
+            throw new \Exception('POJO Proxy need a string for CurrentFieldValue');
         }
         $this->CurrentFieldValue = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33022,55 +33022,55 @@ class ListingTipMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTipMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListingTipMessageID');
+            throw new \Exception('POJO Proxy need a string for ListingTipMessageID');
         }
         $this->ListingTipMessageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShortMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShortMessage');
+            throw new \Exception('POJO Proxy need a string for ShortMessage');
         }
         $this->ShortMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLongMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LongMessage');
+            throw new \Exception('POJO Proxy need a string for LongMessage');
         }
         $this->LongMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHelpURLPath($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HelpURLPath');
+            throw new \Exception('POJO Proxy need a string for HelpURLPath');
         }
         $this->HelpURLPath = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33113,31 +33113,31 @@ class ListingTipType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTipID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListingTipID');
+            throw new \Exception('POJO Proxy need a string for ListingTipID');
         }
         $this->ListingTipID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Priority = $val;
 	}
 
 	/**
 	 * @param ListingTipMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessage($val)
 	{
@@ -33146,7 +33146,7 @@ class ListingTipType
 
 	/**
 	 * @param ListingTipFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setField($val)
 	{
@@ -33155,7 +33155,7 @@ class ListingTipType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33195,7 +33195,7 @@ class LiveAuctionApprovalStatusArrayType
 
 	/**
 	 * @param LiveAuctionApprovalStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionStatus($val)
 	{
@@ -33233,7 +33233,7 @@ class LiveAuctionApprovalStatusType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -33242,12 +33242,12 @@ class LiveAuctionApprovalStatusType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Status');
+            throw new \Exception('POJO Proxy need a string for Status');
         }
         $this->Status = $val;
 	}
@@ -33286,7 +33286,7 @@ class LiveAuctionBidType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRequestedBiddingLimit($val)
 	{
@@ -33295,7 +33295,7 @@ class LiveAuctionBidType
 
 	/**
 	 * @param BidderStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderStatus($val)
 	{
@@ -33304,7 +33304,7 @@ class LiveAuctionBidType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApprovedBiddingLimit($val)
 	{
@@ -33313,19 +33313,19 @@ class LiveAuctionBidType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeclinedComment($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeclinedComment');
+            throw new \Exception('POJO Proxy need a string for DeclinedComment');
         }
         $this->DeclinedComment = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33371,31 +33371,31 @@ class LiveAuctionCatalogType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserCatalogID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCatalogName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CatalogName');
+            throw new \Exception('POJO Proxy need a string for CatalogName');
         }
         $this->CatalogName = $val;
 	}
 
 	/**
 	 * @param ScheduleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSchedule($val)
 	{
@@ -33404,7 +33404,7 @@ class LiveAuctionCatalogType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33453,43 +33453,43 @@ class LiveAuctionDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserCatalogID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduleID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ScheduleID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLotNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LotNumber');
+            throw new \Exception('POJO Proxy need a string for LotNumber');
         }
         $this->LotNumber = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighEstimate($val)
 	{
@@ -33498,7 +33498,7 @@ class LiveAuctionDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLowEstimate($val)
 	{
@@ -33507,7 +33507,7 @@ class LiveAuctionDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33532,7 +33532,7 @@ class LocalListingDistancesNonSubscriptionDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33556,7 +33556,7 @@ class LocalListingDistancesRegularDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33581,7 +33581,7 @@ class LocalListingDistancesSpecialtyDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33606,7 +33606,7 @@ class LocalMarketNonSubscriptionDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33631,7 +33631,7 @@ class LocalMarketPremiumSubscriptionDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33656,7 +33656,7 @@ class LocalMarketRegularSubscriptionDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33681,7 +33681,7 @@ class LocalMarketSpecialitySubscriptionDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33707,7 +33707,7 @@ class LookupAttributeArrayType
 
 	/**
 	 * @param LookupAttributeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLookupAttribute($val)
 	{
@@ -33740,31 +33740,31 @@ class LookupAttributeType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33808,7 +33808,7 @@ class MarkUpMarkDownEventType
 
 	/**
 	 * @param MarkUpMarkDownEventTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -33817,7 +33817,7 @@ class MarkUpMarkDownEventType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTime($val)
 	{
@@ -33826,19 +33826,19 @@ class MarkUpMarkDownEventType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReason($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reason');
+            throw new \Exception('POJO Proxy need a string for Reason');
         }
         $this->Reason = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -33872,7 +33872,7 @@ class MarkUpMarkDownHistoryType
 
 	/**
 	 * @param MarkUpMarkDownEventType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMarkUpMarkDownEvent($val)
 	{
@@ -33903,24 +33903,24 @@ class MaximumItemRequirementsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaximumItemCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaximumItemCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MinimumFeedbackScore = $val;
 	}
@@ -33942,7 +33942,7 @@ class MemberMessageExchangeArrayType
 
 	/**
 	 * @param MemberMessageExchangeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessageExchange($val)
 	{
@@ -33993,7 +33993,7 @@ class MemberMessageExchangeType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -34002,7 +34002,7 @@ class MemberMessageExchangeType
 
 	/**
 	 * @param MemberMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuestion($val)
 	{
@@ -34011,19 +34011,19 @@ class MemberMessageExchangeType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponse($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Response');
+            throw new \Exception('POJO Proxy need a string for Response');
         }
         $this->Response = $val;
 	}
 
 	/**
 	 * @param MessageStatusTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageStatus($val)
 	{
@@ -34032,7 +34032,7 @@ class MemberMessageExchangeType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreationDate($val)
 	{
@@ -34041,7 +34041,7 @@ class MemberMessageExchangeType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedDate($val)
 	{
@@ -34050,7 +34050,7 @@ class MemberMessageExchangeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34129,7 +34129,7 @@ class MemberMessageType
 
 	/**
 	 * @param MessageTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageType($val)
 	{
@@ -34138,7 +34138,7 @@ class MemberMessageType
 
 	/**
 	 * @param QuestionTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuestionType($val)
 	{
@@ -34147,7 +34147,7 @@ class MemberMessageType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmailCopyToSender($val)
 	{
@@ -34156,7 +34156,7 @@ class MemberMessageType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHideSendersEmailAddress($val)
 	{
@@ -34165,7 +34165,7 @@ class MemberMessageType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayToPublic($val)
 	{
@@ -34174,91 +34174,91 @@ class MemberMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSenderID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SenderID');
+            throw new \Exception('POJO Proxy need a string for SenderID');
         }
         $this->SenderID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSenderEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SenderEmail');
+            throw new \Exception('POJO Proxy need a string for SenderEmail');
         }
         $this->SenderEmail = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientID');
+            throw new \Exception('POJO Proxy need a string for RecipientID');
         }
         $this->RecipientID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubject($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Subject');
+            throw new \Exception('POJO Proxy need a string for Subject');
         }
         $this->Subject = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBody($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Body');
+            throw new \Exception('POJO Proxy need a string for Body');
         }
         $this->Body = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageID');
+            throw new \Exception('POJO Proxy need a string for MessageID');
         }
         $this->MessageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setParentMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ParentMessageID');
+            throw new \Exception('POJO Proxy need a string for ParentMessageID');
         }
         $this->ParentMessageID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34315,7 +34315,7 @@ class MinimumReservePriceDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34353,19 +34353,19 @@ class ModifiedFieldType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setField($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Field');
+            throw new \Exception('POJO Proxy need a string for Field');
         }
         $this->Field = $val;
 	}
 
 	/**
 	 * @param ModifyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifyType($val)
 	{
@@ -34374,7 +34374,7 @@ class ModifiedFieldType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34413,7 +34413,7 @@ class MyMessagesAlertArrayType
 
 	/**
 	 * @param MyMessagesAlertType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlert($val)
 	{
@@ -34436,7 +34436,7 @@ class MyMessagesAlertIdArrayType
 
 	/**
 	 * @param MyMessagesAlertIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertID($val)
 	{
@@ -34561,55 +34561,55 @@ class MyMessagesAlertType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSender($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Sender');
+            throw new \Exception('POJO Proxy need a string for Sender');
         }
         $this->Sender = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientUserID');
+            throw new \Exception('POJO Proxy need a string for RecipientUserID');
         }
         $this->RecipientUserID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubject($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Subject');
+            throw new \Exception('POJO Proxy need a string for Subject');
         }
         $this->Subject = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriority($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Priority');
+            throw new \Exception('POJO Proxy need a string for Priority');
         }
         $this->Priority = $val;
 	}
 
 	/**
 	 * @param MyMessagesAlertIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertID($val)
 	{
@@ -34618,43 +34618,43 @@ class MyMessagesAlertType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalAlertID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalAlertID');
+            throw new \Exception('POJO Proxy need a string for ExternalAlertID');
         }
         $this->ExternalAlertID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContentType($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ContentType');
+            throw new \Exception('POJO Proxy need a string for ContentType');
         }
         $this->ContentType = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Text');
+            throw new \Exception('POJO Proxy need a string for Text');
         }
         $this->Text = $val;
 	}
 
 	/**
 	 * @param MyMessagesAlertResolutionStatusCode $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResolutionStatus($val)
 	{
@@ -34663,7 +34663,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRead($val)
 	{
@@ -34672,7 +34672,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreationDate($val)
 	{
@@ -34681,7 +34681,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReceiveDate($val)
 	{
@@ -34690,7 +34690,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpirationDate($val)
 	{
@@ -34699,7 +34699,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResolutionDate($val)
 	{
@@ -34708,7 +34708,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastReadDate($val)
 	{
@@ -34717,7 +34717,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -34726,7 +34726,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIsTimedResolution($val)
 	{
@@ -34735,19 +34735,19 @@ class MyMessagesAlertType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActionURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ActionURL');
+            throw new \Exception('POJO Proxy need a string for ActionURL');
         }
         $this->ActionURL = $val;
 	}
 
 	/**
 	 * @param MyMessagesResponseDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseDetails($val)
 	{
@@ -34756,7 +34756,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param MyMessagesForwardDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setForwardDetails($val)
 	{
@@ -34765,7 +34765,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param MyMessagesFolderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolder($val)
 	{
@@ -34774,7 +34774,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34829,7 +34829,7 @@ class MyMessagesFolderSummaryType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
@@ -34838,67 +34838,67 @@ class MyMessagesFolderSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FolderName');
+            throw new \Exception('POJO Proxy need a string for FolderName');
         }
         $this->FolderName = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewAlertCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NewAlertCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewMessageCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NewMessageCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAlertCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAlertCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalMessageCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalMessageCount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34929,7 +34929,7 @@ class MyMessagesFolderType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
@@ -34938,19 +34938,19 @@ class MyMessagesFolderType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FolderName');
+            throw new \Exception('POJO Proxy need a string for FolderName');
         }
         $this->FolderName = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -34981,7 +34981,7 @@ class MyMessagesForwardDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserForwardDate($val)
 	{
@@ -34990,19 +34990,19 @@ class MyMessagesForwardDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setForwardMessageEncoding($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ForwardMessageEncoding');
+            throw new \Exception('POJO Proxy need a string for ForwardMessageEncoding');
         }
         $this->ForwardMessageEncoding = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35025,7 +35025,7 @@ class MyMessagesMessageArrayType
 
 	/**
 	 * @param MyMessagesMessageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessage($val)
 	{
@@ -35050,7 +35050,7 @@ class MyMessagesMessageIdArrayType
 
 	/**
 	 * @param MyMessagesMessageIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageID($val)
 	{
@@ -35156,55 +35156,55 @@ class MyMessagesMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSender($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Sender');
+            throw new \Exception('POJO Proxy need a string for Sender');
         }
         $this->Sender = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientUserID');
+            throw new \Exception('POJO Proxy need a string for RecipientUserID');
         }
         $this->RecipientUserID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSendToName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SendToName');
+            throw new \Exception('POJO Proxy need a string for SendToName');
         }
         $this->SendToName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubject($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Subject');
+            throw new \Exception('POJO Proxy need a string for Subject');
         }
         $this->Subject = $val;
 	}
 
 	/**
 	 * @param MyMessagesMessageIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageID($val)
 	{
@@ -35213,43 +35213,43 @@ class MyMessagesMessageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalMessageID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalMessageID');
+            throw new \Exception('POJO Proxy need a string for ExternalMessageID');
         }
         $this->ExternalMessageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContentType($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ContentType');
+            throw new \Exception('POJO Proxy need a string for ContentType');
         }
         $this->ContentType = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Text');
+            throw new \Exception('POJO Proxy need a string for Text');
         }
         $this->Text = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlagged($val)
 	{
@@ -35258,7 +35258,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRead($val)
 	{
@@ -35267,7 +35267,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreationDate($val)
 	{
@@ -35276,7 +35276,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReceiveDate($val)
 	{
@@ -35285,7 +35285,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpirationDate($val)
 	{
@@ -35294,7 +35294,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -35303,7 +35303,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param MyMessagesResponseDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseDetails($val)
 	{
@@ -35312,7 +35312,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param MyMessagesForwardDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setForwardDetails($val)
 	{
@@ -35321,7 +35321,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param MyMessagesFolderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolder($val)
 	{
@@ -35330,7 +35330,7 @@ class MyMessagesMessageType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35368,7 +35368,7 @@ class MyMessagesResponseDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseEnabled($val)
 	{
@@ -35377,7 +35377,7 @@ class MyMessagesResponseDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseURL($val)
 	{
@@ -35386,7 +35386,7 @@ class MyMessagesResponseDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserResponseDate($val)
 	{
@@ -35395,7 +35395,7 @@ class MyMessagesResponseDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35443,7 +35443,7 @@ class MyMessagesSummaryType
 
 	/**
 	 * @param MyMessagesFolderSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderSummary($val)
 	{
@@ -35452,72 +35452,72 @@ class MyMessagesSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewAlertCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NewAlertCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewMessageCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NewMessageCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUnresolvedAlertCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UnresolvedAlertCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFlaggedMessageCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FlaggedMessageCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAlertCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAlertCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalMessageCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalMessageCount = $val;
 	}
@@ -35546,19 +35546,19 @@ class MyeBayFavoriteSearchListType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAvailable = $val;
 	}
 
 	/**
 	 * @param MyeBayFavoriteSearchType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSearch($val)
 	{
@@ -35567,7 +35567,7 @@ class MyeBayFavoriteSearchListType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35598,31 +35598,31 @@ class MyeBayFavoriteSearchType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SearchName');
+            throw new \Exception('POJO Proxy need a string for SearchName');
         }
         $this->SearchName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SearchQuery');
+            throw new \Exception('POJO Proxy need a string for SearchQuery');
         }
         $this->SearchQuery = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35653,19 +35653,19 @@ class MyeBayFavoriteSellerListType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAvailable = $val;
 	}
 
 	/**
 	 * @param MyeBayFavoriteSellerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteSeller($val)
 	{
@@ -35674,7 +35674,7 @@ class MyeBayFavoriteSellerListType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35715,31 +35715,31 @@ class MyeBayFavoriteSellerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserID');
+            throw new \Exception('POJO Proxy need a string for UserID');
         }
         $this->UserID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35770,19 +35770,19 @@ class MyeBaySecondChanceOfferListType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalAvailable = $val;
 	}
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOffer($val)
 	{
@@ -35791,7 +35791,7 @@ class MyeBaySecondChanceOfferListType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35829,7 +35829,7 @@ class MyeBaySelectionType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInclude($val)
 	{
@@ -35838,7 +35838,7 @@ class MyeBaySelectionType
 
 	/**
 	 * @param SortOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSort($val)
 	{
@@ -35847,19 +35847,19 @@ class MyeBaySelectionType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxResults($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxResults = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35886,7 +35886,7 @@ class NameValueListArrayType
 
 	/**
 	 * @param NameValueListType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameValueList($val)
 	{
@@ -35917,31 +35917,31 @@ class NameValueListType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -35965,7 +35965,7 @@ class NotificationDetailsArrayType
 
 	/**
 	 * @param NotificationDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationDetails($val)
 	{
@@ -36031,7 +36031,7 @@ class NotificationDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeliveryURL($val)
 	{
@@ -36040,19 +36040,19 @@ class NotificationDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReferenceID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReferenceID');
+            throw new \Exception('POJO Proxy need a string for ReferenceID');
         }
         $this->ReferenceID = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpirationTime($val)
 	{
@@ -36061,7 +36061,7 @@ class NotificationDetailsType
 
 	/**
 	 * @param NotificationEventTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -36070,19 +36070,19 @@ class NotificationDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRetries($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Retries = $val;
 	}
 
 	/**
 	 * @param NotificationEventStateCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeliveryStatus($val)
 	{
@@ -36091,7 +36091,7 @@ class NotificationDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNextRetryTime($val)
 	{
@@ -36100,7 +36100,7 @@ class NotificationDetailsType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeliveryTime($val)
 	{
@@ -36109,19 +36109,19 @@ class NotificationDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ErrorMessage');
+            throw new \Exception('POJO Proxy need a string for ErrorMessage');
         }
         $this->ErrorMessage = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -36146,7 +36146,7 @@ class NotificationEnableArrayType
 
 	/**
 	 * @param NotificationEnableType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNotificationEnable($val)
 	{
@@ -36176,7 +36176,7 @@ class NotificationEnableType
 
 	/**
 	 * @param NotificationEventTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventType($val)
 	{
@@ -36185,7 +36185,7 @@ class NotificationEnableType
 
 	/**
 	 * @param EnableCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventEnable($val)
 	{
@@ -36194,7 +36194,7 @@ class NotificationEnableType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -36234,7 +36234,7 @@ class NotificationEventPropertyType
 
 	/**
 	 * @param NotificationEventTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventType($val)
 	{
@@ -36243,7 +36243,7 @@ class NotificationEventPropertyType
 
 	/**
 	 * @param NotificationEventPropertyNameCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
@@ -36252,19 +36252,19 @@ class NotificationEventPropertyType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -36385,67 +36385,67 @@ class NotificationStatisticsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeliveredCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DeliveredCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQueuedNewCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QueuedNewCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQueuedPendingCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QueuedPendingCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpiredCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ExpiredCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ErrorCount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -36478,7 +36478,7 @@ class NotificationUserDataType
 
 	/**
 	 * @param SMSSubscriptionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSMSSubscription($val)
 	{
@@ -36487,7 +36487,7 @@ class NotificationUserDataType
 
 	/**
 	 * @param SummaryEventScheduleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSummarySchedule($val)
 	{
@@ -36496,7 +36496,7 @@ class NotificationUserDataType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -36522,7 +36522,7 @@ class OfferArrayType
 
 	/**
 	 * @param OfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOffer($val)
 	{
@@ -36622,7 +36622,7 @@ class OfferType
 
 	/**
 	 * @param BidActionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAction($val)
 	{
@@ -36631,7 +36631,7 @@ class OfferType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -36640,7 +36640,7 @@ class OfferType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -36649,7 +36649,7 @@ class OfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxBid($val)
 	{
@@ -36658,19 +36658,19 @@ class OfferType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantity($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Quantity = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceEnabled($val)
 	{
@@ -36679,7 +36679,7 @@ class OfferType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteCurrency($val)
 	{
@@ -36688,7 +36688,7 @@ class OfferType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeBid($val)
 	{
@@ -36697,7 +36697,7 @@ class OfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighestBid($val)
 	{
@@ -36706,7 +36706,7 @@ class OfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedPrice($val)
 	{
@@ -36715,19 +36715,19 @@ class OfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUser($val)
 	{
@@ -36736,7 +36736,7 @@ class OfferType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserConsent($val)
 	{
@@ -36745,19 +36745,19 @@ class OfferType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -36787,7 +36787,7 @@ class OrderArrayType
 
 	/**
 	 * @param OrderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
@@ -36811,7 +36811,7 @@ class OrderIdArrayType
 
 	/**
 	 * @param OrderIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderID($val)
 	{
@@ -36847,7 +36847,7 @@ class OrderTransactionArrayType
 
 	/**
 	 * @param OrderTransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderTransaction($val)
 	{
@@ -36880,7 +36880,7 @@ class OrderTransactionType
 
 	/**
 	 * @param OrderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
@@ -36889,7 +36889,7 @@ class OrderTransactionType
 
 	/**
 	 * @param TransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransaction($val)
 	{
@@ -36898,7 +36898,7 @@ class OrderTransactionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37027,7 +37027,7 @@ class OrderType
 
 	/**
 	 * @param OrderIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderID($val)
 	{
@@ -37036,7 +37036,7 @@ class OrderType
 
 	/**
 	 * @param OrderStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderStatus($val)
 	{
@@ -37045,7 +37045,7 @@ class OrderType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdjustmentAmount($val)
 	{
@@ -37054,7 +37054,7 @@ class OrderType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPaid($val)
 	{
@@ -37063,7 +37063,7 @@ class OrderType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountSaved($val)
 	{
@@ -37072,7 +37072,7 @@ class OrderType
 
 	/**
 	 * @param CheckoutStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutStatus($val)
 	{
@@ -37081,7 +37081,7 @@ class OrderType
 
 	/**
 	 * @param ShippingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingDetails($val)
 	{
@@ -37090,7 +37090,7 @@ class OrderType
 
 	/**
 	 * @param TradingRoleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreatingUserRole($val)
 	{
@@ -37099,7 +37099,7 @@ class OrderType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreatedTime($val)
 	{
@@ -37108,19 +37108,19 @@ class OrderType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethods($val)
 	{
@@ -37129,19 +37129,19 @@ class OrderType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerEmail');
+            throw new \Exception('POJO Proxy need a string for SellerEmail');
         }
         $this->SellerEmail = $val;
 	}
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingAddress($val)
 	{
@@ -37150,7 +37150,7 @@ class OrderType
 
 	/**
 	 * @param ShippingServiceOptionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceSelected($val)
 	{
@@ -37159,7 +37159,7 @@ class OrderType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubtotal($val)
 	{
@@ -37168,7 +37168,7 @@ class OrderType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotal($val)
 	{
@@ -37177,7 +37177,7 @@ class OrderType
 
 	/**
 	 * @param ExternalTransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalTransaction($val)
 	{
@@ -37186,7 +37186,7 @@ class OrderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDelivery($val)
 	{
@@ -37195,7 +37195,7 @@ class OrderType
 
 	/**
 	 * @param TransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionArray($val)
 	{
@@ -37204,7 +37204,7 @@ class OrderType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerUserID($val)
 	{
@@ -37213,7 +37213,7 @@ class OrderType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37241,7 +37241,7 @@ class PaginatedItemArrayType
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -37250,7 +37250,7 @@ class PaginatedItemArrayType
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -37278,7 +37278,7 @@ class PaginatedOrderTransactionArrayType
 
 	/**
 	 * @param OrderTransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderTransactionArray($val)
 	{
@@ -37287,7 +37287,7 @@ class PaginatedOrderTransactionArrayType
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -37316,7 +37316,7 @@ class PaginatedTransactionArrayType
 
 	/**
 	 * @param TransactionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionArray($val)
 	{
@@ -37325,7 +37325,7 @@ class PaginatedTransactionArrayType
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -37362,31 +37362,31 @@ class PaginationResultType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalNumberOfPages($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalNumberOfPages = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalNumberOfEntries($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalNumberOfEntries = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37478,31 +37478,31 @@ class PaymentDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHoursToDeposit($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->HoursToDeposit = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDaysToFullPayment($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DaysToFullPayment = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37541,7 +37541,7 @@ class PaymentOptionDetailsType
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentOption($val)
 	{
@@ -37550,19 +37550,19 @@ class PaymentOptionDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37684,7 +37684,7 @@ class PictureDetailsType
 
 	/**
 	 * @param GalleryTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGalleryType($val)
 	{
@@ -37693,7 +37693,7 @@ class PictureDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGalleryURL($val)
 	{
@@ -37702,7 +37702,7 @@ class PictureDetailsType
 
 	/**
 	 * @param PhotoDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhotoDisplay($val)
 	{
@@ -37711,7 +37711,7 @@ class PictureDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureURL($val)
 	{
@@ -37720,7 +37720,7 @@ class PictureDetailsType
 
 	/**
 	 * @param PictureSourceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureSource($val)
 	{
@@ -37729,7 +37729,7 @@ class PictureDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37797,7 +37797,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param PictureManagerSubscriptionLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionLevel($val)
 	{
@@ -37806,31 +37806,31 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStorageUsed($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StorageUsed = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalStorageAvailable($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalStorageAvailable = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeepOriginal($val)
 	{
@@ -37839,7 +37839,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatermarkEPS($val)
 	{
@@ -37848,7 +37848,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWatermarkUserID($val)
 	{
@@ -37857,7 +37857,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param PictureManagerFolderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolder($val)
 	{
@@ -37866,7 +37866,7 @@ class PictureManagerDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37902,31 +37902,31 @@ class PictureManagerFolderType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FolderID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param PictureManagerPictureType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPicture($val)
 	{
@@ -37935,7 +37935,7 @@ class PictureManagerFolderType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -37983,7 +37983,7 @@ class PictureManagerPictureDisplayType
 
 	/**
 	 * @param PictureManagerPictureDisplayTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayType($val)
 	{
@@ -37992,7 +37992,7 @@ class PictureManagerPictureDisplayType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -38001,43 +38001,43 @@ class PictureManagerPictureDisplayType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSize($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Size = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHeight($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Height = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWidth($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Width = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38100,7 +38100,7 @@ class PictureManagerPictureType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureURL($val)
 	{
@@ -38109,19 +38109,19 @@ class PictureManagerPictureType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDate($val)
 	{
@@ -38130,7 +38130,7 @@ class PictureManagerPictureType
 
 	/**
 	 * @param PictureManagerPictureDisplayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayFormat($val)
 	{
@@ -38139,7 +38139,7 @@ class PictureManagerPictureType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38184,7 +38184,7 @@ class PictureManagerSubscriptionType
 
 	/**
 	 * @param PictureManagerSubscriptionLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionLevel($val)
 	{
@@ -38193,7 +38193,7 @@ class PictureManagerSubscriptionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFee($val)
 	{
@@ -38202,19 +38202,19 @@ class PictureManagerSubscriptionType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStorageSize($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StorageSize = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38256,7 +38256,7 @@ class PriceRangeFilterType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxPrice($val)
 	{
@@ -38265,7 +38265,7 @@ class PriceRangeFilterType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinPrice($val)
 	{
@@ -38274,7 +38274,7 @@ class PriceRangeFilterType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38297,7 +38297,7 @@ class PricingRecommendationsType
 
 	/**
 	 * @param ProductInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductInfo($val)
 	{
@@ -38322,7 +38322,7 @@ class ProPackEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38347,7 +38347,7 @@ class ProPackPlusEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38379,7 +38379,7 @@ class ProStoresCheckoutPreferenceType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutRedirectProStores($val)
 	{
@@ -38388,7 +38388,7 @@ class ProStoresCheckoutPreferenceType
 
 	/**
 	 * @param ProStoresDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProStoresDetails($val)
 	{
@@ -38397,7 +38397,7 @@ class ProStoresCheckoutPreferenceType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38433,31 +38433,31 @@ class ProStoresDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerThirdPartyUsername($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerThirdPartyUsername');
+            throw new \Exception('POJO Proxy need a string for SellerThirdPartyUsername');
         }
         $this->SellerThirdPartyUsername = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param EnableCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -38466,7 +38466,7 @@ class ProStoresDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38492,7 +38492,7 @@ class ProductArrayType
 
 	/**
 	 * @param ExpressProductType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProduct($val)
 	{
@@ -38532,7 +38532,7 @@ class ProductFamilyType
 
 	/**
 	 * @param ProductType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setParentProduct($val)
 	{
@@ -38541,7 +38541,7 @@ class ProductFamilyType
 
 	/**
 	 * @param ProductType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFamilyMembers($val)
 	{
@@ -38550,7 +38550,7 @@ class ProductFamilyType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38559,7 +38559,7 @@ class ProductFamilyType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreChildren($val)
 	{
@@ -38593,31 +38593,31 @@ class ProductFinderConstraintType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplayName');
+            throw new \Exception('POJO Proxy need a string for DisplayName');
         }
         $this->DisplayName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplayValue');
+            throw new \Exception('POJO Proxy need a string for DisplayValue');
         }
         $this->DisplayValue = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38650,7 +38650,7 @@ class ProductInfoType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAverageStartPrice($val)
 	{
@@ -38659,7 +38659,7 @@ class ProductInfoType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAverageSoldPrice($val)
 	{
@@ -38668,24 +38668,24 @@ class ProductInfoType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductInfoID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for productInfoID');
+            throw new \Exception('POJO Proxy need a string for productInfoID');
         }
         $this->productInfoID = $val;
 	}
@@ -38759,19 +38759,19 @@ class ProductListingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductID');
+            throw new \Exception('POJO Proxy need a string for ProductID');
         }
         $this->ProductID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeStockPhotoURL($val)
 	{
@@ -38780,7 +38780,7 @@ class ProductListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludePrefilledItemInformation($val)
 	{
@@ -38789,7 +38789,7 @@ class ProductListingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUseStockPhotoURLAsGallery($val)
 	{
@@ -38798,7 +38798,7 @@ class ProductListingDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStockPhotoURL($val)
 	{
@@ -38807,19 +38807,19 @@ class ProductListingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyright($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Copyright');
+            throw new \Exception('POJO Proxy need a string for Copyright');
         }
         $this->Copyright = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -38844,7 +38844,7 @@ class ProductRecommendationsType
 
 	/**
 	 * @param ProductInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProduct($val)
 	{
@@ -38902,19 +38902,19 @@ class ProductSearchPageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDataElements($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DataElements');
+            throw new \Exception('POJO Proxy need a string for DataElements');
         }
         $this->DataElements = $val;
 	}
 
 	/**
 	 * @param CharacteristicsSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchCharacteristicsSet($val)
 	{
@@ -38923,7 +38923,7 @@ class ProductSearchPageType
 
 	/**
 	 * @param CharacteristicsSearchCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchType($val)
 	{
@@ -38932,7 +38932,7 @@ class ProductSearchPageType
 
 	/**
 	 * @param CharacteristicType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSortCharacteristics($val)
 	{
@@ -38941,7 +38941,7 @@ class ProductSearchPageType
 
 	/**
 	 * @param DataElementSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDataElementSet($val)
 	{
@@ -38950,7 +38950,7 @@ class ProductSearchPageType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -39072,31 +39072,31 @@ class ProductSearchResultType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApproximatePages($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ApproximatePages = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMore($val)
 	{
@@ -39105,7 +39105,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param ProductFamilyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFamilies($val)
 	{
@@ -39114,7 +39114,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param ProductFinderConstraintType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderConstraints($val)
 	{
@@ -39123,7 +39123,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTooManyMatchesFound($val)
 	{
@@ -39132,43 +39132,43 @@ class ProductSearchResultType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalProducts($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalProducts = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ID');
+            throw new \Exception('POJO Proxy need a string for ID');
         }
         $this->ID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumProducts($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumProducts');
+            throw new \Exception('POJO Proxy need a string for NumProducts');
         }
         $this->NumProducts = $val;
 	}
 
 	/**
 	 * @param ResponseAttributeSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSet($val)
 	{
@@ -39177,7 +39177,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayStockPhotos($val)
 	{
@@ -39186,7 +39186,7 @@ class ProductSearchResultType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -39298,79 +39298,79 @@ class ProductSearchType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSearchID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductSearchID');
+            throw new \Exception('POJO Proxy need a string for ProductSearchID');
         }
         $this->ProductSearchID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductID');
+            throw new \Exception('POJO Proxy need a string for ProductID');
         }
         $this->ProductID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSortAttributeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SortAttributeID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxChildrenPerFamily($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxChildrenPerFamily = $val;
 	}
 
 	/**
 	 * @param SearchAttributesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchAttributes($val)
 	{
@@ -39379,7 +39379,7 @@ class ProductSearchType
 
 	/**
 	 * @param PaginationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPagination($val)
 	{
@@ -39388,7 +39388,7 @@ class ProductSearchType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAvailableItemsOnly($val)
 	{
@@ -39397,19 +39397,19 @@ class ProductSearchType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQueryKeywords($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for QueryKeywords');
+            throw new \Exception('POJO Proxy need a string for QueryKeywords');
         }
         $this->QueryKeywords = $val;
 	}
 
 	/**
 	 * @param CharacteristicSetIDsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharacteristicSetIDs($val)
 	{
@@ -39418,7 +39418,7 @@ class ProductSearchType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -39479,7 +39479,7 @@ class ProductType
 
 	/**
 	 * @param CharacteristicsSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharacteristicsSet($val)
 	{
@@ -39488,7 +39488,7 @@ class ProductType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDetailsURL($val)
 	{
@@ -39497,19 +39497,19 @@ class ProductType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumItems($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->NumItems = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinPrice($val)
 	{
@@ -39518,7 +39518,7 @@ class ProductType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxPrice($val)
 	{
@@ -39527,7 +39527,7 @@ class ProductType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -39536,19 +39536,19 @@ class ProductType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for productID');
+            throw new \Exception('POJO Proxy need a string for productID');
         }
         $this->productID = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStockPhotoURL($val)
 	{
@@ -39557,12 +39557,12 @@ class ProductType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for title');
+            throw new \Exception('POJO Proxy need a string for title');
         }
         $this->title = $val;
 	}
@@ -39667,7 +39667,7 @@ class PromotedItemType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -39676,43 +39676,43 @@ class PromotedItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PictureURL');
+            throw new \Exception('POJO Proxy need a string for PictureURL');
         }
         $this->PictureURL = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSelfHostedURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SelfHostedURL');
+            throw new \Exception('POJO Proxy need a string for SelfHostedURL');
         }
         $this->SelfHostedURL = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPosition($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Position = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionPrice($val)
 	{
@@ -39721,7 +39721,7 @@ class PromotedItemType
 
 	/**
 	 * @param PromotionItemPriceTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionPriceType($val)
 	{
@@ -39730,7 +39730,7 @@ class PromotedItemType
 
 	/**
 	 * @param PromotionItemSelectionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSelectionType($val)
 	{
@@ -39739,19 +39739,19 @@ class PromotedItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -39760,7 +39760,7 @@ class PromotedItemType
 
 	/**
 	 * @param PromotionDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionDetails($val)
 	{
@@ -39769,7 +39769,7 @@ class PromotedItemType
 
 	/**
 	 * @param duration $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeLeft($val)
 	{
@@ -39778,7 +39778,7 @@ class PromotedItemType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -39822,7 +39822,7 @@ class PromotionDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionPrice($val)
 	{
@@ -39831,7 +39831,7 @@ class PromotionDetailsType
 
 	/**
 	 * @param PromotionItemPriceTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionPriceType($val)
 	{
@@ -39840,19 +39840,19 @@ class PromotionDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedPromotionPrice($val)
 	{
@@ -39861,7 +39861,7 @@ class PromotionDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -39907,7 +39907,7 @@ class PromotionRuleArrayType
 
 	/**
 	 * @param PromotionRuleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionRule($val)
 	{
@@ -39983,7 +39983,7 @@ class PromotionRuleType
 
 	/**
 	 * @param PromotedItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotedItem($val)
 	{
@@ -39992,7 +39992,7 @@ class PromotionRuleType
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteID($val)
 	{
@@ -40001,43 +40001,43 @@ class PromotionRuleType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotedStoreCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PromotedStoreCategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotedeBayCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PromotedeBayCategoryID');
+            throw new \Exception('POJO Proxy need a string for PromotedeBayCategoryID');
         }
         $this->PromotedeBayCategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotedKeywords($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PromotedKeywords');
+            throw new \Exception('POJO Proxy need a string for PromotedKeywords');
         }
         $this->PromotedKeywords = $val;
 	}
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReferringItemID($val)
 	{
@@ -40046,43 +40046,43 @@ class PromotionRuleType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReferringStoreCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReferringStoreCategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReferringeBayCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReferringeBayCategoryID');
+            throw new \Exception('POJO Proxy need a string for ReferringeBayCategoryID');
         }
         $this->ReferringeBayCategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReferringKeywords($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReferringKeywords');
+            throw new \Exception('POJO Proxy need a string for ReferringKeywords');
         }
         $this->ReferringKeywords = $val;
 	}
 
 	/**
 	 * @param PromotionSchemeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionScheme($val)
 	{
@@ -40091,7 +40091,7 @@ class PromotionRuleType
 
 	/**
 	 * @param PromotionMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionMethod($val)
 	{
@@ -40100,7 +40100,7 @@ class PromotionRuleType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40141,19 +40141,19 @@ class ProximitySearchDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40184,31 +40184,31 @@ class ProximitySearchType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxDistance($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxDistance = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PostalCode');
+            throw new \Exception('POJO Proxy need a string for PostalCode');
         }
         $this->PostalCode = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40277,31 +40277,31 @@ class ReasonCodeDetailType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBriefText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BriefText');
+            throw new \Exception('POJO Proxy need a string for BriefText');
         }
         $this->BriefText = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDetailedText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DetailedText');
+            throw new \Exception('POJO Proxy need a string for DetailedText');
         }
         $this->DetailedText = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40310,7 +40310,7 @@ class ReasonCodeDetailType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCodeID($val)
 	{
@@ -40351,7 +40351,7 @@ class RefundArrayType
 
 	/**
 	 * @param RefundType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefund($val)
 	{
@@ -40400,7 +40400,7 @@ class RefundType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundFromSeller($val)
 	{
@@ -40409,7 +40409,7 @@ class RefundType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
@@ -40418,7 +40418,7 @@ class RefundType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundTime($val)
 	{
@@ -40427,7 +40427,7 @@ class RefundType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40467,31 +40467,31 @@ class RegionDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RegionID');
+            throw new \Exception('POJO Proxy need a string for RegionID');
         }
         $this->RegionID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40514,12 +40514,12 @@ class RelatedSearchKeywordArrayType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeyword($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Keyword');
+            throw new \Exception('POJO Proxy need a string for Keyword');
         }
         $this->Keyword = $val;
 	}
@@ -40546,19 +40546,19 @@ class ReminderCustomizationType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDurationInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DurationInDays = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInclude($val)
 	{
@@ -40609,96 +40609,96 @@ class RemindersType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentToSendCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PaymentToSendCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackToReceiveCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackToReceiveCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackToSendCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackToSendCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOutbidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->OutbidCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentToReceiveCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PaymentToReceiveCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceOfferCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SecondChanceOfferCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingNeededCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingNeededCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelistingNeededCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->RelistingNeededCount = $val;
 	}
@@ -40745,7 +40745,7 @@ class RequestCategoriesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoriesOnly($val)
 	{
@@ -40754,36 +40754,36 @@ class RequestCategoriesType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxCategories($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxCategories = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxSubcategories($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxSubcategories = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLevels($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Levels = $val;
 	}
@@ -40873,31 +40873,31 @@ class ResponseAttributeSetType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApproximatePages($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ApproximatePages = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMore($val)
 	{
@@ -40906,7 +40906,7 @@ class ResponseAttributeSetType
 
 	/**
 	 * @param ProductFamilyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFamilies($val)
 	{
@@ -40915,7 +40915,7 @@ class ResponseAttributeSetType
 
 	/**
 	 * @param ProductFinderConstraintType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderConstraints($val)
 	{
@@ -40924,7 +40924,7 @@ class ResponseAttributeSetType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTooManyMatchesFound($val)
 	{
@@ -40933,19 +40933,19 @@ class ResponseAttributeSetType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalProducts($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalProducts = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -40995,7 +40995,7 @@ class ReviseStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemRevised($val)
 	{
@@ -41004,7 +41004,7 @@ class ReviseStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowAdded($val)
 	{
@@ -41013,7 +41013,7 @@ class ReviseStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowLowered($val)
 	{
@@ -41022,7 +41022,7 @@ class ReviseStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReserveLowered($val)
 	{
@@ -41031,7 +41031,7 @@ class ReviseStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReserveRemoved($val)
 	{
@@ -41040,7 +41040,7 @@ class ReviseStatusType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41067,7 +41067,7 @@ class SiFfTaSrecommendationsType
 
 	/**
 	 * @param AttributeSetArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetArray($val)
 	{
@@ -41076,7 +41076,7 @@ class SiFfTaSrecommendationsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41103,7 +41103,7 @@ class SkUarrayType
 
 	/**
 	 * @param SKUType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSKU($val)
 	{
@@ -41160,19 +41160,19 @@ class SmSsubscriptionType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSMSPhone($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SMSPhone');
+            throw new \Exception('POJO Proxy need a string for SMSPhone');
         }
         $this->SMSPhone = $val;
 	}
 
 	/**
 	 * @param SMSSubscriptionUserStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserStatus($val)
 	{
@@ -41181,7 +41181,7 @@ class SmSsubscriptionType
 
 	/**
 	 * @param WirelessCarrierIDCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCarrierID($val)
 	{
@@ -41190,7 +41190,7 @@ class SmSsubscriptionType
 
 	/**
 	 * @param SMSSubscriptionErrorCodeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorCode($val)
 	{
@@ -41199,7 +41199,7 @@ class SmSsubscriptionType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemToUnsubscribe($val)
 	{
@@ -41208,7 +41208,7 @@ class SmSsubscriptionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41260,7 +41260,7 @@ class SalesTaxType
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTaxPercent($val)
 	{
@@ -41269,19 +41269,19 @@ class SalesTaxType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTaxState($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SalesTaxState');
+            throw new \Exception('POJO Proxy need a string for SalesTaxState');
         }
         $this->SalesTaxState = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingIncludedInTax($val)
 	{
@@ -41290,7 +41290,7 @@ class SalesTaxType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTaxAmount($val)
 	{
@@ -41299,7 +41299,7 @@ class SalesTaxType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41332,19 +41332,19 @@ class ScheduleType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduleID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ScheduleID = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setScheduleTime($val)
 	{
@@ -41353,7 +41353,7 @@ class ScheduleType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41390,43 +41390,43 @@ class SchedulingInfoType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxScheduledMinutes($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxScheduledMinutes = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinScheduledMinutes($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MinScheduledMinutes = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxScheduledItems($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxScheduledItems = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41476,19 +41476,19 @@ class SearchAttributesType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeID = $val;
 	}
 
 	/**
 	 * @param DateSpecifierCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDateSpecifier($val)
 	{
@@ -41497,7 +41497,7 @@ class SearchAttributesType
 
 	/**
 	 * @param RangeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRangeSpecifier($val)
 	{
@@ -41506,7 +41506,7 @@ class SearchAttributesType
 
 	/**
 	 * @param ValType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValueList($val)
 	{
@@ -41515,7 +41515,7 @@ class SearchAttributesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41546,7 +41546,7 @@ class SearchDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowEnabled($val)
 	{
@@ -41555,7 +41555,7 @@ class SearchDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPicture($val)
 	{
@@ -41564,7 +41564,7 @@ class SearchDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecentListing($val)
 	{
@@ -41573,7 +41573,7 @@ class SearchDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41625,7 +41625,7 @@ class SearchLocationFilterType
 
 	/**
 	 * @param CountryCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCountryCode($val)
 	{
@@ -41634,7 +41634,7 @@ class SearchLocationFilterType
 
 	/**
 	 * @param ItemLocationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemLocation($val)
 	{
@@ -41643,7 +41643,7 @@ class SearchLocationFilterType
 
 	/**
 	 * @param SearchLocationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchLocation($val)
 	{
@@ -41652,7 +41652,7 @@ class SearchLocationFilterType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -41661,7 +41661,7 @@ class SearchLocationFilterType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41698,19 +41698,19 @@ class SearchLocationType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RegionID');
+            throw new \Exception('POJO Proxy need a string for RegionID');
         }
         $this->RegionID = $val;
 	}
 
 	/**
 	 * @param SiteLocationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteLocation($val)
 	{
@@ -41719,7 +41719,7 @@ class SearchLocationType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41768,31 +41768,31 @@ class SearchRequestType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeSetID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductFinderID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
 	}
 
 	/**
 	 * @param SearchAttributesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchAttributes($val)
 	{
@@ -41801,7 +41801,7 @@ class SearchRequestType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41826,7 +41826,7 @@ class SearchResultItemArrayType
 
 	/**
 	 * @param SearchResultItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchResultItem($val)
 	{
@@ -41876,7 +41876,7 @@ class SearchResultItemType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -41885,7 +41885,7 @@ class SearchResultItemType
 
 	/**
 	 * @param NameValueListArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemSpecific($val)
 	{
@@ -41894,7 +41894,7 @@ class SearchResultItemType
 
 	/**
 	 * @param SearchResultValuesCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchResultValues($val)
 	{
@@ -41903,7 +41903,7 @@ class SearchResultItemType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -41968,19 +41968,19 @@ class SearchStoreFilterType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param StoreSearchCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreSearch($val)
 	{
@@ -41989,7 +41989,7 @@ class SearchStoreFilterType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -42037,7 +42037,7 @@ class SellerContactDetailsEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -42094,31 +42094,31 @@ class SellerFavoriteItemPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchKeywords($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SearchKeywords');
+            throw new \Exception('POJO Proxy need a string for SearchKeywords');
         }
         $this->SearchKeywords = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StoreCategoryID = $val;
 	}
 
 	/**
 	 * @param ListingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingType($val)
 	{
@@ -42127,7 +42127,7 @@ class SellerFavoriteItemPreferencesType
 
 	/**
 	 * @param StoreItemListSortOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchSortOrder($val)
 	{
@@ -42136,7 +42136,7 @@ class SellerFavoriteItemPreferencesType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinPrice($val)
 	{
@@ -42145,7 +42145,7 @@ class SellerFavoriteItemPreferencesType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxPrice($val)
 	{
@@ -42154,7 +42154,7 @@ class SellerFavoriteItemPreferencesType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFavoriteItemID($val)
 	{
@@ -42163,7 +42163,7 @@ class SellerFavoriteItemPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -42245,7 +42245,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlwaysUseThisPaymentAddress($val)
 	{
@@ -42254,7 +42254,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param DisplayPayNowButtonCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayPayNowButton($val)
 	{
@@ -42263,7 +42263,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalPreferred($val)
 	{
@@ -42272,19 +42272,19 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDefaultPayPalEmailAddress($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
+            throw new \Exception('POJO Proxy need a string for DefaultPayPalEmailAddress');
         }
         $this->DefaultPayPalEmailAddress = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAlwaysOn($val)
 	{
@@ -42293,7 +42293,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentAddress($val)
 	{
@@ -42302,7 +42302,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param UPSRateOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUPSRateOption($val)
 	{
@@ -42311,7 +42311,7 @@ class SellerPaymentPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -42416,7 +42416,7 @@ class SellerPaymentType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -42425,19 +42425,19 @@ class SellerPaymentType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param OrderIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderID($val)
 	{
@@ -42446,31 +42446,31 @@ class SellerPaymentType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerInventoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerInventoryID');
+            throw new \Exception('POJO Proxy need a string for SellerInventoryID');
         }
         $this->SellerInventoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivateNotes($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PrivateNotes');
+            throw new \Exception('POJO Proxy need a string for PrivateNotes');
         }
         $this->PrivateNotes = $val;
 	}
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -42479,19 +42479,19 @@ class SellerPaymentType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param PaymentTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentType($val)
 	{
@@ -42500,7 +42500,7 @@ class SellerPaymentType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionPrice($val)
 	{
@@ -42509,7 +42509,7 @@ class SellerPaymentType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingReimbursement($val)
 	{
@@ -42518,7 +42518,7 @@ class SellerPaymentType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCommission($val)
 	{
@@ -42527,7 +42527,7 @@ class SellerPaymentType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPaid($val)
 	{
@@ -42536,7 +42536,7 @@ class SellerPaymentType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaidTime($val)
 	{
@@ -42545,7 +42545,7 @@ class SellerPaymentType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -42700,19 +42700,19 @@ class SellerType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaisaPayStatus($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PaisaPayStatus = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAllowPaymentEdit($val)
 	{
@@ -42721,7 +42721,7 @@ class SellerType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBillingCurrency($val)
 	{
@@ -42730,7 +42730,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutEnabled($val)
 	{
@@ -42739,7 +42739,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCIPBankAccountStored($val)
 	{
@@ -42748,7 +42748,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGoodStanding($val)
 	{
@@ -42757,7 +42757,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionAuthorized($val)
 	{
@@ -42766,7 +42766,7 @@ class SellerType
 
 	/**
 	 * @param MerchandizingPrefCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMerchandizingPref($val)
 	{
@@ -42775,7 +42775,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQualifiesForB2BVAT($val)
 	{
@@ -42784,7 +42784,7 @@ class SellerType
 
 	/**
 	 * @param SellerGuaranteeLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerGuaranteeLevel($val)
 	{
@@ -42793,7 +42793,7 @@ class SellerType
 
 	/**
 	 * @param SellerLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerLevel($val)
 	{
@@ -42802,7 +42802,7 @@ class SellerType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentAddress($val)
 	{
@@ -42811,7 +42811,7 @@ class SellerType
 
 	/**
 	 * @param SchedulingInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSchedulingInfo($val)
 	{
@@ -42820,7 +42820,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreOwner($val)
 	{
@@ -42829,7 +42829,7 @@ class SellerType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreURL($val)
 	{
@@ -42838,7 +42838,7 @@ class SellerType
 
 	/**
 	 * @param SellerBusinessCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerBusinessType($val)
 	{
@@ -42847,7 +42847,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegisteredBusinessSeller($val)
 	{
@@ -42856,7 +42856,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEligible($val)
 	{
@@ -42865,7 +42865,7 @@ class SellerType
 
 	/**
 	 * @param SellerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -42874,7 +42874,7 @@ class SellerType
 
 	/**
 	 * @param ProStoresCheckoutPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProStoresPreference($val)
 	{
@@ -42883,7 +42883,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressWallet($val)
 	{
@@ -42892,7 +42892,7 @@ class SellerType
 
 	/**
 	 * @param ExpressSellerRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressSellerRequirements($val)
 	{
@@ -42901,7 +42901,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityRegistered($val)
 	{
@@ -42910,7 +42910,7 @@ class SellerType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -42945,43 +42945,43 @@ class SellingManagerProductDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductName');
+            throw new \Exception('POJO Proxy need a string for ProductName');
         }
         $this->ProductName = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPartNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PartNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductPartNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductPartNumber');
+            throw new \Exception('POJO Proxy need a string for ProductPartNumber');
         }
         $this->ProductPartNumber = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -43097,19 +43097,19 @@ class SellingStatusType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidIncrement($val)
 	{
@@ -43118,7 +43118,7 @@ class SellingStatusType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedCurrentPrice($val)
 	{
@@ -43127,7 +43127,7 @@ class SellingStatusType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentPrice($val)
 	{
@@ -43136,7 +43136,7 @@ class SellingStatusType
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHighBidder($val)
 	{
@@ -43145,19 +43145,19 @@ class SellingStatusType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLeadCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LeadCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumToBid($val)
 	{
@@ -43166,19 +43166,19 @@ class SellingStatusType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantitySold($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantitySold = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReserveMet($val)
 	{
@@ -43187,7 +43187,7 @@ class SellingStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondChanceEligible($val)
 	{
@@ -43196,7 +43196,7 @@ class SellingStatusType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidderCount($val)
 	{
@@ -43205,7 +43205,7 @@ class SellingStatusType
 
 	/**
 	 * @param ListingStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingStatus($val)
 	{
@@ -43214,7 +43214,7 @@ class SellingStatusType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinalValueFee($val)
 	{
@@ -43223,7 +43223,7 @@ class SellingStatusType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -43273,43 +43273,43 @@ class SellingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActiveAuctionCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ActiveAuctionCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuctionSellingCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AuctionSellingCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuctionBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AuctionBidCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalAuctionSellingValue($val)
 	{
@@ -43318,19 +43318,19 @@ class SellingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalSoldCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TotalSoldCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalSoldValue($val)
 	{
@@ -43339,12 +43339,12 @@ class SellingSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSoldDurationInDays($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SoldDurationInDays = $val;
 	}
@@ -43595,7 +43595,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAllowPaymentEdit($val)
 	{
@@ -43604,7 +43604,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setApplyShippingDiscount($val)
 	{
@@ -43613,7 +43613,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param CalculatedShippingRateType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCalculatedShippingRate($val)
 	{
@@ -43622,7 +43622,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setChangePaymentInstructions($val)
 	{
@@ -43631,7 +43631,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceFee($val)
 	{
@@ -43640,7 +43640,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param InsuranceOptionCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceOption($val)
 	{
@@ -43649,7 +43649,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceWanted($val)
 	{
@@ -43658,7 +43658,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentEdited($val)
 	{
@@ -43667,19 +43667,19 @@ class ShippingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentInstructions($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PaymentInstructions');
+            throw new \Exception('POJO Proxy need a string for PaymentInstructions');
         }
         $this->PaymentInstructions = $val;
 	}
 
 	/**
 	 * @param SalesTaxType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTax($val)
 	{
@@ -43688,31 +43688,31 @@ class ShippingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPostalCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerPostalCode');
+            throw new \Exception('POJO Proxy need a string for SellerPostalCode');
         }
         $this->SellerPostalCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingRateErrorMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShippingRateErrorMessage');
+            throw new \Exception('POJO Proxy need a string for ShippingRateErrorMessage');
         }
         $this->ShippingRateErrorMessage = $val;
 	}
 
 	/**
 	 * @param ShippingRateTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingRateType($val)
 	{
@@ -43721,7 +43721,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param ShippingServiceOptionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceOptions($val)
 	{
@@ -43730,7 +43730,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param InternationalShippingServiceOptionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalShippingServiceOption($val)
 	{
@@ -43739,7 +43739,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param ShippingTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingType($val)
 	{
@@ -43748,19 +43748,19 @@ class ShippingDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingManagerSalesRecordNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SellingManagerSalesRecordNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThirdPartyCheckout($val)
 	{
@@ -43769,7 +43769,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param TaxTableType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaxTable($val)
 	{
@@ -43778,7 +43778,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetItFast($val)
 	{
@@ -43787,19 +43787,19 @@ class ShippingDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipmentTrackingNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
+            throw new \Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
         $this->ShipmentTrackingNumber = $val;
 	}
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceUsed($val)
 	{
@@ -43808,7 +43808,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDefaultShippingCost($val)
 	{
@@ -43817,7 +43817,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param InsuranceDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInsuranceDetails($val)
 	{
@@ -43826,7 +43826,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param InsuranceDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalInsuranceDetails($val)
 	{
@@ -43835,7 +43835,7 @@ class ShippingDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -43878,31 +43878,31 @@ class ShippingLocationDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingLocation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShippingLocation');
+            throw new \Exception('POJO Proxy need a string for ShippingLocation');
         }
         $this->ShippingLocation = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -44458,19 +44458,19 @@ class ShippingServiceDetailsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpeditedService($val)
 	{
@@ -44479,7 +44479,7 @@ class ShippingServiceDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInternationalService($val)
 	{
@@ -44488,7 +44488,7 @@ class ShippingServiceDetailsType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingService($val)
 	{
@@ -44497,43 +44497,43 @@ class ShippingServiceDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingServiceID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTimeMax($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMax = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTimeMin($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMin = $val;
 	}
 
 	/**
 	 * @param ShippingServiceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceCode($val)
 	{
@@ -44542,7 +44542,7 @@ class ShippingServiceDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -44622,7 +44622,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingInsuranceCost($val)
 	{
@@ -44631,7 +44631,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingService($val)
 	{
@@ -44640,7 +44640,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceCost($val)
 	{
@@ -44649,7 +44649,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
@@ -44658,19 +44658,19 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServicePriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingServicePriority = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpeditedService($val)
 	{
@@ -44679,31 +44679,31 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTimeMin($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMin = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTimeMax($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMax = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingSurcharge($val)
 	{
@@ -44712,7 +44712,7 @@ class ShippingServiceOptionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -44736,7 +44736,7 @@ class ShippingTermRequiredDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45000,7 +45000,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param ListingDurationReferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingDuration($val)
 	{
@@ -45009,7 +45009,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingTermsRequired($val)
 	{
@@ -45018,7 +45018,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferEnabled($val)
 	{
@@ -45027,7 +45027,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDutchBINEnabled($val)
 	{
@@ -45036,7 +45036,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserConsentRequired($val)
 	{
@@ -45045,7 +45045,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHomePageFeaturedEnabled($val)
 	{
@@ -45054,7 +45054,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackEnabled($val)
 	{
@@ -45063,7 +45063,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBasicUpgradePackEnabled($val)
 	{
@@ -45072,7 +45072,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValuePackEnabled($val)
 	{
@@ -45081,7 +45081,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProPackPlusEnabled($val)
 	{
@@ -45090,7 +45090,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param AdFormatEnabledCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdFormatEnabled($val)
 	{
@@ -45099,7 +45099,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param DigitalDeliveryEnabledCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDigitalDeliveryEnabled($val)
 	{
@@ -45108,7 +45108,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferCounterEnabled($val)
 	{
@@ -45117,7 +45117,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferAutoDeclineEnabled($val)
 	{
@@ -45126,7 +45126,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketSpecialitySubscription($val)
 	{
@@ -45135,7 +45135,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketRegularSubscription($val)
 	{
@@ -45144,7 +45144,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketPremiumSubscription($val)
 	{
@@ -45153,7 +45153,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalMarketNonSubscription($val)
 	{
@@ -45162,7 +45162,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEnabled($val)
 	{
@@ -45171,7 +45171,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressPicturesRequired($val)
 	{
@@ -45180,7 +45180,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressConditionRequired($val)
 	{
@@ -45189,7 +45189,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumReservePrice($val)
 	{
@@ -45198,7 +45198,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerContactDetailsEnabled($val)
 	{
@@ -45207,7 +45207,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionConfirmationRequestEnabled($val)
 	{
@@ -45216,7 +45216,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreInventoryEnabled($val)
 	{
@@ -45225,7 +45225,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeTransactionalEnabled($val)
 	{
@@ -45234,7 +45234,7 @@ class SiteDefaultsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeMeNonTransactionalEnabled($val)
 	{
@@ -45243,43 +45243,43 @@ class SiteDefaultsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistancesRegular($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalListingDistancesRegular');
+            throw new \Exception('POJO Proxy need a string for LocalListingDistancesRegular');
         }
         $this->LocalListingDistancesRegular = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistancesSpecialty($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
+            throw new \Exception('POJO Proxy need a string for LocalListingDistancesSpecialty');
         }
         $this->LocalListingDistancesSpecialty = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLocalListingDistancesNonSubscription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
+            throw new \Exception('POJO Proxy need a string for LocalListingDistancesNonSubscription');
         }
         $this->LocalListingDistancesNonSubscription = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45309,7 +45309,7 @@ class SiteDetailsType
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -45318,19 +45318,19 @@ class SiteDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SiteID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45420,7 +45420,7 @@ class SiteHostedPictureType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureURL($val)
 	{
@@ -45429,7 +45429,7 @@ class SiteHostedPictureType
 
 	/**
 	 * @param PhotoDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhotoDisplay($val)
 	{
@@ -45438,7 +45438,7 @@ class SiteHostedPictureType
 
 	/**
 	 * @param GalleryTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGalleryType($val)
 	{
@@ -45447,7 +45447,7 @@ class SiteHostedPictureType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGalleryURL($val)
 	{
@@ -45456,7 +45456,7 @@ class SiteHostedPictureType
 
 	/**
 	 * @param PictureSourceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureSource($val)
 	{
@@ -45465,7 +45465,7 @@ class SiteHostedPictureType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45502,7 +45502,7 @@ class SiteLocationType
 
 	/**
 	 * @param SiteIDFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteID($val)
 	{
@@ -45511,7 +45511,7 @@ class SiteLocationType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45544,7 +45544,7 @@ class SiteWideCharacteristicsType
 
 	/**
 	 * @param CharacteristicsSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharacteristicsSet($val)
 	{
@@ -45553,19 +45553,19 @@ class SiteWideCharacteristicsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExcludeCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExcludeCategoryID');
+            throw new \Exception('POJO Proxy need a string for ExcludeCategoryID');
         }
         $this->ExcludeCategoryID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45597,7 +45597,7 @@ class SkypeMeNonTransactionalEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45623,7 +45623,7 @@ class SkypeMeTransactionalEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45673,31 +45673,31 @@ class SpellingSuggestionType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMatchingItemCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MatchingItemCount = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Text');
+            throw new \Exception('POJO Proxy need a string for Text');
         }
         $this->Text = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45729,7 +45729,7 @@ class StoreColorSchemeArrayType
 
 	/**
 	 * @param StoreColorSchemeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setColorScheme($val)
 	{
@@ -45769,31 +45769,31 @@ class StoreColorSchemeType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setColorSchemeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ColorSchemeID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param StoreColorType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setColor($val)
 	{
@@ -45802,7 +45802,7 @@ class StoreColorSchemeType
 
 	/**
 	 * @param StoreFontType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFont($val)
 	{
@@ -45811,7 +45811,7 @@ class StoreColorSchemeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45846,43 +45846,43 @@ class StoreColorType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrimary($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Primary');
+            throw new \Exception('POJO Proxy need a string for Primary');
         }
         $this->Primary = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSecondary($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Secondary');
+            throw new \Exception('POJO Proxy need a string for Secondary');
         }
         $this->Secondary = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccent($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Accent');
+            throw new \Exception('POJO Proxy need a string for Accent');
         }
         $this->Accent = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -45905,7 +45905,7 @@ class StoreCustomCategoryArrayType
 
 	/**
 	 * @param StoreCustomCategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomCategory($val)
 	{
@@ -45950,43 +45950,43 @@ class StoreCustomCategoryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Order = $val;
 	}
 
 	/**
 	 * @param StoreCustomCategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setChildrenCategories($val)
 	{
@@ -45995,7 +45995,7 @@ class StoreCustomCategoryType
 
 	/**
 	 * @param StoreCustomCategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setChildCategory($val)
 	{
@@ -46004,7 +46004,7 @@ class StoreCustomCategoryType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46065,31 +46065,31 @@ class StoreCustomListingHeaderLinkType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLinkID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LinkID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Order = $val;
 	}
 
 	/**
 	 * @param StoreCustomListingHeaderLinkCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLinkType($val)
 	{
@@ -46098,7 +46098,7 @@ class StoreCustomListingHeaderLinkType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46149,7 +46149,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param StoreCustomListingHeaderDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayType($val)
 	{
@@ -46158,7 +46158,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogo($val)
 	{
@@ -46167,7 +46167,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchBox($val)
 	{
@@ -46176,7 +46176,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param StoreCustomListingHeaderLinkType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLinkToInclude($val)
 	{
@@ -46185,7 +46185,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddToFavoriteStores($val)
 	{
@@ -46194,7 +46194,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSignUpForStoreNewsletter($val)
 	{
@@ -46203,7 +46203,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBreadCrumb($val)
 	{
@@ -46212,7 +46212,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46235,7 +46235,7 @@ class StoreCustomPageArrayType
 
 	/**
 	 * @param StoreCustomPageType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomPage($val)
 	{
@@ -46312,43 +46312,43 @@ class StoreCustomPageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURLPath($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for URLPath');
+            throw new \Exception('POJO Proxy need a string for URLPath');
         }
         $this->URLPath = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -46357,7 +46357,7 @@ class StoreCustomPageType
 
 	/**
 	 * @param StoreCustomPageStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -46366,19 +46366,19 @@ class StoreCustomPageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContent($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Content');
+            throw new \Exception('POJO Proxy need a string for Content');
         }
         $this->Content = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLeftNav($val)
 	{
@@ -46387,7 +46387,7 @@ class StoreCustomPageType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPreviewEnabled($val)
 	{
@@ -46396,19 +46396,19 @@ class StoreCustomPageType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Order = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46488,7 +46488,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontFaceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameFace($val)
 	{
@@ -46497,7 +46497,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontSizeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameSize($val)
 	{
@@ -46506,19 +46506,19 @@ class StoreFontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameColor($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NameColor');
+            throw new \Exception('POJO Proxy need a string for NameColor');
         }
         $this->NameColor = $val;
 	}
 
 	/**
 	 * @param StoreFontFaceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitleFace($val)
 	{
@@ -46527,7 +46527,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontSizeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitleSize($val)
 	{
@@ -46536,19 +46536,19 @@ class StoreFontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitleColor($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TitleColor');
+            throw new \Exception('POJO Proxy need a string for TitleColor');
         }
         $this->TitleColor = $val;
 	}
 
 	/**
 	 * @param StoreFontFaceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescFace($val)
 	{
@@ -46557,7 +46557,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontSizeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescSize($val)
 	{
@@ -46566,19 +46566,19 @@ class StoreFontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescColor($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DescColor');
+            throw new \Exception('POJO Proxy need a string for DescColor');
         }
         $this->DescColor = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46610,7 +46610,7 @@ class StoreInventoryEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46649,7 +46649,7 @@ class StoreLogoArrayType
 
 	/**
 	 * @param StoreLogoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogo($val)
 	{
@@ -46687,31 +46687,31 @@ class StoreLogoType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LogoID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -46720,7 +46720,7 @@ class StoreLogoType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46743,7 +46743,7 @@ class StorePreferencesType
 
 	/**
 	 * @param StoreVacationPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVacationPreferences($val)
 	{
@@ -46775,7 +46775,7 @@ class StoreSubscriptionArrayType
 
 	/**
 	 * @param StoreSubscriptionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscription($val)
 	{
@@ -46811,7 +46811,7 @@ class StoreSubscriptionType
 
 	/**
 	 * @param StoreSubscriptionLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLevel($val)
 	{
@@ -46820,7 +46820,7 @@ class StoreSubscriptionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFee($val)
 	{
@@ -46829,7 +46829,7 @@ class StoreSubscriptionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46861,7 +46861,7 @@ class StoreThemeArrayType
 
 	/**
 	 * @param StoreThemeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTheme($val)
 	{
@@ -46870,7 +46870,7 @@ class StoreThemeArrayType
 
 	/**
 	 * @param StoreColorSchemeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGenericColorSchemeArray($val)
 	{
@@ -46879,7 +46879,7 @@ class StoreThemeArrayType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -46915,31 +46915,31 @@ class StoreThemeType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param StoreColorSchemeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setColorScheme($val)
 	{
@@ -46948,7 +46948,7 @@ class StoreThemeType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47054,31 +47054,31 @@ class StoreType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURLPath($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for URLPath');
+            throw new \Exception('POJO Proxy need a string for URLPath');
         }
         $this->URLPath = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -47087,7 +47087,7 @@ class StoreType
 
 	/**
 	 * @param StoreSubscriptionLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionLevel($val)
 	{
@@ -47096,19 +47096,19 @@ class StoreType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param StoreLogoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogo($val)
 	{
@@ -47117,7 +47117,7 @@ class StoreType
 
 	/**
 	 * @param StoreThemeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTheme($val)
 	{
@@ -47126,7 +47126,7 @@ class StoreType
 
 	/**
 	 * @param StoreHeaderStyleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHeaderStyle($val)
 	{
@@ -47135,19 +47135,19 @@ class StoreType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHomePage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->HomePage = $val;
 	}
 
 	/**
 	 * @param StoreItemListLayoutCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemListLayout($val)
 	{
@@ -47156,7 +47156,7 @@ class StoreType
 
 	/**
 	 * @param StoreItemListSortOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemListSortOrder($val)
 	{
@@ -47165,7 +47165,7 @@ class StoreType
 
 	/**
 	 * @param StoreCustomHeaderLayoutCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomHeaderLayout($val)
 	{
@@ -47174,19 +47174,19 @@ class StoreType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomHeader($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CustomHeader');
+            throw new \Exception('POJO Proxy need a string for CustomHeader');
         }
         $this->CustomHeader = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExportListings($val)
 	{
@@ -47195,7 +47195,7 @@ class StoreType
 
 	/**
 	 * @param StoreCustomCategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomCategories($val)
 	{
@@ -47204,7 +47204,7 @@ class StoreType
 
 	/**
 	 * @param StoreCustomListingHeaderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomListingHeader($val)
 	{
@@ -47213,7 +47213,7 @@ class StoreType
 
 	/**
 	 * @param MerchDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMerchDisplay($val)
 	{
@@ -47222,7 +47222,7 @@ class StoreType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastOpenedTime($val)
 	{
@@ -47231,7 +47231,7 @@ class StoreType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47284,7 +47284,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOnVacation($val)
 	{
@@ -47293,7 +47293,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnDate($val)
 	{
@@ -47302,7 +47302,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHideFixedPriceStoreItems($val)
 	{
@@ -47311,7 +47311,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageItem($val)
 	{
@@ -47320,7 +47320,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageStore($val)
 	{
@@ -47329,7 +47329,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayMessageStoreCustomText($val)
 	{
@@ -47338,12 +47338,12 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageStoreCustomText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageStoreCustomText');
+            throw new \Exception('POJO Proxy need a string for MessageStoreCustomText');
         }
         $this->MessageStoreCustomText = $val;
 	}
@@ -47396,31 +47396,31 @@ class StorefrontType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreCategoryID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StoreCategoryID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreCategory2ID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StoreCategory2ID = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreURL($val)
 	{
@@ -47429,19 +47429,19 @@ class StorefrontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47477,7 +47477,7 @@ class SuggestedCategoryArrayType
 
 	/**
 	 * @param SuggestedCategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSuggestedCategory($val)
 	{
@@ -47486,7 +47486,7 @@ class SuggestedCategoryArrayType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47520,7 +47520,7 @@ class SuggestedCategoryType
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -47529,19 +47529,19 @@ class SuggestedCategoryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPercentItemFound($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PercentItemFound = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47575,7 +47575,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param NotificationEventTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEventType($val)
 	{
@@ -47584,7 +47584,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param SummaryWindowPeriodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSummaryPeriod($val)
 	{
@@ -47593,7 +47593,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param SummaryFrequencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFrequency($val)
 	{
@@ -47602,7 +47602,7 @@ class SummaryEventScheduleType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47683,7 +47683,7 @@ class TcRenabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47735,19 +47735,19 @@ class TaxJurisdictionType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setJurisdictionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for JurisdictionID');
+            throw new \Exception('POJO Proxy need a string for JurisdictionID');
         }
         $this->JurisdictionID = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSalesTaxPercent($val)
 	{
@@ -47756,7 +47756,7 @@ class TaxJurisdictionType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingIncludedInTax($val)
 	{
@@ -47765,19 +47765,19 @@ class TaxJurisdictionType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setJurisdictionName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for JurisdictionName');
+            throw new \Exception('POJO Proxy need a string for JurisdictionName');
         }
         $this->JurisdictionName = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47804,7 +47804,7 @@ class TaxTableType
 
 	/**
 	 * @param TaxJurisdictionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTaxJurisdiction($val)
 	{
@@ -47844,55 +47844,55 @@ class ThemeGroupType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGroupID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->GroupID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGroupName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for GroupName');
+            throw new \Exception('POJO Proxy need a string for GroupName');
         }
         $this->GroupName = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeTotal($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeTotal = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -47929,7 +47929,7 @@ class TransactionArrayType
 
 	/**
 	 * @param TransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransaction($val)
 	{
@@ -47992,7 +47992,7 @@ class TransactionStatusType
 
 	/**
 	 * @param PaymentStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayPaymentStatus($val)
 	{
@@ -48001,7 +48001,7 @@ class TransactionStatusType
 
 	/**
 	 * @param CheckoutStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutStatus($val)
 	{
@@ -48010,7 +48010,7 @@ class TransactionStatusType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastTimeModified($val)
 	{
@@ -48019,7 +48019,7 @@ class TransactionStatusType
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethodUsed($val)
 	{
@@ -48028,7 +48028,7 @@ class TransactionStatusType
 
 	/**
 	 * @param CompleteStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCompleteStatus($val)
 	{
@@ -48037,7 +48037,7 @@ class TransactionStatusType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerSelectedShipping($val)
 	{
@@ -48046,7 +48046,7 @@ class TransactionStatusType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -48282,7 +48282,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPaid($val)
 	{
@@ -48291,7 +48291,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdjustmentAmount($val)
 	{
@@ -48300,7 +48300,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedAdjustmentAmount($val)
 	{
@@ -48309,7 +48309,7 @@ class TransactionType
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyer($val)
 	{
@@ -48318,7 +48318,7 @@ class TransactionType
 
 	/**
 	 * @param ShippingDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingDetails($val)
 	{
@@ -48327,7 +48327,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedAmountPaid($val)
 	{
@@ -48336,7 +48336,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedTransactionPrice($val)
 	{
@@ -48345,7 +48345,7 @@ class TransactionType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreatedDate($val)
 	{
@@ -48354,7 +48354,7 @@ class TransactionType
 
 	/**
 	 * @param DepositTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDepositType($val)
 	{
@@ -48363,7 +48363,7 @@ class TransactionType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -48372,19 +48372,19 @@ class TransactionType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuantityPurchased($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->QuantityPurchased = $val;
 	}
 
 	/**
 	 * @param TransactionStatusType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -48393,19 +48393,19 @@ class TransactionType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionPrice($val)
 	{
@@ -48414,7 +48414,7 @@ class TransactionType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOfferSale($val)
 	{
@@ -48423,7 +48423,7 @@ class TransactionType
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATPercent($val)
 	{
@@ -48432,7 +48432,7 @@ class TransactionType
 
 	/**
 	 * @param ExternalTransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalTransaction($val)
 	{
@@ -48441,7 +48441,7 @@ class TransactionType
 
 	/**
 	 * @param SellingManagerProductDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellingManagerProductDetails($val)
 	{
@@ -48450,7 +48450,7 @@ class TransactionType
 
 	/**
 	 * @param ShippingServiceOptionsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceSelected($val)
 	{
@@ -48459,19 +48459,19 @@ class TransactionType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerMessage');
+            throw new \Exception('POJO Proxy need a string for BuyerMessage');
         }
         $this->BuyerMessage = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDutchAuctionBid($val)
 	{
@@ -48480,7 +48480,7 @@ class TransactionType
 
 	/**
 	 * @param PaidStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerPaidStatus($val)
 	{
@@ -48489,7 +48489,7 @@ class TransactionType
 
 	/**
 	 * @param PaidStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaidStatus($val)
 	{
@@ -48498,7 +48498,7 @@ class TransactionType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaidTime($val)
 	{
@@ -48507,7 +48507,7 @@ class TransactionType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippedTime($val)
 	{
@@ -48516,7 +48516,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalPrice($val)
 	{
@@ -48525,7 +48525,7 @@ class TransactionType
 
 	/**
 	 * @param FeedbackInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackLeft($val)
 	{
@@ -48534,7 +48534,7 @@ class TransactionType
 
 	/**
 	 * @param FeedbackInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackReceived($val)
 	{
@@ -48543,7 +48543,7 @@ class TransactionType
 
 	/**
 	 * @param OrderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContainingOrder($val)
 	{
@@ -48552,7 +48552,7 @@ class TransactionType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinalValueFee($val)
 	{
@@ -48561,7 +48561,7 @@ class TransactionType
 
 	/**
 	 * @param TransactionPlatformType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransactionPlatform($val)
 	{
@@ -48570,7 +48570,7 @@ class TransactionType
 
 	/**
 	 * @param ListingCheckoutRedirectPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingCheckoutRedirectPreference($val)
 	{
@@ -48579,7 +48579,7 @@ class TransactionType
 
 	/**
 	 * @param RefundArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundArray($val)
 	{
@@ -48588,7 +48588,7 @@ class TransactionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -48629,7 +48629,7 @@ class UrLdetailsType
 
 	/**
 	 * @param URLTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURLType($val)
 	{
@@ -48638,7 +48638,7 @@ class UrLdetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -48647,7 +48647,7 @@ class UrLdetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -48688,7 +48688,7 @@ class UserConsentRequiredDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -48725,7 +48725,7 @@ class UserIdArrayType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -48734,7 +48734,7 @@ class UserIdArrayType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -48775,7 +48775,7 @@ class UserIdFilterType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExcludeSellers($val)
 	{
@@ -48784,7 +48784,7 @@ class UserIdFilterType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIncludeSellers($val)
 	{
@@ -48793,7 +48793,7 @@ class UserIdFilterType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49120,7 +49120,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAboutMePage($val)
 	{
@@ -49129,79 +49129,79 @@ class UserType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEIASToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EIASToken');
+            throw new \Exception('POJO Proxy need a string for EIASToken');
         }
         $this->EIASToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRESTToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RESTToken');
+            throw new \Exception('POJO Proxy need a string for RESTToken');
         }
         $this->RESTToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackScore = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniqueNegativeFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniqueNegativeFeedbackCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniquePositiveFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniquePositiveFeedbackCount = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
@@ -49210,7 +49210,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackPrivate($val)
 	{
@@ -49219,7 +49219,7 @@ class UserType
 
 	/**
 	 * @param FeedbackRatingStarCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackRatingStar($val)
 	{
@@ -49228,7 +49228,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIDVerified($val)
 	{
@@ -49237,7 +49237,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayGoodStanding($val)
 	{
@@ -49246,7 +49246,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewUser($val)
 	{
@@ -49255,7 +49255,7 @@ class UserType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationAddress($val)
 	{
@@ -49264,7 +49264,7 @@ class UserType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationDate($val)
 	{
@@ -49273,7 +49273,7 @@ class UserType
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -49282,7 +49282,7 @@ class UserType
 
 	/**
 	 * @param UserStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -49291,7 +49291,7 @@ class UserType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -49300,7 +49300,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserIDChanged($val)
 	{
@@ -49309,7 +49309,7 @@ class UserType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserIDLastChanged($val)
 	{
@@ -49318,7 +49318,7 @@ class UserType
 
 	/**
 	 * @param VATStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATStatus($val)
 	{
@@ -49327,7 +49327,7 @@ class UserType
 
 	/**
 	 * @param BuyerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerInfo($val)
 	{
@@ -49336,7 +49336,7 @@ class UserType
 
 	/**
 	 * @param SellerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerInfo($val)
 	{
@@ -49345,7 +49345,7 @@ class UserType
 
 	/**
 	 * @param CharityAffiliationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityAffiliations($val)
 	{
@@ -49354,7 +49354,7 @@ class UserType
 
 	/**
 	 * @param CharitySellerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharitySeller($val)
 	{
@@ -49363,7 +49363,7 @@ class UserType
 
 	/**
 	 * @param PayPalAccountLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountLevel($val)
 	{
@@ -49372,7 +49372,7 @@ class UserType
 
 	/**
 	 * @param PayPalAccountTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountType($val)
 	{
@@ -49381,7 +49381,7 @@ class UserType
 
 	/**
 	 * @param PayPalAccountStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountStatus($val)
 	{
@@ -49390,7 +49390,7 @@ class UserType
 
 	/**
 	 * @param EBaySubscriptionTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserSubscription($val)
 	{
@@ -49399,7 +49399,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteVerified($val)
 	{
@@ -49408,19 +49408,19 @@ class UserType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SkypeID');
+            throw new \Exception('POJO Proxy need a string for SkypeID');
         }
         $this->SkypeID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayWikiReadOnly($val)
 	{
@@ -49429,31 +49429,31 @@ class UserType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTUVLevel($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TUVLevel = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for VATID');
+            throw new \Exception('POJO Proxy need a string for VATID');
         }
         $this->VATID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorsDealer($val)
 	{
@@ -49462,7 +49462,7 @@ class UserType
 
 	/**
 	 * @param SellerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentMethod($val)
 	{
@@ -49471,7 +49471,7 @@ class UserType
 
 	/**
 	 * @param BiddingSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBiddingSummary($val)
 	{
@@ -49480,7 +49480,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserAnonymized($val)
 	{
@@ -49489,7 +49489,7 @@ class UserType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49550,7 +49550,7 @@ class VaTdetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBusinessSeller($val)
 	{
@@ -49559,7 +49559,7 @@ class VaTdetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRestrictedToBusiness($val)
 	{
@@ -49568,7 +49568,7 @@ class VaTdetailsType
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATPercent($val)
 	{
@@ -49577,7 +49577,7 @@ class VaTdetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49639,43 +49639,43 @@ class ValType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValueLiteral($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ValueLiteral');
+            throw new \Exception('POJO Proxy need a string for ValueLiteral');
         }
         $this->ValueLiteral = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSuggestedValueLiteral($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SuggestedValueLiteral');
+            throw new \Exception('POJO Proxy need a string for SuggestedValueLiteral');
         }
         $this->SuggestedValueLiteral = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setValueID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ValueID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49700,7 +49700,7 @@ class ValuePackEnabledDefinitionType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49733,7 +49733,7 @@ class VeRoReasonCodeDetailsType
 
 	/**
 	 * @param VeROSiteDetailType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROSiteDetail($val)
 	{
@@ -49774,7 +49774,7 @@ class VeRoReportItemType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -49783,7 +49783,7 @@ class VeRoReportItemType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVeROReasonCodeID($val)
 	{
@@ -49792,19 +49792,19 @@ class VeRoReportItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageToSeller($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageToSeller');
+            throw new \Exception('POJO Proxy need a string for MessageToSeller');
         }
         $this->MessageToSeller = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCopyEmailToRightsOwner($val)
 	{
@@ -49813,7 +49813,7 @@ class VeRoReportItemType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49837,7 +49837,7 @@ class VeRoReportItemsType
 
 	/**
 	 * @param VeROReportItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportItem($val)
 	{
@@ -49869,7 +49869,7 @@ class VeRoReportedItemDetailsType
 
 	/**
 	 * @param VeROReportedItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReportedItem($val)
 	{
@@ -49905,7 +49905,7 @@ class VeRoReportedItemType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -49914,7 +49914,7 @@ class VeRoReportedItemType
 
 	/**
 	 * @param VeROItemStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemStatus($val)
 	{
@@ -49923,19 +49923,19 @@ class VeRoReportedItemType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemReasonForFailure($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemReasonForFailure');
+            throw new \Exception('POJO Proxy need a string for ItemReasonForFailure');
         }
         $this->ItemReasonForFailure = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -49966,7 +49966,7 @@ class VeRoSiteDetailType
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -49975,7 +49975,7 @@ class VeRoSiteDetailType
 
 	/**
 	 * @param ReasonCodeDetailType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReasonCodeDetail($val)
 	{
@@ -49984,7 +49984,7 @@ class VeRoSiteDetailType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -50083,7 +50083,7 @@ class VendorHostedPictureType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPictureURL($val)
 	{
@@ -50092,7 +50092,7 @@ class VendorHostedPictureType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSelfHostedURL($val)
 	{
@@ -50101,7 +50101,7 @@ class VendorHostedPictureType
 
 	/**
 	 * @param PhotoDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhotoDisplay($val)
 	{
@@ -50110,7 +50110,7 @@ class VendorHostedPictureType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGalleryURL($val)
 	{
@@ -50119,7 +50119,7 @@ class VendorHostedPictureType
 
 	/**
 	 * @param GalleryTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGalleryType($val)
 	{
@@ -50128,7 +50128,7 @@ class VendorHostedPictureType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -50159,7 +50159,7 @@ class VerifiedUserRequirementsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVerifiedUser($val)
 	{
@@ -50168,12 +50168,12 @@ class VerifiedUserRequirementsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MinimumFeedbackScore = $val;
 	}
@@ -50195,7 +50195,7 @@ class WantItNowPostArrayType
 
 	/**
 	 * @param WantItNowPostType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWantItNowPost($val)
 	{
@@ -50244,31 +50244,31 @@ class WantItNowPostType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPostID($val)
 	{
@@ -50277,7 +50277,7 @@ class WantItNowPostType
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -50286,7 +50286,7 @@ class WantItNowPostType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -50295,24 +50295,24 @@ class WantItNowPostType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ResponseCount = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
@@ -50369,43 +50369,43 @@ class XsLfileType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileName');
+            throw new \Exception('POJO Proxy need a string for FileName');
         }
         $this->FileName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileVersion');
+            throw new \Exception('POJO Proxy need a string for FileVersion');
         }
         $this->FileVersion = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFileContent($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileContent');
+            throw new \Exception('POJO Proxy need a string for FileContent');
         }
         $this->FileContent = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{
@@ -50436,7 +50436,7 @@ class eBxOptInPreferenceType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBxOptInPreference($val)
 	{
@@ -50445,7 +50445,7 @@ class eBxOptInPreferenceType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

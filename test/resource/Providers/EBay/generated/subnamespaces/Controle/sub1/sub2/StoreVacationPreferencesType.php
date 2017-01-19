@@ -47,7 +47,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOnVacation($val)
 	{
@@ -56,7 +56,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnDate($val)
 	{
@@ -65,7 +65,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHideFixedPriceStoreItems($val)
 	{
@@ -74,7 +74,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageItem($val)
 	{
@@ -83,7 +83,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageStore($val)
 	{
@@ -92,7 +92,7 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayMessageStoreCustomText($val)
 	{
@@ -101,12 +101,12 @@ class StoreVacationPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessageStoreCustomText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageStoreCustomText');
+            throw new \Exception('POJO Proxy need a string for MessageStoreCustomText');
         }
         $this->MessageStoreCustomText = $val;
 	}

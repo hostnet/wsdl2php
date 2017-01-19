@@ -25,7 +25,7 @@ class RespondToWantItNowPostRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -34,7 +34,7 @@ class RespondToWantItNowPostRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPostID($val)
     {

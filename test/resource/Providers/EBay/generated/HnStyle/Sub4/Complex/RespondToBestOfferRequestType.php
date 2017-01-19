@@ -45,7 +45,7 @@ class RespondToBestOfferRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -54,7 +54,7 @@ class RespondToBestOfferRequestType extends
 
     /**
      * @param BestOfferIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferID($val)
     {
@@ -63,7 +63,7 @@ class RespondToBestOfferRequestType extends
 
     /**
      * @param BestOfferActionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAction($val)
     {
@@ -72,19 +72,19 @@ class RespondToBestOfferRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerResponse($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerResponse');
+            throw new \Exception('POJO Proxy need a string for SellerResponse');
         }
         $this->SellerResponse = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCounterOfferPrice($val)
     {
@@ -93,12 +93,12 @@ class RespondToBestOfferRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCounterOfferQuantity($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CounterOfferQuantity = $val;
     }

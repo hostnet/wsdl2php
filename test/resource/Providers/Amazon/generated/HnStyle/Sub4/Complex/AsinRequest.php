@@ -37,84 +37,84 @@ class AsinRequest
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAsin($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for asin');
+            throw new \Exception('POJO Proxy need a string for asin');
         }
         $this->asin = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTag($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for tag');
+            throw new \Exception('POJO Proxy need a string for tag');
         }
         $this->tag = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for type');
+            throw new \Exception('POJO Proxy need a string for type');
         }
         $this->type = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDevtag($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for devtag');
+            throw new \Exception('POJO Proxy need a string for devtag');
         }
         $this->devtag = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOffer($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for offer');
+            throw new \Exception('POJO Proxy need a string for offer');
         }
         $this->offer = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOfferpage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for offerpage');
+            throw new \Exception('POJO Proxy need a string for offerpage');
         }
         $this->offerpage = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocale($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for locale');
+            throw new \Exception('POJO Proxy need a string for locale');
         }
         $this->locale = $val;
     }

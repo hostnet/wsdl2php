@@ -26,19 +26,19 @@ class ContextSearchAssetType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setKeyword($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Keyword');
+            throw new \Exception('POJO Proxy need a string for Keyword');
         }
         $this->Keyword = $val;
 	}
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -47,12 +47,12 @@ class ContextSearchAssetType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRanking($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Ranking = $val;
 	}

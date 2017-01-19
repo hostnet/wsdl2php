@@ -22,31 +22,31 @@ class AddMemberMessagesAaQtoBidderRequestContainerType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCorrelationID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemID');
+            throw new \Exception('POJO Proxy need a string for ItemID');
         }
         $this->ItemID = $val;
     }
 
     /**
      * @param MemberMessageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMemberMessage($val)
     {

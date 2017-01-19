@@ -61,7 +61,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingService($val)
 	{
@@ -70,7 +70,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceCost($val)
 	{
@@ -79,7 +79,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServiceAdditionalCost($val)
 	{
@@ -88,31 +88,31 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingServicePriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingServicePriority = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShipToLocation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipToLocation');
+            throw new \Exception('POJO Proxy need a string for ShipToLocation');
         }
         $this->ShipToLocation = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingInsuranceCost($val)
 	{
@@ -121,7 +121,7 @@ class InternationalShippingServiceOptionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

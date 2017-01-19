@@ -52,7 +52,7 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -61,7 +61,7 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -70,7 +70,7 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -79,43 +79,43 @@ class GetSellerListResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedItemCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedItemCountActual = $val;
 	}
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSeller($val)
 	{

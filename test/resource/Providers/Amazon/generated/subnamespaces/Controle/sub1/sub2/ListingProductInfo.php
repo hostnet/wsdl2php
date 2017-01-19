@@ -13,7 +13,7 @@ class ListingProductInfo
 
 	/**
 	 * @param ListingProductDetailsArray $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingProductDetails($val)
 	{

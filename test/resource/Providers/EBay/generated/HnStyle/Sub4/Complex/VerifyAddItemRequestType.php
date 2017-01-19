@@ -37,7 +37,7 @@ class VerifyAddItemRequestType extends
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -46,7 +46,7 @@ class VerifyAddItemRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeExpressRequirements($val)
     {
@@ -55,7 +55,7 @@ class VerifyAddItemRequestType extends
 
     /**
      * @param ExternalProductIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalProductID($val)
     {

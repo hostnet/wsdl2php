@@ -94,7 +94,7 @@ class AbstractRequestType
 
     /**
      * @param DetailLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDetailLevel($val)
     {
@@ -103,43 +103,43 @@ class AbstractRequestType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrorLanguage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ErrorLanguage');
+            throw new \Exception('POJO Proxy need a string for ErrorLanguage');
         }
         $this->ErrorLanguage = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageID');
+            throw new \Exception('POJO Proxy need a string for MessageID');
         }
         $this->MessageID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Version');
+            throw new \Exception('POJO Proxy need a string for Version');
         }
         $this->Version = $val;
     }
 
     /**
      * @param ErrorHandlingCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrorHandling($val)
     {
@@ -148,7 +148,7 @@ class AbstractRequestType
 
     /**
      * @param UUIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInvocationID($val)
     {
@@ -157,7 +157,7 @@ class AbstractRequestType
 
     /**
      * @param WarningLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWarningLevel($val)
     {
@@ -166,7 +166,7 @@ class AbstractRequestType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

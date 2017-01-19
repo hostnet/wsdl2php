@@ -299,7 +299,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAboutMePage($val)
 	{
@@ -308,79 +308,79 @@ class UserType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEIASToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EIASToken');
+            throw new \Exception('POJO Proxy need a string for EIASToken');
         }
         $this->EIASToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRESTToken($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RESTToken');
+            throw new \Exception('POJO Proxy need a string for RESTToken');
         }
         $this->RESTToken = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackScore($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackScore = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniqueNegativeFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniqueNegativeFeedbackCount = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUniquePositiveFeedbackCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UniquePositiveFeedbackCount = $val;
 	}
 
 	/**
 	 * @param float $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPositiveFeedbackPercent($val)
 	{
@@ -389,7 +389,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackPrivate($val)
 	{
@@ -398,7 +398,7 @@ class UserType
 
 	/**
 	 * @param FeedbackRatingStarCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedbackRatingStar($val)
 	{
@@ -407,7 +407,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIDVerified($val)
 	{
@@ -416,7 +416,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayGoodStanding($val)
 	{
@@ -425,7 +425,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNewUser($val)
 	{
@@ -434,7 +434,7 @@ class UserType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationAddress($val)
 	{
@@ -443,7 +443,7 @@ class UserType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationDate($val)
 	{
@@ -452,7 +452,7 @@ class UserType
 
 	/**
 	 * @param SiteCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSite($val)
 	{
@@ -461,7 +461,7 @@ class UserType
 
 	/**
 	 * @param UserStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -470,7 +470,7 @@ class UserType
 
 	/**
 	 * @param UserIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
@@ -479,7 +479,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserIDChanged($val)
 	{
@@ -488,7 +488,7 @@ class UserType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserIDLastChanged($val)
 	{
@@ -497,7 +497,7 @@ class UserType
 
 	/**
 	 * @param VATStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATStatus($val)
 	{
@@ -506,7 +506,7 @@ class UserType
 
 	/**
 	 * @param BuyerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerInfo($val)
 	{
@@ -515,7 +515,7 @@ class UserType
 
 	/**
 	 * @param SellerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerInfo($val)
 	{
@@ -524,7 +524,7 @@ class UserType
 
 	/**
 	 * @param CharityAffiliationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityAffiliations($val)
 	{
@@ -533,7 +533,7 @@ class UserType
 
 	/**
 	 * @param CharitySellerType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharitySeller($val)
 	{
@@ -542,7 +542,7 @@ class UserType
 
 	/**
 	 * @param PayPalAccountLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountLevel($val)
 	{
@@ -551,7 +551,7 @@ class UserType
 
 	/**
 	 * @param PayPalAccountTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountType($val)
 	{
@@ -560,7 +560,7 @@ class UserType
 
 	/**
 	 * @param PayPalAccountStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPayPalAccountStatus($val)
 	{
@@ -569,7 +569,7 @@ class UserType
 
 	/**
 	 * @param EBaySubscriptionTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserSubscription($val)
 	{
@@ -578,7 +578,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSiteVerified($val)
 	{
@@ -587,19 +587,19 @@ class UserType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSkypeID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SkypeID');
+            throw new \Exception('POJO Proxy need a string for SkypeID');
         }
         $this->SkypeID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayWikiReadOnly($val)
 	{
@@ -608,31 +608,31 @@ class UserType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTUVLevel($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->TUVLevel = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVATID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for VATID');
+            throw new \Exception('POJO Proxy need a string for VATID');
         }
         $this->VATID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMotorsDealer($val)
 	{
@@ -641,7 +641,7 @@ class UserType
 
 	/**
 	 * @param SellerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentMethod($val)
 	{
@@ -650,7 +650,7 @@ class UserType
 
 	/**
 	 * @param BiddingSummaryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBiddingSummary($val)
 	{
@@ -659,7 +659,7 @@ class UserType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserAnonymized($val)
 	{
@@ -668,7 +668,7 @@ class UserType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

@@ -17,7 +17,7 @@ class WhoisResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWhoisResult($val)
 	{
@@ -26,12 +26,12 @@ class WhoisResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWhoisData($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for whoisData');
+            throw new \Exception('POJO Proxy need a string for whoisData');
         }
         $this->whoisData = $val;
 	}

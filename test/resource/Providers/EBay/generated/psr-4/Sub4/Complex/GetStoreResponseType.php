@@ -22,7 +22,7 @@ class GetStoreResponseType extends
 
     /**
      * @param StoreType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStore($val)
     {

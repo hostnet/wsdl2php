@@ -77,55 +77,55 @@ class CharacteristicType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDateFormat($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DateFormat');
+            throw new \Exception('POJO Proxy need a string for DateFormat');
         }
         $this->DateFormat = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisplaySequence($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplaySequence');
+            throw new \Exception('POJO Proxy need a string for DisplaySequence');
         }
         $this->DisplaySequence = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisplayUOM($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DisplayUOM');
+            throw new \Exception('POJO Proxy need a string for DisplayUOM');
         }
         $this->DisplayUOM = $val;
     }
 
     /**
      * @param LabelType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLabel($val)
     {
@@ -134,7 +134,7 @@ class CharacteristicType
 
     /**
      * @param SortOrderCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSortOrder($val)
     {
@@ -143,7 +143,7 @@ class CharacteristicType
 
     /**
      * @param ValType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValueList($val)
     {
@@ -152,7 +152,7 @@ class CharacteristicType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

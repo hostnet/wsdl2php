@@ -17,7 +17,7 @@ class CreateRegistrantResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreateRegistrantResult($val)
     {
@@ -26,7 +26,7 @@ class CreateRegistrantResponse
 
     /**
      * @param Registrant $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegistrant($val)
     {

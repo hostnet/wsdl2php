@@ -22,7 +22,7 @@ class GetPictureManagerOptionsResponseType extends
 
     /**
      * @param PictureManagerSubscriptionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscription($val)
     {
@@ -31,7 +31,7 @@ class GetPictureManagerOptionsResponseType extends
 
     /**
      * @param PictureManagerPictureDisplayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureType($val)
     {

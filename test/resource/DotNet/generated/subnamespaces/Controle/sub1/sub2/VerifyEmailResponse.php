@@ -13,7 +13,7 @@ class VerifyEmailResponse
 
 	/**
 	 * @param ReturnIndicator $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVerifyEmailResult($val)
 	{

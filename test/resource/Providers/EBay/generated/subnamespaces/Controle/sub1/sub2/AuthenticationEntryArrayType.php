@@ -19,7 +19,7 @@ class AuthenticationEntryArrayType
 
 	/**
 	 * @param AuthenticationEntryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAuthenticationEntry($val)
 	{

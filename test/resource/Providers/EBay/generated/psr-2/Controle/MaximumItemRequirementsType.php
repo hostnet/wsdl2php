@@ -26,24 +26,24 @@ class MaximumItemRequirementsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaximumItemCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaximumItemCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinimumFeedbackScore($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MinimumFeedbackScore = $val;
     }

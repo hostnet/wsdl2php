@@ -17,7 +17,7 @@ class SearchNameServerResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchNameServerResult($val)
     {
@@ -26,7 +26,7 @@ class SearchNameServerResponse
 
     /**
      * @param ArrayOfNameServer $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNameServers($val)
     {

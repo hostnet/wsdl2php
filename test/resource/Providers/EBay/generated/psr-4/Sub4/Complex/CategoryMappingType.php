@@ -25,7 +25,7 @@ class CategoryMappingType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -34,24 +34,24 @@ class CategoryMappingType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOldID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for oldID');
+            throw new \Exception('POJO Proxy need a string for oldID');
         }
         $this->oldID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for id');
+            throw new \Exception('POJO Proxy need a string for id');
         }
         $this->id = $val;
     }

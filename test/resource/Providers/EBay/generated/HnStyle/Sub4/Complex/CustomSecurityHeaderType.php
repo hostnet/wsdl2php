@@ -52,31 +52,31 @@ class CustomSecurityHeaderType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEBayAuthToken($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for eBayAuthToken');
+            throw new \Exception('POJO Proxy need a string for eBayAuthToken');
         }
         $this->eBayAuthToken = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHardExpirationWarning($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for HardExpirationWarning');
+            throw new \Exception('POJO Proxy need a string for HardExpirationWarning');
         }
         $this->HardExpirationWarning = $val;
     }
 
     /**
      * @param UserIdPasswordType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCredentials($val)
     {
@@ -85,19 +85,19 @@ class CustomSecurityHeaderType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationSignature($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NotificationSignature');
+            throw new \Exception('POJO Proxy need a string for NotificationSignature');
         }
         $this->NotificationSignature = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

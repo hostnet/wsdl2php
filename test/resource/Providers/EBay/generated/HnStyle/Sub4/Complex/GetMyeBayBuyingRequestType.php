@@ -57,7 +57,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWatchList($val)
     {
@@ -66,7 +66,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidList($val)
     {
@@ -75,7 +75,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferList($val)
     {
@@ -84,7 +84,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWonList($val)
     {
@@ -93,7 +93,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param ItemListCustomizationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLostList($val)
     {
@@ -102,7 +102,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param MyeBaySelectionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteSearches($val)
     {
@@ -111,7 +111,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param MyeBaySelectionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteSellers($val)
     {
@@ -120,7 +120,7 @@ class GetMyeBayBuyingRequestType extends
 
     /**
      * @param MyeBaySelectionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSecondChanceOffer($val)
     {

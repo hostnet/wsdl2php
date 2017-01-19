@@ -13,7 +13,7 @@ class AckMessageResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAckMessageResult($val)
     {

@@ -15,7 +15,7 @@ class AddMemberMessagesAaQtoBidderRequestType extends
 
     /**
      * @param AddMemberMessagesAAQToBidderRequestContainerType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAddMemberMessagesAAQToBidderRequestContainer($val)
     {

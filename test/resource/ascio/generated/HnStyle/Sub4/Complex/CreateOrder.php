@@ -17,19 +17,19 @@ class CreateOrder
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSessionId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for sessionId');
+            throw new \Exception('POJO Proxy need a string for sessionId');
         }
         $this->sessionId = $val;
     }
 
     /**
      * @param Order $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrder($val)
     {

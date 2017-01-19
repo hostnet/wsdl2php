@@ -29,7 +29,7 @@ class GetBestOffersResponseType extends
 
     /**
      * @param BestOfferArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferArray($val)
     {
@@ -38,7 +38,7 @@ class GetBestOffersResponseType extends
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {

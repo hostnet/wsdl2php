@@ -29,43 +29,43 @@ class XsLfileType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileName');
+            throw new \Exception('POJO Proxy need a string for FileName');
         }
         $this->FileName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileVersion');
+            throw new \Exception('POJO Proxy need a string for FileVersion');
         }
         $this->FileVersion = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileContent($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileContent');
+            throw new \Exception('POJO Proxy need a string for FileContent');
         }
         $this->FileContent = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

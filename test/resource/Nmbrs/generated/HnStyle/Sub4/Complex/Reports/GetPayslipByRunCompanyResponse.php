@@ -13,12 +13,12 @@ class GetPayslipByRunCompanyResponse
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReportsGetPayslipByRunCompanyResult($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
+            throw new \Exception('POJO Proxy need a string for Reports_GetPayslipByRunCompanyResult');
         }
         $this->Reports_GetPayslipByRunCompanyResult = $val;
     }

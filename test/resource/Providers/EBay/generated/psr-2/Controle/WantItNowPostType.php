@@ -43,31 +43,31 @@ class WantItNowPostType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDescription($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
     }
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPostID($val)
     {
@@ -76,7 +76,7 @@ class WantItNowPostType
 
     /**
      * @param SiteCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSite($val)
     {
@@ -85,7 +85,7 @@ class WantItNowPostType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartTime($val)
     {
@@ -94,24 +94,24 @@ class WantItNowPostType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResponseCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ResponseCount = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
     }

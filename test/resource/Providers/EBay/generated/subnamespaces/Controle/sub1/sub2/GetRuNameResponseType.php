@@ -21,12 +21,12 @@ class GetRuNameResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRuName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RuName');
+            throw new \Exception('POJO Proxy need a string for RuName');
         }
         $this->RuName = $val;
 	}

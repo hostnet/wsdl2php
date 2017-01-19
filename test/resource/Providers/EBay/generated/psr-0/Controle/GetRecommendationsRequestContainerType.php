@@ -73,7 +73,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ListingFlowCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingFlow($val)
 	{
@@ -82,7 +82,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{
@@ -91,7 +91,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -100,7 +100,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param ModifiedFieldType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setModifiedFields($val)
 	{
@@ -109,7 +109,7 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param RecommendationEngineCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecommendationEngine($val)
 	{
@@ -118,43 +118,43 @@ class GetRecommendationsRequestContainerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQuery($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Query');
+            throw new \Exception('POJO Proxy need a string for Query');
         }
         $this->Query = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCorrelationID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CorrelationID');
+            throw new \Exception('POJO Proxy need a string for CorrelationID');
         }
         $this->CorrelationID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeletedField($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeletedField');
+            throw new \Exception('POJO Proxy need a string for DeletedField');
         }
         $this->DeletedField = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

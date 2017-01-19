@@ -25,7 +25,7 @@ class GetSuggestedCategoriesResponseType extends
 
 	/**
 	 * @param SuggestedCategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSuggestedCategoryArray($val)
 	{
@@ -34,12 +34,12 @@ class GetSuggestedCategoriesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryCount = $val;
 	}

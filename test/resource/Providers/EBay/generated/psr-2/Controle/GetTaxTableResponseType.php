@@ -26,7 +26,7 @@ class GetTaxTableResponseType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLastUpdateTime($val)
     {
@@ -35,7 +35,7 @@ class GetTaxTableResponseType extends
 
     /**
      * @param TaxTableType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTaxTable($val)
     {

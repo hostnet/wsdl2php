@@ -25,7 +25,7 @@ class SetPictureManagerDetailsRequestType extends
 
     /**
      * @param PictureManagerDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureManagerDetails($val)
     {
@@ -34,7 +34,7 @@ class SetPictureManagerDetailsRequestType extends
 
     /**
      * @param PictureManagerActionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAction($val)
     {

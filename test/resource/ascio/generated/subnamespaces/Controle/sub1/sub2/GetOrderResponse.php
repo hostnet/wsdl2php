@@ -17,7 +17,7 @@ class GetOrderResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetOrderResult($val)
 	{
@@ -26,7 +26,7 @@ class GetOrderResponse
 
 	/**
 	 * @param Order $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{

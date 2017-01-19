@@ -22,7 +22,7 @@ class CharityAffiliationsType
 
     /**
      * @param CharityIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityID($val)
     {
@@ -31,7 +31,7 @@ class CharityAffiliationsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

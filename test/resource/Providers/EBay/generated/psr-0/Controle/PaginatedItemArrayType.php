@@ -22,7 +22,7 @@ class PaginatedItemArrayType
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -31,7 +31,7 @@ class PaginatedItemArrayType
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{

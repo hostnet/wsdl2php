@@ -19,7 +19,7 @@ class VeRoReportItemsRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRightsOwnerID($val)
     {
@@ -28,7 +28,7 @@ class VeRoReportItemsRequestType extends
 
     /**
      * @param VeROReportItemsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReportItems($val)
     {

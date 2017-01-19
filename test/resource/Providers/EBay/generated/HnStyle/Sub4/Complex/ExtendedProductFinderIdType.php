@@ -29,19 +29,19 @@ class ExtendedProductFinderIdType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderBuySide($val)
     {

@@ -21,7 +21,7 @@ class NameValueListArrayType
 
     /**
      * @param NameValueListType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNameValueList($val)
     {

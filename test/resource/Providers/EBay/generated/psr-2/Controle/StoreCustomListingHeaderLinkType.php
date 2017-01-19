@@ -31,31 +31,31 @@ class StoreCustomListingHeaderLinkType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLinkID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LinkID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrder($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Order = $val;
     }
 
     /**
      * @param StoreCustomListingHeaderLinkCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLinkType($val)
     {
@@ -64,7 +64,7 @@ class StoreCustomListingHeaderLinkType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

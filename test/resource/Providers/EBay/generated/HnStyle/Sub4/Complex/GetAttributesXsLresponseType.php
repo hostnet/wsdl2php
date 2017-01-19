@@ -15,7 +15,7 @@ class GetAttributesXsLresponseType extends
 
     /**
      * @param XSLFileType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setXSLFile($val)
     {

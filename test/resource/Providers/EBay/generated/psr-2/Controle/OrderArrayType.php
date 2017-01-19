@@ -17,7 +17,7 @@ class OrderArrayType
 
     /**
      * @param OrderType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrder($val)
     {
