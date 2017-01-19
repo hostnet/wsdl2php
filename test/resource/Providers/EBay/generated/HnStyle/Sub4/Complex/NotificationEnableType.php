@@ -24,7 +24,7 @@ class NotificationEnableType
 
     /**
      * @param NotificationEventTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEventType($val)
     {
@@ -33,7 +33,7 @@ class NotificationEnableType
 
     /**
      * @param EnableCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEventEnable($val)
     {
@@ -42,7 +42,7 @@ class NotificationEnableType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

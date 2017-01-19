@@ -17,19 +17,19 @@ class CharityIdType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function set($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for _');
+            throw new \Exception('POJO Proxy need a string for _');
         }
         $this->_ = $val;
     }
 
     /**
      * @param CharityAffiliationTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {

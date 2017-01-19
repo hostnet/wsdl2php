@@ -17,7 +17,7 @@ class StoreCustomCategoryArrayType
 
     /**
      * @param StoreCustomCategoryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCustomCategory($val)
     {

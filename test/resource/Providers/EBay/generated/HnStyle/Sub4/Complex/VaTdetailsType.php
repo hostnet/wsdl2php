@@ -48,7 +48,7 @@ class VaTdetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBusinessSeller($val)
     {
@@ -57,7 +57,7 @@ class VaTdetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRestrictedToBusiness($val)
     {
@@ -66,7 +66,7 @@ class VaTdetailsType
 
     /**
      * @param float $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVATPercent($val)
     {
@@ -75,7 +75,7 @@ class VaTdetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

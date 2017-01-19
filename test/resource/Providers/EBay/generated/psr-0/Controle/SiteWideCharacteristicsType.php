@@ -27,7 +27,7 @@ class SiteWideCharacteristicsType
 
 	/**
 	 * @param CharacteristicsSetType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharacteristicsSet($val)
 	{
@@ -36,19 +36,19 @@ class SiteWideCharacteristicsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExcludeCategoryID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExcludeCategoryID');
+            throw new \Exception('POJO Proxy need a string for ExcludeCategoryID');
         }
         $this->ExcludeCategoryID = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

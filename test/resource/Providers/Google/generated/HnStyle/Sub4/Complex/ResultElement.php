@@ -45,67 +45,67 @@ class ResultElement
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSummary($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for summary');
+            throw new \Exception('POJO Proxy need a string for summary');
         }
         $this->summary = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setURL($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for URL');
+            throw new \Exception('POJO Proxy need a string for URL');
         }
         $this->URL = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSnippet($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for snippet');
+            throw new \Exception('POJO Proxy need a string for snippet');
         }
         $this->snippet = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for title');
+            throw new \Exception('POJO Proxy need a string for title');
         }
         $this->title = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCachedSize($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for cachedSize');
+            throw new \Exception('POJO Proxy need a string for cachedSize');
         }
         $this->cachedSize = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRelatedInformationPresent($val)
     {
@@ -114,19 +114,19 @@ class ResultElement
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHostName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for hostName');
+            throw new \Exception('POJO Proxy need a string for hostName');
         }
         $this->hostName = $val;
     }
 
     /**
      * @param DirectoryCategory $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDirectoryCategory($val)
     {
@@ -135,12 +135,12 @@ class ResultElement
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDirectoryTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for directoryTitle');
+            throw new \Exception('POJO Proxy need a string for directoryTitle');
         }
         $this->directoryTitle = $val;
     }

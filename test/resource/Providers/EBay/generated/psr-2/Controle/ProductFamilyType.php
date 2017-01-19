@@ -35,7 +35,7 @@ class ProductFamilyType
 
     /**
      * @param ProductType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setParentProduct($val)
     {
@@ -44,7 +44,7 @@ class ProductFamilyType
 
     /**
      * @param ProductType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFamilyMembers($val)
     {
@@ -53,7 +53,7 @@ class ProductFamilyType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -62,7 +62,7 @@ class ProductFamilyType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMoreChildren($val)
     {

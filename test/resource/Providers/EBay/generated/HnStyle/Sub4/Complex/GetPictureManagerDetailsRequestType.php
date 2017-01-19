@@ -42,31 +42,31 @@ class GetPictureManagerDetailsRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFolderID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FolderID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureURL($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PictureURL');
+            throw new \Exception('POJO Proxy need a string for PictureURL');
         }
         $this->PictureURL = $val;
     }
 
     /**
      * @param PictureManagerDetailLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureManagerDetailLevel($val)
     {

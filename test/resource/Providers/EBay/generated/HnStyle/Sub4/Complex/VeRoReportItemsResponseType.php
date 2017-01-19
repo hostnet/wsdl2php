@@ -18,7 +18,7 @@ class VeRoReportItemsResponseType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReportPacketID($val)
     {
@@ -27,7 +27,7 @@ class VeRoReportItemsResponseType extends
 
     /**
      * @param VeROReportPacketStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReportPacketStatus($val)
     {

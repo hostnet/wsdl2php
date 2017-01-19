@@ -45,7 +45,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param StoreCustomListingHeaderDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDisplayType($val)
 	{
@@ -54,7 +54,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogo($val)
 	{
@@ -63,7 +63,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchBox($val)
 	{
@@ -72,7 +72,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param StoreCustomListingHeaderLinkType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLinkToInclude($val)
 	{
@@ -81,7 +81,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddToFavoriteStores($val)
 	{
@@ -90,7 +90,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSignUpForStoreNewsletter($val)
 	{
@@ -99,7 +99,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBreadCrumb($val)
 	{
@@ -108,7 +108,7 @@ class StoreCustomListingHeaderType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

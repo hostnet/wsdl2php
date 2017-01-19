@@ -28,7 +28,7 @@ class PriceRangeFilterType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxPrice($val)
     {
@@ -37,7 +37,7 @@ class PriceRangeFilterType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinPrice($val)
     {
@@ -46,7 +46,7 @@ class PriceRangeFilterType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -52,7 +52,7 @@ class AuthenticationEntryType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAcceptURL($val)
     {
@@ -61,7 +61,7 @@ class AuthenticationEntryType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPrivacyPolicyURL($val)
     {
@@ -70,7 +70,7 @@ class AuthenticationEntryType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRejectURL($val)
     {
@@ -79,19 +79,19 @@ class AuthenticationEntryType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRuName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RuName');
+            throw new \Exception('POJO Proxy need a string for RuName');
         }
         $this->RuName = $val;
     }
 
     /**
      * @param TokenReturnMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTokenReturnMethod($val)
     {
@@ -100,7 +100,7 @@ class AuthenticationEntryType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

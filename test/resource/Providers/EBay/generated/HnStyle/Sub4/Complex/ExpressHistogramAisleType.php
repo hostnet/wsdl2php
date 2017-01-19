@@ -31,7 +31,7 @@ class ExpressHistogramAisleType
 
     /**
      * @param ExpressHistogramDomainDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomainDetails($val)
     {
@@ -40,7 +40,7 @@ class ExpressHistogramAisleType
 
     /**
      * @param ExpressHistogramProductType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductType($val)
     {
@@ -49,7 +49,7 @@ class ExpressHistogramAisleType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

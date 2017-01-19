@@ -40,55 +40,55 @@ class ListingTipFieldType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingTipFieldID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ListingTipFieldID');
+            throw new \Exception('POJO Proxy need a string for ListingTipFieldID');
         }
         $this->ListingTipFieldID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFieldTip($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FieldTip');
+            throw new \Exception('POJO Proxy need a string for FieldTip');
         }
         $this->FieldTip = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentFieldText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CurrentFieldText');
+            throw new \Exception('POJO Proxy need a string for CurrentFieldText');
         }
         $this->CurrentFieldText = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentFieldValue($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CurrentFieldValue');
+            throw new \Exception('POJO Proxy need a string for CurrentFieldValue');
         }
         $this->CurrentFieldValue = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

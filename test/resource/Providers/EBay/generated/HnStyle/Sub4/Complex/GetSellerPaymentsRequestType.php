@@ -68,7 +68,7 @@ class GetSellerPaymentsRequestType extends
 
     /**
      * @param RCSPaymentStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentStatus($val)
     {
@@ -77,7 +77,7 @@ class GetSellerPaymentsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentTimeFrom($val)
     {
@@ -86,7 +86,7 @@ class GetSellerPaymentsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentTimeTo($val)
     {
@@ -95,7 +95,7 @@ class GetSellerPaymentsRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {

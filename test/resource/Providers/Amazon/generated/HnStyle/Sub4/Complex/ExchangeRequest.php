@@ -29,60 +29,60 @@ class ExchangeRequest
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExchangeid($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for exchange_id');
+            throw new \Exception('POJO Proxy need a string for exchange_id');
         }
         $this->exchange_id = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTag($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for tag');
+            throw new \Exception('POJO Proxy need a string for tag');
         }
         $this->tag = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for type');
+            throw new \Exception('POJO Proxy need a string for type');
         }
         $this->type = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDevtag($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for devtag');
+            throw new \Exception('POJO Proxy need a string for devtag');
         }
         $this->devtag = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLocale($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for locale');
+            throw new \Exception('POJO Proxy need a string for locale');
         }
         $this->locale = $val;
     }

@@ -17,24 +17,24 @@ class AuthHeader
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUsername($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Username');
+            throw new \Exception('POJO Proxy need a string for Username');
         }
         $this->Username = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setToken($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Token');
+            throw new \Exception('POJO Proxy need a string for Token');
         }
         $this->Token = $val;
     }

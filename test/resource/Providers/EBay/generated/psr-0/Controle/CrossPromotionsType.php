@@ -53,7 +53,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -62,7 +62,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param PromotionSchemeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrimaryScheme($val)
 	{
@@ -71,7 +71,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param PromotionMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionMethod($val)
 	{
@@ -80,19 +80,19 @@ class CrossPromotionsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerID');
+            throw new \Exception('POJO Proxy need a string for SellerID');
         }
         $this->SellerID = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShippingDiscount($val)
 	{
@@ -101,31 +101,31 @@ class CrossPromotionsType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerKey($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerKey');
+            throw new \Exception('POJO Proxy need a string for SellerKey');
         }
         $this->SellerKey = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param PromotedItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotedItem($val)
 	{
@@ -134,7 +134,7 @@ class CrossPromotionsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

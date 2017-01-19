@@ -25,7 +25,7 @@ class SvW
 
     /**
      * @param CompanySVWSettings $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSVWSettings($val)
     {
@@ -34,7 +34,7 @@ class SvW
 
     /**
      * @param Sector $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSector($val)
     {
@@ -43,7 +43,7 @@ class SvW
 
     /**
      * @param Risicogroep $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRisicogroep($val)
     {
@@ -52,7 +52,7 @@ class SvW
 
     /**
      * @param CAO $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCAO($val)
     {

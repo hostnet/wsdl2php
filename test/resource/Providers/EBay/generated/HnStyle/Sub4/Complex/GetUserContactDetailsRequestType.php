@@ -37,36 +37,36 @@ class GetUserContactDetailsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemID');
+            throw new \Exception('POJO Proxy need a string for ItemID');
         }
         $this->ItemID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setContactID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ContactID');
+            throw new \Exception('POJO Proxy need a string for ContactID');
         }
         $this->ContactID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRequesterID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RequesterID');
+            throw new \Exception('POJO Proxy need a string for RequesterID');
         }
         $this->RequesterID = $val;
     }

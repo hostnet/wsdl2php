@@ -30,7 +30,7 @@ class SellerReverseDisputeRequestType extends
 
     /**
      * @param DisputeIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeID($val)
     {
@@ -39,7 +39,7 @@ class SellerReverseDisputeRequestType extends
 
     /**
      * @param DisputeResolutionReasonCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisputeResolutionReason($val)
     {

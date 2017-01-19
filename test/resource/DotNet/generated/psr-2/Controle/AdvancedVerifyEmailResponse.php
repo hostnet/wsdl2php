@@ -13,7 +13,7 @@ class AdvancedVerifyEmailResponse
 
     /**
      * @param ReturnIndicator $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdvancedVerifyEmailResult($val)
     {

@@ -63,43 +63,43 @@ class StoreCustomPageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURLPath($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for URLPath');
+            throw new \Exception('POJO Proxy need a string for URLPath');
         }
         $this->URLPath = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -108,7 +108,7 @@ class StoreCustomPageType
 
 	/**
 	 * @param StoreCustomPageStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -117,19 +117,19 @@ class StoreCustomPageType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContent($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Content');
+            throw new \Exception('POJO Proxy need a string for Content');
         }
         $this->Content = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLeftNav($val)
 	{
@@ -138,7 +138,7 @@ class StoreCustomPageType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPreviewEnabled($val)
 	{
@@ -147,19 +147,19 @@ class StoreCustomPageType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrder($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Order = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

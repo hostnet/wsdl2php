@@ -25,43 +25,43 @@ class CreateSupportOrder
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSessionId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for sessionId');
+            throw new \Exception('POJO Proxy need a string for sessionId');
         }
         $this->sessionId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubject($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for subject');
+            throw new \Exception('POJO Proxy need a string for subject');
         }
         $this->subject = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBody($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for body');
+            throw new \Exception('POJO Proxy need a string for body');
         }
         $this->body = $val;
     }
 
     /**
      * @param ArrayOfAttachment $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttachments($val)
     {

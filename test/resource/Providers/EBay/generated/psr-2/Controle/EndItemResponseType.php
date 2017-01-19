@@ -19,7 +19,7 @@ class EndItemResponseType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTime($val)
     {

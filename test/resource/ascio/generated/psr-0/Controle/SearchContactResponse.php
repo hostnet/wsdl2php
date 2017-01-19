@@ -17,7 +17,7 @@ class SearchContactResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchContactResult($val)
 	{
@@ -26,7 +26,7 @@ class SearchContactResponse
 
 	/**
 	 * @param ArrayOfContact $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContacts($val)
 	{

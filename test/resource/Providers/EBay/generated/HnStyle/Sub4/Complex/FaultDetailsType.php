@@ -32,43 +32,43 @@ class FaultDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setErrorCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ErrorCode');
+            throw new \Exception('POJO Proxy need a string for ErrorCode');
         }
         $this->ErrorCode = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSeverity($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Severity');
+            throw new \Exception('POJO Proxy need a string for Severity');
         }
         $this->Severity = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDetailedMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DetailedMessage');
+            throw new \Exception('POJO Proxy need a string for DetailedMessage');
         }
         $this->DetailedMessage = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

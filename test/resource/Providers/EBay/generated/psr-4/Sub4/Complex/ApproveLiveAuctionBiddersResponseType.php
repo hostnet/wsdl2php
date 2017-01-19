@@ -20,7 +20,7 @@ class ApproveLiveAuctionBiddersResponseType extends
 
     /**
      * @param LiveAuctionApprovalStatusArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidderUpdateStatus($val)
     {

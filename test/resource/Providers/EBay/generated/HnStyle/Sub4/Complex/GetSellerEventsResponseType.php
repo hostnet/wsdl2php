@@ -31,7 +31,7 @@ class GetSellerEventsResponseType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTimeTo($val)
     {
@@ -40,7 +40,7 @@ class GetSellerEventsResponseType extends
 
     /**
      * @param ItemArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemArray($val)
     {

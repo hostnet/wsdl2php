@@ -37,7 +37,7 @@ class AttributeArrayType
 
 	/**
 	 * @param AttributeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttribute($val)
 	{

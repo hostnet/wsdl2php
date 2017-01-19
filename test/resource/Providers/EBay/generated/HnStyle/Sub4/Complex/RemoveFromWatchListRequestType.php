@@ -23,7 +23,7 @@ class RemoveFromWatchListRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -32,7 +32,7 @@ class RemoveFromWatchListRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRemoveAllItems($val)
     {

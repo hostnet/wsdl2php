@@ -17,7 +17,7 @@ class GetMessagesResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetMessagesResult($val)
 	{
@@ -26,7 +26,7 @@ class GetMessagesResponse
 
 	/**
 	 * @param ArrayOfMessage $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMessages($val)
 	{

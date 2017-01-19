@@ -19,7 +19,7 @@ class GetUserResponseType extends
 
 	/**
 	 * @param UserType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUser($val)
 	{

@@ -61,31 +61,31 @@ class CharityType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityName');
+            throw new \Exception('POJO Proxy need a string for CharityName');
         }
         $this->CharityName = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityNumber = $val;
     }
 
     /**
      * @param float $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDonationPercent($val)
     {
@@ -94,43 +94,43 @@ class CharityType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityID');
+            throw new \Exception('POJO Proxy need a string for CharityID');
         }
         $this->CharityID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMission($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Mission');
+            throw new \Exception('POJO Proxy need a string for Mission');
         }
         $this->Mission = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLogoURL($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LogoURL');
+            throw new \Exception('POJO Proxy need a string for LogoURL');
         }
         $this->LogoURL = $val;
     }
 
     /**
      * @param CharityStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
@@ -139,7 +139,7 @@ class CharityType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityListing($val)
     {
@@ -148,7 +148,7 @@ class CharityType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

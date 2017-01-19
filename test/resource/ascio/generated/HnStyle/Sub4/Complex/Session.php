@@ -17,24 +17,24 @@ class Session
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccount($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Account');
+            throw new \Exception('POJO Proxy need a string for Account');
         }
         $this->Account = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPassword($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Password');
+            throw new \Exception('POJO Proxy need a string for Password');
         }
         $this->Password = $val;
     }

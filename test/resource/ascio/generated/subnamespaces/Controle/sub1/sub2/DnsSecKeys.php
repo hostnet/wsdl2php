@@ -29,7 +29,7 @@ class DnsSecKeys
 
 	/**
 	 * @param DnsSecKey $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDnsSecKey1($val)
 	{
@@ -38,7 +38,7 @@ class DnsSecKeys
 
 	/**
 	 * @param DnsSecKey $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDnsSecKey2($val)
 	{
@@ -47,7 +47,7 @@ class DnsSecKeys
 
 	/**
 	 * @param DnsSecKey $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDnsSecKey3($val)
 	{
@@ -56,7 +56,7 @@ class DnsSecKeys
 
 	/**
 	 * @param DnsSecKey $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDnsSecKey4($val)
 	{
@@ -65,7 +65,7 @@ class DnsSecKeys
 
 	/**
 	 * @param DnsSecKey $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDnsSecKey5($val)
 	{

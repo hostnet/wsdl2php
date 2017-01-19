@@ -93,7 +93,7 @@ class PromotedItemType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -102,43 +102,43 @@ class PromotedItemType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPictureURL($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PictureURL');
+            throw new \Exception('POJO Proxy need a string for PictureURL');
         }
         $this->PictureURL = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSelfHostedURL($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SelfHostedURL');
+            throw new \Exception('POJO Proxy need a string for SelfHostedURL');
         }
         $this->SelfHostedURL = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPosition($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Position = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionPrice($val)
     {
@@ -147,7 +147,7 @@ class PromotedItemType
 
     /**
      * @param PromotionItemPriceTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionPriceType($val)
     {
@@ -156,7 +156,7 @@ class PromotedItemType
 
     /**
      * @param PromotionItemSelectionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSelectionType($val)
     {
@@ -165,19 +165,19 @@ class PromotedItemType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
     }
 
     /**
      * @param ListingTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingType($val)
     {
@@ -186,7 +186,7 @@ class PromotedItemType
 
     /**
      * @param PromotionDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionDetails($val)
     {
@@ -195,7 +195,7 @@ class PromotedItemType
 
     /**
      * @param duration $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTimeLeft($val)
     {
@@ -204,7 +204,7 @@ class PromotedItemType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

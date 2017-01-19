@@ -24,7 +24,7 @@ class UrLdetailsType
 
     /**
      * @param URLTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setURLType($val)
     {
@@ -33,7 +33,7 @@ class UrLdetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setURL($val)
     {
@@ -42,7 +42,7 @@ class UrLdetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -13,12 +13,12 @@ class GetWageCodesByYearResponse
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReportsGetWageCodesByYearResult($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
+            throw new \Exception('POJO Proxy need a string for Reports_GetWageCodesByYearResult');
         }
         $this->Reports_GetWageCodesByYearResult = $val;
     }

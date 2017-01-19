@@ -21,7 +21,7 @@ class ItemArrayType
 
 	/**
 	 * @param ItemType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItem($val)
 	{

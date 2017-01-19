@@ -26,7 +26,7 @@ class IssueRefundResponseType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefundFromSeller($val)
     {
@@ -35,7 +35,7 @@ class IssueRefundResponseType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalRefundToBuyer($val)
     {

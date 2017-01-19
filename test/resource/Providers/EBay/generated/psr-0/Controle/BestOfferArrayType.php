@@ -18,7 +18,7 @@ class BestOfferArrayType
 
 	/**
 	 * @param BestOfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestOffer($val)
 	{

@@ -27,7 +27,7 @@ class AddTransactionConfirmationItemResponseType extends
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -36,7 +36,7 @@ class AddTransactionConfirmationItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartTime($val)
 	{
@@ -45,7 +45,7 @@ class AddTransactionConfirmationItemResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEndTime($val)
 	{

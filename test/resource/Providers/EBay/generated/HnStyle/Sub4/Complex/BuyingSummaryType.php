@@ -37,31 +37,31 @@ class BuyingSummaryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBiddingCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BiddingCount = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWinningCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WinningCount = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalWinningCost($val)
     {
@@ -70,19 +70,19 @@ class BuyingSummaryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWonCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WonCount = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotalWonCost($val)
     {
@@ -91,24 +91,24 @@ class BuyingSummaryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWonDurationInDays($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->WonDurationInDays = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BestOfferCount = $val;
     }

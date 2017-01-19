@@ -22,24 +22,24 @@ class NotificationMessageType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageBody($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MessageBody');
+            throw new \Exception('POJO Proxy need a string for MessageBody');
         }
         $this->MessageBody = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEIAS($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for EIAS');
+            throw new \Exception('POJO Proxy need a string for EIAS');
         }
         $this->EIAS = $val;
     }

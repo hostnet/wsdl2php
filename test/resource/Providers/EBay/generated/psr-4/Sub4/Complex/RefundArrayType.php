@@ -17,7 +17,7 @@ class RefundArrayType
 
     /**
      * @param RefundType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRefund($val)
     {

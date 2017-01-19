@@ -32,7 +32,7 @@ class MyeBaySelectionType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInclude($val)
     {
@@ -41,7 +41,7 @@ class MyeBaySelectionType
 
     /**
      * @param SortOrderCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSort($val)
     {
@@ -50,19 +50,19 @@ class MyeBaySelectionType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxResults($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxResults = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

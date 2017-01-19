@@ -38,7 +38,7 @@ class PromotionDetailsType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionPrice($val)
 	{
@@ -47,7 +47,7 @@ class PromotionDetailsType
 
 	/**
 	 * @param PromotionItemPriceTypeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionPriceType($val)
 	{
@@ -56,19 +56,19 @@ class PromotionDetailsType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBidCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BidCount = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setConvertedPromotionPrice($val)
 	{
@@ -77,7 +77,7 @@ class PromotionDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

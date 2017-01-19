@@ -17,7 +17,7 @@ class TransactionArrayType
 
 	/**
 	 * @param TransactionType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTransaction($val)
 	{

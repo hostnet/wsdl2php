@@ -12,7 +12,7 @@ class ItemTransactionIdArrayType
 
     /**
      * @param ItemTransactionIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemTransactionID($val)
     {

@@ -109,7 +109,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressSellingPreference($val)
     {
@@ -118,7 +118,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressApproved($val)
     {
@@ -127,7 +127,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGoodStanding($val)
     {
@@ -136,7 +136,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param FeedbackRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackScore($val)
     {
@@ -145,7 +145,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param FeedbackRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPositiveFeedbackPercent($val)
     {
@@ -154,7 +154,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param FeedbackRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackAsSellerScore($val)
     {
@@ -163,7 +163,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param FeedbackRequirementsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPositiveFeedbackAsSellerPercent($val)
     {
@@ -172,7 +172,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBusinessSeller($val)
     {
@@ -181,7 +181,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEligiblePayPalAccount($val)
     {
@@ -190,7 +190,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPayPalAccountAcceptsUnconfirmedAddress($val)
     {
@@ -199,7 +199,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCombinedPaymentsAccepted($val)
     {
@@ -208,7 +208,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackPublic($val)
     {
@@ -217,7 +217,7 @@ class ExpressSellerRequirementsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

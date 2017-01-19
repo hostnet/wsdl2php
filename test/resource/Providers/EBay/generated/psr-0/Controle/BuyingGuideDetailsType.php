@@ -36,7 +36,7 @@ class BuyingGuideDetailsType
 
 	/**
 	 * @param BuyingGuideType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuide($val)
 	{
@@ -45,7 +45,7 @@ class BuyingGuideDetailsType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuideHub($val)
 	{
@@ -54,7 +54,7 @@ class BuyingGuideDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

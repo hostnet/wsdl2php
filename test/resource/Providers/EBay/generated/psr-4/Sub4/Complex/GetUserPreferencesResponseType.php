@@ -69,7 +69,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param BidderNoticePreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidderNoticePreferences($val)
     {
@@ -78,7 +78,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param CombinedPaymentPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCombinedPaymentPreferences($val)
     {
@@ -87,7 +87,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param CrossPromotionPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCrossPromotionPreferences($val)
     {
@@ -96,7 +96,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param SellerPaymentPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerPaymentPreferences($val)
     {
@@ -105,7 +105,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param SellerFavoriteItemPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerFavoriteItemPreferences($val)
     {
@@ -114,7 +114,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param EndOfAuctionEmailPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndOfAuctionEmailPreferences($val)
     {
@@ -123,7 +123,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param eBxOptInPreferenceType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEBxOptInPreference($val)
     {
@@ -132,7 +132,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param ExpressPreferencesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressPreferences($val)
     {
@@ -141,7 +141,7 @@ class GetUserPreferencesResponseType extends
 
     /**
      * @param ProStoresCheckoutPreferenceType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProStoresPreference($val)
     {

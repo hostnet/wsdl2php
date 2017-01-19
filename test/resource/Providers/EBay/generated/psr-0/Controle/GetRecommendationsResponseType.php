@@ -45,7 +45,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param ListingAnalyzerRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setListingAnalyzerRecommendations($val)
 	{
@@ -54,7 +54,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param SIFFTASRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSIFFTASRecommendations($val)
 	{
@@ -63,7 +63,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param PricingRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPricingRecommendations($val)
 	{
@@ -72,7 +72,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param AttributeRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttributeRecommendations($val)
 	{
@@ -81,7 +81,7 @@ class GetRecommendationsResponseType extends
 
 	/**
 	 * @param ProductRecommendationsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductRecommendations($val)
 	{

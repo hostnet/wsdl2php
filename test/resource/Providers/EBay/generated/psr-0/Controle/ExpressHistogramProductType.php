@@ -25,7 +25,7 @@ class ExpressHistogramProductType
 
 	/**
 	 * @param ExpressHistogramDomainDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomainDetails($val)
 	{
@@ -34,7 +34,7 @@ class ExpressHistogramProductType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

@@ -34,7 +34,7 @@ class GetContextualKeywordsRequestType extends
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setURL($val)
     {
@@ -43,24 +43,24 @@ class GetContextualKeywordsRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEncoding($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Encoding');
+            throw new \Exception('POJO Proxy need a string for Encoding');
         }
         $this->Encoding = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryID');
+            throw new \Exception('POJO Proxy need a string for CategoryID');
         }
         $this->CategoryID = $val;
     }

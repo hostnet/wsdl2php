@@ -53,7 +53,7 @@ class AttributeSetType
 
     /**
      * @param AttributeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttribute($val)
     {
@@ -62,7 +62,7 @@ class AttributeSetType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -71,24 +71,24 @@ class AttributeSetType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->attributeSetID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for attributeSetVersion');
+            throw new \Exception('POJO Proxy need a string for attributeSetVersion');
         }
         $this->attributeSetVersion = $val;
     }

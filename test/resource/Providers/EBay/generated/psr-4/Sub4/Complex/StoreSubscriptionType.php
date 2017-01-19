@@ -21,7 +21,7 @@ class StoreSubscriptionType
 
     /**
      * @param StoreSubscriptionLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLevel($val)
     {
@@ -30,7 +30,7 @@ class StoreSubscriptionType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFee($val)
     {
@@ -39,7 +39,7 @@ class StoreSubscriptionType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

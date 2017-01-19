@@ -40,31 +40,31 @@ class LiveAuctionCatalogType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserCatalogID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCatalogName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CatalogName');
+            throw new \Exception('POJO Proxy need a string for CatalogName');
         }
         $this->CatalogName = $val;
 	}
 
 	/**
 	 * @param ScheduleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSchedule($val)
 	{
@@ -73,7 +73,7 @@ class LiveAuctionCatalogType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

@@ -13,7 +13,7 @@ class Payslip
 
     /**
      * @param base64Binary $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPDF($val)
     {

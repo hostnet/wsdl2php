@@ -29,7 +29,7 @@ class ApprovalDocumentation
 
 	/**
 	 * @param ApprovalDocumentationType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -38,7 +38,7 @@ class ApprovalDocumentation
 
 	/**
 	 * @param ArrayOfstring $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setObjectNames($val)
 	{
@@ -47,19 +47,19 @@ class ApprovalDocumentation
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for OrderId');
+            throw new \Exception('POJO Proxy need a string for OrderId');
         }
         $this->OrderId = $val;
 	}
 
 	/**
 	 * @param ArrayOfAttachment $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAttachments($val)
 	{
@@ -68,7 +68,7 @@ class ApprovalDocumentation
 
 	/**
 	 * @param Extensions $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExtensions($val)
 	{

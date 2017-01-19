@@ -62,19 +62,19 @@ class ShippingServiceDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDescription($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpeditedService($val)
     {
@@ -83,7 +83,7 @@ class ShippingServiceDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInternationalService($val)
     {
@@ -92,7 +92,7 @@ class ShippingServiceDetailsType
 
     /**
      * @param token $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingService($val)
     {
@@ -101,43 +101,43 @@ class ShippingServiceDetailsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingServiceID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingTimeMax($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMax = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingTimeMin($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ShippingTimeMin = $val;
     }
 
     /**
      * @param ShippingServiceCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceCode($val)
     {
@@ -146,7 +146,7 @@ class ShippingServiceDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

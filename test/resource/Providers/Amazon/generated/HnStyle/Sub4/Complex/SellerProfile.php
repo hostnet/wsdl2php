@@ -13,7 +13,7 @@ class SellerProfile
 
     /**
      * @param SellerProfileDetailsArray $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerProfileDetails($val)
     {

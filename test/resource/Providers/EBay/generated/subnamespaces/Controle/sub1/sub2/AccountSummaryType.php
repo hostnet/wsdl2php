@@ -143,7 +143,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AccountStateCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountState($val)
 	{
@@ -152,7 +152,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoicePayment($val)
 	{
@@ -161,7 +161,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceCredit($val)
 	{
@@ -170,7 +170,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceNewFee($val)
 	{
@@ -179,7 +179,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AdditionalAccountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdditionalAccount($val)
 	{
@@ -188,7 +188,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAmountPastDue($val)
 	{
@@ -197,19 +197,19 @@ class AccountSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankAccountInfo($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BankAccountInfo');
+            throw new \Exception('POJO Proxy need a string for BankAccountInfo');
         }
         $this->BankAccountInfo = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBankModifyDate($val)
 	{
@@ -218,19 +218,19 @@ class AccountSummaryType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBillingCycleDate($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BillingCycleDate = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreditCardExpiration($val)
 	{
@@ -239,19 +239,19 @@ class AccountSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreditCardInfo($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CreditCardInfo');
+            throw new \Exception('POJO Proxy need a string for CreditCardInfo');
         }
         $this->CreditCardInfo = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreditCardModifyDate($val)
 	{
@@ -260,7 +260,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrentBalance($val)
 	{
@@ -269,19 +269,19 @@ class AccountSummaryType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceBalance($val)
 	{
@@ -290,7 +290,7 @@ class AccountSummaryType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setInvoiceDate($val)
 	{
@@ -299,7 +299,7 @@ class AccountSummaryType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastAmountPaid($val)
 	{
@@ -308,7 +308,7 @@ class AccountSummaryType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastPaymentDate($val)
 	{
@@ -317,7 +317,7 @@ class AccountSummaryType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPastDue($val)
 	{
@@ -326,7 +326,7 @@ class AccountSummaryType
 
 	/**
 	 * @param SellerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -335,7 +335,7 @@ class AccountSummaryType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

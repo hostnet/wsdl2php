@@ -41,19 +41,19 @@ class BestOfferDetailsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->BestOfferCount = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferEnabled($val)
     {
@@ -62,7 +62,7 @@ class BestOfferDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOffer($val)
     {
@@ -71,7 +71,7 @@ class BestOfferDetailsType
 
     /**
      * @param BestOfferStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferStatus($val)
     {
@@ -80,7 +80,7 @@ class BestOfferDetailsType
 
     /**
      * @param BestOfferTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBestOfferType($val)
     {
@@ -89,7 +89,7 @@ class BestOfferDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

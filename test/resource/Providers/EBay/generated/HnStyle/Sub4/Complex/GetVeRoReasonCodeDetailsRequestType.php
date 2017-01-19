@@ -22,7 +22,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReasonCodeID($val)
     {
@@ -31,7 +31,7 @@ class GetVeRoReasonCodeDetailsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReturnAllSites($val)
     {

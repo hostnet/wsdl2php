@@ -17,7 +17,7 @@ class CreateDocumentationResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreateDocumentationResult($val)
 	{
@@ -26,12 +26,12 @@ class CreateDocumentationResponse
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDocumentationId($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->documentationId = $val;
 	}

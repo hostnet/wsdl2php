@@ -19,7 +19,7 @@ class GetOrderTransactionsResponseType extends
 
     /**
      * @param OrderArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderArray($val)
     {

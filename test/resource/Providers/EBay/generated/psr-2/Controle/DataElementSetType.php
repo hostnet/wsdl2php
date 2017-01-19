@@ -45,31 +45,31 @@ class DataElementSetType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDataElement($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DataElement');
+            throw new \Exception('POJO Proxy need a string for DataElement');
         }
         $this->DataElement = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDataElementID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->DataElementID = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -78,12 +78,12 @@ class DataElementSetType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->attributeSetID = $val;
     }

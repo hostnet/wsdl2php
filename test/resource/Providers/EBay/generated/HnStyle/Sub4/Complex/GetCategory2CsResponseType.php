@@ -39,7 +39,7 @@ class GetCategory2CsResponseType extends
 
     /**
      * @param CategoryArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMappedCategoryArray($val)
     {
@@ -48,7 +48,7 @@ class GetCategory2CsResponseType extends
 
     /**
      * @param CategoryArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUnmappedCategoryArray($val)
     {
@@ -57,19 +57,19 @@ class GetCategory2CsResponseType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSystemVersion($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AttributeSystemVersion');
+            throw new \Exception('POJO Proxy need a string for AttributeSystemVersion');
         }
         $this->AttributeSystemVersion = $val;
     }
 
     /**
      * @param SiteWideCharacteristicsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSiteWideCharacteristicSets($val)
     {

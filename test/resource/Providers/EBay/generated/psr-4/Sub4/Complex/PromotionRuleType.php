@@ -70,7 +70,7 @@ class PromotionRuleType
 
     /**
      * @param PromotedItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotedItem($val)
     {
@@ -79,7 +79,7 @@ class PromotionRuleType
 
     /**
      * @param SiteCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSiteID($val)
     {
@@ -88,43 +88,43 @@ class PromotionRuleType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotedStoreCategoryID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PromotedStoreCategoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotedeBayCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PromotedeBayCategoryID');
+            throw new \Exception('POJO Proxy need a string for PromotedeBayCategoryID');
         }
         $this->PromotedeBayCategoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotedKeywords($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PromotedKeywords');
+            throw new \Exception('POJO Proxy need a string for PromotedKeywords');
         }
         $this->PromotedKeywords = $val;
     }
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReferringItemID($val)
     {
@@ -133,43 +133,43 @@ class PromotionRuleType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReferringStoreCategoryID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReferringStoreCategoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReferringeBayCategoryID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReferringeBayCategoryID');
+            throw new \Exception('POJO Proxy need a string for ReferringeBayCategoryID');
         }
         $this->ReferringeBayCategoryID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReferringKeywords($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ReferringKeywords');
+            throw new \Exception('POJO Proxy need a string for ReferringKeywords');
         }
         $this->ReferringKeywords = $val;
     }
 
     /**
      * @param PromotionSchemeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionScheme($val)
     {
@@ -178,7 +178,7 @@ class PromotionRuleType
 
     /**
      * @param PromotionMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionMethod($val)
     {
@@ -187,7 +187,7 @@ class PromotionRuleType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

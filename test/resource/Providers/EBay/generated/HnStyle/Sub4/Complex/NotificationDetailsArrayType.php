@@ -18,7 +18,7 @@ class NotificationDetailsArrayType
 
     /**
      * @param NotificationDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationDetails($val)
     {

@@ -13,7 +13,7 @@ class GetCurrentResponse
 
     /**
      * @param BankAccount $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBankAccountGetCurrentResult($val)
     {

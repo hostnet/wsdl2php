@@ -47,7 +47,7 @@ class GetVeRoReportStatusResponseType extends
 
     /**
      * @param PaginationResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaginationResult($val)
     {
@@ -56,7 +56,7 @@ class GetVeRoReportStatusResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMoreItems($val)
     {
@@ -65,31 +65,31 @@ class GetVeRoReportStatusResponseType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemsPerPage($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPageNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
     }
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReportPacketID($val)
     {
@@ -98,7 +98,7 @@ class GetVeRoReportStatusResponseType extends
 
     /**
      * @param VeROReportPacketStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVeROReportPacketStatus($val)
     {
@@ -107,7 +107,7 @@ class GetVeRoReportStatusResponseType extends
 
     /**
      * @param VeROReportedItemDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReportedItemDetails($val)
     {

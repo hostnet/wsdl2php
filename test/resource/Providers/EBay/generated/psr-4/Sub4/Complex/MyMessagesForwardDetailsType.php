@@ -25,7 +25,7 @@ class MyMessagesForwardDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserForwardDate($val)
     {
@@ -34,19 +34,19 @@ class MyMessagesForwardDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setForwardMessageEncoding($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ForwardMessageEncoding');
+            throw new \Exception('POJO Proxy need a string for ForwardMessageEncoding');
         }
         $this->ForwardMessageEncoding = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

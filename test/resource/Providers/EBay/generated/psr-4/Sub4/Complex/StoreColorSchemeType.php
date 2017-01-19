@@ -34,31 +34,31 @@ class StoreColorSchemeType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setColorSchemeID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ColorSchemeID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param StoreColorType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setColor($val)
     {
@@ -67,7 +67,7 @@ class StoreColorSchemeType
 
     /**
      * @param StoreFontType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFont($val)
     {
@@ -76,7 +76,7 @@ class StoreColorSchemeType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

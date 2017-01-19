@@ -13,12 +13,12 @@ class GetByRunDepartmentResponse
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setJournalsGetByRunDepartmentResult($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunDepartmentResult');
         }
         $this->Journals_GetByRunDepartmentResult = $val;
     }

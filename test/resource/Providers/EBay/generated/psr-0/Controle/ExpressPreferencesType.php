@@ -49,7 +49,7 @@ class ExpressPreferencesType
 
 	/**
 	 * @param ExpressSellingPreferenceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressSellingPreference($val)
 	{
@@ -58,19 +58,19 @@ class ExpressPreferencesType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDefaultPayPalAccount($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DefaultPayPalAccount');
+            throw new \Exception('POJO Proxy need a string for DefaultPayPalAccount');
         }
         $this->DefaultPayPalAccount = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

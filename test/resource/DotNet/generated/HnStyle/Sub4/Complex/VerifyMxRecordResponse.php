@@ -13,12 +13,12 @@ class VerifyMxRecordResponse
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVerifyMXRecordResult($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->VerifyMXRecordResult = $val;
     }

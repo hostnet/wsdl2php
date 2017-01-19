@@ -29,31 +29,31 @@ class ReasonCodeDetailType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBriefText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BriefText');
+            throw new \Exception('POJO Proxy need a string for BriefText');
         }
         $this->BriefText = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDetailedText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DetailedText');
+            throw new \Exception('POJO Proxy need a string for DetailedText');
         }
         $this->DetailedText = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -62,7 +62,7 @@ class ReasonCodeDetailType
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCodeID($val)
     {

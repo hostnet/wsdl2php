@@ -22,7 +22,7 @@ class GetNotificationPreferencesRequestType extends
 
     /**
      * @param NotificationRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPreferenceLevel($val)
     {

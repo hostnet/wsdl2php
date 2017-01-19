@@ -33,19 +33,19 @@ class ExternalProductIdType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setValue($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Value');
+            throw new \Exception('POJO Proxy need a string for Value');
         }
         $this->Value = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReturnSearchResultOnDuplicates($val)
     {
@@ -54,7 +54,7 @@ class ExternalProductIdType
 
     /**
      * @param ExternalProductCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
@@ -63,7 +63,7 @@ class ExternalProductIdType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

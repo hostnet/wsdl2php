@@ -37,19 +37,19 @@ class ApproveLiveAuctionBiddersRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserCatalogID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
     }
 
     /**
      * @param BidApprovalArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidApproval($val)
     {
@@ -58,7 +58,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApproveAllPending($val)
     {
@@ -67,7 +67,7 @@ class ApproveLiveAuctionBiddersRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAllApprovedBiddingLimit($val)
     {

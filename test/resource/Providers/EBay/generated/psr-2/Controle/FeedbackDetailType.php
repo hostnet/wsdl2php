@@ -113,7 +113,7 @@ class FeedbackDetailType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentingUser($val)
     {
@@ -122,31 +122,31 @@ class FeedbackDetailType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentingUserScore($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CommentingUserScore = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CommentText');
+            throw new \Exception('POJO Proxy need a string for CommentText');
         }
         $this->CommentText = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentTime($val)
     {
@@ -155,7 +155,7 @@ class FeedbackDetailType
 
     /**
      * @param CommentTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentType($val)
     {
@@ -164,31 +164,31 @@ class FeedbackDetailType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackResponse($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackResponse');
+            throw new \Exception('POJO Proxy need a string for FeedbackResponse');
         }
         $this->FeedbackResponse = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFollowup($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Followup');
+            throw new \Exception('POJO Proxy need a string for Followup');
         }
         $this->Followup = $val;
     }
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -197,7 +197,7 @@ class FeedbackDetailType
 
     /**
      * @param TradingRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRole($val)
     {
@@ -206,19 +206,19 @@ class FeedbackDetailType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ItemTitle');
+            throw new \Exception('POJO Proxy need a string for ItemTitle');
         }
         $this->ItemTitle = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemPrice($val)
     {
@@ -227,31 +227,31 @@ class FeedbackDetailType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackID');
+            throw new \Exception('POJO Proxy need a string for FeedbackID');
         }
         $this->FeedbackID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCommentReplaced($val)
     {
@@ -260,7 +260,7 @@ class FeedbackDetailType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResponseReplaced($val)
     {
@@ -269,7 +269,7 @@ class FeedbackDetailType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFollowUpReplaced($val)
     {
@@ -278,7 +278,7 @@ class FeedbackDetailType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCountable($val)
     {
@@ -287,7 +287,7 @@ class FeedbackDetailType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

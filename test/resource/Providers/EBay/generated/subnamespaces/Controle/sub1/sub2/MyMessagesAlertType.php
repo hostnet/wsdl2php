@@ -109,55 +109,55 @@ class MyMessagesAlertType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSender($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Sender');
+            throw new \Exception('POJO Proxy need a string for Sender');
         }
         $this->Sender = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecipientUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientUserID');
+            throw new \Exception('POJO Proxy need a string for RecipientUserID');
         }
         $this->RecipientUserID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubject($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Subject');
+            throw new \Exception('POJO Proxy need a string for Subject');
         }
         $this->Subject = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriority($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Priority');
+            throw new \Exception('POJO Proxy need a string for Priority');
         }
         $this->Priority = $val;
 	}
 
 	/**
 	 * @param MyMessagesAlertIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlertID($val)
 	{
@@ -166,43 +166,43 @@ class MyMessagesAlertType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalAlertID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalAlertID');
+            throw new \Exception('POJO Proxy need a string for ExternalAlertID');
         }
         $this->ExternalAlertID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContentType($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ContentType');
+            throw new \Exception('POJO Proxy need a string for ContentType');
         }
         $this->ContentType = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Text');
+            throw new \Exception('POJO Proxy need a string for Text');
         }
         $this->Text = $val;
 	}
 
 	/**
 	 * @param MyMessagesAlertResolutionStatusCode $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResolutionStatus($val)
 	{
@@ -211,7 +211,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRead($val)
 	{
@@ -220,7 +220,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreationDate($val)
 	{
@@ -229,7 +229,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReceiveDate($val)
 	{
@@ -238,7 +238,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpirationDate($val)
 	{
@@ -247,7 +247,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResolutionDate($val)
 	{
@@ -256,7 +256,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastReadDate($val)
 	{
@@ -265,7 +265,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param ItemIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemID($val)
 	{
@@ -274,7 +274,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setIsTimedResolution($val)
 	{
@@ -283,19 +283,19 @@ class MyMessagesAlertType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setActionURL($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ActionURL');
+            throw new \Exception('POJO Proxy need a string for ActionURL');
         }
         $this->ActionURL = $val;
 	}
 
 	/**
 	 * @param MyMessagesResponseDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseDetails($val)
 	{
@@ -304,7 +304,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param MyMessagesForwardDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setForwardDetails($val)
 	{
@@ -313,7 +313,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param MyMessagesFolderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFolder($val)
 	{
@@ -322,7 +322,7 @@ class MyMessagesAlertType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

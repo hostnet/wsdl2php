@@ -149,19 +149,19 @@ class SellerType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaisaPayStatus($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PaisaPayStatus = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAllowPaymentEdit($val)
 	{
@@ -170,7 +170,7 @@ class SellerType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBillingCurrency($val)
 	{
@@ -179,7 +179,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutEnabled($val)
 	{
@@ -188,7 +188,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCIPBankAccountStored($val)
 	{
@@ -197,7 +197,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGoodStanding($val)
 	{
@@ -206,7 +206,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionAuthorized($val)
 	{
@@ -215,7 +215,7 @@ class SellerType
 
 	/**
 	 * @param MerchandizingPrefCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMerchandizingPref($val)
 	{
@@ -224,7 +224,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setQualifiesForB2BVAT($val)
 	{
@@ -233,7 +233,7 @@ class SellerType
 
 	/**
 	 * @param SellerGuaranteeLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerGuaranteeLevel($val)
 	{
@@ -242,7 +242,7 @@ class SellerType
 
 	/**
 	 * @param SellerLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerLevel($val)
 	{
@@ -251,7 +251,7 @@ class SellerType
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPaymentAddress($val)
 	{
@@ -260,7 +260,7 @@ class SellerType
 
 	/**
 	 * @param SchedulingInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSchedulingInfo($val)
 	{
@@ -269,7 +269,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreOwner($val)
 	{
@@ -278,7 +278,7 @@ class SellerType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreURL($val)
 	{
@@ -287,7 +287,7 @@ class SellerType
 
 	/**
 	 * @param SellerBusinessCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerBusinessType($val)
 	{
@@ -296,7 +296,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegisteredBusinessSeller($val)
 	{
@@ -305,7 +305,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressEligible($val)
 	{
@@ -314,7 +314,7 @@ class SellerType
 
 	/**
 	 * @param SellerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -323,7 +323,7 @@ class SellerType
 
 	/**
 	 * @param ProStoresCheckoutPreferenceType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProStoresPreference($val)
 	{
@@ -332,7 +332,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressWallet($val)
 	{
@@ -341,7 +341,7 @@ class SellerType
 
 	/**
 	 * @param ExpressSellerRequirementsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExpressSellerRequirements($val)
 	{
@@ -350,7 +350,7 @@ class SellerType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharityRegistered($val)
 	{
@@ -359,7 +359,7 @@ class SellerType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

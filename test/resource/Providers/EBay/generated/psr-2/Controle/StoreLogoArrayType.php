@@ -17,7 +17,7 @@ class StoreLogoArrayType
 
     /**
      * @param StoreLogoType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLogo($val)
     {

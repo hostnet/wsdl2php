@@ -25,43 +25,43 @@ class UploadFile
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCompanyId($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CompanyId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStrDocumentName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StrDocumentName');
+            throw new \Exception('POJO Proxy need a string for StrDocumentName');
         }
         $this->StrDocumentName = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStrDocumentSubFolder($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StrDocumentSubFolder');
+            throw new \Exception('POJO Proxy need a string for StrDocumentSubFolder');
         }
         $this->StrDocumentSubFolder = $val;
     }
 
     /**
      * @param base64Binary $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBody($val)
     {

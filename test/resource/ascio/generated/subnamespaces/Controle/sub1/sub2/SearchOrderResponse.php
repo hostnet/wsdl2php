@@ -21,7 +21,7 @@ class SearchOrderResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSearchOrderResult($val)
 	{
@@ -30,19 +30,19 @@ class SearchOrderResponse
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalOrders($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->totalOrders = $val;
 	}
 
 	/**
 	 * @param ArrayOfOrder $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrders($val)
 	{

@@ -22,7 +22,7 @@ class GetBidderListResponseType extends
 
     /**
      * @param UserType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidder($val)
     {
@@ -31,7 +31,7 @@ class GetBidderListResponseType extends
 
     /**
      * @param ItemArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidItemArray($val)
     {

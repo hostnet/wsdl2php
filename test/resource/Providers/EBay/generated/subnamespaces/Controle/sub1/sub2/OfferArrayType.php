@@ -20,7 +20,7 @@ class OfferArrayType
 
 	/**
 	 * @param OfferType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOffer($val)
 	{

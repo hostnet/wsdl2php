@@ -216,7 +216,7 @@ class ShippingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAllowPaymentEdit($val)
     {
@@ -225,7 +225,7 @@ class ShippingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApplyShippingDiscount($val)
     {
@@ -234,7 +234,7 @@ class ShippingDetailsType
 
     /**
      * @param CalculatedShippingRateType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCalculatedShippingRate($val)
     {
@@ -243,7 +243,7 @@ class ShippingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setChangePaymentInstructions($val)
     {
@@ -252,7 +252,7 @@ class ShippingDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceFee($val)
     {
@@ -261,7 +261,7 @@ class ShippingDetailsType
 
     /**
      * @param InsuranceOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceOption($val)
     {
@@ -270,7 +270,7 @@ class ShippingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceWanted($val)
     {
@@ -279,7 +279,7 @@ class ShippingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentEdited($val)
     {
@@ -288,19 +288,19 @@ class ShippingDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentInstructions($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PaymentInstructions');
+            throw new \Exception('POJO Proxy need a string for PaymentInstructions');
         }
         $this->PaymentInstructions = $val;
     }
 
     /**
      * @param SalesTaxType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalesTax($val)
     {
@@ -309,31 +309,31 @@ class ShippingDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerPostalCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerPostalCode');
+            throw new \Exception('POJO Proxy need a string for SellerPostalCode');
         }
         $this->SellerPostalCode = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingRateErrorMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShippingRateErrorMessage');
+            throw new \Exception('POJO Proxy need a string for ShippingRateErrorMessage');
         }
         $this->ShippingRateErrorMessage = $val;
     }
 
     /**
      * @param ShippingRateTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingRateType($val)
     {
@@ -342,7 +342,7 @@ class ShippingDetailsType
 
     /**
      * @param ShippingServiceOptionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceOptions($val)
     {
@@ -351,7 +351,7 @@ class ShippingDetailsType
 
     /**
      * @param InternationalShippingServiceOptionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInternationalShippingServiceOption($val)
     {
@@ -360,7 +360,7 @@ class ShippingDetailsType
 
     /**
      * @param ShippingTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingType($val)
     {
@@ -369,19 +369,19 @@ class ShippingDetailsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellingManagerSalesRecordNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SellingManagerSalesRecordNumber = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setThirdPartyCheckout($val)
     {
@@ -390,7 +390,7 @@ class ShippingDetailsType
 
     /**
      * @param TaxTableType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTaxTable($val)
     {
@@ -399,7 +399,7 @@ class ShippingDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetItFast($val)
     {
@@ -408,19 +408,19 @@ class ShippingDetailsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipmentTrackingNumber($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShipmentTrackingNumber');
+            throw new \Exception('POJO Proxy need a string for ShipmentTrackingNumber');
         }
         $this->ShipmentTrackingNumber = $val;
     }
 
     /**
      * @param token $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceUsed($val)
     {
@@ -429,7 +429,7 @@ class ShippingDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDefaultShippingCost($val)
     {
@@ -438,7 +438,7 @@ class ShippingDetailsType
 
     /**
      * @param InsuranceDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceDetails($val)
     {
@@ -447,7 +447,7 @@ class ShippingDetailsType
 
     /**
      * @param InsuranceDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInternationalInsuranceDetails($val)
     {
@@ -456,7 +456,7 @@ class ShippingDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

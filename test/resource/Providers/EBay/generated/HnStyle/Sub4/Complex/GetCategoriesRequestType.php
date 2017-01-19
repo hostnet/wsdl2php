@@ -59,43 +59,43 @@ class GetCategoriesRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategorySiteID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategorySiteID');
+            throw new \Exception('POJO Proxy need a string for CategorySiteID');
         }
         $this->CategorySiteID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategoryParent($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryParent');
+            throw new \Exception('POJO Proxy need a string for CategoryParent');
         }
         $this->CategoryParent = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLevelLimit($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LevelLimit = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setViewAllNodes($val)
     {

@@ -30,31 +30,31 @@ class StoreThemeType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setThemeID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param StoreColorSchemeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setColorScheme($val)
     {
@@ -63,7 +63,7 @@ class StoreThemeType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

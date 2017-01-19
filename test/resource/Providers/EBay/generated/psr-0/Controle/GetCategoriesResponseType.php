@@ -86,7 +86,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryArray($val)
 	{
@@ -95,19 +95,19 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CategoryCount = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpdateTime($val)
 	{
@@ -116,19 +116,19 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategoryVersion($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CategoryVersion');
+            throw new \Exception('POJO Proxy need a string for CategoryVersion');
         }
         $this->CategoryVersion = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReservePriceInclusive($val)
 	{
@@ -137,7 +137,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReservePriceAllowed($val)
 	{
@@ -146,7 +146,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumReservePrice($val)
 	{
@@ -155,7 +155,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -164,7 +164,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReduceReserveInclusive($val)
 	{
@@ -173,7 +173,7 @@ class GetCategoriesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReduceReserveAllowed($val)
 	{

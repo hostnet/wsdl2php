@@ -13,7 +13,7 @@ class GetByDebtorResponse
 
     /**
      * @param ArrayOfCompany $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListGetByDebtorResult($val)
     {

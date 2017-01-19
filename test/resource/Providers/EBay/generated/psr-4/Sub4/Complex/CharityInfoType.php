@@ -63,31 +63,31 @@ class CharityInfoType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMission($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Mission');
+            throw new \Exception('POJO Proxy need a string for Mission');
         }
         $this->Mission = $val;
     }
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLogoURL($val)
     {
@@ -96,7 +96,7 @@ class CharityInfoType
 
     /**
      * @param CharityStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
@@ -105,55 +105,55 @@ class CharityInfoType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchableString($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SearchableString');
+            throw new \Exception('POJO Proxy need a string for SearchableString');
         }
         $this->SearchableString = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityRegion($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityRegion = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityDomain($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->CharityDomain = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharityID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CharityID');
+            throw new \Exception('POJO Proxy need a string for CharityID');
         }
         $this->CharityID = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -162,12 +162,12 @@ class CharityInfoType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for id');
+            throw new \Exception('POJO Proxy need a string for id');
         }
         $this->id = $val;
     }

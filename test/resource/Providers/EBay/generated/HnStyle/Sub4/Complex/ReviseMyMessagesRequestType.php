@@ -41,7 +41,7 @@ class ReviseMyMessagesRequestType extends
 
     /**
      * @param MyMessagesMessageIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageIDs($val)
     {
@@ -50,7 +50,7 @@ class ReviseMyMessagesRequestType extends
 
     /**
      * @param MyMessagesAlertIDArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlertIDs($val)
     {
@@ -59,7 +59,7 @@ class ReviseMyMessagesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRead($val)
     {
@@ -68,7 +68,7 @@ class ReviseMyMessagesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFlagged($val)
     {
@@ -77,7 +77,7 @@ class ReviseMyMessagesRequestType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFolderID($val)
     {

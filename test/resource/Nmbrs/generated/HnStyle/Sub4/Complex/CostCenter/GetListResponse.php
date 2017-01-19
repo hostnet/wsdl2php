@@ -13,7 +13,7 @@ class GetListResponse
 
     /**
      * @param ArrayOfCostCenter $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCostCenterGetListResult($val)
     {

@@ -47,7 +47,7 @@ class GetProductSellingPagesRequestType extends
 
     /**
      * @param ProductUseCaseCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUseCase($val)
     {
@@ -56,7 +56,7 @@ class GetProductSellingPagesRequestType extends
 
     /**
      * @param ProductType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProduct($val)
     {

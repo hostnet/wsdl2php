@@ -64,19 +64,19 @@ class ValidateTestUserRegistrationRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackScore($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->FeedbackScore = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegistrationDate($val)
     {
@@ -85,7 +85,7 @@ class ValidateTestUserRegistrationRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscribeSA($val)
     {
@@ -94,7 +94,7 @@ class ValidateTestUserRegistrationRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscribeSAPro($val)
     {
@@ -103,7 +103,7 @@ class ValidateTestUserRegistrationRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscribeSM($val)
     {
@@ -112,7 +112,7 @@ class ValidateTestUserRegistrationRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscribeSMPro($val)
     {

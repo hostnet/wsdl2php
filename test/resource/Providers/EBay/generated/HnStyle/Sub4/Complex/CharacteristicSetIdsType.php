@@ -16,12 +16,12 @@ class CharacteristicSetIdsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ID');
+            throw new \Exception('POJO Proxy need a string for ID');
         }
         $this->ID = $val;
     }

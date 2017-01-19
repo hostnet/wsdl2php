@@ -26,7 +26,7 @@ class GetCharitiesResponseType extends
 
 	/**
 	 * @param CharityInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCharity($val)
 	{

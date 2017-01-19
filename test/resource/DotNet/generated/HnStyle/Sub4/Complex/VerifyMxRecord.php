@@ -17,24 +17,24 @@ class VerifyMxRecord
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEmail($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for email');
+            throw new \Exception('POJO Proxy need a string for email');
         }
         $this->email = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLicenseKey($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LicenseKey');
+            throw new \Exception('POJO Proxy need a string for LicenseKey');
         }
         $this->LicenseKey = $val;
     }

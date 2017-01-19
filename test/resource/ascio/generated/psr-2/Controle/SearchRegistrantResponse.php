@@ -17,7 +17,7 @@ class SearchRegistrantResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchRegistrantResult($val)
     {
@@ -26,7 +26,7 @@ class SearchRegistrantResponse
 
     /**
      * @param ArrayOfRegistrant $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegistrants($val)
     {

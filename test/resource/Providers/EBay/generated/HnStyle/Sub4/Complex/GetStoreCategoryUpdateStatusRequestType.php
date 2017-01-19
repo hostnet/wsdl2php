@@ -25,7 +25,7 @@ class GetStoreCategoryUpdateStatusRequestType extends
 
     /**
      * @param long $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTaskID($val)
     {

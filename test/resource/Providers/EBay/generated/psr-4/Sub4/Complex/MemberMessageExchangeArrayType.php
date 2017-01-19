@@ -18,7 +18,7 @@ class MemberMessageExchangeArrayType
 
     /**
      * @param MemberMessageExchangeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMemberMessageExchange($val)
     {

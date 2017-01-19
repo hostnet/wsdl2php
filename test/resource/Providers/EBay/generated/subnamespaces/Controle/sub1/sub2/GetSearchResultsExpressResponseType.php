@@ -64,7 +64,7 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param DomainHistogramType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHistogram($val)
 	{
@@ -73,7 +73,7 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -82,7 +82,7 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param ProductArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductArray($val)
 	{
@@ -91,31 +91,31 @@ class GetSearchResultsExpressResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEntriesPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreEntries($val)
 	{

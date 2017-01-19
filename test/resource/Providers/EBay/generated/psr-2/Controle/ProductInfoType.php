@@ -27,7 +27,7 @@ class ProductInfoType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAverageStartPrice($val)
     {
@@ -36,7 +36,7 @@ class ProductInfoType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAverageSoldPrice($val)
     {
@@ -45,24 +45,24 @@ class ProductInfoType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTitle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductInfoID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for productInfoID');
+            throw new \Exception('POJO Proxy need a string for productInfoID');
         }
         $this->productInfoID = $val;
     }

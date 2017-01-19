@@ -21,7 +21,7 @@ class QuantityType
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function set($val)
     {
@@ -30,7 +30,7 @@ class QuantityType
 
     /**
      * @param token $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUnit($val)
     {

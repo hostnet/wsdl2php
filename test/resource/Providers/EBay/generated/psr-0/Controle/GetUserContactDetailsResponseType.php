@@ -39,19 +39,19 @@ class GetUserContactDetailsResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserID');
+            throw new \Exception('POJO Proxy need a string for UserID');
         }
         $this->UserID = $val;
 	}
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setContactAddress($val)
 	{
@@ -60,7 +60,7 @@ class GetUserContactDetailsResponseType extends
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRegistrationDate($val)
 	{

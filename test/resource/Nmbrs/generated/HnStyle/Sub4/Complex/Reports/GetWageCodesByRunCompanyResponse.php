@@ -13,12 +13,12 @@ class GetWageCodesByRunCompanyResponse
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReportsGetWageCodesByRunCompanyResult($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
+            throw new \Exception('POJO Proxy need a string for Reports_GetWageCodesByRunCompanyResult');
         }
         $this->Reports_GetWageCodesByRunCompanyResult = $val;
     }

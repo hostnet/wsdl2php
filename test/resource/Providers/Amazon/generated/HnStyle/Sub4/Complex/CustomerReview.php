@@ -21,36 +21,36 @@ class CustomerReview
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRating($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Rating');
+            throw new \Exception('POJO Proxy need a string for Rating');
         }
         $this->Rating = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSummary($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Summary');
+            throw new \Exception('POJO Proxy need a string for Summary');
         }
         $this->Summary = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setComment($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Comment');
+            throw new \Exception('POJO Proxy need a string for Comment');
         }
         $this->Comment = $val;
     }

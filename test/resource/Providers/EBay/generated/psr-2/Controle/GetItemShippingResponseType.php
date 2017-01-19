@@ -22,7 +22,7 @@ class GetItemShippingResponseType extends
 
     /**
      * @param ShippingDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingDetails($val)
     {

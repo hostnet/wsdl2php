@@ -52,31 +52,31 @@ class SellerFavoriteItemPreferencesType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchKeywords($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SearchKeywords');
+            throw new \Exception('POJO Proxy need a string for SearchKeywords');
         }
         $this->SearchKeywords = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStoreCategoryID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->StoreCategoryID = $val;
     }
 
     /**
      * @param ListingTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingType($val)
     {
@@ -85,7 +85,7 @@ class SellerFavoriteItemPreferencesType
 
     /**
      * @param StoreItemListSortOrderCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchSortOrder($val)
     {
@@ -94,7 +94,7 @@ class SellerFavoriteItemPreferencesType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinPrice($val)
     {
@@ -103,7 +103,7 @@ class SellerFavoriteItemPreferencesType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxPrice($val)
     {
@@ -112,7 +112,7 @@ class SellerFavoriteItemPreferencesType
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteItemID($val)
     {
@@ -121,7 +121,7 @@ class SellerFavoriteItemPreferencesType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

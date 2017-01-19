@@ -13,7 +13,7 @@ class UpdateContactResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUpdateContactResult($val)
     {

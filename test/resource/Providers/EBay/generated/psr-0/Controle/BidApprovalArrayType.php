@@ -21,7 +21,7 @@ class BidApprovalArrayType
 
 	/**
 	 * @param BidApprovalType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLiveAuctionBid($val)
 	{
@@ -30,7 +30,7 @@ class BidApprovalArrayType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

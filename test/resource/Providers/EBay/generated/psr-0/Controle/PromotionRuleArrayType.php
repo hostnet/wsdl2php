@@ -17,7 +17,7 @@ class PromotionRuleArrayType
 
 	/**
 	 * @param PromotionRuleType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPromotionRule($val)
 	{

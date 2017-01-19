@@ -39,12 +39,12 @@ class GetProductSellingPagesResponseType extends
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductSellingPagesData($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductSellingPagesData');
+            throw new \Exception('POJO Proxy need a string for ProductSellingPagesData');
         }
         $this->ProductSellingPagesData = $val;
 	}

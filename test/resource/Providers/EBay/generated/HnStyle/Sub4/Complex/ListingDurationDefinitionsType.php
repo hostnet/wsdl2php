@@ -27,7 +27,7 @@ class ListingDurationDefinitionsType
 
     /**
      * @param ListingDurationDefinitionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingDuration($val)
     {
@@ -36,12 +36,12 @@ class ListingDurationDefinitionsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVersion($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Version = $val;
     }

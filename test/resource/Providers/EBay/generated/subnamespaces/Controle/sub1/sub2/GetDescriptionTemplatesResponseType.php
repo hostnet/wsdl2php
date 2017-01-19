@@ -39,7 +39,7 @@ class GetDescriptionTemplatesResponseType extends
 
 	/**
 	 * @param DescriptionTemplateType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescriptionTemplate($val)
 	{
@@ -48,43 +48,43 @@ class GetDescriptionTemplatesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLayoutTotal($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LayoutTotal = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setObsoleteLayoutID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ObsoleteLayoutID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setObsoleteThemeID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ObsoleteThemeID = $val;
 	}
 
 	/**
 	 * @param ThemeGroupType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeGroup($val)
 	{
@@ -93,12 +93,12 @@ class GetDescriptionTemplatesResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setThemeTotal($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeTotal = $val;
 	}

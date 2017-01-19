@@ -22,7 +22,7 @@ class BidderNoticePreferencesType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUnsuccessfulBidderNoticeIncludeMyItems($val)
     {
@@ -31,7 +31,7 @@ class BidderNoticePreferencesType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

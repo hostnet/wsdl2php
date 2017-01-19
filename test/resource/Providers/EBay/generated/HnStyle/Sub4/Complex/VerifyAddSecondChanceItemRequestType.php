@@ -68,7 +68,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRecipientBidderUserID($val)
     {
@@ -77,7 +77,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyItNowPrice($val)
     {
@@ -86,7 +86,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCopyEmailToSeller($val)
     {
@@ -95,7 +95,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param SecondChanceOfferDurationCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDuration($val)
     {
@@ -104,7 +104,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -113,7 +113,7 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param SiteCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSite($val)
     {
@@ -122,12 +122,12 @@ class VerifyAddSecondChanceItemRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerMessage($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerMessage');
+            throw new \Exception('POJO Proxy need a string for SellerMessage');
         }
         $this->SellerMessage = $val;
     }

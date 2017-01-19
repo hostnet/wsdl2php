@@ -53,7 +53,7 @@ class GetBidderListRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setActiveItemsOnly($val)
     {
@@ -62,7 +62,7 @@ class GetBidderListRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeFrom($val)
     {
@@ -71,7 +71,7 @@ class GetBidderListRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndTimeTo($val)
     {
@@ -80,7 +80,7 @@ class GetBidderListRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserID($val)
     {
@@ -89,7 +89,7 @@ class GetBidderListRequestType extends
 
     /**
      * @param GranularityLevelCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGranularityLevel($val)
     {

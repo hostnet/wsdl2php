@@ -62,7 +62,7 @@ class GetSellerTransactionsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeFrom($val)
     {
@@ -71,7 +71,7 @@ class GetSellerTransactionsRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModTimeTo($val)
     {
@@ -80,7 +80,7 @@ class GetSellerTransactionsRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -89,7 +89,7 @@ class GetSellerTransactionsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeFinalValueFee($val)
     {
@@ -98,7 +98,7 @@ class GetSellerTransactionsRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeContainingOrder($val)
     {
@@ -107,7 +107,7 @@ class GetSellerTransactionsRequestType extends
 
     /**
      * @param SKUArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSKUArray($val)
     {

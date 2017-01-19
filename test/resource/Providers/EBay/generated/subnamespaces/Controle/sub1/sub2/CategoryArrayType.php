@@ -17,7 +17,7 @@ class CategoryArrayType
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{

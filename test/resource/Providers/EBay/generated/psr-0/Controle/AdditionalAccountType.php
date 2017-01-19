@@ -33,7 +33,7 @@ class AdditionalAccountType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBalance($val)
 	{
@@ -42,7 +42,7 @@ class AdditionalAccountType
 
 	/**
 	 * @param CurrencyCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCurrency($val)
 	{
@@ -51,19 +51,19 @@ class AdditionalAccountType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAccountCode($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AccountCode');
+            throw new \Exception('POJO Proxy need a string for AccountCode');
         }
         $this->AccountCode = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

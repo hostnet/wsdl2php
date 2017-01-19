@@ -13,7 +13,7 @@ class DoRegistrantVerificationResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDoRegistrantVerificationResult($val)
     {

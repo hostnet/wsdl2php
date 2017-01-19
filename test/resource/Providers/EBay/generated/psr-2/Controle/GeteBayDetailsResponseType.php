@@ -74,7 +74,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param CountryDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCountryDetails($val)
     {
@@ -83,7 +83,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param CurrencyDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCurrencyDetails($val)
     {
@@ -92,7 +92,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param DispatchTimeMaxDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDispatchTimeMaxDetails($val)
     {
@@ -101,7 +101,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param PaymentOptionDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentOptionDetails($val)
     {
@@ -110,7 +110,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param RegionDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRegionDetails($val)
     {
@@ -119,7 +119,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param ShippingLocationDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingLocationDetails($val)
     {
@@ -128,7 +128,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param ShippingServiceDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceDetails($val)
     {
@@ -137,7 +137,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param SiteDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSiteDetails($val)
     {
@@ -146,7 +146,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param TaxJurisdictionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTaxJurisdiction($val)
     {
@@ -155,7 +155,7 @@ class GeteBayDetailsResponseType extends
 
     /**
      * @param URLDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setURLDetails($val)
     {

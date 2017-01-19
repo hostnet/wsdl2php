@@ -25,7 +25,7 @@ class SearchDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyItNowEnabled($val)
 	{
@@ -34,7 +34,7 @@ class SearchDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPicture($val)
 	{
@@ -43,7 +43,7 @@ class SearchDetailsType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRecentListing($val)
 	{
@@ -52,7 +52,7 @@ class SearchDetailsType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

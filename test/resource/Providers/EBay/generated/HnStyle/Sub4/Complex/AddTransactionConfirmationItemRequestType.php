@@ -65,7 +65,7 @@ class AddTransactionConfirmationItemRequestType extends
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRecipientUserID($val)
     {
@@ -74,31 +74,31 @@ class AddTransactionConfirmationItemRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVerifyEligibilityOnly($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for VerifyEligibilityOnly');
+            throw new \Exception('POJO Proxy need a string for VerifyEligibilityOnly');
         }
         $this->VerifyEligibilityOnly = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRecipientPostalCode($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for RecipientPostalCode');
+            throw new \Exception('POJO Proxy need a string for RecipientPostalCode');
         }
         $this->RecipientPostalCode = $val;
     }
 
     /**
      * @param RecipientRelationCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setRecipientRelationType($val)
     {
@@ -107,7 +107,7 @@ class AddTransactionConfirmationItemRequestType extends
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNegotiatedPrice($val)
     {
@@ -116,7 +116,7 @@ class AddTransactionConfirmationItemRequestType extends
 
     /**
      * @param SecondChanceOfferDurationCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingDuration($val)
     {
@@ -125,7 +125,7 @@ class AddTransactionConfirmationItemRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -134,12 +134,12 @@ class AddTransactionConfirmationItemRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setComments($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Comments');
+            throw new \Exception('POJO Proxy need a string for Comments');
         }
         $this->Comments = $val;
     }

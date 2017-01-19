@@ -13,7 +13,7 @@ class GetWageCodesResponse
 
     /**
      * @param ArrayOfWageCode $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWageModelGetWageCodesResult($val)
     {

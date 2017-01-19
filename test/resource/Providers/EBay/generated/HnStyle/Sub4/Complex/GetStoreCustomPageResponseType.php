@@ -18,7 +18,7 @@ class GetStoreCustomPageResponseType extends
 
     /**
      * @param StoreCustomPageArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCustomPageArray($val)
     {

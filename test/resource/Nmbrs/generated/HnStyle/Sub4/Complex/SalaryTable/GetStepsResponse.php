@@ -13,7 +13,7 @@ class GetStepsResponse
 
     /**
      * @param ArrayOfSalaryTableStep $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalaryTableGetStepsResult($val)
     {

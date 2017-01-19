@@ -17,7 +17,7 @@ class StoreSubscriptionArrayType
 
     /**
      * @param StoreSubscriptionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubscription($val)
     {

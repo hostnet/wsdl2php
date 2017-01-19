@@ -49,31 +49,31 @@ class DescriptionTemplateType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGroupID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->GroupID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ID = $val;
     }
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setImageURL($val)
     {
@@ -82,31 +82,31 @@ class DescriptionTemplateType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTemplateXML($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TemplateXML');
+            throw new \Exception('POJO Proxy need a string for TemplateXML');
         }
         $this->TemplateXML = $val;
     }
 
     /**
      * @param DescriptionTemplateCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {
@@ -115,7 +115,7 @@ class DescriptionTemplateType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

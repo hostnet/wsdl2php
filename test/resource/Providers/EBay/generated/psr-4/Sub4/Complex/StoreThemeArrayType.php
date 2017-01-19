@@ -26,7 +26,7 @@ class StoreThemeArrayType
 
     /**
      * @param StoreThemeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTheme($val)
     {
@@ -35,7 +35,7 @@ class StoreThemeArrayType
 
     /**
      * @param StoreColorSchemeArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGenericColorSchemeArray($val)
     {
@@ -44,7 +44,7 @@ class StoreThemeArrayType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

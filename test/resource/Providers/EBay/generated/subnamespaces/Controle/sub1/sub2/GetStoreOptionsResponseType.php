@@ -41,7 +41,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreThemeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBasicThemeArray($val)
 	{
@@ -50,7 +50,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreThemeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdvancedThemeArray($val)
 	{
@@ -59,7 +59,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreLogoArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogoArray($val)
 	{
@@ -68,7 +68,7 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param StoreSubscriptionArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionArray($val)
 	{
@@ -77,24 +77,24 @@ class GetStoreOptionsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxCategories($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxCategories = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxCategoryLevels($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxCategoryLevels = $val;
 	}

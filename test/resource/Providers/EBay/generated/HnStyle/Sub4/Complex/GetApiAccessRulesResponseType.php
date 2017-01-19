@@ -19,7 +19,7 @@ class GetApiAccessRulesResponseType extends
 
     /**
      * @param ApiAccessRuleType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApiAccessRule($val)
     {

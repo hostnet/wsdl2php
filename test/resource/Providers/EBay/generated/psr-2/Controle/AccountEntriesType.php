@@ -28,7 +28,7 @@ class AccountEntriesType
 
     /**
      * @param AccountEntryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountEntry($val)
     {
@@ -37,7 +37,7 @@ class AccountEntriesType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -17,7 +17,7 @@ class PricingRecommendationsType
 
 	/**
 	 * @param ProductInfoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductInfo($val)
 	{

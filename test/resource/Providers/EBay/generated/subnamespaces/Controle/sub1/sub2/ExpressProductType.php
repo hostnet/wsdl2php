@@ -64,19 +64,19 @@ class ExpressProductType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitle($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Title');
+            throw new \Exception('POJO Proxy need a string for Title');
         }
         $this->Title = $val;
 	}
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinPrice($val)
 	{
@@ -85,7 +85,7 @@ class ExpressProductType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMaxPrice($val)
 	{
@@ -94,7 +94,7 @@ class ExpressProductType
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStockPhotoURL($val)
 	{
@@ -103,19 +103,19 @@ class ExpressProductType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemCount($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemCount = $val;
 	}
 
 	/**
 	 * @param ExternalProductIDType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExternalProductID($val)
 	{
@@ -124,7 +124,7 @@ class ExpressProductType
 
 	/**
 	 * @param long $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProductReferenceID($val)
 	{
@@ -133,7 +133,7 @@ class ExpressProductType
 
 	/**
 	 * @param NameValueListArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemSpecifics($val)
 	{
@@ -142,7 +142,7 @@ class ExpressProductType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

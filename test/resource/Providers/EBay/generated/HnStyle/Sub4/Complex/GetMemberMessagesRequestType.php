@@ -50,7 +50,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -59,7 +59,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param MessageTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMailMessageType($val)
     {
@@ -68,7 +68,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param MessageStatusTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessageStatus($val)
     {
@@ -77,7 +77,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisplayToPublic($val)
     {
@@ -86,7 +86,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStartCreationTime($val)
     {
@@ -95,7 +95,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEndCreationTime($val)
     {
@@ -104,7 +104,7 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -113,12 +113,12 @@ class GetMemberMessagesRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMemberMessageID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for MemberMessageID');
+            throw new \Exception('POJO Proxy need a string for MemberMessageID');
         }
         $this->MemberMessageID = $val;
     }

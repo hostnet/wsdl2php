@@ -21,19 +21,19 @@ class RegistrantVerificationDetails
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVerifiedBy($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for VerifiedBy');
+            throw new \Exception('POJO Proxy need a string for VerifiedBy');
         }
         $this->VerifiedBy = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVerificationDate($val)
     {
@@ -42,7 +42,7 @@ class RegistrantVerificationDetails
 
     /**
      * @param ArrayOfMessage $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessages($val)
     {

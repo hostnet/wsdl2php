@@ -13,7 +13,7 @@ class DeleteRegistrantResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeleteRegistrantResult($val)
 	{

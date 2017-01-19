@@ -543,7 +543,7 @@ foreach($types as $index=>$type){
 		$code .= sprintf("\n" .
 		$ident_char . "/**\n".
 		$ident_char . " * @param %s \$val\n" .
-		$ident_char . " * @throws Exception\n" .
+		$ident_char . " * @throws \\Exception\n" .
 		$ident_char . " */\n" .
 		$ident_char ."public function set%s(\$val)\n".$ident_char."{\n" .
 		"%s" .
@@ -902,8 +902,8 @@ function makePascalCase($text)
 function accessMethodCaster($type, $fieldname) {
 	switch($type) {
 		case 'string':
-			return '        if (!is_string($val)) '."{\n".'            throw new Exception(\'POJO Proxy need a string for '.$fieldname.'\');'."\n".'        }'."\n";
+			return '        if (!is_string($val)) '."{\n".'            throw new \\Exception(\'POJO Proxy need a string for '.$fieldname.'\');'."\n".'        }'."\n";
 		case 'int':
-			return '        if (!is_int($val)) '."{\n".'            throw new Exception(\'POJO Proxy need a integer\');'."\n".'        }'."\n";
+			return '        if (!is_int($val)) '."{\n".'            throw new \\Exception(\'POJO Proxy need a integer\');'."\n".'        }'."\n";
 	}
 }

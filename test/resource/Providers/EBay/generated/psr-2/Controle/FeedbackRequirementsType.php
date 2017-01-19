@@ -17,7 +17,7 @@ class FeedbackRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function set($val)
     {
@@ -26,12 +26,12 @@ class FeedbackRequirementsType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMinimum($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for minimum');
+            throw new \Exception('POJO Proxy need a string for minimum');
         }
         $this->minimum = $val;
     }

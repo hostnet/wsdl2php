@@ -41,19 +41,19 @@ class ListingDesignerType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLayoutID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->LayoutID = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOptimalPictureSize($val)
     {
@@ -62,19 +62,19 @@ class ListingDesignerType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setThemeID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ThemeID = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

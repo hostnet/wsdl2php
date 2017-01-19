@@ -19,7 +19,7 @@ class GetItemsAwaitingFeedbackResponseType extends
 
     /**
      * @param PaginatedTransactionArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemsAwaitingFeedback($val)
     {

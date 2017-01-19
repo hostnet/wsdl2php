@@ -35,31 +35,31 @@ class MyeBayFavoriteSellerType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserID');
+            throw new \Exception('POJO Proxy need a string for UserID');
         }
         $this->UserID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStoreName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StoreName');
+            throw new \Exception('POJO Proxy need a string for StoreName');
         }
         $this->StoreName = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

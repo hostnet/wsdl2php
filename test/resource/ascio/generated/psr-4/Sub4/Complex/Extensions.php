@@ -13,7 +13,7 @@ class Extensions
 
     /**
      * @param Extension $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExtension($val)
     {

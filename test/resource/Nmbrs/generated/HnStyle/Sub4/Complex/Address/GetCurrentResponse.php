@@ -13,7 +13,7 @@ class GetCurrentResponse
 
     /**
      * @param Address $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAddressGetCurrentResult($val)
     {

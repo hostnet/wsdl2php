@@ -19,7 +19,7 @@ class NotificationEnableArrayType
 
     /**
      * @param NotificationEnableType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationEnable($val)
     {

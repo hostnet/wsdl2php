@@ -21,31 +21,31 @@ class SalaryTableStep
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStep($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Step');
+            throw new \Exception('POJO Proxy need a string for Step');
         }
         $this->Step = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStepDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for StepDescription');
+            throw new \Exception('POJO Proxy need a string for StepDescription');
         }
         $this->StepDescription = $val;
 	}
 
 	/**
 	 * @param decimal $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStepValue($val)
 	{

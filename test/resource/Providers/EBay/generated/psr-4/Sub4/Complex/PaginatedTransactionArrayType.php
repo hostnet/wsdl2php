@@ -23,7 +23,7 @@ class PaginatedTransactionArrayType
 
     /**
      * @param TransactionArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionArray($val)
     {
@@ -32,7 +32,7 @@ class PaginatedTransactionArrayType
 
     /**
      * @param PaginationResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaginationResult($val)
     {

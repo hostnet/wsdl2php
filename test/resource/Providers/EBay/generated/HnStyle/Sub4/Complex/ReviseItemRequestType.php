@@ -42,7 +42,7 @@ class ReviseItemRequestType extends
 
     /**
      * @param ItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {
@@ -51,7 +51,7 @@ class ReviseItemRequestType extends
 
     /**
      * @param ModifiedFieldType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModifiedFields($val)
     {
@@ -60,12 +60,12 @@ class ReviseItemRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeletedField($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DeletedField');
+            throw new \Exception('POJO Proxy need a string for DeletedField');
         }
         $this->DeletedField = $val;
     }

@@ -17,7 +17,7 @@ class CreateSupportOrderResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCreateSupportOrderResult($val)
 	{
@@ -26,12 +26,12 @@ class CreateSupportOrderResponse
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setOrderId($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for orderId');
+            throw new \Exception('POJO Proxy need a string for orderId');
         }
         $this->orderId = $val;
 	}

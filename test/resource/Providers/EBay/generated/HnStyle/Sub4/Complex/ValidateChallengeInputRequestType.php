@@ -26,31 +26,31 @@ class ValidateChallengeInputRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setChallengeToken($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ChallengeToken');
+            throw new \Exception('POJO Proxy need a string for ChallengeToken');
         }
         $this->ChallengeToken = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserInput($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for UserInput');
+            throw new \Exception('POJO Proxy need a string for UserInput');
         }
         $this->UserInput = $val;
     }
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setKeepTokenValid($val)
     {

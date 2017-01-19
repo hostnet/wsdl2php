@@ -100,31 +100,31 @@ class StoreType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURLPath($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for URLPath');
+            throw new \Exception('POJO Proxy need a string for URLPath');
         }
         $this->URLPath = $val;
 	}
 
 	/**
 	 * @param anyURI $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setURL($val)
 	{
@@ -133,7 +133,7 @@ class StoreType
 
 	/**
 	 * @param StoreSubscriptionLevelCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubscriptionLevel($val)
 	{
@@ -142,19 +142,19 @@ class StoreType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescription($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Description');
+            throw new \Exception('POJO Proxy need a string for Description');
         }
         $this->Description = $val;
 	}
 
 	/**
 	 * @param StoreLogoType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLogo($val)
 	{
@@ -163,7 +163,7 @@ class StoreType
 
 	/**
 	 * @param StoreThemeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTheme($val)
 	{
@@ -172,7 +172,7 @@ class StoreType
 
 	/**
 	 * @param StoreHeaderStyleCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHeaderStyle($val)
 	{
@@ -181,19 +181,19 @@ class StoreType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHomePage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->HomePage = $val;
 	}
 
 	/**
 	 * @param StoreItemListLayoutCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemListLayout($val)
 	{
@@ -202,7 +202,7 @@ class StoreType
 
 	/**
 	 * @param StoreItemListSortOrderCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemListSortOrder($val)
 	{
@@ -211,7 +211,7 @@ class StoreType
 
 	/**
 	 * @param StoreCustomHeaderLayoutCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomHeaderLayout($val)
 	{
@@ -220,19 +220,19 @@ class StoreType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomHeader($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for CustomHeader');
+            throw new \Exception('POJO Proxy need a string for CustomHeader');
         }
         $this->CustomHeader = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExportListings($val)
 	{
@@ -241,7 +241,7 @@ class StoreType
 
 	/**
 	 * @param StoreCustomCategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomCategories($val)
 	{
@@ -250,7 +250,7 @@ class StoreType
 
 	/**
 	 * @param StoreCustomListingHeaderType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCustomListingHeader($val)
 	{
@@ -259,7 +259,7 @@ class StoreType
 
 	/**
 	 * @param MerchDisplayCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMerchDisplay($val)
 	{
@@ -268,7 +268,7 @@ class StoreType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastOpenedTime($val)
 	{
@@ -277,7 +277,7 @@ class StoreType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

@@ -49,43 +49,43 @@ class FinanceOfferType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFinanceOfferID($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyerTerms($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BuyerTerms');
+            throw new \Exception('POJO Proxy need a string for BuyerTerms');
         }
         $this->BuyerTerms = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerTerms($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerTerms');
+            throw new \Exception('POJO Proxy need a string for SellerTerms');
         }
         $this->SellerTerms = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStartDate($val)
 	{
@@ -94,7 +94,7 @@ class FinanceOfferType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedDate($val)
 	{
@@ -103,7 +103,7 @@ class FinanceOfferType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMinimumAmount($val)
 	{
@@ -112,7 +112,7 @@ class FinanceOfferType
 
 	/**
 	 * @param double $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRateFactor($val)
 	{
@@ -121,19 +121,19 @@ class FinanceOfferType
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPriority($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Priority = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

@@ -20,7 +20,7 @@ class LookupAttributeArrayType
 
 	/**
 	 * @param LookupAttributeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLookupAttribute($val)
 	{

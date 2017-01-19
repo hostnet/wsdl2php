@@ -13,7 +13,7 @@ class MyMessagesAlertIdArrayType
 
     /**
      * @param MyMessagesAlertIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlertID($val)
     {

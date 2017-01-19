@@ -17,7 +17,7 @@ class GetContactResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetContactResult($val)
     {
@@ -26,7 +26,7 @@ class GetContactResponse
 
     /**
      * @param Contact $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setContact($val)
     {

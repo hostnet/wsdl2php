@@ -18,7 +18,7 @@ class AddMemberMessageRtQrequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -27,7 +27,7 @@ class AddMemberMessageRtQrequestType extends
 
     /**
      * @param MemberMessageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMemberMessage($val)
     {

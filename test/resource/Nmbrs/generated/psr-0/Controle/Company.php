@@ -41,91 +41,91 @@ class Company
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setID($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ID = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Number = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Name');
+            throw new \Exception('POJO Proxy need a string for Name');
         }
         $this->Name = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhoneNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for PhoneNumber');
+            throw new \Exception('POJO Proxy need a string for PhoneNumber');
         }
         $this->PhoneNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFaxNumber($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FaxNumber');
+            throw new \Exception('POJO Proxy need a string for FaxNumber');
         }
         $this->FaxNumber = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setWebsite($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Website');
+            throw new \Exception('POJO Proxy need a string for Website');
         }
         $this->Website = $val;
 	}
 
 	/**
 	 * @param LoonaangifteTijdvak $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLoonaangifteTijdvak($val)
 	{

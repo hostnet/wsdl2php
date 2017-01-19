@@ -17,7 +17,7 @@ class GetRegistrantVerificationInfoResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetRegistrantVerificationInfoResult($val)
     {
@@ -26,7 +26,7 @@ class GetRegistrantVerificationInfoResponse
 
     /**
      * @param RegistrantVerificationInfo $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setVerificationInfo($val)
     {

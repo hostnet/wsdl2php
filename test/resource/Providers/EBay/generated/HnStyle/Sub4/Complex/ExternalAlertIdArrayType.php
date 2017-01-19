@@ -13,12 +13,12 @@ class ExternalAlertIdArrayType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalAlertID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ExternalAlertID');
+            throw new \Exception('POJO Proxy need a string for ExternalAlertID');
         }
         $this->ExternalAlertID = $val;
     }

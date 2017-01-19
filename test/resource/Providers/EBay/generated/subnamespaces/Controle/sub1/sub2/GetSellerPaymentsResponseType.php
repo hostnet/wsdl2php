@@ -69,7 +69,7 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -78,7 +78,7 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMorePayments($val)
 	{
@@ -87,7 +87,7 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param SellerPaymentType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSellerPayment($val)
 	{
@@ -96,36 +96,36 @@ class GetSellerPaymentsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PaymentsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnedPaymentCountActual($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedPaymentCountActual = $val;
 	}

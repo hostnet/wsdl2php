@@ -26,7 +26,7 @@ class CharityAffiliationType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
@@ -35,19 +35,19 @@ class CharityAffiliationType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for id');
+            throw new \Exception('POJO Proxy need a string for id');
         }
         $this->id = $val;
     }
 
     /**
      * @param CharityAffiliationTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {

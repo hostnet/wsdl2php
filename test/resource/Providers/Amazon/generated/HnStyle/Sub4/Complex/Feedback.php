@@ -25,48 +25,48 @@ class Feedback
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackRating($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackRating');
+            throw new \Exception('POJO Proxy need a string for FeedbackRating');
         }
         $this->FeedbackRating = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackComments($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackComments');
+            throw new \Exception('POJO Proxy need a string for FeedbackComments');
         }
         $this->FeedbackComments = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackDate($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackDate');
+            throw new \Exception('POJO Proxy need a string for FeedbackDate');
         }
         $this->FeedbackDate = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackRater($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FeedbackRater');
+            throw new \Exception('POJO Proxy need a string for FeedbackRater');
         }
         $this->FeedbackRater = $val;
     }

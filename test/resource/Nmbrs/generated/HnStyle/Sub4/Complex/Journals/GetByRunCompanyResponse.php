@@ -13,12 +13,12 @@ class GetByRunCompanyResponse
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setJournalsGetByRunCompanyResult($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
+            throw new \Exception('POJO Proxy need a string for Journals_GetByRunCompanyResult');
         }
         $this->Journals_GetByRunCompanyResult = $val;
     }

@@ -17,24 +17,24 @@ class GetDnsSecKey
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSessionId($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for sessionId');
+            throw new \Exception('POJO Proxy need a string for sessionId');
         }
         $this->sessionId = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDnsSecKeyHandle($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for dnsSecKeyHandle');
+            throw new \Exception('POJO Proxy need a string for dnsSecKeyHandle');
         }
         $this->dnsSecKeyHandle = $val;
     }

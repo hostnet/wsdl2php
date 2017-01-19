@@ -31,7 +31,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param PaymentStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEBayPaymentStatus($val)
 	{
@@ -40,7 +40,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastModifiedTime($val)
 	{
@@ -49,7 +49,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param BuyerPaymentMethodCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaymentMethod($val)
 	{
@@ -58,7 +58,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param CompleteStatusCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setStatus($val)
 	{
@@ -67,7 +67,7 @@ class CheckoutStatusType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

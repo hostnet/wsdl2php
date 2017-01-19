@@ -32,7 +32,7 @@ class LiveAuctionApprovalStatusType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserID($val)
     {
@@ -41,12 +41,12 @@ class LiveAuctionApprovalStatusType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setStatus($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Status');
+            throw new \Exception('POJO Proxy need a string for Status');
         }
         $this->Status = $val;
     }

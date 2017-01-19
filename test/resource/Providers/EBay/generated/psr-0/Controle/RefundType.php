@@ -32,7 +32,7 @@ class RefundType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundFromSeller($val)
 	{
@@ -41,7 +41,7 @@ class RefundType
 
 	/**
 	 * @param AmountType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTotalRefundToBuyer($val)
 	{
@@ -50,7 +50,7 @@ class RefundType
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRefundTime($val)
 	{
@@ -59,7 +59,7 @@ class RefundType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

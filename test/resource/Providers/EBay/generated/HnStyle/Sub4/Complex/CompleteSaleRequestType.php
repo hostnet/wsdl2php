@@ -51,7 +51,7 @@ class CompleteSaleRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -60,19 +60,19 @@ class CompleteSaleRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TransactionID');
+            throw new \Exception('POJO Proxy need a string for TransactionID');
         }
         $this->TransactionID = $val;
     }
 
     /**
      * @param FeedbackInfoType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackInfo($val)
     {
@@ -81,7 +81,7 @@ class CompleteSaleRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipped($val)
     {
@@ -90,7 +90,7 @@ class CompleteSaleRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaid($val)
     {
@@ -99,7 +99,7 @@ class CompleteSaleRequestType extends
 
     /**
      * @param ListingTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingType($val)
     {

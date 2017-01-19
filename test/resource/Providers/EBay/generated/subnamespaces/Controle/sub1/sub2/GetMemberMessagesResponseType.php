@@ -23,7 +23,7 @@ class GetMemberMessagesResponseType extends
 
 	/**
 	 * @param MemberMessageExchangeArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setMemberMessage($val)
 	{
@@ -32,7 +32,7 @@ class GetMemberMessagesResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -41,7 +41,7 @@ class GetMemberMessagesResponseType extends
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{

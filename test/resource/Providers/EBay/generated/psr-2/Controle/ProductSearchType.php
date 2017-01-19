@@ -109,79 +109,79 @@ class ProductSearchType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductSearchID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductSearchID');
+            throw new \Exception('POJO Proxy need a string for ProductSearchID');
         }
         $this->ProductSearchID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttributeSetID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->AttributeSetID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductFinderID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ProductFinderID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setProductID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ProductID');
+            throw new \Exception('POJO Proxy need a string for ProductID');
         }
         $this->ProductID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSortAttributeID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->SortAttributeID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxChildrenPerFamily($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxChildrenPerFamily = $val;
     }
 
     /**
      * @param SearchAttributesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchAttributes($val)
     {
@@ -190,7 +190,7 @@ class ProductSearchType
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {
@@ -199,7 +199,7 @@ class ProductSearchType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAvailableItemsOnly($val)
     {
@@ -208,19 +208,19 @@ class ProductSearchType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setQueryKeywords($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for QueryKeywords');
+            throw new \Exception('POJO Proxy need a string for QueryKeywords');
         }
         $this->QueryKeywords = $val;
     }
 
     /**
      * @param CharacteristicSetIDsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCharacteristicSetIDs($val)
     {
@@ -229,7 +229,7 @@ class ProductSearchType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

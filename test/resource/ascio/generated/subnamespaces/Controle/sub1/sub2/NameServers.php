@@ -61,7 +61,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer1($val)
 	{
@@ -70,7 +70,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer2($val)
 	{
@@ -79,7 +79,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer3($val)
 	{
@@ -88,7 +88,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer4($val)
 	{
@@ -97,7 +97,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer5($val)
 	{
@@ -106,7 +106,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer6($val)
 	{
@@ -115,7 +115,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer7($val)
 	{
@@ -124,7 +124,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer8($val)
 	{
@@ -133,7 +133,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer9($val)
 	{
@@ -142,7 +142,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer10($val)
 	{
@@ -151,7 +151,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer11($val)
 	{
@@ -160,7 +160,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer12($val)
 	{
@@ -169,7 +169,7 @@ class NameServers
 
 	/**
 	 * @param NameServer $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameServer13($val)
 	{

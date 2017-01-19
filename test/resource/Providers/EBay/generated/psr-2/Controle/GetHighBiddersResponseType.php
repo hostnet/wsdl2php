@@ -30,7 +30,7 @@ class GetHighBiddersResponseType extends
 
     /**
      * @param OfferArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBidArray($val)
     {
@@ -39,7 +39,7 @@ class GetHighBiddersResponseType extends
 
     /**
      * @param ListingStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingStatus($val)
     {

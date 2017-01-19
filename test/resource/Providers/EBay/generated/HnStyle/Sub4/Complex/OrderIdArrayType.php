@@ -14,7 +14,7 @@ class OrderIdArrayType
 
     /**
      * @param OrderIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderID($val)
     {

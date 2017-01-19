@@ -21,7 +21,7 @@ class EbxOptInPreferenceType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEBxOptInPreference($val)
     {
@@ -30,7 +30,7 @@ class EbxOptInPreferenceType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

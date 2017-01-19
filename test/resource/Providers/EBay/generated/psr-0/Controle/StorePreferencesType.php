@@ -17,7 +17,7 @@ class StorePreferencesType
 
 	/**
 	 * @param StoreVacationPreferencesType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVacationPreferences($val)
 	{

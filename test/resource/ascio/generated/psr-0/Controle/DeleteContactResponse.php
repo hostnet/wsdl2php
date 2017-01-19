@@ -13,7 +13,7 @@ class DeleteContactResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDeleteContactResult($val)
 	{

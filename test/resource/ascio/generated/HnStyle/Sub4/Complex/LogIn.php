@@ -13,7 +13,7 @@ class LogIn
 
     /**
      * @param Session $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSession($val)
     {

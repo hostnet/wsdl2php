@@ -28,7 +28,7 @@ class SuggestedCategoryType
 
     /**
      * @param CategoryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCategory($val)
     {
@@ -37,19 +37,19 @@ class SuggestedCategoryType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPercentItemFound($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PercentItemFound = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

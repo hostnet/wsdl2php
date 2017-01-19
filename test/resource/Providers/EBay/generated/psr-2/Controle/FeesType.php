@@ -18,7 +18,7 @@ class FeesType
 
     /**
      * @param FeeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFee($val)
     {

@@ -13,7 +13,7 @@ class GetResponse
 
     /**
      * @param SalaryTable $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSalaryTableGetResult($val)
     {

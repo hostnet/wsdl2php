@@ -25,7 +25,7 @@ class SetReturnUrLrequestType extends
 
     /**
      * @param AuthenticationEntryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAuthenticationEntry($val)
     {
@@ -34,19 +34,19 @@ class SetReturnUrLrequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApplicationDisplayName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ApplicationDisplayName');
+            throw new \Exception('POJO Proxy need a string for ApplicationDisplayName');
         }
         $this->ApplicationDisplayName = $val;
     }
 
     /**
      * @param ModifyActionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAction($val)
     {

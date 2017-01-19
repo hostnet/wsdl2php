@@ -29,7 +29,7 @@ class SetUserNotesRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -38,7 +38,7 @@ class SetUserNotesRequestType extends
 
     /**
      * @param SetUserNotesActionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAction($val)
     {
@@ -47,12 +47,12 @@ class SetUserNotesRequestType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNoteText($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NoteText');
+            throw new \Exception('POJO Proxy need a string for NoteText');
         }
         $this->NoteText = $val;
     }

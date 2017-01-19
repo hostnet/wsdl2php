@@ -60,7 +60,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param ItemArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemArray($val)
 	{
@@ -69,7 +69,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param CategoryType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCategory($val)
 	{
@@ -78,7 +78,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param CategoryArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubCategories($val)
 	{
@@ -87,31 +87,31 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setItemsPerPage($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ItemsPerPage = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPageNumber($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setHasMoreItems($val)
 	{
@@ -120,7 +120,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param PaginationResultType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPaginationResult($val)
 	{
@@ -129,7 +129,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param BuyingGuideDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBuyingGuideDetails($val)
 	{
@@ -138,7 +138,7 @@ class GetCategoryListingsResponseType extends
 
 	/**
 	 * @param RelatedSearchKeywordArrayType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setRelatedSearchKeywordArray($val)
 	{

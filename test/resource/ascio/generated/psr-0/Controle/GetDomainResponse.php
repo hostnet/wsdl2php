@@ -17,7 +17,7 @@ class GetDomainResponse
 
 	/**
 	 * @param Response $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGetDomainResult($val)
 	{
@@ -26,7 +26,7 @@ class GetDomainResponse
 
 	/**
 	 * @param Domain $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDomain($val)
 	{

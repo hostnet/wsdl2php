@@ -17,19 +17,19 @@ class MarketplaceSearchDetails
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNumberOfOpenListings($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NumberOfOpenListings');
+            throw new \Exception('POJO Proxy need a string for NumberOfOpenListings');
         }
         $this->NumberOfOpenListings = $val;
     }
 
     /**
      * @param ListingProductInfo $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setListingProductInfo($val)
     {

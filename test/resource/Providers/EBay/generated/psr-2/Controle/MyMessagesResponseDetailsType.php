@@ -32,7 +32,7 @@ class MyMessagesResponseDetailsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResponseEnabled($val)
     {
@@ -41,7 +41,7 @@ class MyMessagesResponseDetailsType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setResponseURL($val)
     {
@@ -50,7 +50,7 @@ class MyMessagesResponseDetailsType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserResponseDate($val)
     {
@@ -59,7 +59,7 @@ class MyMessagesResponseDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

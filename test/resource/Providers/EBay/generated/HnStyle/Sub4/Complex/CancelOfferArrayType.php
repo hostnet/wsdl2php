@@ -24,7 +24,7 @@ class CancelOfferArrayType
 
     /**
      * @param CancelOfferType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCancelOffer($val)
     {
@@ -33,7 +33,7 @@ class CancelOfferArrayType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

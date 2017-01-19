@@ -19,7 +19,7 @@ class LiveAuctionBidArrayType
 
     /**
      * @param LiveAuctionBidType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLiveAuctionBid($val)
     {

@@ -37,7 +37,7 @@ class CalculatedShippingPreferencesType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCalculatedShippingAmountForEntireOrder($val)
     {
@@ -46,7 +46,7 @@ class CalculatedShippingPreferencesType
 
     /**
      * @param CalculatedShippingChargeOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCalculatedShippingChargeOption($val)
     {
@@ -55,7 +55,7 @@ class CalculatedShippingPreferencesType
 
     /**
      * @param CalculatedShippingRateOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCalculatedShippingRateOption($val)
     {
@@ -64,7 +64,7 @@ class CalculatedShippingPreferencesType
 
     /**
      * @param InsuranceOptionCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setInsuranceOption($val)
     {
@@ -73,7 +73,7 @@ class CalculatedShippingPreferencesType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

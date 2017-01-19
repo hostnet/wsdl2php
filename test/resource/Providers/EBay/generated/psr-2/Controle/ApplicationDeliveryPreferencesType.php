@@ -52,7 +52,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApplicationURL($val)
     {
@@ -61,7 +61,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param EnableCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setApplicationEnable($val)
     {
@@ -70,7 +70,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlertEmail($val)
     {
@@ -79,7 +79,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param EnableCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAlertEnable($val)
     {
@@ -88,7 +88,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param NotificationPayloadTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNotificationPayloadType($val)
     {
@@ -97,7 +97,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param DeviceTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDeviceType($val)
     {
@@ -106,7 +106,7 @@ class ApplicationDeliveryPreferencesType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

@@ -53,31 +53,31 @@ class ErrorType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setShortMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ShortMessage');
+            throw new \Exception('POJO Proxy need a string for ShortMessage');
         }
         $this->ShortMessage = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLongMessage($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LongMessage');
+            throw new \Exception('POJO Proxy need a string for LongMessage');
         }
         $this->LongMessage = $val;
 	}
 
 	/**
 	 * @param token $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorCode($val)
 	{
@@ -86,7 +86,7 @@ class ErrorType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUserDisplayHint($val)
 	{
@@ -95,7 +95,7 @@ class ErrorType
 
 	/**
 	 * @param SeverityCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSeverityCode($val)
 	{
@@ -104,7 +104,7 @@ class ErrorType
 
 	/**
 	 * @param ErrorParameterType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorParameters($val)
 	{
@@ -113,7 +113,7 @@ class ErrorType
 
 	/**
 	 * @param ErrorClassificationCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setErrorClassification($val)
 	{
@@ -122,7 +122,7 @@ class ErrorType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

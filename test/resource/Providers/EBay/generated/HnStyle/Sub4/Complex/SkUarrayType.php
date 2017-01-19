@@ -17,7 +17,7 @@ class SkUarrayType
 
     /**
      * @param SKUType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSKU($val)
     {

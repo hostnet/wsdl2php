@@ -125,7 +125,7 @@ class OrderType
 
     /**
      * @param OrderIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderID($val)
     {
@@ -134,7 +134,7 @@ class OrderType
 
     /**
      * @param OrderStatusCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderStatus($val)
     {
@@ -143,7 +143,7 @@ class OrderType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAdjustmentAmount($val)
     {
@@ -152,7 +152,7 @@ class OrderType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAmountPaid($val)
     {
@@ -161,7 +161,7 @@ class OrderType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAmountSaved($val)
     {
@@ -170,7 +170,7 @@ class OrderType
 
     /**
      * @param CheckoutStatusType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCheckoutStatus($val)
     {
@@ -179,7 +179,7 @@ class OrderType
 
     /**
      * @param ShippingDetailsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingDetails($val)
     {
@@ -188,7 +188,7 @@ class OrderType
 
     /**
      * @param TradingRoleCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreatingUserRole($val)
     {
@@ -197,7 +197,7 @@ class OrderType
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreatedTime($val)
     {
@@ -206,19 +206,19 @@ class OrderType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFinanceOfferID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FinanceOfferID');
+            throw new \Exception('POJO Proxy need a string for FinanceOfferID');
         }
         $this->FinanceOfferID = $val;
     }
 
     /**
      * @param BuyerPaymentMethodCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaymentMethods($val)
     {
@@ -227,19 +227,19 @@ class OrderType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerEmail($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for SellerEmail');
+            throw new \Exception('POJO Proxy need a string for SellerEmail');
         }
         $this->SellerEmail = $val;
     }
 
     /**
      * @param AddressType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingAddress($val)
     {
@@ -248,7 +248,7 @@ class OrderType
 
     /**
      * @param ShippingServiceOptionsType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShippingServiceSelected($val)
     {
@@ -257,7 +257,7 @@ class OrderType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubtotal($val)
     {
@@ -266,7 +266,7 @@ class OrderType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTotal($val)
     {
@@ -275,7 +275,7 @@ class OrderType
 
     /**
      * @param ExternalTransactionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExternalTransaction($val)
     {
@@ -284,7 +284,7 @@ class OrderType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDigitalDelivery($val)
     {
@@ -293,7 +293,7 @@ class OrderType
 
     /**
      * @param TransactionArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setTransactionArray($val)
     {
@@ -302,7 +302,7 @@ class OrderType
 
     /**
      * @param UserIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBuyerUserID($val)
     {
@@ -311,7 +311,7 @@ class OrderType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

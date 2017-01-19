@@ -17,7 +17,7 @@ class MyMessagesMessageArrayType
 
     /**
      * @param MyMessagesMessageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMessage($val)
     {

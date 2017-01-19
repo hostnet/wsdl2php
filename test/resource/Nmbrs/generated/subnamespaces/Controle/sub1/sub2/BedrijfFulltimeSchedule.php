@@ -17,7 +17,7 @@ class BedrijfFulltimeSchedule
 
 	/**
 	 * @param FulltimeSchedule $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFulltimeScheduleOne($val)
 	{
@@ -26,7 +26,7 @@ class BedrijfFulltimeSchedule
 
 	/**
 	 * @param FulltimeSchedule $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFulltimeScheduleTwo($val)
 	{

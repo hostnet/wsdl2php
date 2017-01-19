@@ -19,7 +19,7 @@ class SearchResultItemArrayType
 
     /**
      * @param SearchResultItemType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchResultItem($val)
     {

@@ -17,7 +17,7 @@ class SearchDnsSecKeyResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSearchDnsSecKeyResult($val)
     {
@@ -26,7 +26,7 @@ class SearchDnsSecKeyResponse
 
     /**
      * @param ArrayOfDnsSecKey $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDnsSecKeys($val)
     {

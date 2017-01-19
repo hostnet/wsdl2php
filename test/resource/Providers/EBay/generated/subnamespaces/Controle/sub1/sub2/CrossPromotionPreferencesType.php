@@ -51,7 +51,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossPromotionEnabled($val)
 	{
@@ -60,7 +60,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemFormatSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossSellItemFormatSortFilter($val)
 	{
@@ -69,7 +69,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param GallerySortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossSellGallerySortFilter($val)
 	{
@@ -78,7 +78,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCrossSellItemSortFilter($val)
 	{
@@ -87,7 +87,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemFormatSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpSellItemFormatSortFilter($val)
 	{
@@ -96,7 +96,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param GallerySortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpSellGallerySortFilter($val)
 	{
@@ -105,7 +105,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param ItemSortFilterCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setUpSellItemSortFilter($val)
 	{
@@ -114,7 +114,7 @@ class CrossPromotionPreferencesType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

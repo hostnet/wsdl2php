@@ -51,7 +51,7 @@ class GetOrdersResponseType extends
 
     /**
      * @param PaginationResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaginationResult($val)
     {
@@ -60,7 +60,7 @@ class GetOrdersResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMoreOrders($val)
     {
@@ -69,7 +69,7 @@ class GetOrdersResponseType extends
 
     /**
      * @param OrderArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrderArray($val)
     {
@@ -78,36 +78,36 @@ class GetOrdersResponseType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOrdersPerPage($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->OrdersPerPage = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPageNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setReturnedOrderCountActual($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ReturnedOrderCountActual = $val;
     }

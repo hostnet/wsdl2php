@@ -15,24 +15,24 @@ class VerifyMxRecord
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for email');
+            throw new \Exception('POJO Proxy need a string for email');
         }
         $this->email = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLicenseKey($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LicenseKey');
+            throw new \Exception('POJO Proxy need a string for LicenseKey');
         }
         $this->LicenseKey = $val;
 	}
@@ -49,12 +49,12 @@ class VerifyMxRecordResponse
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVerifyMXRecordResult($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->VerifyMXRecordResult = $val;
 	}
@@ -79,36 +79,36 @@ class AdvancedVerifyEmail
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for email');
+            throw new \Exception('POJO Proxy need a string for email');
         }
         $this->email = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTimeout($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->timeout = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLicenseKey($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LicenseKey');
+            throw new \Exception('POJO Proxy need a string for LicenseKey');
         }
         $this->LicenseKey = $val;
 	}
@@ -125,7 +125,7 @@ class AdvancedVerifyEmailResponse
 
 	/**
 	 * @param ReturnIndicator $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdvancedVerifyEmailResult($val)
 	{
@@ -156,43 +156,43 @@ class ReturnIndicator
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ResponseText');
+            throw new \Exception('POJO Proxy need a string for ResponseText');
         }
         $this->ResponseText = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ResponseCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastMailServer($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LastMailServer');
+            throw new \Exception('POJO Proxy need a string for LastMailServer');
         }
         $this->LastMailServer = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGoodEmail($val)
 	{
@@ -215,24 +215,24 @@ class VerifyEmail
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for email');
+            throw new \Exception('POJO Proxy need a string for email');
         }
         $this->email = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLicenseKey($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LicenseKey');
+            throw new \Exception('POJO Proxy need a string for LicenseKey');
         }
         $this->LicenseKey = $val;
 	}
@@ -249,7 +249,7 @@ class VerifyEmailResponse
 
 	/**
 	 * @param ReturnIndicator $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVerifyEmailResult($val)
 	{
@@ -271,7 +271,7 @@ class ReturnCodesResponse
 
 	/**
 	 * @param ArrayOfAnyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setReturnCodesResult($val)
 	{

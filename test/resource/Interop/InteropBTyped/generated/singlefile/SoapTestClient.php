@@ -19,7 +19,7 @@ class SoApStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarString($val)
 	{
@@ -28,7 +28,7 @@ class SoApStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarInt($val)
 	{
@@ -37,7 +37,7 @@ class SoApStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarFloat($val)
 	{
@@ -68,7 +68,7 @@ class SoApStructStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarString($val)
 	{
@@ -77,7 +77,7 @@ class SoApStructStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarInt($val)
 	{
@@ -86,7 +86,7 @@ class SoApStructStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarFloat($val)
 	{
@@ -95,7 +95,7 @@ class SoApStructStruct
 
 	/**
 	 * @param SOAPStruct $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarStruct($val)
 	{
@@ -126,7 +126,7 @@ class SoApArrayStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarString($val)
 	{
@@ -135,7 +135,7 @@ class SoApArrayStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarInt($val)
 	{
@@ -144,7 +144,7 @@ class SoApArrayStruct
 
 	/**
 	 * @param anyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarFloat($val)
 	{
@@ -153,7 +153,7 @@ class SoApArrayStruct
 
 	/**
 	 * @param ArrayOfstring $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setVarArray($val)
 	{

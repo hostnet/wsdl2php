@@ -69,7 +69,7 @@ class FulltimeSchedule
 
     /**
      * @param ScheduleCalcMethod $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setScheduleCalcMethod($val)
     {
@@ -78,7 +78,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursMonday($val)
     {
@@ -87,7 +87,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursTuesday($val)
     {
@@ -96,7 +96,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursWednesday($val)
     {
@@ -105,7 +105,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursThursday($val)
     {
@@ -114,7 +114,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursFriday($val)
     {
@@ -123,7 +123,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursSaturday($val)
     {
@@ -132,7 +132,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursSunday($val)
     {
@@ -141,7 +141,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursMonday2($val)
     {
@@ -150,7 +150,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursTuesday2($val)
     {
@@ -159,7 +159,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursWednesday2($val)
     {
@@ -168,7 +168,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursThursday2($val)
     {
@@ -177,7 +177,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursFriday2($val)
     {
@@ -186,7 +186,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursSaturday2($val)
     {
@@ -195,7 +195,7 @@ class FulltimeSchedule
 
     /**
      * @param decimal $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHoursSunday2($val)
     {

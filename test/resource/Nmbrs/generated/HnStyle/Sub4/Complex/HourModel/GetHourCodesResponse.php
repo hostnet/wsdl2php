@@ -13,7 +13,7 @@ class GetHourCodesResponse
 
     /**
      * @param ArrayOfHourCode $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHourModelGetHourCodesResult($val)
     {

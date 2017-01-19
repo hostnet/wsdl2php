@@ -28,7 +28,7 @@ class GetAllBiddersRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -37,7 +37,7 @@ class GetAllBiddersRequestType extends
 
     /**
      * @param GetAllBiddersModeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCallMode($val)
     {
@@ -46,7 +46,7 @@ class GetAllBiddersRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setIncludeBiddingSummary($val)
     {

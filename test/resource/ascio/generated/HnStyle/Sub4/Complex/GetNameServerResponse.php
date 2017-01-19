@@ -17,7 +17,7 @@ class GetNameServerResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetNameServerResult($val)
     {
@@ -26,7 +26,7 @@ class GetNameServerResponse
 
     /**
      * @param NameServer $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNameServer($val)
     {

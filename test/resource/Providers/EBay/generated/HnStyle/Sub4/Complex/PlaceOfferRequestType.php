@@ -35,7 +35,7 @@ class PlaceOfferRequestType extends
 
     /**
      * @param OfferType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOffer($val)
     {
@@ -44,7 +44,7 @@ class PlaceOfferRequestType extends
 
     /**
      * @param ItemIDType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItemID($val)
     {
@@ -53,7 +53,7 @@ class PlaceOfferRequestType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBlockOnWarning($val)
     {

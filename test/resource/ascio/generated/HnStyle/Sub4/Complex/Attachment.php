@@ -17,7 +17,7 @@ class Attachment
 
     /**
      * @param base64Binary $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setData($val)
     {
@@ -26,12 +26,12 @@ class Attachment
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFileName($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FileName');
+            throw new \Exception('POJO Proxy need a string for FileName');
         }
         $this->FileName = $val;
     }

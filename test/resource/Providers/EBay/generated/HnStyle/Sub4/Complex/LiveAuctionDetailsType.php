@@ -43,43 +43,43 @@ class LiveAuctionDetailsType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setUserCatalogID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->UserCatalogID = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setScheduleID($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ScheduleID = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLotNumber($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LotNumber');
+            throw new \Exception('POJO Proxy need a string for LotNumber');
         }
         $this->LotNumber = $val;
     }
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHighEstimate($val)
     {
@@ -88,7 +88,7 @@ class LiveAuctionDetailsType
 
     /**
      * @param AmountType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLowEstimate($val)
     {
@@ -97,7 +97,7 @@ class LiveAuctionDetailsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

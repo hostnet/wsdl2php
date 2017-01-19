@@ -26,7 +26,7 @@ class ProStoresCheckoutPreferenceType
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setCheckoutRedirectProStores($val)
 	{
@@ -35,7 +35,7 @@ class ProStoresCheckoutPreferenceType
 
 	/**
 	 * @param ProStoresDetailsType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setProStoresDetails($val)
 	{
@@ -44,7 +44,7 @@ class ProStoresCheckoutPreferenceType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

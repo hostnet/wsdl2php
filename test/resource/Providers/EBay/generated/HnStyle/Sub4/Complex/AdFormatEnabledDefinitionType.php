@@ -19,7 +19,7 @@ class AdFormatEnabledDefinitionType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

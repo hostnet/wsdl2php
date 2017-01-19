@@ -21,7 +21,7 @@ class FeedbackPeriodArrayType
 
     /**
      * @param FeedbackPeriodType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFeedbackPeriod($val)
     {

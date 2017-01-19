@@ -37,7 +37,7 @@ class Message
 
     /**
      * @param ArrayOfAttachment $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAttachments($val)
     {
@@ -46,19 +46,19 @@ class Message
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBody($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Body');
+            throw new \Exception('POJO Proxy need a string for Body');
         }
         $this->Body = $val;
     }
 
     /**
      * @param dateTime $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCreated($val)
     {
@@ -67,43 +67,43 @@ class Message
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFromAddress($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FromAddress');
+            throw new \Exception('POJO Proxy need a string for FromAddress');
         }
         $this->FromAddress = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSubject($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Subject');
+            throw new \Exception('POJO Proxy need a string for Subject');
         }
         $this->Subject = $val;
     }
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setToAddress($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ToAddress');
+            throw new \Exception('POJO Proxy need a string for ToAddress');
         }
         $this->ToAddress = $val;
     }
 
     /**
      * @param MessageType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setType($val)
     {

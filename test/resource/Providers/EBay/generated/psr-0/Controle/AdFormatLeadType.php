@@ -59,19 +59,19 @@ class AdFormatLeadType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAdditionalInformation($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AdditionalInformation');
+            throw new \Exception('POJO Proxy need a string for AdditionalInformation');
         }
         $this->AdditionalInformation = $val;
 	}
 
 	/**
 	 * @param AddressType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAddress($val)
 	{
@@ -80,67 +80,67 @@ class AdFormatLeadType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setBestTimeToCall($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for BestTimeToCall');
+            throw new \Exception('POJO Proxy need a string for BestTimeToCall');
         }
         $this->BestTimeToCall = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setEmail($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Email');
+            throw new \Exception('POJO Proxy need a string for Email');
         }
         $this->Email = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFirstName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for FirstName');
+            throw new \Exception('POJO Proxy need a string for FirstName');
         }
         $this->FirstName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastName($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LastName');
+            throw new \Exception('POJO Proxy need a string for LastName');
         }
         $this->LastName = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPhone($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Phone');
+            throw new \Exception('POJO Proxy need a string for Phone');
         }
         $this->Phone = $val;
 	}
 
 	/**
 	 * @param dateTime $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setSubmittedTime($val)
 	{
@@ -149,7 +149,7 @@ class AdFormatLeadType
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

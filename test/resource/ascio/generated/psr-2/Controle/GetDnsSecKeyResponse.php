@@ -17,7 +17,7 @@ class GetDnsSecKeyResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setGetDnsSecKeyResult($val)
     {
@@ -26,7 +26,7 @@ class GetDnsSecKeyResponse
 
     /**
      * @param DnsSecKey $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDnsSecKey($val)
     {

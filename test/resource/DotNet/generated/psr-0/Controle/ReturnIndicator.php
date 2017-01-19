@@ -25,43 +25,43 @@ class ReturnIndicator
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseText($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for ResponseText');
+            throw new \Exception('POJO Proxy need a string for ResponseText');
         }
         $this->ResponseText = $val;
 	}
 
 	/**
 	 * @param int $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setResponseCode($val)
 	{
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->ResponseCode = $val;
 	}
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setLastMailServer($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for LastMailServer');
+            throw new \Exception('POJO Proxy need a string for LastMailServer');
         }
         $this->LastMailServer = $val;
 	}
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setGoodEmail($val)
 	{

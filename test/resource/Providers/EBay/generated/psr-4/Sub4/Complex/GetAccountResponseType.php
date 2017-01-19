@@ -63,19 +63,19 @@ class GetAccountResponseType extends
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountID($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for AccountID');
+            throw new \Exception('POJO Proxy need a string for AccountID');
         }
         $this->AccountID = $val;
     }
 
     /**
      * @param AccountSummaryType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountSummary($val)
     {
@@ -84,7 +84,7 @@ class GetAccountResponseType extends
 
     /**
      * @param CurrencyCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCurrency($val)
     {
@@ -93,7 +93,7 @@ class GetAccountResponseType extends
 
     /**
      * @param AccountEntriesType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAccountEntries($val)
     {
@@ -102,7 +102,7 @@ class GetAccountResponseType extends
 
     /**
      * @param PaginationResultType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPaginationResult($val)
     {
@@ -111,7 +111,7 @@ class GetAccountResponseType extends
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHasMoreEntries($val)
     {
@@ -120,24 +120,24 @@ class GetAccountResponseType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEntriesPerPage($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->EntriesPerPage = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPageNumber($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->PageNumber = $val;
     }

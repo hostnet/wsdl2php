@@ -29,7 +29,7 @@ class PrivacyProxy
 
 	/**
 	 * @param PrivacyProxyType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setType($val)
 	{
@@ -38,7 +38,7 @@ class PrivacyProxy
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivacyAdmin($val)
 	{
@@ -47,7 +47,7 @@ class PrivacyProxy
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivacyTech($val)
 	{
@@ -56,7 +56,7 @@ class PrivacyProxy
 
 	/**
 	 * @param boolean $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setPrivacyBilling($val)
 	{
@@ -65,7 +65,7 @@ class PrivacyProxy
 
 	/**
 	 * @param Extensions $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setExtensions($val)
 	{

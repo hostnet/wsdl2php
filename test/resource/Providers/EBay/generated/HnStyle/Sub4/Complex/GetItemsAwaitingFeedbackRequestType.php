@@ -26,7 +26,7 @@ class GetItemsAwaitingFeedbackRequestType extends
 
     /**
      * @param ItemSortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSort($val)
     {
@@ -35,7 +35,7 @@ class GetItemsAwaitingFeedbackRequestType extends
 
     /**
      * @param PaginationType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPagination($val)
     {

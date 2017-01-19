@@ -18,7 +18,7 @@ class MyMessagesAlertArrayType
 
 	/**
 	 * @param MyMessagesAlertType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAlert($val)
 	{

@@ -127,7 +127,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSellerExpressEligible($val)
     {
@@ -136,7 +136,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressOptOut($val)
     {
@@ -145,7 +145,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressApproved($val)
     {
@@ -154,7 +154,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressEligibleListingType($val)
     {
@@ -163,7 +163,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setExpressEnabledCategory($val)
     {
@@ -172,7 +172,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEligiblePayPalAccount($val)
     {
@@ -181,7 +181,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDomesticShippingCost($val)
     {
@@ -190,7 +190,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEligibleReturnPolicy($val)
     {
@@ -199,7 +199,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPicture($val)
     {
@@ -208,7 +208,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEligibleItemCondition($val)
     {
@@ -217,7 +217,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPriceAboveMinimum($val)
     {
@@ -226,7 +226,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPriceBelowMaximum($val)
     {
@@ -235,7 +235,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setEligibleCheckout($val)
     {
@@ -244,7 +244,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNoPreapprovedBidderList($val)
     {
@@ -253,7 +253,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNoCharity($val)
     {
@@ -262,7 +262,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setNoDigitalDelivery($val)
     {
@@ -271,7 +271,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setCombinedShippingDiscount($val)
     {
@@ -280,7 +280,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setShipFromEligibleCountry($val)
     {
@@ -289,7 +289,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param boolean $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPayPalAccountAcceptsUnconfirmedAddress($val)
     {
@@ -298,7 +298,7 @@ class ExpressItemRequirementsType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

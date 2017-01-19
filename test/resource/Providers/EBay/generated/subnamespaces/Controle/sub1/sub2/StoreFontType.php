@@ -53,7 +53,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontFaceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameFace($val)
 	{
@@ -62,7 +62,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontSizeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameSize($val)
 	{
@@ -71,19 +71,19 @@ class StoreFontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setNameColor($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for NameColor');
+            throw new \Exception('POJO Proxy need a string for NameColor');
         }
         $this->NameColor = $val;
 	}
 
 	/**
 	 * @param StoreFontFaceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitleFace($val)
 	{
@@ -92,7 +92,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontSizeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitleSize($val)
 	{
@@ -101,19 +101,19 @@ class StoreFontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setTitleColor($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for TitleColor');
+            throw new \Exception('POJO Proxy need a string for TitleColor');
         }
         $this->TitleColor = $val;
 	}
 
 	/**
 	 * @param StoreFontFaceCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescFace($val)
 	{
@@ -122,7 +122,7 @@ class StoreFontType
 
 	/**
 	 * @param StoreFontSizeCodeType $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescSize($val)
 	{
@@ -131,19 +131,19 @@ class StoreFontType
 
 	/**
 	 * @param string $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setDescColor($val)
 	{
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for DescColor');
+            throw new \Exception('POJO Proxy need a string for DescColor');
         }
         $this->DescColor = $val;
 	}
 
 	/**
 	 * @param <anyXML> $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setAny($val)
 	{

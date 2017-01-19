@@ -13,7 +13,7 @@ class SellerFeedback
 
 	/**
 	 * @param FeedbackArray $val
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function setFeedback($val)
 	{

@@ -26,7 +26,7 @@ class SetPromotionRulesRequestType extends
 
     /**
      * @param OperationTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setOperationType($val)
     {
@@ -35,7 +35,7 @@ class SetPromotionRulesRequestType extends
 
     /**
      * @param PromotionRuleArrayType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPromotionRuleArray($val)
     {

@@ -21,7 +21,7 @@ class PollMessageResponse
 
     /**
      * @param Response $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setPollMessageResult($val)
     {
@@ -30,19 +30,19 @@ class PollMessageResponse
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMsgCount($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->msgCount = $val;
     }
 
     /**
      * @param QueueItem $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setItem($val)
     {

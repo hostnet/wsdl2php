@@ -32,19 +32,19 @@ class ModifiedFieldType
 
     /**
      * @param string $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setField($val)
     {
         if (!is_string($val)) {
-            throw new Exception('POJO Proxy need a string for Field');
+            throw new \Exception('POJO Proxy need a string for Field');
         }
         $this->Field = $val;
     }
 
     /**
      * @param ModifyCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setModifyType($val)
     {
@@ -53,7 +53,7 @@ class ModifiedFieldType
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {

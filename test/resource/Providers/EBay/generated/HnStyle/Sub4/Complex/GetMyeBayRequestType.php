@@ -69,7 +69,7 @@ class GetMyeBayRequestType extends
 
     /**
      * @param ItemSortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setBiddingSort($val)
     {
@@ -78,7 +78,7 @@ class GetMyeBayRequestType extends
 
     /**
      * @param ItemSortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setLostSort($val)
     {
@@ -87,31 +87,31 @@ class GetMyeBayRequestType extends
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxItemsPerList($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxItemsPerList = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setMaxItemAgeInDays($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->MaxItemAgeInDays = $val;
     }
 
     /**
      * @param ItemSortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWatchSort($val)
     {
@@ -120,7 +120,7 @@ class GetMyeBayRequestType extends
 
     /**
      * @param ItemSortTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWonSort($val)
     {
@@ -129,7 +129,7 @@ class GetMyeBayRequestType extends
 
     /**
      * @param MyeBaySelectionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteSearches($val)
     {
@@ -138,7 +138,7 @@ class GetMyeBayRequestType extends
 
     /**
      * @param MyeBaySelectionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setFavoriteSellers($val)
     {
@@ -147,7 +147,7 @@ class GetMyeBayRequestType extends
 
     /**
      * @param MyeBaySelectionType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSecondChanceOffers($val)
     {

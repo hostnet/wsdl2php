@@ -42,7 +42,7 @@ class PictureManagerPictureDisplayType
 
     /**
      * @param PictureManagerPictureDisplayTypeCodeType $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setDisplayType($val)
     {
@@ -51,7 +51,7 @@ class PictureManagerPictureDisplayType
 
     /**
      * @param anyURI $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setURL($val)
     {
@@ -60,43 +60,43 @@ class PictureManagerPictureDisplayType
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setSize($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Size = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setHeight($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Height = $val;
     }
 
     /**
      * @param int $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setWidth($val)
     {
         if (!is_int($val)) {
-            throw new Exception('POJO Proxy need a integer');
+            throw new \Exception('POJO Proxy need a integer');
         }
         $this->Width = $val;
     }
 
     /**
      * @param <anyXML> $val
-     * @throws Exception
+     * @throws \Exception
      */
     public function setAny($val)
     {
