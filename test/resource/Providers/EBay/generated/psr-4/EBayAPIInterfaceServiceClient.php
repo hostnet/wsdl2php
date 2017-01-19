@@ -3,10 +3,10 @@
 namespace Controle\Hostnet\Namesp\Sub4\Complex;
 
 /**
- * eBayAPIInterfaceServiceClient
+ * EBayAPIInterfaceServiceClient
  * Version 491
  */
-class eBayAPIInterfaceServiceClient extends \SoapClient
+class EBayAPIInterfaceServiceClient extends \SoapClient
 {
     const WSDL_FILE = "eBayTest.wsdl";
 

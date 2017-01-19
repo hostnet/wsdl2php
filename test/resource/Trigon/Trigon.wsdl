@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://trigon.nl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://trigon.nl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://trigon.nl/">
+      <s:element name="getModelImportKenmerken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getModelImportKenmerkenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getModelImportKenmerkenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRespondent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="importBatchNr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentTypeCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentAanhef" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentNaam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentDtmTrigger" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="afzenderNaam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentId1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentId2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentTxtExtra1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentTxtExtra2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentDtmExtra1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentDtmExtra2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentKenmerkNamen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentKenmerkWaardes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentTelNr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentTelNrAvond" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentTelNrMobiel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentAdres" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentPlaats" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentPostcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentDtmGeboorte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentDtmInDienst" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentOrganisatie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentOrganisatieID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentStage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRespondentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertRespondentResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outErrorMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outInlogCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outInlogUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outCUGcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outMemberId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRespondent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="itcModel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respondentDataEncoding" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRespondentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateRespondentResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outErrorMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outInlogCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outInlogUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outCUGcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="outMemberId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getModelImportKenmerkenSoapIn">
+    <wsdl:part name="parameters" element="tns:getModelImportKenmerken" />
+  </wsdl:message>
+  <wsdl:message name="getModelImportKenmerkenSoapOut">
+    <wsdl:part name="parameters" element="tns:getModelImportKenmerkenResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRespondentSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRespondent" />
+  </wsdl:message>
+  <wsdl:message name="InsertRespondentSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRespondentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateRespondentSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateRespondent" />
+  </wsdl:message>
+  <wsdl:message name="CreateRespondentSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateRespondentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="importSoap">
+    <wsdl:operation name="getModelImportKenmerken">
+      <wsdl:input message="tns:getModelImportKenmerkenSoapIn" />
+      <wsdl:output message="tns:getModelImportKenmerkenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRespondent">
+      <wsdl:input message="tns:InsertRespondentSoapIn" />
+      <wsdl:output message="tns:InsertRespondentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRespondent">
+      <wsdl:input message="tns:CreateRespondentSoapIn" />
+      <wsdl:output message="tns:CreateRespondentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="importSoap" type="tns:importSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getModelImportKenmerken">
+      <soap:operation soapAction="http://trigon.nl/getModelImportKenmerken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRespondent">
+      <soap:operation soapAction="http://trigon.nl/InsertRespondent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRespondent">
+      <soap:operation soapAction="http://trigon.nl/CreateRespondent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="importSoap12" type="tns:importSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getModelImportKenmerken">
+      <soap12:operation soapAction="http://trigon.nl/getModelImportKenmerken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRespondent">
+      <soap12:operation soapAction="http://trigon.nl/InsertRespondent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRespondent">
+      <soap12:operation soapAction="http://trigon.nl/CreateRespondent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="import">
+    <wsdl:port name="importSoap" binding="tns:importSoap">
+      <soap:address location="https://services.trigon.nl/import.asmx" />
+    </wsdl:port>
+    <wsdl:port name="importSoap12" binding="tns:importSoap12">
+      <soap12:address location="https://services.trigon.nl/import.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

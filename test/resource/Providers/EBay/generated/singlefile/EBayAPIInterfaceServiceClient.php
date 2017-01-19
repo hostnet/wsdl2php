@@ -50454,10 +50454,10 @@ class eBxOptInPreferenceType
 }
 
 /**
- * eBayAPIInterfaceServiceClient
+ * EBayAPIInterfaceServiceClient
  * Version 491
  */
-class eBayAPIInterfaceServiceClient extends SoapClient {
+class EBayAPIInterfaceServiceClient extends SoapClient {
 
 	const WSDL_FILE = "eBayTest.wsdl";
 	private $classmap = array(
